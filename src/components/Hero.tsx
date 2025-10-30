@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ChevronDown, Search, MessageCircle } from "lucide-react";
+import { ChevronDown, Search, MessageCircle, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -59,6 +59,11 @@ const Hero = () => {
       handleSend();
     }
   };
+
+  const handleClear = () => {
+    setAiInputValue("");
+    setChatResponse("");
+  };
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -98,6 +103,17 @@ const Hero = () => {
                 disabled={isLoading}
               />
             </div>
+            {aiInputValue && (
+              <Button
+                onClick={handleClear}
+                variant="ghost"
+                className="h-16 w-16 rounded-2xl hover:bg-white/20 shrink-0"
+                aria-label="Clear input and response"
+                type="button"
+              >
+                <X size={20} className="shrink-0 text-white" />
+              </Button>
+            )}
             <Button
               onClick={handleSend}
               disabled={isLoading || !aiInputValue.trim()}
