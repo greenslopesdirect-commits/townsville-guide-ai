@@ -101,9 +101,11 @@ const Hero = () => {
             <Button
               onClick={handleSend}
               disabled={isLoading || !aiInputValue.trim()}
-              className="h-16 w-16 rounded-2xl bg-primary hover:bg-primary/90 shadow-xl"
+              className="h-16 w-16 rounded-2xl bg-primary hover:bg-primary/90 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center shrink-0"
+              aria-label="Send message"
+              type="button"
             >
-              <MessageCircle size={24} />
+              <MessageCircle size={24} className="shrink-0" />
             </Button>
           </div>
           
