@@ -44,6 +44,9 @@ const QuickAccess = () => {
     const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
     if (input) {
       input.value = query;
+      // Trigger React's onChange event to update state
+      const event = new Event('input', { bubbles: true });
+      input.dispatchEvent(event);
       input.focus({ preventScroll: true });
       input.scrollIntoView({ behavior: 'smooth', block: 'center' });
       input.classList.add('ring-4', 'ring-primary/50', 'animate-pulse');
