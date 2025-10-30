@@ -109,18 +109,18 @@ const Hero = () => {
           
           {/* Response Display */}
           {chatResponse && (
-            <div className="mt-6 mb-6 bg-white/90 backdrop-blur-sm text-foreground rounded-2xl shadow-md text-left animate-fade-in">
+            <div className="mt-6 mb-8 bg-white/90 backdrop-blur-sm text-foreground rounded-2xl shadow-md text-left animate-fade-in">
               <ScrollArea className="max-h-[60vh] md:max-h-[50vh]">
-                <div className="p-6">
+                <div className="p-6 pb-8">
                   <strong className="text-primary">Answer:</strong>
-                  <p className="mt-2 whitespace-pre-wrap">{chatResponse}</p>
+                  <p className="mt-2 mb-2 whitespace-pre-wrap">{chatResponse}</p>
                 </div>
               </ScrollArea>
             </div>
           )}
           
           {isLoading && (
-            <div className="mt-6 mb-6 bg-white/90 backdrop-blur-sm text-foreground p-6 rounded-2xl shadow-md text-center animate-fade-in">
+            <div className="mt-6 mb-8 bg-white/90 backdrop-blur-sm text-foreground p-6 rounded-2xl shadow-md text-center animate-fade-in">
               <p className="text-muted-foreground">Thinking...</p>
             </div>
           )}
