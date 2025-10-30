@@ -44,8 +44,6 @@ const QuickAccess = () => {
     const input = document.getElementById('hero-chat-input') as HTMLInputElement;
     if (input) {
       input.value = query;
-      input.focus();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
