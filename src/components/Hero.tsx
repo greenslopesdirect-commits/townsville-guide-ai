@@ -80,10 +80,10 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg animate-fade-in">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)' }}>
           Welcome to Townsville 👋
         </h1>
-        <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto drop-shadow-md animate-fade-in">
+        <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)' }}>
           Your local AI guide to everything in North Queensland.
         </p>
         
