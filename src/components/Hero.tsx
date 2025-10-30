@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="relative">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground z-10" size={20} />
             <Input
-              id="hero-chat-input"
+              id="townsville-ai-input"
               type="text"
               placeholder="Hi! I'm your Townsville guide. Ask me anything — restaurants, beaches, dog parks, events, accommodation."
               className="h-16 pl-12 pr-4 text-base rounded-2xl bg-white/95 backdrop-blur-sm border-white/40 shadow-xl focus-visible:ring-primary focus-visible:ring-2"

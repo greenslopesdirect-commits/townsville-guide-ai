@@ -41,9 +41,10 @@ const categories = [
 
 const QuickAccess = () => {
   const handleCardClick = (query: string) => {
-    const input = document.getElementById('hero-chat-input') as HTMLInputElement;
+    const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
     if (input) {
       input.value = query;
+      input.focus({ preventScroll: true });
     }
   };
 
