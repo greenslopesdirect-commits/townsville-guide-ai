@@ -41,13 +41,14 @@ const categories = [
 
 const QuickAccess = () => {
   const handleCardClick = (query: string) => {
-    setTimeout(() => {
-      if ((window as any).setAiInputValue) {
-        (window as any).setAiInputValue(query);
-      } else {
-        console.warn("Hero input not ready");
-      }
-    }, 100);
+    const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
+    if (input) {
+      input.value = query;
+      input.focus({ preventScroll: true });
+      input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      input.classList.add('ring-4', 'ring-primary/50', 'animate-pulse');
+      setTimeout(() => input.classList.remove('ring-4', 'ring-primary/50', 'animate-pulse'), 2000);
+    }
   };
 
   return (
