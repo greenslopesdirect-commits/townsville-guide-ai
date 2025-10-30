@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { ChevronDown, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,11 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/strand-hero.jpg";
 
 const Hero = () => {
+  const [aiInputValue, setAiInputValue] = useState("");
+
+  useEffect(() => {
+    (window as any).setAiInputValue = setAiInputValue;
+  }, []);
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -38,6 +44,8 @@ const Hero = () => {
               type="text"
               placeholder="Hi! I'm your Townsville guide. Ask me anything — restaurants, beaches, dog parks, events, accommodation."
               className="h-16 pl-12 pr-4 text-base rounded-2xl bg-white/95 backdrop-blur-sm border-white/40 shadow-xl focus-visible:ring-primary focus-visible:ring-2"
+              value={aiInputValue}
+              onChange={(e) => setAiInputValue(e.target.value)}
             />
           </div>
         </div>
