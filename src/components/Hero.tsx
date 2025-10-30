@@ -10,7 +10,9 @@ const Hero = () => {
   const [aiInputValue, setAiInputValue] = useState("");
 
   useEffect(() => {
-    (window as any).setAiInputValue = setAiInputValue;
+    (window as any).setAiInputValue = (text: string) => {
+      setAiInputValue(text);
+    };
   }, []);
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
