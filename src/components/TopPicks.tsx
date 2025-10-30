@@ -41,13 +41,11 @@ const picks = [
 
 const TopPicks = () => {
   const handleCardClick = (query: string) => {
-    setTimeout(() => {
-      if (typeof (window as any).setAiInputValue === 'function') {
-        (window as any).setAiInputValue(query);
-      } else {
-        console.warn('AI input handler not ready yet');
-      }
-    }, 100);
+    const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
+    if (input) {
+      input.value = query;
+      input.focus({ preventScroll: true });
+    }
   };
 
   return (
