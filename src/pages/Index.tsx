@@ -4,10 +4,12 @@ import TopPicks from "@/components/TopPicks";
 import MapSection from "@/components/MapSection";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
+import WeatherWidget from "@/components/WeatherWidget";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <WeatherWidget />
       <Hero />
       <QuickAccess />
       <TopPicks />
