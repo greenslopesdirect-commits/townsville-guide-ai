@@ -41,10 +41,8 @@ const categories = [
 
 const QuickAccess = () => {
   const handleCardClick = (query: string) => {
-    const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
-    if (input) {
-      input.value = query;
-      input.focus({ preventScroll: true });
+    if ((window as any).setAiInputValue) {
+      (window as any).setAiInputValue(query);
     }
   };
 
