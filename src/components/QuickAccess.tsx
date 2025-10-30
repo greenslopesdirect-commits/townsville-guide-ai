@@ -41,9 +41,13 @@ const categories = [
 
 const QuickAccess = () => {
   const handleCardClick = (query: string) => {
-    if ((window as any).setAiInputValue) {
-      (window as any).setAiInputValue(query);
-    }
+    setTimeout(() => {
+      if ((window as any).setAiInputValue) {
+        (window as any).setAiInputValue(query);
+      } else {
+        console.warn("Hero input not ready");
+      }
+    }, 100);
   };
 
   return (
