@@ -12,6 +12,10 @@ const Hero = () => {
   useEffect(() => {
     (window as any).setAiInputValue = (text: string) => {
       setAiInputValue(text);
+      const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
+      if (input) {
+        input.focus({ preventScroll: true });
+      }
     };
   }, []);
   return (
