@@ -60,7 +60,7 @@ const Hero = () => {
     }
   };
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -109,13 +109,11 @@ const Hero = () => {
           
           {/* Response Display */}
           {chatResponse && (
-            <div className="mt-6 mb-8 bg-white/90 backdrop-blur-sm text-foreground rounded-2xl shadow-md text-left animate-fade-in">
-              <ScrollArea className="max-h-[75vh]">
-                <div className="p-6 pb-8">
-                  <strong className="text-primary">Answer:</strong>
-                  <p className="mt-2 mb-2 whitespace-pre-wrap">{chatResponse}</p>
-                </div>
-              </ScrollArea>
+            <div className="mt-6 mb-8 bg-white/90 backdrop-blur-sm text-foreground rounded-2xl shadow-md text-left animate-fade-in overflow-y-auto max-h-[75vh]">
+              <div className="p-6 pb-8">
+                <strong className="text-primary">Answer:</strong>
+                <p className="mt-2 mb-2 whitespace-pre-wrap">{chatResponse}</p>
+              </div>
             </div>
           )}
           
