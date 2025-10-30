@@ -1,38 +1,71 @@
-import { Utensils, Waves, Palmtree, Dog, Hotel, ShoppingBag } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 const categories = [
-  { name: "Restaurants", icon: Utensils },
-  { name: "Beaches", icon: Waves },
-  { name: "Things to Do", icon: Palmtree },
-  { name: "Dog Parks", icon: Dog },
-  { name: "Accommodation", icon: Hotel },
-  { name: "Shopping", icon: ShoppingBag },
+  { 
+    emoji: "🏖", 
+    name: "Beaches", 
+    description: "Explore The Strand, Pallarenda, and Townsville's stunning coastal spots."
+  },
+  { 
+    emoji: "🍽", 
+    name: "Restaurants & Cafés", 
+    description: "Find the best coffee, brunch, and dinner spots around town."
+  },
+  { 
+    emoji: "🐶", 
+    name: "Dog Parks", 
+    description: "Discover the top off-leash areas and pet-friendly parks."
+  },
+  { 
+    emoji: "🏨", 
+    name: "Accommodation", 
+    description: "Browse great places to stay — from hotels to holiday apartments."
+  },
+  { 
+    emoji: "🎟", 
+    name: "Things to Do", 
+    description: "Local attractions, tours, and family fun across North Queensland."
+  },
+  { 
+    emoji: "🛍", 
+    name: "Shopping & Markets", 
+    description: "Uncover local shops, markets, and weekend stalls worth visiting."
+  },
 ];
 
 const QuickAccess = () => {
   return (
     <section className="py-16 px-4 bg-background">
-      <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
           Quick Access
         </h2>
+        <p className="text-center text-muted-foreground mb-12 text-base md:text-lg max-w-2xl mx-auto">
+          Jump straight to what you're looking for — your Townsville guide has you covered.
+        </p>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
-          {categories.map((category) => {
-            const Icon = category.icon;
-            return (
-              <Button
-                key={category.name}
-                variant="outline"
-                size="lg"
-                className="h-32 md:h-40 flex-col gap-3 rounded-3xl border-2 hover:border-primary hover:bg-primary/5 transition-all shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-tropical)] group"
-              >
-                <Icon className="w-8 h-8 md:w-10 md:h-10 text-primary group-hover:scale-110 transition-transform" />
-                <span className="text-base md:text-lg font-semibold">{category.name}</span>
-              </Button>
-            );
-          })}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          {categories.map((category, index) => (
+            <button
+              key={category.name}
+              className="text-left group animate-fade-in hover-scale"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <Card className="h-full border-2 hover:border-primary transition-all shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-tropical)] rounded-3xl">
+                <CardContent className="p-6 flex flex-col gap-3">
+                  <div className="text-5xl mb-2 group-hover:scale-110 transition-transform">
+                    {category.emoji}
+                  </div>
+                  <h3 className="text-lg md:text-xl font-semibold text-foreground">
+                    {category.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {category.description}
+                  </p>
+                </CardContent>
+              </Card>
+            </button>
+          ))}
         </div>
       </div>
     </section>
