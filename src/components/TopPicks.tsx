@@ -26,10 +26,10 @@ const picks = [
     query: "Tell me about JAM Corner restaurant in Townsville.",
   },
   {
-    title: "Reef HQ Aquarium",
-    description: "Learn about the Great Barrier Reef up close.",
-    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
-    query: "What can I see at Reef HQ Aquarium?",
+    title: "Jezzine Barracks",
+    description: "A scenic coastal walkway and heritage site with art, history, and stunning ocean views.",
+    image: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&q=80",
+    query: "What can I see at Jezzine Barracks in Townsville?",
   },
   {
     title: "Billabong Sanctuary",
@@ -54,7 +54,7 @@ const TopPicks = () => {
     <section className="py-16 px-4 bg-muted/30">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-          Top Local Picks
+          🏝 Top Local Picks
         </h2>
         <p className="text-center text-muted-foreground mb-12 text-lg">
           Hand-picked highlights from around Townsville.
