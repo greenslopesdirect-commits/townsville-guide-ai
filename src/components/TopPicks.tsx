@@ -1,58 +1,80 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Star } from "lucide-react";
 
 const picks = [
   {
     title: "The Strand",
-    description: "2.2km beachfront promenade perfect for walks, swimming, and picnics",
-    category: "Beach",
-  },
-  {
-    title: "Reef HQ Great Barrier Reef Aquarium",
-    description: "World's largest living coral reef aquarium - a must-see attraction",
-    category: "Attraction",
-  },
-  {
-    title: "Castle Hill",
-    description: "Iconic pink granite monolith with panoramic city and ocean views",
-    category: "Landmark",
+    description: "Townsville's iconic beachfront, perfect for walks, swims, and sunset views.",
+    image: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=800&q=80",
+    query: "Tell me about The Strand in Townsville.",
   },
   {
     title: "Magnetic Island",
-    description: "20-minute ferry ride to paradise - beaches, wildlife, and bushwalking",
-    category: "Day Trip",
+    description: "Just a 20-minute ferry ride away — wildlife, beaches, and hikes galore.",
+    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+    query: "What can I do on Magnetic Island?",
   },
   {
-    title: "Palmer Street",
-    description: "Historic precinct with cafes, restaurants, and weekend markets",
-    category: "Dining & Shopping",
+    title: "Castle Hill",
+    description: "Climb or drive up for unbeatable views of the city and coast.",
+    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+    query: "What's the best way to get to Castle Hill lookout?",
+  },
+  {
+    title: "JAM Corner",
+    description: "Upscale dining with a relaxed North Queensland vibe.",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80",
+    query: "Tell me about JAM Corner restaurant in Townsville.",
+  },
+  {
+    title: "Reef HQ Aquarium",
+    description: "Learn about the Great Barrier Reef up close.",
+    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+    query: "What can I see at Reef HQ Aquarium?",
+  },
+  {
+    title: "Billabong Sanctuary",
+    description: "Hand-feed kangaroos and meet koalas just south of Townsville.",
+    image: "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800&q=80",
+    query: "What animals are at Billabong Sanctuary?",
   },
 ];
 
 const TopPicks = () => {
+  const handleCardClick = (query: string) => {
+    setTimeout(() => {
+      if (typeof (window as any).setAiInputValue === 'function') {
+        (window as any).setAiInputValue(query);
+      } else {
+        console.warn('AI input handler not ready yet');
+      }
+    }, 100);
+  };
+
   return (
     <section className="py-16 px-4 bg-muted/30">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
-          Top 5 Local Picks
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
+          Top Local Picks
         </h2>
+        <p className="text-center text-muted-foreground mb-12 text-lg">
+          Hand-picked highlights from around Townsville.
+        </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {picks.map((pick, index) => (
+          {picks.map((pick) => (
             <Card 
               key={pick.title}
-              className="rounded-3xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-tropical)] transition-all hover:-translate-y-1 border-2"
+              onClick={() => handleCardClick(pick.query)}
+              className="rounded-3xl shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-tropical)] transition-all hover:-translate-y-1 border-2 cursor-pointer overflow-hidden"
             >
+              <div className="aspect-video w-full overflow-hidden">
+                <img 
+                  src={pick.image} 
+                  alt={pick.title}
+                  className="w-full h-full object-cover transition-transform hover:scale-105"
+                />
+              </div>
               <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-semibold px-3 py-1 rounded-full bg-primary/10 text-primary">
-                    {pick.category}
-                  </span>
-                  <div className="flex items-center gap-1">
-                    <Star className="w-4 h-4 fill-[hsl(var(--accent))] text-[hsl(var(--accent))]" />
-                    <span className="text-sm font-semibold">#{index + 1}</span>
-                  </div>
-                </div>
                 <CardTitle className="text-xl">{pick.title}</CardTitle>
               </CardHeader>
               <CardContent>
