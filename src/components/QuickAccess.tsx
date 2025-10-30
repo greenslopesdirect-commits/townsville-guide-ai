@@ -41,13 +41,14 @@ const categories = [
 
 const QuickAccess = () => {
   const handleCardClick = (query: string) => {
+    // Use the Hero component's state setter function
+    if ((window as any).setAiInputValue) {
+      (window as any).setAiInputValue(query);
+    }
+    
+    // Add scroll and pulse effects
     const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
     if (input) {
-      input.value = query;
-      // Trigger React's onChange event to update state
-      const event = new Event('input', { bubbles: true });
-      input.dispatchEvent(event);
-      input.focus({ preventScroll: true });
       input.scrollIntoView({ behavior: 'smooth', block: 'center' });
       input.classList.add('ring-4', 'ring-primary/50', 'animate-pulse');
       setTimeout(() => input.classList.remove('ring-4', 'ring-primary/50', 'animate-pulse'), 2000);
