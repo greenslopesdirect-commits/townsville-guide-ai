@@ -6,64 +6,41 @@ const Accommodation = () => {
   const hotels = [
     {
       name: "🏝 The Ville Resort–Casino",
-      tagline: "Luxury resort with ocean views",
-      description: "Premium beachfront accommodation with casino, pools, and fine dining.",
+      description: "Luxury resort with ocean views — premium beachfront accommodation with casino, pools, and fine dining.",
+      bookingLink: "https://www.booking.com/hotel/au/the-ville-resort-casino-townsville.html",
       image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop",
-      query: "Tell me more about The Ville Resort–Casino in Townsville.",
     },
     {
       name: "🌇 Aquarius on the Beach",
-      tagline: "Affordable beachfront hotel",
-      description: "Great value accommodation right on The Strand waterfront.",
+      description: "Affordable beachfront hotel — great value accommodation right on The Strand waterfront.",
+      bookingLink: "https://www.booking.com/hotel/au/aquarius-on-the-beach-townsville.html",
       image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&auto=format&fit=crop",
-      query: "Tell me about Aquarius on the Beach Townsville.",
     },
     {
       name: "🏙 Hotel Grand Chancellor",
-      tagline: "Modern city hotel with rooftop views",
-      description: "Contemporary accommodation in the heart of the CBD with stunning vistas.",
+      description: "Modern city hotel with rooftop views — contemporary accommodation in the heart of the CBD.",
+      bookingLink: "https://www.booking.com/hotel/au/hotel-grand-chancellor-townsville.html",
       image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&auto=format&fit=crop",
-      query: "What's Hotel Grand Chancellor Townsville like?",
     },
     {
       name: "🏡 Quest Townsville",
-      tagline: "Serviced apartments near the marina",
-      description: "Self-contained apartments perfect for longer stays and families.",
+      description: "Serviced apartments near the marina — perfect for longer stays and families.",
+      bookingLink: "https://www.booking.com/hotel/au/quest-townsville.html",
       image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop",
-      query: "Tell me about Quest Townsville apartments.",
+    },
+    {
+      name: "🏢 Oaks Townsville Gateway Suites",
+      description: "Stylish and spacious hotel suites — modern comfort with great city and river views.",
+      bookingLink: "https://www.booking.com/hotel/au/oaks-townsville-gateway-suites.html",
+      image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&auto=format&fit=crop",
     },
     {
       name: "🏕 BIG4 Rowes Bay Holiday Park",
-      tagline: "Great for families and caravans",
       description: "Beachfront caravan park with cabins, pools, and family facilities.",
+      bookingLink: "https://www.booking.com/hotel/au/big4-rowes-bay-beachfront-holiday-park-townsville.html",
       image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&auto=format&fit=crop",
-      query: "Tell me about BIG4 Rowes Bay Holiday Park in Townsville.",
-    },
-    {
-      name: "🏖 Beach House Motel",
-      tagline: "Comfortable rooms right on The Strand",
-      description: "A locally owned motel offering sea views, friendly service, and great value for families and couples.",
-      image: "https://images.unsplash.com/photo-1559599238-b2c64d8a1d79?w=800&auto=format&fit=crop",
-      query: "Tell me about Beach House Motel on The Strand.",
     },
   ];
-
-  const handleAskAbout = (query: string) => {
-    if ((window as any).setAiInputValue) {
-      (window as any).setAiInputValue(query);
-    }
-    
-    const input = document.getElementById('townsville-ai-input');
-    if (input) {
-      input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setTimeout(() => {
-        input.classList.add('ring-2', 'ring-primary');
-        setTimeout(() => {
-          input.classList.remove('ring-2', 'ring-primary');
-        }, 2000);
-      }, 500);
-    }
-  };
 
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-amber-50/20 dark:from-amber-950/10 to-background">
@@ -86,46 +63,36 @@ const Accommodation = () => {
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src={hotel.image} 
-                  alt={`${hotel.name} - ${hotel.tagline} in Townsville, North Queensland`}
+                  alt={`${hotel.name} accommodation in Townsville, North Queensland`}
                   loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardHeader className="pb-3">
                 <CardTitle className="text-xl">{hotel.name}</CardTitle>
-                <CardDescription className="font-semibold text-primary">
-                  {hotel.tagline}
-                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-3">
                 <p className="text-sm text-muted-foreground">{hotel.description}</p>
-                <div className="flex gap-2">
-                  <Button 
-                    variant="default"
-                    size="sm"
-                    className="flex-1"
-                    disabled
+                <Button 
+                  asChild
+                  variant="default"
+                  size="sm"
+                  className="w-full"
+                >
+                  <a 
+                    href={hotel.bookingLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <ExternalLink className="w-4 h-4 mr-1" />
+                    <ExternalLink className="w-4 h-4 mr-2" />
                     Check availability
-                  </Button>
-                  <Button 
-                    onClick={() => handleAskAbout(hotel.query)}
-                    variant="outline"
-                    size="sm"
-                    className="flex-1"
-                  >
-                    Ask AI
-                  </Button>
-                </div>
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <p className="text-center text-muted-foreground italic">
-          Tip: Ask our AI guide for the best places to stay near The Strand.
-        </p>
       </div>
     </section>
   );
