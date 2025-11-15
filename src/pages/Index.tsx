@@ -3,6 +3,7 @@ import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
 import TopPicks from "@/components/TopPicks";
 import FoodDrink from "@/components/FoodDrink";
+import DogFriendly from "@/components/DogFriendly";
 import MapSection from "@/components/MapSection";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ const Index = () => {
       <QuickAccess />
       <TopPicks />
       <FoodDrink />
+      <DogFriendly />
       <MapSection />
       <About />
       <Footer />
