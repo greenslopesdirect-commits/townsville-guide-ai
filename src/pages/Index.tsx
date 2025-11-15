@@ -11,11 +11,9 @@ import About from "@/components/About";
 import AboutDuncan from "@/components/AboutDuncan";
 import Footer from "@/components/Footer";
 import WeatherWidget from "@/components/WeatherWidget";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
-      <WeatherWidget />
+  return <div className="min-h-screen">
+      
       <Hero />
       <WeatherInfo />
       <QuickAccess />
@@ -28,8 +26,6 @@ const Index = () => {
       <About />
       <AboutDuncan />
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

@@ -1,9 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart } from "lucide-react";
-
 const About = () => {
-  return (
-    <section className="py-16 px-4 bg-muted/30">
+  return <section className="py-16 px-4 bg-muted/30">
       <div className="container mx-auto max-w-3xl">
         <Card className="rounded-3xl shadow-[var(--shadow-card)] border-2">
           <CardContent className="pt-8 pb-8 text-center">
@@ -13,20 +11,18 @@ const About = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
               About This Guide
             </h2>
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4 text-left">
               Created by a proud Townsville local who loves sharing the best our beautiful city has to offer. 
               Whether you're visiting for the first time or you've lived here for years, there's always something 
               new to discover in North Queensland's largest city.
             </p>
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-left">
               This guide brings together local knowledge, hidden gems, and must-see attractions to help you 
               experience Townsville like a true local.
             </p>
           </CardContent>
         </Card>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

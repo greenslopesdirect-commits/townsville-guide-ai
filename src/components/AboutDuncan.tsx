@@ -1,10 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Globe, MapPin, Facebook, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const AboutDuncan = () => {
-  return (
-    <section className="py-16 px-4 bg-gradient-to-br from-primary/10 to-background">
+  return <section className="py-16 px-4 bg-gradient-to-br from-primary/10 to-background">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
@@ -18,8 +16,9 @@ const AboutDuncan = () => {
             </div>
           </div>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Hi, I'm Duncan Ross — a proud Townsville local and digital creator. I built this guide to help visitors and locals discover the best of North Queensland — from beaches and restaurants to hidden gems and dog-friendly spots. Whether you're planning your first visit or already call Townsville home, I hope this AI-powered guide makes your experience even better.
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed text-left">
+            Hi, I'm Duncan Ross — a proud Townsville local and digital creator. 
+I built this guide to help visitors and locals discover the best of North Queensland — from beaches and restaurants to hidden gems and dog-friendly spots. Whether you're planning your first visit or already call Townsville home, I hope this AI-powered guide makes your experience even better.
           </p>
 
           <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
@@ -37,12 +36,7 @@ const AboutDuncan = () => {
               
               <div className="flex items-center justify-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Globe className="w-5 h-5" />
-                <a 
-                  href="https://whizpixstudio.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-base md:text-lg"
-                >
+                <a href="https://whizpixstudio.com" target="_blank" rel="noopener noreferrer" className="text-base md:text-lg">
                   whizpixstudio.com
                 </a>
               </div>
@@ -54,24 +48,12 @@ const AboutDuncan = () => {
 
               {/* Social Media Icons */}
               <div className="flex justify-center gap-4 pt-4 border-t border-border/40">
-                <Button 
-                  asChild
-                  variant="ghost" 
-                  size="icon"
-                  className="hover:bg-primary/10 transition-colors"
-                  aria-label="Facebook"
-                >
+                <Button asChild variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors" aria-label="Facebook">
                   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                     <Facebook className="w-5 h-5" />
                   </a>
                 </Button>
-                <Button 
-                  asChild
-                  variant="ghost" 
-                  size="icon"
-                  className="hover:bg-primary/10 transition-colors"
-                  aria-label="Instagram"
-                >
+                <Button asChild variant="ghost" size="icon" className="hover:bg-primary/10 transition-colors" aria-label="Instagram">
                   <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                     <Instagram className="w-5 h-5" />
                   </a>
@@ -82,8 +64,6 @@ const AboutDuncan = () => {
 
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutDuncan;
