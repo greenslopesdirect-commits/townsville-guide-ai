@@ -8,40 +8,40 @@
 
   "beaches": [
     {
-      "name": "The Strand Beach",
-      "type": "City Beach",
+      "name": "The Strand",
+      "type": "Urban Beachfront",
       "address": "The Strand, North Ward",
-      "notes": "2.2km beachfront promenade with swimming enclosures, water park, playgrounds, and BBQ facilities. Patrolled and stinger net protected."
+      "notes": "Townsville's iconic 2.5 km foreshore with swimming enclosures, cafes, and walking paths."
     },
     {
       "name": "Pallarenda Beach",
-      "type": "Scenic Beach",
-      "address": "Cape Pallarenda Road, Pallarenda",
-      "notes": "Quiet beach perfect for fishing, picnics, and walking. Great views of Magnetic Island. Dog-friendly area available."
+      "type": "Dog-Friendly Beach",
+      "address": "Cape Pallarenda Road, Townsville",
+      "notes": "Quiet stretch of sand with views of Magnetic Island; popular for dog walking and picnics."
     },
     {
-      "name": "Rowes Bay Beach",
-      "type": "Family Beach",
-      "address": "The Strand, Rowes Bay",
-      "notes": "Popular family spot with calm waters, shaded areas, and nearby playground. Close to dog park."
+      "name": "Bushland Beach",
+      "type": "Local Favourite",
+      "address": "Bushland Beach Esplanade, Bohle Plains",
+      "notes": "Wide sandy beach perfect for sunset walks and fishing; small shopping centre nearby."
     },
     {
-      "name": "Shelly Beach",
-      "type": "Hidden Gem",
-      "address": "Cape Pallarenda Road, Shelly Beach",
-      "notes": "Secluded cove with rock pools, ideal for snorkelling and exploring at low tide. Bring your own supplies."
+      "name": "Balgal Beach",
+      "type": "Northern Suburb Beach",
+      "address": "Balgal Beach Road, Balgal Beach",
+      "notes": "Family-friendly beach north of Townsville with safe swimming, playgrounds, and caravan park."
     },
     {
-      "name": "Kissing Point",
-      "type": "Lookout & Beach",
-      "address": "Kissing Point, North Ward",
-      "notes": "Rocky outcrop with beach access, heritage fortifications, and stunning sunrise views. Popular for photography."
+      "name": "Saunders Beach",
+      "type": "Coastal Village Beach",
+      "address": "Saunders Beach Road, Saunders Beach",
+      "notes": "Peaceful beach for camping and picnicking, about 30 minutes north of the city."
     },
     {
-      "name": "Cleveland Bay Beach",
-      "type": "Esplanade Beach",
-      "address": "The Esplanade, Belgian Gardens",
-      "notes": "Long stretch of beach perfect for morning walks and beach fishing. Less crowded than The Strand."
+      "name": "Toomulla Beach",
+      "type": "Secluded Spot",
+      "address": "Toomulla Beach Road, Toomulla",
+      "notes": "Quiet beach with a boat ramp and camping area, ideal for fishing and nature walks."
     }
   ],
 
@@ -83,193 +83,193 @@
       "name": "JAM Restaurant",
       "type": "Modern Australian",
       "address": "Palmer Street, South Townsville",
-      "notes": "Award-winning dining with local produce and fine wines. Book ahead for weekend dinners."
+      "notes": "Award-winning dining with seasonal local produce and fine wines."
+    },
+    {
+      "name": "Shorehouse",
+      "type": "Seafood & Grill",
+      "address": "The Strand, North Ward",
+      "notes": "Contemporary oceanfront restaurant known for seafood and cocktails with sunset views."
     },
     {
       "name": "Cactus Jack's",
       "type": "Mexican Bar & Grill",
       "address": "Flinders Street, Townsville City",
-      "notes": "Casual dining, margaritas, and a lively atmosphere. Great for groups and families."
+      "notes": "Casual, lively Mexican dining with margaritas and family-friendly vibes."
     },
     {
-      "name": "Longboard Bar & Grill",
-      "type": "Beachfront Restaurant",
-      "address": "The Strand, North Ward",
-      "notes": "Perfect for sunset drinks and burgers by the sea. Live music on weekends."
+      "name": "Bridgewater Restaurant",
+      "type": "Modern Australian",
+      "address": "Palmer Street, South Townsville",
+      "notes": "Upscale dining with an open kitchen and local ingredients, plus a cocktail bar."
+    },
+    {
+      "name": "The Courtyard",
+      "type": "Bar & Burger",
+      "address": "Flinders Street East, Townsville City",
+      "notes": "Trendy outdoor bar serving gourmet burgers and live music on weekends."
     },
     {
       "name": "Juliette's Gelateria",
-      "type": "Dessert Café",
+      "type": "Café & Dessert Bar",
       "address": "The Strand, North Ward",
-      "notes": "Iconic gelato café, pet-friendly outdoor seating, great for coffee and treats. Try the mango sorbet."
-    },
-    {
-      "name": "A Touch of Salt",
-      "type": "Fine Dining",
-      "address": "Mariners Drive, Townsville City",
-      "notes": "Waterfront fine dining with fresh seafood and premium steaks. Romantic setting with marina views."
-    },
-    {
-      "name": "The Ville Resort-Casino Restaurants",
-      "type": "Resort Dining",
-      "address": "Sir Leslie Thiess Drive, Townsville City",
-      "notes": "Multiple dining options including Asian fusion, Italian, and buffet. Casino and entertainment onsite."
+      "notes": "Popular café for coffee, desserts, and beach views; pet friendly."
     }
   ],
 
   "dog_parks": [
     {
       "name": "Rowes Bay Dog Park",
-      "type": "Large Off-Leash Park",
+      "type": "Off-Leash Area",
       "address": "Cape Pallarenda Road, Rowes Bay",
-      "notes": "Large open area, shaded, near the beach. Popular with locals. Water fountain and bins available."
+      "notes": "Large, shaded area near the beach with water bowls and bins."
     },
     {
-      "name": "Murray Sporting Complex Dog Park",
-      "type": "Fenced Dog Park",
-      "address": "Murray Lyons Crescent, Annandale",
-      "notes": "Fenced area with agility equipment. Separate zones for small and large dogs."
+      "name": "Murray Sporting Complex",
+      "type": "Fully Fenced Park",
+      "address": "Mervyn Crossman Drive, Annandale",
+      "notes": "Spacious dog area with agility equipment and shade."
+    },
+    {
+      "name": "Aitkenvale Park",
+      "type": "Urban Dog Park",
+      "address": "Elizabeth Street, Aitkenvale",
+      "notes": "Central fenced park with grass, trees, and seating."
+    },
+    {
+      "name": "Riverway Parklands",
+      "type": "Leashed Recreation Area",
+      "address": "Ross River Road, Condon",
+      "notes": "Beautiful riverside paths for walking dogs; water stations available."
     },
     {
       "name": "The Strand Foreshore",
-      "type": "Beachfront Walk",
+      "type": "On-Leash Beach Walk",
       "address": "The Strand, North Ward",
-      "notes": "Scenic coastal walk, pet-friendly areas and water access. Dogs must be on-leash in most areas."
+      "notes": "Dogs allowed on-leash; enjoy the foreshore path and ocean breeze."
     },
     {
-      "name": "Pallarenda Dog Beach",
-      "type": "Off-Leash Beach",
-      "address": "Cape Pallarenda Road, Pallarenda",
-      "notes": "Off-leash dog beach area. Great for swimming and socialising. Check signage for designated zones."
-    },
-    {
-      "name": "Queens Gardens Dog Area",
-      "type": "City Park",
-      "address": "Gregory Street, North Ward",
-      "notes": "Small designated dog area in historic gardens. On-leash only. Shaded and close to cafes."
-    },
-    {
-      "name": "Bicentennial Park Dog Park",
-      "type": "Suburban Park",
-      "address": "Ross River Road, Rasmussen",
-      "notes": "Quiet suburban park with off-leash hours. Good for training and exercise."
+      "name": "Bushland Beach Reserve",
+      "type": "Off-Leash Beach Area",
+      "address": "Bushland Beach Esplanade, Bohle Plains",
+      "notes": "Popular with locals for long runs and swimming with dogs."
     }
   ],
 
   "accommodation": [
     {
-      "name": "The Ville Resort-Casino",
-      "type": "Resort Hotel",
-      "address": "Sir Leslie Thiess Drive, Townsville City",
-      "notes": "Luxury resort with pools, casino, restaurants, and bars. Close to city attractions."
+      "name": "The Ville Resort–Casino",
+      "type": "Luxury Resort",
+      "address": "Sir Leslie Thiess Drive, Townsville",
+      "notes": "Upscale beachfront resort with pools, casino, spa, and dining."
     },
     {
-      "name": "Rydges Southbank Townsville",
-      "type": "Business Hotel",
-      "address": "Palmer Street, South Townsville",
-      "notes": "Modern hotel with rooftop pool and gym. Walking distance to restaurants and Strand."
+      "name": "Aquarius on the Beach",
+      "type": "Hotel",
+      "address": "The Strand, North Ward",
+      "notes": "Affordable hotel with unbeatable ocean views and balconies."
+    },
+    {
+      "name": "Hotel Grand Chancellor Townsville",
+      "type": "City Hotel",
+      "address": "Flinders Street, Townsville CBD",
+      "notes": "Modern high-rise hotel with rooftop views and close to nightlife."
     },
     {
       "name": "Quest Townsville",
       "type": "Serviced Apartments",
-      "address": "Sturt Street, Townsville City",
-      "notes": "Apartment-style accommodation with kitchens. Ideal for longer stays and families."
+      "address": "Palmer Street, South Townsville",
+      "notes": "Self-contained apartments perfect for families and longer stays."
     },
     {
-      "name": "Mariners North Holiday Apartments",
-      "type": "Holiday Apartments",
-      "address": "Mariners Drive, Townsville City",
-      "notes": "Waterfront apartments with pools and BBQ areas. Close to marina and restaurants."
+      "name": "Rambutan Resort",
+      "type": "Boutique Accommodation",
+      "address": "Flinders Street, Townsville City",
+      "notes": "Trendy rooftop resort-style stay with bar, pool, and private rooms."
     },
     {
-      "name": "Peppers Blue on Blue Resort",
-      "type": "Beachfront Resort",
-      "address": "Magnetic Island",
-      "notes": "Luxury resort on Magnetic Island. Ferry transfers available. Perfect for a weekend escape."
-    },
-    {
-      "name": "Townsville Holiday Park",
+      "name": "BIG4 Rowes Bay Holiday Park",
       "type": "Caravan Park",
-      "address": "University Road, Belgian Gardens",
-      "notes": "Family-friendly park with cabins, powered sites, and camp kitchen. Pool and playground onsite."
+      "address": "Cape Pallarenda Road, Rowes Bay",
+      "notes": "Beachfront park with cabins, powered sites, and family-friendly facilities."
     }
   ],
 
   "things_to_do": [
     {
-      "name": "Castle Hill Lookout",
-      "type": "Scenic Lookout",
-      "address": "Castle Hill Road, Castle Hill",
-      "notes": "Townsville's iconic pink granite monolith. Drive or walk to the summit for 360° views. Best at sunset."
+      "name": "Castle Hill",
+      "type": "Lookout & Hiking Trail",
+      "address": "Castle Hill Road, Townsville",
+      "notes": "Climb or drive to the top for panoramic city and island views."
     },
     {
       "name": "Magnetic Island",
-      "type": "Island Day Trip",
-      "address": "20-min ferry from Breakwater Terminal",
-      "notes": "Beaches, hiking trails, koalas, and snorkelling. Hire a buggy or scooter to explore. Don't miss Horseshoe Bay."
+      "type": "Island Adventure",
+      "address": "Via Breakwater Ferry Terminal",
+      "notes": "Wildlife, beaches, and scenic hikes just a 20-minute ferry away."
     },
     {
       "name": "Jezzine Barracks",
-      "type": "Heritage Precinct",
-      "address": "Mitchell Street, North Ward",
-      "notes": "Coastal walkway with military history displays, public art, and cafes. Free entry. Great for photography."
+      "type": "Heritage Walk & Museum",
+      "address": "Jezzine Way, North Ward",
+      "notes": "Coastal boardwalk with art, military history, and ocean views."
     },
     {
       "name": "Billabong Sanctuary",
       "type": "Wildlife Park",
       "address": "Bruce Highway, Nome",
-      "notes": "Hands-on wildlife experience. Hold a koala, feed kangaroos, watch croc feeding shows. Family-friendly."
+      "notes": "Meet koalas and feed kangaroos at this award-winning sanctuary."
     },
     {
-      "name": "Reef HQ Great Barrier Reef Aquarium",
-      "type": "Aquarium",
-      "address": "Flinders Street, South Townsville",
-      "notes": "World's largest living coral reef aquarium. Turtle hospital, shark dive, and coral display. Educational and fun."
+      "name": "Riverway Lagoons",
+      "type": "Free Swimming Lagoon",
+      "address": "Ross River Road, Condon",
+      "notes": "Lagoon pools, picnic areas, and walking paths along Ross River."
     },
     {
-      "name": "Museum of Tropical Queensland",
-      "type": "Museum",
-      "address": "Flinders Street, Townsville City",
-      "notes": "Explore HMS Pandora shipwreck, natural history, and regional culture. Great for kids and history buffs."
+      "name": "The Strand Waterpark",
+      "type": "Family Attraction",
+      "address": "The Strand, North Ward",
+      "notes": "Free kids' splash park with shaded play area and ocean backdrop."
     }
   ],
 
   "shopping": [
     {
-      "name": "Castletown Shopping Centre",
-      "type": "Major Shopping Centre",
-      "address": "Kings Road, Hyde Park",
-      "notes": "Major retail centre with Coles, Woolworths, Target, and specialty stores. Good food court and cinema."
-    },
-    {
       "name": "Stockland Townsville",
-      "type": "Regional Mall",
-      "address": "Woolcock Street, Aitkenvale",
-      "notes": "Largest shopping centre in North Queensland. Fashion, electronics, cinemas, and dining. Event Cinemas onsite."
-    },
-    {
-      "name": "Cotters Market",
-      "type": "Farmers Market",
-      "address": "Flinders Street, Townsville City",
-      "notes": "Weekly Sunday market (8am–1pm) with fresh produce, crafts, food stalls, and live music. Local favourite."
-    },
-    {
-      "name": "Flinders Street Mall",
-      "type": "Outdoor Mall",
-      "address": "Flinders Street, Townsville City",
-      "notes": "Pedestrian mall with boutiques, cafes, and street entertainment. Shaded and close to waterfront."
+      "type": "Shopping Centre",
+      "address": "Ross River Road, Aitkenvale",
+      "notes": "Largest mall in North Queensland with fashion, food, and entertainment."
     },
     {
       "name": "Willows Shopping Centre",
-      "type": "Shopping Centre",
-      "address": "Hervey Range Road, Thuringowa Central",
-      "notes": "Regional centre with Big W, supermarkets, and fashion stores. Good parking and family facilities."
+      "type": "Retail Complex",
+      "address": "Thuringowa Drive, Kirwan",
+      "notes": "Indoor centre with major retailers, cafes, and weekend markets."
     },
     {
-      "name": "Riverway Shopping Centre",
-      "type": "Community Centre",
-      "address": "Thuringowa Drive, Thuringowa Central",
-      "notes": "Convenient local shops with Woolworths, specialty stores, and medical services. Near Riverway precinct."
+      "name": "Fairfield Central",
+      "type": "Retail & Grocery Centre",
+      "address": "Lakeside Drive, Idalia",
+      "notes": "Modern shopping hub with Woolworths, Kmart, and eateries."
+    },
+    {
+      "name": "Cotters Market",
+      "type": "Outdoor Market",
+      "address": "Flinders Street, CBD (Sundays)",
+      "notes": "Local arts, crafts, and food stalls every Sunday morning."
+    },
+    {
+      "name": "Flinders Street Boutiques",
+      "type": "Fashion Precinct",
+      "address": "Flinders Street, Townsville City",
+      "notes": "Independent stores and designer shops in the city centre."
+    },
+    {
+      "name": "Domain Central",
+      "type": "Home & Lifestyle Centre",
+      "address": "Duckworth Street, Garbutt",
+      "notes": "Large retail park with furniture, electronics, and homewares."
     }
   ],
 
