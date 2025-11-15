@@ -5,6 +5,7 @@ import TopPicks from "@/components/TopPicks";
 import FoodDrink from "@/components/FoodDrink";
 import DogFriendly from "@/components/DogFriendly";
 import EventsOn from "@/components/EventsOn";
+import Accommodation from "@/components/Accommodation";
 import MapSection from "@/components/MapSection";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
@@ -21,6 +22,7 @@ const Index = () => {
       <FoodDrink />
       <DogFriendly />
       <EventsOn />
+      <Accommodation />
       <MapSection />
       <About />
       <Footer />
