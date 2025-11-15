@@ -39,6 +39,13 @@ const EventsOn = () => {
       description: "Morning markets in the CBD with local produce and crafts.",
       query: "Tell me about Cotters Market in Townsville.",
     },
+    {
+      icon: "🎄",
+      title: "Townsville Christmas Festival",
+      date: "December",
+      description: "Celebrate the festive season with lights, markets, food stalls, and entertainment for families.",
+      query: "Tell me about the Townsville Christmas Festival.",
+    },
   ];
 
   const handleAskAbout = (query: string) => {
