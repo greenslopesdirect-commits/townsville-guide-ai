@@ -15,16 +15,36 @@ const Index = () => {
   return <div className="min-h-screen">
       
       <Hero />
-      <WeatherInfo />
-      <QuickAccess />
-      <TopPicks />
-      <FoodDrink />
-      <DogFriendly />
-      <EventsOn />
-      <Accommodation />
-      <MapSection />
-      <About />
-      <AboutDuncan />
+      <section id="weather">
+        <WeatherInfo />
+      </section>
+      <section id="quick-access">
+        <QuickAccess />
+      </section>
+      <section id="top-picks">
+        <TopPicks />
+      </section>
+      <section id="food-drink">
+        <FoodDrink />
+      </section>
+      <section id="dog-friendly">
+        <DogFriendly />
+      </section>
+      <section id="events">
+        <EventsOn />
+      </section>
+      <section id="accommodation">
+        <Accommodation />
+      </section>
+      <section id="map">
+        <MapSection />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="contact">
+        <AboutDuncan />
+      </section>
       <Footer />
     </div>;
 };

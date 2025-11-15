@@ -9,7 +9,7 @@ const About = () => {
               <Heart className="w-8 h-8 text-primary fill-primary" />
             </div>
             <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-              About This Guide
+              About Duncan's Guide to Townsville
             </h2>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4 text-left">
               Created by a proud Townsville local who loves sharing the best our beautiful city has to offer. 

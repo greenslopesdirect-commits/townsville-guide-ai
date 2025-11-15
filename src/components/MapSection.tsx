@@ -3,7 +3,7 @@ const MapSection = () => {
     <section className="py-16 px-4 bg-background">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
-          Explore Townsville
+          Explore Townsville & North Queensland
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
           Zoom in to discover the city's landmarks, restaurants, and attractions.

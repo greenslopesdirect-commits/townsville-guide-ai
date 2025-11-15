@@ -6,7 +6,7 @@ const AboutDuncan = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">
-            About Duncan 👋
+            About Duncan Ross – Your Townsville Guide 👋
           </h2>
           
           {/* Placeholder circular image */}
