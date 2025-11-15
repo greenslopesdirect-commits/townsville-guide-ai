@@ -39,6 +39,13 @@ const Accommodation = () => {
       image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&auto=format&fit=crop",
       query: "Tell me about BIG4 Rowes Bay Holiday Park in Townsville.",
     },
+    {
+      name: "🏖 Beach House Motel",
+      tagline: "Comfortable rooms right on The Strand",
+      description: "A locally owned motel offering sea views, friendly service, and great value for families and couples.",
+      image: "https://images.unsplash.com/photo-1559599238-b2c64d8a1d79?w=800&auto=format&fit=crop",
+      query: "Tell me about Beach House Motel on The Strand.",
+    },
   ];
 
   const handleAskAbout = (query: string) => {
