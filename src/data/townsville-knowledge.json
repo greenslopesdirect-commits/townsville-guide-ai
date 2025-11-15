@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "city": "Townsville",
+    "region": "North Queensland, Australia",
+    "timezone": "AEST (UTC+10)",
+    "description": "Local verified data for Duncan's Guide – Townsville"
+  },
+
+  "hairdressers": [
+    {
+      "name": "Just Cuts Castletown",
+      "location": "Castletown Shopping Centre, Hyde Park",
+      "notes": "Walk-in only, open 9am–5:30pm Mon–Sat, 10am–4pm Sun"
+    },
+    {
+      "name": "Pure Hair",
+      "location": "Flinders Street, Townsville City",
+      "notes": "Modern salon offering cuts and colour, online booking available"
+    },
+    {
+      "name": "Silver Strand Hair Studio",
+      "location": "The Strand, North Ward",
+      "notes": "Popular beachfront salon with friendly staff and sea views"
+    }
+  ],
+
+  "restaurants": [
+    {
+      "name": "JAM Restaurant",
+      "type": "Modern Australian",
+      "address": "Palmer Street, South Townsville",
+      "notes": "Award-winning dining with local produce and fine wines"
+    },
+    {
+      "name": "Cactus Jack's",
+      "type": "Mexican Bar & Grill",
+      "address": "Flinders Street, Townsville City",
+      "notes": "Casual dining, margaritas, and a lively atmosphere"
+    },
+    {
+      "name": "Longboard Bar & Grill",
+      "type": "Beachfront Restaurant",
+      "address": "The Strand, North Ward",
+      "notes": "Perfect for sunset drinks and burgers by the sea"
+    },
+    {
+      "name": "Juliette's Gelateria",
+      "type": "Dessert Café",
+      "address": "The Strand, North Ward",
+      "notes": "Iconic gelato café, pet-friendly, great for coffee and treats"
+    }
+  ],
+
+  "dog_parks": [
+    {
+      "name": "Rowes Bay Dog Park",
+      "address": "Cape Pallarenda Road",
+      "notes": "Large open area, shaded, near the beach"
+    },
+    {
+      "name": "Murray Sporting Complex Dog Park",
+      "address": "Murray Lyons Crescent, Annandale",
+      "notes": "Fenced area with agility equipment"
+    },
+    {
+      "name": "The Strand Foreshore",
+      "address": "The Strand, North Ward",
+      "notes": "Scenic coastal walk, pet-friendly areas and water access"
+    }
+  ],
+
+  "attractions": [
+    {
+      "name": "Castle Hill Lookout",
+      "description": "Townsville's iconic pink granite monolith offering panoramic city and ocean views",
+      "entry": "Free",
+      "best_time": "Sunset"
+    },
+    {
+      "name": "Magnetic Island",
+      "description": "Just a 20-minute ferry ride from the city, home to beaches, hiking trails, and koalas",
+      "entry": "Ferry fare required"
+    },
+    {
+      "name": "Jezzine Barracks",
+      "description": "Coastal walkway and heritage precinct with military history and public art",
+      "entry": "Free"
+    },
+    {
+      "name": "The Strand",
+      "description": "Beachfront promenade with cafes, playgrounds, and swimming enclosures",
+      "entry": "Free"
+    },
+    {
+      "name": "Billabong Sanctuary",
+      "description": "Wildlife park featuring kangaroos, crocodiles, and koalas – family-friendly",
+      "entry": "Paid admission"
+    }
+  ],
+
+  "shopping": [
+    {
+      "name": "Castletown Shopping Centre",
+      "notes": "Major retail centre with supermarkets, hairdressers, and cafes"
+    },
+    {
+      "name": "Stockland Townsville",
+      "notes": "Largest shopping centre in the region – fashion, food court, and cinemas"
+    },
+    {
+      "name": "Cotters Market",
+      "notes": "Weekly Sunday market in the CBD with crafts, produce, and local goods"
+    }
+  ],
+
+  "emergency": {
+    "police": "131 444",
+    "ambulance": "000",
+    "hospital": "Townsville University Hospital, Douglas QLD",
+    "vet": "Townsville Veterinary Clinic, 34 Bowen Road, Hermit Park"
+  },
+
+  "transport": {
+    "bus": "Sunbus Townsville – main routes connect the Strand, City, and Stockland",
+    "ferry": "Magnetic Island Ferry – departs from Breakwater Terminal every 20–30 mins",
+    "airport": "Townsville Airport (TSV), 5 mins from CBD"
+  }
+}
