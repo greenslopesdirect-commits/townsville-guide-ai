@@ -62,7 +62,7 @@ const FoodDrink = () => {
     <section className="py-16 px-4 bg-background">
       <div className="container mx-auto max-w-7xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
-          Where to Eat & Drink in Townsville
+          Where to Eat & Drink in Townsville 🍽
         </h2>
         
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
@@ -79,8 +79,9 @@ const FoodDrink = () => {
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src={restaurant.image} 
-                  alt={restaurant.name}
+                  alt={`${restaurant.name} - ${restaurant.description} in Townsville, North Queensland`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <CardHeader className="pb-3">

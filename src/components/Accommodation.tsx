@@ -86,7 +86,8 @@ const Accommodation = () => {
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src={hotel.image} 
-                  alt={hotel.name}
+                  alt={`${hotel.name} - ${hotel.tagline} in Townsville, North Queensland`}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

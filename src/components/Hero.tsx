@@ -70,6 +70,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
+        aria-label="The Strand beachfront in Townsville, North Queensland"
       />
       
       {/* Darker Gradient Overlay for better text contrast */}
@@ -83,7 +84,7 @@ const Hero = () => {
           Welcome to Townsville 👋
         </h1>
         <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)' }}>
-          Your local AI guide to everything in North Queensland.
+          Your local AI guide to North Queensland's best beaches, restaurants, attractions, and hidden gems.
         </p>
         
         {/* Search/Chat Box */}

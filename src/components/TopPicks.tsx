@@ -59,7 +59,7 @@ const TopPicks = () => {
     <section className="py-16 px-4 bg-muted/30">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-          🏝 Top Local Picks
+          🏝 Top Local Picks in Townsville
         </h2>
         <p className="text-center text-muted-foreground mb-12 text-lg">
           Hand-picked highlights from around Townsville.
@@ -75,8 +75,9 @@ const TopPicks = () => {
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src={pick.image} 
-                  alt={pick.title}
+                  alt={`${pick.title} - ${pick.description.substring(0, 60)} in Townsville, North Queensland`}
                   className="w-full h-full object-cover transition-transform hover:scale-105"
+                  loading="lazy"
                 />
               </div>
               <CardHeader>
