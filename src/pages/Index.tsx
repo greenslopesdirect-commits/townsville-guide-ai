@@ -8,6 +8,7 @@ import EventsOn from "@/components/EventsOn";
 import Accommodation from "@/components/Accommodation";
 import MapSection from "@/components/MapSection";
 import About from "@/components/About";
+import AboutDuncan from "@/components/AboutDuncan";
 import Footer from "@/components/Footer";
 import WeatherWidget from "@/components/WeatherWidget";
 
@@ -25,6 +26,7 @@ const Index = () => {
       <Accommodation />
       <MapSection />
       <About />
+      <AboutDuncan />
       <Footer />
     </div>
   );
