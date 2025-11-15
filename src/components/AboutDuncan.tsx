@@ -55,30 +55,31 @@ const AboutDuncan = () => {
               {/* Social Media Icons */}
               <div className="flex justify-center gap-4 pt-4 border-t border-border/40">
                 <Button 
+                  asChild
                   variant="ghost" 
                   size="icon"
-                  className="hover:bg-primary/10"
+                  className="hover:bg-primary/10 transition-colors"
                   aria-label="Facebook"
-                  disabled
                 >
-                  <Facebook className="w-5 h-5" />
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <Facebook className="w-5 h-5" />
+                  </a>
                 </Button>
                 <Button 
+                  asChild
                   variant="ghost" 
                   size="icon"
-                  className="hover:bg-primary/10"
+                  className="hover:bg-primary/10 transition-colors"
                   aria-label="Instagram"
-                  disabled
                 >
-                  <Instagram className="w-5 h-5" />
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="w-5 h-5" />
+                  </a>
                 </Button>
               </div>
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground/70 italic">
-            © 2025 Duncan's Guide – Townsville. Made with love in North Queensland.
-          </p>
         </div>
       </div>
     </section>

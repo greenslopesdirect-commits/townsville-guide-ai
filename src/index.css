@@ -124,4 +124,9 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Enhanced text contrast on bright backgrounds */
+  .text-white {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
 }

@@ -1,32 +1,35 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Sun, CloudRain, Palmtree } from "lucide-react";
 
 const WeatherInfo = () => {
   const seasons = [
     {
-      emoji: "☀️",
+      Icon: Sun,
       title: "Dry Season",
       period: "May–Oct",
       description: "Warm, sunny, and perfect for exploring beaches.",
+      query: "What's Townsville's weather like in July?",
     },
     {
-      emoji: "🌧",
+      Icon: CloudRain,
       title: "Wet Season",
       period: "Nov–Apr",
       description: "Tropical rains and green landscapes.",
+      query: "Is the wet season good for travel in Townsville?",
     },
     {
-      emoji: "🏖",
+      Icon: Palmtree,
       title: "Year-Round Warmth",
       period: "All Year",
       description: "Average 25–30°C, great for outdoor life.",
+      query: "What's the temperature in Townsville right now?",
     },
   ];
 
-  const handleAskAI = () => {
+  const handleAskAI = (query: string) => {
     if ((window as any).setAiInputValue) {
-      (window as any).setAiInputValue("What's the weather like in Townsville today?");
+      (window as any).setAiInputValue(query);
     }
     
     const input = document.getElementById('townsville-ai-input');
@@ -55,22 +58,29 @@ const WeatherInfo = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {seasons.map((season, index) => (
-            <Card 
+            <button
               key={index}
-              className="hover:shadow-lg transition-all duration-300 animate-fade-in border-border/40"
-              style={{ animationDelay: `${index * 100}ms` }}
+              onClick={() => handleAskAI(season.query)}
+              className="text-left group"
             >
-              <CardHeader className="text-center pb-3">
-                <div className="text-5xl mb-3">{season.emoji}</div>
-                <CardTitle className="text-xl">{season.title}</CardTitle>
-                <CardDescription className="font-semibold text-primary">
-                  {season.period}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-muted-foreground">{season.description}</p>
-              </CardContent>
-            </Card>
+              <Card 
+                className="h-full hover:shadow-lg hover:scale-105 transition-all duration-300 animate-fade-in border-border/40 cursor-pointer"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CardHeader className="text-center pb-3">
+                  <div className="flex justify-center mb-3">
+                    <season.Icon className="w-12 h-12 text-primary group-hover:scale-110 transition-transform" />
+                  </div>
+                  <CardTitle className="text-xl">{season.title}</CardTitle>
+                  <CardDescription className="font-semibold text-primary">
+                    {season.period}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-muted-foreground">{season.description}</p>
+                </CardContent>
+              </Card>
+            </button>
           ))}
         </div>
 
@@ -83,7 +93,7 @@ const WeatherInfo = () => {
           </CardHeader>
           <CardContent className="flex justify-center">
             <Button 
-              onClick={handleAskAI}
+              onClick={() => handleAskAI("What's the weather like in Townsville today?")}
               variant="default"
               className="w-full md:w-auto"
             >

@@ -66,7 +66,7 @@ const FoodDrink = () => {
         </h2>
         
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-          From beachside bars to boutique cafés, Townsville's food scene blends tropical flavours with laid-back charm.
+          From The Strand to Palmer Street, Townsville's dining scene blends tropical flavours, seafood, and relaxed Queensland hospitality. Whether you're after upscale dining or casual beachside bites, there's something for every taste.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
