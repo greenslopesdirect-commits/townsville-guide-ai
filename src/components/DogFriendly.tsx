@@ -65,8 +65,7 @@ const DogFriendly = () => {
         </h2>
         
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Townsville is a welcoming place for dogs, with plenty of parks, cafés, and beaches where pets are part of the lifestyle. 
-          Whether you're visiting or a local, you'll find tons of spots to explore with your furry friend.
+          Townsville is one of Queensland's most dog-friendly destinations, with beaches and cafés welcoming four-legged friends. Whether you're visiting or a local, you'll find tons of spots to explore with your furry companion.
         </p>
 
         {/* Dog Parks Section */}

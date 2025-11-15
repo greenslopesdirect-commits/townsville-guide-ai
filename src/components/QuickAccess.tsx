@@ -73,9 +73,9 @@ const QuickAccess = () => {
               className="text-left group animate-fade-in hover-scale"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <Card className="h-full border-2 hover:border-primary transition-all shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-tropical)] rounded-3xl">
+              <Card className="h-full border-2 hover:border-primary transition-all duration-300 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-tropical)] rounded-3xl">
                 <CardContent className="p-6 flex flex-col gap-3">
-                  <div className="text-5xl mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-6xl md:text-7xl mb-2 group-hover:scale-110 transition-transform duration-300">
                     {category.emoji}
                   </div>
                   <h3 className="text-lg md:text-xl font-semibold text-foreground">

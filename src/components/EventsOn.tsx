@@ -5,30 +5,35 @@ import { Calendar, ExternalLink } from "lucide-react";
 const EventsOn = () => {
   const events = [
     {
+      icon: "🎭",
       title: "Strand Ephemera",
       date: "Biennial",
       description: "Outdoor sculpture festival along The Strand.",
       query: "Tell me about Strand Ephemera festival in Townsville.",
     },
     {
+      icon: "🎨",
       title: "Townsville Cultural Festival",
       date: "Annual",
       description: "Multicultural food, music, and art celebration.",
       query: "When is the Townsville Cultural Festival and what's on?",
     },
     {
+      icon: "⛵",
       title: "Magnetic Island Race Week",
       date: "September",
       description: "Major sailing event with competitions and social activities.",
       query: "Tell me about Magnetic Island Race Week.",
     },
     {
+      icon: "🎶",
       title: "North Australian Festival of Arts",
       date: "Various dates",
       description: "City-wide arts celebration with performances and exhibitions.",
       query: "What's happening at the North Australian Festival of Arts in Townsville?",
     },
     {
+      icon: "🛍",
       title: "Cotters Market",
       date: "Every Sunday",
       description: "Morning markets in the CBD with local produce and crafts.",
@@ -76,7 +81,10 @@ const EventsOn = () => {
                   <Calendar className="w-4 h-4" />
                   <span className="text-sm font-semibold">{event.date}</span>
                 </div>
-                <CardTitle className="text-xl">{event.title}</CardTitle>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <span className="text-2xl">{event.icon}</span>
+                  {event.title}
+                </CardTitle>
                 <CardDescription>{event.description}</CardDescription>
               </CardHeader>
               <CardContent>

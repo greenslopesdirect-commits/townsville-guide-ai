@@ -21,6 +21,10 @@ const MapSection = () => {
             title="Townsville Map"
           />
         </div>
+        
+        <p className="text-center text-sm text-muted-foreground mt-6 italic">
+          Zoom and explore top-rated attractions and restaurants across Townsville.
+        </p>
       </div>
     </section>
   );
