@@ -93,6 +93,37 @@ const Accommodation = () => {
           ))}
         </div>
 
+        <div 
+          className="flex justify-center mt-12 animate-fade-in"
+          style={{ animationDelay: '600ms' }}
+        >
+          <button
+            onClick={() => {
+              const queries = [
+                "Show me hotels near The Strand.",
+                "Find affordable accommodation in Townsville.",
+                "Which hotels have ocean views in Townsville?"
+              ];
+              const randomQuery = queries[Math.floor(Math.random() * queries.length)];
+              
+              if (typeof window !== 'undefined' && (window as any).setAiInputValue) {
+                (window as any).setAiInputValue(randomQuery);
+              }
+              
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="group relative px-6 py-4 bg-gradient-to-r from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/20"
+          >
+            <div className="flex items-center gap-2 text-sm md:text-base">
+              <span className="text-2xl">🏨</span>
+              <span className="font-medium text-foreground">
+                Ask our AI guide for the best nearby stays.
+              </span>
+            </div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur opacity-30 group-hover:opacity-50 transition-opacity -z-10" />
+          </button>
+        </div>
+
       </div>
     </section>
   );
