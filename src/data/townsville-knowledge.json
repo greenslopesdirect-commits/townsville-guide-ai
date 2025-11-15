@@ -83,37 +83,55 @@
       "name": "JAM Restaurant",
       "type": "Modern Australian",
       "address": "Palmer Street, South Townsville",
-      "notes": "Award-winning dining with seasonal local produce and fine wines."
+      "notes": "Award-winning dining with seasonal local produce and fine wines.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=JAM+Restaurant+Palmer+Street+South+Townsville"
+      }
     },
     {
       "name": "Shorehouse",
       "type": "Seafood & Grill",
       "address": "The Strand, North Ward",
-      "notes": "Contemporary oceanfront restaurant known for seafood and cocktails with sunset views."
+      "notes": "Contemporary oceanfront restaurant known for seafood and cocktails with sunset views.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shorehouse+The+Strand+North+Ward+Townsville"
+      }
     },
     {
       "name": "Cactus Jack's",
       "type": "Mexican Bar & Grill",
       "address": "Flinders Street, Townsville City",
-      "notes": "Casual, lively Mexican dining with margaritas and family-friendly vibes."
+      "notes": "Casual, lively Mexican dining with margaritas and family-friendly vibes.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cactus+Jacks+Flinders+Street+Townsville"
+      }
     },
     {
       "name": "Bridgewater Restaurant",
       "type": "Modern Australian",
       "address": "Palmer Street, South Townsville",
-      "notes": "Upscale dining with an open kitchen and local ingredients, plus a cocktail bar."
+      "notes": "Upscale dining with an open kitchen and local ingredients, plus a cocktail bar.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bridgewater+Restaurant+Palmer+Street+South+Townsville"
+      }
     },
     {
       "name": "The Courtyard",
       "type": "Bar & Burger",
       "address": "Flinders Street East, Townsville City",
-      "notes": "Trendy outdoor bar serving gourmet burgers and live music on weekends."
+      "notes": "Trendy outdoor bar serving gourmet burgers and live music on weekends.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Courtyard+Flinders+Street+East+Townsville"
+      }
     },
     {
       "name": "Juliette's Gelateria",
       "type": "Café & Dessert Bar",
       "address": "The Strand, North Ward",
-      "notes": "Popular café for coffee, desserts, and beach views; pet friendly."
+      "notes": "Popular café for coffee, desserts, and beach views; pet friendly.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Juliettes+Gelateria+The+Strand+North+Ward+Townsville"
+      }
     }
   ],
 
@@ -161,37 +179,61 @@
       "name": "The Ville Resort–Casino",
       "type": "Luxury Resort",
       "address": "Sir Leslie Thiess Drive, Townsville",
-      "notes": "Upscale beachfront resort with pools, casino, spa, and dining."
+      "notes": "Upscale beachfront resort with pools, casino, spa, and dining.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Ville+Resort+Casino+Townsville",
+        "booking": "https://www.booking.com/searchresults.html?ss=The+Ville+Resort+Casino+Townsville"
+      }
     },
     {
       "name": "Aquarius on the Beach",
       "type": "Hotel",
       "address": "The Strand, North Ward",
-      "notes": "Affordable hotel with unbeatable ocean views and balconies."
+      "notes": "Affordable hotel with unbeatable ocean views and balconies.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Aquarius+on+the+Beach+Townsville",
+        "booking": "https://www.booking.com/searchresults.html?ss=Aquarius+on+the+Beach+Townsville"
+      }
     },
     {
       "name": "Hotel Grand Chancellor Townsville",
       "type": "City Hotel",
       "address": "Flinders Street, Townsville CBD",
-      "notes": "Modern high-rise hotel with rooftop views and close to nightlife."
+      "notes": "Modern high-rise hotel with rooftop views and close to nightlife.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hotel+Grand+Chancellor+Townsville",
+        "booking": "https://www.booking.com/searchresults.html?ss=Hotel+Grand+Chancellor+Townsville"
+      }
     },
     {
       "name": "Quest Townsville",
       "type": "Serviced Apartments",
       "address": "Palmer Street, South Townsville",
-      "notes": "Self-contained apartments perfect for families and longer stays."
+      "notes": "Self-contained apartments perfect for families and longer stays.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Quest+Townsville+Palmer+Street",
+        "booking": "https://www.booking.com/searchresults.html?ss=Quest+Townsville"
+      }
     },
     {
       "name": "Rambutan Resort",
       "type": "Boutique Accommodation",
       "address": "Flinders Street, Townsville City",
-      "notes": "Trendy rooftop resort-style stay with bar, pool, and private rooms."
+      "notes": "Trendy rooftop resort-style stay with bar, pool, and private rooms.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rambutan+Resort+Townsville",
+        "booking": "https://www.booking.com/searchresults.html?ss=Rambutan+Resort+Townsville"
+      }
     },
     {
       "name": "BIG4 Rowes Bay Holiday Park",
       "type": "Caravan Park",
       "address": "Cape Pallarenda Road, Rowes Bay",
-      "notes": "Beachfront park with cabins, powered sites, and family-friendly facilities."
+      "notes": "Beachfront park with cabins, powered sites, and family-friendly facilities.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=BIG4+Rowes+Bay+Holiday+Park+Townsville",
+        "booking": "https://www.booking.com/searchresults.html?ss=BIG4+Rowes+Bay+Holiday+Park+Townsville"
+      }
     }
   ],
 
@@ -200,37 +242,55 @@
       "name": "Castle Hill",
       "type": "Lookout & Hiking Trail",
       "address": "Castle Hill Road, Townsville",
-      "notes": "Climb or drive to the top for panoramic city and island views."
+      "notes": "Climb or drive to the top for panoramic city and island views.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Castle+Hill+Townsville"
+      }
     },
     {
       "name": "Magnetic Island",
       "type": "Island Adventure",
       "address": "Via Breakwater Ferry Terminal",
-      "notes": "Wildlife, beaches, and scenic hikes just a 20-minute ferry away."
+      "notes": "Wildlife, beaches, and scenic hikes just a 20-minute ferry away.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Queensland"
+      }
     },
     {
       "name": "Jezzine Barracks",
       "type": "Heritage Walk & Museum",
       "address": "Jezzine Way, North Ward",
-      "notes": "Coastal boardwalk with art, military history, and ocean views."
+      "notes": "Coastal boardwalk with art, military history, and ocean views.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Jezzine+Barracks+Townsville"
+      }
     },
     {
       "name": "Billabong Sanctuary",
       "type": "Wildlife Park",
       "address": "Bruce Highway, Nome",
-      "notes": "Meet koalas and feed kangaroos at this award-winning sanctuary."
+      "notes": "Meet koalas and feed kangaroos at this award-winning sanctuary.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Billabong+Sanctuary+Nome+Townsville"
+      }
     },
     {
       "name": "Riverway Lagoons",
       "type": "Free Swimming Lagoon",
       "address": "Ross River Road, Condon",
-      "notes": "Lagoon pools, picnic areas, and walking paths along Ross River."
+      "notes": "Lagoon pools, picnic areas, and walking paths along Ross River.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=Riverway+Lagoons+Townsville"
+      }
     },
     {
       "name": "The Strand Waterpark",
       "type": "Family Attraction",
       "address": "The Strand, North Ward",
-      "notes": "Free kids' splash park with shaded play area and ocean backdrop."
+      "notes": "Free kids' splash park with shaded play area and ocean backdrop.",
+      "links": {
+        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Strand+Waterpark+Townsville"
+      }
     }
   ],
 

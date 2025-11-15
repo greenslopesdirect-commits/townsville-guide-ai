@@ -24,6 +24,40 @@ const Hero = () => {
     };
   }, []);
 
+  const parseChatResponse = (text: string) => {
+    const parts: Array<{ type: 'text' | 'links', content: string, links?: { google_maps?: string, booking?: string } }> = [];
+    const regex = /\[LINKS:(.*?)\]/g;
+    let lastIndex = 0;
+    let match;
+
+    while ((match = regex.exec(text)) !== null) {
+      // Add text before the link
+      if (match.index > lastIndex) {
+        parts.push({ type: 'text', content: text.slice(lastIndex, match.index) });
+      }
+
+      // Parse links
+      const linksStr = match[1];
+      const links: { google_maps?: string, booking?: string } = {};
+      linksStr.split(',').forEach(pair => {
+        const [key, value] = pair.split('=');
+        if (key && value) {
+          links[key.trim() as 'google_maps' | 'booking'] = value.trim();
+        }
+      });
+
+      parts.push({ type: 'links', content: '', links });
+      lastIndex = regex.lastIndex;
+    }
+
+    // Add remaining text
+    if (lastIndex < text.length) {
+      parts.push({ type: 'text', content: text.slice(lastIndex) });
+    }
+
+    return parts;
+  };
+
   const handleSend = async () => {
     if (!aiInputValue.trim()) {
       toast.error("Please enter a question");
@@ -130,7 +164,38 @@ const Hero = () => {
             <div className="mt-6 mb-8 bg-white/90 backdrop-blur-sm text-foreground rounded-2xl shadow-md text-left animate-fade-in overflow-y-auto max-h-[75vh]">
               <div className="p-6 pb-8">
                 <strong className="text-primary">Answer:</strong>
-                <p className="mt-2 mb-2 whitespace-pre-wrap">{chatResponse}</p>
+                <div className="mt-2 mb-2 whitespace-pre-wrap">
+                  {parseChatResponse(chatResponse).map((part, index) => (
+                    <span key={index}>
+                      {part.type === 'text' ? (
+                        part.content
+                      ) : (
+                        <span className="inline-flex gap-2 my-2">
+                          {part.links?.google_maps && (
+                            <a
+                              href={part.links.google_maps}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 px-3 py-1.5 text-sm bg-primary hover:bg-primary/80 text-primary-foreground rounded-full transition-colors"
+                            >
+                              📍 View on Maps
+                            </a>
+                          )}
+                          {part.links?.booking && (
+                            <a
+                              href={part.links.booking}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 px-3 py-1.5 text-sm bg-primary hover:bg-primary/80 text-primary-foreground rounded-full transition-colors"
+                            >
+                              🏨 Check Availability
+                            </a>
+                          )}
+                        </span>
+                      )}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           )}
