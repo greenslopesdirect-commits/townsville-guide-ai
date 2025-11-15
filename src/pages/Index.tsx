@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
 import TopPicks from "@/components/TopPicks";
 import MapSection from "@/components/MapSection";
@@ -11,6 +12,7 @@ const Index = () => {
     <div className="min-h-screen">
       <WeatherWidget />
       <Hero />
+      <WeatherInfo />
       <QuickAccess />
       <TopPicks />
       <MapSection />
