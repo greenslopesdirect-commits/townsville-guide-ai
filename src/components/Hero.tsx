@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { Link } from "react-router-dom";
 // TODO: Replace this import with your own Townsville background photo
 // Upload your image to src/assets/ and name it strand-hero.jpg
 import heroImage from "@/assets/strand-hero.jpg";
@@ -205,6 +206,18 @@ const Hero = () => {
               <p className="text-muted-foreground">Thinking...</p>
             </div>
           )}
+          
+          {/* History CTA Button */}
+          <div className="mt-8 animate-fade-in">
+            <Link to="/history">
+              <Button 
+                size="lg"
+                className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-4 text-base md:text-lg font-semibold"
+              >
+                Discover Townsville's Story 📜
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
       
