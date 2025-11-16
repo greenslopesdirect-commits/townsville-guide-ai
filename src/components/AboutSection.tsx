@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MapPin } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -72,6 +74,18 @@ const AboutSection = () => {
             </div>
           </CardContent>
         </Card>
+
+        {/* History CTA Button */}
+        <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <Link to="/history">
+            <Button 
+              size="lg"
+              className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-6 text-base md:text-lg font-semibold"
+            >
+              Read the Full History of Townsville 📜
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   );
