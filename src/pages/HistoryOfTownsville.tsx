@@ -1,19 +1,33 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { Helmet } from "react-helmet";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const HistoryOfTownsville = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-background via-muted/20 to-background">
-      {/* Back Navigation */}
-      <div className="container mx-auto px-4 py-6 max-w-4xl">
-        <Link 
-          to="/" 
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Home
-        </Link>
-      </div>
+    <>
+      <Helmet>
+        <title>History of Townsville | Duncan's Guide</title>
+        <meta 
+          name="description" 
+          content="Discover how Townsville grew from a 19th-century port into North Queensland's tropical capital — its people, past, and coastal heritage." 
+        />
+      </Helmet>
+      
+      <div className="min-h-screen bg-gradient-to-b from-background via-muted/20 to-background">
+        <Header />
+        
+        {/* Back Navigation */}
+        <div className="container mx-auto px-4 py-6 max-w-4xl mt-16">
+          <Link 
+            to="/" 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </Link>
+        </div>
 
       {/* Hero Section */}
       <div className="container mx-auto px-4 py-12 max-w-4xl">
@@ -445,7 +459,10 @@ const HistoryOfTownsville = () => {
           </Link>
         </div>
       </div>
+      
+      <Footer />
     </div>
+    </>
   );
 };
 

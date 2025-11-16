@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
@@ -12,6 +13,7 @@ import Footer from "@/components/Footer";
 import WeatherWidget from "@/components/WeatherWidget";
 const Index = () => {
   return <div className="min-h-screen">
+      <Header />
       
       <Hero />
       <section id="weather">
