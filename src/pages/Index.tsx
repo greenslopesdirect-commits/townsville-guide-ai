@@ -7,8 +7,7 @@ import DogFriendly from "@/components/DogFriendly";
 import EventsOn from "@/components/EventsOn";
 import Accommodation from "@/components/Accommodation";
 import MapSection from "@/components/MapSection";
-import About from "@/components/About";
-import AboutDuncan from "@/components/AboutDuncan";
+import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
 import WeatherWidget from "@/components/WeatherWidget";
 const Index = () => {
@@ -40,10 +39,7 @@ const Index = () => {
         <MapSection />
       </section>
       <section id="about">
-        <About />
-      </section>
-      <section id="contact">
-        <AboutDuncan />
+        <AboutSection />
       </section>
       <Footer />
     </div>;
