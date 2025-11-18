@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
 import TopPicks from "@/components/TopPicks";
+import VideoSection from "@/components/VideoSection";
 import FoodDrink from "@/components/FoodDrink";
 import DogFriendly from "@/components/DogFriendly";
 import EventsOn from "@/components/EventsOn";
@@ -24,6 +25,9 @@ const Index = () => {
       </section>
       <section id="top-picks">
         <TopPicks />
+      </section>
+      <section id="video">
+        <VideoSection />
       </section>
       <section id="food-drink">
         <FoodDrink />
