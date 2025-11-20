@@ -1,10 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import strandImage from "@/assets/the-strand-townsville.webp";
 
 const picks = [
   {
     title: "The Strand",
     description: "Townsville's iconic beachfront, perfect for walks, swims, and sunset views.",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80&auto=format&fit=crop",
+    image: strandImage,
     query: "Tell me about The Strand in Townsville.",
   },
   {
