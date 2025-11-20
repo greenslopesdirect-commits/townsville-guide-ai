@@ -39,10 +39,10 @@ const FoodDrink = () => {
       query: "Tell me about Juliette's Gelateria Townsville.",
     },
     {
-      name: "☕ Coffee Dominion",
-      description: "Townsville's original artisan café.",
+      name: "☕ A Touch of Salt",
+      description: "Exquisite Award Winning Menu",
       image: CookingImage, // <-- NEW LOCAL VARIABLE
-      query: "Tell me about Coffee Dominion Townsville.",
+      query: "Tell me about A Touch of Salt Townsville.",
     },
   ];
 
