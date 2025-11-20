@@ -1,12 +1,13 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import jamCornerImage from "@/assets/jam-corner-restaurant-townsville-2.webp";
 
 const FoodDrink = () => {
   const restaurants = [
     {
       name: "🍽 JAM Restaurant",
       description: "Upscale dining on Palmer Street.",
-      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&auto=format&fit=crop",
+      image: jamCornerImage,
       query: "Tell me about JAM Restaurant Townsville.",
     },
     {
