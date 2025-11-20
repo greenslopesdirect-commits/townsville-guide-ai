@@ -4,6 +4,7 @@ import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
 import castleHillImage from "@/assets/castle-hill-townsville.webp";
 import jamCornerImage from "@/assets/jam-corner-townsville.webp";
 import jezzineBarracksImage from "@/assets/jezzine-barracks-townsville.webp";
+import billabongSanctuaryImage from "@/assets/billabong-sanctuary-townsville.webp";
 
 const picks = [
   {
@@ -39,7 +40,7 @@ const picks = [
   {
     title: "Billabong Sanctuary",
     description: "Hand-feed kangaroos and meet koalas just south of Townsville.",
-    image: "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800&q=80&auto=format&fit=crop&sat=10",
+    image: billabongSanctuaryImage,
     query: "What animals are at Billabong Sanctuary?",
   },
 ];
