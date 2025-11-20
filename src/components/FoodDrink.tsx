@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import cactusJacksImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
 import JamImage from "@/assets/jam-corner-townsville.webp";
+import JuliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
 
 const FoodDrink = () => {
   const restaurants = [
@@ -33,7 +34,7 @@ const FoodDrink = () => {
     {
       name: "🍨 Juliette's Gelateria",
       description: "Local favourite for dessert & coffee.",
-      image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&auto=format&fit=crop",
+      image: JuliettesImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Juliette's Gelateria Townsville.",
     },
     {
