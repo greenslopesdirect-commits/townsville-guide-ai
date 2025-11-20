@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import strandImage from "@/assets/the-strand-townsville.webp";
 import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
+import castleHillImage from "@/assets/castle-hill-townsville.webp";
 
 const picks = [
   {
@@ -18,7 +19,7 @@ const picks = [
   {
     title: "Castle Hill",
     description: "Climb or drive up for unbeatable views of the city and coast.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&auto=format&fit=crop&sat=20",
+    image: castleHillImage,
     query: "What's the best way to get to Castle Hill lookout?",
   },
   {
