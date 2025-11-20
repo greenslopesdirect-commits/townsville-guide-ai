@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import strandImage from "@/assets/the-strand-townsville.webp";
+import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
 
 const picks = [
   {
@@ -11,7 +12,7 @@ const picks = [
   {
     title: "Magnetic Island",
     description: "Just a 20-minute ferry ride away — wildlife, beaches, and hikes galore.",
-    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80&auto=format&fit=crop&sat=20",
+    image: magneticIslandImage,
     query: "What can I do on Magnetic Island?",
   },
   {
