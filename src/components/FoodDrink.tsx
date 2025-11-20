@@ -13,7 +13,7 @@ const FoodDrink = () => {
     {
       name: "🌮 Cactus Jack's",
       description: "Mexican bar & grill with a lively vibe.",
-      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&fit=crop",
+      image: cactusJacksImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Cactus Jack's in Townsville.",
     },
     {
