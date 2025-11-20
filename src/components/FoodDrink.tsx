@@ -2,13 +2,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import cactusJacksImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
+import JamImage from "@/assets/jam-corner-townsville.webp";
 
 const FoodDrink = () => {
   const restaurants = [
     {
       name: "🍽 JAM Restaurant",
       description: "Upscale dining on Palmer Street.",
-      image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&auto=format&fit=crop",
+      image: longboardImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about JAM Restaurant Townsville.",
     },
     {
