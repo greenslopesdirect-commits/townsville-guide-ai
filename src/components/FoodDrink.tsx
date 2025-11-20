@@ -14,7 +14,7 @@ const FoodDrink = () => {
     {
       name: "🌮 Cactus Jack's",
       description: "Mexican bar & grill with a lively vibe.",
-      image: "cactusjacksimage",
+      image: cactusJacksImage,
       query: "Tell me about Cactus Jack's in Townsville.",
     },
     {
