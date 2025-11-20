@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import cactusJacksImage from "@/assets/cactus.webp";
+import cactusJacksImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
 
 const FoodDrink = () => {
