@@ -26,10 +26,10 @@ const FoodDrink = () => {
       query: "Tell me about Longboard Bar & Grill Townsville.",
     },
     {
-      name: "🍔 The Courtyard",
-      description: "Cool, casual burgers & cocktails.",
+      name: "🍔 Coo.King BBQ & Hotpot",
+      description: "Enjoy Korean BBQ, Shabu-Shabu ( Hotpot )",
       image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop",
-      query: "Tell me about The Courtyard in Townsville.",
+      query: "Tell me about Coo.King BBQ & Hotpot in Townsville.",
     },
     {
       name: "🍨 Juliette's Gelateria",
