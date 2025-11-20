@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import cactusJacksImage from "@/assets/cactus.webp";
-import longboardImage from "@/assets/longboard.webp";
+import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
 
 const FoodDrink = () => {
   const restaurants = [
