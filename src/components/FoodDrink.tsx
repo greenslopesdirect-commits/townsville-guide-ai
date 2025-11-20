@@ -1,14 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import jamCornerImage from "@/assets/jam-corner-restaurant-townsville-2.webp";
-// 1. ADD THE IMPORT for the new local asset
-import cactusJacksImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
-
-// Placeholder imports for remaining assets (to prepare for future changes)
-import longboardImage from "@/assets/longboard-bar-grill.webp";
-import courtyardImage from "@/assets/the-courtyard-burgers.webp";
-import juliettesImage from "@/assets/juliettes-gelateria.webp";
-import coffeeDominionImage from "@/assets/coffee-dominion.webp";
 
 const FoodDrink = () => {
   const restaurants = [
@@ -20,32 +12,32 @@ const FoodDrink = () => {
     },
     {
       name: "🌮 Cactus Jack's",
-      description: "Mexican bar & grill with a lively vibe.", // 2. REPLACE THE URL with the imported variable
-      image: cactusJacksImage,
+      description: "Mexican bar & grill with a lively vibe.",
+      image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&auto=format&fit=crop",
       query: "Tell me about Cactus Jack's in Townsville.",
     },
     {
       name: "🍹 Longboard Bar & Grill",
-      description: "Beachfront spot on The Strand.", // Using placeholder variable, assuming you will upload the asset
-      image: longboardImage,
+      description: "Beachfront spot on The Strand.",
+      image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&auto=format&fit=crop",
       query: "Tell me about Longboard Bar & Grill Townsville.",
     },
     {
       name: "🍔 The Courtyard",
-      description: "Cool, casual burgers & cocktails.", // Using placeholder variable, assuming you will upload the asset
-      image: courtyardImage,
+      description: "Cool, casual burgers & cocktails.",
+      image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop",
       query: "Tell me about The Courtyard in Townsville.",
     },
     {
       name: "🍨 Juliette's Gelateria",
-      description: "Local favourite for dessert & coffee.", // Using placeholder variable, assuming you will upload the asset
-      image: juliettesImage,
+      description: "Local favourite for dessert & coffee.",
+      image: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&auto=format&fit=crop",
       query: "Tell me about Juliette's Gelateria Townsville.",
     },
     {
       name: "☕ Coffee Dominion",
-      description: "Townsville's original artisan café.", // Using placeholder variable, assuming you will upload the asset
-      image: coffeeDominionImage,
+      description: "Townsville's original artisan café.",
+      image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&auto=format&fit=crop",
       query: "Tell me about Coffee Dominion Townsville.",
     },
   ];
@@ -69,63 +61,49 @@ const FoodDrink = () => {
 
   return (
     <section className="py-16 px-4 bg-background">
-           {" "}
       <div className="container mx-auto max-w-7xl">
-               {" "}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
-                    Where to Eat & Drink in Townsville 🍽        {" "}
+          Where to Eat & Drink in Townsville 🍽
         </h2>
-               {" "}
+
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-                    From The Strand to Palmer Street, Townsville's dining scene blends tropical flavours, seafood, and
-          relaxed           Queensland hospitality. Whether you're after upscale dining or casual beachside bites,
-          there's something for           every taste.        {" "}
+          From The Strand to Palmer Street, Townsville's dining scene blends tropical flavours, seafood, and relaxed
+          Queensland hospitality. Whether you're after upscale dining or casual beachside bites, there's something for
+          every taste.
         </p>
-               {" "}
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                   {" "}
           {restaurants.map((restaurant, index) => (
             <Card
               key={index}
               className="overflow-hidden hover:scale-105 transition-transform duration-300 cursor-pointer animate-fade-in shadow-md hover:shadow-lg"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-                           {" "}
               <div className="aspect-video w-full overflow-hidden">
-                               {" "}
                 <img
                   src={restaurant.image}
                   alt={`${restaurant.name} - ${restaurant.description} in Townsville, North Queensland`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
-                             {" "}
               </div>
-                           {" "}
               <CardHeader className="pb-3">
-                                <CardTitle className="text-xl">{restaurant.name}</CardTitle>               {" "}
-                <CardDescription>{restaurant.description}</CardDescription>             {" "}
+                <CardTitle className="text-xl">{restaurant.name}</CardTitle>
+                <CardDescription>{restaurant.description}</CardDescription>
               </CardHeader>
-                           {" "}
               <CardContent>
-                               {" "}
                 <Button onClick={() => handleAskAbout(restaurant.query)} variant="outline" size="sm" className="w-full">
-                                    Ask about this place                {" "}
+                  Ask about this place
                 </Button>
-                             {" "}
               </CardContent>
-                         {" "}
             </Card>
           ))}
-                 {" "}
         </div>
-               {" "}
+
         <p className="text-center text-muted-foreground italic">
-                    Want recommendations? Ask our AI guide where to eat tonight!        {" "}
+          Want recommendations? Ask our AI guide where to eat tonight!
         </p>
-             {" "}
       </div>
-         {" "}
     </section>
   );
 };
