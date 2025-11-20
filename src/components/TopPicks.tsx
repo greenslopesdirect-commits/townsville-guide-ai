@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import strandImage from "@/assets/the-strand-townsville.webp";
 import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
 import castleHillImage from "@/assets/castle-hill-townsville.webp";
+import jamCornerImage from "@/assets/jam-corner-townsville.webp";
 
 const picks = [
   {
@@ -25,7 +26,7 @@ const picks = [
   {
     title: "JAM Corner",
     description: "Upscale dining with a relaxed North Queensland vibe.",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80&auto=format&fit=crop&sat=10",
+    image: jamCornerImage,
     query: "Tell me about JAM Corner restaurant in Townsville.",
   },
   {
