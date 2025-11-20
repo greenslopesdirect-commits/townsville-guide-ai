@@ -5,7 +5,6 @@ import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsvil
 import JamImage from "@/assets/jam-corner-townsville.webp";
 import JuliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
 import CookingImage from "@/assets/Coo.King-BBQ & Hotpot-restaurant-townsville.webp";
-import SaltImage from "@/assets/A-Touch-of-Salt-restaurant-townsville.webp";
 
 const FoodDrink = () => {
   const restaurants = [
@@ -30,7 +29,7 @@ const FoodDrink = () => {
     {
       name: "🍔 Coo.King BBQ & Hotpot",
       description: "Enjoy Korean BBQ, Shabu-Shabu ( Hotpot )",
-      image: CookingImage, // <-- NEW LOCAL VARIABLE
+      image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop",
       query: "Tell me about Coo.King BBQ & Hotpot in Townsville.",
     },
     {
@@ -40,10 +39,10 @@ const FoodDrink = () => {
       query: "Tell me about Juliette's Gelateria Townsville.",
     },
     {
-      name: "☕ A Touch of Salt",
-      description: "Exquisite Award Winning Menu",
-      image: SaltImage, // <-- NEW LOCAL VARIABLE
-      query: "Tell me about A Touch of Salt Townsville.",
+      name: "☕ Coffee Dominion",
+      description: "Townsville's original artisan café.",
+      image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&auto=format&fit=crop",
+      query: "Tell me about Coffee Dominion Townsville.",
     },
   ];
 
