@@ -9,7 +9,7 @@ const FoodDrink = () => {
     {
       name: "🍽 JAM Restaurant",
       description: "Upscale dining on Palmer Street.",
-      image: longboardImage, // <-- NEW LOCAL VARIABLE
+      image: JamImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about JAM Restaurant Townsville.",
     },
     {
