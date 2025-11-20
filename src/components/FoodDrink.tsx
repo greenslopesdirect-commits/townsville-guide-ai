@@ -1,6 +1,15 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+
+// --- START of Imports ---
 import jamCornerImage from "@/assets/jam-corner-restaurant-townsville-2.webp";
+
+// ADD THE NEW IMPORT HERE:
+import cactusJacksImage from "@/assets/cactus-jacks-restaurant-townsville.webp"; 
+// --- END of Imports ---
+
+const FoodDrink = () => {
+    // ... rest of component logic
 
 const FoodDrink = () => {
   const restaurants = [
@@ -11,11 +20,11 @@ const FoodDrink = () => {
       query: "Tell me about JAM Restaurant Townsville.",
     },
     {
-      name: "🌮 Cactus Jack's",
-      description: "Mexican bar & grill with a lively vibe.",
-      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&auto=format&fit=crop",
-      query: "Tell me about Cactus Jack's in Townsville.",
-    },
+      name: "🌮 Cactus Jack's",
+      description: "Mexican bar & grill with a lively vibe.",
+      image: cactusJacksImage, // <-- NEW LOCAL VARIABLE
+      query: "Tell me about Cactus Jack's in Townsville.",
+    },
     {
       name: "🍹 Longboard Bar & Grill",
       description: "Beachfront spot on The Strand.",
