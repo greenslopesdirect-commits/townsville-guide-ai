@@ -42,7 +42,7 @@ const FoodDrink = () => {
     {
       name: "☕ A Touch of Salt",
       description: "Exquisite Award Winning Menu",
-      image: CookingImage, // <-- NEW LOCAL VARIABLE
+      image: SaltImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about A Touch of Salt Townsville.",
     },
   ];
