@@ -4,6 +4,7 @@ import cactusJacksImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
 import JamImage from "@/assets/jam-corner-townsville.webp";
 import JuliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
+import CookingImage from "@/assets/Coo.King-BBQ & Hotpot-restaurant-townsville.webp";
 
 const FoodDrink = () => {
   const restaurants = [
