@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import cactusJacksImage from "@/assets/cactus.webp";
+import longboardImage from "@/assets/longboard.webp";
 
 const FoodDrink = () => {
   const restaurants = [
@@ -19,7 +20,7 @@ const FoodDrink = () => {
     {
       name: "🍹 Longboard Bar & Grill",
       description: "Beachfront spot on The Strand.",
-      image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&auto=format&fit=crop",
+      image: longboardImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Longboard Bar & Grill Townsville.",
     },
     {
