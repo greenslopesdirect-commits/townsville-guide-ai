@@ -3,6 +3,7 @@ import strandImage from "@/assets/the-strand-townsville.webp";
 import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
 import castleHillImage from "@/assets/castle-hill-townsville.webp";
 import jamCornerImage from "@/assets/jam-corner-townsville.webp";
+import jezzineBarracksImage from "@/assets/jezzine-barracks-townsville.webp";
 
 const picks = [
   {
@@ -32,7 +33,7 @@ const picks = [
   {
     title: "Jezzine Barracks",
     description: "A scenic coastal walkway and heritage site with art, history, and stunning ocean views.",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80&auto=format&fit=crop",
+    image: jezzineBarracksImage,
     query: "What can I see at Jezzine Barracks in Townsville?",
   },
   {
