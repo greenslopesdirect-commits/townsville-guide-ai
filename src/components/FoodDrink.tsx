@@ -1,8 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import jamCornerImage from "@/assets/jam-corner-restaurant-townsville-2.webp";
-// New import for Cactus Jack's
-import cactusJacksImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 
 const FoodDrink = () => {
   const restaurants = [
@@ -15,7 +13,7 @@ const FoodDrink = () => {
     {
       name: "🌮 Cactus Jack's",
       description: "Mexican bar & grill with a lively vibe.",
-      image: cactusJacksImage, // Updated to use the local image
+      image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=800&auto=format&fit=crop",
       query: "Tell me about Cactus Jack's in Townsville.",
     },
     {
