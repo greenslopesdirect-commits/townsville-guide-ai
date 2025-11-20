@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import jamCornerImage from "@/assets/jam-corner-restaurant-townsville-2.webp";
-import cactusjacksimage from "@/assets/cactus-jacks-restaurant-townsville.webp";
+import cactusJacksImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 
 const FoodDrink = () => {
   const restaurants = [
