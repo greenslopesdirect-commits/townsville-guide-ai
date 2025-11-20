@@ -29,7 +29,7 @@ const FoodDrink = () => {
     {
       name: "🍔 Coo.King BBQ & Hotpot",
       description: "Enjoy Korean BBQ, Shabu-Shabu ( Hotpot )",
-      image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop",
+      image: CookingImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Coo.King BBQ & Hotpot in Townsville.",
     },
     {
@@ -41,7 +41,7 @@ const FoodDrink = () => {
     {
       name: "☕ Coffee Dominion",
       description: "Townsville's original artisan café.",
-      image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&auto=format&fit=crop",
+      image: CookingImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Coffee Dominion Townsville.",
     },
   ];
