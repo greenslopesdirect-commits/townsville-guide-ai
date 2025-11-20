@@ -5,6 +5,7 @@ import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsvil
 import JamImage from "@/assets/jam-corner-townsville.webp";
 import JuliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
 import CookingImage from "@/assets/coo-king-bbq-hotpot-restaurant-townsville.webp";
+import SaltImage from "@/assets/a-touch-of-salt-restaurant-townsville.webp";
 
 const FoodDrink = () => {
   const restaurants = [
@@ -41,7 +42,7 @@ const FoodDrink = () => {
     {
       name: "☕ Coffee Dominion",
       description: "Townsville's original artisan café.",
-      image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&auto=format&fit=crop",
+      image: SaltImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Coffee Dominion Townsville.",
     },
   ];
