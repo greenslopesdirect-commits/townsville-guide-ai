@@ -5,6 +5,7 @@ import villeResortImage from "@/assets/the-ville-resort-casino-townsville.webp";
 import aquariusImage from "@/assets/aquarius-on-the-beach-townsville.webp";
 import grandChancellorImage from "@/assets/grand-chancellor-hotel-townsville.webp";
 import questImage from "@/assets/quest-serviced-apartments-townsville.webp";
+import oaksImage from "@/assets/oaks-gateway-suites-townsville.webp";
 
 const Accommodation = () => {
   const hotels = [
@@ -36,7 +37,7 @@ const Accommodation = () => {
       name: "🏢 Oaks Townsville Gateway Suites",
       description: "Stylish and spacious hotel suites — modern comfort with great city and river views.",
       bookingLink: "https://www.booking.com/hotel/au/oaks-townsville-gateway-suites.html",
-      image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800&auto=format&fit=crop",
+      image: oaksImage,
     },
     {
       name: "🏕 BIG4 Rowes Bay Holiday Park",
