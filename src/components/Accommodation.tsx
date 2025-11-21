@@ -6,6 +6,7 @@ import aquariusImage from "@/assets/aquarius-on-the-beach-townsville.webp";
 import grandChancellorImage from "@/assets/grand-chancellor-hotel-townsville.webp";
 import questImage from "@/assets/quest-serviced-apartments-townsville.webp";
 import oaksImage from "@/assets/oaks-gateway-suites-townsville.webp";
+import big4Image from "@/assets/big4-rowes-bay-holiday-park-townsville.webp";
 
 const Accommodation = () => {
   const hotels = [
@@ -43,7 +44,7 @@ const Accommodation = () => {
       name: "🏕 BIG4 Rowes Bay Holiday Park",
       description: "Beachfront caravan park with cabins, pools, and family facilities.",
       bookingLink: "https://www.booking.com/hotel/au/big4-rowes-bay-beachfront-holiday-park-townsville.html",
-      image: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&auto=format&fit=crop",
+      image: big4Image,
     },
   ];
 
