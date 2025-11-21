@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="hover:opacity-80 transition-opacity">
-            <img src={logo} alt="Duncan's Guide" className="h-20" />
+            <img src={logo} alt="Duncan's Guide" className="h-30" />
           </Link>
 
           <div className="flex items-center gap-6">
