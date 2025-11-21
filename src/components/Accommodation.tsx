@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import villeResortImage from "@/assets/the-ville-resort-casino-townsville.webp";
 import aquariusImage from "@/assets/aquarius-on-the-beach-townsville.webp";
+import grandChancellorImage from "@/assets/grand-chancellor-hotel-townsville.webp";
 
 const Accommodation = () => {
   const hotels = [
@@ -22,7 +23,7 @@ const Accommodation = () => {
       name: "🏙 Hotel Grand Chancellor",
       description: "Modern city hotel with rooftop views — contemporary accommodation in the heart of the CBD.",
       bookingLink: "https://www.booking.com/hotel/au/hotel-grand-chancellor-townsville.html",
-      image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&auto=format&fit=crop",
+      image: grandChancellorImage,
     },
     {
       name: "🏡 Quest Townsville",
