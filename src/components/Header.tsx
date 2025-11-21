@@ -6,8 +6,12 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="hover:opacity-80 transition-opacity">
-            <img src={logo} alt="Duncan's Guide" className="h-20" />
+          <Link to="/" className="hover:opacity-80 transition-all duration-300 hover:scale-105">
+            <img 
+              src={logo} 
+              alt="Duncan's Guide" 
+              className="h-24 drop-shadow-[0_0_20px_rgba(0,0,0,0.5)]" 
+            />
           </Link>
 
           <div className="flex items-center gap-6">
