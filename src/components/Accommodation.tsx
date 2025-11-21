@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import villeResortImage from "@/assets/the-ville-resort-casino-townsville.webp";
 import aquariusImage from "@/assets/aquarius-on-the-beach-townsville.webp";
 import grandChancellorImage from "@/assets/grand-chancellor-hotel-townsville.webp";
+import questImage from "@/assets/quest-serviced-apartments-townsville.webp";
 
 const Accommodation = () => {
   const hotels = [
@@ -29,7 +30,7 @@ const Accommodation = () => {
       name: "🏡 Quest Townsville",
       description: "Serviced apartments near the marina — perfect for longer stays and families.",
       bookingLink: "https://www.booking.com/hotel/au/quest-townsville.html",
-      image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop",
+      image: questImage,
     },
     {
       name: "🏢 Oaks Townsville Gateway Suites",
