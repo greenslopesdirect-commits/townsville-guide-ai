@@ -13,7 +13,7 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <Link
               to="/history"
-              className="text-sm md:text-base text-muted-foreground hover:text-foreground transition-colors font-medium"
+              className="text-sm md:text-base text-white hover:text-foreground transition-colors font-medium"
             >
               History
             </Link>
