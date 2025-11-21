@@ -40,7 +40,7 @@ const FoodDrink = () => {
       query: "Tell me about Juliette's Gelateria Townsville.",
     },
     {
-      name: "☕ A Touch of Salt",
+      name: "🍽️ A Touch of Salt",
       description: "Exquisite Award Winning Menu.",
       image: SaltImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about A Touch of Salt Townsville.",
