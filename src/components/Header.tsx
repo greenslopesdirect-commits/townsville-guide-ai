@@ -7,7 +7,11 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="hover:opacity-80 transition-all duration-300 hover:scale-105">
-            <img src={logo} alt="Duncan's Guide" className="h-40 drop-shadow-[0_0_20px_rgba(0,0,0,0.5)]" />
+            <img 
+              src={logo} 
+              alt="Duncan's Guide" 
+              className="h-40 drop-shadow-[0_0_30px_rgba(255,255,255,0.8)] drop-shadow-[0_0_50px_rgba(255,255,255,0.4)] drop-shadow-[0_4px_20px_rgba(0,0,0,0.7)]" 
+            />
           </Link>
 
           <div className="flex items-center gap-6">
