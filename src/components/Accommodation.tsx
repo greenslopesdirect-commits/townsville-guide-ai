@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import villeResortImage from "@/assets/the-ville-resort-casino-townsville.webp";
+import aquariusImage from "@/assets/aquarius-on-the-beach-townsville.webp";
 
 const Accommodation = () => {
   const hotels = [
@@ -15,7 +16,7 @@ const Accommodation = () => {
       name: "🌇 Aquarius on the Beach",
       description: "Affordable beachfront hotel — great value accommodation right on The Strand waterfront.",
       bookingLink: "https://www.booking.com/hotel/au/aquarius-on-the-beach-townsville.html",
-      image: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800&auto=format&fit=crop",
+      image: aquariusImage,
     },
     {
       name: "🏙 Hotel Grand Chancellor",
