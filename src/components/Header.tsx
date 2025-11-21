@@ -7,8 +7,8 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="hover:opacity-80 transition-opacity">
-            {/* CHANGED: h-20 to h-28 */}
-            <img src={logo} alt="Duncan's Guide" className="h-28" />
+            {/* CHANGED: h-28 to h-32 (128 pixels tall) */}
+            <img src={logo} alt="Duncan's Guide" className="h-32" />
           </Link>
 
           <div className="flex items-center gap-6">
