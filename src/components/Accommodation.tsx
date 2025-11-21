@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import villeResortImage from "@/assets/the-ville-resort-casino-townsville.webp";
 
 const Accommodation = () => {
   const hotels = [
@@ -8,7 +9,7 @@ const Accommodation = () => {
       name: "🏝 The Ville Resort–Casino",
       description: "Luxury resort with ocean views — premium beachfront accommodation with casino, pools, and fine dining.",
       bookingLink: "https://www.booking.com/hotel/au/the-ville-resort-casino-townsville.html",
-      image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop",
+      image: villeResortImage,
     },
     {
       name: "🌇 Aquarius on the Beach",
