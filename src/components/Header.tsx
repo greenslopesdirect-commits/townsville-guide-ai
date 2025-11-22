@@ -36,6 +36,12 @@ const Header = () => {
             >
               Beaches
             </Link>
+            <Link
+              to="/food"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Food & Drink
+            </Link>
           </div>
         </div>
       </nav>

@@ -12,6 +12,7 @@ import CookiePolicy from "./pages/CookiePolicy";
 import HistoryOfTownsville from "./pages/HistoryOfTownsville";
 import ThingsToDo from "./pages/ThingsToDo";
 import Beaches from "./pages/Beaches";
+import FoodDrink from "./pages/FoodDrink";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/history" element={<HistoryOfTownsville />} />
           <Route path="/things-to-do" element={<ThingsToDo />} />
           <Route path="/beaches" element={<Beaches />} />
+          <Route path="/food" element={<FoodDrink />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
