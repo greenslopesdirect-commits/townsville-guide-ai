@@ -136,7 +136,7 @@ const Hero = () => {
           </ul>
         </div>
         <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)' }}>
-          👇 Start exploring or ask a question to get personalised suggestions.
+          👇 Ask me anything — beaches, restaurants, dog-friendly spots, things to do, ferries, weather, or hidden gems!
         </p>
         
         {/* Search/Chat Box */}
@@ -147,7 +147,7 @@ const Hero = () => {
               <Input
                 id="townsville-ai-input"
                 type="text"
-                placeholder="Hi! I'm your Townsville guide. Ask me anything — restaurants, beaches, dog parks, events, accommodation."
+                placeholder="What would you like to know?"
                 className="h-16 pl-12 pr-4 text-base rounded-2xl bg-white/95 backdrop-blur-sm border-white/40 shadow-xl focus-visible:ring-primary focus-visible:ring-2 text-gray-900 placeholder:text-gray-500"
                 value={aiInputValue}
                 onChange={(e) => setAiInputValue(e.target.value)}
