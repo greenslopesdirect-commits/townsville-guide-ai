@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
 import TopPicks from "@/components/TopPicks";
+import SeoContentSections from "@/components/SeoContentSections";
 import VideoSection from "@/components/VideoSection";
 import FoodDrink from "@/components/FoodDrink";
 import DogFriendly from "@/components/DogFriendly";
@@ -11,6 +12,7 @@ import EventsOn from "@/components/EventsOn";
 import Accommodation from "@/components/Accommodation";
 import MapSection from "@/components/MapSection";
 import AboutSection from "@/components/AboutSection";
+import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
 import WeatherWidget from "@/components/WeatherWidget";
 
@@ -38,6 +40,9 @@ const Index = () => {
       <section id="top-picks">
         <TopPicks />
       </section>
+      <section id="seo-content">
+        <SeoContentSections />
+      </section>
       <section id="video">
         <VideoSection />
       </section>
@@ -58,6 +63,9 @@ const Index = () => {
       </section>
       <section id="about">
         <AboutSection />
+      </section>
+      <section id="faq">
+        <FaqSection />
       </section>
       <Footer />
       </div>

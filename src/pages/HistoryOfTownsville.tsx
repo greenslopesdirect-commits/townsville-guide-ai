@@ -513,39 +513,43 @@ const HistoryOfTownsville = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
                 <Link 
-                  to="/#top-picks"
+                  to="/#seo-content"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
+                  aria-label="View best beaches in Townsville"
                 >
-                  <div className="text-4xl mb-3">🎟</div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Things to Do in Townsville</h3>
-                  <p className="text-sm text-muted-foreground">Explore attractions, beaches, and activities</p>
+                  <div className="text-4xl mb-3">🏖</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Best Beaches</h3>
+                  <p className="text-sm text-muted-foreground">The Strand, Pallarenda, and Magnetic Island</p>
                 </Link>
 
                 <Link 
-                  to="/#food-drink"
+                  to="/#seo-content"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
+                  aria-label="View things to do in Townsville"
                 >
-                  <div className="text-4xl mb-3">🍽</div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Best Beaches in Townsville</h3>
-                  <p className="text-sm text-muted-foreground">Discover The Strand, Pallarenda, and more</p>
+                  <div className="text-4xl mb-3">🎟</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Things To Do</h3>
+                  <p className="text-sm text-muted-foreground">Castle Hill, Magnetic Island, and more</p>
                 </Link>
 
                 <Link 
                   to="/#dog-friendly"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
+                  aria-label="View dog-friendly places in Townsville"
                 >
                   <div className="text-4xl mb-3">🐾</div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Dog-Friendly Townsville</h3>
-                  <p className="text-sm text-muted-foreground">Find dog parks and pet-friendly cafés</p>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Dog-Friendly Spots</h3>
+                  <p className="text-sm text-muted-foreground">Parks, beaches, and pet-friendly cafés</p>
                 </Link>
 
                 <Link 
                   to="/#food-drink"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
+                  aria-label="View best restaurants in Townsville"
                 >
-                  <div className="text-4xl mb-3">☕</div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Townsville Restaurants & Cafés</h3>
-                  <p className="text-sm text-muted-foreground">Where to eat and drink in Townsville</p>
+                  <div className="text-4xl mb-3">🍽</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Best Restaurants</h3>
+                  <p className="text-sm text-muted-foreground">Fine dining, cafés, and local favourites</p>
                 </Link>
               </div>
             </div>
