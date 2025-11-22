@@ -10,19 +10,6 @@ const Footer = () => {
           <p className="text-background/80">Your local AI companion for North Queensland</p>
         </div>
         
-        <div className="flex items-center justify-center gap-2 mb-8">
-          <Mail className="w-5 h-5" />
-          <p className="text-base">
-            Questions or suggestions?{" "}
-            <a 
-              href="mailto:greenslopesdirect@gmail.com" 
-              className="underline hover:text-[hsl(var(--accent))] transition-colors"
-            >
-              Email Duncan Ross
-            </a>
-          </p>
-        </div>
-        
         <div className="mb-6">
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-background/80">
             <Link 
@@ -57,7 +44,7 @@ const Footer = () => {
         
         <div className="pt-6 border-t border-background/20">
           <p className="text-sm text-background/70">
-            © {new Date().getFullYear()} Duncan's Guide – Townsville. Made with love in North Queensland.
+            © {new Date().getFullYear()} Duncan's Guide – Townsville. Designed and maintained in North Queensland by Duncan Ross.
           </p>
         </div>
       </div>
