@@ -116,10 +116,27 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)' }}>
-          Welcome to Townsville 👋
+          Welcome to Duncan's Guide – Townsville 👋
         </h1>
-        <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)' }}>
-          Your local AI guide to North Queensland's best beaches, restaurants, attractions, and hidden gems.
+        <h2 className="text-2xl md:text-4xl font-semibold mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)' }}>
+          Your AI-powered local guide to North Queensland
+        </h2>
+        <p className="text-lg md:text-xl mb-6 max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)' }}>
+          Discover Townsville's best beaches, restaurants, cafés, dog parks, attractions, and hidden gems — all with help from a smart local AI assistant.
+        </p>
+        <div className="text-left max-w-2xl mx-auto mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)' }}>
+          <p className="text-lg md:text-xl font-semibold mb-3">
+            <strong>Ask your guide anything, such as:</strong>
+          </p>
+          <ul className="text-base md:text-lg space-y-2 list-disc list-inside ml-2">
+            <li>"Where should we eat tonight?"</li>
+            <li>"What's a good family beach near Townsville?"</li>
+            <li>"What's happening this weekend?"</li>
+            <li>"Where can I walk my dog off-leash?"</li>
+          </ul>
+        </div>
+        <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{ textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)' }}>
+          👇 Start exploring or ask a question to get personalised suggestions.
         </p>
         
         {/* Search/Chat Box */}
