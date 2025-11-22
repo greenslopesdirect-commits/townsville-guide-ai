@@ -54,6 +54,12 @@ const Header = () => {
             >
               Accommodation
             </Link>
+            <Link
+              to="/events"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Events
+            </Link>
           </div>
         </div>
       </nav>
