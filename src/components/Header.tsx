@@ -24,6 +24,12 @@ const Header = () => {
               {/* CHANGED: 'History' to 'Townsville's History' */}
               Townsville's History
             </Link>
+            <Link
+              to="/things-to-do"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Things to Do
+            </Link>
           </div>
         </div>
       </nav>
