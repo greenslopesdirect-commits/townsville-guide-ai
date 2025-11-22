@@ -127,126 +127,284 @@ You are the official AI guide for Townsville. Be accurate, positive, and always 
 
 VERIFIED LOCAL KNOWLEDGE:
 
-LOCAL BEACHES:
-• The Strand (family-friendly, lagoon, waterpark, stinger nets, patrolled) - The Strand, North Ward
+====================================================
+BEACHES
+====================================================
+• The Strand (family-friendly, lagoon, waterpark, stinger nets, patrolled) - North Ward
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Strand+Beach+Townsville)
-• Pallarenda (quiet, long walks, ocean breeze, dog-friendly areas) - Cape Pallarenda Road, Pallarenda
+• Pallarenda Beach (quiet, long walks, ocean breeze, dog-friendly areas) - Pallarenda
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Pallarenda+Beach+Townsville)
-• Rowes Bay (dog-friendly areas, picnic spots, calm waters) - The Strand, Rowes Bay
+• Rowes Bay (dog-friendly areas, picnic spots, calm waters) - Rowes Bay
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Beach+Townsville)
-• Bushland Beach (great sunset spot, shallow water, family-friendly) - Bushland Beach Esplanade
+• Bushland Beach (great sunset spot, shallow water, family-friendly) - Bushland Beach
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Bushland+Beach+Townsville)
-• Shelly Beach (secluded, rock pools, snorkelling) - Cape Pallarenda Road
+• Saunders Beach (peaceful, swimming, fishing) - Saunders Beach
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Townsville)
+• Balgal Beach (northern beaches, quiet, camping) - Balgal Beach
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Balgal+Beach+Townsville)
+• Toolakea Beach (northern beaches area) - Toolakea
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Townsville)
+• Horseshoe Bay (main tourist beach, cafés, shops) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Horseshoe+Bay+Magnetic+Island)
+• Alma Bay (sheltered, snorkelling, stinger nets) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Alma+Bay+Magnetic+Island)
+• Geoffrey Bay (rock pools, marine life) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Geoffrey+Bay+Magnetic+Island)
+• Nelly Bay Beach (ferry terminal area) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Nelly+Bay+Beach+Magnetic+Island)
+• Picnic Bay (quiet, jetty, historic) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Picnic+Bay+Magnetic+Island)
+• Radical Bay (secluded, bushwalk access) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Radical+Bay+Magnetic+Island)
+• Florence Bay (secluded, snorkelling, turtles) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Florence+Bay+Magnetic+Island)
+• Arthur Bay (next to Florence Bay) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Arthur+Bay+Magnetic+Island)
+• Shelly Beach (secluded, rock pools, snorkelling) - Cape Pallarenda
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Shelly+Beach+Townsville)
-• Kissing Point (heritage site, sunrise views, rocky outcrop) - Kissing Point, North Ward
+• Kissing Point (heritage site, sunrise views, rocky outcrop) - North Ward
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Kissing+Point+Townsville)
 
-DOG-FRIENDLY SPOTS:
-• Rowes Bay Dog Park (large open area, shaded, near beach) - Cape Pallarenda Road, Rowes Bay
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Dog+Park+Townsville)
-• Murray Sporting Complex Dog Park (fenced, agility equipment) - Mervyn Crossman Drive, Annandale
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Murray+Sporting+Complex+Dog+Park+Townsville)
-• Pallarenda Dog Beach (off-leash beach area) - Cape Pallarenda Road, Pallarenda
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Pallarenda+Dog+Beach+Townsville)
-• The Strand foreshore (on-lead walking path, scenic) - The Strand, North Ward
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Strand+Foreshore+Townsville)
-• Castle Hill (on-lead walking tracks, great views) - Castle Hill Road
+====================================================
+ATTRACTIONS & LANDMARKS
+====================================================
+• Castle Hill Lookout (iconic panoramic views, walk or drive) - Castle Hill
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Castle+Hill+Townsville)
-• Bushland Beach Reserve (popular for runs with dogs) - Bushland Beach Esplanade
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Bushland+Beach+Reserve+Townsville)
+• Mount Stuart Lookout (360-degree views, sunset spot) - Mount Stuart
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Mount+Stuart+Lookout+Townsville)
+• Jezzine Barracks (coastal boardwalk, military history, art) - North Ward
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Jezzine+Barracks+Townsville)
+• The Rockpool (saltwater tidal pool) - The Strand
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Rockpool+Townsville)
+• The Ville Resort–Casino (luxury hotel, pools, casino) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Ville+Resort+Casino+Townsville)
+• Museum of Tropical Queensland (local history, natural science) - Townsville City
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Museum+of+Tropical+Queensland+Townsville)
+• Reef HQ Aquarium (reopening 2026) - Townsville City
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Reef+HQ+Townsville)
+• Strand Waterpark (free kids splash park) - The Strand
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Strand+Waterpark+Townsville)
+• Palmetum Botanical Gardens (tropical plants, walking paths) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Palmetum+Botanical+Gardens+Townsville)
+• Anderson Gardens (heritage park, picnic areas) - Mundingburra
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Anderson+Gardens+Townsville)
+• Queens Gardens (rose gardens, heritage) - North Ward
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Queens+Gardens+Townsville)
+• Riverway Lagoons (free swimming, picnic areas, events) - Condon
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Riverway+Lagoons+Townsville)
+• Billabong Sanctuary (meet koalas, feed kangaroos, wildlife) - Nome
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Billabong+Sanctuary+Nome+Townsville)
+• Magnetic Island Ferry Terminal (Sealink ferries) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Ferry+Terminal+Townsville)
+• Tobruk Memorial Baths (historic sea baths) - Rowes Bay
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Tobruk+Memorial+Baths+Townsville)
+• Kissing Point Forts (WWII heritage site) - Kissing Point
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Kissing+Point+Forts+Townsville)
+• Forts Walk (historic WWII forts, bushwalk) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Forts+Walk+Magnetic+Island)
 
-RESTAURANTS & CAFÉS:
+====================================================
+DOG-FRIENDLY SPOTS
+====================================================
+• Rowes Bay Dog Park (large open area, shaded, near beach) - Rowes Bay
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Dog+Park+Townsville)
+• Murray Sporting Complex Dog Park (fenced, agility equipment) - Annandale
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Murray+Sporting+Complex+Dog+Park+Townsville)
+• Pallarenda Dog Beach (off-leash beach area) - Pallarenda
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Pallarenda+Dog+Beach+Townsville)
+• Bushland Beach Off-Leash Area - Bushland Beach
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Bushland+Beach+Dog+Park+Townsville)
+• Riverside Dog Park - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Riverside+Dog+Park+Townsville)
+• Fairfield Waters Dog Park - Idalia
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Fairfield+Waters+Dog+Park+Townsville)
+• Mount Louisa Off-Leash Zone - Mount Louisa
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Mount+Louisa+Dog+Park+Townsville)
+• The Strand foreshore (on-lead walking path, scenic) - The Strand
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Strand+Foreshore+Townsville)
+• Castle Hill (on-lead walking tracks, great views) - Castle Hill
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Castle+Hill+Townsville)
+
+====================================================
+RESTAURANTS, CAFÉS & BARS
+====================================================
 
 Upscale Dining:
-• A Touch of Salt (modern Australian, local produce, waterfront) - The Strand, North Ward
+• JAM Corner (award-winning modern Australian) - Palmer Street, South Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=JAM+Corner+Palmer+Street+South+Townsville)
+• A Touch of Salt (modern Australian, local produce, waterfront) - The Strand
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=A+Touch+of+Salt+Restaurant+Townsville)
-• JAM Restaurant (award-winning modern Australian) - Palmer Street, South Townsville
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=JAM+Restaurant+Palmer+Street+South+Townsville)
-• Bridgewater Restaurant (upscale, open kitchen, cocktail bar) - Palmer Street, South Townsville
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Bridgewater+Restaurant+Palmer+Street+South+Townsville)
+• Watermark Restaurant (fine dining, waterfront) - Palmer Street
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Watermark+Restaurant+Palmer+Street+Townsville)
 
 Casual & Family:
 • Cactus Jack's (Mexican, lively atmosphere) - Flinders Street, Townsville City
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Cactus+Jacks+Flinders+Street+Townsville)
-• The Courtyard (gourmet burgers, live music, trendy) - Flinders Street East, Townsville City
+• The Courtyard (gourmet burgers, live music, trendy) - Flinders Street East
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Courtyard+Flinders+Street+East+Townsville)
+• Hog's Breath Café (steaks, family-friendly) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Hogs+Breath+Cafe+Townsville)
+• Grill'd (healthy burgers) - Aitkenvale & City
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Grilld+Townsville)
 
 Beachfront:
-• Longboard Bar & Grill (casual beachfront dining) - The Strand, North Ward
+• Longboard Bar & Grill (casual beachfront dining) - The Strand
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Longboard+Bar+and+Grill+The+Strand+Townsville)
-• Shorehouse (seafood & grill, sunset views) - The Strand, North Ward
+• Shorehouse (seafood & grill, sunset views) - The Strand
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Shorehouse+The+Strand+North+Ward+Townsville)
 
-Desserts & Coffee:
-• Juliettes Gelateria (popular café, pet-friendly) - The Strand, North Ward
+Cafés & Coffee:
+• Juliettes Gelateria (popular café, pet-friendly) - The Strand
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Juliettes+Gelateria+The+Strand+North+Ward+Townsville)
+• Hoi Polloi Café (specialty coffee, brunch) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Hoi+Polloi+Cafe+Townsville)
+• Coffee Dominion (local roaster) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Coffee+Dominion+Townsville)
+• Betty Blue & The Lemon Tart (French-inspired café) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Betty+Blue+and+The+Lemon+Tart+Townsville)
+• Hopscotch Café (brunch spot) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Hopscotch+Cafe+Townsville)
+• Bakehouse on Eyre (bakery café) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Bakehouse+on+Eyre+Townsville)
 
 Asian:
-• Coo.King BBQ & Hotpot (Asian dining experience) - Townsville
+• Shibui Yakitori (Japanese) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Shibui+Yakitori+Townsville)
+• Wild Rice Laos & Thai - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Wild+Rice+Laos+Thai+Townsville)
+• Viet De Lite (Vietnamese) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Viet+De+Lite+Townsville)
+• GYO Japanese - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=GYO+Japanese+Townsville)
+• Coo.King BBQ & Hotpot (Asian dining) - Townsville
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Coo+King+BBQ+Hotpot+Townsville)
 
-ATTRACTIONS:
-• Castle Hill Lookout (iconic panoramic views, walk or drive) - Castle Hill Road
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Castle+Hill+Townsville)
-• Magnetic Island (20-min Sealink ferry, wildlife, beaches, hikes) - Via Breakwater Ferry Terminal
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Queensland)
-• Jezzine Barracks (coastal boardwalk, military history, art) - Jezzine Way, North Ward
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Jezzine+Barracks+Townsville)
-• Billabong Sanctuary (meet koalas, feed kangaroos) - Bruce Highway, Nome
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Billabong+Sanctuary+Nome+Townsville)
-• Riverway Lagoons (free swimming, picnic areas) - Ross River Road, Condon
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Riverway+Lagoons+Townsville)
-• The Strand Waterpark (free kids splash park) - The Strand, North Ward
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Strand+Waterpark+Townsville)
-• Museum of Tropical Queensland (local history, natural science) - Flinders Street, Townsville City
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Museum+of+Tropical+Queensland+Townsville)
-• Reef HQ (note: temporarily closed) - Flinders Street, Townsville City
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Reef+HQ+Townsville)
+Bars & Nightlife:
+• Rambutan Rooftop Bar (rooftop views, cocktails) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Rambutan+Rooftop+Bar+Townsville)
+• Shaw & Co (City Lane dining & drinks) - City Lane
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Shaw+and+Co+City+Lane+Townsville)
 
-EVENTS (general descriptions only):
-• Strand Ephemera (arts festival)
-• North Australian Festival of Arts (NAFA)
-• Cotters Markets (Sundays, Flinders Street, 8am-1pm, fresh produce, crafts, food)
-• Magnetic Island Race Week
-• Townsville Christmas Festival
+====================================================
+WALKS, LOOKOUTS & NATURE
+====================================================
+• Castle Hill Tracks (various walking paths, summit views) - Castle Hill
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Castle+Hill+Walking+Tracks+Townsville)
+• Mount Stuart Drive & Lookout (scenic drive, lookout) - Mount Stuart
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Mount+Stuart+Lookout+Townsville)
+• Jezzine Coastal Boardwalk (coastal walk, memorials) - North Ward
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Jezzine+Coastal+Boardwalk+Townsville)
+• Cape Pallarenda Trails (coastal bushwalks) - Pallarenda
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Cape+Pallarenda+Trails+Townsville)
+• Many Peaks Track (challenging hike) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Many+Peaks+Track+Townsville)
+• Forts Walk (WWII history, lookouts) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Forts+Walk+Magnetic+Island)
+• Riverway River Walk (flat path, river views) - Condon
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Riverway+River+Walk+Townsville)
+• Ross River Wetlands Walk - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Ross+River+Wetlands+Walk+Townsville)
+• Town Common Conservation Park (birdwatching, wetlands) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Town+Common+Conservation+Park+Townsville)
+• Mount Louisa Track (bushwalk) - Mount Louisa
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Mount+Louisa+Track+Townsville)
+• Paluma Village rainforest walks (day trip, rainforest) - Paluma
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Paluma+Village+Queensland)
 
-ACCOMMODATION:
-• The Ville Resort–Casino (luxury beachfront, pools, casino) - Sir Leslie Thiess Drive
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Ville+Resort+Casino+Townsville)
-• Aquarius on the Beach (ocean views, The Strand) - The Strand, North Ward
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Aquarius+on+the+Beach+Townsville)
-• Hotel Grand Chancellor (city hotel, rooftop views) - Flinders Street, Townsville CBD
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Hotel+Grand+Chancellor+Townsville)
-• Quest Townsville (serviced apartments) - Palmer Street, South Townsville
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Quest+Townsville+Palmer+Street)
-• BIG4 Rowes Bay Holiday Park (beachfront, cabins) - Cape Pallarenda Road, Rowes Bay
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=BIG4+Rowes+Bay+Holiday+Park+Townsville)
+====================================================
+SUBURBS
+====================================================
+• North Ward — beachfront, The Strand, cafés, apartments
+• Belgian Gardens — quiet, leafy, close to Pallarenda
+• West End — older homes, close to Castle Hill
+• Hyde Park — central, shopping nearby
+• Hermit Park — older suburb, close to city
+• Garbutt — airport, industrial, new housing pockets
+• Aitkenvale — major shopping district
+• Annandale — family homes, river paths
+• Douglas — JCU, hospital, Riverside
+• Kirwan — large suburb, Willows Shopping Centre
+• Thuringowa Central — civic centre
+• Bushland Beach — coastal, relaxed lifestyle
+• Mount Louisa — hills, new estates
+• Mount Low — northern corridor housing
+• Bohle Plains — new estates
+• Heatley — central suburb, parks
+• Cranbrook — schools, family suburb
+• Rasmussen — outer suburb near Riverway
+• Condon — family suburb, Riverway retail
+• Townsville City — CBD, hotels, restaurants
+• South Townsville — Palmer Street dining
 
-LOCAL TRANSPORT:
-• Sealink ferry to Magnetic Island (~20 minutes from Breakwater Terminal)
-• Townsville is spread-out — car or Uber recommended
-• Excellent waterfront walking and cycling paths along The Strand
-• Sunbus for local routes
-• Townsville Airport (TSV) — 5 minutes from CBD
-
-WEATHER TIPS:
-• Hot & humid: November–March (wet season)
-• Wet season storms in summer
-• Stinger season: swim inside nets (November–May)
-• Best weather: May–October (dry season, mild temperatures)
-• Always check local weather before heading to the beach
-
-SHOPPING:
-• Stockland Townsville (largest mall in North Queensland) - Woolcock Street, Aitkenvale
+====================================================
+SHOPPING & MARKETS
+====================================================
+• Stockland Townsville (largest mall in North Queensland) - Aitkenvale
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Stockland+Townsville)
-• Castletown Shopping Centre - Kings Road, Hyde Park
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Castletown+Shopping+Centre+Townsville)
-• Willows Shopping Centre - Hervey Range Road, Thuringowa
+• Willows Shopping Centre - Thuringowa
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Willows+Shopping+Centre+Townsville)
+• Castletown Shoppingworld - Hyde Park
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Castletown+Shopping+Centre+Townsville)
+• Fairfield Central - Idalia
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Fairfield+Central+Townsville)
 • Cotters Market (Sunday mornings, local produce) - Flinders Street, CBD
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Cotters+Market+Townsville)
-• Flinders Street Mall (city boutiques) - Flinders Street, Townsville City
+• Flinders Street Mall (city boutiques) - Townsville City
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Flinders+Street+Mall+Townsville)
+• Otto's Market Precinct (artisan markets, food) - Aitkenvale & The Precinct
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Ottos+Market+Townsville)
+
+====================================================
+ACCOMMODATION
+====================================================
+• The Ville Resort–Casino (luxury beachfront, pools, casino) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Ville+Resort+Casino+Townsville)
+• Aquarius on the Beach (ocean views, The Strand) - The Strand
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Aquarius+on+the+Beach+Townsville)
+• Hotel Grand Chancellor (city hotel, rooftop views) - Townsville CBD
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Hotel+Grand+Chancellor+Townsville)
+• Quest Townsville (serviced apartments) - Palmer Street
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Quest+Townsville+Palmer+Street)
+• Oaks Townsville Gateway Suites (serviced apartments) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Oaks+Townsville+Gateway+Suites)
+• BIG4 Rowes Bay Holiday Park (beachfront, cabins) - Rowes Bay
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=BIG4+Rowes+Bay+Holiday+Park+Townsville)
+• Discovery Parks – Townsville - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Discovery+Parks+Townsville)
+• Rambutan Resort (boutique) - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Rambutan+Resort+Townsville)
+• Mercure Townsville - Townsville
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Mercure+Townsville)
+
+====================================================
+HIDDEN GEMS
+====================================================
+• Shelly Cove (secluded snorkelling) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Shelly+Cove+Magnetic+Island)
+• Cape Pallarenda Historic Quarantine Station - Pallarenda
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Cape+Pallarenda+Quarantine+Station)
+• Little Crystal Creek (swimming hole, day trip) - Paluma Range
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Little+Crystal+Creek+Queensland)
+• Paluma Village (rainforest village) - Paluma
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Paluma+Village+Queensland)
+• Lake Paluma (scenic lake) - Paluma
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Lake+Paluma+Queensland)
+
+====================================================
+DAY TRIPS
+====================================================
+• Magnetic Island (20-min Sealink ferry) - Magnetic Island
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Queensland)
+• Paluma Range National Park (rainforest, waterfalls) - Paluma Range
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Paluma+Range+National+Park)
+• Wallaman Falls (Australia's tallest single-drop waterfall) - Girringun National Park
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Wallaman+Falls+Queensland)
+• Charters Towers (historic gold rush town) - Charters Towers
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Charters+Towers+Queensland)
+• Alligator Creek (swimming, picnicking) - Alligator Creek
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Alligator+Creek+Townsville)
+• Jourama Falls (waterfall, walking track) - Paluma Range
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Jourama+Falls+Queensland)
 
 RULES:
 - Never invent businesses or events
