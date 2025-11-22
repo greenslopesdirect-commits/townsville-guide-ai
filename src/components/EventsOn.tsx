@@ -8,42 +8,42 @@ const EventsOn = () => {
       icon: "🎭",
       title: "Strand Ephemera",
       date: "Biennial",
-      description: "Outdoor sculpture festival along The Strand.",
+      description: "Australia's leading outdoor sculpture festival held along The Strand — featuring large-scale artworks, sunset displays, and community activities.",
       query: "Tell me about Strand Ephemera festival in Townsville.",
     },
     {
       icon: "🎨",
       title: "Townsville Cultural Festival",
       date: "Annual",
-      description: "Multicultural food, music, and art celebration.",
+      description: "A colourful celebration of world cultures with food stalls, live music, performances, and art from local and international communities.",
       query: "When is the Townsville Cultural Festival and what's on?",
     },
     {
       icon: "⛵",
       title: "Magnetic Island Race Week",
       date: "September",
-      description: "Major sailing event with competitions and social activities.",
+      description: "One of Australia's premier sailing events, bringing yachts, competitions, and waterfront festivities to Magnetic Island.",
       query: "Tell me about Magnetic Island Race Week.",
     },
     {
       icon: "🎶",
       title: "North Australian Festival of Arts",
-      date: "Various dates",
-      description: "City-wide arts celebration with performances and exhibitions.",
+      date: "Various Dates",
+      description: "Townsville's major arts festival offering theatre, music, comedy, workshops, and large-scale outdoor performances.",
       query: "What's happening at the North Australian Festival of Arts in Townsville?",
     },
     {
       icon: "🛍",
       title: "Cotters Market",
       date: "Every Sunday",
-      description: "Morning markets in the CBD with local produce and crafts.",
+      description: "Townsville's iconic Sunday market in the CBD — local produce, handmade goods, crafts, food stalls, and entertainment.",
       query: "Tell me about Cotters Market in Townsville.",
     },
     {
       icon: "🎄",
       title: "Townsville Christmas Festival",
       date: "December",
-      description: "Celebrate the festive season with lights, markets, food stalls, and entertainment for families.",
+      description: "A festive celebration with lights, markets, live entertainment, kids' activities, and seasonal food stalls.",
       query: "Tell me about the Townsville Christmas Festival.",
     },
   ];
@@ -73,7 +73,7 @@ const EventsOn = () => {
         </h2>
         
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-          There's always something happening in Townsville — from festivals and concerts to markets and sporting events.
+          Townsville hosts festivals, concerts, arts events, and community markets all year round. Here are some of the city's biggest highlights.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
