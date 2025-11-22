@@ -8,8 +8,8 @@ const SeoContentSections = () => {
       id: "beaches",
       title: "Best Beaches in Townsville",
       content: "Townsville boasts some of Queensland's most stunning beaches. The Strand is the city's iconic 2.2km waterfront promenade, perfect for swimming, walking, and sunset views. Pallarenda Beach offers a quieter escape with rock pools and fishing spots, while Rowes Bay provides calm waters ideal for families. Bushland Beach delivers a relaxed coastal lifestyle with long stretches of sand, and Magnetic Island features pristine tropical bays like Alma Bay, Horseshoe Bay, and Florence Bay — perfect for snorkelling and swimming year-round.",
-      linkText: "Explore all Townsville beaches",
-      linkTo: "#top-picks"
+      linkText: "See all beaches",
+      linkTo: "/beaches"
     },
     {
       id: "things-to-do",
