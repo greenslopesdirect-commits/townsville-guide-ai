@@ -33,7 +33,7 @@ const Header = () => {
               to="/things-to-do"
               className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
             >
-              Things to Do
+              Things to do
             </Link>
             <Link
               to="/beaches"
