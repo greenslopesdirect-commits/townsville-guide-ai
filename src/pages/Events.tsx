@@ -27,6 +27,48 @@ const Events = () => {
           name="description" 
           content="Discover events, festivals and activities in Townsville. From Strand Ephemera and NAFA to weekly markets, live music and family events." 
         />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EventSeries",
+            "name": "Townsville Annual Events",
+            "location": {
+              "@type": "Place",
+              "name": "Townsville, Queensland",
+              "address": "Townsville QLD, Australia"
+            },
+            "eventSchedule": [
+              {
+                "@type": "Schedule",
+                "name": "North Australian Festival of Arts",
+                "repeatFrequency": "P1Y",
+                "startDate": "2025-06-20",
+                "endDate": "2025-07-21"
+              },
+              {
+                "@type": "Schedule",
+                "name": "Magnetic Island Race Week",
+                "repeatFrequency": "P1Y",
+                "startDate": "2025-08-31",
+                "endDate": "2025-09-06"
+              },
+              {
+                "@type": "Schedule",
+                "name": "Australian Festival of Chamber Music",
+                "repeatFrequency": "P1Y",
+                "startDate": "2025-07-25",
+                "endDate": "2025-08-03"
+              },
+              {
+                "@type": "Schedule",
+                "name": "Strand Ephemera",
+                "repeatFrequency": "P2Y",
+                "startDate": "2025-08-01",
+                "endDate": "2025-08-09"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-background">
