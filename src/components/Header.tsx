@@ -48,6 +48,12 @@ const Header = () => {
             >
               Local Tips
             </Link>
+            <Link
+              to="/accommodation"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Accommodation
+            </Link>
           </div>
         </div>
       </nav>
