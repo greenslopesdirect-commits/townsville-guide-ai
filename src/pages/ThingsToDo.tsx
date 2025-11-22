@@ -274,6 +274,30 @@ const ThingsToDo = () => {
                   <li>Water play areas for kids</li>
                   <li>Tony Ireland Stadium nearby for events</li>
                 </ul>
+                <div className="mt-4 flex gap-3">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    asChild
+                    className="gap-2"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Riverway+Townsville" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="View Riverway on Google Maps"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                  <Link to="/">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
+                      <Bot className="w-4 h-4" />
+                      Ask the AI for things to do near Riverway
+                    </Button>
+                  </Link>
+                </div>
               </section>
 
               {/* Beaches Beyond The Strand */}
@@ -287,13 +311,70 @@ const ThingsToDo = () => {
                 <p className="text-muted-foreground mb-4 leading-relaxed">
                   While The Strand is great, Townsville has several other beautiful beaches worth exploring, each with its own character and charm.
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
+                <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4 mb-4">
                   <li>Pallarenda Beach — rock pools, fishing, and quiet picnic spots</li>
                   <li>Rowes Bay — calm waters and a dog-friendly park</li>
                   <li>Bushland Beach — long sandy stretches and a relaxed vibe</li>
                   <li>Saunders Beach — great for fishing and kite surfing</li>
                   <li>Toolakea Beach — peaceful and uncrowded</li>
                 </ul>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    asChild
+                    className="gap-2"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Pallarenda+Beach+Townsville" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="View Pallarenda Beach on Google Maps"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      Pallarenda
+                    </a>
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    asChild
+                    className="gap-2"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Beach+Townsville" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="View Rowes Bay on Google Maps"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      Rowes Bay
+                    </a>
+                  </Button>
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    asChild
+                    className="gap-2"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Bushland+Beach+Townsville" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="View Bushland Beach on Google Maps"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      Bushland Beach
+                    </a>
+                  </Button>
+                </div>
+                <div className="mt-4">
+                  <Link to="/#beaches">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0">
+                      See the full list of Townsville beaches →
+                    </Button>
+                  </Link>
+                </div>
               </section>
 
               {/* Art, Culture & Events */}
@@ -314,6 +395,14 @@ const ThingsToDo = () => {
                   <li>Festival of Chamber Music — annual classical music event</li>
                   <li>Cultural Centre and theatre shows at Civic Theatre</li>
                 </ul>
+                <div className="mt-4">
+                  <Link to="/">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
+                      <Bot className="w-4 h-4" />
+                      Ask the AI what's on this week in Townsville
+                    </Button>
+                  </Link>
+                </div>
               </section>
 
               {/* Dog-Friendly Fun */}
@@ -392,10 +481,26 @@ const ThingsToDo = () => {
               </section>
             </div>
 
-            {/* Back to Home CTA */}
+            {/* AI Guide CTA */}
             <div className="mt-16 pt-8 border-t border-border text-center">
+              <h3 className="text-2xl font-bold mb-4 text-foreground">
+                Need Help Planning Your Visit?
+              </h3>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                Get personalised recommendations, itineraries, and local tips from our AI-powered guide trained on Townsville knowledge.
+              </p>
               <Link to="/">
-                <Button size="lg" className="group" aria-label="Return to Duncan's Guide home page">
+                <Button size="lg" className="gap-2" aria-label="Open AI chat assistant">
+                  <Bot className="w-5 h-5" />
+                  Ask the AI Guide
+                </Button>
+              </Link>
+            </div>
+
+            {/* Back to Home CTA */}
+            <div className="mt-12 text-center">
+              <Link to="/">
+                <Button variant="outline" size="lg" className="group" aria-label="Return to Duncan's Guide home page">
                   Return to Home
                   <ArrowLeft className="ml-2 w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
                 </Button>
