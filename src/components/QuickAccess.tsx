@@ -24,7 +24,8 @@ const categories = [
     emoji: "🏨", 
     name: "Accommodation", 
     description: "Browse popular hotels, beachfront stays, family apartments, and budget options.",
-    query: "What are good places to stay in Townsville?"
+    query: "What are good places to stay in Townsville?",
+    link: "/accommodation"
   },
   { 
     emoji: "🎟", 
