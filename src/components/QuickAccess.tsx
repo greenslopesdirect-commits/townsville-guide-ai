@@ -34,6 +34,13 @@ const categories = [
     query: "What are the best things to do in Townsville?"
   },
   { 
+    emoji: "🎉", 
+    name: "Events & What's On", 
+    description: "Festivals, markets, live music and events happening in Townsville throughout the year.",
+    query: "What events are on in Townsville this week?",
+    link: "/events"
+  },
+  { 
     emoji: "🛍", 
     name: "Shopping & Markets", 
     description: "Uncover local shops, weekend markets, boutiques, and artisanal stalls.",
