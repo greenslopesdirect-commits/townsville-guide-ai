@@ -18,10 +18,15 @@ const Header = () => {
 
           <div className="flex items-center gap-6">
             <Link
+              to="/"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Home
+            </Link>
+            <Link
               to="/history"
               className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
             >
-              {/* CHANGED: 'History' to 'Townsville's History' */}
               Townsville's History
             </Link>
             <Link
