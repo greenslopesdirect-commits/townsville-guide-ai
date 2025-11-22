@@ -13,22 +13,19 @@ const AboutSection = () => {
           <CardContent className="pt-8 pb-8 px-6 md:px-10">
             <div className="text-center mb-6">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                🏝 About Duncan's Guide to Townsville
+                About Duncan's Guide – Townsville 💛
               </h2>
             </div>
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
               <p>
-                Welcome to <span className="font-semibold text-foreground">Duncan's Guide – Townsville</span>, your AI-powered local companion to everything North Queensland.
+                Duncan's Guide is your AI-powered local companion to everything Townsville and North Queensland — built to help locals, newcomers, and travellers discover the best of the region with real local insight.
               </p>
               <p>
-                This guide was created by a long-time Townsville local who loves showcasing the region's tropical lifestyle — from The Strand's oceanfront walks to hidden cafés, family adventures, and dog-friendly spots.
-              </p>
-              <p className="text-foreground font-medium">
-                Our goal is simple: to help you experience Townsville like a local, not just a visitor.
+                This guide brings together hand-picked recommendations, carefully curated lists, and AI-assisted suggestions to make exploring easy. From beaches and restaurants to dog parks, events, and hidden gems, it's designed to help you experience Townsville like a local.
               </p>
               <p>
-                Whether you're planning your first trip or exploring new corners of the city you call home, this site brings together hand-picked recommendations, real local knowledge, and AI-assisted suggestions — all in one place.
+                Whether you're planning your first trip or exploring new corners of the city you already call home, Duncan's Guide offers updated recommendations, accurate information, and smart tools that adapt to your needs.
               </p>
             </div>
           </CardContent>
@@ -41,19 +38,22 @@ const AboutSection = () => {
           <CardContent className="pt-8 pb-8 px-6 md:px-10">
             <div className="text-center mb-6">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                👋 About Duncan Ross
+                About Duncan Ross 👋
               </h2>
             </div>
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
               <p>
-                Hi, I'm <span className="font-semibold text-foreground">Duncan Ross</span>, the creator behind this guide.
+                Hi, I'm Duncan — the creator of Duncan's Guide and a proud Townsville local.
               </p>
               <p>
-                After moving to Townsville, I fell in love with its relaxed energy, friendly community, and endless sunshine. I've combined my experience in digital design and AI technology to build this platform for locals, travellers, and newcomers alike.
+                After moving to North Queensland, I fell in love with Townsville's relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. With a background in digital design, websites, and AI tools, I created this platform to share the best of our city in a simple, friendly, and helpful way.
               </p>
               <p>
-                Through Duncan's Guide, I hope to share the best of what makes our city special — with accurate info, local updates, and smart tools that make exploring easy and enjoyable.
+                I explore Townsville every day — beaches, cafés, dog-friendly spots, local events — and I've built this guide to make it easier for others to do the same.
+              </p>
+              <p>
+                If you have suggestions, new places, or ideas to improve the guide, I'd love to hear from you.
               </p>
             </div>
 
@@ -62,7 +62,7 @@ const AboutSection = () => {
             <div className="space-y-3 text-center">
               <div className="flex items-center justify-center gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />
-                <span className="text-base md:text-lg">Based in Townsville, Queensland, Australia</span>
+                <span className="text-base md:text-lg">Based in Townsville, Queensland</span>
               </div>
               
               <div className="flex items-center justify-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
