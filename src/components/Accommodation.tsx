@@ -12,37 +12,37 @@ const Accommodation = () => {
   const hotels = [
     {
       name: "🏝 The Ville Resort–Casino",
-      description: "Luxury resort with ocean views — premium beachfront accommodation with casino, pools, and fine dining.",
+      description: "Luxury resort with ocean views, lagoon-style pools, casino facilities, and premium restaurants — the perfect tropical escape.",
       bookingLink: "https://www.booking.com/hotel/au/the-ville-resort-casino-townsville.html",
       image: villeResortImage,
     },
     {
       name: "🌇 Aquarius on the Beach",
-      description: "Affordable beachfront hotel — great value accommodation right on The Strand waterfront.",
+      description: "Affordable beachfront hotel right on The Strand, offering ocean views and excellent value for travellers.",
       bookingLink: "https://www.booking.com/hotel/au/aquarius-on-the-beach-townsville.html",
       image: aquariusImage,
     },
     {
       name: "🏙 Hotel Grand Chancellor",
-      description: "Modern city hotel with rooftop views — contemporary accommodation in the heart of the CBD.",
+      description: "Modern hotel in the heart of the CBD with rooftop views, spacious rooms, and easy access to shopping and dining.",
       bookingLink: "https://www.booking.com/hotel/au/hotel-grand-chancellor-townsville.html",
       image: grandChancellorImage,
     },
     {
       name: "🏡 Quest Townsville",
-      description: "Serviced apartments near the marina — perfect for longer stays and families.",
+      description: "Serviced apartments near the marina — ideal for families, longer stays, and business travellers.",
       bookingLink: "https://www.booking.com/hotel/au/quest-townsville.html",
       image: questImage,
     },
     {
       name: "🏢 Oaks Townsville Gateway Suites",
-      description: "Stylish and spacious hotel suites — modern comfort with great city and river views.",
+      description: "Stylish, comfortable hotel suites with river and city views, perfect for a relaxing stay.",
       bookingLink: "https://www.booking.com/hotel/au/oaks-townsville-gateway-suites.html",
       image: oaksImage,
     },
     {
       name: "🏕 BIG4 Rowes Bay Holiday Park",
-      description: "Beachfront caravan park with cabins, pools, and family facilities.",
+      description: "Beachfront caravan park with cabins, pools, playgrounds, and family-friendly facilities.",
       bookingLink: "https://www.booking.com/hotel/au/big4-rowes-bay-beachfront-holiday-park-townsville.html",
       image: big4Image,
     },
@@ -56,7 +56,7 @@ const Accommodation = () => {
         </h2>
         
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Whether you're after beachfront views, inner-city convenience, or a peaceful retreat, Townsville has something for every traveller.
+          From beachfront resorts to modern city hotels, Townsville offers a wide range of stays for families, couples, and solo travellers.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
