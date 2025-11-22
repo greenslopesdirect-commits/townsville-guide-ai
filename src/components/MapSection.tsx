@@ -3,11 +3,24 @@ const MapSection = () => {
     <section className="py-16 px-4 bg-background">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
-          Explore Townsville & North Queensland
+          Explore Townsville & North Queensland 🌏
         </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Zoom in to discover the city's landmarks, restaurants, and attractions.
+        <p className="text-center text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
+          Use the interactive map to explore top-rated restaurants, beaches, attractions, lookouts, and hidden gems across Townsville and Magnetic Island.
         </p>
+        
+        <div className="max-w-2xl mx-auto mb-8">
+          <p className="text-center font-semibold text-foreground mb-3">
+            <strong>Zoom in to find:</strong>
+          </p>
+          <ul className="text-left text-muted-foreground space-y-2 list-disc list-inside ml-auto mr-auto max-w-md">
+            <li>Popular dining spots</li>
+            <li>Beaches and walking trails</li>
+            <li>Family attractions and parks</li>
+            <li>Hotels and accommodation</li>
+            <li>Local landmarks and scenic areas</li>
+          </ul>
+        </div>
         
         <div className="max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-[var(--shadow-tropical)] border-2 border-border">
           <iframe
@@ -22,8 +35,8 @@ const MapSection = () => {
           />
         </div>
         
-        <p className="text-center text-sm text-muted-foreground mt-6 italic">
-          Zoom and explore top-rated attractions and restaurants across Townsville.
+        <p className="text-center text-base text-muted-foreground mt-6">
+          Tap any point of interest to learn more — or ask the AI guide for personalised recommendations.
         </p>
       </div>
     </section>
