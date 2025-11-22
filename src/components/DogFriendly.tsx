@@ -7,17 +7,17 @@ const DogFriendly = () => {
   const dogParks = [
     {
       name: "Rowes Bay Dog Park",
-      description: "Large open area near the beach.",
+      description: "Large open grassy area near the beach with plenty of room to run.",
       query: "Tell me about Rowes Bay Dog Park in Townsville.",
     },
     {
       name: "The Strand Foreshore",
-      description: "Walks, water access, and shade.",
+      description: "Beautiful coastal walk with water access, shade, and dog-friendly stretches.",
       query: "Tell me about dog-friendly areas on The Strand Townsville.",
     },
     {
       name: "Murray Sporting Complex",
-      description: "Spacious, fully fenced area.",
+      description: "Spacious, fully fenced off-leash area with great visibility and room to play.",
       query: "Tell me about Murray Sporting Complex dog park in Townsville.",
     },
   ];
@@ -25,17 +25,17 @@ const DogFriendly = () => {
   const petFriendlyCafes = [
     {
       name: "Juliette's Gelateria",
-      description: "Dog treats and water bowls.",
+      description: "Outdoor seating with water bowls, dog treats, and a great beachfront location.",
       query: "Is Juliette's Gelateria in Townsville dog-friendly?",
     },
     {
       name: "The Courtyard",
-      description: "Pet-friendly outdoor seating.",
+      description: "Trendy café with plenty of shaded outdoor tables for you and your dog.",
       query: "Is The Courtyard in Townsville dog-friendly?",
     },
     {
       name: "Hoi Polloi Café",
-      description: "Shaded dog-friendly patio.",
+      description: "Relaxed atmosphere with a dog-friendly patio and cold water always available.",
       query: "Tell me about Hoi Polloi Café dog-friendly policy in Townsville.",
     },
   ];
@@ -65,7 +65,7 @@ const DogFriendly = () => {
         </h2>
         
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Townsville is one of Queensland's most dog-friendly destinations, with beaches and cafés welcoming four-legged friends. Whether you're visiting or a local, you'll find tons of spots to explore with your furry companion.
+          Townsville is one of Queensland's most dog-friendly cities, with beaches, parks, cafés, and walking paths that welcome four-legged friends. Whether you're local or visiting, there are plenty of places to enjoy with your dog.
         </p>
 
         {/* Dog Parks Section */}
@@ -138,7 +138,7 @@ const DogFriendly = () => {
           <AlertDescription className="ml-2">
             <strong className="text-foreground">Local Tip from Duncan 🐕:</strong>
             <span className="text-muted-foreground ml-2">
-              Townsville pavements can get hot — touch with your hand first before walking your dog on sunny days.
+              Townsville pavements can get very hot during the day — always touch the ground with your hand first to check it's safe for your dog's paws.
             </span>
           </AlertDescription>
         </Alert>
