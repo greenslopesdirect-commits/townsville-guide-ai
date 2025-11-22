@@ -6,23 +6,23 @@ const WeatherInfo = () => {
   const seasons = [
     {
       Icon: Sun,
-      title: "Dry Season",
-      period: "May–Oct",
-      description: "Warm, sunny, and perfect for exploring beaches.",
+      title: "☀️ Dry Season",
+      period: "May–October",
+      description: "Warm, sunny, low humidity — perfect for beaches, hiking, and exploring outdoors. Expect: blue skies, cool nights, 20–28°C.",
       query: "What's Townsville's weather like in July?",
     },
     {
       Icon: CloudRain,
-      title: "Wet Season",
-      period: "Nov–Apr",
-      description: "Tropical rains and green landscapes.",
+      title: "🌧️ Wet Season",
+      period: "November–April",
+      description: "Tropical rain, afternoon storms, and vibrant green scenery. Expect: warm days, short bursts of rain, 25–32°C.",
       query: "Is the wet season good for travel in Townsville?",
     },
     {
       Icon: Palmtree,
-      title: "Year-Round Warmth",
+      title: "🌴 Year-Round Warmth",
       period: "All Year",
-      description: "Average 25–30°C, great for outdoor life.",
+      description: "Townsville stays comfortably warm all year, ideal for beach walks, alfresco dining, and outdoor life.",
       query: "What's the temperature in Townsville right now?",
     },
   ];
@@ -48,12 +48,11 @@ const WeatherInfo = () => {
     <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-foreground">
-          Townsville Weather & Best Time to Visit
+          Townsville Weather & Best Time to Visit ☀️
         </h2>
         
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Townsville enjoys a tropical climate with year-round sunshine and warm temperatures. 
-          The dry season (May–October) is ideal for beach days and outdoor adventures, while the wet season brings refreshing rains and lush greenery.
+          Townsville enjoys warm, sunny weather all year round thanks to its tropical climate. The best time to visit depends on what you enjoy — beach days, hiking, wildlife encounters, or lush green landscapes.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
