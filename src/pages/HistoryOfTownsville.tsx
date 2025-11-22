@@ -3,6 +3,16 @@ import { ArrowLeft } from "lucide-react";
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import thenAndNow from "@/assets/history-then-and-now.jpg";
+import lifeOnCountry from "@/assets/history-life-on-country.jpg";
+import explorers from "@/assets/history-explorers.jpg";
+import firstCamp from "@/assets/history-first-camp.jpg";
+import goldRush from "@/assets/history-gold-rush.jpg";
+import cyclones from "@/assets/history-cyclones.jpg";
+import wwii from "@/assets/history-wwii.jpg";
+import theSaint from "@/assets/history-the-saint.jpg";
+import modernWaterfront from "@/assets/history-modern-waterfront.jpg";
+import today from "@/assets/history-today.jpg";
 
 const HistoryOfTownsville = () => {
   return (
@@ -40,6 +50,18 @@ const HistoryOfTownsville = () => {
             </p>
           </div>
 
+          {/* Header Image */}
+          <div className="mb-16 animate-fade-in">
+            <img 
+              src={thenAndNow} 
+              alt="Townsville then and now comparison" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic">
+              Townsville: Then and Now
+            </p>
+          </div>
+
           {/* Introduction */}
           <section className="mb-16 animate-fade-in">
             <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
@@ -67,6 +89,15 @@ const HistoryOfTownsville = () => {
 
           {/* Section 1: Long Before Townsville */}
           <section className="mb-16 animate-fade-in">
+            <img 
+              src={lifeOnCountry} 
+              alt="Aboriginal life on Cleveland Bay before colonisation" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic mb-8">
+              Cleveland Bay long before colonisation
+            </p>
+            
             <h2 className="text-3xl font-bold text-foreground mb-4">
               Long Before Townsville: Life on Country
             </h2>
@@ -104,6 +135,15 @@ const HistoryOfTownsville = () => {
 
           {/* Section 2: Searching for a Northern Port */}
           <section className="mb-16 animate-fade-in">
+            <img 
+              src={explorers} 
+              alt="Explorers searching the North Queensland coastline" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic mb-8">
+              Explorers searching for a northern harbour
+            </p>
+            
             <h2 className="text-3xl font-bold text-foreground mb-4">
               Searching for a Northern Port (1840s–1860s)
             </h2>
@@ -136,6 +176,15 @@ const HistoryOfTownsville = () => {
 
           {/* Section 3: 1864 - A Camp Beside Ross Creek */}
           <section className="mb-16 animate-fade-in">
+            <img 
+              src={firstCamp} 
+              alt="The first settlement camp at Ross Creek in 1864" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic mb-8">
+              The earliest Townsville camp, 1864
+            </p>
+            
             <h2 className="text-3xl font-bold text-foreground mb-4">
               1864: A Camp Beside Ross Creek
             </h2>
@@ -170,6 +219,15 @@ const HistoryOfTownsville = () => {
 
           {/* Section 4: Gold, Sugar and a Frontier Boom */}
           <section className="mb-16 animate-fade-in">
+            <img 
+              src={goldRush} 
+              alt="Townsville port during the gold rush era" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic mb-8">
+              Townsville during the gold rush boom
+            </p>
+            
             <h2 className="text-3xl font-bold text-foreground mb-4">
               Gold, Sugar and a Frontier Boom
             </h2>
@@ -214,6 +272,15 @@ const HistoryOfTownsville = () => {
 
           {/* Section 5: Cyclones, Floods and Tropical Toughness */}
           <section className="mb-16 animate-fade-in">
+            <img 
+              src={cyclones} 
+              alt="Queenslander homes after a flood in early Townsville" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic mb-8">
+              Early Queenslander homes built for the tropics
+            </p>
+            
             <h2 className="text-3xl font-bold text-foreground mb-4">
               Cyclones, Floods and Tropical Toughness
             </h2>
@@ -250,6 +317,15 @@ const HistoryOfTownsville = () => {
 
           {/* Section 6: World War II */}
           <section className="mb-16 animate-fade-in">
+            <img 
+              src={wwii} 
+              alt="Townsville harbour during World War II" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic mb-8">
+              Townsville Harbour during WWII
+            </p>
+            
             <h2 className="text-3xl font-bold text-foreground mb-4">
               World War II: A City on the Front Line (1942–1945)
             </h2>
@@ -291,6 +367,15 @@ const HistoryOfTownsville = () => {
 
           {/* Section 7: 1950s–1970s */}
           <section className="mb-16 animate-fade-in">
+            <img 
+              src={theSaint} 
+              alt="Castle Hill with The Saint painted on it" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic mb-8">
+              Castle Hill with 'The Saint'
+            </p>
+            
             <h2 className="text-3xl font-bold text-foreground mb-4">
               1950s–1970s: Suburbs, Uni and "The Saint"
             </h2>
@@ -323,6 +408,15 @@ const HistoryOfTownsville = () => {
 
           {/* Section 8: 1970s–2000s */}
           <section className="mb-16 animate-fade-in">
+            <img 
+              src={modernWaterfront} 
+              alt="Modern Townsville waterfront and skyline" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic mb-8">
+              Townsville's modern skyline and The Strand
+            </p>
+            
             <h2 className="text-3xl font-bold text-foreground mb-4">
               1970s–2000s: Industry, Skyline and Waterfront Life
             </h2>
@@ -362,6 +456,15 @@ const HistoryOfTownsville = () => {
 
           {/* Section 9: Townsville Today */}
           <section className="mb-16 animate-fade-in">
+            <img 
+              src={today} 
+              alt="Everyday life on The Strand in modern Townsville" 
+              className="w-full h-auto rounded-lg shadow-lg mb-3"
+            />
+            <p className="text-center text-sm text-muted-foreground italic mb-8">
+              Everyday life on The Strand today
+            </p>
+            
             <h2 className="text-3xl font-bold text-foreground mb-4">
               Townsville Today: A City of Layers
             </h2>
