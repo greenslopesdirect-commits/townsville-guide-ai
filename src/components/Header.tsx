@@ -30,6 +30,12 @@ const Header = () => {
             >
               Things to Do
             </Link>
+            <Link
+              to="/beaches"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Beaches
+            </Link>
           </div>
         </div>
       </nav>
