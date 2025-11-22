@@ -37,7 +37,7 @@ const SeoContentSections = () => {
       title: "Best Restaurants & Cafés in Townsville",
       content: "Townsville's dining scene blends tropical flavours, fresh seafood, and relaxed Queensland atmosphere. JAM Corner on Palmer Street serves award-winning modern Australian cuisine with creative dishes and a sophisticated vibe. A Touch of Salt offers elegant fine dining with riverfront views and seasonal menus. Longboard Bar & Grill delivers beachfront dining on The Strand with burgers, tacos, and cocktails. Shorehouse combines coastal dining with ocean views, while Coffee Dominion is a local favourite for specialty coffee and breakfast.",
       linkText: "Find places to eat",
-      linkTo: "#food-drink"
+      linkTo: "/food"
     },
     {
       id: "magnetic-island",
