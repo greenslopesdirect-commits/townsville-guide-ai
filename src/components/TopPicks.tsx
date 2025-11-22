@@ -9,37 +9,37 @@ import billabongSanctuaryImage from "@/assets/billabong-sanctuary-townsville.web
 const picks = [
   {
     title: "The Strand",
-    description: "Townsville's iconic beachfront, perfect for walks, swims, and sunset views.",
+    description: "Townsville's iconic beachfront — ideal for swimming, walking, cycling, and sunset views.",
     image: strandImage,
     query: "Tell me about The Strand in Townsville.",
   },
   {
     title: "Magnetic Island",
-    description: "Just a 20-minute ferry ride away — wildlife, beaches, and hikes galore.",
+    description: "A 20-minute ferry ride to beaches, wildlife, hiking trails, and tropical bays.",
     image: magneticIslandImage,
     query: "What can I do on Magnetic Island?",
   },
   {
     title: "Castle Hill",
-    description: "Climb or drive up for unbeatable views of the city and coast.",
+    description: "Climb or drive to the lookout for the best panoramic views of Townsville and the coast.",
     image: castleHillImage,
     query: "What's the best way to get to Castle Hill lookout?",
   },
   {
     title: "JAM Corner",
-    description: "Upscale dining with a relaxed North Queensland vibe.",
+    description: "Upscale dining with a relaxed North Queensland vibe — perfect for lunch or dinner.",
     image: jamCornerImage,
     query: "Tell me about JAM Corner restaurant in Townsville.",
   },
   {
     title: "Jezzine Barracks",
-    description: "A scenic coastal walkway and heritage site with art, history, and stunning ocean views.",
+    description: "A scenic coastal walkway with history, art, military heritage, and ocean views.",
     image: jezzineBarracksImage,
     query: "What can I see at Jezzine Barracks in Townsville?",
   },
   {
     title: "Billabong Sanctuary",
-    description: "Hand-feed kangaroos and meet koalas just south of Townsville.",
+    description: "A family-friendly wildlife park where you can hand-feed kangaroos and meet koalas.",
     image: billabongSanctuaryImage,
     query: "What animals are at Billabong Sanctuary?",
   },
@@ -65,10 +65,10 @@ const TopPicks = () => {
     <section className="py-16 px-4 bg-muted/30">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-          🏝 Top Local Picks in Townsville
+          Top Local Picks in Townsville 🏝
         </h2>
         <p className="text-center text-muted-foreground mb-12 text-lg">
-          Hand-picked highlights from around Townsville.
+          Hand-picked highlights from around Townsville — perfect for first-time visitors and long-time locals.
         </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
