@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WeatherInfo from "@/components/WeatherInfo";
@@ -12,8 +13,19 @@ import MapSection from "@/components/MapSection";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
 import WeatherWidget from "@/components/WeatherWidget";
+
 const Index = () => {
-  return <div className="min-h-screen">
+  return (
+    <>
+      <Helmet>
+        <title>Duncan's Guide – Townsville | Best Beaches, Food & Local Attractions</title>
+        <meta 
+          name="description" 
+          content="Discover Townsville's best beaches, cafés, walks and hidden gems with Duncan's Guide — your AI-powered local guide to everything North Queensland." 
+        />
+      </Helmet>
+      
+      <div className="min-h-screen">
       <Header />
       
       <Hero />
@@ -48,6 +60,9 @@ const Index = () => {
         <AboutSection />
       </section>
       <Footer />
-    </div>;
+      </div>
+    </>
+  );
 };
+
 export default Index;

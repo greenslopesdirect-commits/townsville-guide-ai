@@ -31,7 +31,8 @@ const MapSection = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Townsville Map"
+            title="Interactive map of Townsville showing attractions, beaches, restaurants and points of interest"
+            aria-label="Interactive Google Map of Townsville and North Queensland region"
           />
         </div>
         

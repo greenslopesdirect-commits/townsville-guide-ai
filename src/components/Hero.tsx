@@ -105,7 +105,8 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
-        aria-label="The Strand beachfront in Townsville, North Queensland"
+        role="img"
+        aria-label="The Strand beachfront with palm trees in Townsville, North Queensland"
       />
       
       {/* Darker Gradient Overlay for better text contrast */}
@@ -230,6 +231,7 @@ const Hero = () => {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-4 text-base md:text-lg font-semibold"
+                aria-label="Discover the history of Townsville"
               >
                 Discover Townsville's Story 📜
               </Button>

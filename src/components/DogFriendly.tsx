@@ -91,6 +91,7 @@ const DogFriendly = () => {
                     variant="outline"
                     size="sm"
                     className="w-full"
+                    aria-label={`Ask about ${park.name}`}
                   >
                     Ask about this park
                   </Button>
@@ -123,6 +124,7 @@ const DogFriendly = () => {
                     variant="outline"
                     size="sm"
                     className="w-full"
+                    aria-label={`Ask about ${cafe.name}`}
                   >
                     Ask about this place
                   </Button>

@@ -81,7 +81,12 @@ const TopPicks = () => {
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src={pick.image} 
-                  alt={`${pick.title} - ${pick.description.substring(0, 60)} in Townsville, North Queensland`}
+                  alt={pick.title === "The Strand" ? "The Strand beachfront in Townsville" : 
+                       pick.title === "Magnetic Island" ? "Magnetic Island coastline and beaches" :
+                       pick.title === "Castle Hill" ? "Castle Hill Lookout overlooking Townsville" :
+                       pick.title === "JAM Corner" ? "JAM Corner restaurant in Townsville" :
+                       pick.title === "Jezzine Barracks" ? "Jezzine Barracks coastal boardwalk in Townsville" :
+                       "Billabong Sanctuary wildlife park in Townsville"}
                   className="w-full h-full object-cover transition-transform hover:scale-105"
                   loading="lazy"
                 />
