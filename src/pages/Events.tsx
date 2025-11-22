@@ -37,33 +37,28 @@ const Events = () => {
             
             {/* Intro */}
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Townsville Events & What's On
+              Townsville Events & What's On – Festivals, Markets & Annual Celebrations
             </h1>
             
             <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-              Townsville hosts a wide range of events throughout the year, from outdoor art festivals and cultural celebrations to major sporting events and weekly markets. This guide highlights the most popular annual and seasonal events, plus regular weekly activities you can enjoy at any time of year.
+              Townsville hosts major festivals, cultural celebrations and weekly markets all year round. Whether you're here for a weekend or planning ahead for a future trip, this guide gives you the major events, their typical dates, and the best regular happenings across the city.
             </p>
 
             {/* Section 1: Strand Ephemera */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Strand Ephemera (Biennial Outdoor Sculpture Festival)
+                ⭐ Strand Ephemera (Biennial – July/August, Every 2 Years)
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Strand Ephemera is one of Northern Australia's most popular outdoor art events, featuring large-scale sculptures displayed along The Strand foreshore.
+                Strand Ephemera is Australia's leading outdoor sculpture exhibition, held every two years along The Strand foreshore. Expect large-scale artworks, light installations, and interactive coastal pieces.
               </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Dozens of sculptures across the beachfront</li>
-                  <li>Family-friendly walks and photo spots</li>
-                  <li>Night lighting displays</li>
-                  <li>Free to attend</li>
-                </ul>
-              </div>
               <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Go at sunset — the light is perfect for photos.</p>
+                <p className="font-semibold text-foreground mb-2">Typical Dates:</p>
+                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                  <li>Every 2 years (biennial)</li>
+                  <li>Late July or early August</li>
+                  <li>Next expected: 2026</li>
+                </ul>
               </div>
               <Button variant="outline" size="sm" asChild>
                 <a 
@@ -81,23 +76,17 @@ const Events = () => {
             {/* Section 2: NAFA */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-4 text-foreground">
-                North Australian Festival of Arts (NAFA)
+                ⭐ North Australian Festival of Arts – NAFA (June–July)
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                NAFA transforms Townsville into a city-wide celebration of art, music, theatre and culture.
+                Townsville's biggest arts and cultural festival, featuring theatre, music, comedy, circus, visual arts and community showcases across the city.
               </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Live performances</li>
-                  <li>Circus, comedy and music acts</li>
-                  <li>Art exhibitions and workshops</li>
-                  <li>Events across multiple venues</li>
-                </ul>
-              </div>
               <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Check the program early — popular shows sell out fast.</p>
+                <p className="font-semibold text-foreground mb-2">Typical Dates:</p>
+                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                  <li>Late June to mid-July</li>
+                  <li>Annual event</li>
+                </ul>
               </div>
               <Button variant="outline" size="sm" asChild>
                 <a 
@@ -115,18 +104,16 @@ const Events = () => {
             {/* Section 3: Cultural Festival */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Townsville Cultural Festival
+                ⭐ Townsville Cultural Festival (August)
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                One of Queensland's most diverse multicultural festivals, celebrating international food, music and dance.
+                A multicultural celebration of global food, dance, live music, art and community. A long-running local favourite.
               </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
+              <div className="bg-muted/30 p-4 rounded-lg mb-4">
+                <p className="font-semibold text-foreground mb-2">Typical Dates:</p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Live performances</li>
-                  <li>Food stalls from many cultures</li>
-                  <li>Family-friendly activities</li>
-                  <li>Community atmosphere</li>
+                  <li>August</li>
+                  <li>Annual</li>
                 </ul>
               </div>
               <Button variant="outline" size="sm" asChild>
@@ -145,27 +132,21 @@ const Events = () => {
             {/* Section 4: Magnetic Island Race Week */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Magnetic Island Race Week
+                ⭐ Magnetic Island Race Week (Late August–Early September)
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                A major sailing event attracting competitors from across Australia. Set in the beautiful backdrop of Magnetic Island.
+                One of Australia's most scenic sailing events, drawing racing crews from around the world for a week of on-water competition and sunset celebrations.
               </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Yacht racing</li>
-                  <li>Onshore celebrations</li>
-                  <li>Sunset events</li>
-                  <li>Stunning ocean scenery</li>
-                </ul>
-              </div>
               <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Best viewing from Nelly Bay and Picnic Bay.</p>
+                <p className="font-semibold text-foreground mb-2">Typical Dates:</p>
+                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                  <li>Late August to early September</li>
+                  <li>Annual event</li>
+                </ul>
               </div>
               <Button variant="outline" size="sm" asChild>
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Magnetic+Island" 
+                  href="https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Ferry+Terminal" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2"
@@ -179,27 +160,21 @@ const Events = () => {
             {/* Section 5: Christmas Festival */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Townsville Christmas Festival (December)
+                ⭐ Townsville Christmas Festival (December)
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                A festive celebration featuring lights, music, markets and family activities.
+                Townsville lights up in December with Christmas markets, concerts, food stalls, kids' entertainment and festive light displays.
               </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Christmas lights</li>
-                  <li>Kids' activities</li>
-                  <li>Food stalls</li>
-                  <li>Community performances</li>
-                </ul>
-              </div>
               <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Go early to find parking during peak nights.</p>
+                <p className="font-semibold text-foreground mb-2">Typical Dates:</p>
+                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
+                  <li>Early December</li>
+                  <li>Annual</li>
+                </ul>
               </div>
               <Button variant="outline" size="sm" asChild>
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Townsville+CBD+Events+Precinct" 
+                  href="https://www.google.com/maps/search/?api=1&query=Townsville+CBD" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2"
@@ -210,55 +185,115 @@ const Events = () => {
               </Button>
             </section>
 
-            {/* Section 6: Weekly Events */}
+            {/* Section 6: Weekly & Monthly Markets */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Weekly Events & Markets
+                Weekly & Monthly Markets (Year-Round)
               </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Townsville has several recurring events that run all year round.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Popular Weekly Events:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Cotters Market (Sunday – Flinders Street)</li>
-                  <li>Willows Rotary Markets (Sunday – Kirwan)</li>
-                  <li>Strand Night Markets (monthly)</li>
-                  <li>Riverway Movie Nights (seasonal)</li>
-                </ul>
+              
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                    Cotters Market – Sundays (Flinders Street)
+                  </h3>
+                  <p className="text-muted-foreground mb-3">
+                    Townsville's longest-running local market, with food stalls, crafts and fresh produce.
+                  </p>
+                  <Button variant="outline" size="sm" asChild>
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Flinders+Street+Market" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                    Willows Rotary Market – Sundays (Kirwan)
+                  </h3>
+                  <p className="text-muted-foreground mb-3">
+                    Huge open-air market with food trucks, clothing, plants, and family activities.
+                  </p>
+                  <Button variant="outline" size="sm" asChild>
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Willows+Shopping+Centre+Townsville" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                    Strand Night Markets – Usually 1st Friday of every month
+                  </h3>
+                  <p className="text-muted-foreground mb-3">
+                    Street food, jewellery, workshops, live entertainment and local crafts.
+                  </p>
+                  <Button variant="outline" size="sm" asChild>
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">
+                    Riverway Movie Nights (Dry Season: May–October)
+                  </h3>
+                  <p className="text-muted-foreground mb-3">
+                    Free outdoor movies hosted at Riverway's lagoons and grass areas.
+                  </p>
+                  <Button variant="outline" size="sm" asChild>
+                    <a 
+                      href="https://www.google.com/maps/search/?api=1&query=Riverway+Townsville" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                </div>
               </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Flinders+Street+Markets+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
             </section>
 
             {/* Section 7: Ask the AI */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Upcoming Events – Ask the AI
+                Day-by-Day Events – Ask the AI Guide
               </h2>
               <p className="text-muted-foreground mb-4 leading-relaxed">
-                Event schedules change frequently, so the built-in AI guide is the best way to check what's happening now.
+                Because exact dates change from year to year, Duncan's AI Guide can give real-time suggestions.
               </p>
               <div className="mb-6">
-                <p className="font-semibold text-foreground mb-2">Try asking questions like:</p>
+                <p className="font-semibold text-foreground mb-2">Try asking:</p>
                 <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>"What events are on in Townsville this weekend?"</li>
-                  <li>"Where are the markets today?"</li>
-                  <li>"Is there live music tonight in Townsville?"</li>
-                  <li>"Any free events for families today?"</li>
+                  <li>"What events are on this weekend in Townsville?"</li>
+                  <li>"Is there live music tonight?"</li>
+                  <li>"Are there any markets on Sunday?"</li>
+                  <li>"Is anything happening at The Strand today?"</li>
+                  <li>"What festivals will be on in July?"</li>
                 </ul>
               </div>
               <p className="text-muted-foreground mb-6">
-                The AI will suggest the best options based on your interests.
+                Your AI will answer instantly with fresh, location-specific options.
               </p>
               <div className="text-center">
                 <Button onClick={handleAskAI} size="lg" className="gap-2">
