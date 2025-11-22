@@ -11,37 +11,37 @@ const FoodDrink = () => {
   const restaurants = [
     {
       name: "🍽 JAM Restaurant",
-      description: "Upscale dining on Palmer Street.",
+      description: "Award-winning modern Australian dining on Palmer Street with creative dishes and a relaxed, upscale vibe.",
       image: JamImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about JAM Restaurant Townsville.",
     },
     {
       name: "🌮 Cactus Jack's",
-      description: "Mexican bar & grill with a lively vibe.",
+      description: "Fun and lively Mexican bar & grill — great for nachos, cocktails, and group dinners.",
       image: cactusJacksImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Cactus Jack's in Townsville.",
     },
     {
       name: "🍹 Longboard Bar & Grill",
-      description: "Beachfront spot on The Strand.",
+      description: "Beachfront dining on The Strand with burgers, tacos, cocktails, and unbeatable ocean views.",
       image: longboardImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Longboard Bar & Grill Townsville.",
     },
     {
       name: "🍔 Coo.King BBQ & Hotpot",
-      description: "Enjoy Korean BBQ, Shabu-Shabu ( Hotpot )",
+      description: "Korean BBQ and Shabu-Shabu (hotpot) with plenty of fresh ingredients and a popular buffet-style setup.",
       image: CookingImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Coo.King BBQ & Hotpot in Townsville.",
     },
     {
       name: "🍨 Juliette's Gelateria",
-      description: "Local favourite for dessert & coffee.",
+      description: "Locally loved for gelato, coffee, and desserts — perfect for a sunset treat along The Strand.",
       image: JuliettesImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about Juliette's Gelateria Townsville.",
     },
     {
       name: "🍽️ A Touch of Salt",
-      description: "Exquisite Award Winning Menu.",
+      description: "Fine dining with an elegant menu, riverfront location, and one of Townsville's top-rated restaurants.",
       image: SaltImage, // <-- NEW LOCAL VARIABLE
       query: "Tell me about A Touch of Salt Townsville.",
     },
@@ -72,9 +72,7 @@ const FoodDrink = () => {
         </h2>
 
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-          From The Strand to Palmer Street, Townsville's dining scene blends tropical flavours, seafood, and relaxed
-          Queensland hospitality. Whether you're after upscale dining or casual beachside bites, there's something for
-          every taste.
+          From waterfront dining to casual pubs and café culture, Townsville's food scene blends tropical flavours, fresh seafood, and relaxed Queensland atmosphere.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
