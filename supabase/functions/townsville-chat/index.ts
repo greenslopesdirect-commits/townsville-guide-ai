@@ -180,7 +180,7 @@ ATTRACTIONS & LANDMARKS
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Ville+Resort+Casino+Townsville)
 • Museum of Tropical Queensland (local history, natural science) - Townsville City
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Museum+of+Tropical+Queensland+Townsville)
-• Reef HQ Aquarium (reopening 2026) - Townsville City
+• Reef HQ Aquarium (TEMPORARILY CLOSED — major redevelopment, reopening 2029) - Townsville City
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Reef+HQ+Townsville)
 • Strand Waterpark (free kids splash park) - The Strand
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Strand+Waterpark+Townsville)
