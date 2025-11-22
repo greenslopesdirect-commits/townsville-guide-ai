@@ -18,10 +18,10 @@ const HistoryOfTownsville = () => {
   return (
     <>
       <Helmet>
-        <title>History of Townsville | Duncan's Guide</title>
+        <title>Townsville History – A Simple, Engaging Story of the City | Duncan's Guide</title>
         <meta 
           name="description" 
-          content="Discover how Townsville grew from a muddy creek camp into the capital of North Queensland. From Aboriginal history to gold rush, WWII and modern growth." 
+          content="Explore Townsville's history from First Nations Country to gold rush days, cyclones, WWII and modern life in this clear, easy-to-read local guide." 
         />
       </Helmet>
       
@@ -54,7 +54,7 @@ const HistoryOfTownsville = () => {
           <div className="mb-20 animate-fade-in">
             <img 
               src={thenAndNow} 
-              alt="Townsville then and now comparison" 
+              alt="Historical comparison of Townsville showing past and present cityscape" 
               className="w-full h-auto rounded-xl shadow-md mb-4 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic">
@@ -92,7 +92,7 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={lifeOnCountry} 
-              alt="Aboriginal life on Cleveland Bay before colonisation" 
+              alt="Historical illustration of Aboriginal life on Cleveland Bay before European settlement" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
@@ -139,7 +139,7 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={explorers} 
-              alt="Explorers searching the North Queensland coastline" 
+              alt="Historical illustration of European explorers searching the North Queensland coastline" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
@@ -181,7 +181,7 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={firstCamp} 
-              alt="The first settlement camp at Ross Creek in 1864" 
+              alt="Historical illustration of the first European settlement camp at Ross Creek Townsville in 1864" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
@@ -225,7 +225,7 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={goldRush} 
-              alt="Townsville port during the gold rush era" 
+              alt="Historical illustration of Townsville port during the 1800s gold rush boom" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
@@ -279,7 +279,7 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={cyclones} 
-              alt="Queenslander homes after a flood in early Townsville" 
+              alt="Historical illustration of traditional Queenslander homes built on stilts in Townsville" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
@@ -325,7 +325,7 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={wwii} 
-              alt="Townsville harbour during World War II" 
+              alt="Townsville harbour during World War II (artistic depiction)" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
@@ -376,7 +376,7 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={theSaint} 
-              alt="Castle Hill with The Saint painted on it" 
+              alt="Castle Hill with 'The Saint' stick figure painted on it in Townsville" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
@@ -418,7 +418,7 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={modernWaterfront} 
-              alt="Modern Townsville waterfront and skyline" 
+              alt="Modern Townsville waterfront and city skyline" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
@@ -467,7 +467,7 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={today} 
-              alt="Everyday life on The Strand in modern Townsville" 
+              alt="Aerial view of Townsville and Castle Hill" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
@@ -501,6 +501,53 @@ const HistoryOfTownsville = () => {
               <p>
                 Understanding the history turns every lookout, every beach walk and every sunset into something richer.
               </p>
+            </div>
+          </section>
+
+          {/* Explore More Section */}
+          <section className="mb-16 animate-fade-in pt-16 border-t border-border/30">
+            <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl p-8 md:p-12 shadow-lg">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
+                Explore More of Townsville
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+                <Link 
+                  to="/#top-picks"
+                  className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
+                >
+                  <div className="text-4xl mb-3">🎟</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Things to Do in Townsville</h3>
+                  <p className="text-sm text-muted-foreground">Explore attractions, beaches, and activities</p>
+                </Link>
+
+                <Link 
+                  to="/#food-drink"
+                  className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
+                >
+                  <div className="text-4xl mb-3">🍽</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Best Beaches in Townsville</h3>
+                  <p className="text-sm text-muted-foreground">Discover The Strand, Pallarenda, and more</p>
+                </Link>
+
+                <Link 
+                  to="/#dog-friendly"
+                  className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
+                >
+                  <div className="text-4xl mb-3">🐾</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Dog-Friendly Townsville</h3>
+                  <p className="text-sm text-muted-foreground">Find dog parks and pet-friendly cafés</p>
+                </Link>
+
+                <Link 
+                  to="/#food-drink"
+                  className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
+                >
+                  <div className="text-4xl mb-3">☕</div>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Townsville Restaurants & Cafés</h3>
+                  <p className="text-sm text-muted-foreground">Where to eat and drink in Townsville</p>
+                </Link>
+              </div>
             </div>
           </section>
 

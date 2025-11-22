@@ -69,7 +69,12 @@ const Accommodation = () => {
               <div className="aspect-video w-full overflow-hidden">
                 <img 
                   src={hotel.image} 
-                  alt={`${hotel.name} accommodation in Townsville, North Queensland`}
+                  alt={hotel.name.includes("Ville Resort") ? "The Ville Resort-Casino luxury accommodation in Townsville" :
+                       hotel.name.includes("Aquarius") ? "Aquarius on the Beach beachfront hotel in Townsville" :
+                       hotel.name.includes("Grand Chancellor") ? "Hotel Grand Chancellor in Townsville CBD" :
+                       hotel.name.includes("Quest") ? "Quest Townsville serviced apartments" :
+                       hotel.name.includes("Oaks") ? "Oaks Townsville Gateway Suites accommodation" :
+                       "BIG4 Rowes Bay Holiday Park beachfront camping in Townsville"}
                   loading="lazy"
                   className="w-full h-full object-cover"
                 />
@@ -89,6 +94,7 @@ const Accommodation = () => {
                     href={hotel.bookingLink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`Check availability for ${hotel.name.replace(/[🏝🌇🏙🏡🏢🏕]/g, '').trim()}`}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Check availability
@@ -119,6 +125,7 @@ const Accommodation = () => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
             className="group relative px-6 py-4 bg-gradient-to-r from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/20"
+            aria-label="Ask AI guide for accommodation recommendations"
           >
             <div className="flex items-center gap-2 text-sm md:text-base">
               <span className="text-2xl">🏨</span>

@@ -72,6 +72,7 @@ const QuickAccess = () => {
               onClick={() => handleCardClick(category.query)}
               className="text-left group animate-fade-in hover-scale"
               style={{ animationDelay: `${index * 100}ms` }}
+              aria-label={`Learn about ${category.name} in Townsville`}
             >
               <Card className="h-full border-2 hover:border-primary transition-all duration-300 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-tropical)] rounded-3xl">
                 <CardContent className="p-6 flex flex-col gap-3">

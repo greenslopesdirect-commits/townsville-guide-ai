@@ -85,7 +85,12 @@ const FoodDrink = () => {
               <div className="aspect-video w-full overflow-hidden">
                 <img
                   src={restaurant.image}
-                  alt={`${restaurant.name} - ${restaurant.description} in Townsville, North Queensland`}
+                  alt={restaurant.name.includes("JAM") ? "JAM Corner restaurant dining in Townsville" :
+                       restaurant.name.includes("Cactus") ? "Cactus Jack's Mexican restaurant in Townsville" :
+                       restaurant.name.includes("Longboard") ? "Longboard Bar & Grill beachfront dining on The Strand" :
+                       restaurant.name.includes("Coo.King") ? "Coo.King BBQ & Hotpot restaurant in Townsville" :
+                       restaurant.name.includes("Juliette") ? "Juliette's Gelateria on The Strand in Townsville" :
+                       "A Touch of Salt fine dining restaurant in Townsville"}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -95,7 +100,7 @@ const FoodDrink = () => {
                 <CardDescription>{restaurant.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <Button onClick={() => handleAskAbout(restaurant.query)} variant="outline" size="sm" className="w-full">
+                <Button onClick={() => handleAskAbout(restaurant.query)} variant="outline" size="sm" className="w-full" aria-label={`Ask about ${restaurant.name.replace(/[🍽🌮🍹🍔🍨🍽️]/g, '').trim()}`}>
                   Ask about this place
                 </Button>
               </CardContent>

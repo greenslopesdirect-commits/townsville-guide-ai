@@ -100,6 +100,7 @@ const EventsOn = () => {
                   variant="outline"
                   size="sm"
                   className="w-full"
+                  aria-label={`Ask about ${event.title}`}
                 >
                   Ask about this event
                 </Button>
@@ -119,6 +120,7 @@ const EventsOn = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2"
+              aria-label="View the full events calendar for Townsville"
             >
               See full event calendar
               <ExternalLink className="w-4 h-4" />
