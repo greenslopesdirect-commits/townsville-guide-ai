@@ -29,7 +29,7 @@ const categories = [
   },
   { 
     emoji: "🎟", 
-    name: "Things to do", 
+    name: "Things to Do", 
     description: "Attractions, tours, lookouts, museums, kid-friendly activities, and local adventures.",
     query: "What are the best things to do in Townsville?"
   },

@@ -9,7 +9,7 @@ const ThingsToDo = () => {
   return (
     <>
       <Helmet>
-        <title>Things to do in Townsville – Local Highlights & Must-See Spots | Duncan's Guide</title>
+        <title>Things to Do in Townsville – Local Highlights & Must-See Spots | Duncan's Guide</title>
         <meta 
           name="description" 
           content="Discover the best things to do in Townsville — Castle Hill, Magnetic Island, The Strand, wildlife, walks, beaches and more. Your complete local guide." 
@@ -36,7 +36,7 @@ const ThingsToDo = () => {
             {/* Page Header */}
             <header className="mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-                Things to do in Townsville – Local Highlights & Must-See Spots
+                Things to Do in Townsville – Local Highlights & Must-See Spots
               </h1>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Townsville is more than just a stop on the way to somewhere else. It's a real working tropical city with beaches, walks, wildlife, history and easy access to Magnetic Island. This page gives you a simple local overview of the best things to do in and around Townsville, whether you're here for a day, a weekend or longer.

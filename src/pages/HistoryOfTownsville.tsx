@@ -528,7 +528,7 @@ const HistoryOfTownsville = () => {
                   aria-label="View things to do in Townsville"
                 >
                   <div className="text-4xl mb-3">🎟</div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Things to do</h3>
+                  <h3 className="text-lg font-semibold text-foreground mb-2">Things To Do</h3>
                   <p className="text-sm text-muted-foreground">Castle Hill, Magnetic Island, and more</p>
                 </Link>
 
