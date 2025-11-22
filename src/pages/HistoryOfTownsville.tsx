@@ -29,42 +29,43 @@ const HistoryOfTownsville = () => {
         <Header />
         
         {/* Back Navigation */}
-        <div className="container mx-auto px-4 py-6 max-w-4xl mt-16">
+        <div className="container mx-auto px-4 sm:px-6 py-6 max-w-5xl mt-16">
           <Link 
             to="/" 
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+            className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-5 h-5" />
             Back to Duncan's Guide
           </Link>
         </div>
 
         {/* Hero Section */}
-        <div className="container mx-auto px-4 py-12 max-w-4xl">
-          <div className="text-center mb-16 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+        <div className="container mx-auto px-4 sm:px-6 py-12 max-w-5xl">
+          <div className="text-center mb-20 animate-fade-in">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
               A Short, Interesting History of Townsville
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl md:text-2xl text-muted-foreground font-light">
               How a Muddy Creek Became the Capital of North Queensland
             </p>
           </div>
 
           {/* Header Image */}
-          <div className="mb-16 animate-fade-in">
+          <div className="mb-20 animate-fade-in">
             <img 
               src={thenAndNow} 
               alt="Townsville then and now comparison" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic">
+            <p className="text-center text-sm text-muted-foreground/80 italic">
               Townsville: Then and Now
             </p>
           </div>
 
           {/* Introduction */}
-          <section className="mb-16 animate-fade-in">
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+          <section className="mb-24 animate-fade-in">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 When you stroll along The Strand at sunset or see Castle Hill glowing orange in the late afternoon, it's hard to imagine that Townsville began as a makeshift camp beside a muddy creek. Yet in less than 200 years, that tiny settlement grew into Northern Australia's largest city — a working tropical port, a gateway to the Great Barrier Reef, and a place where layers of history sit quietly beneath everyday life.
               </p>
@@ -88,24 +89,25 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Section 1: Long Before Townsville */}
-          <section className="mb-16 animate-fade-in">
+          <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={lifeOnCountry} 
               alt="Aboriginal life on Cleveland Bay before colonisation" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic mb-8">
+            <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
               Cleveland Bay long before colonisation
             </p>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
               Long Before Townsville: Life on Country
             </h2>
-            <h3 className="text-xl font-semibold text-muted-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8">
               Bindal and Wulgurukaba Country
             </h3>
             
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 Long before European arrival, the land and waters around today's Townsville belonged to the Bindal (south of Ross River) and Wulgurukaba (north of Ross River) peoples.
               </p>
@@ -134,24 +136,25 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Section 2: Searching for a Northern Port */}
-          <section className="mb-16 animate-fade-in">
+          <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={explorers} 
               alt="Explorers searching the North Queensland coastline" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic mb-8">
+            <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
               Explorers searching for a northern harbour
             </p>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
               Searching for a Northern Port (1840s–1860s)
             </h2>
-            <h3 className="text-xl font-semibold text-muted-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8">
               Cattle, Coastlines and the Quest for a Harbour
             </h3>
             
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 By the mid-1800s, European pastoralists pushed cattle runs across North Queensland. But without a reliable port, the region struggled to trade.
               </p>
@@ -175,24 +178,25 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Section 3: 1864 - A Camp Beside Ross Creek */}
-          <section className="mb-16 animate-fade-in">
+          <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={firstCamp} 
               alt="The first settlement camp at Ross Creek in 1864" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic mb-8">
+            <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
               The earliest Townsville camp, 1864
             </p>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
               1864: A Camp Beside Ross Creek
             </h2>
-            <h3 className="text-xl font-semibold text-muted-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8">
               The Moment Townsville Began
             </h3>
             
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 Andrew Ball's party reached the mouth of a small tidal creek and camped beneath a striking pink-granite hill. He named it Castle Hill — a reminder of fortress-like cliffs in Britain.
               </p>
@@ -218,24 +222,25 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Section 4: Gold, Sugar and a Frontier Boom */}
-          <section className="mb-16 animate-fade-in">
+          <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={goldRush} 
               alt="Townsville port during the gold rush era" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic mb-8">
+            <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
               Townsville during the gold rush boom
             </p>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
               Gold, Sugar and a Frontier Boom
             </h2>
-            <h3 className="text-xl font-semibold text-muted-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8">
               Gateway to the Goldfields
             </h3>
             
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 The real boom came when gold was discovered inland at Ravenswood and Charters Towers.
               </p>
@@ -271,24 +276,25 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Section 5: Cyclones, Floods and Tropical Toughness */}
-          <section className="mb-16 animate-fade-in">
+          <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={cyclones} 
               alt="Queenslander homes after a flood in early Townsville" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic mb-8">
+            <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
               Early Queenslander homes built for the tropics
             </p>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
               Cyclones, Floods and Tropical Toughness
             </h2>
-            <h3 className="text-xl font-semibold text-muted-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8">
               Learning to Live with the Weather
             </h3>
             
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 Townsville's early decades were marked by one constant enemy: the weather.
               </p>
@@ -316,21 +322,22 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Section 6: World War II */}
-          <section className="mb-16 animate-fade-in">
+          <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={wwii} 
               alt="Townsville harbour during World War II" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic mb-8">
+            <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
               Townsville Harbour during WWII
             </p>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 mt-10">
               World War II: A City on the Front Line (1942–1945)
             </h2>
             
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 Townsville became a major Allied base during WWII — one of the most strategically important in the Pacific.
               </p>
@@ -366,24 +373,25 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Section 7: 1950s–1970s */}
-          <section className="mb-16 animate-fade-in">
+          <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={theSaint} 
               alt="Castle Hill with The Saint painted on it" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic mb-8">
+            <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
               Castle Hill with 'The Saint'
             </p>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
               1950s–1970s: Suburbs, Uni and "The Saint"
             </h2>
-            <h3 className="text-xl font-semibold text-muted-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8">
               Growing Up After the War
             </h3>
             
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 After WWII, Townsville moved into a new era of growth.
               </p>
@@ -407,24 +415,25 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Section 8: 1970s–2000s */}
-          <section className="mb-16 animate-fade-in">
+          <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={modernWaterfront} 
               alt="Modern Townsville waterfront and skyline" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic mb-8">
+            <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
               Townsville's modern skyline and The Strand
             </p>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
               1970s–2000s: Industry, Skyline and Waterfront Life
             </h2>
-            <h3 className="text-xl font-semibold text-muted-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8">
               From Working Port to Tropical Lifestyle City
             </h3>
             
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 As Townsville grew, it became both a working industrial city and a vibrant tropical lifestyle destination.
               </p>
@@ -455,24 +464,25 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Section 9: Townsville Today */}
-          <section className="mb-16 animate-fade-in">
+          <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={today} 
               alt="Everyday life on The Strand in modern Townsville" 
-              className="w-full h-auto rounded-lg shadow-lg mb-3"
+              className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
-            <p className="text-center text-sm text-muted-foreground italic mb-8">
+            <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
               Everyday life on The Strand today
             </p>
             
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
               Townsville Today: A City of Layers
             </h2>
-            <h3 className="text-xl font-semibold text-muted-foreground mb-6">
+            <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8">
               Why the Past Still Matters
             </h3>
             
-            <div className="prose prose-lg max-w-none text-foreground/90 leading-relaxed space-y-4">
+            <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
+                 style={{ lineHeight: '1.8' }}>
               <p>
                 Modern Townsville is built on deep layers of history. You can feel them everywhere:
               </p>
@@ -495,12 +505,12 @@ const HistoryOfTownsville = () => {
           </section>
 
           {/* Back Navigation */}
-          <div className="text-center pt-8 pb-16 border-t border-border">
+          <div className="text-center pt-16 pb-20 mt-12 border-t border-border">
             <Link 
               to="/" 
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
+              className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
             >
-              <ArrowLeft className="w-4 h-4" />
+              <ArrowLeft className="w-5 h-5" />
               Back to Duncan's Guide
             </Link>
           </div>
