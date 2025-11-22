@@ -16,7 +16,7 @@ const SeoContentSections = () => {
       title: "Things To Do in Townsville",
       content: "Townsville offers endless activities for visitors and locals alike. Climb or drive Castle Hill for panoramic views of the city and coastline. Take the ferry to Magnetic Island for hiking, wildlife, and secluded beaches. Cool off at Riverway Lagoons, a free tropical swimming complex with BBQ areas and playgrounds. Walk the scenic Jezzine Barracks boardwalk, rich in military history and ocean views. Visit Billabong Sanctuary to meet koalas, kangaroos, and crocodiles up close in a natural bush setting.",
       linkText: "See all things to do",
-      linkTo: "#top-picks"
+      linkTo: "/things-to-do"
     },
     {
       id: "dog-friendly",
