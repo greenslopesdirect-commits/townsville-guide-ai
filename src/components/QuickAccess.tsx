@@ -4,37 +4,37 @@ const categories = [
   { 
     emoji: "🏖", 
     name: "Beaches", 
-    description: "Explore The Strand, Pallarenda, and Townsville's stunning coastal spots.",
+    description: "Explore The Strand, Pallarenda, Rowes Bay, and Townsville's most beautiful coastal spots.",
     query: "Tell me about Townsville's beaches."
   },
   { 
     emoji: "🍽", 
     name: "Restaurants & Cafés", 
-    description: "Find the best coffee, brunch, and dinner spots around town.",
+    description: "Discover the best places for breakfast, coffee, lunch, dinner, and waterfront dining.",
     query: "Where are the best restaurants in Townsville?"
   },
   { 
     emoji: "🐶", 
     name: "Dog Parks", 
-    description: "Discover the top off-leash areas and pet-friendly parks.",
+    description: "Find the top off-leash areas, beach walks, and dog-friendly spaces around Townsville.",
     query: "Show me the best dog parks in Townsville."
   },
   { 
     emoji: "🏨", 
     name: "Accommodation", 
-    description: "Browse great places to stay — from hotels to holiday apartments.",
+    description: "Browse popular hotels, beachfront stays, family apartments, and budget options.",
     query: "What are good places to stay in Townsville?"
   },
   { 
     emoji: "🎟", 
     name: "Things to Do", 
-    description: "Local attractions, tours, and family fun across North Queensland.",
+    description: "Attractions, tours, lookouts, museums, kid-friendly activities, and local adventures.",
     query: "What are the best things to do in Townsville?"
   },
   { 
     emoji: "🛍", 
     name: "Shopping & Markets", 
-    description: "Uncover local shops, markets, and weekend stalls worth visiting.",
+    description: "Uncover local shops, weekend markets, boutiques, and artisanal stalls.",
     query: "Where can I shop or find markets in Townsville?"
   },
 ];
@@ -62,7 +62,7 @@ const QuickAccess = () => {
           Quick Access
         </h2>
         <p className="text-center text-muted-foreground mb-12 text-base md:text-lg max-w-2xl mx-auto">
-          Jump straight to what you're looking for — your Townsville guide has you covered.
+          Jump straight to what you're looking for — your Townsville AI guide has you covered.
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
