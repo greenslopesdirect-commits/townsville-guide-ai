@@ -10,6 +10,7 @@ import TermsOfUse from "./pages/TermsOfUse";
 import AffiliateDisclosure from "./pages/AffiliateDisclosure";
 import CookiePolicy from "./pages/CookiePolicy";
 import HistoryOfTownsville from "./pages/HistoryOfTownsville";
+import ThingsToDo from "./pages/ThingsToDo";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/history" element={<HistoryOfTownsville />} />
+          <Route path="/things-to-do" element={<ThingsToDo />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
