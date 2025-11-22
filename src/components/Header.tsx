@@ -42,6 +42,12 @@ const Header = () => {
             >
               Food & Drink
             </Link>
+            <Link
+              to="/local-tips"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Local Tips
+            </Link>
           </div>
         </div>
       </nav>

@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const categories = [
   { 
@@ -37,6 +38,13 @@ const categories = [
     description: "Uncover local shops, weekend markets, boutiques, and artisanal stalls.",
     query: "Where can I shop or find markets in Townsville?"
   },
+  { 
+    emoji: "💡", 
+    name: "Local Tips", 
+    description: "Weather advice, stinger safety, getting around, and insider tips for visiting Townsville.",
+    query: "What local tips should I know for visiting Townsville?",
+    link: "/local-tips"
+  },
 ];
 
 const QuickAccess = () => {
@@ -66,14 +74,8 @@ const QuickAccess = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-          {categories.map((category, index) => (
-            <button
-              key={category.name}
-              onClick={() => handleCardClick(category.query)}
-              className="text-left group animate-fade-in hover-scale"
-              style={{ animationDelay: `${index * 100}ms` }}
-              aria-label={`Learn about ${category.name} in Townsville`}
-            >
+          {categories.map((category, index) => {
+            const content = (
               <Card className="h-full border-2 hover:border-primary transition-all duration-300 shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-tropical)] rounded-3xl">
                 <CardContent className="p-6 flex flex-col gap-3">
                   <div className="text-6xl md:text-7xl mb-2 group-hover:scale-110 transition-transform duration-300">
@@ -87,8 +89,34 @@ const QuickAccess = () => {
                   </p>
                 </CardContent>
               </Card>
-            </button>
-          ))}
+            );
+
+            if ((category as any).link) {
+              return (
+                <Link
+                  key={category.name}
+                  to={(category as any).link}
+                  className="text-left group animate-fade-in hover-scale"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                  aria-label={`Learn about ${category.name} in Townsville`}
+                >
+                  {content}
+                </Link>
+              );
+            }
+
+            return (
+              <button
+                key={category.name}
+                onClick={() => handleCardClick(category.query)}
+                className="text-left group animate-fade-in hover-scale"
+                style={{ animationDelay: `${index * 100}ms` }}
+                aria-label={`Learn about ${category.name} in Townsville`}
+              >
+                {content}
+              </button>
+            );
+          })}
         </div>
       </div>
     </section>
