@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, MapPin, Camera, Sunrise, Palmtree, Building2, Dog, Compass, Bot } from "lucide-react";
+import { ArrowLeft, MapPin, Camera, Sunrise, Palmtree, Building2, Dog, Compass, Bot, ExternalLink } from "lucide-react";
 
 const ThingsToDo = () => {
   return (
@@ -63,6 +63,29 @@ const ThingsToDo = () => {
                   <li>Free entry and parking</li>
                   <li>Bring water — it gets hot!</li>
                 </ul>
+                <div className="mt-4 flex gap-3">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    asChild
+                    className="gap-2"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/place/Castle+Hill,+Townsville+City+QLD+4810" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="View Castle Hill on Google Maps"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                  <Link to="/history">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0">
+                      Read more about Townsville's history →
+                    </Button>
+                  </Link>
+                </div>
               </section>
 
               {/* The Strand */}
@@ -83,6 +106,29 @@ const ThingsToDo = () => {
                   <li>Water park for kids</li>
                   <li>Dog-friendly zones at certain times</li>
                 </ul>
+                <div className="mt-4 flex gap-3">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    asChild
+                    className="gap-2"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/place/The+Strand,+Townsville+QLD+4810" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="View The Strand on Google Maps"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                  <Link to="/#beaches">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0">
+                      Learn more about Townsville's beaches →
+                    </Button>
+                  </Link>
+                </div>
               </section>
 
               {/* Magnetic Island */}
@@ -103,6 +149,30 @@ const ThingsToDo = () => {
                   <li>Alma Bay and Rocky Bay for snorkelling</li>
                   <li>Hire a Jeep or scooter to get around</li>
                 </ul>
+                <div className="mt-4 flex gap-3">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    asChild
+                    className="gap-2"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/place/Magnetic+Island+QLD+4819" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="View Magnetic Island on Google Maps"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                  <Link to="/">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
+                      <Bot className="w-4 h-4" />
+                      Ask the AI for a Magnetic Island itinerary
+                    </Button>
+                  </Link>
+                </div>
               </section>
 
               {/* Billabong Sanctuary */}
@@ -123,6 +193,24 @@ const ThingsToDo = () => {
                   <li>Educational talks throughout the day</li>
                   <li>BBQ and picnic areas available</li>
                 </ul>
+                <div className="mt-4">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    asChild
+                    className="gap-2"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/place/Billabong+Sanctuary" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="View Billabong Sanctuary on Google Maps"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                </div>
               </section>
 
               {/* Jezzine Barracks */}
@@ -143,6 +231,29 @@ const ThingsToDo = () => {
                   <li>Kissing Point Fort ruins</li>
                   <li>Free entry and parking</li>
                 </ul>
+                <div className="mt-4 flex gap-3">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    asChild
+                    className="gap-2"
+                  >
+                    <a 
+                      href="https://www.google.com/maps/place/Jezzine+Barracks" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label="View Jezzine Barracks on Google Maps"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View on Map
+                    </a>
+                  </Button>
+                  <Link to="/history">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0">
+                      See Townsville's WW2 story →
+                    </Button>
+                  </Link>
+                </div>
               </section>
 
               {/* Riverway */}
@@ -223,6 +334,13 @@ const ThingsToDo = () => {
                   <li>The Courtyard — trendy café welcoming dogs</li>
                   <li>Several local beaches allow dogs off-leash</li>
                 </ul>
+                <div className="mt-4">
+                  <Link to="/#beaches">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0">
+                      See dog-friendly coastal walks on The Strand →
+                    </Button>
+                  </Link>
+                </div>
               </section>
 
               {/* Day Trips from Townsville */}
@@ -243,6 +361,14 @@ const ThingsToDo = () => {
                   <li>Bowling Green Bay National Park — coastal landscapes</li>
                   <li>Hinchinbrook Island — wilderness camping and hiking</li>
                 </ul>
+                <div className="mt-4">
+                  <Link to="/">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
+                      <Bot className="w-4 h-4" />
+                      Ask the AI to plan a Townsville day trip
+                    </Button>
+                  </Link>
+                </div>
               </section>
 
               {/* Use the AI Guide */}
