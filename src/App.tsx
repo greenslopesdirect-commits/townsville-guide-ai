@@ -13,6 +13,7 @@ import HistoryOfTownsville from "./pages/HistoryOfTownsville";
 import ThingsToDo from "./pages/ThingsToDo";
 import Beaches from "./pages/Beaches";
 import FoodDrink from "./pages/FoodDrink";
+import LocalTips from "./pages/LocalTips";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/things-to-do" element={<ThingsToDo />} />
           <Route path="/beaches" element={<Beaches />} />
           <Route path="/food" element={<FoodDrink />} />
+          <Route path="/local-tips" element={<LocalTips />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
