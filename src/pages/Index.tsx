@@ -20,12 +20,54 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Duncan's Guide – Townsville | Best Beaches, Food & Local Attractions</title>
-        <meta 
-          name="description" 
-          content="Discover Townsville's best beaches, cafés, walks and hidden gems with Duncan's Guide — your AI-powered local guide to everything North Queensland." 
-        />
-      </Helmet>
+  <title>Duncan's Guide – Townsville | Best Beaches, Food & Local Attractions</title>
+  <meta 
+    name="description" 
+    content="Discover Townsville's best beaches, cafés, walks and hidden gems with Duncan's Guide — your AI-powered local guide to everything North Queensland." 
+  />
+
+  {/* WebSite Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Duncan's Guide – Townsville",
+      "url": "https://duncansguide.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://duncansguide.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    `}
+  </script>
+
+  {/* WebPage Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Duncan's Guide – Townsville",
+      "url": "https://duncansguide.com",
+      "description": "Your AI-powered local guide to Townsville: beaches, restaurants, dog parks, attractions, events and hidden gems.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://duncansguide.com"
+          }
+        ]
+      }
+    }
+    `}
+  </script>
+</Helmet>
+
       
       <div className="min-h-screen">
       <Header />
