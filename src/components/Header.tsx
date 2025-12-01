@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-3">
         {/* Padding py-3 maintains the small header bar height */}
         <div className="flex items-center justify-between">
-          {/* UPDATED: Logo links to the new home path /townsville */}
+          {/* Logo links to the new home path /townsville */}
           <Link to="/townsville" className="hover:opacity-80 transition-opacity">
             <img
               src={logo}
@@ -57,3 +57,28 @@ const Header = () => {
             <Link
               to="/townsville/local-tips"
               className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Local Tips
+            </Link>
+            {/* UPDATED: Accommodation is now /townsville/accommodation */}
+            <Link
+              to="/townsville/accommodation"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Accommodation
+            </Link>
+            {/* UPDATED: Events is now /townsville/events */}
+            <Link
+              to="/townsville/events"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+            >
+              Events
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
