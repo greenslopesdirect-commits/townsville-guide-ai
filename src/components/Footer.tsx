@@ -95,9 +95,14 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground">
             © {year} Duncan's Guide – Townsville. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground mt-2">
-            Built with ❤️ in North Queensland.
-          </p>
+          <p className="text-sm text-gray-400">
+  © {new Date().getFullYear()} Duncan's Guide – Townsville. All rights reserved.
+</p>
+
+<p className="text-sm text-gray-500 mt-1">
+  Townsville’s trusted source for beaches, food, events and local tips.
+</p>
+
         </div>
       </div>
     </footer>
