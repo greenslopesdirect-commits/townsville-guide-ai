@@ -9,12 +9,157 @@ const Beaches = () => {
   return (
     <>
       <Helmet>
-        <title>Best Beaches in Townsville – Local Coastal Guide | Duncan's Guide</title>
-        <meta 
-          name="description" 
-          content="Discover Townsville's best beaches including The Strand, Pallarenda, Rowes Bay, and Magnetic Island. Your complete guide to coastal spots, dog-friendly areas, and sunset locations." 
-        />
-      </Helmet>
+  <title>Best Beaches in Townsville – Local Coastal Guide | Duncan's Guide</title>
+  <meta 
+    name="description" 
+    content="Discover Townsville's best beaches including The Strand, Pallarenda, Rowes Bay, Bushland Beach, Saunders Beach, and Magnetic Island. Your complete guide to coastal spots, dog-friendly areas, and sunset locations." 
+  />
+
+  {/* WebPage Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Beaches in Townsville",
+      "url": "https://duncansguide.com/beaches",
+      "description": "Local guide to the best beaches in Townsville including The Strand, Pallarenda, Rowes Bay, Bushland Beach and Magnetic Island.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://duncansguide.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Beaches",
+            "item": "https://duncansguide.com/beaches"
+          }
+        ]
+      }
+    }
+    `}
+  </script>
+
+  {/* ItemList Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Townsville Beaches",
+      "itemListOrder": "Ascending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://duncansguide.com/beaches#the-strand",
+          "name": "The Strand"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://duncansguide.com/beaches#pallarenda",
+          "name": "Pallarenda Beach"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://duncansguide.com/beaches#rowes-bay",
+          "name": "Rowes Bay"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://duncansguide.com/beaches#bushland-beach",
+          "name": "Bushland Beach"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://duncansguide.com/beaches#saunders",
+          "name": "Saunders Beach"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://duncansguide.com/beaches#toolakea",
+          "name": "Toolakea Beach"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://duncansguide.com/beaches#magnetic-island",
+          "name": "Magnetic Island Beaches"
+        }
+      ]
+    }
+    `}
+  </script>
+
+  {/* TouristAttraction Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": "Townsville Beaches",
+      "description": "Guide to Townsville's beaches including The Strand, Pallarenda, Rowes Bay, Bushland Beach, Saunders and Toolakea.",
+      "touristType": "Beach visitors, families, dog owners, swimmers, travellers",
+      "includesAttraction": [
+        {
+          "@type": "TouristAttraction",
+          "name": "The Strand",
+          "url": "https://duncansguide.com/beaches#the-strand",
+          "address": "The Strand, Townsville QLD 4810"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Pallarenda Beach",
+          "url": "https://duncansguide.com/beaches#pallarenda",
+          "address": "Pallarenda QLD 4810"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Rowes Bay",
+          "url": "https://duncansguide.com/beaches#rowes-bay",
+          "address": "Rowes Bay, Townsville QLD 4810"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Bushland Beach",
+          "url": "https://duncansguide.com/beaches#bushland-beach",
+          "address": "Bushland Beach, Townsville QLD 4818"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Saunders Beach",
+          "url": "https://duncansguide.com/beaches#saunders",
+          "address": "Saunders Beach QLD 4818"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Toolakea Beach",
+          "url": "https://duncansguide.com/beaches#toolakea",
+          "address": "Toolakea Beach QLD 4818"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Magnetic Island Beaches",
+          "url": "https://duncansguide.com/beaches#magnetic-island",
+          "address": "Magnetic Island QLD 4819"
+        }
+      ]
+    }
+    `}
+  </script>
+
+</Helmet>
+
       
       <div className="min-h-screen bg-background">
         <Header />
