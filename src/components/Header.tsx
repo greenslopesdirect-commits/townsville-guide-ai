@@ -7,7 +7,7 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-3">
         {/* Padding py-3 maintains the small header bar height */}
         <div className="flex items-center justify-between">
-          {/* Logo links to the new home path /townsville */}
+          {/* UPDATED: Logo links to the new home path /townsville */}
           <Link to="/townsville" className="hover:opacity-80 transition-opacity">
             <img
               src={logo}
