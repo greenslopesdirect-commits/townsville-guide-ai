@@ -9,12 +9,169 @@ const ThingsToDo = () => {
   return (
     <>
       <Helmet>
-        <title>Things to Do in Townsville – Local Highlights & Must-See Spots | Duncan's Guide</title>
-        <meta 
-          name="description" 
-          content="Discover the best things to do in Townsville — Castle Hill, Magnetic Island, The Strand, wildlife, walks, beaches and more. Your complete local guide." 
-        />
-      </Helmet>
+  <title>Things to Do in Townsville – Local Highlights & Must-See Spots | Duncan's Guide</title>
+  <meta 
+    name="description" 
+    content="Discover the best things to do in Townsville — Castle Hill, Magnetic Island, The Strand, wildlife, walks, beaches and more. Your complete local guide." 
+  />
+
+  {/* WebPage Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Things to Do in Townsville",
+      "url": "https://duncansguide.com/things-to-do",
+      "description": "Local guide to the best things to do in Townsville — Castle Hill, Magnetic Island, The Strand, wildlife, beaches and more.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://duncansguide.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Things to Do",
+            "item": "https://duncansguide.com/things-to-do"
+          }
+        ]
+      }
+    }
+    `}
+  </script>
+
+  {/* ItemList Schema for all attractions */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Things to Do in Townsville",
+      "itemListOrder": "Ascending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://duncansguide.com/things-to-do#castle-hill",
+          "name": "Castle Hill Lookout"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://duncansguide.com/things-to-do#the-strand",
+          "name": "The Strand"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://duncansguide.com/things-to-do#magnetic-island",
+          "name": "Magnetic Island"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://duncansguide.com/things-to-do#billabong-sanctuary",
+          "name": "Billabong Sanctuary"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "url": "https://duncansguide.com/things-to-do#jezzine-barracks",
+          "name": "Jezzine Barracks"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "url": "https://duncansguide.com/things-to-do#riverway",
+          "name": "Riverway & Ross River"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "url": "https://duncansguide.com/things-to-do#beyond-strand-beaches",
+          "name": "Townsville Beaches (Pallarenda, Rowes Bay, Bushland Beach)"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "url": "https://duncansguide.com/things-to-do#arts-culture",
+          "name": "Art, Culture & Events"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "url": "https://duncansguide.com/things-to-do#dog-friendly",
+          "name": "Dog-Friendly Activities"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "url": "https://duncansguide.com/things-to-do#day-trips",
+          "name": "Day Trips From Townsville"
+        }
+      ]
+    }
+    `}
+  </script>
+
+  {/* TouristAttraction Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": "Things to Do in Townsville",
+      "description": "Top attractions and activities in Townsville including Castle Hill, Magnetic Island, The Strand, wildlife, beaches and more.",
+      "touristType": "Visitors to Townsville, Families, Couples, Adventure Travellers",
+      "includesAttraction": [
+        {
+          "@type": "TouristAttraction",
+          "name": "Castle Hill Lookout",
+          "url": "https://duncansguide.com/things-to-do#castle-hill",
+          "address": "Castle Hill, Townsville City QLD 4810"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "The Strand",
+          "url": "https://duncansguide.com/things-to-do#the-strand",
+          "address": "The Strand, Townsville QLD 4810"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Magnetic Island",
+          "url": "https://duncansguide.com/things-to-do#magnetic-island",
+          "address": "Magnetic Island QLD 4819"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Billabong Sanctuary",
+          "url": "https://duncansguide.com/things-to-do#billabong-sanctuary",
+          "address": "11 Country Road, Nome QLD 4816"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Jezzine Barracks",
+          "url": "https://duncansguide.com/things-to-do#jezzine-barracks",
+          "address": "Jezzine Barracks, North Ward QLD 4810"
+        },
+        {
+          "@type": "TouristAttraction",
+          "name": "Riverway & Ross River",
+          "url": "https://duncansguide.com/things-to-do#riverway",
+          "address": "Riverway Drive, Townsville QLD 4814"
+        }
+      ]
+    }
+    `}
+  </script>
+
+</Helmet>
+
       
       <div className="min-h-screen bg-background">
         <Header />
