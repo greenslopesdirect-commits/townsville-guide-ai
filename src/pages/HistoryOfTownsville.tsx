@@ -190,11 +190,11 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={lifeOnCountry} 
-              alt="Historical illustration of Aboriginal life on Cleveland Bay before European settlement" 
+              alt="Photo-realistic sunrise scene showing Indigenous Wulgurukaba and Bindal people at a coastal campsite on Cleveland Bay with traditional canoes, campfire, and Castle Hill in the distance" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Cleveland Bay long before colonisation
+              Life on Country: Wulgurukaba and Bindal peoples on Cleveland Bay before European arrival
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -237,11 +237,11 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={explorers} 
-              alt="Historical illustration of European explorers searching the North Queensland coastline" 
+              alt="Photo-realistic 1880s Flinders Street Townsville showing wooden shopfronts with verandas, horse-drawn carts, Victorian-era people, and Castle Hill rising behind the street" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Explorers searching for a northern harbour
+              Flinders Street in the 1880s with Castle Hill in the background
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -279,11 +279,11 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={firstCamp} 
-              alt="Historical illustration of the first European settlement camp at Ross Creek Townsville in 1864" 
+              alt="Photo-realistic 1860s Townsville settlement at Ross Creek showing timber huts with corrugated iron roofs, sailing ships at anchor, dusty road, horses and carts, with Castle Hill dominating the background" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              The earliest Townsville camp, 1864
+              The earliest Townsville settlement at Ross Creek, 1864
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -323,11 +323,11 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={goldRush} 
-              alt="Historical illustration of Townsville port during the 1800s gold rush boom" 
+              alt="Photo-realistic Port of Townsville around 1900 showing large steamship docked at wooden wharf with steam-powered cranes, cargo being loaded, workers in period clothing, and Ross Creek visible" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Townsville during the gold rush boom
+              Port of Townsville in the early 1900s during the boom era
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -423,11 +423,11 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={wwii} 
-              alt="Townsville harbour during World War II (artistic depiction)" 
+              alt="Photo-realistic WWII night scene at Townsville harbour with searchlights scanning the sky, silhouette of Catalina flying boat overhead, dimly lit docks and warehouses, with reflections on calm water" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Townsville Harbour during WWII
+              Townsville Harbour during World War II with coastal defences active
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 mt-10">
@@ -516,11 +516,11 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={modernWaterfront} 
-              alt="Modern Townsville waterfront and city skyline" 
+              alt="Photo-realistic archival-style image of The Strand Townsville from the 1980s-1990s redevelopment period showing foreshore walkway with palm and Norfolk pine trees, calm ocean, and Magnetic Island in the distance" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Townsville's modern skyline and The Strand
+              The Strand during the 1980s-1990s redevelopment era
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -565,11 +565,11 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={today} 
-              alt="Aerial view of Townsville and Castle Hill" 
+              alt="Photo-realistic modern Townsville at golden hour from Castle Hill lookout showing The Strand beachfront with palm trees, city skyline, and Magnetic Island across Cleveland Bay" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Everyday life on The Strand today
+              Modern Townsville viewed from Castle Hill at golden hour
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
