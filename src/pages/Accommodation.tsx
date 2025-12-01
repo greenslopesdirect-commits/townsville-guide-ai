@@ -1,6 +1,4 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
@@ -20,13 +18,14 @@ const Accommodation = () => {
   };
 
   return (
-    <>
-      <Helmet>
-  <title>Townsville Accommodation Guide - Hotels, Resorts & Holiday Parks</title>
-  <meta 
-    name="description" 
-    content="Find the best places to stay in Townsville. From beachfront hotels and luxury resorts to serviced apartments and family-friendly holiday parks." 
-  />
+  <>
+    <Helmet> {/* ... */} </Helmet>
+    {/* Remove the surrounding div if it only existed to contain Header/Footer */}
+    <main className="pb-16">
+        {/* ... page content ... */}
+    </main>
+  </>
+);
 
   {/* WebPage Schema */}
   <script type="application/ld+json">
