@@ -18,12 +18,112 @@ const HistoryOfTownsville = () => {
   return (
     <>
       <Helmet>
-        <title>Townsville History – A Simple, Engaging Story of the City | Duncan's Guide</title>
-        <meta 
-          name="description" 
-          content="Explore Townsville's history from First Nations Country to gold rush days, cyclones, WWII and modern life in this clear, easy-to-read local guide." 
-        />
-      </Helmet>
+  <title>Townsville History – A Simple, Engaging Story of the City | Duncan's Guide</title>
+  <meta 
+    name="description" 
+    content="Explore Townsville's history from First Nations Country to gold rush days, cyclones, WWII and modern life in this clear, easy-to-read local guide." 
+  />
+
+  {/* WebPage + Article Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "name": "History of Townsville",
+      "headline": "Townsville History – A Simple, Engaging Story of the City",
+      "description": "A friendly, easy-to-read guide to Townsville's history — from First Nations heritage and early settlement to gold discoveries, cyclones, military history and modern development.",
+      "url": "https://duncansguide.com/history",
+      "author": {
+        "@type": "Person",
+        "name": "Duncan Ross"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Duncan's Guide",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://duncansguide.com/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://duncansguide.com/history"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://duncansguide.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "History",
+            "item": "https://duncansguide.com/history"
+          }
+        ]
+      }
+    }
+    `}
+  </script>
+
+  {/* FAQ Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the origin of the name Townsville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Townsville is named after Robert Towns, a merchant and entrepreneur who helped establish the settlement in the 1860s to support regional pastoral and mining industries."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What First Nations Country is Townsville on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Townsville is located on the traditional lands of the Wulgurukaba and Bindal peoples, the First Nations custodians of the Townsville region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What role did Townsville play in World War II?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "During WWII, Townsville was a major Allied military base with airfields, coastal defences, and supply routes. Its strategic position made it one of the most important military hubs in the Pacific region."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Has Townsville been impacted by cyclones?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Townsville has experienced several major cyclones throughout its history, including Cyclone Leonta in 1903 and Cyclone Althea in 1971, which both caused significant damage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How has Townsville grown in modern times?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Townsville has grown into a major regional city with universities, defence bases, tourism, port activity, and a vibrant cultural scene. It is considered the unofficial capital of North Queensland."
+          }
+        }
+      ]
+    }
+    `}
+  </script>
+</Helmet>
+
       
       <div className="min-h-screen bg-gradient-to-b from-background via-muted/20 to-background">
         <Header />
