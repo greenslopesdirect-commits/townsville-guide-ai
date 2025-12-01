@@ -1,16 +1,17 @@
 import { Helmet } from "react-helmet";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
 
 const AffiliateDisclosure = () => {
   return (
     <>
+      <SEOHead
+        title="Affiliate Disclosure | Duncan's Guide – Townsville"
+        description="Read Duncan's Guide affiliate disclosure, explaining how affiliate links work and how they support our Townsville local guide."
+        canonical="https://duncansguide.com/affiliate-disclosure"
+      />
       <Helmet>
-        <title>Affiliate Disclosure | Duncan's Guide – Townsville</title>
-        <meta 
-          name="description" 
-          content="Read Duncan's Guide affiliate disclosure, explaining how affiliate links work and how they support our Townsville local guide." 
-        />
 
         {/* Affiliate Disclosure Schema */}
         <script type="application/ld+json">

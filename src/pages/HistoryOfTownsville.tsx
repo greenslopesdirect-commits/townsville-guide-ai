@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import thenAndNow from "@/assets/history-then-and-now.jpg";
 import lifeOnCountry from "@/assets/history-life-on-country.jpg";
 import explorers from "@/assets/history-explorers.jpg";
@@ -17,12 +16,12 @@ import today from "@/assets/history-today.jpg";
 const HistoryOfTownsville = () => {
   return (
     <>
+      <SEOHead
+        title="Townsville History – A Simple, Engaging Story of the City"
+        description="Explore Townsville's history from First Nations Country to gold rush days, cyclones, WWII and modern life in this clear, easy-to-read local guide."
+        canonical="https://duncansguide.com/townsville/history"
+      />
       <Helmet>
-  <title>Townsville History – A Simple, Engaging Story of the City | Duncan's Guide</title>
-  <meta 
-    name="description" 
-    content="Explore Townsville's history from First Nations Country to gold rush days, cyclones, WWII and modern life in this clear, easy-to-read local guide." 
-  />
 
   {/* WebPage + Article Schema */}
   <script type="application/ld+json">
@@ -126,7 +125,6 @@ const HistoryOfTownsville = () => {
 
       
       <div className="min-h-screen bg-gradient-to-b from-background via-muted/20 to-background">
-        <Header />
         
         {/* Back Navigation */}
         <div className="container mx-auto px-4 sm:px-6 py-6 max-w-5xl mt-16">
@@ -666,8 +664,6 @@ const HistoryOfTownsville = () => {
             </Link>
           </div>
         </div>
-
-        <Footer />
       </div>
     </>
   );

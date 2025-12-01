@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
@@ -21,12 +20,12 @@ const FoodDrink = () => {
 
   return (
     <>
+      <SEOHead
+        title="Best Food & Restaurants in Townsville - Local Dining Guide"
+        description="Discover the best restaurants, cafés and dining spots in Townsville. From waterfront dining on The Strand to modern Australian cuisine, find where locals eat in Townsville QLD."
+        canonical="https://duncansguide.com/townsville/food"
+      />
       <Helmet>
-  <title>Best Food & Restaurants in Townsville - Local Dining Guide</title>
-  <meta 
-    name="description" 
-    content="Discover the best restaurants, cafés and dining spots in Townsville. From waterfront dining on The Strand to modern Australian cuisine, find where locals eat in Townsville QLD." 
-  />
 
   {/* WebPage Schema */}
   <script type="application/ld+json">
@@ -160,7 +159,6 @@ const FoodDrink = () => {
 
 
       <div className="min-h-screen flex flex-col bg-background">
-        <Header />
         
         <main className="flex-grow pt-20">
           <div className="container mx-auto px-4 py-12 max-w-4xl">
@@ -484,7 +482,6 @@ const FoodDrink = () => {
           </div>
         </main>
 
-        <Footer />
       </div>
     </>
   );

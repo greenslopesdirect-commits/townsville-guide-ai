@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
@@ -21,12 +20,12 @@ const Events = () => {
 
   return (
     <>
+      <SEOHead
+        title="Townsville Events & What's On - Festivals, Markets & Activities"
+        description="Discover events, festivals and activities in Townsville. From Strand Ephemera and NAFA to weekly markets, live music and family events."
+        canonical="https://duncansguide.com/townsville/events"
+      />
       <Helmet>
-        <title>Townsville Events & What's On - Festivals, Markets & Activities</title>
-        <meta 
-          name="description" 
-          content="Discover events, festivals and activities in Townsville. From Strand Ephemera and NAFA to weekly markets, live music and family events." 
-        />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -72,7 +71,6 @@ const Events = () => {
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-background">
-        <Header />
         
         <main className="flex-grow pt-20">
           <div className="container mx-auto px-4 py-12 max-w-4xl">
@@ -507,7 +505,6 @@ const Events = () => {
           </div>
         </main>
 
-        <Footer />
       </div>
     </>
   );

@@ -1,17 +1,19 @@
 import { Outlet } from "react-router-dom";
-import Header from "@/components/Header";
+import HeaderImproved from "@/components/HeaderImproved";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const TownsvilleLayout = () => {
   return (
     <>
-      <Header />
+      <HeaderImproved />
 
       <div className="min-h-screen pt-20">
         <Outlet />
       </div>
 
       <Footer />
+      <BackToTop />
     </>
   );
 };
