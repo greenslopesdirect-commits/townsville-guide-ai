@@ -1,37 +1,93 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
 
 const AffiliateDisclosure = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
-        <Link 
-          to="/" 
-          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
-        >
-          <Home className="w-4 h-4" />
-          <span>Back to Home</span>
-        </Link>
-        
-        <h1 className="text-4xl font-bold mb-8 text-foreground">Affiliate Disclosure</h1>
-        
-        <div className="prose prose-lg max-w-none text-foreground/80 space-y-4">
-          <p>
-            Some links on this website are affiliate links, meaning we may earn a small commission if you make 
-            a purchase at no additional cost to you.
-          </p>
+    <>
+      <Helmet>
+        <title>Affiliate Disclosure | Duncan's Guide – Townsville</title>
+        <meta 
+          name="description" 
+          content="Read Duncan's Guide affiliate disclosure, explaining how affiliate links work and how they support our Townsville local guide." 
+        />
+
+        {/* Affiliate Disclosure Schema */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "Affiliate Disclosure",
+            "url": "https://duncansguide.com/affiliate-disclosure",
+            "description": "Information about how affiliate links on Duncan's Guide operate and how they support the website.",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://duncansguide.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Affiliate Disclosure",
+                  "item": "https://duncansguide.com/affiliate-disclosure"
+                }
+              ]
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Duncan's Guide",
+              "url": "https://duncansguide.com"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
+
+      <div className="min-h-screen bg-background">
+        <div className="container mx-auto px-4 py-16 max-w-4xl">
+          <Link 
+            to="/" 
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
+          >
+            <Home className="w-4 h-4" />
+            <span>Back to Home</span>
+          </Link>
           
-          <p>
-            These include travel and booking links through Booking.com, Skyscanner, and other trusted partners.
-          </p>
+          <h1 className="text-4xl font-bold mb-8 text-foreground">Affiliate Disclosure</h1>
           
-          <p>
-            This helps support the free operation of Duncan's Guide and allows us to keep improving our local AI guide.
-          </p>
+          <div className="prose prose-lg max-w-none text-foreground/80 space-y-4">
+            <p>
+              Some links on this website are affiliate links, meaning we may earn a small 
+              commission if you click through and make a purchase. This comes at no additional 
+              cost to you.
+            </p>
+
+            <p>
+              These affiliate partnerships include services such as Booking.com, Skyscanner, 
+              Amazon, and other trusted travel or product platforms.
+            </p>
+
+            <p>
+              Affiliate earnings help support the operation and ongoing development of 
+              Duncan's Guide — including maintaining server costs, improving our AI features, 
+              and providing up-to-date local Townsville guides.
+            </p>
+
+            <p>
+              We only recommend products or services we believe provide genuine value.  
+              Transparency is important, and your trust is our priority.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
 export default AffiliateDisclosure;
+
