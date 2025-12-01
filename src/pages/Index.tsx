@@ -66,7 +66,34 @@ const Index = () => {
     }
     `}
   </script>
+
+  {/* Organization Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Duncan's Guide – Townsville",
+      "url": "https://duncansguide.com",
+      "logo": "https://duncansguide.com/logo.png",
+      "image": "https://duncansguide.com/og-image.jpg",
+      "description": "An AI-powered local guide to Townsville, showcasing the best beaches, restaurants, events, and insider tips for exploring North Queensland.",
+      "email": "greenslopesdirect@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Townsville",
+        "addressRegion": "QLD",
+        "addressCountry": "Australia"
+      },
+      "sameAs": [
+        "https://facebook.com",
+        "https://instagram.com"
+      ]
+    }
+    `}
+  </script>
 </Helmet>
+
 
       
       <div className="min-h-screen">
