@@ -3,6 +3,9 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import DogFriendly from "@/pages/DogFriendly";
+import Shopping from "@/pages/Shopping";
+import Nature from "@/pages/Nature";
 
 // Townsville Layout (Handles Header and Footer for all Townsville routes)
 // FIXED: Using path alias to resolve location issues
