@@ -22,12 +22,96 @@ const Accommodation = () => {
   return (
     <>
       <Helmet>
-        <title>Townsville Accommodation Guide - Hotels, Resorts & Holiday Parks</title>
-        <meta 
-          name="description" 
-          content="Find the best places to stay in Townsville. From beachfront hotels and luxury resorts to serviced apartments and family-friendly holiday parks." 
-        />
-      </Helmet>
+  <title>Townsville Accommodation Guide - Hotels, Resorts & Holiday Parks</title>
+  <meta 
+    name="description" 
+    content="Find the best places to stay in Townsville. From beachfront hotels and luxury resorts to serviced apartments and family-friendly holiday parks." 
+  />
+
+  {/* WebPage Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Townsville Accommodation Guide",
+      "url": "https://duncansguide.com/accommodation",
+      "description": "Guide to Townsville's best accommodation including hotels, resorts, holiday parks, apartments and budget-friendly stays.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://duncansguide.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Accommodation",
+            "item": "https://duncansguide.com/accommodation"
+          }
+        ]
+      }
+    }
+    `}
+  </script>
+
+  {/* FAQ Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where should I stay in Townsville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Townsville offers a range of accommodation options including beachfront hotels on The Strand, luxury resorts, family-friendly holiday parks, and serviced apartments close to the CBD."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best area to stay in Townsville for families?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Families often stay near The Strand or in family-friendly holiday parks with pools, playgrounds and cabins offering more space."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there dog-friendly accommodation options in Townsville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, several holiday parks, Airbnb properties and some boutique hotels in Townsville offer pet-friendly accommodation. Always check individual pet policies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best luxury accommodation in Townsville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Luxury travellers often choose resorts and premium hotels along The Strand or riverfront apartment hotels near the CBD, offering ocean views and modern facilities."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there budget-friendly places to stay in Townsville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Townsville has many affordable motels, backpacker hostels and budget hotels located close to the city centre and transport options."
+          }
+        }
+      ]
+    }
+    `}
+  </script>
+
+</Helmet>
+
 
       <div className="min-h-screen flex flex-col bg-background">
         <Header />
