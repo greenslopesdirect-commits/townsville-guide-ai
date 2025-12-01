@@ -1,23 +1,24 @@
 import { Helmet } from "react-helmet";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Waves, Sunset, Dog, AlertTriangle, Bot } from "lucide-react";
 
 const Beaches = () => {
-  return (
-    <>
-      <Helmet>
-        <title>Best Beaches in Townsville | Duncan's Guide</title>
-        <meta name="description" content="Explore the beautiful beaches, from The Strand to Magnetic Island." />
-        <link rel="canonical" href="https://www.myaussieguide.com.au/townsville/beaches" />
+  return (
+    <>
+      <SEOHead
+        title="Best Beaches in Townsville"
+        description="Explore the beautiful beaches, from The Strand to Magnetic Island."
+        canonical="https://duncansguide.com/townsville/beaches"
+      />
+      <Helmet>
+        <link rel="canonical" href="https://www.myaussieguide.com.au/townsville/beaches" />
       </Helmet>
-      
-      <div className="min-h-screen bg-background">
-        <Header />
-        
-        <main className="pt-24 pb-16">
+      
+      <div className="min-h-screen bg-background">
+        
+        <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-4xl">
             {/* Back Button */}
             <Link to="/townsville"> {/* 🔴 FIXED: Link to /townsville */}
@@ -68,13 +69,12 @@ const Beaches = () => {
                 </Button>
               </Link>
             </div>
-          </div>
-        </main>
+          </div>
+        </main>
 
-        <Footer />
-      </div>
-    </>
-  );
+      </div>
+    </>
+  );
 };
 
 export default Beaches;

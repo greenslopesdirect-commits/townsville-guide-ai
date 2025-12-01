@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
 import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
@@ -16,12 +17,12 @@ import FaqSection from "@/components/FaqSection";
 const Index = () => {
   return (
     <>
+      <SEOHead
+        title="Duncan's Guide – Townsville | Best Beaches, Food & Local Attractions"
+        description="Discover Townsville's best beaches, cafés, walks and hidden gems with Duncan's Guide — your AI-powered local guide to everything North Queensland."
+        canonical="https://duncansguide.com/townsville"
+      />
       <Helmet>
-        <title>Duncan's Guide – Townsville | Best Beaches, Food & Local Attractions</title>
-        <meta 
-          name="description" 
-          content="Discover Townsville's best beaches, cafés, walks and hidden gems with Duncan's Guide — your AI-powered local guide to everything North Queensland." 
-        />
 
         {/* WebSite Schema */}
         <script type="application/ld+json">

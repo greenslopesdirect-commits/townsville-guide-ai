@@ -1,16 +1,17 @@
 import { Helmet } from "react-helmet";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
 
 const PrivacyPolicy = () => {
   return (
     <>
+      <SEOHead
+        title="Privacy Policy | Duncan's Guide – Townsville"
+        description="Read the Privacy Policy for Duncan's Guide – Townsville. Learn how we handle data, cookies, analytics and AI interactions on this website."
+        canonical="https://duncansguide.com/privacy-policy"
+      />
       <Helmet>
-        <title>Privacy Policy | Duncan's Guide – Townsville</title>
-        <meta 
-          name="description" 
-          content="Read the Privacy Policy for Duncan's Guide – Townsville. Learn how we handle data, cookies, analytics and AI interactions on this website." 
-        />
 
         {/* Privacy Policy Schema */}
         <script type="application/ld+json">

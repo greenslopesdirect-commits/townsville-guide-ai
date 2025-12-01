@@ -1,0 +1,52 @@
+import { Helmet } from "react-helmet";
+
+interface SEOHeadProps {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: string;
+}
+
+const SEOHead = ({
+  title,
+  description,
+  canonical,
+  ogImage = "https://duncansguide.com/og-image.jpg",
+  ogType = "website",
+}: SEOHeadProps) => {
+  const fullTitle = title.includes("Duncan's Guide") ? title : `${title} | Duncan's Guide`;
+  const siteUrl = "https://duncansguide.com";
+  const canonicalUrl = canonical || siteUrl;
+
+  return (
+    <Helmet>
+      {/* Standard Meta Tags */}
+      <title>{fullTitle}</title>
+      <meta name="description" content={description} />
+      <link rel="canonical" href={canonicalUrl} />
+
+      {/* OpenGraph Meta Tags */}
+      <meta property="og:title" content={fullTitle} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content={ogType} />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:site_name" content="Duncan's Guide – Townsville" />
+      <meta property="og:locale" content="en_AU" />
+
+      {/* Twitter Card Meta Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={fullTitle} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:site" content="@duncansguide" />
+
+      {/* Additional SEO */}
+      <meta name="robots" content="index, follow" />
+      <meta name="googlebot" content="index, follow" />
+    </Helmet>
+  );
+};
+
+export default SEOHead;

@@ -1,19 +1,18 @@
 import { Helmet } from "react-helmet";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Camera, Sunrise, Palmtree, Building2, Dog, Compass, Bot, ExternalLink } from "lucide-react";
 
 const ThingsToDo = () => {
   return (
     <>
+      <SEOHead
+        title="Things to Do in Townsville – Local Highlights & Must-See Spots"
+        description="Discover the best things to do in Townsville — Castle Hill, Magnetic Island, The Strand, wildlife, walks, beaches and more. Your complete local guide."
+        canonical="https://duncansguide.com/townsville/things-to-do"
+      />
       <Helmet>
-  <title>Things to Do in Townsville – Local Highlights & Must-See Spots | Duncan's Guide</title>
-  <meta 
-    name="description" 
-    content="Discover the best things to do in Townsville — Castle Hill, Magnetic Island, The Strand, wildlife, walks, beaches and more. Your complete local guide." 
-  />
 
   {/* WebPage Schema */}
   <script type="application/ld+json">
@@ -174,7 +173,6 @@ const ThingsToDo = () => {
 
       
       <div className="min-h-screen bg-background">
-        <Header />
         
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-4xl">
@@ -666,7 +664,6 @@ const ThingsToDo = () => {
           </div>
         </main>
 
-        <Footer />
       </div>
     </>
   );

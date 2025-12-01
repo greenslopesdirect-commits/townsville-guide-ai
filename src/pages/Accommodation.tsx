@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
@@ -21,12 +20,12 @@ const Accommodation = () => {
 
   return (
     <>
+      <SEOHead
+        title="Townsville Accommodation Guide - Hotels, Resorts & Holiday Parks"
+        description="Find the best places to stay in Townsville. From beachfront hotels and luxury resorts to serviced apartments and family-friendly holiday parks."
+        canonical="https://duncansguide.com/townsville/accommodation"
+      />
       <Helmet>
-  <title>Townsville Accommodation Guide - Hotels, Resorts & Holiday Parks</title>
-  <meta 
-    name="description" 
-    content="Find the best places to stay in Townsville. From beachfront hotels and luxury resorts to serviced apartments and family-friendly holiday parks." 
-  />
 
   {/* WebPage Schema */}
   <script type="application/ld+json">
@@ -114,7 +113,6 @@ const Accommodation = () => {
 
 
       <div className="min-h-screen flex flex-col bg-background">
-        <Header />
         
         <main className="flex-grow pt-20">
           <div className="container mx-auto px-4 py-12 max-w-4xl">
@@ -383,7 +381,6 @@ const Accommodation = () => {
           </div>
         </main>
 
-        <Footer />
       </div>
     </>
   );

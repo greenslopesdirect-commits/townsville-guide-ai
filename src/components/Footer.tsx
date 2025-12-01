@@ -31,13 +31,14 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-3">Explore</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/" className="hover:text-primary">Home</Link></li>
-              <li><Link to="/things-to-do" className="hover:text-primary">Things to Do</Link></li>
-              <li><Link to="/beaches" className="hover:text-primary">Beaches</Link></li>
-              <li><Link to="/food-drink" className="hover:text-primary">Food & Dining</Link></li>
-              <li><Link to="/events" className="hover:text-primary">Events</Link></li>
-              <li><Link to="/local-tips" className="hover:text-primary">Local Tips</Link></li>
-              <li><Link to="/accommodation" className="hover:text-primary">Accommodation</Link></li>
+              <li><Link to="/townsville" className="hover:text-primary transition-colors">Home</Link></li>
+              <li><Link to="/townsville/things-to-do" className="hover:text-primary transition-colors">Things to Do</Link></li>
+              <li><Link to="/townsville/beaches" className="hover:text-primary transition-colors">Beaches</Link></li>
+              <li><Link to="/townsville/food" className="hover:text-primary transition-colors">Food & Drink</Link></li>
+              <li><Link to="/townsville/events" className="hover:text-primary transition-colors">Events</Link></li>
+              <li><Link to="/townsville/dog-friendly" className="hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
+              <li><Link to="/townsville/accommodation" className="hover:text-primary transition-colors">Accommodation</Link></li>
+              <li><Link to="/townsville/local-tips" className="hover:text-primary transition-colors">Local Tips</Link></li>
             </ul>
           </div>
 
@@ -45,10 +46,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-3">Legal</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/privacy-policy" className="hover:text-primary">Privacy Policy</Link></li>
-              <li><Link to="/terms-of-use" className="hover:text-primary">Terms of Use</Link></li>
-              <li><Link to="/cookie-policy" className="hover:text-primary">Cookie Policy</Link></li>
-              <li><Link to="/affiliate-disclosure" className="hover:text-primary">Affiliate Disclosure</Link></li>
+              <li><Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-use" className="hover:text-primary transition-colors">Terms of Use</Link></li>
+              <li><Link to="/cookie-policy" className="hover:text-primary transition-colors">Cookie Policy</Link></li>
+              <li><Link to="/affiliate-disclosure" className="hover:text-primary transition-colors">Affiliate Disclosure</Link></li>
             </ul>
           </div>
 
@@ -60,7 +61,7 @@ const Footer = () => {
               <Mail className="w-4 h-4" />
               <a
                 href="mailto:greenslopesdirect@gmail.com"
-                className="hover:text-primary"
+                className="hover:text-primary transition-colors"
               >
                 greenslopesdirect@gmail.com
               </a>
@@ -91,15 +92,14 @@ const Footer = () => {
         </div>
 
         {/* Bottom section */}
-<div className="mt-12 border-t border-border/40 pt-6 text-center">
-  <p className="text-sm text-gray-400">
-    © {year} Duncan's Guide – Townsville. All rights reserved.
-  </p>
-
-  <p className="text-sm text-gray-500 mt-1">
-    Townsville’s trusted source for beaches, food, events and local tips.
-  </p>
-</div>
+        <div className="mt-12 border-t border-border/40 pt-6 text-center space-y-3">
+          <p className="text-sm text-muted-foreground">
+            © {year} Duncan's Guide – Townsville. All rights reserved.
+          </p>
+          <p className="text-sm text-muted-foreground">
+            Townsville's trusted source for beaches, food, events and local tips.
+          </p>
+        </div>
 
       </div>
     </footer>

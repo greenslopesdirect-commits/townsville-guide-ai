@@ -1,16 +1,17 @@
 import { Helmet } from "react-helmet";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
 
 const TermsOfUse = () => {
   return (
     <>
+      <SEOHead
+        title="Terms of Use | Duncan's Guide – Townsville"
+        description="Read the Terms of Use for Duncan's Guide – Townsville. Learn about disclaimers, limitations, and user responsibilities when using our AI-powered travel guide."
+        canonical="https://duncansguide.com/terms-of-use"
+      />
       <Helmet>
-        <title>Terms of Use | Duncan's Guide – Townsville</title>
-        <meta
-          name="description"
-          content="Read the Terms of Use for Duncan's Guide – Townsville. Learn about disclaimers, limitations, and user responsibilities when using our AI-powered travel guide."
-        />
 
         {/* Terms of Service Schema */}
         <script type="application/ld+json">

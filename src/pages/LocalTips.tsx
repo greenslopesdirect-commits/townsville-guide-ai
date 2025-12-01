@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -20,12 +19,12 @@ const LocalTips = () => {
 
   return (
     <>
+      <SEOHead
+        title="Local Tips for Visiting Townsville - Insider Travel Guide"
+        description="Essential local tips for visiting Townsville. Learn about weather patterns, stinger safety, getting around, dog-friendly spots and the best time to visit North Queensland."
+        canonical="https://duncansguide.com/townsville/local-tips"
+      />
       <Helmet>
-  <title>Local Tips for Visiting Townsville - Insider Travel Guide</title>
-  <meta 
-    name="description" 
-    content="Essential local tips for visiting Townsville. Learn about weather patterns, stinger safety, getting around, dog-friendly spots and the best time to visit North Queensland." 
-  />
 
   {/* WebPage Schema */}
   <script type="application/ld+json">
@@ -113,7 +112,6 @@ const LocalTips = () => {
 
 
       <div className="min-h-screen flex flex-col bg-background">
-        <Header />
         
         <main className="flex-grow pt-20">
           <div className="container mx-auto px-4 py-12 max-w-4xl">
@@ -302,7 +300,6 @@ const LocalTips = () => {
           </div>
         </main>
 
-        <Footer />
       </div>
     </>
   );

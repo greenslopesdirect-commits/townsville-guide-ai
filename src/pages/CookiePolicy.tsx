@@ -1,16 +1,17 @@
 import { Helmet } from "react-helmet";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
 
 const CookiePolicy = () => {
   return (
     <>
+      <SEOHead
+        title="Cookie Policy | Duncan's Guide – Townsville"
+        description="Learn how Duncan's Guide – Townsville uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
+        canonical="https://duncansguide.com/cookie-policy"
+      />
       <Helmet>
-        <title>Cookie Policy | Duncan's Guide – Townsville</title>
-        <meta
-          name="description"
-          content="Learn how Duncan's Guide – Townsville uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
-        />
 
         {/* Cookie Policy Schema */}
         <script type="application/ld+json">
