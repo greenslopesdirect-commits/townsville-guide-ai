@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-// UPDATED: Added 'Navigate' to the imports
+// Navigate is imported here for the redirect
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -27,29 +27,28 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          {/* 1. Townsville Home is now at /townsville (Index page) */}
+          {/* 1. Townsville Home is correctly set */}
           <Route path="/townsville" element={<Index />} />
           
-          {/* 2. Redirect the old root / to the new home /townsville */}
+          {/* 2. Redirect the root to the new home */}
           <Route path="/" element={<Navigate to="/townsville" replace />} />
 
-          {/* 3. All other pages remain accessible directly. 
-                 NOTE: In the next step, we may need to update these paths to /townsville/page-name if they belong to Townsville. 
-                 For now, they are left as-is to ensure the redirect works. 
-          */}
+          {/* 3. NESTED TOWNSVILLE ROUTES: All city-specific pages are now prefixed with /townsville/ */}
+          <Route path="/townsville/history" element={<HistoryOfTownsville />} />
+          <Route path="/townsville/things-to-do" element={<ThingsToDo />} />
+          <Route path="/townsville/beaches" element={<Beaches />} />
+          <Route path="/townsville/food" element={<FoodDrink />} />
+          <Route path="/townsville/local-tips" element={<LocalTips />} />
+          <Route path="/townsville/accommodation" element={<Accommodation />} />
+          <Route path="/townsville/events" element={<Events />} />
+          
+          {/* 4. SITE-WIDE/POLICY ROUTES: These remain at the root since they aren't city-specific */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-use" element={<TermsOfUse />} />
           <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
-          <Route path="/history" element={<HistoryOfTownsville />} />
-          <Route path="/things-to-do" element={<ThingsToDo />} />
-          <Route path="/beaches" element={<Beaches />} />
-          <Route path="/food" element={<FoodDrink />} />
-          <Route path="/local-tips" element={<LocalTips />} />
-          <Route path="/accommodation" element={<Accommodation />} />
-          <Route path="/events" element={<Events />} />
-
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          
+          {/* 5. Keep the catch-all NotFound route last */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
