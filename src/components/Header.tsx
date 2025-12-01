@@ -57,28 +57,3 @@ const Header = () => {
             <Link
               to="/townsville/local-tips"
               className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
-            >
-              Local Tips
-            </Link>
-            {/* UPDATED: Accommodation is now /townsville/accommodation */}
-            <Link
-              to="/townsville/accommodation"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
-            >
-              Accommodation
-            </Link>
-            {/* UPDATED: Events is now /townsville/events */}
-            <Link
-              to="/townsville/events"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
-            >
-              Events
-            </Link>
-          </div>
-        </div>
-      </nav>
-    </header>
-  );
-};
-
-export default Header;
