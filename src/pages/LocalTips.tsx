@@ -21,12 +21,96 @@ const LocalTips = () => {
   return (
     <>
       <Helmet>
-        <title>Local Tips for Visiting Townsville - Insider Travel Guide</title>
-        <meta 
-          name="description" 
-          content="Essential local tips for visiting Townsville. Learn about weather patterns, stinger safety, getting around, dog-friendly spots and the best time to visit North Queensland." 
-        />
-      </Helmet>
+  <title>Local Tips for Visiting Townsville - Insider Travel Guide</title>
+  <meta 
+    name="description" 
+    content="Essential local tips for visiting Townsville. Learn about weather patterns, stinger safety, getting around, dog-friendly spots and the best time to visit North Queensland." 
+  />
+
+  {/* WebPage Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Townsville Local Tips",
+      "url": "https://duncansguide.com/local-tips",
+      "description": "Local advice for visiting Townsville including weather, safety, transport, dog-friendly areas, stinger season and practical travel guidance.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://duncansguide.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Local Tips",
+            "item": "https://duncansguide.com/local-tips"
+          }
+        ]
+      }
+    }
+    `}
+  </script>
+
+  {/* FAQ Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When is the best time to visit Townsville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best time to visit Townsville is during the dry season from May to October, when humidity is low and temperatures range from 20–28°C."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Townsville safe for swimming during stinger season?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, but only in designated netted swimming enclosures. Stinger season runs from November to April, and it is recommended to wear stinger suits at beaches and when snorkeling on Magnetic Island."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Townsville dog-friendly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Townsville is extremely dog-friendly with multiple off-leash parks, dog-friendly beaches at certain times of the day, and several cafés that welcome pets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get around Townsville?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Townsville is easy to navigate with a car, and parking is generally convenient. Local buses cover most areas, and rideshare services operate throughout the city."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I know about Townsville weather?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Townsville has a tropical climate with warm temperatures year-round. Expect dry, sunny days May–October and tropical showers November–April."
+          }
+        }
+      ]
+    }
+    `}
+  </script>
+
+</Helmet>
+
 
       <div className="min-h-screen flex flex-col bg-background">
         <Header />
