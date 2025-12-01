@@ -26,27 +26,21 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-  {/* Townsville Homepage */}
-  <Route path="/townsville" element={<Index />} />
-
-  {/* Townsville Subpages */}
-  <Route path="/townsville/beaches" element={<Beaches />} />
-  <Route path="/townsville/food" element={<FoodDrink />} />
-  <Route path="/townsville/local-tips" element={<LocalTips />} />
-  <Route path="/townsville/accommodation" element={<Accommodation />} />
-  <Route path="/townsville/history" element={<HistoryOfTownsville />} />
-  <Route path="/townsville/events" element={<Events />} />
-  <Route path="/townsville/things-to-do" element={<ThingsToDo />} />
-
-  {/* Legal pages (global) */}
-  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-  <Route path="/terms-of-use" element={<TermsOfUse />} />
-  <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
-  <Route path="/cookie-policy" element={<CookiePolicy />} />
-
-  {/* Catch-all */}
-  <Route path="*" element={<NotFound />} />
-</Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-use" element={<TermsOfUse />} />
+          <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="/history" element={<HistoryOfTownsville />} />
+          <Route path="/things-to-do" element={<ThingsToDo />} />
+          <Route path="/beaches" element={<Beaches />} />
+          <Route path="/food" element={<FoodDrink />} />
+          <Route path="/local-tips" element={<LocalTips />} />
+          <Route path="/accommodation" element={<Accommodation />} />
+          <Route path="/events" element={<Events />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
