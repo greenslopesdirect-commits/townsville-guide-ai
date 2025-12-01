@@ -91,17 +91,15 @@ const Footer = () => {
         </div>
 
         {/* Bottom section */}
-        <div className="mt-12 border-t border-border/40 pt-6 text-center">
-          <p className="text-sm text-muted-foreground">
-            © {year} Duncan's Guide – Townsville. All rights reserved.
-          </p>
-          <p className="text-sm text-gray-400">
-  © {new Date().getFullYear()} Duncan's Guide – Townsville. All rights reserved.
-</p>
+<div className="mt-12 border-t border-border/40 pt-6 text-center">
+  <p className="text-sm text-gray-400">
+    © {year} Duncan's Guide – Townsville. All rights reserved.
+  </p>
 
-<p className="text-sm text-gray-500 mt-1">
-  Townsville’s trusted source for beaches, food, events and local tips.
-</p>
+  <p className="text-sm text-gray-500 mt-1">
+    Townsville’s trusted source for beaches, food, events and local tips.
+  </p>
+</div>
 
         </div>
       </div>
