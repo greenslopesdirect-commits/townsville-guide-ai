@@ -22,12 +22,142 @@ const FoodDrink = () => {
   return (
     <>
       <Helmet>
-        <title>Best Food & Restaurants in Townsville - Local Dining Guide</title>
-        <meta 
-          name="description" 
-          content="Discover the best restaurants, cafés and dining spots in Townsville. From waterfront dining on The Strand to modern Australian cuisine, find where locals eat in Townsville QLD." 
-        />
-      </Helmet>
+  <title>Best Food & Restaurants in Townsville - Local Dining Guide</title>
+  <meta 
+    name="description" 
+    content="Discover the best restaurants, cafés and dining spots in Townsville. From waterfront dining on The Strand to modern Australian cuisine, find where locals eat in Townsville QLD." 
+  />
+
+  {/* WebPage Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Food & Drink in Townsville",
+      "url": "https://duncansguide.com/food-drink",
+      "description": "Local guide to the best restaurants, cafés and dining experiences in Townsville, Queensland.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://duncansguide.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Food & Drink",
+            "item": "https://duncansguide.com/food-drink"
+          }
+        ]
+      }
+    }
+    `}
+  </script>
+
+  {/* ItemList Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Townsville Restaurants & Cafés",
+      "itemListOrder": "Ascending",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "JAM Restaurant",
+          "url": "https://duncansguide.com/food-drink#jam"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A Touch of Salt",
+          "url": "https://duncansguide.com/food-drink#salt"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3",
+          "name": "The Balcony",
+          "url": "https://duncansguide.com/food-drink#balcony"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4",
+          "name": "Longboard Bar & Grill",
+          "url": "https://duncansguide.com/food-drink#longboard"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5",
+          "name": "Juliette's Gelateria",
+          "url": "https://duncansguide.com/food-drink#juliettes"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Hogwarts Café",
+          "url": "https://duncansguide.com/food-drink#hogwarts"
+        }
+      ]
+    }
+    `}
+  </script>
+
+  {/* Restaurant Schema */}
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Townsville Dining",
+      "itemListElement": [
+        {
+          "@type": "Restaurant",
+          "name": "JAM Restaurant",
+          "address": "1 Palmer St, South Townsville QLD",
+          "servesCuisine": ["Modern Australian"],
+          "url": "https://duncansguide.com/food-drink#jam"
+        },
+        {
+          "@type": "Restaurant",
+          "name": "A Touch of Salt",
+          "address": "86–124 Ogden St, Townsville QLD",
+          "servesCuisine": ["Modern Australian"],
+          "url": "https://duncansguide.com/food-drink#salt"
+        },
+        {
+          "@type": "Restaurant",
+          "name": "Longboard Bar & Grill",
+          "address": "The Strand, Townsville QLD",
+          "servesCuisine": ["Burgers", "Seafood"],
+          "url": "https://duncansguide.com/food-drink#longboard"
+        },
+        {
+          "@type": "Restaurant",
+          "name": "The Balcony",
+          "address": "287 Flinders St, Townsville QLD",
+          "servesCuisine": ["Australian", "Brunch"],
+          "url": "https://duncansguide.com/food-drink#balcony"
+        },
+        {
+          "@type": "Restaurant",
+          "name": "Juliette's Gelateria",
+          "address": "The Strand, Townsville QLD",
+          "servesCuisine": ["Dessert"],
+          "url": "https://duncansguide.com/food-drink#juliettes"
+        }
+      ]
+    }
+    `}
+  </script>
+
+</Helmet>
+
 
       <div className="min-h-screen flex flex-col bg-background">
         <Header />
