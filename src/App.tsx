@@ -1,15 +1,9 @@
-// --- In src/App.tsx ---
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+// UPDATED: Added 'Navigate' to the imports
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-
-// 🔴 NEW IMPORT: Get the layout component
-import TownsvilleLayout from './layouts/TownsvilleLayout'; 
-
-// All Page Component Imports
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -33,35 +27,30 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          {/* 1. Redirect the root / to the new home /townsville */}
-          <Route path="/" element={<Navigate to="/townsville" replace />} />
+  {/* 1. Townsville Home is correctly set */}
+  <Route path="/townsville" element={<Index />} />
+  
+  {/* 2. Redirect the root to the new home /townsville */}
+  <Route path="/" element={<Navigate to="/townsville" replace />} />
 
-          {/* 2. NESTED TOWNSVILLE ROUTES GROUPED UNDER THE LAYOUT */}
-          {/* The PARENT route renders TownsvilleLayout, which provides the Header/Footer and the <Outlet /> */}
-          <Route path="/townsville" element={<TownsvilleLayout />}> 
-            
-            {/* The Index page is the default child path for /townsville */}
-            <Route index element={<Index />} />
-            
-            {/* Children paths are RELATIVE to /townsville (e.g., /townsville/history) */}
-            <Route path="history" element={<HistoryOfTownsville />} />
-            <Route path="things-to-do" element={<ThingsToDo />} />
-            <Route path="beaches" element={<Beaches />} />
-            <Route path="food" element={<FoodDrink />} />
-            <Route path="local-tips" element={<LocalTips />} />
-            <Route path="accommodation" element={<Accommodation />} />
-            <Route path="events" element={<Events />} />
-          </Route>
-
-          {/* 3. SITE-WIDE/POLICY ROUTES (These do NOT use the TownsvilleLayout) */}
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-use" element={<TermsOfUse />} />
-          <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
-          <Route path="/cookie-policy" element={<CookiePolicy />} />
-          
-          {/* 4. Keep the catch-all NotFound route last */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+  {/* 3. NESTED TOWNSVILLE ROUTES: All city-specific pages are now prefixed with /townsville/ */}
+  <Route path="/townsville/history" element={<HistoryOfTownsville />} />
+  <Route path="/townsville/things-to-do" element={<ThingsToDo />} />
+  <Route path="/townsville/beaches" element={<Beaches />} />
+  <Route path="/townsville/food" element={<FoodDrink />} />
+  <Route path="/townsville/local-tips" element={<LocalTips />} />
+  <Route path="/townsville/accommodation" element={<Accommodation />} />
+  <Route path="/townsville/events" element={<Events />} />
+  
+  {/* 4. SITE-WIDE/POLICY ROUTES: These remain at the root since they aren't city-specific */}
+  <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+  <Route path="/terms-of-use" element={<TermsOfUse />} />
+  <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
+  <Route path="/cookie-policy" element={<CookiePolicy />} />
+  
+  {/* 5. Keep the catch-all NotFound route last */}
+  <Route path="*" element={<NotFound />} />
+</Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
