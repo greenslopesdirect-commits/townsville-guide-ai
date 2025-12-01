@@ -41,18 +41,22 @@ const App = () => (
 
           {/* 1. NESTED TOWNSVILLE ROUTES: All city-specific pages now use TownsvilleLayout */}
           <Route path="/townsville" element={<TownsvilleLayout />}>
-            {/* Index Route: Renders the <Index /> component at /townsville */}
-            <Route index element={<Index />} />
-            
-            {/* Child Routes: Renders inside the Outlet of TownsvilleLayout */}
-            <Route path="history" element={<HistoryOfTownsville />} />
-            <Route path="things-to-do" element={<ThingsToDo />} />
-            <Route path="beaches" element={<Beaches />} />
-            <Route path="food" element={<FoodDrink />} />
-            <Route path="local-tips" element={<LocalTips />} />
-            <Route path="accommodation" element={<Accommodation />} />
-            <Route path="events" element={<Events />} />
-          </Route>
+  <Route index element={<Index />} />
+  
+  <Route path="history" element={<HistoryOfTownsville />} />
+  <Route path="things-to-do" element={<ThingsToDo />} />
+  <Route path="beaches" element={<Beaches />} />
+  <Route path="food" element={<FoodDrink />} />
+  <Route path="local-tips" element={<LocalTips />} />
+  <Route path="accommodation" element={<Accommodation />} />
+  <Route path="events" element={<Events />} />
+
+  {/* NEW QUICK ACCESS ROUTES */}
+  <Route path="dog-friendly" element={<DogFriendly />} />
+  <Route path="shopping" element={<Shopping />} />
+  <Route path="nature" element={<Nature />} />
+</Route>
+
           
           {/* 2. SITE-WIDE/POLICY ROUTES: These remain at the root and are outside the Townsville layout */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
