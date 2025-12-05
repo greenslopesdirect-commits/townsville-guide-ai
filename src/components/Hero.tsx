@@ -8,8 +8,6 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import heroImage from "@/assets/strand-hero.jpg";
 
-// TODO: Replace this import with your own Townsville background photo
-// Upload your image to src/assets/ and name it strand-hero.jpg
 import heroImage from "@/assets/strand-hero.jpg";
 
 const Hero = () => {
