@@ -41,13 +41,15 @@ const HeaderImproved = () => {
         scrolled && "shadow-md"
       )}
     >
-      <nav className="container mx-auto px-4 py-3">
-        <div className="flex items-center justify-between">
+      {/* ✅ LOCKED HEADER HEIGHT */}
+      <nav className="container mx-auto h-20 px-4 flex items-center">
+        <div className="flex items-center justify-between w-full">
           <Link to="/townsville" className="hover:opacity-80 transition-opacity">
+            {/* ✅ NO NEGATIVE MARGINS */}
             <img
               src={logo}
               alt="Duncan's Guide to Townsville"
-              className="h-24 -my-4"
+              className="h-12"
             />
           </Link>
 
