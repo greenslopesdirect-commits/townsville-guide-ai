@@ -8,8 +8,6 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import heroImage from "@/assets/strand-hero.jpg";
 
-import heroImage from "@/assets/strand-hero.jpg";
-
 const Hero = () => {
   const [aiInputValue, setAiInputValue] = useState("");
   const [chatResponse, setChatResponse] = useState("");
