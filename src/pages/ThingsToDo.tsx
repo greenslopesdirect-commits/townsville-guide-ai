@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Camera, Sunrise, Palmtree, Building2, Dog, Compass, Bot, ExternalLink } from "lucide-react";
 
