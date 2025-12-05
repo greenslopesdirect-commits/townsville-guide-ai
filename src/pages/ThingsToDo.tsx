@@ -330,11 +330,16 @@ const ThingsToDo = () => {
                       View on Map
                     </a>
                   </Button>
-                  <Link to="/">
-                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
-                      <Bot className="w-4 h-4" />
-                      Ask the AI for a Magnetic Island itinerary
-                    </Button>
+                  <Button
+  variant="link"
+  size="sm"
+  className="text-primary hover:underline p-0 gap-1"
+  onClick={() => askAI("Create a 1 day itinerary for Magnetic Island from Townsville")}
+>
+  <Bot className="w-4 h-4" />
+  Ask the AI for a Magnetic Island itinerary
+</Button>
+
                   </Link>
                 </div>
               </section>
