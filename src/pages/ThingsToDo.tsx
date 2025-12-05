@@ -1,20 +1,11 @@
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Camera, Sunrise, Palmtree, Building2, Dog, Compass, Bot, ExternalLink } from "lucide-react";
 
 const ThingsToDo = () => {
-  const navigate = useNavigate();
-
-  const askAI = (question: string) => {
-    navigate("/townsville", {
-      state: { aiQuestion: question },
-    });
-  };
-
   return (
-
     <>
       <SEOHead
         title="Things to Do in Townsville – Local Highlights & Must-See Spots"
@@ -330,16 +321,11 @@ const ThingsToDo = () => {
                       View on Map
                     </a>
                   </Button>
-                  <Button
-  variant="link"
-  size="sm"
-  className="text-primary hover:underline p-0 gap-1"
-  onClick={() => askAI("Create a 1 day itinerary for Magnetic Island from Townsville")}
->
-  <Bot className="w-4 h-4" />
-  Ask the AI for a Magnetic Island itinerary
-</Button>
-
+                  <Link to="/">
+                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
+                      <Bot className="w-4 h-4" />
+                      Ask the AI for a Magnetic Island itinerary
+                    </Button>
                   </Link>
                 </div>
               </section>
@@ -667,21 +653,20 @@ const ThingsToDo = () => {
             </div>
 
             {/* Back to Home CTA */}
- <div className="mt-12 text-center">
-  <Link to="/">
-    <Button
-      variant="outline"
-      size="lg"
-      className="group"
-      aria-label="Return to Duncan's Guide home page"
-    >
-      Return to Home
-      <ArrowLeft className="ml-2 w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
-    </Button>
-  </Link>
-</div>
+            <div className="mt-12 text-center">
+              <Link to="/">
+                <Button variant="outline" size="lg" className="group" aria-label="Return to Duncan's Guide home page">
+                  Return to Home
+                  <ArrowLeft className="ml-2 w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </main>
 
-</main>
-</>
-);
-          
+      </div>
+    </>
+  );
+};
+
+export default ThingsToDo;
