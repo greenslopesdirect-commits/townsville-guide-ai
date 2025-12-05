@@ -3,10 +3,8 @@ import { Mail, MapPin } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
 const AboutSection = () => {
-  return (
-    <section className="py-16 px-4 bg-gradient-to-br from-primary/5 to-background">
+  return <section className="py-16 px-4 bg-gradient-to-br from-primary/5 to-background">
       <div className="container mx-auto max-w-4xl space-y-8">
         {/* About Duncan's Guide Card */}
         <Card className="rounded-3xl shadow-[var(--shadow-card)] border-2 animate-fade-in backdrop-blur-sm bg-card/95">
@@ -34,7 +32,9 @@ const AboutSection = () => {
         <Separator className="my-8" />
 
         {/* About Duncan Ross Card */}
-        <Card className="rounded-3xl shadow-[var(--shadow-card)] border-2 animate-fade-in backdrop-blur-sm bg-card/95" style={{ animationDelay: '0.2s' }}>
+        <Card className="rounded-3xl shadow-[var(--shadow-card)] border-2 animate-fade-in backdrop-blur-sm bg-card/95" style={{
+        animationDelay: '0.2s'
+      }}>
           <CardContent className="pt-8 pb-8 px-6 md:px-10">
             <div className="text-center mb-6">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
@@ -43,18 +43,12 @@ const AboutSection = () => {
             </div>
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              <p>
-                Hi, I'm Duncan — the creator of Duncan's Guide and a proud Townsville local.
-              </p>
-              <p>
-                After moving to North Queensland, I fell in love with Townsville's relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. With a background in digital design, websites, and AI tools, I created this platform to share the best of our city in a simple, friendly, and helpful way.
-              </p>
+              <p>Hi, I’m Duncan — the real person behind Duncan’s Guide and a proud Townsville local.</p>
+              <p>After moving to North Queensland, I quickly fell in love with Townsville’s relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. With a background in digital design, websites, and AI tools, I created this platform to share the very best of our city in a simple, friendly, and genuinely helpful way.</p>
               <p>
                 I explore Townsville every day — beaches, cafés, dog-friendly spots, local events — and I've built this guide to make it easier for others to do the same.
               </p>
-              <p>
-                If you have suggestions, new places, or ideas to improve the guide, I'd love to hear from you.
-              </p>
+              <p>And if you ever see someone out walking a large black Giant Schnauzer, there’s a very good chance that’s me!</p>
             </div>
 
             <Separator className="my-6" />
@@ -76,20 +70,16 @@ const AboutSection = () => {
         </Card>
 
         {/* History CTA Button */}
-        <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <div className="text-center animate-fade-in" style={{
+        animationDelay: '0.4s'
+      }}>
           <Link to="/history">
-            <Button 
-              size="lg"
-              className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-6 text-base md:text-lg font-semibold"
-              aria-label="Read the full history of Townsville"
-            >
+            <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-6 text-base md:text-lg font-semibold" aria-label="Read the full history of Townsville">
               Read the Full History of Townsville 📜
             </Button>
           </Link>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
