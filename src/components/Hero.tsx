@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";import { useState, useEffect } from "react";
 import { ChevronDown, Search, MessageCircle, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -14,6 +15,15 @@ const Hero = () => {
   const [aiInputValue, setAiInputValue] = useState("");
   const [chatResponse, setChatResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.aiQuestion) {
+      setAiInputValue(location.state.aiQuestion);
+    }
+  }, [location.state]);
+
 
   useEffect(() => {
     (window as any).setAiInputValue = (text: string) => {
