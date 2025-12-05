@@ -51,7 +51,7 @@ const Index = () => {
       </Helmet>
 
       {/* DO NOT render Header/Footer here — TownsvilleLayout handles them */}
-      <div className="min-h-screen pt-20">
+      <div className="min-h-screen pt-0">
         <Hero />
         <section id="weather">
           <WeatherInfo />
