@@ -152,11 +152,11 @@ const HistoryOfTownsville = () => {
           <div className="mb-20 animate-fade-in">
             <img 
               src={thenAndNow} 
-              alt="Split-screen comparison: 1880s black-and-white Townsville with muddy streets, horse and cart, timber buildings and Castle Hill versus modern Townsville waterfront in full colour with The Strand promenade and city skyline" 
+              alt="Historical comparison of Townsville showing past and present cityscape" 
               className="w-full h-auto rounded-xl shadow-md mb-4 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic">
-              Townsville: Then and Now — From muddy creek to thriving city
+              Townsville: Then and Now
             </p>
           </div>
 
