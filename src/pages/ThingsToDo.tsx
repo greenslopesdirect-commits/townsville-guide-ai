@@ -667,17 +667,21 @@ const ThingsToDo = () => {
             </div>
 
             {/* Back to Home CTA */}
-            <div className="mt-12 text-center">
-              <Link to="/">
-                <Button variant="outline" size="lg" className="group" aria-label="Return to Duncan's Guide home page">
-                  Return to Home
-                  <ArrowLeft className="ml-2 w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
-                              </Button>
-            </Link>
-          </div>
-        </main>
-      </>
-    );
-};
+ <div className="mt-12 text-center">
+  <Link to="/">
+    <Button
+      variant="outline"
+      size="lg"
+      className="group"
+      aria-label="Return to Duncan's Guide home page"
+    >
+      Return to Home
+      <ArrowLeft className="ml-2 w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
+    </Button>
+  </Link>
+</div>
 
-export default ThingsToDo;
+</main>
+</>
+);
+          
