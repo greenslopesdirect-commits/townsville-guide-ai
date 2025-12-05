@@ -139,13 +139,22 @@ const HistoryOfTownsville = () => {
 
         {/* Hero Section */}
         <div className="container mx-auto px-4 sm:px-6 py-12 max-w-5xl">
-          <div className="text-center mb-20 animate-fade-in">
+          <div className="text-center mb-12 animate-fade-in">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
               A Short, Interesting History of Townsville
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-light">
               How a Muddy Creek Became the Capital of North Queensland
             </p>
+          </div>
+
+          {/* AI Image Disclaimer */}
+          <div className="mb-12 animate-fade-in">
+            <div className="bg-muted/50 border border-border/50 rounded-lg p-4 text-center">
+              <p className="text-sm text-muted-foreground italic">
+                All images in this section are AI-generated visual interpretations. They illustrate how Townsville could have looked in the past and how it may be visually represented in the present. These are not exact photographic records.
+              </p>
+            </div>
           </div>
 
           {/* Header Image */}
@@ -156,7 +165,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic">
-              Townsville: Then and Now
+              AI interpretation: A visual representation of modern-day Townsville.
             </p>
           </div>
 
@@ -194,7 +203,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Life on Country: Wulgurukaba and Bindal peoples on Cleveland Bay before European arrival
+              AI interpretation: What Townsville could have looked like circa pre-1864 — Life on Country.
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -241,7 +250,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Flinders Street in the 1880s with Castle Hill in the background
+              AI interpretation: What Townsville could have looked like circa 1880s.
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -283,7 +292,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              The earliest Townsville settlement at Ross Creek, 1864
+              AI interpretation: What Townsville could have looked like circa 1864.
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -327,7 +336,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Port of Townsville in the early 1900s during the boom era
+              AI interpretation: What Townsville could have looked like circa early 1900s.
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -381,7 +390,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Early Queenslander homes built for the tropics
+              AI interpretation: What Townsville could have looked like circa late 1800s–early 1900s.
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -427,7 +436,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Townsville Harbour during World War II with coastal defences active
+              AI interpretation: What Townsville could have looked like circa 1942–1945.
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 mt-10">
@@ -474,15 +483,15 @@ const HistoryOfTownsville = () => {
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">
             <img 
               src={theSaint} 
-              alt="Castle Hill with 'The Saint' stick figure painted on it in Townsville" 
+              alt="Castle Hill, Townsville in the mid to late 20th century" 
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Castle Hill with 'The Saint'
+              AI interpretation: What Townsville could have looked like circa 1950s–1970s.
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
-              1950s–1970s: Suburbs, Uni and "The Saint"
+              Castle Hill, Townsville (Mid–Late 20th Century)
             </h2>
             <h3 className="text-xl md:text-2xl font-semibold text-muted-foreground mb-8">
               Growing Up After the War
@@ -503,11 +512,7 @@ const HistoryOfTownsville = () => {
               </ul>
               
               <p>
-                And then there's the legendary "Saint" — a simple stick figure painted on Castle Hill by mischievous students in the 1960s. It kept reappearing despite repeated removal efforts, eventually becoming a quirky symbol of Townsville's personality.
-              </p>
-              
-              <p>
-                Cheeky, stubborn, and part of local identity.
+                Castle Hill remained a beloved landmark throughout this era, as the city transformed around it and grew into a modern regional centre.
               </p>
             </div>
           </section>
@@ -520,7 +525,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              The Strand during the 1980s-1990s redevelopment era
+              AI interpretation: What Townsville could have looked like circa 1980s–1990s.
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
@@ -569,7 +574,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 mt-10 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic mb-12">
-              Modern Townsville viewed from Castle Hill at golden hour
+              AI interpretation: A visual representation of modern-day Townsville.
             </p>
             
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5 mt-10">
