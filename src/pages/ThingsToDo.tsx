@@ -672,13 +672,12 @@ const ThingsToDo = () => {
                 <Button variant="outline" size="lg" className="group" aria-label="Return to Duncan's Guide home page">
                   Return to Home
                   <ArrowLeft className="ml-2 w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </Link>
-            </div>
-                  </div>
-      </main>
-    </>
-  );
+                              </Button>
+            </Link>
+          </div>
+        </main>
+      </>
+    );
 };
 
 export default ThingsToDo;
