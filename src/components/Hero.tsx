@@ -15,8 +15,16 @@ const Hero = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.state?.aiQuestion) {
-      setAiInputValue(location.state.aiQuestion);
+  if (location.state?.aiQuestion) {
+    setAiInputValue(location.state.aiQuestion);
+
+    // Auto submit after input is set
+    setTimeout(() => {
+      handleSend();
+    }, 500);
+  }
+}, [location.state]);
+
     }
   }, [location.state]);
 
