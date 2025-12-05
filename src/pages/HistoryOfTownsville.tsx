@@ -165,7 +165,7 @@ const HistoryOfTownsville = () => {
               className="w-full h-auto rounded-xl shadow-md mb-4 transition-transform duration-300 hover:shadow-lg"
             />
             <p className="text-center text-sm text-muted-foreground/80 italic">
-              AI interpretation: A visual representation of modern-day Townsville.
+              AI interpretation: A visual comparison of historical and modern Townsville.
             </p>
           </div>
 
