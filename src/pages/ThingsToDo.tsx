@@ -5,7 +5,16 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Camera, Sunrise, Palmtree, Building2, Dog, Compass, Bot, ExternalLink } from "lucide-react";
 
 const ThingsToDo = () => {
+  const navigate = useNavigate();
+
+  const askAI = (question: string) => {
+    navigate("/townsville", {
+      state: { aiQuestion: question },
+    });
+  };
+
   return (
+
     <>
       <SEOHead
         title="Things to Do in Townsville – Local Highlights & Must-See Spots"
