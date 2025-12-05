@@ -8,7 +8,7 @@ const TownsvilleLayout = () => {
     <>
       <HeaderImproved />
 
-      <div className="min-h-screen pt-20">
+      <div className="min-h-screen pt-20 overflow-x-hidden">
         <Outlet />
       </div>
 
@@ -19,3 +19,4 @@ const TownsvilleLayout = () => {
 };
 
 export default TownsvilleLayout;
+
