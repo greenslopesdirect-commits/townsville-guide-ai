@@ -1,12 +1,13 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useLocation, Link } from "react-router-dom";
 import { ChevronDown, Search, MessageCircle, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { Link } from "react-router-dom";
+import heroImage from "@/assets/strand-hero.jpg";
+
 // TODO: Replace this import with your own Townsville background photo
 // Upload your image to src/assets/ and name it strand-hero.jpg
 import heroImage from "@/assets/strand-hero.jpg";
