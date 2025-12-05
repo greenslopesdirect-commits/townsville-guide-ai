@@ -676,10 +676,12 @@ const ThingsToDo = () => {
               </Link>
             </div>
           </div>
-        </main>
-
-        </>
-  );
+</main>
+</>
+);
 };
+
+export default ThingsToDo;
+
 
 export default ThingsToDo;
