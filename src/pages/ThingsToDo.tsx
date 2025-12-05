@@ -678,8 +678,7 @@ const ThingsToDo = () => {
           </div>
         </main>
 
-      </div>
-    </>
+        </>
   );
 };
 
