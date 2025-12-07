@@ -3,19 +3,11 @@ import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
+import { triggerAiGuide } from "@/utils/aiGuide";
 
 const FoodDrink = () => {
   const handleAskAI = () => {
-    const input = document.getElementById("townsville-ai-input");
-    if (input) {
-      input.scrollIntoView({ behavior: "smooth", block: "center" });
-      setTimeout(() => {
-        input.classList.add("ring-2", "ring-primary");
-        setTimeout(() => {
-          input.classList.remove("ring-2", "ring-primary");
-        }, 2000);
-      }, 500);
-    }
+    triggerAiGuide("Where should we eat tonight in Townsville?");
   };
 
   return (

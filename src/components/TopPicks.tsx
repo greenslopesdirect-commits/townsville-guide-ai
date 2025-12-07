@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { triggerAiGuide } from "@/utils/aiGuide";
 import strandImage from "@/assets/the-strand-townsville.webp";
 import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
 import castleHillImage from "@/assets/castle-hill-townsville.webp";
@@ -47,18 +48,7 @@ const picks = [
 
 const TopPicks = () => {
   const handleCardClick = (query: string) => {
-    // Use the Hero component's state setter function
-    if ((window as any).setAiInputValue) {
-      (window as any).setAiInputValue(query);
-    }
-    
-    // Add scroll and pulse effects
-    const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
-    if (input) {
-      input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      input.classList.add('ring-4', 'ring-primary/50', 'animate-pulse');
-      setTimeout(() => input.classList.remove('ring-4', 'ring-primary/50', 'animate-pulse'), 2000);
-    }
+    triggerAiGuide(query);
   };
 
   return (
