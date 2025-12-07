@@ -54,7 +54,7 @@ const CookiePolicy = () => {
 
           {/* Back to Home */}
           <Link
-            to="/"
+            to="/townsville"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
           >
             <Home className="w-4 h-4" />
