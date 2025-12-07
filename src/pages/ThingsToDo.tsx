@@ -177,7 +177,7 @@ const ThingsToDo = () => {
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-4xl">
             {/* Back Button */}
-            <Link to="/">
+            <Link to="/townsville">
               <Button 
                 variant="ghost" 
                 className="mb-6 group"
@@ -235,7 +235,7 @@ const ThingsToDo = () => {
                       View on Map
                     </a>
                   </Button>
-                  <Link to="/history">
+                  <Link to="/townsville/history">
                     <Button variant="link" size="sm" className="text-primary hover:underline p-0">
                       Read more about Townsville's history →
                     </Button>
@@ -278,7 +278,7 @@ const ThingsToDo = () => {
                       View on Map
                     </a>
                   </Button>
-                  <Link to="/#beaches">
+                  <Link to="/townsville/beaches">
                     <Button variant="link" size="sm" className="text-primary hover:underline p-0">
                       Learn more about Townsville's beaches →
                     </Button>
@@ -321,7 +321,7 @@ const ThingsToDo = () => {
                       View on Map
                     </a>
                   </Button>
-                  <Link to="/">
+                  <Link to="/townsville">
                     <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
                       <Bot className="w-4 h-4" />
                       Ask the AI for a Magnetic Island itinerary
@@ -403,7 +403,7 @@ const ThingsToDo = () => {
                       View on Map
                     </a>
                   </Button>
-                  <Link to="/history">
+                  <Link to="/townsville/history">
                     <Button variant="link" size="sm" className="text-primary hover:underline p-0">
                       See Townsville's WW2 story →
                     </Button>
@@ -446,7 +446,7 @@ const ThingsToDo = () => {
                       View on Map
                     </a>
                   </Button>
-                  <Link to="/">
+                  <Link to="/townsville">
                     <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
                       <Bot className="w-4 h-4" />
                       Ask the AI for things to do near Riverway
@@ -524,7 +524,7 @@ const ThingsToDo = () => {
                   </Button>
                 </div>
                 <div className="mt-4">
-                  <Link to="/#beaches">
+                  <Link to="/townsville/beaches">
                     <Button variant="link" size="sm" className="text-primary hover:underline p-0">
                       See the full list of Townsville beaches →
                     </Button>
@@ -551,7 +551,7 @@ const ThingsToDo = () => {
                   <li>Cultural Centre and theatre shows at Civic Theatre</li>
                 </ul>
                 <div className="mt-4">
-                  <Link to="/">
+                  <Link to="/townsville">
                     <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
                       <Bot className="w-4 h-4" />
                       Ask the AI what's on this week in Townsville
@@ -579,9 +579,9 @@ const ThingsToDo = () => {
                   <li>Several local beaches allow dogs off-leash</li>
                 </ul>
                 <div className="mt-4">
-                  <Link to="/#beaches">
+                  <Link to="/townsville/dog-friendly">
                     <Button variant="link" size="sm" className="text-primary hover:underline p-0">
-                      See dog-friendly coastal walks on The Strand →
+                      See all dog-friendly spots in Townsville →
                     </Button>
                   </Link>
                 </div>
@@ -606,7 +606,7 @@ const ThingsToDo = () => {
                   <li>Hinchinbrook Island — wilderness camping and hiking</li>
                 </ul>
                 <div className="mt-4">
-                  <Link to="/">
+                  <Link to="/townsville">
                     <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
                       <Bot className="w-4 h-4" />
                       Ask the AI to plan a Townsville day trip
@@ -644,7 +644,7 @@ const ThingsToDo = () => {
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
                 Get personalised recommendations, itineraries, and local tips from our AI-powered guide trained on Townsville knowledge.
               </p>
-              <Link to="/">
+              <Link to="/townsville">
                 <Button size="lg" className="gap-2" aria-label="Open AI chat assistant">
                   <Bot className="w-5 h-5" />
                   Ask the AI Guide
@@ -654,7 +654,7 @@ const ThingsToDo = () => {
 
             {/* Back to Home CTA */}
             <div className="mt-12 text-center">
-              <Link to="/">
+              <Link to="/townsville">
                 <Button variant="outline" size="lg" className="group" aria-label="Return to Duncan's Guide home page">
                   Return to Home
                   <ArrowLeft className="ml-2 w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
