@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { triggerAiGuide, AI_PRESETS } from "@/utils/aiGuide";
 import villeResortImage from "@/assets/the-ville-resort-casino-townsville.webp";
 import aquariusImage from "@/assets/aquarius-on-the-beach-townsville.webp";
 import grandChancellorImage from "@/assets/grand-chancellor-hotel-townsville.webp";
@@ -110,20 +111,7 @@ const Accommodation = () => {
           style={{ animationDelay: '600ms' }}
         >
           <button
-            onClick={() => {
-              const queries = [
-                "Show me hotels near The Strand.",
-                "Find affordable accommodation in Townsville.",
-                "Which hotels have ocean views in Townsville?"
-              ];
-              const randomQuery = queries[Math.floor(Math.random() * queries.length)];
-              
-              if (typeof window !== 'undefined' && (window as any).setAiInputValue) {
-                (window as any).setAiInputValue(randomQuery);
-              }
-              
-              window.scrollTo({ top: 0, behavior: 'smooth' });
-            }}
+            onClick={() => triggerAiGuide(AI_PRESETS.accommodation)}
             className="group relative px-6 py-4 bg-gradient-to-r from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-primary/20"
             aria-label="Ask AI guide for accommodation recommendations"
           >

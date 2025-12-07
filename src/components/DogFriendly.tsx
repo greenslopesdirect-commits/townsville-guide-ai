@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { PawPrint } from "lucide-react";
+import { triggerAiGuide } from "@/utils/aiGuide";
 
 const DogFriendly = () => {
   const dogParks = [
@@ -40,23 +41,6 @@ const DogFriendly = () => {
     },
   ];
 
-  const handleAskAbout = (query: string) => {
-    if ((window as any).setAiInputValue) {
-      (window as any).setAiInputValue(query);
-    }
-    
-    const input = document.getElementById('townsville-ai-input');
-    if (input) {
-      input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setTimeout(() => {
-        input.classList.add('ring-2', 'ring-primary');
-        setTimeout(() => {
-          input.classList.remove('ring-2', 'ring-primary');
-        }, 2000);
-      }, 500);
-    }
-  };
-
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-muted/20 to-background">
       <div className="container mx-auto max-w-7xl">
@@ -87,7 +71,7 @@ const DogFriendly = () => {
                 </CardHeader>
                 <CardContent>
                   <Button 
-                    onClick={() => handleAskAbout(park.query)}
+                    onClick={() => triggerAiGuide(park.query)}
                     variant="outline"
                     size="sm"
                     className="w-full"
@@ -120,7 +104,7 @@ const DogFriendly = () => {
                 </CardHeader>
                 <CardContent>
                   <Button 
-                    onClick={() => handleAskAbout(cafe.query)}
+                    onClick={() => triggerAiGuide(cafe.query)}
                     variant="outline"
                     size="sm"
                     className="w-full"

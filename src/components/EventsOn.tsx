@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, ExternalLink } from "lucide-react";
+import { triggerAiGuide } from "@/utils/aiGuide";
 
 const EventsOn = () => {
   const events = [
@@ -48,23 +49,6 @@ const EventsOn = () => {
     },
   ];
 
-  const handleAskAbout = (query: string) => {
-    if ((window as any).setAiInputValue) {
-      (window as any).setAiInputValue(query);
-    }
-    
-    const input = document.getElementById('townsville-ai-input');
-    if (input) {
-      input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setTimeout(() => {
-        input.classList.add('ring-2', 'ring-primary');
-        setTimeout(() => {
-          input.classList.remove('ring-2', 'ring-primary');
-        }, 2000);
-      }, 500);
-    }
-  };
-
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-background to-amber-50/20 dark:to-amber-950/10">
       <div className="container mx-auto max-w-7xl">
@@ -96,7 +80,7 @@ const EventsOn = () => {
               </CardHeader>
               <CardContent>
                 <Button 
-                  onClick={() => handleAskAbout(event.query)}
+                  onClick={() => triggerAiGuide(event.query)}
                   variant="outline"
                   size="sm"
                   className="w-full"

@@ -6,6 +6,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { Link } from "react-router-dom";
+import { checkPendingAiQuestion } from "@/utils/aiGuide";
 // TODO: Replace this import with your own Townsville background photo
 // Upload your image to src/assets/ and name it strand-hero.jpg
 import heroImage from "@/assets/strand-hero.jpg";
@@ -16,6 +17,7 @@ const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    // Register global setter for external triggers
     (window as any).setAiInputValue = (text: string) => {
       setAiInputValue(text);
       const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
@@ -23,6 +25,9 @@ const Hero = () => {
         input.focus({ preventScroll: true });
       }
     };
+    
+    // Check for pending AI questions from cross-page navigation
+    checkPendingAiQuestion();
   }, []);
 
   const parseChatResponse = (text: string) => {

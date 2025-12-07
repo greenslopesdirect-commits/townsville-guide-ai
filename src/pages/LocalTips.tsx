@@ -2,21 +2,9 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { triggerAiGuide, AI_PRESETS } from "@/utils/aiGuide";
 
 const LocalTips = () => {
-  const handleAskAI = () => {
-    const input = document.getElementById("townsville-ai-input");
-    if (input) {
-      input.scrollIntoView({ behavior: "smooth", block: "center" });
-      setTimeout(() => {
-        input.classList.add("ring-2", "ring-primary");
-        setTimeout(() => {
-          input.classList.remove("ring-2", "ring-primary");
-        }, 2000);
-      }, 500);
-    }
-  };
-
   return (
     <>
       <SEOHead
@@ -284,7 +272,7 @@ const LocalTips = () => {
                 </ul>
               </div>
               <div className="text-center">
-                <Button onClick={handleAskAI} size="lg" className="gap-2">
+                <Button onClick={() => triggerAiGuide(AI_PRESETS.planDay)} size="lg" className="gap-2">
                   Ask the AI Guide
                 </Button>
               </div>

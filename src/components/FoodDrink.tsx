@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { triggerAiGuide } from "@/utils/aiGuide";
 import cactusJacksImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
 import JamImage from "@/assets/jam-corner-townsville.webp";
@@ -12,57 +13,40 @@ const FoodDrink = () => {
     {
       name: "🍽 JAM Restaurant",
       description: "Award-winning modern Australian dining on Palmer Street with creative dishes and a relaxed, upscale vibe.",
-      image: JamImage, // <-- NEW LOCAL VARIABLE
+      image: JamImage,
       query: "Tell me about JAM Restaurant Townsville.",
     },
     {
       name: "🌮 Cactus Jack's",
       description: "Fun and lively Mexican bar & grill — great for nachos, cocktails, and group dinners.",
-      image: cactusJacksImage, // <-- NEW LOCAL VARIABLE
+      image: cactusJacksImage,
       query: "Tell me about Cactus Jack's in Townsville.",
     },
     {
       name: "🍹 Longboard Bar & Grill",
       description: "Beachfront dining on The Strand with burgers, tacos, cocktails, and unbeatable ocean views.",
-      image: longboardImage, // <-- NEW LOCAL VARIABLE
+      image: longboardImage,
       query: "Tell me about Longboard Bar & Grill Townsville.",
     },
     {
       name: "🍔 Coo.King BBQ & Hotpot",
       description: "Korean BBQ and Shabu-Shabu (hotpot) with plenty of fresh ingredients and a popular buffet-style setup.",
-      image: CookingImage, // <-- NEW LOCAL VARIABLE
+      image: CookingImage,
       query: "Tell me about Coo.King BBQ & Hotpot in Townsville.",
     },
     {
       name: "🍨 Juliette's Gelateria",
       description: "Locally loved for gelato, coffee, and desserts — perfect for a sunset treat along The Strand.",
-      image: JuliettesImage, // <-- NEW LOCAL VARIABLE
+      image: JuliettesImage,
       query: "Tell me about Juliette's Gelateria Townsville.",
     },
     {
       name: "🍽️ A Touch of Salt",
       description: "Fine dining with an elegant menu, riverfront location, and one of Townsville's top-rated restaurants.",
-      image: SaltImage, // <-- NEW LOCAL VARIABLE
+      image: SaltImage,
       query: "Tell me about A Touch of Salt Townsville.",
     },
   ];
-
-  const handleAskAbout = (query: string) => {
-    if ((window as any).setAiInputValue) {
-      (window as any).setAiInputValue(query);
-    }
-
-    const input = document.getElementById("townsville-ai-input");
-    if (input) {
-      input.scrollIntoView({ behavior: "smooth", block: "center" });
-      setTimeout(() => {
-        input.classList.add("ring-2", "ring-primary");
-        setTimeout(() => {
-          input.classList.remove("ring-2", "ring-primary");
-        }, 2000);
-      }, 500);
-    }
-  };
 
   return (
     <section className="py-16 px-4 bg-background">
@@ -100,7 +84,13 @@ const FoodDrink = () => {
                 <CardDescription>{restaurant.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <Button onClick={() => handleAskAbout(restaurant.query)} variant="outline" size="sm" className="w-full" aria-label={`Ask about ${restaurant.name.replace(/[🍽🌮🍹🍔🍨🍽️]/g, '').trim()}`}>
+                <Button 
+                  onClick={() => triggerAiGuide(restaurant.query)} 
+                  variant="outline" 
+                  size="sm" 
+                  className="w-full" 
+                  aria-label={`Ask about ${restaurant.name.replace(/[🍽🌮🍹🍔🍨🍽️]/g, '').trim()}`}
+                >
                   Ask about this place
                 </Button>
               </CardContent>

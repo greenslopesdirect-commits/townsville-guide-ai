@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Sun, CloudRain, Palmtree } from "lucide-react";
+import { triggerAiGuide } from "@/utils/aiGuide";
 
 const WeatherInfo = () => {
   const seasons = [
@@ -27,23 +28,6 @@ const WeatherInfo = () => {
     },
   ];
 
-  const handleAskAI = (query: string) => {
-    if ((window as any).setAiInputValue) {
-      (window as any).setAiInputValue(query);
-    }
-    
-    const input = document.getElementById('townsville-ai-input');
-    if (input) {
-      input.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      setTimeout(() => {
-        input.classList.add('ring-2', 'ring-primary');
-        setTimeout(() => {
-          input.classList.remove('ring-2', 'ring-primary');
-        }, 2000);
-      }, 500);
-    }
-  };
-
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-6xl">
@@ -59,7 +43,7 @@ const WeatherInfo = () => {
           {seasons.map((season, index) => (
             <button
               key={index}
-              onClick={() => handleAskAI(season.query)}
+              onClick={() => triggerAiGuide(season.query)}
               className="text-left group"
             >
               <Card 
@@ -92,7 +76,7 @@ const WeatherInfo = () => {
           </CardHeader>
           <CardContent className="flex justify-center">
             <Button 
-              onClick={() => handleAskAI("What's the weather like in Townsville today?")}
+              onClick={() => triggerAiGuide("What's the weather like in Townsville today?")}
               variant="default"
               className="w-full md:w-auto"
             >

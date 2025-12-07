@@ -130,3 +130,24 @@ All colors MUST be HSL.
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   }
 }
+
+/* AI Guide Focus Glow Animation */
+@keyframes aiHighlight {
+  0% {
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0.6), 0 0 0 0 hsl(var(--sunset) / 0.4);
+  }
+  30% {
+    box-shadow: 0 0 20px 4px hsl(var(--primary) / 0.5), 0 0 40px 8px hsl(var(--sunset) / 0.3);
+  }
+  60% {
+    box-shadow: 0 0 30px 6px hsl(var(--primary) / 0.4), 0 0 50px 10px hsl(var(--sunset) / 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0), 0 0 0 0 hsl(var(--sunset) / 0);
+  }
+}
+
+.ai-focus-glow {
+  animation: aiHighlight 1.5s ease-out forwards;
+  border-color: hsl(var(--primary)) !important;
+}
