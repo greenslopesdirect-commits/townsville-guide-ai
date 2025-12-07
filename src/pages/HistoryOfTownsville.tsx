@@ -129,7 +129,7 @@ const HistoryOfTownsville = () => {
         {/* Back Navigation */}
         <div className="container mx-auto px-4 sm:px-6 py-6 max-w-5xl mt-16">
           <Link 
-            to="/" 
+            to="/townsville" 
             className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -616,7 +616,7 @@ const HistoryOfTownsville = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
                 <Link 
-                  to="/#seo-content"
+                  to="/townsville/beaches"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
                   aria-label="View best beaches in Townsville"
                 >
@@ -626,7 +626,7 @@ const HistoryOfTownsville = () => {
                 </Link>
 
                 <Link 
-                  to="/#seo-content"
+                  to="/townsville/things-to-do"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
                   aria-label="View things to do in Townsville"
                 >
@@ -636,7 +636,7 @@ const HistoryOfTownsville = () => {
                 </Link>
 
                 <Link 
-                  to="/#dog-friendly"
+                  to="/townsville/dog-friendly"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
                   aria-label="View dog-friendly places in Townsville"
                 >
@@ -646,7 +646,7 @@ const HistoryOfTownsville = () => {
                 </Link>
 
                 <Link 
-                  to="/#food-drink"
+                  to="/townsville/food"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
                   aria-label="View best restaurants in Townsville"
                 >
@@ -661,7 +661,7 @@ const HistoryOfTownsville = () => {
           {/* Back Navigation */}
           <div className="text-center pt-16 pb-20 mt-12 border-t border-border">
             <Link 
-              to="/" 
+              to="/townsville" 
               className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
             >
               <ArrowLeft className="w-5 h-5" />

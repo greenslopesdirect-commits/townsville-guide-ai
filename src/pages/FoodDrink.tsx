@@ -475,7 +475,7 @@ const FoodDrink = () => {
             {/* Back to Home */}
             <div className="text-center mt-12">
               <Button variant="outline" size="lg" asChild>
-                <Link to="/">← Back to Home</Link>
+                <Link to="/townsville">← Back to Home</Link>
               </Button>
             </div>
 

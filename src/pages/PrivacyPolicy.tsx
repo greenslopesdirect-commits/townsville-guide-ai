@@ -52,7 +52,7 @@ const PrivacyPolicy = () => {
       <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4 py-16 max-w-4xl">
           <Link 
-            to="/" 
+            to="/townsville" 
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mb-8"
           >
             <Home className="w-4 h-4" />
