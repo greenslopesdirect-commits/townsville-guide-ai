@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
+import FlightsButton from "@/components/FlightsButton";
+import AdvertiserAdBlock from "@/components/AdvertiserAdBlock";
+import AdSensePlaceholder from "@/components/AdSensePlaceholder";
 
 const Accommodation = () => {
   const handleAskAI = () => {
@@ -356,12 +359,23 @@ const Accommodation = () => {
                   <li>"Which hotels have the best ocean views?"</li>
                 </ul>
               </div>
-              <div className="text-center">
+              <div className="text-center space-y-4">
                 <Button onClick={handleAskAI} size="lg" className="gap-2">
                   Ask the AI Guide
                 </Button>
+                <div>
+                  <FlightsButton size="lg" />
+                </div>
               </div>
             </section>
+
+            {/* Advertiser Ad Block */}
+            <div className="my-12">
+              <AdvertiserAdBlock />
+            </div>
+
+            {/* Google AdSense footer slot (pending approval) */}
+            <AdSensePlaceholder slot="footer" className="mb-8" />
 
             {/* Back to Home */}
             <div className="text-center mt-12">

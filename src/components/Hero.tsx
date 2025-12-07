@@ -7,6 +7,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { Link } from "react-router-dom";
 import { checkPendingAiQuestion } from "@/utils/aiGuide";
+import FlightsButton from "@/components/FlightsButton";
 // TODO: Replace this import with your own Townsville background photo
 // Upload your image to src/assets/ and name it strand-hero.jpg
 import heroImage from "@/assets/strand-hero.jpg";
@@ -231,7 +232,7 @@ const Hero = () => {
           )}
           
                     {/* History CTA Button */}
-          <div className="mt-8 animate-fade-in">
+          <div className="mt-8 animate-fade-in flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/townsville/history">
               <Button 
                 size="lg"
@@ -241,6 +242,7 @@ const Hero = () => {
                 Discover Townsville's Story 📜
               </Button>
             </Link>
+            <FlightsButton size="lg" className="rounded-full px-8 py-4 text-base md:text-lg font-semibold" />
           </div>
 
         </div>   {/* ← CLOSES max-w-2xl wrapper */}
