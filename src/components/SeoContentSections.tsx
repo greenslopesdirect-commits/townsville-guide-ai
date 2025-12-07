@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const SeoContentSections = () => {
   const sections = [
@@ -34,7 +35,7 @@ const SeoContentSections = () => {
       content:
         "Townsville's tropical landscape offers spectacular walking trails and lookout points. Castle Hill features several walking tracks leading to 360-degree views over the city, harbour, and Magnetic Island. The Jezzine Barracks boardwalk winds along the coastline with interpretive displays about local history. Mount Stuart offers a scenic drive or challenging hike to a lookout with sweeping views across Cleveland Bay. Cape Pallarenda trails combine beach walks, historic quarantine station ruins, and birdwatching opportunities.",
       linkText: "Explore walking trails",
-      linkTo: "/townsville/things-to-do"
+      linkTo: "/townsville/nature"
     },
     {
       id: "restaurants",
@@ -71,7 +72,7 @@ const SeoContentSections = () => {
                 <p className="text-base text-muted-foreground leading-relaxed mb-6">
                   {section.content}
                 </p>
-                <a href={section.linkTo}>
+                <Link to={section.linkTo}>
                   <Button
                     variant="outline"
                     className="group"
@@ -80,7 +81,7 @@ const SeoContentSections = () => {
                     {section.linkText}
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </a>
+                </Link>
               </CardContent>
             </Card>
           ))}
