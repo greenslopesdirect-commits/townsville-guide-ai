@@ -38,7 +38,9 @@ const Footer = () => {
               <li><Link to="/townsville/events" className="hover:text-primary transition-colors">Events</Link></li>
               <li><Link to="/townsville/dog-friendly" className="hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
               <li><Link to="/townsville/accommodation" className="hover:text-primary transition-colors">Accommodation</Link></li>
+              <li><Link to="/townsville/flights" className="hover:text-primary transition-colors">Flights</Link></li>
               <li><Link to="/townsville/local-tips" className="hover:text-primary transition-colors">Local Tips</Link></li>
+              <li><Link to="/townsville/advertise" className="hover:text-primary transition-colors">Advertise With Us</Link></li>
             </ul>
           </div>
 

@@ -26,6 +26,8 @@ import FoodDrink from "@/pages/FoodDrink";
 import LocalTips from "@/pages/LocalTips";
 import Accommodation from "@/pages/Accommodation";
 import Events from "@/pages/Events";
+import FlightsToTownsville from "@/pages/FlightsToTownsville";
+import Advertise from "@/pages/Advertise";
 
 const queryClient = new QueryClient();
 
@@ -55,6 +57,10 @@ const App = () => (
   <Route path="dog-friendly" element={<DogFriendly />} />
   <Route path="shopping" element={<Shopping />} />
   <Route path="nature" element={<Nature />} />
+  
+  {/* MONETISATION PAGES */}
+  <Route path="flights" element={<FlightsToTownsville />} />
+  <Route path="advertise" element={<Advertise />} />
 </Route>
 
           
