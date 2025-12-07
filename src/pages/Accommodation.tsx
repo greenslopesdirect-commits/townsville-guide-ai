@@ -7,6 +7,7 @@ import { triggerAiGuide } from "@/utils/aiGuide";
 import FlightsButton from "@/components/FlightsButton";
 import AdvertiserAdBlock from "@/components/AdvertiserAdBlock";
 import AdSensePlaceholder from "@/components/AdSensePlaceholder";
+import AccommodationCard from "@/components/AccommodationCard";
 
 const Accommodation = () => {
   const handleAskAI = () => {
@@ -117,9 +118,34 @@ const Accommodation = () => {
               Townsville Accommodation Guide
             </h1>
             
-            <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Townsville offers a wide range of accommodation, from beachfront hotels to serviced apartments, budget options and family-friendly holiday parks. This guide highlights the best places to stay depending on your budget, travel style and preferred location.
             </p>
+
+            {/* Featured Accommodation Cards */}
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-6 text-foreground">Featured Stays</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <AccommodationCard
+                  title="The Ville Resort–Casino"
+                  description="Luxury oceanfront resort with lagoon pool, casino, and on-site dining near The Strand."
+                  priceFrom="From $189/night"
+                  facilities={["wifi", "pool", "parking"]}
+                />
+                <AccommodationCard
+                  title="Aquarius on the Beach"
+                  description="Budget-friendly beachfront hotel with uninterrupted ocean views and kitchenettes."
+                  priceFrom="From $129/night"
+                  facilities={["wifi", "parking"]}
+                />
+                <AccommodationCard
+                  title="Hotel Grand Chancellor"
+                  description="Modern CBD high-rise with rooftop pool and stunning city views. Walk to everything."
+                  priceFrom="From $159/night"
+                  facilities={["wifi", "pool", "breakfast"]}
+                />
+              </div>
+            </section>
 
             {/* Section 1: The Ville Resort-Casino */}
             <section className="mb-12">
