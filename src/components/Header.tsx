@@ -6,11 +6,11 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border">
       <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          <Link to="/townsville" className="hover:opacity-80 transition-opacity">
+          <Link to="/townsville" className="hover:opacity-80 transition-opacity flex-shrink-0">
             <img
               src={logo}
               alt="Duncan's Guide"
-              className="h-24 -my-4"
+              className="h-20 sm:h-28 md:h-36 -my-4 md:-my-6"
             />
           </Link>
 
