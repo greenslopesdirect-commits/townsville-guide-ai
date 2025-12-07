@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Camera, Sunrise, Palmtree, Building2, Dog, Compass, Bot, ExternalLink } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
+import AdSensePlaceholder from "@/components/AdSensePlaceholder";
+import AdvertiserAdBlock from "@/components/AdvertiserAdBlock";
 
 const ThingsToDo = () => {
   return (
@@ -667,6 +669,14 @@ const ThingsToDo = () => {
                 Ask the AI Guide
               </Button>
             </div>
+
+            {/* Advertiser Ad Block */}
+            <div className="mt-12">
+              <AdvertiserAdBlock />
+            </div>
+
+            {/* Google AdSense footer slot (pending approval) */}
+            <AdSensePlaceholder slot="footer" className="mt-8" />
 
             {/* Back to Home CTA */}
             <div className="mt-12 text-center">

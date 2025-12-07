@@ -13,6 +13,8 @@ import Accommodation from "@/components/Accommodation";
 import MapSection from "@/components/MapSection";
 import AboutSection from "@/components/AboutSection";
 import FaqSection from "@/components/FaqSection";
+import AdSensePlaceholder from "@/components/AdSensePlaceholder";
+import AdvertiserAdBlock from "@/components/AdvertiserAdBlock";
 
 const Index = () => {
   return (
@@ -52,6 +54,9 @@ const Index = () => {
 
       {/* DO NOT render Header/Footer here — TownsvilleLayout handles them */}
       <div className="min-h-screen pt-0">
+        {/* Google AdSense header slot (pending approval) */}
+        <AdSensePlaceholder slot="header" />
+        
         <Hero />
         <section id="weather">
           <WeatherInfo />
@@ -65,6 +70,10 @@ const Index = () => {
         <section id="seo-content">
           <SeoContentSections />
         </section>
+        
+        {/* Google AdSense content slot (pending approval) */}
+        <AdSensePlaceholder slot="content" className="my-8" />
+        
         <section id="video">
           <VideoSection />
         </section>
@@ -80,6 +89,12 @@ const Index = () => {
         <section id="accommodation">
           <Accommodation />
         </section>
+        
+        {/* Advertiser Ad Block */}
+        <section className="container mx-auto px-4 py-8">
+          <AdvertiserAdBlock />
+        </section>
+        
         <section id="map">
           <MapSection />
         </section>
@@ -89,6 +104,9 @@ const Index = () => {
         <section id="faq">
           <FaqSection />
         </section>
+        
+        {/* Google AdSense footer slot (pending approval) */}
+        <AdSensePlaceholder slot="footer" className="mb-8" />
       </div>
     </>
   );
