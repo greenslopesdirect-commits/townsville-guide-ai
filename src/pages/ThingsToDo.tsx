@@ -3,6 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, Camera, Sunrise, Palmtree, Building2, Dog, Compass, Bot, ExternalLink } from "lucide-react";
+import { triggerAiGuide } from "@/utils/aiGuide";
 
 const ThingsToDo = () => {
   return (
@@ -321,12 +322,15 @@ const ThingsToDo = () => {
                       View on Map
                     </a>
                   </Button>
-                  <Link to="/townsville">
-                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
-                      <Bot className="w-4 h-4" />
-                      Ask the AI for a Magnetic Island itinerary
-                    </Button>
-                  </Link>
+                  <Button 
+                    onClick={() => triggerAiGuide("Plan a day trip to Magnetic Island")}
+                    variant="link" 
+                    size="sm" 
+                    className="text-primary hover:underline p-0 gap-1"
+                  >
+                    <Bot className="w-4 h-4" />
+                    Ask the AI for a Magnetic Island itinerary
+                  </Button>
                 </div>
               </section>
 
@@ -446,12 +450,15 @@ const ThingsToDo = () => {
                       View on Map
                     </a>
                   </Button>
-                  <Link to="/townsville">
-                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
-                      <Bot className="w-4 h-4" />
-                      Ask the AI for things to do near Riverway
-                    </Button>
-                  </Link>
+                  <Button 
+                    onClick={() => triggerAiGuide("What can I do near Riverway in Townsville?")}
+                    variant="link" 
+                    size="sm" 
+                    className="text-primary hover:underline p-0 gap-1"
+                  >
+                    <Bot className="w-4 h-4" />
+                    Ask the AI for things to do near Riverway
+                  </Button>
                 </div>
               </section>
 
@@ -551,12 +558,15 @@ const ThingsToDo = () => {
                   <li>Cultural Centre and theatre shows at Civic Theatre</li>
                 </ul>
                 <div className="mt-4">
-                  <Link to="/townsville">
-                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
-                      <Bot className="w-4 h-4" />
-                      Ask the AI what's on this week in Townsville
-                    </Button>
-                  </Link>
+                  <Button 
+                    onClick={() => triggerAiGuide("What's on this week in Townsville?")}
+                    variant="link" 
+                    size="sm" 
+                    className="text-primary hover:underline p-0 gap-1"
+                  >
+                    <Bot className="w-4 h-4" />
+                    Ask the AI what's on this week in Townsville
+                  </Button>
                 </div>
               </section>
 
@@ -606,12 +616,15 @@ const ThingsToDo = () => {
                   <li>Hinchinbrook Island — wilderness camping and hiking</li>
                 </ul>
                 <div className="mt-4">
-                  <Link to="/townsville">
-                    <Button variant="link" size="sm" className="text-primary hover:underline p-0 gap-1">
-                      <Bot className="w-4 h-4" />
-                      Ask the AI to plan a Townsville day trip
-                    </Button>
-                  </Link>
+                  <Button 
+                    onClick={() => triggerAiGuide("Plan a Townsville day trip for me")}
+                    variant="link" 
+                    size="sm" 
+                    className="text-primary hover:underline p-0 gap-1"
+                  >
+                    <Bot className="w-4 h-4" />
+                    Ask the AI to plan a Townsville day trip
+                  </Button>
                 </div>
               </section>
 
@@ -644,12 +657,15 @@ const ThingsToDo = () => {
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
                 Get personalised recommendations, itineraries, and local tips from our AI-powered guide trained on Townsville knowledge.
               </p>
-              <Link to="/townsville">
-                <Button size="lg" className="gap-2" aria-label="Open AI chat assistant">
-                  <Bot className="w-5 h-5" />
-                  Ask the AI Guide
-                </Button>
-              </Link>
+              <Button 
+                onClick={() => triggerAiGuide("What are the best things to do in Townsville?")}
+                size="lg" 
+                className="gap-2" 
+                aria-label="Open AI chat assistant"
+              >
+                <Bot className="w-5 h-5" />
+                Ask the AI Guide
+              </Button>
             </div>
 
             {/* Back to Home CTA */}
