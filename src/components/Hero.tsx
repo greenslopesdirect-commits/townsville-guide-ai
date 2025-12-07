@@ -226,20 +226,19 @@ const Hero = () => {
           )}
           
           {/* History CTA Button */}
-          <div className="mt-8 animate-fade-in">
-            <Link to="/history">
-              <Button 
-                size="lg"
-                className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-4 text-base md:text-lg font-semibold"
-                aria-label="Discover the history of Townsville"
-              >
-                Discover Townsville's Story 📜
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </div>
-      
+<div className="mt-8 animate-fade-in">
+  <Link to="/townsville/history">
+    <Button 
+      size="lg"
+      className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-4 text-base md:text-lg font-semibold"
+      aria-label="Discover the history of Townsville"
+    >
+      Discover Townsville's Story 📜
+    </Button>
+  </Link>
+</div>
+
+ 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <ChevronDown className="text-white drop-shadow-lg" size={32} />
