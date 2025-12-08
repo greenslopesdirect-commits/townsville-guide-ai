@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/duncans-guide-logo.webp";
+import HeaderWeather from "@/components/HeaderWeather";
 
 const Header = () => {
   return (
@@ -14,7 +15,7 @@ const Header = () => {
             />
           </Link>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 md:gap-6">
             <Link
               to="/townsville"
               className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
@@ -23,46 +24,47 @@ const Header = () => {
             </Link>
             <Link
               to="/townsville/history"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden md:inline"
             >
-              Townsville's History
+              History
             </Link>
             <Link
               to="/townsville/things-to-do"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden lg:inline"
             >
               Things to Do
             </Link>
             <Link
               to="/townsville/beaches"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden lg:inline"
             >
               Beaches
             </Link>
             <Link
               to="/townsville/food"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
             >
               Food & Drink
             </Link>
             <Link
               to="/townsville/local-tips"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
             >
               Local Tips
             </Link>
             <Link
               to="/townsville/accommodation"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
             >
               Accommodation
             </Link>
             <Link
               to="/townsville/events"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
             >
               Events
             </Link>
+            <HeaderWeather />
           </div>
         </div>
       </nav>
