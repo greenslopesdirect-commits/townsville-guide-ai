@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
+import LiveWeatherWidget from "@/components/LiveWeatherWidget";
 import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
 import TopPicks from "@/components/TopPicks";
@@ -58,6 +59,9 @@ const Index = () => {
         <AdSensePlaceholder slot="header" />
         
         <Hero />
+        <section id="live-weather">
+          <LiveWeatherWidget />
+        </section>
         <section id="weather">
           <WeatherInfo />
         </section>
