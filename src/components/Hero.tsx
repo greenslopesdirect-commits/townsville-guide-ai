@@ -109,7 +109,7 @@ const Hero = () => {
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20 md:pt-24">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none"
         style={{ backgroundImage: `url(${heroImage})` }}
         role="img"
         aria-label="The Strand beachfront with palm trees in Townsville, North Queensland"
@@ -117,7 +117,7 @@ const Hero = () => {
       
       {/* Darker Gradient Overlay for better text contrast */}
       <div 
-        className="absolute inset-0 bg-black/40"
+        className="absolute inset-0 bg-black/40 pointer-events-none"
       />
       
       {/* Content */}

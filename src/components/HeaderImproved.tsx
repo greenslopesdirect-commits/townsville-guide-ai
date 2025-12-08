@@ -37,9 +37,10 @@ const HeaderImproved = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 bg-white border-b border-border transition-shadow duration-300",
+        "fixed top-0 left-0 right-0 z-50 bg-white border-b border-border transition-shadow duration-300 h-20",
         scrolled && "shadow-md"
       )}
+      style={{ maxHeight: '80px' }}
     >
       {/* ✅ LOCKED HEADER HEIGHT */}
       <nav className="container mx-auto h-20 px-4 flex items-center">

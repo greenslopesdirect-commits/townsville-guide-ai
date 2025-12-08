@@ -5,16 +5,17 @@ import BackToTop from "@/components/BackToTop";
 
 const TownsvilleLayout = () => {
   return (
-    <>
+    <div className="relative">
       <HeaderImproved />
 
-      <div className="min-h-screen pt-20 overflow-x-hidden">
+      {/* Main content area - starts below fixed header */}
+      <main className="relative z-0 pt-20">
         <Outlet />
-      </div>
+      </main>
 
       <Footer />
       <BackToTop />
-    </>
+    </div>
   );
 };
 
