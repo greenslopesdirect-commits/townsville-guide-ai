@@ -133,6 +133,18 @@ All colors MUST be HSL.
   .text-white {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   }
+
+  /* Ensure all anchor elements are clickable */
+  a {
+    pointer-events: auto;
+    position: relative;
+  }
+
+  /* Ensure buttons with anchors are clickable */
+  button a,
+  [role="button"] a {
+    pointer-events: auto;
+  }
 }
 
 /* AI Guide Focus Glow Animation */
