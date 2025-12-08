@@ -1,57 +1,68 @@
 import { Link } from "react-router-dom";
+import { 
+  Waves, 
+  Utensils, 
+  Dog, 
+  Building, 
+  Ticket, 
+  Calendar, 
+  ShoppingBag, 
+  TreePine, 
+  Lightbulb 
+} from "lucide-react";
 
 const QuickAccess = () => {
   const items = [
     {
-      icon: "🏖",
+      icon: Waves,
       title: "Beaches",
       desc: "Explore The Strand, Pallarenda, Rowes Bay & more.",
       link: "/townsville/beaches",
     },
     {
-      icon: "🍽",
+      icon: Utensils,
       title: "Restaurants & Cafés",
       desc: "Find the best breakfast, coffee, dinner & waterfront dining.",
       link: "/townsville/food",
     },
     {
-      icon: "🐶",
+      icon: Dog,
       title: "Dog-Friendly Spots",
       desc: "Dog beaches, off-leash parks, walking tracks & pet cafés.",
       link: "/townsville/dog-friendly",
     },
     {
-      icon: "🏨",
+      icon: Building,
       title: "Accommodation",
       desc: "Hotels, beachfront stays, apartments & budget options.",
       link: "/townsville/accommodation",
     },
     {
-      icon: "🎟",
+      icon: Ticket,
       title: "Things to Do",
       desc: "Attractions, lookouts, museums & family-friendly activities.",
       link: "/townsville/things-to-do",
     },
     {
-      icon: "🎉",
+      icon: Calendar,
       title: "Events & What's On",
       desc: "Festivals, markets, concerts & local events year-round.",
       link: "/townsville/events",
     },
     {
-      icon: "🛍",
+      icon: ShoppingBag,
       title: "Shopping & Markets",
       desc: "Local shops, boutiques & weekend market stalls.",
       link: "/townsville/shopping",
     },
     {
-      icon: "🌿",
+      icon: TreePine,
       title: "Nature & Walks",
       desc: "Castle Hill trails, wetlands, creeks & outdoor adventures.",
       link: "/townsville/nature",
     },
     {
-      icon: "💡",
+      icon: Lightbulb,
       title: "Local Tips",
       desc: "Weather, stinger season, transport & insider advice.",
       link: "/townsville/local-tips",
@@ -59,27 +70,41 @@ const QuickAccess = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
+    <section className="py-16 px-4 bg-muted/30">
+      <div className="container mx-auto max-w-6xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-foreground">
           Quick Access
         </h2>
-        <p className="text-center text-gray-600 mb-10">
+        <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
           Jump straight to what you're looking for — your Townsville AI guide has you covered.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {items.map((item) => (
-            <Link
-              key={item.title}
-              to={item.link}
-              className="p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow border border-gray-100"
-            >
-              <div className="text-4xl mb-3">{item.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-sm">{item.desc}</p>
-            </Link>
-          ))}
+          {items.map((item, index) => {
+            const IconComponent = item.icon;
+            return (
+              <Link
+                key={item.title}
+                to={item.link}
+                className="group p-6 rounded-2xl bg-card shadow-sm hover:shadow-lg transition-all duration-300 border-2 border-border/40 hover:border-primary/30 animate-fade-in"
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                    <IconComponent className="w-6 h-6" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold mb-2 text-foreground group-hover:text-primary transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </div>
     </section>
