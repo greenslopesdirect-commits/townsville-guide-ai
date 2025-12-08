@@ -63,6 +63,10 @@ const TermsOfUse = () => {
 
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-6">
             <p>
+              This website (MyAussieGuide) is owned and operated by DKR Sales (ABN 63 824 596 227).
+            </p>
+
+            <p>
               Duncan's Guide – Townsville provides general travel, local information, and AI-generated
               suggestions for entertainment and reference purposes only. While we strive for accuracy,
               we cannot guarantee that all information or AI outputs are correct, complete, or up to date.
