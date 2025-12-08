@@ -4,16 +4,19 @@ const LiveWeatherWidget = () => {
       <div className="container mx-auto max-w-2xl">
         <div className="rounded-2xl border border-border/40 shadow-md bg-card overflow-hidden">
           <iframe
-            src="https://www.weatherwidget.org/w/?id=wnXSLMjB&fcst=2&sun=1&geoid=2077895&bgcolor=%23FFFFFF&txtcolor=%23333333&hdrcolor=%2300796b&dtefmt=1&tmfmt=12"
+            src="https://wttr.in/Townsville?format=4&m"
             width="100%"
-            height="200"
+            height="60"
             frameBorder="0"
             scrolling="no"
-            title="Townsville Weather Forecast"
-            className="w-full"
-            style={{ minHeight: "180px" }}
+            title="Townsville Weather"
+            className="w-full bg-white text-center"
+            style={{ minHeight: "50px" }}
           />
         </div>
+        <p className="text-center text-xs text-muted-foreground mt-2">
+          Live weather data for Townsville, QLD
+        </p>
       </div>
     </section>
   );
