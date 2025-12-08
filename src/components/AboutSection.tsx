@@ -61,8 +61,8 @@ const AboutSection = () => {
               
               <div className="flex items-center justify-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                 <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:greenslopesdirect@gmail.com" className="text-base md:text-lg">
-                  greenslopesdirect@gmail.com
+                <a href="mailto:duncankross@gmail.com" className="text-base md:text-lg">
+                  duncankross@gmail.com
                 </a>
               </div>
             </div>
