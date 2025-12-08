@@ -63,6 +63,13 @@ const AffiliateDisclosure = () => {
           
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-4">
             <p>
+              MyAussieGuide is operated by DKR Sales (ABN 63 824 596 227). We may receive commissions 
+              when users click on external booking links or make purchases through affiliate partners 
+              such as Booking.com, Skyscanner, or other travel platforms. This helps support the site 
+              at no extra cost to you.
+            </p>
+
+            <p>
               Some links on this website are affiliate links, meaning we may earn a small 
               commission if you click through and make a purchase. This comes at no additional 
               cost to you.

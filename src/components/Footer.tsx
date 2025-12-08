@@ -96,7 +96,7 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="mt-12 border-t border-border/40 pt-6 text-center space-y-3">
           <p className="text-sm text-muted-foreground">
-            © {year} Duncan's Guide – Townsville. All rights reserved.
+            © 2025 MyAussieGuide — Operated by DKR Sales (ABN 63 824 596 227)
           </p>
           <p className="text-sm text-muted-foreground">
             Townsville's trusted source for beaches, food, events and local tips.

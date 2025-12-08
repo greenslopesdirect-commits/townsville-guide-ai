@@ -63,6 +63,11 @@ const PrivacyPolicy = () => {
           
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-6">
             <p>
+              MyAussieGuide is operated by DKR Sales (ABN 63 824 596 227) in Queensland, Australia. 
+              We take privacy seriously and comply with Australian privacy requirements.
+            </p>
+
+            <p>
               Duncan's Guide – Townsville respects your privacy. This Privacy Policy explains what information 
               we collect, how it is used, and how you can contact us with questions.
             </p>
