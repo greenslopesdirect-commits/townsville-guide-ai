@@ -125,10 +125,10 @@ const CookiePolicy = () => {
             </p>
             <p>
               <a
-                href="mailto:greenslopesdirect@gmail.com"
+                href="mailto:duncankross@gmail.com"
                 className="text-primary underline"
               >
-                greenslopesdirect@gmail.com
+                duncankross@gmail.com
               </a>
             </p>
 
