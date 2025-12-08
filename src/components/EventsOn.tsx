@@ -1,7 +1,8 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, ExternalLink } from "lucide-react";
+import { Calendar, ExternalLink, ArrowRight } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
+import { Link } from "react-router-dom";
 
 const EventsOn = () => {
   const events = [
@@ -9,35 +10,35 @@ const EventsOn = () => {
       icon: "🎭",
       title: "Strand Ephemera",
       date: "Biennial",
-      description: "Australia's leading outdoor sculpture festival held along The Strand — featuring large-scale artworks, sunset displays, and community activities.",
+      description: "Australia's leading outdoor sculpture festival held along The Strand — featuring large-scale artworks and sunset displays.",
       query: "Tell me about Strand Ephemera festival in Townsville.",
     },
     {
       icon: "🎨",
       title: "Townsville Cultural Festival",
       date: "Annual",
-      description: "A colourful celebration of world cultures with food stalls, live music, performances, and art from local and international communities.",
+      description: "A colourful celebration of world cultures with food stalls, live music, performances, and art from local communities.",
       query: "When is the Townsville Cultural Festival and what's on?",
     },
     {
       icon: "⛵",
       title: "Magnetic Island Race Week",
       date: "September",
-      description: "One of Australia's premier sailing events, bringing yachts, competitions, and waterfront festivities to Magnetic Island.",
+      description: "One of Australia's premier sailing events, bringing yachts, competitions, and waterfront festivities.",
       query: "Tell me about Magnetic Island Race Week.",
     },
     {
       icon: "🎶",
       title: "North Australian Festival of Arts",
       date: "Various Dates",
-      description: "Townsville's major arts festival offering theatre, music, comedy, workshops, and large-scale outdoor performances.",
+      description: "Townsville's major arts festival offering theatre, music, comedy, workshops, and outdoor performances.",
       query: "What's happening at the North Australian Festival of Arts in Townsville?",
     },
     {
       icon: "🛍",
       title: "Cotters Market",
       date: "Every Sunday",
-      description: "Townsville's iconic Sunday market in the CBD — local produce, handmade goods, crafts, food stalls, and entertainment.",
+      description: "Townsville's iconic Sunday market — local produce, handmade goods, crafts, food stalls, and entertainment.",
       query: "Tell me about Cotters Market in Townsville.",
     },
     {
@@ -50,54 +51,70 @@ const EventsOn = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-background to-amber-50/20 dark:to-amber-950/10">
-      <div className="container mx-auto max-w-7xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-foreground">
-          What's On in Townsville 🎟️
-        </h2>
-        
-        <p className="text-center text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-          Townsville hosts festivals, concerts, arts events, and community markets all year round. Here are some of the city's biggest highlights.
-        </p>
+    <section className="py-16 px-4 bg-background">
+      <div className="container mx-auto max-w-6xl">
+        {/* Section Header */}
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+            <Calendar className="w-4 h-4" />
+            Events
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            What's On in Townsville
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Townsville hosts festivals, concerts, arts events, and community markets all year round. Here are some of the city's biggest highlights.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+        {/* Events Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {events.map((event, index) => (
             <Card 
               key={index}
-              className="hover:scale-105 transition-all duration-300 animate-fade-in shadow-md hover:shadow-lg border-border/40"
+              className="hover:shadow-lg transition-all duration-300 animate-fade-in border-2 border-border/40 hover:border-primary/30"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <CardHeader className="pb-3">
-                <div className="flex items-center gap-2 text-primary mb-2">
-                  <Calendar className="w-4 h-4" />
-                  <span className="text-sm font-semibold">{event.date}</span>
+              <CardContent className="p-5">
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0 text-2xl">
+                    {event.icon}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 text-primary mb-1">
+                      <Calendar className="w-3 h-3" />
+                      <span className="text-xs font-medium">{event.date}</span>
+                    </div>
+                    <h3 className="text-lg font-semibold mb-2 text-foreground">{event.title}</h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">{event.description}</p>
+                    <Button 
+                      onClick={() => triggerAiGuide(event.query)}
+                      variant="outline"
+                      size="sm"
+                      className="w-full"
+                      aria-label={`Ask about ${event.title}`}
+                    >
+                      Ask about this event
+                    </Button>
+                  </div>
                 </div>
-                <CardTitle className="text-xl flex items-center gap-2">
-                  <span className="text-2xl">{event.icon}</span>
-                  {event.title}
-                </CardTitle>
-                <CardDescription>{event.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button 
-                  onClick={() => triggerAiGuide(event.query)}
-                  variant="outline"
-                  size="sm"
-                  className="w-full"
-                  aria-label={`Ask about ${event.title}`}
-                >
-                  Ask about this event
-                </Button>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center animate-fade-in" style={{ animationDelay: '500ms' }}>
+        {/* CTAs */}
+        <div className="flex flex-wrap gap-4 justify-center">
+          <Link to="/townsville/events">
+            <Button variant="default" size="lg" className="group">
+              View all events
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </Link>
           <Button 
             asChild
+            variant="outline"
             size="lg"
-            className="shadow-lg"
           >
             <a 
               href="https://whatson.townsville.qld.gov.au" 
@@ -106,7 +123,7 @@ const EventsOn = () => {
               className="inline-flex items-center gap-2"
               aria-label="View the full events calendar for Townsville"
             >
-              See full event calendar
+              Official event calendar
               <ExternalLink className="w-4 h-4" />
             </a>
           </Button>
