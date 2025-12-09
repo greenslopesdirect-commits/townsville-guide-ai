@@ -10,21 +10,13 @@ const AboutSection = () => {
         <Card className="rounded-3xl shadow-[var(--shadow-card)] border-2 animate-fade-in backdrop-blur-sm bg-card/95">
           <CardContent className="pt-8 pb-8 px-6 md:px-10">
             <div className="text-center mb-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                About Duncan's Guide – Townsville 💛
-              </h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">About MyAussieGuide – Townsville 💛</h2>
             </div>
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Duncan's Guide is your AI-powered local companion to everything Townsville and North Queensland — built to help locals, newcomers, and travellers discover the best of the region with real local insight.
-              </p>
-              <p>
-                This guide brings together hand-picked recommendations, carefully curated lists, and AI-assisted suggestions to make exploring easy. From beaches and restaurants to dog parks, events, and hidden gems, it's designed to help you experience Townsville like a local.
-              </p>
-              <p>
-                Whether you're planning your first trip or exploring new corners of the city you already call home, Duncan's Guide offers updated recommendations, accurate information, and smart tools that adapt to your needs.
-              </p>
+              <p>MyAussieGuide is your AI-powered local companion to everything Townsville and North Queensland — built to help locals, newcomers, and travellers discover the best of the region with real local insight.</p>
+              <p>This guide brings together hand-picked recommendations, carefully curated lists, and AI-assisted suggestions to make exploring easy. From beaches and restaurants to dog parks, events, and hidden gems, it’s designed to help you experience Townsville like a local.</p>
+              <p>Whether you're planning your first trip or exploring new corners of the city you already call home, MyAussieGuide delivers updated recommendations, accurate information, and smart tools that adapt to your needs.</p>
             </div>
           </CardContent>
         </Card>
