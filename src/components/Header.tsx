@@ -5,16 +5,22 @@ import HeaderWeather from "@/components/HeaderWeather";
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border">
-      <nav className="container mx-auto px-4 py-3">
+      <nav className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
-          <Link to="/townsville" className="hover:opacity-80 transition-opacity flex-shrink-0">
+          
+          {/* Logo */}
+          <Link 
+            to="/townsville" 
+            className="hover:opacity-80 transition-opacity flex-shrink-0"
+          >
             <img
               src={logo}
               alt="Duncan's Guide"
-              className="h-80 sm:h-112 md:h-144 -my-4 md:-my-6"
+              className="h-24 sm:h-32 md:h-40 w-auto"
             />
           </Link>
 
+          {/* Navigation */}
           <div className="flex items-center gap-4 md:gap-6">
             <Link
               to="/townsville"
@@ -64,6 +70,7 @@ const Header = () => {
             >
               Events
             </Link>
+
             <HeaderWeather />
           </div>
         </div>
