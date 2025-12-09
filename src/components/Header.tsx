@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/duncans-guide-logo.webp";
+import logo from "@/assets/myaussieguide-logo.jpg";
 import HeaderWeather from "@/components/HeaderWeather";
 
 const Header = () => {
