@@ -14,10 +14,11 @@ const Header = () => {
             className="hover:opacity-80 transition-opacity flex-shrink-0"
           >
             <img
-              src={logo}
-              alt="Duncan's Guide"
-              className="h-24 sm:h-32 md:h-40 w-auto"
-            />
+  src={logo}
+  alt="Duncan's Guide"
+  className="h-32 sm:h-40 md:h-48 w-auto min-w-[220px] sm:min-w-[260px] md:min-w-[300px]"
+/>
+
           </Link>
 
           {/* Navigation */}
