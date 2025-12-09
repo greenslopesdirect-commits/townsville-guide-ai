@@ -11,7 +11,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Duncan's Guide"
-              className="h-20 sm:h-28 md:h-36 -my-4 md:-my-6"
+              className="h-80 sm:h-112 md:h-144 -my-4 md:-my-6"
             />
           </Link>
 
