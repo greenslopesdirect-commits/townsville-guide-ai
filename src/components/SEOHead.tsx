@@ -12,11 +12,14 @@ const SEOHead = ({
   title,
   description,
   canonical,
-  ogImage = "https://duncansguide.com/og-image.jpg",
+  ogImage = "https://www.myaussieguide.com.au/og-image.jpg",
   ogType = "website",
 }: SEOHeadProps) => {
-  const fullTitle = title.includes("MyAussieGuide") ? title : `${title} | MyAussieGuide`;
-  const siteUrl = "https://duncansguide.com";
+  const fullTitle = title.includes("MyAussieGuide")
+    ? title
+    : `${title} | MyAussieGuide`;
+
+  const siteUrl = "https://www.myaussieguide.com.au";
   const canonicalUrl = canonical || siteUrl;
 
   return (
