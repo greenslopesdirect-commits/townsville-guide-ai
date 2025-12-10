@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
-import logo from "@/assets/duncans-guide-logo.webp";
+import logo from "@/assets/myaussieguide-logo.png";
 import { cn } from "@/lib/utils";
 
 const HeaderImproved = () => {
@@ -49,7 +49,7 @@ const HeaderImproved = () => {
             {/* ✅ NO NEGATIVE MARGINS */}
             <img
               src={logo}
-              alt="Duncan's Guide to Townsville"
+              alt="MyAussieGuide – Townsville"
               className="h-12"
             />
           </Link>
