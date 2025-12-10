@@ -7,8 +7,8 @@ const PrivacyPolicy = () => {
   return (
     <>
       <SEOHead
-        title="Privacy Policy | Duncan's Guide – Townsville"
-        description="Read the Privacy Policy for Duncan's Guide – Townsville. Learn how we handle data, cookies, analytics and AI interactions on this website."
+        title="Privacy Policy | MyAussieGuide – Townsville"
+        description="Read the Privacy Policy for MyAussieGuide – Townsville. Learn how we handle data, cookies, analytics and AI interactions on this website."
         canonical="https://duncansguide.com/privacy-policy"
       />
       <Helmet>
@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
             "@type": "PrivacyPolicy",
             "name": "Privacy Policy",
             "url": "https://duncansguide.com/privacy-policy",
-            "description": "Privacy Policy for Duncan's Guide explaining data usage, cookies, analytics and how user information is handled.",
+            "description": "Privacy Policy for MyAussieGuide explaining data usage, cookies, analytics and how user information is handled.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Duncan's Guide",
+              "name": "MyAussieGuide",
               "url": "https://duncansguide.com"
             }
           }
@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
             </p>
 
             <p>
-              Duncan's Guide – Townsville respects your privacy. This Privacy Policy explains what information 
+              MyAussieGuide – Townsville respects your privacy. This Privacy Policy explains what information 
               we collect, how it is used, and how you can contact us with questions.
             </p>
 
@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
 
             <h2 className="text-2xl font-semibold text-foreground">How We Use Your Information</h2>
             <p>
-              We use collected data solely to improve Duncan's Guide. We do <strong>not</strong> sell, trade, 
+              We use collected data solely to improve MyAussieGuide. We do <strong>not</strong> sell, trade, 
               or share personal information with third parties.
             </p>
 

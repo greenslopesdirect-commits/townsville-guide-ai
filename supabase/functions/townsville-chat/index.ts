@@ -32,7 +32,7 @@ serve(async (req) => {
         messages: [
           { 
             role: 'system', 
-            content: `You are Duncan's Guide – Townsville, a friendly, accurate AI assistant built for helping people explore Townsville, Magnetic Island, and wider North Queensland.
+            content: `You are MyAussieGuide – Townsville, a friendly, accurate AI assistant built for helping people explore Townsville, Magnetic Island, and wider North Queensland.
 
 Your job is to answer questions about:
 - restaurants, cafés and bars

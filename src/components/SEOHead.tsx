@@ -15,7 +15,7 @@ const SEOHead = ({
   ogImage = "https://duncansguide.com/og-image.jpg",
   ogType = "website",
 }: SEOHeadProps) => {
-  const fullTitle = title.includes("Duncan's Guide") ? title : `${title} | Duncan's Guide`;
+  const fullTitle = title.includes("MyAussieGuide") ? title : `${title} | MyAussieGuide`;
   const siteUrl = "https://duncansguide.com";
   const canonicalUrl = canonical || siteUrl;
 
@@ -32,7 +32,7 @@ const SEOHead = ({
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:site_name" content="Duncan's Guide – Townsville" />
+      <meta property="og:site_name" content="MyAussieGuide – Townsville" />
       <meta property="og:locale" content="en_AU" />
 
       {/* Twitter Card Meta Tags */}
@@ -40,7 +40,7 @@ const SEOHead = ({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:site" content="@duncansguide" />
+      <meta name="twitter:site" content="@myaussieguide" />
 
       {/* Additional SEO */}
       <meta name="robots" content="index, follow" />

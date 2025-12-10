@@ -9,7 +9,7 @@ const Advertise = () => {
   return (
     <>
       <SEOHead
-        title="Advertise With Us - Duncan's Guide Townsville"
+        title="Advertise With Us - MyAussieGuide Townsville"
         description="Promote your business to visitors exploring Townsville. Reach a high-intent local travel audience with cost-effective advertising options."
         canonical="https://duncansguide.com/townsville/advertise"
       />
@@ -21,7 +21,7 @@ const Advertise = () => {
             "@type": "WebPage",
             "name": "Advertise With Us",
             "url": "https://duncansguide.com/townsville/advertise",
-            "description": "Advertising opportunities on Duncan's Guide Townsville"
+            "description": "Advertising opportunities on MyAussieGuide Townsville"
           }
           `}
         </script>
@@ -52,7 +52,7 @@ const Advertise = () => {
                 <div className="flex items-center gap-3 mb-4">
                   <TrendingUp className="w-6 h-6 text-primary" />
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                    Why Advertise on Duncan's Guide?
+                    Why Advertise on MyAussieGuide?
                   </h2>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6">
@@ -144,7 +144,7 @@ const Advertise = () => {
                   </h2>
                 </div>
                 <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                  Interested in advertising your business on Duncan's Guide? Contact us to discuss options and pricing.
+                  Interested in advertising your business on MyAussieGuide? Contact us to discuss options and pricing.
                 </p>
                 <Button size="lg" asChild>
                   <a href="mailto:advertise@duncansguide.com">

@@ -7,8 +7,8 @@ const TermsOfUse = () => {
   return (
     <>
       <SEOHead
-        title="Terms of Use | Duncan's Guide – Townsville"
-        description="Read the Terms of Use for Duncan's Guide – Townsville. Learn about disclaimers, limitations, and user responsibilities when using our AI-powered travel guide."
+        title="Terms of Use | MyAussieGuide – Townsville"
+        description="Read the Terms of Use for MyAussieGuide – Townsville. Learn about disclaimers, limitations, and user responsibilities when using our AI-powered travel guide."
         canonical="https://duncansguide.com/terms-of-use"
       />
       <Helmet>
@@ -21,7 +21,7 @@ const TermsOfUse = () => {
             "@type": "TermsOfService",
             "name": "Terms of Use",
             "url": "https://duncansguide.com/terms-of-use",
-            "description": "Terms of Use for Duncan's Guide – Townsville. Includes disclaimers, acceptable use, and legal limitations.",
+            "description": "Terms of Use for MyAussieGuide – Townsville. Includes disclaimers, acceptable use, and legal limitations.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -41,7 +41,7 @@ const TermsOfUse = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Duncan's Guide",
+              "name": "MyAussieGuide",
               "url": "https://duncansguide.com"
             }
           }
@@ -67,7 +67,7 @@ const TermsOfUse = () => {
             </p>
 
             <p>
-              Duncan's Guide – Townsville provides general travel, local information, and AI-generated
+              MyAussieGuide – Townsville provides general travel, local information, and AI-generated
               suggestions for entertainment and reference purposes only. While we strive for accuracy,
               we cannot guarantee that all information or AI outputs are correct, complete, or up to date.
             </p>

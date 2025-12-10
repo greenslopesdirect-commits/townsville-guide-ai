@@ -39,7 +39,7 @@ const HistoryOfTownsville = () => {
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Duncan's Guide",
+        "name": "MyAussieGuide",
         "logo": {
           "@type": "ImageObject",
           "url": "https://duncansguide.com/logo.png"
@@ -133,7 +133,7 @@ const HistoryOfTownsville = () => {
             className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
           >
             <ArrowLeft className="w-5 h-5" />
-            Back to Duncan's Guide
+            Back to MyAussieGuide
           </Link>
         </div>
 
