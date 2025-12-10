@@ -7,8 +7,8 @@ const AffiliateDisclosure = () => {
   return (
     <>
       <SEOHead
-        title="Affiliate Disclosure | Duncan's Guide – Townsville"
-        description="Read Duncan's Guide affiliate disclosure, explaining how affiliate links work and how they support our Townsville local guide."
+        title="Affiliate Disclosure | MyAussieGuide – Townsville"
+        description="Read MyAussieGuide affiliate disclosure, explaining how affiliate links work and how they support our Townsville local guide."
         canonical="https://duncansguide.com/affiliate-disclosure"
       />
       <Helmet>
@@ -21,7 +21,7 @@ const AffiliateDisclosure = () => {
             "@type": "AboutPage",
             "name": "Affiliate Disclosure",
             "url": "https://duncansguide.com/affiliate-disclosure",
-            "description": "Information about how affiliate links on Duncan's Guide operate and how they support the website.",
+            "description": "Information about how affiliate links on MyAussieGuide operate and how they support the website.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -41,7 +41,7 @@ const AffiliateDisclosure = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Duncan's Guide",
+              "name": "MyAussieGuide",
               "url": "https://duncansguide.com"
             }
           }
@@ -82,7 +82,7 @@ const AffiliateDisclosure = () => {
 
             <p>
               Affiliate earnings help support the operation and ongoing development of 
-              Duncan's Guide — including maintaining server costs, improving our AI features, 
+              MyAussieGuide — including maintaining server costs, improving our AI features, 
               and providing up-to-date local Townsville guides.
             </p>
 

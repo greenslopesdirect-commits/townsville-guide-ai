@@ -20,8 +20,8 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Duncan's Guide – Townsville | Best Beaches, Food & Local Attractions"
-        description="Discover Townsville's best beaches, cafés, walks and hidden gems with Duncan's Guide — your AI-powered local guide to everything North Queensland."
+        title="MyAussieGuide – Townsville | Best Beaches, Food & Local Attractions"
+        description="Discover Townsville's best beaches, cafés, walks and hidden gems with MyAussieGuide — your AI-powered local guide to everything North Queensland."
         canonical="https://duncansguide.com/townsville"
       />
       <Helmet>
@@ -32,7 +32,7 @@ const Index = () => {
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "Duncan's Guide – Townsville",
+            "name": "MyAussieGuide – Townsville",
             "url": "https://duncansguide.com"
           }
           `}
@@ -44,7 +44,7 @@ const Index = () => {
           {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Duncan's Guide – Townsville",
+            "name": "MyAussieGuide – Townsville",
             "description": "Your AI-powered local guide to Townsville.",
             "url": "https://duncansguide.com"
           }

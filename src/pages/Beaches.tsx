@@ -193,7 +193,7 @@ const Beaches = () => {
   return (
     <>
       <SEOHead
-        title="Best Beaches in Townsville – Complete Coastal Guide | Duncan's Guide"
+        title="Best Beaches in Townsville – Complete Coastal Guide | MyAussieGuide"
         description="Discover Townsville's best beaches including The Strand, Pallarenda, Rowes Bay, Bushland Beach and Magnetic Island. Swimming, snorkelling, dog-friendly spots and local tips."
         canonical="https://www.myaussieguide.com.au/townsville/beaches"
       />

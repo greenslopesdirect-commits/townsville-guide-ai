@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const AboutSection = () => {
   return <section className="py-16 px-4 bg-gradient-to-br from-primary/5 to-background">
       <div className="container mx-auto max-w-4xl space-y-8">
-        {/* About Duncan's Guide Card */}
+        {/* About MyAussieGuide Card */}
         <Card className="rounded-3xl shadow-[var(--shadow-card)] border-2 animate-fade-in backdrop-blur-sm bg-card/95">
           <CardContent className="pt-8 pb-8 px-6 md:px-10">
             <div className="text-center mb-6">
@@ -15,7 +15,7 @@ const AboutSection = () => {
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
               <p>MyAussieGuide is your AI-powered local companion to everything Townsville and North Queensland — built to help locals, newcomers, and travellers discover the best of the region with real local insight.</p>
-              <p>This guide brings together hand-picked recommendations, carefully curated lists, and AI-assisted suggestions to make exploring easy. From beaches and restaurants to dog parks, events, and hidden gems, it’s designed to help you experience Townsville like a local.</p>
+              <p>This guide brings together hand-picked recommendations, carefully curated lists, and AI-assisted suggestions to make exploring easy. From beaches and restaurants to dog parks, events, and hidden gems, it's designed to help you experience Townsville like a local.</p>
               <p>Whether you're planning your first trip or exploring new corners of the city you already call home, MyAussieGuide delivers updated recommendations, accurate information, and smart tools that adapt to your needs.</p>
             </div>
           </CardContent>
@@ -35,12 +35,12 @@ const AboutSection = () => {
             </div>
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              <p>Hi, I’m Duncan — the real person behind Duncan’s Guide and a proud Townsville local.</p>
-              <p>After moving to North Queensland, I quickly fell in love with Townsville’s relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. With a background in digital design, websites, and AI tools, I created this platform to share the very best of our city in a simple, friendly, and genuinely helpful way.</p>
+              <p>Hi, I'm Duncan — the real person behind MyAussieGuide and a proud Townsville local.</p>
+              <p>After moving to North Queensland, I quickly fell in love with Townsville's relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. With a background in digital design, websites, and AI tools, I created this platform to share the very best of our city in a simple, friendly, and genuinely helpful way.</p>
               <p>
                 I explore Townsville every day — beaches, cafés, dog-friendly spots, local events — and I've built this guide to make it easier for others to do the same.
               </p>
-              <p>And if you ever see someone out walking a large black Giant Schnauzer, there’s a very good chance that’s me!</p>
+              <p>And if you ever see someone out walking a large black Giant Schnauzer, there's a very good chance that's me!</p>
             </div>
 
             <Separator className="my-6" />

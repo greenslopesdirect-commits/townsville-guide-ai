@@ -7,8 +7,8 @@ const CookiePolicy = () => {
   return (
     <>
       <SEOHead
-        title="Cookie Policy | Duncan's Guide – Townsville"
-        description="Learn how Duncan's Guide – Townsville uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
+        title="Cookie Policy | MyAussieGuide – Townsville"
+        description="Learn how MyAussieGuide – Townsville uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
         canonical="https://duncansguide.com/cookie-policy"
       />
       <Helmet>
@@ -21,7 +21,7 @@ const CookiePolicy = () => {
             "@type": "CookiePolicy",
             "name": "Cookie Policy",
             "url": "https://duncansguide.com/cookie-policy",
-            "description": "Information about how cookies are used on Duncan's Guide – Townsville, including analytics, affiliate cookies, and user consent.",
+            "description": "Information about how cookies are used on MyAussieGuide – Townsville, including analytics, affiliate cookies, and user consent.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -41,7 +41,7 @@ const CookiePolicy = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Duncan's Guide",
+              "name": "MyAussieGuide",
               "url": "https://duncansguide.com"
             }
           }
@@ -67,7 +67,7 @@ const CookiePolicy = () => {
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-6">
 
             <p>
-              Duncan's Guide – Townsville uses cookies to enhance your browsing experience, analyse website
+              MyAussieGuide – Townsville uses cookies to enhance your browsing experience, analyse website
               performance, and deliver relevant content. Cookies are small text files stored on your device
               when you visit our site.
             </p>
