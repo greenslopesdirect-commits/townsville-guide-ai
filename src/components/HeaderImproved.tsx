@@ -50,7 +50,7 @@ const HeaderImproved = () => {
             <img
               src={logo}
               alt="MyAussieGuide – Townsville"
-              className="h-12"
+              className="h-16 md:h-20"
             />
           </Link>
 
