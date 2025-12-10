@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/myaussieguide-logo.jpg";
+import logo from "@/assets/myaussieguide-logo.png";
 import HeaderWeather from "@/components/HeaderWeather";
 
 const Header = () => {
@@ -14,11 +14,11 @@ const Header = () => {
             className="hover:opacity-80 transition-opacity flex-shrink-0"
           >
             <img
-  src={logo}
-  alt="MyAussieGuide"
-  className="h-32 sm:h-40 md:h-48 w-auto min-w-[220px] sm:min-w-[260px] md:min-w-[300px]"
-/>
-
+              src={logo}
+              alt="MyAussieGuide"
+              className="h-32 sm:h-40 md:h-48 w-auto min-w-[220px] sm:min-w-[260px] md:min-w-[300px]"
+              style={{ objectFit: "contain" }}
+            />
           </Link>
 
           {/* Navigation */}
@@ -74,6 +74,7 @@ const Header = () => {
 
             <HeaderWeather />
           </div>
+
         </div>
       </nav>
     </header>
