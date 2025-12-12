@@ -11,31 +11,37 @@ const DogFriendly = () => {
       name: "Rowes Bay Dog Park",
       description: "Large open grassy area near the beach with plenty of room to run and socialise.",
       query: "Tell me about Rowes Bay Dog Park in Townsville.",
+      schnauzerapproved: true,
     },
     {
       name: "The Strand Foreshore",
       description: "Beautiful coastal walk with water access, shade, and dog-friendly stretches.",
       query: "Tell me about dog-friendly areas on The Strand Townsville.",
+      schnauzerapproved: false,
     },
     {
       name: "Murray Sporting Complex",
       description: "Spacious, fully fenced off-leash area with great visibility and room to play.",
       query: "Tell me about Murray Sporting Complex dog park in Townsville.",
+      schnauzerapproved: true,
     },
     {
       name: "Juliette's Gelateria",
       description: "Outdoor seating with water bowls, dog treats, and a great beachfront location.",
       query: "Is Juliette's Gelateria in Townsville dog-friendly?",
+      schnauzerapproved: false,
     },
     {
       name: "The Courtyard",
       description: "Trendy café with plenty of shaded outdoor tables for you and your dog.",
       query: "Is The Courtyard in Townsville dog-friendly?",
+      schnauzerapproved: false,
     },
     {
       name: "Hoi Polloi Café",
       description: "Relaxed atmosphere with a dog-friendly patio and cold water always available.",
       query: "Tell me about Hoi Polloi Café dog-friendly policy in Townsville.",
+      schnauzerapproved: false,
     },
   ];
 
@@ -61,9 +67,17 @@ const DogFriendly = () => {
           {dogSpots.map((spot, index) => (
             <Card 
               key={index}
-              className="hover:shadow-lg transition-all duration-300 animate-fade-in border-2 border-border/40 hover:border-primary/30"
+              className="hover:shadow-lg transition-all duration-300 animate-fade-in border-2 border-border/40 hover:border-primary/30 relative overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
+              {/* Schnauzer Approved Badge */}
+              {spot.schnauzerapproved && (
+                <div className="absolute top-3 right-3 z-10">
+                  <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 text-xs font-medium border border-amber-200 dark:border-amber-700">
+                    🐾 Schnauzer Approved
+                  </span>
+                </div>
+              )}
               <CardContent className="p-5">
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
