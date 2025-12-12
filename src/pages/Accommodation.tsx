@@ -9,6 +9,11 @@ import AdvertiserAdBlock from "@/components/AdvertiserAdBlock";
 import AdSensePlaceholder from "@/components/AdSensePlaceholder";
 import AccommodationCard from "@/components/AccommodationCard";
 
+// Hotel images
+import theVilleImage from "@/assets/the-ville-resort-casino-townsville.webp";
+import aquariusImage from "@/assets/aquarius-beachfront-townsville.webp";
+import grandChancellorImage from "@/assets/hotel-grand-chancellor-townsville.webp";
+
 const Accommodation = () => {
   const handleAskAI = () => {
     triggerAiGuide("Recommend accommodation near The Strand in Townsville");
@@ -129,18 +134,21 @@ const Accommodation = () => {
                 <AccommodationCard
                   title="The Ville Resort–Casino"
                   description="Luxury oceanfront resort with lagoon pool, casino, and on-site dining near The Strand."
+                  image={theVilleImage}
                   priceFrom="From $189/night"
                   facilities={["wifi", "pool", "parking"]}
                 />
                 <AccommodationCard
                   title="Aquarius on the Beach"
                   description="Budget-friendly beachfront hotel with uninterrupted ocean views and kitchenettes."
+                  image={aquariusImage}
                   priceFrom="From $129/night"
                   facilities={["wifi", "parking"]}
                 />
                 <AccommodationCard
                   title="Hotel Grand Chancellor"
                   description="Modern CBD high-rise with rooftop pool and stunning city views. Walk to everything."
+                  image={grandChancellorImage}
                   priceFrom="From $159/night"
                   facilities={["wifi", "pool", "breakfast"]}
                 />
