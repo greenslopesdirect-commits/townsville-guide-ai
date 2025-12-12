@@ -1,26 +1,27 @@
-import { MapPin, ExternalLink } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 interface MapLocationCardProps {
   url: string;
-  label?: string;
 }
 
-const MapLocationCard = ({ url, label = "View Location on Maps" }: MapLocationCardProps) => {
+const MapLocationCard = ({ url }: MapLocationCardProps) => {
+  const handleClick = () => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-3 px-4 py-3 my-2 bg-muted/50 hover:bg-muted border border-border/60 hover:border-primary/40 rounded-xl transition-all duration-200 group cursor-pointer"
+    <button
+      onClick={handleClick}
+      className="w-full bg-white border border-gray-200 rounded-lg p-3 mt-2 flex items-center gap-3 hover:bg-gray-50 transition-colors shadow-sm cursor-pointer text-left"
+      type="button"
     >
-      <div className="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+      <div className="flex items-center justify-center w-10 h-10 bg-primary/10 rounded-lg shrink-0">
         <MapPin className="w-5 h-5 text-primary" />
       </div>
-      <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
-        {label}
+      <span className="font-semibold text-foreground">
+        Open in Google Maps
       </span>
-      <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors ml-auto" />
-    </a>
+    </button>
   );
 };
 

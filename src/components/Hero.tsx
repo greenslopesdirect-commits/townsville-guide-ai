@@ -133,25 +133,29 @@ const Hero = () => {
   };
 
   // Parse markdown links like [View on Google Maps](https://google.com/maps/...) and render as MapLocationCard
+  // Also handles 👉 emoji cleanup before map links
   const renderTextWithMapCards = (text: string) => {
+    // Clean up 👉 emoji that appears before map links
+    const cleanedText = text.replace(/👉\s*\[/g, '[');
+    
     const mapsLinkRegex = /\[([^\]]*)\]\((https?:\/\/(?:www\.)?google\.com\/maps[^\)]*)\)/g;
     const parts: React.ReactNode[] = [];
     let lastIndex = 0;
     let match;
 
-    while ((match = mapsLinkRegex.exec(text)) !== null) {
+    while ((match = mapsLinkRegex.exec(cleanedText)) !== null) {
       // Add text before the link
       if (match.index > lastIndex) {
-        parts.push(<span key={`text-${lastIndex}`}>{text.slice(lastIndex, match.index)}</span>);
+        const textBefore = cleanedText.slice(lastIndex, match.index);
+        parts.push(<span key={`text-${lastIndex}`}>{textBefore}</span>);
       }
       
       // Add the MapLocationCard
-      const [, linkText, url] = match;
+      const [, , url] = match;
       parts.push(
         <MapLocationCard 
           key={`map-${match.index}`} 
           url={url} 
-          label={linkText || "View Location on Maps"} 
         />
       );
       
@@ -159,11 +163,11 @@ const Hero = () => {
     }
 
     // Add remaining text
-    if (lastIndex < text.length) {
-      parts.push(<span key={`text-${lastIndex}`}>{text.slice(lastIndex)}</span>);
+    if (lastIndex < cleanedText.length) {
+      parts.push(<span key={`text-${lastIndex}`}>{cleanedText.slice(lastIndex)}</span>);
     }
 
-    return parts.length > 0 ? parts : text;
+    return parts.length > 0 ? parts : cleanedText;
   };
   const handleSend = async () => {
     if (!aiInputValue.trim()) {
