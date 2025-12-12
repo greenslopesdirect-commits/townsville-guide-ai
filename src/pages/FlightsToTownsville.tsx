@@ -11,7 +11,7 @@ const FlightsToTownsville = () => {
       <SEOHead
         title="Flights to Townsville (TSV) - Compare & Book Cheap Flights"
         description="Compare flights to Townsville Airport (TSV). Find the best deals on flights from Sydney, Melbourne, Brisbane and more. Tips for cheap flights to North Queensland."
-        canonical="https://duncansguide.com/townsville/flights"
+        canonical="https://www.myaussieguide.com.au/townsville/flights"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -20,7 +20,7 @@ const FlightsToTownsville = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Flights to Townsville",
-            "url": "https://duncansguide.com/townsville/flights",
+            "url": "https://www.myaussieguide.com.au/townsville/flights",
             "description": "Compare and book flights to Townsville Airport (TSV)"
           }
           `}

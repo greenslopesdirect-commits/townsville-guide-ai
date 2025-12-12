@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://duncansguide.com/sitemap.xml
+Sitemap: https://www.myaussieguide.com.au/sitemap.xml

@@ -143,7 +143,7 @@ const Nature = () => {
   return (
     <>
       <SEOHead
-        title="Nature & Walks in Townsville – Trails & Hiking Guide | Duncan's Guide"
+        title="Nature & Walks in Townsville – Trails & Hiking Guide | MyAussieGuide"
         description="Discover the best nature walks and hiking trails in Townsville. From Castle Hill to Town Common, explore scenic bushland, coastal paths, and wildlife spotting."
         canonical="https://www.myaussieguide.com.au/townsville/nature"
       />

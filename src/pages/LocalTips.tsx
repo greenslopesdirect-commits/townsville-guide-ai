@@ -10,7 +10,7 @@ const LocalTips = () => {
       <SEOHead
         title="Local Tips for Visiting Townsville - Insider Travel Guide"
         description="Essential local tips for visiting Townsville. Learn about weather patterns, stinger safety, getting around, dog-friendly spots and the best time to visit North Queensland."
-        canonical="https://duncansguide.com/townsville/local-tips"
+        canonical="https://www.myaussieguide.com.au/townsville/local-tips"
       />
       <Helmet>
 
@@ -21,7 +21,7 @@ const LocalTips = () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Townsville Local Tips",
-      "url": "https://duncansguide.com/local-tips",
+      "url": "https://www.myaussieguide.com.au/townsville/local-tips",
       "description": "Local advice for visiting Townsville including weather, safety, transport, dog-friendly areas, stinger season and practical travel guidance.",
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -30,13 +30,13 @@ const LocalTips = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://duncansguide.com"
+            "item": "https://www.myaussieguide.com.au"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Local Tips",
-            "item": "https://duncansguide.com/local-tips"
+            "item": "https://www.myaussieguide.com.au/townsville/local-tips"
           }
         ]
       }

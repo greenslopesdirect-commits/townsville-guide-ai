@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
       <SEOHead
         title="Privacy Policy | MyAussieGuide – Townsville"
         description="Read the Privacy Policy for MyAussieGuide – Townsville. Learn how we handle data, cookies, analytics and AI interactions on this website."
-        canonical="https://duncansguide.com/privacy-policy"
+        canonical="https://www.myaussieguide.com.au/privacy-policy"
       />
       <Helmet>
 
@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
             "@context": "https://schema.org",
             "@type": "PrivacyPolicy",
             "name": "Privacy Policy",
-            "url": "https://duncansguide.com/privacy-policy",
+            "url": "https://www.myaussieguide.com.au/privacy-policy",
             "description": "Privacy Policy for MyAussieGuide explaining data usage, cookies, analytics and how user information is handled.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
@@ -29,20 +29,20 @@ const PrivacyPolicy = () => {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://duncansguide.com"
+                  "item": "https://www.myaussieguide.com.au"
                 },
                 {
                   "@type": "ListItem",
-                  "position": 2",
+                  "position": 2,
                   "name": "Privacy Policy",
-                  "item": "https://duncansguide.com/privacy-policy"
+                  "item": "https://www.myaussieguide.com.au/privacy-policy"
                 }
               ]
             },
             "publisher": {
               "@type": "Organization",
               "name": "MyAussieGuide",
-              "url": "https://duncansguide.com"
+              "url": "https://www.myaussieguide.com.au"
             }
           }
           `}

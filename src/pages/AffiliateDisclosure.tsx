@@ -9,7 +9,7 @@ const AffiliateDisclosure = () => {
       <SEOHead
         title="Affiliate Disclosure | MyAussieGuide – Townsville"
         description="Read MyAussieGuide affiliate disclosure, explaining how affiliate links work and how they support our Townsville local guide."
-        canonical="https://duncansguide.com/affiliate-disclosure"
+        canonical="https://www.myaussieguide.com.au/affiliate-disclosure"
       />
       <Helmet>
 
@@ -20,7 +20,7 @@ const AffiliateDisclosure = () => {
             "@context": "https://schema.org",
             "@type": "AboutPage",
             "name": "Affiliate Disclosure",
-            "url": "https://duncansguide.com/affiliate-disclosure",
+            "url": "https://www.myaussieguide.com.au/affiliate-disclosure",
             "description": "Information about how affiliate links on MyAussieGuide operate and how they support the website.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
@@ -29,20 +29,20 @@ const AffiliateDisclosure = () => {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://duncansguide.com"
+                  "item": "https://www.myaussieguide.com.au"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Affiliate Disclosure",
-                  "item": "https://duncansguide.com/affiliate-disclosure"
+                  "item": "https://www.myaussieguide.com.au/affiliate-disclosure"
                 }
               ]
             },
             "publisher": {
               "@type": "Organization",
               "name": "MyAussieGuide",
-              "url": "https://duncansguide.com"
+              "url": "https://www.myaussieguide.com.au"
             }
           }
           `}
