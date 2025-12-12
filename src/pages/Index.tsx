@@ -67,8 +67,15 @@ const Index = () => {
         <NewsletterSection />
         
         <section id="weather">
-          <WeatherInfo />
-        </section>
+  <div className="mb-6">
+    <WeatherInfo />  {/* Existing system – keep for now */}
+  </div>
+
+  <div className="mb-6">
+    <WeatherWidget /> {/* New widget for testing */}
+  </div>
+</section>
+
         <section id="quick-access">
           <QuickAccess />
         </section>
