@@ -14,12 +14,12 @@ const FlightsButton = ({ className = "", size = "default" }: FlightsButtonProps)
       asChild
     >
       <a
-        href="https://www.skyscanner-placeholder.com"
+        href="https://www.skyscanner.com.au/transport/flights-to/tsv"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Plane className="w-4 h-4" />
-        Search Flights (Skyscanner)
+        Check Flight Prices
       </a>
     </Button>
   );
