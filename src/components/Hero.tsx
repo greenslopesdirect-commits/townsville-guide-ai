@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Search, MessageCircle, X } from "lucide-react";
+import MapLocationCard from "@/components/MapLocationCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
@@ -130,6 +131,40 @@ const Hero = () => {
     }
     return parts;
   };
+
+  // Parse markdown links like [View on Google Maps](https://google.com/maps/...) and render as MapLocationCard
+  const renderTextWithMapCards = (text: string) => {
+    const mapsLinkRegex = /\[([^\]]*)\]\((https?:\/\/(?:www\.)?google\.com\/maps[^\)]*)\)/g;
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = mapsLinkRegex.exec(text)) !== null) {
+      // Add text before the link
+      if (match.index > lastIndex) {
+        parts.push(<span key={`text-${lastIndex}`}>{text.slice(lastIndex, match.index)}</span>);
+      }
+      
+      // Add the MapLocationCard
+      const [, linkText, url] = match;
+      parts.push(
+        <MapLocationCard 
+          key={`map-${match.index}`} 
+          url={url} 
+          label={linkText || "View Location on Maps"} 
+        />
+      );
+      
+      lastIndex = mapsLinkRegex.lastIndex;
+    }
+
+    // Add remaining text
+    if (lastIndex < text.length) {
+      parts.push(<span key={`text-${lastIndex}`}>{text.slice(lastIndex)}</span>);
+    }
+
+    return parts.length > 0 ? parts : text;
+  };
   const handleSend = async () => {
     if (!aiInputValue.trim()) {
       toast.error("Please enter a question");
@@ -236,10 +271,8 @@ const Hero = () => {
                 <strong className="text-primary">Answer:</strong>
                 <div className="mt-2 mb-2 whitespace-pre-wrap">
                   {parseChatResponse(chatResponse).map((part, index) => <span key={index}>
-                      {part.type === 'text' ? part.content : <span className="inline-flex gap-2 my-2">
-                          {part.links?.google_maps && <a href={part.links.google_maps} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-3 py-1.5 text-sm bg-primary hover:bg-primary/80 text-primary-foreground rounded-full transition-colors">
-                              📍 View on Maps
-                            </a>}
+                      {part.type === 'text' ? renderTextWithMapCards(part.content) : <span className="inline-flex gap-2 my-2">
+                          {part.links?.google_maps && <MapLocationCard url={part.links.google_maps} />}
                           {part.links?.booking && <a href={part.links.booking} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-3 py-1.5 text-sm bg-primary hover:bg-primary/80 text-primary-foreground rounded-full transition-colors">
                               🏨 Check Availability
                             </a>}
