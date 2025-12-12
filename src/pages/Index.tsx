@@ -1,3 +1,5 @@
+import WeatherWidget from "@/components/WeatherWidget";
+
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
