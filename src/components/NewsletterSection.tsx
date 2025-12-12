@@ -1,17 +1,7 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Mail, Calendar } from "lucide-react";
-import { toast } from "sonner";
+import { Calendar } from "lucide-react";
 
 const NewsletterSection = () => {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    window.location.href = "https://myaussieguide.beehiiv.com/";
-  };
-
   return (
     <section className="py-12 px-4 bg-[hsl(195,75%,92%)] dark:bg-[hsl(195,40%,18%)]">
       <div className="container mx-auto max-w-3xl">
@@ -30,25 +20,15 @@ const NewsletterSection = () => {
             Every Thursday, we send you the best markets, hidden café spots, and event updates.
           </p>
 
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-            <div className="relative flex-1">
-              <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="pl-10 h-12 bg-background border-border"
-              />
-            </div>
-            <Button 
-              type="submit" 
-              size="lg" 
-              className="h-12 px-6"
-            >
+          <Button 
+            asChild
+            size="lg" 
+            className="h-12 px-6"
+          >
+            <a href="https://myaussieguide.beehiiv.com/">
               Subscribe Free
-            </Button>
-          </form>
+            </a>
+          </Button>
           
           <p className="text-xs text-muted-foreground mt-4">
             Unsubscribe anytime. No spam, just local goodness.
