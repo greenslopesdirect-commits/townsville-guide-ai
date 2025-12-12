@@ -19,7 +19,7 @@ const Accommodation = () => {
       <SEOHead
         title="Townsville Accommodation Guide - Hotels, Resorts & Holiday Parks"
         description="Find the best places to stay in Townsville. From beachfront hotels and luxury resorts to serviced apartments and family-friendly holiday parks."
-        canonical="https://duncansguide.com/townsville/accommodation"
+        canonical="https://www.myaussieguide.com.au/townsville/accommodation"
       />
       <Helmet>
 
@@ -30,7 +30,7 @@ const Accommodation = () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Townsville Accommodation Guide",
-      "url": "https://duncansguide.com/accommodation",
+      "url": "https://www.myaussieguide.com.au/townsville/accommodation",
       "description": "Guide to Townsville's best accommodation including hotels, resorts, holiday parks, apartments and budget-friendly stays.",
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -39,13 +39,13 @@ const Accommodation = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://duncansguide.com"
+            "item": "https://www.myaussieguide.com.au"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Accommodation",
-            "item": "https://duncansguide.com/accommodation"
+            "item": "https://www.myaussieguide.com.au/townsville/accommodation"
           }
         ]
       }

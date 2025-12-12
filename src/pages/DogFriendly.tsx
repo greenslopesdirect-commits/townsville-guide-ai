@@ -138,7 +138,7 @@ const DogFriendly = () => {
   return (
     <>
       <SEOHead
-        title="Dog-Friendly Spots in Townsville – Parks, Beaches & Cafés | Duncan's Guide"
+        title="Dog-Friendly Spots in Townsville – Parks, Beaches & Cafés | MyAussieGuide"
         description="Discover the best dog-friendly spots in Townsville including off-leash beaches, dog parks, and walking trails. A complete guide for pet owners."
         canonical="https://www.myaussieguide.com.au/townsville/dog-friendly"
       />

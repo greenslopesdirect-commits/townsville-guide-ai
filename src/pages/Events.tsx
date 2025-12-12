@@ -15,7 +15,7 @@ const Events = () => {
       <SEOHead
         title="Townsville Events & What's On - Festivals, Markets & Activities"
         description="Discover events, festivals and activities in Townsville. From Strand Ephemera and NAFA to weekly markets, live music and family events."
-        canonical="https://duncansguide.com/townsville/events"
+        canonical="https://www.myaussieguide.com.au/townsville/events"
       />
       <Helmet>
         <script type="application/ld+json">

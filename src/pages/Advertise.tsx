@@ -11,7 +11,7 @@ const Advertise = () => {
       <SEOHead
         title="Advertise With Us - MyAussieGuide Townsville"
         description="Promote your business to visitors exploring Townsville. Reach a high-intent local travel audience with cost-effective advertising options."
-        canonical="https://duncansguide.com/townsville/advertise"
+        canonical="https://www.myaussieguide.com.au/townsville/advertise"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -20,7 +20,7 @@ const Advertise = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Advertise With Us",
-            "url": "https://duncansguide.com/townsville/advertise",
+            "url": "https://www.myaussieguide.com.au/townsville/advertise",
             "description": "Advertising opportunities on MyAussieGuide Townsville"
           }
           `}
@@ -147,7 +147,7 @@ const Advertise = () => {
                   Interested in advertising your business on MyAussieGuide? Contact us to discuss options and pricing.
                 </p>
                 <Button size="lg" asChild>
-                  <a href="mailto:advertise@duncansguide.com">
+                  <a href="mailto:advertise@myaussieguide.com.au">
                     Contact Us to Enquire
                   </a>
                 </Button>

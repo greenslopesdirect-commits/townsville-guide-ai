@@ -9,7 +9,7 @@ const TermsOfUse = () => {
       <SEOHead
         title="Terms of Use | MyAussieGuide – Townsville"
         description="Read the Terms of Use for MyAussieGuide – Townsville. Learn about disclaimers, limitations, and user responsibilities when using our AI-powered travel guide."
-        canonical="https://duncansguide.com/terms-of-use"
+        canonical="https://www.myaussieguide.com.au/terms-of-use"
       />
       <Helmet>
 
@@ -20,7 +20,7 @@ const TermsOfUse = () => {
             "@context": "https://schema.org",
             "@type": "TermsOfService",
             "name": "Terms of Use",
-            "url": "https://duncansguide.com/terms-of-use",
+            "url": "https://www.myaussieguide.com.au/terms-of-use",
             "description": "Terms of Use for MyAussieGuide – Townsville. Includes disclaimers, acceptable use, and legal limitations.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
@@ -29,20 +29,20 @@ const TermsOfUse = () => {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://duncansguide.com"
+                  "item": "https://www.myaussieguide.com.au"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Terms of Use",
-                  "item": "https://duncansguide.com/terms-of-use"
+                  "item": "https://www.myaussieguide.com.au/terms-of-use"
                 }
               ]
             },
             "publisher": {
               "@type": "Organization",
               "name": "MyAussieGuide",
-              "url": "https://duncansguide.com"
+              "url": "https://www.myaussieguide.com.au"
             }
           }
           `}

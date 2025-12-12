@@ -19,7 +19,7 @@ const HistoryOfTownsville = () => {
       <SEOHead
         title="Townsville History – A Simple, Engaging Story of the City"
         description="Explore Townsville's history from First Nations Country to gold rush days, cyclones, WWII and modern life in this clear, easy-to-read local guide."
-        canonical="https://duncansguide.com/townsville/history"
+        canonical="https://www.myaussieguide.com.au/townsville/history"
       />
       <Helmet>
 
@@ -32,7 +32,7 @@ const HistoryOfTownsville = () => {
       "name": "History of Townsville",
       "headline": "Townsville History – A Simple, Engaging Story of the City",
       "description": "A friendly, easy-to-read guide to Townsville's history — from First Nations heritage and early settlement to gold discoveries, cyclones, military history and modern development.",
-      "url": "https://duncansguide.com/history",
+      "url": "https://www.myaussieguide.com.au/townsville/history",
       "author": {
         "@type": "Person",
         "name": "Duncan Ross"
@@ -42,12 +42,12 @@ const HistoryOfTownsville = () => {
         "name": "MyAussieGuide",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://duncansguide.com/logo.png"
+          "url": "https://www.myaussieguide.com.au/logo.png"
         }
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://duncansguide.com/history"
+        "@id": "https://www.myaussieguide.com.au/townsville/history"
       },
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -56,13 +56,13 @@ const HistoryOfTownsville = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://duncansguide.com"
+            "item": "https://www.myaussieguide.com.au"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "History",
-            "item": "https://duncansguide.com/history"
+            "item": "https://www.myaussieguide.com.au/townsville/history"
           }
         ]
       }
@@ -665,7 +665,7 @@ const HistoryOfTownsville = () => {
               className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
             >
               <ArrowLeft className="w-5 h-5" />
-              Back to Duncan's Guide
+              Back to MyAussieGuide
             </Link>
           </div>
         </div>

@@ -9,7 +9,7 @@ const CookiePolicy = () => {
       <SEOHead
         title="Cookie Policy | MyAussieGuide – Townsville"
         description="Learn how MyAussieGuide – Townsville uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
-        canonical="https://duncansguide.com/cookie-policy"
+        canonical="https://www.myaussieguide.com.au/cookie-policy"
       />
       <Helmet>
 
@@ -20,7 +20,7 @@ const CookiePolicy = () => {
             "@context": "https://schema.org",
             "@type": "CookiePolicy",
             "name": "Cookie Policy",
-            "url": "https://duncansguide.com/cookie-policy",
+            "url": "https://www.myaussieguide.com.au/cookie-policy",
             "description": "Information about how cookies are used on MyAussieGuide – Townsville, including analytics, affiliate cookies, and user consent.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
@@ -29,20 +29,20 @@ const CookiePolicy = () => {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://duncansguide.com"
+                  "item": "https://www.myaussieguide.com.au"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Cookie Policy",
-                  "item": "https://duncansguide.com/cookie-policy"
+                  "item": "https://www.myaussieguide.com.au/cookie-policy"
                 }
               ]
             },
             "publisher": {
               "@type": "Organization",
               "name": "MyAussieGuide",
-              "url": "https://duncansguide.com"
+              "url": "https://www.myaussieguide.com.au"
             }
           }
           `}

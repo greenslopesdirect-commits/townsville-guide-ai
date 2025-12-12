@@ -13,7 +13,7 @@ const ThingsToDo = () => {
       <SEOHead
         title="Things to Do in Townsville – Local Highlights & Must-See Spots"
         description="Discover the best things to do in Townsville — Castle Hill, Magnetic Island, The Strand, wildlife, walks, beaches and more. Your complete local guide."
-        canonical="https://duncansguide.com/townsville/things-to-do"
+        canonical="https://www.myaussieguide.com.au/townsville/things-to-do"
       />
       <Helmet>
 
@@ -24,7 +24,7 @@ const ThingsToDo = () => {
       "@context": "https://schema.org",
       "@type": "WebPage",
       "name": "Things to Do in Townsville",
-      "url": "https://duncansguide.com/things-to-do",
+      "url": "https://www.myaussieguide.com.au/townsville/things-to-do",
       "description": "Local guide to the best things to do in Townsville — Castle Hill, Magnetic Island, The Strand, wildlife, beaches and more.",
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -33,13 +33,13 @@ const ThingsToDo = () => {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://duncansguide.com"
+            "item": "https://www.myaussieguide.com.au"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Things to Do",
-            "item": "https://duncansguide.com/things-to-do"
+            "item": "https://www.myaussieguide.com.au/townsville/things-to-do"
           }
         ]
       }
@@ -59,61 +59,61 @@ const ThingsToDo = () => {
         {
           "@type": "ListItem",
           "position": 1,
-          "url": "https://duncansguide.com/things-to-do#castle-hill",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#castle-hill",
           "name": "Castle Hill Lookout"
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "url": "https://duncansguide.com/things-to-do#the-strand",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#the-strand",
           "name": "The Strand"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "url": "https://duncansguide.com/things-to-do#magnetic-island",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#magnetic-island",
           "name": "Magnetic Island"
         },
         {
           "@type": "ListItem",
           "position": 4,
-          "url": "https://duncansguide.com/things-to-do#billabong-sanctuary",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#billabong-sanctuary",
           "name": "Billabong Sanctuary"
         },
         {
           "@type": "ListItem",
           "position": 5,
-          "url": "https://duncansguide.com/things-to-do#jezzine-barracks",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#jezzine-barracks",
           "name": "Jezzine Barracks"
         },
         {
           "@type": "ListItem",
           "position": 6,
-          "url": "https://duncansguide.com/things-to-do#riverway",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#riverway",
           "name": "Riverway & Ross River"
         },
         {
           "@type": "ListItem",
           "position": 7,
-          "url": "https://duncansguide.com/things-to-do#beyond-strand-beaches",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#beyond-strand-beaches",
           "name": "Townsville Beaches (Pallarenda, Rowes Bay, Bushland Beach)"
         },
         {
           "@type": "ListItem",
           "position": 8,
-          "url": "https://duncansguide.com/things-to-do#arts-culture",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#arts-culture",
           "name": "Art, Culture & Events"
         },
         {
           "@type": "ListItem",
           "position": 9,
-          "url": "https://duncansguide.com/things-to-do#dog-friendly",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#dog-friendly",
           "name": "Dog-Friendly Activities"
         },
         {
           "@type": "ListItem",
           "position": 10,
-          "url": "https://duncansguide.com/things-to-do#day-trips",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#day-trips",
           "name": "Day Trips From Townsville"
         }
       ]
@@ -134,37 +134,37 @@ const ThingsToDo = () => {
         {
           "@type": "TouristAttraction",
           "name": "Castle Hill Lookout",
-          "url": "https://duncansguide.com/things-to-do#castle-hill",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#castle-hill",
           "address": "Castle Hill, Townsville City QLD 4810"
         },
         {
           "@type": "TouristAttraction",
           "name": "The Strand",
-          "url": "https://duncansguide.com/things-to-do#the-strand",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#the-strand",
           "address": "The Strand, Townsville QLD 4810"
         },
         {
           "@type": "TouristAttraction",
           "name": "Magnetic Island",
-          "url": "https://duncansguide.com/things-to-do#magnetic-island",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#magnetic-island",
           "address": "Magnetic Island QLD 4819"
         },
         {
           "@type": "TouristAttraction",
           "name": "Billabong Sanctuary",
-          "url": "https://duncansguide.com/things-to-do#billabong-sanctuary",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#billabong-sanctuary",
           "address": "11 Country Road, Nome QLD 4816"
         },
         {
           "@type": "TouristAttraction",
           "name": "Jezzine Barracks",
-          "url": "https://duncansguide.com/things-to-do#jezzine-barracks",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#jezzine-barracks",
           "address": "Jezzine Barracks, North Ward QLD 4810"
         },
         {
           "@type": "TouristAttraction",
           "name": "Riverway & Ross River",
-          "url": "https://duncansguide.com/things-to-do#riverway",
+          "url": "https://www.myaussieguide.com.au/townsville/things-to-do#riverway",
           "address": "Riverway Drive, Townsville QLD 4814"
         }
       ]
@@ -639,7 +639,7 @@ const ThingsToDo = () => {
                   </h2>
                 </div>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Duncan's Guide includes an AI-powered chat assistant trained on local Townsville knowledge. Ask it anything about beaches, restaurants, walks, dog-friendly spots, weather, or how to spend your time in the city.
+                  MyAussieGuide includes an AI-powered chat assistant trained on local Townsville knowledge. Ask it anything about beaches, restaurants, walks, dog-friendly spots, weather, or how to spend your time in the city.
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
                   <li>Get personalised itinerary suggestions</li>
@@ -681,7 +681,7 @@ const ThingsToDo = () => {
             {/* Back to Home CTA */}
             <div className="mt-12 text-center">
               <Link to="/townsville">
-                <Button variant="outline" size="lg" className="group" aria-label="Return to Duncan's Guide home page">
+                <Button variant="outline" size="lg" className="group" aria-label="Return to MyAussieGuide home page">
                   Return to Home
                   <ArrowLeft className="ml-2 w-4 h-4 rotate-180 group-hover:translate-x-1 transition-transform" />
                 </Button>

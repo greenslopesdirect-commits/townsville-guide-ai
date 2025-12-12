@@ -137,7 +137,7 @@ const Shopping = () => {
   return (
     <>
       <SEOHead
-        title="Shopping & Markets in Townsville – Complete Guide | Duncan's Guide"
+        title="Shopping & Markets in Townsville – Complete Guide | MyAussieGuide"
         description="Discover the best shopping centres and local markets in Townsville. From Stockland to Cotters Market, find where to shop for retail, produce, and local crafts."
         canonical="https://www.myaussieguide.com.au/townsville/shopping"
       />
