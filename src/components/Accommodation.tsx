@@ -15,37 +15,37 @@ const Accommodation = () => {
     {
       name: "The Ville Resort–Casino",
       description: "Luxury resort with ocean views, lagoon-style pools, casino facilities, and premium restaurants.",
-      bookingLink: "https://www.booking.com/hotel/au/the-ville-resort-casino-townsville.html",
+      googleSearchLink: "https://www.google.com/search?q=The+Ville+Resort+Casino+Townsville",
       image: villeResortImage,
     },
     {
       name: "Aquarius on the Beach",
       description: "Affordable beachfront hotel right on The Strand, offering ocean views and excellent value.",
-      bookingLink: "https://www.booking.com/hotel/au/aquarius-on-the-beach-townsville.html",
+      googleSearchLink: "https://www.google.com/search?q=Aquarius+on+the+Beach+Townsville",
       image: aquariusImage,
     },
     {
       name: "Hotel Grand Chancellor",
       description: "Modern hotel in the heart of the CBD with rooftop views and easy access to shopping.",
-      bookingLink: "https://www.booking.com/hotel/au/hotel-grand-chancellor-townsville.html",
+      googleSearchLink: "https://www.google.com/search?q=Hotel+Grand+Chancellor+Townsville",
       image: grandChancellorImage,
     },
     {
       name: "Quest Townsville",
       description: "Serviced apartments near the marina — ideal for families, longer stays, and business travellers.",
-      bookingLink: "https://www.booking.com/hotel/au/quest-townsville.html",
+      googleSearchLink: "https://www.google.com/search?q=Quest+Townsville",
       image: questImage,
     },
     {
       name: "Oaks Townsville Gateway Suites",
       description: "Stylish, comfortable hotel suites with river and city views, perfect for a relaxing stay.",
-      bookingLink: "https://www.booking.com/hotel/au/oaks-townsville-gateway-suites.html",
+      googleSearchLink: "https://www.google.com/search?q=Oaks+Townsville+Gateway+Suites+Townsville",
       image: oaksImage,
     },
     {
       name: "BIG4 Rowes Bay Holiday Park",
       description: "Beachfront caravan park with cabins, pools, playgrounds, and family-friendly facilities.",
-      bookingLink: "https://www.booking.com/hotel/au/big4-rowes-bay-beachfront-holiday-park-townsville.html",
+      googleSearchLink: "https://www.google.com/search?q=BIG4+Rowes+Bay+Holiday+Park+Townsville",
       image: big4Image,
     },
   ];
@@ -88,18 +88,18 @@ const Accommodation = () => {
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">{hotel.description}</p>
                 <Button 
                   asChild
-                  variant="default"
+                  variant="outline"
                   size="sm"
                   className="w-full"
                 >
                   <a 
-                    href={hotel.bookingLink}
+                    href={hotel.googleSearchLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`Check availability for ${hotel.name}`}
+                    aria-label={`View details for ${hotel.name}`}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Check availability
+                    View Hotel Details
                   </a>
                 </Button>
               </CardContent>

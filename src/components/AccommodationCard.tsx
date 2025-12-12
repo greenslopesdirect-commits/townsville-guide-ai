@@ -1,5 +1,5 @@
-import { Wifi, Car, Coffee, Waves } from "lucide-react";
-import BookingButton from "@/components/BookingButton";
+import { Wifi, Car, Coffee, Waves, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 interface AccommodationCardProps {
   title: string;
@@ -53,8 +53,23 @@ const AccommodationCard = ({
         {/* Price */}
         <p className="text-primary font-semibold">{priceFrom}</p>
 
-        {/* Booking Button */}
-        <BookingButton size="sm" className="w-full" />
+        {/* View Details Button */}
+        <Button 
+          asChild
+          variant="outline"
+          size="sm"
+          className="w-full"
+        >
+          <a 
+            href={`https://www.google.com/search?q=${encodeURIComponent(title + " Townsville")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`View details for ${title}`}
+          >
+            <ExternalLink className="w-4 h-4 mr-2" />
+            View Hotel Details
+          </a>
+        </Button>
       </div>
     </div>
   );
