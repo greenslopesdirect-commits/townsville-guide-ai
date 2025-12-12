@@ -14,7 +14,7 @@ const FlightsButton = ({ className = "", size = "default" }: FlightsButtonProps)
       asChild
     >
       <a
-        href="https://www.skyscanner.com.au/transport/flights-to/tsv"
+        href="https://www.google.com/travel/flights?q=Flights+to+Townsville"
         target="_blank"
         rel="noopener noreferrer"
       >
