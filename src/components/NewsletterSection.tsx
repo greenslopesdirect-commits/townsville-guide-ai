@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar } from "lucide-react";
+import { Calendar, ArrowRight } from "lucide-react";
 
 const NewsletterSection = () => {
   return (
@@ -25,10 +25,15 @@ const NewsletterSection = () => {
             size="lg" 
             className="h-12 px-6"
           >
-            <a href="https://myaussieguide.beehiiv.com/">
-              Subscribe Free
+            <a href="https://myaussieguide.beehiiv.com/" className="inline-flex items-center gap-2">
+              Get The Townsville Weekender
+              <ArrowRight className="w-4 h-4" />
             </a>
           </Button>
+          
+          <p className="text-sm text-muted-foreground mt-3">
+            Free weekly email. Sign up takes seconds.
+          </p>
           
           <p className="text-xs text-muted-foreground mt-4">
             Unsubscribe anytime. No spam, just local goodness.
