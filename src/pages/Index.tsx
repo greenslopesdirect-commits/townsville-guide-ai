@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
+import NewsletterSection from "@/components/NewsletterSection";
 import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
 import TopPicks from "@/components/TopPicks";
@@ -10,11 +11,12 @@ import FoodDrink from "@/components/FoodDrink";
 import DogFriendly from "@/components/DogFriendly";
 import EventsOn from "@/components/EventsOn";
 import Accommodation from "@/components/Accommodation";
+import LocalShopSection from "@/components/LocalShopSection";
 import MapSection from "@/components/MapSection";
 import AboutSection from "@/components/AboutSection";
 import FaqSection from "@/components/FaqSection";
 import AdSensePlaceholder from "@/components/AdSensePlaceholder";
-import AdvertiserAdBlock from "@/components/AdvertiserAdBlock";
+import NewsletterHouseAd from "@/components/NewsletterHouseAd";
 
 const Index = () => {
   return (
@@ -58,6 +60,10 @@ const Index = () => {
         <AdSensePlaceholder slot="header" />
         
         <Hero />
+        
+        {/* Newsletter Section - High converting email capture */}
+        <NewsletterSection />
+        
         <section id="weather">
           <WeatherInfo />
         </section>
@@ -90,9 +96,12 @@ const Index = () => {
           <Accommodation />
         </section>
         
-        {/* Advertiser Ad Block */}
+        {/* Local Shop - Activity Book */}
+        <LocalShopSection />
+        
+        {/* Newsletter House Ad - Replaces generic advertiser space */}
         <section className="container mx-auto px-4 py-8">
-          <AdvertiserAdBlock />
+          <NewsletterHouseAd />
         </section>
         
         <section id="map">
