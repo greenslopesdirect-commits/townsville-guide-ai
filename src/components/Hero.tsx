@@ -1,16 +1,66 @@
 import { useState, useEffect } from "react";
-import { ChevronDown, Search, MessageCircle, X } from "lucide-react";
+import { Search, MessageCircle, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { Link } from "react-router-dom";
 import { checkPendingAiQuestion } from "@/utils/aiGuide";
 import FlightsButton from "@/components/FlightsButton";
-// TODO: Replace this import with your own Townsville background photo
-// Upload your image to src/assets/ and name it strand-hero.jpg
 import heroImage from "@/assets/strand-hero.jpg";
+
+// Weather widget component using free Open-Meteo API
+const HeroWeatherWidget = () => {
+  const [weather, setWeather] = useState<{ temp: number; icon: string; condition: string } | null>(null);
+
+  const getWeatherIcon = (code: number): { icon: string; condition: string } => {
+    if (code === 0) return { icon: "☀️", condition: "Clear" };
+    if (code === 1 || code === 2) return { icon: "🌤️", condition: "Partly Cloudy" };
+    if (code === 3) return { icon: "☁️", condition: "Overcast" };
+    if (code === 45 || code === 48) return { icon: "🌫️", condition: "Foggy" };
+    if (code >= 51 && code <= 55) return { icon: "🌦️", condition: "Drizzle" };
+    if (code >= 61 && code <= 65) return { icon: "🌧️", condition: "Rain" };
+    if (code >= 71 && code <= 75) return { icon: "❄️", condition: "Snow" };
+    if (code >= 80 && code <= 82) return { icon: "🌧️", condition: "Showers" };
+    if (code >= 95) return { icon: "⛈️", condition: "Thunderstorm" };
+    return { icon: "🌡️", condition: "Weather" };
+  };
+
+  useEffect(() => {
+    const fetchWeather = async () => {
+      try {
+        const response = await fetch(
+          "https://api.open-meteo.com/v1/forecast?latitude=-19.2589&longitude=146.8169&current=temperature_2m,weather_code"
+        );
+        if (!response.ok) throw new Error("Failed to fetch");
+        const data = await response.json();
+        const { icon, condition } = getWeatherIcon(data.current.weather_code);
+        setWeather({
+          temp: Math.round(data.current.temperature_2m),
+          icon,
+          condition,
+        });
+      } catch (error) {
+        console.error("Weather fetch error:", error);
+      }
+    };
+    fetchWeather();
+  }, []);
+
+  if (!weather) return null;
+
+  return (
+    <div className="absolute top-24 right-4 md:top-28 md:right-8 z-20 bg-white/20 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-white/30">
+      <div className="flex items-center gap-2 text-white">
+        <span className="text-2xl">{weather.icon}</span>
+        <div className="text-left">
+          <p className="text-lg font-bold leading-tight drop-shadow-md">{weather.temp}°C</p>
+          <p className="text-xs opacity-90 drop-shadow-sm">Townsville</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 const Hero = () => {
   const [aiInputValue, setAiInputValue] = useState("");
   const [chatResponse, setChatResponse] = useState("");
@@ -127,6 +177,9 @@ const Hero = () => {
       
       {/* Darker Gradient Overlay for better text contrast */}
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+      
+      {/* Weather Widget - Top Right */}
+      <HeroWeatherWidget />
       
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
