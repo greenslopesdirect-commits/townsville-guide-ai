@@ -1,9 +1,10 @@
+import WeatherWidget from "@/components/WeatherWidget";
+
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
 import NewsletterSection from "@/components/NewsletterSection";
-import WeatherWidget from "@/components/WeatherWidget";  // ✅ Correct import
-import WeatherInfo from "@/components/WeatherInfo";       // Still here for testing
+import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
 import TopPicks from "@/components/TopPicks";
 import SeoContentSections from "@/components/SeoContentSections";
@@ -27,8 +28,8 @@ const Index = () => {
         description="Discover Townsville's best beaches, cafés, walks and hidden gems with MyAussieGuide — your AI-powered local guide to everything North Queensland."
         canonical="https://duncansguide.com/townsville"
       />
-
       <Helmet>
+
         {/* WebSite Schema */}
         <script type="application/ld+json">
           {`
@@ -57,92 +58,65 @@ const Index = () => {
 
       {/* DO NOT render Header/Footer here — TownsvilleLayout handles them */}
       <div className="min-h-screen pt-0">
-
-        {/* Google AdSense header slot */}
+        {/* Google AdSense header slot (pending approval) */}
         <AdSensePlaceholder slot="header" />
-
+        
         <Hero />
-
-        {/* Newsletter Section */}
+        
+        {/* Newsletter Section - High converting email capture */}
         <NewsletterSection />
-
-        {/* WEATHER SECTION */}
+        
         <section id="weather">
-          <div className="mb-6">
-            <WeatherInfo /> {/* Existing system – keep until new widget works */}
-          </div>
-          <div className="mb-6">
-            <WeatherWidget /> {/* New weather widget */}
-          </div>
+          <WeatherInfo />
         </section>
-
-        {/* Quick Access */}
         <section id="quick-access">
           <QuickAccess />
         </section>
-
-        {/* Top Picks */}
         <section id="top-picks">
           <TopPicks />
         </section>
-
-        {/* SEO Content */}
         <section id="seo-content">
           <SeoContentSections />
         </section>
-
-        {/* AdSense */}
+        
+        {/* Google AdSense content slot (pending approval) */}
         <AdSensePlaceholder slot="content" className="my-8" />
-
-        {/* Video Section */}
+        
         <section id="video">
           <VideoSection />
         </section>
-
-        {/* Food & Drink */}
         <section id="food-drink">
           <FoodDrink />
         </section>
-
-        {/* Dog Friendly */}
         <section id="dog-friendly">
           <DogFriendly />
         </section>
-
-        {/* Events */}
         <section id="events">
           <EventsOn />
         </section>
-
-        {/* Accommodation */}
         <section id="accommodation">
           <Accommodation />
         </section>
-
-        {/* Local Shop */}
+        
+        {/* Local Shop - Activity Book */}
         <LocalShopSection />
-
-        {/* Newsletter House Ad */}
+        
+        {/* Newsletter House Ad - Replaces generic advertiser space */}
         <section className="container mx-auto px-4 py-8">
           <NewsletterHouseAd />
         </section>
-
-        {/* Map */}
+        
         <section id="map">
           <MapSection />
         </section>
-
-        {/* About */}
         <section id="about">
           <AboutSection />
         </section>
-
-        {/* FAQ */}
         <section id="faq">
           <FaqSection />
         </section>
-
-        {/* AdSense Footer */}
+        
+        {/* Google AdSense footer slot (pending approval) */}
         <AdSensePlaceholder slot="footer" className="mb-8" />
       </div>
     </>
@@ -150,3 +124,4 @@ const Index = () => {
 };
 
 export default Index;
+
