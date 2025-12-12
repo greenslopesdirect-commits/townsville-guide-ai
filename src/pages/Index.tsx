@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
 import NewsletterSection from "@/components/NewsletterSection";
-import WeatherInfo from "@/components/WeatherInfo";
+import WeatherWidget from "@/components/WeatherWidget";
 import QuickAccess from "@/components/QuickAccess";
 import TopPicks from "@/components/TopPicks";
 import SeoContentSections from "@/components/SeoContentSections";
@@ -65,7 +65,7 @@ const Index = () => {
         <NewsletterSection />
         
         <section id="weather">
-          <WeatherInfo />
+          <WeatherWidget />
         </section>
         <section id="quick-access">
           <QuickAccess />
