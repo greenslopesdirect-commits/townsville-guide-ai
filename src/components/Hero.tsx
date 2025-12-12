@@ -50,7 +50,7 @@ const HeroWeatherWidget = () => {
   if (!weather) return null;
 
   return (
-    <div className="absolute top-24 right-4 md:top-28 md:right-8 z-20 bg-white/20 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-white/30">
+    <div className="absolute top-4 right-4 md:top-6 md:right-8 z-20 bg-white/20 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-white/30">
       <div className="flex items-center gap-2 text-white">
         <span className="text-2xl">{weather.icon}</span>
         <div className="text-left">
