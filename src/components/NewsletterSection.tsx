@@ -6,22 +6,10 @@ import { toast } from "sonner";
 
 const NewsletterSection = () => {
   const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) {
-      toast.error("Please enter your email address");
-      return;
-    }
-    setIsSubmitting(true);
-    
-    // Simulate subscription (replace with actual API call later)
-    setTimeout(() => {
-      toast.success("You're in! Check your inbox Thursday 📬");
-      setEmail("");
-      setIsSubmitting(false);
-    }, 800);
+    window.location.href = "https://myaussieguide.beehiiv.com/";
   };
 
   return (
@@ -57,9 +45,8 @@ const NewsletterSection = () => {
               type="submit" 
               size="lg" 
               className="h-12 px-6"
-              disabled={isSubmitting}
             >
-              {isSubmitting ? "Subscribing..." : "Subscribe Free"}
+              Subscribe Free
             </Button>
           </form>
           
