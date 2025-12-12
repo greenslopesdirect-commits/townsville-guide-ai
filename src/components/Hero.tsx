@@ -213,10 +213,6 @@ const Hero = () => {
         </div>   {/* ← CLOSES max-w-2xl wrapper */}
       </div>     {/* ← CLOSES relative z-10 content wrapper */}
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown className="text-white drop-shadow-lg" size={32} />
-      </div>
     </section>;
 };
 export default Hero;
