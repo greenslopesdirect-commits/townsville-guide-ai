@@ -218,14 +218,22 @@ const Events = () => {
               <CardContent className="p-6 text-center">
                 <h2 className="text-xl font-bold text-foreground mb-2">What's On This Week?</h2>
                 <p className="text-muted-foreground mb-4">Ask our AI guide for the latest events and activities happening right now.</p>
-                <Button 
-                  size="lg" 
-                  onClick={() => triggerAiGuide("What events are on this week in Townsville?")}
-                  className="gap-2"
-                >
-                  <span>🤖</span>
-                  Ask What's On
-                </Button>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <Button 
+                    size="lg" 
+                    onClick={() => triggerAiGuide("What events are on this week in Townsville?")}
+                    className="gap-2"
+                  >
+                    <span>🤖</span>
+                    Ask What's On
+                  </Button>
+                  <Button variant="outline" size="lg" asChild className="gap-2">
+                    <a href="https://www.townsvilleentertainment.com.au/events" target="_blank" rel="noopener noreferrer">
+                      <Calendar className="w-4 h-4" />
+                      Official Event Calendar
+                    </a>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
 
