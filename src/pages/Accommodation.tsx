@@ -10,7 +10,7 @@ import AdSensePlaceholder from "@/components/AdSensePlaceholder";
 import AccommodationCard from "@/components/AccommodationCard";
 
 // Hotel images
-import theVilleImage from "@/assets/the-ville-resort-casino-townsville.png";
+import theVilleImage from "@/assets/the-ville-resort-casino-townsville.webp";
 import aquariusImage from "@/assets/aquarius-beachfront-townsville.png";
 import grandChancellorImage from "@/assets/hotel-grand-chancellor-townsville.png";
 
