@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { BookOpen, Package } from "lucide-react";
-
 const LocalShopSection = () => {
-  return (
-    <section className="py-16 px-4 bg-background">
+  return <section className="py-16 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-10">
@@ -11,9 +9,7 @@ const LocalShopSection = () => {
             <BookOpen className="w-4 h-4" />
             Local Shop
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Unplug with the Offline Companion
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Unplug with the Offline Companion - Coming Soon</h2>
         </div>
 
         {/* Split Layout */}
@@ -62,8 +58,6 @@ const LocalShopSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default LocalShopSection;
