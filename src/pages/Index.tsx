@@ -18,7 +18,7 @@ import MapSection from "@/components/MapSection";
 import AboutSection from "@/components/AboutSection";
 import FaqSection from "@/components/FaqSection";
 import AdSensePlaceholder from "@/components/AdSensePlaceholder";
-import NewsletterHouseAd from "@/components/NewsletterHouseAd";
+import TestimonialSection from "@/components/TestimonialSection";
 
 const Index = () => {
   return (
@@ -63,7 +63,7 @@ const Index = () => {
         
         <Hero />
         
-        {/* Newsletter Section - High converting email capture */}
+        {/* Newsletter Section - High converting email capture with PDF offer */}
         <NewsletterSection />
         
         <section id="weather">
@@ -98,13 +98,8 @@ const Index = () => {
           <Accommodation />
         </section>
         
-        {/* Local Shop - Activity Book */}
+        {/* Local Shop - Activity Book Waitlist */}
         <LocalShopSection />
-        
-        {/* Newsletter House Ad - Replaces generic advertiser space */}
-        <section className="container mx-auto px-4 py-8">
-          <NewsletterHouseAd />
-        </section>
         
         <section id="map">
           <MapSection />
@@ -115,6 +110,9 @@ const Index = () => {
         <section id="faq">
           <FaqSection />
         </section>
+        
+        {/* Social Proof - Testimonials */}
+        <TestimonialSection />
         
         {/* Google AdSense footer slot (pending approval) */}
         <AdSensePlaceholder slot="footer" className="mb-8" />

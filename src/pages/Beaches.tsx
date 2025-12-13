@@ -21,6 +21,8 @@ import {
   X,
   AlertTriangle
 } from "lucide-react";
+import { triggerAiGuide } from "@/utils/aiGuide";
+import StingerSeasonAlert from "@/components/StingerSeasonAlert";
 
 interface BeachCardProps {
   title: string;
@@ -63,17 +65,28 @@ const BeachCard = ({ title, description, features, mapUrl, icon, dogFriendly, be
           </li>
         ))}
       </ul>
-      <Button variant="outline" size="sm" asChild className="gap-2 w-full sm:w-auto">
-        <a 
-          href={mapUrl} 
-          target="_blank" 
-          rel="noopener noreferrer"
-          aria-label={`View ${title} on Google Maps`}
+      <div className="flex flex-col sm:flex-row gap-2">
+        <Button variant="outline" size="sm" asChild className="gap-2 flex-1">
+          <a 
+            href={mapUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label={`View ${title} on Google Maps`}
+          >
+            <MapPin className="w-4 h-4" />
+            View on Map
+          </a>
+        </Button>
+        <Button 
+          variant="ghost" 
+          size="sm" 
+          onClick={() => triggerAiGuide(`Tell me about the best times to visit, facilities, and local tips for ${title} beach in Townsville.`)}
+          className="gap-2 flex-1"
         >
-          <MapPin className="w-4 h-4" />
-          View on Map
-        </a>
-      </Button>
+          <span>🤖</span>
+          Ask AI about this place
+        </Button>
+      </div>
     </CardContent>
   </Card>
 );
@@ -282,6 +295,9 @@ const Beaches = () => {
                 </div>
               ))}
             </div>
+
+            {/* Stinger Season Safety Alert */}
+            <StingerSeasonAlert className="mb-12" />
 
             {/* Townsville Beaches Section */}
             <section className="mb-16">

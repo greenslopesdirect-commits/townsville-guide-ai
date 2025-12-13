@@ -228,12 +228,12 @@ const Hero = () => {
         <h2 className="text-2xl md:text-4xl font-semibold mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{
         textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)'
       }}>
-          Your AI-powered local guide to North Queensland
+          AI-powered, but Local-Verified
         </h2>
         <p className="text-lg md:text-xl mb-6 max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{
         textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)'
       }}>
-          Discover Townsville's best beaches, restaurants, cafés, dog parks, attractions, and hidden gems — all with help from a smart local AI assistant.
+          No hallucinations, just real North Queensland tips. Discover Townsville's best beaches, restaurants, cafés, dog parks, attractions, and hidden gems — all with help from a smart local AI assistant.
         </p>
         <div className="text-left max-w-2xl mx-auto mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{
         textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)'
