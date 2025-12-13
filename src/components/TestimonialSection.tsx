@@ -11,7 +11,7 @@ const CommunityTrustSection = () => {
     {
       icon: ShieldCheck,
       stat: "100%",
-      label: "Local-Verified recommendations (No AI hallucinations)."
+      label: "Local-Verified recommendations."
     },
     {
       icon: MapPin,
@@ -61,8 +61,8 @@ const CommunityTrustSection = () => {
             <MessageSquare className="w-4 h-4 text-primary" />
             Are you a local? Help us improve —{" "}
             <a 
-              href="mailto:duncankross@gmail.com?subject=MyAussieGuide Feedback" 
-              className="text-primary hover:underline font-medium"
+              href="mailto:duncankross@gmail.com?subject=Feedback for MyAussieGuide" 
+              className="text-primary underline decoration-primary/50 hover:decoration-primary font-medium transition-colors"
             >
               Send us your feedback
             </a>
