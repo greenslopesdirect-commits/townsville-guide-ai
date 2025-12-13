@@ -18,7 +18,7 @@ import MapSection from "@/components/MapSection";
 import AboutSection from "@/components/AboutSection";
 import FaqSection from "@/components/FaqSection";
 import AdSensePlaceholder from "@/components/AdSensePlaceholder";
-import TestimonialSection from "@/components/TestimonialSection";
+import CommunityTrustSection from "@/components/TestimonialSection";
 
 const Index = () => {
   return (
@@ -111,8 +111,8 @@ const Index = () => {
           <FaqSection />
         </section>
         
-        {/* Social Proof - Testimonials */}
-        <TestimonialSection />
+        {/* Community Trust Section */}
+        <CommunityTrustSection />
         
         {/* Google AdSense footer slot (pending approval) */}
         <AdSensePlaceholder slot="footer" className="mb-8" />
