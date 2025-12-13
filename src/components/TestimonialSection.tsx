@@ -1,73 +1,76 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import { Users, ShieldCheck, MapPin, MessageSquare } from "lucide-react";
 
-const TestimonialSection = () => {
-  const testimonials = [
+const CommunityTrustSection = () => {
+  const trustStats = [
     {
-      quote: "MyAussieGuide helped us find the best coffee in Townsville without the trial and error.",
-      author: "Sarah",
-      location: "Melbourne"
+      icon: Users,
+      stat: "500+",
+      label: "Townsville locals receiving our weekly updates."
     },
     {
-      quote: "Finally, a local guide that actually knows the hidden gems. The AI recommendations were spot on!",
-      author: "James",
-      location: "Brisbane"
+      icon: ShieldCheck,
+      stat: "100%",
+      label: "Local-Verified recommendations (No AI hallucinations)."
     },
     {
-      quote: "We found the perfect dog-friendly beach thanks to MyAussieGuide. Our schnauzer loved it!",
-      author: "Emma",
-      location: "Sydney"
+      icon: MapPin,
+      stat: "Proudly",
+      label: "North Queensland owned and operated."
     }
   ];
 
   return (
     <section className="py-16 px-4 bg-muted/30">
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-5xl">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            <Quote className="w-4 h-4" />
-            What Visitors Say
-          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Trusted by Travellers
+            Built by Locals, Loved by the Community
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Real feedback from visitors who discovered Townsville with MyAussieGuide
-          </p>
         </div>
 
-        {/* Testimonial Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={index}
-              className="border-2 border-border/40 hover:border-primary/30 transition-all duration-300 animate-fade-in"
-              style={{ animationDelay: `${index * 100}ms` }}
+        {/* Trust Stats Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+          {trustStats.map((item, index) => {
+            const IconComponent = item.icon;
+            return (
+              <Card
+                key={index}
+                className="border-2 border-border/40 hover:border-primary/30 transition-all duration-300 text-center"
+              >
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <IconComponent className="w-6 h-6 text-primary" />
+                  </div>
+                  <p className="text-2xl md:text-3xl font-bold text-primary mb-2">
+                    {item.stat}
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {item.label}
+                  </p>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+
+        {/* Feedback CTA */}
+        <div className="text-center">
+          <p className="text-muted-foreground flex items-center justify-center gap-2 flex-wrap">
+            <MessageSquare className="w-4 h-4 text-primary" />
+            Are you a local? Help us improve —{" "}
+            <a 
+              href="mailto:duncankross@gmail.com?subject=MyAussieGuide Feedback" 
+              className="text-primary hover:underline font-medium"
             >
-              <CardContent className="p-6">
-                <Quote className="w-8 h-8 text-primary/30 mb-4" />
-                <p className="text-muted-foreground leading-relaxed mb-4 italic">
-                  "{testimonial.quote}"
-                </p>
-                <div className="flex items-center gap-2">
-                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-primary font-semibold">
-                      {testimonial.author.charAt(0)}
-                    </span>
-                  </div>
-                  <div>
-                    <p className="font-medium text-foreground">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">from {testimonial.location}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+              Send us your feedback
+            </a>
+          </p>
         </div>
       </div>
     </section>
   );
 };
 
-export default TestimonialSection;
+export default CommunityTrustSection;
