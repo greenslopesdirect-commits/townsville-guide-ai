@@ -32,9 +32,10 @@ interface BeachCardProps {
   icon: React.ReactNode;
   dogFriendly?: boolean;
   bestFor: string;
+  aiPrompt?: string;
 }
 
-const BeachCard = ({ title, description, features, mapUrl, icon, dogFriendly, bestFor }: BeachCardProps) => (
+const BeachCard = ({ title, description, features, mapUrl, icon, dogFriendly, bestFor, aiPrompt }: BeachCardProps) => (
   <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30">
     <CardHeader className="bg-gradient-to-br from-primary/5 to-transparent pb-4">
       <div className="flex items-start justify-between">
@@ -80,7 +81,7 @@ const BeachCard = ({ title, description, features, mapUrl, icon, dogFriendly, be
         <Button 
           variant="ghost" 
           size="sm" 
-          onClick={() => triggerAiGuide(`Tell me about the best times to visit, facilities, and local tips for ${title} beach in Townsville.`)}
+          onClick={() => triggerAiGuide(aiPrompt || `Tell me about the best times to visit, facilities, and local tips for ${title} beach in Townsville.`)}
           className="gap-2 flex-1"
         >
           <span>🤖</span>
@@ -167,6 +168,22 @@ const Beaches = () => {
       icon: <Sunset className="w-6 h-6" />,
       dogFriendly: true,
       bestFor: "Kitesurfing, fishing, sunsets"
+    },
+    {
+      title: "Balgal Beach",
+      description: "Located about 50 minutes north of Townsville, Balgal Beach is a favourite weekend escape for locals. It is one of the few beaches outside The Strand with a permanent stinger net during summer, making it a safe spot for a family dip. The area also features a popular free camping ground and a boat ramp for anglers.",
+      features: [
+        "Patrolled beach with stinger net (Nov–May)",
+        "Designated camping area (permits required)",
+        "Boat ramp and excellent estuary fishing",
+        "BBQ facilities, playground, and fish & chips nearby",
+        "Great for a full day trip out of the city"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Balgal+Beach+Queensland",
+      icon: <Fish className="w-6 h-6" />,
+      dogFriendly: true,
+      bestFor: "Day trips, camping, safe swimming",
+      aiPrompt: "Tell me about camping rules, the stinger net, and fishing spots at Balgal Beach."
     }
   ];
 
