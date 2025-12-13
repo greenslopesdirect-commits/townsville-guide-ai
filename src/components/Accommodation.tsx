@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Building, ExternalLink, ArrowRight } from "lucide-react";
 import { triggerAiGuide, AI_PRESETS } from "@/utils/aiGuide";
 import { Link } from "react-router-dom";
-import villeResortImage from "@/assets/the-ville-resort-casino-townsville.png";
+import villeResortImage from "@/assets/the-ville-resort-casino-townsville.webp";
 import aquariusImage from "@/assets/aquarius-on-the-beach-townsville.webp";
 import grandChancellorImage from "@/assets/grand-chancellor-hotel-townsville.webp";
 import questImage from "@/assets/quest-serviced-apartments-townsville.webp";
