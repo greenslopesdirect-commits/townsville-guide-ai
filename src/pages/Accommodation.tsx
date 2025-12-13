@@ -11,7 +11,7 @@ import AccommodationCard from "@/components/AccommodationCard";
 
 // Hotel images
 import theVilleImage from "@/assets/the-ville-resort-casino-townsville.webp";
-import aquariusImage from "@/assets/aquarius-beachfront-townsville.png";
+import aquariusImage from "@/assets/aquarius-on-the-beach-townsville.webp";
 import grandChancellorImage from "@/assets/hotel-grand-chancellor-townsville.png";
 
 const Accommodation = () => {
