@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { toast } from "@/components/ui/sonner";
 import { Users, ShieldCheck, MapPin, MessageSquare } from "lucide-react";
-
 const CommunityTrustSection = () => {
   const trustStats = [
     {
@@ -19,6 +19,15 @@ const CommunityTrustSection = () => {
       label: "North Queensland owned and operated."
     }
   ];
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText("duncankross@gmail.com");
+      toast("Email address copied to clipboard!");
+    } catch (error) {
+      toast("Unable to copy email. Please copy it manually: duncankross@gmail.com");
+    }
+  };
 
   return (
     <section className="py-16 px-4 bg-muted/30">
@@ -60,12 +69,13 @@ const CommunityTrustSection = () => {
           <p className="text-muted-foreground flex items-center justify-center gap-2 flex-wrap">
             <MessageSquare className="w-4 h-4 text-primary" />
             Are you a local? Help us improve —{" "}
-            <a 
-              href="mailto:duncankross@gmail.com?subject=Feedback%20for%20MyAussieGuide"
-              className="text-primary hover:underline font-medium"
+            <button
+              type="button"
+              onClick={handleCopyEmail}
+              className="text-primary hover:underline font-medium underline-offset-2"
             >
               Send us your feedback
-            </a>
+            </button>
           </p>
         </div>
       </div>
