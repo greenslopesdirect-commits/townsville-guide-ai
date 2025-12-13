@@ -62,7 +62,7 @@ const CommunityTrustSection = () => {
             Are you a local? Help us improve —{" "}
             <a 
               href="mailto:duncankross@gmail.com?subject=Feedback%20for%20MyAussieGuide"
-              className="text-primary underline decoration-primary/50 hover:decoration-primary font-medium"
+              className="text-primary hover:underline font-medium"
             >
               Send us your feedback
             </a>
