@@ -449,26 +449,29 @@ const Beaches = () => {
                   </thead>
                   <tbody className="divide-y divide-border">
                     {[
-                      { name: "The Strand", swimming: true, dogs: true, snorkel: false, facilities: "Excellent", crowds: "Busy" },
-                      { name: "Pallarenda", swimming: true, dogs: true, snorkel: false, facilities: "Basic", crowds: "Quiet" },
-                      { name: "Rowes Bay", swimming: true, dogs: true, snorkel: false, facilities: "Good", crowds: "Moderate" },
-                      { name: "Bushland Beach", swimming: true, dogs: true, snorkel: false, facilities: "Basic", crowds: "Quiet" },
-                      { name: "Horseshoe Bay (MI)", swimming: true, dogs: false, snorkel: true, facilities: "Excellent", crowds: "Busy" },
-                      { name: "Alma Bay (MI)", swimming: true, dogs: false, snorkel: true, facilities: "Basic", crowds: "Moderate" },
-                      { name: "Geoffrey Bay (MI)", swimming: true, dogs: false, snorkel: true, facilities: "None", crowds: "Quiet" }
+                      { name: "The Strand", swimming: "Excellent (Nets)", dogs: "On-leash", snorkel: "Basic", facilities: "Excellent", crowds: "Busy" },
+                      { name: "Pallarenda", swimming: "Good (Nets)", dogs: "Off-leash", snorkel: "Basic", facilities: "Good", crowds: "Moderate" },
+                      { name: "Rowes Bay", swimming: "Good (High tide)", dogs: "On-leash", snorkel: "None", facilities: "Good", crowds: "Quiet" },
+                      { name: "Bushland Beach", swimming: "Basic (Shallow)", dogs: "On-leash", snorkel: "None", facilities: "Good", crowds: "Quiet" },
+                      { name: "Balgal Beach", swimming: "Good (Nets)", dogs: "On-leash", snorkel: "Basic", facilities: "Good (Camping)", crowds: "Moderate" },
+                      { name: "Horseshoe Bay (MI)", swimming: "Excellent (Nets)", dogs: "On-leash", snorkel: "Good", facilities: "Excellent", crowds: "Busy" },
+                      { name: "Alma Bay (MI)", swimming: "Excellent (Patrolled)", dogs: "On-leash", snorkel: "Excellent", facilities: "Good", crowds: "Busy" },
+                      { name: "Picnic Bay (MI)", swimming: "Good (Nets)", dogs: "On-leash", snorkel: "Good (Jetty)", facilities: "Good (Dining)", crowds: "Moderate" },
+                      { name: "Geoffrey Bay (MI)", swimming: "Basic (Reef)", dogs: "On-leash", snorkel: "Excellent", facilities: "Basic", crowds: "Quiet" }
                     ].map((row, index) => (
                       <tr key={index} className="hover:bg-muted/30 transition-colors">
                         <td className="p-4 font-medium text-foreground">{row.name}</td>
+                        <td className="p-4 text-center text-muted-foreground text-xs">{row.swimming}</td>
                         <td className="p-4 text-center">
-                          {row.swimming ? <Check className="w-5 h-5 text-green-600 mx-auto" /> : <X className="w-5 h-5 text-red-500 mx-auto" />}
+                          <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                            row.dogs === 'Off-leash' ? 'bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400' :
+                            'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400'
+                          }`}>
+                            {row.dogs}
+                          </span>
                         </td>
-                        <td className="p-4 text-center">
-                          {row.dogs ? <Check className="w-5 h-5 text-green-600 mx-auto" /> : <X className="w-5 h-5 text-red-500 mx-auto" />}
-                        </td>
-                        <td className="p-4 text-center">
-                          {row.snorkel ? <Check className="w-5 h-5 text-green-600 mx-auto" /> : <X className="w-5 h-5 text-red-500 mx-auto" />}
-                        </td>
-                        <td className="p-4 text-center text-muted-foreground">{row.facilities}</td>
+                        <td className="p-4 text-center text-muted-foreground text-xs">{row.snorkel}</td>
+                        <td className="p-4 text-center text-muted-foreground text-xs">{row.facilities}</td>
                         <td className="p-4 text-center">
                           <span className={`px-2 py-1 rounded-full text-xs font-medium ${
                             row.crowds === 'Busy' ? 'bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400' :
