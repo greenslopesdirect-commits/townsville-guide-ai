@@ -216,7 +216,15 @@ const Beaches = () => {
       name: "Radical Bay",
       description: "A secluded bay reached by a scenic bush walk, offering beautiful swimming and a wild, natural beach experience.",
       features: ["Bush walking", "Secluded beach", "Natural setting", "Photography"],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Radical+Bay+Magnetic+Island"
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Radical+Bay+Magnetic+Island",
+      aiPrompt: "Tell me about the walking track and swimming conditions at Radical Bay on Magnetic Island."
+    },
+    {
+      name: "Picnic Bay",
+      description: "A peaceful, historic bay featuring an iconic timber jetty, a netted swimming enclosure, and relaxed beachfront dining under the banyan trees.",
+      features: ["Iconic Jetty", "Beachfront Dining", "Stinger Net", "Hawkings Point Lookout"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Picnic+Bay+Magnetic+Island",
+      aiPrompt: "Tell me about the dining options and the history of the Jetty at Picnic Bay."
     }
   ];
 
@@ -393,12 +401,23 @@ const Beaches = () => {
                           </span>
                         ))}
                       </div>
-                      <Button variant="ghost" size="sm" asChild className="gap-2 p-0 h-auto text-primary hover:text-primary/80">
-                        <a href={beach.mapUrl} target="_blank" rel="noopener noreferrer">
-                          <MapPin className="w-3 h-3" />
-                          View on Map
-                        </a>
-                      </Button>
+                      <div className="flex flex-col sm:flex-row gap-2 pt-1">
+                        <Button variant="ghost" size="sm" asChild className="gap-2 p-0 h-auto text-primary hover:text-primary/80">
+                          <a href={beach.mapUrl} target="_blank" rel="noopener noreferrer">
+                            <MapPin className="w-3 h-3" />
+                            View on Map
+                          </a>
+                        </Button>
+                        <Button 
+                          variant="ghost" 
+                          size="sm" 
+                          onClick={() => triggerAiGuide(beach.aiPrompt || `Tell me about the best things to do and local tips for ${beach.name} on Magnetic Island.`)}
+                          className="gap-2 p-0 h-auto text-muted-foreground hover:text-primary"
+                        >
+                          <span>🤖</span>
+                          Ask AI
+                        </Button>
+                      </div>
                     </CardContent>
                   </Card>
                 ))}
