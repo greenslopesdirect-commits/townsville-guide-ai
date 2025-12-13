@@ -72,13 +72,13 @@ const DogFriendly = () => {
             >
               {/* Schnauzer Approved Badge */}
               {spot.schnauzerapproved && (
-                <div className="absolute top-3 right-3 z-10">
-                  <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 text-xs font-medium border border-amber-200 dark:border-amber-700">
+                <div className="absolute -top-1 right-2 z-10">
+                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 text-xs font-medium border border-amber-200 dark:border-amber-700">
                     🐾 Schnauzer Approved
                   </span>
                 </div>
               )}
-              <CardContent className="p-5">
+              <CardContent className={`p-5 ${spot.schnauzerapproved ? 'pt-6' : ''}`}>
                 <div className="flex items-start gap-4">
                   <div className="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
                     <Dog className="w-5 h-5" />
