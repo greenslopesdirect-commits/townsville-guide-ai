@@ -28,6 +28,7 @@ import Accommodation from "@/pages/Accommodation";
 import Events from "@/pages/Events";
 import FlightsToTownsville from "@/pages/FlightsToTownsville";
 import Advertise from "@/pages/Advertise";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           {/* Redirect the root path to the new home /townsville */}
           <Route path="/" element={<Navigate to="/townsville" replace />} />
