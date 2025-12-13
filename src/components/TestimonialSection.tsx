@@ -61,8 +61,8 @@ const CommunityTrustSection = () => {
             <MessageSquare className="w-4 h-4 text-primary" />
             Are you a local? Help us improve —{" "}
             <a 
-              href="mailto:duncankross@gmail.com?subject=Feedback for MyAussieGuide" 
-              className="text-primary underline decoration-primary/50 hover:decoration-primary font-medium transition-colors"
+              href="mailto:duncankross@gmail.com?subject=Feedback%20for%20MyAussieGuide"
+              className="text-primary underline decoration-primary/50 hover:decoration-primary font-medium"
             >
               Send us your feedback
             </a>
