@@ -1,7 +1,32 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Package } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { BookOpen, Bell, Mail, Check } from "lucide-react";
+import { toast } from "sonner";
+
 const LocalShopSection = () => {
-  return <section className="py-16 px-4 bg-background">
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleWaitlistSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) {
+      toast.error("Please enter your email");
+      return;
+    }
+    setIsSubmitting(true);
+    
+    // Simulate submission - in production, this would connect to your email service
+    setTimeout(() => {
+      setIsSubmitted(true);
+      setIsSubmitting(false);
+      toast.success("You're on the waitlist! We'll notify you when it launches. 🎉");
+    }, 800);
+  };
+
+  return (
+    <section className="py-16 px-4 bg-background">
       <div className="container mx-auto max-w-6xl">
         {/* Section Header */}
         <div className="text-center mb-10">
@@ -9,7 +34,9 @@ const LocalShopSection = () => {
             <BookOpen className="w-4 h-4" />
             Local Shop
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Unplug with the Offline Companion - Coming Soon</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+            Unplug with the Offline Companion
+          </h2>
         </div>
 
         {/* Split Layout */}
@@ -39,11 +66,38 @@ const LocalShopSection = () => {
               </li>
             </ul>
 
-            <Button size="lg" className="group">
-              <Package className="mr-2 w-4 h-4" />
-              Order Copy – $14.95
-              <span className="ml-2 text-xs opacity-80">(Free Local Delivery)</span>
-            </Button>
+            {/* Waitlist Form */}
+            {!isSubmitted ? (
+              <form onSubmit={handleWaitlistSubmit} className="space-y-3">
+                <p className="text-sm font-medium text-foreground flex items-center gap-2">
+                  <Bell className="w-4 h-4 text-primary" />
+                  Notify me when the Activity Book drops
+                </p>
+                <div className="flex gap-2">
+                  <div className="relative flex-1">
+                    <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                    <Input
+                      type="email"
+                      placeholder="Your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="pl-10"
+                    />
+                  </div>
+                  <Button type="submit" disabled={isSubmitting}>
+                    <Bell className="mr-2 w-4 h-4" />
+                    {isSubmitting ? "Joining..." : "Join Waitlist"}
+                  </Button>
+                </div>
+              </form>
+            ) : (
+              <div className="flex items-center gap-2 p-4 rounded-lg bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800">
+                <Check className="w-5 h-5 text-green-600 dark:text-green-400" />
+                <p className="text-green-700 dark:text-green-300 font-medium">
+                  You're on the list! We'll email you when it launches.
+                </p>
+              </div>
+            )}
           </div>
 
           {/* Image Placeholder */}
@@ -52,12 +106,14 @@ const LocalShopSection = () => {
               <div className="text-center p-8">
                 <BookOpen className="w-16 h-16 mx-auto mb-4 text-primary/60" />
                 <p className="text-muted-foreground font-medium">Activity Book Preview</p>
-                <p className="text-sm text-muted-foreground/70 mt-1">Coming Soon</p>
+                <p className="text-sm text-primary mt-1 font-semibold">Coming Soon!</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default LocalShopSection;

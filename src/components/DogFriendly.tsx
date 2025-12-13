@@ -70,11 +70,12 @@ const DogFriendly = () => {
               className="hover:shadow-lg transition-all duration-300 animate-fade-in border-2 border-border/40 hover:border-primary/30 relative overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Schnauzer Approved Badge */}
+              {/* Schnauzer Approved Badge - Enhanced */}
               {spot.schnauzerapproved && (
-                <div className="absolute -top-1 right-2 z-10">
-                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 text-xs font-medium border border-amber-200 dark:border-amber-700">
-                    🐾 Schnauzer Approved
+                <div className="absolute -top-1 -right-1 z-10">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 dark:from-amber-500 dark:to-orange-500 text-white text-xs font-bold shadow-lg border-2 border-white dark:border-amber-300">
+                    <span className="text-base">🐕</span>
+                    Schnauzer Approved
                   </span>
                 </div>
               )}
@@ -87,13 +88,14 @@ const DogFriendly = () => {
                     <h3 className="text-lg font-semibold mb-2 text-foreground">{spot.name}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4">{spot.description}</p>
                     <Button 
-                      onClick={() => triggerAiGuide(spot.query)}
+                      onClick={() => triggerAiGuide(`Tell me about the menu, vibe, and booking info for ${spot.name}.`)}
                       variant="outline"
                       size="sm"
-                      className="w-full"
-                      aria-label={`Ask about ${spot.name}`}
+                      className="w-full group"
+                      aria-label={`Ask AI about ${spot.name}`}
                     >
-                      Ask about this place
+                      <span className="mr-2">🤖</span>
+                      Ask AI about this place
                     </Button>
                   </div>
                 </div>

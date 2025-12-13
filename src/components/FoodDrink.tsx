@@ -87,13 +87,14 @@ const FoodDrink = () => {
                 <h3 className="text-lg font-semibold mb-2 text-foreground">{restaurant.name}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">{restaurant.description}</p>
                 <Button 
-                  onClick={() => triggerAiGuide(restaurant.query)} 
+                  onClick={() => triggerAiGuide(`Tell me about the menu, vibe, and booking info for ${restaurant.name}.`)} 
                   variant="outline" 
                   size="sm" 
-                  className="w-full" 
-                  aria-label={`Ask about ${restaurant.name}`}
+                  className="w-full group" 
+                  aria-label={`Ask AI about ${restaurant.name}`}
                 >
-                  Ask about this place
+                  <span className="mr-2">🤖</span>
+                  Ask AI about this place
                 </Button>
               </CardContent>
             </Card>
