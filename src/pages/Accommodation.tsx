@@ -1,23 +1,113 @@
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { MapPin } from "lucide-react";
-import { triggerAiGuide } from "@/utils/aiGuide";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, Building, Waves, Home, TreePalm, MapPin } from "lucide-react";
+import ListingCard from "@/components/ListingCard";
+import NewsletterCTA from "@/components/NewsletterCTA";
 import FlightsButton from "@/components/FlightsButton";
-import AdvertiserAdBlock from "@/components/AdvertiserAdBlock";
-import AdSensePlaceholder from "@/components/AdSensePlaceholder";
-import AccommodationCard from "@/components/AccommodationCard";
 
-// Hotel images
+// Import images
 import theVilleImage from "@/assets/the-ville-resort-casino-townsville.webp";
 import aquariusImage from "@/assets/aquarius-on-the-beach-townsville.webp";
 import grandChancellorImage from "@/assets/grand-chancellor-hotel-townsville.webp";
+import oaksImage from "@/assets/oaks-gateway-suites-townsville.webp";
+import questImage from "@/assets/quest-serviced-apartments-townsville.webp";
+import big4Image from "@/assets/big4-rowes-bay-holiday-park-townsville.webp";
 
 const Accommodation = () => {
-  const handleAskAI = () => {
-    triggerAiGuide("Recommend accommodation near The Strand in Townsville");
-  };
+  const hotels = [
+    {
+      title: "The Ville Resort–Casino",
+      description: "Townsville's premier oceanfront resort featuring lagoon pool, casino, multiple restaurants and stunning ocean views. Perfect for luxury getaways.",
+      image: theVilleImage,
+      tags: ["Luxury", "Waterfront", "Pool"],
+      features: [
+        "Oceanfront rooms",
+        "Resort pool with swim-up bar",
+        "On-site restaurants & casino",
+        "Near The Strand"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Ville+Resort+Casino+Townsville",
+      aiPrompt: "Tell me about the amenities, pool, and location of The Ville Resort–Casino.",
+      subtitle: "From $189/night"
+    },
+    {
+      title: "Aquarius on the Beach",
+      description: "Budget-friendly beachfront hotel with uninterrupted ocean views from every room. Directly opposite The Strand with kitchenettes available.",
+      image: aquariusImage,
+      tags: ["Budget Friendly", "Waterfront", "Value"],
+      features: [
+        "All rooms face the ocean",
+        "Directly opposite The Strand",
+        "Kitchenettes available",
+        "Great value year-round"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Aquarius+on+the+Beach+Townsville",
+      aiPrompt: "Tell me about the amenities, pool, and location of Aquarius on the Beach.",
+      subtitle: "From $129/night"
+    },
+    {
+      title: "Hotel Grand Chancellor",
+      description: "Modern CBD high-rise with rooftop pool offering stunning city and Castle Hill views. Walk to everything — restaurants, shops, and attractions.",
+      image: grandChancellorImage,
+      tags: ["City Centre", "Pool", "Modern"],
+      features: [
+        "Rooftop pool with city views",
+        "Walk to restaurants & shops",
+        "Modern rooms and facilities",
+        "On-site restaurant"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Hotel+Grand+Chancellor+Townsville",
+      aiPrompt: "Tell me about the amenities, pool, and location of Hotel Grand Chancellor.",
+      subtitle: "From $159/night"
+    },
+    {
+      title: "Oaks Gateway Suites",
+      description: "Stylish serviced apartments near the river and CBD with spacious rooms, modern amenities and beautiful views.",
+      image: oaksImage,
+      tags: ["Apartments", "Families", "Pool"],
+      features: [
+        "Large rooms and suites",
+        "River or city views",
+        "Pool and gym",
+        "Full kitchen facilities"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Oaks+Townsville+Gateway+Suites",
+      aiPrompt: "Tell me about the amenities, pool, and location of Oaks Gateway Suites.",
+      subtitle: "From $169/night"
+    },
+    {
+      title: "Quest Townsville",
+      description: "Serviced apartments perfect for families, business travellers or longer stays. Marina views and full kitchen facilities.",
+      image: questImage,
+      tags: ["Apartments", "Business", "Families"],
+      features: [
+        "Marina views",
+        "Full kitchenettes",
+        "Laundry facilities",
+        "Spacious living areas"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Quest+Townsville",
+      aiPrompt: "Tell me about the amenities, pool, and location of Quest Townsville.",
+      subtitle: "From $149/night"
+    },
+    {
+      title: "BIG4 Rowes Bay Holiday Park",
+      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families.",
+      image: big4Image,
+      tags: ["Family Friendly", "Budget", "Beachfront"],
+      features: [
+        "Cabins and caravan sites",
+        "Swimming pool",
+        "Opposite the beach",
+        "Playground facilities"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=BIG4+Rowes+Bay+Holiday+Park+Townsville",
+      aiPrompt: "Tell me about the amenities, pool, and location of BIG4 Rowes Bay Holiday Park.",
+      subtitle: "From $45/night (sites)"
+    }
+  ];
 
   return (
     <>
@@ -27,400 +117,120 @@ const Accommodation = () => {
         canonical="https://www.myaussieguide.com.au/townsville/accommodation"
       />
       <Helmet>
-
-  {/* WebPage Schema */}
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Townsville Accommodation Guide",
-      "url": "https://www.myaussieguide.com.au/townsville/accommodation",
-      "description": "Guide to Townsville's best accommodation including hotels, resorts, holiday parks, apartments and budget-friendly stays.",
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.myaussieguide.com.au"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Accommodation",
-            "item": "https://www.myaussieguide.com.au/townsville/accommodation"
-          }
-        ]
-      }
-    }
-    `}
-  </script>
-
-  {/* FAQ Schema */}
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Where should I stay in Townsville?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Townsville offers a range of accommodation options including beachfront hotels on The Strand, luxury resorts, family-friendly holiday parks, and serviced apartments close to the CBD."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the best area to stay in Townsville for families?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Families often stay near The Strand or in family-friendly holiday parks with pools, playgrounds and cabins offering more space."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are there dog-friendly accommodation options in Townsville?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, several holiday parks, Airbnb properties and some boutique hotels in Townsville offer pet-friendly accommodation. Always check individual pet policies."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the best luxury accommodation in Townsville?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Luxury travellers often choose resorts and premium hotels along The Strand or riverfront apartment hotels near the CBD, offering ocean views and modern facilities."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are there budget-friendly places to stay in Townsville?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Townsville has many affordable motels, backpacker hostels and budget hotels located close to the city centre and transport options."
-          }
-        }
-      ]
-    }
-    `}
-  </script>
-
-</Helmet>
-
-
-      <div className="min-h-screen flex flex-col bg-background">
-        
-        <main className="flex-grow pt-20">
-          <div className="container mx-auto px-4 py-12 max-w-4xl">
-            
-            {/* Intro */}
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Townsville Accommodation Guide
-            </h1>
-            
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Townsville offers a wide range of accommodation, from beachfront hotels to serviced apartments, budget options and family-friendly holiday parks. This guide highlights the best places to stay depending on your budget, travel style and preferred location.
-            </p>
-
-            {/* Featured Accommodation Cards */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-6 text-foreground">Featured Stays</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                <AccommodationCard
-                  title="The Ville Resort–Casino"
-                  description="Luxury oceanfront resort with lagoon pool, casino, and on-site dining near The Strand."
-                  image={theVilleImage}
-                  priceFrom="From $189/night"
-                  facilities={["wifi", "pool", "parking"]}
-                />
-                <AccommodationCard
-                  title="Aquarius on the Beach"
-                  description="Budget-friendly beachfront hotel with uninterrupted ocean views and kitchenettes."
-                  image={aquariusImage}
-                  priceFrom="From $129/night"
-                  facilities={["wifi", "parking"]}
-                />
-                <AccommodationCard
-                  title="Hotel Grand Chancellor"
-                  description="Modern CBD high-rise with rooftop pool and stunning city views. Walk to everything."
-                  image={grandChancellorImage}
-                  priceFrom="From $159/night"
-                  facilities={["wifi", "pool", "breakfast"]}
-                />
-              </div>
-            </section>
-
-            {/* Section 1: The Ville Resort-Casino */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                The Ville Resort–Casino (Luxury & Ocean Views)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Townsville's most premium accommodation option, featuring ocean views, lagoon pool and on-site dining.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Oceanfront rooms</li>
-                  <li>Resort pool with swim-up bar</li>
-                  <li>On-site restaurants and casino</li>
-                  <li>Near The Strand and Breakwater</li>
-                </ul>
-              </div>
-              <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Great for couples, special occasions and relaxation-focused stays.</p>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=The+Ville+Resort+Casino+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Townsville Accommodation",
+            "description": "Best places to stay in Townsville",
+            "itemListElement": hotels.map((item, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "name": item.title
+            }))
+          })}
+        </script>
+      </Helmet>
+      
+      <div className="min-h-screen bg-background">
+        <main className="pt-24 pb-16">
+          <div className="container mx-auto px-4 max-w-6xl">
+            {/* Back Button */}
+            <Link to="/townsville">
+              <Button variant="ghost" className="mb-6 group" aria-label="Back to home">
+                <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                Back to Home
               </Button>
-            </section>
+            </Link>
 
-            {/* Section 2: Aquarius on the Beach */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Aquarius on the Beach (Best Value for Beachfront)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                A popular budget-friendly beachfront hotel offering uninterrupted ocean views.
+            {/* Hero Header */}
+            <header className="mb-12 text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+                <Building className="w-4 h-4" />
+                Accommodation Guide
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
+                Where to Stay in Townsville
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                From luxury oceanfront resorts to budget-friendly holiday parks, find the perfect place to stay for your Townsville adventure.
               </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>All rooms face the ocean</li>
-                  <li>Directly opposite The Strand</li>
-                  <li>Some rooms include kitchenettes</li>
-                  <li>Good value year-round</li>
-                </ul>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Aquarius+on+the+Beach+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
+            </header>
 
-            {/* Section 3: Hotel Grand Chancellor */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Hotel Grand Chancellor (City Centre Convenience)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                A modern high-rise hotel in the CBD with excellent rooftop views.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Rooftop pool with city views</li>
-                  <li>Close to restaurants and shops</li>
-                  <li>Modern rooms and facilities</li>
-                </ul>
-              </div>
-              <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Ideal if you want to walk everywhere in the city.</p>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Hotel+Grand+Chancellor+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
-
-            {/* Section 4: Quest Townsville */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Quest Townsville (Serviced Apartments)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Great for families, longer stays or business travellers needing space and kitchen facilities.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Marina views</li>
-                  <li>Kitchenettes</li>
-                  <li>Laundry facilities</li>
-                  <li>Spacious rooms</li>
-                </ul>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Quest+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
-
-            {/* Section 5: Oaks Townsville */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Oaks Townsville Gateway Suites (City & River Views)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Stylish serviced apartments located near the river and CBD.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Large rooms and suites</li>
-                  <li>River or city views</li>
-                  <li>Pool and modern amenities</li>
-                </ul>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Oaks+Townsville+Gateway+Suites" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
-
-            {/* Section 6: BIG4 Rowes Bay */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                BIG4 Rowes Bay Holiday Park (Family-Friendly & Budget)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                A great option for families, campers and those wanting a relaxed beachfront location.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Cabins and caravan sites</li>
-                  <li>Swimming pool</li>
-                  <li>Opposite the beach</li>
-                  <li>Playground and family facilities</li>
-                </ul>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=BIG4+Rowes+Bay+Holiday+Park+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
-
-            {/* Section 7: Best Areas to Stay */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Best Areas to Stay in Townsville
-              </h2>
-              
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">The Strand</h3>
-                  <p className="text-muted-foreground">Best for ocean views, walking, beaches, cafés.</p>
+            {/* Quick Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+              {[
+                { icon: <Building className="w-5 h-5" />, label: "Luxury Resorts", sublabel: "5-star options" },
+                { icon: <Home className="w-5 h-5" />, label: "Family Cabins", sublabel: "Holiday parks" },
+                { icon: <TreePalm className="w-5 h-5" />, label: "Budget Hostels", sublabel: "Backpacker friendly" },
+                { icon: <Waves className="w-5 h-5" />, label: "Ocean Views", sublabel: "Beachfront stays" }
+              ].map((stat, index) => (
+                <div key={index} className="text-center p-4 rounded-2xl bg-card border-2 hover:border-primary/30 transition-colors">
+                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary mb-2">
+                    {stat.icon}
+                  </div>
+                  <p className="font-semibold text-foreground">{stat.label}</p>
+                  <p className="text-sm text-muted-foreground">{stat.sublabel}</p>
                 </div>
-                
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">CBD / Palmer Street</h3>
-                  <p className="text-muted-foreground">Best for restaurants, events and convenience.</p>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Magnetic Island</h3>
-                  <p className="text-muted-foreground">Best for nature, beaches and relaxation.</p>
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Suburbs (Riverside, Douglas, Annandale)</h3>
-                  <p className="text-muted-foreground">Best for longer stays and families.</p>
-                </div>
-              </div>
-            </section>
-
-            {/* Section 8: Ask the AI */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Ask the AI for Accommodation Suggestions
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Your AI guide can recommend the best places to stay based on:
-              </p>
-              <div className="mb-6">
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4 mb-4">
-                  <li>Budget</li>
-                  <li>Family size</li>
-                  <li>Preferred location</li>
-                  <li>Transport needs</li>
-                  <li>Accessibility</li>
-                </ul>
-                <p className="font-semibold text-foreground mb-2">Try asking:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>"Where should I stay in Townsville with kids?"</li>
-                  <li>"What's the best hotel near The Strand?"</li>
-                  <li>"Which hotels have the best ocean views?"</li>
-                </ul>
-              </div>
-              <div className="text-center space-y-4">
-                <Button onClick={handleAskAI} size="lg" className="gap-2">
-                  Ask the AI Guide
-                </Button>
-                <div>
-                  <FlightsButton size="lg" />
-                </div>
-              </div>
-            </section>
-
-            {/* Advertiser Ad Block */}
-            <div className="my-12">
-              <AdvertiserAdBlock />
+              ))}
             </div>
 
-            {/* Google AdSense footer slot (pending approval) */}
-            <AdSensePlaceholder slot="footer" className="mb-8" />
+            {/* Hotels Grid */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <MapPin className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Featured Accommodation
+                  </h2>
+                  <p className="text-muted-foreground">Top-rated places to stay</p>
+                </div>
+              </div>
 
-            {/* Back to Home */}
-            <div className="text-center mt-12">
-              <Button variant="outline" size="lg" asChild>
-                <Link to="/townsville">← Back to Home</Link>
-              </Button>
-            </div>
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {hotels.map((hotel, index) => (
+                  <ListingCard key={index} {...hotel} />
+                ))}
+              </div>
+            </section>
 
+            {/* Best Areas Section */}
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Best Areas to Stay
+              </h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="p-6 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">The Strand</h3>
+                  <p className="text-muted-foreground text-sm">Best for ocean views, walking, beaches, and cafés. Most popular with tourists.</p>
+                </div>
+                <div className="p-6 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">CBD / Palmer Street</h3>
+                  <p className="text-muted-foreground text-sm">Best for restaurants, events, and convenience. Walk everywhere.</p>
+                </div>
+                <div className="p-6 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">Magnetic Island</h3>
+                  <p className="text-muted-foreground text-sm">Best for nature, beaches, and island relaxation. 20 min ferry.</p>
+                </div>
+                <div className="p-6 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">Northern Suburbs</h3>
+                  <p className="text-muted-foreground text-sm">Best for longer stays and families. Quieter, more space.</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Flights CTA */}
+            <section className="mb-12 text-center">
+              <p className="text-muted-foreground mb-4">Planning your trip?</p>
+              <FlightsButton size="lg" />
+            </section>
+
+            {/* Newsletter CTA */}
+            <NewsletterCTA className="mb-12" />
           </div>
         </main>
-
       </div>
     </>
   );

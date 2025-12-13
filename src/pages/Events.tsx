@@ -1,14 +1,152 @@
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowLeft, Calendar, Music, ShoppingBag, Trophy, MapPin, Repeat, Star } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
+import NewsletterCTA from "@/components/NewsletterCTA";
 
 const Events = () => {
-  const handleAskAI = () => {
-    triggerAiGuide("What events are on this week in Townsville?");
-  };
+  const recurringEvents = [
+    {
+      title: "Cotters Market",
+      description: "Townsville's biggest weekly market with crafts, plants, local foods, gifts and live entertainment every Sunday morning.",
+      when: "Every Sunday, 8am–1pm",
+      location: "Flinders Street, CBD",
+      tags: ["Weekly", "Family Friendly", "Free Entry"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Flinders+Street+Market+Townsville",
+      aiPrompt: "When is Cotters Market held and is it suitable for families?"
+    },
+    {
+      title: "Strand Night Markets",
+      description: "Evening markets on The Strand featuring food stalls, live music, and a relaxed beachfront atmosphere.",
+      when: "First Friday of month (dry season)",
+      location: "The Strand",
+      tags: ["Monthly", "Food", "Live Music"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville",
+      aiPrompt: "When is Strand Night Markets held and is it suitable for families?"
+    },
+    {
+      title: "Cowboys NRL Games",
+      description: "North Queensland Cowboys home games at Queensland Country Bank Stadium. Electric atmosphere for NRL fans.",
+      when: "March–September (home games)",
+      location: "QCB Stadium",
+      tags: ["Sports", "Seasonal", "Entertainment"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Queensland+Country+Bank+Stadium",
+      aiPrompt: "When is Cowboys NRL Games held and is it suitable for families?"
+    }
+  ];
+
+  const annualFestivals = [
+    {
+      title: "North Australian Festival of Arts (NAFA)",
+      description: "Townsville's flagship arts festival featuring theatre, music, circus, comedy, light shows and outdoor performances across multiple venues.",
+      when: "June–July (annually)",
+      location: "Queens Gardens, Strand Park, CBD",
+      tags: ["Arts", "Major Festival", "Family Friendly"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Queens+Gardens+Townsville",
+      aiPrompt: "When is North Australian Festival of Arts held and is it suitable for families?"
+    },
+    {
+      title: "Australian Festival of Chamber Music",
+      description: "World-class chamber music performed across stunning venues including St James' Cathedral. One of Australia's premier classical music events.",
+      when: "Late July – Early August",
+      location: "CBD & Castle Hill precinct",
+      tags: ["Music", "World-Class", "Indoor"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=St+James+Cathedral+Townsville",
+      aiPrompt: "When is Australian Festival of Chamber Music held and is it suitable for families?"
+    },
+    {
+      title: "Strand Ephemera",
+      description: "Australia's leading outdoor sculpture festival transforming The Strand into an open-air gallery. Held every two years.",
+      when: "August (biennial – every 2 years)",
+      location: "The Strand Foreshore",
+      tags: ["Art", "Free", "Biennial"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville",
+      aiPrompt: "When is Strand Ephemera held and is it suitable for families?"
+    },
+    {
+      title: "Magnetic Island Race Week",
+      description: "Sailing yachts compete around Magnetic Island's stunning bays. A week of racing, parties and island celebrations.",
+      when: "Late August – Early September",
+      location: "Nelly Bay Harbour, Magnetic Island",
+      tags: ["Sailing", "Sports", "Island Event"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Nelly+Bay+Harbour+Magnetic+Island",
+      aiPrompt: "When is Magnetic Island Race Week held and is it suitable for families?"
+    },
+    {
+      title: "Townsville Running Festival",
+      description: "Annual running event with marathon, half-marathon and fun run options through Townsville's scenic streets and waterfront.",
+      when: "August",
+      location: "The Strand & CBD",
+      tags: ["Sports", "Community", "Health"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville",
+      aiPrompt: "When is Townsville Running Festival held and is it suitable for families?"
+    },
+    {
+      title: "Townsville Christmas Festival",
+      description: "Festive lights, markets, food stalls and entertainment to celebrate the holiday season in tropical North Queensland.",
+      when: "December",
+      location: "CBD & Strand foreshore",
+      tags: ["Christmas", "Family Friendly", "Free"],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Townsville+CBD",
+      aiPrompt: "When is Townsville Christmas Festival held and is it suitable for families?"
+    }
+  ];
+
+  const EventCard = ({ event, isRecurring = false }: { event: typeof recurringEvents[0], isRecurring?: boolean }) => (
+    <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30">
+      <CardHeader className="pb-3">
+        <div className="flex items-start gap-3">
+          <div className={`p-2 rounded-xl ${isRecurring ? 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400' : 'bg-primary/10 text-primary'} flex-shrink-0`}>
+            {isRecurring ? <Repeat className="w-5 h-5" /> : <Star className="w-5 h-5" />}
+          </div>
+          <div className="flex-1">
+            <CardTitle className="text-lg leading-tight">{event.title}</CardTitle>
+            <p className="text-sm text-primary font-medium mt-1">{event.when}</p>
+          </div>
+        </div>
+      </CardHeader>
+      <CardContent className="pt-0 space-y-3">
+        <p className="text-sm text-muted-foreground leading-relaxed">{event.description}</p>
+        
+        <div className="flex flex-wrap gap-1.5">
+          {event.tags.map((tag, index) => (
+            <span 
+              key={index} 
+              className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary font-medium"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+        
+        <p className="text-xs text-muted-foreground flex items-center gap-1">
+          <MapPin className="w-3 h-3" />
+          {event.location}
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-2 pt-2">
+          <Button variant="outline" size="sm" asChild className="gap-2 flex-1">
+            <a href={event.mapUrl} target="_blank" rel="noopener noreferrer">
+              <MapPin className="w-4 h-4" />
+              View on Map
+            </a>
+          </Button>
+          <Button 
+            variant="ghost" 
+            size="sm" 
+            onClick={() => triggerAiGuide(event.aiPrompt)}
+            className="gap-2 flex-1"
+          >
+            <span>🤖</span>
+            Ask AI
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  );
 
   return (
     <>
@@ -27,476 +165,137 @@ const Events = () => {
               "@type": "Place",
               "name": "Townsville, Queensland",
               "address": "Townsville QLD, Australia"
-            },
-            "eventSchedule": [
-              {
-                "@type": "Schedule",
-                "name": "North Australian Festival of Arts",
-                "repeatFrequency": "P1Y",
-                "startDate": "2025-06-20",
-                "endDate": "2025-07-21"
-              },
-              {
-                "@type": "Schedule",
-                "name": "Magnetic Island Race Week",
-                "repeatFrequency": "P1Y",
-                "startDate": "2025-08-31",
-                "endDate": "2025-09-06"
-              },
-              {
-                "@type": "Schedule",
-                "name": "Australian Festival of Chamber Music",
-                "repeatFrequency": "P1Y",
-                "startDate": "2025-07-25",
-                "endDate": "2025-08-03"
-              },
-              {
-                "@type": "Schedule",
-                "name": "Strand Ephemera",
-                "repeatFrequency": "P2Y",
-                "startDate": "2025-08-01",
-                "endDate": "2025-08-09"
-              }
-            ]
+            }
           })}
         </script>
       </Helmet>
-
-      <div className="min-h-screen flex flex-col bg-background">
-        
-        <main className="flex-grow pt-20">
-          <div className="container mx-auto px-4 py-12 max-w-4xl">
-            
-            {/* Intro */}
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              🎟️ Events in Townsville – Festivals, Markets & What's On
-            </h1>
-            
-            <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-              Townsville is one of North Queensland's busiest cities for festivals, culture, sport and community events. From beachfront art to sailing regattas, concerts to night markets, there's always something happening — especially during the dry season.
-            </p>
-
-            <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-              This page gives you a full local guide to the big annual events, a month-by-month calendar, and a "What's On This Week" AI section so you never miss anything.
-            </p>
-
-            {/* This Week Section */}
-            <section className="mb-12 bg-primary/5 p-6 rounded-lg border border-primary/20">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                ⭐ This Week in Townsville
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Wondering what's happening right now?
-              </p>
-              <div className="mb-6">
-                <p className="font-semibold text-foreground mb-2">Ask the AI:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>"What events are on this week in Townsville?"</li>
-                  <li>"What can I do tonight?"</li>
-                  <li>"What markets are on this Sunday?"</li>
-                </ul>
-              </div>
-              <p className="text-muted-foreground mb-4">
-                Your AI guide checks the latest known events and gives personalised suggestions.
-              </p>
-              <Button onClick={handleAskAI} size="lg" className="gap-2">
-                Ask the AI Guide
+      
+      <div className="min-h-screen bg-background">
+        <main className="pt-24 pb-16">
+          <div className="container mx-auto px-4 max-w-6xl">
+            {/* Back Button */}
+            <Link to="/townsville">
+              <Button variant="ghost" className="mb-6 group" aria-label="Back to home">
+                <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                Back to Home
               </Button>
-            </section>
+            </Link>
 
-            {/* Major Annual Events */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">
-                🎨 Major Annual Events
-              </h2>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                These are the biggest and most iconic events in Townsville — worth planning trips around.
+            {/* Hero Header */}
+            <header className="mb-12 text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+                <Calendar className="w-4 h-4" />
+                Events Guide
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
+                Events in Townsville
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                From weekly markets and NRL games to world-class festivals, there's always something happening in Townsville — especially during the dry season.
               </p>
+            </header>
 
-              {/* NAFA */}
-              <div className="mb-10 pb-10 border-b border-border/40">
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  North Australian Festival of Arts (NAFA)
-                </h3>
-                <p className="text-sm font-semibold text-primary mb-3">June–July</p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Townsville's flagship arts festival with theatre, music, circus, comedy, light shows and outdoor performances.
-                </p>
-                <div className="flex flex-wrap gap-3 items-center">
-                  <span className="text-sm text-muted-foreground">📌 Queens Gardens, Strand Park, CBD</span>
-                  <Button variant="outline" size="sm" asChild>
-                    <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Queens+Gardens+Townsville" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2"
-                    >
-                      <MapPin className="w-4 h-4" />
-                      View on Map
-                    </a>
-                  </Button>
+            {/* Quick Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+              {[
+                { icon: <ShoppingBag className="w-5 h-5" />, label: "Weekly Markets", sublabel: "Every Sunday" },
+                { icon: <Calendar className="w-5 h-5" />, label: "Annual Festivals", sublabel: "Major events" },
+                { icon: <Music className="w-5 h-5" />, label: "Live Music", sublabel: "Year-round" },
+                { icon: <Trophy className="w-5 h-5" />, label: "Sports", sublabel: "Cowboys & more" }
+              ].map((stat, index) => (
+                <div key={index} className="text-center p-4 rounded-2xl bg-card border-2 hover:border-primary/30 transition-colors">
+                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary mb-2">
+                    {stat.icon}
+                  </div>
+                  <p className="font-semibold text-foreground">{stat.label}</p>
+                  <p className="text-sm text-muted-foreground">{stat.sublabel}</p>
                 </div>
-              </div>
-
-              {/* AFCM */}
-              <div className="mb-10 pb-10 border-b border-border/40">
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  Australian Festival of Chamber Music (AFCM)
-                </h3>
-                <p className="text-sm font-semibold text-primary mb-3">Late July – Early August</p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  World-class chamber music performed across stunning venues including St James' Cathedral and The Civic Theatre.
-                </p>
-                <div className="flex flex-wrap gap-3 items-center">
-                  <span className="text-sm text-muted-foreground">📌 CBD & Castle Hill precinct</span>
-                  <Button variant="outline" size="sm" asChild>
-                    <a 
-                      href="https://www.google.com/maps/search/?api=1&query=St+James+Cathedral+Townsville" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2"
-                    >
-                      <MapPin className="w-4 h-4" />
-                      View on Map
-                    </a>
-                  </Button>
-                </div>
-              </div>
-
-              {/* Strand Ephemera */}
-              <div className="mb-10 pb-10 border-b border-border/40">
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  Strand Ephemera (Biennial)
-                </h3>
-                <p className="text-sm font-semibold text-primary mb-3">August (every 2 years)</p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Australia's leading outdoor sculpture festival transforming The Strand into an open-air art gallery.
-                </p>
-                <div className="flex flex-wrap gap-3 items-center">
-                  <span className="text-sm text-muted-foreground">📌 The Strand Foreshore</span>
-                  <Button variant="outline" size="sm" asChild>
-                    <a 
-                      href="https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2"
-                    >
-                      <MapPin className="w-4 h-4" />
-                      View on Map
-                    </a>
-                  </Button>
-                </div>
-              </div>
-
-              {/* Magnetic Island Race Week */}
-              <div className="mb-10 pb-10 border-b border-border/40">
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  Magnetic Island Race Week
-                </h3>
-                <p className="text-sm font-semibold text-primary mb-3">Late August – Early September</p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Sailing yachts compete around Magnetic Island's bays — an unmissable event for boat lovers.
-                </p>
-                <div className="flex flex-wrap gap-3 items-center">
-                  <span className="text-sm text-muted-foreground">📌 Nelly Bay Harbour, Magnetic Island</span>
-                  <Button variant="outline" size="sm" asChild>
-                    <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Nelly+Bay+Harbour+Magnetic+Island" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2"
-                    >
-                      <MapPin className="w-4 h-4" />
-                      View on Map
-                    </a>
-                  </Button>
-                </div>
-              </div>
-
-              {/* Christmas Festival */}
-              <div className="mb-10 pb-10 border-b border-border/40">
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  Townsville Christmas Festival
-                </h3>
-                <p className="text-sm font-semibold text-primary mb-3">December</p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Lights, markets, food stalls and festive entertainment for families.
-                </p>
-                <div className="flex flex-wrap gap-3 items-center">
-                  <span className="text-sm text-muted-foreground">📌 CBD & Strand foreshore</span>
-                  <Button variant="outline" size="sm" asChild>
-                    <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Townsville+CBD" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2"
-                    >
-                      <MapPin className="w-4 h-4" />
-                      View on Map
-                    </a>
-                  </Button>
-                </div>
-              </div>
-
-              {/* Cotters Market */}
-              <div className="mb-10">
-                <h3 className="text-2xl font-bold mb-3 text-foreground">
-                  Cotters Market (Weekly)
-                </h3>
-                <p className="text-sm font-semibold text-primary mb-3">Every Sunday Morning</p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Townsville's biggest weekly market: crafts, plants, local foods, gifts and entertainment.
-                </p>
-                <div className="flex flex-wrap gap-3 items-center">
-                  <span className="text-sm text-muted-foreground">📌 Flinders Street, CBD</span>
-                  <Button variant="outline" size="sm" asChild>
-                    <a 
-                      href="https://www.google.com/maps/search/?api=1&query=Flinders+Street+Market+Townsville" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2"
-                    >
-                      <MapPin className="w-4 h-4" />
-                      View on Map
-                    </a>
-                  </Button>
-                </div>
-              </div>
-            </section>
-
-            {/* Month-by-Month Calendar */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">
-                📅 Month-by-Month Events Calendar
-              </h2>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                A simple guide to what happens throughout the year in Townsville.
-              </p>
-
-              <div className="space-y-6">
-                {/* January */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">January</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>New Year's Eve & New Year's Day events</li>
-                    <li>School holiday activities</li>
-                    <li>Indoor attractions (wet season)</li>
-                  </ul>
-                </div>
-
-                {/* February */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">February</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>Strand Night Markets</li>
-                    <li>Valentine's events across local venues</li>
-                  </ul>
-                </div>
-
-                {/* March */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">March</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>Cruise ship visit days (varies)</li>
-                    <li>Cultural Centre performances</li>
-                    <li>Early sporting events begin</li>
-                  </ul>
-                </div>
-
-                {/* April */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">April</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>ANZAC Day Dawn Service at The Strand</li>
-                    <li>Easter weekend markets</li>
-                    <li>Charters Towers Country Music Festival (nearby)</li>
-                  </ul>
-                </div>
-
-                {/* May */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">May</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>Townsville Eco Fiesta</li>
-                    <li>Heritage Day</li>
-                    <li>Dry season begins — ideal outdoor weather</li>
-                  </ul>
-                </div>
-
-                {/* June */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">June</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>NAFA begins</li>
-                    <li>Townsville Show (public holiday carnival)</li>
-                    <li>Running events and outdoor concerts</li>
-                  </ul>
-                </div>
-
-                {/* July */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">July</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>NAFA continues</li>
-                    <li>Australian Festival of Chamber Music</li>
-                    <li>NAIDOC Week celebrations</li>
-                    <li>Cowboys home games</li>
-                  </ul>
-                </div>
-
-                {/* August */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">August</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>Strand Ephemera (biennial)</li>
-                    <li>Townsville Running Festival</li>
-                    <li>Magnetic Island Race Week warm-ups</li>
-                  </ul>
-                </div>
-
-                {/* September */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">September</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>Magnetic Island Race Week</li>
-                    <li>Spring markets</li>
-                    <li>School holiday shows & activities</li>
-                  </ul>
-                </div>
-
-                {/* October */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">October</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>Greek Festival</li>
-                    <li>Halloween markets & themed events</li>
-                  </ul>
-                </div>
-
-                {/* November */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">November</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>Christmas craft markets</li>
-                    <li>School holiday season begins</li>
-                    <li>Start of wet season sunsets</li>
-                  </ul>
-                </div>
-
-                {/* December */}
-                <div className="bg-muted/20 p-5 rounded-lg">
-                  <h3 className="text-xl font-bold text-foreground mb-2">December</h3>
-                  <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                    <li>Townsville Christmas Festival</li>
-                    <li>Carols by Candlelight</li>
-                    <li>Strand Christmas Night Markets</li>
-                    <li>New Year's Eve fireworks</li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            {/* View Event Locations */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">
-                🗺️ View Event Locations
-              </h2>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Each major event links to a map location:
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Button variant="outline" size="sm" asChild>
-                  <a 
-                    href="https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2"
-                  >
-                    <MapPin className="w-4 h-4" />
-                    The Strand
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <a 
-                    href="https://www.google.com/maps/search/?api=1&query=Queens+Gardens+Townsville" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2"
-                  >
-                    <MapPin className="w-4 h-4" />
-                    Queens Gardens
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <a 
-                    href="https://www.google.com/maps/search/?api=1&query=Nelly+Bay+Harbour+Magnetic+Island" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2"
-                  >
-                    <MapPin className="w-4 h-4" />
-                    Nelly Bay Harbour
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <a 
-                    href="https://www.google.com/maps/search/?api=1&query=St+James+Cathedral+Townsville" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2"
-                  >
-                    <MapPin className="w-4 h-4" />
-                    St James Cathedral
-                  </a>
-                </Button>
-                <Button variant="outline" size="sm" asChild>
-                  <a 
-                    href="https://www.google.com/maps/search/?api=1&query=Flinders+Street+Market+Townsville" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2"
-                  >
-                    <MapPin className="w-4 h-4" />
-                    Flinders Street Markets
-                  </a>
-                </Button>
-              </div>
-            </section>
-
-            {/* AI Recommendations */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-foreground">
-                🤖 Ask the AI for Personal Recommendations
-              </h2>
-              <div className="mb-6">
-                <p className="font-semibold text-foreground mb-2">Try these:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>"Plan a 2-day trip to Townsville with events."</li>
-                  <li>"What markets are on this weekend?"</li>
-                  <li>"What events can I take my dog to?"</li>
-                  <li>"What live music is on in Townsville this month?"</li>
-                </ul>
-              </div>
-              <p className="text-muted-foreground mb-6">
-                Your AI turns this page into a live, personalised event planner.
-              </p>
-              <div className="text-center">
-                <Button onClick={handleAskAI} size="lg" className="gap-2">
-                  Ask the AI Guide
-                </Button>
-              </div>
-            </section>
-
-            {/* Back to Home */}
-            <div className="text-center mt-12">
-              <Button variant="outline" size="lg" asChild>
-                <Link to="/townsville">🔙 Back to Home</Link>
-              </Button>
+              ))}
             </div>
 
+            {/* This Week CTA */}
+            <Card className="mb-12 border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
+              <CardContent className="p-6 text-center">
+                <h2 className="text-xl font-bold text-foreground mb-2">What's On This Week?</h2>
+                <p className="text-muted-foreground mb-4">Ask our AI guide for the latest events and activities happening right now.</p>
+                <Button 
+                  size="lg" 
+                  onClick={() => triggerAiGuide("What events are on this week in Townsville?")}
+                  className="gap-2"
+                >
+                  <span>🤖</span>
+                  Ask What's On
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Recurring Events */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="p-2 rounded-lg bg-green-100 dark:bg-green-900/30">
+                  <Repeat className="w-6 h-6 text-green-600 dark:text-green-400" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Recurring Events
+                  </h2>
+                  <p className="text-muted-foreground">Weekly, monthly and seasonal</p>
+                </div>
+              </div>
+
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {recurringEvents.map((event, index) => (
+                  <EventCard key={index} event={event} isRecurring={true} />
+                ))}
+              </div>
+            </section>
+
+            {/* Annual Festivals */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Star className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Annual Festivals
+                  </h2>
+                  <p className="text-muted-foreground">Major events worth planning around</p>
+                </div>
+              </div>
+
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {annualFestivals.map((event, index) => (
+                  <EventCard key={index} event={event} isRecurring={false} />
+                ))}
+              </div>
+            </section>
+
+            {/* Month-by-Month Quick Reference */}
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Quick Calendar
+              </h2>
+              <div className="grid md:grid-cols-3 gap-4">
+                <div className="p-4 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">Dry Season (May–Oct)</h3>
+                  <p className="text-sm text-muted-foreground">Peak event season. NAFA, AFCM, Race Week, outdoor festivals and perfect weather.</p>
+                </div>
+                <div className="p-4 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">Build-Up (Nov–Dec)</h3>
+                  <p className="text-sm text-muted-foreground">Christmas markets, end-of-year celebrations and warmer weather.</p>
+                </div>
+                <div className="p-4 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">Wet Season (Jan–Apr)</h3>
+                  <p className="text-sm text-muted-foreground">Indoor events, school holiday activities and quieter event calendar.</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Newsletter CTA */}
+            <NewsletterCTA className="mb-12" />
           </div>
         </main>
-
       </div>
     </>
   );

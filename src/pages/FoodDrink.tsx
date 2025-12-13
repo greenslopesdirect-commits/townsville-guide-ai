@@ -1,479 +1,271 @@
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { MapPin } from "lucide-react";
-import { triggerAiGuide } from "@/utils/aiGuide";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, UtensilsCrossed, Fish, Coffee, Wine, MapPin } from "lucide-react";
+import ListingCard from "@/components/ListingCard";
+import NewsletterCTA from "@/components/NewsletterCTA";
+
+// Import images
+import jamImage from "@/assets/jam-corner-townsville.webp";
+import saltImage from "@/assets/a-touch-of-salt-restaurant-townsville.webp";
+import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
+import cactusImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
+import juliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
+import cookingImage from "@/assets/coo-king-bbq-hotpot-restaurant-townsville.webp";
 
 const FoodDrink = () => {
-  const handleAskAI = () => {
-    triggerAiGuide("Where should we eat tonight in Townsville?");
-  };
+  const restaurants = [
+    {
+      title: "JAM Restaurant",
+      description: "One of Townsville's most awarded restaurants, known for creative dishes, local ingredients and a relaxed yet refined atmosphere on Palmer Street.",
+      image: jamImage,
+      tags: ["Fine Dining", "Breakfast", "Dinner"],
+      features: [
+        "Modern Australian menu",
+        "Seasonal local produce",
+        "Award-winning chef",
+        "Riverside location"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=JAM+Restaurant+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at JAM Restaurant.",
+      subtitle: "Modern Australian"
+    },
+    {
+      title: "A Touch of Salt",
+      description: "High-end modern dining on the riverfront with premium steaks, seafood and refined flavours. Perfect for special occasions.",
+      image: saltImage,
+      tags: ["Fine Dining", "Waterfront", "Date Night"],
+      features: [
+        "Multi-award-winning",
+        "River views outdoor seating",
+        "Premium steaks & seafood",
+        "Extensive wine list"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=A+Touch+of+Salt+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at A Touch of Salt.",
+      subtitle: "Award-Winning Dining"
+    },
+    {
+      title: "Longboard Bar & Grill",
+      description: "Laid-back beachfront dining right on The Strand with burgers, pizzas, cocktails and live music. Perfect for sunset drinks.",
+      image: longboardImage,
+      tags: ["Casual", "Waterfront", "Bar"],
+      features: [
+        "Direct beachfront location",
+        "Burgers and pizzas",
+        "Live music some evenings",
+        "Great sunset views"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Longboard+Bar+Grill+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at Longboard Bar & Grill.",
+      subtitle: "Beachfront Casual"
+    },
+    {
+      title: "Cactus Jack's",
+      description: "A Townsville institution — colourful Tex-Mex with big portions, great margaritas and a fun family atmosphere.",
+      image: cactusImage,
+      tags: ["Casual", "Family Friendly", "Bar"],
+      features: [
+        "Famous enchiladas",
+        "Great margaritas",
+        "Lively themed décor",
+        "Good value portions"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Cactus+Jack's+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at Cactus Jack's.",
+      subtitle: "Tex-Mex Favourite"
+    },
+    {
+      title: "Juliette's Gelateria",
+      description: "Iconic Strand spot for homemade gelato, coffee and light breakfast. Outdoor seating with ocean views — perfect after a beach walk.",
+      image: juliettesImage,
+      tags: ["Breakfast", "Dessert", "Coffee"],
+      features: [
+        "Homemade gelato",
+        "Beachfront location",
+        "Great coffee",
+        "Outdoor seating"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Juliette's+The+Strand+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at Juliette's Gelateria.",
+      subtitle: "Gelato & Coffee"
+    },
+    {
+      title: "Coo.King BBQ & Hotpot",
+      description: "All-you-can-eat Korean BBQ and hotpot experience. Cook your own meats and veggies at the table — great for groups.",
+      image: cookingImage,
+      tags: ["Casual", "All You Can Eat", "Asian"],
+      features: [
+        "Korean BBQ experience",
+        "Hotpot options",
+        "Great for groups",
+        "Unlimited food"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Coo+King+BBQ+Hotpot+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at Coo.King BBQ & Hotpot.",
+      subtitle: "Korean BBQ & Hotpot"
+    },
+    {
+      title: "Watermark Restaurant",
+      description: "Stylish Strand restaurant with seafood platters, steaks and modern Australian dishes. Popular for Sunday lunch.",
+      tags: ["Fine Dining", "Waterfront", "Seafood"],
+      features: [
+        "The Strand location",
+        "Seafood platters",
+        "Indoor and outdoor",
+        "Great for groups"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Watermark+Restaurant+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at Watermark Restaurant.",
+      subtitle: "Seafood & Views"
+    },
+    {
+      title: "Rambutan Rooftop Bar",
+      description: "Rooftop dining in the CBD with wood-fired pizzas, cocktails and views of the stadium and Castle Hill. Great pre-game spot.",
+      tags: ["Bar", "Casual", "Rooftop"],
+      features: [
+        "Rooftop location",
+        "Wood-fired pizza",
+        "Castle Hill views",
+        "Pre-game favourite"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Rambutan+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at Rambutan Rooftop Bar.",
+      subtitle: "Rooftop Dining"
+    },
+    {
+      title: "Hoi Polloi Café",
+      description: "Creative brunch spot with excellent coffee, inventive dishes and a hip atmosphere. A favourite among Townsville's café crowd.",
+      tags: ["Breakfast", "Coffee", "Brunch"],
+      features: [
+        "Creative brunch menu",
+        "Specialty coffee",
+        "Trendy atmosphere",
+        "Vegetarian options"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Hoi+Polloi+Cafe+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at Hoi Polloi Café.",
+      subtitle: "Specialty Brunch"
+    }
+  ];
 
   return (
     <>
       <SEOHead
         title="Best Food & Restaurants in Townsville - Local Dining Guide"
-        description="Discover the best restaurants, cafés and dining spots in Townsville. From waterfront dining on The Strand to modern Australian cuisine, find where locals eat in Townsville QLD."
+        description="Discover the best restaurants, cafés and dining spots in Townsville. From waterfront dining on The Strand to modern Australian cuisine, find where locals eat."
         canonical="https://www.myaussieguide.com.au/townsville/food"
       />
       <Helmet>
-
-  {/* WebPage Schema */}
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Food & Drink in Townsville",
-      "url": "https://www.myaussieguide.com.au/townsville/food",
-      "description": "Local guide to the best restaurants, cafés and dining experiences in Townsville, Queensland.",
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.myaussieguide.com.au"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Food & Drink",
-            "item": "https://www.myaussieguide.com.au/townsville/food"
-          }
-        ]
-      }
-    }
-    `}
-  </script>
-
-  {/* ItemList Schema */}
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Townsville Restaurants & Cafés",
-      "itemListOrder": "Ascending",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "JAM Restaurant",
-          "url": "https://www.myaussieguide.com.au/townsville/food#jam"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "A Touch of Salt",
-          "url": "https://www.myaussieguide.com.au/townsville/food#salt"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "The Balcony",
-          "url": "https://www.myaussieguide.com.au/townsville/food#balcony"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Longboard Bar & Grill",
-          "url": "https://www.myaussieguide.com.au/townsville/food#longboard"
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "name": "Juliette's Gelateria",
-          "url": "https://www.myaussieguide.com.au/townsville/food#juliettes"
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "name": "Hogwarts Café",
-          "url": "https://www.myaussieguide.com.au/townsville/food#hogwarts"
-        }
-      ]
-    }
-    `}
-  </script>
-
-  {/* Restaurant Schema */}
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      "name": "Townsville Dining",
-      "itemListElement": [
-        {
-          "@type": "Restaurant",
-          "name": "JAM Restaurant",
-          "address": "1 Palmer St, South Townsville QLD",
-          "servesCuisine": ["Modern Australian"],
-          "url": "https://www.myaussieguide.com.au/townsville/food#jam"
-        },
-        {
-          "@type": "Restaurant",
-          "name": "A Touch of Salt",
-          "address": "86–124 Ogden St, Townsville QLD",
-          "servesCuisine": ["Modern Australian"],
-          "url": "https://www.myaussieguide.com.au/townsville/food#salt"
-        },
-        {
-          "@type": "Restaurant",
-          "name": "Longboard Bar & Grill",
-          "address": "The Strand, Townsville QLD",
-          "servesCuisine": ["Burgers", "Seafood"],
-          "url": "https://www.myaussieguide.com.au/townsville/food#longboard"
-        },
-        {
-          "@type": "Restaurant",
-          "name": "The Balcony",
-          "address": "287 Flinders St, Townsville QLD",
-          "servesCuisine": ["Australian", "Brunch"],
-          "url": "https://www.myaussieguide.com.au/townsville/food#balcony"
-        },
-        {
-          "@type": "Restaurant",
-          "name": "Juliette's Gelateria",
-          "address": "The Strand, Townsville QLD",
-          "servesCuisine": ["Dessert"],
-          "url": "https://www.myaussieguide.com.au/townsville/food#juliettes"
-        }
-      ]
-    }
-    `}
-  </script>
-
-</Helmet>
-
-
-      <div className="min-h-screen flex flex-col bg-background">
-        
-        <main className="flex-grow pt-20">
-          <div className="container mx-auto px-4 py-12 max-w-4xl">
-            
-            {/* Intro */}
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Best Food & Restaurants in Townsville – Local Dining Guide
-            </h1>
-            
-            <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-              Townsville's food scene blends relaxed North Queensland flavours with waterfront dining, casual cafés, modern restaurants and a growing bar culture. Whether you're after a sunset drink on The Strand, a quality dinner on Palmer Street, or a quick coffee by the beach, here are the best dining spots in and around Townsville.
-            </p>
-
-            {/* Section 1: JAM Restaurant */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                JAM Restaurant (Modern Australian Dining)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                JAM (formerly JAM Corner) is one of Townsville's most awarded restaurants, known for creative dishes, local ingredients and a relaxed yet refined atmosphere.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Modern Australian menu</li>
-                  <li>Excellent breakfasts and dinners</li>
-                  <li>Seasonal produce and signature dishes</li>
-                  <li>Riverside location on Palmer Street</li>
-                </ul>
-              </div>
-              <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Book ahead on weekends — especially dinner.</p>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=JAM+Restaurant+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Townsville Restaurants & Cafés",
+            "description": "Best dining spots in Townsville",
+            "itemListElement": restaurants.map((item, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "name": item.title
+            }))
+          })}
+        </script>
+      </Helmet>
+      
+      <div className="min-h-screen bg-background">
+        <main className="pt-24 pb-16">
+          <div className="container mx-auto px-4 max-w-6xl">
+            {/* Back Button */}
+            <Link to="/townsville">
+              <Button variant="ghost" className="mb-6 group" aria-label="Back to home">
+                <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                Back to Home
               </Button>
-            </section>
+            </Link>
 
-            {/* Section 2: A Touch of Salt */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                A Touch of Salt (Award-Winning Dining)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                A Touch of Salt offers high-end modern dining on the riverfront with a focus on premium ingredients and refined flavours.
+            {/* Hero Header */}
+            <header className="mb-12 text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+                <UtensilsCrossed className="w-4 h-4" />
+                Dining Guide
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
+                Food & Drink in Townsville
+              </h1>
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                From waterfront dining on The Strand to award-winning restaurants on Palmer Street, discover where locals eat and drink in Townsville.
               </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Multi-award-winning restaurant</li>
-                  <li>River views and outdoor seating</li>
-                  <li>Fine dining without being overly formal</li>
-                  <li>Great steaks, seafood and desserts</li>
-                </ul>
-              </div>
-              <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Excellent for special occasions or date nights.</p>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=A+Touch+of+Salt+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
+            </header>
 
-            {/* Section 3: Longboard Bar & Grill */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Longboard Bar & Grill (Beachfront Casual Dining)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Located right on The Strand, Longboard offers laid-back beach vibes with burgers, pizzas and cocktails served metres from the water.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Direct beachfront location</li>
-                  <li>Burgers, pizzas and cocktail menu</li>
-                  <li>Live music on some evenings</li>
-                  <li>Popular with both locals and visitors</li>
-                </ul>
-              </div>
-              <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Sit outside for sunset — ideal for photos.</p>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Longboard+Bar+Grill+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
-
-            {/* Section 4: Cactus Jack's */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Cactus Jack's (Tex-Mex & Fun Atmosphere)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Cactus Jack's is a Townsville staple — colourful, fun and perfect for families or groups.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Tex-Mex favourites</li>
-                  <li>Big portions and good value</li>
-                  <li>Lively, themed décor</li>
-                  <li>Popular on weekends</li>
-                </ul>
-              </div>
-              <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Their enchiladas and margaritas have a huge local following.</p>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Cactus+Jack's+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
-
-            {/* Section 5: Juliette's Gelateria */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Juliette's Gelateria (Dessert & Coffee on The Strand)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                An iconic Strand spot for gelato, desserts and beachfront coffee.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Homemade gelato</li>
-                  <li>Breakfast options</li>
-                  <li>Coffee with ocean views</li>
-                  <li>Outdoor seating</li>
-                </ul>
-              </div>
-              <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Great for families — kids love the beach playground nearby.</p>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Juliette's+The+Strand+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
-
-            {/* Section 6: Watermark Restaurant */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Watermark Restaurant (Seafood & Beach Views)
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Watermark offers a mixture of seafood, steaks and modern Australian dishes with excellent Strand views.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Stylish Strand restaurant</li>
-                  <li>Seafood platters</li>
-                  <li>Indoor and outdoor seating</li>
-                  <li>Popular Sunday lunch spot</li>
-                </ul>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Watermark+Restaurant+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
-
-            {/* Section 7: Rambutan Rooftop Bar */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Rambutan Rooftop Bar & Restaurant
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Located on a rooftop in the CBD with views of the stadium and Castle Hill, Rambutan has a modern menu and a great bar vibe.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Highlights:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Rooftop dining</li>
-                  <li>Wood-fired pizza</li>
-                  <li>Cocktails and relaxed atmosphere</li>
-                  <li>City and Castle Hill views</li>
-                </ul>
-              </div>
-              <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Great spot before Cowboys games and concerts.</p>
-              </div>
-              <Button variant="outline" size="sm" asChild>
-                <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Rambutan+Townsville" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2"
-                >
-                  <MapPin className="w-4 h-4" />
-                  View on Map
-                </a>
-              </Button>
-            </section>
-
-            {/* Section 8: Best Cafés */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Best Cafés in Townsville
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Townsville has a strong café scene with excellent brunch options.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Top Picks:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Hoi Polloi – creative brunch, great coffee</li>
-                  <li>The Spirited Goat – local favourite</li>
-                  <li>Betty Blue & The Lemon Tart – famous breakfasts</li>
-                  <li>Café Rajé – Strand-side café</li>
-                </ul>
-              </div>
-            </section>
-
-            {/* Section 9: Dog-Friendly Dining */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Dog-Friendly Dining
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Townsville is extremely dog-friendly, especially on The Strand.
-              </p>
-              <div className="mb-4">
-                <p className="font-semibold text-foreground mb-2">Best Spots:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>Juliette's Gelateria</li>
-                  <li>The Courtyard</li>
-                  <li>Some outdoor Strand cafés</li>
-                  <li>Various food trucks and markets</li>
-                </ul>
-              </div>
-              <div className="bg-muted/30 p-4 rounded-lg mb-4">
-                <p className="font-semibold text-foreground mb-1">Local Tip:</p>
-                <p className="text-muted-foreground">Many places provide free water bowls — just ask.</p>
-              </div>
-            </section>
-
-            {/* Section 10: Ask the AI */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-foreground">
-                Ask the AI for Food Recommendations
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                You can use the built-in AI for personalised local suggestions:
-              </p>
-              <div className="mb-6">
-                <p className="font-semibold text-foreground mb-2">Suggested questions:</p>
-                <ul className="list-disc list-inside text-muted-foreground space-y-1 ml-4">
-                  <li>"Where should I eat in Townsville tonight?"</li>
-                  <li>"What's the best café near The Strand?"</li>
-                  <li>"Where can I get seafood in Townsville?"</li>
-                  <li>"What are the best restaurants for families?"</li>
-                </ul>
-              </div>
-              <div className="text-center">
-                <Button onClick={handleAskAI} size="lg" className="gap-2">
-                  Ask the AI Guide
-                </Button>
-              </div>
-            </section>
-
-            {/* Back to Home */}
-            <div className="text-center mt-12">
-              <Button variant="outline" size="lg" asChild>
-                <Link to="/townsville">← Back to Home</Link>
-              </Button>
+            {/* Quick Stats */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+              {[
+                { icon: <UtensilsCrossed className="w-5 h-5" />, label: "50+ Eateries", sublabel: "To explore" },
+                { icon: <Fish className="w-5 h-5" />, label: "Fresh Seafood", sublabel: "Local catch" },
+                { icon: <Coffee className="w-5 h-5" />, label: "Coffee Culture", sublabel: "Great cafés" },
+                { icon: <Wine className="w-5 h-5" />, label: "Waterfront Dining", sublabel: "Ocean views" }
+              ].map((stat, index) => (
+                <div key={index} className="text-center p-4 rounded-2xl bg-card border-2 hover:border-primary/30 transition-colors">
+                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary mb-2">
+                    {stat.icon}
+                  </div>
+                  <p className="font-semibold text-foreground">{stat.label}</p>
+                  <p className="text-sm text-muted-foreground">{stat.sublabel}</p>
+                </div>
+              ))}
             </div>
 
+            {/* Restaurants Grid */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <MapPin className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Top Restaurants & Cafés
+                  </h2>
+                  <p className="text-muted-foreground">Local favourites and hidden gems</p>
+                </div>
+              </div>
+
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {restaurants.map((restaurant, index) => (
+                  <ListingCard key={index} {...restaurant} />
+                ))}
+              </div>
+            </section>
+
+            {/* Best Areas Section */}
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Best Dining Areas
+              </h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="p-6 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">The Strand</h3>
+                  <p className="text-muted-foreground text-sm">Beachfront cafés, gelato, casual dining with ocean views.</p>
+                </div>
+                <div className="p-6 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">Palmer Street</h3>
+                  <p className="text-muted-foreground text-sm">Fine dining, cocktail bars, and upscale restaurants.</p>
+                </div>
+                <div className="p-6 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">Flinders Street</h3>
+                  <p className="text-muted-foreground text-sm">Cafés, pubs, and casual eateries in the CBD.</p>
+                </div>
+                <div className="p-6 rounded-xl border-2 bg-card">
+                  <h3 className="font-semibold text-foreground mb-2">Magnetic Island</h3>
+                  <p className="text-muted-foreground text-sm">Island cafés, beach bars, and relaxed dining.</p>
+                </div>
+              </div>
+            </section>
+
+            {/* Newsletter CTA */}
+            <NewsletterCTA className="mb-12" />
           </div>
         </main>
-
       </div>
     </>
   );
