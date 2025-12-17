@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, FileText } from "lucide-react";
+import { Mail } from "lucide-react";
 
 interface NewsletterCTAProps {
   className?: string;
@@ -23,23 +23,17 @@ const NewsletterCTA = ({ className = "" }: NewsletterCTAProps) => {
             <p className="text-muted-foreground mb-4">
               Join 500+ locals getting weekly updates on events, markets, and local tips delivered to your inbox every Friday.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
-              <Button asChild size="lg">
-                <a 
-                  href="https://myaussieguide.beehiiv.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="gap-2"
-                >
-                  <Mail className="w-4 h-4" />
-                  Subscribe Free
-                </a>
-              </Button>
-              <Button variant="outline" size="lg" className="gap-2">
-                <FileText className="w-4 h-4" />
-                Download PDF Guide
-              </Button>
-            </div>
+            <Button asChild size="lg">
+              <a 
+                href="https://myaussieguide.beehiiv.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="gap-2"
+              >
+                <Mail className="w-4 h-4" />
+                Subscribe Free
+              </a>
+            </Button>
           </div>
         </div>
       </CardContent>
