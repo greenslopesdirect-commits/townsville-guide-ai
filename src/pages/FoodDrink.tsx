@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, UtensilsCrossed, Fish, Coffee, Wine, MapPin } from "lucide-react";
 import ListingCard from "@/components/ListingCard";
 import NewsletterCTA from "@/components/NewsletterCTA";
+import LocalInsightCard from "@/components/LocalInsightCard";
 
 // Import images
 import jamImage from "@/assets/jam-corner-townsville.webp";
@@ -215,6 +216,18 @@ const FoodDrink = () => {
                 </div>
               ))}
             </div>
+
+            {/* Must-Visit & Sunday Warning */}
+            <LocalInsightCard title="Must-Visit & Warning" variant="tip" className="mb-12">
+              <p>
+                <strong>Must-Visit:</strong> If you consider yourself a foodie, you cannot miss <strong>Otto's Market</strong>. 
+                It's the culinary soul of the city.
+              </p>
+              <p className="font-medium text-amber-700 dark:text-amber-300">
+                ⚠️ <strong>The Sunday Warning:</strong> Townsville takes its weekends seriously! Many of our best boutique cafes 
+                and CBD restaurants close by 1pm (or don't open at all) on Sundays. Check Google Maps before you trek.
+              </p>
+            </LocalInsightCard>
 
             {/* Restaurants Grid */}
             <section className="mb-16">

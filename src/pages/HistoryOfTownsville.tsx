@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
+import LocalInsightCard from "@/components/LocalInsightCard";
 import thenAndNow from "@/assets/history-then-and-now.jpg";
 import lifeOnCountry from "@/assets/history-life-on-country.jpg";
 import explorers from "@/assets/history-explorers.jpg";
@@ -194,6 +195,18 @@ const HistoryOfTownsville = () => {
               </p>
             </div>
           </section>
+
+          {/* The Garrison City Insight */}
+          <LocalInsightCard title="The Garrison City" variant="insight" className="mb-16">
+            <p>
+              You can't tell the story of Townsville without its stripes. As Australia's largest Garrison city, 
+              our military history is etched into the landscape—from the WWII observation bunkers on Castle Hill 
+              to the massive Lavarack Barracks.
+            </p>
+            <p className="font-medium text-amber-700 dark:text-amber-300">
+              🎖️ It's why our Anzac Day Dawn Service at The Strand isn't just an event; it's the heartbeat of the city.
+            </p>
+          </LocalInsightCard>
 
           {/* Section 1: Long Before Townsville */}
           <section className="mb-24 animate-fade-in pt-16 border-t border-border/30">

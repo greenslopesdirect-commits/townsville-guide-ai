@@ -6,6 +6,7 @@ import { ArrowLeft, Building, Waves, Home, TreePalm, MapPin } from "lucide-react
 import ListingCard from "@/components/ListingCard";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import FlightsButton from "@/components/FlightsButton";
+import LocalInsightCard from "@/components/LocalInsightCard";
 
 // Import images
 import theVilleImage from "@/assets/the-ville-resort-casino-townsville.webp";
@@ -174,6 +175,18 @@ const Accommodation = () => {
                 </div>
               ))}
             </div>
+
+            {/* Insider Knowledge */}
+            <LocalInsightCard title="Insider Knowledge" variant="insight" className="mb-12">
+              <p>
+                <strong>Where to Stay:</strong> Looking for that iconic skyline view? Book the <strong>Hotel Grand Chancellor</strong> 
+                (locals call it the "Sugar Shaker"). For a younger vibe, check out <strong>Rambutan</strong>.
+              </p>
+              <p className="font-medium text-amber-700 dark:text-amber-300">
+                💰 <strong>Budget Tip:</strong> Prices are dynamic! Rates can double during the V8 Supercars (July), 
+                so book months in advance if travelling then.
+              </p>
+            </LocalInsightCard>
 
             {/* Hotels Grid */}
             <section className="mb-16">

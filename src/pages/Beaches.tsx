@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
+import LocalInsightCard from "@/components/LocalInsightCard";
 
 interface BeachCardProps {
   title: string;
@@ -322,7 +323,18 @@ const Beaches = () => {
             </div>
 
             {/* Stinger Season Safety Alert */}
-            <StingerSeasonAlert className="mb-12" />
+            <StingerSeasonAlert className="mb-8" />
+
+            {/* Safety First Alert */}
+            <LocalInsightCard title="Safety First" variant="warning" className="mb-12">
+              <p>
+                <strong>Stinger Season</strong> runs from November to May, so always swim inside the stinger nets. 
+                And a golden rule for the tropics: Be "Croc-Wise."
+              </p>
+              <p className="font-medium text-red-700 dark:text-red-300">
+                🐊 If you're near a river mouth, creek, or estuary and don't see a "Safe to Swim" sign, keep your toes dry!
+              </p>
+            </LocalInsightCard>
 
             {/* Townsville Beaches Section */}
             <section className="mb-16">

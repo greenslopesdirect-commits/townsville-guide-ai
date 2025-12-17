@@ -8,6 +8,7 @@ import { triggerAiGuide, AI_PRESETS } from "@/utils/aiGuide";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
+import LocalInsightCard from "@/components/LocalInsightCard";
 
 const LocalTips = () => {
   const tips = [
@@ -187,10 +188,22 @@ const LocalTips = () => {
             </div>
 
             {/* Safety Alerts */}
-            <div className="space-y-4 mb-12">
+            <div className="space-y-4 mb-8">
               <StingerSeasonAlert />
               <HeatSafetyAlert />
             </div>
+
+            {/* Transport & Timing Insight */}
+            <LocalInsightCard title="Transport & Timing" variant="tip" className="mb-12">
+              <p>
+                <strong>Getting Around:</strong> While the Sunbus is reliable, renting a car unlocks the real magic 
+                of the region, like the Northern Beaches.
+              </p>
+              <p className="font-medium text-emerald-700 dark:text-emerald-300">
+                🛍️ <strong>Retail Therapy:</strong> Don't leave your shopping for late Saturday afternoon! 
+                Most shops close early on weekends. We start our days early to beat the heat.
+              </p>
+            </LocalInsightCard>
 
             {/* Tips Grid */}
             <section className="mb-16">
