@@ -14,6 +14,7 @@ import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
 import billabongImage from "@/assets/billabong-sanctuary-townsville.webp";
 import jezzineImage from "@/assets/jezzine-barracks-townsville.webp";
 import strandImage from "@/assets/the-strand-townsville.webp";
+import reefAquariumImage from "@/assets/great-barrier-reef-aquarium-townsville.webp";
 
 const ThingsToDo = () => {
   const attractions = [
@@ -93,18 +94,19 @@ const ThingsToDo = () => {
       subtitle: "Heritage & Coastal Walk"
     },
     {
-      title: "Reef HQ Aquarium",
-      description: "The world's largest living coral reef aquarium, home to turtles, sharks, and colourful reef fish. Great for families and rainy days.",
-      tags: ["Family Friendly", "Indoor", "Educational"],
+      title: "The Great Barrier Reef Aquarium",
+      description: "Australia's National Education Centre for the Great Barrier Reef. The Great Barrier Reef Aquarium is currently closed and is a planned future attraction, with a target opening year of 2029.",
+      image: reefAquariumImage,
+      tags: ["Coming 2029", "Future Attraction", "Educational"],
       features: [
-        "Living coral reef exhibits",
-        "Turtle hospital tours",
-        "Touch tanks for kids",
-        "Air-conditioned (great for hot days)"
+        "National Education Centre for the Reef",
+        "Currently closed for redevelopment",
+        "Target opening: 2029",
+        "Located at Townsville waterfront"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Reef+HQ+Aquarium+Townsville",
-      aiPrompt: "How much time should I spend at Reef HQ Aquarium and what is the best time to visit?",
-      subtitle: "World's Largest Coral Aquarium"
+      aiPrompt: "What is the Great Barrier Reef Aquarium and when will it reopen?",
+      subtitle: "Future Attraction"
     },
     {
       title: "Museum of Tropical Queensland",
