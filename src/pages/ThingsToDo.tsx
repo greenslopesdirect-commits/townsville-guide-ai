@@ -135,6 +135,20 @@ const ThingsToDo = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Riverway+Townsville",
       aiPrompt: "How much time should I spend at Riverway Parklands and what is the best time to visit?",
       subtitle: "Parks & Recreation"
+    },
+    {
+      title: "Anderson Park Botanic Gardens",
+      description: "A peaceful 19-hectare botanic garden showcasing North Queensland's tropical plants, shaded walking paths, and river views. A favourite for locals, photographers, and anyone wanting a slower-paced outdoor experience.",
+      tags: ["Free Entry", "Nature", "Relaxing"],
+      features: [
+        "19 hectares of tropical gardens",
+        "Shaded walking paths",
+        "River views and picnic spots",
+        "Great for photography and birdlife"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Anderson+Park+Botanic+Gardens+Townsville",
+      aiPrompt: "What can I see at Anderson Park Botanic Gardens and how long should I spend there?",
+      subtitle: "Tropical Gardens & River Walks"
     }
   ];
 
