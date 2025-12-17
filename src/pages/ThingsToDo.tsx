@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog } from "lucide-react";
+import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog, Clock } from "lucide-react";
 import ListingCard from "@/components/ListingCard";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
 import NewsletterCTA from "@/components/NewsletterCTA";
@@ -16,7 +16,8 @@ import jezzineImage from "@/assets/jezzine-barracks-townsville.webp";
 import strandImage from "@/assets/the-strand-townsville.webp";
 
 const ThingsToDo = () => {
-  const attractions = [
+  // Primary attractions - the top 5 must-do experiences
+  const primaryAttractions = [
     {
       title: "Castle Hill Lookout",
       description: "Townsville's iconic 286m granite monolith with 360-degree views over the city, harbour, and Magnetic Island. Multiple walking tracks or drive to the summit.",
@@ -29,7 +30,8 @@ const ThingsToDo = () => {
         "Bring water — it gets hot!"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Castle+Hill+Townsville",
-      aiPrompt: "How much time should I spend at Castle Hill and what is the best time to visit?",
+      aiPrompt: "What's the best time to climb Castle Hill and how long does it take?",
+      aiButtonText: "Plan This Visit",
       subtitle: "Must-Do Experience"
     },
     {
@@ -44,7 +46,8 @@ const ThingsToDo = () => {
         "Dog-friendly zones at certain times"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville",
-      aiPrompt: "How much time should I spend at The Strand and what is the best time to visit?",
+      aiPrompt: "What's the best time to visit The Strand and where should I eat nearby?",
+      aiButtonText: "Ask the Local AI",
       subtitle: "Beachfront Promenade"
     },
     {
@@ -59,7 +62,8 @@ const ThingsToDo = () => {
         "Snorkelling at Alma Bay"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Ferry+Terminal",
-      aiPrompt: "How much time should I spend at Magnetic Island and what is the best time to visit?",
+      aiPrompt: "How should I plan a day trip to Magnetic Island? What's the ferry schedule?",
+      aiButtonText: "Plan This Visit",
       subtitle: "20 Min Ferry Ride"
     },
     {
@@ -74,51 +78,9 @@ const ThingsToDo = () => {
         "BBQ and picnic areas"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Billabong+Sanctuary+Townsville",
-      aiPrompt: "How much time should I spend at Billabong Sanctuary and what is the best time to visit?",
+      aiPrompt: "What time should I arrive at Billabong Sanctuary to see all the shows?",
+      aiButtonText: "Ask the Local AI",
       subtitle: "Wildlife Experience"
-    },
-    {
-      title: "Jezzine Barracks",
-      description: "Beautifully restored heritage site with a 1.4km elevated coastal boardwalk, military history displays, and stunning ocean views. Perfect for a peaceful walk.",
-      image: jezzineImage,
-      tags: ["Free Entry", "History", "Scenic Walk"],
-      features: [
-        "1.4km elevated boardwalk",
-        "Kissing Point Fort ruins",
-        "Playgrounds and BBQ areas",
-        "Free entry and parking"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Jezzine+Barracks+Townsville",
-      aiPrompt: "How much time should I spend at Jezzine Barracks and what is the best time to visit?",
-      subtitle: "Heritage & Coastal Walk"
-    },
-    {
-      title: "Reef HQ Aquarium",
-      description: "The world's largest living coral reef aquarium, home to turtles, sharks, and colourful reef fish. Great for families and rainy days.",
-      tags: ["Family Friendly", "Indoor", "Educational"],
-      features: [
-        "Living coral reef exhibits",
-        "Turtle hospital tours",
-        "Touch tanks for kids",
-        "Air-conditioned (great for hot days)"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Reef+HQ+Aquarium+Townsville",
-      aiPrompt: "How much time should I spend at Reef HQ Aquarium and what is the best time to visit?",
-      subtitle: "World's Largest Coral Aquarium"
-    },
-    {
-      title: "Museum of Tropical Queensland",
-      description: "Explore the Pandora shipwreck gallery, dinosaur fossils, and tropical Queensland history. Perfect for history buffs and families.",
-      tags: ["Indoor", "History", "Family Friendly"],
-      features: [
-        "HMS Pandora shipwreck exhibit",
-        "Dinosaur and fossil galleries",
-        "Indigenous heritage displays",
-        "Interactive exhibits for kids"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Museum+of+Tropical+Queensland",
-      aiPrompt: "How much time should I spend at the Museum of Tropical Queensland and what is the best time to visit?",
-      subtitle: "History & Discovery"
     },
     {
       title: "Riverway Parklands",
@@ -131,8 +93,56 @@ const ThingsToDo = () => {
         "Art gallery and café"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Riverway+Townsville",
-      aiPrompt: "How much time should I spend at Riverway Parklands and what is the best time to visit?",
+      aiPrompt: "What facilities are at Riverway and is it good for kids?",
+      aiButtonText: "Plan This Visit",
       subtitle: "Parks & Recreation"
+    }
+  ];
+
+  // Secondary attractions - still worth visiting
+  const secondaryAttractions = [
+    {
+      title: "Jezzine Barracks",
+      description: "Heritage site with a coastal boardwalk and military history. A pleasant spot for a quiet walk.",
+      image: jezzineImage,
+      tags: ["Free Entry", "History"],
+      features: [
+        "1.4km elevated boardwalk",
+        "Kissing Point Fort ruins",
+        "Free entry and parking"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Jezzine+Barracks+Townsville",
+      aiPrompt: "Tell me about the history at Jezzine Barracks",
+      aiButtonText: "Learn More",
+      subtitle: "Heritage Walk"
+    },
+    {
+      title: "Museum of Tropical Queensland",
+      description: "Home to the Pandora shipwreck gallery and regional history exhibits. Good for a rainy day.",
+      tags: ["Indoor", "History"],
+      features: [
+        "HMS Pandora shipwreck exhibit",
+        "Dinosaur and fossil galleries",
+        "Interactive exhibits for kids"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Museum+of+Tropical+Queensland",
+      aiPrompt: "What are the highlights at the Museum of Tropical Queensland?",
+      aiButtonText: "Learn More",
+      subtitle: "History & Discovery"
+    },
+    {
+      title: "Reef HQ Aquarium",
+      description: "Living coral reef aquarium with turtles, sharks, and reef fish. Great for families and air-conditioned.",
+      tags: ["Family Friendly", "Indoor"],
+      features: [
+        "Living coral reef exhibits",
+        "Turtle hospital tours",
+        "Air-conditioned"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Reef+HQ+Aquarium+Townsville",
+      aiPrompt: "What can I see at Reef HQ Aquarium?",
+      aiButtonText: "Learn More",
+      subtitle: "Indoor Attraction"
     }
   ];
 
@@ -150,7 +160,7 @@ const ThingsToDo = () => {
             "@type": "ItemList",
             "name": "Things to Do in Townsville",
             "description": "Top attractions and activities in Townsville",
-            "itemListElement": attractions.map((item, index) => ({
+            "itemListElement": [...primaryAttractions, ...secondaryAttractions].map((item, index) => ({
               "@type": "ListItem",
               "position": index + 1,
               "name": item.title
@@ -216,24 +226,66 @@ const ThingsToDo = () => {
               </p>
             </LocalInsightCard>
 
-            {/* Attractions Grid */}
-            <section className="mb-16">
+            {/* Primary Attractions Grid */}
+            <section className="mb-12">
               <div className="flex items-center gap-3 mb-8">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                    Top Attractions & Experiences
+                    Top 5 Attractions
                   </h2>
-                  <p className="text-muted-foreground">Must-see spots for visitors</p>
+                  <p className="text-muted-foreground">The must-see experiences in Townsville</p>
                 </div>
               </div>
 
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {attractions.map((attraction, index) => (
+                {primaryAttractions.map((attraction, index) => (
                   <ListingCard key={index} {...attraction} />
                 ))}
+              </div>
+            </section>
+
+            {/* Secondary Attractions */}
+            <section className="mb-12">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-muted">
+                  <Building2 className="w-5 h-5 text-muted-foreground" />
+                </div>
+                <div>
+                  <h2 className="text-xl md:text-2xl font-semibold text-foreground">
+                    More to Explore
+                  </h2>
+                  <p className="text-sm text-muted-foreground">Worth a visit if you have extra time</p>
+                </div>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-3">
+                {secondaryAttractions.map((attraction, index) => (
+                  <ListingCard key={index} {...attraction} />
+                ))}
+              </div>
+            </section>
+
+            {/* Future Attraction - Great Barrier Reef Aquarium */}
+            <section className="mb-16">
+              <div className="p-6 rounded-xl border-2 border-dashed border-muted-foreground/30 bg-muted/30">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 rounded-lg bg-amber-100 dark:bg-amber-900/30">
+                    <Clock className="w-5 h-5 text-amber-600 dark:text-amber-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-foreground mb-1">
+                      Great Barrier Reef Aquarium <span className="text-sm font-normal text-muted-foreground">(Planned – 2029)</span>
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      Australia's proposed National Education Centre for the Great Barrier Reef. According to the official project website, 
+                      the aquarium is a planned future attraction for Townsville with a target opening year of 2029. 
+                      It is not currently open to visitors.
+                    </p>
+                  </div>
+                </div>
               </div>
             </section>
 
