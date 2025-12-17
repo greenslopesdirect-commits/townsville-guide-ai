@@ -7,7 +7,6 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { Link } from "react-router-dom";
 import { checkPendingAiQuestion } from "@/utils/aiGuide";
-import FlightsButton from "@/components/FlightsButton";
 import heroImage from "@/assets/strand-hero.jpg";
 
 // Weather widget component using free Open-Meteo API
@@ -51,21 +50,31 @@ const HeroWeatherWidget = () => {
   if (!weather) return null;
 
   return (
-    <div className="absolute top-4 right-4 md:top-6 md:right-8 z-20 bg-white/20 backdrop-blur-md rounded-xl px-4 py-2 shadow-lg border border-white/30">
-      <div className="flex items-center gap-2 text-white">
-        <span className="text-2xl">{weather.icon}</span>
-        <div className="text-left">
-          <p className="text-lg font-bold leading-tight drop-shadow-md">{weather.temp}°C</p>
-          <p className="text-xs opacity-90 drop-shadow-sm">Townsville</p>
-        </div>
+    <div className="flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2">
+      <span className="text-2xl">{weather.icon}</span>
+      <div className="text-left">
+        <p className="text-sm font-semibold text-foreground leading-tight">{weather.temp}°C</p>
+        <p className="text-xs text-muted-foreground">Townsville</p>
       </div>
     </div>
   );
 };
+
+// Quick chip component for navigation
+const QuickChip = ({ label, to }: { label: string; to: string }) => (
+  <Link
+    to={to}
+    className="inline-flex items-center px-4 py-2 bg-primary/10 hover:bg-primary/20 text-primary font-medium text-sm rounded-full transition-colors"
+  >
+    {label}
+  </Link>
+);
+
 const Hero = () => {
   const [aiInputValue, setAiInputValue] = useState("");
   const [chatResponse, setChatResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
   useEffect(() => {
     // Register global setter for external triggers
     (window as any).setAiInputValue = (text: string) => {
@@ -81,6 +90,7 @@ const Hero = () => {
     // Check for pending AI questions from cross-page navigation
     checkPendingAiQuestion();
   }, []);
+
   const parseChatResponse = (text: string) => {
     const parts: Array<{
       type: 'text' | 'links';
@@ -94,7 +104,6 @@ const Hero = () => {
     let lastIndex = 0;
     let match;
     while ((match = regex.exec(text)) !== null) {
-      // Add text before the link
       if (match.index > lastIndex) {
         parts.push({
           type: 'text',
@@ -102,7 +111,6 @@ const Hero = () => {
         });
       }
 
-      // Parse links
       const linksStr = match[1];
       const links: {
         google_maps?: string;
@@ -122,7 +130,6 @@ const Hero = () => {
       lastIndex = regex.lastIndex;
     }
 
-    // Add remaining text
     if (lastIndex < text.length) {
       parts.push({
         type: 'text',
@@ -132,25 +139,19 @@ const Hero = () => {
     return parts;
   };
 
-  // Parse markdown links like [View on Google Maps](https://google.com/maps/...) and render as MapLocationCard
-  // Also handles 👉 emoji cleanup before map links
   const renderTextWithMapCards = (text: string) => {
-    // Clean up 👉 emoji that appears before map links
     const cleanedText = text.replace(/👉\s*\[/g, '[');
-    
     const mapsLinkRegex = /\[([^\]]*)\]\((https?:\/\/(?:www\.)?google\.com\/maps[^\)]*)\)/g;
     const parts: React.ReactNode[] = [];
     let lastIndex = 0;
     let match;
 
     while ((match = mapsLinkRegex.exec(cleanedText)) !== null) {
-      // Add text before the link
       if (match.index > lastIndex) {
         const textBefore = cleanedText.slice(lastIndex, match.index);
         parts.push(<span key={`text-${lastIndex}`}>{textBefore}</span>);
       }
       
-      // Add the MapLocationCard
       const [, , url] = match;
       parts.push(
         <MapLocationCard 
@@ -162,13 +163,13 @@ const Hero = () => {
       lastIndex = mapsLinkRegex.lastIndex;
     }
 
-    // Add remaining text
     if (lastIndex < cleanedText.length) {
       parts.push(<span key={`text-${lastIndex}`}>{cleanedText.slice(lastIndex)}</span>);
     }
 
     return parts.length > 0 ? parts : cleanedText;
   };
+
   const handleSend = async () => {
     if (!aiInputValue.trim()) {
       toast.error("Please enter a question");
@@ -177,13 +178,8 @@ const Hero = () => {
     setIsLoading(true);
     setChatResponse("");
     try {
-      const {
-        data,
-        error
-      } = await supabase.functions.invoke('townsville-chat', {
-        body: {
-          question: aiInputValue
-        }
+      const { data, error } = await supabase.functions.invoke('townsville-chat', {
+        body: { question: aiInputValue }
       });
       if (error) throw error;
       if (data?.answer) {
@@ -199,110 +195,139 @@ const Hero = () => {
       setIsLoading(false);
     }
   };
+
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter' && !isLoading) {
       handleSend();
     }
   };
+
   const handleClear = () => {
     setAiInputValue("");
     setChatResponse("");
   };
-  return <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-20 md:pt-24">
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat pointer-events-none" style={{
-      backgroundImage: `url(${heroImage})`
-    }} role="img" aria-label="The Strand beachfront with palm trees in Townsville, North Queensland" />
-      
-      {/* Darker Gradient Overlay for better text contrast */}
-      <div className="absolute inset-0 bg-black/40 pointer-events-none" />
-      
-      {/* Weather Widget - Top Right */}
-      <HeroWeatherWidget />
-      
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] animate-fade-in" style={{
-        textShadow: '2px 2px 8px rgba(0,0,0,0.9), 0 0 20px rgba(0,0,0,0.5)'
-      }}>Welcome to MyAussieGuide – Townsville 👋</h1>
-        <h2 className="text-2xl md:text-4xl font-semibold mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{
-        textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)'
-      }}>
-          AI-powered, but Local-Verified
-        </h2>
-        <p className="text-lg md:text-xl mb-6 max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{
-        textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)'
-      }}>
-          No hallucinations, just real North Queensland tips. Discover Townsville's best beaches, restaurants, cafés, dog parks, attractions, and hidden gems — all with help from a smart local AI assistant.
-        </p>
-        <div className="text-left max-w-2xl mx-auto mb-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{
-        textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)'
-      }}>
-          <p className="text-lg md:text-xl font-semibold mb-3">
-            <strong>Ask your guide anything, such as:</strong>
-          </p>
-          <ul className="text-base md:text-lg space-y-2 list-disc list-inside ml-2">
-            <li>"Where should we eat tonight?"</li>
-            <li>"What's a good family beach near Townsville?"</li>
-            <li>"What's happening this weekend?"</li>
-            <li>"Where can I walk my dog off-leash?"</li>
-          </ul>
-        </div>
-        <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] animate-fade-in" style={{
-        textShadow: '1px 1px 6px rgba(0,0,0,0.9), 0 0 15px rgba(0,0,0,0.4)'
-      }}>
-          👇 Ask me anything — beaches, restaurants, dog-friendly spots, things to do, ferries, weather, or hidden gems!
-        </p>
+
+  return (
+    <section className="min-h-screen w-full pt-20 md:pt-24">
+      {/* Split Screen Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-5rem)] md:min-h-[calc(100vh-6rem)]">
         
-        {/* Search/Chat Box */}
-        <div className="max-w-2xl mx-auto mb-8 animate-scale-in">
-          <div className="relative flex items-center gap-2">
-            <div className="relative flex-1">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground z-10" size={20} />
-              <Input id="townsville-ai-input" type="text" placeholder="What would you like to know?" className="h-16 pl-12 pr-4 text-base rounded-2xl bg-white/95 backdrop-blur-sm border-white/40 shadow-xl focus-visible:ring-primary focus-visible:ring-2 text-gray-900 placeholder:text-gray-500" value={aiInputValue} onChange={e => setAiInputValue(e.target.value)} onKeyPress={handleKeyPress} disabled={isLoading} />
+        {/* Left Column - Content */}
+        <div className="bg-background flex flex-col justify-center px-6 py-12 lg:px-12 xl:px-16 order-1">
+          <div className="max-w-xl mx-auto lg:mx-0 w-full">
+            {/* Weather Widget */}
+            <div className="mb-6">
+              <HeroWeatherWidget />
             </div>
-            {aiInputValue && <Button onClick={handleClear} variant="ghost" className="h-16 w-16 rounded-2xl hover:bg-white/20 shrink-0" aria-label="Clear input and response" type="button">
-                <X size={20} className="shrink-0 text-white" />
-              </Button>}
-            <Button onClick={handleSend} disabled={isLoading || !aiInputValue.trim()} className="h-16 w-16 rounded-2xl bg-primary hover:bg-primary/90 shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center shrink-0" aria-label="Send message" type="button">
-              <MessageCircle size={24} className="shrink-0" />
-            </Button>
-          </div>
-          
-          {/* Response Display */}
-          {chatResponse && <div className="mt-6 mb-8 bg-white/90 backdrop-blur-sm text-foreground rounded-2xl shadow-md text-left animate-fade-in overflow-y-auto max-h-[75vh]">
-              <div className="p-6 pb-8">
-                <strong className="text-primary">Answer:</strong>
-                <div className="mt-2 mb-2 whitespace-pre-wrap">
-                  {parseChatResponse(chatResponse).map((part, index) => <span key={index}>
-                      {part.type === 'text' ? renderTextWithMapCards(part.content) : <span className="inline-flex gap-2 my-2">
-                          {part.links?.google_maps && <MapLocationCard url={part.links.google_maps} />}
-                          {part.links?.booking && <a href={part.links.booking} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-3 py-1.5 text-sm bg-primary hover:bg-primary/80 text-primary-foreground rounded-full transition-colors">
-                              🏨 Check Availability
-                            </a>}
-                        </span>}
-                    </span>)}
+
+            {/* Headline */}
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-foreground mb-4 leading-tight">
+              Your Local AI Guide to Townsville
+            </h1>
+            
+            {/* Subtext */}
+            <p className="text-lg md:text-xl text-muted-foreground mb-8">
+              AI-powered. Local-Verified. No hallucinations.
+            </p>
+
+            {/* Search Bar - Large & Prominent */}
+            <div className="mb-6">
+              <div className="relative flex items-center gap-3">
+                <div className="relative flex-1">
+                  <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-muted-foreground z-10" size={22} />
+                  <Input
+                    id="townsville-ai-input"
+                    type="text"
+                    placeholder="Ask me anything about Townsville..."
+                    className="h-14 md:h-16 pl-14 pr-4 text-base md:text-lg rounded-full bg-background border-2 border-border shadow-lg focus-visible:ring-primary focus-visible:ring-2 focus-visible:border-primary"
+                    value={aiInputValue}
+                    onChange={e => setAiInputValue(e.target.value)}
+                    onKeyPress={handleKeyPress}
+                    disabled={isLoading}
+                  />
+                </div>
+                {aiInputValue && (
+                  <Button
+                    onClick={handleClear}
+                    variant="ghost"
+                    className="h-14 md:h-16 w-14 md:w-16 rounded-full hover:bg-muted shrink-0"
+                    aria-label="Clear input and response"
+                    type="button"
+                  >
+                    <X size={20} className="shrink-0 text-muted-foreground" />
+                  </Button>
+                )}
+                <Button
+                  onClick={handleSend}
+                  disabled={isLoading || !aiInputValue.trim()}
+                  className="h-14 md:h-16 w-14 md:w-16 rounded-full bg-primary hover:bg-primary/90 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center shrink-0"
+                  aria-label="Send message"
+                  type="button"
+                >
+                  <MessageCircle size={24} className="shrink-0" />
+                </Button>
+              </div>
+            </div>
+
+            {/* Quick Chips */}
+            <div className="flex flex-wrap gap-3 mb-8">
+              <QuickChip label="🏖️ Beaches" to="/townsville/beaches" />
+              <QuickChip label="🍽️ Food" to="/townsville/food" />
+              <QuickChip label="🎉 Events" to="/townsville/events" />
+              <QuickChip label="🐕 Dog-Friendly" to="/townsville/dog-friendly" />
+            </div>
+
+            {/* Response Display */}
+            {chatResponse && (
+              <div className="bg-muted/50 border border-border rounded-2xl shadow-md text-left animate-fade-in overflow-y-auto max-h-[50vh]">
+                <div className="p-6">
+                  <strong className="text-primary">Answer:</strong>
+                  <div className="mt-2 whitespace-pre-wrap text-foreground">
+                    {parseChatResponse(chatResponse).map((part, index) => (
+                      <span key={index}>
+                        {part.type === 'text' ? renderTextWithMapCards(part.content) : (
+                          <span className="inline-flex gap-2 my-2">
+                            {part.links?.google_maps && <MapLocationCard url={part.links.google_maps} />}
+                            {part.links?.booking && (
+                              <a
+                                href={part.links.booking}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-1 px-3 py-1.5 text-sm bg-primary hover:bg-primary/80 text-primary-foreground rounded-full transition-colors"
+                              >
+                                🏨 Check Availability
+                              </a>
+                            )}
+                          </span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>}
-          
-          {isLoading && <div className="mt-6 mb-8 bg-white/90 backdrop-blur-sm text-foreground p-6 rounded-2xl shadow-md text-center animate-fade-in">
-              <p className="text-muted-foreground">Thinking...</p>
-            </div>}
-          
-                    {/* History CTA Button */}
-          <div className="mt-8 animate-fade-in flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to="/townsville/history">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-4 text-base md:text-lg font-semibold" aria-label="Discover the history of Townsville">
-                Discover Townsville's Story 📜
-              </Button>
-            </Link>
-            <FlightsButton size="lg" className="rounded-full px-8 py-4 text-base md:text-lg font-semibold" />
+            )}
+
+            {isLoading && (
+              <div className="bg-muted/50 border border-border p-6 rounded-2xl shadow-md text-center animate-fade-in">
+                <p className="text-muted-foreground">Thinking...</p>
+              </div>
+            )}
           </div>
+        </div>
 
-        </div>   {/* ← CLOSES max-w-2xl wrapper */}
-      </div>     {/* ← CLOSES relative z-10 content wrapper */}
-
-    </section>;
+        {/* Right Column - Image */}
+        <div className="relative h-64 lg:h-auto order-2 lg:order-2">
+          <img
+            src={heroImage}
+            alt="The Strand beachfront with palm trees in Townsville, North Queensland"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          {/* Subtle gradient overlay on mobile for better transition */}
+          <div className="absolute inset-0 bg-gradient-to-b from-background/20 to-transparent lg:hidden" />
+        </div>
+      </div>
+    </section>
+  );
 };
+
 export default Hero;
