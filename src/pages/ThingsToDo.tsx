@@ -6,6 +6,7 @@ import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building
 import ListingCard from "@/components/ListingCard";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
 import NewsletterCTA from "@/components/NewsletterCTA";
+import LocalInsightCard from "@/components/LocalInsightCard";
 
 // Import images
 import castleHillImage from "@/assets/castle-hill-townsville.webp";
@@ -202,7 +203,18 @@ const ThingsToDo = () => {
             </div>
 
             {/* Heat Safety Alert */}
-            <HeatSafetyAlert className="mb-12" />
+            <HeatSafetyAlert className="mb-8" />
+
+            {/* Go Local Suggestion */}
+            <LocalInsightCard title="Go Local" variant="location" className="mb-12">
+              <p>
+                Done The Strand? It's time to go local. Head out to the <strong>Riverway Lagoons</strong> in Thuringowa—it's 
+                our favourite freshwater alternative to the beach (and totally free!).
+              </p>
+              <p className="font-medium text-blue-700 dark:text-blue-300">
+                🗺️ If you want to see where the locals really hang out, take a walk through the Palmetum or drive up Castle Hill at sunset.
+              </p>
+            </LocalInsightCard>
 
             {/* Attractions Grid */}
             <section className="mb-16">

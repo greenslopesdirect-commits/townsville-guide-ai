@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Music, ShoppingBag, Trophy, MapPin, Repeat, Star } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
 import NewsletterCTA from "@/components/NewsletterCTA";
+import LocalInsightCard from "@/components/LocalInsightCard";
 
 const Events = () => {
   const recurringEvents = [
@@ -236,6 +237,21 @@ const Events = () => {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Major Events Highlight */}
+            <LocalInsightCard title="The Big Ones You Can't Miss" variant="insight" className="mb-12">
+              <p>
+                <strong>🏎️ NTI Townsville 500 (Supercars):</strong> Every July, the Reid Park precinct shuts down 
+                for a weekend of street racing and massive concerts.
+              </p>
+              <p>
+                <strong>🥕 Market Watch:</strong> Locals go to <strong>Willows Rotary Markets</strong> (Sundays in Kirwan) 
+                for the best fresh fruit and veg.
+              </p>
+              <p className="font-medium text-amber-700 dark:text-amber-300">
+                🌅 <strong>Lest We Forget:</strong> The Anzac Day Dawn Service (April 25) at The Strand is a deeply moving experience.
+              </p>
+            </LocalInsightCard>
 
             {/* Recurring Events */}
             <section className="mb-16">
