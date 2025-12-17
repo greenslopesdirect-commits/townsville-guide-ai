@@ -4,7 +4,7 @@ import HeaderWeather from "@/components/HeaderWeather";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-[100] bg-white border-b border-border shadow-sm">
       <nav className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           
