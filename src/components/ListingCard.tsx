@@ -13,7 +13,6 @@ interface ListingCardProps {
   icon?: React.ReactNode;
   aiPrompt: string;
   subtitle?: string;
-  aiButtonText?: string;
 }
 
 const ListingCard = ({ 
@@ -25,8 +24,7 @@ const ListingCard = ({
   mapUrl, 
   icon, 
   aiPrompt,
-  subtitle,
-  aiButtonText = "Ask AI"
+  subtitle 
 }: ListingCardProps) => (
   <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col">
     {image && (
@@ -100,7 +98,7 @@ const ListingCard = ({
           className="gap-2 flex-1"
         >
           <span>🤖</span>
-          {aiButtonText}
+          Ask AI
         </Button>
       </div>
     </CardContent>

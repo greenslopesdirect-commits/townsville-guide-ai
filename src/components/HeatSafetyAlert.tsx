@@ -12,12 +12,12 @@ const HeatSafetyAlert = ({ className = "" }: HeatSafetyAlertProps) => {
     >
       <Sun className="h-5 w-5 text-orange-600 dark:text-orange-400" />
       <AlertTitle className="text-orange-800 dark:text-orange-300 font-semibold">
-        ☀️ Local Heat & Sun Safety Tips
+        ☀️ Heat & Sun Safety Notice
       </AlertTitle>
       <AlertDescription className="text-orange-700 dark:text-orange-400 mt-2">
         <p className="mb-2">
-          Townsville's tropical heat can be intense—plan outdoor activities for <strong>early morning (before 8am)</strong> or <strong>late afternoon (after 4pm)</strong> to avoid the midday sun. 
-          Locals hike Castle Hill at sunrise and hit The Strand for sunset swims.
+          Townsville's tropical heat can be intense, especially between 10am–3pm. 
+          Locals recommend hiking Castle Hill early morning (before 7am) or late afternoon to avoid heatstroke.
         </p>
         <ul className="list-disc list-inside text-sm space-y-1 mb-2">
           <li>Carry at least 1L of water per person</li>
