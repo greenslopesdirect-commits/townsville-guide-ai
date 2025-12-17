@@ -316,14 +316,12 @@ const Hero = () => {
         </div>
 
         {/* Right Column - Image */}
-        <div className="relative h-64 lg:h-auto order-2 lg:order-2">
+        <div className="relative h-64 md:h-80 lg:h-[500px] xl:h-[600px] order-2 lg:order-2 lg:my-auto lg:mr-8 xl:mr-12">
           <img
             src={heroImage}
             alt="The Strand beachfront with palm trees in Townsville, North Queensland"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="w-full h-full object-cover lg:rounded-2xl lg:shadow-xl"
           />
-          {/* Subtle gradient overlay on mobile for better transition */}
-          <div className="absolute inset-0 bg-gradient-to-b from-background/20 to-transparent lg:hidden" />
         </div>
       </div>
     </section>
