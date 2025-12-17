@@ -208,12 +208,12 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen w-full pt-20 md:pt-24">
+    <section className="min-h-screen w-full">
       {/* Split Screen Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-5rem)] md:min-h-[calc(100vh-6rem)]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
         
         {/* Left Column - Content */}
-        <div className="bg-background flex flex-col justify-center px-8 py-12 md:px-12 lg:px-16 xl:px-20 order-1">
+        <div className="bg-background flex flex-col justify-center px-8 py-12 pt-32 md:pt-36 md:px-12 lg:px-16 xl:px-20 order-1">
           <div className="max-w-xl mx-auto lg:mx-0 w-full">
             {/* Weather Widget */}
             <div className="mb-6">
