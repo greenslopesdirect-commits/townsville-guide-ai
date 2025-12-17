@@ -54,6 +54,56 @@ const Index = () => {
           }
           `}
         </script>
+
+        {/* FAQPage Schema - matches FaqSection content */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What's the best time to visit Townsville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dry season May–October is ideal for sunny days and comfortable temperatures, but Townsville's tropical climate means the city is warm and welcoming year-round."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Townsville family-friendly?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes — Townsville is extremely family-friendly. Riverway Lagoons, Castle Hill, The Strand waterpark, and Billabong Sanctuary are all great for families with kids of all ages."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What's the best free thing to do in Townsville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Watching sunset from The Strand beachfront or climbing Castle Hill Lookout for panoramic views are both completely free and unforgettable experiences."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Townsville dog-friendly?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Very — Townsville has several off-leash dog parks including Rowes Bay, dog-friendly beach zones along The Strand, and many pet-friendly cafés and restaurants."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I get to Magnetic Island from Townsville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "SeaLink ferries depart daily from the Breakwater Terminal in Townsville. The journey takes just 20 minutes, with multiple departures throughout the day."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* DO NOT render Header/Footer here — TownsvilleLayout handles them */}
