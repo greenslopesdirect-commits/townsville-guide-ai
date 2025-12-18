@@ -316,7 +316,7 @@ const Hero = () => {
         </div>
 
         {/* Right Column - Image */}
-        <div className="relative h-56 md:h-72 lg:h-[450px] xl:h-[520px] order-2 lg:mt-24 lg:mr-6 xl:mr-10">
+        <div className="relative h-56 md:h-72 lg:h-[450px] xl:h-[520px] order-2 lg:mt-[30px] lg:mr-6 xl:mr-10">
           <img
             src={heroImage}
             alt="The Strand beachfront with palm trees in Townsville, North Queensland"
