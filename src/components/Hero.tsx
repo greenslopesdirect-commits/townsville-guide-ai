@@ -208,15 +208,15 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full pb-8 lg:pb-12" style={{ backgroundColor: 'hsl(42, 35%, 96%)' }}>
+    <section className="min-h-screen w-full" style={{ backgroundColor: 'hsl(42, 35%, 96%)' }}>
       {/* Split Screen Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen items-center">
         
         {/* Left Column - Content */}
-        <div className="flex flex-col justify-center items-center px-6 py-6 pt-24 md:pt-28 lg:py-8 lg:px-8 xl:px-12 order-1">
+        <div className="flex flex-col justify-center items-center px-6 py-8 pt-28 md:pt-32 lg:py-12 lg:px-8 xl:px-12 order-1">
           <div className="max-w-lg w-full text-center lg:text-left">
             {/* Weather Widget */}
-            <div className="mb-4">
+            <div className="mb-6">
               <HeroWeatherWidget />
             </div>
 
@@ -316,7 +316,7 @@ const Hero = () => {
         </div>
 
         {/* Right Column - Image */}
-        <div className="relative h-48 md:h-64 lg:h-[400px] xl:h-[460px] order-2 lg:mt-4 lg:mr-6 xl:mr-10">
+        <div className="relative h-56 md:h-72 lg:h-[450px] xl:h-[520px] order-2 lg:mt-[30px] lg:mr-6 xl:mr-10">
           <img
             src={heroImage}
             alt="The Strand beachfront with palm trees in Townsville, North Queensland"
