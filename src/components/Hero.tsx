@@ -208,31 +208,31 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen w-full">
+    <section className="min-h-screen w-full" style={{ backgroundColor: 'hsl(42, 35%, 96%)' }}>
       {/* Split Screen Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen items-center">
         
         {/* Left Column - Content */}
-        <div className="bg-background flex flex-col justify-center items-center px-8 py-12 pt-32 md:pt-36 lg:px-12 xl:px-16 order-1">
-          <div className="max-w-xl w-full px-4 md:px-8 lg:px-12">
+        <div className="flex flex-col justify-center items-center px-6 py-8 pt-28 md:pt-32 lg:py-12 lg:px-8 xl:px-12 order-1">
+          <div className="max-w-lg w-full text-center lg:text-left">
             {/* Weather Widget */}
             <div className="mb-6">
               <HeroWeatherWidget />
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-foreground mb-4 leading-tight">
+            <h1 className="text-3xl md:text-4xl xl:text-5xl font-bold text-foreground mb-3 leading-tight">
               Your Local AI Guide to Townsville
             </h1>
             
             {/* Subtext */}
-            <p className="text-lg md:text-xl text-muted-foreground mb-8">
+            <p className="text-base md:text-lg text-muted-foreground mb-6">
               AI-powered. Local-Verified. No hallucinations.
             </p>
 
             {/* Search Bar - Large & Prominent */}
-            <div className="mb-6">
-              <div className="relative flex items-center gap-3">
+            <div className="mb-5">
+              <div className="relative flex items-center justify-center lg:justify-start gap-2">
                 <div className="relative flex-1">
                   <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-muted-foreground z-10" size={22} />
                   <Input
@@ -270,7 +270,7 @@ const Hero = () => {
             </div>
 
             {/* Quick Chips */}
-            <div className="flex flex-wrap gap-3 mb-8">
+            <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
               <QuickChip label="🏖️ Beaches" to="/townsville/beaches" />
               <QuickChip label="🍽️ Food" to="/townsville/food" />
               <QuickChip label="🎉 Events" to="/townsville/events" />
@@ -316,11 +316,11 @@ const Hero = () => {
         </div>
 
         {/* Right Column - Image */}
-        <div className="relative h-64 md:h-80 lg:h-[500px] xl:h-[600px] order-2 lg:order-2 lg:mt-20 lg:mr-8 xl:mr-12">
+        <div className="relative h-56 md:h-72 lg:h-[450px] xl:h-[520px] order-2 lg:mt-24 lg:mr-6 xl:mr-10">
           <img
             src={heroImage}
             alt="The Strand beachfront with palm trees in Townsville, North Queensland"
-            className="w-full h-full object-cover lg:rounded-2xl lg:shadow-xl"
+            className="w-full h-full object-cover lg:rounded-2xl shadow-lg"
           />
         </div>
       </div>
