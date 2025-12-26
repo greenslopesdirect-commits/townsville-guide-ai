@@ -19,7 +19,7 @@ const SEOHead = ({
     ? title
     : `${title} | MyAussieGuide`;
 
-  const siteUrl = "https://www.myaussieguide.com.au";
+  const siteUrl = "https://www.myaussieguide.com.au/";
   const canonicalUrl = canonical ? canonical : siteUrl;
 
   return (
