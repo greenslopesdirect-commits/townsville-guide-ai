@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Music, ShoppingBag, Trophy, MapPin, Repeat, Star } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
-import NewsletterCTA from "@/components/NewsletterCTA";
+
 import LocalInsightCard from "@/components/LocalInsightCard";
 
 const Events = () => {
@@ -316,8 +316,6 @@ const Events = () => {
               </div>
             </section>
 
-            {/* Newsletter CTA */}
-            <NewsletterCTA className="mb-12" />
           </div>
         </main>
       </div>

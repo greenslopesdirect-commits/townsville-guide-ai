@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog } from "lucide-react";
 import ListingCard from "@/components/ListingCard";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
-import NewsletterCTA from "@/components/NewsletterCTA";
+
 import LocalInsightCard from "@/components/LocalInsightCard";
 
 // Import images
@@ -283,8 +283,6 @@ const ThingsToDo = () => {
               </div>
             </section>
 
-            {/* Newsletter CTA */}
-            <NewsletterCTA className="mb-12" />
           </div>
         </main>
       </div>
