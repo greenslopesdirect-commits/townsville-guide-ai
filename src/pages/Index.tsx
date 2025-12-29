@@ -13,7 +13,7 @@ import FoodDrink from "@/components/FoodDrink";
 import DogFriendly from "@/components/DogFriendly";
 import EventsOn from "@/components/EventsOn";
 import Accommodation from "@/components/Accommodation";
-import LocalShopSection from "@/components/LocalShopSection";
+
 import MapSection from "@/components/MapSection";
 import AboutSection from "@/components/AboutSection";
 import FaqSection from "@/components/FaqSection";
