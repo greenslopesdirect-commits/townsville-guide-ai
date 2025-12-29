@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Building, Waves, Home, TreePalm, MapPin } from "lucide-react";
 import ListingCard from "@/components/ListingCard";
-import NewsletterCTA from "@/components/NewsletterCTA";
+
 import FlightsButton from "@/components/FlightsButton";
 import LocalInsightCard from "@/components/LocalInsightCard";
 
@@ -240,8 +240,6 @@ const Accommodation = () => {
               <FlightsButton size="lg" />
             </section>
 
-            {/* Newsletter CTA */}
-            <NewsletterCTA className="mb-12" />
           </div>
         </main>
       </div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, UtensilsCrossed, Fish, Coffee, Wine, MapPin } from "lucide-react";
 import ListingCard from "@/components/ListingCard";
-import NewsletterCTA from "@/components/NewsletterCTA";
+
 import LocalInsightCard from "@/components/LocalInsightCard";
 
 // Import images
@@ -275,8 +275,6 @@ const FoodDrink = () => {
               </div>
             </section>
 
-            {/* Newsletter CTA */}
-            <NewsletterCTA className="mb-12" />
           </div>
         </main>
       </div>

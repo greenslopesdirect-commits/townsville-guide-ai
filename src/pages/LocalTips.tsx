@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Lightbulb, Sun, Waves, Car, Dog, CloudRain, MapPin, ThermometerSun, Shield, Calendar } from "lucide-react";
 import { triggerAiGuide, AI_PRESETS } from "@/utils/aiGuide";
-import NewsletterCTA from "@/components/NewsletterCTA";
+
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
 import LocalInsightCard from "@/components/LocalInsightCard";
@@ -277,8 +277,6 @@ const LocalTips = () => {
               </div>
             </section>
 
-            {/* Newsletter CTA */}
-            <NewsletterCTA className="mb-12" />
           </div>
         </main>
       </div>
