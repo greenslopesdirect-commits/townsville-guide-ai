@@ -12,14 +12,50 @@ serve(async (req) => {
   }
 
   try {
-    const { question } = await req.json();
+    // Parse and validate request body
+    let body;
+    try {
+      body = await req.json();
+    } catch {
+      return new Response(
+        JSON.stringify({ error: 'Invalid JSON in request body' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
+    const { question } = body;
+
+    // Input validation: ensure question exists and is a string
+    if (!question || typeof question !== 'string') {
+      return new Response(
+        JSON.stringify({ error: 'Question is required and must be a string' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
+    // Trim and validate length (max 1000 characters to prevent abuse)
+    const trimmedQuestion = question.trim();
+    if (trimmedQuestion.length === 0) {
+      return new Response(
+        JSON.stringify({ error: 'Question cannot be empty' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
+    if (trimmedQuestion.length > 1000) {
+      return new Response(
+        JSON.stringify({ error: 'Question is too long (maximum 1000 characters)' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
     const LOVABLE_API_KEY = Deno.env.get('LOVABLE_API_KEY');
 
     if (!LOVABLE_API_KEY) {
       throw new Error('LOVABLE_API_KEY is not configured');
     }
 
-    console.log('Processing question:', question);
+    console.log('Processing question:', trimmedQuestion.substring(0, 100) + (trimmedQuestion.length > 100 ? '...' : ''));
 
     const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
       method: 'POST',
@@ -415,7 +451,7 @@ RULES:
 
 Always respond warmly and conversationally like a helpful Townsville local would.` 
           },
-          { role: 'user', content: question }
+          { role: 'user', content: trimmedQuestion }
         ],
       }),
     });
