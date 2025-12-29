@@ -17,8 +17,7 @@ const NewsletterSection = () => {
           </h2>
           
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Join locals and travelers receiving curated tips every Thursday. 
-            Sign up today and get the free guide sent straight to your inbox.
+            Local tools and insights to help you plan better weekends around Townsville.
           </p>
 
           <Button asChild size="lg" className="h-12 px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all">
