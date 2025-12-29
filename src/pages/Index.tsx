@@ -162,9 +162,10 @@ const Index = () => {
           <Accommodation />
         </section>
         
-        {/* Local Shop - Activity Book Waitlist */}
-        <LocalShopSection />
-        
+        {/* Local Shop - Activity Book Waitlist
+<LocalShopSection />
+*/}
+       
         <section id="map">
           <MapSection />
         </section>
