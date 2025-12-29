@@ -1,21 +1,21 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { toast } from "@/components/ui/sonner";
-import { Users, ShieldCheck, MapPin, MessageSquare } from "lucide-react";
+import { MapPinned, Wrench, Heart, MessageSquare } from "lucide-react";
 const CommunityTrustSection = () => {
   const trustStats = [
     {
-      icon: Users,
-      stat: "500+",
-      label: "Townsville locals receiving our weekly updates."
+      icon: MapPinned,
+      stat: "Real places",
+      label: "Townsville spots locals actually use and recommend."
     },
     {
-      icon: ShieldCheck,
-      stat: "100%",
-      label: "Local-Verified recommendations."
+      icon: Wrench,
+      stat: "Practical tools",
+      label: "Simple planners and calculators to help people enjoy North Queensland."
     },
     {
-      icon: MapPin,
-      stat: "Proudly",
+      icon: Heart,
+      stat: "Proudly local",
       label: "North Queensland owned and operated."
     }
   ];
@@ -35,7 +35,7 @@ const CommunityTrustSection = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Built by Locals, Loved by the Community
+            Built by Locals, for Locals
           </h2>
         </div>
 
