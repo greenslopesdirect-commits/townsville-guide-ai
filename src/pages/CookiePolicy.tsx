@@ -10,6 +10,7 @@ const CookiePolicy = () => {
         title="Cookie Policy | MyAussieGuide – Townsville"
         description="Learn how MyAussieGuide – Townsville uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
         canonical="https://www.myaussieguide.com.au/cookie-policy"
+        noindex={true}
       />
       <Helmet>
 

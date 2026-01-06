@@ -10,6 +10,7 @@ const PrivacyPolicy = () => {
         title="Privacy Policy | MyAussieGuide – Townsville"
         description="Read the Privacy Policy for MyAussieGuide – Townsville. Learn how we handle data, cookies, analytics and AI interactions on this website."
         canonical="https://www.myaussieguide.com.au/privacy-policy"
+        noindex={true}
       />
       <Helmet>
 

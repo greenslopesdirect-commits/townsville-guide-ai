@@ -10,6 +10,7 @@ const AffiliateDisclosure = () => {
         title="Affiliate Disclosure | MyAussieGuide – Townsville"
         description="Read MyAussieGuide affiliate disclosure, explaining how affiliate links work and how they support our Townsville local guide."
         canonical="https://www.myaussieguide.com.au/affiliate-disclosure"
+        noindex={true}
       />
       <Helmet>
 
