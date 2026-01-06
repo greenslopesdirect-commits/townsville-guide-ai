@@ -48,17 +48,8 @@ const SEOHead = ({
       <meta name="twitter:site" content="@myaussieguide" />
 
       {/* Indexing Control */}
-      {noindex ? (
-        <>
-          <meta name="robots" content="noindex, follow" />
-          <meta name="googlebot" content="noindex, follow" />
-        </>
-      ) : (
-        <>
-          <meta name="robots" content="index, follow" />
-          <meta name="googlebot" content="index, follow" />
-        </>
-      )}
+      <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
+      <meta name="googlebot" content={noindex ? "noindex, follow" : "index, follow"} />
 
       {/* Verification Script */}
       <script
