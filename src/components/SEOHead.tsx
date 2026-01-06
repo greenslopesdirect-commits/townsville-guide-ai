@@ -6,6 +6,7 @@ interface SEOHeadProps {
   canonical?: string;
   ogImage?: string;
   ogType?: string;
+  noindex?: boolean;
 }
 
 const SEOHead = ({
@@ -14,6 +15,7 @@ const SEOHead = ({
   canonical,
   ogImage = "https://www.myaussieguide.com.au/og-image.jpg",
   ogType = "website",
+  noindex = false,
 }: SEOHeadProps) => {
   const fullTitle = title.includes("MyAussieGuide")
     ? title
@@ -45,9 +47,18 @@ const SEOHead = ({
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:site" content="@myaussieguide" />
 
-      {/* Additional SEO */}
-      <meta name="robots" content="index, follow" />
-      <meta name="googlebot" content="index, follow" />
+      {/* Indexing Control */}
+      {noindex ? (
+        <>
+          <meta name="robots" content="noindex, follow" />
+          <meta name="googlebot" content="noindex, follow" />
+        </>
+      ) : (
+        <>
+          <meta name="robots" content="index, follow" />
+          <meta name="googlebot" content="index, follow" />
+        </>
+      )}
 
       {/* Verification Script */}
       <script

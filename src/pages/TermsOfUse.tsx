@@ -10,6 +10,7 @@ const TermsOfUse = () => {
         title="Terms of Use | MyAussieGuide – Townsville"
         description="Read the Terms of Use for MyAussieGuide – Townsville. Learn about disclaimers, limitations, and user responsibilities when using our AI-powered travel guide."
         canonical="https://www.myaussieguide.com.au/terms-of-use"
+        noindex={true}
       />
       <Helmet>
 
