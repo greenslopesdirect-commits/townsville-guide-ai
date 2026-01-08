@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog, Plane, UtensilsCrossed, ShoppingBag, BookOpen, Sun, Clock, Calendar } from "lucide-react";
+import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog, Plane, UtensilsCrossed, ShoppingBag, BookOpen, Sun, Clock, Calendar, Sunrise, CloudSun, Sunset, Moon } from "lucide-react";
 import ListingCard from "@/components/ListingCard";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
 
@@ -289,21 +289,24 @@ const ThingsToDo = () => {
               </div>
 
               {/* Daily Rhythm */}
-              <div className="bg-card rounded-2xl border-2 p-6 mb-8">
+              <div className="mb-8">
                 <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
                   <Sun className="w-5 h-5 text-primary" />
                   A simple daily rhythm that works:
                 </h3>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                   {[
-                    { time: "Morning", activity: "Castle Hill, walks, outdoor exploring" },
-                    { time: "Midday", activity: "Museum, lunch, Riverway lagoons, shade activities" },
-                    { time: "Afternoon", activity: "Magnetic Island or The Strand" },
-                    { time: "Evening", activity: "Sunset at The Strand or Castle Hill" }
+                    { time: "Morning", activity: "Castle Hill, walks, outdoor exploring", icon: Sunrise },
+                    { time: "Midday", activity: "Museum, lunch, Riverway lagoons, shade activities", icon: CloudSun },
+                    { time: "Afternoon", activity: "Magnetic Island or The Strand", icon: Sunset },
+                    { time: "Evening", activity: "Sunset at The Strand or Castle Hill", icon: Moon }
                   ].map((item, index) => (
-                    <div key={index} className="p-4 rounded-xl bg-background border">
-                      <p className="font-semibold text-primary text-sm mb-1">{item.time}</p>
-                      <p className="text-sm text-muted-foreground">{item.activity}</p>
+                    <div key={index} className="p-5 rounded-2xl bg-card border-2 border-border/40 hover:border-primary/30 transition-colors text-center">
+                      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-3">
+                        <item.icon className="w-6 h-6" />
+                      </div>
+                      <p className="font-semibold text-foreground mb-2">{item.time}</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{item.activity}</p>
                     </div>
                   ))}
                 </div>
@@ -312,82 +315,83 @@ const ThingsToDo = () => {
               {/* Itineraries */}
               <div className="grid md:grid-cols-2 gap-6">
                 {/* One Day */}
-                <div className="bg-card rounded-2xl border-2 p-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-primary" />
-                    If You Only Have One Day
-                  </h3>
-                  <ul className="space-y-3">
+                <div className="bg-card rounded-2xl border-2 border-border/40 hover:border-primary/30 transition-colors p-6">
+                  <div className="flex items-center gap-3 mb-5">
+                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+                      <Calendar className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">
+                      If You Only Have One Day
+                    </h3>
+                  </div>
+                  <div className="space-y-4">
                     {[
                       { time: "Morning", activity: "Castle Hill + The Strand" },
                       { time: "Midday", activity: "Museum of Tropical Queensland or Riverway" },
                       { time: "Afternoon", activity: "Lunch, shade, rest" },
                       { time: "Evening", activity: "Sunset walk or lookout" }
                     ].map((item, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full whitespace-nowrap">{item.time}</span>
+                      <div key={index} className="flex items-center gap-4 p-3 rounded-xl bg-background/50">
+                        <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1.5 rounded-full whitespace-nowrap min-w-[80px] text-center">{item.time}</span>
                         <span className="text-sm text-muted-foreground">{item.activity}</span>
-                      </li>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
 
                 {/* 2-3 Days */}
-                <div className="bg-card rounded-2xl border-2 p-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
-                    <Calendar className="w-5 h-5 text-primary" />
-                    If You Have 2–3 Days
-                  </h3>
-                  <ul className="space-y-3">
+                <div className="bg-card rounded-2xl border-2 border-border/40 hover:border-primary/30 transition-colors p-6">
+                  <div className="flex items-center gap-3 mb-5">
+                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary">
+                      <Calendar className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">
+                      If You Have 2–3 Days
+                    </h3>
+                  </div>
+                  <div className="space-y-4">
                     {[
                       { day: "Day 1", activity: "City + Strand + Castle Hill" },
                       { day: "Day 2", activity: "Magnetic Island day trip" },
                       { day: "Day 3", activity: "Riverway, gardens, wildlife or museum" }
                     ].map((item, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full whitespace-nowrap">{item.day}</span>
+                      <div key={index} className="flex items-center gap-4 p-3 rounded-xl bg-background/50">
+                        <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1.5 rounded-full whitespace-nowrap min-w-[80px] text-center">{item.day}</span>
                         <span className="text-sm text-muted-foreground">{item.activity}</span>
-                      </li>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               </div>
             </section>
 
             {/* Plan the Rest of Your Trip */}
             <section className="mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-                Plan the Rest of Your Townsville Trip
-              </h2>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-                <Link to="/townsville/flights" className="block">
-                  <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card h-full">
-                    <Plane className="w-8 h-8 text-primary mb-3" />
-                    <h3 className="font-semibold text-foreground mb-1">Flights to Townsville</h3>
-                    <p className="text-sm text-muted-foreground">Find the best flight options</p>
-                  </div>
-                </Link>
-                <Link to="/townsville/food" className="block">
-                  <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card h-full">
-                    <UtensilsCrossed className="w-8 h-8 text-primary mb-3" />
-                    <h3 className="font-semibold text-foreground mb-1">Townsville Food Guide</h3>
-                    <p className="text-sm text-muted-foreground">Best restaurants and cafés</p>
-                  </div>
-                </Link>
-                <Link to="/townsville/shopping" className="block">
-                  <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card h-full">
-                    <ShoppingBag className="w-8 h-8 text-primary mb-3" />
-                    <h3 className="font-semibold text-foreground mb-1">Townsville Shopping</h3>
-                    <p className="text-sm text-muted-foreground">Markets, malls and local stores</p>
-                  </div>
-                </Link>
-                <Link to="/townsville/history" className="block">
-                  <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card h-full">
-                    <BookOpen className="w-8 h-8 text-primary mb-3" />
-                    <h3 className="font-semibold text-foreground mb-1">Townsville History</h3>
-                    <p className="text-sm text-muted-foreground">Heritage and culture</p>
-                  </div>
-                </Link>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Compass className="w-6 h-6 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Plan the Rest of Your Townsville Trip
+                </h2>
+              </div>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                {[
+                  { to: "/townsville/flights", icon: Plane, title: "Flights to Townsville", desc: "Find the best flight options" },
+                  { to: "/townsville/food", icon: UtensilsCrossed, title: "Townsville Food Guide", desc: "Best restaurants and cafés" },
+                  { to: "/townsville/shopping", icon: ShoppingBag, title: "Townsville Shopping", desc: "Markets, malls and local stores" },
+                  { to: "/townsville/history", icon: BookOpen, title: "Townsville History", desc: "Heritage and culture" }
+                ].map((item, index) => (
+                  <Link key={index} to={item.to} className="block group">
+                    <div className="p-5 rounded-2xl border-2 border-border/40 hover:border-primary/30 transition-all duration-300 bg-card h-full text-center group-hover:shadow-md">
+                      <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-3 group-hover:bg-primary/20 transition-colors">
+                        <item.icon className="w-6 h-6" />
+                      </div>
+                      <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground">{item.desc}</p>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </section>
 
