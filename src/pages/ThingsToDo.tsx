@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog } from "lucide-react";
+import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog, Plane, UtensilsCrossed, ShoppingBag, BookOpen, Sun, Clock, Calendar } from "lucide-react";
 import ListingCard from "@/components/ListingCard";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
 
@@ -232,6 +232,24 @@ const ThingsToDo = () => {
               </p>
             </LocalInsightCard>
 
+            {/* SEO Introduction Section */}
+            <section className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Why Townsville Is One of North Queensland's Best Bases
+              </h2>
+              <div className="prose prose-lg max-w-none text-muted-foreground space-y-4">
+                <p>
+                  Townsville is one of the easiest places in Australia to explore without stress. You've got a tropical waterfront, a mountain lookout in the middle of the city, island day trips, wildlife parks, river lagoons, and historic sites — all within a short drive of each other.
+                </p>
+                <p>
+                  What makes Townsville special is how simple it is to enjoy. You can start your day with a sunrise walk up Castle Hill, cool off at The Strand or Riverway by midday, take a ferry to Magnetic Island, and still be back in time for a sunset stroll along the waterfront.
+                </p>
+                <p>
+                  This guide focuses on the best things to do in Townsville for first-time visitors, families, and anyone who wants to experience the area without rushing or overplanning.
+                </p>
+              </div>
+            </section>
+
             {/* Attractions Grid */}
             <section className="mb-16">
               <div className="flex items-center gap-3 mb-8">
@@ -253,7 +271,127 @@ const ThingsToDo = () => {
               </div>
             </section>
 
-            {/* More Sections */}
+            {/* How to Plan Your Time Section */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Clock className="w-6 h-6 text-primary" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  How to Plan Your Time in Townsville
+                </h2>
+              </div>
+              
+              <div className="prose prose-lg max-w-none text-muted-foreground mb-8">
+                <p>
+                  If you're visiting Townsville for the first time, the key is to work with the heat, not against it.
+                </p>
+              </div>
+
+              {/* Daily Rhythm */}
+              <div className="bg-card rounded-2xl border-2 p-6 mb-8">
+                <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+                  <Sun className="w-5 h-5 text-primary" />
+                  A simple daily rhythm that works:
+                </h3>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {[
+                    { time: "Morning", activity: "Castle Hill, walks, outdoor exploring" },
+                    { time: "Midday", activity: "Museum, lunch, Riverway lagoons, shade activities" },
+                    { time: "Afternoon", activity: "Magnetic Island or The Strand" },
+                    { time: "Evening", activity: "Sunset at The Strand or Castle Hill" }
+                  ].map((item, index) => (
+                    <div key={index} className="p-4 rounded-xl bg-background border">
+                      <p className="font-semibold text-primary text-sm mb-1">{item.time}</p>
+                      <p className="text-sm text-muted-foreground">{item.activity}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Itineraries */}
+              <div className="grid md:grid-cols-2 gap-6">
+                {/* One Day */}
+                <div className="bg-card rounded-2xl border-2 p-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+                    <Calendar className="w-5 h-5 text-primary" />
+                    If You Only Have One Day
+                  </h3>
+                  <ul className="space-y-3">
+                    {[
+                      { time: "Morning", activity: "Castle Hill + The Strand" },
+                      { time: "Midday", activity: "Museum of Tropical Queensland or Riverway" },
+                      { time: "Afternoon", activity: "Lunch, shade, rest" },
+                      { time: "Evening", activity: "Sunset walk or lookout" }
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full whitespace-nowrap">{item.time}</span>
+                        <span className="text-sm text-muted-foreground">{item.activity}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* 2-3 Days */}
+                <div className="bg-card rounded-2xl border-2 p-6">
+                  <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+                    <Calendar className="w-5 h-5 text-primary" />
+                    If You Have 2–3 Days
+                  </h3>
+                  <ul className="space-y-3">
+                    {[
+                      { day: "Day 1", activity: "City + Strand + Castle Hill" },
+                      { day: "Day 2", activity: "Magnetic Island day trip" },
+                      { day: "Day 3", activity: "Riverway, gardens, wildlife or museum" }
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-start gap-3">
+                        <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-1 rounded-full whitespace-nowrap">{item.day}</span>
+                        <span className="text-sm text-muted-foreground">{item.activity}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            {/* Plan the Rest of Your Trip */}
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Plan the Rest of Your Townsville Trip
+              </h2>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <Link to="/townsville/flights" className="block">
+                  <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card h-full">
+                    <Plane className="w-8 h-8 text-primary mb-3" />
+                    <h3 className="font-semibold text-foreground mb-1">Flights to Townsville</h3>
+                    <p className="text-sm text-muted-foreground">Find the best flight options</p>
+                  </div>
+                </Link>
+                <Link to="/townsville/food" className="block">
+                  <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card h-full">
+                    <UtensilsCrossed className="w-8 h-8 text-primary mb-3" />
+                    <h3 className="font-semibold text-foreground mb-1">Townsville Food Guide</h3>
+                    <p className="text-sm text-muted-foreground">Best restaurants and cafés</p>
+                  </div>
+                </Link>
+                <Link to="/townsville/shopping" className="block">
+                  <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card h-full">
+                    <ShoppingBag className="w-8 h-8 text-primary mb-3" />
+                    <h3 className="font-semibold text-foreground mb-1">Townsville Shopping</h3>
+                    <p className="text-sm text-muted-foreground">Markets, malls and local stores</p>
+                  </div>
+                </Link>
+                <Link to="/townsville/history" className="block">
+                  <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card h-full">
+                    <BookOpen className="w-8 h-8 text-primary mb-3" />
+                    <h3 className="font-semibold text-foreground mb-1">Townsville History</h3>
+                    <p className="text-sm text-muted-foreground">Heritage and culture</p>
+                  </div>
+                </Link>
+              </div>
+            </section>
+
+            {/* Explore More Section */}
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
                 Explore More
