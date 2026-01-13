@@ -113,16 +113,25 @@ const DogFriendly = () => {
   const parks: DogSpotCardProps[] = [
   {
     title: "Mount Louisa Dog Park",
-    …existing…
+    description: "A fenced, secure dog park with shaded areas and water bowls. Perfect for safe off-leash play and socialising.",
+    features: [
+      "Fully fenced and secure",
+      "Shaded areas for hot days",
+      "Water bowls provided",
+      "Separate areas for small and large dogs"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Mount+Louisa+Dog+Park",
+    icon: <TreePine className="w-6 h-6" />,
+    type: "Fenced Dog Park"
   },
   {
     title: "Murray Dog Park (Annandale)",
-    description: "A popular fenced dog park in Annandale with shaded seating, separate spaces for small and large dogs, and plenty of grass for off-leash running.",
+    description: "A popular fenced dog park in Annandale with shaded seating and plenty of space for off-leash running and socialising.",
     features: [
       "Fully fenced off-leash area",
       "Shaded seating",
-      "Separate space for small and large dogs",
-      "Grass play areas"
+      "Large grassy play area",
+      "Good for social dogs"
     ],
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Murray+Dog+Park+Townsville",
     icon: <TreePine className="w-6 h-6" />,
@@ -130,32 +139,18 @@ const DogFriendly = () => {
   },
   {
     title: "Mannikin Park Dog Areas (Bohle Plains)",
-    description: "A dedicated dog park with separate fenced areas for small dogs and all sizes, shaded seating, and exercise equipment for active pups.",
+    description: "A well-known dog park with two fenced areas (small dogs and all dogs), shaded seating, and exercise space.",
     features: [
-      "Two fenced off-leash areas",
+      "Two separate fenced areas",
       "Sheltered seating",
-      "Dog exercise equipment",
-      "Great for training and play"
+      "Good space for training and play",
+      "Popular with local dog owners"
     ],
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Mannikin+Park+Dog+Park+Bohle+Plains",
     icon: <TreePine className="w-6 h-6" />,
     type: "Fenced Dog Park"
-  },
-  {
-    title: "Rossiter Off-Leash Park (Aitkenvale)",
-    description: "A large off-leash dog park with plenty of space for running and play, popular with local dog owners and well shaded for comfort.",
-    features: [
-      "Large open off-leash area",
-      "Shady spots under trees",
-      "Room for running and socialising",
-      "Easy access from Aitkenvale"
-    ],
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Rossiter+Off+Leash+Park+Townsville",
-    icon: <TreePine className="w-6 h-6" />,
-    type: "Off-Leash Dog Park"
   }
 ];
-
 
   const walks: DogSpotCardProps[] = [
     {
