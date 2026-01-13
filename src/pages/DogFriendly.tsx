@@ -10,7 +10,8 @@ import {
   Check,
   Waves,
   TreePine,
-  PawPrint
+  PawPrint,
+  Info
 } from "lucide-react";
 
 interface DogSpotCardProps {
@@ -67,10 +68,10 @@ const DogSpotCard = ({ title, description, features, mapUrl, icon, type }: DogSp
 );
 
 const DogFriendly = () => {
-  const dogSpots: DogSpotCardProps[] = [
+  const beaches: DogSpotCardProps[] = [
     {
       title: "The Strand (Dog-Friendly Areas)",
-      description: "A beautiful beachfront promenade with designated dog-friendly walking areas. Perfect for sunrise and evening walks with your furry companion along Townsville's iconic coastal strip.",
+      description: "Townsville’s iconic beachfront promenade with designated dog-friendly walking areas. Ideal for sunrise and evening walks with ocean views.",
       features: [
         "Designated off-leash times (before 8am and after 5pm)",
         "Beautiful ocean views for walks",
@@ -83,7 +84,7 @@ const DogFriendly = () => {
     },
     {
       title: "Pallarenda Dog Beach",
-      description: "One of Townsville's best off-leash beaches. Long stretches of sand, shallow water, and plenty of space for energetic dogs to run and play in the water.",
+      description: "One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs.",
       features: [
         "Off-leash beach access",
         "Long sandy stretches for running",
@@ -96,7 +97,7 @@ const DogFriendly = () => {
     },
     {
       title: "Bushland Beach Off-Leash Area",
-      description: "A relaxed local beach with a peaceful vibe. Dogs love exploring the shallow tidal flats and wide sandy areas in this quieter northern suburb location.",
+      description: "A quieter northern beach with wide sandy areas and shallow tidal flats that dogs love to explore.",
       features: [
         "Designated off-leash zones",
         "Quiet, less crowded beach",
@@ -106,10 +107,13 @@ const DogFriendly = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Bushland+Beach+Townsville",
       icon: <PawPrint className="w-6 h-6" />,
       type: "Off-Leash Beach"
-    },
+    }
+  ];
+
+  const parks: DogSpotCardProps[] = [
     {
       title: "Mount Louisa Dog Park",
-      description: "A fenced, secure dog park with shaded areas and water bowls. The perfect spot for socialising your pup with other dogs in a safe, enclosed environment.",
+      description: "A fenced, secure dog park with shaded areas and water bowls. Perfect for safe off-leash play and socialising.",
       features: [
         "Fully fenced and secure",
         "Shaded areas for hot days",
@@ -119,10 +123,13 @@ const DogFriendly = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Mount+Louisa+Dog+Park",
       icon: <TreePine className="w-6 h-6" />,
       type: "Fenced Dog Park"
-    },
+    }
+  ];
+
+  const walks: DogSpotCardProps[] = [
     {
       title: "Ross River Walking Paths",
-      description: "Scenic riverside walking trails with great shade and open grassy areas. Perfect for longer walks with your dog along the tranquil river setting.",
+      description: "Scenic riverside walking trails with great shade and open grassy areas. Ideal for longer, relaxed walks with your dog.",
       features: [
         "Shaded walking paths",
         "Open grassy areas for play",
@@ -138,8 +145,8 @@ const DogFriendly = () => {
   return (
     <>
       <SEOHead
-        title="Dog-Friendly Spots in Townsville – Parks, Beaches & Cafés | MyAussieGuide"
-        description="Discover the best dog-friendly spots in Townsville including off-leash beaches, dog parks, and walking trails. A complete guide for pet owners."
+        title="Dog-Friendly Townsville: Beaches, Parks & Walks You Can Take Your Dog"
+        description="A complete local guide to dog-friendly Townsville including off-leash beaches, dog parks, walking tracks, and important local tips for dog owners."
         canonical="https://www.myaussieguide.com.au/townsville/dog-friendly"
       />
       <Helmet>
@@ -148,8 +155,8 @@ const DogFriendly = () => {
           {
             "@context": "https://schema.org",
             "@type": "ItemList",
-            "name": "Dog-Friendly Spots in Townsville",
-            "description": "Complete guide to dog-friendly locations in Townsville",
+            "name": "Dog-Friendly Townsville Guide",
+            "description": "Complete guide to dog-friendly beaches, parks, and walking tracks in Townsville",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -174,7 +181,6 @@ const DogFriendly = () => {
           `}
         </script>
       </Helmet>
-      
       <div className="min-h-screen bg-background">
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-5xl">
@@ -183,10 +189,10 @@ const DogFriendly = () => {
               <Button 
                 variant="ghost" 
                 className="mb-6 group"
-                aria-label="Back to home"
+                aria-label="Back to Townsville"
               >
                 <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                Back to Home
+                Back to Townsville
               </Button>
             </Link>
 
@@ -194,13 +200,13 @@ const DogFriendly = () => {
             <header className="mb-12 text-center">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
                 <Dog className="w-4 h-4" />
-                Pet-Friendly Guide
+                Local Dog Owner Guide
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                Dog-Friendly Spots in Townsville
+                Dog-Friendly Townsville: Beaches, Parks & Walks
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                From off-leash beaches to fenced dog parks and scenic walking trails, Townsville is a fantastic destination for pet owners. Discover the best spots to explore with your furry friend.
+                Living in Townsville means sunshine, beaches, and outdoor life — and luckily, it’s a great place to own a dog too. This local guide covers the best dog-friendly places in Townsville, including off-leash beaches, fenced dog parks, and scenic walking tracks, plus important local tips to keep your dog safe in our tropical climate.
               </p>
             </header>
 
@@ -222,25 +228,71 @@ const DogFriendly = () => {
               ))}
             </div>
 
-            {/* Dog Spots Section */}
+            {/* Beaches Section */}
             <section className="mb-16">
               <div className="flex items-center gap-3 mb-8">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <MapPin className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                    Top Dog-Friendly Locations
-                  </h2>
-                  <p className="text-muted-foreground">Parks, beaches, and trails for you and your pup</p>
-                </div>
+                <Waves className="w-7 h-7 text-primary" />
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Dog-Friendly Beaches in Townsville
+                </h2>
               </div>
-
               <div className="grid gap-6 md:grid-cols-2">
-                {dogSpots.map((spot, index) => (
+                {beaches.map((spot, index) => (
                   <DogSpotCard key={index} {...spot} />
                 ))}
               </div>
+            </section>
+
+            {/* Parks Section */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <TreePine className="w-7 h-7 text-primary" />
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Dog Parks in Townsville
+                </h2>
+              </div>
+              <div className="grid gap-6 md:grid-cols-2">
+                {parks.map((spot, index) => (
+                  <DogSpotCard key={index} {...spot} />
+                ))}
+              </div>
+            </section>
+
+            {/* Walks Section */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <MapPin className="w-7 h-7 text-primary" />
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Dog Walking Tracks & Trails
+                </h2>
+              </div>
+              <div className="grid gap-6 md:grid-cols-2">
+                {walks.map((spot, index) => (
+                  <DogSpotCard key={index} {...spot} />
+                ))}
+              </div>
+            </section>
+
+            {/* Rules Section */}
+            <section className="mb-16">
+              <Card className="border-2">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <Info className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <h2 className="font-semibold text-foreground mb-2 text-xl">
+                        Dog Rules in Townsville (What You Need to Know)
+                      </h2>
+                      <p className="text-muted-foreground mb-4">
+                        In Townsville, dogs must be on leash in most public areas unless you are in a designated off-leash zone. Always clean up after your dog, respect wildlife, and follow local council signage. Fines can apply for dogs not under effective control.
+                      </p>
+                      <p className="text-muted-foreground">
+                        Check local council rules before visiting new areas, as off-leash times and zones can change.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </section>
 
             {/* Tips Section */}
@@ -250,7 +302,9 @@ const DogFriendly = () => {
                   <div className="flex items-start gap-4">
                     <PawPrint className="w-8 h-8 text-amber-600 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-semibold text-foreground mb-2">Local Tips for Dog Owners</h3>
+                      <h2 className="font-semibold text-foreground mb-2 text-xl">
+                        Local Tips for Dog Owners in Townsville
+                      </h2>
                       <ul className="space-y-2 text-muted-foreground text-sm">
                         <li className="flex items-start gap-2">
                           <Check className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
@@ -266,7 +320,7 @@ const DogFriendly = () => {
                         </li>
                         <li className="flex items-start gap-2">
                           <Check className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
-                          <span>Be aware of cane toads, especially during wet season — they're toxic to dogs</span>
+                          <span>Be aware of cane toads, especially during wet season — they are highly toxic to dogs in North Queensland</span>
                         </li>
                       </ul>
                     </div>
