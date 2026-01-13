@@ -154,20 +154,47 @@ const DogFriendly = () => {
 ];
 
   const walks: DogSpotCardProps[] = [
-    {
-      title: "Ross River Walking Paths",
-      description: "Scenic riverside walking trails with great shade and open grassy areas. Ideal for longer, relaxed walks with your dog.",
-      features: [
-        "Shaded walking paths",
-        "Open grassy areas for play",
-        "Scenic river views",
-        "Multiple access points along the river"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Ross+River+Townsville",
-      icon: <TreePine className="w-6 h-6" />,
-      type: "Walking Trail"
-    }
-  ];
+  {
+    title: "Ross River Walking Paths",
+    description: "Scenic riverside walking trails with great shade and open grassy areas. Ideal for longer, relaxed walks with your dog.",
+    features: [
+      "Shaded walking paths",
+      "Open grassy areas for play",
+      "Scenic river views",
+      "Multiple access points along the river"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Ross+River+Townsville",
+    icon: <TreePine className="w-6 h-6" />,
+    type: "Walking Trail"
+  },
+  {
+    title: "Jezzine Barracks Foreshore Walk",
+    description: "A beautiful coastal and parkland walk along Jezzine Barracks with wide paths, sea views, and plenty of space for relaxed dog walks.",
+    features: [
+      "Wide paved walking paths",
+      "Ocean and parkland views",
+      "Good shade in parts",
+      "Great for morning and evening walks"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Jezzine+Barracks+Townsville",
+    icon: <TreePine className="w-6 h-6" />,
+    type: "Walking Trail"
+  },
+  {
+    title: "Cape Pallarenda Walking Tracks",
+    description: "A network of bush and coastal walking tracks near Pallarenda, offering a more natural setting for longer dog walks and exploration.",
+    features: [
+      "Bush and coastal scenery",
+      "Multiple track options",
+      "Quieter, natural environment",
+      "Good for longer walks"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Cape+Pallarenda+Conservation+Park",
+    icon: <TreePine className="w-6 h-6" />,
+    type: "Walking Trail"
+  }
+];
+
 
   return (
     <>
