@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
@@ -19,7 +20,7 @@ interface DogSpotCardProps {
   description: string;
   features: string[];
   mapUrl: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
   type: string;
 }
 
