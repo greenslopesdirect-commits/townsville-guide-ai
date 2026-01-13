@@ -236,7 +236,7 @@ const DogFriendly = () => {
                   Dog-Friendly Beaches in Townsville
                 </h2>
               </div>
-              <div className="grid gap-6 md:grid-cols-2">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {beaches.map((spot, index) => (
                   <DogSpotCard key={index} {...spot} />
                 ))}
@@ -251,7 +251,7 @@ const DogFriendly = () => {
                   Dog Parks in Townsville
                 </h2>
               </div>
-              <div className="grid gap-6 md:grid-cols-2">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {parks.map((spot, index) => (
                   <DogSpotCard key={index} {...spot} />
                 ))}
@@ -266,7 +266,7 @@ const DogFriendly = () => {
                   Dog Walking Tracks & Trails
                 </h2>
               </div>
-              <div className="grid gap-6 md:grid-cols-2">
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {walks.map((spot, index) => (
                   <DogSpotCard key={index} {...spot} />
                 ))}
