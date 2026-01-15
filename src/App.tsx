@@ -59,6 +59,11 @@ const App = () => (
   <Route path="local-tips" element={<LocalTips />} />
   <Route path="accommodation" element={<Accommodation />} />
   <Route path="events" element={<Events />} />
+ <Route path="guides/beat-the-heat" element={<BeatTheHeat />} />
+<Route path="guides/magnetic-island-day-trip" element={<MagneticIslandDayTrip />} />
+<Route path="guides/free-things" element={<FreeThings />} />
+<Route path="guides/stinger-safety" element={<StingerSafety />} />
+<Route path="guides/sunset-walks" element={<SunsetWalks />} />        
 
   {/* NEW QUICK ACCESS ROUTES */}
   <Route path="dog-friendly" element={<DogFriendly />} />
