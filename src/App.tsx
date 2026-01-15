@@ -29,11 +29,11 @@ import Events from "@/pages/Events";
 import FlightsToTownsville from "@/pages/FlightsToTownsville";
 import Advertise from "@/pages/Advertise";
 import ScrollToTop from "@/components/ScrollToTop";
-import BeatTheHeat from "@/pages/guides/BeatTheHeat";
-import MagneticIslandDayTrip from "@/pages/guides/MagneticIslandDayTrip";
-import FreeThings from "@/pages/guides/FreeThings";
-import StingerSafety from "@/pages/guides/StingerSafety";
-import SunsetWalks from "@/pages/guides/SunsetWalks";
+import BeatTheHeat from "@/pages/BeatTheHeat";
+import MagneticIslandDayTrip from "@/pages/MagneticIslandDayTrip";
+import FreeThings from "@/pages/FreeThings";
+import StingerSafety from "@/pages/StingerSafety";
+import SunsetWalks from "@/pages/SunsetWalks";
 
 const queryClient = new QueryClient();
 
