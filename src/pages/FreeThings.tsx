@@ -5,7 +5,7 @@ import { MapPin } from "lucide-react";
 const FreeThings = () => (
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
     <h1 className="text-4xl font-bold mb-4 text-center">5 Completely Free Things to do in Townsville</h1>
-    <img src="/5-free-things-to-do.webp" alt="Castle Hill View" className="rounded-xl shadow-lg w-full h-[500px] object-cover mb-8" />
+    <img src="/5-free-things-to-do.webp" alt="Castle Hill View" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8" />
     <div className="grid gap-4 mb-8">
       <Card><CardContent className="p-4 text-lg font-semibold">1. Castle Hill: Drive or hike for the best view in NQ.</CardContent></Card>
       <Card><CardContent className="p-4 text-lg font-semibold">2. The Strand: 2.2km of walkway, water parks, and beaches.</CardContent></Card>
