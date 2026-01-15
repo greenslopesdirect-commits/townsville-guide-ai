@@ -204,7 +204,7 @@ const ThingsToDo = () => {
               <img 
                 src="/the-strand-things-to-do.webp" 
                 alt="The Strand beachfront in Townsville - palm trees and tropical coastline"
-                className="w-full h-64 md:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
+                className="rounded-2xl shadow-xl w-full h-[300px] md:h-[500px] object-cover"
               />
               <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs">
                 The Strand: Townsville's iconic 2.2km beachfront promenade
