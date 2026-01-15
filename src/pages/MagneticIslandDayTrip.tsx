@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const MagneticIslandDayTrip = () => (
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
     <h1 className="text-4xl font-bold mb-4 text-center">Magnetic Island Family Day Trip</h1>
-    <img src="/magnetic-island-guide.webp" alt="Magnetic Island Ferry" className="rounded-xl shadow-lg w-full h-[400px] object-cover mb-8" />
+    <img src="/magnetic-island-guide.webp" alt="Magnetic Island Ferry" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8" />
     <div className="space-y-4 mb-8">
       <Card className="border-l-4 border-blue-400"><CardContent className="p-4"><strong>9:00 AM:</strong> Catch the ferry from the Breakwater Terminal.</CardContent></Card>
       <Card className="border-l-4 border-blue-400"><CardContent className="p-4"><strong>10:30 AM:</strong> Hike The Forts Walk to spot wild koalas.</CardContent></Card>
