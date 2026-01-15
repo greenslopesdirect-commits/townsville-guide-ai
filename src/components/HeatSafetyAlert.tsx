@@ -1,11 +1,13 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Sun, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface HeatSafetyAlertProps {
   className?: string;
+  showGuideLink?: boolean;
 }
 
-const HeatSafetyAlert = ({ className = "" }: HeatSafetyAlertProps) => {
+const HeatSafetyAlert = ({ className = "", showGuideLink = false }: HeatSafetyAlertProps) => {
   return (
     <Alert 
       className={`bg-orange-50 dark:bg-orange-950/30 border-orange-300 dark:border-orange-700 ${className}`}
@@ -24,15 +26,25 @@ const HeatSafetyAlert = ({ className = "" }: HeatSafetyAlertProps) => {
           <li>Wear a hat, sunscreen (SPF 50+) and light clothing</li>
           <li>Rest in shade regularly during outdoor activities</li>
         </ul>
-        <a 
-          href="http://www.bom.gov.au/qld/forecasts/townsville.shtml" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-orange-800 dark:text-orange-300 hover:underline font-medium"
-        >
-          <ExternalLink className="w-4 h-4" />
-          Check Today's Weather Forecast
-        </a>
+        <div className="flex flex-wrap items-center gap-4">
+          <a 
+            href="http://www.bom.gov.au/qld/forecasts/townsville.shtml" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-orange-800 dark:text-orange-300 hover:underline font-medium"
+          >
+            <ExternalLink className="w-4 h-4" />
+            Check Today's Weather Forecast
+          </a>
+          {showGuideLink && (
+            <Link 
+              to="/townsville/guides/beat-the-heat"
+              className="inline-flex items-center gap-1 text-orange-800 dark:text-orange-300 hover:underline font-medium"
+            >
+              → View Full Guide
+            </Link>
+          )}
+        </div>
       </AlertDescription>
     </Alert>
   );
