@@ -10,7 +10,7 @@ const BeatTheHeat = () => {
         <p className="text-xl text-muted-foreground mb-6">Actionable local shortcuts to stay cool in the tropics.</p>
         
         <img 
-          src="/lovable-uploads/beat-the-heat-guide.webp" 
+          src="/beat-the-heat-guide.webp"
           alt="Max using a water station in Townsville" 
           className="rounded-xl shadow-lg w-full h-[500px] object-cover mb-8"
         />
