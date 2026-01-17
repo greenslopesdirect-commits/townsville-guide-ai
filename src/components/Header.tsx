@@ -41,7 +41,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden xl:flex items-center gap-6">
-            {navLinks.map((link) => (
+            {navLinks.filter(link => link.to !== "/townsville/contact").map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
@@ -50,6 +50,11 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            <Link to="/townsville/contact">
+              <Button variant="outline" size="sm" className="rounded-full px-5 font-medium border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
+                Contact
+              </Button>
+            </Link>
             <HeaderWeather />
           </div>
 
