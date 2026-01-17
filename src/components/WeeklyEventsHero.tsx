@@ -1,32 +1,32 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, ShoppingBasket, LifeBuoy, ChevronDown } from "lucide-react";
+import { Music, ShoppingBasket, MapPin, ChevronDown } from "lucide-react";
 
 const WeeklyEventsHero = () => {
   const featureCards = [
     {
-      title: "Cotters Market",
-      icon: MapPin,
-      details: "Sunday, 8am – 1pm | Flinders Street, CBD",
-      description: "Fresh produce, arts, crafts, and live music in the heart of the city.",
+      title: "Live Music @ Townsville RSL",
+      icon: Music,
+      details: "Saturday, Jan 17 @ 7:30 PM | Townsville RSL",
+      description: "Enjoy live entertainment from \"The Bar Trippers\". Great atmosphere for a Saturday night.",
       badge: "Free Entry",
       badgeColor: "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
     },
     {
       title: "Willows Rotary Markets",
       icon: ShoppingBasket,
-      details: "Sunday, 7:30am – 11:30am | Willows Shopping Centre",
-      description: "The go-to spot for fresh fruit, veg, and trash & treasure bargains.",
-      badge: "Family Friendly",
-      badgeColor: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+      details: "Sunday, Jan 18 @ 7:30 AM | Willows Shopping Centre",
+      description: "The locals' choice for fresh fruit, veg, and Sunday bargains.",
+      badge: "Shop Local",
+      badgeColor: "bg-primary/10 text-primary",
     },
     {
-      title: "Safe Swimming (Stinger Season)",
-      icon: LifeBuoy,
-      details: "All Weekend | The Strand & Pallarenda",
-      description: "Tides are high. Please swim ONLY inside the stinger nets for safety.",
-      badge: "Safety Alert",
-      badgeColor: "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
+      title: "Cotters Market",
+      icon: MapPin,
+      details: "Sunday, Jan 18 @ 8:00 AM | Flinders Street, CBD",
+      description: "Townsville's largest market with arts, crafts, and food stalls.",
+      badge: "Family Friendly",
+      badgeColor: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
     },
   ];
 
@@ -44,7 +44,7 @@ const WeeklyEventsHero = () => {
           What's On: Weekend of Jan 17–18
         </h1>
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          A quiet weekend in Townsville before the Australia Day rush. Perfect for local markets and a swim.
+          A great weekend for live music and local markets. <span className="italic">(Note: Townsville Fire are playing away in Perth this Sunday, so no home game at the stadium).</span>
         </p>
       </header>
 
