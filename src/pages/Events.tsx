@@ -7,6 +7,7 @@ import { ArrowLeft, Calendar, Music, ShoppingBag, Trophy, MapPin, Repeat, Star }
 import { triggerAiGuide } from "@/utils/aiGuide";
 
 import LocalInsightCard from "@/components/LocalInsightCard";
+import WeeklyEventsHero from "@/components/WeeklyEventsHero";
 
 const Events = () => {
   const recurringEvents = [
@@ -182,61 +183,8 @@ const Events = () => {
               </Button>
             </Link>
 
-            {/* Hero Header */}
-            <header className="mb-12 text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                <Calendar className="w-4 h-4" />
-                Events Guide
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                Events in Townsville
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                From weekly markets and NRL games to world-class festivals, there's always something happening in Townsville — especially during the dry season.
-              </p>
-            </header>
-
-            {/* Quick Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              {[
-                { icon: <ShoppingBag className="w-5 h-5" />, label: "Weekly Markets", sublabel: "Every Sunday" },
-                { icon: <Calendar className="w-5 h-5" />, label: "Annual Festivals", sublabel: "Major events" },
-                { icon: <Music className="w-5 h-5" />, label: "Live Music", sublabel: "Year-round" },
-                { icon: <Trophy className="w-5 h-5" />, label: "Sports", sublabel: "Cowboys & more" }
-              ].map((stat, index) => (
-                <div key={index} className="text-center p-4 rounded-2xl bg-card border-2 hover:border-primary/30 transition-colors">
-                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary mb-2">
-                    {stat.icon}
-                  </div>
-                  <p className="font-semibold text-foreground">{stat.label}</p>
-                  <p className="text-sm text-muted-foreground">{stat.sublabel}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* This Week CTA */}
-            <Card className="mb-12 border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
-              <CardContent className="p-6 text-center">
-                <h2 className="text-xl font-bold text-foreground mb-2">What's On This Week?</h2>
-                <p className="text-muted-foreground mb-4">Ask our AI guide for the latest events and activities happening right now.</p>
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <Button 
-                    size="lg" 
-                    onClick={() => triggerAiGuide("What events are on this week in Townsville?")}
-                    className="gap-2"
-                  >
-                    <span>🤖</span>
-                    Ask What's On
-                  </Button>
-                  <Button variant="outline" size="lg" asChild className="gap-2">
-                    <a href="https://www.townsvilleentertainment.com.au/events" target="_blank" rel="noopener noreferrer">
-                      <Calendar className="w-4 h-4" />
-                      Official Event Calendar
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
+            {/* Weekly Events Hero */}
+            <WeeklyEventsHero />
 
             {/* Major Events Highlight */}
             <LocalInsightCard title="The Big Ones You Can't Miss" variant="insight" className="mb-12">
@@ -275,7 +223,7 @@ const Events = () => {
             </section>
 
             {/* Annual Festivals */}
-            <section className="mb-16">
+            <section id="annual-festivals" className="mb-16">
               <div className="flex items-center gap-3 mb-8">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <Star className="w-6 h-6 text-primary" />
