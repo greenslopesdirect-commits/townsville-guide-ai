@@ -51,12 +51,12 @@ const AboutSection = () => {
                 <span className="text-base md:text-lg">Based in Townsville, Queensland</span>
               </div>
               
-              <div className="flex items-center justify-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
-                <Mail className="w-5 h-5 text-primary" />
-                <a href="mailto:duncankross@gmail.com" className="text-base md:text-lg">
-                  duncankross@gmail.com
-                </a>
-              </div>
+              <Link to="/townsville/contact">
+                <Button variant="outline" className="rounded-full px-6">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Get in Touch
+                </Button>
+              </Link>
             </div>
           </CardContent>
         </Card>
