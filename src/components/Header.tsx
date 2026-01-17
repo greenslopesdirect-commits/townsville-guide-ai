@@ -1,8 +1,26 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 import logo from "@/assets/myaussieguide-logo.png";
 import HeaderWeather from "@/components/HeaderWeather";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+
+const navLinks = [
+  { to: "/townsville", label: "Home" },
+  { to: "/townsville/history", label: "History" },
+  { to: "/townsville/things-to-do", label: "Things to Do" },
+  { to: "/townsville/beaches", label: "Beaches" },
+  { to: "/townsville/food", label: "Food & Drink" },
+  { to: "/townsville/local-tips", label: "Local Tips" },
+  { to: "/townsville/accommodation", label: "Accommodation" },
+  { to: "/townsville/events", label: "Events" },
+  { to: "/townsville/contact", label: "Contact" },
+];
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-[100] bg-white border-b border-border shadow-sm">
       <nav className="container mx-auto px-4 py-6">
@@ -21,64 +39,50 @@ const Header = () => {
             />
           </Link>
 
-          {/* Navigation */}
-          <div className="flex items-center gap-4 md:gap-6">
-            <Link
-              to="/townsville"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium"
-            >
-              Home
-            </Link>
-            <Link
-              to="/townsville/history"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden md:inline"
-            >
-              History
-            </Link>
-            <Link
-              to="/townsville/things-to-do"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden lg:inline"
-            >
-              Things to Do
-            </Link>
-            <Link
-              to="/townsville/beaches"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden lg:inline"
-            >
-              Beaches
-            </Link>
-            <Link
-              to="/townsville/food"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
-            >
-              Food & Drink
-            </Link>
-            <Link
-              to="/townsville/local-tips"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
-            >
-              Local Tips
-            </Link>
-            <Link
-              to="/townsville/accommodation"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
-            >
-              Accommodation
-            </Link>
-            <Link
-              to="/townsville/events"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
-            >
-              Events
-            </Link>
-            <Link
-              to="/townsville/contact"
-              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
-            >
-              Contact
-            </Link>
-
+          {/* Desktop Navigation */}
+          <div className="hidden xl:flex items-center gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="text-base text-gray-800 hover:text-primary transition-colors font-medium"
+              >
+                {link.label}
+              </Link>
+            ))}
             <HeaderWeather />
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="flex xl:hidden items-center gap-3">
+            <HeaderWeather />
+            <Sheet open={open} onOpenChange={setOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="h-10 w-10">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Open menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[280px] sm:w-[320px] p-0">
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center justify-between p-4 border-b">
+                    <span className="font-semibold text-lg">Menu</span>
+                  </div>
+                  <nav className="flex-1 overflow-y-auto py-4">
+                    {navLinks.map((link) => (
+                      <Link
+                        key={link.to}
+                        to={link.to}
+                        onClick={() => setOpen(false)}
+                        className="flex items-center px-6 py-3 text-base font-medium text-gray-800 hover:bg-muted hover:text-primary transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
 
         </div>
