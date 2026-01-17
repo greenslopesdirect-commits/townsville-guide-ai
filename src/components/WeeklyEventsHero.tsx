@@ -98,24 +98,30 @@ const WeeklyEventsHero = () => {
         <p className="text-muted-foreground mb-6 max-w-md mx-auto">
           Ask our AI guide for the latest events and activities happening right now.
         </p>
-        <Button 
-          size="lg"
-          onClick={() => triggerAiGuide("What events and activities are happening in Townsville this week?")}
-          className="gap-2 text-base font-semibold px-6 py-3 h-auto shadow-md hover:shadow-lg transition-shadow"
-        >
-          <span>🤖</span>
-          Ask What's On
-        </Button>
-        <div className="mt-4">
-          <a 
-            href="https://www.townsvilleentertainment.com.au/events" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <Button 
+            size="lg"
+            onClick={() => triggerAiGuide("What events and activities are happening in Townsville this week?")}
+            className="gap-2 text-base font-semibold px-6 py-3 h-auto shadow-md hover:shadow-lg transition-shadow"
           >
-            Official Event Calendar
-            <ExternalLink className="w-3.5 h-3.5" />
-          </a>
+            <span>🤖</span>
+            Ask What's On
+          </Button>
+          <Button 
+            variant="outline"
+            size="lg"
+            asChild
+            className="gap-2 text-base font-semibold px-6 py-3 h-auto"
+          >
+            <a 
+              href="https://whatson.townsville.qld.gov.au/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Official Event Calendar
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          </Button>
         </div>
       </div>
 
