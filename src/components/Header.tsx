@@ -40,12 +40,12 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden xl:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className="text-base text-gray-800 hover:text-primary transition-colors font-medium"
+                className="text-sm xl:text-base text-gray-800 hover:text-primary transition-colors font-medium whitespace-nowrap"
               >
                 {link.label}
               </Link>
@@ -54,7 +54,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="flex xl:hidden items-center gap-3">
+          <div className="flex lg:hidden items-center gap-3">
             <HeaderWeather />
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
