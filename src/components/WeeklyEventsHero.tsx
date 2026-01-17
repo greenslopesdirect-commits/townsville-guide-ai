@@ -1,6 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Music, ShoppingBasket, MapPin, ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Music, ShoppingBasket, MapPin, ChevronDown, ExternalLink } from "lucide-react";
+import { triggerAiGuide } from "@/utils/aiGuide";
 
 const WeeklyEventsHero = () => {
   const featureCards = [
@@ -88,8 +90,37 @@ const WeeklyEventsHero = () => {
         })}
       </div>
 
+      {/* Ask AI Section */}
+      <div className="py-10 px-6 bg-muted/30 rounded-2xl border border-border/40 text-center">
+        <h2 className="text-xl md:text-2xl font-bold text-foreground mb-2">
+          What's On This Week?
+        </h2>
+        <p className="text-muted-foreground mb-6 max-w-md mx-auto">
+          Ask our AI guide for the latest events and activities happening right now.
+        </p>
+        <Button 
+          size="lg"
+          onClick={() => triggerAiGuide("What events and activities are happening in Townsville this week?")}
+          className="gap-2 text-base font-semibold px-6 py-3 h-auto shadow-md hover:shadow-lg transition-shadow"
+        >
+          <span>🤖</span>
+          Ask What's On
+        </Button>
+        <div className="mt-4">
+          <a 
+            href="https://www.townsvilleentertainment.com.au/events" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            Official Event Calendar
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        </div>
+      </div>
+
       {/* Bottom Action */}
-      <div className="text-center">
+      <div className="text-center mt-8">
         <button 
           onClick={() => {
             const section = document.getElementById('annual-festivals');
@@ -97,7 +128,7 @@ const WeeklyEventsHero = () => {
           }}
           className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors group"
         >
-          Scroll down for Annual Festivals & AI Guide
+          Scroll down for Annual Festivals
           <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
         </button>
       </div>
