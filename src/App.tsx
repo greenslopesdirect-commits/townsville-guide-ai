@@ -28,6 +28,7 @@ import Accommodation from "@/pages/Accommodation";
 import Events from "@/pages/Events";
 import FlightsToTownsville from "@/pages/FlightsToTownsville";
 import Advertise from "@/pages/Advertise";
+import Contact from "@/pages/Contact";
 import ScrollToTop from "@/components/ScrollToTop";
 import BeatTheHeat from "@/pages/BeatTheHeat";
 import MagneticIslandDayTrip from "@/pages/MagneticIslandDayTrip";
@@ -73,6 +74,7 @@ const App = () => (
   {/* MONETISATION PAGES */}
   <Route path="flights" element={<FlightsToTownsville />} />
   <Route path="advertise" element={<Advertise />} />
+  <Route path="contact" element={<Contact />} />
 </Route>
 
           

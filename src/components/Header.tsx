@@ -71,6 +71,12 @@ const Header = () => {
             >
               Events
             </Link>
+            <Link
+              to="/townsville/contact"
+              className="text-sm md:text-base text-gray-800 hover:text-foreground transition-colors font-medium hidden xl:inline"
+            >
+              Contact
+            </Link>
 
             <HeaderWeather />
           </div>
