@@ -1,11 +1,15 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Menu } from "lucide-react";
 import logo from "@/assets/myaussieguide-logo.png";
 import { cn } from "@/lib/utils";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
 
 const HeaderImproved = () => {
   const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +29,7 @@ const HeaderImproved = () => {
     { to: "/townsville/local-tips", label: "Local Tips" },
     { to: "/townsville/accommodation", label: "Accommodation" },
     { to: "/townsville/events", label: "Events" },
+    { to: "/townsville/contact", label: "Contact" },
   ];
 
   const isActive = (path: string) => {
@@ -54,6 +59,7 @@ const HeaderImproved = () => {
             />
           </Link>
 
+          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
               <Link
@@ -69,6 +75,42 @@ const HeaderImproved = () => {
                 {item.label}
               </Link>
             ))}
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="flex lg:hidden">
+            <Sheet open={open} onOpenChange={setOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="h-10 w-10">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Open menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[280px] sm:w-[320px] p-0">
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center justify-between p-4 border-b">
+                    <span className="font-semibold text-lg">Menu</span>
+                  </div>
+                  <nav className="flex-1 overflow-y-auto py-4">
+                    {navItems.map((item) => (
+                      <Link
+                        key={item.to}
+                        to={item.to}
+                        onClick={() => setOpen(false)}
+                        className={cn(
+                          "flex items-center px-6 py-3 text-base font-medium transition-colors",
+                          isActive(item.to)
+                            ? "text-primary bg-primary/5"
+                            : "text-gray-800 hover:bg-muted hover:text-primary"
+                        )}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </nav>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </nav>
