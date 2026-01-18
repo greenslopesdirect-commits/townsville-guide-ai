@@ -34,6 +34,20 @@ const ThingsToDo = () => {
       subtitle: "Must-Do Experience"
     },
     {
+  title: "Little Crystal Creek",
+  description: "A stunning rainforest swimming hole with a historic stone arch bridge, crystal clear water and granite boulders. One of the most popular swimming spots near Townsville.",
+  tags: ["Swimming", "Rainforest", "Day Trip"],
+  features: [
+    "Historic stone bridge",
+    "Crystal clear swimming hole",
+    "Granite boulders",
+    "About 1.5 hours from Townsville"
+  ],
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Little+Crystal+Creek",
+  aiPrompt: "Is Little Crystal Creek suitable for swimming and families?",
+  subtitle: "Rainforest Swimming Hole"
+},
+    {
   title: "Ross River Dam (Lake Ross)",
   description: "A huge freshwater lake just outside Townsville, perfect for scenic drives, picnics, walking tracks and sunset views across the water and surrounding hills.",
   image: rossRiverDamImage,
