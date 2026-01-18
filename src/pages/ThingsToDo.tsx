@@ -34,6 +34,21 @@ const ThingsToDo = () => {
       subtitle: "Must-Do Experience"
     },
     {
+  title: "Little Crystal Creek",
+  description: "A stunning rainforest swimming hole with a historic stone arch bridge, crystal clear water and granite boulders. One of the most beautiful day trips from Townsville.",
+  tags: ["Swimming", "Rainforest", "Day Trip"],
+  features: [
+    "Historic stone arch bridge",
+    "Crystal clear swimming water",
+    "Granite boulders and rainforest",
+    "About 1.5 hours from Townsville"
+  ],
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Little+Crystal+Creek",
+  aiPrompt: "Is Little Crystal Creek suitable for swimming and families?",
+  subtitle: "Rainforest Swimming Hole"
+},
+
+    {
   title: "SS Yongala Wreck Dive",
   description: "One of the best wreck dives in the world. The historic SS Yongala shipwreck is now a thriving reef covered in coral and home to giant fish, turtles, rays and sharks.",
   tags: ["Diving", "Bucket List", "Reef"],
