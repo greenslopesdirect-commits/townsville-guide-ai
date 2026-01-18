@@ -396,9 +396,52 @@ const dayTrips = [
                 </p>
               </div>
             </section>
+<section className="mb-16">
+  <div className="flex items-center gap-3 mb-8">
+    <div className="p-2 rounded-lg bg-primary/10">
+      <Mountain className="w-6 h-6 text-primary" />
+    </div>
+    <div>
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+        Day Trips & Hidden Gems Around Townsville
+      </h2>
+      <p className="text-muted-foreground">
+        Rainforests, waterfalls and cool-climate escapes within easy reach
+      </p>
+    </div>
+  </div>
+
+  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {dayTrips.map((item, index) => (
+      <ListingCard key={index} {...item} />
+    ))}
+  </div>
+</section>
 
             {/* Attractions Grid */}
             <section className="mb-16">
+              <section className="mb-16">
+  <div className="flex items-center gap-3 mb-8">
+    <div className="p-2 rounded-lg bg-primary/10">
+      <Compass className="w-6 h-6 text-primary" />
+    </div>
+    <div>
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+        Adventure & Reef Experiences
+      </h2>
+      <p className="text-muted-foreground">
+        World-class reef, snorkelling and bucket-list adventures
+      </p>
+    </div>
+  </div>
+
+  <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {adventureExperiences.map((item, index) => (
+      <ListingCard key={index} {...item} />
+    ))}
+  </div>
+</section>
+
               <div className="flex items-center gap-3 mb-8">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <MapPin className="w-6 h-6 text-primary" />
