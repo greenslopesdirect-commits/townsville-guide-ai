@@ -180,6 +180,20 @@ const ThingsToDo = () => {
       subtitle: "Tropical Gardens & River Walks"
     }
   ];
+  {
+  title: "Museum of Underwater Art (MOUA)",
+  description: "Australia’s only underwater museum featuring surreal submerged sculptures on the Great Barrier Reef. You can snorkel or dive to see world-famous installations like the Coral Greenhouse.",
+  tags: ["Reef", "Snorkelling", "Diving"],
+  features: [
+    "Australia’s only underwater museum",
+    "Snorkel or scuba dive",
+    "Located on the Great Barrier Reef",
+    "Boat trip from Townsville or Magnetic Island"
+  ],
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Museum+of+Underwater+Art",
+  aiPrompt: "Is the Museum of Underwater Art better for snorkelling or diving?",
+  subtitle: "Underwater Art on the Reef"
+},
 
   return (
     <>
