@@ -6,6 +6,11 @@ import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building
 import ListingCard from "@/components/ListingCard";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
 import LocalInsightCard from "@/components/LocalInsightCard";
+import mouaImage from "@/assets/moua-underwater-art-townsville.webp";
+import yongalaImage from "@/assets/ss-yongala-wreck.webp";
+import crystalCreekImage from "@/assets/little-crystal-creek.webp";
+import palumaImage from "@/assets/paluma-range.webp";
+import jouramaImage from "@/assets/jourama-falls.webp";
 
 // Import images
 import castleHillImage from "@/assets/castle-hill-townsville.webp";
