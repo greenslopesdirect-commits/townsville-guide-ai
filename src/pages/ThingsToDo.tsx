@@ -78,6 +78,35 @@ const ThingsToDo = () => {
   subtitle: "Underwater Art on the Reef"
 },
     {
+  title: "Paluma Range National Park",
+  description: "A cool-climate rainforest escape in the mountains north of Townsville, featuring waterfalls, walking tracks, lookouts and the historic village of Paluma.",
+  tags: ["Rainforest", "Day Trip", "Nature"],
+  features: [
+    "Cool mountain rainforest",
+    "Waterfalls and swimming holes",
+    "Scenic lookouts and bushwalks",
+    "Historic Paluma village"
+  ],
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Paluma+Range+National+Park",
+  aiPrompt: "What are the best things to see and do in Paluma?",
+  subtitle: "Mountain Rainforest Escape"
+},
+{
+  title: "Jourama Falls",
+  description: "One of North Queensland’s most impressive waterfalls, with huge granite cascades, swimming holes and walking tracks just over an hour from Townsville.",
+  tags: ["Waterfall", "Hiking", "Swimming"],
+  features: [
+    "Huge multi-tier waterfall system",
+    "Swimming holes in wet season",
+    "Scenic walking tracks",
+    "Part of Paluma Range National Park"
+  ],
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Jourama+Falls",
+  aiPrompt: "Is Jourama Falls suitable for swimming and families?",
+  subtitle: "Epic Waterfall Walk"
+},
+
+    {
   title: "Ross River Dam (Lake Ross)",
   description: "A huge freshwater lake just outside Townsville, perfect for scenic drives, picnics, walking tracks and sunset views across the water and surrounding hills.",
   image: rossRiverDamImage,
