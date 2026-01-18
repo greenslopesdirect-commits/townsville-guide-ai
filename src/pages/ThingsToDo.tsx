@@ -14,6 +14,7 @@ import billabongImage from "@/assets/billabong-sanctuary-townsville.webp";
 import jezzineImage from "@/assets/jezzine-barracks-townsville.webp";
 import strandImage from "@/assets/the-strand-townsville.webp";
 import reefAquariumImage from "@/assets/great-barrier-reef-aquarium-townsville.webp";
+import rossRiverDamImage from "@/assets/ross-river-dam-townsville.webp";
 
 const ThingsToDo = () => {
   const attractions = [
