@@ -155,6 +155,101 @@ const ThingsToDo = () => {
       subtitle: "Tropical Gardens & River Walks"
     }
   ];
+const adventureExperiences = [
+  {
+    title: "Museum of Underwater Art (MOUA)",
+    description: "Australia’s only underwater museum featuring surreal submerged sculptures on the Great Barrier Reef. Snorkel or dive this world-famous attraction.",
+    image: mouaImage,
+    tags: ["Reef", "Snorkelling", "Diving"],
+    features: [
+      "Australia’s only underwater museum",
+      "Snorkel or scuba dive",
+      "Great Barrier Reef location",
+      "Boat trip from Townsville or Magnetic Island"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Museum+of+Underwater+Art+Townsville",
+    aiPrompt: "Is the Museum of Underwater Art better for snorkelling or diving?",
+    subtitle: "Reef Experience"
+  },
+  {
+    title: "SS Yongala Wreck Dive",
+    description: "One of the best wreck dives in the world. A historic shipwreck now covered in coral and home to sharks, turtles and giant fish.",
+    image: yongalaImage,
+    tags: ["Diving", "Bucket List", "Reef"],
+    features: [
+      "World-famous shipwreck dive",
+      "Huge marine life",
+      "For certified divers",
+      "Full-day trip from Townsville"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=SS+Yongala+Wreck",
+    aiPrompt: "Why is the SS Yongala considered one of the best dives in the world?",
+    subtitle: "World-Class Wreck"
+  },
+  {
+    title: "Magnetic Island Snorkelling",
+    description: "Snorkel straight off the beach at some of the best coral bays on Magnetic Island. Perfect for beginners and families.",
+    image: magneticIslandImage,
+    tags: ["Snorkelling", "Beaches", "Easy Access"],
+    features: [
+      "Snorkel straight from the beach",
+      "Alma Bay, Geoffrey Bay, Florence Bay",
+      "No boat required",
+      "Great for beginners"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Magnetic+Island",
+    aiPrompt: "Where are the best snorkelling beaches on Magnetic Island?",
+    subtitle: "Easy Reef Access"
+  }
+];
+
+const dayTrips = [
+  {
+    title: "Little Crystal Creek",
+    description: "A stunning rainforest swimming hole with a historic stone arch bridge, crystal clear water and granite boulders.",
+    image: crystalCreekImage,
+    tags: ["Swimming", "Rainforest", "Day Trip"],
+    features: [
+      "Historic stone bridge",
+      "Crystal clear swimming hole",
+      "Granite boulders",
+      "About 1.5 hours from Townsville"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Little+Crystal+Creek",
+    aiPrompt: "Is Little Crystal Creek suitable for swimming and families?",
+    subtitle: "Rainforest Swimming"
+  },
+  {
+    title: "Paluma Range National Park",
+    description: "Cool-climate rainforest village with waterfalls, walking tracks and mountain lookouts. A perfect escape from the heat.",
+    image: palumaImage,
+    tags: ["Rainforest", "Hiking", "Day Trip"],
+    features: [
+      "Cool mountain rainforest",
+      "Waterfalls and walking tracks",
+      "Great in summer",
+      "About 1.5 hours drive"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Paluma+Range+National+Park",
+    aiPrompt: "What are the best things to do in Paluma?",
+    subtitle: "Mountain Escape"
+  },
+  {
+    title: "Jourama Falls",
+    description: "One of the most impressive waterfalls in the Paluma area, with a scenic walk and huge cascading drops.",
+    image: jouramaImage,
+    tags: ["Waterfall", "Hiking", "Nature"],
+    features: [
+      "Large cascading waterfall",
+      "Scenic bushwalk",
+      "Best after wet season",
+      "Near Paluma"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Jourama+Falls",
+    aiPrompt: "How long is the walk to Jourama Falls and is it difficult?",
+    subtitle: "Epic Waterfall Walk"
+  }
+];
 
   return (
     <>
