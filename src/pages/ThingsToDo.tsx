@@ -15,11 +15,12 @@ import jezzineImage from "@/assets/jezzine-barracks-townsville.webp";
 import strandImage from "@/assets/the-strand-townsville.webp";
 import reefAquariumImage from "@/assets/great-barrier-reef-aquarium-townsville.webp";
 
-import mouaImage from "@/assets/moua-underwater-art-townsville.webp";
-import yongalaImage from "@/assets/ss-yongala-wreck.webp";
-import crystalCreekImage from "@/assets/little-crystal-creek.webp";
-import palumaImage from "@/assets/paluma-range.webp";
-import jouramaImage from "@/assets/jourama-falls.webp";
+// Placeholder images for adventure and day trip sections
+const mouaImage = "/placeholder.svg";
+const yongalaImage = "/placeholder.svg";
+const crystalCreekImage = "/placeholder.svg";
+const palumaImage = "/placeholder.svg";
+const jouramaImage = "/placeholder.svg";
 
 const ThingsToDo = () => {
 
