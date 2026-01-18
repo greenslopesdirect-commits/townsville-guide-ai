@@ -34,6 +34,21 @@ const ThingsToDo = () => {
       subtitle: "Must-Do Experience"
     },
     {
+  title: "Ross River Dam (Lake Ross)",
+  description: "A huge freshwater lake just outside Townsville, perfect for scenic drives, picnics, walking tracks and sunset views across the water and surrounding hills.",
+  image: rossRiverDamImage,
+  tags: ["Scenic", "Nature", "Picnic"],
+  features: [
+    "Massive freshwater lake",
+    "Lookouts and picnic areas",
+    "Walking and cycling tracks",
+    "Great for sunset and photography"
+  ],
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=Ross+River+Dam+Townsville",
+  aiPrompt: "What can you do at Ross River Dam and how long should you spend there?",
+  subtitle: "Scenic Lake & Lookouts"
+},
+    {
       title: "The Strand",
       description: "Townsville's 2.2km beachfront promenade with a free saltwater rock pool, water park, cafés, and stunning ocean views. Perfect for walking, swimming, or sunset drinks.",
       image: strandImage,
