@@ -34,6 +34,21 @@ const ThingsToDo = () => {
       subtitle: "Must-Do Experience"
     },
     {
+  title: "SS Yongala Wreck Dive",
+  description: "One of the best wreck dives in the world. The historic SS Yongala shipwreck is now a thriving reef covered in coral and home to giant fish, turtles, rays and sharks.",
+  tags: ["Diving", "Bucket List", "Reef"],
+  features: [
+    "World-famous shipwreck dive",
+    "Huge marine life and coral growth",
+    "For certified divers",
+    "Full-day boat trip from Townsville"
+  ],
+  mapUrl: "https://www.google.com/maps/search/?api=1&query=SS+Yongala+Wreck",
+  aiPrompt: "Why is the SS Yongala considered one of the best wreck dives in the world?",
+  subtitle: "World-Class Wreck Dive"
+},
+
+    {
   title: "Museum of Underwater Art (MOUA)",
   description: "Australia’s only underwater museum featuring surreal submerged sculptures on the Great Barrier Reef. You can snorkel or dive to see world-famous installations like the Coral Greenhouse and Ocean Siren.",
   tags: ["Reef", "Snorkelling", "Diving"],
