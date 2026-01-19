@@ -2,10 +2,17 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
 import DogFriendly from "@/pages/DogFriendly";
 import Shopping from "@/pages/Shopping";
 import Nature from "@/pages/Nature";
+
+// Component to redirect legacy /townsville/* paths to new root-based paths
+const TownsvilleRedirect = () => {
+  const { path, "*": rest } = useParams();
+  const newPath = rest ? `/${path}/${rest}` : `/${path}`;
+  return <Navigate to={newPath} replace />;
+};
 
 // Townsville Layout (Handles Header and Footer for all Townsville routes)
 // FIXED: Using path alias to resolve location issues
@@ -46,8 +53,9 @@ const App = () => (
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          {/* Redirect legacy /townsville path to root */}
-          <Route path="/townsville/*" element={<Navigate to="/" replace />} />
+          {/* Redirect legacy /townsville paths to new root-based equivalents */}
+          <Route path="/townsville" element={<Navigate to="/" replace />} />
+          <Route path="/townsville/:path/*" element={<TownsvilleRedirect />} />
 
           {/* MAIN ROUTES: All city-specific pages use TownsvilleLayout at root */}
           <Route path="/" element={<TownsvilleLayout />}>

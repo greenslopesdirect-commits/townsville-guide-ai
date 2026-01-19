@@ -12,7 +12,7 @@ const SeoContentSections = () => {
       content:
         "Townsville boasts some of Queensland's most stunning beaches. The Strand is the city's iconic 2.2km waterfront promenade, perfect for swimming, walking, and sunset views. Pallarenda Beach offers a quieter escape with rock pools and fishing spots, while Rowes Bay provides calm waters ideal for families.",
       linkText: "See all beaches",
-      linkTo: "/townsville/beaches"
+      linkTo: "/beaches"
     },
     {
       id: "things-to-do",
@@ -21,7 +21,7 @@ const SeoContentSections = () => {
       content:
         "Townsville offers endless activities for visitors and locals alike. Climb or drive Castle Hill for panoramic views of the city and coastline. Take the ferry to Magnetic Island for hiking, wildlife, and secluded beaches. Cool off at Riverway Lagoons, a free tropical swimming complex.",
       linkText: "See all things to do",
-      linkTo: "/townsville/things-to-do"
+      linkTo: "/things-to-do"
     },
     {
       id: "dog-friendly",
@@ -30,7 +30,7 @@ const SeoContentSections = () => {
       content:
         "Townsville is one of Queensland's most dog-friendly cities. Rowes Bay Dog Park offers a large fenced off-leash area near the beach. The Strand has designated dog-friendly zones along the foreshore, ideal for sunrise and sunset walks with your furry companion.",
       linkText: "See all dog-friendly spots",
-      linkTo: "/townsville/dog-friendly"
+      linkTo: "/dog-friendly"
     },
     {
       id: "walks-lookouts",
@@ -39,7 +39,7 @@ const SeoContentSections = () => {
       content:
         "Townsville's tropical landscape offers spectacular walking trails and lookout points. Castle Hill features several walking tracks leading to 360-degree views over the city, harbour, and Magnetic Island. The Jezzine Barracks boardwalk winds along the coastline with interpretive displays.",
       linkText: "Explore walking trails",
-      linkTo: "/townsville/nature"
+      linkTo: "/nature"
     },
     {
       id: "restaurants",
@@ -48,7 +48,7 @@ const SeoContentSections = () => {
       content:
         "Townsville's dining scene blends tropical flavours, fresh seafood, and relaxed Queensland atmosphere. JAM Corner on Palmer Street serves award-winning modern Australian cuisine. A Touch of Salt offers elegant fine dining with riverfront views and seasonal menus.",
       linkText: "Find places to eat",
-      linkTo: "/townsville/food"
+      linkTo: "/food"
     },
     {
       id: "magnetic-island",
@@ -57,7 +57,7 @@ const SeoContentSections = () => {
       content:
         "Just 20 minutes by ferry from Townsville, Magnetic Island is a tropical paradise with 23 beaches and bays. Horseshoe Bay is the island's most popular beach, offering calm waters, watersports, and beachfront dining. The historic Forts Walk offers stunning coastal views.",
       linkText: "View Magnetic Island guide",
-      linkTo: "/townsville/things-to-do"
+      linkTo: "/things-to-do"
     }
   ];
 

@@ -629,7 +629,7 @@ const HistoryOfTownsville = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
                 <Link 
-                  to="/townsville/beaches"
+                  to="/beaches"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
                   aria-label="View best beaches in Townsville"
                 >
@@ -639,7 +639,7 @@ const HistoryOfTownsville = () => {
                 </Link>
 
                 <Link 
-                  to="/townsville/things-to-do"
+                  to="/things-to-do"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
                   aria-label="View things to do in Townsville"
                 >
@@ -649,7 +649,7 @@ const HistoryOfTownsville = () => {
                 </Link>
 
                 <Link 
-                  to="/townsville/dog-friendly"
+                  to="/dog-friendly"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
                   aria-label="View dog-friendly places in Townsville"
                 >
@@ -659,7 +659,7 @@ const HistoryOfTownsville = () => {
                 </Link>
 
                 <Link 
-                  to="/townsville/food"
+                  to="/food"
                   className="text-center p-6 bg-background/80 hover:bg-background rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-border/50"
                   aria-label="View best restaurants in Townsville"
                 >

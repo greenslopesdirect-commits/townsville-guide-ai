@@ -284,10 +284,10 @@ const Nature = () => {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button asChild>
-                  <Link to="/townsville/beaches">Explore Beaches</Link>
+                  <Link to="/beaches">Explore Beaches</Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <Link to="/townsville/dog-friendly">Dog-Friendly Spots</Link>
+                  <Link to="/dog-friendly">Dog-Friendly Spots</Link>
                 </Button>
               </div>
             </section>
