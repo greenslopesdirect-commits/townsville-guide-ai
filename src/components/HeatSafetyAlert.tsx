@@ -38,7 +38,7 @@ const HeatSafetyAlert = ({ className = "", showGuideLink = false }: HeatSafetyAl
           </a>
           {showGuideLink && (
             <Link 
-              to="/townsville/guides/beat-the-heat"
+              to="/guides/beat-the-heat"
               className="inline-flex items-center gap-1 text-orange-800 dark:text-orange-300 hover:underline font-medium"
             >
               → View Full Guide

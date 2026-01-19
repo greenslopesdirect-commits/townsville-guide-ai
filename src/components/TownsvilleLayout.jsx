@@ -11,7 +11,7 @@ const TownsvilleLayout = () => {
       <SEOHead
         title="MyAussieGuide – Townsville"
         description="Your complete local guide to Townsville — beaches, food, events, dog-friendly spots, and insider tips."
-        canonical="https://www.myaussieguide.com.au/townsville"
+        canonical="https://www.myaussieguide.com.au"
       />
 
       <HeaderImproved />

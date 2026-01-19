@@ -117,7 +117,7 @@ const DogFriendly = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Link to="/townsville/dog-friendly">
+          <Link to="/dog-friendly">
             <Button variant="default" size="lg" className="group">
               View all dog-friendly spots
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -155,7 +155,7 @@ const Events = () => {
       <SEOHead
         title="Townsville Events & What's On - Festivals, Markets & Activities"
         description="Discover events, festivals and activities in Townsville. From Strand Ephemera and NAFA to weekly markets, live music and family events."
-        canonical="https://www.myaussieguide.com.au/townsville/events"
+        canonical="https://www.myaussieguide.com.au/events"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -176,7 +176,7 @@ const Events = () => {
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-6xl">
             {/* Back Button */}
-            <Link to="/townsville">
+            <Link to="/">
               <Button variant="ghost" className="mb-6 group" aria-label="Back to home">
                 <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                 Back to Home

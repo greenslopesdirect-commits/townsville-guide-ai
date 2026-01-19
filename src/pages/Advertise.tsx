@@ -10,7 +10,7 @@ const Advertise = () => {
       <SEOHead
         title="Partner With Us - MyAussieGuide Townsville"
         description="Run a local business in Townsville? Get listed in our guides. Submit events, feature your venue, or explore sponsorship opportunities."
-        canonical="https://www.myaussieguide.com.au/townsville/advertise"
+        canonical="https://www.myaussieguide.com.au/advertise"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -19,7 +19,7 @@ const Advertise = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Partner With Us",
-            "url": "https://www.myaussieguide.com.au/townsville/advertise",
+            "url": "https://www.myaussieguide.com.au/advertise",
             "description": "Partnership and listing opportunities on MyAussieGuide Townsville"
           }
           `}
@@ -106,7 +106,7 @@ const Advertise = () => {
                 </Button>
                 <div className="mt-8">
                   <Button variant="outline" size="lg" asChild>
-                    <Link to="/townsville">← Back to Home</Link>
+                    <Link to="/">← Back to Home</Link>
                   </Button>
                 </div>
               </section>

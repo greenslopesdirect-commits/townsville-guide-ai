@@ -109,7 +109,7 @@ const Accommodation = () => {
 
         {/* CTAs */}
         <div className="flex flex-wrap gap-4 justify-center">
-          <Link to="/townsville/accommodation">
+          <Link to="/accommodation">
             <Button variant="default" size="lg" className="group">
               View all accommodation
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

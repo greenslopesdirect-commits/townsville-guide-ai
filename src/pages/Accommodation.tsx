@@ -115,7 +115,7 @@ const Accommodation = () => {
       <SEOHead
         title="Townsville Accommodation Guide - Hotels, Resorts & Holiday Parks"
         description="Find the best places to stay in Townsville. From beachfront hotels and luxury resorts to serviced apartments and family-friendly holiday parks."
-        canonical="https://www.myaussieguide.com.au/townsville/accommodation"
+        canonical="https://www.myaussieguide.com.au/accommodation"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -137,7 +137,7 @@ const Accommodation = () => {
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-6xl">
             {/* Back Button */}
-            <Link to="/townsville">
+            <Link to="/">
               <Button variant="ghost" className="mb-6 group" aria-label="Back to home">
                 <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                 Back to Home

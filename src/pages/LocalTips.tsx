@@ -125,7 +125,7 @@ const LocalTips = () => {
       <SEOHead
         title="Local Tips for Visiting Townsville - Insider Travel Guide"
         description="Essential local tips for visiting Townsville. Learn about weather patterns, stinger safety, getting around, dog-friendly spots and the best time to visit North Queensland."
-        canonical="https://www.myaussieguide.com.au/townsville/local-tips"
+        canonical="https://www.myaussieguide.com.au/local-tips"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -148,7 +148,7 @@ const LocalTips = () => {
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-6xl">
             {/* Back Button */}
-            <Link to="/townsville">
+            <Link to="/">
               <Button variant="ghost" className="mb-6 group" aria-label="Back to home">
                 <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                 Back to Home
@@ -260,14 +260,14 @@ const LocalTips = () => {
                     <p className="text-sm text-muted-foreground">Find the best beaches for your visit</p>
                   </div>
                 </Link>
-                <Link to="/townsville/dog-friendly" className="block">
+                <Link to="/dog-friendly" className="block">
                   <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card">
                     <Dog className="w-8 h-8 text-primary mb-3" />
                     <h3 className="font-semibold text-foreground mb-1">Dog-Friendly</h3>
                     <p className="text-sm text-muted-foreground">Parks and beaches for your furry friend</p>
                   </div>
                 </Link>
-                <Link to="/townsville/things-to-do" className="block">
+                <Link to="/things-to-do" className="block">
                   <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card">
                     <MapPin className="w-8 h-8 text-primary mb-3" />
                     <h3 className="font-semibold text-foreground mb-1">Things to Do</h3>

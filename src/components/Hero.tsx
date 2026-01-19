@@ -271,10 +271,10 @@ const Hero = () => {
 
             {/* Quick Chips */}
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-6">
-              <QuickChip label="🏖️ Beaches" to="/townsville/beaches" />
-              <QuickChip label="🍽️ Food" to="/townsville/food" />
-              <QuickChip label="🎉 Events" to="/townsville/events" />
-              <QuickChip label="🐕 Dog-Friendly" to="/townsville/dog-friendly" />
+              <QuickChip label="🏖️ Beaches" to="/beaches" />
+              <QuickChip label="🍽️ Food" to="/food" />
+              <QuickChip label="🎉 Events" to="/events" />
+              <QuickChip label="🐕 Dog-Friendly" to="/dog-friendly" />
             </div>
 
             {/* Response Display */}

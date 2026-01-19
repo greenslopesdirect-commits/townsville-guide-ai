@@ -156,7 +156,7 @@ const FoodDrink = () => {
       <SEOHead
         title="Best Food & Restaurants in Townsville - Local Dining Guide"
         description="Discover the best restaurants, cafés and dining spots in Townsville. From waterfront dining on The Strand to modern Australian cuisine, find where locals eat."
-        canonical="https://www.myaussieguide.com.au/townsville/food"
+        canonical="https://www.myaussieguide.com.au/food"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -178,7 +178,7 @@ const FoodDrink = () => {
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-6xl">
             {/* Back Button */}
-            <Link to="/townsville">
+            <Link to="/">
               <Button variant="ghost" className="mb-6 group" aria-label="Back to home">
                 <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                 Back to Home

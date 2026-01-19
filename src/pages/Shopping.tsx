@@ -139,7 +139,7 @@ const Shopping = () => {
       <SEOHead
         title="Shopping & Markets in Townsville – Complete Guide | MyAussieGuide"
         description="Discover the best shopping centres and local markets in Townsville. From Stockland to Cotters Market, find where to shop for retail, produce, and local crafts."
-        canonical="https://www.myaussieguide.com.au/townsville/shopping"
+        canonical="https://www.myaussieguide.com.au/shopping"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -154,13 +154,13 @@ const Shopping = () => {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Stockland Townsville",
-                "url": "https://www.myaussieguide.com.au/townsville/shopping"
+                "url": "https://www.myaussieguide.com.au/shopping"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Cotters Market",
-                "url": "https://www.myaussieguide.com.au/townsville/shopping"
+                "url": "https://www.myaussieguide.com.au/shopping"
               }
             ]
           }
@@ -172,7 +172,7 @@ const Shopping = () => {
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-5xl">
             {/* Back Button */}
-            <Link to="/townsville">
+            <Link to="/">
               <Button 
                 variant="ghost" 
                 className="mb-6 group"

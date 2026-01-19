@@ -51,7 +51,7 @@ const AboutSection = () => {
                 <span className="text-base md:text-lg">Based in Townsville, Queensland</span>
               </div>
               
-              <Link to="/townsville/contact">
+              <Link to="/contact">
                 <Button variant="outline" className="rounded-full px-6">
                   <Mail className="w-4 h-4 mr-2" />
                   Get in Touch
@@ -65,7 +65,7 @@ const AboutSection = () => {
         <div className="text-center animate-fade-in" style={{
         animationDelay: '0.4s'
       }}>
-          <Link to="/townsville/history">
+          <Link to="/history">
             <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-6 text-base md:text-lg font-semibold" aria-label="Read the full history of Townsville">
               Read the Full History of Townsville 📜
             </Button>

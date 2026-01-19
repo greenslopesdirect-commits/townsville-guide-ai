@@ -20,7 +20,7 @@ const HistoryOfTownsville = () => {
       <SEOHead
         title="Townsville History – A Simple, Engaging Story of the City"
         description="Explore Townsville's history from First Nations Country to gold rush days, cyclones, WWII and modern life in this clear, easy-to-read local guide."
-        canonical="https://www.myaussieguide.com.au/townsville/history"
+        canonical="https://www.myaussieguide.com.au/history"
       />
       <Helmet>
 
@@ -130,7 +130,7 @@ const HistoryOfTownsville = () => {
         {/* Back Navigation */}
         <div className="container mx-auto px-4 sm:px-6 py-6 max-w-5xl mt-16">
           <Link 
-            to="/townsville" 
+            to="/" 
             className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -674,7 +674,7 @@ const HistoryOfTownsville = () => {
           {/* Back Navigation */}
           <div className="text-center pt-16 pb-20 mt-12 border-t border-border">
             <Link 
-              to="/townsville" 
+              to="/" 
               className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
             >
               <ArrowLeft className="w-5 h-5" />

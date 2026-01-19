@@ -27,12 +27,12 @@ export type AIPresetKey = keyof typeof AI_PRESETS;
  * - Focuses the input
  */
 export async function triggerAiGuide(question: string): Promise<void> {
-  const isOnHomePage = window.location.pathname === "/townsville" || window.location.pathname === "/townsville/";
+  const isOnHomePage = window.location.pathname === "/" || window.location.pathname === "";
   
   if (!isOnHomePage) {
     // Store the question in sessionStorage for retrieval after navigation
     sessionStorage.setItem("pendingAiQuestion", question);
-    window.location.href = "/townsville";
+    window.location.href = "/";
     return;
   }
   

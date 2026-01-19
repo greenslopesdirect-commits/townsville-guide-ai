@@ -31,16 +31,16 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-3">Explore</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/townsville" className="hover:text-primary transition-colors">Home</Link></li>
-              <li><Link to="/townsville/things-to-do" className="hover:text-primary transition-colors">Things to Do</Link></li>
-              <li><Link to="/townsville/beaches" className="hover:text-primary transition-colors">Beaches</Link></li>
-              <li><Link to="/townsville/food" className="hover:text-primary transition-colors">Food & Drink</Link></li>
-              <li><Link to="/townsville/events" className="hover:text-primary transition-colors">Events</Link></li>
-              <li><Link to="/townsville/dog-friendly" className="hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
-              <li><Link to="/townsville/accommodation" className="hover:text-primary transition-colors">Accommodation</Link></li>
-              <li><Link to="/townsville/flights" className="hover:text-primary transition-colors">Flights</Link></li>
-              <li><Link to="/townsville/local-tips" className="hover:text-primary transition-colors">Local Tips</Link></li>
-              <li><Link to="/townsville/advertise" className="hover:text-primary transition-colors">Advertise With Us</Link></li>
+              <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
+              <li><Link to="/things-to-do" className="hover:text-primary transition-colors">Things to Do</Link></li>
+              <li><Link to="/beaches" className="hover:text-primary transition-colors">Beaches</Link></li>
+              <li><Link to="/food" className="hover:text-primary transition-colors">Food & Drink</Link></li>
+              <li><Link to="/events" className="hover:text-primary transition-colors">Events</Link></li>
+              <li><Link to="/dog-friendly" className="hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
+              <li><Link to="/accommodation" className="hover:text-primary transition-colors">Accommodation</Link></li>
+              <li><Link to="/flights" className="hover:text-primary transition-colors">Flights</Link></li>
+              <li><Link to="/local-tips" className="hover:text-primary transition-colors">Local Tips</Link></li>
+              <li><Link to="/advertise" className="hover:text-primary transition-colors">Advertise With Us</Link></li>
             </ul>
           </div>
 
@@ -62,7 +62,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
               <Mail className="w-4 h-4" />
               <Link
-                to="/townsville/contact"
+                to="/contact"
                 className="hover:text-primary transition-colors"
               >
                 Contact Us
