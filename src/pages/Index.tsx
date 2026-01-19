@@ -26,7 +26,7 @@ const Index = () => {
     <>
       <SEOHead
         title="MyAussieGuide – Townsville | Best Beaches, Food, Walks & Local Tips"
-        description="Discover Townsville's beaches, cafés, walks, dog-friendly spots and local attractions with MyAussieGuide — your smart local guide to North Queensland."
+        description="The 2026 local guide to Townsville. Schnauzer-approved pet tips, updated weekend event calendars, and authentic hidden gems. Curated by local expert Duncan Ross."
         canonical="https://www.myaussieguide.com.au/townsville"
       />
       <Helmet>

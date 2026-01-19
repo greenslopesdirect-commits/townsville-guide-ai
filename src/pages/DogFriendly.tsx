@@ -22,11 +22,19 @@ interface DogSpotCardProps {
   mapUrl: string;
   icon: ReactNode;
   type: string;
+  schnauzerapproved?: boolean;
 }
 
-const DogSpotCard = ({ title, description, features, mapUrl, icon, type }: DogSpotCardProps) => (
-  <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30">
-    <CardHeader className="bg-gradient-to-br from-primary/5 to-transparent pb-4">
+const DogSpotCard = ({ title, description, features, mapUrl, icon, type, schnauzerapproved }: DogSpotCardProps) => (
+  <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 relative">
+    {schnauzerapproved && (
+      <div className="absolute -top-1 right-2 z-10">
+        <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300 border-2 border-amber-300 shadow-sm">
+          🐾 Schnauzer Approved
+        </span>
+      </div>
+    )}
+    <CardHeader className={`bg-gradient-to-br from-primary/5 to-transparent pb-4 ${schnauzerapproved ? 'pt-8' : ''}`}>
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-3">
           <div className="p-3 rounded-xl bg-primary/10 text-primary">
@@ -94,7 +102,8 @@ const DogFriendly = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Beach+Townsville",
       icon: <Dog className="w-6 h-6" />,
-      type: "Off-Leash Beach"
+      type: "Off-Leash Beach",
+      schnauzerapproved: true
     },
     {
       title: "Bushland Beach Off-Leash Area",
@@ -150,6 +159,20 @@ const DogFriendly = () => {
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Mannikin+Park+Dog+Park+Bohle+Plains",
     icon: <TreePine className="w-6 h-6" />,
     type: "Fenced Dog Park"
+  },
+  {
+    title: "Bamford Lane Dog Park (Kirwan)",
+    description: "A popular fully fenced park with large grassy runs, agility equipment, and plenty of shade trees. A local favourite.",
+    features: [
+      "Fully fenced and secure",
+      "Agility equipment for training",
+      "Large grassy play areas",
+      "Plenty of shade trees"
+    ],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Bamford+Lane+Dog+Park+Kirwan+Townsville",
+    icon: <TreePine className="w-6 h-6" />,
+    type: "Fenced Dog Park",
+    schnauzerapproved: true
   }
 ];
 
@@ -260,7 +283,7 @@ const DogFriendly = () => {
                 Dog-Friendly Townsville: Beaches, Parks & Walks
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Living in Townsville means sunshine, beaches, and outdoor life — and luckily, it’s a great place to own a dog too. This local guide covers the best dog-friendly places in Townsville, including off-leash beaches, fenced dog parks, and scenic walking tracks, plus important local tips to keep your dog safe in our tropical climate.
+                Living in Townsville means sunshine, beaches, and outdoor life — and luckily, it's a great place to own a dog too. This local guide covers the best dog-friendly places in Townsville, featuring <strong>Schnauzer-Approved recommendations</strong>, off-leash beaches, fenced dog parks, and scenic walking tracks, plus important local tips to keep your dog safe in our tropical climate.
               </p>
             </header>
 

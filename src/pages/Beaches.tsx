@@ -322,6 +322,23 @@ const Beaches = () => {
               ))}
             </div>
 
+            {/* Stinger Safety Tip Box */}
+            <Card className="mb-8 border-2 border-blue-200 bg-gradient-to-br from-blue-50 to-transparent dark:from-blue-900/10 dark:border-blue-800">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <AlertTriangle className="w-8 h-8 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-2 text-lg">
+                      🦑 Stinger Safety
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      <strong>Stinger Season is generally Nov–May.</strong> You CAN swim safely at The Strand and Pallarenda inside the stinger nets. Always check with lifeguards for current conditions and net locations.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* Stinger Season Safety Alert */}
             <StingerSeasonAlert className="mb-8" />
 
