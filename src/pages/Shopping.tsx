@@ -267,10 +267,10 @@ const Shopping = () => {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button asChild>
-                  <Link to="/townsville/food">Food & Drink</Link>
+                  <Link to="/food">Food & Drink</Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <Link to="/townsville/things-to-do">Things To Do</Link>
+                  <Link to="/things-to-do">Things To Do</Link>
                 </Button>
               </div>
             </section>

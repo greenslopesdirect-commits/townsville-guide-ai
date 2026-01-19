@@ -253,7 +253,7 @@ const LocalTips = () => {
                 Explore More
               </h2>
               <div className="grid md:grid-cols-3 gap-4">
-                <Link to="/townsville/beaches" className="block">
+                <Link to="/beaches" className="block">
                   <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card">
                     <Waves className="w-8 h-8 text-primary mb-3" />
                     <h3 className="font-semibold text-foreground mb-1">Beaches</h3>

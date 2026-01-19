@@ -313,11 +313,11 @@ const ThingsToDo = () => {
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {[
-                  { to: "/townsville/guides/beat-the-heat", title: "Beat the Heat Guide", desc: "Stay cool in the tropics", emoji: "❄️" },
-                  { to: "/townsville/guides/magnetic-island-day-trip", title: "Magnetic Island Day Trip", desc: "Island adventure itinerary", emoji: "🏝️" },
-                  { to: "/townsville/guides/stinger-safety", title: "Stinger Safety Guide", desc: "Swim safe all year round", emoji: "⚠️" },
-                  { to: "/townsville/guides/free-things", title: "5 Free Things to Do", desc: "Explore Townsville on a budget", emoji: "🪙" },
-                  { to: "/townsville/guides/sunset-walks", title: "Sunset Walks Guide", desc: "Best spots for a late afternoon stroll", emoji: "🌅" }
+                  { to: "/guides/beat-the-heat", title: "Beat the Heat Guide", desc: "Stay cool in the tropics", emoji: "❄️" },
+                  { to: "/guides/magnetic-island-day-trip", title: "Magnetic Island Day Trip", desc: "Island adventure itinerary", emoji: "🏝️" },
+                  { to: "/guides/stinger-safety", title: "Stinger Safety Guide", desc: "Swim safe all year round", emoji: "⚠️" },
+                  { to: "/guides/free-things", title: "5 Free Things to Do", desc: "Explore Townsville on a budget", emoji: "🪙" },
+                  { to: "/guides/sunset-walks", title: "Sunset Walks Guide", desc: "Best spots for a late afternoon stroll", emoji: "🌅" }
                 ].map((guide, index) => (
                   <Link key={index} to={guide.to} className="group">
                     <div className="p-5 rounded-xl bg-white dark:bg-card border-2 border-sky-200 dark:border-sky-700 hover:border-sky-400 dark:hover:border-sky-500 transition-all duration-300 h-full">
@@ -361,7 +361,7 @@ const ThingsToDo = () => {
                 🗺️ If you want to see where the locals really hang out, take a walk through the Palmetum or drive up Castle Hill at sunset.
               </p>
               <Link 
-                to="/townsville/guides/free-things" 
+                to="/guides/free-things" 
                 className="inline-flex items-center gap-1 mt-3 text-blue-700 dark:text-blue-300 hover:underline font-medium"
               >
                 → Discover 5 Free Things to Do in Townsville
@@ -435,7 +435,7 @@ const ThingsToDo = () => {
                     { time: "Morning", activity: "Castle Hill, walks, outdoor exploring", icon: Sunrise },
                     { time: "Midday", activity: "Museum, lunch, Riverway lagoons, shade activities", icon: CloudSun },
                     { time: "Afternoon", activity: "Magnetic Island or The Strand", icon: Sunset },
-                    { time: "Evening", activity: "Sunset at The Strand or Castle Hill", icon: Moon, link: "/townsville/guides/sunset-walks" }
+                    { time: "Evening", activity: "Sunset at The Strand or Castle Hill", icon: Moon, link: "/guides/sunset-walks" }
                   ].map((item, index) => (
                     <div key={index} className="p-5 rounded-2xl bg-card border-2 border-border/40 hover:border-primary/30 transition-colors text-center">
                       <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 text-primary mb-3">
@@ -521,10 +521,10 @@ const ThingsToDo = () => {
               </div>
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                 {[
-                  { to: "/townsville/flights", icon: Plane, title: "Flights to Townsville", desc: "Find the best flight options" },
-                  { to: "/townsville/food", icon: UtensilsCrossed, title: "Townsville Food Guide", desc: "Best restaurants and cafés" },
-                  { to: "/townsville/shopping", icon: ShoppingBag, title: "Townsville Shopping", desc: "Markets, malls and local stores" },
-                  { to: "/townsville/history", icon: BookOpen, title: "Townsville History", desc: "Heritage and culture" }
+                  { to: "/flights", icon: Plane, title: "Flights to Townsville", desc: "Find the best flight options" },
+                  { to: "/food", icon: UtensilsCrossed, title: "Townsville Food Guide", desc: "Best restaurants and cafés" },
+                  { to: "/shopping", icon: ShoppingBag, title: "Townsville Shopping", desc: "Markets, malls and local stores" },
+                  { to: "/history", icon: BookOpen, title: "Townsville History", desc: "Heritage and culture" }
                 ].map((item, index) => (
                   <Link key={index} to={item.to} className="block group">
                     <div className="p-5 rounded-2xl border-2 border-border/40 hover:border-primary/30 transition-all duration-300 bg-card h-full text-center group-hover:shadow-md">
@@ -545,21 +545,21 @@ const ThingsToDo = () => {
                 Explore More
               </h2>
               <div className="grid md:grid-cols-3 gap-4">
-                <Link to="/townsville/beaches" className="block">
+                <Link to="/beaches" className="block">
                   <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card">
                     <Palmtree className="w-8 h-8 text-primary mb-3" />
                     <h3 className="font-semibold text-foreground mb-1">Beaches</h3>
                     <p className="text-sm text-muted-foreground">Explore Townsville's best coastal spots</p>
                   </div>
                 </Link>
-                <Link to="/townsville/dog-friendly" className="block">
+                <Link to="/dog-friendly" className="block">
                   <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card">
                     <Dog className="w-8 h-8 text-primary mb-3" />
                     <h3 className="font-semibold text-foreground mb-1">Dog-Friendly</h3>
                     <p className="text-sm text-muted-foreground">Parks and beaches for your furry friend</p>
                   </div>
                 </Link>
-                <Link to="/townsville/nature" className="block">
+                <Link to="/nature" className="block">
                   <div className="p-6 rounded-xl border-2 hover:border-primary/30 transition-colors bg-card">
                     <Compass className="w-8 h-8 text-primary mb-3" />
                     <h3 className="font-semibold text-foreground mb-1">Nature & Walks</h3>
