@@ -222,6 +222,42 @@ const Events = () => {
               </div>
             </section>
 
+            {/* Major 2026 Events to Plan For */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="p-2 rounded-lg bg-amber-100 dark:bg-amber-900/30">
+                  <Calendar className="w-6 h-6 text-amber-600 dark:text-amber-400" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Major 2026 Events to Plan For
+                  </h2>
+                  <p className="text-muted-foreground">Mark your calendar for these highlights</p>
+                </div>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-3">
+                <Card className="border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-transparent dark:from-amber-900/10 dark:border-amber-800">
+                  <CardContent className="p-5">
+                    <h3 className="font-bold text-lg text-foreground mb-2">Strand Ephemera</h3>
+                    <p className="text-sm text-muted-foreground">Australia's leading outdoor sculpture festival. Biennial event transforming The Strand into an open-air gallery.</p>
+                  </CardContent>
+                </Card>
+                <Card className="border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-transparent dark:from-amber-900/10 dark:border-amber-800">
+                  <CardContent className="p-5">
+                    <h3 className="font-bold text-lg text-foreground mb-2">Magnetic Island Race Week</h3>
+                    <p className="text-sm text-muted-foreground">Late August – early September. Sailing yachts compete around Magnetic Island's stunning bays.</p>
+                  </CardContent>
+                </Card>
+                <Card className="border-2 border-amber-200 bg-gradient-to-br from-amber-50 to-transparent dark:from-amber-900/10 dark:border-amber-800">
+                  <CardContent className="p-5">
+                    <h3 className="font-bold text-lg text-foreground mb-2">North Australian Festival of Arts</h3>
+                    <p className="text-sm text-muted-foreground">June–July. Townsville's flagship arts festival featuring theatre, music, circus, comedy, and outdoor performances.</p>
+                  </CardContent>
+                </Card>
+              </div>
+            </section>
+
             {/* Annual Festivals */}
             <section id="annual-festivals" className="mb-16">
               <div className="flex items-center gap-3 mb-8">

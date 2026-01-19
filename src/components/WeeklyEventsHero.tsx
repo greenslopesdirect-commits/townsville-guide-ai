@@ -7,28 +7,28 @@ import { triggerAiGuide } from "@/utils/aiGuide";
 const WeeklyEventsHero = () => {
   const featureCards = [
     {
-      title: "Live Music @ Townsville RSL",
-      icon: Music,
-      details: "Saturday, Jan 17 @ 7:30 PM | Townsville RSL",
-      description: "Enjoy live entertainment from \"The Bar Trippers\". Great atmosphere for a Saturday night.",
-      badge: "Free Entry",
+      title: "Australia Day Flag Raising",
+      icon: MapPin,
+      details: "Sunday, Jan 26 @ 6:00 AM | Jezzine Barracks",
+      description: "Join the community for the official Australia Day dawn flag raising ceremony at the scenic Jezzine Barracks.",
+      badge: "Community",
+      badgeColor: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+    },
+    {
+      title: "Great Australian Bites",
+      icon: ShoppingBasket,
+      details: "Sat–Sun, Jan 24–26 | The Strand",
+      description: "Celebrate Australia Day weekend with local food vendors, live music, and family activities along The Strand.",
+      badge: "Food & Music",
       badgeColor: "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
     },
     {
-      title: "Willows Rotary Markets",
-      icon: ShoppingBasket,
-      details: "Sunday, Jan 18 @ 7:30 AM | Willows Shopping Centre",
-      description: "The locals' choice for fresh fruit, veg, and Sunday bargains.",
-      badge: "Shop Local",
+      title: "Survival Day",
+      icon: Music,
+      details: "Sunday, Jan 26 | The Palmetum",
+      description: "A respectful gathering acknowledging Indigenous history and culture with music, art, and storytelling.",
+      badge: "Cultural",
       badgeColor: "bg-primary/10 text-primary",
-    },
-    {
-      title: "Cotters Market",
-      icon: MapPin,
-      details: "Sunday, Jan 18 @ 8:00 AM | Flinders Street, CBD",
-      description: "Townsville's largest market with arts, crafts, and food stalls.",
-      badge: "Family Friendly",
-      badgeColor: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
     },
   ];
 
@@ -40,13 +40,13 @@ const WeeklyEventsHero = () => {
           variant="outline" 
           className="mb-4 px-3 py-1 text-xs font-medium border-primary/30 text-muted-foreground"
         >
-          Last Updated: Jan 17, 2026
+          Last Updated: Jan 19, 2026
         </Badge>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-          What's On: Weekend of Jan 17–18
+          What's On: Australia Day Long Weekend (Jan 23–26)
         </h1>
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          A great weekend for live music and local markets. <span className="italic">(Note: Townsville Fire are playing away in Perth this Sunday, so no home game at the stadium).</span>
+          A long weekend of celebrations, food, and community events across Townsville.
         </p>
       </header>
 
