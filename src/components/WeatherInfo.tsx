@@ -67,7 +67,7 @@ const WeatherInfo = () => {
             </CardTitle>
           </CardHeader>
           <CardContent className="flex justify-center">
-            <Link to="/townsville/things-to-do">
+            <Link to="/things-to-do">
               <Button 
                 variant="default"
                 className="w-full md:w-auto"

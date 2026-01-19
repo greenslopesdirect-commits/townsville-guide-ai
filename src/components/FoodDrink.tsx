@@ -103,7 +103,7 @@ const FoodDrink = () => {
 
         {/* CTA */}
         <div className="text-center">
-          <Link to="/townsville/food">
+          <Link to="/food">
             <Button variant="default" size="lg" className="group">
               View all restaurants
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

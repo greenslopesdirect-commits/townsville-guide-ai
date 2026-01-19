@@ -105,7 +105,7 @@ const EventsOn = () => {
 
         {/* CTAs */}
         <div className="flex flex-wrap gap-4 justify-center">
-          <Link to="/townsville/events">
+          <Link to="/events">
             <Button variant="default" size="lg" className="group">
               View all events
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

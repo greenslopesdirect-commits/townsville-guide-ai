@@ -234,7 +234,7 @@ const Beaches = () => {
       <SEOHead
         title="Best Beaches in Townsville – Complete Coastal Guide | MyAussieGuide"
         description="Discover Townsville's best beaches including The Strand, Pallarenda, Rowes Bay, Bushland Beach and Magnetic Island. Swimming, snorkelling, dog-friendly spots and local tips."
-        canonical="https://www.myaussieguide.com.au/townsville/beaches"
+        canonical="https://www.myaussieguide.com.au/beaches"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -279,7 +279,7 @@ const Beaches = () => {
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-5xl">
             {/* Back Button */}
-            <Link to="/townsville">
+            <Link to="/">
               <Button 
                 variant="ghost" 
                 className="mb-6 group"
@@ -580,13 +580,13 @@ const Beaches = () => {
                 Discover walks, wildlife, restaurants, and more things to do in Townsville with our complete local guides.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/townsville/things-to-do">
+                <Link to="/things-to-do">
                   <Button size="lg" className="gap-2 w-full sm:w-auto">
                     <Compass className="w-5 h-5" />
                     Explore Things to Do
                   </Button>
                 </Link>
-                <Link to="/townsville/dog-friendly">
+                <Link to="/dog-friendly">
                   <Button variant="outline" size="lg" className="gap-2 w-full sm:w-auto">
                     <Dog className="w-5 h-5" />
                     Dog-Friendly Guide
@@ -597,7 +597,7 @@ const Beaches = () => {
 
             {/* Back to Home */}
             <div className="mt-12 pt-8 border-t border-border text-center">
-              <Link to="/townsville">
+              <Link to="/">
                 <Button variant="ghost" size="lg" className="group">
                   <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                   Return to Home

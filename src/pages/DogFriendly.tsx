@@ -224,7 +224,7 @@ const DogFriendly = () => {
       <SEOHead
         title="Dog-Friendly Townsville: Beaches, Parks & Walks You Can Take Your Dog"
         description="A complete local guide to dog-friendly Townsville including off-leash beaches, dog parks, walking tracks, and important local tips for dog owners."
-        canonical="https://www.myaussieguide.com.au/townsville/dog-friendly"
+        canonical="https://www.myaussieguide.com.au/dog-friendly"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -239,19 +239,19 @@ const DogFriendly = () => {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "The Strand Dog-Friendly Areas",
-                "url": "https://www.myaussieguide.com.au/townsville/dog-friendly"
+                "url": "https://www.myaussieguide.com.au/dog-friendly"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Pallarenda Dog Beach",
-                "url": "https://www.myaussieguide.com.au/townsville/dog-friendly"
+                "url": "https://www.myaussieguide.com.au/dog-friendly"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Mount Louisa Dog Park",
-                "url": "https://www.myaussieguide.com.au/townsville/dog-friendly"
+                "url": "https://www.myaussieguide.com.au/dog-friendly"
               }
             ]
           }
@@ -262,7 +262,7 @@ const DogFriendly = () => {
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-5xl">
             {/* Back Button */}
-            <Link to="/townsville">
+            <Link to="/">
               <Button 
                 variant="ghost" 
                 className="mb-6 group"
@@ -416,10 +416,10 @@ const DogFriendly = () => {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button asChild>
-                  <Link to="/townsville/beaches">Explore Beaches</Link>
+                  <Link to="/beaches">Explore Beaches</Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <Link to="/townsville/nature">Nature & Walks</Link>
+                  <Link to="/nature">Nature & Walks</Link>
                 </Button>
               </div>
             </section>

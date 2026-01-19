@@ -21,20 +21,20 @@ const HeaderImproved = () => {
   }, []);
 
   const navItems = [
-    { to: "/townsville", label: "Home" },
-    { to: "/townsville/history", label: "History" },
-    { to: "/townsville/things-to-do", label: "Things to Do" },
-    { to: "/townsville/beaches", label: "Beaches" },
-    { to: "/townsville/food", label: "Food & Drink" },
-    { to: "/townsville/local-tips", label: "Local Tips" },
-    { to: "/townsville/accommodation", label: "Accommodation" },
-    { to: "/townsville/events", label: "Events" },
-    { to: "/townsville/contact", label: "Contact" },
+    { to: "/", label: "Home" },
+    { to: "/history", label: "History" },
+    { to: "/things-to-do", label: "Things to Do" },
+    { to: "/beaches", label: "Beaches" },
+    { to: "/food", label: "Food & Drink" },
+    { to: "/local-tips", label: "Local Tips" },
+    { to: "/accommodation", label: "Accommodation" },
+    { to: "/events", label: "Events" },
+    { to: "/contact", label: "Contact" },
   ];
 
   const isActive = (path: string) => {
-    if (path === "/townsville") {
-      return location.pathname === "/townsville" || location.pathname === "/";
+    if (path === "/") {
+      return location.pathname === "/";
     }
     return location.pathname === path;
   };
@@ -50,7 +50,7 @@ const HeaderImproved = () => {
       {/* ✅ LOCKED HEADER HEIGHT */}
       <nav className="container mx-auto h-20 px-4 flex items-center">
         <div className="flex items-center justify-between w-full">
-          <Link to="/townsville" className="hover:opacity-80 transition-opacity">
+          <Link to="/" className="hover:opacity-80 transition-opacity">
             {/* ✅ NO NEGATIVE MARGINS */}
             <img
               src={logo}

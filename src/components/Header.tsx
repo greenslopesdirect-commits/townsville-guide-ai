@@ -7,15 +7,15 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
-  { to: "/townsville", label: "Home" },
-  { to: "/townsville/history", label: "History" },
-  { to: "/townsville/things-to-do", label: "Things to Do" },
-  { to: "/townsville/beaches", label: "Beaches" },
-  { to: "/townsville/food", label: "Food & Drink" },
-  { to: "/townsville/local-tips", label: "Local Tips" },
-  { to: "/townsville/accommodation", label: "Accommodation" },
-  { to: "/townsville/events", label: "Events" },
-  { to: "/townsville/contact", label: "Contact" },
+  { to: "/", label: "Home" },
+  { to: "/history", label: "History" },
+  { to: "/things-to-do", label: "Things to Do" },
+  { to: "/beaches", label: "Beaches" },
+  { to: "/food", label: "Food & Drink" },
+  { to: "/local-tips", label: "Local Tips" },
+  { to: "/accommodation", label: "Accommodation" },
+  { to: "/events", label: "Events" },
+  { to: "/contact", label: "Contact" },
 ];
 
 const Header = () => {
@@ -28,7 +28,7 @@ const Header = () => {
           
           {/* Logo */}
           <Link 
-            to="/townsville" 
+            to="/" 
             className="hover:opacity-80 transition-opacity flex-shrink-0"
           >
             <img

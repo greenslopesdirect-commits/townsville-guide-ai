@@ -145,7 +145,7 @@ const Nature = () => {
       <SEOHead
         title="Nature & Walks in Townsville – Trails & Hiking Guide | MyAussieGuide"
         description="Discover the best nature walks and hiking trails in Townsville. From Castle Hill to Town Common, explore scenic bushland, coastal paths, and wildlife spotting."
-        canonical="https://www.myaussieguide.com.au/townsville/nature"
+        canonical="https://www.myaussieguide.com.au/nature"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -160,13 +160,13 @@ const Nature = () => {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Castle Hill Walking Tracks",
-                "url": "https://www.myaussieguide.com.au/townsville/nature"
+                "url": "https://www.myaussieguide.com.au/nature"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Townsville Town Common",
-                "url": "https://www.myaussieguide.com.au/townsville/nature"
+                "url": "https://www.myaussieguide.com.au/nature"
               }
             ]
           }
@@ -178,7 +178,7 @@ const Nature = () => {
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-5xl">
             {/* Back Button */}
-            <Link to="/townsville">
+            <Link to="/">
               <Button 
                 variant="ghost" 
                 className="mb-6 group"
