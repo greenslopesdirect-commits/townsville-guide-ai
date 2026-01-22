@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { 
   ArrowLeft, 
+  ArrowRight, // Added this import
   MapPin, 
   Waves, 
   Sunset, 
@@ -34,10 +35,12 @@ interface BeachCardProps {
   dogFriendly?: boolean;
   bestFor: string;
   aiPrompt?: string;
+  internalLink?: string; // New optional prop
+  linkText?: string;     // New optional prop
 }
 
-const BeachCard = ({ title, description, features, mapUrl, icon, dogFriendly, bestFor, aiPrompt }: BeachCardProps) => (
-  <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30">
+const BeachCard = ({ title, description, features, mapUrl, icon, dogFriendly, bestFor, aiPrompt, internalLink, linkText }: BeachCardProps) => (
+  <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col h-full">
     <CardHeader className="bg-gradient-to-br from-primary/5 to-transparent pb-4">
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-3">
@@ -57,9 +60,9 @@ const BeachCard = ({ title, description, features, mapUrl, icon, dogFriendly, be
         )}
       </div>
     </CardHeader>
-    <CardContent className="pt-4 space-y-4">
-      <p className="text-muted-foreground leading-relaxed">{description}</p>
-      <ul className="space-y-2">
+    <CardContent className="pt-4 space-y-4 flex-grow flex flex-col">
+      <p className="text-muted-foreground leading-relaxed flex-grow">{description}</p>
+      <ul className="space-y-2 mb-4">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
             <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
@@ -67,27 +70,40 @@ const BeachCard = ({ title, description, features, mapUrl, icon, dogFriendly, be
           </li>
         ))}
       </ul>
-      <div className="flex flex-col sm:flex-row gap-2">
-        <Button variant="outline" size="sm" asChild className="gap-2 flex-1">
-          <a 
-            href={mapUrl} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            aria-label={`View ${title} on Google Maps`}
+      
+      <div className="flex flex-col gap-3 mt-auto">
+        {/* NEW: Internal Deep Dive Link (If exists) */}
+        {internalLink && (
+           <Button asChild className="w-full bg-green-600 hover:bg-green-700 text-white shadow-sm" size="default">
+             <Link to={internalLink} className="flex justify-between items-center">
+               <span className="font-semibold">{linkText || "View Full Guide"}</span>
+               <ArrowRight className="w-4 h-4 ml-2" />
+             </Link>
+           </Button>
+        )}
+
+        <div className="flex flex-col sm:flex-row gap-2">
+          <Button variant="outline" size="sm" asChild className="gap-2 flex-1">
+            <a 
+              href={mapUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label={`View ${title} on Google Maps`}
+            >
+              <MapPin className="w-4 h-4" />
+              View on Map
+            </a>
+          </Button>
+          <Button 
+            variant="ghost" 
+            size="sm" 
+            onClick={() => triggerAiGuide(aiPrompt || `Tell me about the best times to visit, facilities, and local tips for ${title} beach in Townsville.`)}
+            className="gap-2 flex-1"
           >
-            <MapPin className="w-4 h-4" />
-            View on Map
-          </a>
-        </Button>
-        <Button 
-          variant="ghost" 
-          size="sm" 
-          onClick={() => triggerAiGuide(aiPrompt || `Tell me about the best times to visit, facilities, and local tips for ${title} beach in Townsville.`)}
-          className="gap-2 flex-1"
-        >
-          <span>🤖</span>
-          Ask AI about this place
-        </Button>
+            <span>🤖</span>
+            Ask AI
+          </Button>
+        </div>
       </div>
     </CardContent>
   </Card>
@@ -123,7 +139,10 @@ const Beaches = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Beach+Townsville",
       icon: <Shell className="w-6 h-6" />,
       dogFriendly: true,
-      bestFor: "Fishing, rock pools, quiet picnics"
+      bestFor: "Fishing, rock pools, quiet picnics",
+      // === LINK TO YOUR NEW PAGE ===
+      internalLink: "/pallarenda-beach",
+      linkText: "View Off-Leash Guide"
     },
     {
       title: "Rowes Bay",
