@@ -152,7 +152,6 @@ const Events = () => {
 
   return (
     <>
-      {/* UPDATED SEO TITLE */}
       <SEOHead
         title="Townsville Events & Australia Day 2026 Guide"
         description="Your complete guide to Australia Day long weekend in Townsville, plus annual festivals and weekly markets."
@@ -366,6 +365,30 @@ const Events = () => {
                   <p className="text-sm text-muted-foreground">Indoor events, school holiday activities and quieter event calendar.</p>
                 </div>
               </div>
+            </section>
+
+             {/* FINAL CTA - Fixed to point to AI and Dog Beach */}
+             <section className="mb-8">
+                <div className="bg-slate-900 rounded-2xl p-8 text-center text-white relative overflow-hidden">
+                    <div className="relative z-10">
+                        <h2 className="text-2xl font-bold mb-4">Have specific questions about the weekend?</h2>
+                        <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
+                            Not sure where to park or if your dog is allowed? Ask our AI agent on the homepage.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                            <Link to="/">
+                                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white w-full sm:w-auto">
+                                    Ask the Local AI
+                                </Button>
+                            </Link>
+                            <Link to="/townsville/pallarenda-dog-beach-guide">
+                                <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 w-full sm:w-auto">
+                                    🐕 View Dog Beach Guide
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </section>
 
           </div>
