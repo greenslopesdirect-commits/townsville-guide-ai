@@ -1,5 +1,4 @@
 import WeatherWidget from "@/components/WeatherWidget";
-
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
@@ -13,7 +12,6 @@ import FoodDrink from "@/components/FoodDrink";
 import DogFriendly from "@/components/DogFriendly";
 import EventsOn from "@/components/EventsOn";
 import Accommodation from "@/components/Accommodation";
-
 import MapSection from "@/components/MapSection";
 import AboutSection from "@/components/AboutSection";
 import FaqSection from "@/components/FaqSection";
@@ -24,9 +22,10 @@ import LocalInsightCard from "@/components/LocalInsightCard";
 const Index = () => {
   return (
     <>
+      {/* UPDATE: Revised Title & Description for Jan 2026 Strategy */}
       <SEOHead
-        title="MyAussieGuide – Townsville | Best Beaches, Food, Walks & Local Tips"
-        description="The 2026 local guide to Townsville. Schnauzer-approved pet tips, updated weekend event calendars, and authentic hidden gems. Curated by local expert Duncan Ross."
+        title="My Aussie Guide: Townsville & North Queensland Travel Tips"
+        description="The 2026 local guide to Townsville & NQ. Australia Day long weekend tips, Schnauzer-approved dog spots, and visual travel guides. Curated by local expert Duncan Ross."
         canonical="https://www.myaussieguide.com.au"
       />
       <Helmet>
@@ -37,7 +36,7 @@ const Index = () => {
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "MyAussieGuide – Townsville",
+            "name": "My Aussie Guide: Townsville & North Queensland",
             "url": "https://www.myaussieguide.com.au"
           }
           `}
@@ -49,8 +48,8 @@ const Index = () => {
           {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "MyAussieGuide – Townsville",
-            "description": "Your AI-powered local guide to Townsville.",
+            "name": "My Aussie Guide: Townsville & North Queensland",
+            "description": "Your AI-powered local guide to Townsville and North Queensland.",
             "url": "https://www.myaussieguide.com.au"
           }
           `}
@@ -161,10 +160,6 @@ const Index = () => {
         <section id="accommodation">
           <Accommodation />
         </section>
-        
-        {/* Local Shop - Activity Book Waitlist
-<LocalShopSection />
-*/}
        
         <section id="map">
           <MapSection />
@@ -187,4 +182,3 @@ const Index = () => {
 };
 
 export default Index;
-
