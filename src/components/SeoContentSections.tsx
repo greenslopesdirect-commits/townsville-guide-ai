@@ -62,38 +62,40 @@ const SeoContentSections = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-gradient-to-b from-muted/20 to-background">
+    <section className="py-10 sm:py-16 px-3 sm:px-4 bg-gradient-to-b from-muted/20 to-background">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Single column on mobile, 2 columns on tablet+ */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {sections.map((section, index) => {
             const IconComponent = section.icon;
             return (
               <Card
                 key={section.id}
-                className="overflow-hidden animate-fade-in shadow-sm hover:shadow-lg transition-all duration-300 border-2 border-border/40 hover:border-primary/30"
+                className="animate-fade-in shadow-sm hover:shadow-lg transition-all duration-300 border-2 border-border/40 hover:border-primary/30"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <CardContent className="p-6">
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
-                      <IconComponent className="w-6 h-6" />
+                <CardContent className="p-4 sm:p-6">
+                  {/* Stack vertically on very small screens, side-by-side on larger */}
+                  <div className="flex flex-col xs:flex-row items-start gap-3 sm:gap-4">
+                    <div className="p-2 sm:p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
+                      <IconComponent className="w-5 h-5 sm:w-6 sm:h-6" />
                     </div>
-                    <div className="flex-1">
-                      <h2 className="text-xl md:text-2xl font-bold mb-3 text-foreground">
+                    <div className="flex-1 min-w-0 w-full">
+                      <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 text-foreground leading-tight">
                         {section.title}
                       </h2>
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-3 sm:mb-4">
                         {section.content}
                       </p>
                       <Link to={section.linkTo}>
                         <Button
                           variant="outline"
                           size="sm"
-                          className="group"
+                          className="group w-full xs:w-auto text-sm"
                           aria-label={section.linkText}
                         >
-                          {section.linkText}
-                          <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                          <span className="truncate">{section.linkText}</span>
+                          <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                         </Button>
                       </Link>
                     </div>
