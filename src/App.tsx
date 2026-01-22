@@ -15,11 +15,9 @@ const TownsvilleRedirect = () => {
 };
 
 // Townsville Layout (Handles Header and Footer for all Townsville routes)
-// FIXED: Using path alias to resolve location issues
 import TownsvilleLayout from "@/components/TownsvilleLayout";
 
 // Page Components
-// FIXED: Using path alias to resolve location issues
 import Index from "@/pages/Index";
 import NotFound from "@/pages/NotFound";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
@@ -42,6 +40,7 @@ import MagneticIslandDayTrip from "@/pages/MagneticIslandDayTrip";
 import FreeThings from "@/pages/FreeThings";
 import StingerSafety from "@/pages/StingerSafety";
 import SunsetWalks from "@/pages/SunsetWalks";
+import PallarendaBeach from "@/pages/PallarendaBeach"; // NEW IMPORT
 
 const queryClient = new QueryClient();
 
@@ -68,11 +67,16 @@ const App = () => (
             <Route path="local-tips" element={<LocalTips />} />
             <Route path="accommodation" element={<Accommodation />} />
             <Route path="events" element={<Events />} />
+            
+            {/* GUIDES */}
             <Route path="guides/beat-the-heat" element={<BeatTheHeat />} />
             <Route path="guides/magnetic-island-day-trip" element={<MagneticIslandDayTrip />} />
             <Route path="guides/free-things" element={<FreeThings />} />
             <Route path="guides/stinger-safety" element={<StingerSafety />} />
             <Route path="guides/sunset-walks" element={<SunsetWalks />} />        
+            
+            {/* NEW ROUTE */}
+            <Route path="pallarenda-beach" element={<PallarendaBeach />} />
 
             {/* QUICK ACCESS ROUTES */}
             <Route path="dog-friendly" element={<DogFriendly />} />
