@@ -3,7 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Calendar, Music, ShoppingBag, Trophy, MapPin, Repeat, Star } from "lucide-react";
+import { ArrowLeft, Calendar, Music, ShoppingBag, Trophy, MapPin, Repeat, Star, AlertTriangle, Clock, Info } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
 
 import LocalInsightCard from "@/components/LocalInsightCard";
@@ -152,9 +152,10 @@ const Events = () => {
 
   return (
     <>
+      {/* UPDATED SEO TITLE */}
       <SEOHead
-        title="Townsville Events & What's On - Festivals, Markets & Activities"
-        description="Discover events, festivals and activities in Townsville. From Strand Ephemera and NAFA to weekly markets, live music and family events."
+        title="Townsville Events & Australia Day 2026 Guide"
+        description="Your complete guide to Australia Day long weekend in Townsville, plus annual festivals and weekly markets."
         canonical="https://www.myaussieguide.com.au/events"
       />
       <Helmet>
@@ -183,10 +184,77 @@ const Events = () => {
               </Button>
             </Link>
 
-            {/* Weekly Events Hero */}
             <WeeklyEventsHero />
+            
+            {/* === NEW AUSTRALIA DAY SECTION === */}
+            <section className="mb-16 mt-8">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
+                    {/* Decorative Background */}
+                    <div className="absolute top-0 right-0 p-32 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
+                    
+                    <div className="relative z-10">
+                        <div className="flex items-center gap-3 mb-4">
+                            <span className="bg-yellow-400 text-blue-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                Long Weekend Guide
+                            </span>
+                            <span className="flex items-center gap-1 text-blue-100 text-sm font-medium">
+                                <Calendar className="w-4 h-4" /> Jan 24–26, 2026
+                            </span>
+                        </div>
+                        
+                        <h1 className="text-3xl md:text-5xl font-bold mb-6">Australia Day in Townsville</h1>
+                        
+                        {/* Alert Box Inside Hero */}
+                        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 mb-8 max-w-3xl">
+                            <div className="flex gap-3">
+                                <AlertTriangle className="w-5 h-5 text-yellow-300 flex-shrink-0" />
+                                <div>
+                                    <h3 className="font-bold text-white text-sm">Local Tip: Gun Salute Warning</h3>
+                                    <p className="text-sm text-blue-100 mt-1">
+                                        The 21-Gun Salute (approx 12:00 PM on Monday) is extremely loud. Please keep anxious dogs at home during the ceremony.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
 
-            {/* Major Events Highlight */}
+                        {/* Event Cards Grid */}
+                        <div className="grid md:grid-cols-3 gap-4 text-slate-900">
+                            {/* Card 1 */}
+                            <div className="bg-white rounded-xl p-5 shadow-sm">
+                                <div className="text-sm font-bold text-green-600 mb-1">6:30 AM • Jezzine Barracks</div>
+                                <h3 className="font-bold text-lg mb-2">Aussie Fun Run</h3>
+                                <p className="text-sm text-slate-500 mb-3">5km community run. Gold coin donation.</p>
+                                <div className="flex items-center gap-1 text-xs text-slate-400">
+                                    <Info className="w-3 h-3" /> Family friendly
+                                </div>
+                            </div>
+                            
+                            {/* Card 2 */}
+                            <div className="bg-white rounded-xl p-5 shadow-sm">
+                                <div className="text-sm font-bold text-blue-600 mb-1">9:00 AM • Jezzine Barracks</div>
+                                <h3 className="font-bold text-lg mb-2">Flag Raising & Salute</h3>
+                                <p className="text-sm text-slate-500 mb-3">Flyover and traditional ceremony.</p>
+                                <div className="flex items-center gap-1 text-xs text-slate-400">
+                                    <AlertTriangle className="w-3 h-3 text-orange-400" /> Loud noise warning
+                                </div>
+                            </div>
+
+                            {/* Card 3 */}
+                            <div className="bg-white rounded-xl p-5 shadow-sm">
+                                <div className="text-sm font-bold text-orange-600 mb-1">Dawn (5:30 AM) • The Strand</div>
+                                <h3 className="font-bold text-lg mb-2">Survival Day</h3>
+                                <p className="text-sm text-slate-500 mb-3">Dawn Service & Walk of Solidarity.</p>
+                                <div className="flex items-center gap-1 text-xs text-slate-400">
+                                    <Info className="w-3 h-3" /> Cultural observance
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {/* === END AUSTRALIA DAY SECTION === */}
+
+            {/* Local Insight */}
             <LocalInsightCard title="The Big Ones You Can't Miss" variant="insight" className="mb-12">
               <p>
                 <strong>🏎️ NTI Townsville 500 (Supercars):</strong> Every July, the Reid Park precinct shuts down 
