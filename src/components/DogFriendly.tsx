@@ -46,56 +46,61 @@ const DogFriendly = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-muted/30">
+    <section className="py-10 sm:py-16 px-3 sm:px-4 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            <Dog className="w-4 h-4" />
-            Pet-Friendly
+        {/* Section Header - responsive text */}
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3 sm:mb-4">
+            <Dog className="w-4 h-4 flex-shrink-0" />
+            <span>Pet-Friendly</span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-foreground leading-tight">
             Dog-Friendly Townsville
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Townsville is one of Queensland's most dog-friendly cities, with beaches, parks, cafés, and walking paths that welcome four-legged friends.
           </p>
         </div>
 
-        {/* Dog Spots Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        {/* Dog Spots Grid - single column on mobile */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
           {dogSpots.map((spot, index) => (
             <Card 
               key={index}
-              className="hover:shadow-lg transition-all duration-300 animate-fade-in border-2 border-border/40 hover:border-primary/30 relative overflow-hidden"
+              className="hover:shadow-lg transition-all duration-300 animate-fade-in border-2 border-border/40 hover:border-primary/30 relative"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Schnauzer Approved Badge - Enhanced */}
+              {/* Schnauzer Approved Badge - repositioned for mobile */}
               {spot.schnauzerapproved && (
-                <div className="absolute -top-1 -right-1 z-10">
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 dark:from-amber-500 dark:to-orange-500 text-white text-xs font-bold shadow-lg border-2 border-white dark:border-amber-300">
-                    <span className="text-base">🐕</span>
-                    Schnauzer Approved
+                <div className="absolute top-2 right-2 z-10">
+                  <span className="inline-flex items-center gap-1 px-2 sm:px-3 py-1 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 dark:from-amber-500 dark:to-orange-500 text-white text-xs font-bold shadow-lg border-2 border-white dark:border-amber-300">
+                    <span className="text-sm sm:text-base">🐕</span>
+                    <span className="hidden xs:inline">Schnauzer Approved</span>
+                    <span className="xs:hidden">Approved</span>
                   </span>
                 </div>
               )}
-              <CardContent className={`p-5 ${spot.schnauzerapproved ? 'pt-6' : ''}`}>
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
-                    <Dog className="w-5 h-5" />
+              <CardContent className={`p-4 sm:p-5 ${spot.schnauzerapproved ? 'pt-10 sm:pt-12' : ''}`}>
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="p-2 sm:p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
+                    <Dog className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold mb-2 text-foreground">{spot.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">{spot.description}</p>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-base sm:text-lg font-semibold mb-2 text-foreground leading-tight break-words">
+                      {spot.name}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-3 sm:mb-4">
+                      {spot.description}
+                    </p>
                     <Button 
                       onClick={() => triggerAiGuide(`Tell me about the menu, vibe, and booking info for ${spot.name}.`)}
                       variant="outline"
                       size="sm"
-                      className="w-full group"
+                      className="w-full group text-sm"
                       aria-label={`Ask AI about ${spot.name}`}
                     >
                       <span className="mr-2">🤖</span>
-                      Ask AI about this place
+                      <span className="truncate">Ask AI about this place</span>
                     </Button>
                   </div>
                 </div>
@@ -104,12 +109,12 @@ const DogFriendly = () => {
           ))}
         </div>
 
-        {/* Local Tip */}
-        <Alert className="max-w-3xl mx-auto bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800 mb-8">
-          <Dog className="h-5 w-5 text-amber-600" />
+        {/* Local Tip - improved mobile layout */}
+        <Alert className="max-w-3xl mx-auto bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800 mb-6 sm:mb-8">
+          <Dog className="h-5 w-5 text-amber-600 flex-shrink-0" />
           <AlertDescription className="ml-2">
-            <strong className="text-foreground">Local Tip:</strong>
-            <span className="text-muted-foreground ml-2">
+            <strong className="text-foreground block sm:inline">Local Tip:</strong>
+            <span className="text-muted-foreground sm:ml-2 block sm:inline mt-1 sm:mt-0">
               Townsville pavements can get very hot during the day — always touch the ground with your hand first to check it's safe for your dog's paws.
             </span>
           </AlertDescription>
@@ -118,9 +123,9 @@ const DogFriendly = () => {
         {/* CTA */}
         <div className="text-center">
           <Link to="/dog-friendly">
-            <Button variant="default" size="lg" className="group">
+            <Button variant="default" size="lg" className="group text-sm sm:text-base px-4 sm:px-6">
               View all dog-friendly spots
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </Button>
           </Link>
         </div>

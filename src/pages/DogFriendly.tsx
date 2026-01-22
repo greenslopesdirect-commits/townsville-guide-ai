@@ -46,61 +46,69 @@ const DogFriendly = () => {
         canonical="https://www.myaussieguide.com.au/dog-friendly"
       />
       
-      <div className="min-h-screen bg-slate-50 pt-24 pb-16">
-        <div className="container mx-auto px-4 max-w-5xl">
+      <div className="min-h-screen bg-slate-50 pt-20 sm:pt-24 pb-12 sm:pb-16">
+        <div className="container mx-auto px-3 sm:px-4 max-w-5xl">
           
-          <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-slate-900 mb-4">Dog-Friendly Beaches in Townsville</h1>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+          {/* Header - responsive text sizing */}
+          <div className="text-center mb-8 sm:mb-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-3 sm:mb-4 leading-tight">
+              Dog-Friendly Beaches in Townsville
+            </h1>
+            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
               Townsville loves dogs! Here are the best spots to let your furry friend run, swim, and play.
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {/* Grid - single column mobile, 2 cols tablet, 3 cols desktop */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {dogSpots.map((spot, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow border-t-4 border-t-primary flex flex-col h-full">
-                <CardHeader>
+              <Card key={index} className="hover:shadow-lg transition-shadow border-t-4 border-t-primary flex flex-col">
+                <CardHeader className="p-4 sm:p-6 pb-3 sm:pb-4">
                   <div className="mb-2">
-                    <span className="text-xs font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-1 rounded-full">
+                    <span className="text-xs font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-1 rounded-full inline-block">
                       {spot.type}
                     </span>
                   </div>
-                  <CardTitle className="text-xl mb-1">{spot.name}</CardTitle>
+                  <CardTitle className="text-lg sm:text-xl mb-1 leading-tight break-words">{spot.name}</CardTitle>
                   {spot.badge && (
-                    <div className="text-sm font-medium text-amber-600 flex items-center gap-1">
+                    <div className="text-sm font-medium text-amber-600 flex items-center gap-1 flex-wrap">
                        {spot.badge}
                     </div>
                   )}
                 </CardHeader>
-                <CardContent className="space-y-4 flex-grow flex flex-col">
-                  <p className="text-slate-600 text-sm leading-relaxed flex-grow">
+                <CardContent className="p-4 sm:p-6 pt-0 space-y-3 sm:space-y-4 flex-1 flex flex-col">
+                  {/* Description - no fixed height, auto-expands */}
+                  <p className="text-slate-600 text-sm leading-relaxed">
                     {spot.description}
                   </p>
                   
-                  <div className="space-y-2 mb-4">
+                  {/* Features list */}
+                  <div className="space-y-2 flex-1">
                     {spot.features.map((feature, i) => (
                         <div key={i} className="flex items-start gap-2 text-sm text-slate-500">
                             <Bone className="w-4 h-4 text-primary/60 mt-0.5 flex-shrink-0" />
-                            <span>{feature}</span>
+                            <span className="break-words">{feature}</span>
                         </div>
                     ))}
                   </div>
 
-                  <div className="space-y-2 mt-auto">
+                  {/* Buttons - stacked on mobile */}
+                  <div className="space-y-2 pt-2">
                     {/* 1. INTERNAL LINK (The New Strategy) */}
                     {spot.internalLink && (
-                        <Link to={spot.internalLink} className="w-full">
-                            <Button className="w-full justify-between bg-green-600 hover:bg-green-700 text-white mb-2">
-                                {spot.linkText} <ArrowRight className="w-4 h-4" />
+                        <Link to={spot.internalLink} className="block w-full">
+                            <Button className="w-full justify-between bg-green-600 hover:bg-green-700 text-white text-sm">
+                                <span className="truncate">{spot.linkText}</span>
+                                <ArrowRight className="w-4 h-4 flex-shrink-0 ml-2" />
                             </Button>
                         </Link>
                     )}
 
                     {/* 2. EXTERNAL LINK (Google Maps) */}
-                    <Button variant="outline" size="sm" asChild className="w-full justify-start">
+                    <Button variant="outline" size="sm" asChild className="w-full justify-start text-sm">
                       <a href={spot.mapUrl} target="_blank" rel="noopener noreferrer">
-                        <MapPin className="w-4 h-4 mr-2" />
-                        View on Google Maps
+                        <MapPin className="w-4 h-4 mr-2 flex-shrink-0" />
+                        <span className="truncate">View on Google Maps</span>
                       </a>
                     </Button>
                   </div>
