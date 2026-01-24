@@ -253,6 +253,84 @@ const Events = () => {
             </section>
             {/* === END AUSTRALIA DAY SECTION === */}
 
+            {/* === PARKING & GETTING THERE SECTION === */}
+            <section className="mb-12">
+              <div className="bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 md:p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2.5 rounded-xl bg-blue-100 dark:bg-blue-900/40">
+                    <MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    🅿️ Parking & Getting There
+                  </h2>
+                </div>
+
+                <div className="grid lg:grid-cols-2 gap-6">
+                  {/* Map Embed */}
+                  <div className="rounded-xl overflow-hidden shadow-md border border-slate-200 dark:border-slate-700">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7547.848915774574!2d146.8075!3d-19.2550!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bd5f8c1b6d5d7c1%3A0x5e8d8c9f9a9e9f9c!2sJezzine%20Barracks!5e0!3m2!1sen!2sau!4v1700000000000"
+                      width="100%"
+                      height="280"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Jezzine Barracks and The Strand parking map"
+                      aria-label="Map showing Jezzine Barracks, The Strand, and nearby parking areas"
+                      className="w-full"
+                    />
+                    <div className="bg-white dark:bg-slate-800 p-3 text-center">
+                      <a 
+                        href="https://www.google.com/maps/search/?api=1&query=Jezzine+Barracks+Townsville" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                      >
+                        Open full map in Google Maps →
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Parking Tips */}
+                  <div className="space-y-4">
+                    <h3 className="font-bold text-lg text-foreground">Practical Parking & Traffic Advice</h3>
+                    
+                    <ul className="space-y-3 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="text-blue-500 font-bold mt-0.5">•</span>
+                        <span><strong className="text-foreground">Main parking areas:</strong> Jezzine Barracks car park (entry via Mitchell Street) and The Strand foreshore parking bays.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-orange-500 font-bold mt-0.5">•</span>
+                        <span><strong className="text-foreground">Road closures:</strong> Expect closures and heavy traffic on the morning of Jan 26 around Jezzine Barracks and The Strand.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-green-500 font-bold mt-0.5">•</span>
+                        <span><strong className="text-foreground">Arrive early:</strong> Get there by 6:00 AM for the Flag Raising and Aussie Fun Run to secure parking.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-purple-500 font-bold mt-0.5">•</span>
+                        <span><strong className="text-foreground">Walk or drop-off:</strong> If staying nearby, consider walking or being dropped off to avoid parking hassles.</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-amber-500 font-bold mt-0.5">•</span>
+                        <span><strong className="text-foreground">Allow extra time:</strong> On Monday (public holiday), expect higher crowds and limited spots — leave earlier than usual.</span>
+                      </li>
+                    </ul>
+
+                    {/* Disclaimer Note */}
+                    <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg p-3 mt-4">
+                      <p className="text-xs text-amber-800 dark:text-amber-300">
+                        <strong>Note:</strong> Exact road closures and traffic conditions may change — check local council or police updates on the day.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            {/* === END PARKING SECTION === */}
+
             {/* Local Insight */}
             <LocalInsightCard title="The Big Ones You Can't Miss" variant="insight" className="mb-12">
               <p>
