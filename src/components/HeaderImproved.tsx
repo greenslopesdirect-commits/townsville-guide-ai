@@ -22,13 +22,13 @@ const HeaderImproved = () => {
 
   const navItems = [
     { to: "/", label: "Home" },
-    { to: "/history", label: "History" },
     { to: "/things-to-do", label: "Things to Do" },
     { to: "/beaches", label: "Beaches" },
     { to: "/food", label: "Food & Drink" },
-    { to: "/local-tips", label: "Local Tips" },
     { to: "/accommodation", label: "Accommodation" },
     { to: "/events", label: "Events" },
+    { to: "/local-tips", label: "Local Tips" },
+    { to: "/history", label: "History" },
     { to: "/contact", label: "Contact" },
   ];
 
