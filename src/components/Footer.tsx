@@ -72,12 +72,27 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom section */}
-        <div className="mt-12 border-t border-border/40 pt-6 text-center space-y-3">
-          <p className="text-sm text-muted-foreground">
+        {/* Acknowledgement of Country */}
+        <div className="mt-12 border-t border-border/40 pt-8">
+          <div className="max-w-3xl mx-auto text-center">
+            <h4 className="text-sm font-medium text-muted-foreground mb-3">
+              Acknowledgement of Country
+            </h4>
+            <p className="text-xs text-muted-foreground/80 leading-relaxed">
+              MyAussieGuide acknowledges the Traditional Owners of the land on which we live and work, 
+              the Wulgurukaba and Bindal people, and recognises their continuing connection to land, 
+              sea and community. We pay our respects to their Elders past and present and extend that 
+              respect to all Aboriginal and Torres Strait Islander peoples today.
+            </p>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-6 border-t border-border/20 pt-6 text-center space-y-2">
+          <p className="text-xs text-muted-foreground">
             © 2026 My Aussie Guide — Curated by Duncan Ross, Townsville Local. Operated by DKR Sales (ABN 63 824 596 227)
           </p>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-xs text-muted-foreground">
             Townsville's trusted source for beaches, food, events and local tips.
           </p>
         </div>
