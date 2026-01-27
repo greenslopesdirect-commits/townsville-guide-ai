@@ -8,7 +8,7 @@ import { toast } from "sonner";
 import { checkPendingAiQuestion } from "@/utils/aiGuide";
 import heroImage from "@/assets/strand-hero.jpg";
 
-// --- Weather Widget ---
+// --- Weather Widget (Unchanged) ---
 const HeroWeatherWidget = () => {
   const [weather, setWeather] = useState<{ temp: number; icon: string; condition: string } | null>(null);
 
@@ -20,19 +20,13 @@ const HeroWeatherWidget = () => {
         );
         if (!response.ok) throw new Error("Failed to fetch");
         const data = await response.json();
-        
         let icon = "🌡️";
         const code = data.current.weather_code;
         if (code === 0) icon = "☀️";
         else if (code <= 3) icon = "🌤️";
         else if (code <= 65) icon = "🌧️";
         else if (code >= 95) icon = "⛈️";
-
-        setWeather({
-          temp: Math.round(data.current.temperature_2m),
-          icon,
-          condition: "Townsville",
-        });
+        setWeather({ temp: Math.round(data.current.temperature_2m), icon, condition: "Townsville" });
       } catch (error) {
         console.error("Weather fetch error:", error);
       }
@@ -60,33 +54,76 @@ const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
 
+  // --- Helper: Render Markdown (Bold & Links) ---
+  const renderMessage = (text: string) => {
+    if (!text) return null;
+    
+    // Split text by newlines to handle paragraphs
+    return text.split("\n").map((line, lineIndex) => {
+      // If line is empty, render a break
+      if (!line.trim()) return <br key={lineIndex} />;
+      
+      // Regex to split by Bold (**...**) and Links ([...](...))
+      // Capture groups: 1=BoldContent, 2=LinkText, 3=LinkUrl
+      const parts = line.split(/(\*\*.*?\*\*)|(\[.*?\]\(.*?\))/g).filter(Boolean);
+
+      return (
+        <p key={lineIndex} className="mb-2 leading-relaxed text-slate-800">
+          {parts.map((part, partIndex) => {
+            // Handle Bold
+            if (part.startsWith("**") && part.endsWith("**")) {
+              return <strong key={partIndex} className="text-slate-900">{part.slice(2, -2)}</strong>;
+            }
+            // Handle Links
+            if (part.startsWith("[") && part.includes("](") && part.endsWith(")")) {
+              const [label, url] = part.slice(1, -1).split("](");
+              return (
+                <a
+                  key={partIndex}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline font-semibold bg-primary/10 px-1 rounded mx-1"
+                >
+                  {label}
+                </a>
+              );
+            }
+            // Return plain text
+            return <span key={partIndex}>{part}</span>;
+          })}
+        </p>
+      );
+    });
+  };
+
   const triggerSearch = async (query: string) => {
     if (!query.trim()) return;
     setIsLoading(true);
     setChatResponse("");
 
     // --- ⚡️ SMART INTERCEPT: Handle "What's On" locally ---
-    // This gives the user an instant, accurate answer based on our Events page update
     const lowerQ = query.toLowerCase();
     if (lowerQ.includes("what is on") || lowerQ.includes("events") || lowerQ.includes("market")) {
         setTimeout(() => {
-            setChatResponse(`
-**This Weekend (Jan 31 – Feb 1):**
+            // Note: Keep this text formatting clean for the parser
+            setChatResponse(`**This Weekend (Jan 31 – Feb 1):**
 
-🥕 **Willows Rotary Markets (Sunday):** The best spot for fresh produce. 7:30 AM @ Willows Shopping Centre.
+🥕 **Willows Rotary Markets (Sunday):**
+The best spot for fresh produce. 7:30 AM @ Willows Shopping Centre.
 
-🏙️ **Cotters Market (Sunday):** Arts, crafts, and food in the CBD. 8:00 AM @ Flinders St.
+🏙️ **Cotters Market (Sunday):**
+Arts, crafts, and food in the CBD. 8:00 AM @ Flinders St.
 
-🌅 **Sunset Spot:** Tide is high in the evenings—perfect for a walk at Rowes Bay.
+🌅 **Sunset Spot:**
+Tide is high in the evenings—perfect for a walk at Rowes Bay.
 
-For the full calendar, check the **Events** tab above!
-            `);
+For the full calendar, check the **[Events Page](/events)**!`);
             setIsLoading(false);
-        }, 600); // Small fake delay for "thinking" effect
+        }, 600);
         return;
     }
 
-    // --- Standard AI Search for other queries ---
     try {
       const { data, error } = await supabase.functions.invoke('townsville-chat', {
         body: { question: query }
@@ -208,9 +245,9 @@ For the full calendar, check the **Events** tab above!
                             <X className="w-4 h-4" />
                         </Button>
                     </div>
-                    {/* Use whitespace-pre-wrap to handle newlines in our static response */}
-                    <div className="prose prose-sm max-w-none text-slate-800 whitespace-pre-wrap leading-relaxed">
-                         {chatResponse}
+                    {/* Rendered Markdown Response */}
+                    <div className="text-slate-800 text-sm md:text-base">
+                         {renderMessage(chatResponse)}
                     </div>
                 </div>
             </div>
