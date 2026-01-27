@@ -1,11 +1,14 @@
-import { Calendar, MapPin, Music, Sun, Umbrella, MessageCircle, Trophy, ExternalLink, Info } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Calendar, MapPin, Music, Sun, Umbrella, MessageCircle, Trophy, ExternalLink } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom"; // Added useNavigate
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Events = () => {
+  const navigate = useNavigate();
+
+  // FIX: Navigate to home and pass the query in the state
   const askAI = (query: string) => {
-    (window as any).setAiInputValue?.(query);
+    navigate("/", { state: { aiQuery: query } });
   };
 
   return (
