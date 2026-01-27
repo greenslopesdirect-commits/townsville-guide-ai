@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; // Added useLocation
 import { Search, MessageCircle, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -8,7 +8,7 @@ import { toast } from "sonner";
 import { checkPendingAiQuestion } from "@/utils/aiGuide";
 import heroImage from "@/assets/strand-hero.jpg";
 
-// --- Weather Widget ---
+// ... [Keep HeroWeatherWidget Component unchanged] ...
 const HeroWeatherWidget = () => {
   const [weather, setWeather] = useState<{ temp: number; icon: string; condition: string } | null>(null);
 
@@ -20,8 +20,6 @@ const HeroWeatherWidget = () => {
         );
         if (!response.ok) throw new Error("Failed to fetch");
         const data = await response.json();
-        
-        // Simple icon mapping
         let icon = "🌡️";
         const code = data.current.weather_code;
         if (code === 0) icon = "☀️";
@@ -59,26 +57,16 @@ const Hero = () => {
   const [aiInputValue, setAiInputValue] = useState("");
   const [chatResponse, setChatResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const location = useLocation(); // Hook to access the passed state
 
-  useEffect(() => {
-    (window as any).setAiInputValue = (text: string) => {
-      setAiInputValue(text);
-      const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
-      if (input) input.focus({ preventScroll: true });
-    };
-    checkPendingAiQuestion();
-  }, []);
-
-  const handleSend = async () => {
-    if (!aiInputValue.trim()) {
-      toast.error("Please enter a question");
-      return;
-    }
+  // Helper to trigger send manually or via effect
+  const triggerSearch = async (query: string) => {
+    if (!query.trim()) return;
     setIsLoading(true);
     setChatResponse("");
     try {
       const { data, error } = await supabase.functions.invoke('townsville-chat', {
-        body: { question: aiInputValue }
+        body: { question: query }
       });
       if (error) throw error;
       if (data?.answer) setChatResponse(data.answer);
@@ -90,6 +78,33 @@ const Hero = () => {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    // 1. Setup global window handler (for chips on this page)
+    (window as any).setAiInputValue = (text: string) => {
+      setAiInputValue(text);
+      const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
+      if (input) input.focus({ preventScroll: true });
+    };
+
+    // 2. Check for legacy utils
+    checkPendingAiQuestion();
+
+    // 3. Check for incoming state from Events page
+    if (location.state?.aiQuery) {
+        const query = location.state.aiQuery;
+        setAiInputValue(query);
+        // Optional: clear state so it doesn't run again on refresh, 
+        // but removing history state is complex. 
+        // Just triggering the search is usually enough.
+        triggerSearch(query);
+        
+        // Clear the state to prevent re-triggering
+        window.history.replaceState({}, document.title);
+    }
+  }, [location]);
+
+  const handleSend = () => triggerSearch(aiInputValue);
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter' && !isLoading) handleSend();
