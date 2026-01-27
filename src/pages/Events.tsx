@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Music, Sun, Umbrella } from "lucide-react";
+import { Calendar, MapPin, Music, Sun, Umbrella, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -22,6 +22,20 @@ const Events = () => {
 
       <div className="container mx-auto max-w-4xl px-4 -mt-8">
         
+        {/* --- RESTORED: Ask AI Section --- */}
+        <div className="bg-white rounded-xl shadow-lg p-6 mb-8 border-l-4 border-blue-500">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+              <h2 className="text-xl font-bold text-gray-900">What's On This Week?</h2>
+              <p className="text-gray-600">Ask our AI guide for the latest events and activities happening right now.</p>
+            </div>
+            <Button onClick={() => (window as any).setAiInputValue("What is on this week?")} className="shrink-0 gap-2">
+              <MessageCircle className="h-4 w-4" />
+              Ask What's On
+            </Button>
+          </div>
+        </div>
+
         {/* Weekend Highlights */}
         <div className="grid gap-6 mb-12">
           <Card className="shadow-lg border-none">
@@ -73,6 +87,36 @@ const Events = () => {
 
             </CardContent>
           </Card>
+
+           {/* --- RESTORED: The Big Ones Section --- */}
+           <div className="bg-neutral-900 text-white rounded-xl p-8 mb-8">
+            <h2 className="text-2xl font-bold mb-6">The Big Ones You Can't Miss</h2>
+            <div className="space-y-6">
+              <div className="flex gap-4">
+                <span className="text-2xl">🏎️</span>
+                <div>
+                  <h3 className="font-bold text-lg">NTI Townsville 500 (Supercars)</h3>
+                  <p className="text-gray-300 text-sm">Every July, the Reid Park precinct shuts down for a weekend of street racing and massive concerts.</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4">
+                <span className="text-2xl">🥕</span>
+                <div>
+                  <h3 className="font-bold text-lg">Market Watch</h3>
+                  <p className="text-gray-300 text-sm">Locals go to <strong>Willows Rotary Markets</strong> (Sundays in Kirwan) for the best fresh fruit and veg.</p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <span className="text-2xl">🌅</span>
+                <div>
+                  <h3 className="font-bold text-lg">Lest We Forget</h3>
+                  <p className="text-gray-300 text-sm">The Anzac Day Dawn Service (April 25) at The Strand is a deeply moving experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           {/* New Page Promo (Internal Linking Strategy) */}
           <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -126,8 +170,8 @@ const Events = () => {
           </div>
         </div>
 
-        {/* Annual Festivals (Evergreen) */}
-        <h2 className="text-2xl font-bold mb-6 text-gray-800">2026 Major Events</h2>
+        {/* Annual Festivals */}
+        <h2 className="text-2xl font-bold mb-6 text-gray-800">2026 Festival Calendar</h2>
         <div className="space-y-4">
            {/* NAFA */}
            <div className="bg-white p-4 rounded-lg border flex gap-4">
@@ -150,26 +194,6 @@ const Events = () => {
               <p className="text-sm text-gray-600">World-class classical music in stunning tropical venues.</p>
             </div>
           </div>
-
-          {/* Supercars */}
-          <div className="bg-white p-4 rounded-lg border flex gap-4">
-            <div className="bg-red-100 w-16 h-16 rounded-lg flex items-center justify-center shrink-0 text-red-700 font-bold text-xs text-center p-1">
-              JULY
-            </div>
-            <div>
-              <h3 className="font-bold">NTI Townsville 500</h3>
-              <p className="text-sm text-gray-600">The Reid Park street circuit roars to life. Supercars and concerts.</p>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-12 bg-neutral-900 text-white rounded-xl p-8 text-center">
-          <h2 className="text-2xl font-bold mb-4">Have specific questions?</h2>
-          <p className="mb-6 text-gray-300">Not sure if the markets are on due to rain? Ask our AI agent.</p>
-          <Button asChild variant="secondary" size="lg">
-            <Link to="/">Ask the Local AI</Link>
-          </Button>
         </div>
       </div>
     </div>
