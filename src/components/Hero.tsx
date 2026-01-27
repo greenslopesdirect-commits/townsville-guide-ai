@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Search, MessageCircle, X } from "lucide-react";
+import { Search, MessageCircle, X, ExternalLink } from "lucide-react"; // Added ExternalLink icon
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
@@ -8,7 +8,7 @@ import { toast } from "sonner";
 import { checkPendingAiQuestion } from "@/utils/aiGuide";
 import heroImage from "@/assets/strand-hero.jpg";
 
-// --- Weather Widget (Unchanged) ---
+// --- Weather Widget ---
 const HeroWeatherWidget = () => {
   const [weather, setWeather] = useState<{ temp: number; icon: string; condition: string } | null>(null);
 
@@ -20,13 +20,19 @@ const HeroWeatherWidget = () => {
         );
         if (!response.ok) throw new Error("Failed to fetch");
         const data = await response.json();
+        
         let icon = "🌡️";
         const code = data.current.weather_code;
         if (code === 0) icon = "☀️";
         else if (code <= 3) icon = "🌤️";
         else if (code <= 65) icon = "🌧️";
         else if (code >= 95) icon = "⛈️";
-        setWeather({ temp: Math.round(data.current.temperature_2m), icon, condition: "Townsville" });
+
+        setWeather({
+          temp: Math.round(data.current.temperature_2m),
+          icon,
+          condition: "Townsville",
+        });
       } catch (error) {
         console.error("Weather fetch error:", error);
       }
@@ -54,43 +60,54 @@ const Hero = () => {
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
 
-  // --- Helper: Render Markdown (Bold & Links) ---
+  // --- IMPROVED PARSER: Handles Links inside Bold tags ---
   const renderMessage = (text: string) => {
     if (!text) return null;
-    
-    // Split text by newlines to handle paragraphs
+
+    // Helper to process just Bold text **...**
+    const renderBold = (segment: string) => {
+      const parts = segment.split(/(\*\*.*?\*\*)/g);
+      return parts.map((part, i) => {
+        if (part.startsWith("**") && part.endsWith("**")) {
+          return <strong key={i} className="text-slate-900 font-bold">{part.slice(2, -2)}</strong>;
+        }
+        return <span key={i}>{part}</span>;
+      });
+    };
+
     return text.split("\n").map((line, lineIndex) => {
-      // If line is empty, render a break
       if (!line.trim()) return <br key={lineIndex} />;
-      
-      // Regex to split by Bold (**...**) and Links ([...](...))
-      // Capture groups: 1=BoldContent, 2=LinkText, 3=LinkUrl
-      const parts = line.split(/(\*\*.*?\*\*)|(\[.*?\]\(.*?\))/g).filter(Boolean);
+
+      // 1. Split by Links first: [Label](URL)
+      // This Regex captures the full link block to separate it from the text
+      const parts = line.split(/(\[.*?\]\(.*?\))/g);
 
       return (
-        <p key={lineIndex} className="mb-2 leading-relaxed text-slate-800">
+        <p key={lineIndex} className="mb-3 text-slate-800 leading-relaxed">
           {parts.map((part, partIndex) => {
-            // Handle Bold
-            if (part.startsWith("**") && part.endsWith("**")) {
-              return <strong key={partIndex} className="text-slate-900">{part.slice(2, -2)}</strong>;
-            }
-            // Handle Links
-            if (part.startsWith("[") && part.includes("](") && part.endsWith(")")) {
-              const [label, url] = part.slice(1, -1).split("](");
+            // 2. Check if this part is a Link
+            const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/);
+            
+            if (linkMatch) {
+              const [_, label, url] = linkMatch;
+              // Clean any stars from the label if the AI nested them inside
+              const cleanLabel = label.replace(/\*\*/g, ""); 
+              
               return (
                 <a
                   key={partIndex}
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary hover:underline font-semibold bg-primary/10 px-1 rounded mx-1"
+                  className="inline-flex items-center gap-1 text-primary hover:text-primary/80 font-bold underline decoration-primary/30 underline-offset-4 mx-1 transition-colors"
                 >
-                  {label}
+                  {cleanLabel} <ExternalLink className="h-3 w-3" />
                 </a>
               );
             }
-            // Return plain text
-            return <span key={partIndex}>{part}</span>;
+
+            // 3. If not a link, process for Bold text (**...**)
+            return <span key={partIndex}>{renderBold(part)}</span>;
           })}
         </p>
       );
@@ -106,14 +123,15 @@ const Hero = () => {
     const lowerQ = query.toLowerCase();
     if (lowerQ.includes("what is on") || lowerQ.includes("events") || lowerQ.includes("market")) {
         setTimeout(() => {
-            // Note: Keep this text formatting clean for the parser
             setChatResponse(`**This Weekend (Jan 31 – Feb 1):**
 
 🥕 **Willows Rotary Markets (Sunday):**
 The best spot for fresh produce. 7:30 AM @ Willows Shopping Centre.
+[View Map](https://www.google.com/maps/search/?api=1&query=Willows+Rotary+Markets+Townsville)
 
 🏙️ **Cotters Market (Sunday):**
 Arts, crafts, and food in the CBD. 8:00 AM @ Flinders St.
+[View Map](https://www.google.com/maps/search/?api=1&query=Cotters+Market+Townsville)
 
 🌅 **Sunset Spot:**
 Tide is high in the evenings—perfect for a walk at Rowes Bay.
