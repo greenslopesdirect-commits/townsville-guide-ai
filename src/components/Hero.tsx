@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom"; // Added useLocation
+import { Link, useLocation } from "react-router-dom";
 import { Search, MessageCircle, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -8,7 +8,7 @@ import { toast } from "sonner";
 import { checkPendingAiQuestion } from "@/utils/aiGuide";
 import heroImage from "@/assets/strand-hero.jpg";
 
-// ... [Keep HeroWeatherWidget Component unchanged] ...
+// --- Weather Widget ---
 const HeroWeatherWidget = () => {
   const [weather, setWeather] = useState<{ temp: number; icon: string; condition: string } | null>(null);
 
@@ -20,6 +20,7 @@ const HeroWeatherWidget = () => {
         );
         if (!response.ok) throw new Error("Failed to fetch");
         const data = await response.json();
+        
         let icon = "🌡️";
         const code = data.current.weather_code;
         if (code === 0) icon = "☀️";
@@ -57,13 +58,35 @@ const Hero = () => {
   const [aiInputValue, setAiInputValue] = useState("");
   const [chatResponse, setChatResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const location = useLocation(); // Hook to access the passed state
+  const location = useLocation();
 
-  // Helper to trigger send manually or via effect
   const triggerSearch = async (query: string) => {
     if (!query.trim()) return;
     setIsLoading(true);
     setChatResponse("");
+
+    // --- ⚡️ SMART INTERCEPT: Handle "What's On" locally ---
+    // This gives the user an instant, accurate answer based on our Events page update
+    const lowerQ = query.toLowerCase();
+    if (lowerQ.includes("what is on") || lowerQ.includes("events") || lowerQ.includes("market")) {
+        setTimeout(() => {
+            setChatResponse(`
+**This Weekend (Jan 31 – Feb 1):**
+
+🥕 **Willows Rotary Markets (Sunday):** The best spot for fresh produce. 7:30 AM @ Willows Shopping Centre.
+
+🏙️ **Cotters Market (Sunday):** Arts, crafts, and food in the CBD. 8:00 AM @ Flinders St.
+
+🌅 **Sunset Spot:** Tide is high in the evenings—perfect for a walk at Rowes Bay.
+
+For the full calendar, check the **Events** tab above!
+            `);
+            setIsLoading(false);
+        }, 600); // Small fake delay for "thinking" effect
+        return;
+    }
+
+    // --- Standard AI Search for other queries ---
     try {
       const { data, error } = await supabase.functions.invoke('townsville-chat', {
         body: { question: query }
@@ -80,26 +103,18 @@ const Hero = () => {
   };
 
   useEffect(() => {
-    // 1. Setup global window handler (for chips on this page)
     (window as any).setAiInputValue = (text: string) => {
       setAiInputValue(text);
       const input = document.getElementById('townsville-ai-input') as HTMLInputElement;
       if (input) input.focus({ preventScroll: true });
     };
 
-    // 2. Check for legacy utils
     checkPendingAiQuestion();
 
-    // 3. Check for incoming state from Events page
     if (location.state?.aiQuery) {
         const query = location.state.aiQuery;
         setAiInputValue(query);
-        // Optional: clear state so it doesn't run again on refresh, 
-        // but removing history state is complex. 
-        // Just triggering the search is usually enough.
         triggerSearch(query);
-        
-        // Clear the state to prevent re-triggering
         window.history.replaceState({}, document.title);
     }
   }, [location]);
@@ -193,7 +208,8 @@ const Hero = () => {
                             <X className="w-4 h-4" />
                         </Button>
                     </div>
-                    <div className="prose prose-sm max-w-none text-slate-800">
+                    {/* Use whitespace-pre-wrap to handle newlines in our static response */}
+                    <div className="prose prose-sm max-w-none text-slate-800 whitespace-pre-wrap leading-relaxed">
                          {chatResponse}
                     </div>
                 </div>
