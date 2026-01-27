@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Search, MessageCircle, X, MapPin } from "lucide-react";
+import { Search, MessageCircle, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import MapLocationCard from "@/components/MapLocationCard";
 import { checkPendingAiQuestion } from "@/utils/aiGuide";
 import heroImage from "@/assets/strand-hero.jpg";
 
@@ -69,26 +68,6 @@ const Hero = () => {
     };
     checkPendingAiQuestion();
   }, []);
-
-  // --- AI Response Parsers ---
-  const parseChatResponse = (text: string) => {
-    // (Kept your original parsing logic for brevity)
-    const parts: Array<{ type: 'text' | 'links'; content: string; links?: any }> = [];
-    const regex = /\[LINKS:(.*?)\]/g;
-    let lastIndex = 0;
-    let match;
-    while ((match = regex.exec(text)) !== null) {
-      if (match.index > lastIndex) parts.push({ type: 'text', content: text.slice(lastIndex, match.index) });
-      parts.push({ type: 'links', content: '', links: {} }); // Simplified for this snippet
-      lastIndex = regex.lastIndex;
-    }
-    if (lastIndex < text.length) parts.push({ type: 'text', content: text.slice(lastIndex) });
-    return parts;
-  };
-
-  const renderTextWithMapCards = (text: string) => {
-    return text; // Simplified for this snippet, keeps text readable
-  };
 
   const handleSend = async () => {
     if (!aiInputValue.trim()) {
@@ -171,19 +150,19 @@ const Hero = () => {
 
         {/* --- QUICK ACTION CHIPS --- */}
         <div className="flex flex-wrap gap-3 justify-center animate-fade-in-up animation-delay-300">
-            {/* Urgent Event Chip */}
-            <Link to="/townsville/events">
-                <Button variant="outline" className="bg-yellow-400/90 hover:bg-yellow-500 text-slate-900 border-none rounded-full px-6 py-5 font-bold shadow-lg hover:scale-105 transition-all">
-                    🇦🇺 Australia Day Guide
+            {/* New Feature Chip - Rowes Bay */}
+            <Link to="/rowes-bay">
+                <Button variant="outline" className="bg-white/95 hover:bg-white text-slate-900 border-none rounded-full px-6 py-5 font-bold shadow-lg hover:scale-105 transition-all flex items-center gap-2">
+                    🌅 New: Rowes Bay Guide
                 </Button>
             </Link>
 
-            {/* Standard Chips */}
+            {/* AI Helper Chips */}
             <Button variant="ghost" onClick={() => (window as any).setAiInputValue("Best food in Townsville?")} className="bg-white/10 hover:bg-white/20 text-white rounded-full border border-white/20">
                 🍽️ Food
             </Button>
-            <Button variant="ghost" onClick={() => (window as any).setAiInputValue("Dog friendly beaches?")} className="bg-white/10 hover:bg-white/20 text-white rounded-full border border-white/20">
-                🐕 Dog Friendly
+            <Button variant="ghost" onClick={() => (window as any).setAiInputValue("What's on this weekend?")} className="bg-white/10 hover:bg-white/20 text-white rounded-full border border-white/20">
+                📅 Events
             </Button>
         </div>
 
