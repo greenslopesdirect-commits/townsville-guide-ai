@@ -40,7 +40,8 @@ import MagneticIslandDayTrip from "@/pages/MagneticIslandDayTrip";
 import FreeThings from "@/pages/FreeThings";
 import StingerSafety from "@/pages/StingerSafety";
 import SunsetWalks from "@/pages/SunsetWalks";
-import PallarendaBeach from "@/pages/PallarendaBeach"; // NEW IMPORT
+import PallarendaBeach from "@/pages/PallarendaBeach";
+import RowesBay from "@/pages/RowesBay"; // NEW IMPORT
 
 const queryClient = new QueryClient();
 
@@ -75,8 +76,9 @@ const App = () => (
             <Route path="guides/stinger-safety" element={<StingerSafety />} />
             <Route path="guides/sunset-walks" element={<SunsetWalks />} />        
             
-            {/* NEW ROUTE */}
+            {/* DEEP DIVE BEACH PAGES */}
             <Route path="pallarenda-beach" element={<PallarendaBeach />} />
+            <Route path="rowes-bay" element={<RowesBay />} />
 
             {/* QUICK ACCESS ROUTES */}
             <Route path="dog-friendly" element={<DogFriendly />} />
