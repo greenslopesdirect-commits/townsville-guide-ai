@@ -56,8 +56,8 @@ const SeoContentSections = () => {
       title: "Magnetic Island Guide",
       content:
         "Just 20 minutes by ferry from Townsville, Magnetic Island is a tropical paradise with 23 beaches and bays. Horseshoe Bay is the island's most popular beach, offering calm waters, watersports, and beachfront dining. The historic Forts Walk offers stunning coastal views.",
-      linkText: "View Magnetic Island guide",
-      linkTo: "/things-to-do"
+      linkText: "Plan a Family-Friendly Day Trip",
+      linkTo: "/guides/magnetic-island-day-trip"
     }
   ];
 
