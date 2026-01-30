@@ -1,20 +1,260 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import LocalInsightCard from "@/components/LocalInsightCard";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Ship, Users, Clock, MapPin, Sun, HelpCircle } from "lucide-react";
 
-const MagneticIslandDayTrip = () => (
-  <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
-    <h1 className="text-4xl font-bold mb-4 text-center">Magnetic Island Family Day Trip</h1>
-    <img src="/magnetic-island-guide.webp" alt="Magnetic Island Ferry" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8" />
-    <div className="space-y-4 mb-8">
-      <Card className="border-l-4 border-blue-400"><CardContent className="p-4"><strong>9:00 AM:</strong> Catch the ferry from the Breakwater Terminal.</CardContent></Card>
-      <Card className="border-l-4 border-blue-400"><CardContent className="p-4"><strong>10:30 AM:</strong> Hike The Forts Walk to spot wild koalas.</CardContent></Card>
-      <Card className="border-l-4 border-blue-400"><CardContent className="p-4"><strong>12:30 PM:</strong> Feed the rock wallabies at Arcadia Jetty.</CardContent></Card>
-      <Card className="border-l-4 border-blue-400"><CardContent className="p-4"><strong>2:30 PM:</strong> Relax and swim at the protected Alma Bay.</CardContent></Card>
+const MagneticIslandDayTrip = () => {
+  const faqs = [
+    {
+      question: "Is one day enough to see Magnetic Island?",
+      answer: "Yes — a full day is enough to enjoy the highlights like The Forts Walk, feeding rock wallabies, and swimming at Alma Bay. For a more relaxed pace or to explore multiple bays, consider an overnight stay."
+    },
+    {
+      question: "Can you visit without hiring a car?",
+      answer: "Absolutely. The island bus service runs regularly and is timed with ferry arrivals. A day pass is affordable and covers most popular spots including Arcadia, Horseshoe Bay, and Nelly Bay."
+    },
+    {
+      question: "Is Magnetic Island suitable for young children?",
+      answer: "Yes, especially for school-age kids. Alma Bay is calm and protected, and feeding the rock wallabies is a highlight for little ones. Note that The Forts Walk has uneven terrain and isn't pram-friendly."
+    },
+    {
+      question: "Are there stingers at Magnetic Island beaches?",
+      answer: "During stinger season (November–May), marine stingers may be present. Swim within stinger nets where available, or wear a stinger suit. Check local signage and lifeguard advice on the day."
+    },
+    {
+      question: "What's the best time of year to visit?",
+      answer: "The dry season (May–October) offers cooler temperatures ideal for walking. Summer visits are great for swimming but can be hot for hiking — plan walks for early morning and stick to shaded bays."
+    }
+  ];
+
+  return (
+    <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
+      <h1 className="text-4xl font-bold mb-4 text-center">Magnetic Island Family Day Trip</h1>
+      
+      {/* Is This Trip Right for You? */}
+      <section className="mb-8">
+        <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/50 rounded-xl p-6">
+          <div className="flex items-start gap-3 mb-4">
+            <Users className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
+            <h2 className="text-xl md:text-2xl font-bold text-foreground">Is This Magnetic Island Day Trip Right for You?</h2>
+          </div>
+          <ul className="space-y-2 text-muted-foreground ml-9">
+            <li className="flex items-start gap-2">
+              <span className="text-blue-500 mt-1">•</span>
+              <span>Ideal for families with school-age kids, walkers, and beach lovers</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-blue-500 mt-1">•</span>
+              <span>No car needed — the island bus service makes this trip easy</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-blue-500 mt-1">•</span>
+              <span>Best enjoyed with an early ferry start, especially in warmer months</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-blue-500 mt-1">•</span>
+              <span>Not ideal for prams or limited mobility due to uneven tracks</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-blue-500 mt-1">•</span>
+              <span>Short on time? You can skip The Forts Walk and still enjoy the island</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Hero Image */}
+      <img 
+        src="/magnetic-island-guide.webp" 
+        alt="Magnetic Island Ferry" 
+        className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8" 
+      />
+
+      {/* Getting There Section */}
+      <section className="mb-8">
+        <div className="flex items-center gap-3 mb-4">
+          <Ship className="w-6 h-6 text-primary" />
+          <h2 className="text-2xl md:text-3xl font-bold">Getting There: Magnetic Island Ferry Tips</h2>
+        </div>
+        <p className="text-muted-foreground mb-4 leading-relaxed">
+          Magnetic Island ferries depart from the Breakwater Terminal in Townsville and take around 40–45 minutes.
+        </p>
+        <div className="grid sm:grid-cols-2 gap-3">
+          <div className="flex items-start gap-3 p-4 bg-muted/30 rounded-lg">
+            <Clock className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+            <span className="text-sm text-muted-foreground">Book ahead during weekends and school holidays</span>
+          </div>
+          <div className="flex items-start gap-3 p-4 bg-muted/30 rounded-lg">
+            <Sun className="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" />
+            <span className="text-sm text-muted-foreground">Early ferries are cooler and less crowded</span>
+          </div>
+          <div className="flex items-start gap-3 p-4 bg-muted/30 rounded-lg">
+            <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+            <span className="text-sm text-muted-foreground">Sit outside for views, but bring sun protection</span>
+          </div>
+          <div className="flex items-start gap-3 p-4 bg-muted/30 rounded-lg">
+            <Ship className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+            <span className="text-sm text-muted-foreground">The island bus timetable is synced with ferry arrivals</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Existing Itinerary - PRESERVED EXACTLY */}
+      <section className="mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">Suggested Day Trip Itinerary</h2>
+        <div className="space-y-4">
+          <Card className="border-l-4 border-blue-400">
+            <CardContent className="p-4">
+              <strong>9:00 AM:</strong> Catch the ferry from the Breakwater Terminal.
+            </CardContent>
+          </Card>
+          <Card className="border-l-4 border-blue-400">
+            <CardContent className="p-4">
+              <strong>10:30 AM:</strong> Hike The Forts Walk to spot wild koalas.
+            </CardContent>
+          </Card>
+          <Card className="border-l-4 border-blue-400">
+            <CardContent className="p-4">
+              <strong>12:30 PM:</strong> Feed the rock wallabies at Arcadia Jetty.
+            </CardContent>
+          </Card>
+          <Card className="border-l-4 border-blue-400">
+            <CardContent className="p-4">
+              <strong>2:30 PM:</strong> Relax and swim at the protected Alma Bay.
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Existing Duncan's Pro-Tip - PRESERVED EXACTLY */}
+      <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
+        <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
+        <p>"The bus on the island is timed with the ferry. If you aren't hiring a car, grab a Day Pass on the bus—it's the cheapest way to see all the bays."</p>
+      </div>
+
+      {/* Alternative Ways Section */}
+      <section className="mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold mb-6">Alternative Ways to Spend a Day on Magnetic Island</h2>
+        
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Option A */}
+          <Card className="border-t-4 border-emerald-400">
+            <CardContent className="p-6">
+              <h3 className="font-bold text-lg mb-1 text-emerald-700 dark:text-emerald-400">Option A: Relaxed Family Beach Day</h3>
+              <p className="text-sm text-muted-foreground mb-4">(No Big Walks)</p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span>Ferry to Arcadia</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span>Feed the rock wallabies</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span>Swim at Alma Bay</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span>Lunch in Arcadia</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-emerald-500 mt-1">•</span>
+                  <span>Late afternoon ferry back</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+
+          {/* Option B */}
+          <Card className="border-t-4 border-amber-400">
+            <CardContent className="p-6">
+              <h3 className="font-bold text-lg mb-1 text-amber-700 dark:text-amber-400">Option B: Active Day</h3>
+              <p className="text-sm text-muted-foreground mb-4">(Best in Cooler Weather)</p>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500 mt-1">•</span>
+                  <span>Early ferry</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500 mt-1">•</span>
+                  <span>Forts Walk first</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500 mt-1">•</span>
+                  <span>Picnic lunch</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500 mt-1">•</span>
+                  <span>Afternoon beach swim</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-amber-500 mt-1">•</span>
+                  <span>Return ferry before sunset</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* More Local Tips */}
+      <section className="mb-8">
+        <LocalInsightCard title="More Local Tips from Duncan" variant="tip">
+          <ul className="space-y-2">
+            <li className="flex items-start gap-2">
+              <span className="text-emerald-500">•</span>
+              <span>Wallabies are easiest to spot early morning or late afternoon</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-emerald-500">•</span>
+              <span>Alma Bay is one of the safest swimming beaches on the island</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-emerald-500">•</span>
+              <span>On very hot days, skip the Forts Walk and focus on the bays</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-emerald-500">•</span>
+              <span>Hiring a car is optional — the bus day pass covers most locations</span>
+            </li>
+          </ul>
+        </LocalInsightCard>
+      </section>
+
+      {/* FAQs */}
+      <section className="mb-8">
+        <div className="flex items-center gap-3 mb-6">
+          <HelpCircle className="w-6 h-6 text-primary" />
+          <h2 className="text-2xl md:text-3xl font-bold">Magnetic Island Family Day Trip – FAQs</h2>
+        </div>
+        
+        <Accordion type="single" collapsible className="w-full">
+          {faqs.map((faq, index) => (
+            <AccordionItem 
+              key={index} 
+              value={`item-${index}`}
+              className="border-border/40"
+            >
+              <AccordionTrigger className="text-left text-base font-semibold hover:text-primary">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
     </div>
-    <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6">
-      <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
-      <p>"The bus on the island is timed with the ferry. If you aren't hiring a car, grab a Day Pass on the bus—it's the cheapest way to see all the bays."</p>
-    </div>
-  </div>
-);
+  );
+};
+
 export default MagneticIslandDayTrip;
