@@ -174,9 +174,13 @@ const Events = () => {
                 <CardTitle className="text-lg">Strand Night Markets</CardTitle>
                 <p className="text-sm text-gray-500">First Friday of Month</p>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Check seasonality (Dry Season only).</p>
-                <Button variant="outline" size="sm" className="w-full">Check dates</Button>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-gray-600">Check seasonality (Dry Season only).</p>
+                <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                  <a href="https://whatson.townsville.qld.gov.au/" target="_blank" rel="noopener noreferrer">
+                    Check dates <ExternalLink className="w-3 h-3" />
+                  </a>
+                </Button>
               </CardContent>
             </Card>
 
@@ -185,9 +189,13 @@ const Events = () => {
                 <CardTitle className="text-lg">Cowboys NRL Games</CardTitle>
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600 mb-4">Home games at QCB Stadium. Electric atmosphere.</p>
-                <Button variant="outline" size="sm" className="w-full">Find next game</Button>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-gray-600">Home games at QCB Stadium. Electric atmosphere.</p>
+                <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                  <a href="https://www.cowboys.com.au/draw/" target="_blank" rel="noopener noreferrer">
+                    Find next game <ExternalLink className="w-3 h-3" />
+                  </a>
+                </Button>
               </CardContent>
             </Card>
 
