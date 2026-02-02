@@ -1,4 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button"; // Import Button
+import { Link } from "react-router-dom"; // Import Link
 import { triggerAiGuide } from "@/utils/aiGuide";
 import strandImage from "@/assets/the-strand-townsville.webp";
 import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
@@ -13,6 +15,8 @@ const picks = [
     description: "Townsville's iconic beachfront — ideal for swimming, walking, cycling, and sunset views.",
     image: strandImage,
     query: "Tell me about The Strand in Townsville.",
+    link: "/the-strand", // NEW: Link to the Deep Dive page
+    buttonText: "View Strand Guide" // NEW: Button Label
   },
   {
     title: "Magnetic Island",
@@ -66,7 +70,7 @@ const TopPicks = () => {
             <Card 
               key={pick.title}
               onClick={() => handleCardClick(pick.query)}
-              className="rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 cursor-pointer overflow-hidden"
+              className="rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 border-2 cursor-pointer overflow-hidden flex flex-col h-full"
             >
               <div className="aspect-video w-full overflow-hidden">
                 <img 
@@ -84,10 +88,23 @@ const TopPicks = () => {
               <CardHeader>
                 <CardTitle className="text-xl">{pick.title}</CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex flex-col flex-grow justify-between gap-4">
                 <CardDescription className="text-base leading-relaxed">
                   {pick.description}
                 </CardDescription>
+
+                {/* Conditional Button Rendering */}
+                {pick.link && (
+                  <Button 
+                    asChild 
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white shadow-md mt-2"
+                    onClick={(e) => e.stopPropagation()} // Prevents the AI Guide from triggering when clicking the button
+                  >
+                    <Link to={pick.link}>
+                      {pick.buttonText || "View Guide"}
+                    </Link>
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}
