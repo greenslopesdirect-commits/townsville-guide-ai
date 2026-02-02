@@ -23,6 +23,8 @@ const picks = [
     description: "A 20-minute ferry ride to beaches, wildlife, hiking trails, and tropical bays.",
     image: magneticIslandImage,
     query: "What can I do on Magnetic Island?",
+    link: "/guides/magnetic-island-day-trip",
+    buttonText: "View Day Trip Guide"
   },
   {
     title: "Castle Hill",
