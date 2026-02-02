@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -13,7 +14,9 @@ const FaqSection = () => {
     },
     {
       question: "Is Townsville family-friendly?",
-      answer: "Yes — Townsville is extremely family-friendly. Riverway Lagoons, Castle Hill, The Strand waterpark, and Billabong Sanctuary are all great for families with kids of all ages."
+      answer: "Yes — Townsville is extremely family-friendly. Riverway Lagoons, Castle Hill, The Strand waterpark, and Billabong Sanctuary are all great for families with kids of all ages.",
+      linkText: "View our family guide",
+      linkTo: "/townsville-with-kids"
     },
     {
       question: "What's the best free thing to do in Townsville?",
@@ -53,6 +56,14 @@ const FaqSection = () => {
               </AccordionTrigger>
               <AccordionContent className="text-base text-muted-foreground leading-relaxed">
                 {faq.answer}
+                {faq.linkTo && (
+                  <Link 
+                    to={faq.linkTo} 
+                    className="block mt-2 text-primary hover:underline font-medium"
+                  >
+                    {faq.linkText} →
+                  </Link>
+                )}
               </AccordionContent>
             </AccordionItem>
           ))}
