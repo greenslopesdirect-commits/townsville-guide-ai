@@ -44,7 +44,7 @@ const Beaches = () => {
               <p className="text-sm text-gray-600 mb-4 h-16">
                 The city's playground. Features a swimming enclosure, the rockpool, water park for kids, and endless cafes. Safe for swimming inside nets/enclosures.
               </p>
-              <Button asChild className="w-full" variant="outline">
+              <Button asChild className="w-full bg-blue-50 text-blue-700 hover:bg-blue-100 border border-blue-200 shadow-sm">
                 <Link to="/things-to-do">View Strand Guide</Link>
               </Button>
             </CardContent>
