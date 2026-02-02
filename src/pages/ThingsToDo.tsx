@@ -134,7 +134,9 @@ const ThingsToDo = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville",
       aiPrompt: "How much time should I spend at The Strand and what is the best time to visit?",
-      subtitle: "Beachfront Promenade"
+      subtitle: "Beachfront Promenade",
+      guideLink: "/the-strand",
+      guideLinkText: "View Strand Guide"
     },
     {
       title: "Magnetic Island",

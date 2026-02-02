@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Check } from "lucide-react";
+import { MapPin, Check, ArrowRight } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
+import { Link } from "react-router-dom";
 
 interface ListingCardProps {
   title: string;
@@ -13,6 +14,8 @@ interface ListingCardProps {
   icon?: React.ReactNode;
   aiPrompt: string;
   subtitle?: string;
+  guideLink?: string;
+  guideLinkText?: string;
 }
 
 const ListingCard = ({ 
@@ -24,7 +27,9 @@ const ListingCard = ({
   mapUrl, 
   icon, 
   aiPrompt,
-  subtitle 
+  subtitle,
+  guideLink,
+  guideLinkText
 }: ListingCardProps) => (
   <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col">
     {image && (
@@ -77,6 +82,15 @@ const ListingCard = ({
             </li>
           ))}
         </ul>
+      )}
+      
+      {guideLink && (
+        <Button asChild size="sm" className="gap-2 w-full bg-primary hover:bg-primary/90">
+          <Link to={guideLink}>
+            {guideLinkText || "View Guide"}
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </Button>
       )}
       
       <div className="flex flex-col sm:flex-row gap-2 mt-auto pt-2">
