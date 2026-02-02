@@ -151,7 +151,9 @@ const ThingsToDo = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Ferry+Terminal",
       aiPrompt: "How much time should I spend at Magnetic Island and what is the best time to visit?",
-      subtitle: "20 Min Ferry Ride"
+      subtitle: "20 Min Ferry Ride",
+      guideLink: "/guides/magnetic-island-day-trip",
+      guideLinkText: "View Day Trip Guide"
     },
     {
       title: "Billabong Sanctuary",
