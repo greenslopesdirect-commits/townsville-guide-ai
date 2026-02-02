@@ -319,7 +319,8 @@ const ThingsToDo = () => {
                   { to: "/guides/magnetic-island-day-trip", title: "Magnetic Island Day Trip", desc: "Island adventure itinerary", emoji: "🏝️" },
                   { to: "/guides/stinger-safety", title: "Stinger Safety Guide", desc: "Swim safe all year round", emoji: "⚠️" },
                   { to: "/guides/free-things", title: "5 Free Things to Do", desc: "Explore Townsville on a budget", emoji: "🪙" },
-                  { to: "/guides/sunset-walks", title: "Sunset Walks Guide", desc: "Best spots for a late afternoon stroll", emoji: "🌅" }
+                  { to: "/guides/sunset-walks", title: "Sunset Walks Guide", desc: "Best spots for a late afternoon stroll", emoji: "🌅" },
+                  { to: "/townsville-with-kids", title: "Townsville With Kids", desc: "Family-friendly spots, heat tips & easy day trips", emoji: "👨‍👩‍👧" }
                 ].map((guide, index) => (
                   <Link key={index} to={guide.to} className="group">
                     <div className="p-5 rounded-xl bg-white dark:bg-card border-2 border-sky-200 dark:border-sky-700 hover:border-sky-400 dark:hover:border-sky-500 transition-all duration-300 h-full">
