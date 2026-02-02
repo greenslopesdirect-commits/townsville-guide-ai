@@ -22,10 +22,10 @@ import LocalInsightCard from "@/components/LocalInsightCard";
 const Index = () => {
   return (
     <>
-      {/* UPDATE: Revised Title & Description for Jan 2026 Strategy */}
+      {/* UPDATE: Revised for Evergreen/February Strategy */}
       <SEOHead
         title="My Aussie Guide: Townsville & North Queensland Travel Tips"
-        description="The 2026 local guide to Townsville & NQ. Australia Day long weekend tips, Schnauzer-approved dog spots, and visual travel guides. Curated by local expert Duncan Ross."
+        description="The 2026 local guide to Townsville & NQ. February travel tips, Schnauzer-approved dog spots, and visual travel guides. Curated by local expert Duncan Ross."
         canonical="https://www.myaussieguide.com.au"
       />
       <Helmet>
@@ -55,7 +55,7 @@ const Index = () => {
           `}
         </script>
 
-        {/* FAQPage Schema - matches FaqSection content */}
+        {/* FAQPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -126,7 +126,7 @@ const Index = () => {
           </LocalInsightCard>
         </div>
         
-        {/* Newsletter Section - High converting email capture with PDF offer */}
+        {/* Newsletter Section */}
         <NewsletterSection />
         
         <section id="weather">
