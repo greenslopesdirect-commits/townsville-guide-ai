@@ -26,6 +26,13 @@ const HeatSafetyAlert = ({ className = "", showGuideLink = false }: HeatSafetyAl
           <li>Wear a hat, sunscreen (SPF 50+) and light clothing</li>
           <li>Rest in shade regularly during outdoor activities</li>
         </ul>
+        <p className="text-sm mb-2">
+          Families travelling with kids may find our{" "}
+          <Link to="/townsville-with-kids" className="font-medium hover:underline">
+            family guide
+          </Link>{" "}
+          helpful.
+        </p>
         <div className="flex flex-wrap items-center gap-4">
           <a 
             href="http://www.bom.gov.au/qld/forecasts/townsville.shtml" 

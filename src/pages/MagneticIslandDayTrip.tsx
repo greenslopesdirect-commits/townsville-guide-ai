@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import {
@@ -21,7 +22,8 @@ const MagneticIslandDayTrip = () => {
     },
     {
       question: "Is Magnetic Island suitable for young children?",
-      answer: "Yes, especially for school-age kids. Alma Bay is calm and protected, and feeding the rock wallabies is a highlight for little ones. Note that The Forts Walk has uneven terrain and isn't pram-friendly."
+      answer: "Yes, especially for school-age kids. Alma Bay is calm and protected, and feeding the rock wallabies is a highlight for little ones. Note that The Forts Walk has uneven terrain and isn't pram-friendly. For more tips, see our Townsville with Kids guide.",
+      hasKidsLink: true
     },
     {
       question: "Are there stingers at Magnetic Island beaches?",
@@ -248,6 +250,14 @@ const MagneticIslandDayTrip = () => {
               </AccordionTrigger>
               <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
                 {faq.answer}
+                {faq.hasKidsLink && (
+                  <Link 
+                    to="/townsville-with-kids" 
+                    className="block mt-2 text-primary hover:underline font-medium"
+                  >
+                    View family guide →
+                  </Link>
+                )}
               </AccordionContent>
             </AccordionItem>
           ))}
