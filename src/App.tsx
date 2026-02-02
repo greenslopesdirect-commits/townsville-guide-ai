@@ -41,8 +41,9 @@ import FreeThings from "@/pages/FreeThings";
 import StingerSafety from "@/pages/StingerSafety";
 import SunsetWalks from "@/pages/SunsetWalks";
 import PallarendaBeach from "@/pages/PallarendaBeach";
-import RowesBay from "@/pages/RowesBay"; // NEW IMPORT
-import TheStrand from "./pages/TheStrand"; // IMPORT THE NEW PAGE
+import RowesBay from "@/pages/RowesBay";
+import TheStrand from "./pages/TheStrand";
+import TownsvilleWithKids from "@/pages/TownsvilleWithKids";
 
 const queryClient = new QueryClient();
 
@@ -80,7 +81,8 @@ const App = () => (
             {/* DEEP DIVE BEACH PAGES */}
             <Route path="pallarenda-beach" element={<PallarendaBeach />} />
             <Route path="rowes-bay" element={<RowesBay />} />
-            <Route path="/the-strand" element={<TheStrand />} /> {/* ADD ROUTE HERE */}
+            <Route path="townsville-with-kids" element={<TownsvilleWithKids />} />
+            <Route path="the-strand" element={<TheStrand />} />
 
             {/* QUICK ACCESS ROUTES */}
             <Route path="dog-friendly" element={<DogFriendly />} />
