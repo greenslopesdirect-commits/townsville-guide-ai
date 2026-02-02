@@ -8,7 +8,8 @@ import {
   Calendar, 
   ShoppingBag, 
   TreePine, 
-  Lightbulb 
+  Lightbulb,
+  Baby
 } from "lucide-react";
 
 const QuickAccess = () => {
@@ -66,6 +67,12 @@ const QuickAccess = () => {
       title: "Local Tips",
       desc: "Weather, stinger season, transport & insider advice.",
       link: "/local-tips",
+    },
+    {
+      icon: Baby,
+      title: "Family-Friendly Townsville",
+      desc: "Beaches, activities, day trips & heat tips for kids.",
+      link: "/townsville-with-kids",
     },
   ];
 
