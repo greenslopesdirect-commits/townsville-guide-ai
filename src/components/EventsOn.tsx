@@ -11,10 +11,10 @@ const EventsOn = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
-            <span className="text-primary font-bold tracking-wider uppercase text-sm">Happening Now</span>
+            <span className="text-primary font-bold tracking-wider uppercase text-sm">Seasonal Events & Local Highlights</span>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">What's On in Townsville</h2>
             <p className="text-slate-600 mt-2 max-w-xl text-lg">
-              Your guide to the Australia Day long weekend and weekly local markets.
+              Townsville hosts markets, festivals, long weekends, and community events throughout the year.
             </p>
           </div>
           
@@ -25,7 +25,7 @@ const EventsOn = () => {
           </Link>
         </div>
 
-        {/* FEATURED EVENT: AUSTRALIA DAY */}
+        {/* FEATURED: YEAR-ROUND EVENTS */}
         <div className="grid lg:grid-cols-5 gap-0 bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden mb-12 hover:shadow-md transition-shadow">
             
             {/* Visual Side (Left) */}
@@ -33,15 +33,15 @@ const EventsOn = () => {
                 <div className="absolute top-0 right-0 p-32 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
                 <div className="relative z-10">
                     <span className="inline-block px-3 py-1 bg-yellow-400 text-blue-900 font-bold text-xs uppercase tracking-wider rounded-full mb-4">
-                        Long Weekend
+                        Year-Round
                     </span>
-                    <h3 className="text-3xl font-bold leading-tight mb-2">Australia Day 2026</h3>
-                    <p className="text-blue-100 font-medium">Jan 24 – Jan 26</p>
+                    <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
+                    <p className="text-blue-100 font-medium">Something for every season</p>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
                         <MapPin className="w-4 h-4" />
-                        <span>Jezzine Barracks & The Strand</span>
+                        <span>The Strand, Jezzine & citywide venues</span>
                      </div>
                 </div>
             </div>
@@ -50,19 +50,19 @@ const EventsOn = () => {
             <div className="lg:col-span-3 p-8 flex flex-col justify-center">
                 <div className="prose prose-slate mb-6">
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        Townsville comes alive this weekend! Join the <strong>Aussie Fun Run</strong> at Jezzine Barracks (6:30 AM), 
-                        witness the <strong>21-Gun Salute</strong>, or pay respects at the <strong>Survival Day</strong> dawn service.
+                        From waterfront celebrations and <strong>cultural festivals</strong> to <strong>sporting events</strong> and long weekend activities, 
+                        there's always something happening in Townsville. Plan ahead to catch the best of North Queensland.
                     </p>
                 </div>
                 
                 <div className="flex flex-wrap gap-4 items-center">
                     <Link to="/townsville/events">
                         <Button size="lg" className="bg-slate-900 text-white hover:bg-slate-800">
-                            Get the Full Guide
+                            View Full Events Calendar
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Includes parking maps & firing times.
+                        Updated regularly with local highlights.
                     </span>
                 </div>
             </div>
