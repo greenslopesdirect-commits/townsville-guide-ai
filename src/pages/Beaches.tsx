@@ -146,8 +146,8 @@ const Beaches = () => {
               <p className="text-gray-600 text-sm">
                 World-class beaches. Alma Bay is patrolled and family friendly. Horseshoe Bay has water sports and nets.
               </p>
-              <Button variant="ghost" className="w-full cursor-default hover:bg-transparent">
-                Ask AI for Ferry Times
+              <Button asChild className="w-full" variant="outline">
+                <Link to="/guides/magnetic-island-day-trip">View Day Trip Guide</Link>
               </Button>
             </CardContent>
           </Card>
