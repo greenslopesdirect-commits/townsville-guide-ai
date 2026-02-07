@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { Mountain, Sunrise, Camera, Car, Footprints, Clock, DollarSign, MapPin, Thermometer, Wind } from "lucide-react";
+import { Mountain, Sunrise, Camera, Car, Footprints, Clock, DollarSign, MapPin, Thermometer, Wind, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import castleHillImage from "@/assets/castle-hill-townsville-2.webp";
@@ -26,6 +26,9 @@ const CastleHill = () => {
               alt="Castle Hill Lookout overlooking Townsville and Cleveland Bay"
               className="w-full h-full object-cover"
             />
+            <p className="text-xs text-muted-foreground italic text-center mt-2 px-4">
+              Castle Hill lookout with panoramic views over Townsville and Magnetic Island.
+            </p>
           </div>
         </section>
 
@@ -39,6 +42,30 @@ const CastleHill = () => {
               Castle Hill is one of Townsville's most recognisable landmarks — a granite monolith rising 286 metres above the city with panoramic views over Cleveland Bay, Magnetic Island, and the Townsville skyline. It's a favourite local lookout for sunrise walks, sunset photos, and relaxed scenic drives.
             </p>
           </header>
+
+          {/* Quick Visitor Info */}
+          <section className="mb-12">
+            <Card className="bg-muted/30 shadow-sm">
+              <CardContent className="p-5 md:p-6">
+                <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">Quick Visitor Info</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {[
+                    { icon: "📍", text: "Location: Central Townsville" },
+                    { icon: "⏱", text: "Typical visit: 20–60 minutes" },
+                    { icon: "🚗", text: "Drive to summit available" },
+                    { icon: "🥾", text: "Walking tracks for all fitness levels" },
+                    { icon: "🌅", text: "Best times: Sunrise or sunset" },
+                    { icon: "💧", text: "Bring water — it gets very hot" },
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-3">
+                      <span className="text-lg flex-shrink-0">{item.icon}</span>
+                      <span className="text-sm text-muted-foreground">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </section>
 
           {/* Why Visit */}
           <section className="mb-12">
@@ -59,6 +86,20 @@ const CastleHill = () => {
                 </li>
               ))}
             </ul>
+          </section>
+
+          {/* Why Locals Love Castle Hill */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
+              <Heart className="w-6 h-6 text-primary" />
+              Why Locals Love Castle Hill
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Castle Hill isn't just for tourists — it's a daily ritual for many Townsville locals. Morning walkers, runners, photographers, and families all use it as an easy escape with some of the best coastal views in North Queensland.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              It's one of the simplest ways to experience the Townsville lifestyle without leaving the city.
+            </p>
           </section>
 
           {/* Walking Options */}
@@ -87,6 +128,20 @@ const CastleHill = () => {
             </p>
           </section>
 
+          {/* Best Time to Visit */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
+              <Sunrise className="w-6 h-6 text-primary" />
+              Best Time to Visit
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Early morning and sunset are the most comfortable times, especially during warmer months. Midday heat can be intense, particularly on the exposed walking tracks.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Sunrise often brings calm conditions, while sunset offers spectacular colours over Cleveland Bay and Magnetic Island.
+            </p>
+          </section>
+
           {/* Local Tips */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-foreground mb-6">🗺️ Local Tips</h2>
@@ -105,6 +160,20 @@ const CastleHill = () => {
                 ))}
               </CardContent>
             </Card>
+          </section>
+
+          {/* Photography Tip */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
+              <Camera className="w-6 h-6 text-primary" />
+              Photography Tip
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              Castle Hill is one of the best photo spots in Townsville. Wide coastal views, city skyline perspectives, and changing light conditions make it ideal for travel photography.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Sunset usually produces the most dramatic colours.
+            </p>
           </section>
 
           {/* Quick Summary */}
@@ -130,7 +199,28 @@ const CastleHill = () => {
             </div>
           </section>
 
-          {/* Internal Links */}
+          {/* Combine With Nearby Stops */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-4">Combine Castle Hill With These Nearby Stops</h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              If you're visiting Castle Hill, these nearby attractions pair perfectly:
+            </p>
+            <ul className="space-y-2">
+              {[
+                "The Strand beachfront (walking, swimming, cafés)",
+                "Magnetic Island ferry terminal nearby",
+                "Townsville CBD restaurants and cafés",
+                "Sunset viewing at Rowes Bay",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                  <span className="text-primary mt-1">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Explore More of Townsville */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-foreground mb-6">Explore More of Townsville</h2>
             <div className="flex flex-wrap gap-3">
