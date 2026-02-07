@@ -10,7 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { TreePine, Users, Clock, Heart, HelpCircle, Check, Utensils } from "lucide-react";
+import { TreePine, Users, Clock, Heart, HelpCircle, Check, Utensils, MapPin, Car, Sun } from "lucide-react";
 import billabongImage from "@/assets/billabong-sanctuary-townsville-2.webp";
 
 const BillabongSanctuary = () => {
@@ -55,14 +55,41 @@ const BillabongSanctuary = () => {
         <img
           src={billabongImage}
           alt="Billabong Sanctuary Townsville wildlife park with native Australian animals"
-          className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8"
+          className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-2"
         />
+        <p className="text-xs text-muted-foreground italic text-center mb-8">
+          Koala holding experience at Billabong Sanctuary — one of Townsville's most popular wildlife activities.
+        </p>
 
         {/* Intro */}
         <section className="mb-8">
           <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
             Billabong Sanctuary is Townsville's main wildlife park where visitors can experience native Australian animals up close, including the popular koala holding experience. Located about 20 minutes south of Townsville, it offers a relaxed bush setting focused on education, conservation and family-friendly encounters.
           </p>
+        </section>
+
+        {/* Quick Visitor Info */}
+        <section className="mb-8">
+          <Card className="bg-muted/30 shadow-sm">
+            <CardContent className="p-5 md:p-6">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">Quick Visitor Info</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {[
+                  { icon: "📍", text: "About 20 minutes south of Townsville CBD" },
+                  { icon: "⏱", text: "Typical visit: 2–3 hours" },
+                  { icon: "👨‍👩‍👧", text: "Best for: Families, wildlife lovers, first-time visitors" },
+                  { icon: "🐨", text: "Koala holding available (additional fee usually applies)" },
+                  { icon: "☀️", text: "Best time: Early morning in warmer months" },
+                  { icon: "🚗", text: "Easy parking on-site" },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <span className="text-lg flex-shrink-0">{item.icon}</span>
+                    <span className="text-sm text-muted-foreground">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </section>
 
         {/* Why Visitors Go */}
@@ -87,6 +114,20 @@ const BillabongSanctuary = () => {
           </ul>
           <p className="text-muted-foreground leading-relaxed">
             It's especially popular with families visiting North Queensland, overseas tourists looking for an authentic wildlife encounter, and locals hosting friends or relatives from out of town.
+          </p>
+        </section>
+
+        {/* Is It Worth Visiting */}
+        <section className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <Check className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Is Billabong Sanctuary Worth Visiting?</h2>
+          </div>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            If you want to experience Australian wildlife without travelling far from Townsville, Billabong Sanctuary is the easiest and most reliable option.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            It's particularly popular with families, first-time visitors to Australia, and locals hosting friends or relatives. The relaxed bush setting, close animal encounters, and reliable koala experience make it one of Townsville's most recommended attractions.
           </p>
         </section>
 
@@ -144,7 +185,44 @@ const BillabongSanctuary = () => {
           </LocalInsightCard>
         </section>
 
-        {/* Facilities */}
+        {/* Best Season Tip */}
+        <section className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <Sun className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Best Season Tip</h2>
+          </div>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            During the hotter months (October to March), visiting earlier in the day makes a big difference.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            The animals tend to be more active in cooler hours, and it's far more comfortable for walking around the outdoor areas.
+          </p>
+        </section>
+
+        {/* Getting There */}
+        <section className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <Car className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Getting There</h2>
+          </div>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Billabong Sanctuary is located about a 20-minute drive south of Townsville via the Bruce Highway.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Most visitors drive, but some organised tours may be available during peak visitor periods. Parking is easy and the park layout is straightforward for families.
+          </p>
+        </section>
+
+        {/* Local Authority Trust Signal */}
+        <section className="mb-8">
+          <Card className="border-l-4 border-primary/50 bg-muted/20">
+            <CardContent className="p-5">
+              <p className="text-muted-foreground leading-relaxed italic">
+                Many Townsville locals recommend Billabong Sanctuary when friends or family visit from interstate or overseas — it's one of the easiest ways to experience iconic Australian wildlife close to the city.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
         <section className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <Utensils className="w-6 h-6 text-primary" />
