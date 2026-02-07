@@ -31,7 +31,9 @@ const ThingsToDo = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Castle+Hill+Townsville",
       aiPrompt: "How much time should I spend at Castle Hill and what is the best time to visit?",
-      subtitle: "Must-Do Experience"
+      subtitle: "Must-Do Experience",
+      guideLink: "/castle-hill",
+      guideLinkText: "Local Guide"
     },
     {
   title: "Little Crystal Creek",
