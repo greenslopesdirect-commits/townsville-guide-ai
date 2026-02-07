@@ -114,6 +114,16 @@ const TheStrand = () => {
               </CardContent>
             </Card>
 
+            {/* Rockpool Image - spans full grid width */}
+            <div className="md:col-span-3">
+              <img
+                src="/rock-pool-townsville.webp"
+                alt="The Strand Rockpool saltwater lagoon Townsville safe swimming area North Queensland"
+                className="w-full h-[250px] md:h-[400px] object-cover object-[center_70%] rounded-xl"
+                loading="lazy"
+              />
+            </div>
+
             {/* The Water Park */}
             <Card>
               <CardHeader>
