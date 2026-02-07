@@ -35,6 +35,16 @@ const TheStrand = () => {
           </p>
         </div>
 
+        {/* Hero Image */}
+        <div className="w-full">
+          <img
+            src="/the-strand-townsville-2.webp"
+            alt="The Strand Townsville foreshore walkway with palm trees and tropical waterfront"
+            className="w-full h-[300px] md:h-[500px] object-cover rounded-xl"
+            loading="lazy"
+          />
+        </div>
+
         {/* Quick Visitor Snapshot */}
         <Card className="bg-muted/30 shadow-sm">
           <CardContent className="p-5 md:p-6">
