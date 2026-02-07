@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin, Waves, Umbrella, Info, Coffee, Car, AlertTriangle } from "lucide-react";
+import { ArrowRight, MapPin, Waves, Umbrella, Info, Coffee, Car, AlertTriangle, Sun, ShieldCheck, Mountain } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -35,6 +35,28 @@ const TheStrand = () => {
           </p>
         </div>
 
+        {/* Quick Visitor Snapshot */}
+        <Card className="bg-muted/30 shadow-sm">
+          <CardContent className="p-5 md:p-6">
+            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">Quick Visitor Snapshot</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                { icon: "📍", text: "Townsville foreshore" },
+                { icon: "📏", text: "2.2km waterfront promenade" },
+                { icon: "💰", text: "Free attraction" },
+                { icon: "👨‍👩‍👧", text: "Family friendly" },
+                { icon: "🌴", text: "Shade available along most paths" },
+                { icon: "🌊", text: "Swim only in Rockpool or stinger nets (Nov–May)" },
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <span className="text-lg flex-shrink-0">{item.icon}</span>
+                  <span className="text-sm text-muted-foreground">{item.text}</span>
+                </div>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Current Status - Critical for Tourists */}
         <Alert className="bg-amber-50 border-amber-200">
           <AlertTriangle className="h-4 w-4 text-amber-600" />
@@ -43,6 +65,20 @@ const TheStrand = () => {
             Do not swim in the open ocean. Only swim inside the <strong>Stinger Nets</strong> (located near the Surf Club and Gregory St) or in the <strong>Rockpool</strong>.
           </AlertDescription>
         </Alert>
+
+        {/* Best Time to Visit */}
+        <section className="space-y-4">
+          <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+            <Sun className="w-6 h-6 text-primary" />
+            Best Time to Visit The Strand
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Early mornings and late afternoons are the most comfortable, especially during warmer months. Sunset is particularly popular with locals for walking, dining, or relaxing by the water.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Midday visits are still enjoyable thanks to tree shade, cafés, and swimming areas like the Rockpool.
+          </p>
+        </section>
 
         {/* The 3 Main Zones */}
         <section className="space-y-6">
@@ -108,6 +144,17 @@ const TheStrand = () => {
           </div>
         </section>
 
+        {/* Local Food Tip */}
+        <section className="space-y-4">
+          <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+            <Coffee className="w-6 h-6 text-primary" />
+            Local Food Tip
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The Marina end has some of Townsville's best casual dining and takeaway options. Fish and chips, cafés, and relaxed waterfront restaurants make it an easy place to spend an evening.
+          </p>
+        </section>
+
         {/* The Parking Strategy */}
         <section className="space-y-4">
           <div className="flex items-center gap-2">
@@ -130,6 +177,27 @@ const TheStrand = () => {
           </Card>
         </section>
 
+        {/* Safety Tips */}
+        <section className="space-y-4">
+          <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+            <ShieldCheck className="w-6 h-6 text-primary" />
+            Safety Tips for Visitors
+          </h2>
+          <ul className="space-y-2">
+            {[
+              "Always follow stinger season warnings",
+              "Drink plenty of water in warmer months",
+              "Wear sunscreen — UV levels are strong year-round",
+              "Watch for cyclists on the promenade",
+            ].map((tip, i) => (
+              <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                <span className="text-primary mt-1">✔</span>
+                <span>{tip}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
         {/* Quick FAQs */}
         <section className="space-y-4 pt-4 border-t">
           <h3 className="font-semibold text-gray-900">Quick Questions</h3>
@@ -149,6 +217,34 @@ const TheStrand = () => {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Combine With Nearby Attractions */}
+        <section className="space-y-4">
+          <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+            <Mountain className="w-6 h-6 text-primary" />
+            Combine The Strand With These Nearby Attractions
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-2">
+            If you're visiting The Strand, consider combining it with:
+          </p>
+          <ul className="space-y-2">
+            {[
+              { text: "Castle Hill lookout (best city views)", link: "/castle-hill" },
+              { text: "Magnetic Island day trip", link: "/guides/magnetic-island-day-trip" },
+              { text: "Townsville CBD dining and shopping", link: "/food-drink" },
+              { text: "Queens Gardens park nearby", link: null },
+            ].map((item, i) => (
+              <li key={i} className="flex items-start gap-3 text-muted-foreground">
+                <span className="text-primary mt-1">•</span>
+                {item.link ? (
+                  <Link to={item.link} className="hover:text-primary transition-colors">{item.text}</Link>
+                ) : (
+                  <span>{item.text}</span>
+                )}
+              </li>
+            ))}
+          </ul>
         </section>
 
         {/* CTA */}
