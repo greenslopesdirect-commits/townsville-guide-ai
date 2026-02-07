@@ -45,6 +45,7 @@ import RowesBay from "@/pages/RowesBay";
 import TheStrand from "./pages/TheStrand";
 import TownsvilleWithKids from "@/pages/TownsvilleWithKids";
 import BillabongSanctuary from "@/pages/BillabongSanctuary";
+import CastleHill from "@/pages/CastleHill";
 
 const queryClient = new QueryClient();
 
@@ -85,6 +86,7 @@ const App = () => (
             <Route path="townsville-with-kids" element={<TownsvilleWithKids />} />
             <Route path="the-strand" element={<TheStrand />} />
             <Route path="billabong-sanctuary" element={<BillabongSanctuary />} />
+            <Route path="castle-hill" element={<CastleHill />} />
 
             {/* QUICK ACCESS ROUTES */}
             <Route path="dog-friendly" element={<DogFriendly />} />

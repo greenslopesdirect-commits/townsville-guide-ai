@@ -31,6 +31,8 @@ const picks = [
     description: "Climb or drive to the lookout for the best panoramic views of Townsville and the coast.",
     image: castleHillImage,
     query: "What's the best way to get to Castle Hill lookout?",
+    link: "/castle-hill",
+    buttonText: "View Castle Hill Guide"
   },
   {
     title: "JAM Corner",
