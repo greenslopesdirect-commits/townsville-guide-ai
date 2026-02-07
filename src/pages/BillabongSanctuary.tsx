@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { TreePine, Users, Clock, Heart, HelpCircle, Check, Utensils } from "lucide-react";
-import billabongImage from "@/assets/billabong-sanctuary-townsville.webp";
+import billabongImage from "@/assets/billabong-sanctuary-townsville-2.webp";
 
 const BillabongSanctuary = () => {
   const faqs = [
