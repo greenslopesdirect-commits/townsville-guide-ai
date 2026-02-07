@@ -168,7 +168,9 @@ const ThingsToDo = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Billabong+Sanctuary+Townsville",
       aiPrompt: "How much time should I spend at Billabong Sanctuary and what is the best time to visit?",
-      subtitle: "Wildlife Experience"
+      subtitle: "Wildlife Experience",
+      guideLink: "/billabong-sanctuary",
+      guideLinkText: "Learn More"
     },
     {
       title: "Jezzine Barracks",
