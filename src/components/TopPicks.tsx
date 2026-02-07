@@ -49,6 +49,8 @@ const picks = [
     description: "A family-friendly wildlife park where you can hand-feed kangaroos and meet koalas.",
     image: billabongSanctuaryImage,
     query: "What animals are at Billabong Sanctuary?",
+    link: "/billabong-sanctuary",
+    buttonText: "Learn More"
   },
 ];
 
