@@ -96,8 +96,11 @@ const DogFriendly = () => {
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto sm:mx-0 leading-relaxed">
               Townsville has some excellent dog-friendly beaches, but knowing when dogs are allowed off-leash, where stinger nets are active, and how the tropical climate affects dogs is essential. This local guide highlights the best beaches where dogs can safely walk, swim, and explore in North Queensland.
             </p>
-            <div className="h-px bg-border w-full mt-6" />
-          </section>
+          <p className="text-sm text-muted-foreground mt-4">
+            Looking for general swimming beaches? See our full <Link to="/beaches" className="text-primary hover:underline font-medium">Townsville Beaches Guide</Link>.
+          </p>
+          <div className="h-px bg-border w-full mt-6" />
+        </section>
 
           {/* Local Tip */}
           <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
