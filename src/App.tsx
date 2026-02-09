@@ -46,6 +46,7 @@ import TheStrand from "./pages/TheStrand";
 import TownsvilleWithKids from "@/pages/TownsvilleWithKids";
 import BillabongSanctuary from "@/pages/BillabongSanctuary";
 import CastleHill from "@/pages/CastleHill";
+import JezzineBarracks from "@/pages/JezzineBarracks";
 
 const queryClient = new QueryClient();
 
@@ -78,7 +79,8 @@ const App = () => (
             <Route path="guides/magnetic-island-day-trip" element={<MagneticIslandDayTrip />} />
             <Route path="guides/free-things" element={<FreeThings />} />
             <Route path="guides/stinger-safety" element={<StingerSafety />} />
-            <Route path="guides/sunset-walks" element={<SunsetWalks />} />        
+            <Route path="guides/sunset-walks" element={<SunsetWalks />} />
+            <Route path="guides/jezzine-barracks" element={<JezzineBarracks />} />
             
             {/* DEEP DIVE BEACH PAGES */}
             <Route path="pallarenda-beach" element={<PallarendaBeach />} />
