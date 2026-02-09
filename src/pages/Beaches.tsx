@@ -1,4 +1,4 @@
-import { MapPin, ArrowRight, Umbrella, Waves, Dog, Sun, Anchor, ShieldCheck, Droplets, Thermometer, Fish, Clock, PawPrint } from "lucide-react";
+import { MapPin, ArrowRight, Umbrella, Waves, Dog, Sun, Anchor, ShieldCheck, Thermometer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -117,8 +117,8 @@ const Beaches = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
-        title="Dog-Friendly Beaches in Townsville — Swimming, Safety & Stinger Nets"
-        description="Local guide to Townsville's best beaches for dogs, swimming, and families. Find off-leash beaches, stinger net locations, and safety tips for North Queensland."
+        title="Best Beaches in Townsville — Swimming, Safety & Local Tips"
+        description="Local guide to the best beaches in Townsville. Find stinger net locations, safe swimming spots, quiet beaches, and dog-friendly areas across North Queensland."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
 
@@ -136,7 +136,7 @@ const Beaches = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
-            Stinger Season Active (Nets Up)
+            Beaches Guide
           </span>
         </div>
       </div>
@@ -146,10 +146,10 @@ const Beaches = () => {
         {/* Intro Section */}
         <section className="space-y-4 text-center sm:text-left">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
-            Dog-Friendly & Safe Beaches in Townsville
+            Best Beaches in Townsville — Swimming, Safety & Local Tips
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl">
-            Townsville has beautiful beaches, but knowing where dogs are allowed, when stinger nets are active, and which spots are safest makes all the difference. This local guide highlights the best beaches for swimming, walking, and exploring with your dog in North Queensland.
+            Townsville offers a variety of beaches for swimming, walking, relaxing, and exploring. This guide covers the safest swimming spots, stinger-net beaches, quieter locations, and dedicated dog-friendly areas across North Queensland.
           </p>
           <div className="h-px bg-border w-full mt-4" />
         </section>
@@ -160,6 +160,27 @@ const Beaches = () => {
             Early mornings and evenings are best for beach walks in Townsville. Sand temperatures can become very hot during the day, and dogs can overheat quickly in tropical conditions. Always check pavement with your hand before walking your dog.
           </p>
         </LocalInsightCard>
+
+        {/* Dog-Friendly Guide Card */}
+        <Card className="border-2 border-primary/20 bg-primary/5">
+          <CardContent className="p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
+              <Dog className="w-6 h-6" />
+            </div>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-lg font-semibold text-foreground mb-1">Dog-Friendly Beaches Guide</h2>
+              <p className="text-sm text-muted-foreground">
+                Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville.
+              </p>
+            </div>
+            <Button asChild className="w-full sm:w-auto flex-shrink-0">
+              <Link to="/dog-friendly">
+                View Dog Beach Guide
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+          </CardContent>
+        </Card>
 
         {/* Stinger Alert */}
         <StingerSeasonAlert />
@@ -227,32 +248,25 @@ const Beaches = () => {
           </div>
         </section>
 
-        {/* Dog Safety Section */}
+        {/* Beach Safety Section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Dog Safety at Townsville Beaches</h2>
+          <h2 className="text-2xl font-bold text-foreground">Beach Safety in Townsville</h2>
           <p className="text-muted-foreground text-sm">
-            North Queensland's tropical climate means a few extra precautions when taking your dog to the beach.
+            North Queensland's tropical climate means a few extra precautions when visiting the beach.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
               <Thermometer className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="font-medium text-sm text-foreground">Heat & Sand Temperature</p>
-                <p className="text-xs text-muted-foreground mt-1">Sand can exceed 50°C in summer. Walk early morning or after 4pm. Test the ground with your hand before letting your dog walk on it.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
-              <Droplets className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-              <div>
-                <p className="font-medium text-sm text-foreground">Fresh Drinking Water</p>
-                <p className="text-xs text-muted-foreground mt-1">Always carry fresh water. Saltwater and stagnant creek water can make dogs sick. Most beach parks have taps nearby.</p>
+                <p className="font-medium text-sm text-foreground">Heat & Sun Safety</p>
+                <p className="text-xs text-muted-foreground mt-1">Sand can exceed 50°C in summer. Swim early morning or after 4pm. Always wear sunscreen and stay hydrated.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="font-medium text-sm text-foreground">Stinger Season Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Marine stingers are present November to May. Keep dogs out of the water outside stinger-netted areas during this period.</p>
+                <p className="font-medium text-sm text-foreground">Stinger Season</p>
+                <p className="text-xs text-muted-foreground mt-1">Marine stingers are present November to May. Always swim within stinger nets during this period.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
@@ -262,11 +276,11 @@ const Beaches = () => {
                 <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay.</p>
               </div>
             </div>
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border sm:col-span-2">
-              <Fish className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
+            <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
+              <Dog className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="font-medium text-sm text-foreground">Wildlife Considerations</p>
-                <p className="text-xs text-muted-foreground mt-1">North Queensland beaches may have cane toads near dunes at dusk, and crocodile warning signs should always be taken seriously. Keep dogs leashed in unfamiliar areas.</p>
+                <p className="font-medium text-sm text-foreground">Dogs at the Beach</p>
+                <p className="text-xs text-muted-foreground mt-1">For detailed dog access rules and safety advice, see our dedicated <Link to="/dog-friendly" className="text-primary hover:underline font-medium">Dog-Friendly Beaches Guide</Link>.</p>
               </div>
             </div>
           </div>
@@ -291,7 +305,7 @@ const Beaches = () => {
           <div className="grid gap-3 sm:grid-cols-3">
             {[
               { to: "/the-strand", label: "The Strand Beach Guide" },
-              { to: "/dog-friendly", label: "Dog-Friendly Locations" },
+              { to: "/dog-friendly", label: "Dog-Friendly Beaches" },
               { to: "/guides/magnetic-island-day-trip", label: "Magnetic Island Day Trip" },
             ].map((link) => (
               <Button key={link.to} asChild variant="outline" className="w-full justify-start gap-2 h-auto py-3">
@@ -306,7 +320,7 @@ const Beaches = () => {
 
         {/* Local Authority Footer */}
         <p className="text-center text-xs text-muted-foreground pt-4 pb-2">
-          Helping Townsville locals and visitors discover safe, enjoyable places across North Queensland.
+          Helping Townsville locals and visitors discover safe, enjoyable beaches across North Queensland.
         </p>
 
       </main>
