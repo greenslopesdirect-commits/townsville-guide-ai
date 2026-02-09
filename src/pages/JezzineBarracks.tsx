@@ -2,7 +2,6 @@ import { ArrowLeft, MapPin, Landmark, Palette, Mountain, Flag, Car, Footprints }
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import jezzineImage from "@/assets/jezzine-barracks-townsville.webp";
 
 const highlights = [
   {
@@ -33,7 +32,7 @@ const JezzineBarracks = () => {
       {/* Hero Section */}
       <div className="relative bg-slate-900">
         <img
-          src={jezzineImage}
+          src="/jezzine-barracks-townsville.webp"
           alt="Jezzine Barracks coastal boardwalk and heritage precinct in Townsville"
           className="w-full h-[300px] md:h-[500px] object-cover opacity-60"
           loading="lazy"
