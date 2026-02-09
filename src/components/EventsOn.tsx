@@ -37,6 +37,7 @@ const EventsOn = () => {
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
                     <p className="text-blue-100 font-medium">Something for every season</p>
+                    <p className="mt-3 text-sm font-semibold text-yellow-300">💝 Next Big Highlight: Valentine's Weekend (Feb 14-15)</p>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
@@ -85,6 +86,7 @@ const EventsOn = () => {
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Feb 15</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> Flinders St, CBD
                     </div>
@@ -104,6 +106,7 @@ const EventsOn = () => {
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Willows Markets</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Feb 15</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> Willows Shopping Centre
                     </div>
