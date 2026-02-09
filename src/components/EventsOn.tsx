@@ -127,6 +127,11 @@ const EventsOn = () => {
 
         </div>
 
+        {/* Jezzine Highlight */}
+        <p className="text-center text-sm text-slate-600 mt-6">
+          🌅 <strong>Highlight:</strong> Sunset walks at Jezzine Barracks — <Link to="/guides/jezzine-barracks" className="text-primary font-medium hover:underline">Check the new guide!</Link>
+        </p>
+
         {/* Mobile View All Button */}
         <div className="mt-8 text-center md:hidden">
             <Link to="/townsville/events">
