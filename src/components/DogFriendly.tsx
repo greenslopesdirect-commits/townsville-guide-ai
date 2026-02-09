@@ -113,9 +113,9 @@ const DogFriendly = () => {
         <Alert className="max-w-3xl mx-auto bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800 mb-6 sm:mb-8">
           <Dog className="h-5 w-5 text-amber-600 flex-shrink-0" />
           <AlertDescription className="ml-2">
-            <strong className="text-foreground block sm:inline">Local Tip:</strong>
+            <strong className="text-foreground block sm:inline">☀️ Heat Check:</strong>
             <span className="text-muted-foreground sm:ml-2 block sm:inline mt-1 sm:mt-0">
-              Townsville pavements can get very hot during the day — always touch the ground with your hand first to check it's safe for your dog's paws.
+              Pavements are hitting 50°C+ this week. Check your dog's paws before walking on The Strand! Always touch the ground with your hand first.
             </span>
           </AlertDescription>
         </Alert>
