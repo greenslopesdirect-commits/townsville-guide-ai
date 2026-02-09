@@ -15,7 +15,7 @@ const Events = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
-            Updated: Feb 2, 2026
+            Updated: Feb 9, 2026
           </span>
         </div>
       </div>
@@ -25,10 +25,10 @@ const Events = () => {
         {/* Hero Section */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-            What's On: Feb 6 – Feb 8
+            What's On: Feb 13 – Feb 15
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl">
-            First Friday means <strong>Strand Night Markets</strong>! The city comes alive this weekend with evening stalls, food trucks, and the Sunday morning rituals.
+            Valentine's weekend is here! Whether you're looking for a romantic sunset spot or your Sunday morning market fix, we've got you covered.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ const Events = () => {
             <div className="flex-grow space-y-2 text-center md:text-left">
               <h3 className="font-semibold text-lg text-primary">What's On This Week?</h3>
               <p className="text-sm text-gray-600">
-                Ask our AI guide for the latest events, or check the official council calendar.
+                Ask me: 'Where is the best place for a romantic Valentine's dinner?' or 'What time do the markets start on Sunday?'
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -59,14 +59,14 @@ const Events = () => {
         <section className="space-y-6">
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
-            <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-              Feb 6 - 8
+             <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
+               Feb 13 - 15
             </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
             
-            {/* Strand Night Markets - THE BIG ONE */}
+            {/* Valentine's Sunset at Castle Hill - THE BIG ONE */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
@@ -75,22 +75,22 @@ const Events = () => {
                   </Badge>
                   <Music className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Strand Night Markets</CardTitle>
+                <CardTitle className="text-xl mt-2">Valentine's Sunset at Castle Hill</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, Feb 6 | 5:00 PM – 9:30 PM</span>
+                    <span>Saturday, Feb 14 | All Evening</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Strand Park (The Strand)</span>
+                    <span>Castle Hill Lookout</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The monthly favorite returns. Dozens of food trucks, local crafts, and live music under the palm trees. 
-                  <strong> Tip:</strong> Parking fills up by 5:30 PM; try the back streets of North Ward.
+                  The ultimate local date spot. Pack a picnic blanket and some cheese & crackers to watch the city lights flicker on.
+                  <strong> Tip:</strong> It gets busy for sunset, so head up early or try the 'Iron Bark' track for a less crowded view.
                 </p>
               </CardContent>
             </Card>
@@ -107,7 +107,7 @@ const Events = () => {
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, Feb 8 | 7:30 AM – 11:30 AM</span>
+                      <span>Sunday, Feb 15 | 7:30 AM – 11:30 AM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
@@ -133,7 +133,7 @@ const Events = () => {
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, Feb 8 | 8:00 AM – 1:00 PM</span>
+                      <span>Sunday, Feb 15 | 8:00 AM – 1:00 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
