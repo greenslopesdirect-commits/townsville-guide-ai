@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog } from "lucide-react";
+import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog, Footprints } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -38,7 +38,7 @@ const Events = () => {
             <div className="flex-grow space-y-2 text-center md:text-left">
               <h3 className="font-semibold text-lg text-primary">What's On This Week?</h3>
               <p className="text-sm text-gray-600">
-                Ask me: 'Where is the best place for a romantic Valentine's dinner?' or 'What time do the markets start on Sunday?'
+                Ask me: 'Where is a good romantic walk near the beach?' or 'What can I see at Jezzine Barracks?'
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -92,6 +92,37 @@ const Events = () => {
                   The ultimate local date spot. Pack a picnic blanket and some cheese & crackers to watch the city lights flicker on.
                   <strong> Tip:</strong> It gets busy for sunset, so head up early or try the 'Iron Bark' track for a less crowded view.
                 </p>
+              </CardContent>
+            </Card>
+
+            {/* Romantic Coastal Walk - Jezzine */}
+            <Card className="border-l-4 border-l-pink-400 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-pink-100 text-pink-700 hover:bg-pink-100 border-none">
+                    Romantic
+                  </Badge>
+                  <Footprints className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">Romantic Coastal Walk (Jezzine to Rowes Bay)</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Feb 14–15 | Best at Sunset</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Jezzine Barracks Boardwalk</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-3">
+                <p className="text-gray-600 text-sm">
+                  Avoid the Castle Hill crowds. Take a romantic stroll through the Jezzine Barracks boardwalk as the sun sets over the ocean.
+                </p>
+                <Button asChild variant="outline" size="sm" className="gap-2">
+                  <Link to="/guides/jezzine-barracks">View Jezzine Guide <ArrowRight className="w-3 h-3" /></Link>
+                </Button>
               </CardContent>
             </Card>
 

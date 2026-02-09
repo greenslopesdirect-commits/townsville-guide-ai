@@ -96,7 +96,7 @@ const WeeklyEventsHero = () => {
           What's On This Week?
         </h2>
         <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-          Ask me: 'Where is the best place for a romantic Valentine's dinner?' or 'Which markets are open this Sunday?'
+          Ask me: 'Where is a good romantic walk near the beach?' or 'What can I see at Jezzine Barracks?'
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <Button 

@@ -265,6 +265,16 @@ const TheStrand = () => {
               </li>
             ))}
           </ul>
+
+          {/* Jezzine Barracks Link */}
+          <div className="mt-6 p-4 bg-primary/5 rounded-lg border border-primary/20">
+            <p className="text-sm text-muted-foreground mb-3">
+              🚶 Walking North? Explore the history and views at Jezzine Barracks.
+            </p>
+            <Button asChild variant="outline" size="sm">
+              <Link to="/guides/jezzine-barracks">View Jezzine Guide</Link>
+            </Button>
+          </div>
         </section>
 
         {/* CTA */}
