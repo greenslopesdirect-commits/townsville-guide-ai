@@ -45,6 +45,8 @@ const picks = [
     description: "A scenic coastal walkway with history, art, military heritage, and ocean views.",
     image: jezzineBarracksImage,
     query: "What can I see at Jezzine Barracks in Townsville?",
+    link: "/guides/jezzine-barracks",
+    buttonText: "View Jezzine Guide"
   },
   {
     title: "Billabong Sanctuary",

@@ -118,6 +118,19 @@ const RowesBay = () => {
               </Button>
             </div>
 
+            {/* Next Stop Card */}
+            <Card className="border-2 border-primary/20 bg-primary/5">
+              <CardContent className="pt-6">
+                <h3 className="font-bold text-lg mb-2 text-foreground">Next Stop</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Walking back? Explore the Jezzine Barracks coastal boardwalk on your way to The Strand.
+                </p>
+                <Button asChild variant="default" size="sm" className="w-full">
+                  <Link to="/guides/jezzine-barracks">View Jezzine Guide</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
           </div>
         </div>
       </div>
