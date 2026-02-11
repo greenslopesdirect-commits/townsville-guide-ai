@@ -47,7 +47,9 @@ const ThingsToDo = () => {
   ],
   mapUrl: "https://www.google.com/maps/search/?api=1&query=Little+Crystal+Creek",
   aiPrompt: "Is Little Crystal Creek suitable for swimming and families?",
-  subtitle: "Rainforest Swimming Hole"
+  subtitle: "Rainforest Swimming Hole",
+  guideLink: "/little-crystal-creek-townsville",
+  guideLinkText: "Explore Guide"
 },
 
     {
