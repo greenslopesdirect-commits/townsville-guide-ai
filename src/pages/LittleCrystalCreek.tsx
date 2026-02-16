@@ -62,6 +62,19 @@ const LittleCrystalCreek = () => {
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
         Little Crystal Creek, Townsville – Local Guide
       </h1>
+
+      {/* Hero Image */}
+      <div className="mb-2">
+        <img
+          src="/little-crystal-creek-townsville.webp"
+          alt="Aerial view of Little Crystal Creek stone arch bridge surrounded by rainforest"
+          className="w-full h-[400px] md:h-[500px] object-cover rounded-xl shadow-lg"
+          loading="lazy"
+        />
+      </div>
+      <p className="text-xs text-muted-foreground mb-6">
+        Courtesy of Tourism and Events Queensland
+      </p>
       <p className="text-lg text-muted-foreground leading-relaxed mb-2">
         Little Crystal Creek is one of the most popular freshwater swimming spots near Townsville. Located in the Paluma Range, it's known for its historic stone arch bridge, clear rainforest water and peaceful natural setting.
       </p>

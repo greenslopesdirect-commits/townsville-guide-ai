@@ -37,6 +37,7 @@ const ThingsToDo = () => {
     },
     {
   title: "Little Crystal Creek",
+  image: "/little-crystal-creek-townsville.webp",
   description: "A stunning rainforest swimming hole with a historic stone arch bridge, crystal clear water and granite boulders. One of the most beautiful day trips from Townsville.",
   tags: ["Swimming", "Rainforest", "Day Trip"],
   features: [
