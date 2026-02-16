@@ -8,6 +8,7 @@ interface ListingCardProps {
   title: string;
   description: string;
   image?: string;
+  imageCaption?: string;
   features?: string[];
   tags?: string[];
   mapUrl: string;
@@ -21,7 +22,8 @@ interface ListingCardProps {
 const ListingCard = ({ 
   title, 
   description, 
-  image, 
+  image,
+  imageCaption,
   features, 
   tags, 
   mapUrl, 
@@ -39,8 +41,11 @@ const ListingCard = ({
           alt={title} 
           className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
           loading="lazy"
-        />
+       />
       </div>
+    )}
+    {imageCaption && (
+      <p className="text-xs text-muted-foreground px-4 pt-1">{imageCaption}</p>
     )}
     <CardHeader className={`${!image ? 'bg-gradient-to-br from-primary/5 to-transparent' : ''} pb-3`}>
       <div className="flex items-start gap-3">
