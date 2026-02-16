@@ -56,6 +56,8 @@ const ThingsToDo = () => {
 
     {
   title: "SS Yongala Wreck Dive",
+  image: "/ss-yongala-wreck-dive-townsville.webp",
+  imageCaption: "Courtesy of Tourism and Events Queensland",
   description: "One of the best wreck dives in the world. The historic SS Yongala shipwreck is now a thriving reef covered in coral and home to giant fish, turtles, rays and sharks.",
   tags: ["Diving", "Bucket List", "Reef"],
   features: [
