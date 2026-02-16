@@ -38,7 +38,7 @@ const Events = () => {
             <div className="flex-grow space-y-2 text-center md:text-left">
               <h3 className="font-semibold text-lg text-primary">What's On This Week?</h3>
               <p className="text-sm text-gray-600">
-                Ask me: 'Where is a good romantic walk near the beach?' or 'What can I see at Jezzine Barracks?'
+                Ask me: "What's the best sunrise walk in Townsville?" or "Is it safe to swim this weekend?"
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
@@ -87,10 +87,13 @@ const Events = () => {
                   </div>
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-3">
                 <p className="text-gray-600 text-sm">
                   Start the day above the city before the heat builds. Sunrise offers clearer views and quieter tracks compared to sunset.
                 </p>
+                <Button asChild variant="outline" size="sm" className="gap-2">
+                  <Link to="/castle-hill">View Castle Hill Guide <ArrowRight className="w-3 h-3" /></Link>
+                </Button>
               </CardContent>
             </Card>
 
@@ -187,7 +190,7 @@ const Events = () => {
           <div className="space-y-2 text-center sm:text-left">
             <h3 className="font-semibold text-lg text-blue-900">Looking for a quiet sunset spot?</h3>
             <p className="text-blue-700 text-sm max-w-md">
-              Escape the crowds at The Strand. Check out our new guide to Rowes Bay (and where to get the best fish & chips).
+              For a quieter coastal sunset, head north to Rowes Bay. Easy parking, fewer crowds, and steady sea breeze.
             </p>
           </div>
           <Button asChild variant="outline" className="bg-white hover:bg-blue-50 text-blue-700 border-blue-200 shrink-0">
@@ -235,7 +238,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">Jan – March</p>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600">Best time for waterfalls (Wallaman/Crystal Creek).</p>
+                <p className="text-sm text-gray-600">Peak waterfall flow at Wallaman Falls and Crystal Creek. Check road conditions after heavy rain.</p>
               </CardContent>
             </Card>
           </div>
