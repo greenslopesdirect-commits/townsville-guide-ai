@@ -89,6 +89,8 @@ const ThingsToDo = () => {
 },
     {
   title: "Paluma Range National Park",
+  image: "/paluma-range-national-park-townsville.webp",
+  imageCaption: "Courtesy of Tourism and Events Queensland",
   description: "A cool-climate rainforest escape in the mountains north of Townsville, featuring waterfalls, walking tracks, lookouts and the historic village of Paluma.",
   tags: ["Rainforest", "Day Trip", "Nature"],
   features: [
