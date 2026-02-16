@@ -73,6 +73,8 @@ const ThingsToDo = () => {
 
     {
   title: "Museum of Underwater Art (MOUA)",
+  image: "/museum-of-underwater-art-townsville.webp",
+  imageCaption: "Courtesy of Tourism and Events Queensland",
   description: "Australia’s only underwater museum featuring surreal submerged sculptures on the Great Barrier Reef. You can snorkel or dive to see world-famous installations like the Coral Greenhouse and Ocean Siren.",
   tags: ["Reef", "Snorkelling", "Diving"],
   features: [
