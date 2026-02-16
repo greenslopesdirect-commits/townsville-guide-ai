@@ -5,7 +5,7 @@ import { triggerAiGuide } from "@/utils/aiGuide";
 import strandImage from "@/assets/the-strand-townsville.webp";
 import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
 import castleHillImage from "@/assets/castle-hill-townsville.webp";
-import jamCornerImage from "@/assets/jam-corner-townsville.webp";
+import reefImage from "@/assets/great-barrier-reef-aquarium-townsville.webp";
 import jezzineBarracksImage from "@/assets/jezzine-barracks-townsville.webp";
 import billabongSanctuaryImage from "@/assets/billabong-sanctuary-townsville.webp";
 
@@ -35,10 +35,12 @@ const picks = [
     buttonText: "View Castle Hill Guide"
   },
   {
-    title: "JAM Corner",
-    description: "Upscale dining with a relaxed North Queensland vibe — perfect for lunch or dinner.",
-    image: jamCornerImage,
-    query: "Tell me about JAM Corner restaurant in Townsville.",
+    title: "Great Barrier Reef",
+    description: "World-heritage listed reef adventures departing from Townsville. Snorkelling, diving, and coral reef experiences on one of Australia's most iconic natural wonders.",
+    image: reefImage,
+    query: "Tell me about Great Barrier Reef tours from Townsville.",
+    link: "/great-barrier-reef-townsville",
+    buttonText: "View Reef Guide"
   },
   {
     title: "Jezzine Barracks",
@@ -86,7 +88,7 @@ const TopPicks = () => {
                   alt={pick.title === "The Strand" ? "The Strand beachfront in Townsville" : 
                        pick.title === "Magnetic Island" ? "Magnetic Island coastline and beaches" :
                        pick.title === "Castle Hill" ? "Castle Hill Lookout overlooking Townsville" :
-                       pick.title === "JAM Corner" ? "JAM Corner restaurant in Townsville" :
+                       pick.title === "Great Barrier Reef" ? "Great Barrier Reef coral and marine life" :
                        pick.title === "Jezzine Barracks" ? "Jezzine Barracks coastal boardwalk in Townsville" :
                        "Billabong Sanctuary wildlife park in Townsville"}
                   className="w-full h-full object-cover transition-transform hover:scale-105"
