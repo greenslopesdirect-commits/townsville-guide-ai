@@ -7,17 +7,17 @@ import { triggerAiGuide } from "@/utils/aiGuide";
 const WeeklyEventsHero = () => {
   const featureCards = [
     {
-      title: "Valentine's Sunset at Castle Hill",
+      title: "Sunrise at Castle Hill",
       icon: MapPin,
-      details: "Saturday, Feb 14 | All Evening",
-      description: "The ultimate local date spot. Pack a picnic blanket and some cheese & crackers to watch the city lights flicker on. Tip: Head up early or try the 'Iron Bark' track for a less crowded view.",
+      details: "Saturday or Sunday | Early Morning",
+      description: "Start the day above the city before the heat builds. Sunrise offers clearer views and quieter tracks compared to sunset.",
       badge: "Must Do",
       badgeColor: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
     },
     {
       title: "Willows Rotary Markets",
       icon: ShoppingBasket,
-      details: "Sunday, Feb 15 | 7:30 AM – 11:30 AM",
+      details: "Sunday, Feb 22 | 7:30 AM – 11:30 AM",
       description: "Townsville's biggest weekly market. Fresh produce, plants, and second-hand treasures. Get there early.",
       badge: "Shopping",
       badgeColor: "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
@@ -25,7 +25,7 @@ const WeeklyEventsHero = () => {
     {
       title: "Cotters Market",
       icon: Music,
-      details: "Sunday, Feb 15 | 8:00 AM – 1:00 PM",
+      details: "Sunday, Feb 22 | 8:00 AM – 1:00 PM",
       description: "The classic city market on Flinders Street. Great for local arts, crafts, and grabbing a coffee while exploring the CBD.",
       badge: "Local",
       badgeColor: "bg-primary/10 text-primary",
@@ -40,13 +40,13 @@ const WeeklyEventsHero = () => {
           variant="outline" 
           className="mb-4 px-3 py-1 text-xs font-medium border-primary/30 text-muted-foreground"
         >
-          Last Updated: Feb 9, 2026
+          Last Updated: Feb 16, 2026
         </Badge>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-          What's On: Valentine's Weekend (Feb 13–15)
+          What's On: Feb 16–22
         </h1>
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Valentine's weekend is here! Whether you're looking for a romantic sunset spot or your Sunday morning market fix, we've got you covered.
+          February in Townsville means warm mornings, afternoon storms, and peak waterfall season. Plan outdoor activities early and enjoy the coastal breeze in the evenings.
         </p>
       </header>
 
@@ -96,7 +96,7 @@ const WeeklyEventsHero = () => {
           What's On This Week?
         </h2>
         <p className="text-muted-foreground mb-6 max-w-md mx-auto">
-          Ask me: 'Where is a good romantic walk near the beach?' or 'What can I see at Jezzine Barracks?'
+          Ask me: 'What are the best waterfalls near Townsville?' or 'What can I see at Jezzine Barracks?'
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <Button 

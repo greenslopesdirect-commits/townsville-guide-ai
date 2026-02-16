@@ -15,7 +15,7 @@ const Events = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
-            Updated: Feb 9, 2026
+            Updated: Feb 16, 2026
           </span>
         </div>
       </div>
@@ -25,10 +25,10 @@ const Events = () => {
         {/* Hero Section */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-            What's On: Feb 13 – Feb 15
+            What's On: Feb 16 – Feb 22
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl">
-            Valentine's weekend is here! Whether you're looking for a romantic sunset spot or your Sunday morning market fix, we've got you covered.
+            February in Townsville means warm mornings, afternoon storms, and peak waterfall season. Plan outdoor activities early and enjoy the coastal breeze in the evenings.
           </p>
         </div>
 
@@ -60,26 +60,26 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               Feb 13 - 15
+               Feb 20 - 22
             </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
             
-            {/* Valentine's Sunset at Castle Hill - THE BIG ONE */}
+            {/* Sunrise at Castle Hill */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
                     Must Do
                   </Badge>
-                  <Music className="w-5 h-5 text-gray-400" />
+                  <MapPin className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Valentine's Sunset at Castle Hill</CardTitle>
+                <CardTitle className="text-xl mt-2">Sunrise at Castle Hill</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, Feb 14 | All Evening</span>
+                    <span>Saturday or Sunday | Early Morning</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -89,26 +89,25 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The ultimate local date spot. Pack a picnic blanket and some cheese & crackers to watch the city lights flicker on.
-                  <strong> Tip:</strong> It gets busy for sunset, so head up early or try the 'Iron Bark' track for a less crowded view.
+                  Start the day above the city before the heat builds. Sunrise offers clearer views and quieter tracks compared to sunset.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Romantic Coastal Walk - Jezzine */}
-            <Card className="border-l-4 border-l-pink-400 shadow-md hover:shadow-lg transition-shadow">
+            {/* Coastal Walk - Jezzine to Rowes Bay */}
+            <Card className="border-l-4 border-l-blue-400 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-pink-100 text-pink-700 hover:bg-pink-100 border-none">
-                    Romantic
+                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
+                    Local
                   </Badge>
                   <Footprints className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Romantic Coastal Walk (Jezzine to Rowes Bay)</CardTitle>
+                <CardTitle className="text-xl mt-2">Coastal Walk – Jezzine to Rowes Bay</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Feb 14–15 | Best at Sunset</span>
+                    <span>Weekend | Early Morning or Late Afternoon</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -118,7 +117,7 @@ const Events = () => {
               </CardHeader>
               <CardContent className="space-y-3">
                 <p className="text-gray-600 text-sm">
-                  Avoid the Castle Hill crowds. Take a romantic stroll through the Jezzine Barracks boardwalk as the sun sets over the ocean.
+                  A relaxed waterfront stretch with steady sea breeze and fewer crowds than The Strand.
                 </p>
                 <Button asChild variant="outline" size="sm" className="gap-2">
                   <Link to="/guides/jezzine-barracks">View Jezzine Guide <ArrowRight className="w-3 h-3" /></Link>
@@ -138,7 +137,7 @@ const Events = () => {
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, Feb 15 | 7:30 AM – 11:30 AM</span>
+                      <span>Sunday, Feb 22 | 7:30 AM – 11:30 AM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
@@ -164,7 +163,7 @@ const Events = () => {
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, Feb 15 | 8:00 AM – 1:00 PM</span>
+                      <span>Sunday, Feb 22 | 8:00 AM – 1:00 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
