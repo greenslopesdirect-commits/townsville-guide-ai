@@ -105,7 +105,9 @@ const ThingsToDo = () => {
 },
 {
   title: "Jourama Falls",
-  description: "One of North Queensland’s most impressive waterfalls, with huge granite cascades, swimming holes and walking tracks just over an hour from Townsville.",
+  image: "/jourama-falls-my-aussie-guide.webp",
+  imageCaption: "Courtesy of Tourism and Events Queensland",
+  description: "One of North Queensland's most impressive waterfalls, with huge granite cascades, swimming holes and walking tracks just over an hour from Townsville.",
   tags: ["Waterfall", "Hiking", "Swimming"],
   features: [
     "Huge multi-tier waterfall system",
