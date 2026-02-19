@@ -68,16 +68,49 @@ const beaches = [
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Queensland",
     buttonVariant: "outline" as const,
   },
+];
+
+const northernBeaches = [
   {
-    name: "Balgal Beach",
-    location: "North of Townsville (1hr drive)",
-    distance: "1 hr drive north",
+    name: "Saunders Beach",
+    location: "30 min North",
+    distance: "30 min drive north",
     dogAccess: "Dog friendly",
     stingerNet: false,
-    badge: { label: "Day Trip", color: "" },
+    badge: { label: "Quiet", color: "" },
+    icon: <Sun className="w-5 h-5 text-muted-foreground" />,
+    tags: ["Quiet", "Dog Friendly"],
+    description: "The local pick for an unspoilt escape. 6km of golden sand and no crowds—perfect for a long, peaceful walk.",
+    guideLink: undefined,
+    guideLinkText: undefined,
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
+    buttonVariant: "outline" as const,
+  },
+  {
+    name: "Toolakea Beach",
+    location: "40 min North",
+    distance: "40 min drive north",
+    dogAccess: "On-leash",
+    stingerNet: false,
+    badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
-    tags: ["Camping", "Safe Swimming", "Quiet"],
-    description: "A popular beach north of Townsville with calm waters, camping, and a relaxed atmosphere. Great for a day trip escape from the city.",
+    tags: ["Birdwatching", "Remote"],
+    description: "A sleepy residential beach that becomes very shallow at low tide. Great for birdwatching or a quiet family picnic.",
+    guideLink: undefined,
+    guideLinkText: undefined,
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
+    buttonVariant: "outline" as const,
+  },
+  {
+    name: "Balgal Beach",
+    location: "1 hour North",
+    distance: "1 hr drive north",
+    dogAccess: "Dog friendly",
+    stingerNet: true,
+    badge: { label: "Day Trip", color: "" },
+    icon: <Anchor className="w-5 h-5 text-muted-foreground" />,
+    tags: ["Stinger Net", "Camping"],
+    description: "The only beach north of the city with a patrolled stinger net (Nov–May). Excellent boat ramp and a great \"day trip\" escape.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Balgal+Beach+Queensland",
@@ -97,6 +130,10 @@ const faqItems = [
   {
     question: "Which Townsville beaches have stinger nets?",
     answer: "The Strand, Pallarenda Beach, and Rowes Bay all have stinger nets installed during stinger season (November to May). Horseshoe Bay on Magnetic Island also has nets. Always check with lifesavers for current conditions."
+  },
+  {
+    question: "What is the best stinger-free swimming spot near Townsville?",
+    answer: "Little Crystal Creek in Paluma National Park offers refreshing freshwater mountain pools that are completely safe from stingers year-round."
   },
 ];
 
@@ -230,6 +267,64 @@ const Beaches = () => {
                         <Link to={beach.guideLink}>{beach.guideLinkText}</Link>
                       </Button>
                     )}
+                    <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                      <a
+                        href={beach.mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View ${beach.name} on Google Maps`}
+                      >
+                        <MapPin className="w-4 h-4" />
+                        View on Google Maps
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </section>
+
+        {/* Northern Beaches Section */}
+        <section className="space-y-4">
+          <h2 className="text-2xl font-bold text-foreground">Northern Beaches & Hidden Gems</h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {northernBeaches.map((beach) => (
+              <Card key={beach.name} className="hover:shadow-lg transition-shadow flex flex-col">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge
+                      className={beach.badge.color || undefined}
+                      variant={beach.badge.color ? "default" : "outline"}
+                    >
+                      {beach.badge.label}
+                    </Badge>
+                    {beach.icon}
+                  </div>
+                  <CardTitle className="text-xl mt-2">{beach.name}</CardTitle>
+                  <div className="space-y-1 text-sm text-muted-foreground mt-1">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4 flex-shrink-0" />
+                      <span>{beach.location}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Dog className="w-4 h-4 flex-shrink-0" />
+                      <span>{beach.dogAccess}</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <ShieldCheck className="w-4 h-4 flex-shrink-0" />
+                      <span>{beach.stingerNet ? "Stinger net available" : "No stinger net"}</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4 flex-1 flex flex-col">
+                  <div className="flex gap-2 flex-wrap">
+                    {beach.tags.map((tag) => (
+                      <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground text-sm">{beach.description}</p>
+                  <div className="mt-auto pt-2 flex flex-col gap-2">
                     <Button asChild variant="outline" size="sm" className="w-full gap-2">
                       <a
                         href={beach.mapUrl}
