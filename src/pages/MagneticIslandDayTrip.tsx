@@ -134,6 +134,44 @@ const MagneticIslandDayTrip = () => {
         </div>
       </section>
 
+      {/* How to Spot Wild Koalas */}
+      <section className="mb-8">
+        <div className="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800/50 rounded-xl p-6">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">🐨 How to Spot Wild Koalas on the Forts Walk</h2>
+          <p className="text-muted-foreground mb-4 leading-relaxed">
+            Magnetic Island is home to the largest wild koala colony in Northern Australia. To find them, follow these three local rules:
+          </p>
+          <div className="space-y-4">
+            <div className="flex items-start gap-3">
+              <span className="text-emerald-600 dark:text-emerald-400 font-bold text-lg mt-0.5">1.</span>
+              <div>
+                <h3 className="font-semibold text-foreground mb-1">The Stick Arrow Rule</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">Look at the ground! Locals often leave arrows made of sticks on the dirt path pointing toward a tree where a koala is snoozing.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-emerald-600 dark:text-emerald-400 font-bold text-lg mt-0.5">2.</span>
+              <div>
+                <h3 className="font-semibold text-foreground mb-1">The "Grey Lumps" Test</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">Don't look for ears; look for grey, furry ovals tucked into the forks of the Eucalyptus and Paperbark trees.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="text-emerald-600 dark:text-emerald-400 font-bold text-lg mt-0.5">3.</span>
+              <div>
+                <h3 className="font-semibold text-foreground mb-1">Look Down for Poo</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">Small, green, oval-shaped pellets on the path are a dead giveaway. If you see them, stop and look directly up—a koala is likely right above you.</p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-6 p-4 bg-emerald-100/50 dark:bg-emerald-800/20 rounded-lg">
+            <p className="text-sm text-muted-foreground leading-relaxed italic">
+              <strong className="not-italic text-foreground">Ask as you walk:</strong> It's a Maggie Island tradition to ask hikers walking the opposite way, "Any luck with koalas today?" They'll almost always tell you exactly which tree to scan.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Existing Duncan's Pro-Tip - PRESERVED EXACTLY */}
       <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
         <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
