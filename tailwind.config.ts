@@ -57,6 +57,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        jade: {
+          DEFAULT: "hsl(var(--jade))",
+          light: "hsl(var(--jade-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
