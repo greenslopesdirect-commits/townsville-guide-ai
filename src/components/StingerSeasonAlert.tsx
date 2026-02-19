@@ -20,7 +20,7 @@ const StingerSeasonAlert = ({ className = "" }: StingerSeasonAlertProps) => {
           Check with lifesavers for current conditions before entering the water.
         </p>
         <a 
-          href="https://www.slsq.com.au/beach-reports" 
+          href="https://beachsafe.org.au/" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1 text-amber-800 dark:text-amber-300 hover:underline font-medium"

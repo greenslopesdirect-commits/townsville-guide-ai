@@ -203,7 +203,7 @@ const DogFriendly = () => {
                 </li>
               </ul>
               <Button asChild variant="outline" className="w-full sm:w-auto border-jade text-jade hover:bg-jade hover:text-white">
-                <a href="https://www.google.com/search?q=AussieDogGuide.com.au" target="_blank" rel="noopener noreferrer">
+                <a href="https://aussiedogguide.com.au" target="_blank" rel="noopener noreferrer">
                   Need an Emergency Protocol? Visit AussieDogGuide.com.au
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
