@@ -126,7 +126,7 @@ const DogFriendly = () => {
                     </div>
                     <CardTitle className="text-lg sm:text-xl mb-1 leading-tight break-words">{spot.name}</CardTitle>
                     {spot.badge && (
-                      <div className="text-sm font-medium text-amber-600 flex items-center gap-1 flex-wrap">
+                      <div className="text-sm font-bold text-jade flex items-center gap-1 flex-wrap">
                         {spot.badge}
                       </div>
                     )}
@@ -172,6 +172,42 @@ const DogFriendly = () => {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </section>
+
+          {/* Duncan's Local Pro-Tips */}
+          <section className="space-y-4">
+            <div className="rounded-xl border-2 border-jade bg-[hsl(var(--sand))] p-5 sm:p-6 space-y-4">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground">🐾 Duncan's Local Pro-Tips for Tropical Paws</h2>
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <Thermometer className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-sm text-foreground">The 5-Second Test</p>
+                    <p className="text-sm text-muted-foreground mt-1">Sand and bitumen can reach 50°C by mid-morning. If you can't hold the back of your hand to the ground for 5 seconds, it's too hot for your dog's paws.</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Fish className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-sm text-foreground">Twilight Toad Alert</p>
+                    <p className="text-sm text-muted-foreground mt-1">If you're walking at Saunders or Bushland Beach near dusk, keep your dog away from the dune grass. This is when Cane Toads are most active and dangerous.</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Droplets className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-sm text-foreground">Post-Beach Rinse</p>
+                    <p className="text-sm text-muted-foreground mt-1">Tropical salt and humidity can cause skin irritation. Always use the fresh-water showers at the Pallarenda boat ramp or The Strand to rinse your dog's coat and paws.</p>
+                  </div>
+                </li>
+              </ul>
+              <Button asChild variant="outline" className="w-full sm:w-auto border-jade text-jade hover:bg-jade hover:text-white">
+                <a href="https://www.google.com/search?q=AussieDogGuide.com.au" target="_blank" rel="noopener noreferrer">
+                  Need an Emergency Protocol? Visit AussieDogGuide.com.au
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </a>
+              </Button>
             </div>
           </section>
 
