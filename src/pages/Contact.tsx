@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <>
       <SEOHead
-        title="Contact Us - MyAussieGuide Townsville"
-        description="Get in touch with MyAussieGuide. Submit events, report corrections, or explore partnership opportunities for your Townsville business."
+        title="Contact Us - My Aussie Guide Townsville"
+        description="Get in touch with My Aussie Guide. Submit events, report corrections, or explore partnership opportunities for your Townsville business."
         canonical="https://www.myaussieguide.com.au/contact"
       />
       <Helmet>
@@ -18,7 +18,7 @@ const Contact = () => {
             "@type": "ContactPage",
             "name": "Contact Us",
             "url": "https://www.myaussieguide.com.au/contact",
-            "description": "Contact MyAussieGuide for event listings, corrections, and partnership enquiries"
+            "description": "Contact My Aussie Guide for event listings, corrections, and partnership enquiries"
           }
           `}
         </script>

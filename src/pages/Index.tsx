@@ -24,8 +24,8 @@ const Index = () => {
     <>
       {/* UPDATE: Revised for Evergreen/February Strategy */}
       <SEOHead
-        title="My Aussie Guide: Townsville & North Queensland Travel Tips"
-        description="The 2026 local guide to Townsville & NQ. February travel tips, Schnauzer-approved dog spots, and visual travel guides. Curated by local expert Duncan Ross."
+        title="My Aussie Guide | Townsville Travel Tips, Beaches, Events & Local Advice"
+        description="My Aussie Guide helps you discover Townsville like a local — beaches, food, events, dog-friendly spots, travel tips and real North Queensland insight."
         canonical="https://www.myaussieguide.com.au"
       />
       <Helmet>

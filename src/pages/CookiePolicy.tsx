@@ -7,8 +7,8 @@ const CookiePolicy = () => {
   return (
     <>
       <SEOHead
-        title="Cookie Policy | MyAussieGuide – Townsville"
-        description="Learn how MyAussieGuide – Townsville uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
+        title="Cookie Policy | My Aussie Guide – Townsville"
+        description="Learn how My Aussie Guide – Townsville uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
         canonical="https://www.myaussieguide.com.au/cookie-policy"
         noindex={true}
       />
@@ -22,7 +22,7 @@ const CookiePolicy = () => {
             "@type": "CookiePolicy",
             "name": "Cookie Policy",
             "url": "https://www.myaussieguide.com.au/cookie-policy",
-            "description": "Information about how cookies are used on MyAussieGuide – Townsville, including analytics, affiliate cookies, and user consent.",
+            "description": "Information about how cookies are used on My Aussie Guide – Townsville, including analytics, affiliate cookies, and user consent.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -42,7 +42,7 @@ const CookiePolicy = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "MyAussieGuide",
+              "name": "My Aussie Guide",
               "url": "https://www.myaussieguide.com.au"
             }
           }
@@ -68,7 +68,7 @@ const CookiePolicy = () => {
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-6">
 
             <p>
-              MyAussieGuide – Townsville uses cookies to enhance your browsing experience, analyse website
+              My Aussie Guide – Townsville uses cookies to enhance your browsing experience, analyse website
               performance, and deliver relevant content. Cookies are small text files stored on your device
               when you visit our site.
             </p>

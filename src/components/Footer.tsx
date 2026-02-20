@@ -14,10 +14,10 @@ const Footer = () => {
           {/* Column 1 – Branding */}
           <div>
             <h3 className="text-xl font-bold text-foreground mb-3">
-              MyAussieGuide – Townsville
+              My Aussie Guide – Townsville
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Your friendly AI-powered guide to the best of Townsville:
+              Your friendly local guide to the best of Townsville:
               beaches, food, walks, events, and local tips.
             </p>
 
@@ -80,7 +80,7 @@ const Footer = () => {
               Acknowledgement of Country
             </h4>
             <p className="text-xs text-muted-foreground/80 leading-relaxed">
-              MyAussieGuide acknowledges the Traditional Owners of the land on which we live and work, 
+              My Aussie Guide acknowledges the Traditional Owners of the land on which we live and work, 
               the Wulgurukaba and Bindal people, and recognises their continuing connection to land, 
               sea and community. We pay our respects to their Elders past and present and extend that 
               respect to all Aboriginal and Torres Strait Islander peoples today.

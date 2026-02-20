@@ -33,7 +33,7 @@ const Header = () => {
           >
             <img
               src={logo}
-              alt="MyAussieGuide"
+              alt="My Aussie Guide"
               className="h-32 sm:h-40 md:h-48 w-auto min-w-[220px] sm:min-w-[260px] md:min-w-[300px]"
               style={{ objectFit: "contain" }}
             />

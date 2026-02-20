@@ -8,7 +8,7 @@ const Advertise = () => {
   return (
     <>
       <SEOHead
-        title="Partner With Us - MyAussieGuide Townsville"
+        title="Partner With Us - My Aussie Guide Townsville"
         description="Run a local business in Townsville? Get listed in our guides. Submit events, feature your venue, or explore sponsorship opportunities."
         canonical="https://www.myaussieguide.com.au/advertise"
       />
@@ -20,7 +20,7 @@ const Advertise = () => {
             "@type": "WebPage",
             "name": "Partner With Us",
             "url": "https://www.myaussieguide.com.au/advertise",
-            "description": "Partnership and listing opportunities on MyAussieGuide Townsville"
+            "description": "Partnership and listing opportunities on My Aussie Guide Townsville"
           }
           `}
         </script>
@@ -97,7 +97,7 @@ const Advertise = () => {
                   </h2>
                 </div>
                 <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                  Interested in partnering with MyAussieGuide? Contact us to discuss how we can work together.
+                  Interested in partnering with My Aussie Guide? Contact us to discuss how we can work together.
                 </p>
                 <Button size="lg" asChild>
                   <a href="mailto:advertise@myaussieguide.com.au">
