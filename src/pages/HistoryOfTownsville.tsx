@@ -40,7 +40,7 @@ const HistoryOfTownsville = () => {
       },
       "publisher": {
         "@type": "Organization",
-        "name": "MyAussieGuide",
+        "name": "My Aussie Guide",
         "logo": {
           "@type": "ImageObject",
           "url": "https://www.myaussieguide.com.au/logo.png"
@@ -134,7 +134,7 @@ const HistoryOfTownsville = () => {
             className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
           >
             <ArrowLeft className="w-5 h-5" />
-            Back to MyAussieGuide
+             Back to My Aussie Guide
           </Link>
         </div>
 
@@ -678,7 +678,7 @@ const HistoryOfTownsville = () => {
               className="inline-flex items-center gap-2 text-base font-medium text-muted-foreground hover:text-foreground transition-all duration-200 hover:gap-3"
             >
               <ArrowLeft className="w-5 h-5" />
-              Back to MyAussieGuide
+              Back to My Aussie Guide
             </Link>
           </div>
         </div>

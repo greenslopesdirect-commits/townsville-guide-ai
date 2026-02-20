@@ -7,8 +7,8 @@ const PrivacyPolicy = () => {
   return (
     <>
       <SEOHead
-        title="Privacy Policy | MyAussieGuide – Townsville"
-        description="Read the Privacy Policy for MyAussieGuide – Townsville. Learn how we handle data, cookies, analytics and AI interactions on this website."
+        title="Privacy Policy | My Aussie Guide – Townsville"
+        description="Read the Privacy Policy for My Aussie Guide – Townsville. Learn how we handle data, cookies, analytics and AI interactions on this website."
         canonical="https://www.myaussieguide.com.au/privacy-policy"
         noindex={true}
       />
@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
             "@type": "PrivacyPolicy",
             "name": "Privacy Policy",
             "url": "https://www.myaussieguide.com.au/privacy-policy",
-            "description": "Privacy Policy for MyAussieGuide explaining data usage, cookies, analytics and how user information is handled.",
+            "description": "Privacy Policy for My Aussie Guide explaining data usage, cookies, analytics and how user information is handled.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -42,7 +42,7 @@ const PrivacyPolicy = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "MyAussieGuide",
+              "name": "My Aussie Guide",
               "url": "https://www.myaussieguide.com.au"
             }
           }
@@ -85,7 +85,7 @@ const PrivacyPolicy = () => {
 
             <h2 className="text-2xl font-semibold text-foreground">How We Use Your Information</h2>
             <p>
-              We use collected data solely to improve MyAussieGuide. We do <strong>not</strong> sell, trade, 
+              We use collected data solely to improve My Aussie Guide. We do <strong>not</strong> sell, trade, 
               or share personal information with third parties.
             </p>
 

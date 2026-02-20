@@ -9,7 +9,7 @@ const CastleHill = () => {
   return (
     <>
       <Helmet>
-        <title>Castle Hill Townsville – Local Guide | MyAussieGuide</title>
+        <title>Castle Hill Townsville – Local Guide | My Aussie Guide</title>
         <meta
           name="description"
           content="Castle Hill Townsville local guide — panoramic views, walking tracks, sunrise and sunset tips. Free attraction near the city centre."

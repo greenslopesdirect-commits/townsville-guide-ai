@@ -17,9 +17,9 @@ const SEOHead = ({
   ogType = "website",
   noindex = false,
 }: SEOHeadProps) => {
-  const fullTitle = title.includes("MyAussieGuide")
+  const fullTitle = title.includes("My Aussie Guide")
     ? title
-    : `${title} | MyAussieGuide`;
+    : `${title} | My Aussie Guide`;
 
   const siteUrl = "https://www.myaussieguide.com.au/";
   const canonicalUrl = canonical ? canonical : siteUrl;
@@ -37,7 +37,7 @@ const SEOHead = ({
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:site_name" content="MyAussieGuide – Townsville" />
+      <meta property="og:site_name" content="My Aussie Guide – Townsville" />
       <meta property="og:locale" content="en_AU" />
 
       {/* Twitter Card Meta Tags */}

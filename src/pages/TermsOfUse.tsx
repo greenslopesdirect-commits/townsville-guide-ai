@@ -7,8 +7,8 @@ const TermsOfUse = () => {
   return (
     <>
       <SEOHead
-        title="Terms of Use | MyAussieGuide – Townsville"
-        description="Read the Terms of Use for MyAussieGuide – Townsville. Learn about disclaimers, limitations, and user responsibilities when using our AI-powered travel guide."
+        title="Terms of Use | My Aussie Guide – Townsville"
+        description="Read the Terms of Use for My Aussie Guide – Townsville. Learn about disclaimers, limitations, and user responsibilities when using our local travel guide."
         canonical="https://www.myaussieguide.com.au/terms-of-use"
         noindex={true}
       />
@@ -22,7 +22,7 @@ const TermsOfUse = () => {
             "@type": "TermsOfService",
             "name": "Terms of Use",
             "url": "https://www.myaussieguide.com.au/terms-of-use",
-            "description": "Terms of Use for MyAussieGuide – Townsville. Includes disclaimers, acceptable use, and legal limitations.",
+            "description": "Terms of Use for My Aussie Guide – Townsville. Includes disclaimers, acceptable use, and legal limitations.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -42,7 +42,7 @@ const TermsOfUse = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "MyAussieGuide",
+              "name": "My Aussie Guide",
               "url": "https://www.myaussieguide.com.au"
             }
           }
@@ -64,11 +64,11 @@ const TermsOfUse = () => {
 
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-6">
             <p>
-              This website (MyAussieGuide) is owned and operated by DKR Sales (ABN 63 824 596 227).
+              This website (My Aussie Guide) is owned and operated by DKR Sales (ABN 63 824 596 227).
             </p>
 
             <p>
-              MyAussieGuide – Townsville provides general travel, local information, and AI-generated
+              My Aussie Guide – Townsville provides general travel, local information, and AI-generated
               suggestions for entertainment and reference purposes only. While we strive for accuracy,
               we cannot guarantee that all information or AI outputs are correct, complete, or up to date.
             </p>
