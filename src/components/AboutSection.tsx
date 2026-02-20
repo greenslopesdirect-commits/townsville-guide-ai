@@ -35,7 +35,7 @@ const AboutSection = () => {
             </div>
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              <p>Hi, I'm Duncan — the real person behind MyAussieGuide and a proud Townsville local.</p>
+              <p>Hi, I'm Duncan — the real person behind My Aussie Guide and a proud Townsville local.</p>
               <p>After moving to North Queensland, I quickly fell in love with Townsville's relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. With a background in digital design, websites, and AI tools, I created this platform to share the very best of our city in a simple, friendly, and genuinely helpful way.</p>
               <p>
                 I explore Townsville every day — beaches, cafés, dog-friendly spots, local events — and I've built this guide to make it easier for others to do the same.
