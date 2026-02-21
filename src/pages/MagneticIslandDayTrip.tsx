@@ -259,7 +259,7 @@ const MagneticIslandDayTrip = () => {
             </li>
             <li className="flex items-start gap-2">
               <span className="text-emerald-500">•</span>
-              <span>Visiting during summer? Marine stingers are present from November to May. Review our <Link to="/stinger-safety" className="text-primary hover:underline font-medium">Stinger Season Safety Guide</Link> before swimming.</span>
+              <span>Visiting during summer? Marine stingers are present from November to May. Review our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Stinger Season Safety Guide</Link> before swimming.</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-emerald-500">•</span>

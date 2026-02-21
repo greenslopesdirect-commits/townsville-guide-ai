@@ -13,7 +13,7 @@ const StingerSafety = () => (
     <SEOHead
       title="Townsville Stinger Season Guide (2026) | Nets, Safety & Swimming Advice"
       description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated for 2026."
-      canonical="https://www.myaussieguide.com.au/stinger-safety"
+      canonical="https://www.myaussieguide.com.au/guides/stinger-safety"
     />
     <h1 className="text-4xl font-bold mb-4 text-center">Townsville Summer Safety Guide</h1>
     <img src="/summer-safety-guide.webp" alt="Stinger net floats" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover object-bottom mb-8" />
