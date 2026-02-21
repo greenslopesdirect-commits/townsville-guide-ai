@@ -237,6 +237,7 @@ const DogFriendly = () => {
                 <div>
                   <p className="font-medium text-sm text-foreground">Stinger Season</p>
                   <p className="text-xs text-muted-foreground mt-1">Marine stingers are present November to May. Keep dogs out of the water outside stinger-netted areas during this period.</p>
+                  <p className="text-xs text-muted-foreground mt-1">Visiting during summer? Review our <Link to="/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> before swimming.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">

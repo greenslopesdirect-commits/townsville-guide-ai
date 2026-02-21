@@ -221,6 +221,9 @@ const Beaches = () => {
 
         {/* Stinger Alert */}
         <StingerSeasonAlert />
+        <p className="text-sm text-muted-foreground mt-3">
+          For full details on seasonal timing, net locations, and what to do if stung, see our <Link to="/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link>.
+        </p>
 
         {/* Beach Listings */}
         <section className="space-y-4">
