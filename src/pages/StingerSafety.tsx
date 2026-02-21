@@ -1,9 +1,20 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { ShieldAlert } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const StingerSafety = () => (
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
+    <SEOHead
+      title="Townsville Stinger Season Guide (2026) | Nets, Safety & Swimming Advice"
+      description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated for 2026."
+      canonical="https://www.myaussieguide.com.au/stinger-safety"
+    />
     <h1 className="text-4xl font-bold mb-4 text-center">Townsville Summer Safety Guide</h1>
     <img src="/summer-safety-guide.webp" alt="Stinger net floats" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover object-bottom mb-8" />
     <div className="space-y-6 mb-8 text-red-900 font-medium text-left">
@@ -11,10 +22,79 @@ const StingerSafety = () => (
       <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>2. Stinger Suits:</strong> Wear Lycra suits when swimming in open bays at Magnetic Island.</CardContent></Card>
       <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>3. Vinegar:</strong> Look for the vinegar stands at the beach. If stung, douse and call 000.</CardContent></Card>
     </div>
-    <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6">
+    <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-12">
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
       <p>"Even if you're just wading in ankle-deep water, stingers can be present during summer. Stay inside the nets to be safe."</p>
     </div>
+
+    {/* Section 1 */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold mb-4">When Is Stinger Season in Townsville?</h2>
+      <p className="mb-4 text-muted-foreground leading-relaxed">
+        Stinger season in Townsville typically runs from November to May, during the warmer months in North Queensland. During this period, marine stingers such as box jellyfish and Irukandji may be present in coastal waters.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Swimming is considered safe when using patrolled stinger enclosures at The Strand, Pallarenda, and other netted beaches. Always check local signage or Surf Life Saving updates before entering the water.
+      </p>
+    </section>
+
+    {/* Section 2 */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold mb-4">Where Are Stinger Nets in Townsville?</h2>
+      <p className="mb-4 text-muted-foreground leading-relaxed">Stinger nets are installed during the season at:</p>
+      <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">
+        <li>The Strand (Townsville Foreshore)</li>
+        <li>Pallarenda Beach</li>
+        <li>Rowes Bay</li>
+        <li>Horseshoe Bay (Magnetic Island)</li>
+      </ul>
+      <p className="text-muted-foreground leading-relaxed">
+        These enclosures provide a safer swimming environment during stinger season. Conditions can vary depending on weather and tides.
+      </p>
+    </section>
+
+    {/* Section 3 */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold mb-4">Is It Safe to Swim in Townsville?</h2>
+      <p className="mb-4 text-muted-foreground leading-relaxed">Yes — when you follow local safety advice.</p>
+      <p className="mb-4 text-muted-foreground leading-relaxed">
+        During stinger season (November–May), always swim inside stinger nets or wear a full stinger suit when swimming in open water.
+      </p>
+      <p className="text-muted-foreground leading-relaxed">
+        Outside of stinger season, beaches in Townsville are generally safe, but visitors should always remain aware of marine conditions.
+      </p>
+    </section>
+
+    {/* Section 4: FAQ */}
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+      <Accordion type="single" collapsible className="w-full">
+        <AccordionItem value="faq-1" className="border-border/40">
+          <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
+            Can you swim in Townsville during stinger season?
+          </AccordionTrigger>
+          <AccordionContent className="text-base text-muted-foreground leading-relaxed">
+            Yes. Swim only within stinger nets or wear a full stinger suit when swimming outside enclosures.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="faq-2" className="border-border/40">
+          <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
+            What should I do if stung by a jellyfish?
+          </AccordionTrigger>
+          <AccordionContent className="text-base text-muted-foreground leading-relaxed">
+            Apply vinegar immediately and call 000 if symptoms are severe.
+          </AccordionContent>
+        </AccordionItem>
+        <AccordionItem value="faq-3" className="border-border/40">
+          <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
+            Are stingers present all year?
+          </AccordionTrigger>
+          <AccordionContent className="text-base text-muted-foreground leading-relaxed">
+            No. They are most common between November and May.
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </section>
   </div>
 );
 export default StingerSafety;
