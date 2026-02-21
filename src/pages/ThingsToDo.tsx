@@ -372,6 +372,10 @@ const ThingsToDo = () => {
             {/* Heat Safety Alert with Guide Link */}
             <HeatSafetyAlert className="mb-8" showGuideLink={true} />
 
+            <p className="text-sm text-muted-foreground mb-8">
+              Planning beach time? Check our <Link to="/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> before entering the water.
+            </p>
+
             {/* Go Local Suggestion */}
             <LocalInsightCard title="Go Local" variant="location" className="mb-12">
               <p>
