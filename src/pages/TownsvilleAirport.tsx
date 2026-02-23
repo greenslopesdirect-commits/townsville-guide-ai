@@ -57,6 +57,9 @@ const TownsvilleAirport = () => {
                     <li>Close to beaches, accommodation, and the <Link to="/guides/magnetic-island-day-trip" className="text-primary font-medium hover:underline">Magnetic Island</Link> ferry terminal</li>
                     <li>Easy access by car, taxi, or rideshare</li>
                   </ul>
+                  <p className="text-muted-foreground mt-4">
+                    For official flight schedules, terminal updates, parking details, and current airport information, visit the <a href="https://www.townsvilleairport.com.au/" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">official Townsville Airport website</a>.
+                  </p>
                 </div>
               </section>
 
