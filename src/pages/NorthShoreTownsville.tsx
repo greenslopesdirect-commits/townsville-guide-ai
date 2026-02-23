@@ -156,13 +156,13 @@ const NorthShoreTownsville = () => {
 
                     {/* CTA Button */}
                     <a
-                      href="https://www.google.com/maps/@-19.2648,146.7620,17z"
+                      href="https://www.google.com/maps/place/?q=place_id:ChIJYdXIjSP31WsRTw74--2qK70"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white h-10 px-5 py-2 text-sm font-medium w-full sm:w-auto transition-colors shadow-sm"
                     >
                       <MapPin className="w-4 h-4" />
-                      View Trailhead on Google Maps
+                      Open Trailhead in Google Maps
                       <ExternalLink className="w-3 h-3" />
                     </a>
                   </div>
