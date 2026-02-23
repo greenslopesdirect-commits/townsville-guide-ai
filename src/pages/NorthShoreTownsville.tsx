@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, TreePine, Users, ShoppingBag, Bird, Trophy, MapPin, Waves, Camera } from "lucide-react";
+import { ArrowRight, TreePine, Users, ShoppingBag, Bird, Trophy, MapPin, Waves, Camera, Coffee, Droplets } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -81,16 +81,16 @@ const NorthShoreTownsville = () => {
             </Card>
           </section>
 
-          {/* Burdell Wetlands — Local Secret */}
+          {/* Burdell Forest & Wetlands */}
           <section className="space-y-4">
             <div className="flex items-center gap-2">
-              <Badge variant="secondary" className="bg-emerald-50 text-emerald-700 border-none">
+              <Badge variant="secondary" className="bg-primary/10 text-primary border-none">
                 Local Secret
               </Badge>
             </div>
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
               <Bird className="w-6 h-6 text-primary" />
-              Burdell Wetlands
+              Burdell Forest & Wetlands
             </h2>
             <Card>
               <CardContent className="p-6 space-y-4">
@@ -117,10 +117,77 @@ const NorthShoreTownsville = () => {
               </CardContent>
             </Card>
 
-            <LocalInsightCard title="Best Time to Visit" variant="tip">
+            <LocalInsightCard title="Pro-Tip: Morning in the Forest" variant="tip">
               <p>
-                Arrive at dawn for the best light and bird activity. The dry season (May–October) 
-                brings migratory species and calmer conditions for photography.
+                For a quiet start to the day, skip the Strand and head to the Burdell Forest. The trails are flat, 
+                shaded, and significantly quieter than Castle Hill. It's the best spot in the north for a peaceful 
+                morning run or a nature photography session at the wetlands.
+              </p>
+            </LocalInsightCard>
+          </section>
+
+          {/* Northern Beaches Leisure Centre */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+              <Droplets className="w-6 h-6 text-primary" />
+              Northern Beaches Leisure Centre
+            </h2>
+            <Card>
+              <CardContent className="p-6 space-y-4">
+                <p className="text-muted-foreground">
+                  With an Olympic-sized pool, water slides, a toddler splash park, and a gym, 
+                  this is North Shore's flagship community facility. It's busy on weekends but 
+                  quieter during weekday mornings — a local favourite for lap swimmers.
+                </p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Northern+Beaches+Leisure+Centre+Townsville"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                >
+                  <MapPin className="w-4 h-4" />
+                  View on Google Maps
+                </a>
+              </CardContent>
+            </Card>
+
+            <LocalInsightCard title="Pro-Tip: The Local's Pool" variant="insight">
+              <p>
+                If the ocean is a bit rough or you're keeping an eye on stinger season, this is the local's alternative. 
+                With four pools and plenty of shade, it's a high-quality facility that feels like a resort but functions 
+                like a community hub.
+              </p>
+            </LocalInsightCard>
+          </section>
+
+          {/* North Shore Marketplace */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+              <Coffee className="w-6 h-6 text-primary" />
+              North Shore Marketplace
+            </h2>
+            <Card>
+              <CardContent className="p-6 space-y-4">
+                <p className="text-muted-foreground">
+                  The social hub of North Shore — home to a Woolworths, specialty shops, medical services, 
+                  and a growing café scene. It's where locals grab their morning coffee and weekend supplies.
+                </p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=North+Shore+Marketplace+Townsville"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+                >
+                  <MapPin className="w-4 h-4" />
+                  View on Google Maps
+                </a>
+              </CardContent>
+            </Card>
+
+            <LocalInsightCard title="Pro-Tip: The Coffee Tree" variant="insight">
+              <p>
+                The Coffee Tree is the heartbeat of the morning here. It's a great 'Quiet Business' spot to sit 
+                with a laptop or meet a friend before heading to the nearby markets.
               </p>
             </LocalInsightCard>
           </section>
