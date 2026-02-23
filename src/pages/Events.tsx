@@ -342,7 +342,7 @@ const Events = () => {
             <AccordionItem value="faq-2">
               <AccordionTrigger className="text-left font-semibold text-gray-900">Where can I find live music in Townsville?</AccordionTrigger>
               <AccordionContent className="text-gray-600">
-                Popular spots include Palmer Street venues, Cowboys Leagues Club, Strand Night Markets, and seasonal festival stages. Browse our <Link to="/food-drink" className="text-primary font-medium hover:underline">Food & Drink guide</Link> for dining spots with live entertainment.
+                Popular spots include Palmer Street venues, Cowboys Leagues Club, Strand Night Markets, and seasonal festival stages. Browse our <Link to="/food" className="text-primary font-medium hover:underline">Food & Drink guide</Link> for dining spots with live entertainment.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="faq-3">
