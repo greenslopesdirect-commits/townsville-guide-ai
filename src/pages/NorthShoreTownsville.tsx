@@ -131,14 +131,17 @@ const NorthShoreTownsville = () => {
                   <p className="text-sm text-muted-foreground italic text-center">
                     Escape the Crowds: The Burdell Wetlands loop offers a flat, peaceful alternative to the busy inner-city tracks.
                   </p>
+                  <p className="text-sm text-muted-foreground">
+                    This area is part of the <strong>Townsville Town Common Conservation Park</strong> — look for the official park signage at the Burdell-side entrance to find the trailheads.
+                  </p>
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Burdell+Forest+Trails+Townsville"
+                    href="https://www.google.com/maps/place/?q=place_id:ChIJf6gq3v_31WsRUORhYvLuAA8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 text-sm font-medium w-full sm:w-auto transition-colors"
                   >
                     <MapPin className="w-4 h-4" />
-                    View Burdell Forest on Google Maps
+                    View Town Common Trailheads on Google Maps
                     <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>
