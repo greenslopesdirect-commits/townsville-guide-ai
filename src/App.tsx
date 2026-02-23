@@ -49,6 +49,7 @@ import CastleHill from "@/pages/CastleHill";
 import JezzineBarracks from "@/pages/JezzineBarracks";
 import LittleCrystalCreek from "@/pages/LittleCrystalCreek";
 import GreatBarrierReef from "@/pages/GreatBarrierReef";
+import CowboysStadiumGuide from "@/pages/CowboysStadiumGuide";
 
 const queryClient = new QueryClient();
 
@@ -83,6 +84,7 @@ const App = () => (
             <Route path="guides/stinger-safety" element={<StingerSafety />} />
             <Route path="guides/sunset-walks" element={<SunsetWalks />} />
             <Route path="guides/jezzine-barracks" element={<JezzineBarracks />} />
+            <Route path="cowboys-stadium-guide" element={<CowboysStadiumGuide />} />
             
             {/* DEEP DIVE BEACH PAGES */}
             <Route path="pallarenda-beach" element={<PallarendaBeach />} />
