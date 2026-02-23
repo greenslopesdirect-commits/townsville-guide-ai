@@ -136,9 +136,14 @@ const Events = () => {
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="space-y-2">
                   <p className="text-gray-600 text-sm">
                     Join the local teams at Pallarenda or the Ross River to keep our backyard beautiful.
+                  </p>
+                  <p className="text-sm">
+                    <Link to="/north-shore-townsville" className="text-primary font-medium hover:underline">
+                      Explore quiet walking trails on the North Shore →
+                    </Link>
                   </p>
                 </CardContent>
               </Card>
