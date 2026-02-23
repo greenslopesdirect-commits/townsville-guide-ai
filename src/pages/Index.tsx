@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import WeatherWidget from "@/components/WeatherWidget";
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
@@ -116,11 +117,12 @@ const Index = () => {
         {/* Local Insight - Introduction */}
         <div className="container mx-auto px-4 max-w-4xl py-8">
           <LocalInsightCard title="More Than a Gateway" variant="insight">
-            <p>
-              Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North. 
-              While we love our laid-back tropical lifestyle, the city transforms into a high-octane playground during the dry season.
-            </p>
-            <p className="font-medium text-amber-700 dark:text-amber-300">
+             <p>
+               Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North. 
+               While we love our laid-back tropical lifestyle, the city transforms into a high-octane playground during the dry season.
+               Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
+             </p>
+             <p className="font-medium text-amber-700 dark:text-amber-300">
               🌴 We run on "Tropical Time," so slow down, check the trading hours, and enjoy the rhythm of the North.
             </p>
           </LocalInsightCard>
