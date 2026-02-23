@@ -188,6 +188,9 @@ const Beaches = () => {
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl">
             Townsville offers a variety of beaches for swimming, walking, relaxing, and exploring. This guide covers the safest swimming spots, stinger-net beaches, quieter locations, and dedicated dog-friendly areas across North Queensland.
           </p>
+          <p className="text-sm text-muted-foreground">
+            🧭 Heading further north? Check out our <Link to="/north-shore-townsville" className="text-primary font-medium hover:underline">North Shore Guide</Link> for the best nature trails and the gateway to Bushland Beach.
+          </p>
           <div className="h-px bg-border w-full mt-4" />
         </section>
 
