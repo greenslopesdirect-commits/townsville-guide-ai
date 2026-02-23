@@ -1,12 +1,19 @@
-import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog, Footprints, Trophy, Leaf } from "lucide-react";
+import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog, Footprints, Trophy, Leaf, Sun, Thermometer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import SEOHead from "@/components/SEOHead";
 
 const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
+      <SEOHead
+        title="What's On in Townsville This Week | Events, Markets & Festivals (2026)"
+        description="Find out what's on in Townsville this week. Updated weekly by a local guide with markets, festivals, NRL games, nature events, and seasonal highlights across North Queensland."
+      />
+
       {/* Header Section */}
       <div className="bg-white border-b sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -22,15 +29,34 @@ const Events = () => {
 
       <main className="flex-grow container mx-auto px-4 py-8 max-w-4xl space-y-8">
         
-        {/* Hero Section */}
+        {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On: Feb 23 – March 1
+             What's On in Townsville This Week (Feb 23–March 1, 2026)
            </h1>
+           <p className="text-sm text-gray-500">
+             Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
+           </p>
            <p className="text-lg text-gray-600 max-w-2xl">
              Late February and early March in Townsville brings the excitement of the NRL season launch alongside our beautiful tropical mornings. Plan your outdoor activities early.
            </p>
         </div>
+
+        {/* SEO Intro Paragraph */}
+        <p className="text-gray-600 max-w-3xl">
+          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from community markets and sporting events to festivals, nature activities, and seasonal experiences across North Queensland.
+        </p>
+
+        {/* This Week's Highlights Quick Summary */}
+        <section className="space-y-4">
+          <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
+          <ul className="list-disc list-inside space-y-2 text-gray-600">
+            <li>NRL season launch excitement and local watch gatherings</li>
+            <li>Sunday Cotters Market in the CBD</li>
+            <li>Community Clean Up Australia Day events</li>
+            <li>Wet-season waterfalls and lush nature conditions — perfect for visiting <Link to="/guides/little-crystal-creek" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
+          </ul>
+        </section>
 
         {/* AI Call to Action + Official Calendar */}
         <Card className="bg-primary/5 border-primary/20 shadow-sm">
@@ -89,7 +115,7 @@ const Events = () => {
               </CardHeader>
               <CardContent className="space-y-2">
                 <p className="text-gray-600 text-sm">
-                  The season kicks off in Las Vegas! Join the local crowd for a midday celebration.
+                  The season kicks off in Las Vegas! Join the local crowd for a midday celebration. Head to the <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Cowboys Game Day Guide</Link> for tips on attending home games later in the season.
                 </p>
                 <p className="text-xs text-muted-foreground italic">
                   Check with local venues like the Cowboys Leagues Club for their specific pre-game event start times.
@@ -141,7 +167,7 @@ const Events = () => {
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <p className="text-gray-600 text-sm">
-                    Join the local teams at Pallarenda or the Ross River to keep our backyard beautiful.
+                    Join the local teams at Pallarenda or the Ross River to keep our backyard beautiful. Explore our <Link to="/beaches" className="text-primary font-medium hover:underline">Beaches guide</Link> for more coastal spots nearby.
                   </p>
                   <p className="text-sm">
                     <Link to="/north-shore-townsville" className="text-primary font-medium hover:underline">
@@ -154,6 +180,17 @@ const Events = () => {
 
           </div>
         </section>
+
+        {/* Local Climate Tip */}
+        <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start">
+          <Thermometer className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
+          <div>
+            <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
+            <p className="text-amber-800 text-sm mt-1">
+              Townsville's tropical climate means outdoor events are usually best early morning or late afternoon. Locals often avoid midday heat, especially during the warmer months. Check out our <Link to="/guides/beat-the-heat" className="text-primary font-medium hover:underline">Beat the Heat guide</Link> for more tips.
+            </p>
+          </div>
+        </div>
 
         {/* Rowes Bay Promo Block */}
         <div className="bg-blue-50 border border-blue-100 rounded-lg p-6 flex flex-col sm:flex-row items-center justify-between gap-6">
@@ -178,7 +215,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">First Friday of Month</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">Check seasonality (Dry Season only).</p>
+                <p className="text-sm text-gray-600">Check seasonality (Dry Season only). A popular evening out along <Link to="/the-strand" className="text-primary font-medium hover:underline">The Strand</Link> with live music, food, and local crafts.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <a href="https://whatson.townsville.qld.gov.au/" target="_blank" rel="noopener noreferrer">
                     Check dates <ExternalLink className="w-3 h-3" />
@@ -211,7 +248,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">Jan – March</p>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-gray-600">Peak waterfall flow at Wallaman Falls and Crystal Creek. Check road conditions after heavy rain.</p>
+                <p className="text-sm text-gray-600">Peak waterfall flow at Wallaman Falls and Crystal Creek. Check road conditions after heavy rain. Browse our <Link to="/things-to-do" className="text-primary font-medium hover:underline">Things to Do guide</Link> for wet-season ideas.</p>
               </CardContent>
             </Card>
           </div>
@@ -220,27 +257,27 @@ const Events = () => {
         {/* Major 2026 Events to Plan For */}
         <section className="pt-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Major 2026 Events to Plan For</h2>
-          <p className="text-gray-600 mb-6">Mark your calendar for these highlights.</p>
+          <p className="text-gray-600 mb-6">Mark your calendar for these highlights. Need a place to stay? Check our <Link to="/accommodation" className="text-primary font-medium hover:underline">Accommodation guide</Link>.</p>
           
           <div className="space-y-4">
             <Card>
               <CardContent className="p-4">
                 <h3 className="font-semibold text-gray-900">Strand Ephemera</h3>
-                <p className="text-sm text-gray-600 mt-1">Australia's leading outdoor sculpture festival. Biennial event transforming The Strand.</p>
+                <p className="text-sm text-gray-600 mt-1">Australia's leading outdoor sculpture festival. Biennial event transforming The Strand into an open-air gallery with installations from local and international artists.</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-4">
                 <h3 className="font-semibold text-gray-900">Magnetic Island Race Week</h3>
-                <p className="text-sm text-gray-600 mt-1">Late August. Sailing yachts compete around Magnetic Island's stunning bays.</p>
+                <p className="text-sm text-gray-600 mt-1">Late August. Sailing yachts compete around Magnetic Island's stunning bays in one of North Queensland's biggest sailing spectacles and a major regional tourism draw.</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-4">
                 <h3 className="font-semibold text-gray-900">North Australian Festival of Arts</h3>
-                <p className="text-sm text-gray-600 mt-1">June–July. Flagship arts festival featuring theatre, music, and circus.</p>
+                <p className="text-sm text-gray-600 mt-1">June–July. Flagship arts festival featuring theatre, music, and circus, plus comedy nights, outdoor installations, and light shows across multiple Townsville venues.</p>
               </CardContent>
             </Card>
           </div>
@@ -255,7 +292,7 @@ const Events = () => {
                   <div className="text-xs font-bold text-gray-500 w-16 pt-1">JUN-JUL</div>
                   <div>
                     <h3 className="font-semibold text-gray-900">North Australian Festival of Arts (NAFA)</h3>
-                    <p className="text-sm text-gray-600 mt-1">Townsville's flagship arts festival featuring theatre, music, circus, comedy, light shows and outdoor performances.</p>
+                    <p className="text-sm text-gray-600 mt-1">Townsville's flagship arts festival featuring theatre, music, circus, comedy, light shows and outdoor performances. It's the largest multi-arts festival in Northern Australia, drawing performers from across the country.</p>
                   </div>
                 </CardContent>
               </Card>
@@ -265,7 +302,7 @@ const Events = () => {
                   <div className="text-xs font-bold text-gray-500 w-16 pt-1">JUL-AUG</div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Australian Festival of Chamber Music</h3>
-                    <p className="text-sm text-gray-600 mt-1">World-class chamber music performed across stunning venues including St James' Cathedral.</p>
+                    <p className="text-sm text-gray-600 mt-1">World-class chamber music performed across stunning venues including St James' Cathedral. The festival attracts internationally acclaimed musicians and is one of Australia's premier classical music events.</p>
                   </div>
                 </CardContent>
               </Card>
@@ -275,7 +312,7 @@ const Events = () => {
                   <div className="text-xs font-bold text-gray-500 w-16 pt-1">AUGUST</div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Townsville Running Festival</h3>
-                    <p className="text-sm text-gray-600 mt-1">Marathon, half-marathon and fun run options through scenic streets and waterfront.</p>
+                    <p className="text-sm text-gray-600 mt-1">Marathon, half-marathon and fun run options through scenic streets and waterfront. A fantastic community event with courses winding past <Link to="/the-strand" className="text-primary font-medium hover:underline">The Strand</Link> and Castle Hill.</p>
                   </div>
                 </CardContent>
               </Card>
@@ -285,11 +322,36 @@ const Events = () => {
                   <div className="text-xs font-bold text-gray-500 w-16 pt-1">DECEMBER</div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Townsville Christmas Festival</h3>
-                    <p className="text-sm text-gray-600 mt-1">Festive lights, markets, food stalls and entertainment to celebrate the holiday season.</p>
+                    <p className="text-sm text-gray-600 mt-1">Festive lights, markets, food stalls and entertainment to celebrate the holiday season. A family-friendly atmosphere with spectacular light displays across the CBD and waterfront.</p>
                   </div>
                 </CardContent>
               </Card>
            </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="pt-8 border-t">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked About Townsville Events</h2>
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="faq-1">
+              <AccordionTrigger className="text-left font-semibold text-gray-900">What is happening in Townsville this weekend?</AccordionTrigger>
+              <AccordionContent className="text-gray-600">
+                Markets, sports events, seasonal festivals, and outdoor activities typically feature each week. This page is updated regularly with current highlights. You can also check the <a href="https://whatson.townsville.qld.gov.au/" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">official Townsville events calendar</a> for additional listings.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="faq-2">
+              <AccordionTrigger className="text-left font-semibold text-gray-900">Where can I find live music in Townsville?</AccordionTrigger>
+              <AccordionContent className="text-gray-600">
+                Popular spots include Palmer Street venues, Cowboys Leagues Club, Strand Night Markets, and seasonal festival stages. Browse our <Link to="/food-drink" className="text-primary font-medium hover:underline">Food & Drink guide</Link> for dining spots with live entertainment.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="faq-3">
+              <AccordionTrigger className="text-left font-semibold text-gray-900">Are Townsville events family friendly?</AccordionTrigger>
+              <AccordionContent className="text-gray-600">
+                Most community markets, festivals, lagoon activities, and outdoor events welcome families. Always check venue-specific details. For family activity ideas, see our <Link to="/things-to-do" className="text-primary font-medium hover:underline">Things to Do</Link> and <Link to="/dog-friendly" className="text-primary font-medium hover:underline">Dog-Friendly</Link> guides.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </section>
 
         {/* Footer CTA Section */}
