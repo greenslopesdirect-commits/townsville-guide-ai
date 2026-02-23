@@ -187,7 +187,7 @@ const Events = () => {
               <CardContent className="space-y-4">
                 <p className="text-sm text-gray-600">Season Starts March 1! First home game vs Titans on March 22.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                  <Link to="/townsville/events">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
+                  <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <a href="https://www.cowboys.com.au/draw/" target="_blank" rel="noopener noreferrer">

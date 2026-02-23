@@ -131,7 +131,7 @@ const EventsOn = () => {
 
         {/* Jezzine Highlight */}
         <p className="text-center text-sm text-slate-600 mt-6">
-          🌅 <strong>Highlight:</strong> The Cowboys are back! First home game vs Titans is March 22. <Link to="/townsville/events" className="text-primary font-medium hover:underline">View the full events calendar →</Link>
+          🌅 <strong>Highlight:</strong> The Cowboys are back! First home game vs Titans is March 22. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Read the Game Day Guide →</Link>
         </p>
 
         {/* Mobile View All Button */}
