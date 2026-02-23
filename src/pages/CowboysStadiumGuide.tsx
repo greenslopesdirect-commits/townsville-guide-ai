@@ -11,8 +11,8 @@ const CowboysStadiumGuide = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Cowboys Game Day Guide 2026 | QLD Country Bank Stadium Tips"
-        description="Your local guide to Cowboys home games at Queensland Country Bank Stadium in Townsville. Stadium tips, The Stampede walk, parking, food & drink, and 2026 season highlights."
+        title="Cowboys Game Day Guide 2026"
+        description="The local's guide to the Cowboys Stampede, stadium tips, and where to watch the Vegas opener. Everything you need for game day in Townsville."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 

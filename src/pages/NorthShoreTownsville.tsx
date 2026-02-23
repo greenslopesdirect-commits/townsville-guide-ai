@@ -10,8 +10,8 @@ const NorthShoreTownsville = () => {
   return (
     <>
       <SEOHead
-        title="North Shore Townsville Guide 2026 | Nature, Community & Leisure"
-        description="Discover Townsville's North Shore — Burdell Forest trails, Northern Beaches Leisure Centre, wetlands birdwatching, and the best local dining at North Shore Marketplace."
+        title="Explore North Shore Townsville"
+        description="Discover Burdell Forest trails, the Northern Beaches Leisure Centre, and local insights into Townsville's thriving northern community."
         canonical="https://www.myaussieguide.com.au/north-shore-townsville"
       />
 
