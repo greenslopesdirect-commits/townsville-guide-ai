@@ -51,6 +51,7 @@ import LittleCrystalCreek from "@/pages/LittleCrystalCreek";
 import GreatBarrierReef from "@/pages/GreatBarrierReef";
 import CowboysStadiumGuide from "@/pages/CowboysStadiumGuide";
 import NorthShoreTownsville from "@/pages/NorthShoreTownsville";
+import TownsvilleAirport from "@/pages/TownsvilleAirport";
 
 const queryClient = new QueryClient();
 
@@ -97,6 +98,7 @@ const App = () => (
             <Route path="castle-hill" element={<CastleHill />} />
             <Route path="little-crystal-creek-townsville" element={<LittleCrystalCreek />} />
             <Route path="great-barrier-reef-townsville" element={<GreatBarrierReef />} />
+            <Route path="townsville-airport" element={<TownsvilleAirport />} />
 
             {/* QUICK ACCESS ROUTES */}
             <Route path="dog-friendly" element={<DogFriendly />} />
