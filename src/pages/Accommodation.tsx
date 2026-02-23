@@ -156,6 +156,9 @@ const Accommodation = () => {
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                 From luxury oceanfront resorts to budget-friendly holiday parks, find the perfect place to stay for your Townsville adventure.
               </p>
+              <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">
+                Flying into Townsville? See our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport options, parking tips, and arrival advice.
+              </p>
             </header>
 
             {/* Quick Stats */}
