@@ -140,23 +140,23 @@ const NorthShoreTownsville = () => {
                       <div className="flex flex-col items-center gap-1.5 rounded-lg bg-white/60 dark:bg-emerald-900/20 p-3 border border-emerald-100 dark:border-emerald-800/30">
                         <Mountain className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                         <span className="text-xs font-medium text-muted-foreground">Difficulty</span>
-                        <span className="text-sm font-bold text-foreground">Easy / Flat</span>
+                        <span className="text-sm font-bold text-foreground">Easy / Paved</span>
                       </div>
                       <div className="flex flex-col items-center gap-1.5 rounded-lg bg-white/60 dark:bg-emerald-900/20 p-3 border border-emerald-100 dark:border-emerald-800/30">
                         <Heart className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
                         <span className="text-xs font-medium text-muted-foreground">Best For</span>
-                        <span className="text-sm font-bold text-foreground text-center">Walks & Birds</span>
+                        <span className="text-sm font-bold text-foreground text-center">Birds & Dogs</span>
                       </div>
                     </div>
 
                     {/* Local Insight */}
                     <blockquote className="border-l-4 border-emerald-400 dark:border-emerald-600 pl-4 py-2 text-sm text-muted-foreground italic bg-white/40 dark:bg-emerald-900/10 rounded-r-lg">
-                      Forget the CBD hustle. These trails follow the Bohle River through some of Townsville's most underrated wetlands. Park at the end of Erskine Place to access the most peaceful section of the loop.
+                      The primary trailhead is at Erskine Place. Park at the Northern Beaches Leisure Centre or Northshore Skate Park; the paved path begins at the northern edge of the parkland.
                     </blockquote>
 
                     {/* CTA Button */}
                     <a
-                      href="https://www.google.com/maps/place/?q=place_id:ChIJYdXIjSP31WsRTw74--2qK70"
+                      href="https://www.google.com/maps/@-19.2648,146.7620,17z"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white h-10 px-5 py-2 text-sm font-medium w-full sm:w-auto transition-colors shadow-sm"
@@ -169,6 +169,12 @@ const NorthShoreTownsville = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <LocalInsightCard title="Accessibility Tip" variant="tip">
+              <p>
+                This is a 100% pram and wheelchair-friendly loop. For the best birdwatching, head toward the Main Street bridge section at sunrise.
+              </p>
+            </LocalInsightCard>
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
