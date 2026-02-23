@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, TreePine, Users, ShoppingBag, Bird, Trophy, MapPin, Waves, Camera, Coffee, Droplets, ExternalLink, Dog } from "lucide-react";
-import burdellMap from "@/assets/burdell-nature-trail-map.webp";
+import { ArrowRight, TreePine, Users, ShoppingBag, Bird, Trophy, MapPin, Waves, Camera, Coffee, Droplets, ExternalLink, Dog, Leaf, Ruler, Mountain, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -120,39 +119,56 @@ const NorthShoreTownsville = () => {
                   </Badge>
                 </div>
 
-                {/* Burdell Trail Map */}
-                <div className="space-y-3 pt-2">
-                  <img
-                    src={burdellMap}
-                    alt="Burdell Nature Trails map showing the Wetlands Loop, forest trails, and rest areas along the Bohle River wetlands"
-                    className="w-full rounded-lg border border-border"
-                    loading="lazy"
-                  />
-                  <p className="text-sm text-muted-foreground italic text-center">
-                    Escape the Crowds: The Burdell Wetlands loop offers a flat, peaceful alternative to the busy inner-city tracks.
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    These trails follow the <strong>Bohle River</strong> and surrounding wetlands, within the <strong>Townsville Town Common Conservation Park</strong> — look for the official park signage at the Burdell-side entrance to find the trailheads.
-                  </p>
-                  <a
-                    href="https://www.google.com/maps/@-19.2648,146.7620,17z"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 text-sm font-medium w-full sm:w-auto transition-colors"
-                  >
-                    <MapPin className="w-4 h-4" />
-                    View Burdell Forest on Google Maps
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
+                {/* Trail Info Card */}
+                <div className="relative overflow-hidden rounded-xl shadow-md border border-emerald-200 dark:border-emerald-800/40 bg-gradient-to-br from-emerald-50 via-emerald-50/80 to-amber-50/40 dark:from-emerald-950/30 dark:via-emerald-950/20 dark:to-amber-950/10">
+                  {/* Decorative leaf icon */}
+                  <Leaf className="absolute top-4 right-4 w-16 h-16 text-emerald-200/50 dark:text-emerald-800/30 -rotate-12" strokeWidth={1} />
+
+                  <div className="relative p-6 space-y-5">
+                    <div className="space-y-1">
+                      <p className="text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">Trail Guide</p>
+                      <h3 className="text-xl font-bold text-foreground">Bohle River Wetlands & Forest Trails</h3>
+                    </div>
+
+                    {/* Quick Stats */}
+                    <div className="grid grid-cols-3 gap-3">
+                      <div className="flex flex-col items-center gap-1.5 rounded-lg bg-white/60 dark:bg-emerald-900/20 p-3 border border-emerald-100 dark:border-emerald-800/30">
+                        <Ruler className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                        <span className="text-xs font-medium text-muted-foreground">Distance</span>
+                        <span className="text-sm font-bold text-foreground">3.5 km Loop</span>
+                      </div>
+                      <div className="flex flex-col items-center gap-1.5 rounded-lg bg-white/60 dark:bg-emerald-900/20 p-3 border border-emerald-100 dark:border-emerald-800/30">
+                        <Mountain className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                        <span className="text-xs font-medium text-muted-foreground">Difficulty</span>
+                        <span className="text-sm font-bold text-foreground">Easy / Flat</span>
+                      </div>
+                      <div className="flex flex-col items-center gap-1.5 rounded-lg bg-white/60 dark:bg-emerald-900/20 p-3 border border-emerald-100 dark:border-emerald-800/30">
+                        <Heart className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                        <span className="text-xs font-medium text-muted-foreground">Best For</span>
+                        <span className="text-sm font-bold text-foreground text-center">Walks & Birds</span>
+                      </div>
+                    </div>
+
+                    {/* Local Insight */}
+                    <blockquote className="border-l-4 border-emerald-400 dark:border-emerald-600 pl-4 py-2 text-sm text-muted-foreground italic bg-white/40 dark:bg-emerald-900/10 rounded-r-lg">
+                      Forget the CBD hustle. These trails follow the Bohle River through some of Townsville's most underrated wetlands. Park at the end of Erskine Place to access the most peaceful section of the loop.
+                    </blockquote>
+
+                    {/* CTA Button */}
+                    <a
+                      href="https://www.google.com/maps/@-19.2648,146.7620,17z"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white h-10 px-5 py-2 text-sm font-medium w-full sm:w-auto transition-colors shadow-sm"
+                    >
+                      <MapPin className="w-4 h-4" />
+                      View Trailhead on Google Maps
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
-
-            <LocalInsightCard title="Bohle River Trails" variant="tip">
-              <p>
-                These trails follow the Bohle River and surrounding wetlands. It's the perfect spot for a quiet morning walk away from the city traffic, but keep an eye on the tide levels near the river bends.
-              </p>
-            </LocalInsightCard>
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
