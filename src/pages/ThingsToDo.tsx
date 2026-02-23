@@ -3,6 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog, Plane, UtensilsCrossed, ShoppingBag, BookOpen, Sun, Clock, Calendar, Sunrise, CloudSun, Sunset, Moon } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import ListingCard from "@/components/ListingCard";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
 import LocalInsightCard from "@/components/LocalInsightCard";
@@ -263,8 +264,8 @@ const ThingsToDo = () => {
   return (
     <>
       <SEOHead
-        title="Things to Do in Townsville – Local Highlights & Must-See Spots"
-        description="Discover the best things to do in Townsville — Castle Hill, Magnetic Island, The Strand, wildlife, walks, beaches and more. Your complete local guide."
+        title="15+ Things to Do in Townsville (A Local's Guide for 2026)"
+        description="Skip the tourist traps. Discover the best things to do in Townsville from a real local, including hidden swimming holes, island trips, and the best sunset spots."
         canonical="https://www.myaussieguide.com.au/things-to-do"
       />
       <Helmet>
@@ -376,22 +377,20 @@ const ThingsToDo = () => {
               Planning beach time? Check our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> before entering the water.
             </p>
 
-            {/* Go Local Suggestion */}
-            <LocalInsightCard title="Go Local" variant="location" className="mb-12">
-              <p>
-                Done The Strand? It's time to go local. Head out to the <strong>Riverway Lagoons</strong> in Thuringowa—it's 
-                our favourite freshwater alternative to the beach (and totally free!).
+            {/* Free Things to Do Section */}
+            <section className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                Free Things to Do in Townsville
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Townsville doesn't have to break the bank. From exploring the Riverway Lagoons to walking the Palmetum and climbing Castle Hill, there are plenty of completely free ways to enjoy the city.
               </p>
-              <p className="font-medium text-blue-700 dark:text-blue-300">
-                🗺️ If you want to see where the locals really hang out, take a walk through the Palmetum or drive up Castle Hill at sunset.
-              </p>
-              <Link 
-                to="/guides/free-things" 
-                className="inline-flex items-center gap-1 mt-3 text-blue-700 dark:text-blue-300 hover:underline font-medium"
-              >
-                → Discover 5 Free Things to Do in Townsville
+              <Link to="/guides/free-things">
+                <Button className="gap-2">
+                  Discover 5 Free Things to Do
+                </Button>
               </Link>
-            </LocalInsightCard>
+            </section>
 
             {/* SEO Introduction Section */}
             <section className="mb-12">
@@ -562,6 +561,39 @@ const ThingsToDo = () => {
                   </Link>
                 ))}
               </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+                Frequently Asked Questions about Townsville
+              </h2>
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="faq-1" className="border-border/40">
+                  <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
+                    How many days do you need in Townsville?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base text-muted-foreground leading-relaxed">
+                    To truly experience Townsville, 2 to 3 days is ideal. This gives you one day to explore The Strand and Castle Hill, one day for a day trip to Magnetic Island, and a third day to swim at the Riverway Lagoons or visit the Museum of Tropical Queensland.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="faq-2" className="border-border/40">
+                  <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
+                    Is Townsville worth visiting?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base text-muted-foreground leading-relaxed">
+                    Absolutely. Townsville offers a unique mix of tropical coastlines, historic World War II sites, incredible wildlife at Billabong Sanctuary, and acts as the perfect gateway to Magnetic Island and the Great Barrier Reef.
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="faq-3" className="border-border/40">
+                  <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
+                    What is there to do in Townsville at night?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base text-muted-foreground leading-relaxed">
+                    Popular evening activities include walking along The Strand as it cools down, driving up Castle Hill for panoramic sunset views over the ocean, or visiting the local restaurants and bars in the Palmer Street dining precinct.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </section>
 
             {/* Explore More Section */}
