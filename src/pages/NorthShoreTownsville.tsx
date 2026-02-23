@@ -124,7 +124,7 @@ const NorthShoreTownsville = () => {
                 <div className="space-y-3 pt-2">
                   <img
                     src={burdellMap}
-                    alt="Burdell Nature Trails map showing the Wetlands Loop, forest trails, and rest areas near Ross Creek"
+                    alt="Burdell Nature Trails map showing the Wetlands Loop, forest trails, and rest areas along the Bohle River wetlands"
                     className="w-full rounded-lg border border-border"
                     loading="lazy"
                   />
@@ -132,7 +132,7 @@ const NorthShoreTownsville = () => {
                     Escape the Crowds: The Burdell Wetlands loop offers a flat, peaceful alternative to the busy inner-city tracks.
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    This area is part of the <strong>Townsville Town Common Conservation Park</strong> — look for the official park signage at the Burdell-side entrance to find the trailheads.
+                    These trails follow the <strong>Bohle River</strong> and surrounding wetlands, within the <strong>Townsville Town Common Conservation Park</strong> — look for the official park signage at the Burdell-side entrance to find the trailheads.
                   </p>
                   <a
                     href="https://www.google.com/maps/@-19.2648,146.7620,17z"
@@ -147,6 +147,12 @@ const NorthShoreTownsville = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <LocalInsightCard title="Bohle River Trails" variant="tip">
+              <p>
+                These trails follow the Bohle River and surrounding wetlands. It's the perfect spot for a quiet morning walk away from the city traffic, but keep an eye on the tide levels near the river bends.
+              </p>
+            </LocalInsightCard>
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
