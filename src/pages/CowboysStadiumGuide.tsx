@@ -59,7 +59,7 @@ const CowboysStadiumGuide = () => {
                 <CardContent className="space-y-2">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4" />
-                    <span>Sunday, March 1 | 12:15 PM AEST</span>
+                    <span>Sunday, March 1 | 1:15 PM AEST</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <MapPin className="w-4 h-4" />
@@ -67,6 +67,9 @@ const CowboysStadiumGuide = () => {
                   </div>
                   <p className="text-sm text-muted-foreground">
                     The NRL kicks off in Las Vegas! While the boys are overseas, the city comes alive with local watch parties. Get there early for the best seats.
+                  </p>
+                  <p className="text-xs text-muted-foreground italic">
+                    Check with local venues like the Cowboys Leagues Club for their specific pre-game event start times.
                   </p>
                 </CardContent>
               </Card>

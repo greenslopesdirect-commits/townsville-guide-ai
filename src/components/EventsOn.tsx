@@ -94,7 +94,7 @@ const EventsOn = () => {
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <Clock className="w-4 h-4" /> 8:00 AM – 1:00 PM
                     </div>
-                    <p className="text-xs text-slate-500 mt-1">🏉 Cowboys vs Knights (Vegas) — 12:15 PM Watch Party</p>
+                    <p className="text-xs text-slate-500 mt-1">🏉 Cowboys vs Knights (Vegas) — 1:15 PM Watch Party</p>
                 </CardContent>
             </Card>
 

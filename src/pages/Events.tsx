@@ -79,7 +79,7 @@ const Events = () => {
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Sunday, March 1 | 12:15 PM AEST</span>
+                    <span>Sunday, March 1 | 1:15 PM AEST</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -87,9 +87,12 @@ const Events = () => {
                   </div>
                 </div>
               </CardHeader>
-              <CardContent>
+              <CardContent className="space-y-2">
                 <p className="text-gray-600 text-sm">
                   The season kicks off in Las Vegas! Join the local crowd for a midday celebration.
+                </p>
+                <p className="text-xs text-muted-foreground italic">
+                  Check with local venues like the Cowboys Leagues Club for their specific pre-game event start times.
                 </p>
               </CardContent>
             </Card>
