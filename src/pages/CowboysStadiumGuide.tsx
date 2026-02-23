@@ -143,9 +143,9 @@ const CowboysStadiumGuide = () => {
               </CardContent>
             </Card>
 
-            <LocalInsightCard title="Lowths Bridge Closure" variant="insight">
+            <LocalInsightCard title="Alternative Route" variant="insight">
               <p>
-                Lowths Bridge closes to cars 2 hours before kick-off, making it a pedestrian paradise. Join the walk!
+                Note: Lowths Bridge becomes a pedestrian-only zone on game days. It is the most direct route from City Lane, but if it's crowded, you can also use the Victoria Street Bridge to access the Central Park Boardwalk.
               </p>
             </LocalInsightCard>
           </section>
@@ -259,6 +259,14 @@ const CowboysStadiumGuide = () => {
               </Button>
             </div>
           </div>
+
+          {/* North Shore Link */}
+          <p className="text-sm text-muted-foreground text-center">
+            Need a break from the noise? Check out our{" "}
+            <Link to="/north-shore-townsville" className="text-primary hover:underline font-medium">
+              North Shore Nature Guide
+            </Link>.
+          </p>
 
         </main>
       </div>
