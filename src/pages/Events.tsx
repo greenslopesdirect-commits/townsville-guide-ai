@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog, Footprints } from "lucide-react";
+import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog, Footprints, Trophy, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -15,7 +15,7 @@ const Events = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
-            Updated: Feb 16, 2026
+            Updated: Feb 23, 2026
           </span>
         </div>
       </div>
@@ -25,11 +25,11 @@ const Events = () => {
         {/* Hero Section */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-            What's On: Feb 16 – Feb 22
-          </h1>
-          <p className="text-lg text-gray-600 max-w-2xl">
-            February in Townsville means warm mornings, afternoon storms, and peak waterfall season. Plan outdoor activities early and enjoy the coastal breeze in the evenings.
-          </p>
+             What's On: Feb 23 – March 1
+           </h1>
+           <p className="text-lg text-gray-600 max-w-2xl">
+             Late February and early March in Townsville brings the excitement of the NRL season launch alongside our beautiful tropical mornings. Plan your outdoor activities early.
+           </p>
         </div>
 
         {/* AI Call to Action + Official Calendar */}
@@ -60,113 +60,53 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               Feb 20 - 22
-            </Badge>
+               Feb 23 – March 1
+             </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
             
-            {/* Sunrise at Castle Hill */}
-            <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
+            {/* NRL Season Opener */}
+            <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Must Do
+                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
+                    The Big Event
                   </Badge>
-                  <MapPin className="w-5 h-5 text-gray-400" />
+                  <Trophy className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Sunrise at Castle Hill</CardTitle>
+                <CardTitle className="text-xl mt-2">NRL Season Opener: Cowboys vs Knights (Vegas)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday or Sunday | Early Morning</span>
+                    <span>Sunday, March 1 | 12:15 PM AEST</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Castle Hill Lookout</span>
+                    <span>Local Watch Parties (Leagues Club & North Shore Tavern)</span>
                   </div>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-3">
+              <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Start the day above the city before the heat builds. Sunrise offers clearer views and quieter tracks compared to sunset.
+                  The season kicks off in Las Vegas! Join the local crowd for a midday celebration.
                 </p>
-                <Button asChild variant="outline" size="sm" className="gap-2">
-                  <Link to="/castle-hill">View Castle Hill Guide <ArrowRight className="w-3 h-3" /></Link>
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Coastal Walk - Jezzine to Rowes Bay */}
-            <Card className="border-l-4 border-l-blue-400 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                    Local
-                  </Badge>
-                  <Footprints className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">Coastal Walk – Jezzine to Rowes Bay</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Weekend | Early Morning or Late Afternoon</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Jezzine Barracks Boardwalk</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <p className="text-gray-600 text-sm">
-                  A relaxed waterfront stretch with steady sea breeze and fewer crowds than The Strand.
-                </p>
-                <Button asChild variant="outline" size="sm" className="gap-2">
-                  <Link to="/guides/jezzine-barracks">View Jezzine Guide <ArrowRight className="w-3 h-3" /></Link>
-                </Button>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Willows Markets */}
-              <Card className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge variant="outline">Shopping</Badge>
-                    <Info className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Willows Rotary Markets</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Sunday, Feb 22 | 7:30 AM – 11:30 AM</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>Willows Shopping Centre</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    Townsville's biggest weekly market. Fresh produce, plants, and second-hand treasures. Get there early.
-                  </p>
-                </CardContent>
-              </Card>
-
               {/* Cotters Market */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <Badge variant="outline">Local</Badge>
+                    <Badge variant="outline">Markets</Badge>
                     <Info className="w-5 h-5 text-gray-400" />
                   </div>
                   <CardTitle className="text-lg mt-2">Cotters Market</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, Feb 22 | 8:00 AM – 1:00 PM</span>
+                      <span>Sunday, March 1 | 8:00 AM – 1:00 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
@@ -176,7 +116,29 @@ const Events = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    The classic city market. Great for local arts, crafts, and grabbing a coffee while exploring the CBD.
+                    Perfect for a Sunday stroll before the footy starts.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Clean Up Australia Day */}
+              <Card className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge variant="outline">Nature</Badge>
+                    <Leaf className="w-5 h-5 text-gray-400" />
+                  </div>
+                  <CardTitle className="text-lg mt-2">Clean Up Australia Day</CardTitle>
+                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>Sunday, March 1 | Various Locations</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Join the local teams at Pallarenda or the Ross River to keep our backyard beautiful.
                   </p>
                 </CardContent>
               </Card>
@@ -223,7 +185,10 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">Home games at QCB Stadium. Electric atmosphere.</p>
+                <p className="text-sm text-gray-600">Season Starts March 1! First home game vs Titans on March 22.</p>
+                <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                  <Link to="/townsville/events">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
+                </Button>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <a href="https://www.cowboys.com.au/draw/" target="_blank" rel="noopener noreferrer">
                     Find next game <ExternalLink className="w-3 h-3" />

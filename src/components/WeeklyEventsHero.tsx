@@ -7,28 +7,28 @@ import { triggerAiGuide } from "@/utils/aiGuide";
 const WeeklyEventsHero = () => {
   const featureCards = [
     {
-      title: "Sunrise at Castle Hill",
+      title: "NRL Season Opener: Cowboys vs Knights",
       icon: MapPin,
-      details: "Saturday or Sunday | Early Morning",
-      description: "Start the day above the city before the heat builds. Sunrise offers clearer views and quieter tracks compared to sunset.",
-      badge: "Must Do",
-      badgeColor: "bg-purple-100 text-purple-700 dark:bg-purple-900/30 dark:text-purple-400",
-    },
-    {
-      title: "Willows Rotary Markets",
-      icon: ShoppingBasket,
-      details: "Sunday, Feb 22 | 7:30 AM – 11:30 AM",
-      description: "Townsville's biggest weekly market. Fresh produce, plants, and second-hand treasures. Get there early.",
-      badge: "Shopping",
+      details: "Sunday, March 1 | 12:15 PM AEST",
+      description: "The season kicks off in Las Vegas! Join the local crowd at Leagues Club or North Shore Tavern for a midday watch party.",
+      badge: "Big Event",
       badgeColor: "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
     },
     {
       title: "Cotters Market",
-      icon: Music,
-      details: "Sunday, Feb 22 | 8:00 AM – 1:00 PM",
-      description: "The classic city market on Flinders Street. Great for local arts, crafts, and grabbing a coffee while exploring the CBD.",
-      badge: "Local",
+      icon: ShoppingBasket,
+      details: "Sunday, March 1 | 8:00 AM – 1:00 PM",
+      description: "Perfect for a Sunday stroll before the footy starts. Local arts, crafts, and coffee on Flinders Street.",
+      badge: "Markets",
       badgeColor: "bg-primary/10 text-primary",
+    },
+    {
+      title: "Clean Up Australia Day",
+      icon: Music,
+      details: "Sunday, March 1 | Various Locations",
+      description: "Join the local teams at Pallarenda or the Ross River to keep our backyard beautiful.",
+      badge: "Nature",
+      badgeColor: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
     },
   ];
 
@@ -40,13 +40,13 @@ const WeeklyEventsHero = () => {
           variant="outline" 
           className="mb-4 px-3 py-1 text-xs font-medium border-primary/30 text-muted-foreground"
         >
-          Last Updated: Feb 16, 2026
+          Last Updated: Feb 23, 2026
         </Badge>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-          What's On: Feb 16–22
+          What's On: Feb 23 – March 1
         </h1>
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          February in Townsville means warm mornings, afternoon storms, and peak waterfall season. Plan outdoor activities early and enjoy the coastal breeze in the evenings.
+          Late February and early March in Townsville brings the excitement of the NRL season launch alongside our beautiful tropical mornings. Plan your outdoor activities early.
         </p>
       </header>
 
