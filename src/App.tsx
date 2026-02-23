@@ -50,6 +50,7 @@ import JezzineBarracks from "@/pages/JezzineBarracks";
 import LittleCrystalCreek from "@/pages/LittleCrystalCreek";
 import GreatBarrierReef from "@/pages/GreatBarrierReef";
 import CowboysStadiumGuide from "@/pages/CowboysStadiumGuide";
+import NorthShoreTownsville from "@/pages/NorthShoreTownsville";
 
 const queryClient = new QueryClient();
 
@@ -85,6 +86,7 @@ const App = () => (
             <Route path="guides/sunset-walks" element={<SunsetWalks />} />
             <Route path="guides/jezzine-barracks" element={<JezzineBarracks />} />
             <Route path="cowboys-stadium-guide" element={<CowboysStadiumGuide />} />
+            <Route path="north-shore-townsville" element={<NorthShoreTownsville />} />
             
             {/* DEEP DIVE BEACH PAGES */}
             <Route path="pallarenda-beach" element={<PallarendaBeach />} />
