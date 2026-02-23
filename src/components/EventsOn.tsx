@@ -12,7 +12,7 @@ const EventsOn = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
             <span className="text-primary font-bold tracking-wider uppercase text-sm">Seasonal Events & Local Highlights</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">What's On in Townsville</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">March in the Ville: NRL, Markets & Coastal Runs</h2>
             <p className="text-slate-600 mt-2 max-w-xl text-lg">
               Townsville hosts markets, festivals, long weekends, and community events throughout the year.
             </p>
@@ -37,7 +37,8 @@ const EventsOn = () => {
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
                     <p className="text-blue-100 font-medium">Something for every season</p>
-                    <p className="mt-3 text-sm font-semibold text-yellow-300">🌧 Seasonal Focus: Wet Season Waterfalls & Early-Morning Markets</p>
+                    <p className="mt-3 text-sm font-semibold text-yellow-300">🍂 Seasonal Focus: NRL Kick-off & Morning Trail Walks</p>
+                    <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">NRL Season</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
@@ -85,14 +86,15 @@ const EventsOn = () => {
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Feb 22</p>
+                    <h4 className="text-lg font-bold mb-2">Cotters Market + Cowboys Watch Party</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Sunday, March 1</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> Flinders St, CBD
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-slate-500">
+                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <Clock className="w-4 h-4" /> 8:00 AM – 1:00 PM
                     </div>
+                    <p className="text-xs text-slate-500 mt-1">🏉 Cowboys vs Knights (Vegas) — 12:15 PM Watch Party</p>
                 </CardContent>
             </Card>
 
@@ -106,7 +108,7 @@ const EventsOn = () => {
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Willows Markets</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Feb 22</p>
+                    <p className="text-xs text-primary font-medium mb-1">Sunday, March 8</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> Willows Shopping Centre
                     </div>
@@ -129,7 +131,7 @@ const EventsOn = () => {
 
         {/* Jezzine Highlight */}
         <p className="text-center text-sm text-slate-600 mt-6">
-          🌅 <strong>Highlight:</strong> Sunset walks at Jezzine Barracks — <Link to="/guides/jezzine-barracks" className="text-primary font-medium hover:underline">Check the new guide!</Link>
+          🌅 <strong>Highlight:</strong> The Cowboys are back! First home game vs Titans is March 22. <Link to="/townsville/events" className="text-primary font-medium hover:underline">View the full events calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
