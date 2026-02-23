@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, TreePine, Users, ShoppingBag, Bird, Trophy, MapPin, Waves, Camera, Coffee, Droplets } from "lucide-react";
+import { ArrowRight, TreePine, Users, ShoppingBag, Bird, Trophy, MapPin, Waves, Camera, Coffee, Droplets, ExternalLink, Dog } from "lucide-react";
+import burdellMap from "@/assets/burdell-nature-trail-map.webp";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -101,7 +102,8 @@ const NorthShoreTownsville = () => {
                 </p>
                 <p className="text-muted-foreground">
                   The flat, well-maintained boardwalks make it accessible for all fitness levels. 
-                  Bring binoculars and a camera — you'll want them.
+                  It's also a dog-friendly area (on lead), so bring your four-legged walking 
+                  partner along for a peaceful morning loop.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="outline" className="gap-1">
@@ -113,6 +115,32 @@ const NorthShoreTownsville = () => {
                   <Badge variant="outline" className="gap-1">
                     <Waves className="w-3 h-3" /> Wetlands
                   </Badge>
+                  <Badge variant="outline" className="gap-1">
+                    <Dog className="w-3 h-3" /> Dog-Friendly (On Lead)
+                  </Badge>
+                </div>
+
+                {/* Burdell Trail Map */}
+                <div className="space-y-3 pt-2">
+                  <img
+                    src={burdellMap}
+                    alt="Burdell Nature Trails map showing the Wetlands Loop, forest trails, and rest areas near Ross Creek"
+                    className="w-full rounded-lg border border-border"
+                    loading="lazy"
+                  />
+                  <p className="text-sm text-muted-foreground italic text-center">
+                    Escape the Crowds: The Burdell Wetlands loop offers a flat, peaceful alternative to the busy inner-city tracks.
+                  </p>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Burdell+Forest+Trails+Townsville"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 text-sm font-medium w-full sm:w-auto transition-colors"
+                  >
+                    <MapPin className="w-4 h-4" />
+                    View Burdell Forest on Google Maps
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
                 </div>
               </CardContent>
             </Card>
