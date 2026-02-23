@@ -145,11 +145,15 @@ const NorthShoreTownsville = () => {
               </CardContent>
             </Card>
 
-            <LocalInsightCard title="Pro-Tip: Morning in the Forest" variant="tip">
+            <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
-                For a quiet start to the day, skip the Strand and head to the Burdell Forest. The trails are flat, 
-                shaded, and significantly quieter than Castle Hill. It's the best spot in the north for a peaceful 
-                morning run or a nature photography session at the wetlands.
+                The Wetlands Loop is at its most vibrant in March. Keep an eye out for seasonal birdlife, but stick to the main tracks as the lower forest sections can become boggy after a typical Townsville downpour.
+              </p>
+            </LocalInsightCard>
+
+            <LocalInsightCard title="Dog Owners" variant="insight">
+              <p>
+                A favourite for local dog owners — just remember to keep your furry friends on a lead to protect the local birdlife.
               </p>
             </LocalInsightCard>
           </section>
