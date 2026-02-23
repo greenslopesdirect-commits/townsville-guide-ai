@@ -589,6 +589,7 @@ const ThingsToDo = () => {
                     <Compass className="w-8 h-8 text-primary mb-3" />
                     <h3 className="font-semibold text-foreground mb-1">Nature & Walks</h3>
                     <p className="text-sm text-muted-foreground">Bushwalks and outdoor adventures</p>
+                    <p className="text-xs text-primary mt-2"><Link to="/north-shore-townsville" className="hover:underline">Explore the North Shore trails →</Link></p>
                   </div>
                 </Link>
               </div>

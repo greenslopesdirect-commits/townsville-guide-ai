@@ -42,6 +42,7 @@ const Footer = () => {
               <li><Link to="/local-tips" className="hover:text-primary transition-colors">Local Tips</Link></li>
               <li><Link to="/magnetic-island-day-trip" className="hover:text-primary transition-colors">Wild Koala Guide</Link></li>
               <li><Link to="/cowboys-stadium-guide" className="hover:text-primary transition-colors">Cowboys Game Day</Link></li>
+              <li><Link to="/north-shore-townsville" className="hover:text-primary transition-colors">North Shore Guide</Link></li>
               <li><Link to="/advertise" className="hover:text-primary transition-colors">Advertise With Us</Link></li>
             </ul>
           </div>
