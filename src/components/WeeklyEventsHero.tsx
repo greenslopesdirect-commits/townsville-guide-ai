@@ -9,7 +9,7 @@ const WeeklyEventsHero = () => {
     {
       title: "NRL Season Opener: Cowboys vs Knights",
       icon: MapPin,
-      details: "Sunday, March 1 | 12:15 PM AEST",
+      details: "Sunday, March 1 | 1:15 PM AEST",
       description: "The season kicks off in Las Vegas! Join the local crowd at Leagues Club or North Shore Tavern for a midday watch party.",
       badge: "Big Event",
       badgeColor: "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
