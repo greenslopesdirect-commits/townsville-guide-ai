@@ -257,6 +257,17 @@ const DogFriendly = () => {
             </div>
           </section>
 
+          {/* Freshwater Swimming & Stinger Alternatives */}
+          <section className="space-y-3">
+            <h2 className="text-2xl font-bold text-foreground">Freshwater Swimming & Stinger Alternatives</h2>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Looking for a stinger-free dip? While Townsville's beaches are iconic, many locals head inland during the peak of the season. Popular spots like Ross River (Loam Island) offer freshwater access, but always be mindful of seasonal crocodile signage and water quality alerts. For the safest saltwater swimming, stick to the netted areas at The Strand and Pallarenda.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Explore more inland options in our <Link to="/nature" className="text-primary hover:underline font-medium">Nature & Walks guide</Link>.
+            </p>
+          </section>
+
           {/* FAQ */}
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground">Frequently Asked Questions</h2>
