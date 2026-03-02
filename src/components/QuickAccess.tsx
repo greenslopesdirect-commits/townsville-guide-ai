@@ -65,7 +65,7 @@ const QuickAccess = () => {
     {
       icon: Lightbulb,
       title: "Local Tips",
-      desc: "Weather, stinger season, transport & insider advice.",
+      desc: "🌊 March 2026: Stinger nets are ACTIVE. Weather, safety & local tips.",
       link: "/local-tips",
     },
     {
