@@ -16,15 +16,32 @@ const StingerSafety = () => (
       canonical="https://www.myaussieguide.com.au/guides/stinger-safety"
     />
     <h1 className="text-4xl font-bold mb-4 text-center">Townsville Summer Safety Guide</h1>
+
+    {/* Current Status Banner */}
+    <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 Current Status: March 2026</h2>
+      <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
+        Stinger nets are currently fully installed and ACTIVE at The Strand, Pallarenda, Balgal Beach, and Horseshoe Bay. Lifeguards are conducting daily drags.
+      </p>
+    </div>
+
     <img src="/summer-safety-guide.webp" alt="Stinger net floats" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover object-bottom mb-8" />
     <div className="space-y-6 mb-8 text-red-900 font-medium text-left">
       <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>1. Swim in the Nets:</strong> Use the patrolled enclosures at The Strand and Pallarenda.</CardContent></Card>
       <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>2. Stinger Suits:</strong> Wear Lycra suits when swimming in open bays at Magnetic Island.</CardContent></Card>
       <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>3. Vinegar:</strong> Look for the vinegar stands at the beach. If stung, douse and call 000.</CardContent></Card>
     </div>
-    <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-12">
+    <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
       <p>"Even if you're just wading in ankle-deep water, stingers can be present during summer. Stay inside the nets to be safe."</p>
+    </div>
+
+    {/* Autumn Tip */}
+    <div className="bg-sky-50 dark:bg-sky-950/30 border border-sky-300 dark:border-sky-700 rounded-xl p-6 mb-12">
+      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">🍂 Autumn Tip</h4>
+      <p className="text-sky-700 dark:text-sky-400 leading-relaxed">
+        Even as air temperatures slightly drop in March, water temperatures remain high enough for Irukandji and Box Jellyfish activity. Always use the enclosures.
+      </p>
     </div>
 
     {/* Section 1 */}
@@ -32,6 +49,9 @@ const StingerSafety = () => (
       <h2 className="text-2xl font-bold mb-4">When Is Stinger Season in Townsville?</h2>
       <p className="mb-4 text-muted-foreground leading-relaxed">
         Stinger season in Townsville typically runs from November to May, during the warmer months in North Queensland. During this period, marine stingers such as box jellyfish and Irukandji may be present in coastal waters.
+      </p>
+      <p className="mb-4 text-muted-foreground leading-relaxed font-semibold">
+        We are currently in the peak of the 2025/2026 season. Stay vigilant through to May.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Swimming is considered safe when using patrolled stinger enclosures at The Strand, Pallarenda, and other netted beaches. Always check local signage or Surf Life Saving updates before entering the water.
