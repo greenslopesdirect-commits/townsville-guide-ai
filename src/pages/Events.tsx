@@ -55,7 +55,9 @@ const Events = () => {
             <li>Balgal Beach Markets (Saturday, March 7)</li>
             <li>Carlyle Gardens Arts & Crafts Market (Saturday, March 7)</li>
             <li>Townsville Ville Casino Run (Saturday, March 7)</li>
+            <li>Poison Oak 'Melt' Single Launch (Saturday, March 7)</li>
             <li>Willows Sunday Markets (March 8)</li>
+            <li>Townsville Jazz Club (Sunday, March 8)</li>
             <li>Townsville RSL Car Boot Sale (Sunday, March 8)</li>
             <li>Wet-season waterfalls and lush nature conditions — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
           </ul>
@@ -250,6 +252,58 @@ const Events = () => {
                 <CardContent>
                   <p className="text-gray-600 text-sm">
                     Bargain hunters welcome — a community car boot sale at the Townsville RSL. Arrive early for the best finds.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Poison Oak Single Launch */}
+              <Card className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge variant="outline">Live Music</Badge>
+                    <Music className="w-5 h-5 text-gray-400" />
+                  </div>
+                  <CardTitle className="text-lg mt-2">Poison Oak — 'Melt' Single Launch</CardTitle>
+                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>Saturday, March 7 | 7:00 PM</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      <span>Otherwise Bar</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Support Townsville's local music scene. A night of live original music to celebrate the launch of Poison Oak's new single.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Townsville Jazz Club */}
+              <Card className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge variant="outline">Live Music</Badge>
+                    <Music className="w-5 h-5 text-gray-400" />
+                  </div>
+                  <CardTitle className="text-lg mt-2">Townsville Jazz Club</CardTitle>
+                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>Sunday, March 8 | 5:00 PM – 8:00 PM</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      <span>The Metropole Hotel</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Relaxed live jazz and food specials. A perfect Sunday evening wind-down in one of Townsville's heritage venues.
                   </p>
                 </CardContent>
               </Card>
