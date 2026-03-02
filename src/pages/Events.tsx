@@ -22,7 +22,7 @@ const Events = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
-            Updated: Feb 23, 2026
+            Updated: March 2, 2026
           </span>
         </div>
       </div>
@@ -32,13 +32,13 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville This Week (Feb 23–March 1, 2026)
+             What's On in Townsville This Week (March 2–8, 2026)
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-             Late February and early March in Townsville brings the excitement of the NRL season launch alongside our beautiful tropical mornings. Plan your outdoor activities early.
+             Early March in Townsville brings the start of autumn market mornings and the opening of the local theatre season. Plan your outdoor activities early while the tropical warmth lingers.
            </p>
         </div>
 
@@ -51,9 +51,9 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>NRL season launch excitement and local watch gatherings</li>
-            <li>Sunday Cotters Market in the CBD</li>
-            <li>Community Clean Up Australia Day events</li>
+            <li>Theatre Season Opener: Shakespeare in Love at Townsville Civic Theatre (March 5–7)</li>
+            <li>Willows Sunday Markets (March 8)</li>
+            <li>Autumn mornings arriving — ideal for early walks and trail runs</li>
             <li>Wet-season waterfalls and lush nature conditions — perfect for visiting <Link to="/guides/little-crystal-creek" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
           </ul>
         </section>
@@ -86,92 +86,89 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               Feb 23 – March 1
+               March 2–8
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
             
-            {/* NRL Season Opener */}
-            <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
+            {/* Shakespeare in Love */}
+            <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                    The Big Event
+                  <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
+                    Theatre
                   </Badge>
-                  <Trophy className="w-5 h-5 text-gray-400" />
+                  <Music className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">NRL Season Opener: Cowboys vs Knights (Vegas)</CardTitle>
+                <CardTitle className="text-xl mt-2">Shakespeare in Love — Season Opener</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Sunday, March 1 | 1:15 PM AEST</span>
+                    <span>March 5–7 | Evening Performances</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Local Watch Parties (Leagues Club & North Shore Tavern)</span>
+                    <span>Townsville Civic Theatre</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-2">
                 <p className="text-gray-600 text-sm">
-                  The season kicks off in Las Vegas! Join the local crowd for a midday celebration. Head to the <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Cowboys Game Day Guide</Link> for tips on attending home games later in the season.
-                </p>
-                <p className="text-xs text-muted-foreground italic">
-                  Check with local venues like the Cowboys Leagues Club for their specific pre-game event start times.
+                  A stunning production by TheatreiNQ to open the 2026 theatre season. This beloved story comes to life on stage — a must-see for culture lovers visiting Townsville this week.
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Cotters Market */}
+              {/* Willows Sunday Markets */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge variant="outline">Markets</Badge>
                     <Info className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Cotters Market</CardTitle>
+                  <CardTitle className="text-lg mt-2">Willows Sunday Markets</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 1 | 8:00 AM – 1:00 PM</span>
+                      <span>Sunday, March 8 | 7:30 AM – 11:30 AM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Flinders Street, CBD</span>
+                      <span>Willows Shopping Centre</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Perfect for a Sunday stroll before the footy starts.
+                    A popular community market with local produce, crafts, and food stalls. Great for a relaxed Sunday morning out.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Clean Up Australia Day */}
+              {/* Wet Season Nature */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge variant="outline">Nature</Badge>
                     <Leaf className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Clean Up Australia Day</CardTitle>
+                  <CardTitle className="text-lg mt-2">Wet Season Waterfalls</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 1 | Various Locations</span>
+                      <span>All Week | Best after rain</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <p className="text-gray-600 text-sm">
-                    Join the local teams at Pallarenda or the Ross River to keep our backyard beautiful. Explore our <Link to="/beaches" className="text-primary font-medium hover:underline">Beaches guide</Link> for more coastal spots nearby.
+                    Peak waterfall flow continues at Crystal Creek and Jourama Falls. Check road conditions before heading out. Browse our <Link to="/nature" className="text-primary font-medium hover:underline">Nature guide</Link> for more spots.
                   </p>
                   <p className="text-sm">
-                    <Link to="/north-shore-townsville" className="text-primary font-medium hover:underline">
-                      Explore quiet walking trails on the North Shore →
+                    <Link to="/guides/little-crystal-creek" className="text-primary font-medium hover:underline">
+                      Explore Little Crystal Creek →
                     </Link>
                   </p>
                 </CardContent>
@@ -230,7 +227,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">Season Starts March 1! First home game vs Titans on March 22.</p>
+                <p className="text-sm text-gray-600">The Cowboys are away this weekend. First home game vs Titans is March 22.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
