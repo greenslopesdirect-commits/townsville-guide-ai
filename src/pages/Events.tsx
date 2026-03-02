@@ -52,9 +52,12 @@ const Events = () => {
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
             <li>Theatre Season Opener: Shakespeare in Love at Townsville Civic Theatre (March 5–7)</li>
+            <li>Balgal Beach Markets (Saturday, March 7)</li>
+            <li>Carlyle Gardens Arts & Crafts Market (Saturday, March 7)</li>
+            <li>Townsville Ville Casino Run (Saturday, March 7)</li>
             <li>Willows Sunday Markets (March 8)</li>
-            <li>Autumn mornings arriving — ideal for early walks and trail runs</li>
-            <li>Wet-season waterfalls and lush nature conditions — perfect for visiting <Link to="/guides/little-crystal-creek" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
+            <li>Townsville RSL Car Boot Sale (Sunday, March 8)</li>
+            <li>Wet-season waterfalls and lush nature conditions — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
           </ul>
         </section>
 
@@ -121,6 +124,84 @@ const Events = () => {
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
+              {/* Balgal Beach Markets */}
+              <Card className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge variant="outline">Markets</Badge>
+                    <Info className="w-5 h-5 text-gray-400" />
+                  </div>
+                  <CardTitle className="text-lg mt-2">Balgal Beach Markets</CardTitle>
+                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>Saturday, March 7 | 8:00 AM – 12:30 PM</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      <span>Balgal Beach</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    A great excuse for a morning drive north. Local produce, crafts, and seaside atmosphere.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Carlyle Gardens Arts & Crafts Market */}
+              <Card className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge variant="outline">Markets</Badge>
+                    <Info className="w-5 h-5 text-gray-400" />
+                  </div>
+                  <CardTitle className="text-lg mt-2">Carlyle Gardens Arts & Crafts Market</CardTitle>
+                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>Saturday, March 7 | 9:00 AM – 12:00 PM</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      <span>Carlyle Gardens, Condon</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Local arts, crafts, and handmade goods in a relaxed retirement village setting.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Townsville Ville Casino Run */}
+              <Card className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge variant="outline">Community</Badge>
+                    <Footprints className="w-5 h-5 text-gray-400" />
+                  </div>
+                  <CardTitle className="text-lg mt-2">Townsville Ville Casino Run</CardTitle>
+                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>Saturday, March 7</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      <span>The Ville Resort-Casino</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    A popular local community run starting at The Ville. Great morning energy and a solid warm-up for the dry season running calendar.
+                  </p>
+                </CardContent>
+              </Card>
+
               {/* Willows Sunday Markets */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
@@ -147,6 +228,32 @@ const Events = () => {
                 </CardContent>
               </Card>
 
+              {/* RSL Car Boot Sale */}
+              <Card className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge variant="outline">Markets</Badge>
+                    <Info className="w-5 h-5 text-gray-400" />
+                  </div>
+                  <CardTitle className="text-lg mt-2">Townsville RSL Car Boot Sale</CardTitle>
+                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>Sunday, March 8 | 7:00 AM – 10:00 AM</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      <span>Townsville RSL, Hyde Park</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Bargain hunters welcome — a community car boot sale at the Townsville RSL. Arrive early for the best finds.
+                  </p>
+                </CardContent>
+              </Card>
+
               {/* Wet Season Nature */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
@@ -167,7 +274,7 @@ const Events = () => {
                     Peak waterfall flow continues at Crystal Creek and Jourama Falls. Check road conditions before heading out. Browse our <Link to="/nature" className="text-primary font-medium hover:underline">Nature guide</Link> for more spots.
                   </p>
                   <p className="text-sm">
-                    <Link to="/guides/little-crystal-creek" className="text-primary font-medium hover:underline">
+                    <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">
                       Explore Little Crystal Creek →
                     </Link>
                   </p>
