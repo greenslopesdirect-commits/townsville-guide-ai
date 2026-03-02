@@ -64,9 +64,9 @@ const QuickAccess = () => {
     },
     {
       icon: Lightbulb,
-      title: "Local Tips",
-      desc: "🌊 March 2026: Stinger nets are ACTIVE. Weather, safety & local tips.",
-      link: "/local-tips",
+      title: "Stinger & Safety Guide",
+      desc: "March 2026 Update: Stinger nets are ACTIVE. View the safety guide.",
+      link: "/guides/stinger-safety",
     },
     {
       icon: Baby,
