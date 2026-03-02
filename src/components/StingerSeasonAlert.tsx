@@ -1,5 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertTriangle, ExternalLink } from "lucide-react";
+import { AlertTriangle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface StingerSeasonAlertProps {
   className?: string;
@@ -19,15 +20,15 @@ const StingerSeasonAlert = ({ className = "" }: StingerSeasonAlertProps) => {
           Always swim within stinger nets or enclosures during marine stinger season. 
           Check with lifesavers for current conditions before entering the water.
         </p>
-        <a 
-          href="https://beachsafe.org.au/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-amber-800 dark:text-amber-300 hover:underline font-medium"
-        >
-          <ExternalLink className="w-4 h-4" />
-          View Official Surf Life Saving Reports
-        </a>
+        <p className="font-semibold">
+          🌊 March 2026 Status: Stinger nets are ACTIVE.{" "}
+          <Link 
+            to="/guides/stinger-safety"
+            className="text-amber-800 dark:text-amber-300 hover:underline"
+          >
+            View the latest Safety Guide →
+          </Link>
+        </p>
       </AlertDescription>
     </Alert>
   );
