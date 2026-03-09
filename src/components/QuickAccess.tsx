@@ -65,7 +65,7 @@ const QuickAccess = () => {
     {
       icon: Lightbulb,
       title: "Stinger & Safety Guide",
-      desc: "March 2026 Update: Stinger nets are ACTIVE. View the safety guide.",
+      desc: "⚠️ March 9 Update: Stinger nets are ACTIVE. Weather Alert: Tropical Low 29U is bringing heavy rain and wind this week—check the Disaster Dashboard before travel.",
       link: "/guides/stinger-safety",
     },
     {

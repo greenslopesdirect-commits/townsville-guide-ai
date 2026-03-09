@@ -113,21 +113,27 @@ const DogFriendly = () => {
         <Alert className="max-w-3xl mx-auto bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800 mb-6 sm:mb-8">
           <Dog className="h-5 w-5 text-amber-600 flex-shrink-0" />
           <AlertDescription className="ml-2">
-            <strong className="text-foreground block sm:inline">☀️ Heat Check:</strong>
+            <strong className="text-foreground block sm:inline">☀️ Heat Check (March 9):</strong>
             <span className="text-muted-foreground sm:ml-2 block sm:inline mt-1 sm:mt-0">
-              Pavements are hitting 50°C+ this week. Check your dog's paws before walking on The Strand! Always touch the ground with your hand first.
+              Humidity is at 81% and the UV is Extreme (11+). Pavements are hitting 50°C+ between the storms. Check your dog's paws before walking on The Strand!
             </span>
           </AlertDescription>
         </Alert>
 
         {/* CTA */}
-        <div className="text-center">
+        <div className="text-center space-y-2">
           <Link to="/dog-friendly">
             <Button variant="default" size="lg" className="group text-sm sm:text-base px-4 sm:px-6">
               View all dog-friendly spots
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </Button>
           </Link>
+          <p className="text-xs text-muted-foreground">
+            Featuring the{" "}
+            <a href="https://www.aussiedogguide.com.au/" target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline">
+              Aussie Dog Guide
+            </a>
+          </p>
         </div>
       </div>
     </section>
