@@ -49,52 +49,52 @@ const CowboysStadiumGuide = () => {
               2026 Season Launch
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-l-4 border-l-green-500">
+              <Card className="border-l-4 border-l-gray-400 bg-gray-50/50">
                 <CardHeader className="pb-2">
-                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none w-fit">
-                    Season Opener
+                  <Badge variant="secondary" className="w-fit">
+                    Recent Result
                   </Badge>
-                  <CardTitle className="text-lg mt-2">Cowboys vs Knights (Vegas)</CardTitle>
+                  <CardTitle className="text-lg mt-2">Round 1: Cowboys vs Knights (Las Vegas)</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Calendar className="w-4 h-4" />
-                    <span>Sunday, March 1 | 1:15 PM AEST</span>
-                  </div>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <MapPin className="w-4 h-4" />
-                    <span>Las Vegas — Watch locally at Leagues Club & North Shore Tavern</span>
-                  </div>
                   <p className="text-sm text-muted-foreground">
-                    The NRL kicks off in Las Vegas! While the boys are overseas, the city comes alive with local watch parties. Get there early for the best seats.
-                  </p>
-                  <p className="text-xs text-muted-foreground italic">
-                    Check with local venues like the Cowboys Leagues Club for their specific pre-game event start times.
+                    A historic start to the season in the States. Check the Cowboys app for full match replays and stats.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-l-4 border-l-primary">
+              <Card className="border-l-4 border-l-primary shadow-sm">
                 <CardHeader className="pb-2">
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                     First Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">Cowboys vs Titans</CardTitle>
+                  <CardTitle className="text-lg mt-2">Round 3: Home Opener - Cowboys vs Titans</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Calendar className="w-4 h-4" />
-                    <span>Sunday, March 22</span>
+                <CardContent className="space-y-4">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Calendar className="w-4 h-4 flex-shrink-0" />
+                      <span>Sunday, March 22, 2026</span>
+                    </div>
+                    <div className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                      <span>
+                        Queensland Country Bank Stadium.<br />
+                        <span className="font-medium text-foreground">Gates Open: 3:45 PM | Kick-off: 5:15 PM</span>
+                      </span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <MapPin className="w-4 h-4" />
-                    <span>Queensland Country Bank Stadium, Townsville</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    The first home game of 2026. Expect a packed stadium, pre-game fireworks, and the full Stampede experience.
-                  </p>
+                  <Button asChild className="w-full sm:w-auto">
+                    <a href="https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825" target="_blank" rel="noopener noreferrer">
+                      Get Tickets on Ticketmaster
+                      <ExternalLink className="w-4 h-4 ml-2" />
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
+            </div>
+            <div className="bg-muted/50 border rounded-lg p-3 text-sm text-center text-muted-foreground mt-4">
+              <strong>Coming Up:</strong> Round 4 - Cowboys vs Storm (Home) | Saturday, March 28, 6:30 PM
             </div>
           </section>
 
