@@ -43,7 +43,7 @@ const beaches = [
     location: "Between Strand & Pallarenda",
     distance: "5 min drive north",
     dogAccess: "On-leash",
-    stingerNet: true,
+    stingerNet: false,
     badge: { label: "Sunset Spot", color: "" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Stinger Net", "Quiet"],
@@ -213,19 +213,24 @@ const Beaches = () => {
                 Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville.
               </p>
             </div>
-            <Button asChild className="w-full sm:w-auto flex-shrink-0">
-              <Link to="/dog-friendly">
-                View Dog Beach Guide
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
-            </Button>
+            <div className="flex flex-col gap-2 w-full sm:w-auto flex-shrink-0">
+              <Button asChild className="w-full">
+                <Link to="/dog-friendly">
+                  View Dog Beach Guide
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
+            </div>
+            <p className="text-xs text-muted-foreground mt-2 sm:mt-0 w-full">
+              Heading out? Use the <span className="font-medium text-foreground">Aussie Dog Guide</span>—Australia's comprehensive resource for safe training and travel. It includes essential tropical safety checklists (Cane Toads, Marine Stingers & Heat Protection) for anyone exploring the North.
+            </p>
           </CardContent>
         </Card>
 
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-          🌊 March 2026 Status: Stinger nets are ACTIVE.{" "}
+        🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Note: A Strong Wind Warning is currently in place for the Townsville Coast with a high chance of showers—check conditions before swimming.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
@@ -295,6 +300,7 @@ const Beaches = () => {
         {/* Northern Beaches Section */}
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-foreground">Northern Beaches & Hidden Gems</h2>
+          <p className="text-sm text-muted-foreground">Looking for the best beaches north of Townsville? These local favorites offer the best off-leash walking and quiet escapes away from the city crowd.</p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {northernBeaches.map((beach) => (
               <Card key={beach.name} className="hover:shadow-lg transition-shadow flex flex-col">
@@ -368,14 +374,14 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">🌊 March 2026 Status: Stinger nets are ACTIVE. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 9): High tide was at 6:31 AM; Low tide is at 3:46 PM. Perfect for a late afternoon walk at Saunders Beach or the Northern Beaches where the sand flats will be exposed.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
