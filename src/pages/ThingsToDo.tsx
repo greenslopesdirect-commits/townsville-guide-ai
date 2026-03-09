@@ -566,6 +566,72 @@ const ThingsToDo = () => {
               </div>
             </section>
 
+            {/* Easter & School Holiday Guide 2026 */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Calendar className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Easter & School Holiday Guide 2026</h2>
+                  <p className="text-muted-foreground text-sm">Key dates, events & booking tips for the Easter break</p>
+                </div>
+              </div>
+
+              {/* Key Dates */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                <div className="p-4 rounded-2xl bg-primary/5 border-2 border-primary/20 text-center">
+                  <p className="text-xs font-bold text-primary uppercase tracking-wider">Term 1 Ends</p>
+                  <p className="text-lg font-bold text-foreground mt-1">Thursday, April 2</p>
+                </div>
+                <div className="p-4 rounded-2xl bg-primary/5 border-2 border-primary/20 text-center">
+                  <p className="text-xs font-bold text-primary uppercase tracking-wider">Easter Long Weekend</p>
+                  <p className="text-lg font-bold text-foreground mt-1">April 3–6</p>
+                </div>
+                <div className="p-4 rounded-2xl bg-primary/5 border-2 border-primary/20 text-center">
+                  <p className="text-xs font-bold text-primary uppercase tracking-wider">School Holidays</p>
+                  <p className="text-lg font-bold text-foreground mt-1">April 3–19</p>
+                </div>
+              </div>
+
+              {/* Holiday Highlights */}
+              <div className="grid gap-4 md:grid-cols-2 mb-8">
+                <div className="p-5 rounded-2xl bg-card border-2 border-border/40">
+                  <span className="text-2xl mb-2 block">🏃</span>
+                  <h3 className="font-semibold text-foreground mb-1">Elliot's Revenge Trail Run</h3>
+                  <p className="text-sm text-muted-foreground">Saturday, April 11 — Elliot Springs</p>
+                  <p className="text-sm text-muted-foreground mt-2">A classic North Queensland adventure trail run.</p>
+                </div>
+                <div className="p-5 rounded-2xl bg-card border-2 border-border/40">
+                  <span className="text-2xl mb-2 block">🎵</span>
+                  <h3 className="font-semibold text-foreground mb-1">Kings of Country Rock</h3>
+                  <p className="text-sm text-muted-foreground">Friday, April 10 — Townsville Civic Theatre</p>
+                  <p className="text-sm text-muted-foreground mt-2">A two-hour stage spectacular celebrating country rock.</p>
+                </div>
+                <div className="p-5 rounded-2xl bg-card border-2 border-border/40">
+                  <span className="text-2xl mb-2 block">🐾</span>
+                  <h3 className="font-semibold text-foreground mb-1">Billabong Sanctuary — Easter Bilbies</h3>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Spot the 'Easter Bilbies' and join school holiday wildlife programs. <Link to="/billabong-sanctuary" className="text-primary font-medium hover:underline">View guide →</Link>
+                  </p>
+                </div>
+                <div className="p-5 rounded-2xl bg-card border-2 border-border/40">
+                  <span className="text-2xl mb-2 block">🚢</span>
+                  <h3 className="font-semibold text-foreground mb-1">Great Barrier Reef & Magnetic Island</h3>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Boats fill up weeks in advance for Easter. <Link to="/guides/magnetic-island-day-trip" className="text-primary font-medium hover:underline">Plan your day trip →</Link>
+                  </p>
+                </div>
+              </div>
+
+              {/* Local Tip */}
+              <LocalInsightCard title="Easter Camping Tip" variant="tip">
+                <p>
+                  If you're planning a camping trip to Saunders Beach or Rollingstone for the long weekend, Council bookings open early — get in now to secure a spot!
+                </p>
+              </LocalInsightCard>
+            </section>
+
             {/* FAQ Section */}
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">

@@ -408,6 +408,94 @@ const Events = () => {
            </div>
         </section>
 
+        {/* Easter & School Holiday Guide 2026 */}
+        <section className="pt-8 border-t">
+          <div className="flex items-center gap-2 mb-2">
+            <Calendar className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl font-bold text-gray-900">Easter & School Holiday Guide 2026</h2>
+          </div>
+          <p className="text-gray-600 mb-6">Plan ahead for the busiest travel period in North Queensland. Key dates, events, and booking tips for the Easter break.</p>
+
+          {/* Key Dates */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+            <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider">Term 1 Ends</p>
+              <p className="text-lg font-bold text-gray-900 mt-1">Thursday, April 2</p>
+            </div>
+            <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider">Easter Long Weekend</p>
+              <p className="text-lg font-bold text-gray-900 mt-1">April 3–6</p>
+            </div>
+            <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider">School Holidays</p>
+              <p className="text-lg font-bold text-gray-900 mt-1">April 3–19</p>
+            </div>
+          </div>
+
+          {/* Holiday Highlights */}
+          <h3 className="font-bold text-lg text-gray-800 mb-4">Holiday Highlights</h3>
+          <div className="grid gap-4 md:grid-cols-2 mb-6">
+            <Card className="border-l-4 border-l-green-500">
+              <CardContent className="p-4">
+                <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none mb-2">Adventure</Badge>
+                <h4 className="font-semibold text-gray-900">Elliot's Revenge Trail Run</h4>
+                <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                  <Calendar className="w-4 h-4" /> Saturday, April 11
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-500">
+                  <MapPin className="w-4 h-4" /> Elliot Springs
+                </div>
+                <p className="text-sm text-gray-600 mt-2">A classic North Queensland adventure trail run at Elliot Springs.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-l-4 border-l-purple-500">
+              <CardContent className="p-4">
+                <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none mb-2">Theatre</Badge>
+                <h4 className="font-semibold text-gray-900">Kings of Country Rock</h4>
+                <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
+                  <Calendar className="w-4 h-4" /> Friday, April 10
+                </div>
+                <div className="flex items-center gap-2 text-sm text-gray-500">
+                  <MapPin className="w-4 h-4" /> Townsville Civic Theatre
+                </div>
+                <p className="text-sm text-gray-600 mt-2">A two-hour stage spectacular celebrating the best of country rock.</p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-4">
+                <Badge variant="outline" className="mb-2">Wildlife</Badge>
+                <h4 className="font-semibold text-gray-900">Billabong Sanctuary — Easter Bilbies</h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  Spot the 'Easter Bilbies' and join their school holiday wildlife programs. A fantastic outing for families. <Link to="/billabong-sanctuary" className="text-primary font-medium hover:underline">View guide →</Link>
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-4">
+                <Badge variant="outline" className="mb-2">Book Early</Badge>
+                <h4 className="font-semibold text-gray-900">Great Barrier Reef & Magnetic Island Trips</h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  Boats to the reef and <Link to="/guides/magnetic-island-day-trip" className="text-primary font-medium hover:underline">Magnetic Island</Link> fill up weeks in advance for the Easter break. Book now to secure your spot.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Local Tip */}
+          <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start">
+            <Footprints className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
+            <div>
+              <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
+              <p className="text-amber-800 text-sm mt-1">
+                If you're planning a camping trip to Saunders Beach or Rollingstone for the long weekend, Council bookings open early — get in now to secure a spot!
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section className="pt-8 border-t">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked About Townsville Events</h2>
