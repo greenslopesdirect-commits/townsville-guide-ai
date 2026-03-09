@@ -1,4 +1,5 @@
 import React from "react";
+import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import LocalInsightCard from "@/components/LocalInsightCard";
@@ -36,6 +37,12 @@ const MagneticIslandDayTrip = () => {
   ];
 
   return (
+    <>
+      <SEOHead
+        title="The Ultimate Magnetic Island Day Trip Itinerary (2026 Tips)"
+        description="Plan your perfect Magnetic Island day trip from Townsville. Local tips on ferries, koala walks, snorkelling spots, and the best beaches — updated for 2026."
+        canonical="https://www.myaussieguide.com.au/guides/magnetic-island-day-trip"
+      />
     <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <h1 className="text-4xl font-bold mb-4 text-center">Magnetic Island Family Day Trip</h1>
       
@@ -68,6 +75,39 @@ const MagneticIslandDayTrip = () => {
               <span>Short on time? You can skip The Forts Walk and still enjoy the island</span>
             </li>
           </ul>
+        </div>
+      </section>
+
+      {/* Top 3 Things to Do Today */}
+      <section className="mb-8">
+        <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-xl p-6">
+          <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4 flex items-center gap-2">
+            <Sun className="w-6 h-6 text-amber-500" />
+            Top 3 Things to Do Today
+          </h2>
+          <ol className="space-y-3 text-muted-foreground ml-2">
+            <li className="flex items-start gap-3">
+              <span className="font-bold text-amber-600 dark:text-amber-400 text-lg">1.</span>
+              <div>
+                <span className="font-semibold text-foreground">Forts Walk for Koalas</span>
+                <p className="text-sm mt-0.5">The best spot on the island for wild koala sightings. Early morning is ideal — look for scratch marks on trees and follow the local markers.</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-bold text-amber-600 dark:text-amber-400 text-lg">2.</span>
+              <div>
+                <span className="font-semibold text-foreground">Snorkelling at Geoffrey Bay</span>
+                <p className="text-sm mt-0.5">Stunning coral right off the beach. Stinger suits required during stinger season (November–May). Check conditions before heading in.</p>
+              </div>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="font-bold text-amber-600 dark:text-amber-400 text-lg">3.</span>
+              <div>
+                <span className="font-semibold text-foreground">Sunset at Horseshoe Bay</span>
+                <p className="text-sm mt-0.5">End your day at the island's largest bay. Grab fish and chips, settle in on the sand, and watch the sky light up over the Coral Sea.</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -306,6 +346,7 @@ const MagneticIslandDayTrip = () => {
         </Accordion>
       </section>
     </div>
+    </>
   );
 };
 
