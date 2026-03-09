@@ -322,6 +322,27 @@ const FoodDrink = () => {
               </div>
             </section>
 
+            {/* Where to Catch a Beat */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Music className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Where to Catch a Beat</h2>
+                  <p className="text-muted-foreground text-sm">Townsville's live music quick-list</p>
+                </div>
+              </div>
+              <div className="p-6 rounded-2xl bg-card border-2 border-border/40 space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Looking for the best <strong className="text-foreground">Sunday Session</strong>? Head to the <strong className="text-foreground">Seaview Hotel</strong> or <strong className="text-foreground">Longboard Bar & Grill</strong>. Want a late-night band? <strong className="text-foreground">The Mansfield</strong> is your best bet. For sophisticated jazz or acoustic vibes, keep an eye on the <strong className="text-foreground">Palmer Street</strong> dining precinct.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Browse the <Link to="/events" className="text-primary font-medium hover:underline">Events Calendar</Link> for this week's live music listings.
+                </p>
+              </div>
+            </section>
+
           </div>
         </main>
       </div>
