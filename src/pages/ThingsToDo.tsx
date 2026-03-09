@@ -678,7 +678,20 @@ const ThingsToDo = () => {
                 ))}
               </div>
 
-              {/* Local Tip */}
+              {/* Explore More + Local Tip */}
+              <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <Link to="/beaches">
+                  <Button variant="outline" className="gap-2">
+                    Explore More Beaches <ArrowLeft className="w-4 h-4 rotate-180" />
+                  </Button>
+                </Link>
+                <Link to="/guides/free-things">
+                  <Button variant="outline" className="gap-2">
+                    5 Free Things Guide <ArrowLeft className="w-4 h-4 rotate-180" />
+                  </Button>
+                </Link>
+              </div>
+
               <div className="mt-6">
                 <LocalInsightCard title="April Photography Tip" variant="tip">
                   <p>
