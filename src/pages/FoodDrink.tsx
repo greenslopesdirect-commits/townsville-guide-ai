@@ -154,8 +154,8 @@ const FoodDrink = () => {
   return (
     <>
       <SEOHead
-        title="Best Food & Restaurants in Townsville - Local Dining Guide"
-        description="Discover the best restaurants, cafés and dining spots in Townsville. From waterfront dining on The Strand to modern Australian cuisine, find where locals eat."
+        title="Best Restaurants in Townsville 2026: Where Locals Eat & Drink"
+        description="Discover Townsville's best coffee, award-winning Palmer Street dining, and hidden waterfront gems. Updated March 2026 with local tips on opening hours and must-visit markets."
         canonical="https://www.myaussieguide.com.au/food"
       />
       <Helmet>
