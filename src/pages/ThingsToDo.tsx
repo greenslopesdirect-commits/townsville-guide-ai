@@ -624,6 +624,10 @@ const ThingsToDo = () => {
                 </div>
               </div>
 
+              <p className="text-sm text-muted-foreground mb-6">
+                Heading to the coast? Browse our <Link to="/beaches" className="text-primary font-medium hover:underline">Beaches Guide</Link> for the best spots. Catching a game? Check the <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Cowboys Game Day Guide</Link> for stadium tips.
+              </p>
+
               {/* Local Tip */}
               <LocalInsightCard title="Easter Camping Tip" variant="tip">
                 <p>
@@ -674,7 +678,20 @@ const ThingsToDo = () => {
                 ))}
               </div>
 
-              {/* Local Tip */}
+              {/* Explore More + Local Tip */}
+              <div className="mt-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <Link to="/beaches">
+                  <Button variant="outline" className="gap-2">
+                    Explore More Beaches <ArrowLeft className="w-4 h-4 rotate-180" />
+                  </Button>
+                </Link>
+                <Link to="/guides/free-things">
+                  <Button variant="outline" className="gap-2">
+                    5 Free Things Guide <ArrowLeft className="w-4 h-4 rotate-180" />
+                  </Button>
+                </Link>
+              </div>
+
               <div className="mt-6">
                 <LocalInsightCard title="April Photography Tip" variant="tip">
                   <p>
