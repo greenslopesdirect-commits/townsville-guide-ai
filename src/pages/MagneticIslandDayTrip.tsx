@@ -37,6 +37,12 @@ const MagneticIslandDayTrip = () => {
   ];
 
   return (
+    <>
+      <SEOHead
+        title="The Ultimate Magnetic Island Day Trip Itinerary (2026 Tips)"
+        description="Plan your perfect Magnetic Island day trip from Townsville. Local tips on ferries, koala walks, snorkelling spots, and the best beaches — updated for 2026."
+        canonical="https://www.myaussieguide.com.au/guides/magnetic-island-day-trip"
+      />
     <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <h1 className="text-4xl font-bold mb-4 text-center">Magnetic Island Family Day Trip</h1>
       
