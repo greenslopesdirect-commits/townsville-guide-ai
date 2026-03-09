@@ -203,25 +203,25 @@ const Beaches = () => {
 
         {/* Dog-Friendly Guide Card */}
         <Card className="border-2 border-primary/20 bg-primary/5">
-          <CardContent className="p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <div className="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
-              <Dog className="w-6 h-6" />
-            </div>
-            <div className="flex-1 min-w-0">
-              <h2 className="text-lg font-semibold text-foreground mb-1">Dog-Friendly Beaches Guide</h2>
-              <p className="text-sm text-muted-foreground">
-                Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville.
-              </p>
-            </div>
-            <div className="flex flex-col gap-2 w-full sm:w-auto flex-shrink-0">
-              <Button asChild className="w-full">
+          <CardContent className="p-5 sm:p-6 space-y-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div className="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
+                <Dog className="w-6 h-6" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h2 className="text-lg font-semibold text-foreground mb-1">Dog-Friendly Beaches Guide</h2>
+                <p className="text-sm text-muted-foreground">
+                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville.
+                </p>
+              </div>
+              <Button asChild className="w-full sm:w-auto flex-shrink-0">
                 <Link to="/dog-friendly">
                   View Dog Beach Guide
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
             </div>
-            <p className="text-xs text-muted-foreground mt-2 sm:mt-0 w-full">
+            <p className="text-xs text-muted-foreground">
               Heading out? Use the <span className="font-medium text-foreground">Aussie Dog Guide</span>—Australia's comprehensive resource for safe training and travel. It includes essential tropical safety checklists (Cane Toads, Marine Stingers & Heat Protection) for anyone exploring the North.
             </p>
           </CardContent>
