@@ -217,15 +217,21 @@ const FoodDrink = () => {
               ))}
             </div>
 
-            {/* Must-Visit & Sunday Warning */}
-            <LocalInsightCard title="Must-Visit & Warning" variant="tip" className="mb-12">
+            {/* Must-Visit & Monday/Sunday Warning */}
+            <LocalInsightCard title="Must-Visit & Opening Hours" variant="tip" className="mb-12">
               <p>
                 <strong>Must-Visit:</strong> If you consider yourself a foodie, you cannot miss <strong>Otto's Market</strong>. 
-                It's the culinary soul of the city.
+                It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                ⚠️ <strong>The Sunday Warning:</strong> Townsville takes its weekends seriously! Many of our best boutique cafes 
-                and CBD restaurants close by 1pm (or don't open at all) on Sundays. Check Google Maps before you trek.
+                ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving.
+              </p>
+            </LocalInsightCard>
+
+            {/* Coffee Culture */}
+            <LocalInsightCard title="☕ Coffee Culture" variant="insight" className="mb-12">
+              <p>
+                Looking for specialty beans? <strong>The Quarters</strong> and <strong>Pedlar Project</strong> are currently serving the best Melbourne-style roasts in the North.
               </p>
             </LocalInsightCard>
 
