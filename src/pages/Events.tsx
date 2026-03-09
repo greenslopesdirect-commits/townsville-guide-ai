@@ -21,8 +21,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
-            Updated: March 9, 2026
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-03-09">
+            <time dateTime="2026-03-09">Updated: March 9, 2026</time>
           </span>
         </div>
       </div>
