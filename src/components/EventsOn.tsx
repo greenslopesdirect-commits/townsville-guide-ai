@@ -77,22 +77,22 @@ const EventsOn = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
             
-            {/* Market 1 */}
+        {/* Market 1 */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Sunday
+                            Saturday
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Willows Sunday Markets</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Sunday, March 8</p>
+                    <h4 className="text-lg font-bold mb-2">Elliot Springs Markets</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, March 14</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Willows Shopping Centre
+                        <MapPin className="w-4 h-4" /> Elliot Springs
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> 7:30 AM – 11:30 AM
+                        <Clock className="w-4 h-4" /> 8:00 AM – 12:00 PM
                     </div>
                 </CardContent>
             </Card>
@@ -102,17 +102,17 @@ const EventsOn = () => {
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Thu–Sat
+                            Tuesday
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Shakespeare in Love</h4>
-                    <p className="text-xs text-primary font-medium mb-1">March 5–7</p>
+                    <h4 className="text-lg font-bold mb-2">Where is the Green Sheep?</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Tuesday, March 10</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> Townsville Civic Theatre
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> Season Opener
+                        <Clock className="w-4 h-4" /> Family Theatre
                     </div>
                 </CardContent>
             </Card>
