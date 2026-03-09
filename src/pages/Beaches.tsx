@@ -222,7 +222,7 @@ const Beaches = () => {
               </Button>
             </div>
             <p className="text-xs text-muted-foreground">
-              Heading out? Use the <span className="font-medium text-foreground">Aussie Dog Guide</span>—Australia's comprehensive resource for safe training and travel. It includes essential tropical safety checklists (Cane Toads, Marine Stingers & Heat Protection) for anyone exploring the North.
+              Heading out? Use the <span className="font-medium text-foreground">Aussie Dog Guide</span>—Australia's comprehensive resource for safe training and travel. It includes essential tropical safety checklists (Cane Toads, Marine Stingers & Heat Protection) for those exploring the North.
             </p>
           </CardContent>
         </Card>
