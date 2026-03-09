@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, UtensilsCrossed, Fish, Coffee, Wine, MapPin } from "lucide-react";
+import { ArrowLeft, UtensilsCrossed, Fish, Coffee, Wine, MapPin, Music } from "lucide-react";
 import ListingCard from "@/components/ListingCard";
 
 import LocalInsightCard from "@/components/LocalInsightCard";
@@ -49,14 +49,14 @@ const FoodDrink = () => {
     },
     {
       title: "Longboard Bar & Grill",
-      description: "Laid-back beachfront dining right on The Strand with burgers, pizzas, cocktails and live music. Perfect for sunset drinks.",
+      description: "Laid-back beachfront dining right on The Strand with burgers, pizzas, cocktails and live music. Best for Sunday Sessions and acoustic Friday nights.",
       image: longboardImage,
-      tags: ["Casual", "Waterfront", "Bar"],
+      tags: ["Casual", "Waterfront", "Bar", "🎸 Live Music"],
       features: [
         "Direct beachfront location",
         "Burgers and pizzas",
-        "Live music some evenings",
-        "Great sunset views"
+        "Live acoustic music Fridays",
+        "Great sunset views & Sunday Sessions"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Longboard+Bar+Grill+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Longboard Bar & Grill.",
@@ -108,12 +108,12 @@ const FoodDrink = () => {
     },
     {
       title: "Watermark Restaurant",
-      description: "Stylish Strand restaurant with seafood platters, steaks and modern Australian dishes. Popular for Sunday lunch.",
-      tags: ["Fine Dining", "Waterfront", "Seafood"],
+      description: "Stylish Strand restaurant with seafood platters, steaks and modern Australian dishes. Check for local soloists on weekends.",
+      tags: ["Fine Dining", "Waterfront", "Seafood", "🎸 Live Music"],
       features: [
         "The Strand location",
         "Seafood platters",
-        "Indoor and outdoor",
+        "Live soloists on weekends",
         "Great for groups"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Watermark+Restaurant+Townsville",
@@ -122,13 +122,13 @@ const FoodDrink = () => {
     },
     {
       title: "Rambutan Rooftop Bar",
-      description: "Rooftop dining in the CBD with wood-fired pizzas, cocktails and views of the stadium and Castle Hill. Great pre-game spot.",
-      tags: ["Bar", "Casual", "Rooftop"],
+      description: "Rooftop dining in the CBD with wood-fired pizzas, cocktails and views of the stadium and Castle Hill. Vibey weekend atmosphere with rooftop views.",
+      tags: ["Bar", "Casual", "Rooftop", "🎧 DJ Sets"],
       features: [
         "Rooftop location",
         "Wood-fired pizza",
         "Castle Hill views",
-        "Pre-game favourite"
+        "Weekend DJ sets"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Rambutan+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Rambutan Rooftop Bar.",
@@ -147,6 +147,48 @@ const FoodDrink = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Hoi+Polloi+Cafe+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Hoi Polloi Café.",
       subtitle: "Specialty Brunch"
+    },
+    {
+      title: "The Commonwealth Hotel",
+      description: "A classic South Townsville local known for live bands and a great beer garden atmosphere.",
+      tags: ["Pub", "🎸 Live Music", "Historic"],
+      features: [
+        "South Townsville location",
+        "Live bands regularly",
+        "Classic beer garden",
+        "Local favourite"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Commonwealth+Hotel+South+Townsville",
+      aiPrompt: "Tell me about the vibe and live music at The Commonwealth Hotel.",
+      subtitle: "Live Music Pub"
+    },
+    {
+      title: "The Mansfield",
+      description: "The heart of Townsville's live music scene. From local rock bands to touring acts, this is the place for late-night entertainment.",
+      tags: ["Live Bands", "Nightlife", "Pub"],
+      features: [
+        "CBD location",
+        "Live bands most weekends",
+        "Touring acts venue",
+        "Late-night entertainment"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Mansfield+Townsville",
+      aiPrompt: "Tell me about the live music scene at The Mansfield.",
+      subtitle: "Live Music Venue"
+    },
+    {
+      title: "Seaview Hotel",
+      description: "An iconic spot on The Strand. Great for a beer and live music overlooking the ocean on Sunday afternoons.",
+      tags: ["Waterfront", "🎸 Live Music", "Classic Pub"],
+      features: [
+        "The Strand location",
+        "Sunday afternoon live music",
+        "Ocean views",
+        "Classic pub atmosphere"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Seaview+Hotel+The+Strand+Townsville",
+      aiPrompt: "Tell me about the vibe and live music at the Seaview Hotel.",
+      subtitle: "Iconic Strand Pub"
     }
   ];
 
@@ -277,6 +319,27 @@ const FoodDrink = () => {
                   <h3 className="font-semibold text-foreground mb-2">Magnetic Island</h3>
                   <p className="text-muted-foreground text-sm">Island cafés, beach bars, and relaxed dining.</p>
                 </div>
+              </div>
+            </section>
+
+            {/* Where to Catch a Beat */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Music className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Where to Catch a Beat</h2>
+                  <p className="text-muted-foreground text-sm">Townsville's live music quick-list</p>
+                </div>
+              </div>
+              <div className="p-6 rounded-2xl bg-card border-2 border-border/40 space-y-4">
+                <p className="text-muted-foreground leading-relaxed">
+                  Looking for the best <strong className="text-foreground">Sunday Session</strong>? Head to the <strong className="text-foreground">Seaview Hotel</strong> or <strong className="text-foreground">Longboard Bar & Grill</strong>. Want a late-night band? <strong className="text-foreground">The Mansfield</strong> is your best bet. For sophisticated jazz or acoustic vibes, keep an eye on the <strong className="text-foreground">Palmer Street</strong> dining precinct.
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Browse the <Link to="/events" className="text-primary font-medium hover:underline">Events Calendar</Link> for this week's live music listings.
+                </p>
               </div>
             </section>
 
