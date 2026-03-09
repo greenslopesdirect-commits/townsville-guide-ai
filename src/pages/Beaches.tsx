@@ -43,7 +43,7 @@ const beaches = [
     location: "Between Strand & Pallarenda",
     distance: "5 min drive north",
     dogAccess: "On-leash",
-    stingerNet: true,
+    stingerNet: false,
     badge: { label: "Sunset Spot", color: "" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Stinger Net", "Quiet"],
