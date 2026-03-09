@@ -129,8 +129,30 @@ const EventsOn = () => {
         </div>
 
         {/* Jezzine Highlight */}
+        {/* Mundingburra Markets — Sunday card */}
+        <div className="mt-6">
+          <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200 max-w-sm">
+            <CardContent className="p-6">
+              <div className="flex justify-between items-start mb-4">
+                <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
+                  Sunday
+                </div>
+                <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+              </div>
+              <h4 className="text-lg font-bold mb-2">Mundingburra Markets</h4>
+              <p className="text-xs text-primary font-medium mb-1">Sunday, March 15</p>
+              <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                <MapPin className="w-4 h-4" /> Mundingburra
+              </div>
+              <div className="flex items-center gap-2 text-sm text-slate-500">
+                <Clock className="w-4 h-4" /> 7:00 AM – 12:00 PM
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
         <p className="text-center text-sm text-slate-600 mt-6">
-          🌅 <strong>Highlight:</strong> The Cowboys are away this week vs the Knights. Next home game vs Titans is March 22. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Read the Game Day Guide →</Link>
+          🌅 <strong>Highlight:</strong> The Cowboys face the Titans at home on Sunday, March 22. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Read the Game Day Guide →</Link>
         </p>
 
         {/* Mobile View All Button */}
