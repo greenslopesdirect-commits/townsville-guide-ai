@@ -632,6 +632,58 @@ const ThingsToDo = () => {
               </LocalInsightCard>
             </section>
 
+            {/* Top 10 Free Things to Do These School Holidays */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Sun className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do These School Holidays (April 2026)</h2>
+                  <p className="text-muted-foreground text-sm">Keep the family entertained without spending a cent</p>
+                </div>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-2">
+                {[
+                  { num: "1", title: "The Strand Water Park", desc: "A local holiday staple. Open daily (check the Council site for any maintenance closures).", link: "/the-strand", linkText: "Strand Guide →" },
+                  { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families during the humid April break." },
+                  { num: "3", title: "Castle Hill Goat Track", desc: "Challenge the kids to a sunrise hike for the best 360-degree views of the city.", link: "/castle-hill", linkText: "Castle Hill Guide →" },
+                  { num: "4", title: "Jezzine Barracks Coastal Walk", desc: "Explore the public art, military history, and the scenic boardwalk toward Rowes Bay.", link: "/jezzine-barracks", linkText: "Jezzine Guide →" },
+                  { num: "5", title: "Townsville Bulletin Square Water Feature", desc: "A great (and free) way to cool down right in the heart of the CBD." },
+                  { num: "6", title: "Anderson Park Botanical Gardens", desc: "Perfect for a shaded holiday picnic or letting the kids explore the world-class tropical plant collection." },
+                  { num: "7", title: "Pallarenda Beach Beachcombing", desc: "Head to the northern end for a quieter beach day and low-tide exploration.", link: "/pallarenda-beach", linkText: "Pallarenda Guide →" },
+                  { num: "8", title: "Townsville City Libraries", desc: "Check the 'School Holiday Program' for free workshops, LEGO clubs, and storytime sessions." },
+                  { num: "9", title: "Ross River Parkway", desc: "Miles of shared paths for a family bike ride or a sunset walk near the weirs." },
+                  { num: "10", title: "Cotters Market (Sunday Mornings)", desc: "While the stalls cost money, the atmosphere, live music, and street performance are free to enjoy in Flinders Street." },
+                ].map((item) => (
+                  <div key={item.num} className="p-5 rounded-2xl bg-card border-2 border-border/40 hover:border-primary/30 transition-colors flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex items-center justify-center">
+                      {item.num}
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground">{item.title}</h3>
+                      <p className="text-sm text-muted-foreground mt-1">{item.desc}</p>
+                      {item.link && (
+                        <Link to={item.link} className="text-primary text-sm font-medium hover:underline mt-1 inline-block">
+                          {item.linkText}
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Local Tip */}
+              <div className="mt-6">
+                <LocalInsightCard title="April Photography Tip" variant="tip">
+                  <p>
+                    April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. Perfect for outdoor photography!
+                  </p>
+                </LocalInsightCard>
+              </div>
+            </section>
+
             {/* FAQ Section */}
             <section className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
