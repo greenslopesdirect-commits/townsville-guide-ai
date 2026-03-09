@@ -147,6 +147,48 @@ const FoodDrink = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Hoi+Polloi+Cafe+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Hoi Polloi Café.",
       subtitle: "Specialty Brunch"
+    },
+    {
+      title: "The Commonwealth Hotel",
+      description: "A classic South Townsville local known for live bands and a great beer garden atmosphere.",
+      tags: ["Pub", "🎸 Live Music", "Historic"],
+      features: [
+        "South Townsville location",
+        "Live bands regularly",
+        "Classic beer garden",
+        "Local favourite"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Commonwealth+Hotel+South+Townsville",
+      aiPrompt: "Tell me about the vibe and live music at The Commonwealth Hotel.",
+      subtitle: "Live Music Pub"
+    },
+    {
+      title: "The Mansfield",
+      description: "The heart of Townsville's live music scene. From local rock bands to touring acts, this is the place for late-night entertainment.",
+      tags: ["Live Bands", "Nightlife", "Pub"],
+      features: [
+        "CBD location",
+        "Live bands most weekends",
+        "Touring acts venue",
+        "Late-night entertainment"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Mansfield+Townsville",
+      aiPrompt: "Tell me about the live music scene at The Mansfield.",
+      subtitle: "Live Music Venue"
+    },
+    {
+      title: "Seaview Hotel",
+      description: "An iconic spot on The Strand. Great for a beer and live music overlooking the ocean on Sunday afternoons.",
+      tags: ["Waterfront", "🎸 Live Music", "Classic Pub"],
+      features: [
+        "The Strand location",
+        "Sunday afternoon live music",
+        "Ocean views",
+        "Classic pub atmosphere"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Seaview+Hotel+The+Strand+Townsville",
+      aiPrompt: "Tell me about the vibe and live music at the Seaview Hotel.",
+      subtitle: "Iconic Strand Pub"
     }
   ];
 
