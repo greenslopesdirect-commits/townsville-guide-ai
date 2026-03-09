@@ -22,7 +22,7 @@ const Events = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
-            Updated: March 2, 2026
+            Updated: March 9, 2026
           </span>
         </div>
       </div>
@@ -32,13 +32,13 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville This Week (March 2–8, 2026)
+             What's On in Townsville This Week (March 9–15, 2026)
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-             Early March in Townsville brings the start of autumn market mornings and the opening of the local theatre season. Plan your outdoor activities early while the tropical warmth lingers.
+             Mid-March in Townsville brings live music, family theatre, and bustling weekend markets. The Cowboys' home season continues as autumn settles in — perfect weather for outdoor events.
            </p>
         </div>
 
@@ -51,14 +51,11 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Theatre Season Opener: Shakespeare in Love at Townsville Civic Theatre (March 5–7)</li>
-            <li>Balgal Beach Markets (Saturday, March 7)</li>
-            <li>Carlyle Gardens Arts & Crafts Market (Saturday, March 7)</li>
-            <li>Townsville Ville Casino Run (Saturday, March 7)</li>
-            <li>Poison Oak 'Melt' Single Launch (Saturday, March 7)</li>
-            <li>Willows Sunday Markets (March 8)</li>
-            <li>Townsville Jazz Club (Sunday, March 8)</li>
-            <li>Townsville RSL Car Boot Sale (Sunday, March 8)</li>
+            <li>Family Theatre: 'Where is the Green Sheep?' at Townsville Civic Theatre (Tuesday, March 10)</li>
+            <li>Live Music: Josh Cohen: Radiohead for Solo Piano II at the Civic Theatre (Friday, March 13)</li>
+            <li>Markets: Elliot Springs Markets (Saturday, March 14 | 8 AM - 12 PM)</li>
+            <li>Markets: Mundingburra Markets (Sunday, March 15 | 7 AM - 12 PM)</li>
+            <li>Community: Sound in Motion – Drum Circle at Jezzine Barracks (Sunday, March 15)</li>
             <li>Wet-season waterfalls and lush nature conditions — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
           </ul>
         </section>
@@ -91,13 +88,13 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               March 2–8
+               March 9–15
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
             
-            {/* Shakespeare in Love */}
+            {/* Where is the Green Sheep? — Family Theatre */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
@@ -106,11 +103,11 @@ const Events = () => {
                   </Badge>
                   <Music className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Shakespeare in Love — Season Opener</CardTitle>
+                <CardTitle className="text-xl mt-2">Where is the Green Sheep?</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>March 5–7 | Evening Performances</span>
+                    <span>Tuesday, March 10</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -120,190 +117,114 @@ const Events = () => {
               </CardHeader>
               <CardContent className="space-y-2">
                 <p className="text-gray-600 text-sm">
-                  A stunning production by TheatreiNQ to open the 2026 theatre season. This beloved story comes to life on stage — a must-see for culture lovers visiting Townsville this week.
+                  A delightful family theatre production based on the beloved children's book. Perfect for a midweek treat with the kids.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Josh Cohen: Radiohead for Solo Piano II */}
+            <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
+                    Live Music
+                  </Badge>
+                  <Music className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">Josh Cohen: Radiohead for Solo Piano II</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Friday, March 13</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Townsville Civic Theatre</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-2">
+                <p className="text-gray-600 text-sm">
+                  A stunning solo piano interpretation of Radiohead's iconic catalogue. An intimate evening for music lovers at the Civic Theatre.
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Balgal Beach Markets */}
+              {/* Elliot Springs Markets */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge variant="outline">Markets</Badge>
                     <Info className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Balgal Beach Markets</CardTitle>
+                  <CardTitle className="text-lg mt-2">Elliot Springs Markets</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Saturday, March 7 | 8:00 AM – 12:30 PM</span>
+                      <span>Saturday, March 14 | 8:00 AM – 12:00 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Balgal Beach</span>
+                      <span>Elliot Springs</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    A great excuse for a morning drive north. Local produce, crafts, and seaside atmosphere.
+                    A popular Saturday morning market with local produce, crafts, and community atmosphere.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Carlyle Gardens Arts & Crafts Market */}
+              {/* Mundingburra Markets */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge variant="outline">Markets</Badge>
                     <Info className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Carlyle Gardens Arts & Crafts Market</CardTitle>
+                  <CardTitle className="text-lg mt-2">Mundingburra Markets</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Saturday, March 7 | 9:00 AM – 12:00 PM</span>
+                      <span>Sunday, March 15 | 7:00 AM – 12:00 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Carlyle Gardens, Condon</span>
+                      <span>Mundingburra</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Local arts, crafts, and handmade goods in a relaxed retirement village setting.
+                    Start your Sunday morning with this community favorite. Great for local finds and a relaxed browse.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Townsville Ville Casino Run */}
+              {/* Sound in Motion - Drum Circle */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge variant="outline">Community</Badge>
-                    <Footprints className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Townsville Ville Casino Run</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Saturday, March 7</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>The Ville Resort-Casino</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    A popular local community run starting at The Ville. Great morning energy and a solid warm-up for the dry season running calendar.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Willows Sunday Markets */}
-              <Card className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge variant="outline">Markets</Badge>
-                    <Info className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Willows Sunday Markets</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 8 | 7:30 AM – 11:30 AM</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>Willows Shopping Centre</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    A popular community market with local produce, crafts, and food stalls. Great for a relaxed Sunday morning out.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* RSL Car Boot Sale */}
-              <Card className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge variant="outline">Markets</Badge>
-                    <Info className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Townsville RSL Car Boot Sale</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 8 | 7:00 AM – 10:00 AM</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>Townsville RSL, Hyde Park</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    Bargain hunters welcome — a community car boot sale at the Townsville RSL. Arrive early for the best finds.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Poison Oak Single Launch */}
-              <Card className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge variant="outline">Live Music</Badge>
                     <Music className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Poison Oak — 'Melt' Single Launch</CardTitle>
+                  <CardTitle className="text-lg mt-2">Sound in Motion – Drum Circle</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Saturday, March 7 | 7:00 PM</span>
+                      <span>Sunday, March 15</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Otherwise Bar</span>
+                      <span>Jezzine Barracks</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Support Townsville's local music scene. A night of live original music to celebrate the launch of Poison Oak's new single.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Townsville Jazz Club */}
-              <Card className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge variant="outline">Live Music</Badge>
-                    <Music className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Townsville Jazz Club</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 8 | 5:00 PM – 8:00 PM</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>The Metropole Hotel</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    Relaxed live jazz and food specials. A perfect Sunday evening wind-down in one of Townsville's heritage venues.
+                    Join the community drum circle at one of Townsville's most beautiful heritage sites. All skill levels welcome.
                   </p>
                 </CardContent>
               </Card>
@@ -388,7 +309,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">The Cowboys are away this weekend. First home game vs Titans is March 22.</p>
+                <p className="text-sm text-gray-600">The Cowboys face the Titans at home on March 22.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
