@@ -624,6 +624,10 @@ const ThingsToDo = () => {
                 </div>
               </div>
 
+              <p className="text-sm text-muted-foreground mb-6">
+                Heading to the coast? Browse our <Link to="/beaches" className="text-primary font-medium hover:underline">Beaches Guide</Link> for the best spots. Catching a game? Check the <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Cowboys Game Day Guide</Link> for stadium tips.
+              </p>
+
               {/* Local Tip */}
               <LocalInsightCard title="Easter Camping Tip" variant="tip">
                 <p>
