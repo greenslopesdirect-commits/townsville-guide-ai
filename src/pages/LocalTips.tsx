@@ -19,7 +19,8 @@ const LocalTips = () => {
       tips: [
         "Dry season: Best for hiking, beaches, outdoor events",
         "Wet season: Fewer crowds, cheaper accommodation",
-        "Shoulder months (April–May, Sept–Oct) are ideal"
+        "Shoulder months (April–May, Sept–Oct) are ideal",
+        "Check Today's Weather Forecast: March 9 Update — High humidity (81%) and a high chance of rain today. If the storms roll in, it's a perfect day for indoor attractions like Reef HQ or the Museum of Tropical Queensland."
       ],
       aiPrompt: "What's the best time of year to visit Townsville based on weather and activities?"
     },
