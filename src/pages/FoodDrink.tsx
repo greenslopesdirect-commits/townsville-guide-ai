@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, UtensilsCrossed, Fish, Coffee, Wine, MapPin } from "lucide-react";
+import { ArrowLeft, UtensilsCrossed, Fish, Coffee, Wine, MapPin, Music } from "lucide-react";
 import ListingCard from "@/components/ListingCard";
 
 import LocalInsightCard from "@/components/LocalInsightCard";
