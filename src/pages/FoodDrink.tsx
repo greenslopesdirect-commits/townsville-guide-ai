@@ -337,9 +337,31 @@ const FoodDrink = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   Looking for the best <strong className="text-foreground">Sunday Session</strong>? Head to the <strong className="text-foreground">Seaview Hotel</strong> or <strong className="text-foreground">Longboard Bar & Grill</strong>. Want a late-night band? <strong className="text-foreground">The Mansfield</strong> is your best bet. For sophisticated jazz or acoustic vibes, keep an eye on the <strong className="text-foreground">Palmer Street</strong> dining precinct.
                 </p>
-                <p className="text-sm text-muted-foreground">
-                  Browse the <Link to="/events" className="text-primary font-medium hover:underline">Events Calendar</Link> for this week's live music listings.
-                </p>
+
+                <h3 className="font-semibold text-foreground pt-2">Top Live Music Venues</h3>
+                <div className="space-y-3">
+                  {[
+                    { name: "The Mansfield", area: "CBD", desc: "The home of live bands in Townsville. Perfect for late-night rock and local touring acts." },
+                    { name: "Seaview Hotel", area: "The Strand", desc: "Famous for Sunday Sessions overlooking Cleveland Bay. Usually features acoustic soloists and duos." },
+                    { name: "Longboard Bar & Grill", area: "The Strand", desc: "Best for 'Beats on the Beach' vibes with DJs and acoustic sets during sunset." },
+                    { name: "The Commonwealth Hotel", area: "South Townsville", desc: "A classic local pub with a great beer garden that hosts live local talent on weekends." },
+                    { name: "Tiny Mountain Brewery", area: "CBD", desc: "Great for a relaxed afternoon with local craft beer and live acoustic music." },
+                  ].map((venue) => (
+                    <div key={venue.name} className="flex gap-3 items-start p-3 rounded-xl bg-background/50">
+                      <Music className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                      <div>
+                        <p className="text-sm font-semibold text-foreground">{venue.name} <span className="font-normal text-muted-foreground">({venue.area})</span></p>
+                        <p className="text-sm text-muted-foreground">{venue.desc}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4 mt-2">
+                  <p className="text-sm text-amber-800 dark:text-amber-300">
+                    <strong>Local Tip:</strong> Most live music in the Ville kicks off from 4:00 PM on Fridays and 2:00 PM for Sunday Sessions.
+                  </p>
+                </div>
               </div>
             </section>
 
