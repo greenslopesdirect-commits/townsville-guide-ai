@@ -49,14 +49,14 @@ const FoodDrink = () => {
     },
     {
       title: "Longboard Bar & Grill",
-      description: "Laid-back beachfront dining right on The Strand with burgers, pizzas, cocktails and live music. Perfect for sunset drinks.",
+      description: "Laid-back beachfront dining right on The Strand with burgers, pizzas, cocktails and live music. Best for Sunday Sessions and acoustic Friday nights.",
       image: longboardImage,
-      tags: ["Casual", "Waterfront", "Bar"],
+      tags: ["Casual", "Waterfront", "Bar", "🎸 Live Music"],
       features: [
         "Direct beachfront location",
         "Burgers and pizzas",
-        "Live music some evenings",
-        "Great sunset views"
+        "Live acoustic music Fridays",
+        "Great sunset views & Sunday Sessions"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Longboard+Bar+Grill+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Longboard Bar & Grill.",
