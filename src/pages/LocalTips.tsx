@@ -26,7 +26,7 @@ const LocalTips = () => {
     {
       title: "Staying Safe in the Heat",
       icon: <ThermometerSun className="w-6 h-6" />,
-      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity.",
+      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. March 9 Alert: The UV index is forecast to reach Extreme (11+) today despite the cloud cover. Sun protection is recommended between 8:20 AM and 4:10 PM.",
       tips: [
         "Walk Castle Hill at sunrise or sunset only",
         "Carry at least 1L water per person",
