@@ -225,7 +225,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-          🌊 March 2026 Status: Stinger nets are ACTIVE.{" "}
+        🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Note: A Strong Wind Warning is currently in place for the Townsville Coast with a high chance of showers—check conditions before swimming.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
