@@ -13,7 +13,7 @@ import saltImage from "@/assets/a-touch-of-salt-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
 import cactusImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import juliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
-import cookingImage from "@/assets/coo-king-bbq-hotpot-restaurant-townsville.webp";
+
 
 const FoodDrink = () => {
   const restaurants = [
