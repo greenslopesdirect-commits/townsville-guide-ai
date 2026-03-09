@@ -213,12 +213,17 @@ const Beaches = () => {
                 Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville.
               </p>
             </div>
-            <Button asChild className="w-full sm:w-auto flex-shrink-0">
-              <Link to="/dog-friendly">
-                View Dog Beach Guide
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
-            </Button>
+            <div className="flex flex-col gap-2 w-full sm:w-auto flex-shrink-0">
+              <Button asChild className="w-full">
+                <Link to="/dog-friendly">
+                  View Dog Beach Guide
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
+            </div>
+            <p className="text-xs text-muted-foreground mt-2 sm:mt-0 w-full">
+              Heading out? Use the <span className="font-medium text-foreground">Aussie Dog Guide</span>—Australia's comprehensive resource for safe training and travel. It includes essential tropical safety checklists (Cane Toads, Marine Stingers & Heat Protection) for anyone exploring the North.
+            </p>
           </CardContent>
         </Card>
 
