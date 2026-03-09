@@ -121,13 +121,19 @@ const DogFriendly = () => {
         </Alert>
 
         {/* CTA */}
-        <div className="text-center">
+        <div className="text-center space-y-2">
           <Link to="/dog-friendly">
             <Button variant="default" size="lg" className="group text-sm sm:text-base px-4 sm:px-6">
               View all dog-friendly spots
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform flex-shrink-0" />
             </Button>
           </Link>
+          <p className="text-xs text-muted-foreground">
+            Featuring the{" "}
+            <a href="https://www.aussiedogguide.com.au/" target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline">
+              Aussie Dog Guide
+            </a>
+          </p>
         </div>
       </div>
     </section>
