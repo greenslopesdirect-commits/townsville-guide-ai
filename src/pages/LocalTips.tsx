@@ -123,8 +123,8 @@ const LocalTips = () => {
   return (
     <>
       <SEOHead
-        title="Local Tips for Visiting Townsville - Insider Travel Guide"
-        description="Essential local tips for visiting Townsville. Learn about weather patterns, stinger safety, getting around, dog-friendly spots and the best time to visit North Queensland."
+        title="Local Tips for Townsville: 2026 Insider Travel & Safety Guide"
+        description="Essential local advice for Townsville: Stinger safety, heat protection, best times for Castle Hill, and dog-friendly secrets. Updated March 2026."
         canonical="https://www.myaussieguide.com.au/local-tips"
       />
       <Helmet>
