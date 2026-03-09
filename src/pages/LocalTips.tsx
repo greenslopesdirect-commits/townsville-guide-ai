@@ -187,8 +187,13 @@ const LocalTips = () => {
               ))}
             </div>
 
-            {/* Safety Alerts */}
+            {/* Safety Alerts & Current Status */}
             <div className="space-y-4 mb-8">
+              <div className="p-4 rounded-lg border bg-card">
+                <p className="text-sm text-muted-foreground">
+                  🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Note: A Heavy Thunderstorm and Strong Wind Warning are currently in place for the Townsville Coast today—please check local conditions before heading outdoors.
+                </p>
+              </div>
               <StingerSeasonAlert />
               <HeatSafetyAlert />
             </div>
