@@ -122,13 +122,13 @@ const FoodDrink = () => {
     },
     {
       title: "Rambutan Rooftop Bar",
-      description: "Rooftop dining in the CBD with wood-fired pizzas, cocktails and views of the stadium and Castle Hill. Great pre-game spot.",
-      tags: ["Bar", "Casual", "Rooftop"],
+      description: "Rooftop dining in the CBD with wood-fired pizzas, cocktails and views of the stadium and Castle Hill. Vibey weekend atmosphere with rooftop views.",
+      tags: ["Bar", "Casual", "Rooftop", "🎧 DJ Sets"],
       features: [
         "Rooftop location",
         "Wood-fired pizza",
         "Castle Hill views",
-        "Pre-game favourite"
+        "Weekend DJ sets"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Rambutan+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Rambutan Rooftop Bar.",
