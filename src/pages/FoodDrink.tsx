@@ -329,23 +329,22 @@ const FoodDrink = () => {
                   <Music className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Where to Catch a Beat</h2>
-                  <p className="text-muted-foreground text-sm">Townsville's live music quick-list</p>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Where to Catch a Beat: Townsville's Best Live Music</h2>
                 </div>
               </div>
               <div className="p-6 rounded-2xl bg-card border-2 border-border/40 space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Looking for the best <strong className="text-foreground">Sunday Session</strong>? Head to the <strong className="text-foreground">Seaview Hotel</strong> or <strong className="text-foreground">Longboard Bar & Grill</strong>. Want a late-night band? <strong className="text-foreground">The Mansfield</strong> is your best bet. For sophisticated jazz or acoustic vibes, keep an eye on the <strong className="text-foreground">Palmer Street</strong> dining precinct.
+                  From sunset acoustic sessions on The Strand to late-night rock in the CBD, here is where to find the best local vibes:
                 </p>
 
-                <h3 className="font-semibold text-foreground pt-2">Top Live Music Venues</h3>
                 <div className="space-y-3">
                   {[
-                    { name: "The Mansfield", area: "CBD", desc: "The home of live bands in Townsville. Perfect for late-night rock and local touring acts." },
-                    { name: "Seaview Hotel", area: "The Strand", desc: "Famous for Sunday Sessions overlooking Cleveland Bay. Usually features acoustic soloists and duos." },
-                    { name: "Longboard Bar & Grill", area: "The Strand", desc: "Best for 'Beats on the Beach' vibes with DJs and acoustic sets during sunset." },
-                    { name: "The Commonwealth Hotel", area: "South Townsville", desc: "A classic local pub with a great beer garden that hosts live local talent on weekends." },
-                    { name: "Tiny Mountain Brewery", area: "CBD", desc: "Great for a relaxed afternoon with local craft beer and live acoustic music." },
+                    { name: "The Seaview Hotel", area: "The Strand", desc: "The iconic home of Sunday Sessions overlooking Cleveland Bay. Usually features acoustic soloists and duos starting at 2:00 PM." },
+                    { name: "The Mansfield", area: "CBD", desc: "Townsville's legendary venue for live bands. Perfect for late-night rock and touring acts." },
+                    { name: "Longboard Bar & Grill", area: "The Strand", desc: "Best for 'Beats on the Beach' with DJs and acoustic sets during the golden hour." },
+                    { name: "The Commonwealth Hotel", area: "South Townsville", desc: "A classic local pub with a massive beer garden hosting live local talent on weekends." },
+                    { name: "Tiny Mountain Brewery", area: "CBD", desc: "Relaxed afternoon vibes with local craft beer and acoustic sets." },
+                    { name: "Palmer Street Precinct", area: "Riverside", desc: "The place for sophisticated jazz or acoustic soloists while you dine." },
                   ].map((venue) => (
                     <div key={venue.name} className="flex gap-3 items-start p-3 rounded-xl bg-background/50">
                       <Music className="w-4 h-4 text-primary mt-0.5 shrink-0" />
@@ -359,7 +358,7 @@ const FoodDrink = () => {
 
                 <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4 mt-2">
                   <p className="text-sm text-amber-800 dark:text-amber-300">
-                    <strong>Local Tip:</strong> Most live music in the Ville kicks off from 4:00 PM on Fridays and 2:00 PM for Sunday Sessions.
+                    <strong>Local Tip:</strong> Most live music in the Ville kicks off from 4:00 PM on Fridays and 2:00 PM for Sunday Sessions. Check the venue socials for this week's specific lineup.
                   </p>
                 </div>
               </div>
