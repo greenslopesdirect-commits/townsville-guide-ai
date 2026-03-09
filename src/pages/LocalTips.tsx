@@ -3,7 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Lightbulb, Sun, Waves, Car, Dog, CloudRain, MapPin, ThermometerSun, Shield, Calendar } from "lucide-react";
+import { ArrowLeft, Lightbulb, Sun, Waves, Car, Dog, CloudRain, MapPin, ThermometerSun, Shield, Calendar, AlertTriangle } from "lucide-react";
 import { triggerAiGuide, AI_PRESETS } from "@/utils/aiGuide";
 
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
@@ -199,6 +199,35 @@ const LocalTips = () => {
               <StingerSeasonAlert />
               <HeatSafetyAlert />
             </div>
+
+            {/* Local Infrastructure Alert */}
+            <section className="mb-8 space-y-3">
+              <div className="flex items-center gap-2 mb-2">
+                <AlertTriangle className="w-5 h-5 text-amber-500" />
+                <h2 className="text-lg font-bold text-foreground">Local Infrastructure Alerts</h2>
+              </div>
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-destructive/5 border border-destructive/20">
+                <AlertTriangle className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-sm text-foreground">Magnetic Island — Sooning Street Bridge CLOSED</p>
+                  <p className="text-xs text-muted-foreground mt-1">The Sooning Street Bridge in Nelly Bay is currently CLOSED. Use the detour via Kelly St and Mandalay Ave to access the island's north side.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
+                <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-sm text-foreground">Jezzine Boardwalk — Refurbishment Works</p>
+                  <p className="text-xs text-muted-foreground mt-1">Refurbishment works are ongoing in North Ward. The boardwalk remains open, but expect minor noise during maintenance hours.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
+                <Calendar className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-sm text-foreground">Easter Planning</p>
+                  <p className="text-xs text-muted-foreground mt-1">Term 1 ends April 2. Now is the time to book for the Easter Long Weekend (April 3–6) as popular spots are filling fast.</p>
+                </div>
+              </div>
+            </section>
 
             {/* Transport & Timing Insight */}
             <LocalInsightCard title="Transport & Timing" variant="tip" className="mb-12">
