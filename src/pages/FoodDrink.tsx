@@ -93,19 +93,18 @@ const FoodDrink = () => {
       subtitle: "Gelato & Coffee"
     },
     {
-      title: "Coo.King BBQ & Hotpot",
-      description: "All-you-can-eat Korean BBQ and hotpot experience. Cook your own meats and veggies at the table — great for groups.",
-      image: cookingImage,
-      tags: ["Casual", "All You Can Eat", "Asian"],
+      title: "Copper Bar & Grill",
+      description: "The newest addition to Palmer Street. Perfect for sophisticated sips and locally sourced seasonal plates in a modern contemporary setting.",
+      tags: ["Palmer Street", "New", "Cocktails"],
       features: [
-        "Korean BBQ experience",
-        "Hotpot options",
-        "Great for groups",
-        "Unlimited food"
+        "Modern contemporary vibe",
+        "Locally sourced seasonal menu",
+        "Craft cocktails",
+        "Palmer Street location"
       ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Coo+King+BBQ+Hotpot+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at Coo.King BBQ & Hotpot.",
-      subtitle: "Korean BBQ & Hotpot"
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Copper+Bar+Grill+Palmer+Street+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at Copper Bar & Grill.",
+      subtitle: "Modern Contemporary"
     },
     {
       title: "Watermark Restaurant",
