@@ -67,7 +67,8 @@ const LocalTips = () => {
         "Check signage for off-leash zones",
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
-        "Many cafés provide water bowls"
+        "Many cafés provide water bowls",
+        "Low tide today (March 9) is at 3:46 PM — ideal for an afternoon run on the sand flats at Pallarenda or Saunders Beach once the storms clear"
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
