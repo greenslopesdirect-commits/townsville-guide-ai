@@ -113,8 +113,8 @@ const Accommodation = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Accommodation Guide - Hotels, Resorts & Holiday Parks"
-        description="Find the best places to stay in Townsville. From beachfront hotels and luxury resorts to serviced apartments and family-friendly holiday parks."
+        title="Where to Stay in Townsville: Best Hotels & Resorts 2026"
+        description="Compare the best Townsville accommodation, from luxury hotels on The Strand to family-friendly resorts and pet-friendly stays. Updated for March 2026."
         canonical="https://www.myaussieguide.com.au/accommodation"
       />
       <Helmet>

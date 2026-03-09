@@ -46,8 +46,8 @@ const beaches = [
     stingerNet: false,
     badge: { label: "Sunset Spot", color: "" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
-    tags: ["Stinger Net", "Quiet"],
-    description: "Quieter than the Strand. Excellent for sunset walks and fish & chips. Has a stinger net but verify tide levels (it gets shallow).",
+    tags: ["Quiet", "Sunset Views"],
+    description: "Quieter than the Strand. Excellent for sunset walks and fish & chips. Verify tide levels before heading out (it gets very shallow at low tide).",
     guideLink: "/rowes-bay",
     guideLinkText: "View Rowes Bay Guide",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Townsville",
@@ -222,7 +222,7 @@ const Beaches = () => {
               </Button>
             </div>
             <p className="text-xs text-muted-foreground">
-              Heading out? Use the <span className="font-medium text-foreground">Aussie Dog Guide</span>—Australia's comprehensive resource for safe training and travel. It includes essential tropical safety checklists (Cane Toads, Marine Stingers & Heat Protection) for anyone exploring the North.
+              Heading out? Use the <span className="font-medium text-foreground">Aussie Dog Guide</span>—Australia's comprehensive resource for safe training and travel. It includes essential tropical safety checklists (Cane Toads, Marine Stingers & Heat Protection) for those exploring the North.
             </p>
           </CardContent>
         </Card>
@@ -230,7 +230,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-        🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Note: A Strong Wind Warning is currently in place for the Townsville Coast with a high chance of showers—check conditions before swimming.{" "}
+        🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Note: A Strong Wind Warning is currently in place for the Townsville Coast with a high chance of showers today.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
@@ -381,7 +381,7 @@ const Beaches = () => {
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 9): High tide was at 6:31 AM; Low tide is at 3:46 PM. Perfect for a late afternoon walk at Saunders Beach or the Northern Beaches where the sand flats will be exposed.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 9): Low tide is at 3:46 PM. This is the best time for a walk at Saunders Beach or Toolakea to see the sand flats.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
