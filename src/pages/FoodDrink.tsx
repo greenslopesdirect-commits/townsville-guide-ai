@@ -13,7 +13,7 @@ import saltImage from "@/assets/a-touch-of-salt-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
 import cactusImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import juliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
-import cookingImage from "@/assets/coo-king-bbq-hotpot-restaurant-townsville.webp";
+
 
 const FoodDrink = () => {
   const restaurants = [
@@ -93,19 +93,18 @@ const FoodDrink = () => {
       subtitle: "Gelato & Coffee"
     },
     {
-      title: "Coo.King BBQ & Hotpot",
-      description: "All-you-can-eat Korean BBQ and hotpot experience. Cook your own meats and veggies at the table — great for groups.",
-      image: cookingImage,
-      tags: ["Casual", "All You Can Eat", "Asian"],
+      title: "Copper Bar & Grill",
+      description: "The newest addition to Palmer Street. Perfect for sophisticated sips and locally sourced seasonal plates in a modern contemporary setting.",
+      tags: ["Palmer Street", "New", "Cocktails"],
       features: [
-        "Korean BBQ experience",
-        "Hotpot options",
-        "Great for groups",
-        "Unlimited food"
+        "Modern contemporary vibe",
+        "Locally sourced seasonal menu",
+        "Craft cocktails",
+        "Palmer Street location"
       ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Coo+King+BBQ+Hotpot+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at Coo.King BBQ & Hotpot.",
-      subtitle: "Korean BBQ & Hotpot"
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Copper+Bar+Grill+Palmer+Street+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at Copper Bar & Grill.",
+      subtitle: "Modern Contemporary"
     },
     {
       title: "Watermark Restaurant",
@@ -154,8 +153,8 @@ const FoodDrink = () => {
   return (
     <>
       <SEOHead
-        title="Best Food & Restaurants in Townsville - Local Dining Guide"
-        description="Discover the best restaurants, cafés and dining spots in Townsville. From waterfront dining on The Strand to modern Australian cuisine, find where locals eat."
+        title="Best Restaurants in Townsville 2026: Where Locals Eat & Drink"
+        description="Discover Townsville's best coffee, award-winning Palmer Street dining, and hidden waterfront gems. Updated March 2026 with local tips on opening hours and must-visit markets."
         canonical="https://www.myaussieguide.com.au/food"
       />
       <Helmet>
@@ -217,15 +216,21 @@ const FoodDrink = () => {
               ))}
             </div>
 
-            {/* Must-Visit & Sunday Warning */}
-            <LocalInsightCard title="Must-Visit & Warning" variant="tip" className="mb-12">
+            {/* Must-Visit & Monday/Sunday Warning */}
+            <LocalInsightCard title="Must-Visit & Opening Hours" variant="tip" className="mb-12">
               <p>
                 <strong>Must-Visit:</strong> If you consider yourself a foodie, you cannot miss <strong>Otto's Market</strong>. 
-                It's the culinary soul of the city.
+                It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                ⚠️ <strong>The Sunday Warning:</strong> Townsville takes its weekends seriously! Many of our best boutique cafes 
-                and CBD restaurants close by 1pm (or don't open at all) on Sundays. Check Google Maps before you trek.
+                ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving.
+              </p>
+            </LocalInsightCard>
+
+            {/* Coffee Culture */}
+            <LocalInsightCard title="☕ Coffee Culture" variant="insight" className="mb-12">
+              <p>
+                Looking for specialty beans? <strong>The Quarters</strong> and <strong>Pedlar Project</strong> are currently serving the best Melbourne-style roasts in the North.
               </p>
             </LocalInsightCard>
 
