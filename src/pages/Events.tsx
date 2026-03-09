@@ -51,14 +51,11 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Theatre Season Opener: Shakespeare in Love at Townsville Civic Theatre (March 5–7)</li>
-            <li>Balgal Beach Markets (Saturday, March 7)</li>
-            <li>Carlyle Gardens Arts & Crafts Market (Saturday, March 7)</li>
-            <li>Townsville Ville Casino Run (Saturday, March 7)</li>
-            <li>Poison Oak 'Melt' Single Launch (Saturday, March 7)</li>
-            <li>Willows Sunday Markets (March 8)</li>
-            <li>Townsville Jazz Club (Sunday, March 8)</li>
-            <li>Townsville RSL Car Boot Sale (Sunday, March 8)</li>
+            <li>Family Theatre: 'Where is the Green Sheep?' at Townsville Civic Theatre (Tuesday, March 10)</li>
+            <li>Live Music: Josh Cohen: Radiohead for Solo Piano II at the Civic Theatre (Friday, March 13)</li>
+            <li>Markets: Elliot Springs Markets (Saturday, March 14 | 8 AM - 12 PM)</li>
+            <li>Markets: Mundingburra Markets (Sunday, March 15 | 7 AM - 12 PM)</li>
+            <li>Community: Sound in Motion – Drum Circle at Jezzine Barracks (Sunday, March 15)</li>
             <li>Wet-season waterfalls and lush nature conditions — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
           </ul>
         </section>
