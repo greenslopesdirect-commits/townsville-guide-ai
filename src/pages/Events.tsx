@@ -309,7 +309,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">The Cowboys are away this weekend. First home game vs Titans is March 22.</p>
+                <p className="text-sm text-gray-600">The Cowboys face the Titans at home on March 22.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
