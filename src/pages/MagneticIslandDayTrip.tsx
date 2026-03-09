@@ -346,6 +346,7 @@ const MagneticIslandDayTrip = () => {
         </Accordion>
       </section>
     </div>
+    </>
   );
 };
 
