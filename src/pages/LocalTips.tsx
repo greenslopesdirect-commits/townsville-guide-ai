@@ -19,14 +19,15 @@ const LocalTips = () => {
       tips: [
         "Dry season: Best for hiking, beaches, outdoor events",
         "Wet season: Fewer crowds, cheaper accommodation",
-        "Shoulder months (April–May, Sept–Oct) are ideal"
+        "Shoulder months (April–May, Sept–Oct) are ideal",
+        "Check Today's Weather Forecast: March 9 Update — High humidity (81%) and a high chance of rain today. If the storms roll in, it's a perfect day for indoor attractions like Reef HQ or the Museum of Tropical Queensland."
       ],
       aiPrompt: "What's the best time of year to visit Townsville based on weather and activities?"
     },
     {
       title: "Staying Safe in the Heat",
       icon: <ThermometerSun className="w-6 h-6" />,
-      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity.",
+      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. March 9 Alert: The UV index is forecast to reach Extreme (11+) today despite the cloud cover. Sun protection is recommended between 8:20 AM and 4:10 PM.",
       tips: [
         "Walk Castle Hill at sunrise or sunset only",
         "Carry at least 1L water per person",
@@ -67,7 +68,8 @@ const LocalTips = () => {
         "Check signage for off-leash zones",
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
-        "Many cafés provide water bowls"
+        "Many cafés provide water bowls",
+        "Low tide today (March 9) is at 3:46 PM — ideal for an afternoon run on the sand flats at Pallarenda or Saunders Beach once the storms clear"
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
@@ -123,8 +125,8 @@ const LocalTips = () => {
   return (
     <>
       <SEOHead
-        title="Local Tips for Visiting Townsville - Insider Travel Guide"
-        description="Essential local tips for visiting Townsville. Learn about weather patterns, stinger safety, getting around, dog-friendly spots and the best time to visit North Queensland."
+        title="Local Tips for Townsville: 2026 Insider Travel & Safety Guide"
+        description="Essential local advice for Townsville: Stinger safety, heat protection, best times for Castle Hill, and dog-friendly secrets. Updated March 2026."
         canonical="https://www.myaussieguide.com.au/local-tips"
       />
       <Helmet>
@@ -187,8 +189,13 @@ const LocalTips = () => {
               ))}
             </div>
 
-            {/* Safety Alerts */}
+            {/* Safety Alerts & Current Status */}
             <div className="space-y-4 mb-8">
+              <div className="p-4 rounded-lg border bg-card">
+                <p className="text-sm text-muted-foreground">
+                  🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Note: A Heavy Thunderstorm and Strong Wind Warning are currently in place for the Townsville Coast today—please check local conditions before heading outdoors.
+                </p>
+              </div>
               <StingerSeasonAlert />
               <HeatSafetyAlert />
             </div>
