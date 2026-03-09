@@ -108,12 +108,12 @@ const FoodDrink = () => {
     },
     {
       title: "Watermark Restaurant",
-      description: "Stylish Strand restaurant with seafood platters, steaks and modern Australian dishes. Popular for Sunday lunch.",
-      tags: ["Fine Dining", "Waterfront", "Seafood"],
+      description: "Stylish Strand restaurant with seafood platters, steaks and modern Australian dishes. Check for local soloists on weekends.",
+      tags: ["Fine Dining", "Waterfront", "Seafood", "🎸 Live Music"],
       features: [
         "The Strand location",
         "Seafood platters",
-        "Indoor and outdoor",
+        "Live soloists on weekends",
         "Great for groups"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Watermark+Restaurant+Townsville",
