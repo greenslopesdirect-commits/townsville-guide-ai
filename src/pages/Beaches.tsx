@@ -356,6 +356,139 @@ const Beaches = () => {
           </div>
         </section>
 
+        {/* Secret Beaches Section */}
+        <section className="space-y-4">
+          <h2 className="text-2xl font-bold text-foreground">Townsville's Secret Beaches</h2>
+          <p className="text-sm text-muted-foreground">These hidden gems are known mostly to locals. They're off the beaten path and worth the effort to find.</p>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* Secret Beach */}
+            <Card className="hover:shadow-lg transition-shadow flex flex-col">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-emerald-100 text-emerald-800 hover:bg-emerald-100">Off-Leash</Badge>
+                  <Dog className="w-5 h-5 text-muted-foreground" />
+                </div>
+                <CardTitle className="text-xl mt-2">Secret Beach</CardTitle>
+                <div className="space-y-1 text-sm text-muted-foreground mt-1">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 flex-shrink-0" />
+                    <span>South Townsville (Benwell Rd)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Dog className="w-4 h-4 flex-shrink-0" />
+                    <span>Off-leash free-run area</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 flex-shrink-0" />
+                    <span>No stinger net</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4 flex-1 flex flex-col">
+                <div className="flex gap-2 flex-wrap">
+                  <Badge variant="outline" className="text-xs">Dog Friendly</Badge>
+                  <Badge variant="outline" className="text-xs">Hidden Gem</Badge>
+                </div>
+                <p className="text-muted-foreground text-sm">Tucked away at the end of Benwell Road, this is a local favorite for dog owners. It is an official off-leash free-run beach spanning about 520m of foreshore.</p>
+                <p className="text-xs text-muted-foreground italic">💡 Best visited at low tide to give your dog plenty of room to run on the sand flats.</p>
+                <div className="p-3 rounded-lg bg-destructive/5 border border-destructive/20">
+                  <p className="text-xs font-medium text-destructive">🐊 Crocodile Caution: Near the mouth of the Ross River. Keep a close eye on your pets near the water's edge.</p>
+                </div>
+                <div className="mt-auto pt-2">
+                  <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Secret+Beach+South+Townsville" target="_blank" rel="noopener noreferrer" aria-label="View Secret Beach on Google Maps">
+                      <MapPin className="w-4 h-4" />
+                      View on Google Maps
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Shelly Beach */}
+            <Card className="hover:shadow-lg transition-shadow flex flex-col">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge variant="outline">Secluded</Badge>
+                  <Sun className="w-5 h-5 text-muted-foreground" />
+                </div>
+                <CardTitle className="text-xl mt-2">Shelly Beach</CardTitle>
+                <div className="space-y-1 text-sm text-muted-foreground mt-1">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 flex-shrink-0" />
+                    <span>Northern tip of Pallarenda</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Dog className="w-4 h-4 flex-shrink-0" />
+                    <span>No dogs (Conservation Park)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 flex-shrink-0" />
+                    <span>No stinger net</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4 flex-1 flex flex-col">
+                <div className="flex gap-2 flex-wrap">
+                  <Badge variant="outline" className="text-xs">Hike Access</Badge>
+                  <Badge variant="outline" className="text-xs">Pristine</Badge>
+                </div>
+                <p className="text-muted-foreground text-sm">A secluded, pristine stretch of sand at the northern tip of Pallarenda. Reachable via a hike or mountain bike through the Town Common.</p>
+                <p className="text-xs text-muted-foreground italic">💡 Dogs are not allowed in the Cape Pallarenda Conservation Park trails leading to the beach, so this one is for the humans only.</p>
+                <div className="mt-auto pt-2">
+                  <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Shelly+Beach+Pallarenda+Townsville" target="_blank" rel="noopener noreferrer" aria-label="View Shelly Beach on Google Maps">
+                      <MapPin className="w-4 h-4" />
+                      View on Google Maps
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Radical Bay */}
+            <Card className="hover:shadow-lg transition-shadow flex flex-col">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge variant="outline">Day Trip</Badge>
+                  <Anchor className="w-5 h-5 text-muted-foreground" />
+                </div>
+                <CardTitle className="text-xl mt-2">Radical Bay</CardTitle>
+                <div className="space-y-1 text-sm text-muted-foreground mt-1">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4 flex-shrink-0" />
+                    <span>Magnetic Island (hike from Horseshoe Bay)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Dog className="w-4 h-4 flex-shrink-0" />
+                    <span>On-leash only</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 flex-shrink-0" />
+                    <span>No stinger net</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4 flex-1 flex flex-col">
+                <div className="flex gap-2 flex-wrap">
+                  <Badge variant="outline" className="text-xs">Hike Access</Badge>
+                  <Badge variant="outline" className="text-xs">Paradise</Badge>
+                </div>
+                <p className="text-muted-foreground text-sm">A secluded paradise on 'Maggie' accessible via a hike from Horseshoe Bay.</p>
+                <p className="text-xs text-muted-foreground italic">💡 Dogs are welcome on Magnetic Island but must be on-leash in these bay areas to protect local rock wallabies.</p>
+                <div className="mt-auto pt-2">
+                  <Button asChild variant="outline" size="sm" className="w-full gap-2">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Radical+Bay+Magnetic+Island" target="_blank" rel="noopener noreferrer" aria-label="View Radical Bay on Google Maps">
+                      <MapPin className="w-4 h-4" />
+                      View on Google Maps
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Beach Safety Section */}
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-foreground">Beach Safety in Townsville</h2>
