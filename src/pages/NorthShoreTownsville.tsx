@@ -290,9 +290,7 @@ const NorthShoreTownsville = () => {
                   <h3 className="font-semibold text-foreground text-lg">Game Day on the North Shore</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Watching the Cowboys? The North Shore Tavern is the best local spot for 
-                  away-game watch parties. Cold beers, big screens, and a crowd that knows 
-                  every player by name.
+                  Cowboys Home Opener! The North Shore Tavern is the place to be this Sunday, March 22, for the pre-game atmosphere before the 5:15 PM kickoff.
                 </p>
                 <Button asChild variant="outline" size="sm" className="gap-2">
                   <Link to="/cowboys-stadium-guide">
