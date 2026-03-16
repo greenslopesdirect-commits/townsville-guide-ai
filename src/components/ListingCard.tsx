@@ -17,6 +17,8 @@ interface ListingCardProps {
   subtitle?: string;
   guideLink?: string;
   guideLinkText?: string;
+  badge?: string;
+  badgeNote?: string;
 }
 
 const ListingCard = ({ 
@@ -31,9 +33,16 @@ const ListingCard = ({
   aiPrompt,
   subtitle,
   guideLink,
-  guideLinkText
+  guideLinkText,
+  badge,
+  badgeNote
 }: ListingCardProps) => (
-  <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col">
+  <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col relative">
+    {badge && (
+      <div className="absolute -top-1 right-2 z-10 bg-[#00A693] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+        {badge}
+      </div>
+    )}
     {image && (
       <div className="aspect-[16/10] overflow-hidden">
         <img 
@@ -62,8 +71,11 @@ const ListingCard = ({
         </div>
       </div>
     </CardHeader>
-    <CardContent className="pt-0 space-y-3 flex-1 flex flex-col">
+    <CardContent className={`pt-0 space-y-3 flex-1 flex flex-col ${badge ? 'mt-1' : ''}`}>
       <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
+      {badgeNote && (
+        <p className="text-xs font-medium text-[#00A693] italic">{badgeNote}</p>
+      )}
       
       {tags && tags.length > 0 && (
         <div className="flex flex-wrap gap-1.5">

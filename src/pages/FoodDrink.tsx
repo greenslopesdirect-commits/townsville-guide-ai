@@ -60,7 +60,9 @@ const FoodDrink = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Longboard+Bar+Grill+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Longboard Bar & Grill.",
-      subtitle: "Beachfront Casual"
+      subtitle: "Beachfront Casual",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Best for Sunday Sessions with your dog on the deck."
     },
     {
       title: "Cactus Jack's",
@@ -90,7 +92,9 @@ const FoodDrink = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Juliette's+The+Strand+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Juliette's Gelateria.",
-      subtitle: "Gelato & Coffee"
+      subtitle: "Gelato & Coffee",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Perfect for a post-walk treat on The Strand (Water bowls available)."
     },
     {
       title: "Copper Bar & Grill",
@@ -146,7 +150,9 @@ const FoodDrink = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Hoi+Polloi+Cafe+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Hoi Polloi Café.",
-      subtitle: "Specialty Brunch"
+      subtitle: "Specialty Brunch",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Shaded outdoor seating and a very dog-friendly vibe."
     },
     {
       title: "The Commonwealth Hotel",
@@ -259,15 +265,26 @@ const FoodDrink = () => {
             </div>
 
             {/* Must-Visit & Monday/Sunday Warning */}
-            <LocalInsightCard title="Must-Visit & Opening Hours" variant="tip" className="mb-12">
+            <LocalInsightCard title="Must-Visit & Opening Hours" variant="tip" className="mb-8">
               <p>
                 <strong>Must-Visit:</strong> If you consider yourself a foodie, you cannot miss <strong>Otto's Market</strong>. 
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving.
+                ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving. <em>March 16 Update: Most CBD cafes are open today for the start of the Green Energy Forum at The Ville—it's a busy Monday in the North!</em>
               </p>
             </LocalInsightCard>
+
+            {/* Weekly Highlight */}
+            <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
+              <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (March 16–22)</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                🍀 <strong>St. Patrick's Day (Tuesday, March 17):</strong> Expect the CBD and Palmer Street to be buzzing! The Commonwealth Hotel and Seaview are usually the heart of the action.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                🧡 <strong>Harmony Week:</strong> Celebrate our city's diversity with a meal at Coo.King BBQ or Hoi Polloi.
+              </p>
+            </div>
 
             {/* Coffee Culture */}
             <LocalInsightCard title="☕ Coffee Culture" variant="insight" className="mb-12">
@@ -359,6 +376,11 @@ const FoodDrink = () => {
                 <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4 mt-2">
                   <p className="text-sm text-amber-800 dark:text-amber-300">
                     <strong>Local Tip:</strong> Most live music in the Ville kicks off from 4:00 PM on Fridays and 2:00 PM for Sunday Sessions. Check the venue socials for this week's specific lineup.
+                  </p>
+                </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
+                  <p className="text-sm text-foreground">
+                    🎸 <strong>Game Day Vibes (Sunday, March 22):</strong> Heading to the Cowboys? Tiny Mountain Brewery and City Lane will have the best pre-game atmosphere, while Palmer Street is the spot for post-match dinner and live soloists.
                   </p>
                 </div>
               </div>
