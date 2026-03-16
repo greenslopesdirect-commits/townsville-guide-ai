@@ -37,7 +37,7 @@ const dogSpots = [
     type: "Off-Leash Beach",
     dogAccess: "Designated off-leash zones",
     stingerNet: false,
-    description: "A quieter beach north of Townsville with wide sandy areas and shallow tidal flats that dogs love to explore. Great for morning walks away from the crowds.",
+    description: "A quieter beach north of Townsville with wide sandy areas and shallow tidal flats that dogs love to explore. Great for morning walks away from the crowds. Check the What's On page for local coffee spots near the beach for your post-walk caffeine fix.",
     features: ["Designated off-leash zones", "Quiet, less crowded beach", "Shallow tidal flats to explore", "Great for morning walks"],
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Bushland+Beach+Townsville",
   },
@@ -105,7 +105,7 @@ const DogFriendly = () => {
           {/* Local Tip */}
           <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
             <p>
-              Early mornings and evenings are best for beach visits in Townsville. Sand temperatures rise quickly during the day and can burn paws. Always test the ground with your hand before walking your dog.
+              March 16 Heat Alert: Humidity is at 81%. Pavement and sand are hitting 50°C+ by 10am. Stick to early morning or late evening walks to protect paws.
             </p>
           </LocalInsightCard>
 
@@ -236,8 +236,8 @@ const DogFriendly = () => {
                 <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                  <p className="text-xs text-muted-foreground mt-1">Marine stingers are present November to May. Keep dogs out of the water outside stinger-netted areas during this period.</p>
-                  <p className="text-xs text-muted-foreground mt-1">Visiting during summer? Review our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> before swimming.</p>
+                  <p className="text-xs text-muted-foreground mt-1">🌊 March 16 Status: Stinger nets are ACTIVE. Keep dogs out of the water outside of netted areas at The Strand and Pallarenda.</p>
+                  <p className="text-xs text-muted-foreground mt-1">Review our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> for full details.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
