@@ -151,7 +151,9 @@ const ThingsToDo = () => {
       aiPrompt: "How much time should I spend at The Strand and what is the best time to visit?",
       subtitle: "Beachfront Promenade",
       guideLink: "/the-strand",
-      guideLinkText: "View Strand Guide"
+      guideLinkText: "View Strand Guide",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Great for morning walks and sunset snacks."
     },
     {
       title: "Magnetic Island",
