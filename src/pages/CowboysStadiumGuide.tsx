@@ -54,11 +54,11 @@ const CowboysStadiumGuide = () => {
                   <Badge variant="secondary" className="w-fit">
                     Recent Result
                   </Badge>
-                  <CardTitle className="text-lg mt-2">Round 1: Cowboys vs Knights (Las Vegas)</CardTitle>
+                   <CardTitle className="text-lg mt-2">Round 1: Cowboys vs Knights (Las Vegas)</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <p className="text-sm text-muted-foreground">
-                    A historic start to the season in the States. Check the Cowboys app for full match replays and stats.
+                    The Cowboys secured a gritty season-opening win in the States! Now, the focus shifts back to the North.
                   </p>
                 </CardContent>
               </Card>
