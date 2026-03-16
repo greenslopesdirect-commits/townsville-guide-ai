@@ -54,11 +54,11 @@ const CowboysStadiumGuide = () => {
                   <Badge variant="secondary" className="w-fit">
                     Recent Result
                   </Badge>
-                  <CardTitle className="text-lg mt-2">Round 1: Cowboys vs Knights (Las Vegas)</CardTitle>
+                   <CardTitle className="text-lg mt-2">Round 1: Cowboys vs Knights (Las Vegas)</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <p className="text-sm text-muted-foreground">
-                    A historic start to the season in the States. Check the Cowboys app for full match replays and stats.
+                    The Cowboys secured a gritty season-opening win in the States! Now, the focus shifts back to the North.
                   </p>
                 </CardContent>
               </Card>
@@ -68,7 +68,7 @@ const CowboysStadiumGuide = () => {
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                     First Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">Round 3: Home Opener - Cowboys vs Titans</CardTitle>
+                  <CardTitle className="text-lg mt-2">THIS SUNDAY: Round 3 Home Opener - Cowboys vs Titans</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
@@ -143,6 +143,16 @@ const CowboysStadiumGuide = () => {
               </CardContent>
             </Card>
 
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 flex gap-3 items-start">
+              <span className="text-lg">💡</span>
+              <div>
+                <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
+                <p className="text-amber-800 text-sm mt-1">
+                  Expect the Leagues Club to be at capacity by 3:00 PM this Sunday. Get in early if you want a seat before the march begins at 4:30 PM.
+                </p>
+              </div>
+            </div>
+
             <LocalInsightCard title="Alternative Route" variant="insight">
               <p>
                 Note: Lowths Bridge becomes a pedestrian-only zone on game days. It is the most direct route from City Lane, but if it's crowded, you can also use the Victoria Street Bridge to access the Central Park Boardwalk.
@@ -208,6 +218,12 @@ const CowboysStadiumGuide = () => {
                 <p className="text-sm text-muted-foreground italic">
                   Buses run from 2 hours before kick-off and up to 1 hour after the final whistle.
                 </p>
+                <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
+                  <span className="text-sm">⚠️</span>
+                  <p className="text-amber-800 text-sm">
+                    <strong>Traffic Alert:</strong> With a near-sellout expected for the Home Opener, the Lou Litster Park 'Park & Ride' is your best bet to avoid CBD congestion.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </section>
