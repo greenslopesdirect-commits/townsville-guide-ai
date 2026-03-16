@@ -51,10 +51,10 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
+            <li>Harmony Week: Celebrating Townsville's cultural diversity (March 16–22)</li>
             <li>Theatre: The Rocky Horror Show at Townsville Civic Theatre (from Thursday, March 19)</li>
-            <li>Free: Riverway Movie Night — family screening under the stars (Friday, March 20 | 6:30 PM)</li>
+            <li>Free: Riverway Movie Night — <em>The Bad Guys</em> under the stars (Friday, March 20 | 6:30 PM)</li>
             <li>NRL: Cowboys vs. Titans at Queensland Country Bank Stadium (Sunday, March 22 | 5:15 PM)</li>
-            <li>Wellness: Townsville Insight Meditation at Friends Meeting House (Monday, March 16 | 5:30 PM)</li>
             <li>Clearing skies and sunshine — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
           </ul>
         </section>
