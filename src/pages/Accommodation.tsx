@@ -243,7 +243,7 @@ const Accommodation = () => {
                 </div>
                 <div className="p-6 rounded-xl border-2 bg-card">
                   <h3 className="font-semibold text-foreground mb-2">Northern Suburbs</h3>
-                  <p className="text-muted-foreground text-sm">Best for longer stays and families. Quieter, more space.</p>
+                  <p className="text-muted-foreground text-sm">Best for families and visitors wanting to explore the 🐾 Schnauzer Approved Northern Beaches (Bushland Beach & Saunders).</p>
                 </div>
               </div>
             </section>
