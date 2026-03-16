@@ -10,7 +10,7 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On in Townsville Today? (March 2026 Event Calendar)"
+        title="What's On in Townsville This Week (March 16–22, 2026)"
         description="Your weekly updated guide to Townsville markets, NRL Cowboys home games, festivals, and live music. See what's happening in the 'Ville this weekend."
       />
 
@@ -21,8 +21,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-03-09">
-            <time dateTime="2026-03-09">Updated: March 9, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-03-16">
+            <time dateTime="2026-03-16">Updated: March 16, 2026</time>
           </span>
         </div>
       </div>
@@ -32,13 +32,13 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville This Week (March 9–15, 2026)
+             What's On in Townsville This Week (March 16–22, 2026)
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-             Mid-March in Townsville brings live music, family theatre, and bustling weekend markets. The Cowboys' home season continues as autumn settles in — perfect weather for outdoor events.
+             This week's big hitters: <strong>The Rocky Horror Show</strong> lands at the Civic Theatre and the <strong>Cowboys face the Titans</strong> at home on Sunday arvo. Plus free family movies, markets, and autumn clearing skies.
            </p>
         </div>
 
@@ -51,12 +51,11 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Family Theatre: 'Where is the Green Sheep?' at Townsville Civic Theatre (Tuesday, March 10)</li>
-            <li>Live Music: Josh Cohen: Radiohead for Solo Piano II at the Civic Theatre (Friday, March 13)</li>
-            <li>Markets: Elliot Springs Markets (Saturday, March 14 | 8 AM - 12 PM)</li>
-            <li>Markets: Mundingburra Markets (Sunday, March 15 | 7 AM - 12 PM)</li>
-            <li>Community: Sound in Motion – Drum Circle at Jezzine Barracks (Sunday, March 15)</li>
-            <li>Wet-season waterfalls and lush nature conditions — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
+            <li>Theatre: The Rocky Horror Show at Townsville Civic Theatre (from Thursday, March 19)</li>
+            <li>Free: Riverway Movie Night — family screening under the stars (Friday, March 20 | 6:30 PM)</li>
+            <li>NRL: Cowboys vs. Titans at Queensland Country Bank Stadium (Sunday, March 22 | 5:15 PM)</li>
+            <li>Wellness: Townsville Insight Meditation at Friends Meeting House (Monday, March 16 | 5:30 PM)</li>
+            <li>Clearing skies and sunshine — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
           </ul>
         </section>
 
@@ -88,13 +87,13 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               March 9–15
+               March 16–22
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
             
-            {/* Where is the Green Sheep? — Family Theatre */}
+            {/* The Rocky Horror Show */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
@@ -103,11 +102,11 @@ const Events = () => {
                   </Badge>
                   <Music className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Where is the Green Sheep?</CardTitle>
+                <CardTitle className="text-xl mt-2">The Rocky Horror Show</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Tuesday, March 10</span>
+                    <span>Starts Thursday, March 19</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -117,136 +116,110 @@ const Events = () => {
               </CardHeader>
               <CardContent className="space-y-2">
                 <p className="text-gray-600 text-sm">
-                  A delightful family theatre production based on the beloved children's book. Perfect for a midweek treat with the kids.
+                  The legendary rock 'n' roll musical hits the stage. Don't dream it, be it!
                 </p>
               </CardContent>
             </Card>
 
-            {/* Josh Cohen: Radiohead for Solo Piano II */}
+            {/* NRL: Cowboys vs. Titans */}
             <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                    Live Music
+                    NRL
                   </Badge>
-                  <Music className="w-5 h-5 text-gray-400" />
+                  <Trophy className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Josh Cohen: Radiohead for Solo Piano II</CardTitle>
+                <CardTitle className="text-xl mt-2">NRL: Cowboys vs. Titans</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, March 13</span>
+                    <span>Sunday, March 22 | 5:15 PM</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Townsville Civic Theatre</span>
+                    <span>Queensland Country Bank Stadium</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent className="space-y-2">
                 <p className="text-gray-600 text-sm">
-                  A stunning solo piano interpretation of Radiohead's iconic catalogue. An intimate evening for music lovers at the Civic Theatre.
+                  Sunday afternoon footy is back in the Ville! Check our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Game Day Guide</Link> for parking, food, and gate tips.
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Elliot Springs Markets */}
+              {/* Riverway Movie Night */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <Badge variant="outline">Markets</Badge>
+                    <Badge variant="outline">Free Event</Badge>
                     <Info className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Elliot Springs Markets</CardTitle>
+                  <CardTitle className="text-lg mt-2">Riverway Movie Night</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Saturday, March 14 | 8:00 AM – 12:00 PM</span>
+                      <span>Friday, March 20 | 6:30 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Elliot Springs</span>
+                      <span>Riverway Oval</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    A popular Saturday morning market with local produce, crafts, and community atmosphere.
+                    A free family-friendly screening under the stars. Bring a blanket, some snacks, and enjoy the evening.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Mundingburra Markets */}
+              {/* Townsville Insight Meditation */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <Badge variant="outline">Markets</Badge>
-                    <Info className="w-5 h-5 text-gray-400" />
+                    <Badge variant="outline">Wellness</Badge>
+                    <Leaf className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Mundingburra Markets</CardTitle>
+                  <CardTitle className="text-lg mt-2">Townsville Insight Meditation</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 15 | 7:00 AM – 12:00 PM</span>
+                      <span>Monday, March 16 | 5:30 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Mundingburra</span>
+                      <span>Friends Meeting House</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Start your Sunday morning with this community favorite. Great for local finds and a relaxed browse.
+                    A peaceful start to the week for all levels. Drop in for a guided meditation session.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Sound in Motion - Drum Circle */}
-              <Card className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge variant="outline">Community</Badge>
-                    <Music className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Sound in Motion – Drum Circle</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 15</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>Jezzine Barracks</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    Join the community drum circle at one of Townsville's most beautiful heritage sites. All skill levels welcome.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Wet Season Nature */}
+              {/* Nature */}
               <Card className="hover:shadow-md transition-shadow">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge variant="outline">Nature</Badge>
                     <Leaf className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Wet Season Waterfalls</CardTitle>
+                  <CardTitle className="text-lg mt-2">Clearing Skies & Waterfalls</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>All Week | Best after rain</span>
+                      <span>All Week | Best in sunshine</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <p className="text-gray-600 text-sm">
-                    Peak waterfall flow continues at Crystal Creek and Jourama Falls. Check road conditions before heading out. Browse our <Link to="/nature" className="text-primary font-medium hover:underline">Nature guide</Link> for more spots.
+                    Conditions are clearing — perfect for waterfall chasing at Crystal Creek and Jourama Falls. Browse our <Link to="/nature" className="text-primary font-medium hover:underline">Nature guide</Link> for more spots.
                   </p>
                   <p className="text-sm">
                     <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">
@@ -414,7 +387,14 @@ const Events = () => {
             <Calendar className="w-6 h-6 text-primary" />
             <h2 className="text-2xl font-bold text-gray-900">Easter & School Holiday Guide 2026</h2>
           </div>
-          <p className="text-gray-600 mb-6">Plan ahead for the busiest travel period in North Queensland. Key dates, events, and booking tips for the Easter break.</p>
+          <p className="text-gray-600 mb-4">Plan ahead for the busiest travel period in North Queensland. Key dates, events, and booking tips for the Easter break.</p>
+          
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 flex gap-3 items-start">
+            <span className="text-lg">⚠️</span>
+            <p className="text-amber-800 text-sm font-medium">
+              Update: Only 2 weeks until Term 1 ends! Have you booked your Magnetic Island ferry yet?
+            </p>
+          </div>
 
           {/* Key Dates */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
