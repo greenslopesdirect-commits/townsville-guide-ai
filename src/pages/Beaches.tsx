@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { MapPin, ArrowRight, Umbrella, Waves, Dog, Sun, Anchor, ShieldCheck, Thermometer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
