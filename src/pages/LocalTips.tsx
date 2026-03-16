@@ -69,7 +69,7 @@ const LocalTips = () => {
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
         "Many cafés provide water bowls",
-        "Low tide today (March 9) is at 3:46 PM — ideal for an afternoon run on the sand flats at Pallarenda or Saunders Beach once the storms clear"
+        "🐾 Schnauzer Approved Tip: Low tide today (March 16) is at 9:15 AM. Perfect for a morning run on the sand flats at Pallarenda or Saunders Beach while the air is still fresh."
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
