@@ -19,9 +19,9 @@ const StingerSafety = () => (
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 Current Status: March 2026</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 Current Status: March 16, 2026</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        Stinger nets are currently fully installed and ACTIVE at The Strand, Pallarenda, Balgal Beach, and Horseshoe Bay. Lifeguards are conducting daily drags.
+        Stinger nets are ACTIVE. Conditions are clearing after recent rain. Water clarity is improving, but stinger risk remains high.
       </p>
     </div>
 
@@ -33,14 +33,27 @@ const StingerSafety = () => (
     </div>
     <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
-      <p>"Even if you're just wading in ankle-deep water, stingers can be present during summer. Stay inside the nets to be safe."</p>
+      <p>"March is the peak for Irukandji activity as the waters stay warm. Even if the 'stinger nets' look clear of debris, the microscopic stingers are still there. Don't risk it—stay in the nets."</p>
+    </div>
+
+    {/* Stinger Safety for Dogs */}
+    <div className="bg-[#00A693]/10 border-2 border-[#00A693]/30 rounded-xl p-6 mb-8">
+      <h3 className="font-bold text-xl mb-3 text-[#00A693]">🐾 Can Dogs Get Stung?</h3>
+      <p className="text-muted-foreground leading-relaxed mb-3">
+        Yes. While a dog's fur provides some protection, their paws, nose, and belly are vulnerable.
+      </p>
+      <div className="bg-[#00A693]/10 rounded-lg p-4">
+        <p className="text-sm font-medium text-foreground">
+          🐾 <strong>Schnauzer Approved Safety:</strong> During March, keep your dogs on the sand or in the very shallow wash-zone at off-leash beaches. Avoid letting them swim in deep open water outside of the nets at Pallarenda.
+        </p>
+      </div>
     </div>
 
     {/* Autumn Tip */}
     <div className="bg-sky-50 dark:bg-sky-950/30 border border-sky-300 dark:border-sky-700 rounded-xl p-6 mb-12">
-      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">🍂 Autumn Tip</h4>
+      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">🍂 Mid-March Update</h4>
       <p className="text-sky-700 dark:text-sky-400 leading-relaxed">
-        Even as air temperatures slightly drop in March, water temperatures remain high enough for Irukandji and Box Jellyfish activity. Always use the enclosures.
+        The transition to Autumn is starting, but the 'Stinger Season' doesn't care about the calendar. Nets stay in until at least May. Keep those stinger suits handy for Magnetic Island trips this week!
       </p>
     </div>
 
