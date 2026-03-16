@@ -92,7 +92,9 @@ const FoodDrink = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Juliette's+The+Strand+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Juliette's Gelateria.",
-      subtitle: "Gelato & Coffee"
+      subtitle: "Gelato & Coffee",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Perfect for a post-walk treat on The Strand (Water bowls available)."
     },
     {
       title: "Copper Bar & Grill",
