@@ -77,10 +77,10 @@ const northernBeaches = [
     distance: "30 min drive north",
     dogAccess: "Dog friendly",
     stingerNet: false,
-    badge: { label: "Quiet", color: "" },
+    badge: { label: "⭐ Top Search Pick", color: "bg-amber-100 text-amber-800 hover:bg-amber-100" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Quiet", "Dog Friendly"],
-    description: "The local pick for an unspoilt escape. 6km of golden sand and no crowds—perfect for a long, peaceful walk.",
+    description: "6km of unspoilt sand — the local pick for a peaceful escape with no crowds.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
@@ -95,7 +95,7 @@ const northernBeaches = [
     badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
     tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that becomes very shallow at low tide. Great for birdwatching or a quiet family picnic.",
+    description: "A sleepy residential beach that becomes very shallow at low tide. Local Tip: Best for low-tide walks this week to see the vast sand flats.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
@@ -230,7 +230,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-        🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Note: A Strong Wind Warning is currently in place for the Townsville Coast with a high chance of showers today.{" "}
+        🌊 March 16 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. The weather is clearing—perfect for exploring the Northern Beaches.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
@@ -507,14 +507,14 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">🌊 March 16 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. The weather is clearing—perfect for exploring the Northern Beaches. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 9): Low tide is at 3:46 PM. This is the best time for a walk at Saunders Beach or Toolakea to see the sand flats.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 16): Low tide is at 9:15 AM and 9:45 PM. Perfect for a morning run at Saunders or Bushland Beach.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
