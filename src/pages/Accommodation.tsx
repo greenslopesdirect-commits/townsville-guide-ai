@@ -165,6 +165,13 @@ const Accommodation = () => {
               </p>
             </header>
 
+            {/* Seasonal Alert */}
+            <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-12">
+              <p className="text-amber-800 dark:text-amber-300 leading-relaxed">
+                🗓️ <strong>March 16 Update:</strong> With only 2 weeks until the Easter break, local accommodation is filling up fast! ⚠️ <strong>Pro-Tip:</strong> If you're coming for the Cowboys game this Sunday (March 22), check for late availability in the CBD or South Townsville to be within walking distance of the stadium.
+              </p>
+            </div>
+
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
               {[
