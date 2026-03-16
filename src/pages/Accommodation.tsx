@@ -20,7 +20,7 @@ const Accommodation = () => {
   const hotels = [
     {
       title: "The Ville Resort–Casino",
-      description: "Townsville's premier oceanfront resort featuring lagoon pool, casino, multiple restaurants and stunning ocean views. Perfect for luxury getaways.",
+      description: "Townsville's premier oceanfront resort featuring lagoon pool, casino, multiple restaurants and stunning ocean views. Perfect for luxury getaways. Hosting the Green Energy Forum this week (March 16–18)—expect a buzzing atmosphere around the pool and restaurants.",
       image: theVilleImage,
       tags: ["Luxury", "Waterfront", "Pool"],
       features: [
@@ -91,11 +91,13 @@ const Accommodation = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Quest+Townsville",
       aiPrompt: "Tell me about the amenities, pool, and location of Quest Townsville.",
-      subtitle: "From $149/night"
+      subtitle: "From $149/night",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Pet-friendly apartments are available (subject to booking)—perfect for families traveling with four-legged mates."
     },
     {
       title: "BIG4 Rowes Bay Holiday Park",
-      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families.",
+      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families. Note: Council camping spots at Saunders and Balgal Beach for Easter are booking out now—get in early!",
       image: big4Image,
       tags: ["Family Friendly", "Budget", "Beachfront"],
       features: [
@@ -106,7 +108,9 @@ const Accommodation = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=BIG4+Rowes+Bay+Holiday+Park+Townsville",
       aiPrompt: "Tell me about the amenities, pool, and location of BIG4 Rowes Bay Holiday Park.",
-      subtitle: "From $45/night (sites)"
+      subtitle: "From $45/night (sites)",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "One of the best pet-friendly stays in Townsville with direct access to Rowes Bay walks."
     }
   ];
 
@@ -160,6 +164,13 @@ const Accommodation = () => {
                 Flying into Townsville? See our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport options, parking tips, and arrival advice.
               </p>
             </header>
+
+            {/* Seasonal Alert */}
+            <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-12">
+              <p className="text-amber-800 dark:text-amber-300 leading-relaxed">
+                🗓️ <strong>March 16 Update:</strong> With only 2 weeks until the Easter break, local accommodation is filling up fast! ⚠️ <strong>Pro-Tip:</strong> If you're coming for the Cowboys game this Sunday (March 22), check for late availability in the CBD or South Townsville to be within walking distance of the stadium.
+              </p>
+            </div>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
@@ -232,7 +243,7 @@ const Accommodation = () => {
                 </div>
                 <div className="p-6 rounded-xl border-2 bg-card">
                   <h3 className="font-semibold text-foreground mb-2">Northern Suburbs</h3>
-                  <p className="text-muted-foreground text-sm">Best for longer stays and families. Quieter, more space.</p>
+                  <p className="text-muted-foreground text-sm">Best for families and visitors wanting to explore the 🐾 Schnauzer Approved Northern Beaches (Bushland Beach & Saunders).</p>
                 </div>
               </div>
             </section>
