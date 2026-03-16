@@ -361,8 +361,8 @@ const Beaches = () => {
         </section>
 
         {/* Secret Beaches Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Townsville's Secret Beaches</h2>
+        <section id="secret-beaches" className="space-y-4">
+          <h2 className="text-2xl font-bold text-foreground">🕵️ Townsville's 5 Best Secret Beaches & Hidden Gems</h2>
           <p className="text-sm text-muted-foreground">These hidden gems are known mostly to locals. They're off the beaten path and worth the effort to find.</p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Secret Beach */}
