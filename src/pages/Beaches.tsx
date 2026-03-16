@@ -397,6 +397,7 @@ const Beaches = () => {
                   <Badge variant="outline" className="text-xs">Hidden Gem</Badge>
                 </div>
                 <p className="text-muted-foreground text-sm">Tucked away at the end of Benwell Road, this is a local favorite for dog owners. It is an official off-leash free-run beach spanning about 520m of foreshore.</p>
+                <p className="text-xs font-medium text-[#00A693] italic">🐾 Schnauzer Approved. A true hidden gem for off-leash adventures — just keep an eye out near the water's edge.</p>
                 <p className="text-xs text-muted-foreground italic">💡 Best visited at low tide to give your dog plenty of room to run on the sand flats.</p>
                 <div className="p-3 rounded-lg bg-destructive/5 border border-destructive/20">
                   <p className="text-xs font-medium text-destructive">🐊 Crocodile Caution: Near the mouth of the Ross River. Keep a close eye on your pets near the water's edge.</p>
