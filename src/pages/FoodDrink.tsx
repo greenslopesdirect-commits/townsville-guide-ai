@@ -265,15 +265,26 @@ const FoodDrink = () => {
             </div>
 
             {/* Must-Visit & Monday/Sunday Warning */}
-            <LocalInsightCard title="Must-Visit & Opening Hours" variant="tip" className="mb-12">
+            <LocalInsightCard title="Must-Visit & Opening Hours" variant="tip" className="mb-8">
               <p>
                 <strong>Must-Visit:</strong> If you consider yourself a foodie, you cannot miss <strong>Otto's Market</strong>. 
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving.
+                ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving. <em>March 16 Update: Most CBD cafes are open today for the start of the Green Energy Forum at The Ville—it's a busy Monday in the North!</em>
               </p>
             </LocalInsightCard>
+
+            {/* Weekly Highlight */}
+            <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
+              <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (March 16–22)</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                🍀 <strong>St. Patrick's Day (Tuesday, March 17):</strong> Expect the CBD and Palmer Street to be buzzing! The Commonwealth Hotel and Seaview are usually the heart of the action.
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                🧡 <strong>Harmony Week:</strong> Celebrate our city's diversity with a meal at Coo.King BBQ or Hoi Polloi.
+              </p>
+            </div>
 
             {/* Coffee Culture */}
             <LocalInsightCard title="☕ Coffee Culture" variant="insight" className="mb-12">
