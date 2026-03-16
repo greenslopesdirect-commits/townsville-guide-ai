@@ -366,7 +366,10 @@ const Beaches = () => {
           <p className="text-sm text-muted-foreground">These hidden gems are known mostly to locals. They're off the beaten path and worth the effort to find.</p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Secret Beach */}
-            <Card className="hover:shadow-lg transition-shadow flex flex-col">
+            <Card className="hover:shadow-lg transition-shadow flex flex-col relative">
+              <div className="absolute -top-1 right-2 z-10 bg-[#00A693] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                🐾 Schnauzer Approved
+              </div>
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-emerald-100 text-emerald-800 hover:bg-emerald-100">Off-Leash</Badge>
