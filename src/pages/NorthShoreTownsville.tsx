@@ -178,7 +178,7 @@ const NorthShoreTownsville = () => {
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
-                The Wetlands Loop is at its most vibrant in March. Keep an eye out for seasonal birdlife, but stick to the main tracks as the lower forest sections can become boggy after a typical Townsville downpour.
+                The Wetlands Loop is absolutely vibrant this week! With the rain clearing, the birdlife (Brolgas and Jabirus) is incredibly active at sunrise. The tracks are mostly dry, but expect some damp patches in the lower forest.
               </p>
             </LocalInsightCard>
 
