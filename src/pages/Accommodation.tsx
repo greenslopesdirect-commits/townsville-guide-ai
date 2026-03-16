@@ -97,7 +97,7 @@ const Accommodation = () => {
     },
     {
       title: "BIG4 Rowes Bay Holiday Park",
-      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families.",
+      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families. Note: Council camping spots at Saunders and Balgal Beach for Easter are booking out now—get in early!",
       image: big4Image,
       tags: ["Family Friendly", "Budget", "Beachfront"],
       features: [
@@ -108,7 +108,9 @@ const Accommodation = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=BIG4+Rowes+Bay+Holiday+Park+Townsville",
       aiPrompt: "Tell me about the amenities, pool, and location of BIG4 Rowes Bay Holiday Park.",
-      subtitle: "From $45/night (sites)"
+      subtitle: "From $45/night (sites)",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "One of the best pet-friendly stays in Townsville with direct access to Rowes Bay walks."
     }
   ];
 
