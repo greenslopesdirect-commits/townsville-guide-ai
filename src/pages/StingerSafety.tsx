@@ -51,9 +51,9 @@ const StingerSafety = () => (
 
     {/* Autumn Tip */}
     <div className="bg-sky-50 dark:bg-sky-950/30 border border-sky-300 dark:border-sky-700 rounded-xl p-6 mb-12">
-      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">🍂 Autumn Tip</h4>
+      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">🍂 Mid-March Update</h4>
       <p className="text-sky-700 dark:text-sky-400 leading-relaxed">
-        Even as air temperatures slightly drop in March, water temperatures remain high enough for Irukandji and Box Jellyfish activity. Always use the enclosures.
+        The transition to Autumn is starting, but the 'Stinger Season' doesn't care about the calendar. Nets stay in until at least May. Keep those stinger suits handy for Magnetic Island trips this week!
       </p>
     </div>
 
