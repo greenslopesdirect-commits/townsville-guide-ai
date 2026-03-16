@@ -37,7 +37,7 @@ const dogSpots = [
     type: "Off-Leash Beach",
     dogAccess: "Designated off-leash zones",
     stingerNet: false,
-    description: "A quieter beach north of Townsville with wide sandy areas and shallow tidal flats that dogs love to explore. Great for morning walks away from the crowds.",
+    description: "A quieter beach north of Townsville with wide sandy areas and shallow tidal flats that dogs love to explore. Great for morning walks away from the crowds. Check the What's On page for local coffee spots near the beach for your post-walk caffeine fix.",
     features: ["Designated off-leash zones", "Quiet, less crowded beach", "Shallow tidal flats to explore", "Great for morning walks"],
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Bushland+Beach+Townsville",
   },
