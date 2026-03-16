@@ -358,6 +358,9 @@ const Beaches = () => {
               </Card>
             ))}
           </div>
+          <p className="text-sm text-muted-foreground mt-4">
+            Looking for something even more secluded? Explore our <a href="#secret-beaches" className="text-primary font-medium hover:underline">🕵️ Secret Beaches guide</a>.
+          </p>
         </section>
 
         {/* Secret Beaches Section */}
