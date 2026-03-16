@@ -77,7 +77,27 @@ const EventsOn = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
             
-        {/* Market 1 */}
+        {/* Card 1 — Thursday */}
+            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+                <CardContent className="p-6">
+                    <div className="flex justify-between items-start mb-4">
+                        <div className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Thursday
+                        </div>
+                        <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2">The Rocky Horror Show</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Thursday, March 19</p>
+                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                        <MapPin className="w-4 h-4" /> Townsville Civic Theatre
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-slate-500">
+                        <Clock className="w-4 h-4" /> The legendary musical arrives!
+                    </div>
+                </CardContent>
+            </Card>
+
+            {/* Card 2 — Saturday */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
@@ -86,33 +106,13 @@ const EventsOn = () => {
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Elliot Springs Markets</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, March 14</p>
+                    <h4 className="text-lg font-bold mb-2">Townsville Cross Country Run</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, March 21</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Elliot Springs
+                        <MapPin className="w-4 h-4" /> Bicentennial Park
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> 8:00 AM – 12:00 PM
-                    </div>
-                </CardContent>
-            </Card>
-
-            {/* Market 2 */}
-            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
-                <CardContent className="p-6">
-                    <div className="flex justify-between items-start mb-4">
-                        <div className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Tuesday
-                        </div>
-                        <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
-                    </div>
-                    <h4 className="text-lg font-bold mb-2">Where is the Green Sheep?</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Tuesday, March 10</p>
-                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Townsville Civic Theatre
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> Family Theatre
+                        <Clock className="w-4 h-4" /> 7:00 AM – 9:00 AM
                     </div>
                 </CardContent>
             </Card>
@@ -128,8 +128,7 @@ const EventsOn = () => {
 
         </div>
 
-        {/* Jezzine Highlight */}
-        {/* Mundingburra Markets — Sunday card */}
+        {/* Sunday highlight card */}
         <div className="mt-6">
           <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200 max-w-sm">
             <CardContent className="p-6">
@@ -139,13 +138,13 @@ const EventsOn = () => {
                 </div>
                 <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
               </div>
-              <h4 className="text-lg font-bold mb-2">Mundingburra Markets</h4>
-              <p className="text-xs text-primary font-medium mb-1">Sunday, March 15</p>
+              <h4 className="text-lg font-bold mb-2">NRL: Cowboys vs Titans</h4>
+              <p className="text-xs text-primary font-medium mb-1">Sunday, March 22</p>
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                <MapPin className="w-4 h-4" /> Mundingburra
+                <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
               </div>
               <div className="flex items-center gap-2 text-sm text-slate-500">
-                <Clock className="w-4 h-4" /> 7:00 AM – 12:00 PM
+                <Clock className="w-4 h-4" /> Kickoff 5:15 PM
               </div>
             </CardContent>
           </Card>
