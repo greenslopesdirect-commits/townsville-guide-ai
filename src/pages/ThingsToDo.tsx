@@ -605,6 +605,13 @@ const ThingsToDo = () => {
                 </div>
               </div>
 
+              <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4 mb-8 flex gap-3 items-start">
+                <span className="text-lg">⚠️</span>
+                <p className="text-amber-800 dark:text-amber-300 text-sm font-medium">
+                  Update March 16: Only 2 weeks to go! If you're planning on visiting Billabong Sanctuary for the Easter Bilbies, check their session times now.
+                </p>
+              </div>
+
               {/* Holiday Highlights */}
               <div className="grid gap-4 md:grid-cols-2 mb-8">
                 <div className="p-5 rounded-2xl bg-card border-2 border-border/40">
