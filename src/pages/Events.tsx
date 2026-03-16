@@ -92,6 +92,30 @@ const Events = () => {
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
+
+            {/* Harmony Week */}
+            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
+                    Community
+                  </Badge>
+                  <Sun className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">Harmony Week</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>March 16–22 | Various Locations</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  Celebrating Townsville's cultural diversity all week. Wear orange on Friday!
+                </p>
+              </CardContent>
+            </Card>
             
             {/* The Rocky Horror Show */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
@@ -114,37 +138,9 @@ const Events = () => {
                   </div>
                 </div>
               </CardHeader>
-              <CardContent className="space-y-2">
+              <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The legendary rock 'n' roll musical hits the stage. Don't dream it, be it!
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* NRL: Cowboys vs. Titans */}
-            <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                    NRL
-                  </Badge>
-                  <Trophy className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">NRL: Cowboys vs. Titans</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Sunday, March 22 | 5:15 PM</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Queensland Country Bank Stadium</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <p className="text-gray-600 text-sm">
-                  Sunday afternoon footy is back in the Ville! Check our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Game Day Guide</Link> for parking, food, and gate tips.
+                  The legendary rock 'n' roll musical arrives. Don't dream it, be it!
                 </p>
               </CardContent>
             </Card>
@@ -171,60 +167,35 @@ const Events = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    A free family-friendly screening under the stars. Bring a blanket, some snacks, and enjoy the evening.
+                    Free family screening of <em>The Bad Guys</em> under the stars. Bring a blanket, some snacks, and enjoy the evening.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Townsville Insight Meditation */}
-              <Card className="hover:shadow-md transition-shadow">
+              {/* NRL: Cowboys vs. Titans */}
+              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-blue-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <Badge variant="outline">Wellness</Badge>
-                    <Leaf className="w-5 h-5 text-gray-400" />
+                    <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
+                      NRL
+                    </Badge>
+                    <Trophy className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Townsville Insight Meditation</CardTitle>
+                  <CardTitle className="text-lg mt-2">NRL: Cowboys vs. Titans</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Monday, March 16 | 5:30 PM</span>
+                      <span>Sunday, March 22 | 5:15 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Friends Meeting House</span>
+                      <span>QLD Country Bank Stadium</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    A peaceful start to the week for all levels. Drop in for a guided meditation session.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Nature */}
-              <Card className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge variant="outline">Nature</Badge>
-                    <Leaf className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Clearing Skies & Waterfalls</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>All Week | Best in sunshine</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-gray-600 text-sm">
-                    Conditions are clearing — perfect for waterfall chasing at Crystal Creek and Jourama Falls. Browse our <Link to="/nature" className="text-primary font-medium hover:underline">Nature guide</Link> for more spots.
-                  </p>
-                  <p className="text-sm">
-                    <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">
-                      Explore Little Crystal Creek →
-                    </Link>
+                    The first home game of 2026! Check our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Game Day Guide</Link> for parking, food, and gate tips.
                   </p>
                 </CardContent>
               </Card>
