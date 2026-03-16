@@ -324,6 +324,13 @@ const ThingsToDo = () => {
               </div>
             </div>
 
+            {/* Weekly Highlight */}
+            <div className="mb-12 p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-300 dark:border-emerald-700">
+              <p className="text-emerald-800 dark:text-emerald-300 leading-relaxed">
+                🌊 <strong>Waterfall Watch:</strong> With the recent rain clearing, this is the BEST week to visit Little Crystal Creek and Jourama Falls. The falls are flowing beautifully and the rainforest is at its most vibrant green.
+              </p>
+            </div>
+
             {/* Local Visual Blueprints Section */}
             <section className="mb-12 p-6 md:p-8 rounded-2xl bg-sky-50 dark:bg-sky-950/30 border border-sky-200 dark:border-sky-800">
               <div className="flex items-center gap-3 mb-6">
