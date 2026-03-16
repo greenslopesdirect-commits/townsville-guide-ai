@@ -143,6 +143,16 @@ const CowboysStadiumGuide = () => {
               </CardContent>
             </Card>
 
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 flex gap-3 items-start">
+              <span className="text-lg">💡</span>
+              <div>
+                <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
+                <p className="text-amber-800 text-sm mt-1">
+                  Expect the Leagues Club to be at capacity by 3:00 PM this Sunday. Get in early if you want a seat before the march begins at 4:30 PM.
+                </p>
+              </div>
+            </div>
+
             <LocalInsightCard title="Alternative Route" variant="insight">
               <p>
                 Note: Lowths Bridge becomes a pedestrian-only zone on game days. It is the most direct route from City Lane, but if it's crowded, you can also use the Victoria Street Bridge to access the Central Park Boardwalk.
