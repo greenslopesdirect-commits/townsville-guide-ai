@@ -217,7 +217,14 @@ const LocalTips = () => {
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Jezzine Boardwalk — Refurbishment Works</p>
-                  <p className="text-xs text-muted-foreground mt-1">Refurbishment works are ongoing in North Ward. The boardwalk remains open, but expect minor noise during maintenance hours.</p>
+                  <p className="text-xs text-muted-foreground mt-1">Refurbishment is progressing well; the boardwalk is fully accessible but stay alert for maintenance crews between 8am and 3pm.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
+                <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-sm text-foreground">🏟️ Sunday Game Day — Lowths Bridge Traffic</p>
+                  <p className="text-xs text-muted-foreground mt-1">Expect heavy pedestrian traffic on Lowths Bridge from 4:00 PM this Sunday for the Cowboys Home Opener.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
