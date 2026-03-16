@@ -247,7 +247,9 @@ const ThingsToDo = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Riverway+Townsville",
       aiPrompt: "How much time should I spend at Riverway Parklands and what is the best time to visit?",
-      subtitle: "Parks & Recreation"
+      subtitle: "Parks & Recreation",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "10km of shaded river walks perfect for dogs on-lead."
     },
     {
       title: "Anderson Park Botanic Gardens",
