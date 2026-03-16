@@ -105,7 +105,7 @@ const DogFriendly = () => {
           {/* Local Tip */}
           <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
             <p>
-              Early mornings and evenings are best for beach visits in Townsville. Sand temperatures rise quickly during the day and can burn paws. Always test the ground with your hand before walking your dog.
+              March 16 Heat Alert: Humidity is at 81%. Pavement and sand are hitting 50°C+ by 10am. Stick to early morning or late evening walks to protect paws.
             </p>
           </LocalInsightCard>
 
