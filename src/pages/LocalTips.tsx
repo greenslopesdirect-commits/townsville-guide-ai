@@ -20,14 +20,14 @@ const LocalTips = () => {
         "Dry season: Best for hiking, beaches, outdoor events",
         "Wet season: Fewer crowds, cheaper accommodation",
         "Shoulder months (April–May, Sept–Oct) are ideal",
-        "Check Today's Weather Forecast: March 9 Update — High humidity (81%) and a high chance of rain today. If the storms roll in, it's a perfect day for indoor attractions like Reef HQ or the Museum of Tropical Queensland."
+        "Check Today's Weather Forecast: March 16 Update — Clear blue skies but humidity remains at 81%. Stay hydrated and use sun protection."
       ],
       aiPrompt: "What's the best time of year to visit Townsville based on weather and activities?"
     },
     {
       title: "Staying Safe in the Heat",
       icon: <ThermometerSun className="w-6 h-6" />,
-      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. March 9 Alert: The UV index is forecast to reach Extreme (11+) today despite the cloud cover. Sun protection is recommended between 8:20 AM and 4:10 PM.",
+      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. March 16 Alert: UV Index is Extreme (11+). Even with clear blue skies, the humidity remains at 81%. Stay hydrated!",
       tips: [
         "Walk Castle Hill at sunrise or sunset only",
         "Carry at least 1L water per person",
@@ -69,7 +69,7 @@ const LocalTips = () => {
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
         "Many cafés provide water bowls",
-        "Low tide today (March 9) is at 3:46 PM — ideal for an afternoon run on the sand flats at Pallarenda or Saunders Beach once the storms clear"
+        "🐾 Schnauzer Approved Tip: Low tide today (March 16) is at 9:15 AM. Perfect for a morning run on the sand flats at Pallarenda or Saunders Beach while the air is still fresh."
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
@@ -193,7 +193,7 @@ const LocalTips = () => {
             <div className="space-y-4 mb-8">
               <div className="p-4 rounded-lg border bg-card">
                 <p className="text-sm text-muted-foreground">
-                  🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Note: A Heavy Thunderstorm and Strong Wind Warning are currently in place for the Townsville Coast today—please check local conditions before heading outdoors.
+                  🌊 Current Status (March 16, 2026): ☀️ Stinger nets are ACTIVE. Conditions are clearing and sunny — perfect for a walk on The Strand or waterfall chasing at Crystal Creek. The heavy thunderstorm warnings from last week have cleared.
                 </p>
               </div>
               <StingerSeasonAlert />
@@ -217,7 +217,14 @@ const LocalTips = () => {
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Jezzine Boardwalk — Refurbishment Works</p>
-                  <p className="text-xs text-muted-foreground mt-1">Refurbishment works are ongoing in North Ward. The boardwalk remains open, but expect minor noise during maintenance hours.</p>
+                  <p className="text-xs text-muted-foreground mt-1">Refurbishment is progressing well; the boardwalk is fully accessible but stay alert for maintenance crews between 8am and 3pm.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
+                <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-sm text-foreground">🏟️ Sunday Game Day — Lowths Bridge Traffic</p>
+                  <p className="text-xs text-muted-foreground mt-1">Expect heavy pedestrian traffic on Lowths Bridge from 4:00 PM this Sunday for the Cowboys Home Opener.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
