@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { MapPin, ArrowRight, Umbrella, Waves, Dog, Sun, Anchor, ShieldCheck, Thermometer } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -154,10 +155,13 @@ const Beaches = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
-        title="Best Beaches in Townsville — Swimming, Safety & Local Tips"
-        description="Local guide to the best beaches in Townsville. Find stinger net locations, safe swimming spots, quiet beaches, and dog-friendly areas across North Queensland."
+        title="Beaches North of Townsville | The 🐾 Schnauzer Approved Local Guide"
+        description="Looking for the best beaches north of Townsville? 🐾 Schnauzer Approved local guide to Saunders Beach, Bushland Beach, and Toolakea. Updated March 16, 2026, with stinger safety status, tide times, and the best off-leash spots. No hallucinations, just North Queensland secrets."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
+      <Helmet>
+        <meta name="keywords" content="beaches north of townsville, saunders beach, bushland beach townsville, dog friendly beaches townsville, stinger safety townsville" />
+      </Helmet>
 
       {/* FAQ Schema */}
       <script
@@ -314,7 +318,7 @@ const Beaches = () => {
                     </Badge>
                     {beach.icon}
                   </div>
-                  <CardTitle className="text-xl mt-2">{beach.name}</CardTitle>
+                  <h2 className="text-xl font-semibold leading-none tracking-tight mt-2">{beach.name}</h2>
                   <div className="space-y-1 text-sm text-muted-foreground mt-1">
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4 flex-shrink-0" />
