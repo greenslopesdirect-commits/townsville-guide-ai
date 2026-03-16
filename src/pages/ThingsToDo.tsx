@@ -34,7 +34,9 @@ const ThingsToDo = () => {
       aiPrompt: "How much time should I spend at Castle Hill and what is the best time to visit?",
       subtitle: "Must-Do Experience",
       guideLink: "/castle-hill",
-      guideLinkText: "Local Guide"
+      guideLinkText: "Local Guide",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Take your pup up the Goat Track (before 7am) for the best views in the city."
     },
     {
   title: "Little Crystal Creek",
@@ -59,7 +61,7 @@ const ThingsToDo = () => {
   title: "SS Yongala Wreck Dive",
   image: "/ss-yongala-wreck-dive-townsville.webp",
   imageCaption: "Courtesy of Tourism and Events Queensland",
-  description: "One of the best wreck dives in the world. The historic SS Yongala shipwreck is now a thriving reef covered in coral and home to giant fish, turtles, rays and sharks.",
+  description: "One of the best wreck dives in the world. The historic SS Yongala shipwreck is now a thriving reef covered in coral and home to giant fish, turtles, rays and sharks. Boats are running daily now that the weather has settled.",
   tags: ["Diving", "Bucket List", "Reef"],
   features: [
     "World-famous shipwreck dive",
@@ -151,7 +153,9 @@ const ThingsToDo = () => {
       aiPrompt: "How much time should I spend at The Strand and what is the best time to visit?",
       subtitle: "Beachfront Promenade",
       guideLink: "/the-strand",
-      guideLinkText: "View Strand Guide"
+      guideLinkText: "View Strand Guide",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Great for morning walks and sunset snacks."
     },
     {
       title: "Magnetic Island",
@@ -243,7 +247,9 @@ const ThingsToDo = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Riverway+Townsville",
       aiPrompt: "How much time should I spend at Riverway Parklands and what is the best time to visit?",
-      subtitle: "Parks & Recreation"
+      subtitle: "Parks & Recreation",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "10km of shaded river walks perfect for dogs on-lead."
     },
     {
       title: "Anderson Park Botanic Gardens",
@@ -322,6 +328,13 @@ const ThingsToDo = () => {
               <div className="absolute bottom-4 right-4 bg-black/50 backdrop-blur-sm text-white px-3 py-1 rounded-lg text-xs">
                 The Strand: Townsville's iconic 2.2km beachfront promenade
               </div>
+            </div>
+
+            {/* Weekly Highlight */}
+            <div className="mb-12 p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-300 dark:border-emerald-700">
+              <p className="text-emerald-800 dark:text-emerald-300 leading-relaxed">
+                🌊 <strong>Waterfall Watch:</strong> With the recent rain clearing, this is the BEST week to visit Little Crystal Creek and Jourama Falls. The falls are flowing beautifully and the rainforest is at its most vibrant green.
+              </p>
             </div>
 
             {/* Local Visual Blueprints Section */}
@@ -592,6 +605,13 @@ const ThingsToDo = () => {
                   <p className="text-xs font-bold text-primary uppercase tracking-wider">School Holidays</p>
                   <p className="text-lg font-bold text-foreground mt-1">April 3–19</p>
                 </div>
+              </div>
+
+              <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4 mb-8 flex gap-3 items-start">
+                <span className="text-lg">⚠️</span>
+                <p className="text-amber-800 dark:text-amber-300 text-sm font-medium">
+                  Update March 16: Only 2 weeks to go! If you're planning on visiting Billabong Sanctuary for the Easter Bilbies, check their session times now.
+                </p>
               </div>
 
               {/* Holiday Highlights */}
