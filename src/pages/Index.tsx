@@ -172,7 +172,7 @@ const Index = () => {
                 <span className="text-sm text-muted-foreground font-medium">(Updated: March 16, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                ☀️ The sky is clearing beautifully after last week's storms, making conditions ideal for a post-work Strand walk. Just keep in mind that the humidity is still very high (81%), so stay hydrated! Stinger nets remain ACTIVE at all patrolled beaches. Locals are officially on Cowboys countdown for this Sunday—the energy is starting to build! Expect the CBD to get busy from Thursday as visitors start arriving for the game and the Rocky Horror launch.
+                ☀️ Updated: March 16, 2026. It's Harmony Week! Wear orange to show support for diversity. Conditions are clearing after the rain—perfect for a post-work Strand walk. Stinger nets are ACTIVE. The Cowboys are back in town after a tough away start; expect the energy to build in the CBD ahead of Sunday's home opener!
               </p>
             </div>
           </div>

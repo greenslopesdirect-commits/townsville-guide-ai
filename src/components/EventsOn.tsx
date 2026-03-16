@@ -86,13 +86,13 @@ const EventsOn = () => {
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">The Rocky Horror Show</h4>
+                    <h4 className="text-lg font-bold mb-2">Harmony Day at JCU</h4>
                     <p className="text-xs text-primary font-medium mb-1">Thursday, March 19</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Townsville Civic Theatre
+                        <MapPin className="w-4 h-4" /> Central Plaza (Bldg 143)
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> The legendary musical arrives!
+                        <Clock className="w-4 h-4" /> 10:30 AM – 1:00 PM · Food, culture & music
                     </div>
                 </CardContent>
             </Card>
