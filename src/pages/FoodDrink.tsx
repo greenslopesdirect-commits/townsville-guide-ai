@@ -60,7 +60,9 @@ const FoodDrink = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Longboard+Bar+Grill+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Longboard Bar & Grill.",
-      subtitle: "Beachfront Casual"
+      subtitle: "Beachfront Casual",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Best for Sunday Sessions with your dog on the deck."
     },
     {
       title: "Cactus Jack's",
