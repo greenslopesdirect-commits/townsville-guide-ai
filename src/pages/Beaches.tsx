@@ -514,7 +514,7 @@ const Beaches = () => {
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 9): Low tide is at 3:46 PM. This is the best time for a walk at Saunders Beach or Toolakea to see the sand flats.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 16): Low tide is at 9:15 AM and 9:45 PM. Perfect for a morning run at Saunders or Bushland Beach.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
