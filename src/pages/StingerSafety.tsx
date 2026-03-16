@@ -33,7 +33,20 @@ const StingerSafety = () => (
     </div>
     <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
-      <p>"Even if you're just wading in ankle-deep water, stingers can be present during summer. Stay inside the nets to be safe."</p>
+      <p>"March is the peak for Irukandji activity as the waters stay warm. Even if the 'stinger nets' look clear of debris, the microscopic stingers are still there. Don't risk it—stay in the nets."</p>
+    </div>
+
+    {/* Stinger Safety for Dogs */}
+    <div className="bg-[#00A693]/10 border-2 border-[#00A693]/30 rounded-xl p-6 mb-8">
+      <h3 className="font-bold text-xl mb-3 text-[#00A693]">🐾 Can Dogs Get Stung?</h3>
+      <p className="text-muted-foreground leading-relaxed mb-3">
+        Yes. While a dog's fur provides some protection, their paws, nose, and belly are vulnerable.
+      </p>
+      <div className="bg-[#00A693]/10 rounded-lg p-4">
+        <p className="text-sm font-medium text-foreground">
+          🐾 <strong>Schnauzer Approved Safety:</strong> During March, keep your dogs on the sand or in the very shallow wash-zone at off-leash beaches. Avoid letting them swim in deep open water outside of the nets at Pallarenda.
+        </p>
+      </div>
     </div>
 
     {/* Autumn Tip */}
