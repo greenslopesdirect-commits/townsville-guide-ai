@@ -51,12 +51,11 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Family Theatre: 'Where is the Green Sheep?' at Townsville Civic Theatre (Tuesday, March 10)</li>
-            <li>Live Music: Josh Cohen: Radiohead for Solo Piano II at the Civic Theatre (Friday, March 13)</li>
-            <li>Markets: Elliot Springs Markets (Saturday, March 14 | 8 AM - 12 PM)</li>
-            <li>Markets: Mundingburra Markets (Sunday, March 15 | 7 AM - 12 PM)</li>
-            <li>Community: Sound in Motion – Drum Circle at Jezzine Barracks (Sunday, March 15)</li>
-            <li>Wet-season waterfalls and lush nature conditions — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
+            <li>Theatre: The Rocky Horror Show at Townsville Civic Theatre (from Thursday, March 19)</li>
+            <li>Free: Riverway Movie Night — family screening under the stars (Friday, March 20 | 6:30 PM)</li>
+            <li>NRL: Cowboys vs. Titans at Queensland Country Bank Stadium (Sunday, March 22 | 5:15 PM)</li>
+            <li>Wellness: Townsville Insight Meditation at Friends Meeting House (Monday, March 16 | 5:30 PM)</li>
+            <li>Clearing skies and sunshine — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
           </ul>
         </section>
 
