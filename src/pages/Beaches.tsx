@@ -314,7 +314,7 @@ const Beaches = () => {
                     </Badge>
                     {beach.icon}
                   </div>
-                  <CardTitle className="text-xl mt-2">{beach.name}</CardTitle>
+                  <h2 className="text-xl font-semibold leading-none tracking-tight mt-2">{beach.name}</h2>
                   <div className="space-y-1 text-sm text-muted-foreground mt-1">
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4 flex-shrink-0" />
