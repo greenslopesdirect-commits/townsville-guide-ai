@@ -84,8 +84,8 @@ const NorthShoreTownsville = () => {
           {/* Burdell Forest & Wetlands */}
           <section className="space-y-4">
             <div className="flex items-center gap-2">
-              <Badge variant="secondary" className="bg-primary/10 text-primary border-none">
-                Local Secret
+              <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-none">
+                🌿 March Highlight
               </Badge>
             </div>
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
@@ -178,7 +178,7 @@ const NorthShoreTownsville = () => {
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
-                The Wetlands Loop is at its most vibrant in March. Keep an eye out for seasonal birdlife, but stick to the main tracks as the lower forest sections can become boggy after a typical Townsville downpour.
+                The Wetlands Loop is absolutely vibrant this week! With the rain clearing, the birdlife (Brolgas and Jabirus) is incredibly active at sunrise. The tracks are mostly dry, but expect some damp patches in the lower forest.
               </p>
             </LocalInsightCard>
 
@@ -290,9 +290,7 @@ const NorthShoreTownsville = () => {
                   <h3 className="font-semibold text-foreground text-lg">Game Day on the North Shore</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Watching the Cowboys? The North Shore Tavern is the best local spot for 
-                  away-game watch parties. Cold beers, big screens, and a crowd that knows 
-                  every player by name.
+                  Cowboys Home Opener! The North Shore Tavern is the place to be this Sunday, March 22, for the pre-game atmosphere before the 5:15 PM kickoff.
                 </p>
                 <Button asChild variant="outline" size="sm" className="gap-2">
                   <Link to="/cowboys-stadium-guide">
