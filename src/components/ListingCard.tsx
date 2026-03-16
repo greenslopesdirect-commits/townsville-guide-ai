@@ -71,8 +71,11 @@ const ListingCard = ({
         </div>
       </div>
     </CardHeader>
-    <CardContent className="pt-0 space-y-3 flex-1 flex flex-col">
+    <CardContent className={`pt-0 space-y-3 flex-1 flex flex-col ${badge ? 'mt-1' : ''}`}>
       <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
+      {badgeNote && (
+        <p className="text-xs font-medium text-[#00A693] italic">{badgeNote}</p>
+      )}
       
       {tags && tags.length > 0 && (
         <div className="flex flex-wrap gap-1.5">
