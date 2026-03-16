@@ -34,7 +34,9 @@ const ThingsToDo = () => {
       aiPrompt: "How much time should I spend at Castle Hill and what is the best time to visit?",
       subtitle: "Must-Do Experience",
       guideLink: "/castle-hill",
-      guideLinkText: "Local Guide"
+      guideLinkText: "Local Guide",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Take your pup up the Goat Track (before 7am) for the best views in the city."
     },
     {
   title: "Little Crystal Creek",
