@@ -10,7 +10,7 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On in Townsville Today? (March 2026 Event Calendar)"
+        title="What's On in Townsville This Week (March 16–22, 2026)"
         description="Your weekly updated guide to Townsville markets, NRL Cowboys home games, festivals, and live music. See what's happening in the 'Ville this weekend."
       />
 
