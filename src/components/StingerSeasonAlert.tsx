@@ -21,7 +21,7 @@ const StingerSeasonAlert = ({ className = "" }: StingerSeasonAlertProps) => {
           Check with lifesavers for current conditions before entering the water.
         </p>
         <p className="font-semibold">
-          🌊 March 9 Status: Stinger nets are ACTIVE. ⚠️ Weather Alert: Tropical Low 29U — heavy rain and wind this week.{" "}
+          ☀️ March 16 Update: Stinger nets are ACTIVE. Conditions are clearing and sunny — perfect for a walk on The Strand or waterfall chasing at Crystal Creek.{" "}
           <Link 
             to="/guides/stinger-safety"
             className="text-amber-800 dark:text-amber-300 hover:underline"

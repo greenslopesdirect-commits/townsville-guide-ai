@@ -65,7 +65,7 @@ const QuickAccess = () => {
     {
       icon: Lightbulb,
       title: "Stinger & Safety Guide",
-      desc: "⚠️ March 9 Update: Stinger nets are ACTIVE. Weather Alert: Tropical Low 29U is bringing heavy rain and wind this week—check the Disaster Dashboard before travel.",
+      desc: "☀️ March 16 Update: Stinger nets are ACTIVE. Conditions are clearing and sunny — perfect for a walk on The Strand or waterfall chasing at Crystal Creek.",
       link: "/guides/stinger-safety",
     },
     {
