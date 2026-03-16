@@ -162,7 +162,22 @@ const Index = () => {
         <section id="accommodation">
           <Accommodation />
         </section>
-       
+
+        {/* The Ville Today */}
+        <section className="py-10 sm:py-16 px-3 sm:px-4">
+          <div className="container mx-auto max-w-6xl">
+            <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: March 16, 2026)</span>
+              </div>
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                ☀️ The sky is clearing beautifully after last week's storms, making conditions ideal for a post-work Strand walk. Just keep in mind that the humidity is still very high (81%), so stay hydrated! Stinger nets remain ACTIVE at all patrolled beaches. Locals are officially on Cowboys countdown for this Sunday—the energy is starting to build! Expect the CBD to get busy from Thursday as visitors start arriving for the game and the Rocky Horror launch.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section id="map">
           <MapSection />
         </section>
