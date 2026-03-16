@@ -91,7 +91,9 @@ const Accommodation = () => {
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Quest+Townsville",
       aiPrompt: "Tell me about the amenities, pool, and location of Quest Townsville.",
-      subtitle: "From $149/night"
+      subtitle: "From $149/night",
+      badge: "🐾 Schnauzer Approved",
+      badgeNote: "Pet-friendly apartments are available (subject to booking)—perfect for families traveling with four-legged mates."
     },
     {
       title: "BIG4 Rowes Bay Holiday Park",
