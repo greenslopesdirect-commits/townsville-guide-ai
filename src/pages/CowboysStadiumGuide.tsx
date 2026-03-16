@@ -54,11 +54,11 @@ const CowboysStadiumGuide = () => {
                   <Badge variant="secondary" className="w-fit">
                     Recent Result
                   </Badge>
-                   <CardTitle className="text-lg mt-2">Round 1: Cowboys vs Knights (Las Vegas)</CardTitle>
+                   <CardTitle className="text-lg mt-2">Rounds 1 & 2 Recap</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <p className="text-sm text-muted-foreground">
-                    The Cowboys secured a gritty season-opening win in the States! Now, the focus shifts back to the North.
+                    A tough road start for the boys with losses in Vegas and Sydney. We're looking for a massive home crowd to help turn the momentum this Sunday!
                   </p>
                 </CardContent>
               </Card>
@@ -221,7 +221,7 @@ const CowboysStadiumGuide = () => {
                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                   <span className="text-sm">⚠️</span>
                   <p className="text-amber-800 text-sm">
-                    <strong>Traffic Alert:</strong> With a near-sellout expected for the Home Opener, the Lou Litster Park 'Park & Ride' is your best bet to avoid CBD congestion.
+                    <strong>Traffic Alert:</strong> Harmony Week activities in the CBD may add to Sunday's traffic. Use the free Park & Ride from Lou Litster Park to skip the congestion.
                   </p>
                 </div>
               </CardContent>
