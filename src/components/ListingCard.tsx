@@ -37,7 +37,12 @@ const ListingCard = ({
   badge,
   badgeNote
 }: ListingCardProps) => (
-  <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col">
+  <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col relative">
+    {badge && (
+      <div className="absolute -top-1 right-2 z-10 bg-[#00A693] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+        {badge}
+      </div>
+    )}
     {image && (
       <div className="aspect-[16/10] overflow-hidden">
         <img 
