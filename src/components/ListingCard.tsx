@@ -33,7 +33,9 @@ const ListingCard = ({
   aiPrompt,
   subtitle,
   guideLink,
-  guideLinkText
+  guideLinkText,
+  badge,
+  badgeNote
 }: ListingCardProps) => (
   <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col">
     {image && (
