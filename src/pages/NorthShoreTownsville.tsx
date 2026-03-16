@@ -84,8 +84,8 @@ const NorthShoreTownsville = () => {
           {/* Burdell Forest & Wetlands */}
           <section className="space-y-4">
             <div className="flex items-center gap-2">
-              <Badge variant="secondary" className="bg-primary/10 text-primary border-none">
-                Local Secret
+              <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-none">
+                🌿 March Highlight
               </Badge>
             </div>
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
