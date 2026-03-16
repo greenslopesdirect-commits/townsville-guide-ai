@@ -19,9 +19,9 @@ const StingerSafety = () => (
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 Current Status: March 2026</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 Current Status: March 16, 2026</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        Stinger nets are currently fully installed and ACTIVE at The Strand, Pallarenda, Balgal Beach, and Horseshoe Bay. Lifeguards are conducting daily drags.
+        Stinger nets are ACTIVE. Conditions are clearing after recent rain. Water clarity is improving, but stinger risk remains high.
       </p>
     </div>
 
