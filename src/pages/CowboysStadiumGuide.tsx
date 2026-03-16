@@ -68,7 +68,7 @@ const CowboysStadiumGuide = () => {
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                     First Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">Round 3: Home Opener - Cowboys vs Titans</CardTitle>
+                  <CardTitle className="text-lg mt-2">THIS SUNDAY: Round 3 Home Opener - Cowboys vs Titans</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
