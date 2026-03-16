@@ -507,7 +507,7 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">🌊 Current Status (March 9): Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">🌊 March 16 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. The weather is clearing—perfect for exploring the Northern Beaches. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
