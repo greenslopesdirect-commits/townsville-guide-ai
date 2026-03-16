@@ -358,15 +358,21 @@ const Beaches = () => {
               </Card>
             ))}
           </div>
+          <p className="text-sm text-muted-foreground mt-4">
+            Looking for something even more secluded? Explore our <a href="#secret-beaches" className="text-primary font-medium hover:underline">🕵️ Secret Beaches guide</a>.
+          </p>
         </section>
 
         {/* Secret Beaches Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Townsville's Secret Beaches</h2>
+        <section id="secret-beaches" className="space-y-4">
+          <h2 className="text-2xl font-bold text-foreground">🕵️ Townsville's 5 Best Secret Beaches & Hidden Gems</h2>
           <p className="text-sm text-muted-foreground">These hidden gems are known mostly to locals. They're off the beaten path and worth the effort to find.</p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Secret Beach */}
-            <Card className="hover:shadow-lg transition-shadow flex flex-col">
+            <Card className="hover:shadow-lg transition-shadow flex flex-col relative">
+              <div className="absolute -top-1 right-2 z-10 bg-[#00A693] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                🐾 Schnauzer Approved
+              </div>
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-emerald-100 text-emerald-800 hover:bg-emerald-100">Off-Leash</Badge>
@@ -394,6 +400,7 @@ const Beaches = () => {
                   <Badge variant="outline" className="text-xs">Hidden Gem</Badge>
                 </div>
                 <p className="text-muted-foreground text-sm">Tucked away at the end of Benwell Road, this is a local favorite for dog owners. It is an official off-leash free-run beach spanning about 520m of foreshore.</p>
+                <p className="text-xs font-medium text-[#00A693] italic">🐾 Schnauzer Approved. A true hidden gem for off-leash adventures — just keep an eye out near the water's edge.</p>
                 <p className="text-xs text-muted-foreground italic">💡 Best visited at low tide to give your dog plenty of room to run on the sand flats.</p>
                 <div className="p-3 rounded-lg bg-destructive/5 border border-destructive/20">
                   <p className="text-xs font-medium text-destructive">🐊 Crocodile Caution: Near the mouth of the Ross River. Keep a close eye on your pets near the water's edge.</p>
