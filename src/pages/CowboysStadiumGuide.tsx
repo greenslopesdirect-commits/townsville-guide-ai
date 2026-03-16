@@ -218,6 +218,12 @@ const CowboysStadiumGuide = () => {
                 <p className="text-sm text-muted-foreground italic">
                   Buses run from 2 hours before kick-off and up to 1 hour after the final whistle.
                 </p>
+                <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
+                  <span className="text-sm">⚠️</span>
+                  <p className="text-amber-800 text-sm">
+                    <strong>Traffic Alert:</strong> With a near-sellout expected for the Home Opener, the Lou Litster Park 'Park & Ride' is your best bet to avoid CBD congestion.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </section>
