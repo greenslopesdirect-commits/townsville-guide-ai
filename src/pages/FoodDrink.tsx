@@ -378,6 +378,11 @@ const FoodDrink = () => {
                     <strong>Local Tip:</strong> Most live music in the Ville kicks off from 4:00 PM on Fridays and 2:00 PM for Sunday Sessions. Check the venue socials for this week's specific lineup.
                   </p>
                 </div>
+                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
+                  <p className="text-sm text-foreground">
+                    🎸 <strong>Game Day Vibes (Sunday, March 22):</strong> Heading to the Cowboys? Tiny Mountain Brewery and City Lane will have the best pre-game atmosphere, while Palmer Street is the spot for post-match dinner and live soloists.
+                  </p>
+                </div>
               </div>
             </section>
 
