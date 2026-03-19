@@ -22,7 +22,10 @@ const SEOHead = ({
     : `${title} | My Aussie Guide`;
 
   const siteUrl = "https://www.myaussieguide.com.au/";
-  const canonicalUrl = canonical ? canonical : siteUrl;
+  // Ensure canonical always has trailing slash for consistency with sitemap
+  const canonicalUrl = canonical
+    ? (canonical.endsWith("/") ? canonical : `${canonical}/`)
+    : siteUrl;
 
   return (
     <Helmet>
