@@ -1,87 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.myaussieguide.com.au</loc>
-    <lastmod>2026-01-19</lastmod>
+    <loc>https://www.myaussieguide.com.au/</loc>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/history</loc>
+    <loc>https://www.myaussieguide.com.au/history/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/things-to-do</loc>
-    <lastmod>2026-01-19</lastmod>
+    <loc>https://www.myaussieguide.com.au/things-to-do/</loc>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/beaches</loc>
-    <lastmod>2026-01-19</lastmod>
+    <loc>https://www.myaussieguide.com.au/beaches/</loc>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/food</loc>
-    <lastmod>2026-01-19</lastmod>
+    <loc>https://www.myaussieguide.com.au/food/</loc>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/events</loc>
-    <lastmod>2026-01-19</lastmod>
+    <loc>https://www.myaussieguide.com.au/events/</loc>
+    <lastmod>2026-03-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/dog-friendly</loc>
+    <loc>https://www.myaussieguide.com.au/dog-friendly/</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/shopping/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/shopping</loc>
+    <loc>https://www.myaussieguide.com.au/nature/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/nature</loc>
-    <lastmod>2026-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.myaussieguide.com.au/accommodation</loc>
+    <loc>https://www.myaussieguide.com.au/accommodation/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/local-tips</loc>
-    <lastmod>2026-01-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.myaussieguide.com.au/local-tips/</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/flights</loc>
+    <loc>https://www.myaussieguide.com.au/flights/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/advertise</loc>
+    <loc>https://www.myaussieguide.com.au/advertise/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.myaussieguide.com.au/contact</loc>
+    <loc>https://www.myaussieguide.com.au/contact/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/the-strand/</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/castle-hill/</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/billabong-sanctuary/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/great-barrier-reef-townsville/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/little-crystal-creek-townsville/</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/pallarenda-beach/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/rowes-bay/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/townsville-with-kids/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/cowboys-stadium-guide/</loc>
+    <lastmod>2026-03-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/north-shore-townsville/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/townsville-airport/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/guides/magnetic-island-day-trip/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/guides/stinger-safety/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/guides/jezzine-barracks/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/guides/free-things/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/guides/beat-the-heat/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.myaussieguide.com.au/guides/sunset-walks/</loc>
+    <lastmod>2026-01-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
