@@ -14,7 +14,7 @@ const CastleHill = () => {
           name="description"
           content="Castle Hill Townsville local guide — panoramic views, walking tracks, sunrise and sunset tips. Free attraction near the city centre."
         />
-        <link rel="canonical" href="https://www.myaussieguide.com.au/castle-hill" />
+        <link rel="canonical" href="https://www.myaussieguide.com.au/castle-hill/" />
       </Helmet>
 
       <div className="min-h-screen bg-background">
