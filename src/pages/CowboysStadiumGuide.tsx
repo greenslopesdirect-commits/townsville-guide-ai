@@ -12,7 +12,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026"
-        description="The local's guide to the Cowboys Stampede, stadium tips, and where to watch the Vegas opener. Everything you need for game day in Townsville."
+        description="Catch the Cowboys vs Storm at QLD Country Bank Stadium this Saturday, March 28! Get the local guide to game day parking, the Stampede, and the best tickets in Townsville."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
@@ -93,6 +93,22 @@ const CowboysStadiumGuide = () => {
               </Card>
             </div>
           </section>
+
+          {/* Visiting from out of town CTA */}
+          <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
+            <CardContent className="p-6 sm:p-8 space-y-3">
+              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Storm Game?</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Don't get caught out—last-minute stays near the stadium fill up fast for blockbuster Saturday night games. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
+              </p>
+              <Button asChild variant="default" size="lg" className="w-full sm:w-auto">
+                <Link to="/accommodation">
+                  View Townsville Accommodation Guide
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
 
           {/* The Game Day Experience */}
           <section className="space-y-4">
