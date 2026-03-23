@@ -276,15 +276,12 @@ const FoodDrink = () => {
             </LocalInsightCard>
 
             {/* Weekly Highlight */}
-            <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
-              <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (March 16–22)</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                🍀 <strong>St. Patrick's Day (Tuesday, March 17):</strong> Expect the CBD and Palmer Street to be buzzing! The Commonwealth Hotel and Seaview are usually the heart of the action.
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                🧡 <strong>Harmony Week:</strong> Celebrate our city's diversity with a meal at Coo.King BBQ or Hoi Polloi.
-              </p>
-            </div>
+             <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
+               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (March 23–29)</h3>
+               <p className="text-sm text-muted-foreground leading-relaxed">
+                 🌅 <strong>March 23–29:</strong> The focus is on the waterfront this week. With the humidity dropping slightly, it's the perfect time for alfresco dining at A Touch of Salt or a sunset gelato at Juliette's.
+               </p>
+             </div>
 
             {/* Coffee Culture */}
             <LocalInsightCard title="☕ Coffee Culture" variant="insight" className="mb-12">
