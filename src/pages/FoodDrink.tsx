@@ -152,8 +152,9 @@ const FoodDrink = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Hoi+Polloi+Cafe+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Hoi Polloi Café.",
       subtitle: "Specialty Brunch",
-      badge: "🐾 Schnauzer Approved",
-      badgeNote: "Shaded outdoor seating and a very dog-friendly vibe."
+       badge: "🐾 Schnauzer Approved",
+       badgeNote: "Shaded outdoor seating and a very dog-friendly vibe. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
+       dogGuideLink: true
     },
     {
       title: "The Commonwealth Hotel",
