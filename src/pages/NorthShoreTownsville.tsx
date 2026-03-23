@@ -10,8 +10,8 @@ const NorthShoreTownsville = () => {
   return (
     <>
       <SEOHead
-        title="Explore North Shore Townsville"
-        description="Discover Burdell Forest trails, the Northern Beaches Leisure Centre, and local insights into Townsville's thriving northern community."
+        title="North Shore Townsville: Nature, Community & Guide (March 2026)"
+        description="Discover Townsville's North Shore. From the Burdell Wetlands and Leisure Centre to the best local coffee, explore our updated 2026 guide to the northern heart of the city."
         canonical="https://www.myaussieguide.com.au/north-shore-townsville"
       />
 
@@ -176,9 +176,15 @@ const NorthShoreTownsville = () => {
               </p>
             </LocalInsightCard>
 
+            <LocalInsightCard title="Pro-Tip: Gateway to the North" variant="insight">
+              <p>
+                North Shore is the perfect staging point for a day trip to Saunders Beach or Toolakea—just a 15-minute drive further north.
+              </p>
+            </LocalInsightCard>
+
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
-                The Wetlands Loop is absolutely vibrant this week! With the rain clearing, the birdlife (Brolgas and Jabirus) is incredibly active at sunrise. The tracks are mostly dry, but expect some damp patches in the lower forest.
+                The Wetlands Loop is absolutely vibrant this week (March 23–29)! Following the rain, the Brolgas and Jabirus are incredibly active at sunrise. The paved tracks are dry and perfect for a morning walk before the midday heat kicks in.
               </p>
             </LocalInsightCard>
 
@@ -287,10 +293,10 @@ const NorthShoreTownsville = () => {
               <CardContent className="p-6 space-y-3">
                 <div className="flex items-center gap-2">
                   <Trophy className="w-5 h-5 text-primary" />
-                  <h3 className="font-semibold text-foreground text-lg">Game Day on the North Shore</h3>
+                  <h3 className="font-semibold text-foreground text-lg">Game Day: Cowboys vs. Storm (Saturday, March 28)</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  Cowboys Home Opener! The North Shore Tavern is the place to be this Sunday, March 22, for the pre-game atmosphere before the 5:15 PM kickoff.
+                  The North Shore Tavern is the place to be this Saturday night for the pre-game atmosphere. With a 6:30 PM kickoff against the Storm, expect the bistro and bar to be buzzing from 4:00 PM. It's the perfect local alternative to the CBD crowds.
                 </p>
                 <Button asChild variant="outline" size="sm" className="gap-2">
                   <Link to="/cowboys-stadium-guide">
