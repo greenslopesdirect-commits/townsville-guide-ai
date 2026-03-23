@@ -178,7 +178,7 @@ const NorthShoreTownsville = () => {
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
-                The Wetlands Loop is absolutely vibrant this week! With the rain clearing, the birdlife (Brolgas and Jabirus) is incredibly active at sunrise. The tracks are mostly dry, but expect some damp patches in the lower forest.
+                The Wetlands Loop is absolutely vibrant this week (March 23–29)! Following the rain, the Brolgas and Jabirus are incredibly active at sunrise. The paved tracks are dry and perfect for a morning walk before the midday heat kicks in.
               </p>
             </LocalInsightCard>
 
