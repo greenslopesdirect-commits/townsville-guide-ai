@@ -88,115 +88,119 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               March 16–22
+               March 23–29
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Harmony Week */}
-            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
+            {/* The Canefield Ashes */}
+            <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Community
+                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
+                    Cricket
                   </Badge>
-                  <Sun className="w-5 h-5 text-gray-400" />
+                  <Trophy className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Harmony Week</CardTitle>
+                <CardTitle className="text-xl mt-2">The Canefield Ashes</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>March 16–22 | Various Locations</span>
+                    <span>Friday, March 27 & Saturday, March 28</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Various local venues</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Celebrating Townsville's cultural diversity all week. Wear orange on Friday!
+                  High-energy T20 cricket with a legendary local atmosphere. One of Townsville's favourite community sporting events.
                 </p>
               </CardContent>
             </Card>
             
-            {/* The Rocky Horror Show */}
+            {/* ABBA: Thank You for the Music */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Theatre
+                    Theatre / Music
                   </Badge>
                   <Music className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">The Rocky Horror Show</CardTitle>
+                <CardTitle className="text-xl mt-2">ABBA: Thank You for the Music</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Starts Thursday, March 19</span>
+                    <span>Saturday, March 28 | 7:30 PM</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Townsville Civic Theatre</span>
+                    <span>Townsville Entertainment & Convention Centre</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The legendary rock 'n' roll musical arrives. Don't dream it, be it!
+                  A massive night of hits for ABBA fans. Dancing Queen, Mamma Mia, and all the classics — live on stage at the TECC.
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Riverway Movie Night */}
-              <Card className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge variant="outline">Free Event</Badge>
-                    <Info className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Riverway Movie Night</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Friday, March 20 | 6:30 PM</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>Riverway Oval</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    Free family screening of <em>The Bad Guys</em> under the stars. Bring a blanket, some snacks, and enjoy the evening.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* NRL: Cowboys vs. Titans */}
+              {/* Townsville 10K Series */}
               <Card className="hover:shadow-md transition-shadow border-l-4 border-l-blue-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                      NRL
+                      Sport / Fitness
                     </Badge>
-                    <Trophy className="w-5 h-5 text-gray-400" />
+                    <Footprints className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">NRL: Cowboys vs. Titans</CardTitle>
+                  <CardTitle className="text-lg mt-2">Townsville 10K Series: Race 1</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 22 | 5:15 PM</span>
+                      <span>Saturday, March 28 | 7:00 AM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>QLD Country Bank Stadium</span>
+                      <span>Ross River Dam</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    The first home game of 2026! Check our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Game Day Guide</Link> for parking, food, and gate tips.
+                    Kick off the running season with a scenic 10K around the weir. A great community event for all fitness levels.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Cotters Market */}
+              <Card className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge variant="outline">Markets</Badge>
+                    <Info className="w-5 h-5 text-gray-400" />
+                  </div>
+                  <CardTitle className="text-lg mt-2">Cotters Market</CardTitle>
+                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>Sunday, March 29 | 8:00 AM – 1:00 PM</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      <span>Flinders Street</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Your weekly fix of local crafts, produce, and street food. A Sunday morning staple in the heart of the CBD.
                   </p>
                 </CardContent>
               </Card>
