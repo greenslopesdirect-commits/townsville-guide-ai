@@ -270,8 +270,8 @@ const ThingsToDo = () => {
   return (
     <>
       <SEOHead
-        title="50+ Best Things to Do in Townsville (Updated March 2026)"
-        description="Discover the best things to do in Townsville today. From Castle Hill trails to hidden Northern Beaches. Local-verified tips for families, dog owners, and adventurers."
+        title="25 Best Things to Do in Townsville (Updated March 2026)"
+        description="From secret waterfalls to Castle Hill sunrises, explore the ultimate local guide to Townsville. Updated for March 23–29 with event tips, school holiday prep, and hidden gems."
         canonical="https://www.myaussieguide.com.au/things-to-do"
       />
       <Helmet>
