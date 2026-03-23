@@ -525,7 +525,7 @@ const Beaches = () => {
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 16): Low tide is at 9:15 AM and 9:45 PM. Perfect for a morning run at Saunders or Bushland Beach.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 23): Low tide is at 2:45 PM. Plan your beach runs for the early morning or late afternoon to avoid the midday heat and catch the best sand conditions.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
