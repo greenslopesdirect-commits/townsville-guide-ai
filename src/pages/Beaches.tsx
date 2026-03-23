@@ -155,8 +155,8 @@ const Beaches = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
-        title="Beaches North of Townsville | The 🐾 Schnauzer Approved Local Guide"
-        description="Looking for the best beaches north of Townsville? 🐾 Schnauzer Approved local guide to Saunders Beach, Bushland Beach, and Toolakea. Updated March 23, 2026, with stinger safety status, tide times, and the best off-leash spots. No hallucinations, just North Queensland secrets."
+        title="7 Best Beaches in Townsville & North (March 2026 Guide)"
+        description="Discover the best beaches north of Townsville, from The Strand to Saunders Beach. Get local tips on swimming safety, stinger nets, and top sunset spots for March 2026."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
       <Helmet>
