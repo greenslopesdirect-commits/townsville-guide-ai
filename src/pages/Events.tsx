@@ -33,13 +33,13 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville This Week (March 16–22, 2026)
+             What's On in Townsville This Week (March 23–29, 2026)
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-             This week's big hitters: <strong>The Rocky Horror Show</strong> lands at the Civic Theatre and the <strong>Cowboys face the Titans</strong> at home on Sunday arvo. Plus free family movies, markets, and autumn clearing skies.
+             This week's big hitters: <strong>The Canefield Ashes</strong> cricket invitational, the <strong>ABBA tribute at the TECC</strong>, and the start of the <strong>Townsville 10K Series</strong>. Plus, autumn clearing skies make it a perfect week for waterfall chasing at Crystal Creek.
            </p>
         </div>
 
