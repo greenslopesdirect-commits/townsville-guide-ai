@@ -11,7 +11,7 @@ const Events = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
         title="What's On in Townsville | March 2026 Events & NRL Guide"
-        description="Updated March 16: The best local guide to Townsville events this weekend. NRL Cowboys home games, markets, theatre, and free family activities. No hallucinations, just local facts."
+        description="Updated March 23: The best local guide to Townsville events this weekend. Canefield Ashes cricket, ABBA tribute, 10K Series, and free markets. No hallucinations, just local facts."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
