@@ -93,8 +93,9 @@ const FoodDrink = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Juliette's+The+Strand+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Juliette's Gelateria.",
       subtitle: "Gelato & Coffee",
-      badge: "🐾 Schnauzer Approved",
-      badgeNote: "Perfect for a post-walk treat on The Strand (Water bowls available)."
+       badge: "🐾 Schnauzer Approved",
+       badgeNote: "Perfect for a post-walk treat on The Strand (Water bowls available). Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
+       dogGuideLink: true
     },
     {
       title: "Copper Bar & Grill",
@@ -151,8 +152,9 @@ const FoodDrink = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Hoi+Polloi+Cafe+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Hoi Polloi Café.",
       subtitle: "Specialty Brunch",
-      badge: "🐾 Schnauzer Approved",
-      badgeNote: "Shaded outdoor seating and a very dog-friendly vibe."
+       badge: "🐾 Schnauzer Approved",
+       badgeNote: "Shaded outdoor seating and a very dog-friendly vibe. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
+       dogGuideLink: true
     },
     {
       title: "The Commonwealth Hotel",
@@ -201,8 +203,8 @@ const FoodDrink = () => {
   return (
     <>
       <SEOHead
-        title="Best Restaurants in Townsville 2026: Where Locals Eat & Drink"
-        description="Discover Townsville's best coffee, award-winning Palmer Street dining, and hidden waterfront gems. Updated March 2026 with local tips on opening hours and must-visit markets."
+        title="Best Restaurants & Cafés in Townsville (March 2026 Guide)"
+        description="From fine dining on Palmer Street to the best coffee on The Strand, discover where Townsville locals eat and drink. Updated for March 23–29 with game day tips and dog-friendly spots."
         canonical="https://www.myaussieguide.com.au/food"
       />
       <Helmet>
@@ -271,20 +273,17 @@ const FoodDrink = () => {
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving. <em>March 16 Update: Most CBD cafes are open today for the start of the Green Energy Forum at The Ville—it's a busy Monday in the North!</em>
-              </p>
+                 ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving. <em>March 23 Update: Most CBD cafes are back to their regular rhythm today following a busy Harmony Week. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi remain the local picks for an early start.</em>
+               </p>
             </LocalInsightCard>
 
             {/* Weekly Highlight */}
-            <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
-              <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (March 16–22)</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                🍀 <strong>St. Patrick's Day (Tuesday, March 17):</strong> Expect the CBD and Palmer Street to be buzzing! The Commonwealth Hotel and Seaview are usually the heart of the action.
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                🧡 <strong>Harmony Week:</strong> Celebrate our city's diversity with a meal at Coo.King BBQ or Hoi Polloi.
-              </p>
-            </div>
+             <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
+               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (March 23–29)</h3>
+               <p className="text-sm text-muted-foreground leading-relaxed">
+                 🌅 <strong>March 23–29:</strong> The focus is on the waterfront this week. With the humidity dropping slightly, it's the perfect time for alfresco dining at A Touch of Salt or a sunset gelato at Juliette's.
+               </p>
+             </div>
 
             {/* Coffee Culture */}
             <LocalInsightCard title="☕ Coffee Culture" variant="insight" className="mb-12">
@@ -378,11 +377,11 @@ const FoodDrink = () => {
                     <strong>Local Tip:</strong> Most live music in the Ville kicks off from 4:00 PM on Fridays and 2:00 PM for Sunday Sessions. Check the venue socials for this week's specific lineup.
                   </p>
                 </div>
-                <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
-                  <p className="text-sm text-foreground">
-                    🎸 <strong>Game Day Vibes (Sunday, March 22):</strong> Heading to the Cowboys? Tiny Mountain Brewery and City Lane will have the best pre-game atmosphere, while Palmer Street is the spot for post-match dinner and live soloists.
-                  </p>
-                </div>
+                 <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
+                   <p className="text-sm text-foreground">
+                     🎸 <strong>Game Day Vibes (Saturday, March 28):</strong> Heading to the Cowboys vs. Storm blockbuster? Tiny Mountain Brewery and the City Lane precinct will be the heart of the pre-game atmosphere. For post-match celebrations (or debriefs), Palmer Street's dining strip is the place to be—book ahead as Saturday nights are always at capacity.
+                   </p>
+                 </div>
               </div>
             </section>
 
