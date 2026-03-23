@@ -214,12 +214,12 @@ const CowboysStadiumGuide = () => {
                 <p className="text-sm text-muted-foreground italic">
                   Buses run from 2 hours before kick-off and up to 1 hour after the final whistle.
                 </p>
-                <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
-                  <span className="text-sm">⚠️</span>
-                  <p className="text-amber-800 text-sm">
-                    <strong>Traffic Alert:</strong> Harmony Week activities in the CBD may add to Sunday's traffic. Use the free Park & Ride from Lou Litster Park to skip the congestion.
-                  </p>
-                </div>
+                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
+                   <span className="text-sm">⚠️</span>
+                   <p className="text-amber-800 text-sm">
+                     <strong>Saturday Night Alert:</strong> With a 6:30 PM kick-off, CBD traffic will be heavy from 4:30 PM onwards. We highly recommend the free Park & Ride from Lou Litster Park to avoid the parking hunt in the city.
+                   </p>
+                 </div>
               </CardContent>
             </Card>
           </section>
