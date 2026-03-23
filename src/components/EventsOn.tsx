@@ -12,7 +12,7 @@ const EventsOn = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
             <span className="text-primary font-bold tracking-wider uppercase text-sm">Seasonal Events & Local Highlights</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">March in the Ville: NRL, Markets & Coastal Runs</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">This Week in the Ville: Cricket, ABBA & Markets</h2>
             <p className="text-slate-600 mt-2 max-w-xl text-lg">
               Townsville hosts markets, festivals, long weekends, and community events throughout the year.
             </p>
