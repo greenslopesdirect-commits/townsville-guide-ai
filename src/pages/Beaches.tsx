@@ -81,7 +81,7 @@ const northernBeaches = [
     badge: { label: "⭐ Top Search Pick", color: "bg-amber-100 text-amber-800 hover:bg-amber-100" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Quiet", "Dog Friendly"],
-    description: "6km of unspoilt sand — the local pick for a peaceful escape with no crowds.",
+    description: "6km of unspoilt sand—the ultimate local pick for a peaceful escape. High-intent searchers: this is the best spot north of Townsville for a long, quiet walk away from the city crowds.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
@@ -96,7 +96,7 @@ const northernBeaches = [
     badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
     tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that becomes very shallow at low tide. Local Tip: Best for low-tide walks this week to see the vast sand flats.",
+    description: "A sleepy residential beach that becomes very shallow at low tide. Local Tip: Best for low-tide walks this weekend (March 28-29) to see the vast sand flats. Perfect for photography.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
@@ -156,7 +156,7 @@ const Beaches = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
         title="Beaches North of Townsville | The 🐾 Schnauzer Approved Local Guide"
-        description="Looking for the best beaches north of Townsville? 🐾 Schnauzer Approved local guide to Saunders Beach, Bushland Beach, and Toolakea. Updated March 16, 2026, with stinger safety status, tide times, and the best off-leash spots. No hallucinations, just North Queensland secrets."
+        description="Looking for the best beaches north of Townsville? 🐾 Schnauzer Approved local guide to Saunders Beach, Bushland Beach, and Toolakea. Updated March 23, 2026, with stinger safety status, tide times, and the best off-leash spots. No hallucinations, just North Queensland secrets."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
       <Helmet>
@@ -234,7 +234,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-        🌊 March 16 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. The weather is clearing—perfect for exploring the Northern Beaches.{" "}
+        🌊 March 23 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Conditions are stunning and clear—perfect for exploring the Northern Beaches this week.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
@@ -518,14 +518,14 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">🌊 March 16 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. The weather is clearing—perfect for exploring the Northern Beaches. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">🌊 March 23 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Conditions are stunning and clear—perfect for exploring the Northern Beaches this week. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 16): Low tide is at 9:15 AM and 9:45 PM. Perfect for a morning run at Saunders or Bushland Beach.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 23): Low tide is at 2:45 PM. Plan your beach runs for the early morning or late afternoon to avoid the midday heat and catch the best sand conditions.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
