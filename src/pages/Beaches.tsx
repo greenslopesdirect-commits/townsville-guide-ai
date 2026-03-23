@@ -234,7 +234,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-        🌊 March 16 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. The weather is clearing—perfect for exploring the Northern Beaches.{" "}
+        🌊 March 23 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Conditions are stunning and clear—perfect for exploring the Northern Beaches this week.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
