@@ -225,7 +225,7 @@ const Events = () => {
           <div className="space-y-2 text-center sm:text-left">
             <h3 className="font-semibold text-lg text-blue-900">Looking for a quiet sunset spot?</h3>
             <p className="text-blue-700 text-sm max-w-md">
-              For a quieter coastal sunset, head north to Rowes Bay. Easy parking, fewer crowds, and steady sea breeze.
+              For a quieter coastal escape, head to the secret northern beaches like Saunders Beach or Toolakea. Easy parking, fewer crowds, and a steady sea breeze.
             </p>
           </div>
           <Button asChild variant="outline" className="bg-white hover:bg-blue-50 text-blue-700 border-blue-200 shrink-0">
