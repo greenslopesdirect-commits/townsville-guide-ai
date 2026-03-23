@@ -176,6 +176,12 @@ const NorthShoreTownsville = () => {
               </p>
             </LocalInsightCard>
 
+            <LocalInsightCard title="Pro-Tip: Gateway to the North" variant="insight">
+              <p>
+                North Shore is the perfect staging point for a day trip to Saunders Beach or Toolakea—just a 15-minute drive further north.
+              </p>
+            </LocalInsightCard>
+
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
                 The Wetlands Loop is absolutely vibrant this week (March 23–29)! Following the rain, the Brolgas and Jabirus are incredibly active at sunrise. The paved tracks are dry and perfect for a morning walk before the midday heat kicks in.
