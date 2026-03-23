@@ -104,9 +104,9 @@ const DogFriendly = () => {
 
           {/* Local Tip */}
           <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
-            <p>
-              March 16 Heat Alert: Humidity is at 81%. Pavement and sand are hitting 50°C+ by 10am. Stick to early morning or late evening walks to protect paws.
-            </p>
+           <p>
+               March 23 Heat Alert: Humidity is sitting high this week. Pavement and sand are hitting 50°C+ by 10am. Strictly stick to sunrise or sunset walks to protect your dog's paws. If you can't hold your hand on the ground for 5 seconds, it's too hot!
+             </p>
           </LocalInsightCard>
 
           {/* Stinger Alert */}
@@ -190,8 +190,8 @@ const DogFriendly = () => {
                 <li className="flex items-start gap-3">
                   <Fish className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-sm text-foreground">Twilight Toad Alert</p>
-                    <p className="text-sm text-muted-foreground mt-1">If you're walking at Saunders or Bushland Beach near dusk, keep your dog away from the dune grass. This is when Cane Toads are most active and dangerous.</p>
+                     <p className="font-semibold text-sm text-foreground">Twilight Toad Alert</p>
+                     <p className="text-sm text-muted-foreground mt-1">With the recent humidity, Cane Toads are active near the dunes at Saunders and Bushland Beach at dusk. Keep a close eye on your dog if you're out for a sunset stroll.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -236,7 +236,7 @@ const DogFriendly = () => {
                 <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                  <p className="text-xs text-muted-foreground mt-1">🌊 March 16 Status: Stinger nets are ACTIVE. Keep dogs out of the water outside of netted areas at The Strand and Pallarenda.</p>
+                  <p className="text-xs text-muted-foreground mt-1">🌊 March 23 Update: Stinger nets are ACTIVE. Keep dogs out of the water outside of netted areas at The Strand and Pallarenda. For off-leash runs, Saunders Beach and Bushland Beach are great, but stay on the wet sand near the water's edge to keep paws cool.</p>
                   <p className="text-xs text-muted-foreground mt-1">Review our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> for full details.</p>
                 </div>
               </div>
