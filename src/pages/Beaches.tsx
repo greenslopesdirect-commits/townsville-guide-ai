@@ -96,7 +96,7 @@ const northernBeaches = [
     badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
     tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that becomes very shallow at low tide. Local Tip: Best for low-tide walks this week to see the vast sand flats.",
+    description: "A sleepy residential beach that becomes very shallow at low tide. Local Tip: Best for low-tide walks this weekend (March 28-29) to see the vast sand flats. Perfect for photography.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
