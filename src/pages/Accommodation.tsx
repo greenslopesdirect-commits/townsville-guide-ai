@@ -117,8 +117,8 @@ const Accommodation = () => {
   return (
     <>
       <SEOHead
-        title="Where to Stay in Townsville: Best Hotels & Resorts 2026"
-        description="Compare the best Townsville accommodation, from luxury hotels on The Strand to family-friendly resorts and pet-friendly stays. Updated for March 2026."
+        title="Where to Stay in Townsville (Updated March 2026)"
+        description="From luxury resorts to dog-friendly caravan parks, find the best Townsville accommodation. Updated for March 23–29 with last-minute Easter tips and Cowboys game day advice."
         canonical="https://www.myaussieguide.com.au/accommodation"
       />
       <Helmet>
