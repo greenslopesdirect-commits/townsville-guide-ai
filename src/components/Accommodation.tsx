@@ -14,7 +14,7 @@ const Accommodation = () => {
   const hotels = [
     {
       name: "The Ville Resort–Casino",
-      description: "Luxury resort with ocean views, lagoon-style pools, casino facilities, and premium restaurants.",
+      description: "Luxury resort with ocean views, lagoon-style pools, casino facilities, and premium restaurants. High-energy vibe this weekend with Saturday night footy and the ABBA tribute at the TECC.",
       googleSearchLink: "https://www.google.com/search?q=The+Ville+Resort+Casino+Townsville",
       image: villeResortImage,
     },

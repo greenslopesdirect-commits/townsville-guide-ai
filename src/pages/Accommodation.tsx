@@ -20,7 +20,7 @@ const Accommodation = () => {
   const hotels = [
     {
       title: "The Ville Resort–Casino",
-      description: "Townsville's premier oceanfront resort featuring lagoon pool, casino, multiple restaurants and stunning ocean views. Perfect for luxury getaways. Hosting the Green Energy Forum this week (March 16–18)—expect a buzzing atmosphere around the pool and restaurants.",
+      description: "Townsville's premier oceanfront resort featuring lagoon pool, casino, multiple restaurants and stunning ocean views. Perfect for luxury getaways. Expect a high-energy vibe this weekend as fans arrive for the Saturday night footy and the ABBA tribute at the TECC.",
       image: theVilleImage,
       tags: ["Luxury", "Waterfront", "Pool"],
       features: [
@@ -117,8 +117,8 @@ const Accommodation = () => {
   return (
     <>
       <SEOHead
-        title="Where to Stay in Townsville: Best Hotels & Resorts 2026"
-        description="Compare the best Townsville accommodation, from luxury hotels on The Strand to family-friendly resorts and pet-friendly stays. Updated for March 2026."
+        title="Where to Stay in Townsville (Updated March 2026)"
+        description="From luxury resorts to dog-friendly caravan parks, find the best Townsville accommodation. Updated for March 23–29 with last-minute Easter tips and Cowboys game day advice."
         canonical="https://www.myaussieguide.com.au/accommodation"
       />
       <Helmet>
@@ -167,8 +167,11 @@ const Accommodation = () => {
 
             {/* Seasonal Alert */}
             <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-12">
+              <p className="text-amber-800 dark:text-amber-300 leading-relaxed mb-3">
+                ⚠️ <strong>Last Call for Easter:</strong> With only 1 week until the school holidays begin (April 2), availability across Townsville is extremely limited. If you haven't booked your Magnetic Island or beachfront stay yet, do it today.
+              </p>
               <p className="text-amber-800 dark:text-amber-300 leading-relaxed">
-                🗓️ <strong>March 16 Update:</strong> With only 2 weeks until the Easter break, local accommodation is filling up fast! ⚠️ <strong>Pro-Tip:</strong> If you're coming for the Cowboys game this Sunday (March 22), check for late availability in the CBD or South Townsville to be within walking distance of the stadium.
+                🏆 <strong>Cowboys vs. Storm (Saturday, March 28):</strong> This Saturday night is a blockbuster. Expect CBD and Palmer Street hotels (like the Grand Chancellor and Oaks) to be at 100% capacity. If you're coming for the game, look for availability in North Shore or the Northern Suburbs as a backup.
               </p>
             </div>
 
