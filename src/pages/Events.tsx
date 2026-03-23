@@ -445,9 +445,9 @@ const Events = () => {
             <Footprints className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
             <div>
               <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
-              <p className="text-amber-800 text-sm mt-1">
-                If you're planning a camping trip to Saunders Beach or Rollingstone for the long weekend, Council bookings open early — get in now to secure a spot!
-              </p>
+               <p className="text-amber-800 text-sm mt-1">
+                 April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. It's the best time of year for outdoor photography at our secret northern beaches like Saunders and Toolakea.
+               </p>
             </div>
           </div>
         </section>
