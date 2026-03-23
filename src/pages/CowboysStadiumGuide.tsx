@@ -42,23 +42,22 @@ const CowboysStadiumGuide = () => {
             </p>
           </header>
 
-          {/* 2026 Season Launch */}
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
               <Trophy className="w-6 h-6 text-primary" />
-              2026 Season Launch
+              2026 Home Opener Recap
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-l-4 border-l-gray-400 bg-gray-50/50">
+              <Card className="border-l-4 border-l-green-500 bg-green-50/30">
                 <CardHeader className="pb-2">
-                  <Badge variant="secondary" className="w-fit">
-                    Recent Result
+                  <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
+                    Season Update
                   </Badge>
-                   <CardTitle className="text-lg mt-2">Rounds 1 & 2 Recap</CardTitle>
+                   <CardTitle className="text-lg mt-2">Round 3 Recap</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <p className="text-sm text-muted-foreground">
-                    A tough road start for the boys with losses in Vegas and Sydney. We're looking for a massive home crowd to help turn the momentum this Sunday!
+                    The energy at the home opener against the Titans was electric! After a tough start on the road, the boys are back in front of the Townsville faithful. Now, all eyes turn to Saturday night as we host a powerhouse match-up.
                   </p>
                 </CardContent>
               </Card>
@@ -66,21 +65,21 @@ const CowboysStadiumGuide = () => {
               <Card className="border-l-4 border-l-primary shadow-sm">
                 <CardHeader className="pb-2">
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
-                    First Home Game
+                    Next Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">THIS SUNDAY: Round 3 Home Opener - Cowboys vs Titans</CardTitle>
+                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 4 – Cowboys vs. Melbourne Storm</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar className="w-4 h-4 flex-shrink-0" />
-                      <span>Sunday, March 22, 2026</span>
+                      <span>Saturday, March 28, 2026</span>
                     </div>
                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
                       <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                       <span>
                         Queensland Country Bank Stadium.<br />
-                        <span className="font-medium text-foreground">Gates Open: 3:45 PM | Kick-off: 5:15 PM</span>
+                        <span className="font-medium text-foreground">Gates Open: 5:00 PM | Kick-off: 6:30 PM</span>
                       </span>
                     </div>
                   </div>
@@ -92,9 +91,6 @@ const CowboysStadiumGuide = () => {
                   </Button>
                 </CardContent>
               </Card>
-            </div>
-            <div className="bg-muted/50 border rounded-lg p-3 text-sm text-center text-muted-foreground mt-4">
-              <strong>Coming Up:</strong> Round 4 - Cowboys vs Storm (Home) | Saturday, March 28, 6:30 PM
             </div>
           </section>
 
@@ -147,9 +143,9 @@ const CowboysStadiumGuide = () => {
               <span className="text-lg">💡</span>
               <div>
                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
-                <p className="text-amber-800 text-sm mt-1">
-                  Expect the Leagues Club to be at capacity by 3:00 PM this Sunday. Get in early if you want a seat before the march begins at 4:30 PM.
-                </p>
+                 <p className="text-amber-800 text-sm mt-1">
+                   With a 6:30 PM kick-off, expect the Leagues Club to reach capacity by 4:30 PM. The 'Stampede' march across Lowths Bridge will depart at approximately 5:45 PM.
+                 </p>
               </div>
             </div>
 
@@ -218,12 +214,12 @@ const CowboysStadiumGuide = () => {
                 <p className="text-sm text-muted-foreground italic">
                   Buses run from 2 hours before kick-off and up to 1 hour after the final whistle.
                 </p>
-                <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
-                  <span className="text-sm">⚠️</span>
-                  <p className="text-amber-800 text-sm">
-                    <strong>Traffic Alert:</strong> Harmony Week activities in the CBD may add to Sunday's traffic. Use the free Park & Ride from Lou Litster Park to skip the congestion.
-                  </p>
-                </div>
+                 <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
+                   <span className="text-sm">⚠️</span>
+                   <p className="text-amber-800 text-sm">
+                     <strong>Saturday Night Alert:</strong> With a 6:30 PM kick-off, CBD traffic will be heavy from 4:30 PM onwards. We highly recommend the free Park & Ride from Lou Litster Park to avoid the parking hunt in the city.
+                   </p>
+                 </div>
               </CardContent>
             </Card>
           </section>
