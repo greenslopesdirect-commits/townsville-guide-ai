@@ -75,8 +75,8 @@ const DogFriendly = () => {
   return (
     <>
       <SEOHead
-        title="Dog-Friendly Beaches in Townsville — Off-Leash, Swimming & Safety"
-        description="Local guide to dog-friendly beaches in Townsville. Find off-leash beaches, dog swimming spots, stinger net info, and safety tips for North Queensland."
+        title="Best Dog-Friendly Beaches in Townsville (Off-Leash Guide 2026)"
+        description="Find the best dog friendly beaches in Townsville. Our 2026 guide covers Pallarenda, Saunders Beach, and Bushland Beach with off-leash zones and tropical safety tips."
         canonical="https://www.myaussieguide.com.au/dog-friendly"
       />
 
