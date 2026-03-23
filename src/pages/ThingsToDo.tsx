@@ -610,7 +610,7 @@ const ThingsToDo = () => {
               <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4 mb-8 flex gap-3 items-start">
                 <span className="text-lg">⚠️</span>
                 <p className="text-amber-800 dark:text-amber-300 text-sm font-medium">
-                  Update March 16: Only 2 weeks to go! If you're planning on visiting Billabong Sanctuary for the Easter Bilbies, check their session times now.
+                  Update: Only 1 week until Term 1 ends (Thursday, April 2)! If you haven't booked your Magnetic Island ferry or Billabong Sanctuary sessions for the Easter break, do it this week. Spots are filling up fast.
                 </p>
               </div>
 
