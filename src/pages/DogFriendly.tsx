@@ -104,9 +104,9 @@ const DogFriendly = () => {
 
           {/* Local Tip */}
           <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
-            <p>
-              March 16 Heat Alert: Humidity is at 81%. Pavement and sand are hitting 50°C+ by 10am. Stick to early morning or late evening walks to protect paws.
-            </p>
+           <p>
+               March 23 Heat Alert: Humidity is sitting high this week. Pavement and sand are hitting 50°C+ by 10am. Strictly stick to sunrise or sunset walks to protect your dog's paws. If you can't hold your hand on the ground for 5 seconds, it's too hot!
+             </p>
           </LocalInsightCard>
 
           {/* Stinger Alert */}
