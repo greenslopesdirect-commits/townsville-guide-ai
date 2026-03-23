@@ -190,8 +190,8 @@ const DogFriendly = () => {
                 <li className="flex items-start gap-3">
                   <Fish className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
                   <div>
-                    <p className="font-semibold text-sm text-foreground">Twilight Toad Alert</p>
-                    <p className="text-sm text-muted-foreground mt-1">If you're walking at Saunders or Bushland Beach near dusk, keep your dog away from the dune grass. This is when Cane Toads are most active and dangerous.</p>
+                     <p className="font-semibold text-sm text-foreground">Twilight Toad Alert</p>
+                     <p className="text-sm text-muted-foreground mt-1">With the recent humidity, Cane Toads are active near the dunes at Saunders and Bushland Beach at dusk. Keep a close eye on your dog if you're out for a sunset stroll.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
