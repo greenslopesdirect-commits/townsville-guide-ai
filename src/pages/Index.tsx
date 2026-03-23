@@ -169,10 +169,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: March 16, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: March 23, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                ☀️ Updated: March 16, 2026. It's Harmony Week! Wear orange to show support for diversity. Conditions are clearing after the rain—perfect for a post-work Strand walk. Stinger nets are ACTIVE. The Cowboys are back in town after a tough away start; expect the energy to build in the CBD ahead of Sunday's home opener!
+                ☀️ Following a huge Harmony Week, the energy is shifting toward a big weekend of sport and music. The Canefield Ashes are back this Friday, and ABBA fans are taking over the TECC on Saturday night. If you're heading to the falls, the water levels are perfect after the recent rains—grab your camera!
+              </p>
+            </div>
+
+            {/* Easter Countdown */}
+            <div className="mt-6 bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-300 dark:border-amber-700 rounded-2xl p-5 sm:p-6">
+              <p className="text-base sm:text-lg text-amber-800 dark:text-amber-300 font-medium leading-relaxed">
+                ⚠️ Update: Only 1 week until Term 1 ends (April 2)! Magnetic Island ferries and Reef tours are booking out fast for the Easter long weekend. Secure your spot today.
               </p>
             </div>
           </div>

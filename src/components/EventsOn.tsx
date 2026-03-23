@@ -12,7 +12,7 @@ const EventsOn = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
             <span className="text-primary font-bold tracking-wider uppercase text-sm">Seasonal Events & Local Highlights</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">March in the Ville: NRL, Markets & Coastal Runs</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">This Week in the Ville: Cricket, ABBA & Markets</h2>
             <p className="text-slate-600 mt-2 max-w-xl text-lg">
               Townsville hosts markets, festivals, long weekends, and community events throughout the year.
             </p>
@@ -37,8 +37,8 @@ const EventsOn = () => {
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
                     <p className="text-blue-100 font-medium">Something for every season</p>
-                    <p className="mt-3 text-sm font-semibold text-yellow-300">🍂 Seasonal Focus: Cultural Theatre & Autumn Market Mornings</p>
-                    <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">NRL Season</span>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🍂 Seasonal Focus: Cricket, Live Music & Autumn Markets</p>
+                     <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">NRL Season</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
@@ -77,22 +77,22 @@ const EventsOn = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
             
-        {/* Card 1 — Thursday */}
+        {/* Card 1 — Friday */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                        <div className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Thursday
+                        <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Friday
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Harmony Day at JCU</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Thursday, March 19</p>
+                    <h4 className="text-lg font-bold mb-2">The Canefield Ashes</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Friday, March 27</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Central Plaza (Bldg 143)
+                        <MapPin className="w-4 h-4" /> Various venues
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> 10:30 AM – 1:00 PM · Food, culture & music
+                        <Clock className="w-4 h-4" /> Invitational T20 Cricket
                     </div>
                 </CardContent>
             </Card>
@@ -106,13 +106,13 @@ const EventsOn = () => {
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Townsville Cross Country Run</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, March 21</p>
+                    <h4 className="text-lg font-bold mb-2">ABBA: Thank You for the Music</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, March 28</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Bicentennial Park
+                        <MapPin className="w-4 h-4" /> TECC
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> 7:00 AM – 9:00 AM
+                        <Clock className="w-4 h-4" /> 7:30 PM
                     </div>
                 </CardContent>
             </Card>
@@ -128,9 +128,28 @@ const EventsOn = () => {
 
         </div>
 
-        {/* Sunday highlight card */}
-        <div className="mt-6">
-          <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200 max-w-sm">
+        {/* Additional weekend cards */}
+        <div className="grid md:grid-cols-2 gap-6 mt-6">
+          <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+            <CardContent className="p-6">
+              <div className="flex justify-between items-start mb-4">
+                <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
+                  Saturday
+                </div>
+                <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+              </div>
+              <h4 className="text-lg font-bold mb-2">Townsville 10K Series: Race 1</h4>
+              <p className="text-xs text-primary font-medium mb-1">Saturday, March 28</p>
+              <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                <MapPin className="w-4 h-4" /> Ross River Dam
+              </div>
+              <div className="flex items-center gap-2 text-sm text-slate-500">
+                <Clock className="w-4 h-4" /> 7:00 AM
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
@@ -138,20 +157,20 @@ const EventsOn = () => {
                 </div>
                 <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
               </div>
-              <h4 className="text-lg font-bold mb-2">NRL: Cowboys vs Titans</h4>
-              <p className="text-xs text-primary font-medium mb-1">Sunday, March 22</p>
+              <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
+              <p className="text-xs text-primary font-medium mb-1">Sunday, March 29</p>
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
+                <MapPin className="w-4 h-4" /> Flinders Street
               </div>
               <div className="flex items-center gap-2 text-sm text-slate-500">
-                <Clock className="w-4 h-4" /> Kickoff 5:15 PM
+                <Clock className="w-4 h-4" /> 8:00 AM – 1:00 PM
               </div>
             </CardContent>
           </Card>
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🌅 <strong>Highlight:</strong> The Cowboys face the Titans at home THIS Sunday, March 22 (5:15 PM). <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Read the Game Day Guide →</Link>
+          🌅 <strong>Highlight:</strong> The Canefield Ashes return this Friday! Plus, ABBA takes over TECC on Saturday night. <Link to="/townsville/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
