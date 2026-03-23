@@ -170,7 +170,7 @@ const EventsOn = () => {
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🌅 <strong>Highlight:</strong> The Cowboys face the Titans at home THIS Sunday, March 22 (5:15 PM). <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Read the Game Day Guide →</Link>
+          🌅 <strong>Highlight:</strong> The Canefield Ashes return this Friday! Plus, ABBA takes over TECC on Saturday night. <Link to="/townsville/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
