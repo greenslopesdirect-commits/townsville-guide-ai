@@ -271,8 +271,8 @@ const FoodDrink = () => {
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving. <em>March 16 Update: Most CBD cafes are open today for the start of the Green Energy Forum at The Ville—it's a busy Monday in the North!</em>
-              </p>
+                 ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving. <em>March 23 Update: Most CBD cafes are back to their regular rhythm today following a busy Harmony Week. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi remain the local picks for an early start.</em>
+               </p>
             </LocalInsightCard>
 
             {/* Weekly Highlight */}
