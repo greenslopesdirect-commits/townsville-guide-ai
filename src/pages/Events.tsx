@@ -11,7 +11,7 @@ const Events = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
         title="What's On in Townsville | March 2026 Events & NRL Guide"
-        description="Updated March 16: The best local guide to Townsville events this weekend. NRL Cowboys home games, markets, theatre, and free family activities. No hallucinations, just local facts."
+        description="Updated March 23: The best local guide to Townsville events this weekend. Canefield Ashes cricket, ABBA tribute, 10K Series, and free markets. No hallucinations, just local facts."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-03-16">
-            <time dateTime="2026-03-16">Updated: March 16, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-03-23">
+            <time dateTime="2026-03-23">Updated: March 23, 2026</time>
           </span>
         </div>
       </div>
@@ -33,13 +33,13 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville This Week (March 16–22, 2026)
+             What's On in Townsville This Week (March 23–29, 2026)
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-             This week's big hitters: <strong>The Rocky Horror Show</strong> lands at the Civic Theatre and the <strong>Cowboys face the Titans</strong> at home on Sunday arvo. Plus free family movies, markets, and autumn clearing skies.
+             This week's big hitters: <strong>The Canefield Ashes</strong> cricket invitational, the <strong>ABBA tribute at the TECC</strong>, and the start of the <strong>Townsville 10K Series</strong>. Plus, autumn clearing skies make it a perfect week for waterfall chasing at Crystal Creek.
            </p>
         </div>
 
@@ -52,10 +52,10 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Harmony Week: Celebrating Townsville's cultural diversity (March 16–22)</li>
-            <li>Theatre: The Rocky Horror Show at Townsville Civic Theatre (from Thursday, March 19)</li>
-            <li>Free: Riverway Movie Night — <em>The Bad Guys</em> under the stars (Friday, March 20 | 6:30 PM)</li>
-            <li>NRL: Cowboys vs. Titans at Queensland Country Bank Stadium (Sunday, March 22 | 5:15 PM)</li>
+            <li>Cricket: The Canefield Ashes — T20 invitational across local venues (Friday–Saturday, March 27–28)</li>
+            <li>Music: ABBA: Thank You for the Music at TECC (Saturday, March 28 | 7:30 PM)</li>
+            <li>Sport: Townsville 10K Series: Race 1 at Ross River Dam (Saturday, March 28 | 7:00 AM)</li>
+            <li>Markets: Cotters Market on Flinders Street (Sunday, March 29 | 8:00 AM – 1:00 PM)</li>
             <li>Clearing skies and sunshine — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
           </ul>
         </section>
@@ -88,115 +88,119 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               March 16–22
+               March 23–29
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Harmony Week */}
-            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
+            {/* The Canefield Ashes */}
+            <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Community
+                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
+                    Cricket
                   </Badge>
-                  <Sun className="w-5 h-5 text-gray-400" />
+                  <Trophy className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Harmony Week</CardTitle>
+                <CardTitle className="text-xl mt-2">The Canefield Ashes</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>March 16–22 | Various Locations</span>
+                    <span>Friday, March 27 & Saturday, March 28</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Various local venues</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Celebrating Townsville's cultural diversity all week. Wear orange on Friday!
+                  High-energy T20 cricket with a legendary local atmosphere. One of Townsville's favourite community sporting events.
                 </p>
               </CardContent>
             </Card>
             
-            {/* The Rocky Horror Show */}
+            {/* ABBA: Thank You for the Music */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Theatre
+                    Theatre / Music
                   </Badge>
                   <Music className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">The Rocky Horror Show</CardTitle>
+                <CardTitle className="text-xl mt-2">ABBA: Thank You for the Music</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Starts Thursday, March 19</span>
+                    <span>Saturday, March 28 | 7:30 PM</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Townsville Civic Theatre</span>
+                    <span>Townsville Entertainment & Convention Centre</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The legendary rock 'n' roll musical arrives. Don't dream it, be it!
+                  A massive night of hits for ABBA fans. Dancing Queen, Mamma Mia, and all the classics — live on stage at the TECC.
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Riverway Movie Night */}
-              <Card className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge variant="outline">Free Event</Badge>
-                    <Info className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Riverway Movie Night</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Friday, March 20 | 6:30 PM</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>Riverway Oval</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    Free family screening of <em>The Bad Guys</em> under the stars. Bring a blanket, some snacks, and enjoy the evening.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* NRL: Cowboys vs. Titans */}
+              {/* Townsville 10K Series */}
               <Card className="hover:shadow-md transition-shadow border-l-4 border-l-blue-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                      NRL
+                      Sport / Fitness
                     </Badge>
-                    <Trophy className="w-5 h-5 text-gray-400" />
+                    <Footprints className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">NRL: Cowboys vs. Titans</CardTitle>
+                  <CardTitle className="text-lg mt-2">Townsville 10K Series: Race 1</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 22 | 5:15 PM</span>
+                      <span>Saturday, March 28 | 7:00 AM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>QLD Country Bank Stadium</span>
+                      <span>Ross River Dam</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    The first home game of 2026! Check our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Game Day Guide</Link> for parking, food, and gate tips.
+                    Kick off the running season with a scenic 10K around the weir. A great community event for all fitness levels.
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Cotters Market */}
+              <Card className="hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <div className="flex justify-between items-start">
+                    <Badge variant="outline">Markets</Badge>
+                    <Info className="w-5 h-5 text-gray-400" />
+                  </div>
+                  <CardTitle className="text-lg mt-2">Cotters Market</CardTitle>
+                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                    <div className="flex items-center gap-2">
+                      <Calendar className="w-4 h-4" />
+                      <span>Sunday, March 29 | 8:00 AM – 1:00 PM</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <MapPin className="w-4 h-4" />
+                      <span>Flinders Street</span>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">
+                    Your weekly fix of local crafts, produce, and street food. A Sunday morning staple in the heart of the CBD.
                   </p>
                 </CardContent>
               </Card>
@@ -221,7 +225,7 @@ const Events = () => {
           <div className="space-y-2 text-center sm:text-left">
             <h3 className="font-semibold text-lg text-blue-900">Looking for a quiet sunset spot?</h3>
             <p className="text-blue-700 text-sm max-w-md">
-              For a quieter coastal sunset, head north to Rowes Bay. Easy parking, fewer crowds, and steady sea breeze.
+              For a quieter coastal escape, head to the secret northern beaches like Saunders Beach or Toolakea. Easy parking, fewer crowds, and a steady sea breeze.
             </p>
           </div>
           <Button asChild variant="outline" className="bg-white hover:bg-blue-50 text-blue-700 border-blue-200 shrink-0">
@@ -254,7 +258,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">The Cowboys face the Titans at home on March 22.</p>
+                <p className="text-sm text-gray-600">Next home game details updating — check the draw for Round 4 and beyond.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
@@ -363,9 +367,9 @@ const Events = () => {
           
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 flex gap-3 items-start">
             <span className="text-lg">⚠️</span>
-            <p className="text-amber-800 text-sm font-medium">
-              Update: Only 2 weeks until Term 1 ends! Have you booked your Magnetic Island ferry yet?
-            </p>
+             <p className="text-amber-800 text-sm font-medium">
+               Update: Only 1 week until Term 1 ends (Thursday, April 2)! Have you booked your Magnetic Island ferry yet?
+             </p>
           </div>
 
           {/* Key Dates */}
@@ -441,9 +445,9 @@ const Events = () => {
             <Footprints className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
             <div>
               <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
-              <p className="text-amber-800 text-sm mt-1">
-                If you're planning a camping trip to Saunders Beach or Rollingstone for the long weekend, Council bookings open early — get in now to secure a spot!
-              </p>
+               <p className="text-amber-800 text-sm mt-1">
+                 April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. It's the best time of year for outdoor photography at our secret northern beaches like Saunders and Toolakea.
+               </p>
             </div>
           </div>
         </section>
@@ -494,7 +498,7 @@ const Events = () => {
             <div>
               <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
               <p className="text-amber-800 text-sm mt-1">
-                April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. Perfect for outdoor photography!
+                April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. It's the best time of year for outdoor photography at our secret northern beaches like Saunders and Toolakea.
               </p>
             </div>
           </div>
