@@ -143,9 +143,9 @@ const CowboysStadiumGuide = () => {
               <span className="text-lg">💡</span>
               <div>
                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
-                <p className="text-amber-800 text-sm mt-1">
-                  Expect the Leagues Club to be at capacity by 3:00 PM this Sunday. Get in early if you want a seat before the march begins at 4:30 PM.
-                </p>
+                 <p className="text-amber-800 text-sm mt-1">
+                   With a 6:30 PM kick-off, expect the Leagues Club to reach capacity by 4:30 PM. The 'Stampede' march across Lowths Bridge will depart at approximately 5:45 PM.
+                 </p>
               </div>
             </div>
 
