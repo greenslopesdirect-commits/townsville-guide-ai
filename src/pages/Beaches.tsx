@@ -81,7 +81,7 @@ const northernBeaches = [
     badge: { label: "⭐ Top Search Pick", color: "bg-amber-100 text-amber-800 hover:bg-amber-100" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Quiet", "Dog Friendly"],
-    description: "6km of unspoilt sand — the local pick for a peaceful escape with no crowds.",
+    description: "6km of unspoilt sand—the ultimate local pick for a peaceful escape. High-intent searchers: this is the best spot north of Townsville for a long, quiet walk away from the city crowds.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
