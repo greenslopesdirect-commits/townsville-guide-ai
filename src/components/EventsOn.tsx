@@ -37,8 +37,8 @@ const EventsOn = () => {
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
                     <p className="text-blue-100 font-medium">Something for every season</p>
-                    <p className="mt-3 text-sm font-semibold text-yellow-300">🍂 Seasonal Focus: Cultural Theatre & Autumn Market Mornings</p>
-                    <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">NRL Season</span>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🍂 Seasonal Focus: Cricket, Live Music & Autumn Markets</p>
+                     <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">NRL Season</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
