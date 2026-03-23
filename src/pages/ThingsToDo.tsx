@@ -270,8 +270,8 @@ const ThingsToDo = () => {
   return (
     <>
       <SEOHead
-        title="50+ Best Things to Do in Townsville (Updated March 2026)"
-        description="Discover the best things to do in Townsville today. From Castle Hill trails to hidden Northern Beaches. Local-verified tips for families, dog owners, and adventurers."
+        title="25 Best Things to Do in Townsville (Updated March 2026)"
+        description="From secret waterfalls to Castle Hill sunrises, explore the ultimate local guide to Townsville. Updated for March 23–29 with event tips, school holiday prep, and hidden gems."
         canonical="https://www.myaussieguide.com.au/things-to-do"
       />
       <Helmet>
@@ -333,7 +333,7 @@ const ThingsToDo = () => {
             {/* Weekly Highlight */}
             <div className="mb-12 p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-300 dark:border-emerald-700">
               <p className="text-emerald-800 dark:text-emerald-300 leading-relaxed">
-                🌊 <strong>Waterfall Watch:</strong> With the recent rain clearing, this is the BEST week to visit Little Crystal Creek and Jourama Falls. The falls are flowing beautifully and the rainforest is at its most vibrant green.
+                🌊 <strong>Waterfall Watch (March 23):</strong> With the clearing skies this week, the flow at Little Crystal Creek and Jourama Falls is perfect. This is the peak 'lush' window before the dry season kicks in—ideal for photographers.
               </p>
             </div>
 
@@ -610,7 +610,7 @@ const ThingsToDo = () => {
               <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4 mb-8 flex gap-3 items-start">
                 <span className="text-lg">⚠️</span>
                 <p className="text-amber-800 dark:text-amber-300 text-sm font-medium">
-                  Update March 16: Only 2 weeks to go! If you're planning on visiting Billabong Sanctuary for the Easter Bilbies, check their session times now.
+                  Update: Only 1 week until Term 1 ends (Thursday, April 2)! If you haven't booked your Magnetic Island ferry or Billabong Sanctuary sessions for the Easter break, do it this week. Spots are filling up fast.
                 </p>
               </div>
 
