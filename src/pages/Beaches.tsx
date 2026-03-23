@@ -156,7 +156,7 @@ const Beaches = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
         title="Beaches North of Townsville | The 🐾 Schnauzer Approved Local Guide"
-        description="Looking for the best beaches north of Townsville? 🐾 Schnauzer Approved local guide to Saunders Beach, Bushland Beach, and Toolakea. Updated March 16, 2026, with stinger safety status, tide times, and the best off-leash spots. No hallucinations, just North Queensland secrets."
+        description="Looking for the best beaches north of Townsville? 🐾 Schnauzer Approved local guide to Saunders Beach, Bushland Beach, and Toolakea. Updated March 23, 2026, with stinger safety status, tide times, and the best off-leash spots. No hallucinations, just North Queensland secrets."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
       <Helmet>
