@@ -243,11 +243,7 @@ const Events = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-gray-600">Check seasonality (Dry Season only). A popular evening out along <Link to="/the-strand" className="text-primary font-medium hover:underline">The Strand</Link> with live music, food, and local crafts.</p>
-                <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                  <a href="https://whatson.townsville.qld.gov.au/" target="_blank" rel="noopener noreferrer">
-                    Check dates <ExternalLink className="w-3 h-3" />
-                  </a>
-                </Button>
+                <p className="text-sm text-amber-700 font-medium mt-2">⚠️ NOTE: Not on Good Friday. The markets have been moved to Friday, April 10.</p>
               </CardContent>
             </Card>
 
