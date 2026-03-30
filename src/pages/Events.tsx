@@ -39,8 +39,8 @@ const Events = () => {
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-             This week's big hitters: <strong>The Canefield Ashes</strong> cricket invitational, the <strong>ABBA tribute at the TECC</strong>, and the start of the <strong>Townsville 10K Series</strong>. Plus, autumn clearing skies make it a perfect week for waterfall chasing at Crystal Creek.
-           </p>
+              This week's big hitters: The <strong>Easter Long Weekend</strong> kicks off, the <strong>Townsville Family Easter Carnival</strong> takes over Cluden Park, and <strong>Flight Facilities</strong> brings the vibes to The Ville for Easter Sunday. Plus, Term 1 finishes this Thursday—get ready for the school holiday rush!
+            </p>
         </div>
 
         {/* SEO Intro Paragraph */}
