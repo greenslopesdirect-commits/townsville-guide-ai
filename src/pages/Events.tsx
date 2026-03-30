@@ -52,11 +52,11 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Cricket: The Canefield Ashes — T20 invitational across local venues (Friday–Saturday, March 27–28)</li>
-            <li>Music: ABBA: Thank You for the Music at TECC (Saturday, March 28 | 7:30 PM)</li>
-            <li>Sport: Townsville 10K Series: Race 1 at Ross River Dam (Saturday, March 28 | 7:00 AM)</li>
-            <li>Markets: Cotters Market on Flinders Street (Sunday, March 29 | 8:00 AM – 1:00 PM)</li>
-            <li>Clearing skies and sunshine — perfect for visiting <Link to="/little-crystal-creek-townsville" className="text-primary font-medium hover:underline">Crystal Creek</Link> or the <Link to="/nature" className="text-primary font-medium hover:underline">Paluma Range</Link></li>
+            <li>Carnival: Townsville Family Easter Carnival at Cluden Park (Friday, April 3)</li>
+            <li>Music: Flight Facilities at The Ville Lawns (Sunday, April 5)</li>
+            <li>Footy: Cowboys vs Dragons Away Game (Saturday, April 4)</li>
+            <li>Markets: Cotters Market on Flinders Street (Sunday, April 5)</li>
+            <li>Nature: Perfect autumn weather for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or the <Link to="/the-strand" className="text-primary font-medium hover:underline">Strand Water Park</Link></li>
           </ul>
         </section>
 
