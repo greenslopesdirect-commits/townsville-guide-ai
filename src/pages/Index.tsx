@@ -169,7 +169,7 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: March 23, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: March 30, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 ☀️ Following a huge Harmony Week, the energy is shifting toward a big weekend of sport and music. The Canefield Ashes are back this Friday, and ABBA fans are taking over the TECC on Saturday night. If you're heading to the falls, the water levels are perfect after the recent rains—grab your camera!
