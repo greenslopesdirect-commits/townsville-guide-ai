@@ -238,7 +238,7 @@ For the full calendar, check the **[Events Page](/events)**!`);
             {/* New Feature Chip - Rowes Bay */}
             <Link to="/beaches">
                 <Button variant="outline" className="bg-white/95 hover:bg-white text-slate-900 border-none rounded-full px-6 py-5 font-bold shadow-lg hover:scale-105 transition-all flex items-center gap-2">
-                    🌅 Updated: Secret Beach & Dog Guide
+                    🌅 Updated: Easter & School Holiday Guide
                 </Button>
             </Link>
 
