@@ -12,7 +12,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026"
-        description="Catch the Cowboys vs Storm at QLD Country Bank Stadium this Saturday, March 28! Get the local guide to game day parking, the Stampede, and the best tickets in Townsville."
+        description="The local's guide to Cowboys game day at QLD Country Bank Stadium. Next home game: Cowboys vs Manly, April 16. Parking, the Stampede, and the best tips in Townsville."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
