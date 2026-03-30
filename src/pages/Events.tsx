@@ -23,7 +23,7 @@ const Events = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-03-23">
-            <time dateTime="2026-03-23">Updated: March 23, 2026</time>
+            <time dateTime="2026-03-30">Updated: March 30, 2026</time>
           </span>
         </div>
       </div>
