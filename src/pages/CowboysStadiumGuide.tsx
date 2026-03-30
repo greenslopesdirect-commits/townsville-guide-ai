@@ -160,7 +160,7 @@ const CowboysStadiumGuide = () => {
               <div>
                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                  <p className="text-amber-800 text-sm mt-1">
-                   With a 6:30 PM kick-off, expect the Leagues Club to reach capacity by 4:30 PM. The 'Stampede' march across Lowths Bridge will depart at approximately 5:45 PM.
+                   With a 7:50 PM kick-off for the Manly game, expect the Leagues Club to reach capacity by 5:30 PM. The 'Stampede' march across Lowths Bridge will depart at approximately 7:00 PM.
                  </p>
               </div>
             </div>
