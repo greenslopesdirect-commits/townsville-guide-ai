@@ -67,19 +67,19 @@ const CowboysStadiumGuide = () => {
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                     Next Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 4 – Cowboys vs. Melbourne Storm</CardTitle>
+                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 7 – Cowboys vs. Manly Sea Eagles</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar className="w-4 h-4 flex-shrink-0" />
-                      <span>Saturday, March 28, 2026</span>
+                      <span>Thursday, April 16, 2026</span>
                     </div>
                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
                       <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                       <span>
                         Queensland Country Bank Stadium.<br />
-                        <span className="font-medium text-foreground">Gates Open: 5:00 PM | Kick-off: 6:30 PM</span>
+                        <span className="font-medium text-foreground">Gates Open: 5:30 PM | Kick-off: 7:50 PM</span>
                       </span>
                     </div>
                   </div>
