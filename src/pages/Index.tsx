@@ -172,7 +172,7 @@ const Index = () => {
                 <span className="text-sm text-muted-foreground font-medium">(Updated: March 30, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                ☀️ Following a huge Harmony Week, the energy is shifting toward a big weekend of sport and music. The Canefield Ashes are back this Friday, and ABBA fans are taking over the TECC on Saturday night. If you're heading to the falls, the water levels are perfect after the recent rains—grab your camera!
+                🏉 What a game! The Cowboys pulled off a thrilling 28-24 win over the Storm last Saturday night in front of a packed QLD Country Bank Stadium. The energy around town is electric heading into Easter. Speaking of which—Term 1 wraps up Thursday, and the Easter Long Weekend kicks off Friday. Time to hit the beach!
               </p>
             </div>
 
