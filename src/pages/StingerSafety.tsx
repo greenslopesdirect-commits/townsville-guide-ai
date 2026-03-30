@@ -19,9 +19,9 @@ const StingerSafety = () => (
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 Current Status: March 16, 2026</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 Current Status: March 30, 2026</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        Stinger nets are ACTIVE. Conditions are clearing after recent rain. Water clarity is improving, but stinger risk remains high.
+        ☀️ Stinger nets are ACTIVE. Conditions are clear, but UV is sitting at Extreme (11). Stick to the enclosures at The Strand and Pallarenda for your Easter swims.
       </p>
     </div>
 
