@@ -45,7 +45,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
               <Trophy className="w-6 h-6 text-primary" />
-              2026 Home Opener Recap
+              2026 Season – March 30 Update
             </h2>
             <div className="grid gap-4 md:grid-cols-2">
               <Card className="border-l-4 border-l-green-500 bg-green-50/30">
