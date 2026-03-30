@@ -94,87 +94,87 @@ const Events = () => {
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* The Canefield Ashes */}
-            <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
+            {/* Family Easter Carnival */}
+            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                    Cricket
+                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
+                    Family
                   </Badge>
-                  <Trophy className="w-5 h-5 text-gray-400" />
+                  <Calendar className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">The Canefield Ashes</CardTitle>
+                <CardTitle className="text-xl mt-2">Family Easter Carnival</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, March 27 & Saturday, March 28</span>
+                    <span>Friday, April 3 (5pm–9pm)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Various local venues</span>
+                    <span>Cluden Park</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  High-energy T20 cricket with a legendary local atmosphere. One of Townsville's favourite community sporting events.
+                  Rides, food stalls, and a visit from the Easter Bunny. The perfect family kick-off to the Easter Long Weekend.
                 </p>
               </CardContent>
             </Card>
             
-            {/* ABBA: Thank You for the Music */}
+            {/* Margaritaville (Flight Facilities) */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Theatre / Music
+                    Music
                   </Badge>
                   <Music className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">ABBA: Thank You for the Music</CardTitle>
+                <CardTitle className="text-xl mt-2">Margaritaville (Flight Facilities)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, March 28 | 7:30 PM</span>
+                    <span>Sunday, April 5 (starts 3pm)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Townsville Entertainment & Convention Centre</span>
+                    <span>The Ville Lawns</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  A massive night of hits for ABBA fans. Dancing Queen, Mamma Mia, and all the classics — live on stage at the TECC.
+                  Electronic icons Flight Facilities headlining the ultimate Easter Sunday session at The Ville.
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Townsville 10K Series */}
-              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-blue-500">
+              {/* Cowboys vs Dragons (Away) */}
+              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-green-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                      Sport / Fitness
+                    <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
+                      Sport
                     </Badge>
-                    <Footprints className="w-5 h-5 text-gray-400" />
+                    <Trophy className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Townsville 10K Series: Race 1</CardTitle>
+                  <CardTitle className="text-lg mt-2">Cowboys vs Dragons (Away)</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Saturday, March 28 | 7:00 AM</span>
+                      <span>Saturday, April 4 (4:30pm)</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Ross River Dam</span>
+                      <span>Local Pubs</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Kick off the running season with a scenic 10K around the weir. A great community event for all fitness levels.
+                    Catch the boys on the big screen at a local venue. Check your favourite pub for game day specials.
                   </p>
                 </CardContent>
               </Card>
@@ -190,7 +190,7 @@ const Events = () => {
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, March 29 | 8:00 AM – 1:00 PM</span>
+                      <span>Sunday, April 5 | 8:00 AM – 1:00 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
@@ -200,14 +200,13 @@ const Events = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Your weekly fix of local crafts, produce, and street food. A Sunday morning staple in the heart of the CBD.
+                    Local crafts and fresh produce in the heart of the CBD. A Sunday morning staple.
                   </p>
                 </CardContent>
               </Card>
             </div>
 
           </div>
-        </section>
 
         {/* Local Climate Tip */}
         <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start">
