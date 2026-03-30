@@ -53,11 +53,11 @@ const CowboysStadiumGuide = () => {
                   <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                     Season Update
                   </Badge>
-                   <CardTitle className="text-lg mt-2">Round 3 Recap</CardTitle>
+                   <CardTitle className="text-lg mt-2">Back-to-Back Home Wins!</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <p className="text-sm text-muted-foreground">
-                    The energy at the home opener against the Titans was electric! After a tough start on the road, the boys are back in front of the Townsville faithful. Now, all eyes turn to Saturday night as we host a powerhouse match-up.
+                    The energy in Townsville is soaring after a thrilling 28-24 victory over the Melbourne Storm last Saturday. The boys are 2 from 2 at home. We now hit the road for away games against the Dragons and Broncos before returning for our next home blockbuster.
                   </p>
                 </CardContent>
               </Card>
