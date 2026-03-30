@@ -233,7 +233,7 @@ const CowboysStadiumGuide = () => {
                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                    <span className="text-sm">⚠️</span>
                    <p className="text-amber-800 text-sm">
-                     <strong>Saturday Night Alert:</strong> With a 6:30 PM kick-off, CBD traffic will be heavy from 4:30 PM onwards. We highly recommend the free Park & Ride from Lou Litster Park to avoid the parking hunt in the city.
+                     <strong>Thursday Night Blockbuster:</strong> With a late 7:50 PM kick-off for the Manly game, expect heavy CBD traffic from 5:30 PM onwards. We highly recommend using the free Park & Ride from Lou Litster Park to avoid the Thursday night city rush.
                    </p>
                  </div>
               </CardContent>
