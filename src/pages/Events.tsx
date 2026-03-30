@@ -363,7 +363,7 @@ const Events = () => {
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 flex gap-3 items-start">
             <span className="text-lg">⚠️</span>
              <p className="text-amber-800 text-sm font-medium">
-               Update: Only 1 week until Term 1 ends (Thursday, April 2)! Have you booked your Magnetic Island ferry yet?
+               Term 1 ends THIS THURSDAY (April 2)! Magnetic Island ferries and Reef tours are reaching peak capacity—book today.
              </p>
           </div>
 
