@@ -179,7 +179,7 @@ const Index = () => {
             {/* Easter Countdown */}
             <div className="mt-6 bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-300 dark:border-amber-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-amber-800 dark:text-amber-300 font-medium leading-relaxed">
-                ⚠️ Update: Only 1 week until Term 1 ends (April 2)! Magnetic Island ferries and Reef tours are booking out fast for the Easter long weekend. Secure your spot today.
+                ⚠️ Easter Alert: Magnetic Island ferries and Reef tours are reaching peak holiday capacity. If you haven't booked yet, availability is extremely limited—don't leave it to the last minute!
               </p>
             </div>
           </div>
