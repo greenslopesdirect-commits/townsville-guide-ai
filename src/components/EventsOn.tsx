@@ -77,22 +77,22 @@ const EventsOn = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
             
-        {/* Card 1 — Friday */}
+        {/* Card 1 — Friday (Good Friday) */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Friday
+                            Good Friday
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">The Canefield Ashes</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Friday, March 27</p>
+                    <h4 className="text-lg font-bold mb-2">Townsville Family Easter Carnival</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Friday, April 3</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Various venues
+                        <MapPin className="w-4 h-4" /> Cluden Park
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> Invitational T20 Cricket
+                        <Clock className="w-4 h-4" /> 5:00 PM – 9:00 PM
                     </div>
                 </CardContent>
             </Card>
@@ -106,14 +106,12 @@ const EventsOn = () => {
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">ABBA: Thank You for the Music</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, March 28</p>
+                    <h4 className="text-lg font-bold mb-2">Open Play Gelblasting</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, April 4 — 10:00 AM</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> TECC
+                        <MapPin className="w-4 h-4" /> 438 Flinders St
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> 7:30 PM
-                    </div>
+                    <p className="text-xs text-slate-500 mt-2">🏉 Cowboys vs Dragons (Away) — 4:30 PM</p>
                 </CardContent>
             </Card>
 
@@ -128,23 +126,23 @@ const EventsOn = () => {
 
         </div>
 
-        {/* Additional weekend cards */}
+        {/* Easter Sunday cards */}
         <div className="grid md:grid-cols-2 gap-6 mt-6">
           <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
-                <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
-                  Saturday
+                <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
+                  Easter Sunday
                 </div>
                 <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
               </div>
-              <h4 className="text-lg font-bold mb-2">Townsville 10K Series: Race 1</h4>
-              <p className="text-xs text-primary font-medium mb-1">Saturday, March 28</p>
+              <h4 className="text-lg font-bold mb-2">Margaritaville ft. Flight Facilities</h4>
+              <p className="text-xs text-primary font-medium mb-1">Sunday, April 5</p>
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                <MapPin className="w-4 h-4" /> Ross River Dam
+                <MapPin className="w-4 h-4" /> The Ville Resort–Casino
               </div>
               <div className="flex items-center gap-2 text-sm text-slate-500">
-                <Clock className="w-4 h-4" /> 7:00 AM
+                <Clock className="w-4 h-4" /> From 3:00 PM
               </div>
             </CardContent>
           </Card>
@@ -153,12 +151,12 @@ const EventsOn = () => {
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
-                  Sunday
+                  Easter Sunday
                 </div>
                 <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
               </div>
               <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
-              <p className="text-xs text-primary font-medium mb-1">Sunday, March 29</p>
+              <p className="text-xs text-primary font-medium mb-1">Sunday, April 5</p>
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                 <MapPin className="w-4 h-4" /> Flinders Street
               </div>
@@ -169,8 +167,15 @@ const EventsOn = () => {
           </Card>
         </div>
 
+        {/* Local Tip & Night Markets Note */}
+        <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mt-6">
+          <p className="text-sm text-amber-800">
+            ⚠️ <strong>Local Tip:</strong> The Strand Night Markets are NOT on Good Friday; they have been moved to next Friday, April 10.
+          </p>
+        </div>
+
         <p className="text-center text-sm text-slate-600 mt-6">
-          🌅 <strong>Highlight:</strong> The Canefield Ashes return this Friday! Plus, ABBA takes over TECC on Saturday night. <Link to="/townsville/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🐣 <strong>Easter Long Weekend:</strong> Family carnival, Flight Facilities at The Ville, and Cotters Market — it's a packed one! <Link to="/townsville/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
