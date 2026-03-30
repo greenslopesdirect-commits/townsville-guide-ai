@@ -207,6 +207,7 @@ const Events = () => {
             </div>
 
           </div>
+        </section>
 
         {/* Local Climate Tip */}
         <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start">
