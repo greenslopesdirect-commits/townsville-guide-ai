@@ -33,13 +33,13 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville This Week (March 30 – April 6, 2026)
+             What's On in Townsville: School Holiday Guide (April 6–19, 2026)
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              This week's big hitters: The <strong>Easter Long Weekend</strong> kicks off, the <strong>Townsville Family Easter Carnival</strong> takes over Cluden Park, and <strong>Flight Facilities</strong> brings the vibes to The Ville for Easter Sunday. Plus, Term 1 finishes this Thursday—get ready for the school holiday rush!
+              This week's big hitters: The <strong>Strand Night Markets</strong> are back this Friday (rescheduled from Good Friday), the <strong>Killer Queen Experience</strong> rocks the TECC, and the <strong>Elliot's Revenge Trail Run</strong> takes on Castle Hill. Plus, the <strong>Cowboys vs Manly</strong> home game is just around the corner on April 16!
             </p>
         </div>
 
