@@ -21,7 +21,7 @@ const StingerSeasonAlert = ({ className = "" }: StingerSeasonAlertProps) => {
           Check with lifesavers for current conditions before entering the water.
         </p>
         <p className="font-semibold">
-          ☀️ March 23 Update: Stinger nets are ACTIVE. Conditions are clear and stunning—perfect for a northern beach run or exploring the Paluma range.{" "}
+          ☀️ April 6 Update: Nets remain active. With the school holidays in full swing, stick to the netted enclosures at The Strand and Pallarenda for your holiday swims.{" "}
           <Link 
             to="/guides/stinger-safety"
             className="text-amber-800 dark:text-amber-300 hover:underline"

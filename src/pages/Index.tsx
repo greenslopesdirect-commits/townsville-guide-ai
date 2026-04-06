@@ -169,17 +169,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: March 30, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: April 6, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                🏉 What a game! The Cowboys pulled off a thrilling 28-24 win over the Storm last Saturday night in front of a packed QLD Country Bank Stadium. The energy around town is electric heading into Easter. Speaking of which—Term 1 wraps up Thursday, and the Easter Long Weekend kicks off Friday. Time to hit the beach!
+                🏉 What a dominant performance! The Cowboys kept a clean sheet with a 32-0 win over the Dragons on Saturday. All eyes are now on the next home game against Manly on April 16.
               </p>
             </div>
 
-            {/* Easter Countdown */}
+            {/* School Holiday Alert */}
             <div className="mt-6 bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-300 dark:border-amber-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-amber-800 dark:text-amber-300 font-medium leading-relaxed">
-                ⚠️ Easter Alert: Magnetic Island ferries and Reef tours are reaching peak holiday capacity. If you haven't booked yet, availability is extremely limited—don't leave it to the last minute!
+                🎒 School Holiday Mode: We're mid-way through the April holidays (April 3–19). Magnetic Island ferries, Reef tours, and family attractions are running at peak capacity—book ahead!
               </p>
             </div>
           </div>
