@@ -364,11 +364,16 @@ const Events = () => {
           <p className="text-gray-600 mb-4">We're mid-way through the school holidays! Here are key dates, events, and booking tips for the rest of the break.</p>
 
           {/* Key Dates */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider">Term 1 Ends</p>
-              <p className="text-lg font-bold text-gray-900 mt-1">Thursday, April 2</p>
+              <p className="text-xs font-bold text-primary uppercase tracking-wider">Easter Long Weekend</p>
+              <p className="text-lg font-bold text-gray-900 mt-1">April 3–6 ✅</p>
             </div>
+            <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
+              <p className="text-xs font-bold text-primary uppercase tracking-wider">School Holidays</p>
+              <p className="text-lg font-bold text-gray-900 mt-1">April 3–19</p>
+            </div>
+          </div>
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
               <p className="text-xs font-bold text-primary uppercase tracking-wider">Easter Long Weekend</p>
               <p className="text-lg font-bold text-gray-900 mt-1">April 3–6</p>
