@@ -223,15 +223,15 @@ const LocalTips = () => {
               <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">🏟️ Sunday Game Day — Lowths Bridge Traffic</p>
-                  <p className="text-xs text-muted-foreground mt-1">Expect heavy pedestrian traffic on Lowths Bridge from 4:00 PM this Sunday for the Cowboys Home Opener.</p>
+                  <p className="font-medium text-sm text-foreground">🏟️ Thursday Night Footy — Lowths Bridge Traffic</p>
+                  <p className="text-xs text-muted-foreground mt-1">Expect heavy pedestrian traffic around Lowths Bridge and the Stadium from 5:00 PM on Thursday, April 16 for the Cowboys vs Manly home game.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
                 <Calendar className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">Easter Planning</p>
-                  <p className="text-xs text-muted-foreground mt-1">Term 1 ends April 2. Now is the time to book for the Easter Long Weekend (April 3–6) as popular spots are filling fast.</p>
+                  <p className="font-medium text-sm text-foreground">🎒 School Holiday Survival (April 6–19)</p>
+                  <p className="text-xs text-muted-foreground mt-1">With the North Shore and The Strand at peak capacity, head to our <Link to="/beaches#secret-beaches" className="text-primary font-medium hover:underline">Secret Beaches guide</Link> to find quieter spots like Toolakea or Saunders Beach.</p>
                 </div>
               </div>
             </section>
