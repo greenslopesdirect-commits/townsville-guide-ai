@@ -43,24 +43,24 @@ const CowboysStadiumGuide = () => {
           </header>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
-              <Trophy className="w-6 h-6 text-primary" />
-              2026 Season – March 30 Update
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-l-4 border-l-green-500 bg-green-50/30">
-                <CardHeader className="pb-2">
-                  <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
-                    Season Update
-                  </Badge>
-                   <CardTitle className="text-lg mt-2">Back-to-Back Home Wins!</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-sm text-muted-foreground">
-                    The energy in Townsville is soaring after a thrilling 28-24 victory over the Melbourne Storm last Saturday. The boys are 2 from 2 at home. We now hit the road for away games against the Dragons and Broncos before returning for our next home blockbuster.
-                  </p>
-                </CardContent>
-              </Card>
+             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+               <Trophy className="w-6 h-6 text-primary" />
+               2026 Season – April 6 Update: The Wall of Townsville!
+             </h2>
+             <div className="grid gap-4 md:grid-cols-2">
+               <Card className="border-l-4 border-l-green-500 bg-green-50/30">
+                 <CardHeader className="pb-2">
+                   <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
+                     Season Update
+                   </Badge>
+                    <CardTitle className="text-lg mt-2">Undefeated at Home!</CardTitle>
+                 </CardHeader>
+                 <CardContent className="space-y-2">
+                   <p className="text-sm text-muted-foreground">
+                     The Cowboys are absolutely flying! After a dominant 32-0 shutout against the Dragons on the road, the boys are returning to Townsville with massive momentum. We are undefeated at home and ready for the next challenge.
+                   </p>
+                 </CardContent>
+               </Card>
 
               <Card className="border-l-4 border-l-primary shadow-sm">
                 <CardHeader className="pb-2">
