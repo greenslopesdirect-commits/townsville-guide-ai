@@ -107,6 +107,9 @@ const DogFriendly = () => {
            <p>
                ☀️ Heat Check (April 6): UV is Extreme (11+). Even with a pleasant 29°C breeze, pavements heat up fast between 10am and 3pm. If it's too hot for the back of your hand for 5 seconds, it's too hot for your dog's paws!
              </p>
+             <p>
+               🐸 Cane Toad Alert (April 6): With the recent humidity, cane toads are active in the early evenings around Townsville's parks and gardens. If you're walking your dog at dusk these school holidays, keep them on a short lead and carry a torch.
+             </p>
           </LocalInsightCard>
 
           {/* Stinger Alert */}
