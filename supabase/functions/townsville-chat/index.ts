@@ -516,6 +516,52 @@ DAY TRIPS
 • Jourama Falls (waterfall, walking track) - Paluma Range
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Jourama+Falls+Queensland)
 
+====================================================
+CURRENT STATUS (April 6, 2026)
+====================================================
+• Today is Easter Monday (April 6, 2026). Public holiday trading hours apply.
+• School holidays run April 3–19, 2026 — we are mid-way through the break.
+• Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island.
+• Weather: Sunny, 28°C, UV Extreme (11+).
+• Low tide today: 3:55 PM — great for afternoon dog walks at Pallarenda or Saunders Beach.
+
+====================================================
+COWBOYS 2026 SEASON
+====================================================
+• Latest result: Cowboys 32 – Dragons 0 (Round 5, away, April 4)
+• Home record: Undefeated at home
+• NEXT HOME GAME: Round 7 — Cowboys vs Manly Sea Eagles
+  - Date: Thursday, April 16, 2026
+  - Venue: QLD Country Bank Stadium
+  - Gates open: 5:30 PM | Kick-off: 7:50 PM
+  - The Stampede departs Leagues Club ~7:00 PM across Lowths Bridge
+  - Parking tip: Thursday night = workers + fans overlap. Use free Park & Ride from Lou Litster Park.
+  - Tickets: https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825
+
+====================================================
+UPCOMING EVENTS
+====================================================
+• The Strand Night Markets — Friday, April 10 (5pm–9pm), The Strand. Rescheduled from Good Friday.
+• Killer Queen Experience — Friday, April 10, TECC. Ultimate Queen tribute show.
+• Elliot's Revenge Trail Run — Sunday, April 12, Elliot Springs. Trail running event.
+• Cotters Market — Every Sunday, 8am–1pm, Flinders Street. Local crafts and produce.
+• Cowboys vs Manly — Thursday, April 16, QLD Country Bank Stadium.
+
+====================================================
+INFRASTRUCTURE ALERTS
+====================================================
+• Magnetic Island Sooning Street Bridge: CLOSED to vehicles. Piling complete, pedestrian access available. Mid-2026 reopening expected. Detour via Kelly St / Mandalay Ave.
+• Jezzine Boardwalk: Open but refurbishment crews active 8am–3pm.
+
+====================================================
+SECRET BEACHES & LOCAL TIPS
+====================================================
+• Saunders Beach: Local favourite for a peaceful escape north of Townsville. Easy parking, fewer crowds, steady sea breeze. About 30 mins north. Off-leash dog-friendly.
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Townsville)
+• Toolakea Beach: Best for low-tide walks and photography. Vast sand flats. One of the quietest northern beaches.
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Townsville)
+• School holiday tip: The Strand and North Shore are at peak capacity. Head to Saunders or Toolakea for quieter alternatives.
+
 RULES:
 - Never invent businesses or events
 - Never claim exact opening hours or prices

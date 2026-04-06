@@ -3,39 +3,123 @@
     "city": "Townsville",
     "region": "North Queensland, Australia",
     "timezone": "AEST (UTC+10)",
-    "description": "Local verified data for MyAussieGuide – Townsville"
+    "description": "Local verified data for MyAussieGuide – Townsville",
+    "last_updated": "2026-04-06",
+    "current_context": "Easter Monday (April 6, 2026). School holidays run April 3–19. Public holiday trading hours apply today."
   },
+
+  "current_status": {
+    "date": "2026-04-06",
+    "season": "Late Wet / Early Dry transition",
+    "stinger_nets": "ACTIVE (November–May)",
+    "weather": "Sunny, 28°C, moderate humidity",
+    "uv_index": "Extreme (11+)",
+    "low_tide_today": "3:55 PM — great for afternoon dog walks at Pallarenda or Saunders Beach",
+    "school_holidays": "April 3–19, 2026 — mid-way through the break",
+    "public_holiday": "Easter Monday — reduced trading hours across most retail"
+  },
+
+  "cowboys": {
+    "season": "2026 NRL Season",
+    "latest_result": "Cowboys 32 – Dragons 0 (Round 5, April 4 away)",
+    "home_record": "Undefeated at home",
+    "next_home_game": {
+      "round": 7,
+      "opponent": "Manly Sea Eagles",
+      "date": "Thursday, April 16, 2026",
+      "venue": "Queensland Country Bank Stadium",
+      "gates_open": "5:30 PM",
+      "kickoff": "7:50 PM",
+      "stampede_departs": "Approximately 7:00 PM from Cowboys Leagues Club across Lowths Bridge",
+      "parking_tip": "Thursday night game — CBD parking at a premium with workers and fans overlapping. Use the free Park & Ride from Lou Litster Park.",
+      "tickets": "https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825"
+    }
+  },
+
+  "upcoming_events": [
+    {
+      "name": "The Strand Night Markets",
+      "date": "Friday, April 10, 2026",
+      "time": "5:00 PM – 9:00 PM",
+      "location": "The Strand, North Ward",
+      "notes": "Rescheduled from Good Friday. Live music, food trucks, and local crafts along the waterfront."
+    },
+    {
+      "name": "Killer Queen Experience",
+      "date": "Friday, April 10, 2026",
+      "location": "TECC (Townsville Entertainment Centre)",
+      "notes": "The ultimate Queen tribute show. Family-friendly."
+    },
+    {
+      "name": "Elliot's Revenge Trail Run",
+      "date": "Sunday, April 12, 2026",
+      "location": "Elliot Springs",
+      "notes": "Trail running event through North Queensland terrain. Multiple distances available."
+    },
+    {
+      "name": "Cotters Market",
+      "date": "Every Sunday",
+      "time": "8:00 AM – 1:00 PM",
+      "location": "Flinders Street, CBD",
+      "notes": "Local arts, crafts, and fresh produce."
+    }
+  ],
+
+  "infrastructure_alerts": [
+    {
+      "title": "Magnetic Island — Sooning Street Bridge",
+      "status": "CLOSED to vehicles",
+      "details": "Piling is now complete. Bridge remains closed to vehicles as construction enters the next phase. Pedestrian access is available. Expect mid-2026 reopening.",
+      "detour": "Use Kelly St and Mandalay Ave to access the island's north side."
+    },
+    {
+      "title": "Jezzine Boardwalk — Refurbishment",
+      "status": "Open but active works",
+      "details": "Boardwalk is fully accessible. Stay alert for maintenance crews between 8am and 3pm."
+    },
+    {
+      "title": "Game Day Traffic — Lowths Bridge",
+      "status": "Thursday April 16",
+      "details": "Expect heavy pedestrian traffic around Lowths Bridge and the Stadium from 5:00 PM for the Cowboys vs Manly home game."
+    }
+  ],
 
   "beaches": [
     {
       "name": "The Strand",
       "type": "Urban Beachfront",
       "address": "The Strand, North Ward",
-      "notes": "Townsville's iconic 2.5 km foreshore with swimming enclosures, cafes, and walking paths."
+      "notes": "Townsville's iconic 2.5 km foreshore with swimming enclosures, cafes, and walking paths. Stinger nets active."
     },
     {
       "name": "Pallarenda Beach",
       "type": "Dog-Friendly Beach",
       "address": "Cape Pallarenda Road, Townsville",
-      "notes": "Quiet stretch of sand with views of Magnetic Island; popular for dog walking and picnics."
+      "notes": "Quiet stretch of sand with views of Magnetic Island; popular for dog walking and picnics. Great for low-tide afternoon walks."
+    },
+    {
+      "name": "Saunders Beach",
+      "type": "Secret Northern Beach",
+      "address": "Saunders Beach Road, Saunders Beach",
+      "notes": "A local favourite for a peaceful escape. Easy parking, fewer crowds, and a steady sea breeze. About 30 minutes north of the city. Off-leash dog-friendly areas available."
+    },
+    {
+      "name": "Toolakea Beach",
+      "type": "Secret Northern Beach",
+      "address": "Toolakea Beach Road, Toolakea",
+      "notes": "Best for low-tide walks and photography. Vast sand flats at low tide. One of the quieter northern beaches — a true local hidden gem."
     },
     {
       "name": "Bushland Beach",
       "type": "Local Favourite",
       "address": "Bushland Beach Esplanade, Bohle Plains",
-      "notes": "Wide sandy beach perfect for sunset walks and fishing; small shopping centre nearby."
+      "notes": "Wide sandy beach perfect for sunset walks and fishing; small shopping centre nearby. Off-leash dog area."
     },
     {
       "name": "Balgal Beach",
       "type": "Northern Suburb Beach",
       "address": "Balgal Beach Road, Balgal Beach",
       "notes": "Family-friendly beach north of Townsville with safe swimming, playgrounds, and caravan park."
-    },
-    {
-      "name": "Saunders Beach",
-      "type": "Coastal Village Beach",
-      "address": "Saunders Beach Road, Saunders Beach",
-      "notes": "Peaceful beach for camping and picnicking, about 30 minutes north of the city."
     },
     {
       "name": "Toomulla Beach",
@@ -45,93 +129,42 @@
     }
   ],
 
-  "hairdressers": [
-    {
-      "name": "Just Cuts Castletown",
-      "type": "Walk-in Salon",
-      "address": "Castletown Shopping Centre, Hyde Park",
-      "notes": "Walk-in only, open 9am–5:30pm Mon–Sat, 10am–4pm Sun. Affordable cuts for all ages."
-    },
-    {
-      "name": "Pure Hair",
-      "type": "Modern Salon",
-      "address": "Flinders Street, Townsville City",
-      "notes": "Modern salon offering cuts and colour, online booking available. Specialises in balayage and styling."
-    },
-    {
-      "name": "Silver Strand Hair Studio",
-      "type": "Beachfront Salon",
-      "address": "The Strand, North Ward",
-      "notes": "Popular beachfront salon with friendly staff and sea views. Great for a pampering session."
-    },
-    {
-      "name": "Toni&Guy Townsville",
-      "type": "Premium Salon",
-      "address": "Stockland Townsville, Aitkenvale",
-      "notes": "Upscale salon with expert stylists. Book ahead for colour and special occasion styling."
-    },
-    {
-      "name": "The Barber Shop Townsville",
-      "type": "Men's Barber",
-      "address": "Palmer Street, South Townsville",
-      "notes": "Traditional barber offering hot towel shaves, beard trims, and modern cuts. Walk-ins welcome."
-    }
-  ],
-
   "restaurants": [
     {
-      "name": "JAM Restaurant",
+      "name": "JAM Corner",
       "type": "Modern Australian",
       "address": "Palmer Street, South Townsville",
-      "notes": "Award-winning dining with seasonal local produce and fine wines.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=JAM+Restaurant+Palmer+Street+South+Townsville"
-      }
+      "notes": "Award-winning dining with seasonal local produce and fine wines."
     },
     {
       "name": "Shorehouse",
       "type": "Seafood & Grill",
       "address": "The Strand, North Ward",
-      "notes": "Contemporary oceanfront restaurant known for seafood and cocktails with sunset views.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Shorehouse+The+Strand+North+Ward+Townsville"
-      }
+      "notes": "Contemporary oceanfront restaurant known for seafood and cocktails with sunset views."
     },
     {
       "name": "Cactus Jack's",
       "type": "Mexican Bar & Grill",
       "address": "Flinders Street, Townsville City",
-      "notes": "Casual, lively Mexican dining with margaritas and family-friendly vibes.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Cactus+Jacks+Flinders+Street+Townsville"
-      }
+      "notes": "Casual, lively Mexican dining with margaritas and family-friendly vibes."
     },
     {
       "name": "Bridgewater Restaurant",
       "type": "Modern Australian",
       "address": "Palmer Street, South Townsville",
-      "notes": "Upscale dining with an open kitchen and local ingredients, plus a cocktail bar.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Bridgewater+Restaurant+Palmer+Street+South+Townsville"
-      }
+      "notes": "Upscale dining with an open kitchen and local ingredients, plus a cocktail bar."
     },
     {
       "name": "The Courtyard",
       "type": "Bar & Burger",
       "address": "Flinders Street East, Townsville City",
-      "notes": "Trendy outdoor bar serving gourmet burgers and live music on weekends.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Courtyard+Flinders+Street+East+Townsville"
-      }
+      "notes": "Trendy outdoor bar serving gourmet burgers and live music on weekends."
     },
     {
       "name": "Juliette's Gelateria",
       "type": "Café & Dessert Bar",
       "address": "The Strand, North Ward",
-      "notes": "Popular café for coffee, desserts, and beach views; pet friendly.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Juliettes+Gelateria+The+Strand+North+Ward+Townsville"
-      }
+      "notes": "Popular café for coffee, desserts, and beach views; pet friendly."
     }
   ],
 
@@ -179,61 +212,37 @@
       "name": "The Ville Resort–Casino",
       "type": "Luxury Resort",
       "address": "Sir Leslie Thiess Drive, Townsville",
-      "notes": "Upscale beachfront resort with pools, casino, spa, and dining.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Ville+Resort+Casino+Townsville",
-        "booking": "https://www.booking.com/searchresults.html?ss=The+Ville+Resort+Casino+Townsville"
-      }
+      "notes": "Upscale beachfront resort with pools, casino, spa, and dining."
     },
     {
       "name": "Aquarius on the Beach",
       "type": "Hotel",
       "address": "The Strand, North Ward",
-      "notes": "Affordable hotel with unbeatable ocean views and balconies.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Aquarius+on+the+Beach+Townsville",
-        "booking": "https://www.booking.com/searchresults.html?ss=Aquarius+on+the+Beach+Townsville"
-      }
+      "notes": "Affordable hotel with unbeatable ocean views and balconies."
     },
     {
       "name": "Hotel Grand Chancellor Townsville",
       "type": "City Hotel",
       "address": "Flinders Street, Townsville CBD",
-      "notes": "Modern high-rise hotel with rooftop views and close to nightlife.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Hotel+Grand+Chancellor+Townsville",
-        "booking": "https://www.booking.com/searchresults.html?ss=Hotel+Grand+Chancellor+Townsville"
-      }
+      "notes": "Modern high-rise hotel with rooftop views and close to nightlife."
     },
     {
       "name": "Quest Townsville",
       "type": "Serviced Apartments",
       "address": "Palmer Street, South Townsville",
-      "notes": "Self-contained apartments perfect for families and longer stays.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Quest+Townsville+Palmer+Street",
-        "booking": "https://www.booking.com/searchresults.html?ss=Quest+Townsville"
-      }
+      "notes": "Self-contained apartments perfect for families and longer stays."
     },
     {
       "name": "Rambutan Resort",
       "type": "Boutique Accommodation",
       "address": "Flinders Street, Townsville City",
-      "notes": "Trendy rooftop resort-style stay with bar, pool, and private rooms.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Rambutan+Resort+Townsville",
-        "booking": "https://www.booking.com/searchresults.html?ss=Rambutan+Resort+Townsville"
-      }
+      "notes": "Trendy rooftop resort-style stay with bar, pool, and private rooms."
     },
     {
       "name": "BIG4 Rowes Bay Holiday Park",
       "type": "Caravan Park",
       "address": "Cape Pallarenda Road, Rowes Bay",
-      "notes": "Beachfront park with cabins, powered sites, and family-friendly facilities.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=BIG4+Rowes+Bay+Holiday+Park+Townsville",
-        "booking": "https://www.booking.com/searchresults.html?ss=BIG4+Rowes+Bay+Holiday+Park+Townsville"
-      }
+      "notes": "Beachfront park with cabins, powered sites, and family-friendly facilities."
     }
   ],
 
@@ -242,55 +251,37 @@
       "name": "Castle Hill",
       "type": "Lookout & Hiking Trail",
       "address": "Castle Hill Road, Townsville",
-      "notes": "Climb or drive to the top for panoramic city and island views.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Castle+Hill+Townsville"
-      }
+      "notes": "Climb or drive to the top for panoramic city and island views."
     },
     {
       "name": "Magnetic Island",
       "type": "Island Adventure",
       "address": "Via Breakwater Ferry Terminal",
-      "notes": "Wildlife, beaches, and scenic hikes just a 20-minute ferry away.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Queensland"
-      }
+      "notes": "Wildlife, beaches, and scenic hikes just a 20-minute ferry away."
     },
     {
       "name": "Jezzine Barracks",
       "type": "Heritage Walk & Museum",
       "address": "Jezzine Way, North Ward",
-      "notes": "Coastal boardwalk with art, military history, and ocean views.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Jezzine+Barracks+Townsville"
-      }
+      "notes": "Coastal boardwalk with art, military history, and ocean views."
     },
     {
       "name": "Billabong Sanctuary",
       "type": "Wildlife Park",
       "address": "Bruce Highway, Nome",
-      "notes": "Meet koalas and feed kangaroos at this award-winning sanctuary.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Billabong+Sanctuary+Nome+Townsville"
-      }
+      "notes": "Meet koalas and feed kangaroos at this award-winning sanctuary. School holiday wildlife programs running."
     },
     {
       "name": "Riverway Lagoons",
       "type": "Free Swimming Lagoon",
       "address": "Ross River Road, Condon",
-      "notes": "Lagoon pools, picnic areas, and walking paths along Ross River.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=Riverway+Lagoons+Townsville"
-      }
+      "notes": "Lagoon pools, picnic areas, and walking paths along Ross River."
     },
     {
       "name": "The Strand Waterpark",
       "type": "Family Attraction",
       "address": "The Strand, North Ward",
-      "notes": "Free kids' splash park with shaded play area and ocean backdrop.",
-      "links": {
-        "google_maps": "https://www.google.com/maps/search/?api=1&query=The+Strand+Waterpark+Townsville"
-      }
+      "notes": "Free kids' splash park with shaded play area and ocean backdrop."
     }
   ],
 
@@ -344,5 +335,38 @@
     "bus": "Sunbus Townsville – main routes connect the Strand, City, and Stockland",
     "ferry": "Magnetic Island Ferry – departs from Breakwater Terminal every 20–30 mins",
     "airport": "Townsville Airport (TSV), 5 mins from CBD"
-  }
+  },
+
+  "hairdressers": [
+    {
+      "name": "Just Cuts Castletown",
+      "type": "Walk-in Salon",
+      "address": "Castletown Shopping Centre, Hyde Park",
+      "notes": "Walk-in only, open 9am–5:30pm Mon–Sat, 10am–4pm Sun. Affordable cuts for all ages."
+    },
+    {
+      "name": "Pure Hair",
+      "type": "Modern Salon",
+      "address": "Flinders Street, Townsville City",
+      "notes": "Modern salon offering cuts and colour, online booking available."
+    },
+    {
+      "name": "Silver Strand Hair Studio",
+      "type": "Beachfront Salon",
+      "address": "The Strand, North Ward",
+      "notes": "Popular beachfront salon with friendly staff and sea views."
+    },
+    {
+      "name": "Toni&Guy Townsville",
+      "type": "Premium Salon",
+      "address": "Stockland Townsville, Aitkenvale",
+      "notes": "Upscale salon with expert stylists."
+    },
+    {
+      "name": "The Barber Shop Townsville",
+      "type": "Men's Barber",
+      "address": "Palmer Street, South Townsville",
+      "notes": "Traditional barber offering hot towel shaves, beard trims, and modern cuts."
+    }
+  ]
 }
