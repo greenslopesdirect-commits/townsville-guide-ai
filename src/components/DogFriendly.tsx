@@ -113,9 +113,9 @@ const DogFriendly = () => {
         <Alert className="max-w-3xl mx-auto bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800 mb-6 sm:mb-8">
           <Dog className="h-5 w-5 text-amber-600 flex-shrink-0" />
           <AlertDescription className="ml-2">
-             <strong className="text-foreground block sm:inline">☀️ Heat Check (March 23):</strong>
+             <strong className="text-foreground block sm:inline">☀️ Heat Check (April 6):</strong>
              <span className="text-muted-foreground sm:ml-2 block sm:inline mt-1 sm:mt-0">
-               UV is Extreme (11+). Pavements are heating up fast between 10am and 3pm. Check your dog's paws before heading out!
+               UV is Extreme (11+). Even with a pleasant 29°C breeze, pavements heat up fast between 10am and 3pm. If it's too hot for the back of your hand for 5 seconds, it's too hot for your dog's paws!
              </span>
           </AlertDescription>
         </Alert>
