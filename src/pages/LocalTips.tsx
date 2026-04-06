@@ -125,8 +125,8 @@ const LocalTips = () => {
   return (
     <>
       <SEOHead
-        title="Local Tips for Townsville: 2026 Insider Travel & Safety Guide"
-        description="Essential local advice for Townsville: Stinger safety, heat protection, best times for Castle Hill, and dog-friendly secrets. Updated March 2026."
+        title="Townsville Local Tips: April 2026 Holiday & Safety Guide"
+        description="Expert local advice for Townsville. April 2026 updates on stinger safety, school holiday tips, and Cowboys game day parking."
         canonical="https://www.myaussieguide.com.au/local-tips"
       />
       <Helmet>
