@@ -12,13 +12,13 @@ const EventsOn = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
             <span className="text-primary font-bold tracking-wider uppercase text-sm">Seasonal Events & Local Highlights</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">This Week in the Ville: Cricket, ABBA & Markets</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">This Week in the Ville: Night Markets, Live Music & Trail Runs</h2>
             <p className="text-slate-600 mt-2 max-w-xl text-lg">
               Townsville hosts markets, festivals, long weekends, and community events throughout the year.
             </p>
           </div>
           
-          <Link to="/townsville/events">
+          <Link to="/events">
             <Button variant="outline" className="hidden md:flex gap-2">
               View Full Calendar <ArrowRight className="w-4 h-4" />
             </Button>
@@ -37,7 +37,7 @@ const EventsOn = () => {
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
                     <p className="text-blue-100 font-medium">Something for every season</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🍂 Seasonal Focus: Cricket, Live Music & Autumn Markets</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🎒 School Holiday Focus: Family Fun, Night Markets & Live Music</p>
                      <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">NRL Season</span>
                 </div>
                 <div className="relative z-10 mt-8">
@@ -58,7 +58,7 @@ const EventsOn = () => {
                 </div>
                 
                 <div className="flex flex-wrap gap-4 items-center">
-                    <Link to="/townsville/events">
+                    <Link to="/events">
                         <Button size="lg" className="bg-slate-900 text-white hover:bg-slate-800">
                             View Full Events Calendar
                         </Button>
@@ -70,48 +70,48 @@ const EventsOn = () => {
             </div>
         </div>
 
-        {/* WEEKLY MARKETS GRID */}
+        {/* WEEKLY EVENTS GRID */}
         <h3 className="font-bold text-xl text-slate-800 mb-6 flex items-center gap-2">
             <Calendar className="w-5 h-5 text-primary" /> Weekend Essentials
         </h3>
 
         <div className="grid md:grid-cols-3 gap-6">
             
-        {/* Card 1 — Friday (Good Friday) */}
+            {/* Card 1 — Friday */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Good Friday
+                            Friday
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Townsville Family Easter Carnival</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Friday, April 3</p>
+                    <h4 className="text-lg font-bold mb-2">The Strand Night Markets</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Friday, April 10 (Rescheduled)</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Cluden Park
+                        <MapPin className="w-4 h-4" /> The Strand, North Ward
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> 5:00 PM – 9:00 PM
+                        <Clock className="w-4 h-4" /> 5:00 PM – 9:30 PM
                     </div>
                 </CardContent>
             </Card>
 
-            {/* Card 2 — Saturday */}
+            {/* Card 2 — Friday (Killer Queen) */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                        <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Saturday
+                        <div className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Friday
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Open Play Gelblasting</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, April 4 — 10:00 AM</p>
+                    <h4 className="text-lg font-bold mb-2">Killer Queen Experience</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Friday, April 10</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> 438 Flinders St
+                        <MapPin className="w-4 h-4" /> TECC (Entertainment Centre)
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">🏉 Cowboys vs Dragons (Away) — 4:30 PM</p>
+                    <p className="text-xs text-slate-500 mt-2">🎸 The ultimate Queen tribute show</p>
                 </CardContent>
             </Card>
 
@@ -119,44 +119,25 @@ const EventsOn = () => {
             <Card className="bg-slate-50 border-dashed border-2 border-slate-200 hover:border-primary/50 transition-colors flex flex-col justify-center items-center text-center p-6">
                 <h4 className="font-semibold text-slate-700 mb-2">Looking for more?</h4>
                 <p className="text-sm text-slate-500 mb-4">Music, Sports, and Art.</p>
-                <Link to="/townsville/events" className="text-primary font-bold flex items-center gap-1 hover:underline">
+                <Link to="/events" className="text-primary font-bold flex items-center gap-1 hover:underline">
                     View Calendar <ArrowRight className="w-4 h-4" />
                 </Link>
             </Card>
 
         </div>
 
-        {/* Easter Sunday cards */}
+        {/* Sunday cards */}
         <div className="grid md:grid-cols-2 gap-6 mt-6">
           <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
-                  Easter Sunday
-                </div>
-                <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
-              </div>
-              <h4 className="text-lg font-bold mb-2">Margaritaville ft. Flight Facilities</h4>
-              <p className="text-xs text-primary font-medium mb-1">Sunday, April 5</p>
-              <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                <MapPin className="w-4 h-4" /> The Ville Resort–Casino
-              </div>
-              <div className="flex items-center gap-2 text-sm text-slate-500">
-                <Clock className="w-4 h-4" /> From 3:00 PM
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
-            <CardContent className="p-6">
-              <div className="flex justify-between items-start mb-4">
-                <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
-                  Easter Sunday
+                  Sunday
                 </div>
                 <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
               </div>
               <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
-              <p className="text-xs text-primary font-medium mb-1">Sunday, April 5</p>
+              <p className="text-xs text-primary font-medium mb-1">Sunday, April 12</p>
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                 <MapPin className="w-4 h-4" /> Flinders Street
               </div>
@@ -165,22 +146,32 @@ const EventsOn = () => {
               </div>
             </CardContent>
           </Card>
-        </div>
 
-        {/* Local Tip & Night Markets Note */}
-        <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mt-6">
-          <p className="text-sm text-amber-800">
-            ⚠️ <strong>Local Tip:</strong> The Strand Night Markets are NOT on Good Friday; they have been moved to next Friday, April 10.
-          </p>
+          <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+            <CardContent className="p-6">
+              <div className="flex justify-between items-start mb-4">
+                <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
+                  Sunday
+                </div>
+                <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+              </div>
+              <h4 className="text-lg font-bold mb-2">Elliot's Revenge Trail Run</h4>
+              <p className="text-xs text-primary font-medium mb-1">Sunday, April 12</p>
+              <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                <MapPin className="w-4 h-4" /> Castle Hill / The Strand
+              </div>
+              <p className="text-xs text-slate-500 mt-2">🏃 Local trail running event through iconic Townsville terrain</p>
+            </CardContent>
+          </Card>
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🐣 <strong>Easter Long Weekend:</strong> Family carnival, Flight Facilities at The Ville, and Cotters Market — it's a packed one! <Link to="/townsville/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🎒 <strong>School Holidays:</strong> Night Markets are back this Friday, Killer Queen rocks the TECC, and Cotters Market keeps Sunday fresh! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
         <div className="mt-8 text-center md:hidden">
-            <Link to="/townsville/events">
+            <Link to="/events">
                 <Button variant="outline" className="w-full">
                     View Full Calendar
                 </Button>

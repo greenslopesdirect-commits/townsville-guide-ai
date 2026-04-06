@@ -25,7 +25,7 @@ const Index = () => {
     <>
       {/* UPDATE: Revised for Evergreen/February Strategy */}
       <SEOHead
-        title="My Aussie Guide | Townsville Travel Tips, Beaches, Events & Local Advice"
+        title="Townsville Guide: April School Holidays & Events 2026"
         description="My Aussie Guide helps you discover Townsville like a local — beaches, food, events, dog-friendly spots, travel tips and real North Queensland insight."
         canonical="https://www.myaussieguide.com.au/"
       />
@@ -117,15 +117,15 @@ const Index = () => {
         {/* Local Insight - Introduction */}
         <div className="container mx-auto px-4 max-w-4xl py-8">
            <LocalInsightCard title="More Than a Gateway" variant="insight">
-             <p>
-               Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North. 
-               Term 1 finishes this Thursday, April 2, and the Easter Long Weekend kicks off Friday, April 3—expect the city to come alive with families and visitors!
-               Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
+              <p>
+                Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North. 
+                We are mid-way through the April school holidays (April 3–19)—check out the best family-friendly spots and holiday trading hours below.
+                Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
+              </p>
+              <p className="font-medium text-amber-700 dark:text-amber-300">
+               🌴 We run on "Tropical Time," so slow down, check the trading hours, and enjoy the rhythm of the North.
              </p>
-             <p className="font-medium text-amber-700 dark:text-amber-300">
-              🌴 We run on "Tropical Time," so slow down, check the trading hours, and enjoy the rhythm of the North.
-            </p>
-          </LocalInsightCard>
+           </LocalInsightCard>
         </div>
         
         {/* Newsletter Section */}
@@ -169,17 +169,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: March 30, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: April 6, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                🏉 What a game! The Cowboys pulled off a thrilling 28-24 win over the Storm last Saturday night in front of a packed QLD Country Bank Stadium. The energy around town is electric heading into Easter. Speaking of which—Term 1 wraps up Thursday, and the Easter Long Weekend kicks off Friday. Time to hit the beach!
+                🏉 What a dominant performance! The Cowboys kept a clean sheet with a 32-0 win over the Dragons on Saturday. All eyes are now on the next home game against Manly on April 16.
               </p>
             </div>
 
-            {/* Easter Countdown */}
+            {/* School Holiday Alert */}
             <div className="mt-6 bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-300 dark:border-amber-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-amber-800 dark:text-amber-300 font-medium leading-relaxed">
-                ⚠️ Easter Alert: Magnetic Island ferries and Reef tours are reaching peak holiday capacity. If you haven't booked yet, availability is extremely limited—don't leave it to the last minute!
+                🎒 School Holiday Mode: We're mid-way through the April holidays (April 3–19). Magnetic Island ferries, Reef tours, and family attractions are running at peak capacity—book ahead!
               </p>
             </div>
           </div>
