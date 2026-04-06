@@ -86,43 +86,43 @@ const Events = () => {
         {/* This Weekend's Highlights */}
         <section className="space-y-6">
           <div className="flex items-center gap-2">
-            <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
+            <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               March 30 – April 6
+               April 6–12
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Family Easter Carnival */}
+            {/* Strand Night Markets */}
             <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Family
+                    Markets
                   </Badge>
                   <Calendar className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Family Easter Carnival</CardTitle>
+                <CardTitle className="text-xl mt-2">The Strand Night Markets (Rescheduled)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, April 3 (5pm–9pm)</span>
+                    <span>Friday, April 10 (5pm–9pm)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Cluden Park</span>
+                    <span>The Strand, North Ward</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Rides, food stalls, and a visit from the Easter Bunny. The perfect family kick-off to the Easter Long Weekend.
+                  Moved from Good Friday — the Night Markets are back with live music, food trucks, and local crafts along the waterfront. A perfect school holiday Friday night out.
                 </p>
               </CardContent>
             </Card>
             
-            {/* Margaritaville (Flight Facilities) */}
+            {/* Killer Queen Experience */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
@@ -131,76 +131,78 @@ const Events = () => {
                   </Badge>
                   <Music className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Margaritaville (Flight Facilities)</CardTitle>
+                <CardTitle className="text-xl mt-2">Killer Queen Experience</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Sunday, April 5 (starts 3pm)</span>
+                    <span>Friday, April 10</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>The Ville Lawns</span>
+                    <span>TECC (Townsville Entertainment Centre)</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Electronic icons Flight Facilities headlining the ultimate Easter Sunday session at The Ville.
+                  The ultimate Queen tribute show hits Townsville. A high-energy, family-friendly experience perfect for a school holiday night out.
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Cowboys vs Dragons (Away) */}
+              {/* Elliot's Revenge Trail Run */}
               <Card className="hover:shadow-md transition-shadow border-l-4 border-l-green-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                      Sport
+                      Adventure
                     </Badge>
-                    <Trophy className="w-5 h-5 text-gray-400" />
+                    <Footprints className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Cowboys vs Dragons (Away)</CardTitle>
+                  <CardTitle className="text-lg mt-2">Elliot's Revenge Trail Run</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Saturday, April 4 (4:30pm)</span>
+                      <span>Sunday, April 12</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Local Pubs</span>
+                      <span>Elliot Springs</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Catch the boys on the big screen at a local venue. Check your favourite pub for game day specials.
+                    A classic North Queensland adventure trail run through stunning terrain. Multiple distances available for all fitness levels.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Cotters Market */}
-              <Card className="hover:shadow-md transition-shadow">
+              {/* Cowboys vs Manly */}
+              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-blue-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <Badge variant="outline">Markets</Badge>
-                    <Info className="w-5 h-5 text-gray-400" />
+                    <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
+                      Footy
+                    </Badge>
+                    <Trophy className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Cotters Market</CardTitle>
+                  <CardTitle className="text-lg mt-2">Cowboys vs Manly Sea Eagles (Home)</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, April 5 | 8:00 AM – 1:00 PM</span>
+                      <span>Thursday, April 16 | Kick-off: 7:50 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Flinders Street</span>
+                      <span>QLD Country Bank Stadium</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Local crafts and fresh produce in the heart of the CBD. A Sunday morning staple.
+                    The next home blockbuster! After a dominant 32-0 win over the Dragons, the boys are flying. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
                   </p>
                 </CardContent>
               </Card>
