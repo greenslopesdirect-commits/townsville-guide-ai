@@ -105,7 +105,7 @@ const DogFriendly = () => {
           {/* Local Tip */}
           <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
            <p>
-               March 23 Heat Alert: Humidity is sitting high this week. Pavement and sand are hitting 50°C+ by 10am. Strictly stick to sunrise or sunset walks to protect your dog's paws. If you can't hold your hand on the ground for 5 seconds, it's too hot!
+               ☀️ Heat Check (April 6): UV is Extreme (11+). Even with a pleasant 29°C breeze, pavements heat up fast between 10am and 3pm. If it's too hot for the back of your hand for 5 seconds, it's too hot for your dog's paws!
              </p>
           </LocalInsightCard>
 
