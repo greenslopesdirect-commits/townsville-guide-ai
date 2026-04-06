@@ -11,8 +11,8 @@ const CowboysStadiumGuide = () => {
   return (
     <>
       <SEOHead
-        title="Cowboys Game Day Guide 2026"
-        description="The local's guide to Cowboys game day at QLD Country Bank Stadium. Next home game: Cowboys vs Manly, April 16. Parking, the Stampede, and the best tips in Townsville."
+        title="Cowboys Game Day Guide: Townsville Stadium Tips & Parking (April 2026)"
+        description="Everything you need for Cowboys game day in Townsville. Updated April 6 with Dragons recap, Manly home game tips, and free Park & Ride info."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
@@ -43,24 +43,24 @@ const CowboysStadiumGuide = () => {
           </header>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
-              <Trophy className="w-6 h-6 text-primary" />
-              2026 Season – March 30 Update
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card className="border-l-4 border-l-green-500 bg-green-50/30">
-                <CardHeader className="pb-2">
-                  <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
-                    Season Update
-                  </Badge>
-                   <CardTitle className="text-lg mt-2">Back-to-Back Home Wins!</CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <p className="text-sm text-muted-foreground">
-                    The energy in Townsville is soaring after a thrilling 28-24 victory over the Melbourne Storm last Saturday. The boys are 2 from 2 at home. We now hit the road for away games against the Dragons and Broncos before returning for our next home blockbuster.
-                  </p>
-                </CardContent>
-              </Card>
+             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+               <Trophy className="w-6 h-6 text-primary" />
+               2026 Season – April 6 Update: The Wall of Townsville!
+             </h2>
+             <div className="grid gap-4 md:grid-cols-2">
+               <Card className="border-l-4 border-l-green-500 bg-green-50/30">
+                 <CardHeader className="pb-2">
+                   <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
+                     Season Update
+                   </Badge>
+                    <CardTitle className="text-lg mt-2">Undefeated at Home!</CardTitle>
+                 </CardHeader>
+                 <CardContent className="space-y-2">
+                   <p className="text-sm text-muted-foreground">
+                     The Cowboys are absolutely flying! After a dominant 32-0 shutout against the Dragons on the road, the boys are returning to Townsville with massive momentum. We are undefeated at home and ready for the next challenge.
+                   </p>
+                 </CardContent>
+               </Card>
 
               <Card className="border-l-4 border-l-primary shadow-sm">
                 <CardHeader className="pb-2">
@@ -160,7 +160,7 @@ const CowboysStadiumGuide = () => {
               <div>
                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                  <p className="text-amber-800 text-sm mt-1">
-                   With a 7:50 PM kick-off for the Manly game, expect the Leagues Club to reach capacity by 5:30 PM. The 'Stampede' march across Lowths Bridge will depart at approximately 7:00 PM.
+                   With a 7:50 PM kick-off for the Manly game, expect the Leagues Club to reach capacity by 5:30 PM. The 'Stampede' march across Lowths Bridge will depart at approximately 7:00 PM — the stadium lights will be spectacular under the Thursday night sky.
                  </p>
               </div>
             </div>
@@ -233,7 +233,7 @@ const CowboysStadiumGuide = () => {
                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                    <span className="text-sm">⚠️</span>
                    <p className="text-amber-800 text-sm">
-                     <strong>Thursday Night Blockbuster:</strong> With a late 7:50 PM kick-off for the Manly game, expect heavy CBD traffic from 5:30 PM onwards. We highly recommend using the free Park & Ride from Lou Litster Park to avoid the Thursday night city rush.
+                     <strong>Thursday Night Blockbuster:</strong> Because this is a Thursday night game, CBD parking will be at a premium with workers and fans overlapping. We strongly recommend using the Lou Litster Park & Ride to avoid the 5:30 PM city gridlock.
                    </p>
                  </div>
               </CardContent>
