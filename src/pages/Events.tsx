@@ -490,57 +490,7 @@ const Events = () => {
           </div>
         </section>
 
-        {/* Top 10 Free Things to Do These School Holidays */}
-        <section className="pt-8 border-t">
-          <div className="flex items-center gap-2 mb-2">
-            <Sun className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do These School Holidays (April 2026)</h2>
-          </div>
-          <p className="text-gray-600 mb-6">You don't need to spend a cent to keep the family entertained this break. Here are our top free picks across Townsville.</p>
 
-          <div className="grid gap-4 md:grid-cols-2">
-            {[
-              { num: "1", title: "The Strand Water Park", desc: "A local holiday staple. Open daily (check the Council site for any maintenance closures).", link: "/the-strand", linkText: "Strand Guide →" },
-              { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families during the humid April break." },
-              { num: "3", title: "Castle Hill Goat Track", desc: "Challenge the kids to a sunrise hike for the best 360-degree views of the city.", link: "/castle-hill", linkText: "Castle Hill Guide →" },
-              { num: "4", title: "Jezzine Barracks Coastal Walk", desc: "Explore the public art, military history, and the scenic boardwalk toward Rowes Bay.", link: "/jezzine-barracks", linkText: "Jezzine Guide →" },
-              { num: "5", title: "Townsville Bulletin Square Water Feature", desc: "A great (and free) way to cool down right in the heart of the CBD." },
-              { num: "6", title: "Anderson Park Botanical Gardens", desc: "Perfect for a shaded holiday picnic or letting the kids explore the world-class tropical plant collection." },
-              { num: "7", title: "Pallarenda Beach Beachcombing", desc: "Head to the northern end for a quieter beach day and low-tide exploration.", link: "/pallarenda-beach", linkText: "Pallarenda Guide →" },
-              { num: "8", title: "Townsville City Libraries", desc: "Check the 'School Holiday Program' for free workshops, LEGO clubs, and storytime sessions." },
-              { num: "9", title: "Ross River Parkway", desc: "Miles of shared paths for a family bike ride or a sunset walk near the weirs." },
-              { num: "10", title: "Cotters Market (Sunday Mornings)", desc: "While the stalls cost money, the atmosphere, live music, and street performance are free to enjoy in Flinders Street." },
-            ].map((item) => (
-              <Card key={item.num} className="hover:shadow-md transition-shadow">
-                <CardContent className="p-4 flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex items-center justify-center">
-                    {item.num}
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">{item.title}</h4>
-                    <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
-                    {item.link && (
-                      <Link to={item.link} className="text-primary text-sm font-medium hover:underline mt-1 inline-block">
-                        {item.linkText}
-                      </Link>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Local Tip */}
-          <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start mt-6">
-            <Leaf className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
-            <div>
-              <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
-              <p className="text-amber-800 text-sm mt-1">
-                April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. It's the best time of year for outdoor photography at our secret northern beaches like Saunders and Toolakea.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* FAQ Section */}
         <section className="pt-8 border-t">
