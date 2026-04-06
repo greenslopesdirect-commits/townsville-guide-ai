@@ -193,7 +193,7 @@ const LocalTips = () => {
             <div className="space-y-4 mb-8">
               <div className="p-4 rounded-lg border bg-card">
                 <p className="text-sm text-muted-foreground">
-                  🌊 Current Status (March 16, 2026): ☀️ Stinger nets are ACTIVE. Conditions are clearing and sunny — perfect for a walk on The Strand or waterfall chasing at Crystal Creek. The heavy thunderstorm warnings from last week have cleared.
+                  🌊 Current Status (April 6, 2026): ☀️ Stinger nets are ACTIVE. Conditions are sunny (28°C)—perfect for the final day of the Easter Long Weekend. Public holiday trading hours apply today.
                 </p>
               </div>
               <StingerSeasonAlert />
