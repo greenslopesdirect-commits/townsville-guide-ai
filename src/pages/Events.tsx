@@ -52,10 +52,10 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Carnival: Townsville Family Easter Carnival at Cluden Park (Friday, April 3)</li>
-            <li>Music: Flight Facilities at The Ville Lawns (Sunday, April 5)</li>
-            <li>Footy: Cowboys vs Dragons Away Game (Saturday, April 4)</li>
-            <li>Markets: Cotters Market on Flinders Street (Sunday, April 5)</li>
+            <li>Markets: Rescheduled Strand Night Markets (Friday, April 10, 5pm–9pm)</li>
+            <li>Music: Killer Queen Experience at TECC (Friday, April 10)</li>
+            <li>Adventure: Elliot's Revenge Trail Run at Elliot Springs (Sunday, April 12)</li>
+            <li>Footy: Cowboys vs Manly (Home Game) — Thursday, April 16. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
             <li>Nature: Perfect autumn weather for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or the <Link to="/the-strand" className="text-primary font-medium hover:underline">Strand Water Park</Link></li>
           </ul>
         </section>
