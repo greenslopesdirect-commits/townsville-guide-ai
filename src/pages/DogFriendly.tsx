@@ -236,7 +236,7 @@ const DogFriendly = () => {
                 <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                  <p className="text-xs text-muted-foreground mt-1">🌊 March 23 Update: Stinger nets are ACTIVE. Keep dogs out of the water outside of netted areas at The Strand and Pallarenda. For off-leash runs, Saunders Beach and Bushland Beach are great, but stay on the wet sand near the water's edge to keep paws cool.</p>
+                  <p className="text-xs text-muted-foreground mt-1">🌊 April 6 Update: Stinger nets are ACTIVE. Keep dogs out of the water outside of netted areas at The Strand and Pallarenda. For off-leash runs, Saunders Beach and Bushland Beach are great, but stay on the wet sand near the water's edge to keep paws cool.</p>
                   <p className="text-xs text-muted-foreground mt-1">Review our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> for full details.</p>
                 </div>
               </div>
