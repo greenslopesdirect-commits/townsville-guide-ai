@@ -359,16 +359,9 @@ const Events = () => {
         <section className="pt-8 border-t">
           <div className="flex items-center gap-2 mb-2">
             <Calendar className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">Easter & School Holiday Guide 2026</h2>
+            <h2 className="text-2xl font-bold text-gray-900">School Holiday Guide 2026 (April 3–19)</h2>
           </div>
-          <p className="text-gray-600 mb-4">Plan ahead for the busiest travel period in North Queensland. Key dates, events, and booking tips for the Easter break.</p>
-          
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 flex gap-3 items-start">
-            <span className="text-lg">⚠️</span>
-             <p className="text-amber-800 text-sm font-medium">
-               Term 1 ends THIS THURSDAY (April 2)! Magnetic Island ferries and Reef tours are reaching peak capacity—book today.
-             </p>
-          </div>
+          <p className="text-gray-600 mb-4">We're mid-way through the school holidays! Here are key dates, events, and booking tips for the rest of the break.</p>
 
           {/* Key Dates */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
