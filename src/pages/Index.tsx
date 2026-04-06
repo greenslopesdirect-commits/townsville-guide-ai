@@ -25,7 +25,7 @@ const Index = () => {
     <>
       {/* UPDATE: Revised for Evergreen/February Strategy */}
       <SEOHead
-        title="My Aussie Guide | Townsville Travel Tips, Beaches, Events & Local Advice"
+        title="Townsville Guide: April School Holidays & Events 2026"
         description="My Aussie Guide helps you discover Townsville like a local — beaches, food, events, dog-friendly spots, travel tips and real North Queensland insight."
         canonical="https://www.myaussieguide.com.au/"
       />
