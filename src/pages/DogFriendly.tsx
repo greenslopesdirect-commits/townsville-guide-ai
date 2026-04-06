@@ -105,7 +105,7 @@ const DogFriendly = () => {
           {/* Local Tip */}
           <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
            <p>
-               March 23 Heat Alert: Humidity is sitting high this week. Pavement and sand are hitting 50°C+ by 10am. Strictly stick to sunrise or sunset walks to protect your dog's paws. If you can't hold your hand on the ground for 5 seconds, it's too hot!
+               ☀️ Heat Check (April 6): UV is Extreme (11+). Even with a pleasant 29°C breeze, pavements heat up fast between 10am and 3pm. If it's too hot for the back of your hand for 5 seconds, it's too hot for your dog's paws!
              </p>
           </LocalInsightCard>
 
@@ -236,7 +236,7 @@ const DogFriendly = () => {
                 <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                  <p className="text-xs text-muted-foreground mt-1">🌊 March 23 Update: Stinger nets are ACTIVE. Keep dogs out of the water outside of netted areas at The Strand and Pallarenda. For off-leash runs, Saunders Beach and Bushland Beach are great, but stay on the wet sand near the water's edge to keep paws cool.</p>
+                  <p className="text-xs text-muted-foreground mt-1">🌊 April 6 Update: Stinger nets are ACTIVE. Keep dogs out of the water outside of netted areas at The Strand and Pallarenda. For off-leash runs, Saunders Beach and Bushland Beach are great, but stay on the wet sand near the water's edge to keep paws cool.</p>
                   <p className="text-xs text-muted-foreground mt-1">Review our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> for full details.</p>
                 </div>
               </div>
