@@ -20,14 +20,14 @@ const LocalTips = () => {
         "Dry season: Best for hiking, beaches, outdoor events",
         "Wet season: Fewer crowds, cheaper accommodation",
         "Shoulder months (April–May, Sept–Oct) are ideal",
-        "Check Today's Weather Forecast: March 16 Update — Clear blue skies but humidity remains at 81%. Stay hydrated and use sun protection."
+        "Check Today's Weather Forecast: April 6 Update — Sunny and 28°C with moderate humidity. Public holiday trading hours apply today."
       ],
       aiPrompt: "What's the best time of year to visit Townsville based on weather and activities?"
     },
     {
       title: "Staying Safe in the Heat",
       icon: <ThermometerSun className="w-6 h-6" />,
-      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. March 16 Alert: UV Index is Extreme (11+). Even with clear blue skies, the humidity remains at 81%. Stay hydrated!",
+      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. April 6 Alert: UV Index is Extreme (11+). Sunny and 28°C — stay hydrated!",
       tips: [
         "Walk Castle Hill at sunrise or sunset only",
         "Carry at least 1L water per person",
@@ -69,7 +69,7 @@ const LocalTips = () => {
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
         "Many cafés provide water bowls",
-        "🐾 Schnauzer Approved Tip: Low tide today (March 16) is at 9:15 AM. Perfect for a morning run on the sand flats at Pallarenda or Saunders Beach while the air is still fresh."
+        "🐾 Schnauzer Approved Tip: Low tide today (April 6) is at 3:55 PM. This is the perfect time for an afternoon run on the sand flats at Pallarenda or Saunders Beach as the heat begins to drop."
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
@@ -125,8 +125,8 @@ const LocalTips = () => {
   return (
     <>
       <SEOHead
-        title="Local Tips for Townsville: 2026 Insider Travel & Safety Guide"
-        description="Essential local advice for Townsville: Stinger safety, heat protection, best times for Castle Hill, and dog-friendly secrets. Updated March 2026."
+        title="Townsville Local Tips: April 2026 Holiday & Safety Guide"
+        description="Expert local advice for Townsville. April 2026 updates on stinger safety, school holiday tips, and Cowboys game day parking."
         canonical="https://www.myaussieguide.com.au/local-tips"
       />
       <Helmet>
@@ -193,7 +193,7 @@ const LocalTips = () => {
             <div className="space-y-4 mb-8">
               <div className="p-4 rounded-lg border bg-card">
                 <p className="text-sm text-muted-foreground">
-                  🌊 Current Status (March 16, 2026): ☀️ Stinger nets are ACTIVE. Conditions are clearing and sunny — perfect for a walk on The Strand or waterfall chasing at Crystal Creek. The heavy thunderstorm warnings from last week have cleared.
+                  🌊 Current Status (April 6, 2026): ☀️ Stinger nets are ACTIVE. Conditions are sunny (28°C)—perfect for the final day of the Easter Long Weekend. Public holiday trading hours apply today.
                 </p>
               </div>
               <StingerSeasonAlert />
@@ -210,7 +210,7 @@ const LocalTips = () => {
                 <AlertTriangle className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Magnetic Island — Sooning Street Bridge CLOSED</p>
-                  <p className="text-xs text-muted-foreground mt-1">The Sooning Street Bridge in Nelly Bay is currently CLOSED. Use the detour via Kelly St and Mandalay Ave to access the island's north side.</p>
+                  <p className="text-xs text-muted-foreground mt-1">Piling is now complete! The bridge remains closed to vehicles as construction enters the next phase, but pedestrian access is available. Expect a mid-2026 reopening.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
@@ -223,15 +223,15 @@ const LocalTips = () => {
               <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">🏟️ Sunday Game Day — Lowths Bridge Traffic</p>
-                  <p className="text-xs text-muted-foreground mt-1">Expect heavy pedestrian traffic on Lowths Bridge from 4:00 PM this Sunday for the Cowboys Home Opener.</p>
+                  <p className="font-medium text-sm text-foreground">🏟️ Thursday Night Footy — Lowths Bridge Traffic</p>
+                  <p className="text-xs text-muted-foreground mt-1">Expect heavy pedestrian traffic around Lowths Bridge and the Stadium from 5:00 PM on Thursday, April 16 for the Cowboys vs Manly home game.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
                 <Calendar className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">Easter Planning</p>
-                  <p className="text-xs text-muted-foreground mt-1">Term 1 ends April 2. Now is the time to book for the Easter Long Weekend (April 3–6) as popular spots are filling fast.</p>
+                  <p className="font-medium text-sm text-foreground">🎒 School Holiday Survival (April 6–19)</p>
+                  <p className="text-xs text-muted-foreground mt-1">With the North Shore and The Strand at peak capacity, head to our <Link to="/beaches#secret-beaches" className="text-primary font-medium hover:underline">Secret Beaches guide</Link> to find quieter spots like Toolakea or Saunders Beach.</p>
                 </div>
               </div>
             </section>
