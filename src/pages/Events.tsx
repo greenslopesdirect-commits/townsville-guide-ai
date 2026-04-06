@@ -374,15 +374,6 @@ const Events = () => {
               <p className="text-lg font-bold text-gray-900 mt-1">April 3–19</p>
             </div>
           </div>
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider">Easter Long Weekend</p>
-              <p className="text-lg font-bold text-gray-900 mt-1">April 3–6</p>
-            </div>
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider">School Holidays</p>
-              <p className="text-lg font-bold text-gray-900 mt-1">April 3–19</p>
-            </div>
-          </div>
 
           {/* Holiday Highlights */}
           <h3 className="font-bold text-lg text-gray-800 mb-4">Holiday Highlights</h3>
