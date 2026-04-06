@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On in Townsville | March 2026 Events & NRL Guide"
-        description="Updated March 30: Easter Long Weekend events in Townsville. Family Easter Carnival, Flight Facilities at The Ville, Cotters Market, and school holiday tips. Local facts only."
+        title="What's On Townsville: April 2026 School Holiday Events & Markets"
+        description="Discover the best things to do in Townsville these school holidays. Updated April 6 with Strand Night Markets, Killer Queen, and Cowboys game day tips."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-03-30">
-            <time dateTime="2026-03-30">Updated: March 30, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-04-06">
+            <time dateTime="2026-04-06">Updated: April 6, 2026</time>
           </span>
         </div>
       </div>
@@ -33,13 +33,13 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville This Week (March 30 – April 6, 2026)
+             What's On in Townsville: School Holiday Guide (April 6–19, 2026)
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              This week's big hitters: The <strong>Easter Long Weekend</strong> kicks off, the <strong>Townsville Family Easter Carnival</strong> takes over Cluden Park, and <strong>Flight Facilities</strong> brings the vibes to The Ville for Easter Sunday. Plus, Term 1 finishes this Thursday—get ready for the school holiday rush!
+              This week's big hitters: The <strong>Strand Night Markets</strong> are back this Friday (rescheduled from Good Friday), the <strong>Killer Queen Experience</strong> rocks the TECC, and the <strong>Elliot's Revenge Trail Run</strong> takes on Castle Hill. Plus, the <strong>Cowboys vs Manly</strong> home game is just around the corner on April 16!
             </p>
         </div>
 
@@ -52,10 +52,10 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Carnival: Townsville Family Easter Carnival at Cluden Park (Friday, April 3)</li>
-            <li>Music: Flight Facilities at The Ville Lawns (Sunday, April 5)</li>
-            <li>Footy: Cowboys vs Dragons Away Game (Saturday, April 4)</li>
-            <li>Markets: Cotters Market on Flinders Street (Sunday, April 5)</li>
+            <li>Markets: Rescheduled Strand Night Markets (Friday, April 10, 5pm–9pm)</li>
+            <li>Music: Killer Queen Experience at TECC (Friday, April 10)</li>
+            <li>Adventure: Elliot's Revenge Trail Run at Elliot Springs (Sunday, April 12)</li>
+            <li>Footy: Cowboys vs Manly (Home Game) — Thursday, April 16. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
             <li>Nature: Perfect autumn weather for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or the <Link to="/the-strand" className="text-primary font-medium hover:underline">Strand Water Park</Link></li>
           </ul>
         </section>
@@ -86,43 +86,43 @@ const Events = () => {
         {/* This Weekend's Highlights */}
         <section className="space-y-6">
           <div className="flex items-center gap-2">
-            <h2 className="text-2xl font-bold text-gray-900">This Weekend's Highlights</h2>
+            <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               March 30 – April 6
+               April 6–12
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Family Easter Carnival */}
+            {/* Strand Night Markets */}
             <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Family
+                    Markets
                   </Badge>
                   <Calendar className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Family Easter Carnival</CardTitle>
+                <CardTitle className="text-xl mt-2">The Strand Night Markets (Rescheduled)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, April 3 (5pm–9pm)</span>
+                    <span>Friday, April 10 (5pm–9pm)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Cluden Park</span>
+                    <span>The Strand, North Ward</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Rides, food stalls, and a visit from the Easter Bunny. The perfect family kick-off to the Easter Long Weekend.
+                  Moved from Good Friday — the Night Markets are back with live music, food trucks, and local crafts along the waterfront. A perfect school holiday Friday night out.
                 </p>
               </CardContent>
             </Card>
             
-            {/* Margaritaville (Flight Facilities) */}
+            {/* Killer Queen Experience */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
@@ -131,76 +131,78 @@ const Events = () => {
                   </Badge>
                   <Music className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Margaritaville (Flight Facilities)</CardTitle>
+                <CardTitle className="text-xl mt-2">Killer Queen Experience</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Sunday, April 5 (starts 3pm)</span>
+                    <span>Friday, April 10</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>The Ville Lawns</span>
+                    <span>TECC (Townsville Entertainment Centre)</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Electronic icons Flight Facilities headlining the ultimate Easter Sunday session at The Ville.
+                  The ultimate Queen tribute show hits Townsville. A high-energy, family-friendly experience perfect for a school holiday night out.
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Cowboys vs Dragons (Away) */}
+              {/* Elliot's Revenge Trail Run */}
               <Card className="hover:shadow-md transition-shadow border-l-4 border-l-green-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
                     <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                      Sport
+                      Adventure
                     </Badge>
-                    <Trophy className="w-5 h-5 text-gray-400" />
+                    <Footprints className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Cowboys vs Dragons (Away)</CardTitle>
+                  <CardTitle className="text-lg mt-2">Elliot's Revenge Trail Run</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Saturday, April 4 (4:30pm)</span>
+                      <span>Sunday, April 12</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Local Pubs</span>
+                      <span>Elliot Springs</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Catch the boys on the big screen at a local venue. Check your favourite pub for game day specials.
+                    A classic North Queensland adventure trail run through stunning terrain. Multiple distances available for all fitness levels.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Cotters Market */}
-              <Card className="hover:shadow-md transition-shadow">
+              {/* Cowboys vs Manly */}
+              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-blue-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <Badge variant="outline">Markets</Badge>
-                    <Info className="w-5 h-5 text-gray-400" />
+                    <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
+                      Footy
+                    </Badge>
+                    <Trophy className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Cotters Market</CardTitle>
+                  <CardTitle className="text-lg mt-2">Cowboys vs Manly Sea Eagles (Home)</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, April 5 | 8:00 AM – 1:00 PM</span>
+                      <span>Thursday, April 16 | Kick-off: 7:50 PM</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Flinders Street</span>
+                      <span>QLD Country Bank Stadium</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    Local crafts and fresh produce in the heart of the CBD. A Sunday morning staple.
+                    The next home blockbuster! After a dominant 32-0 win over the Dragons, the boys are flying. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
                   </p>
                 </CardContent>
               </Card>
@@ -233,7 +235,58 @@ const Events = () => {
           </Button>
         </div>
 
-        {/* Recurring Events Section */}
+        {/* Top 10 Free Things to Do These School Holidays — Moved up for holiday relevance */}
+        <section className="pt-8 border-t">
+          <div className="flex items-center gap-2 mb-2">
+            <Sun className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do These School Holidays (April 2026)</h2>
+          </div>
+          <p className="text-gray-600 mb-6">You don't need to spend a cent to keep the family entertained this break. Here are our top free picks across Townsville.</p>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            {[
+              { num: "1", title: "The Strand Water Park", desc: "A local holiday staple. Open daily (check the Council site for any maintenance closures).", link: "/the-strand", linkText: "Strand Guide →" },
+              { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families during the humid April break." },
+              { num: "3", title: "Castle Hill Goat Track", desc: "Challenge the kids to a sunrise hike for the best 360-degree views of the city.", link: "/castle-hill", linkText: "Castle Hill Guide →" },
+              { num: "4", title: "Jezzine Barracks Coastal Walk", desc: "Explore the public art, military history, and the scenic boardwalk toward Rowes Bay.", link: "/jezzine-barracks", linkText: "Jezzine Guide →" },
+              { num: "5", title: "Townsville Bulletin Square Water Feature", desc: "A great (and free) way to cool down right in the heart of the CBD." },
+              { num: "6", title: "Anderson Park Botanical Gardens", desc: "Perfect for a shaded holiday picnic or letting the kids explore the world-class tropical plant collection." },
+              { num: "7", title: "Pallarenda Beach Beachcombing", desc: "Head to the northern end for a quieter beach day and low-tide exploration.", link: "/pallarenda-beach", linkText: "Pallarenda Guide →" },
+              { num: "8", title: "Townsville City Libraries", desc: "Check the 'School Holiday Program' for free workshops, LEGO clubs, and storytime sessions." },
+              { num: "9", title: "Ross River Parkway", desc: "Miles of shared paths for a family bike ride or a sunset walk near the weirs." },
+              { num: "10", title: "Cotters Market (Sunday Mornings)", desc: "While the stalls cost money, the atmosphere, live music, and street performance are free to enjoy in Flinders Street." },
+            ].map((item) => (
+              <Card key={item.num} className="hover:shadow-md transition-shadow">
+                <CardContent className="p-4 flex gap-4 items-start">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex items-center justify-center">
+                    {item.num}
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">{item.title}</h4>
+                    <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
+                    {item.link && (
+                      <Link to={item.link} className="text-primary text-sm font-medium hover:underline mt-1 inline-block">
+                        {item.linkText}
+                      </Link>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Local Tip */}
+          <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start mt-6">
+            <Leaf className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
+            <div>
+              <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
+              <p className="text-amber-800 text-sm mt-1">
+                April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. It's the best time of year for outdoor photography at our secret northern beaches like Saunders and Toolakea.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="pt-8 border-t">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Recurring Events</h2>
           <div className="grid gap-6 md:grid-cols-3">
@@ -244,7 +297,7 @@ const Events = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-gray-600">Check seasonality (Dry Season only). A popular evening out along <Link to="/the-strand" className="text-primary font-medium hover:underline">The Strand</Link> with live music, food, and local crafts.</p>
-                <p className="text-sm text-amber-700 font-medium mt-2">⚠️ NOTE: Not on Good Friday. The markets have been moved to Friday, April 10.</p>
+                <p className="text-sm text-green-700 font-medium mt-2">✅ Back this Friday, April 10! Rescheduled from Good Friday.</p>
               </CardContent>
             </Card>
 
@@ -254,7 +307,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">Next home game details updating — check the draw for Round 4 and beyond.</p>
+                <p className="text-sm text-gray-600">Next home game: <strong>Round 7 vs Manly, Thursday April 16</strong>. Gates open 5:30 PM, kick-off 7:50 PM.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
@@ -357,26 +410,15 @@ const Events = () => {
         <section className="pt-8 border-t">
           <div className="flex items-center gap-2 mb-2">
             <Calendar className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">Easter & School Holiday Guide 2026</h2>
+            <h2 className="text-2xl font-bold text-gray-900">School Holiday Guide 2026 (April 3–19)</h2>
           </div>
-          <p className="text-gray-600 mb-4">Plan ahead for the busiest travel period in North Queensland. Key dates, events, and booking tips for the Easter break.</p>
-          
-          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 flex gap-3 items-start">
-            <span className="text-lg">⚠️</span>
-             <p className="text-amber-800 text-sm font-medium">
-               Term 1 ends THIS THURSDAY (April 2)! Magnetic Island ferries and Reef tours are reaching peak capacity—book today.
-             </p>
-          </div>
+          <p className="text-gray-600 mb-4">We're mid-way through the school holidays! Here are key dates, events, and booking tips for the rest of the break.</p>
 
           {/* Key Dates */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider">Term 1 Ends</p>
-              <p className="text-lg font-bold text-gray-900 mt-1">Thursday, April 2</p>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
               <p className="text-xs font-bold text-primary uppercase tracking-wider">Easter Long Weekend</p>
-              <p className="text-lg font-bold text-gray-900 mt-1">April 3–6</p>
+              <p className="text-lg font-bold text-gray-900 mt-1">April 3–6 ✅</p>
             </div>
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
               <p className="text-xs font-bold text-primary uppercase tracking-wider">School Holidays</p>
@@ -448,57 +490,7 @@ const Events = () => {
           </div>
         </section>
 
-        {/* Top 10 Free Things to Do These School Holidays */}
-        <section className="pt-8 border-t">
-          <div className="flex items-center gap-2 mb-2">
-            <Sun className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do These School Holidays (April 2026)</h2>
-          </div>
-          <p className="text-gray-600 mb-6">You don't need to spend a cent to keep the family entertained this break. Here are our top free picks across Townsville.</p>
 
-          <div className="grid gap-4 md:grid-cols-2">
-            {[
-              { num: "1", title: "The Strand Water Park", desc: "A local holiday staple. Open daily (check the Council site for any maintenance closures).", link: "/the-strand", linkText: "Strand Guide →" },
-              { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families during the humid April break." },
-              { num: "3", title: "Castle Hill Goat Track", desc: "Challenge the kids to a sunrise hike for the best 360-degree views of the city.", link: "/castle-hill", linkText: "Castle Hill Guide →" },
-              { num: "4", title: "Jezzine Barracks Coastal Walk", desc: "Explore the public art, military history, and the scenic boardwalk toward Rowes Bay.", link: "/jezzine-barracks", linkText: "Jezzine Guide →" },
-              { num: "5", title: "Townsville Bulletin Square Water Feature", desc: "A great (and free) way to cool down right in the heart of the CBD." },
-              { num: "6", title: "Anderson Park Botanical Gardens", desc: "Perfect for a shaded holiday picnic or letting the kids explore the world-class tropical plant collection." },
-              { num: "7", title: "Pallarenda Beach Beachcombing", desc: "Head to the northern end for a quieter beach day and low-tide exploration.", link: "/pallarenda-beach", linkText: "Pallarenda Guide →" },
-              { num: "8", title: "Townsville City Libraries", desc: "Check the 'School Holiday Program' for free workshops, LEGO clubs, and storytime sessions." },
-              { num: "9", title: "Ross River Parkway", desc: "Miles of shared paths for a family bike ride or a sunset walk near the weirs." },
-              { num: "10", title: "Cotters Market (Sunday Mornings)", desc: "While the stalls cost money, the atmosphere, live music, and street performance are free to enjoy in Flinders Street." },
-            ].map((item) => (
-              <Card key={item.num} className="hover:shadow-md transition-shadow">
-                <CardContent className="p-4 flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex items-center justify-center">
-                    {item.num}
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">{item.title}</h4>
-                    <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
-                    {item.link && (
-                      <Link to={item.link} className="text-primary text-sm font-medium hover:underline mt-1 inline-block">
-                        {item.linkText}
-                      </Link>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Local Tip */}
-          <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start mt-6">
-            <Leaf className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
-            <div>
-              <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
-              <p className="text-amber-800 text-sm mt-1">
-                April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. It's the best time of year for outdoor photography at our secret northern beaches like Saunders and Toolakea.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* FAQ Section */}
         <section className="pt-8 border-t">
