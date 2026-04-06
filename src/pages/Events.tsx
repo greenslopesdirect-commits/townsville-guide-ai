@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On in Townsville | March 2026 Events & NRL Guide"
-        description="Updated March 30: Easter Long Weekend events in Townsville. Family Easter Carnival, Flight Facilities at The Ville, Cotters Market, and school holiday tips. Local facts only."
+        title="What's On Townsville: April 2026 School Holiday Events & Markets"
+        description="Discover the best things to do in Townsville these school holidays. Updated April 6 with Strand Night Markets, Killer Queen, and Cowboys game day tips."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
