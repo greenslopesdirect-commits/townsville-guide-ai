@@ -117,15 +117,15 @@ const Index = () => {
         {/* Local Insight - Introduction */}
         <div className="container mx-auto px-4 max-w-4xl py-8">
            <LocalInsightCard title="More Than a Gateway" variant="insight">
-             <p>
-               Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North. 
-               Term 1 finishes this Thursday, April 2, and the Easter Long Weekend kicks off Friday, April 3—expect the city to come alive with families and visitors!
-               Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
+              <p>
+                Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North. 
+                We are mid-way through the April school holidays (April 3–19)—check out the best family-friendly spots and holiday trading hours below.
+                Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
+              </p>
+              <p className="font-medium text-amber-700 dark:text-amber-300">
+               🌴 We run on "Tropical Time," so slow down, check the trading hours, and enjoy the rhythm of the North.
              </p>
-             <p className="font-medium text-amber-700 dark:text-amber-300">
-              🌴 We run on "Tropical Time," so slow down, check the trading hours, and enjoy the rhythm of the North.
-            </p>
-          </LocalInsightCard>
+           </LocalInsightCard>
         </div>
         
         {/* Newsletter Section */}
