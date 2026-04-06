@@ -11,8 +11,8 @@ const CowboysStadiumGuide = () => {
   return (
     <>
       <SEOHead
-        title="Cowboys Game Day Guide 2026"
-        description="The local's guide to Cowboys game day at QLD Country Bank Stadium. Next home game: Cowboys vs Manly, April 16. Parking, the Stampede, and the best tips in Townsville."
+        title="Cowboys Game Day Guide: Townsville Stadium Tips & Parking (April 2026)"
+        description="Everything you need for Cowboys game day in Townsville. Updated April 6 with Dragons recap, Manly home game tips, and free Park & Ride info."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
