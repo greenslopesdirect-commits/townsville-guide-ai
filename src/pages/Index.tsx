@@ -117,11 +117,11 @@ const Index = () => {
         {/* Local Insight - Introduction */}
         <div className="container mx-auto px-4 max-w-4xl py-8">
            <LocalInsightCard title="More Than a Gateway" variant="insight">
-              <p>
-                Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North. 
-                We are mid-way through the April school holidays (April 3–19)—check out the best family-friendly spots and holiday trading hours below.
-                Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
-              </p>
+               <p>
+                 Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North. 
+                 The school holidays are in their final week (ending April 19) — see our top picks for the last few days of break, plus a look ahead to a massive month of NRL and live music.
+                 Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
+               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
                🌴 We run on "Tropical Time," so slow down, check the trading hours, and enjoy the rhythm of the North.
              </p>
@@ -169,17 +169,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: April 6, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: April 13, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                🏉 What a dominant performance! The Cowboys kept a clean sheet with a 32-0 win over the Dragons on Saturday. All eyes are now on the next home game against Manly on April 16.
+                🏈 Blockbuster Alert: After a massive start to the season, the Cowboys take on the Manly Sea Eagles at home this Thursday, April 16. The atmosphere in the CBD will be electric—plan your transport early!
               </p>
             </div>
 
             {/* School Holiday Alert */}
             <div className="mt-6 bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-300 dark:border-amber-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-amber-800 dark:text-amber-300 font-medium leading-relaxed">
-                🎒 School Holiday Mode: We're mid-way through the April holidays (April 3–19). Magnetic Island ferries, Reef tours, and family attractions are running at peak capacity—book ahead!
+                🎒 School Holiday Mode: We're in the final week of the April holidays (ending April 19). Magnetic Island ferries, Reef tours, and family attractions are still running at peak capacity—book ahead!
               </p>
             </div>
           </div>
