@@ -20,14 +20,14 @@ const LocalTips = () => {
         "Dry season: Best for hiking, beaches, outdoor events",
         "Wet season: Fewer crowds, cheaper accommodation",
         "Shoulder months (April–May, Sept–Oct) are ideal",
-        "Check Today's Weather Forecast: April 6 Update — Sunny and 28°C with moderate humidity. Public holiday trading hours apply today."
+        "Check Today's Weather Forecast: April 13 Update — Sunny and 31°C with moderate humidity. The transition to the Dry Season is beginning, but the UV remains Extreme (11+)."
       ],
       aiPrompt: "What's the best time of year to visit Townsville based on weather and activities?"
     },
     {
       title: "Staying Safe in the Heat",
       icon: <ThermometerSun className="w-6 h-6" />,
-      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. April 6 Alert: UV Index is Extreme (11+). Sunny and 28°C — stay hydrated!",
+      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. April 13 Alert: UV Index is Extreme (11+). Sunny and 31°C — stay hydrated!",
       tips: [
         "Walk Castle Hill at sunrise or sunset only",
         "Carry at least 1L water per person",
@@ -69,7 +69,7 @@ const LocalTips = () => {
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
         "Many cafés provide water bowls",
-        "🐾 Schnauzer Approved Tip: Low tide today (April 6) is at 3:55 PM. This is the perfect time for an afternoon run on the sand flats at Pallarenda or Saunders Beach as the heat begins to drop."
+        "🐾 Schnauzer Approved Tip: Low tide today (April 13) is mid-afternoon. It's the perfect time to let the dogs run on the sand flats at Pallarenda as the temperature starts to dip after 3:30 PM."
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
@@ -125,8 +125,8 @@ const LocalTips = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Local Tips: April 2026 Holiday & Safety Guide"
-        description="Expert local advice for Townsville. April 2026 updates on stinger safety, school holiday tips, and Cowboys game day parking."
+        title="Townsville Local Tips & Insider Guide 2026 | Safety & Weather"
+        description="Get the latest Townsville insider tips for April 13, 2026. Includes stinger safety status, heat protocols, and infrastructure alerts for Magnetic Island and the CBD."
         canonical="https://www.myaussieguide.com.au/local-tips"
       />
       <Helmet>
@@ -193,7 +193,7 @@ const LocalTips = () => {
             <div className="space-y-4 mb-8">
               <div className="p-4 rounded-lg border bg-card">
                 <p className="text-sm text-muted-foreground">
-                  🌊 Current Status (April 6, 2026): ☀️ Stinger nets are ACTIVE. Conditions are sunny (28°C)—perfect for the final day of the Easter Long Weekend. Public holiday trading hours apply today.
+                  ☀️ Current Status (April 13, 2026): ☀️ Stinger nets are ACTIVE. Conditions are sunny and 31°C—perfect for the final week of the April school holidays.
                 </p>
               </div>
               <StingerSeasonAlert />
@@ -224,14 +224,14 @@ const LocalTips = () => {
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">🏟️ Thursday Night Footy — Lowths Bridge Traffic</p>
-                  <p className="text-xs text-muted-foreground mt-1">Expect heavy pedestrian traffic around Lowths Bridge and the Stadium from 5:00 PM on Thursday, April 16 for the Cowboys vs Manly home game.</p>
+                  <p className="text-xs text-muted-foreground mt-1"><strong>Expect heavy pedestrian traffic and CBD gridlock from 5:00 PM this Thursday (April 16) for the Cowboys vs Manly game. Avoid Lowths Bridge if you aren't walking to the stadium.</strong></p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
                 <Calendar className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">🎒 School Holiday Survival (April 6–19)</p>
-                  <p className="text-xs text-muted-foreground mt-1">With the North Shore and The Strand at peak capacity, head to our <Link to="/beaches#secret-beaches" className="text-primary font-medium hover:underline">Secret Beaches guide</Link> to find quieter spots like Toolakea or Saunders Beach.</p>
+                  <p className="font-medium text-sm text-foreground">🎒 Final Week of School Holidays (April 13–19)</p>
+                  <p className="text-xs text-muted-foreground mt-1">Expect peak capacity at The Strand and Riverway. If the crowds are too much, use our <Link to="/beaches#secret-beaches" className="text-primary font-medium hover:underline">Secret Beaches guide</Link> to find some breathing room at Saunders Beach.</p>
                 </div>
               </div>
             </section>
