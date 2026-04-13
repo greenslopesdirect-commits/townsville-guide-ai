@@ -11,8 +11,8 @@ const CowboysStadiumGuide = () => {
   return (
     <>
       <SEOHead
-        title="Cowboys Game Day Guide: Townsville Stadium Tips & Parking (April 2026)"
-        description="Everything you need for Cowboys game day in Townsville. Updated April 6 with Dragons recap, Manly home game tips, and free Park & Ride info."
+        title="Cowboys Stadium & Game Day Guide 2026 | Townsville Local's Tips"
+        description="Heading to the Cowboys vs Manly game this Thursday? Get the local guide to the 'Stampede', stadium parking, and the best pre-game spots in Townsville. Updated April 13, 2026."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
@@ -45,7 +45,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – April 6 Update: The Wall of Townsville!
+               2026 Season – April 13 Update: Momentum Building!
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -56,9 +56,9 @@ const CowboysStadiumGuide = () => {
                     <CardTitle className="text-lg mt-2">Undefeated at Home!</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-2">
-                   <p className="text-sm text-muted-foreground">
-                     The Cowboys are absolutely flying! After a dominant 32-0 shutout against the Dragons on the road, the boys are returning to Townsville with massive momentum. We are undefeated at home and ready for the next challenge.
-                   </p>
+                    <p className="text-sm text-muted-foreground">
+                      The Cowboys are absolutely flying! After a dominant 32-0 shutout against the Dragons, the boys return home this Thursday with massive momentum and an undefeated home record to protect.
+                    </p>
                  </CardContent>
                </Card>
 
@@ -162,6 +162,9 @@ const CowboysStadiumGuide = () => {
                  <p className="text-amber-800 text-sm mt-1">
                    With a 7:50 PM kick-off for the Manly game, expect the Leagues Club to reach capacity by 5:30 PM. The 'Stampede' march across Lowths Bridge will depart at approximately 7:00 PM — the stadium lights will be spectacular under the Thursday night sky.
                  </p>
+                 <p className="text-amber-800 text-sm mt-2 font-semibold">
+                   Because this is a Thursday night blockbuster, expect the CBD to be busier than usual as the workday ends and the game-day crowd arrives. If you're heading to the Cowboys Leagues Club for the Stampede, try to arrive by 5:00 PM.
+                 </p>
               </div>
             </div>
 
@@ -232,9 +235,9 @@ const CowboysStadiumGuide = () => {
                 </p>
                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                    <span className="text-sm">⚠️</span>
-                   <p className="text-amber-800 text-sm">
-                     <strong>Thursday Night Blockbuster:</strong> Because this is a Thursday night game, CBD parking will be at a premium with workers and fans overlapping. We strongly recommend using the Lou Litster Park & Ride to avoid the 5:30 PM city gridlock.
-                   </p>
+                    <p className="text-amber-800 text-sm">
+                      <strong>Thursday Night Alert: CBD parking will be at a premium.</strong> We strongly recommend using the <strong>Lou Litster Park & Ride shuttle</strong> to avoid the 5:30 PM city gridlock as workers and fans overlap.
+                    </p>
                  </div>
               </CardContent>
             </Card>
