@@ -2,15 +2,15 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Plane, Calendar, DollarSign, MapPin } from "lucide-react";
+import { Plane, Calendar, DollarSign, MapPin, ArrowRight } from "lucide-react";
 import FlightsButton from "@/components/FlightsButton";
 
 const FlightsToTownsville = () => {
   return (
     <>
       <SEOHead
-        title="Flights to Townsville (TSV) - Compare & Book Cheap Flights"
-        description="Compare flights to Townsville Airport (TSV). Find the best deals on flights from Sydney, Melbourne, Brisbane and more. Tips for cheap flights to North Queensland."
+        title="Best Flights to Townsville 2026 | Airlines, Tips & Airport Guide"
+        description="Finding the best flights to Townsville in 2026? Get our local tips on airlines, transport from the airport, and our exclusive 'Moving to the Ville' guide for newcomers. Updated April 13."
         canonical="https://www.myaussieguide.com.au/flights"
       />
       <Helmet>
@@ -43,6 +43,14 @@ const FlightsToTownsville = () => {
                 Compare flights to and from Townsville — coming soon.
               </p>
               <FlightsButton size="lg" className="text-lg px-8 py-6" />
+              <div className="mt-4">
+                <Button asChild variant="outline" className="gap-2">
+                  <Link to="/moving-to-townsville">
+                    Moving to Townsville? Check out our 2026 Relocation Guide
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </Button>
+              </div>
             </header>
 
             {/* Content Sections */}
