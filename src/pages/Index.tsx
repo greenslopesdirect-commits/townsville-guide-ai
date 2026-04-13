@@ -25,7 +25,7 @@ const Index = () => {
     <>
       {/* UPDATE: Revised for Evergreen/February Strategy */}
       <SEOHead
-        title="Townsville Guide: April School Holidays & Events 2026"
+        title="Townsville Guide: Late April & May 2026 — NRL, Live Music & More"
         description="My Aussie Guide helps you discover Townsville like a local — beaches, food, events, dog-friendly spots, travel tips and real North Queensland insight."
         canonical="https://www.myaussieguide.com.au/"
       />
