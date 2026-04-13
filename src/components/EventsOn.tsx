@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Calendar, ArrowRight, MapPin, Clock } from "lucide-react";
+import { Calendar, ArrowRight, MapPin, Clock, Music, Laugh, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -11,10 +11,10 @@ const EventsOn = () => {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
-            <span className="text-primary font-bold tracking-wider uppercase text-sm">Seasonal Events & Local Highlights</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">This Week in the Ville: Night Markets, Live Music & Trail Runs</h2>
+            <span className="text-primary font-bold tracking-wider uppercase text-sm">Upcoming Events & Local Highlights</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">What's On: Cowboys, Guy Sebastian, Jimmy Carr & More</h2>
             <p className="text-slate-600 mt-2 max-w-xl text-lg">
-              Townsville hosts markets, festivals, long weekends, and community events throughout the year.
+              Townsville hosts markets, festivals, live shows, and community events throughout the year.
             </p>
           </div>
           
@@ -33,17 +33,17 @@ const EventsOn = () => {
                 <div className="absolute top-0 right-0 p-32 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
                 <div className="relative z-10">
                     <span className="inline-block px-3 py-1 bg-yellow-400 text-blue-900 font-bold text-xs uppercase tracking-wider rounded-full mb-4">
-                        Year-Round
+                        April & May 2026
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
-                    <p className="text-blue-100 font-medium">Something for every season</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🎒 School Holiday Focus: Family Fun, Night Markets & Live Music</p>
+                    <p className="text-blue-100 font-medium">Big shows hitting Townsville</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏉 Cowboys Home Game: April 16 vs Manly</p>
                      <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">NRL Season</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
                         <MapPin className="w-4 h-4" />
-                        <span>The Strand, Jezzine & citywide venues</span>
+                        <span>TECC, QLD Country Bank Stadium & citywide</span>
                      </div>
                 </div>
             </div>
@@ -52,8 +52,8 @@ const EventsOn = () => {
             <div className="lg:col-span-3 p-8 flex flex-col justify-center">
                 <div className="prose prose-slate mb-6">
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        From waterfront celebrations and <strong>cultural festivals</strong> to <strong>sporting events</strong> and long weekend activities, 
-                        there's always something happening in Townsville. Plan ahead to catch the best of North Queensland.
+                        From <strong>Cowboys home games</strong> and <strong>Guy Sebastian</strong> to <strong>Jimmy Carr</strong> and the <strong>Dream Fields Festival</strong> in May — 
+                        there's always something happening in Townsville.
                     </p>
                 </div>
                 
@@ -64,61 +64,61 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Updated regularly with local highlights.
+                        Updated April 13, 2026.
                     </span>
                 </div>
             </div>
         </div>
 
-        {/* WEEKLY EVENTS GRID */}
+        {/* UPCOMING EVENTS GRID */}
         <h3 className="font-bold text-xl text-slate-800 mb-6 flex items-center gap-2">
-            <Calendar className="w-5 h-5 text-primary" /> Weekend Essentials
+            <Calendar className="w-5 h-5 text-primary" /> Coming Up
         </h3>
 
         <div className="grid md:grid-cols-3 gap-6">
             
-            {/* Card 1 — Friday */}
+            {/* Card 1 — Cowboys */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                        <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Friday
+                        <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Thursday
                         </div>
                         <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">The Strand Night Markets</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Friday, April 10 (Rescheduled)</p>
+                    <h4 className="text-lg font-bold mb-2">Cowboys vs Manly (Home)</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Thursday, April 16</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> The Strand, North Ward
+                        <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> 5:00 PM – 9:30 PM
+                        <Clock className="w-4 h-4" /> Kick-off: 7:50 PM
                     </div>
                 </CardContent>
             </Card>
 
-            {/* Card 2 — Friday (Killer Queen) */}
+            {/* Card 2 — Guy Sebastian */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Friday
+                            Wednesday
                         </div>
-                        <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                        <Music className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Killer Queen Experience</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Friday, April 10</p>
+                    <h4 className="text-lg font-bold mb-2">Guy Sebastian</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Wednesday, April 22</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> TECC (Entertainment Centre)
+                        <MapPin className="w-4 h-4" /> TECC
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">🎸 The ultimate Queen tribute show</p>
+                    <p className="text-xs text-slate-500 mt-2">🎤 100 Times Around the Sun Tour</p>
                 </CardContent>
             </Card>
 
             {/* View All Link */}
             <Card className="bg-slate-50 border-dashed border-2 border-slate-200 hover:border-primary/50 transition-colors flex flex-col justify-center items-center text-center p-6">
                 <h4 className="font-semibold text-slate-700 mb-2">Looking for more?</h4>
-                <p className="text-sm text-slate-500 mb-4">Music, Sports, and Art.</p>
+                <p className="text-sm text-slate-500 mb-4">Comedy, Festivals & More.</p>
                 <Link to="/events" className="text-primary font-bold flex items-center gap-1 hover:underline">
                     View Calendar <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -126,24 +126,22 @@ const EventsOn = () => {
 
         </div>
 
-        {/* Sunday cards */}
+        {/* More upcoming cards */}
         <div className="grid md:grid-cols-2 gap-6 mt-6">
           <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
-                <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
-                  Sunday
+                <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
+                  Tuesday
                 </div>
-                <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                <Laugh className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
               </div>
-              <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
-              <p className="text-xs text-primary font-medium mb-1">Sunday, April 12</p>
+              <h4 className="text-lg font-bold mb-2">Jimmy Carr: Laughs Funny</h4>
+              <p className="text-xs text-primary font-medium mb-1">Tuesday, April 28</p>
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                <MapPin className="w-4 h-4" /> Flinders Street
+                <MapPin className="w-4 h-4" /> TECC
               </div>
-              <div className="flex items-center gap-2 text-sm text-slate-500">
-                <Clock className="w-4 h-4" /> 8:00 AM – 1:00 PM
-              </div>
+              <p className="text-xs text-slate-500 mt-2">😂 The king of one-liners live in Townsville</p>
             </CardContent>
           </Card>
 
@@ -151,22 +149,22 @@ const EventsOn = () => {
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
-                  Sunday
+                  May Preview
                 </div>
-                <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
               </div>
-              <h4 className="text-lg font-bold mb-2">Elliot's Revenge Trail Run</h4>
-              <p className="text-xs text-primary font-medium mb-1">Sunday, April 12</p>
+              <h4 className="text-lg font-bold mb-2">Dream Fields Festival</h4>
+              <p className="text-xs text-primary font-medium mb-1">Saturday, May 23</p>
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                <MapPin className="w-4 h-4" /> Castle Hill / The Strand
+                <MapPin className="w-4 h-4" /> Central Park, Townsville
               </div>
-              <p className="text-xs text-slate-500 mt-2">🏃 Local trail running event through iconic Townsville terrain</p>
+              <p className="text-xs text-slate-500 mt-2">🎶 Townsville's premier outdoor music & arts festival</p>
             </CardContent>
           </Card>
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🎒 <strong>School Holidays:</strong> Night Markets are back this Friday, Killer Queen rocks the TECC, and Cotters Market keeps Sunday fresh! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏉 Cowboys vs Manly this Thursday, Guy Sebastian next week, and Jimmy Carr at the end of April! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}

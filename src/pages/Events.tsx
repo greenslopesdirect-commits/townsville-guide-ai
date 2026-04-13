@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog, Footprints, Trophy, Leaf, Sun, Thermometer } from "lucide-react";
+import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog, Footprints, Trophy, Leaf, Sun, Thermometer, Laugh, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On Townsville: April 2026 School Holiday Events & Markets"
-        description="Discover the best things to do in Townsville these school holidays. Updated April 6 with Strand Night Markets, Killer Queen, and Cowboys game day tips."
+        title="What's On Townsville: April & May 2026 Event Calendar"
+        description="Looking for things to do in Townsville? Check our updated April and May 2026 guide for NRL Cowboys home games, Guy Sebastian, Jimmy Carr, and the Dream Fields Festival."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-04-06">
-            <time dateTime="2026-04-06">Updated: April 6, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-04-13">
+            <time dateTime="2026-04-13">Updated: April 13, 2026</time>
           </span>
         </div>
       </div>
@@ -33,13 +33,13 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: School Holiday Guide (April 6–19, 2026)
+             What's On in Townsville: April & May 2026
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              This week's big hitters: The <strong>Strand Night Markets</strong> are back this Friday (rescheduled from Good Friday), the <strong>Killer Queen Experience</strong> rocks the TECC, and the <strong>Elliot's Revenge Trail Run</strong> takes on Castle Hill. Plus, the <strong>Cowboys vs Manly</strong> home game is just around the corner on April 16!
+              Coming up: The <strong>Cowboys vs Manly</strong> Thursday night blockbuster (April 16), <strong>Guy Sebastian</strong> at TECC (April 22), <strong>Jimmy Carr</strong> brings the laughs (April 28), and the <strong>Dream Fields Festival</strong> lands in May!
             </p>
         </div>
 
@@ -50,12 +50,12 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights in Townsville</h2>
+          <h2 className="text-2xl font-bold text-gray-900">Upcoming Highlights in Townsville</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Markets: Rescheduled Strand Night Markets (Friday, April 10, 5pm–9pm)</li>
-            <li>Music: Killer Queen Experience at TECC (Friday, April 10)</li>
-            <li>Adventure: Elliot's Revenge Trail Run at Elliot Springs (Sunday, April 12)</li>
-            <li>Footy: Cowboys vs Manly (Home Game) — Thursday, April 16. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
+            <li>Footy: Cowboys vs Manly Sea Eagles (Home Game) — Thursday, April 16. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
+            <li>Music: Guy Sebastian — 100 Times Around the Sun Tour (TECC) — Wednesday, April 22</li>
+            <li>Comedy: Jimmy Carr — Laughs Funny Tour (TECC) — Tuesday, April 28</li>
+            <li>Festival: Dream Fields Festival — Saturday, May 23 at Central Park</li>
             <li>Nature: Perfect autumn weather for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or the <Link to="/the-strand" className="text-primary font-medium hover:underline">Strand Water Park</Link></li>
           </ul>
         </section>
@@ -83,130 +83,130 @@ const Events = () => {
           </CardContent>
         </Card>
 
-        {/* This Weekend's Highlights */}
+        {/* Featured Events */}
         <section className="space-y-6">
           <div className="flex items-center gap-2">
-            <h2 className="text-2xl font-bold text-gray-900">This Week's Highlights</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Featured Events</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               April 6–12
+               April–May 2026
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Strand Night Markets */}
-            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
+            {/* Cowboys vs Manly — FEATURED */}
+            <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Markets
+                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
+                    Footy — Featured
                   </Badge>
-                  <Calendar className="w-5 h-5 text-gray-400" />
+                  <Trophy className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">The Strand Night Markets (Rescheduled)</CardTitle>
+                <CardTitle className="text-xl mt-2">Cowboys vs Manly Sea Eagles (Home)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, April 10 (5pm–9pm)</span>
+                    <span>Thursday, April 16 | Kick-off: 7:50 PM</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>The Strand, North Ward</span>
+                    <span>QLD Country Bank Stadium</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Moved from Good Friday — the Night Markets are back with live music, food trucks, and local crafts along the waterfront. A perfect school holiday Friday night out.
-                </p>
-              </CardContent>
-            </Card>
-            
-            {/* Killer Queen Experience */}
-            <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Music
-                  </Badge>
-                  <Music className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">Killer Queen Experience</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Friday, April 10</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>TECC (Townsville Entertainment Centre)</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  The ultimate Queen tribute show hits Townsville. A high-energy, family-friendly experience perfect for a school holiday night out.
+                  After a dominant 32-0 shutout against the Dragons, the Cowboys return home undefeated. Thursday night under the lights — the march across Lowths Bridge starts around 7:00 PM. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
                 </p>
               </CardContent>
             </Card>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Elliot's Revenge Trail Run */}
-              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-green-500">
+              {/* Guy Sebastian */}
+              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-purple-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                      Adventure
+                    <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
+                      Music
                     </Badge>
-                    <Footprints className="w-5 h-5 text-gray-400" />
+                    <Music className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Elliot's Revenge Trail Run</CardTitle>
+                  <CardTitle className="text-lg mt-2">Guy Sebastian: 100 Times Around the Sun</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Sunday, April 12</span>
+                      <span>Wednesday, April 22</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>Elliot Springs</span>
+                      <span>TECC (Townsville Entertainment Centre)</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    A classic North Queensland adventure trail run through stunning terrain. Multiple distances available for all fitness levels.
+                    One of Australia's biggest pop artists brings his national tour to Townsville. Expect all the hits in an unforgettable midweek night out.
                   </p>
                 </CardContent>
               </Card>
 
-              {/* Cowboys vs Manly */}
-              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-blue-500">
+              {/* Jimmy Carr */}
+              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-orange-500">
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                      Footy
+                    <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
+                      Comedy
                     </Badge>
-                    <Trophy className="w-5 h-5 text-gray-400" />
+                    <Laugh className="w-5 h-5 text-gray-400" />
                   </div>
-                  <CardTitle className="text-lg mt-2">Cowboys vs Manly Sea Eagles (Home)</CardTitle>
+                  <CardTitle className="text-lg mt-2">Jimmy Carr: Laughs Funny Tour</CardTitle>
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Thursday, April 16 | Kick-off: 7:50 PM</span>
+                      <span>Tuesday, April 28</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
-                      <span>QLD Country Bank Stadium</span>
+                      <span>TECC (Townsville Entertainment Centre)</span>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    The next home blockbuster! After a dominant 32-0 win over the Dragons, the boys are flying. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                    The king of one-liners brings his sharp wit to North Queensland. Not one to miss — book early, these shows sell out fast.
                   </p>
                 </CardContent>
               </Card>
             </div>
+
+            {/* Dream Fields Festival — May Preview */}
+            <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
+                    May Preview — Festival
+                  </Badge>
+                  <Star className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">Dream Fields Festival</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Saturday, May 23</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Central Park, Townsville</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  Townsville's premier outdoor music and arts festival returns to Central Park. Full lineup and ticket details coming soon — mark this one in the calendar.
+                </p>
+              </CardContent>
+            </Card>
 
           </div>
         </section>
@@ -235,24 +235,24 @@ const Events = () => {
           </Button>
         </div>
 
-        {/* Top 10 Free Things to Do These School Holidays — Moved up for holiday relevance */}
+        {/* Top 10 Free Things to Do */}
         <section className="pt-8 border-t">
           <div className="flex items-center gap-2 mb-2">
             <Sun className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do These School Holidays (April 2026)</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do in Townsville</h2>
           </div>
-          <p className="text-gray-600 mb-6">You don't need to spend a cent to keep the family entertained this break. Here are our top free picks across Townsville.</p>
+          <p className="text-gray-600 mb-6">You don't need to spend a cent to keep the family entertained. Here are our top free picks across Townsville.</p>
 
           <div className="grid gap-4 md:grid-cols-2">
             {[
-              { num: "1", title: "The Strand Water Park", desc: "A local holiday staple. Open daily (check the Council site for any maintenance closures).", link: "/the-strand", linkText: "Strand Guide →" },
-              { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families during the humid April break." },
+              { num: "1", title: "The Strand Water Park", desc: "A local favourite. Open daily (check the Council site for any maintenance closures).", link: "/the-strand", linkText: "Strand Guide →" },
+              { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families." },
               { num: "3", title: "Castle Hill Goat Track", desc: "Challenge the kids to a sunrise hike for the best 360-degree views of the city.", link: "/castle-hill", linkText: "Castle Hill Guide →" },
               { num: "4", title: "Jezzine Barracks Coastal Walk", desc: "Explore the public art, military history, and the scenic boardwalk toward Rowes Bay.", link: "/jezzine-barracks", linkText: "Jezzine Guide →" },
               { num: "5", title: "Townsville Bulletin Square Water Feature", desc: "A great (and free) way to cool down right in the heart of the CBD." },
-              { num: "6", title: "Anderson Park Botanical Gardens", desc: "Perfect for a shaded holiday picnic or letting the kids explore the world-class tropical plant collection." },
+              { num: "6", title: "Anderson Park Botanical Gardens", desc: "Perfect for a shaded picnic or letting the kids explore the world-class tropical plant collection." },
               { num: "7", title: "Pallarenda Beach Beachcombing", desc: "Head to the northern end for a quieter beach day and low-tide exploration.", link: "/pallarenda-beach", linkText: "Pallarenda Guide →" },
-              { num: "8", title: "Townsville City Libraries", desc: "Check the 'School Holiday Program' for free workshops, LEGO clubs, and storytime sessions." },
+              { num: "8", title: "Townsville City Libraries", desc: "Check the library website for free workshops, LEGO clubs, and storytime sessions." },
               { num: "9", title: "Ross River Parkway", desc: "Miles of shared paths for a family bike ride or a sunset walk near the weirs." },
               { num: "10", title: "Cotters Market (Sunday Mornings)", desc: "While the stalls cost money, the atmosphere, live music, and street performance are free to enjoy in Flinders Street." },
             ].map((item) => (
@@ -297,7 +297,6 @@ const Events = () => {
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-gray-600">Check seasonality (Dry Season only). A popular evening out along <Link to="/the-strand" className="text-primary font-medium hover:underline">The Strand</Link> with live music, food, and local crafts.</p>
-                <p className="text-sm text-green-700 font-medium mt-2">✅ Back this Friday, April 10! Rescheduled from Good Friday.</p>
               </CardContent>
             </Card>
 
@@ -406,13 +405,13 @@ const Events = () => {
            </div>
         </section>
 
-        {/* Easter & School Holiday Guide 2026 */}
+        {/* April School Holiday Archive */}
         <section className="pt-8 border-t">
           <div className="flex items-center gap-2 mb-2">
             <Calendar className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">School Holiday Guide 2026 (April 3–19)</h2>
+            <h2 className="text-2xl font-bold text-gray-900">April Archive: School Holidays 2026 (April 3–19)</h2>
           </div>
-          <p className="text-gray-600 mb-4">We're mid-way through the school holidays! Here are key dates, events, and booking tips for the rest of the break.</p>
+          <p className="text-gray-600 mb-4">The school holiday period wraps up on April 19. Here's a recap of key dates and what happened during the break.</p>
 
           {/* Key Dates */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -429,34 +428,6 @@ const Events = () => {
           {/* Holiday Highlights */}
           <h3 className="font-bold text-lg text-gray-800 mb-4">Holiday Highlights</h3>
           <div className="grid gap-4 md:grid-cols-2 mb-6">
-            <Card className="border-l-4 border-l-green-500">
-              <CardContent className="p-4">
-                <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none mb-2">Adventure</Badge>
-                <h4 className="font-semibold text-gray-900">Elliot's Revenge Trail Run</h4>
-                <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
-                  <Calendar className="w-4 h-4" /> Saturday, April 11
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <MapPin className="w-4 h-4" /> Elliot Springs
-                </div>
-                <p className="text-sm text-gray-600 mt-2">A classic North Queensland adventure trail run at Elliot Springs.</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-l-4 border-l-purple-500">
-              <CardContent className="p-4">
-                <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none mb-2">Theatre</Badge>
-                <h4 className="font-semibold text-gray-900">Kings of Country Rock</h4>
-                <div className="flex items-center gap-2 text-sm text-gray-500 mt-1">
-                  <Calendar className="w-4 h-4" /> Friday, April 10
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <MapPin className="w-4 h-4" /> Townsville Civic Theatre
-                </div>
-                <p className="text-sm text-gray-600 mt-2">A two-hour stage spectacular celebrating the best of country rock.</p>
-              </CardContent>
-            </Card>
-
             <Card>
               <CardContent className="p-4">
                 <Badge variant="outline" className="mb-2">Wildlife</Badge>
@@ -472,7 +443,7 @@ const Events = () => {
                 <Badge variant="outline" className="mb-2">Book Early</Badge>
                 <h4 className="font-semibold text-gray-900">Great Barrier Reef & Magnetic Island Trips</h4>
                 <p className="text-sm text-gray-600 mt-2">
-                  Boats to the reef and <Link to="/guides/magnetic-island-day-trip" className="text-primary font-medium hover:underline">Magnetic Island</Link> fill up weeks in advance for the Easter break. Book now to secure your spot.
+                  Boats to the reef and <Link to="/guides/magnetic-island-day-trip" className="text-primary font-medium hover:underline">Magnetic Island</Link> fill up weeks in advance for the holiday break. Book ahead to secure your spot.
                 </p>
               </CardContent>
             </Card>
@@ -489,8 +460,6 @@ const Events = () => {
             </div>
           </div>
         </section>
-
-
 
         {/* FAQ Section */}
         <section className="pt-8 border-t">
