@@ -75,8 +75,8 @@ const DogFriendly = () => {
   return (
     <>
       <SEOHead
-        title="Best Dog-Friendly Beaches in Townsville (Off-Leash Guide 2026)"
-        description="Find the best dog friendly beaches in Townsville. Our 2026 guide covers Pallarenda, Saunders Beach, and Bushland Beach with off-leash zones and tropical safety tips."
+        title="5 Best Dog Beaches in Townsville (2026 Guide) | Off-Leash Spots"
+        description="Looking for a dog beach near you in Townsville? Here is the 2026 local guide to Pallarenda, Rowes Bay, and Bushland Beach off-leash areas. Includes current stinger safety and heat checks. Updated April 13."
         canonical="https://www.myaussieguide.com.au/dog-friendly"
       />
 
@@ -103,12 +103,12 @@ const DogFriendly = () => {
         </section>
 
           {/* Local Tip */}
-          <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
+           <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
            <p>
-               ☀️ Heat Check (April 6): UV is Extreme (11+). Even with a pleasant 29°C breeze, pavements heat up fast between 10am and 3pm. If it's too hot for the back of your hand for 5 seconds, it's too hot for your dog's paws!
-             </p>
-             <p>
-               🐸 Cane Toad Alert (April 6): With the recent humidity, cane toads are active in the early evenings around Townsville's parks and gardens. If you're walking your dog at dusk these school holidays, keep them on a short lead and carry a torch.
+               ☀️ Heat Check (April 13): UV is Extreme (11+). While it's the final week of school holidays, the afternoon pavement is still a paw-burner. Stick to early morning runs at Pallarenda.
+              </p>
+              <p>
+                🐸 Twilight Toad Alert (April 13): With the humidity sticking around this week, toads are active at dusk near the Bushland Beach dunes. Keep dogs leashed if you're out for sunset.
              </p>
           </LocalInsightCard>
 
@@ -239,7 +239,7 @@ const DogFriendly = () => {
                 <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                  <p className="text-xs text-muted-foreground mt-1">🌊 April 6 Update: Stinger nets are ACTIVE. Keep dogs out of the water outside of netted areas at The Strand and Pallarenda. For off-leash runs, Saunders Beach and Bushland Beach are great, but stay on the wet sand near the water's edge to keep paws cool.</p>
+                  <p className="text-xs text-muted-foreground mt-1">☀️ April 13 Update: Nets remain active at The Strand and Pallarenda. For off-leash runs at Saunders, keep dogs on the wet sand to keep paws cool and stay clear of the deep water.</p>
                   <p className="text-xs text-muted-foreground mt-1">Review our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> for full details.</p>
                 </div>
               </div>
