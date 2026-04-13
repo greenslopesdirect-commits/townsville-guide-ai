@@ -194,6 +194,9 @@ const MovingToTownsville = () => {
             <p className="text-muted-foreground">
               Every suburb has its own personality. Here's where the locals would steer you based on your lifestyle.
             </p>
+            <p className="text-sm text-muted-foreground italic leading-relaxed">
+              Townsville offers a blend of rugged coastal beauty and modern convenience — from the sunset views at Castle Hill to the growing family hubs in the North.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {suburbs.map((suburb, i) => (
                 <Card
