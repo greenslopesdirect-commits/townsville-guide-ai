@@ -96,7 +96,7 @@ const northernBeaches = [
     badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
     tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that becomes very shallow at low tide. Local Tip: Best for low-tide walks this weekend (March 28-29) to see the vast sand flats. Perfect for photography.",
+    description: "A sleepy residential beach that becomes very shallow at low tide. Local Tip: Best for low-tide walks this week to see the vast sand flats. Perfect for sunset photography as we transition into the Dry Season.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
@@ -155,8 +155,8 @@ const Beaches = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
-        title="7 Best Beaches in Townsville & North (March 2026 Guide)"
-        description="Discover the best beaches north of Townsville, from The Strand to Saunders Beach. Get local tips on swimming safety, stinger nets, and top sunset spots for March 2026."
+        title="7 Best Beaches in Townsville (2026 Local's Guide) | Swimming & Safety"
+        description="Planning a beach day? Get the latest on Townsville beaches, stinger net status, and off-leash dog areas. Updated April 13, 2026, with current safety tips and local favorites."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
       <Helmet>
@@ -234,7 +234,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-        🌊 March 23 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Conditions are stunning and clear—perfect for exploring the Northern Beaches this week.{" "}
+        ☀️ April 13 Update: Nets remain active at The Strand and Pallarenda. With the final week of school holidays here, stick to the enclosures for a worry-free swim.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
@@ -518,14 +518,14 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">🌊 March 23 Status: Stinger nets are ACTIVE at The Strand, Pallarenda, Balgal Beach, and Magnetic Island. Conditions are stunning and clear—perfect for exploring the Northern Beaches this week. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">☀️ April 13 Update: Nets remain active at The Strand and Pallarenda. With the final week of school holidays here, stick to the enclosures for a worry-free swim. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (March 23): Low tide is at 2:45 PM. Plan your beach runs for the early morning or late afternoon to avoid the midday heat and catch the best sand conditions.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (April 13): High tide is in the morning, making it perfect for a Strand swim. Low tide in the afternoon exposes the sand flats at Rowes Bay—ideal for a long walk before the sunset.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
