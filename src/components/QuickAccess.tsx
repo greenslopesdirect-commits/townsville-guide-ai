@@ -9,7 +9,8 @@ import {
   ShoppingBag, 
   TreePine, 
   Lightbulb,
-  Baby
+  Baby,
+  Truck
 } from "lucide-react";
 
 const QuickAccess = () => {
@@ -73,6 +74,12 @@ const QuickAccess = () => {
       title: "Family-Friendly Townsville",
       desc: "Beaches, activities, day trips & heat tips for kids.",
       link: "/townsville-with-kids",
+    },
+    {
+      icon: Truck,
+      title: "Moving to Townsville",
+      desc: "Your 2026 local guide to suburbs, rentals, and job growth.",
+      link: "/moving-to-townsville",
     },
   ];
 
