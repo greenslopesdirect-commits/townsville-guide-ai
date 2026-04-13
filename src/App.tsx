@@ -52,6 +52,7 @@ import GreatBarrierReef from "@/pages/GreatBarrierReef";
 import CowboysStadiumGuide from "@/pages/CowboysStadiumGuide";
 import NorthShoreTownsville from "@/pages/NorthShoreTownsville";
 import TownsvilleAirport from "@/pages/TownsvilleAirport";
+import MovingToTownsville from "@/pages/MovingToTownsville";
 
 const queryClient = new QueryClient();
 
@@ -104,6 +105,7 @@ const App = () => (
             <Route path="dog-friendly" element={<DogFriendly />} />
             <Route path="shopping" element={<Shopping />} />
             <Route path="nature" element={<Nature />} />
+            <Route path="moving-to-townsville" element={<MovingToTownsville />} />
             
             {/* MONETISATION PAGES */}
             <Route path="flights" element={<FlightsToTownsville />} />
