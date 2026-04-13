@@ -78,7 +78,7 @@ const QuickAccess = () => {
     {
       icon: Truck,
       title: "Moving to Townsville",
-      desc: "Your 2026 local guide to suburbs, rentals, and job growth.",
+      desc: "Your 2026 local guide to suburbs, rentals, and the $40B infrastructure boom.",
       link: "/moving-to-townsville",
     },
   ];
