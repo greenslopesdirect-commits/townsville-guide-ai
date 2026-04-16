@@ -5,8 +5,63 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-muted/30 border-t border-border mt-12 py-12">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <footer className="bg-muted/30 border-t border-border mt-12">
+      {/* Townsville Quick Resource Index */}
+      <div className="border-b border-border/40 py-10">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-6">
+            Townsville Quick Resource Index
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            {/* Essential Townsville Guides */}
+            <div>
+              <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
+                Essential Townsville Guides
+              </h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/magnetic-island-day-trip" className="text-muted-foreground hover:text-primary transition-colors">Magnetic Island Day Trip</Link></li>
+                <li><Link to="/stinger-safety" className="text-muted-foreground hover:text-primary transition-colors">Stinger & Safety Guide</Link></li>
+                <li><Link to="/cowboys-stadium-guide" className="text-muted-foreground hover:text-primary transition-colors">Cowboys Stadium & NRL Info</Link></li>
+                <li><Link to="/townsville-airport" className="text-muted-foreground hover:text-primary transition-colors">Townsville Airport Guide</Link></li>
+                <li><Link to="/beat-the-heat" className="text-muted-foreground hover:text-primary transition-colors">Beat the Heat Guide</Link></li>
+              </ul>
+            </div>
+
+            {/* Explore & Nature */}
+            <div>
+              <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
+                Explore & Nature
+              </h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/the-strand" className="text-muted-foreground hover:text-primary transition-colors">The Strand Waterfront</Link></li>
+                <li><Link to="/castle-hill" className="text-muted-foreground hover:text-primary transition-colors">Castle Hill Lookouts</Link></li>
+                <li><Link to="/great-barrier-reef-townsville" className="text-muted-foreground hover:text-primary transition-colors">Great Barrier Reef Tours</Link></li>
+                <li><Link to="/billabong-sanctuary" className="text-muted-foreground hover:text-primary transition-colors">Billabong Sanctuary</Link></li>
+                <li><Link to="/little-crystal-creek-townsville" className="text-muted-foreground hover:text-primary transition-colors">Little Crystal Creek</Link></li>
+                <li><Link to="/sunset-walks" className="text-muted-foreground hover:text-primary transition-colors">Sunset Walks & Trails</Link></li>
+              </ul>
+            </div>
+
+            {/* Planning & Lifestyle */}
+            <div>
+              <h4 className="text-xs font-medium text-muted-foreground uppercase tracking-wide mb-3">
+                Planning & Lifestyle
+              </h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link to="/townsville-with-kids" className="text-muted-foreground hover:text-primary transition-colors">Townsville with Kids</Link></li>
+                <li><Link to="/guides/free-things" className="text-muted-foreground hover:text-primary transition-colors">Free Things to Do</Link></li>
+                <li><Link to="/moving-to-townsville" className="text-muted-foreground hover:text-primary transition-colors">Moving to Townsville Guide</Link></li>
+                <li><Link to="/events" className="text-muted-foreground hover:text-primary transition-colors">Local Event Calendar</Link></li>
+                <li><Link to="/dog-friendly" className="text-muted-foreground hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 max-w-6xl py-12">
 
         {/* Top row */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
