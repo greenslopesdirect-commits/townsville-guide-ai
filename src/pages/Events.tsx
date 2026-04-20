@@ -135,7 +135,7 @@ const Events = () => {
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, April 24 | Friday Night Footy</span>
+                    <span>Friday, April 24 | Kick-off: 6:00 PM (early start)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -145,7 +145,7 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The Cowboys take on Cronulla under Friday night lights. Expect a packed house — plan your march across Lowths Bridge early. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                  The Cowboys take on Cronulla under Friday night lights with an <strong>earlier-than-usual 6:00 PM kick-off</strong> — plan your march across Lowths Bridge from around 5:00 PM to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
                 </p>
               </CardContent>
             </Card>
