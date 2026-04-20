@@ -76,8 +76,8 @@ const DogFriendly = () => {
   return (
     <>
       <SEOHead
-        title="5 Best Dog Beaches in Townsville (2026 Guide) | Off-Leash Spots"
-        description="Looking for a dog beach near you in Townsville? Here is the 2026 local guide to Pallarenda, Rowes Bay, and Bushland Beach off-leash areas. Includes current stinger safety and heat checks. Updated April 13."
+        title="Dog-Friendly Beaches & Walks Townsville | Local Guide"
+        description="Looking for dog-friendly beaches and coastal walks in Townsville? Here is the 2026 local guide to Pallarenda, Rowes Bay, The Strand, and scenic waterfront paths to beat the heat. Includes stinger safety and off-leash times."
         canonical="https://www.myaussieguide.com.au/dog-friendly"
       />
 
@@ -92,10 +92,10 @@ const DogFriendly = () => {
           {/* Intro */}
           <section className="text-center sm:text-left">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">
-              Dog-Friendly Beaches in Townsville
+              Dog-Friendly Beaches & Coastal Walks in Townsville
             </h1>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto sm:mx-0 leading-relaxed">
-              Townsville has some excellent dog-friendly beaches, but knowing when dogs are allowed off-leash, where stinger nets are active, and how the tropical climate affects dogs is essential. This local guide highlights the best beaches where dogs can safely walk, swim, and explore in North Queensland.
+              Townsville has some excellent dog-friendly beaches and scenic coastal paths, but knowing when dogs are allowed off-leash, where stinger nets are active, and how the tropical climate affects dogs is essential. This local guide highlights the best beaches and waterfront walks where dogs can safely walk, swim, and explore in North Queensland.
             </p>
           <p className="text-sm text-muted-foreground mt-4">
             Looking for general swimming beaches? See our full <Link to="/beaches" className="text-primary hover:underline font-medium">Townsville Beaches Guide</Link>.
