@@ -52,11 +52,11 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">What's On This Week (April 20–26)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Music: <strong>Guy Sebastian — 100 Times Around the Sun Tour</strong> (TECC) — Wednesday night, April 22</li>
-            <li>Footy: <strong>Cowboys vs Sharks</strong> (Home Game) — Friday night, April 24. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
+            <li>Music: <strong>Guy Sebastian — 100 Times Around the Sun Tour</strong> (TECC) — Wednesday, April 22 at 7:00 PM</li>
+            <li>Footy: <strong>Cowboys vs Sharks</strong> (Home Game) — Friday, April 24, kick-off 6:00 PM (early start). <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
             <li>ANZAC Day: <strong>Dawn Service at Anzac Memorial Park (5:20 AM)</strong> & <strong>Strand Parade (9:00 AM)</strong> — Saturday, April 25</li>
             <li>Comedy: Jimmy Carr — Laughs Funny Tour (TECC) — Tuesday, April 28</li>
-            <li>May Preview: Dream Fields Festival — Saturday, May 23 at Central Park</li>
+            <li>May Preview: <strong>Dream Fields Festival</strong> — Sat, May 23 at Central Park feat. Galantis, Peking Duk, Mallrat & Skegss</li>
           </ul>
         </section>
 
@@ -135,7 +135,7 @@ const Events = () => {
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, April 24 | Friday Night Footy</span>
+                    <span>Friday, April 24 | Kick-off: 6:00 PM (early start)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -145,7 +145,7 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The Cowboys take on Cronulla under Friday night lights. Expect a packed house — plan your march across Lowths Bridge early. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                  The Cowboys take on Cronulla under Friday night lights with an <strong>earlier-than-usual 6:00 PM kick-off</strong> — plan your march across Lowths Bridge from around 5:00 PM to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
                 </p>
               </CardContent>
             </Card>
@@ -164,7 +164,7 @@ const Events = () => {
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Wednesday, April 22</span>
+                      <span>Wednesday, April 22 | 7:00 PM start</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
@@ -174,7 +174,7 @@ const Events = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    One of Australia's biggest pop artists brings his national tour to Townsville. Expect all the hits in an unforgettable midweek night out.
+                    One of Australia's biggest pop artists brings his national tour to Townsville. Doors open ahead of a 7:00 PM start — expect all the hits in an unforgettable midweek night out.
                   </p>
                 </CardContent>
               </Card>
@@ -231,7 +231,7 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Townsville's premier outdoor music and arts festival returns to Central Park. Full lineup and ticket details coming soon — mark this one in the calendar.
+                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat</strong> and <strong>Skegss</strong>. Tickets selling fast — mark this one in the calendar.
                 </p>
               </CardContent>
             </Card>
@@ -334,7 +334,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">This week's home game: <strong>Cowboys vs Sharks, Friday April 24</strong> — Friday night footy at QCB Stadium.</p>
+                <p className="text-sm text-gray-600">This week's home game: <strong>Cowboys vs Sharks, Friday April 24</strong> — early 6:00 PM kick-off at QCB Stadium.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
