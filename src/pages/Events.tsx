@@ -33,30 +33,30 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: April & May 2026
+             What's On in Townsville: ANZAC Day & May 2026
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              Coming up: The <strong>Cowboys vs Manly</strong> Thursday night blockbuster (April 16), <strong>Guy Sebastian</strong> at TECC (April 22), <strong>Jimmy Carr</strong> brings the laughs (April 28), and the <strong>Dream Fields Festival</strong> lands in May!
+              Coming up: <strong>ANZAC Day</strong> Dawn Service & Strand Parade (April 25), <strong>Cowboys vs Sharks</strong> Friday night footy, <strong>Jimmy Carr</strong> live (April 28), and the <strong>Dream Fields Festival</strong> in May!
             </p>
         </div>
 
         {/* SEO Intro Paragraph */}
         <p className="text-gray-600 max-w-3xl">
-          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from community markets and sporting events to festivals, nature activities, and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
+          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from ANZAC Day commemorations and community markets to NRL home games, festivals, and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
         </p>
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">Upcoming Highlights in Townsville</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (April 20–26)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Footy: Cowboys vs Manly Sea Eagles (Home Game) — Thursday, April 16. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
-            <li>Music: Guy Sebastian — 100 Times Around the Sun Tour (TECC) — Wednesday, April 22</li>
+            <li>Music: <strong>Guy Sebastian — 100 Times Around the Sun Tour</strong> (TECC) — Wednesday night, April 22</li>
+            <li>Footy: <strong>Cowboys vs Sharks</strong> (Home Game) — Friday night, April 24. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
+            <li>ANZAC Day: <strong>Dawn Service at Anzac Memorial Park (5:20 AM)</strong> & <strong>Strand Parade (9:00 AM)</strong> — Saturday, April 25</li>
             <li>Comedy: Jimmy Carr — Laughs Funny Tour (TECC) — Tuesday, April 28</li>
-            <li>Festival: Dream Fields Festival — Saturday, May 23 at Central Park</li>
-            <li>Nature: Perfect autumn weather for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or the <Link to="/the-strand" className="text-primary font-medium hover:underline">Strand Water Park</Link></li>
+            <li>May Preview: Dream Fields Festival — Saturday, May 23 at Central Park</li>
           </ul>
         </section>
 
