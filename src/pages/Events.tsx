@@ -94,20 +94,48 @@ const Events = () => {
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Cowboys vs Manly — FEATURED */}
+            {/* ANZAC Day — FEATURED */}
+            <Card className="border-l-4 border-l-red-600 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none">
+                    ANZAC Day — Top Highlight
+                  </Badge>
+                  <Star className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">ANZAC Day Commemorations — Townsville</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Saturday, April 25, 2026</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Anzac Memorial Park & The Strand</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  Lest We Forget. The <strong>Dawn Service kicks off at 5:20 AM</strong> at Anzac Memorial Park on The Strand, followed by the <strong>ANZAC Day Parade marching down The Strand from 9:00 AM</strong>. Arrive early — both services draw large local crowds. <Link to="/the-strand" className="text-primary font-medium hover:underline">View Strand Guide →</Link>
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Cowboys vs Sharks — Friday Night */}
             <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                    Footy — Featured
+                    Footy — This Friday Night
                   </Badge>
                   <Trophy className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Cowboys vs Manly Sea Eagles (Home)</CardTitle>
+                <CardTitle className="text-xl mt-2">Cowboys vs Sharks (Home)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Thursday, April 16 | Kick-off: 7:50 PM</span>
+                    <span>Friday, April 24 | Friday Night Footy</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -117,7 +145,7 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  After a dominant 32-0 shutout against the Dragons, the Cowboys return home undefeated. Thursday night under the lights — the march across Lowths Bridge starts around 7:00 PM. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                  The Cowboys take on Cronulla under Friday night lights. Expect a packed house — plan your march across Lowths Bridge early. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
                 </p>
               </CardContent>
             </Card>
