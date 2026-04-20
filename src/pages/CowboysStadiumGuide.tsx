@@ -45,7 +45,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – April 13 Update: Momentum Building!
+               2026 Season – April 20 Update: Friday Night Footy!
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -53,11 +53,11 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Season Update
                    </Badge>
-                    <CardTitle className="text-lg mt-2">Undefeated at Home!</CardTitle>
+                    <CardTitle className="text-lg mt-2">Round 8 — Back at Home</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      The Cowboys are absolutely flying! After a dominant 32-0 shutout against the Dragons, the boys return home this Thursday with massive momentum and an undefeated home record to protect.
+                      The Cowboys roll into Round 8 with momentum and host Cronulla under the Friday night lights at QCB Stadium. Expect a packed house — the home record is on the line.
                     </p>
                  </CardContent>
                </Card>
@@ -67,19 +67,19 @@ const CowboysStadiumGuide = () => {
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                     Next Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 7 – Cowboys vs. Manly Sea Eagles</CardTitle>
+                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 8 – Cowboys vs. Cronulla Sharks</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar className="w-4 h-4 flex-shrink-0" />
-                      <span>Thursday, April 16, 2026</span>
+                      <span>Friday, April 24, 2026</span>
                     </div>
                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
                       <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                       <span>
                         Queensland Country Bank Stadium.<br />
-                        <span className="font-medium text-foreground">Gates Open: 5:30 PM | Kick-off: 7:50 PM</span>
+                        <span className="font-medium text-foreground">Gates Open: 4:00 PM | Kick-off: 6:00 PM (early Friday start)</span>
                       </span>
                     </div>
                   </div>
