@@ -458,6 +458,16 @@ const Events = () => {
           <div className="grid gap-4 md:grid-cols-2 mb-6">
             <Card>
               <CardContent className="p-4">
+                <Badge variant="outline" className="mb-2">Footy — Recap</Badge>
+                <h4 className="font-semibold text-gray-900">Cowboys vs Manly Sea Eagles (April 16)</h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  The Cowboys hosted Manly under Thursday night lights at QLD Country Bank Stadium (kick-off 7:50 PM) — a packed house and the traditional march across Lowths Bridge. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link>
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-4">
                 <Badge variant="outline" className="mb-2">Wildlife</Badge>
                 <h4 className="font-semibold text-gray-900">Billabong Sanctuary — Easter Bilbies</h4>
                 <p className="text-sm text-gray-600 mt-2">
