@@ -21,7 +21,7 @@ const StingerSeasonAlert = ({ className = "" }: StingerSeasonAlertProps) => {
           Check with lifesavers for current conditions before entering the water.
         </p>
         <p className="font-semibold">
-          ☀️ April 6 Update: Nets remain active. With the school holidays in full swing, stick to the netted enclosures at The Strand and Pallarenda for your holiday swims.{" "}
+          ☀️ April 20 Update: With Term 2 now underway, the holiday crowds have thinned out, but the water is still warm! Stinger nets remain active and essential. If you're planning a dip before the ANZAC Day long weekend, stick to the netted enclosures at The Strand and Pallarenda.{" "}
           <Link 
             to="/guides/stinger-safety"
             className="text-amber-800 dark:text-amber-300 hover:underline"
