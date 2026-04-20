@@ -169,7 +169,7 @@ const EventsOn = () => {
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                 <MapPin className="w-4 h-4" /> Central Park, Townsville
               </div>
-              <p className="text-xs text-slate-500 mt-2">🎶 Townsville's premier outdoor music & arts festival</p>
+              <p className="text-xs text-slate-500 mt-2">🎶 Galantis, Peking Duk, Mallrat & Skegss</p>
             </CardContent>
           </Card>
         </div>
