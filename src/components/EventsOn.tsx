@@ -175,7 +175,7 @@ const EventsOn = () => {
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🏉 Cowboys vs Manly this Thursday, Guy Sebastian next week, and Jimmy Carr at the end of April! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🇦🇺 ANZAC Day this Saturday, Guy Sebastian Wednesday night, and Cowboys vs Sharks Friday (early 6 PM kick-off)! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
