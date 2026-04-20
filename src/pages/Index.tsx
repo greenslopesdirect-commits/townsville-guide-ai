@@ -118,8 +118,8 @@ const Index = () => {
         <div className="container mx-auto px-4 max-w-4xl py-8">
            <LocalInsightCard title="More Than a Gateway" variant="insight">
                <p>
-                 Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North. 
-                 The school holidays are in their final week (ending April 19) — see our top picks for the last few days of break, plus a look ahead to a massive month of NRL and live music.
+                 Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North.
+                 We've hit the <strong>ANZAC Long Weekend</strong> and the official transition into our <strong>Dry Season</strong>: cooler mornings, low humidity, endless blue skies, and the start of the "Best of Townsville" window through May.
                  Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
                </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
