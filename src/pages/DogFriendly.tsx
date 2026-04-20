@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
+import maxQuaysideImg from "@/assets/max-quayside-crown-princess.jpg";
 
 const dogSpots = [
   {
@@ -114,6 +115,44 @@ const DogFriendly = () => {
 
           {/* Stinger Alert */}
           <StingerSeasonAlert />
+
+          {/* Local Spotlight - Quayside */}
+          <section aria-labelledby="local-spotlight-quayside" className="my-8">
+            <Card className="overflow-hidden border-2 border-primary/20">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <figure className="relative">
+                  <img
+                    src={maxQuaysideImg}
+                    alt="Giant Schnauzer Max at Townsville Cruise Terminal during sunset walk with Crown Princess cruise ship"
+                    loading="lazy"
+                    className="w-full h-64 md:h-full object-cover"
+                  />
+                  <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm p-3">
+                    Early evening golden hour at the Quayside Terminal. Max watching the Crown Princess prepare for departure during its January 17th visit. This area is perfect for a sunset walk when the sea breeze kicks in!
+                  </figcaption>
+                </figure>
+                <CardContent className="p-5 sm:p-6 flex flex-col justify-center">
+                  <div className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-wider text-xs mb-3">
+                    <MapPin className="w-4 h-4" /> Local Spotlight
+                  </div>
+                  <h2 id="local-spotlight-quayside" className="text-xl sm:text-2xl font-bold text-foreground mb-3 leading-tight">
+                    Sunset Walks at Quayside Terminal
+                  </h2>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
+                    <strong className="text-foreground">Local Tip:</strong> If you're walking a large breed like a Giant Schnauzer, the Quayside precinct is one of the best spots to beat the North Queensland heat. The wide, paved paths stay cooler than the inland bitumen, and you always get that late-afternoon breeze off the water.
+                  </p>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Quayside+Terminal+Townsville"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-primary hover:underline inline-flex items-center gap-1"
+                  >
+                    View Quayside on Google Maps <ArrowRight className="w-3 h-3" />
+                  </a>
+                </CardContent>
+              </div>
+            </Card>
+          </section>
 
           {/* Beach Listings */}
           <section className="space-y-4">
