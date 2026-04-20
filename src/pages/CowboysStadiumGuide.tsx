@@ -160,10 +160,10 @@ const CowboysStadiumGuide = () => {
               <div>
                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                  <p className="text-amber-800 text-sm mt-1">
-                   With a 7:50 PM kick-off for the Manly game, expect the Leagues Club to reach capacity by 5:30 PM. The 'Stampede' march across Lowths Bridge will depart at approximately 7:00 PM — the stadium lights will be spectacular under the Thursday night sky.
+                   With an early <strong>6:00 PM kick-off</strong> for the Sharks game, the Leagues Club will fill quickly from late afternoon. The 'Stampede' march across Lowths Bridge will depart <strong>earlier than usual — around 5:15 PM</strong>.
                  </p>
                  <p className="text-amber-800 text-sm mt-2 font-semibold">
-                   Because this is a Thursday night blockbuster, expect the CBD to be busier than usual as the workday ends and the game-day crowd arrives. If you're heading to the Cowboys Leagues Club for the Stampede, try to arrive by 5:00 PM.
+                   Since this is a Friday afternoon, expect heavy CBD traffic as the work week ends. If you're joining the Stampede, aim to be at the Leagues Club by 4:00 PM.
                  </p>
               </div>
             </div>
