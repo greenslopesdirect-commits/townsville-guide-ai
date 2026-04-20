@@ -77,22 +77,22 @@ const EventsOn = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
             
-            {/* Card 1 — Cowboys */}
-            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+            {/* Card 1 — ANZAC Day (Lead) */}
+            <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-red-600 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                        <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Thursday
+                        <div className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Saturday — ANZAC Day
                         </div>
-                        <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                        <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Cowboys vs Manly (Home)</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Thursday, April 16</p>
+                    <h4 className="text-lg font-bold mb-2">ANZAC Day Dawn Service & Parade</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, April 25</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
+                        <MapPin className="w-4 h-4" /> Anzac Memorial Park & The Strand
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> Kick-off: 7:50 PM
+                        <Clock className="w-4 h-4" /> Dawn 5:20 AM • Parade 9:00 AM
                     </div>
                 </CardContent>
             </Card>
@@ -107,7 +107,7 @@ const EventsOn = () => {
                         <Music className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Guy Sebastian</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Wednesday, April 22</p>
+                    <p className="text-xs text-primary font-medium mb-1">Wednesday, April 22 • 7:00 PM</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> TECC
                     </div>
@@ -115,13 +115,24 @@ const EventsOn = () => {
                 </CardContent>
             </Card>
 
-            {/* View All Link */}
-            <Card className="bg-slate-50 border-dashed border-2 border-slate-200 hover:border-primary/50 transition-colors flex flex-col justify-center items-center text-center p-6">
-                <h4 className="font-semibold text-slate-700 mb-2">Looking for more?</h4>
-                <p className="text-sm text-slate-500 mb-4">Comedy, Festivals & More.</p>
-                <Link to="/events" className="text-primary font-bold flex items-center gap-1 hover:underline">
-                    View Calendar <ArrowRight className="w-4 h-4" />
-                </Link>
+            {/* Card 3 — Cowboys vs Sharks */}
+            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+                <CardContent className="p-6">
+                    <div className="flex justify-between items-start mb-4">
+                        <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Friday
+                        </div>
+                        <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2">Cowboys vs Sharks (Home)</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Friday, April 24</p>
+                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                        <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-slate-500">
+                        <Clock className="w-4 h-4" /> Early kick-off: 6:00 PM
+                    </div>
+                </CardContent>
             </Card>
 
         </div>
