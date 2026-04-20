@@ -231,7 +231,7 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Townsville's premier outdoor music and arts festival returns to Central Park. Full lineup and ticket details coming soon — mark this one in the calendar.
+                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat</strong> and <strong>Skegss</strong>. Tickets selling fast — mark this one in the calendar.
                 </p>
               </CardContent>
             </Card>
