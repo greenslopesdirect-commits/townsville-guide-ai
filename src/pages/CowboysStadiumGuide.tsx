@@ -12,7 +12,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Stadium & Game Day Guide 2026 | Townsville Local's Tips"
-        description="Heading to the Cowboys vs Manly game this Thursday? Get the local guide to the 'Stampede', stadium parking, and the best pre-game spots in Townsville. Updated April 13, 2026."
+        description="Cowboys vs Sharks Friday Night Footy at QCB Stadium! Get the local guide to the 'Stampede', stadium parking, and best pre-game spots in Townsville. Updated April 20, 2026."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
@@ -45,7 +45,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – April 13 Update: Momentum Building!
+               2026 Season – April 20 Update: Friday Night Footy!
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -53,11 +53,11 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Season Update
                    </Badge>
-                    <CardTitle className="text-lg mt-2">Undefeated at Home!</CardTitle>
+                    <CardTitle className="text-lg mt-2">Round 8 — Back at Home</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      The Cowboys are absolutely flying! After a dominant 32-0 shutout against the Dragons, the boys return home this Thursday with massive momentum and an undefeated home record to protect.
+                      The Cowboys roll into Round 8 with momentum and host Cronulla under the Friday night lights at QCB Stadium. Expect a packed house — the home record is on the line.
                     </p>
                  </CardContent>
                </Card>
@@ -67,19 +67,19 @@ const CowboysStadiumGuide = () => {
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                     Next Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 7 – Cowboys vs. Manly Sea Eagles</CardTitle>
+                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 8 – Cowboys vs. Cronulla Sharks</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar className="w-4 h-4 flex-shrink-0" />
-                      <span>Thursday, April 16, 2026</span>
+                      <span>Friday, April 24, 2026</span>
                     </div>
                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
                       <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                       <span>
                         Queensland Country Bank Stadium.<br />
-                        <span className="font-medium text-foreground">Gates Open: 5:30 PM | Kick-off: 7:50 PM</span>
+                        <span className="font-medium text-foreground">Gates Open: 4:00 PM | Kick-off: 6:00 PM (early Friday start)</span>
                       </span>
                     </div>
                   </div>
@@ -97,9 +97,9 @@ const CowboysStadiumGuide = () => {
           {/* Visiting from out of town CTA */}
           <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
             <CardContent className="p-6 sm:p-8 space-y-3">
-              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Manly Game?</h3>
+              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Sharks Game?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Don't get caught out—last-minute stays near the stadium fill up fast for blockbuster Thursday night games. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
+                Don't get caught out—last-minute stays near the stadium fill up fast for Friday night blockbusters. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
               </p>
               <Button asChild variant="default" size="lg" className="w-full sm:w-auto">
                 <Link to="/accommodation">
@@ -160,10 +160,10 @@ const CowboysStadiumGuide = () => {
               <div>
                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                  <p className="text-amber-800 text-sm mt-1">
-                   With a 7:50 PM kick-off for the Manly game, expect the Leagues Club to reach capacity by 5:30 PM. The 'Stampede' march across Lowths Bridge will depart at approximately 7:00 PM — the stadium lights will be spectacular under the Thursday night sky.
+                   With an early <strong>6:00 PM kick-off</strong> for the Sharks game, the Leagues Club will fill quickly from late afternoon. The 'Stampede' march across Lowths Bridge will depart <strong>earlier than usual — around 5:15 PM</strong>.
                  </p>
                  <p className="text-amber-800 text-sm mt-2 font-semibold">
-                   Because this is a Thursday night blockbuster, expect the CBD to be busier than usual as the workday ends and the game-day crowd arrives. If you're heading to the Cowboys Leagues Club for the Stampede, try to arrive by 5:00 PM.
+                   Since this is a Friday afternoon, expect heavy CBD traffic as the work week ends. If you're joining the Stampede, aim to be at the Leagues Club by 4:00 PM.
                  </p>
               </div>
             </div>
@@ -236,7 +236,7 @@ const CowboysStadiumGuide = () => {
                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                    <span className="text-sm">⚠️</span>
                     <p className="text-amber-800 text-sm">
-                      <strong>Thursday Night Alert: CBD parking will be at a premium.</strong> We strongly recommend using the <strong>Lou Litster Park & Ride shuttle</strong> to avoid the 5:30 PM city gridlock as workers and fans overlap.
+                      <strong>Friday Night Alert: CBD traffic will spike from 4:00 PM</strong> as the work week ends and game-day fans arrive. The smartest move is the <strong>Lou Litster Park & Ride shuttle</strong> — free parking, regular shuttles, and you'll skip the Friday afternoon gridlock entirely.
                     </p>
                  </div>
               </CardContent>
