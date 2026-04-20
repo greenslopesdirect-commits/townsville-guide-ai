@@ -52,11 +52,11 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">What's On This Week (April 20–26)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Music: <strong>Guy Sebastian — 100 Times Around the Sun Tour</strong> (TECC) — Wednesday night, April 22</li>
-            <li>Footy: <strong>Cowboys vs Sharks</strong> (Home Game) — Friday night, April 24. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
+            <li>Music: <strong>Guy Sebastian — 100 Times Around the Sun Tour</strong> (TECC) — Wednesday, April 22 at 7:00 PM</li>
+            <li>Footy: <strong>Cowboys vs Sharks</strong> (Home Game) — Friday, April 24, kick-off 6:00 PM (early start). <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
             <li>ANZAC Day: <strong>Dawn Service at Anzac Memorial Park (5:20 AM)</strong> & <strong>Strand Parade (9:00 AM)</strong> — Saturday, April 25</li>
             <li>Comedy: Jimmy Carr — Laughs Funny Tour (TECC) — Tuesday, April 28</li>
-            <li>May Preview: Dream Fields Festival — Saturday, May 23 at Central Park</li>
+            <li>May Preview: <strong>Dream Fields Festival</strong> — Sat, May 23 at Central Park feat. Galantis, Peking Duk, Mallrat & Skegss</li>
           </ul>
         </section>
 
