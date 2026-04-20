@@ -169,17 +169,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: April 13, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: April 20, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                🏈 Blockbuster Alert: After a massive start to the season, the Cowboys take on the Manly Sea Eagles at home this Thursday, April 16. The atmosphere in the CBD will be electric—plan your transport early!
+                🇦🇺 ANZAC Long Weekend Ahead: Saturday's <strong>Dawn Service kicks off at 5:20 AM</strong> at Anzac Memorial Park, followed by the <strong>Strand Parade at 9:00 AM</strong>. Welcome to the official start of the Dry Season — the "Best of Townsville" window opens now.
               </p>
             </div>
 
-            {/* School Holiday Alert */}
-            <div className="mt-6 bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-300 dark:border-amber-700 rounded-2xl p-5 sm:p-6">
-              <p className="text-base sm:text-lg text-amber-800 dark:text-amber-300 font-medium leading-relaxed">
-                🎒 School Holiday Mode: We're in the final week of the April holidays (ending April 19). Magnetic Island ferries, Reef tours, and family attractions are still running at peak capacity—book ahead!
+            {/* Friday Night Footy Local Tip */}
+            <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-300 dark:border-blue-700 rounded-2xl p-5 sm:p-6">
+              <p className="text-base sm:text-lg text-blue-800 dark:text-blue-300 font-medium leading-relaxed">
+                🏉 Heads-Up Friday: Cowboys vs Sharks at QCB Stadium has an <strong>early 6:00 PM kick-off</strong> — the CBD will be busy from late afternoon. Plan parking, dinner bookings and your walk across Lowths Bridge before 5:00 PM.
               </p>
             </div>
           </div>
