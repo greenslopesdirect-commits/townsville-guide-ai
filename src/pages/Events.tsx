@@ -164,7 +164,7 @@ const Events = () => {
                   <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4" />
-                      <span>Wednesday, April 22</span>
+                      <span>Wednesday, April 22 | 7:00 PM start</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4" />
@@ -174,7 +174,7 @@ const Events = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm">
-                    One of Australia's biggest pop artists brings his national tour to Townsville. Expect all the hits in an unforgettable midweek night out.
+                    One of Australia's biggest pop artists brings his national tour to Townsville. Doors open ahead of a 7:00 PM start — expect all the hits in an unforgettable midweek night out.
                   </p>
                 </CardContent>
               </Card>
