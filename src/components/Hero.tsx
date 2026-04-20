@@ -216,7 +216,7 @@ For the full calendar, check the **[Events Page](/events)**!`);
                 <Input
                     id="townsville-ai-input"
                     type="text"
-                    placeholder="Ask me: 'Best Valentine's dinner?' or 'Which markets are open Sunday?'"
+                    placeholder="Ask me: 'Where's the ANZAC Day Dawn Service?' or 'Best parking for the Cowboys vs Sharks game?'"
                     className="h-16 pl-14 pr-16 text-lg rounded-full bg-white/95 border-2 border-white/20 shadow-xl focus-visible:ring-yellow-400 text-slate-900 placeholder:text-slate-400"
                     value={aiInputValue}
                     onChange={e => setAiInputValue(e.target.value)}
@@ -238,7 +238,7 @@ For the full calendar, check the **[Events Page](/events)**!`);
             {/* New Feature Chip - Rowes Bay */}
             <Link to="/things-to-do">
                 <Button variant="outline" className="bg-white/95 hover:bg-white text-slate-900 border-none rounded-full px-6 py-5 font-bold shadow-lg hover:scale-105 transition-all flex items-center gap-2">
-                    🌅 Updated: April 13 — Late April & May Guide
+                    🌅 Updated: April 20 — ANZAC Day & May Guide
                 </Button>
             </Link>
 

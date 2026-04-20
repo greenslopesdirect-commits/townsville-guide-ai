@@ -12,7 +12,7 @@ const EventsOn = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
             <span className="text-primary font-bold tracking-wider uppercase text-sm">Upcoming Events & Local Highlights</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">What's On: Cowboys, Guy Sebastian, Jimmy Carr & More</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">What's On: ANZAC Day, Guy Sebastian, Cowboys vs Sharks & More</h2>
             <p className="text-slate-600 mt-2 max-w-xl text-lg">
               Townsville hosts markets, festivals, live shows, and community events throughout the year.
             </p>
@@ -33,17 +33,17 @@ const EventsOn = () => {
                 <div className="absolute top-0 right-0 p-32 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
                 <div className="relative z-10">
                     <span className="inline-block px-3 py-1 bg-yellow-400 text-blue-900 font-bold text-xs uppercase tracking-wider rounded-full mb-4">
-                        April & May 2026
+                        ANZAC Long Weekend & May 2026
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
-                    <p className="text-blue-100 font-medium">Big shows hitting Townsville</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏉 Cowboys Home Game: April 16 vs Manly</p>
-                     <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">NRL Season</span>
+                    <p className="text-blue-100 font-medium">ANZAC Day services, live music & footy</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🇦🇺 ANZAC Day: Sat April 25 — Dawn Service 5:20 AM</p>
+                     <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">Dry Season Begins</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
                         <MapPin className="w-4 h-4" />
-                        <span>TECC, QLD Country Bank Stadium & citywide</span>
+                        <span>The Strand, TECC, QLD Country Bank Stadium & citywide</span>
                      </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ const EventsOn = () => {
             <div className="lg:col-span-3 p-8 flex flex-col justify-center">
                 <div className="prose prose-slate mb-6">
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        From <strong>Cowboys home games</strong> and <strong>Guy Sebastian</strong> to <strong>Jimmy Carr</strong> and the <strong>Dream Fields Festival</strong> in May — 
+                        From the <strong>ANZAC Day Dawn Service</strong> and <strong>Strand Parade</strong> to <strong>Guy Sebastian</strong> at TECC, <strong>Cowboys vs Sharks</strong> Friday night footy and the <strong>Dream Fields Festival</strong> in May —
                         there's always something happening in Townsville.
                     </p>
                 </div>
@@ -64,7 +64,7 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Updated April 13, 2026.
+                        Updated April 20, 2026.
                     </span>
                 </div>
             </div>
@@ -77,22 +77,22 @@ const EventsOn = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
             
-            {/* Card 1 — Cowboys */}
-            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+            {/* Card 1 — ANZAC Day (Lead) */}
+            <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-red-600 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                        <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Thursday
+                        <div className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Saturday — ANZAC Day
                         </div>
-                        <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                        <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Cowboys vs Manly (Home)</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Thursday, April 16</p>
+                    <h4 className="text-lg font-bold mb-2">ANZAC Day Dawn Service & Parade</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, April 25</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
+                        <MapPin className="w-4 h-4" /> Anzac Memorial Park & The Strand
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> Kick-off: 7:50 PM
+                        <Clock className="w-4 h-4" /> Dawn 5:20 AM • Parade 9:00 AM
                     </div>
                 </CardContent>
             </Card>
@@ -107,7 +107,7 @@ const EventsOn = () => {
                         <Music className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Guy Sebastian</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Wednesday, April 22</p>
+                    <p className="text-xs text-primary font-medium mb-1">Wednesday, April 22 • 7:00 PM</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> TECC
                     </div>
@@ -115,13 +115,24 @@ const EventsOn = () => {
                 </CardContent>
             </Card>
 
-            {/* View All Link */}
-            <Card className="bg-slate-50 border-dashed border-2 border-slate-200 hover:border-primary/50 transition-colors flex flex-col justify-center items-center text-center p-6">
-                <h4 className="font-semibold text-slate-700 mb-2">Looking for more?</h4>
-                <p className="text-sm text-slate-500 mb-4">Comedy, Festivals & More.</p>
-                <Link to="/events" className="text-primary font-bold flex items-center gap-1 hover:underline">
-                    View Calendar <ArrowRight className="w-4 h-4" />
-                </Link>
+            {/* Card 3 — Cowboys vs Sharks */}
+            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+                <CardContent className="p-6">
+                    <div className="flex justify-between items-start mb-4">
+                        <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Friday
+                        </div>
+                        <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2">Cowboys vs Sharks (Home)</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Friday, April 24</p>
+                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                        <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-slate-500">
+                        <Clock className="w-4 h-4" /> Early kick-off: 6:00 PM
+                    </div>
+                </CardContent>
             </Card>
 
         </div>
@@ -158,13 +169,13 @@ const EventsOn = () => {
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                 <MapPin className="w-4 h-4" /> Central Park, Townsville
               </div>
-              <p className="text-xs text-slate-500 mt-2">🎶 Townsville's premier outdoor music & arts festival</p>
+              <p className="text-xs text-slate-500 mt-2">🎶 Galantis, Peking Duk, Mallrat & Skegss</p>
             </CardContent>
           </Card>
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🏉 Cowboys vs Manly this Thursday, Guy Sebastian next week, and Jimmy Carr at the end of April! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🇦🇺 ANZAC Day this Saturday, Guy Sebastian Wednesday night, and Cowboys vs Sharks Friday (early 6 PM kick-off)! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
