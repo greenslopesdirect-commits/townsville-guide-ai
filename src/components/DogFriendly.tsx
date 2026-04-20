@@ -113,9 +113,9 @@ const DogFriendly = () => {
         <Alert className="max-w-3xl mx-auto bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800 mb-6 sm:mb-8">
           <Dog className="h-5 w-5 text-amber-600 flex-shrink-0" />
           <AlertDescription className="ml-2">
-              <strong className="text-foreground block sm:inline">☀️ Heat Check (April 13):</strong>
+              <strong className="text-foreground block sm:inline">☀️ Heat Check (April 20):</strong>
              <span className="text-muted-foreground sm:ml-2 block sm:inline mt-1 sm:mt-0">
-                UV is still hitting 11+. Even as we head toward the Dry Season, the pavement remains a paw-burner between 10 AM and 3 PM. Stick to the Pallarenda off-leash area for those cooler morning breezes.
+                UV is still hitting 11+ around midday, but we're officially into the Dry Season — those crisp <strong>morning breezes are perfect for Pallarenda and Rowes Bay</strong>. Aim for sunrise–9 AM or after 4 PM, and skip the pavement between 10 AM and 3 PM.
               </span>
           </AlertDescription>
         </Alert>
