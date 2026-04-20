@@ -52,7 +52,7 @@ const EventsOn = () => {
             <div className="lg:col-span-3 p-8 flex flex-col justify-center">
                 <div className="prose prose-slate mb-6">
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        From <strong>Cowboys home games</strong> and <strong>Guy Sebastian</strong> to <strong>Jimmy Carr</strong> and the <strong>Dream Fields Festival</strong> in May — 
+                        From the <strong>ANZAC Day Dawn Service</strong> and <strong>Strand Parade</strong> to <strong>Guy Sebastian</strong> at TECC, <strong>Cowboys vs Sharks</strong> Friday night footy and the <strong>Dream Fields Festival</strong> in May —
                         there's always something happening in Townsville.
                     </p>
                 </div>
@@ -64,7 +64,7 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Updated April 13, 2026.
+                        Updated April 20, 2026.
                     </span>
                 </div>
             </div>
