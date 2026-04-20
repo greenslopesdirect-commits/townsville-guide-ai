@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On Townsville: April & May 2026 Event Calendar"
-        description="Looking for things to do in Townsville? Check our updated April and May 2026 guide for NRL Cowboys home games, Guy Sebastian, Jimmy Carr, and the Dream Fields Festival."
+        title="ANZAC Day & May Events Townsville 2026 | What's On Calendar"
+        description="Plan your Townsville visit for ANZAC Day 2026 (Dawn Service & Strand Parade), Guy Sebastian at TECC, Cowboys vs Sharks, plus May highlights including Jimmy Carr and Dream Fields Festival."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-04-13">
-            <time dateTime="2026-04-13">Updated: April 13, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-04-20">
+            <time dateTime="2026-04-20">Updated: April 20, 2026</time>
           </span>
         </div>
       </div>
@@ -33,30 +33,30 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: April & May 2026
+             What's On in Townsville: ANZAC Day & May 2026
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              Coming up: The <strong>Cowboys vs Manly</strong> Thursday night blockbuster (April 16), <strong>Guy Sebastian</strong> at TECC (April 22), <strong>Jimmy Carr</strong> brings the laughs (April 28), and the <strong>Dream Fields Festival</strong> lands in May!
+              Coming up: <strong>ANZAC Day</strong> Dawn Service & Strand Parade (April 25), <strong>Cowboys vs Sharks</strong> Friday night footy, <strong>Jimmy Carr</strong> live (April 28), and the <strong>Dream Fields Festival</strong> in May!
             </p>
         </div>
 
         {/* SEO Intro Paragraph */}
         <p className="text-gray-600 max-w-3xl">
-          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from community markets and sporting events to festivals, nature activities, and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
+          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from ANZAC Day commemorations and community markets to NRL home games, festivals, and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
         </p>
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">Upcoming Highlights in Townsville</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (April 20–26)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Footy: Cowboys vs Manly Sea Eagles (Home Game) — Thursday, April 16. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
-            <li>Music: Guy Sebastian — 100 Times Around the Sun Tour (TECC) — Wednesday, April 22</li>
+            <li>Music: <strong>Guy Sebastian — 100 Times Around the Sun Tour</strong> (TECC) — Wednesday night, April 22</li>
+            <li>Footy: <strong>Cowboys vs Sharks</strong> (Home Game) — Friday night, April 24. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link></li>
+            <li>ANZAC Day: <strong>Dawn Service at Anzac Memorial Park (5:20 AM)</strong> & <strong>Strand Parade (9:00 AM)</strong> — Saturday, April 25</li>
             <li>Comedy: Jimmy Carr — Laughs Funny Tour (TECC) — Tuesday, April 28</li>
-            <li>Festival: Dream Fields Festival — Saturday, May 23 at Central Park</li>
-            <li>Nature: Perfect autumn weather for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or the <Link to="/the-strand" className="text-primary font-medium hover:underline">Strand Water Park</Link></li>
+            <li>May Preview: Dream Fields Festival — Saturday, May 23 at Central Park</li>
           </ul>
         </section>
 
@@ -94,20 +94,48 @@ const Events = () => {
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Cowboys vs Manly — FEATURED */}
+            {/* ANZAC Day — FEATURED */}
+            <Card className="border-l-4 border-l-red-600 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none">
+                    ANZAC Day — Top Highlight
+                  </Badge>
+                  <Star className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">ANZAC Day Commemorations — Townsville</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Saturday, April 25, 2026</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Anzac Memorial Park & The Strand</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  Lest We Forget. The <strong>Dawn Service kicks off at 5:20 AM</strong> at Anzac Memorial Park on The Strand, followed by the <strong>ANZAC Day Parade marching down The Strand from 9:00 AM</strong>. Arrive early — both services draw large local crowds. <Link to="/the-strand" className="text-primary font-medium hover:underline">View Strand Guide →</Link>
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Cowboys vs Sharks — Friday Night */}
             <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                    Footy — Featured
+                    Footy — This Friday Night
                   </Badge>
                   <Trophy className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Cowboys vs Manly Sea Eagles (Home)</CardTitle>
+                <CardTitle className="text-xl mt-2">Cowboys vs Sharks (Home)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Thursday, April 16 | Kick-off: 7:50 PM</span>
+                    <span>Friday, April 24 | Friday Night Footy</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -117,7 +145,7 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  After a dominant 32-0 shutout against the Dragons, the Cowboys return home undefeated. Thursday night under the lights — the march across Lowths Bridge starts around 7:00 PM. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                  The Cowboys take on Cronulla under Friday night lights. Expect a packed house — plan your march across Lowths Bridge early. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
                 </p>
               </CardContent>
             </Card>
@@ -306,7 +334,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">Next home game: <strong>Round 7 vs Manly, Thursday April 16</strong>. Gates open 5:30 PM, kick-off 7:50 PM.</p>
+                <p className="text-sm text-gray-600">This week's home game: <strong>Cowboys vs Sharks, Friday April 24</strong> — Friday night footy at QCB Stadium.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
@@ -428,6 +456,16 @@ const Events = () => {
           {/* Holiday Highlights */}
           <h3 className="font-bold text-lg text-gray-800 mb-4">Holiday Highlights</h3>
           <div className="grid gap-4 md:grid-cols-2 mb-6">
+            <Card>
+              <CardContent className="p-4">
+                <Badge variant="outline" className="mb-2">Footy — Recap</Badge>
+                <h4 className="font-semibold text-gray-900">Cowboys vs Manly Sea Eagles (April 16)</h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  The Cowboys hosted Manly under Thursday night lights at QLD Country Bank Stadium (kick-off 7:50 PM) — a packed house and the traditional march across Lowths Bridge. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link>
+                </p>
+              </CardContent>
+            </Card>
+
             <Card>
               <CardContent className="p-4">
                 <Badge variant="outline" className="mb-2">Wildlife</Badge>
