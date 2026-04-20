@@ -12,7 +12,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Stadium & Game Day Guide 2026 | Townsville Local's Tips"
-        description="Heading to the Cowboys vs Manly game this Thursday? Get the local guide to the 'Stampede', stadium parking, and the best pre-game spots in Townsville. Updated April 13, 2026."
+        description="Cowboys vs Sharks Friday Night Footy at QCB Stadium! Get the local guide to the 'Stampede', stadium parking, and best pre-game spots in Townsville. Updated April 20, 2026."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
