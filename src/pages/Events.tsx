@@ -334,7 +334,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">Next home game: <strong>Round 7 vs Manly, Thursday April 16</strong>. Gates open 5:30 PM, kick-off 7:50 PM.</p>
+                <p className="text-sm text-gray-600">This week's home game: <strong>Cowboys vs Sharks, Friday April 24</strong> — Friday night footy at QCB Stadium.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
