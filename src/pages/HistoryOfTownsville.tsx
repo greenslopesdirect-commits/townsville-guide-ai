@@ -33,7 +33,7 @@ const HistoryOfTownsville = () => {
       "name": "History of Townsville",
       "headline": "Townsville History – A Simple, Engaging Story of the City",
       "description": "A friendly, easy-to-read guide to Townsville's history — from First Nations heritage and early settlement to gold discoveries, cyclones, military history and modern development.",
-      "url": "https://www.myaussieguide.com.au/townsville/history",
+      "url": "https://www.myaussieguide.com.au/history",
       "author": {
         "@type": "Person",
         "name": "Duncan Ross"
@@ -48,7 +48,7 @@ const HistoryOfTownsville = () => {
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.myaussieguide.com.au/townsville/history"
+        "@id": "https://www.myaussieguide.com.au/history"
       },
       "breadcrumb": {
         "@type": "BreadcrumbList",
@@ -63,7 +63,7 @@ const HistoryOfTownsville = () => {
             "@type": "ListItem",
             "position": 2,
             "name": "History",
-            "item": "https://www.myaussieguide.com.au/townsville/history"
+            "item": "https://www.myaussieguide.com.au/history"
           }
         ]
       }
