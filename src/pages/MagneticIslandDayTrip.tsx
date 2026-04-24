@@ -10,6 +10,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Ship, Users, Clock, MapPin, Sun, HelpCircle } from "lucide-react";
+import AirportTransferCard from "@/components/AirportTransferCard";
 
 const MagneticIslandDayTrip = () => {
   const faqs = [
@@ -145,6 +146,7 @@ const MagneticIslandDayTrip = () => {
             <span className="text-sm text-muted-foreground">The island bus timetable is synced with ferry arrivals</span>
           </div>
         </div>
+        <AirportTransferCard className="mt-6" />
       </section>
 
       {/* Existing Itinerary - PRESERVED EXACTLY */}

@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import SEOHead from "@/components/SEOHead";
 import LocalInsightCard from "@/components/LocalInsightCard";
+import AirportTransferCard from "@/components/AirportTransferCard";
 
 const CowboysStadiumGuide = () => {
   return (
@@ -241,6 +242,7 @@ const CowboysStadiumGuide = () => {
                  </div>
               </CardContent>
             </Card>
+            <AirportTransferCard className="mt-2" />
           </section>
 
           {/* Where to Eat & Drink */}
