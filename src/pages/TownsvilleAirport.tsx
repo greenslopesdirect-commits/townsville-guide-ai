@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Plane, Car, MapPin, Clock, Sun, Droplets, Coffee, Mountain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LocalInsightCard from "@/components/LocalInsightCard";
+import AirportTransferCard from "@/components/AirportTransferCard";
 
 const TownsvilleAirport = () => {
   return (
@@ -87,6 +88,7 @@ const TownsvilleAirport = () => {
                     <p className="text-muted-foreground">Public transport options to and from the airport are limited compared with larger cities. Most visitors rely on taxis, rideshare, or car hire for convenience.</p>
                   </div>
                 </div>
+                <AirportTransferCard className="mt-6" />
               </section>
 
               {/* Local Arrival Tips */}
