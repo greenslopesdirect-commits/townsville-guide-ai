@@ -25,8 +25,8 @@ const Index = () => {
     <>
       {/* UPDATE: Revised for Evergreen/February Strategy */}
       <SEOHead
-        title="Townsville Guide: Late April & May 2026 — NRL, Live Music & More"
-        description="My Aussie Guide helps you discover Townsville like a local — beaches, food, events, dog-friendly spots, travel tips and real North Queensland insight."
+        title="Townsville Guide 2026 | Things to Do, Events & Local Tips"
+        description="Discover the best of Townsville in May 2026. Updated local guide for events, Cowboys game days, Magnetic Island trips, and stinger safety."
         canonical="https://www.myaussieguide.com.au/"
       />
       <Helmet>
