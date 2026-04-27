@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import SEOHead from "@/components/SEOHead";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
-import SaundersGallery from "@/components/SaundersGallery";
+
 
 const beaches = [
   {
@@ -380,8 +380,7 @@ const Beaches = () => {
             </div>
           </div>
 
-          {/* Saunders Beach Photo Gallery */}
-          <SaundersGallery />
+
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Secret Beach */}
