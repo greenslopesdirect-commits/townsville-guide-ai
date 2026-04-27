@@ -541,7 +541,7 @@ const Beaches = () => {
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (April 13): High tide is in the morning, making it perfect for a Strand swim. Low tide in the afternoon exposes the sand flats at Rowes Bay—ideal for a long walk before the sunset.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. April 27 Update: Low tide is in the mid-afternoon this week. It’s the perfect window to explore the sand flats at Rowes Bay or Pallarenda before the sun starts to dip.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
