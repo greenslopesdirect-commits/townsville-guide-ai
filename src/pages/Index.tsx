@@ -168,17 +168,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: April 20, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: April 27, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                🇦🇺 ANZAC Long Weekend Ahead: Saturday's <strong>Dawn Service kicks off at 5:20 AM</strong> at Anzac Memorial Park, followed by the <strong>Strand Parade at 9:00 AM</strong>. Welcome to the official start of the Dry Season — the "Best of Townsville" window opens now.
+                May is the <strong>"Best of Townsville"</strong> window. Heading to the <strong>Cowboys vs Eels game on May 8</strong>? Book your post-game dinner at The Ville early — the atmosphere is unmatched on Friday nights.
               </p>
             </div>
 
             {/* Friday Night Footy Local Tip */}
             <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-300 dark:border-blue-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-blue-800 dark:text-blue-300 font-medium leading-relaxed">
-                🏉 Heads-Up Friday: Cowboys vs Sharks at QCB Stadium has an <strong>early 6:00 PM kick-off</strong> — the CBD will be busy from late afternoon. Plan parking, dinner bookings and your walk across Lowths Bridge before 5:00 PM.
+                🏉 Heads-Up Friday May 8: Cowboys vs Eels at QCB Stadium has an <strong>early 6:00 PM kick-off</strong> — the CBD will be busy from late afternoon. Plan parking, dinner bookings and your walk across Lowths Bridge before 5:00 PM.
               </p>
             </div>
           </div>
