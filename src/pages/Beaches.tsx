@@ -215,7 +215,7 @@ const Beaches = () => {
               <div className="flex-1 min-w-0">
                 <h2 className="text-lg font-semibold text-foreground mb-1">Dog-Friendly Beaches Guide</h2>
                 <p className="text-sm text-muted-foreground">
-                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville.
+                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville. <strong className="text-foreground">In May, Pallarenda is our top pick for morning runs</strong> — the lower humidity makes it perfect for an early off-leash adventure.
                 </p>
               </div>
               <Button asChild className="w-full sm:w-auto flex-shrink-0">
@@ -367,6 +367,17 @@ const Beaches = () => {
         <section id="secret-beaches" className="space-y-4">
           <h2 className="text-2xl font-bold text-foreground">🕵️ Townsville's 5 Best Secret Beaches & Hidden Gems</h2>
           <p className="text-sm text-muted-foreground">These hidden gems are known mostly to locals. They're off the beaten path and worth the effort to find.</p>
+
+          {/* Local Secret — Northern Beaches Callout */}
+          <div className="rounded-xl border-2 border-emerald-300 dark:border-emerald-700 bg-emerald-50/70 dark:bg-emerald-950/30 p-5 sm:p-6 flex gap-4 items-start">
+            <span className="text-2xl shrink-0" aria-hidden="true">🌅</span>
+            <div>
+              <p className="font-bold text-emerald-900 dark:text-emerald-200 text-base sm:text-lg">Local Secret: Northern Beaches (Saunders &amp; Toolakea)</p>
+              <p className="text-emerald-800 dark:text-emerald-300 text-sm sm:text-base mt-1 leading-relaxed">
+                In May, these beaches catch the best of the cooling northern breezes. Perfect for those who want a quiet sunset walk without the Strand crowds.
+              </p>
+            </div>
+          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {/* Secret Beach */}
             <Card className="hover:shadow-lg transition-shadow flex flex-col relative">
