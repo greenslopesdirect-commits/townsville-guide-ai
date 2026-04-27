@@ -94,48 +94,48 @@ const Events = () => {
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* ANZAC Day — FEATURED */}
-            <Card className="border-l-4 border-l-red-600 shadow-md hover:shadow-lg transition-shadow">
+            {/* Jimmy Carr — TOP HIGHLIGHT */}
+            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none">
-                    ANZAC Day — Top Highlight
+                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
+                    Comedy — Top Highlight (Tomorrow!)
                   </Badge>
-                  <Star className="w-5 h-5 text-gray-400" />
+                  <Laugh className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">ANZAC Day Commemorations — Townsville</CardTitle>
+                <CardTitle className="text-xl mt-2">Jimmy Carr: Laughs Funny Tour</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, April 25, 2026</span>
+                    <span>Tuesday, April 28, 2026 — Tomorrow!</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Anzac Memorial Park & The Strand</span>
+                    <span>TECC (Townsville Entertainment Centre)</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Lest We Forget. The <strong>Dawn Service kicks off at 5:20 AM</strong> at Anzac Memorial Park on The Strand, followed by the <strong>ANZAC Day Parade marching down The Strand from 9:00 AM</strong>. Arrive early — both services draw large local crowds. <Link to="/the-strand" className="text-primary font-medium hover:underline">View Strand Guide →</Link>
+                  The king of one-liners brings his sharp wit to North Queensland. <strong>The 7:00 PM show is Sold Out</strong> — limited <strong>9:30 PM tickets</strong> still remain. Don't miss your chance to catch one of the world's biggest comics live in Townsville.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Cowboys vs Sharks — Friday Night */}
+            {/* Cowboys vs Eels — Round 10 */}
             <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                    Footy — This Friday Night
+                    Footy — Round 10 Home Game
                   </Badge>
                   <Trophy className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Cowboys vs Sharks (Home)</CardTitle>
+                <CardTitle className="text-xl mt-2">Round 10: Cowboys vs Parramatta Eels (Home)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, April 24 | Kick-off: 6:00 PM (early start)</span>
+                    <span>Friday, May 8 | Kick-off: 6:00 PM (Another early Friday start!)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -145,68 +145,10 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The Cowboys take on Cronulla under Friday night lights with an <strong>earlier-than-usual 6:00 PM kick-off</strong> — plan your march across Lowths Bridge from around 5:00 PM to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                  The Cowboys host Parramatta in a Round 10 blockbuster with another <strong>early 6:00 PM Friday kick-off</strong> — plan your march across Lowths Bridge from around 5:00 PM to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
                 </p>
               </CardContent>
             </Card>
-
-            <div className="grid gap-6 md:grid-cols-2">
-              {/* Guy Sebastian */}
-              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-purple-500">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                      Music
-                    </Badge>
-                    <Music className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Guy Sebastian: 100 Times Around the Sun</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Wednesday, April 22 | 7:00 PM start</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>TECC (Townsville Entertainment Centre)</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    One of Australia's biggest pop artists brings his national tour to Townsville. Doors open ahead of a 7:00 PM start — expect all the hits in an unforgettable midweek night out.
-                  </p>
-                </CardContent>
-              </Card>
-
-              {/* Jimmy Carr */}
-              <Card className="hover:shadow-md transition-shadow border-l-4 border-l-orange-500">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                      Comedy
-                    </Badge>
-                    <Laugh className="w-5 h-5 text-gray-400" />
-                  </div>
-                  <CardTitle className="text-lg mt-2">Jimmy Carr: Laughs Funny Tour</CardTitle>
-                  <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>Tuesday, April 28</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>TECC (Townsville Entertainment Centre)</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600 text-sm">
-                    The king of one-liners brings his sharp wit to North Queensland. Not one to miss — book early, these shows sell out fast.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
 
             {/* Dream Fields Festival — May Preview */}
             <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
@@ -235,9 +177,6 @@ const Events = () => {
                 </p>
               </CardContent>
             </Card>
-
-          </div>
-        </section>
 
         {/* Local Climate Tip */}
         <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start">
