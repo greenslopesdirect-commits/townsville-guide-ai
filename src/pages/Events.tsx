@@ -33,13 +33,13 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: ANZAC Day & May 2026
+             What's On in Townsville: May 2026 & Jimmy Carr Live
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              Coming up: <strong>ANZAC Day</strong> Dawn Service & Strand Parade (April 25), <strong>Cowboys vs Sharks</strong> Friday night footy, <strong>Jimmy Carr</strong> live (April 28), and the <strong>Dream Fields Festival</strong> in May!
+              Coming up: <strong>Jimmy Carr</strong> live (Tomorrow!), the <strong>Strand Night Markets</strong> (Friday), the <strong>Cowboys vs Eels</strong> blockbuster (May 8), and the <strong>Dream Fields Festival</strong> on May 23!
             </p>
         </div>
 
