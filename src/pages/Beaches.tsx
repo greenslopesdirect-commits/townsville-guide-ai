@@ -215,7 +215,7 @@ const Beaches = () => {
               <div className="flex-1 min-w-0">
                 <h2 className="text-lg font-semibold text-foreground mb-1">Dog-Friendly Beaches Guide</h2>
                 <p className="text-sm text-muted-foreground">
-                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville.
+                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville. <strong className="text-foreground">In May, Pallarenda is our top pick for morning runs</strong> — the lower humidity makes it perfect for an early off-leash adventure.
                 </p>
               </div>
               <Button asChild className="w-full sm:w-auto flex-shrink-0">
