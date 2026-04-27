@@ -400,6 +400,36 @@ const Events = () => {
           <div className="grid gap-4 md:grid-cols-2 mb-6">
             <Card>
               <CardContent className="p-4">
+                <Badge variant="outline" className="mb-2">ANZAC Day — Recap</Badge>
+                <h4 className="font-semibold text-gray-900">ANZAC Day Commemorations (April 25)</h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  Lest We Forget. The Dawn Service kicked off at 5:20 AM at Anzac Memorial Park, followed by the ANZAC Day Parade marching down The Strand from 9:00 AM. <Link to="/the-strand" className="text-primary font-medium hover:underline">View Strand Guide →</Link>
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-4">
+                <Badge variant="outline" className="mb-2">Footy — Recap</Badge>
+                <h4 className="font-semibold text-gray-900">Cowboys vs Sharks (April 24)</h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  The Cowboys hosted Cronulla under Friday night lights at QLD Country Bank Stadium with an early 6:00 PM kick-off. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link>
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-4">
+                <Badge variant="outline" className="mb-2">Music — Recap</Badge>
+                <h4 className="font-semibold text-gray-900">Guy Sebastian: 100 Times Around the Sun (April 22)</h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  Guy Sebastian brought his national tour to TECC for a packed midweek night of hits.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-4">
                 <Badge variant="outline" className="mb-2">Footy — Recap</Badge>
                 <h4 className="font-semibold text-gray-900">Cowboys vs Manly Sea Eagles (April 16)</h4>
                 <p className="text-sm text-gray-600 mt-2">
