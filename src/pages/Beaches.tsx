@@ -534,7 +534,7 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">☀️ April 27 Update: Dry Season has arrived. Perfect conditions for morning runs at Pallarenda before the midday UV spike. Stinger nets remain active at The Strand and Pallarenda. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">☀️ April 27 Update: Dry Season has arrived and the breezes are clearing the water. Stinger nets remain ACTIVE at The Strand and Pallarenda through May — stick to the enclosures for a worry-free swim. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
