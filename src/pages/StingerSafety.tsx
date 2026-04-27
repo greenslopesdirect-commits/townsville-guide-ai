@@ -129,6 +129,17 @@ const StingerSafety = () => (
         </AccordionItem>
       </Accordion>
     </section>
+
+    {/* Airport Transfer CTA */}
+    <section className="mt-12 -mx-4 px-4 py-10 bg-slate-50 dark:bg-slate-900/40 rounded-xl">
+      <div className="max-w-3xl mx-auto">
+        <h3 className="text-2xl font-bold mb-2 text-foreground">Planning Your Townsville Arrival?</h3>
+        <p className="text-muted-foreground leading-relaxed mb-6">
+          Now that you're up to speed on beach safety, ensure your trip from the tarmac to the sand is just as smooth. Check the latest local transport and transfer options below.
+        </p>
+        <AirportTransferCard />
+      </div>
+    </section>
   </div>
 );
 export default StingerSafety;
