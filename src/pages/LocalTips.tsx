@@ -20,14 +20,14 @@ const LocalTips = () => {
         "Dry season: Best for hiking, beaches, outdoor events",
         "Wet season: Fewer crowds, cheaper accommodation",
         "Shoulder months (April–May, Sept–Oct) are ideal",
-        "Check Today's Weather Forecast: April 13 Update — Sunny and 31°C with moderate humidity. The transition to the Dry Season is beginning, but the UV remains Extreme (11+)."
+        "Check Today's Weather Forecast: April 27 Update — Crisp mornings and sunny 26°C days. The Dry Season has arrived, but the UV remains Extreme (11+) through midday."
       ],
       aiPrompt: "What's the best time of year to visit Townsville based on weather and activities?"
     },
     {
       title: "Staying Safe in the Heat",
       icon: <ThermometerSun className="w-6 h-6" />,
-      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. April 13 Alert: UV Index is Extreme (11+). Sunny and 31°C — stay hydrated!",
+      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. April 27 Alert: UV Index is Extreme (11+). Crisp 26°C mornings — but stay hydrated and SPF up by 10am.",
       tips: [
         "Walk Castle Hill at sunrise or sunset only",
         "Carry at least 1L water per person",
@@ -69,7 +69,7 @@ const LocalTips = () => {
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
         "Many cafés provide water bowls",
-        "🐾 Schnauzer Approved Tip: Low tide today (April 13) is mid-afternoon. It's the perfect time to let the dogs run on the sand flats at Pallarenda as the temperature starts to dip after 3:30 PM."
+        "🐾 Schnauzer Approved Tip: April 27 Update — Those cooling morning breezes are back! It's peak season for the sand flats at Pallarenda. Aim for a 7:30 AM run to beat the midday UV spike, and remember to bring fresh water for the pups as the humidity drops."
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
@@ -125,8 +125,8 @@ const LocalTips = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Local Tips & Insider Guide 2026 | Safety & Weather"
-        description="Get the latest Townsville insider tips for April 13, 2026. Includes stinger safety status, heat protocols, and infrastructure alerts for Magnetic Island and the CBD."
+        title="Local Townsville Tips 2026 | Safety, Weather & Insider Advice"
+        description="Updated April 27: Essential local-verified tips for Townsville. Includes stinger safety, coconut hazards, May 2026 weather advice, and infrastructure updates."
         canonical="https://www.myaussieguide.com.au/local-tips"
       />
       <Helmet>
@@ -193,7 +193,7 @@ const LocalTips = () => {
             <div className="space-y-4 mb-8">
               <div className="p-4 rounded-lg border bg-card">
                 <p className="text-sm text-muted-foreground">
-                  ☀️ Current Status (April 13, 2026): ☀️ Stinger nets are ACTIVE. Conditions are sunny and 31°C—perfect for the final week of the April school holidays.
+                  ☀️ Current Status (April 27, 2026): Dry Season has arrived! Stinger nets remain ACTIVE. Conditions are clear with crisp mornings and sunny 26°C days—the "Best of Townsville" window is officially open.
                 </p>
               </div>
               <StingerSeasonAlert />
@@ -223,15 +223,8 @@ const LocalTips = () => {
               <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">🏟️ Thursday Night Footy — Lowths Bridge Traffic</p>
-                  <p className="text-xs text-muted-foreground mt-1"><strong>Expect heavy pedestrian traffic and CBD gridlock from 5:00 PM this Thursday (April 16) for the Cowboys vs Manly game. Avoid Lowths Bridge if you aren't walking to the stadium.</strong></p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-primary/5 border border-primary/20">
-                <Calendar className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-sm text-foreground">🎒 Final Week of School Holidays (April 13–19)</p>
-                  <p className="text-xs text-muted-foreground mt-1">Expect peak capacity at The Strand and Riverway. If the crowds are too much, use our <Link to="/beaches#secret-beaches" className="text-primary font-medium hover:underline">Secret Beaches guide</Link> to find some breathing room at Saunders Beach.</p>
+                  <p className="font-medium text-sm text-foreground">🏟️ May 8 Footy Alert — QCB Stadium</p>
+                  <p className="text-xs text-muted-foreground mt-1"><strong>Expect heavy CBD traffic and a busy Lowths Bridge from 5:00 PM on Friday, May 8, for the Cowboys vs Eels game.</strong></p>
                 </div>
               </div>
             </section>
@@ -247,7 +240,7 @@ const LocalTips = () => {
                 <div>
                   <p className="font-medium text-sm text-foreground">Tropical Tip: The 2kg Overhead Hazard</p>
                   <p className="text-xs text-muted-foreground mt-1">
-                    While the palms in Anzac Memorial Park and along The Strand provide the best shade in town, locals know to do a quick "overhead check." As the Dry Season breezes pick up in April and May, falling coconuts become a genuine risk. Before you set up your picnic rug or beach chair, look up! A falling coconut can weigh over 2kg—it is a sure way to ruin a perfectly good Sunday.
+                    While the palms in Anzac Memorial Park and along The Strand provide the best shade, locals know to do a quick "overhead check." As the Dry Season breezes pick up in May, falling coconuts are a real risk. A local was nearly hit just last week—look up before you set up your picnic!
                   </p>
                 </div>
               </div>
