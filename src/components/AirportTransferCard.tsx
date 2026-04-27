@@ -3,9 +3,10 @@ import { Button } from "@/components/ui/button";
 
 interface AirportTransferCardProps {
   className?: string;
+  proTipExtra?: string;
 }
 
-const AirportTransferCard = ({ className = "" }: AirportTransferCardProps) => {
+const AirportTransferCard = ({ className = "", proTipExtra }: AirportTransferCardProps) => {
   return (
     <div
       className={`rounded-xl border-2 border-primary/30 bg-gradient-to-br from-[hsl(var(--ocean-light))] to-background p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow ${className}`}
