@@ -139,6 +139,20 @@ const Index = () => {
         <section id="top-picks">
           <TopPicks />
         </section>
+
+        {/* Wildcard "Did You Know?" Tip */}
+        <div className="container mx-auto px-4 max-w-4xl py-6">
+          <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-2xl p-5 sm:p-6 flex gap-4 items-start">
+            <span className="text-2xl shrink-0" aria-hidden="true">💡</span>
+            <div>
+              <h3 className="font-bold text-amber-900 dark:text-amber-200 text-base sm:text-lg">Did You Know?</h3>
+              <p className="text-amber-800 dark:text-amber-300 text-sm sm:text-base mt-1 leading-relaxed">
+                <strong>May 3:</strong> Check out the <strong>Woodstock Nationals Drag Racing</strong> for a high-octane Sunday out, or visit the <strong>Museum of Tropical Queensland</strong> for the "Born or Built?" robotics exhibit — perfect for a shaded family afternoon.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <section id="seo-content">
           <SeoContentSections />
         </section>
