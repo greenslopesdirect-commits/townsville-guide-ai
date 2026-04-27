@@ -12,8 +12,8 @@ const CowboysStadiumGuide = () => {
   return (
     <>
       <SEOHead
-        title="Cowboys Stadium & Game Day Guide 2026 | Townsville Local's Tips"
-        description="Cowboys vs Sharks Friday Night Footy at QCB Stadium! Get the local guide to the 'Stampede', stadium parking, and best pre-game spots in Townsville. Updated April 20, 2026."
+        title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
+        description="Plan your 2026 Cowboys game day in Townsville. Detailed guide for the Round 10 Eels match on May 8, including parking, free shuttles, and the walk across Lowths Bridge."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
