@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="ANZAC Day & May Events Townsville 2026 | What's On Calendar"
-        description="Plan your Townsville visit for ANZAC Day 2026 (Dawn Service & Strand Parade), Guy Sebastian at TECC, Cowboys vs Sharks, plus May highlights including Jimmy Carr and Dream Fields Festival."
+        title="What's On in Townsville This Weekend | May 2026 Event Calendar"
+        description="Updated April 27: Jimmy Carr live, Strand Night Markets, and upcoming Cowboys home games. Your local guide to Townsville events."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
