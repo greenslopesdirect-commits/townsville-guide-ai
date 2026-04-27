@@ -82,9 +82,9 @@ const northernBeaches = [
     badge: { label: "⭐ Top Search Pick", color: "bg-amber-100 text-amber-800 hover:bg-amber-100" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Quiet", "Dog Friendly"],
-    description: "6km of unspoilt sand—the ultimate local pick for a peaceful escape. High-intent searchers: this is the best spot north of Townsville for a long, quiet walk away from the city crowds.",
-    guideLink: undefined,
-    guideLinkText: undefined,
+    description: "6km of unspoilt sand—the ultimate local pick for a peaceful escape. New for May 2026: Check our updated guide for the best stargazing spots and family-friendly beach activities north of the city.",
+    guideLink: "/beaches/saunders-beach",
+    guideLinkText: "View Full Saunders Beach Guide →",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
     buttonVariant: "outline" as const,
   },
@@ -97,7 +97,7 @@ const northernBeaches = [
     badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
     tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that becomes very shallow at low tide. Local Tip: Best for low-tide walks this week to see the vast sand flats. Perfect for sunset photography as we transition into the Dry Season.",
+    description: "A sleepy residential beach that becomes very shallow at low tide. April 27 Update: As we transition into the Dry Season, the sunset photography at Toolakea is at its peak. Visit at low tide to capture the vast, reflective sand flats.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
@@ -156,8 +156,8 @@ const Beaches = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
-        title="7 Best Beaches in Townsville (2026 Local's Guide) | Swimming & Safety"
-        description="Planning a beach day? Get the latest on Townsville beaches, stinger net status, and off-leash dog areas. Updated April 27, 2026, with current safety tips and local favorites."
+        title="Best Beaches in Townsville 2026 | Swimming, Safety & Local Tips"
+        description="Updated April 27: Your local-verified guide to Townsville beaches. Includes the new Saunders Beach deep-dive, stinger safety for May 2026, and the best off-leash dog spots."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
       <Helmet>
@@ -235,7 +235,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-        ☀️ April 27 Update: Dry Season has arrived. Perfect conditions for morning runs at Pallarenda before the midday UV spike. Stinger nets remain active at The Strand and Pallarenda — stick to the enclosures for a worry-free swim.{" "}
+        ☀️ April 27 Update: Dry Season has officially arrived! Stinger nets remain ACTIVE at The Strand and Pallarenda, but Dry Season breezes are clearing the water — visibility is improving daily. With the humidity dropping, it’s peak season for long beach walks and morning runs.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
@@ -534,14 +534,14 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">☀️ April 27 Update: Dry Season has arrived. Perfect conditions for morning runs at Pallarenda before the midday UV spike. Stinger nets remain active at The Strand and Pallarenda. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">☀️ April 27 Update: Dry Season has arrived and the breezes are clearing the water. Stinger nets remain ACTIVE at The Strand and Pallarenda through May — stick to the enclosures for a worry-free swim. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out, especially at Rowes Bay. Today's Tides (April 13): High tide is in the morning, making it perfect for a Strand swim. Low tide in the afternoon exposes the sand flats at Rowes Bay—ideal for a long walk before the sunset.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. April 27 Update: Low tide is in the mid-afternoon this week. It’s the perfect window to explore the sand flats at Rowes Bay or Pallarenda before the sun starts to dip.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
