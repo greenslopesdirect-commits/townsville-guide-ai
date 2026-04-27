@@ -116,10 +116,9 @@ const Index = () => {
         
         {/* Local Insight - Introduction */}
         <div className="container mx-auto px-4 max-w-4xl py-8">
-           <LocalInsightCard title="More Than a Gateway" variant="insight">
+           <LocalInsightCard title="Welcome to the Dry Season" variant="insight">
                <p>
-                 Townsville is more than just the gateway to Magnetic Island—it's the events capital of the North.
-                 We've hit the <strong>ANZAC Long Weekend</strong> and the official transition into our <strong>Dry Season</strong>: cooler mornings, low humidity, endless blue skies, and the start of the "Best of Townsville" window through May.
+                 Townsville has officially transitioned into the <strong>Dry Season</strong>. Expect crisp morning breezes, lower humidity, and a packed May events calendar. Whether you are here for <strong>Jimmy Carr (Tomorrow!)</strong>, the <strong>Cowboys vs Eels blockbuster (May 8)</strong>, or a Magnetic Island escape, we have the local intel you need.
                  Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
                </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
