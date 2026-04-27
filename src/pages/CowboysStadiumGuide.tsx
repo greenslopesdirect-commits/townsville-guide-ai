@@ -237,12 +237,12 @@ const CowboysStadiumGuide = () => {
                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                    <span className="text-sm">⚠️</span>
                     <p className="text-amber-800 text-sm">
-                      <strong>Friday Night Alert: CBD traffic will spike from 4:00 PM</strong> as the work week ends and game-day fans arrive. The smartest move is the <strong>Lou Litster Park & Ride shuttle</strong> — free parking, regular shuttles, and you'll skip the Friday afternoon gridlock entirely.
+                      <strong>Friday Night Alert:</strong> Even with the later <strong>8:00 PM kick-off</strong>, CBD traffic will be heavy from <strong>4:00 PM</strong> as the work week ends and fans arrive. The <strong>Lou Litster Park & Ride</strong> remains your best bet to skip the Friday afternoon gridlock entirely.
                     </p>
                  </div>
               </CardContent>
             </Card>
-            <AirportTransferCard className="mt-2" />
+            <AirportTransferCard className="mt-2" proTipExtra="Perfect for fans flying in on Friday afternoon to avoid the CBD taxi rush." />
           </section>
 
           {/* Where to Eat & Drink */}
