@@ -157,7 +157,7 @@ const Beaches = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
         title="7 Best Beaches in Townsville (2026 Local's Guide) | Swimming & Safety"
-        description="Planning a beach day? Get the latest on Townsville beaches, stinger net status, and off-leash dog areas. Updated April 13, 2026, with current safety tips and local favorites."
+        description="Planning a beach day? Get the latest on Townsville beaches, stinger net status, and off-leash dog areas. Updated April 27, 2026, with current safety tips and local favorites."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
       <Helmet>
@@ -235,7 +235,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-        ☀️ April 13 Update: Nets remain active at The Strand and Pallarenda. With the final week of school holidays here, stick to the enclosures for a worry-free swim.{" "}
+        ☀️ April 27 Update: Dry Season has arrived. Perfect conditions for morning runs at Pallarenda before the midday UV spike. Stinger nets remain active at The Strand and Pallarenda — stick to the enclosures for a worry-free swim.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
@@ -534,7 +534,7 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">☀️ April 13 Update: Nets remain active at The Strand and Pallarenda. With the final week of school holidays here, stick to the enclosures for a worry-free swim. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">☀️ April 27 Update: Dry Season has arrived. Perfect conditions for morning runs at Pallarenda before the midday UV spike. Stinger nets remain active at The Strand and Pallarenda. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">

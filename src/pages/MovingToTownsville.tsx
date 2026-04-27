@@ -340,7 +340,7 @@ const MovingToTownsville = () => {
 
           {/* Authority Footer */}
           <p className="text-center text-xs text-muted-foreground pt-4 pb-2">
-            A local's perspective on moving to Townsville — updated April 2026.
+            A local's perspective on moving to Townsville — Last Verified April 2026.
           </p>
         </div>
       </div>
