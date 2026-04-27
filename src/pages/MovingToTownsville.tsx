@@ -22,6 +22,8 @@ import {
   Building2,
   Zap,
   Heart,
+  Fish,
+  Ship,
 } from "lucide-react";
 import LocalInsightCard from "@/components/LocalInsightCard";
 
@@ -83,6 +85,21 @@ const infrastructure = [
       "The future of green manufacturing in the North. Lansdown is positioning Townsville as a national leader in hydrogen, critical minerals processing, and sustainable industry.",
     icon: <HardHat className="w-5 h-5 text-emerald-500" />,
   },
+  {
+    name: "Great Barrier Reef Aquarium (Reef HQ) Redevelopment",
+    status: "Planning & Procurement — Opening 2029",
+    description:
+      "Australia's national education centre for the Reef is undergoing a $180M+ total transformation. While the facility has been closed since 2021, the project is fully funded. Major demolition and construction works are currently slated to begin in late 2026 (Q4).",
+    tip: "If you're moving with kids, don't worry — the Museum of Tropical Queensland is just next door and remains open with world-class exhibits while the aquarium is rebuilt!",
+    icon: <Fish className="w-5 h-5 text-cyan-500" />,
+  },
+  {
+    name: "Port of Townsville Channel Upgrade & Cruise Boom",
+    status: "Record-Breaking 2025/26 Season Completed",
+    description:
+      "Following the completion of the $251M Channel Upgrade, Townsville just wrapped up its biggest cruise season in history (April 14, 2026). 23 ships visited our shores this season, bringing over 27,000 passengers and 13,000 crew into the CBD. This surge has injected over $9.5M into the local economy, supporting our growing café, retail, and tourism sectors.",
+    icon: <Ship className="w-5 h-5 text-blue-500" />,
+  },
 ];
 
 const MovingToTownsville = () => {
@@ -120,8 +137,8 @@ const MovingToTownsville = () => {
   return (
     <>
       <SEOHead
-        title="Moving to Townsville 2026: The Ultimate Relocation & Suburb Guide"
-        description="Planning a move to North Queensland? Get the 2026 local's guide to Townsville suburbs, rental market survival (0.9% vacancy), job growth, and tropical living tips."
+        title="Moving to Townsville 2026 | Suburbs, Jobs & Infrastructure Update"
+        description="Updated April 27: The real status of the Reef HQ rebuild (opening 2029), Townsville's record-breaking cruise season, and 2026 relocation tips."
         canonical="https://www.myaussieguide.com.au/moving-to-townsville"
       />
 
@@ -254,7 +271,7 @@ const MovingToTownsville = () => {
                   className="flex items-start gap-4 p-5 rounded-xl border-2 bg-card hover:border-primary/30 transition-colors"
                 >
                   <div className="p-2.5 rounded-xl bg-muted flex-shrink-0">{project.icon}</div>
-                  <div className="space-y-1">
+                  <div className="space-y-2 flex-1">
                     <div className="flex items-center gap-2 flex-wrap">
                       <h3 className="font-bold text-foreground">{project.name}</h3>
                       <Badge variant="outline" className="text-xs">
@@ -264,6 +281,11 @@ const MovingToTownsville = () => {
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {project.description}
                     </p>
+                    {(project as any).tip && (
+                      <p className="text-sm text-foreground bg-primary/5 border-l-2 border-primary/40 pl-3 py-2 rounded-r-md">
+                        <span className="font-semibold">Local Tip:</span> {(project as any).tip}
+                      </p>
+                    )}
                   </div>
                 </div>
               ))}
@@ -340,7 +362,7 @@ const MovingToTownsville = () => {
 
           {/* Authority Footer */}
           <p className="text-center text-xs text-muted-foreground pt-4 pb-2">
-            A local's perspective on moving to Townsville — Last Verified April 2026.
+            A local's perspective on moving to Townsville — Last Verified April 27, 2026.
           </p>
         </div>
       </div>
