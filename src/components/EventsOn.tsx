@@ -33,12 +33,12 @@ const EventsOn = () => {
                 <div className="absolute top-0 right-0 p-32 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
                 <div className="relative z-10">
                     <span className="inline-block px-3 py-1 bg-yellow-400 text-blue-900 font-bold text-xs uppercase tracking-wider rounded-full mb-4">
-                        ANZAC Long Weekend & May 2026
+                        May 2026 Highlights
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
-                    <p className="text-blue-100 font-medium">ANZAC Day services, live music & footy</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🇦🇺 ANZAC Day: Sat April 25 — Dawn Service 5:20 AM</p>
-                     <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">Dry Season Begins</span>
+                    <p className="text-blue-100 font-medium">Comedy, markets, footy & festivals</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">😂 Jimmy Carr: Tue April 28 — Tomorrow Night!</p>
+                     <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">Dry Season Is Here</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
