@@ -52,7 +52,7 @@ const EventsOn = () => {
             <div className="lg:col-span-3 p-8 flex flex-col justify-center">
                 <div className="prose prose-slate mb-6">
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        From the <strong>ANZAC Day Dawn Service</strong> and <strong>Strand Parade</strong> to <strong>Guy Sebastian</strong> at TECC, <strong>Cowboys vs Sharks</strong> Friday night footy and the <strong>Dream Fields Festival</strong> in May —
+                        From <strong>Jimmy Carr</strong> live at TECC tomorrow and the first <strong>Strand Night Markets</strong> of the Dry Season, to the <strong>Cowboys vs Eels</strong> Round 10 blockbuster (May 8) and the <strong>Dream Fields Festival</strong> on May 23 —
                         there's always something happening in Townsville.
                     </p>
                 </div>
@@ -64,7 +64,7 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Updated April 20, 2026.
+                        Updated April 27, 2026.
                     </span>
                 </div>
             </div>
