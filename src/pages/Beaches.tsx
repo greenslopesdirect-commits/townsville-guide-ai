@@ -343,6 +343,13 @@ const Beaches = () => {
                   </div>
                   <p className="text-muted-foreground text-sm">{beach.description}</p>
                   <div className="mt-auto pt-2 flex flex-col gap-2">
+                    {beach.guideLink && (
+                      <Button asChild variant="default" size="sm" className="w-full">
+                        <Link to={beach.guideLink}>
+                          {beach.guideLinkText || "View Guide"}
+                        </Link>
+                      </Button>
+                    )}
                     <Button asChild variant="outline" size="sm" className="w-full gap-2">
                       <a
                         href={beach.mapUrl}
