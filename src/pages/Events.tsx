@@ -178,6 +178,9 @@ const Events = () => {
               </CardContent>
             </Card>
 
+          </div>
+        </section>
+
         {/* Local Climate Tip */}
         <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start">
           <Thermometer className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
