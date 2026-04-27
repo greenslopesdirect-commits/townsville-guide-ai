@@ -181,6 +181,156 @@ const Events = () => {
           </div>
         </section>
 
+        {/* Mother's Day in Townsville */}
+        <section className="space-y-6">
+          <div className="flex items-center gap-2">
+            <h2 className="text-2xl font-bold text-gray-900">Mother's Day in Townsville (Sunday, May 10)</h2>
+            <Badge variant="secondary" className="bg-pink-100 text-pink-800 hover:bg-pink-100">
+              Family
+            </Badge>
+          </div>
+          <p className="text-gray-600 max-w-3xl">
+            Celebrate Mum with a Townsville morning out — from charity fun runs at sunrise to a colourful family-friendly run at Riverway, plus an early Mother's Day Market for local gifts.
+          </p>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {/* Colour Frenzy */}
+            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-pink-500">
+              <CardHeader className="pb-3">
+                <Badge className="bg-pink-100 text-pink-700 hover:bg-pink-100 border-none w-fit">
+                  Sunday, May 10 — Family Run
+                </Badge>
+                <CardTitle className="text-lg mt-2">Mother's Day Colour Frenzy</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Sunday, May 10 | Start: 8:30 AM</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Riverway Stadium, Thuringowa</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  A fun, non-competitive colour run for all ages. Bring the family, get covered in colour, and celebrate Mum in style.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Charity Fun Run/Walk */}
+            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-rose-500">
+              <CardHeader className="pb-3">
+                <Badge className="bg-rose-100 text-rose-700 hover:bg-rose-100 border-none w-fit">
+                  Sunday, May 10 — Charity
+                </Badge>
+                <CardTitle className="text-lg mt-2">Mother's Day Charity Fun Run / Walk</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Sunday, May 10 | Start: 7:00 AM</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Rossiter Park, Mundingburra</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  A long-standing local tradition supporting <strong>Safe Nights Townsville</strong>. Lace up before sunrise for a great cause and a beautiful start to Mother's Day.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Mother's Day Market */}
+            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-fuchsia-500 md:col-span-2">
+              <CardHeader className="pb-3">
+                <Badge className="bg-fuchsia-100 text-fuchsia-700 hover:bg-fuchsia-100 border-none w-fit">
+                  Sunday, May 3 — Market
+                </Badge>
+                <CardTitle className="text-lg mt-2">Mother's Day Market</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Sunday, May 3</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Townsville (local market — check official listings for venue)</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  The perfect spot for early local gifts — handmade crafts, fresh flowers, and Townsville-made treats from local stallholders.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Community & Nature Highlights */}
+        <section className="space-y-6">
+          <div className="flex items-center gap-2">
+            <Leaf className="w-6 h-6 text-emerald-600" />
+            <h2 className="text-2xl font-bold text-gray-900">Community & Nature Highlights</h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            {/* Woodstock Nationals */}
+            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-yellow-500">
+              <CardHeader className="pb-3">
+                <Badge className="bg-yellow-100 text-yellow-800 hover:bg-yellow-100 border-none w-fit">
+                  Sunday, May 3 — Motorsport
+                </Badge>
+                <CardTitle className="text-lg mt-2">Woodstock Nationals — No Prep Drag Racing</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Sunday, May 3 | Racing from 11:00 AM</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Drive It NQ, Woodstock</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  A high-octane Sunday out for the family. Watch local and visiting cars take on the No Prep surface in one of North Queensland's biggest grassroots motorsport events.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Born or Built Last Chance */}
+            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-red-500 bg-red-50/30">
+              <CardHeader className="pb-3">
+                <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none w-fit">
+                  Last Chance — Closes May 17
+                </Badge>
+                <CardTitle className="text-lg mt-2">"Born or Built? Our Robotic Future" Exhibition</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Closing Sunday, May 17, 2026</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Museum of Tropical Queensland, Townsville</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  Final weeks to explore this hands-on robotics and AI exhibition — perfect for a shaded family afternoon. Don't leave it until closing weekend.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
         {/* Local Climate Tip */}
         <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start">
           <Thermometer className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
