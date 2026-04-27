@@ -236,6 +236,23 @@ const LocalTips = () => {
               </div>
             </section>
 
+            {/* Environmental Safety */}
+            <section className="mb-8 space-y-3">
+              <div className="flex items-center gap-2 mb-2">
+                <AlertTriangle className="w-5 h-5 text-amber-500" />
+                <h2 className="text-lg font-bold text-foreground">Environmental Safety</h2>
+              </div>
+              <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
+                <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="font-medium text-sm text-foreground">Tropical Tip: The 2kg Overhead Hazard</p>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    While the palms in Anzac Memorial Park and along The Strand provide the best shade in town, locals know to do a quick "overhead check." As the Dry Season breezes pick up in April and May, falling coconuts become a genuine risk. Before you set up your picnic rug or beach chair, look up! A falling coconut can weigh over 2kg—it is a sure way to ruin a perfectly good Sunday.
+                  </p>
+                </div>
+              </div>
+            </section>
+
             {/* Transport & Timing Insight */}
             <LocalInsightCard title="Transport & Timing" variant="tip" className="mb-12">
               <p>
