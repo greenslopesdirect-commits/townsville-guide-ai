@@ -53,6 +53,7 @@ import CowboysStadiumGuide from "@/pages/CowboysStadiumGuide";
 import NorthShoreTownsville from "@/pages/NorthShoreTownsville";
 import TownsvilleAirport from "@/pages/TownsvilleAirport";
 import MovingToTownsville from "@/pages/MovingToTownsville";
+import SaundersBeach from "@/pages/beaches/SaundersBeach";
 
 const queryClient = new QueryClient();
 
@@ -91,6 +92,7 @@ const App = () => (
             <Route path="north-shore-townsville" element={<NorthShoreTownsville />} />
             
             {/* DEEP DIVE BEACH PAGES */}
+            <Route path="beaches/saunders-beach" element={<SaundersBeach />} />
             <Route path="pallarenda-beach" element={<PallarendaBeach />} />
             <Route path="rowes-bay" element={<RowesBay />} />
             <Route path="townsville-with-kids" element={<TownsvilleWithKids />} />
