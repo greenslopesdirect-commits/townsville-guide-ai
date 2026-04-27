@@ -11,7 +11,7 @@ import {
 const StingerSafety = () => (
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
     <SEOHead
-      title="Townsville Stinger Season Guide (2026) | Nets, Safety & Swimming Advice"
+      title="Is it Safe to Swim in Townsville Today? | 2026 Stinger Guide"
       description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated for 2026."
       canonical="https://www.myaussieguide.com.au/guides/stinger-safety"
     />
@@ -19,9 +19,9 @@ const StingerSafety = () => (
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 Current Status: March 30, 2026</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 April 27 Status</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        ☀️ Stinger nets are ACTIVE. Conditions are clear, but UV is sitting at Extreme (11). Stick to the enclosures at The Strand and Pallarenda for your Easter swims.
+        Dry Season has arrived, but <strong>stinger nets remain ACTIVE</strong> at <strong>The Strand, Pallarenda, and Magnetic Island</strong>. Always swim within the nets.
       </p>
     </div>
 
