@@ -106,10 +106,10 @@ const DogFriendly = () => {
           {/* Local Tip */}
            <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
            <p>
-               ☀️ Heat Check (April 13): UV is Extreme (11+). While it's the final week of school holidays, the afternoon pavement is still a paw-burner. Stick to early morning runs at Pallarenda.
+               ☀️ Heat Check (April 27): Dry Season has arrived. Perfect conditions for morning runs at Pallarenda before the midday UV spike — the afternoon pavement is still a paw-burner.
               </p>
               <p>
-                🐸 Twilight Toad Alert (April 13): With the humidity sticking around this week, toads are active at dusk near the Bushland Beach dunes. Keep dogs leashed if you're out for sunset.
+                🐸 Twilight Toad Alert (April 27): With humidity easing, toad activity is dropping but they're still around at dusk near the Bushland Beach dunes. Keep dogs leashed if you're out for sunset.
              </p>
           </LocalInsightCard>
 
