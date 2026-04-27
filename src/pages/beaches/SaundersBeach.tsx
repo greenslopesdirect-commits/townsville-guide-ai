@@ -9,7 +9,7 @@ const SaundersBeach = () => {
   return (
     <>
       <SEOHead
-        title="Saunders Beach Townsville | Local Guide & Hidden Gem"
+        title="Saunders Beach Townsville | Local Guide, Photos & Tips"
         description="A local's guide to Saunders Beach, Townsville: 6km of unspoilt sand, dog-friendly low-tide runs, stargazing tips, and honest stinger-season safety advice."
         canonical="https://www.myaussieguide.com.au/beaches/saunders-beach"
         ogImage="https://www.myaussieguide.com.au/saunders-beach-blue-sky.webp"
@@ -32,7 +32,7 @@ const SaundersBeach = () => {
             </Button>
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg leading-tight">
-            Saunders Beach: The Ultimate Local Escape
+            Saunders Beach: The Quiet North Townsville Escape
           </h1>
           <p className="mt-3 text-lg md:text-xl text-white/95 drop-shadow max-w-2xl">
             6km of unspoilt sand, northern breezes, and the best stargazing in Townsville.
