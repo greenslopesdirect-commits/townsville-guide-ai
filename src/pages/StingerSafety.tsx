@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
+import AirportTransferCard from "@/components/AirportTransferCard";
 import {
   Accordion,
   AccordionContent,
