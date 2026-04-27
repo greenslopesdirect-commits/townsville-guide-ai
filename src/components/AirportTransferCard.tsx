@@ -3,9 +3,10 @@ import { Button } from "@/components/ui/button";
 
 interface AirportTransferCardProps {
   className?: string;
+  proTipExtra?: string;
 }
 
-const AirportTransferCard = ({ className = "" }: AirportTransferCardProps) => {
+const AirportTransferCard = ({ className = "", proTipExtra }: AirportTransferCardProps) => {
   return (
     <div
       className={`rounded-xl border-2 border-primary/30 bg-gradient-to-br from-[hsl(var(--ocean-light))] to-background p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow ${className}`}
@@ -39,6 +40,7 @@ const AirportTransferCard = ({ className = "" }: AirportTransferCardProps) => {
         <Info className="w-4 h-4 text-primary shrink-0 mt-0.5" />
         <p className="text-sm italic text-muted-foreground leading-snug">
           <strong className="not-italic text-foreground">Pro Tip:</strong> When the page opens, simply type 'TSV' as your pickup and your hotel as the destination.
+          {proTipExtra && <span className="block mt-1">{proTipExtra}</span>}
         </p>
       </div>
     </div>

@@ -12,8 +12,8 @@ const CowboysStadiumGuide = () => {
   return (
     <>
       <SEOHead
-        title="Cowboys Stadium & Game Day Guide 2026 | Townsville Local's Tips"
-        description="Cowboys vs Sharks Friday Night Footy at QCB Stadium! Get the local guide to the 'Stampede', stadium parking, and best pre-game spots in Townsville. Updated April 20, 2026."
+        title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
+        description="Plan your 2026 Cowboys game day in Townsville. Detailed guide for the Round 10 Eels match on May 8, including parking, free shuttles, and the walk across Lowths Bridge."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
@@ -46,7 +46,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – April 20 Update: Friday Night Footy!
+               2026 Season – April 27 Update: Round 10 Friday Night Footy!
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -54,11 +54,11 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Season Update
                    </Badge>
-                    <CardTitle className="text-lg mt-2">Round 8 — Back at Home</CardTitle>
+                    <CardTitle className="text-lg mt-2">Round 10 — The Eels are coming to Town</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      The Cowboys roll into Round 8 with momentum and host Cronulla under the Friday night lights at QCB Stadium. Expect a packed house — the home record is on the line.
+                      After a high-energy home stand in April, we look forward to hosting <strong>Parramatta</strong> for a massive Friday night clash at QCB Stadium.
                     </p>
                  </CardContent>
                </Card>
@@ -68,19 +68,19 @@ const CowboysStadiumGuide = () => {
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                     Next Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 8 – Cowboys vs. Cronulla Sharks</CardTitle>
+                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 10 – Cowboys vs. Parramatta Eels</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar className="w-4 h-4 flex-shrink-0" />
-                      <span>Friday, April 24, 2026</span>
+                      <span>Friday, May 8, 2026</span>
                     </div>
                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
                       <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                       <span>
                         Queensland Country Bank Stadium.<br />
-                        <span className="font-medium text-foreground">Gates Open: 4:00 PM | Kick-off: 6:00 PM (early Friday start)</span>
+                        <span className="font-medium text-foreground">Gates Open: 6:30 PM | Kick-off: 8:00 PM</span>
                       </span>
                     </div>
                   </div>
@@ -98,7 +98,7 @@ const CowboysStadiumGuide = () => {
           {/* Visiting from out of town CTA */}
           <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
             <CardContent className="p-6 sm:p-8 space-y-3">
-              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Sharks Game?</h3>
+              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Eels Game?</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Don't get caught out—last-minute stays near the stadium fill up fast for Friday night blockbusters. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
               </p>
@@ -161,10 +161,10 @@ const CowboysStadiumGuide = () => {
               <div>
                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                  <p className="text-amber-800 text-sm mt-1">
-                   With an early <strong>6:00 PM kick-off</strong> for the Sharks game, the Leagues Club will fill quickly from late afternoon. The 'Stampede' march across Lowths Bridge will depart <strong>earlier than usual — around 5:15 PM</strong>.
+                   With an <strong>8:00 PM kick-off</strong> for the Eels game, the Leagues Club will fill from late afternoon. The 'Stampede' march across Lowths Bridge will depart at <strong>around 7:15 PM</strong> — leaving the Leagues Club <strong>45 minutes before kick-off</strong>.
                  </p>
                  <p className="text-amber-800 text-sm mt-2 font-semibold">
-                   Since this is a Friday afternoon, expect heavy CBD traffic as the work week ends. If you're joining the Stampede, aim to be at the Leagues Club by 4:00 PM.
+                   Since this is a Friday afternoon, expect heavy CBD traffic as the work week ends. If you're joining the Stampede, aim to be at the Leagues Club by 6:00 PM.
                  </p>
               </div>
             </div>
@@ -237,12 +237,12 @@ const CowboysStadiumGuide = () => {
                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                    <span className="text-sm">⚠️</span>
                     <p className="text-amber-800 text-sm">
-                      <strong>Friday Night Alert: CBD traffic will spike from 4:00 PM</strong> as the work week ends and game-day fans arrive. The smartest move is the <strong>Lou Litster Park & Ride shuttle</strong> — free parking, regular shuttles, and you'll skip the Friday afternoon gridlock entirely.
+                      <strong>Friday Night Alert:</strong> Even with the later <strong>8:00 PM kick-off</strong>, CBD traffic will be heavy from <strong>4:00 PM</strong> as the work week ends and fans arrive. The <strong>Lou Litster Park & Ride</strong> remains your best bet to skip the Friday afternoon gridlock entirely.
                     </p>
                  </div>
               </CardContent>
             </Card>
-            <AirportTransferCard className="mt-2" />
+            <AirportTransferCard className="mt-2" proTipExtra="Perfect for fans flying in on Friday afternoon to avoid the CBD taxi rush." />
           </section>
 
           {/* Where to Eat & Drink */}
