@@ -40,6 +40,7 @@ const AirportTransferCard = ({ className = "", proTipExtra }: AirportTransferCar
         <Info className="w-4 h-4 text-primary shrink-0 mt-0.5" />
         <p className="text-sm italic text-muted-foreground leading-snug">
           <strong className="not-italic text-foreground">Pro Tip:</strong> When the page opens, simply type 'TSV' as your pickup and your hotel as the destination.
+          {proTipExtra && <span className="block mt-1">{proTipExtra}</span>}
         </p>
       </div>
     </div>
