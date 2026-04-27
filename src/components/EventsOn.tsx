@@ -135,30 +135,13 @@ const EventsOn = () => {
 
         </div>
 
-        {/* More upcoming cards */}
-        <div className="grid md:grid-cols-2 gap-6 mt-6">
-          <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
-            <CardContent className="p-6">
-              <div className="flex justify-between items-start mb-4">
-                <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
-                  Tuesday
-                </div>
-                <Laugh className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
-              </div>
-              <h4 className="text-lg font-bold mb-2">Jimmy Carr: Laughs Funny</h4>
-              <p className="text-xs text-primary font-medium mb-1">Tuesday, April 28</p>
-              <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                <MapPin className="w-4 h-4" /> TECC
-              </div>
-              <p className="text-xs text-slate-500 mt-2">😂 The king of one-liners live in Townsville</p>
-            </CardContent>
-          </Card>
-
-          <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+        {/* May Preview — Featured */}
+        <div className="grid md:grid-cols-1 gap-6 mt-6">
+          <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-green-500 border-slate-200">
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
-                  May Preview
+                  May 23 — Festival Preview
                 </div>
                 <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
               </div>
@@ -167,13 +150,13 @@ const EventsOn = () => {
               <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                 <MapPin className="w-4 h-4" /> Central Park, Townsville
               </div>
-              <p className="text-xs text-slate-500 mt-2">🎶 Galantis, Peking Duk, Mallrat & Skegss</p>
+              <p className="text-xs text-slate-500 mt-2">🎶 Galantis, Peking Duk, Mallrat & Skegss at Central Park</p>
             </CardContent>
           </Card>
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🇦🇺 ANZAC Day this Saturday, Guy Sebastian Wednesday night, and Cowboys vs Sharks Friday (early 6 PM kick-off)! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          😂 Jimmy Carr live tomorrow, Strand Night Markets Friday May 1, and Cowboys vs Eels on May 8 (early 6 PM kick-off)! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
