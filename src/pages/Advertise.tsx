@@ -104,7 +104,7 @@ const Advertise = () => {
                   Founding Partner spots are limited and curated personally by Duncan Ross to keep the guide authentic and hyper-local. Reach out to start the conversation.
                 </p>
                 <Button size="lg" asChild>
-                  <Link to="/advertise">Apply for a Founding Partner Listing</Link>
+                  <Link to="/contact">Apply for a Founding Partner Listing</Link>
                 </Button>
                 <div className="mt-8">
                   <Button variant="outline" size="lg" asChild>
