@@ -182,17 +182,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: April 27, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: May 4, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                May is the <strong>"Best of Townsville"</strong> window. Heading to the <strong>Cowboys vs Eels game on May 8</strong>? Book your post-game dinner at The Ville early — the atmosphere is unmatched on Friday nights.
+                Heading to the <strong>Cowboys vs Eels game on May 8</strong>? The CBD will be busy from late afternoon. Plan to walk across <strong>Lowths Bridge before the 4:30 PM closure</strong> if you're parking in the city.
               </p>
             </div>
 
             {/* Friday Night Footy Local Tip */}
             <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-300 dark:border-blue-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-blue-800 dark:text-blue-300 font-medium leading-relaxed">
-                🏉 Heads-Up Friday May 8: Cowboys vs Eels at QCB Stadium has an <strong>early 6:00 PM kick-off</strong> — the CBD will be busy from late afternoon. Plan parking, dinner bookings and your walk across Lowths Bridge before 5:00 PM.
+                🏉 Heads-Up Friday May 8: Cowboys vs Eels at QCB Stadium — <strong>8:00 PM kick-off</strong> (gates open 6:30 PM). Lowths Bridge closes at <strong>4:30 PM</strong>, so plan parking, dinner bookings and your walk across early.
               </p>
             </div>
           </div>
