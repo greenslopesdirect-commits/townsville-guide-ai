@@ -11,7 +11,7 @@ const Events = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
         title="What's On in Townsville This Weekend | May 2026 Event Calendar"
-        description="Updated April 27: Jimmy Carr live, Strand Night Markets, and upcoming Cowboys home games. Your local guide to Townsville events."
+        description="Updated May 4: Cowboys vs Eels, World Science Festival QLD, and Mother's Day events. Your local guide to Townsville events."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
