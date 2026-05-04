@@ -157,6 +157,15 @@ const DogFriendly = () => {
           {/* Beach Listings */}
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground">Dog Beaches & Off-Leash Spots</h2>
+            <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-300 dark:border-amber-700 rounded-lg p-4 mb-2">
+              <p className="text-sm text-amber-800 dark:text-amber-300 font-medium">
+                ⚠️ Safety First: During Stinger Season, stick to the wet sand for fetch. Check our{" "}
+                <Link to="/guides/stinger-safety" className="text-amber-900 dark:text-amber-200 hover:underline font-semibold">
+                  Stinger Safety Guide
+                </Link>{" "}
+                for current net status before you head out.
+              </p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {dogSpots.map((spot, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow border-t-4 border-t-primary flex flex-col">
