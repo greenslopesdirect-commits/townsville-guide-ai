@@ -86,41 +86,13 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">Featured Events</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               April–May 2026
+               May 2026
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Jimmy Carr — TOP HIGHLIGHT */}
-            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Comedy — Top Highlight (Tomorrow!)
-                  </Badge>
-                  <Laugh className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">Jimmy Carr: Laughs Funny Tour</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Tuesday, April 28, 2026 — Tomorrow!</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>TECC (Townsville Entertainment Centre)</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  The king of one-liners brings his sharp wit to North Queensland. <strong>The 7:00 PM show is Sold Out</strong> — limited <strong>9:30 PM tickets</strong> still remain. Don't miss your chance to catch one of the world's biggest comics live in Townsville.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Cowboys vs Eels — Round 10 */}
+            {/* Cowboys vs Eels — Round 10 (TOP HIGHLIGHT) */}
             <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
@@ -133,7 +105,7 @@ const Events = () => {
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, May 8 | Kick-off: 6:00 PM (Another early Friday start!)</span>
+                    <span>Friday, May 8 | Kick-off: 8:00 PM (Gates open 6:30 PM)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -143,7 +115,35 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The Cowboys host Parramatta in a Round 10 blockbuster with another <strong>early 6:00 PM Friday kick-off</strong> — plan your march across Lowths Bridge from around 5:00 PM to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                  The Cowboys host Parramatta in a Round 10 blockbuster. <strong>Heads up:</strong> Lowths Bridge closes to traffic from <strong>4:30 PM</strong> — plan your march across early to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* World Science Festival QLD */}
+            <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
+                    Science — Family Day Out
+                  </Badge>
+                  <Star className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">World Science Festival Queensland</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Saturday, May 9 | 9:00 AM – 3:00 PM</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Museum of Tropical Queensland</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  A massive day of <strong>hands-on science and turtle talks</strong> at the Museum of Tropical Queensland. Perfect for curious kids and families — interactive exhibits, marine biology sessions, and live demonstrations across the day.
                 </p>
               </CardContent>
             </Card>
