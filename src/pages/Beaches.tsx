@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import SEOHead from "@/components/SEOHead";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
+import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
 
 
 const beaches = [
@@ -598,6 +599,7 @@ const Beaches = () => {
         </p>
 
       </main>
+      <FoundingPartnerCTA />
     </div>
   );
 };

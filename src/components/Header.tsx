@@ -15,6 +15,7 @@ const navLinks = [
   { to: "/events", label: "Events" },
   { to: "/local-tips", label: "Local Tips" },
   { to: "/history", label: "History" },
+  { to: "/advertise", label: "Partner With Us" },
   { to: "/contact", label: "Contact" },
 ];
 
