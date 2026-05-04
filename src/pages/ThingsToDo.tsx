@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
+import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog, Plane, UtensilsCrossed, ShoppingBag, BookOpen, Sun, Clock, Calendar, Sunrise, CloudSun, Sunset, Moon } from "lucide-react";
@@ -787,6 +788,7 @@ const ThingsToDo = () => {
 
           </div>
         </main>
+        <FoundingPartnerCTA />
       </div>
     </>
   );

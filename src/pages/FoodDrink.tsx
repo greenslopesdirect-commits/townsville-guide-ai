@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
+import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, UtensilsCrossed, Fish, Coffee, Wine, MapPin, Music } from "lucide-react";
@@ -387,6 +388,7 @@ const FoodDrink = () => {
 
           </div>
         </main>
+        <FoundingPartnerCTA />
       </div>
     </>
   );
