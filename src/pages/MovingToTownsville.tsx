@@ -16,6 +16,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import LocalInsightCard from "@/components/LocalInsightCard";
+import havenGarbuttNight from "@/assets/haven-garbutt-night.webp";
 
 const MovingToTownsville = () => {
   return (
@@ -104,6 +105,43 @@ const MovingToTownsville = () => {
                 before signing a lease.
               </p>
             </LocalInsightCard>
+          </section>
+
+          {/* Suburban Life Spotlight */}
+          <section className="space-y-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+              Suburban Life: A Local Perspective
+            </h2>
+            <div className="grid gap-6 md:grid-cols-2 items-start">
+              <figure className="space-y-2">
+                <img
+                  src={havenGarbuttNight}
+                  alt="Moonlit evening walk in The Haven development at Garbutt with Castle Hill in the background"
+                  className="rounded-lg shadow-md w-full h-auto object-cover"
+                  loading="lazy"
+                />
+                <figcaption className="text-xs text-muted-foreground italic">
+                  Quiet evening walks in the Haven development, Garbutt — featuring a moonlit view of Castle Hill.
+                </figcaption>
+              </figure>
+              <div className="space-y-4">
+                <LocalInsightCard title="The Garbutt Growth Story" variant="insight">
+                  <p>
+                    For those looking to be close to the CBD and the airport, Garbutt's newer developments
+                    like <strong>The Haven</strong> offer a quiet, secure community atmosphere. It's a prime
+                    example of Townsville's <strong>"Quiet Business"</strong> lifestyle — central enough for
+                    easy access to everything, but far enough away to enjoy a peaceful evening stroll under
+                    the light of Castle Hill.
+                  </p>
+                </LocalInsightCard>
+                <Button asChild variant="outline" size="sm">
+                  <Link to="/dog-friendly">
+                    Explore more dog-friendly walking tracks in Townsville
+                    <ArrowRight className="w-3 h-3 ml-1" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
           </section>
 
           {/* Job Market & Infrastructure */}
