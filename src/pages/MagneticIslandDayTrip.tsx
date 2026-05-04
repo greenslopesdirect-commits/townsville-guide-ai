@@ -46,6 +46,9 @@ const MagneticIslandDayTrip = () => {
       />
     <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <h1 className="text-4xl font-bold mb-4 text-center">Magnetic Island Family Day Trip</h1>
+      <p className="text-muted-foreground text-lg text-center max-w-3xl mx-auto mb-8 leading-relaxed">
+        Wondering <strong>what to do on Magnetic Island for a day</strong>? This local-verified guide walks you through the best ferry times, koala spots, swimming bays, and the perfect one-day itinerary — no fluff, just what works.
+      </p>
       
       {/* Is This Trip Right for You? */}
       <section className="mb-8">
