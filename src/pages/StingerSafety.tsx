@@ -2,6 +2,8 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
 import AirportTransferCard from "@/components/AirportTransferCard";
+import { Link } from "react-router-dom";
+import { Dog } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -48,6 +50,21 @@ const StingerSafety = () => (
           🐾 <strong>Schnauzer Approved Safety:</strong> During March, keep your dogs on the sand or in the very shallow wash-zone at off-leash beaches. Avoid letting them swim in deep open water outside of the nets at Pallarenda.
         </p>
       </div>
+    </div>
+
+    {/* Dog Beach Call-out */}
+    <div className="bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-300 dark:border-blue-700 rounded-xl p-6 mb-8">
+      <h3 className="font-bold text-xl mb-3 text-blue-800 dark:text-blue-300 flex items-center gap-2">
+        <Dog className="w-5 h-5" />
+        🐕 Taking the Dog to the Beach?
+      </h3>
+      <p className="text-blue-700 dark:text-blue-400 leading-relaxed">
+        While stingers aren't as common in the shallow wash, always keep your dogs out of the deep water during stinger season (Nov–May). See our{" "}
+        <Link to="/dog-friendly" className="font-semibold text-blue-800 dark:text-blue-300 hover:underline">
+          Dog-Friendly Beach Guide
+        </Link>{" "}
+        for the safest off-leash spots like Pallarenda.
+      </p>
     </div>
 
     {/* Autumn Tip */}

@@ -10,6 +10,18 @@ import maxQuaysideImg from "@/assets/max-quayside-crown-princess.jpg";
 
 const dogSpots = [
   {
+    name: "Pallarenda Dog Beach",
+    type: "Off-Leash Beach",
+    dogAccess: "Off-leash area available",
+    stingerNet: true,
+    description: "Our top pick for May. One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs. The stinger net keeps the swim area safe, and the off-leash zone is perfect for a game of fetch on the wet sand.",
+    features: ["Off-leash beach access", "Long sandy stretches for running", "Shallow, calm waters for swimming dogs", "Stinger net active through May", "Natural setting with mangroves nearby"],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Off+Leash+Dog+Beach",
+    badge: "🏆 May Top Pick",
+    guideLink: "/pallarenda-beach",
+    guideLinkText: "View Off-Leash Guide",
+  },
+  {
     name: "The Strand (Dog-Friendly Areas)",
     type: "Beach & Promenade",
     dogAccess: "Off-leash before 8am & after 5pm",
@@ -20,18 +32,6 @@ const dogSpots = [
     badge: "🐾 Schnauzer Approved",
     guideLink: "/the-strand",
     guideLinkText: "View Strand Guide",
-  },
-  {
-    name: "Pallarenda Dog Beach",
-    type: "Off-Leash Beach",
-    dogAccess: "Off-leash area available",
-    stingerNet: true,
-    description: "One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs. A top pick for dog swimming in Townsville.",
-    features: ["Off-leash beach access", "Long sandy stretches for running", "Shallow, calm waters for swimming dogs", "Natural setting with mangroves nearby"],
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Off+Leash+Dog+Beach",
-    badge: "🐾 Schnauzer Approved",
-    guideLink: "/pallarenda-beach",
-    guideLinkText: "View Off-Leash Guide",
   },
   {
     name: "Bushland Beach Off-Leash Area",
@@ -157,6 +157,15 @@ const DogFriendly = () => {
           {/* Beach Listings */}
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground">Dog Beaches & Off-Leash Spots</h2>
+            <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-300 dark:border-amber-700 rounded-lg p-4 mb-2">
+              <p className="text-sm text-amber-800 dark:text-amber-300 font-medium">
+                ⚠️ Safety First: During Stinger Season, stick to the wet sand for fetch. Check our{" "}
+                <Link to="/guides/stinger-safety" className="text-amber-900 dark:text-amber-200 hover:underline font-semibold">
+                  Stinger Safety Guide
+                </Link>{" "}
+                for current net status before you head out.
+              </p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
               {dogSpots.map((spot, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow border-t-4 border-t-primary flex flex-col">
