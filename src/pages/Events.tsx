@@ -11,7 +11,7 @@ const Events = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
         title="What's On in Townsville This Weekend | May 2026 Event Calendar"
-        description="Updated April 27: Jimmy Carr live, Strand Night Markets, and upcoming Cowboys home games. Your local guide to Townsville events."
+        description="Updated May 4: Cowboys vs Eels, World Science Festival QLD, and Mother's Day events. Your local guide to Townsville events."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-04-27">
-            <time dateTime="2026-04-27">Updated: April 27, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-05-04">
+            <time dateTime="2026-05-04">Updated: May 4, 2026</time>
           </span>
         </div>
       </div>
@@ -33,30 +33,28 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: May 2026 & Jimmy Carr Live
+             What's On in Townsville: May 2026
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              Coming up: <strong>Jimmy Carr</strong> live (Tomorrow!), the <strong>Strand Night Markets</strong> (Friday), the <strong>Cowboys vs Eels</strong> blockbuster (May 8), and the <strong>Dream Fields Festival</strong> on May 23!
+              Coming up: The <strong>Cowboys vs Eels</strong> blockbuster (Friday), <strong>World Science Festival</strong> (Saturday), and a massive <strong>Mother's Day Sunday</strong>!
             </p>
         </div>
 
         {/* SEO Intro Paragraph */}
         <p className="text-gray-600 max-w-3xl">
-          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from ANZAC Day commemorations and community markets to NRL home games, festivals, and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
+          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
         </p>
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (April 27 – May 3)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (May 4 – May 10)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Comedy: <strong>Jimmy Carr — Laughs Funny Tour</strong> (TECC) — Tuesday, April 28 (Tomorrow!). 7:00 PM show <strong>Sold Out</strong>; 9:30 PM tickets remain.</li>
-            <li>Markets: <strong>Strand Night Markets</strong> — Friday, May 1 (First Friday of the month). Strand Park, 5:00 PM – 9:30 PM.</li>
-            <li>Community: <strong>Mother's Day Market</strong> — Sunday, May 3. A great chance to grab a local gift early.</li>
-            <li>Footy (Away): <strong>Cowboys vs Bulldogs</strong> — Friday, May 1. Catch it live at the Cowboys Leagues Club!</li>
-            <li>May Preview: <strong>Dream Fields Festival</strong> — Sat, May 23 at Central Park feat. Galantis, Peking Duk, Mallrat & Skegss</li>
+            <li>Footy: <strong>Cowboys vs Eels (Home)</strong> — Friday, May 8. 8:00 PM kick-off at QLD Country Bank Stadium.</li>
+            <li>Science: <strong>World Science Festival QLD</strong> — Saturday, May 9. Museum of Tropical Queensland, 9:00 AM – 3:00 PM.</li>
+            <li>Mother's Day: <strong>Colour Frenzy</strong> at Riverway (8:30 AM) and the <strong>Charity Fun Run</strong> at Rossiter Park (7:00 AM) — Sunday, May 10.</li>
           </ul>
         </section>
 
@@ -88,41 +86,13 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">Featured Events</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               April–May 2026
+               May 2026
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Jimmy Carr — TOP HIGHLIGHT */}
-            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Comedy — Top Highlight (Tomorrow!)
-                  </Badge>
-                  <Laugh className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">Jimmy Carr: Laughs Funny Tour</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Tuesday, April 28, 2026 — Tomorrow!</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>TECC (Townsville Entertainment Centre)</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  The king of one-liners brings his sharp wit to North Queensland. <strong>The 7:00 PM show is Sold Out</strong> — limited <strong>9:30 PM tickets</strong> still remain. Don't miss your chance to catch one of the world's biggest comics live in Townsville.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Cowboys vs Eels — Round 10 */}
+            {/* Cowboys vs Eels — Round 10 (TOP HIGHLIGHT) */}
             <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
@@ -135,7 +105,7 @@ const Events = () => {
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, May 8 | Kick-off: 6:00 PM (Another early Friday start!)</span>
+                    <span>Friday, May 8 | Kick-off: 8:00 PM (Gates open 6:30 PM)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -145,7 +115,35 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The Cowboys host Parramatta in a Round 10 blockbuster with another <strong>early 6:00 PM Friday kick-off</strong> — plan your march across Lowths Bridge from around 5:00 PM to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                  The Cowboys host Parramatta in a Round 10 blockbuster. <strong>Heads up:</strong> Lowths Bridge closes to traffic from <strong>4:30 PM</strong> — plan your march across early to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* World Science Festival QLD */}
+            <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
+                    Science — Family Day Out
+                  </Badge>
+                  <Star className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">World Science Festival Queensland</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Saturday, May 9 | 9:00 AM – 3:00 PM</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Museum of Tropical Queensland</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  A massive day of <strong>hands-on science and turtle talks</strong> at the Museum of Tropical Queensland. Perfect for curious kids and families — interactive exhibits, marine biology sessions, and live demonstrations across the day.
                 </p>
               </CardContent>
             </Card>
@@ -525,101 +523,6 @@ const Events = () => {
            </div>
         </section>
 
-        {/* April School Holiday Archive */}
-        <section className="pt-8 border-t">
-          <div className="flex items-center gap-2 mb-2">
-            <Calendar className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">April Archive: School Holidays 2026 (April 3–19)</h2>
-          </div>
-          <p className="text-gray-600 mb-4">The school holiday period wraps up on April 19. Here's a recap of key dates and what happened during the break.</p>
-
-          {/* Key Dates */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider">Easter Long Weekend</p>
-              <p className="text-lg font-bold text-gray-900 mt-1">April 3–6 ✅</p>
-            </div>
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 text-center">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider">School Holidays</p>
-              <p className="text-lg font-bold text-gray-900 mt-1">April 3–19</p>
-            </div>
-          </div>
-
-          {/* Holiday Highlights */}
-          <h3 className="font-bold text-lg text-gray-800 mb-4">Holiday Highlights</h3>
-          <div className="grid gap-4 md:grid-cols-2 mb-6">
-            <Card>
-              <CardContent className="p-4">
-                <Badge variant="outline" className="mb-2">ANZAC Day — Recap</Badge>
-                <h4 className="font-semibold text-gray-900">ANZAC Day Commemorations (April 25)</h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  Lest We Forget. The Dawn Service kicked off at 5:20 AM at Anzac Memorial Park, followed by the ANZAC Day Parade marching down The Strand from 9:00 AM. <Link to="/the-strand" className="text-primary font-medium hover:underline">View Strand Guide →</Link>
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-4">
-                <Badge variant="outline" className="mb-2">Footy — Recap</Badge>
-                <h4 className="font-semibold text-gray-900">Cowboys vs Sharks (April 24)</h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  The Cowboys hosted Cronulla under Friday night lights at QLD Country Bank Stadium with an early 6:00 PM kick-off. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link>
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-4">
-                <Badge variant="outline" className="mb-2">Music — Recap</Badge>
-                <h4 className="font-semibold text-gray-900">Guy Sebastian: 100 Times Around the Sun (April 22)</h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  Guy Sebastian brought his national tour to TECC for a packed midweek night of hits.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-4">
-                <Badge variant="outline" className="mb-2">Footy — Recap</Badge>
-                <h4 className="font-semibold text-gray-900">Cowboys vs Manly Sea Eagles (April 16)</h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  The Cowboys hosted Manly under Thursday night lights at QLD Country Bank Stadium (kick-off 7:50 PM) — a packed house and the traditional march across Lowths Bridge. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Stadium Guide →</Link>
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-4">
-                <Badge variant="outline" className="mb-2">Wildlife</Badge>
-                <h4 className="font-semibold text-gray-900">Billabong Sanctuary — Easter Bilbies</h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  Spot the 'Easter Bilbies' and join their school holiday wildlife programs. A fantastic outing for families. <Link to="/billabong-sanctuary" className="text-primary font-medium hover:underline">View guide →</Link>
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-4">
-                <Badge variant="outline" className="mb-2">Book Early</Badge>
-                <h4 className="font-semibold text-gray-900">Great Barrier Reef & Magnetic Island Trips</h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  Boats to the reef and <Link to="/guides/magnetic-island-day-trip" className="text-primary font-medium hover:underline">Magnetic Island</Link> fill up weeks in advance for the holiday break. Book ahead to secure your spot.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Local Tip */}
-          <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start">
-            <Footprints className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
-            <div>
-              <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
-               <p className="text-amber-800 text-sm mt-1">
-                 April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. It's the best time of year for outdoor photography at our secret northern beaches like Saunders and Toolakea.
-               </p>
-            </div>
-          </div>
-        </section>
 
         {/* FAQ Section */}
         <section className="pt-8 border-t">
