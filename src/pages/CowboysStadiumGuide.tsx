@@ -232,12 +232,12 @@ const CowboysStadiumGuide = () => {
                   </li>
                 </ul>
                 <p className="text-sm text-muted-foreground italic">
-                  Buses run from 2 hours before kick-off and up to 1 hour after the final whistle.
+                  Free Park & Ride shuttle service commences at <strong>6:15 PM</strong> and runs up to 1 hour after the final whistle.
                 </p>
                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                    <span className="text-sm">⚠️</span>
                     <p className="text-amber-800 text-sm">
-                      <strong>Friday Night Alert:</strong> Even with the later <strong>8:00 PM kick-off</strong>, CBD traffic will be heavy from <strong>4:00 PM</strong> as the work week ends and fans arrive. The <strong>Lou Litster Park & Ride</strong> remains your best bet to skip the Friday afternoon gridlock entirely.
+                      <strong>Friday Night Alert:</strong> CBD traffic will be heavy from <strong>4:00 PM</strong>. The <strong>Lowths Bridge vehicle closure is at 4:30 PM</strong>, so plan your entry into the city early if you aren't using the Park & Ride. The <strong>Lou Litster Park & Ride</strong> remains your best bet to skip the Friday afternoon gridlock entirely.
                     </p>
                  </div>
               </CardContent>
