@@ -157,7 +157,7 @@ const EventsOn = () => {
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          😂 Jimmy Carr live tomorrow, Strand Night Markets Friday May 1, and Cowboys vs Eels on May 8 (early 6 PM kick-off)! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏉 Cowboys vs Eels Friday May 8 (8:00 PM kick-off), World Science Festival Saturday, and Mother's Day events Sunday! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
