@@ -10,6 +10,18 @@ import maxQuaysideImg from "@/assets/max-quayside-crown-princess.jpg";
 
 const dogSpots = [
   {
+    name: "Pallarenda Dog Beach",
+    type: "Off-Leash Beach",
+    dogAccess: "Off-leash area available",
+    stingerNet: true,
+    description: "Our top pick for May. One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs. The stinger net keeps the swim area safe, and the off-leash zone is perfect for a game of fetch on the wet sand.",
+    features: ["Off-leash beach access", "Long sandy stretches for running", "Shallow, calm waters for swimming dogs", "Stinger net active through May", "Natural setting with mangroves nearby"],
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Off+Leash+Dog+Beach",
+    badge: "🏆 May Top Pick",
+    guideLink: "/pallarenda-beach",
+    guideLinkText: "View Off-Leash Guide",
+  },
+  {
     name: "The Strand (Dog-Friendly Areas)",
     type: "Beach & Promenade",
     dogAccess: "Off-leash before 8am & after 5pm",
@@ -20,18 +32,6 @@ const dogSpots = [
     badge: "🐾 Schnauzer Approved",
     guideLink: "/the-strand",
     guideLinkText: "View Strand Guide",
-  },
-  {
-    name: "Pallarenda Dog Beach",
-    type: "Off-Leash Beach",
-    dogAccess: "Off-leash area available",
-    stingerNet: true,
-    description: "One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs. A top pick for dog swimming in Townsville.",
-    features: ["Off-leash beach access", "Long sandy stretches for running", "Shallow, calm waters for swimming dogs", "Natural setting with mangroves nearby"],
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Off+Leash+Dog+Beach",
-    badge: "🐾 Schnauzer Approved",
-    guideLink: "/pallarenda-beach",
-    guideLinkText: "View Off-Leash Guide",
   },
   {
     name: "Bushland Beach Off-Leash Area",
