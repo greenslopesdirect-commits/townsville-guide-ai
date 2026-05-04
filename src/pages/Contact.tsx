@@ -53,6 +53,9 @@ const Contact = () => {
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Have a question about Townsville? Want to list your event or correct a mistake? We'd love to hear from you.
               </p>
+              <p className="mt-4 text-base text-foreground/80 max-w-2xl mx-auto">
+                Interested in becoming a Founding Partner? Reach out below.
+              </p>
             </header>
 
             {/* Contact Card */}
