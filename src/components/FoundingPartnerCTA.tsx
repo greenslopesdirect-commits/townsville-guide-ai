@@ -18,7 +18,7 @@ const FoundingPartnerCTA = () => {
           </p>
         </div>
         <Button asChild className="flex-shrink-0">
-          <Link to="/advertise">Apply Here</Link>
+          <Link to="/contact">Apply Here</Link>
         </Button>
       </div>
     </section>
