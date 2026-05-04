@@ -11,9 +11,24 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { TreePine, Users, Clock, Heart, HelpCircle, Check, Utensils, MapPin, Car, Sun } from "lucide-react";
-import billabongImage from "@/assets/billabong-sanctuary-townsville-2.webp";
+import billabongHero from "@/assets/billabong-sanctuary4.webp";
+import billabongKangaroo from "@/assets/billabong-sanctuary3.webp";
+import billabongTurtle from "@/assets/billabong-sanctuary2.webp";
 
 const BillabongSanctuary = () => {
+  const showSchedule = [
+    { time: "09:15 AM", event: "Koala Feeding" },
+    { time: "09:30 AM", event: "Cassowary Feeding" },
+    { time: "09:45 AM", event: "Wombat Experience" },
+    { time: "11:00 AM", event: "Reptile Experience" },
+    { time: "11:30 AM", event: "Dingo Walk / Meet the Meerkats" },
+    { time: "12:00 PM", event: "Crocodile Feeding" },
+    { time: "01:00 PM", event: "Free-Flight Bird Show" },
+    { time: "01:30 PM", event: "Turtle Feeding" },
+    { time: "02:00 PM", event: "Meerkat Encounter" },
+    { time: "03:15 PM", event: "Crocodile Feeding (Final Session)" },
+  ];
+
   const faqs = [
     {
       question: "How long should I spend at Billabong Sanctuary?",
@@ -53,12 +68,12 @@ const BillabongSanctuary = () => {
 
         {/* Hero Image */}
         <img
-          src={billabongImage}
-          alt="Billabong Sanctuary Townsville wildlife park with native Australian animals"
+          src={billabongHero}
+          alt="Billabong Sanctuary Townsville entrance sign surrounded by lush palm trees"
           className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-2"
         />
         <p className="text-xs text-muted-foreground italic text-center mb-8">
-          Koala holding experience at Billabong Sanctuary — one of Townsville's most popular wildlife activities.
+          Welcome to Billabong Sanctuary — Looking lush and vibrant in May 2026.
         </p>
 
         {/* Intro */}
@@ -66,6 +81,15 @@ const BillabongSanctuary = () => {
           <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
             Billabong Sanctuary is Townsville's main wildlife park where visitors can experience native Australian animals up close, including the popular koala holding experience. Located about 20 minutes south of Townsville, it offers a relaxed bush setting focused on education, conservation and family-friendly encounters.
           </p>
+        </section>
+
+        {/* Local May 2026 Update */}
+        <section className="mb-8">
+          <LocalInsightCard title="Local Update (May 4, 2026)" variant="tip">
+            <p>
+              We visited yesterday and the park is in peak condition. The morning air is perfect for the <strong>9:45 AM Wombat experience</strong>, and the water levels are high, making the <strong>1:30 PM Turtle feeding</strong> particularly active!
+            </p>
+          </LocalInsightCard>
         </section>
 
         {/* Quick Visitor Info */}
@@ -117,18 +141,46 @@ const BillabongSanctuary = () => {
           </p>
         </section>
 
-        {/* Is It Worth Visiting */}
+        {/* Kangaroo Feeding */}
         <section className="mb-8">
           <div className="flex items-center gap-3 mb-4">
-            <Check className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl md:text-3xl font-bold">Is Billabong Sanctuary Worth Visiting?</h2>
+            <Heart className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Kangaroo Feeding</h2>
           </div>
-          <p className="text-muted-foreground leading-relaxed mb-4">
-            If you want to experience Australian wildlife without travelling far from Townsville, Billabong Sanctuary is the easiest and most reliable option.
+          <img
+            src={billabongKangaroo}
+            alt="Family feeding gentle kangaroos at Billabong Sanctuary Townsville"
+            className="rounded-xl shadow-lg w-full h-[350px] md:h-[450px] object-cover mb-2"
+          />
+          <p className="text-xs text-muted-foreground italic text-center mb-4">
+            Getting up close for a feed. The kangaroos are incredibly gentle and a highlight for kids.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            It's particularly popular with families, first-time visitors to Australia, and locals hosting friends or relatives. The relaxed bush setting, close animal encounters, and reliable koala experience make it one of Townsville's most recommended attractions.
+            The open kangaroo enclosure lets you walk among the mob and hand-feed them. It's one of the most memorable parts of the day, especially for young children visiting for the first time.
           </p>
+        </section>
+
+        {/* Show Times - May 2026 Verified */}
+        <section className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <Clock className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Show Times (May 2026 Verified)</h2>
+          </div>
+          <p className="text-sm text-muted-foreground mb-4">
+            Park open daily 9:00 AM – 4:00 PM. All experiences below are included with entry.
+          </p>
+          <Card className="border-l-4 border-primary">
+            <CardContent className="p-5">
+              <ul className="divide-y divide-border">
+                {showSchedule.map((s, i) => (
+                  <li key={i} className="flex items-center justify-between py-2.5">
+                    <span className="font-mono text-sm font-semibold text-primary">{s.time}</span>
+                    <span className="text-sm text-muted-foreground text-right">{s.event}</span>
+                  </li>
+                ))}
+              </ul>
+            </CardContent>
+          </Card>
         </section>
 
         {/* Koala Holding Experience */}
@@ -163,6 +215,25 @@ const BillabongSanctuary = () => {
               </ul>
             </CardContent>
           </Card>
+        </section>
+
+        {/* Turtle Feeding */}
+        <section className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <TreePine className="w-6 h-6 text-primary" />
+            <h2 className="text-2xl md:text-3xl font-bold">Turtle Feeding</h2>
+          </div>
+          <img
+            src={billabongTurtle}
+            alt="Child feeding freshwater turtles by the billabong at Billabong Sanctuary"
+            className="rounded-xl shadow-lg w-full h-[350px] md:h-[450px] object-cover mb-2"
+          />
+          <p className="text-xs text-muted-foreground italic text-center mb-4">
+            A local secret: The turtle feeding is interactive and a fantastic experience for young explorers.
+          </p>
+          <p className="text-muted-foreground leading-relaxed">
+            Down by the main billabong, kids can hand-feed dozens of freshwater turtles right at the water's edge. It's a quieter, hands-on moment that often becomes the favourite memory of the day.
+          </p>
         </section>
 
         {/* Local Tips */}
