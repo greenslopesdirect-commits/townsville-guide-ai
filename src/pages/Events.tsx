@@ -33,30 +33,28 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: May 2026 & Jimmy Carr Live
+             What's On in Townsville: May 2026
            </h1>
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              Coming up: <strong>Jimmy Carr</strong> live (Tomorrow!), the <strong>Strand Night Markets</strong> (Friday), the <strong>Cowboys vs Eels</strong> blockbuster (May 8), and the <strong>Dream Fields Festival</strong> on May 23!
+              Coming up: The <strong>Cowboys vs Eels</strong> blockbuster (Friday), <strong>World Science Festival</strong> (Saturday), and a massive <strong>Mother's Day Sunday</strong>!
             </p>
         </div>
 
         {/* SEO Intro Paragraph */}
         <p className="text-gray-600 max-w-3xl">
-          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from ANZAC Day commemorations and community markets to NRL home games, festivals, and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
+          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
         </p>
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (April 27 – May 3)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (May 4 – May 10)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Comedy: <strong>Jimmy Carr — Laughs Funny Tour</strong> (TECC) — Tuesday, April 28 (Tomorrow!). 7:00 PM show <strong>Sold Out</strong>; 9:30 PM tickets remain.</li>
-            <li>Markets: <strong>Strand Night Markets</strong> — Friday, May 1 (First Friday of the month). Strand Park, 5:00 PM – 9:30 PM.</li>
-            <li>Community: <strong>Mother's Day Market</strong> — Sunday, May 3. A great chance to grab a local gift early.</li>
-            <li>Footy (Away): <strong>Cowboys vs Bulldogs</strong> — Friday, May 1. Catch it live at the Cowboys Leagues Club!</li>
-            <li>May Preview: <strong>Dream Fields Festival</strong> — Sat, May 23 at Central Park feat. Galantis, Peking Duk, Mallrat & Skegss</li>
+            <li>Footy: <strong>Cowboys vs Eels (Home)</strong> — Friday, May 8. 8:00 PM kick-off at QLD Country Bank Stadium.</li>
+            <li>Science: <strong>World Science Festival QLD</strong> — Saturday, May 9. Museum of Tropical Queensland, 9:00 AM – 3:00 PM.</li>
+            <li>Mother's Day: <strong>Colour Frenzy</strong> at Riverway (8:30 AM) and the <strong>Charity Fun Run</strong> at Rossiter Park (7:00 AM) — Sunday, May 10.</li>
           </ul>
         </section>
 
