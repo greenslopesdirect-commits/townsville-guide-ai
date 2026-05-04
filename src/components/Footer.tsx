@@ -99,7 +99,7 @@ const Footer = () => {
               <li><Link to="/cowboys-stadium-guide" className="hover:text-primary transition-colors">Cowboys Game Day</Link></li>
               <li><Link to="/north-shore-townsville" className="hover:text-primary transition-colors">North Shore Guide</Link></li>
               <li><Link to="/moving-to-townsville" className="hover:text-primary transition-colors">Moving to Townsville Guide</Link></li>
-              <li><Link to="/advertise" className="hover:text-primary transition-colors">Advertise With Us</Link></li>
+              <li><Link to="/advertise" className="hover:text-primary transition-colors">Partner With Us</Link></li>
             </ul>
           </div>
 
