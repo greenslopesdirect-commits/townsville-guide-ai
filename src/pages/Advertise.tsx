@@ -1,8 +1,12 @@
 import { Helmet } from "react-helmet";
+import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Handshake, CalendarPlus, Store, Sparkles, Mail, MapPin } from "lucide-react";
+import { Handshake, CalendarPlus, Store, Sparkles, Mail, MapPin, Copy, Check } from "lucide-react";
+import { toast } from "sonner";
+
+const EMAIL = "hello@myaussieguide.com.au";
 
 const Advertise = () => {
   return (
