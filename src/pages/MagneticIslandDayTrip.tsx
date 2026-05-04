@@ -46,6 +46,9 @@ const MagneticIslandDayTrip = () => {
       />
     <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <h1 className="text-4xl font-bold mb-4 text-center">Magnetic Island Family Day Trip</h1>
+      <p className="text-muted-foreground text-lg text-center max-w-3xl mx-auto mb-8 leading-relaxed">
+        Wondering <strong>what to do on Magnetic Island for a day</strong>? This local-verified guide walks you through the best ferry times, koala spots, swimming bays, and the perfect one-day itinerary — no fluff, just what works.
+      </p>
       
       {/* Is This Trip Right for You? */}
       <section className="mb-8">
@@ -174,6 +177,25 @@ const MagneticIslandDayTrip = () => {
             </CardContent>
           </Card>
         </div>
+      </section>
+
+      {/* The Perfect 1-Day Itinerary */}
+      <section className="mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">The Perfect 1-Day Magnetic Island Itinerary</h2>
+        <p className="text-muted-foreground mb-4 leading-relaxed">
+          Short on time? Here's how locals tackle Magnetic Island in a single day — from the first ferry to the sunset return.
+        </p>
+        <ul className="space-y-4">
+          <li className="bg-muted/30 rounded-lg p-4">
+            <strong className="text-foreground">🌅 Morning:</strong> Catch the <strong>8:00 AM ferry</strong>, grab breakfast at <strong>Nelly Bay</strong>, then tackle the <strong>Forts Walk</strong> for koala spotting while it's still cool.
+          </li>
+          <li className="bg-muted/30 rounded-lg p-4">
+            <strong className="text-foreground">🏖️ Midday:</strong> Head to <strong>Horseshoe Bay</strong> for lunch and a swim inside the stinger nets. During stinger season, check our <Link to="/stinger-safety" className="text-primary font-medium hover:underline">Stinger Safety Guide</Link> before getting in the water.
+          </li>
+          <li className="bg-muted/30 rounded-lg p-4">
+            <strong className="text-foreground">🦘 Afternoon:</strong> <strong>Rock wallaby feeding at Geoffrey Bay</strong> around <strong>4:00 PM</strong>, then catch the sunset ferry back to Townsville.
+          </li>
+        </ul>
       </section>
 
       {/* How to Spot Wild Koalas */}
