@@ -216,7 +216,7 @@ For the full calendar, check the **[Events Page](/events)**!`);
                 <Input
                     id="townsville-ai-input"
                     type="text"
-                    placeholder="Ask me: 'When is Jimmy Carr at TECC?' or 'Best parking for the Cowboys vs Eels game?'"
+                    placeholder="Ask me: 'Best parking for the Cowboys vs Eels game?' or 'What's on for Mother's Day?'"
                     className="h-16 pl-14 pr-16 text-lg rounded-full bg-white/95 border-2 border-white/20 shadow-xl focus-visible:ring-yellow-400 text-slate-900 placeholder:text-slate-400"
                     value={aiInputValue}
                     onChange={e => setAiInputValue(e.target.value)}
