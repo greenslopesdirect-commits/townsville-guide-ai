@@ -16,6 +16,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import LocalInsightCard from "@/components/LocalInsightCard";
+import havenGarbuttNight from "@/assets/haven-garbutt-night.webp";
 
 const MovingToTownsville = () => {
   return (
