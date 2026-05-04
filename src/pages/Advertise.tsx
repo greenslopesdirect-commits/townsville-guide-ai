@@ -8,8 +8,8 @@ const Advertise = () => {
   return (
     <>
       <SEOHead
-        title="Founding Partners - My Aussie Guide Townsville"
-        description="Grow with Townsville's independent voice. Apply to become a Founding Partner during our May 2026 Dry Season surge — complimentary listings for select local businesses."
+        title="Partner With Us | My Aussie Guide Townsville"
+        description="Grow your Townsville business with My Aussie Guide. Apply for a Founding Partner listing and reach locals and tourists looking for the best cafes, tours, and accommodation in North Queensland."
         canonical="https://www.myaussieguide.com.au/advertise"
       />
       <Helmet>
