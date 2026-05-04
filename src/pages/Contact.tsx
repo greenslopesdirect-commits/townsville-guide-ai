@@ -1,8 +1,25 @@
 import { Helmet } from "react-helmet";
+import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
-import { Mail, Calendar, AlertCircle, Handshake } from "lucide-react";
+import { Mail, Calendar, AlertCircle, Handshake, Copy, Check } from "lucide-react";
+import { toast } from "sonner";
+
+const EMAIL = "hello@myaussieguide.com.au";
 
 const Contact = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      toast.success("Email copied to clipboard");
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      toast.error("Could not copy. Please copy manually.");
+    }
+  };
+
   return (
     <>
       <SEOHead
@@ -47,12 +64,22 @@ const Contact = () => {
                 <p className="text-sm text-muted-foreground uppercase tracking-wide mb-2">
                   General Enquiries & Event Listings
                 </p>
-                <a 
-                  href="mailto:hello@myaussieguide.com.au"
-                  className="text-2xl md:text-3xl font-semibold text-primary hover:underline transition-colors"
-                >
-                  hello@myaussieguide.com.au
-                </a>
+                <div className="flex flex-wrap items-center justify-center gap-3">
+                  <a
+                    href={`mailto:${EMAIL}`}
+                    className="text-xl sm:text-2xl md:text-3xl font-semibold text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors break-all"
+                  >
+                    {EMAIL}
+                  </a>
+                  <button
+                    type="button"
+                    onClick={handleCopy}
+                    aria-label="Copy email address to clipboard"
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors shrink-0"
+                  >
+                    {copied ? <Check className="w-4 h-4 text-primary" /> : <Copy className="w-4 h-4" />}
+                  </button>
+                </div>
               </div>
             </section>
 
