@@ -147,7 +147,7 @@ const Index = () => {
             <div>
               <h3 className="font-bold text-amber-900 dark:text-amber-200 text-base sm:text-lg">Did You Know?</h3>
               <p className="text-amber-800 dark:text-amber-300 text-sm sm:text-base mt-1 leading-relaxed">
-                <strong>May 3:</strong> Check out the <strong>Woodstock Nationals Drag Racing</strong> for a high-octane Sunday out, or visit the <strong>Museum of Tropical Queensland</strong> for the "Born or Built?" robotics exhibit — perfect for a shaded family afternoon.
+                <strong>May 10:</strong> Celebrate Mother's Day with a sunrise walk at <strong>Rossiter Park</strong> or the <strong>Colour Frenzy at Riverway</strong> — both are great local traditions.
               </p>
             </div>
           </div>
