@@ -118,7 +118,7 @@ const Index = () => {
         <div className="container mx-auto px-4 max-w-4xl py-8">
            <LocalInsightCard title="Welcome to the Dry Season" variant="insight">
                <p>
-                 Townsville has officially transitioned into the <strong>Dry Season</strong>. Expect crisp morning breezes, lower humidity, and a packed May events calendar. Whether you are here for <strong>Jimmy Carr (Tomorrow!)</strong>, the <strong>Cowboys vs Eels blockbuster (May 8)</strong>, or a Magnetic Island escape, we have the local intel you need.
+                 Townsville is in the swing of the <strong>Dry Season</strong>. Expect crisp morning breezes, lower humidity, and a packed May events calendar. Whether you are here for the <strong>Cowboys vs Eels blockbuster (May 8)</strong>, the <strong>World Science Festival (May 9)</strong>, or <strong>Mother's Day (May 10)</strong>, we have the local intel you need.
                  Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
                </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
@@ -147,7 +147,7 @@ const Index = () => {
             <div>
               <h3 className="font-bold text-amber-900 dark:text-amber-200 text-base sm:text-lg">Did You Know?</h3>
               <p className="text-amber-800 dark:text-amber-300 text-sm sm:text-base mt-1 leading-relaxed">
-                <strong>May 3:</strong> Check out the <strong>Woodstock Nationals Drag Racing</strong> for a high-octane Sunday out, or visit the <strong>Museum of Tropical Queensland</strong> for the "Born or Built?" robotics exhibit — perfect for a shaded family afternoon.
+                <strong>May 10:</strong> Celebrate Mother's Day with a sunrise walk at <strong>Rossiter Park</strong> or the <strong>Colour Frenzy at Riverway</strong> — both are great local traditions.
               </p>
             </div>
           </div>
@@ -182,17 +182,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: April 27, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: May 4, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                May is the <strong>"Best of Townsville"</strong> window. Heading to the <strong>Cowboys vs Eels game on May 8</strong>? Book your post-game dinner at The Ville early — the atmosphere is unmatched on Friday nights.
+                Heading to the <strong>Cowboys vs Eels game on May 8</strong>? The CBD will be busy from late afternoon. Plan to walk across <strong>Lowths Bridge before the 4:30 PM closure</strong> if you're parking in the city.
               </p>
             </div>
 
             {/* Friday Night Footy Local Tip */}
             <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-300 dark:border-blue-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-blue-800 dark:text-blue-300 font-medium leading-relaxed">
-                🏉 Heads-Up Friday May 8: Cowboys vs Eels at QCB Stadium has an <strong>early 6:00 PM kick-off</strong> — the CBD will be busy from late afternoon. Plan parking, dinner bookings and your walk across Lowths Bridge before 5:00 PM.
+                🏉 Heads-Up Friday May 8: Cowboys vs Eels at QCB Stadium — <strong>8:00 PM kick-off</strong> (gates open 6:30 PM). Lowths Bridge closes at <strong>4:30 PM</strong>, so plan parking, dinner bookings and your walk across early.
               </p>
             </div>
           </div>

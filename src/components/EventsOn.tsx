@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Calendar, ArrowRight, MapPin, Clock, Music, Laugh, Star } from "lucide-react";
+import { Calendar, ArrowRight, MapPin, Clock, Music, Laugh, Star, Trophy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -36,14 +36,14 @@ const EventsOn = () => {
                         May 2026 Highlights
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
-                    <p className="text-blue-100 font-medium">Comedy, markets, footy & festivals</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">😂 Jimmy Carr: Tue April 28 — Tomorrow Night!</p>
+                    <p className="text-blue-100 font-medium">Footy, science, markets & Mother's Day</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏉 Cowboys vs Eels — Friday May 8, 8:00 PM</p>
                      <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">Dry Season Is Here</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
                         <MapPin className="w-4 h-4" />
-                        <span>The Strand, TECC, QLD Country Bank Stadium & citywide</span>
+                        <span>The Strand, MTQ, Riverway & QLD Country Bank Stadium</span>
                      </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ const EventsOn = () => {
             <div className="lg:col-span-3 p-8 flex flex-col justify-center">
                 <div className="prose prose-slate mb-6">
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        From <strong>Jimmy Carr</strong> live at TECC tomorrow and the first <strong>Strand Night Markets</strong> of the Dry Season, to the <strong>Cowboys vs Eels</strong> Round 10 blockbuster (May 8) and the <strong>Dream Fields Festival</strong> on May 23 —
+                        From the <strong>Cowboys vs Eels</strong> Round 10 blockbuster (Friday May 8, 8:00 PM kick-off) to the <strong>World Science Festival QLD</strong> at the Museum of Tropical Queensland (Saturday May 9), and a massive <strong>Mother's Day Sunday</strong> with the Colour Frenzy at Riverway and the Charity Fun Run at Rossiter Park —
                         there's always something happening in Townsville.
                     </p>
                 </div>
@@ -64,7 +64,7 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Updated April 27, 2026.
+                        Updated May 4, 2026.
                     </span>
                 </div>
             </div>
@@ -77,50 +77,14 @@ const EventsOn = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
             
-            {/* Card 1 — Jimmy Carr (Tomorrow Night) */}
-            <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-orange-500 border-slate-200">
-                <CardContent className="p-6">
-                    <div className="flex justify-between items-start mb-4">
-                        <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Tomorrow Night
-                        </div>
-                        <Laugh className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
-                    </div>
-                    <h4 className="text-lg font-bold mb-2">Jimmy Carr Live at TECC</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Tuesday, April 28</p>
-                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> TECC (Townsville Entertainment Centre)
-                    </div>
-                    <p className="text-xs text-slate-500 mt-2">😂 Limited tickets remain for the late show.</p>
-                </CardContent>
-            </Card>
-
-            {/* Card 2 — Strand Night Markets (Friday May 1) */}
-            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
-                <CardContent className="p-6">
-                    <div className="flex justify-between items-start mb-4">
-                        <div className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Friday — May 1
-                        </div>
-                        <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
-                    </div>
-                    <h4 className="text-lg font-bold mb-2">Strand Night Markets</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Friday, May 1 • 5:00 PM – 9:30 PM</p>
-                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Strand Park, North Ward
-                    </div>
-                    <p className="text-xs text-slate-500 mt-2">🌅 The first markets of the Dry Season!</p>
-                </CardContent>
-            </Card>
-
-            {/* Card 3 — Cowboys vs Eels (May 8) */}
-            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+            {/* Card 1 — Cowboys vs Eels (May 8) */}
+            <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-blue-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
                             May 8 — Round 10
                         </div>
-                        <Calendar className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                        <Trophy className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Cowboys vs Eels (Home)</h4>
                     <p className="text-xs text-primary font-medium mb-1">Friday, May 8</p>
@@ -128,8 +92,45 @@ const EventsOn = () => {
                         <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> Early kick-off: 6:00 PM
+                        <Clock className="w-4 h-4" /> Kick-off: 8:00 PM
                     </div>
+                    <p className="text-xs text-slate-500 mt-2">🚧 Lowths Bridge closes at 4:30 PM.</p>
+                </CardContent>
+            </Card>
+
+            {/* Card 2 — World Science Festival QLD (May 9) */}
+            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+                <CardContent className="p-6">
+                    <div className="flex justify-between items-start mb-4">
+                        <div className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Saturday — May 9
+                        </div>
+                        <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2">World Science Festival QLD</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, May 9 • 9:00 AM – 3:00 PM</p>
+                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                        <MapPin className="w-4 h-4" /> Museum of Tropical Queensland
+                    </div>
+                    <p className="text-xs text-slate-500 mt-2">🔬 Community Day — free family fun!</p>
+                </CardContent>
+            </Card>
+
+            {/* Card 3 — Mother's Day (May 10) */}
+            <Card className="hover:shadow-lg transition-all cursor-pointer group border-slate-200">
+                <CardContent className="p-6">
+                    <div className="flex justify-between items-start mb-4">
+                        <div className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Sunday — May 10
+                        </div>
+                        <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2">Mother's Day in Townsville</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Sunday, May 10</p>
+                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                        <MapPin className="w-4 h-4" /> Riverway & Rossiter Park
+                    </div>
+                    <p className="text-xs text-slate-500 mt-2">💐 Colour Frenzy at Riverway (8:30 AM) & Charity Fun Run at Rossiter Park (7:00 AM).</p>
                 </CardContent>
             </Card>
 
@@ -156,7 +157,7 @@ const EventsOn = () => {
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          😂 Jimmy Carr live tomorrow, Strand Night Markets Friday May 1, and Cowboys vs Eels on May 8 (early 6 PM kick-off)! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏉 Cowboys vs Eels Friday May 8 (8:00 PM kick-off), World Science Festival Saturday, and Mother's Day events Sunday! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
