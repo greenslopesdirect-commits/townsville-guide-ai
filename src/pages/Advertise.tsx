@@ -119,8 +119,24 @@ const Advertise = () => {
                 <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
                   Founding Partner spots are limited and curated personally by Duncan Ross to keep the guide authentic and hyper-local. Reach out to start the conversation.
                 </p>
+                <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+                  <a
+                    href={`mailto:${EMAIL}`}
+                    className="text-xl sm:text-2xl font-semibold text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors break-all"
+                  >
+                    {EMAIL}
+                  </a>
+                  <button
+                    type="button"
+                    onClick={handleCopy}
+                    aria-label="Copy email address to clipboard"
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors shrink-0"
+                  >
+                    {copied ? <Check className="w-4 h-4 text-primary" /> : <Copy className="w-4 h-4" />}
+                  </button>
+                </div>
                 <Button size="lg" asChild>
-                  <Link to="/contact">Apply for a Founding Partner Listing</Link>
+                  <a href={`mailto:${EMAIL}?subject=Founding%20Partner%20Application`}>Email Duncan to Apply</a>
                 </Button>
                 <div className="mt-8">
                   <Button variant="outline" size="lg" asChild>
