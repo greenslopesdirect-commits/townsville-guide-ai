@@ -9,6 +9,18 @@ import { toast } from "sonner";
 const EMAIL = "hello@myaussieguide.com.au";
 
 const Advertise = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      toast.success("Email copied to clipboard");
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      toast.error("Could not copy. Please copy manually.");
+    }
+  };
   return (
     <>
       <SEOHead
