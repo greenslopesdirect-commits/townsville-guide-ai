@@ -180,7 +180,7 @@ const DogFriendly = () => {
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
                     <strong className="text-foreground">May Local Tip:</strong> The elevated boardwalks at Jezzine Barracks are paved, shaded by Norfolk pines, and catch the evening sea breeze. Ideal for an on-leash sunset stroll with your dog before dinner on Gregory Street.
                   </p>
-                  <Link to="/jezzine-barracks" className="text-sm font-medium text-primary hover:underline inline-flex items-center gap-1">
+                  <Link to="/guides/jezzine-barracks" className="text-sm font-medium text-primary hover:underline inline-flex items-center gap-1">
                     View Jezzine Guide <ArrowRight className="w-3 h-3" />
                   </Link>
                 </CardContent>

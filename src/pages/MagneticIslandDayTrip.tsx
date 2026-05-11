@@ -190,7 +190,7 @@ const MagneticIslandDayTrip = () => {
             <strong className="text-foreground">🌅 Morning:</strong> Catch the <strong>8:00 AM ferry</strong>, grab breakfast at <strong>Nelly Bay</strong>, then tackle the <strong>Forts Walk</strong> for koala spotting while it's still cool.
           </li>
           <li className="bg-muted/30 rounded-lg p-4">
-            <strong className="text-foreground">🏖️ Midday:</strong> Head to <strong>Horseshoe Bay</strong> for lunch and a swim inside the stinger nets. During stinger season, check our <Link to="/stinger-safety" className="text-primary font-medium hover:underline">Stinger Safety Guide</Link> before getting in the water.
+            <strong className="text-foreground">🏖️ Midday:</strong> Head to <strong>Horseshoe Bay</strong> for lunch and a swim inside the stinger nets. During stinger season, check our <Link to="/guides/stinger-safety" className="text-primary font-medium hover:underline">Stinger Safety Guide</Link> before getting in the water.
           </li>
           <li className="bg-muted/30 rounded-lg p-4">
             <strong className="text-foreground">🦘 Afternoon:</strong> <strong>Rock wallaby feeding at Geoffrey Bay</strong> around <strong>4:00 PM</strong>, then catch the sunset ferry back to Townsville.
