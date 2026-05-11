@@ -95,7 +95,7 @@ const FoodDrink = () => {
       aiPrompt: "Tell me about the menu, price range, and vibe at Juliette's Gelateria.",
       subtitle: "Gelato & Coffee",
        badge: "🐾 Schnauzer Approved",
-       badgeNote: "Perfect for a post-walk treat on The Strand (Water bowls available). Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
+       badgeNote: "Shaded outdoor seating and water bowls make this a top pick for your post-walk cooldown with the pup. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
        dogGuideLink: true
     },
     {
