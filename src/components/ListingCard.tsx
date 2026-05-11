@@ -19,6 +19,7 @@ interface ListingCardProps {
   guideLinkText?: string;
   badge?: string;
   badgeNote?: string;
+  accessibilityNote?: string;
 }
 
 const ListingCard = ({ 
