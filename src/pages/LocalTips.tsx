@@ -3,7 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Lightbulb, Sun, Waves, Car, Dog, CloudRain, MapPin, ThermometerSun, Shield, Calendar, AlertTriangle } from "lucide-react";
+import { ArrowLeft, Lightbulb, Sun, Waves, Car, Dog, CloudRain, MapPin, ThermometerSun, Shield, Calendar, AlertTriangle, Accessibility } from "lucide-react";
 import { triggerAiGuide, AI_PRESETS } from "@/utils/aiGuide";
 
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
