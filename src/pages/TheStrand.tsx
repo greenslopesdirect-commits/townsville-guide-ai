@@ -29,10 +29,14 @@ const TheStrand = () => {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
             The Strand
           </h1>
+          <p className="text-sm text-gray-500">Updated: May 11, 2026</p>
           <p className="text-xl text-gray-600 max-w-2xl">
-            2.2km of tropical foreshore. It's not just a beach; it's the city's living room. 
+            2.2km of tropical foreshore. It's not just a beach; it's the city's living room.
             From the <strong>Rockpool</strong> to the <strong>Water Park</strong>, here is how to do The Strand like a local.
           </p>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-900">
+            ☀️ <strong>May 11 Update:</strong> The 'Perfect Dry' has arrived. With 26°C days and clear water, it's the best time of year for a Strand walk. Note: Stinger nets are in their final month of operation—stay safe and swim inside the enclosures.
+          </div>
         </div>
 
         {/* Hero Image */}
@@ -70,9 +74,27 @@ const TheStrand = () => {
         {/* Current Status - Critical for Tourists */}
         <Alert className="bg-amber-50 border-amber-200">
           <AlertTriangle className="h-4 w-4 text-amber-600" />
-          <AlertTitle className="text-amber-800 font-semibold">Stinger Season is Active (Nov – May)</AlertTitle>
+          <AlertTitle className="text-amber-800 font-semibold">Final Month of Stinger Season (Nov – May)</AlertTitle>
           <AlertDescription className="text-amber-700 mt-1">
-            Do not swim in the open ocean. Only swim inside the <strong>Stinger Nets</strong> (located near the Surf Club and Gregory St) or in the <strong>Rockpool</strong>.
+            Final month of stinger season! The nets are still in and essential. Visibility is at 100%, but the stingers are still there—don't risk the open water yet. Only swim inside the <strong>Stinger Nets</strong> (near the Surf Club and Gregory St) or in the <strong>Rockpool</strong>.
+          </AlertDescription>
+        </Alert>
+
+        {/* Footy Alert */}
+        <Alert className="bg-blue-50 border-blue-200">
+          <AlertTriangle className="h-4 w-4 text-blue-600" />
+          <AlertTitle className="text-blue-900 font-semibold">🏟️ Footy Alert (May 16 & 24)</AlertTitle>
+          <AlertDescription className="text-blue-800 mt-1">
+            With the Cowboys away for Magic Round this weekend (May 16), Strand bars like The Seaview and Longboard will be the prime spots for watch parties. Looking ahead: For the Rabbitohs game (Sunday, May 24), expect parking along the Strand to be tighter than usual as fans head in early for a pre-game beach walk.
+          </AlertDescription>
+        </Alert>
+
+        {/* Night Markets */}
+        <Alert className="bg-emerald-50 border-emerald-200">
+          <Info className="h-4 w-4 text-emerald-700" />
+          <AlertTitle className="text-emerald-900 font-semibold">🌙 Strand Night Markets</AlertTitle>
+          <AlertDescription className="text-emerald-800 mt-1">
+            The May markets were a blast! The next Strand Night Markets are scheduled for <strong>Friday, June 5</strong>. Mark your calendar for the first Friday of the month.
           </AlertDescription>
         </Alert>
 
@@ -109,7 +131,7 @@ const TheStrand = () => {
                   A man-made saltwater lagoon. Safe from stingers year-round. Gentle sloping entry makes it perfect for toddlers.
                 </p>
                 <div className="bg-blue-50 p-3 rounded-md text-xs text-blue-800">
-                  <strong>Local Tip:</strong> Usually closed on <span className="font-bold">Wednesdays</span> for cleaning.
+                  <strong>Local Tip:</strong> Closed every <span className="font-bold">Wednesday</span> for cleaning. <em>May Update: The water is crisp and clear—ideal for a morning lap before the UV peaks.</em>
                 </div>
               </CardContent>
             </Card>
@@ -138,7 +160,7 @@ const TheStrand = () => {
                   Freshwater playground. The "Big Bucket" drops every few minutes. Surrounded by BBQ areas and grass.
                 </p>
                 <div className="bg-purple-50 p-3 rounded-md text-xs text-purple-800">
-                  <strong>Local Tip:</strong> Usually closed on <span className="font-bold">Tuesdays</span> for maintenance.
+                  <strong>Local Tip:</strong> May–October Schedule: <span className="font-bold">8:00 AM – 5:00 PM</span>. Closed every <span className="font-bold">Tuesday</span> for scheduled maintenance.
                 </div>
               </CardContent>
             </Card>
@@ -149,7 +171,7 @@ const TheStrand = () => {
               <div>
                 <p className="font-medium text-sm text-foreground">Tropical Tip: The 2kg Overhead Hazard</p>
                 <p className="text-xs text-muted-foreground mt-1">
-                  While the palms in Anzac Memorial Park and along The Strand provide the best shade in town, locals know to do a quick "overhead check." As the Dry Season breezes pick up in April and May, falling coconuts become a genuine risk. Before you set up your picnic rug or beach chair near the playground, look up! A falling coconut can weigh over 2kg—it is a sure way to ruin a perfectly good Sunday.
+                  As the Dry Season breezes pick up this week, keep an eye out for falling coconuts near the picnic tables at Strand Park and the palms in Anzac Memorial Park. Those 2kg hazards are no joke when the wind kicks in—do a quick "overhead check" before you set up your picnic rug or beach chair.
                 </p>
               </div>
             </div>
@@ -247,6 +269,22 @@ const TheStrand = () => {
                 <span className="text-gray-600">Plenty. The path is lined with huge Fig and Palm trees. Great for walking even at midday.</span>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Dog-Friendly Strand Tip */}
+        <section className="space-y-3">
+          <h2 className="text-2xl font-bold text-foreground">🐾 Dog-Friendly Strand Tip (May 11)</h2>
+          <div className="p-4 rounded-lg bg-jade/10 border border-jade/30 text-sm text-foreground">
+            The cooler 20°C mornings are perfect for the full 2.2km length of The Strand. Remember: Dogs must be on-leash on the main path. If you're looking for an off-leash run, head to the northern end of <Link to="/pallarenda-beach" className="text-primary hover:underline font-medium">Pallarenda</Link> where the low-tide sand flats are massive this week.
+          </div>
+        </section>
+
+        {/* Seasonal Photography Tip */}
+        <section className="space-y-3">
+          <h2 className="text-2xl font-bold text-foreground">📸 May Photography Tip</h2>
+          <div className="p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm text-amber-900">
+            <strong>Sunset vs. Sunrise:</strong> In May, the sun rises directly over Cleveland Bay, making for incredible silhouette shots of the pier. Sunset is best captured from the Jezzine Barracks end, looking back across the Strand toward the Port.
           </div>
         </section>
 
