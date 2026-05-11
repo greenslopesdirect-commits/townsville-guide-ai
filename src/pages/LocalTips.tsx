@@ -27,7 +27,7 @@ const LocalTips = () => {
     {
       title: "Staying Safe in the Heat",
       icon: <ThermometerSun className="w-6 h-6" />,
-      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. April 27 Alert: UV Index is Extreme (11+). Crisp 26°C mornings — but stay hydrated and SPF up by 10am.",
+      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. May 11 Alert: The air feels cooler, but hydration is still key. If you're hiking the Goat Track, finish before 9:00 AM to avoid the UV spike (11+).",
       tips: [
         "Walk Castle Hill at sunrise or sunset only",
         "Carry at least 1L water per person",
