@@ -11,7 +11,7 @@ const Events = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
         title="What's On in Townsville This Weekend | May 2026 Event Calendar"
-        description="Updated May 4: Cowboys vs Eels, World Science Festival QLD, and Mother's Day events. Your local guide to Townsville events."
+        description="Updated May 11: Caravan & 4x4 Expo, Dream Fields Festival, and the Cowboys' Magic Round watch party. Your local guide to Townsville events."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-05-04">
-            <time dateTime="2026-05-04">Updated: May 4, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-05-11">
+            <time dateTime="2026-05-11">Updated: May 11, 2026</time>
           </span>
         </div>
       </div>
@@ -39,7 +39,7 @@ const Events = () => {
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              Coming up: The <strong>Cowboys vs Eels</strong> blockbuster (Friday), <strong>World Science Festival</strong> (Saturday), and a massive <strong>Mother's Day Sunday</strong>!
+              Coming up: The massive <strong>Caravan & 4x4 Expo</strong> (this weekend), <strong>Dream Fields Festival</strong> (May 23), and the <strong>Cowboys' Magic Round watch party</strong>!
             </p>
         </div>
 
@@ -50,11 +50,11 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (May 4 – May 10)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (May 11 – May 17)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Footy: <strong>Cowboys vs Eels (Home)</strong> — Friday, May 8. 8:00 PM kick-off at QLD Country Bank Stadium.</li>
-            <li>Science: <strong>World Science Festival QLD</strong> — Saturday, May 9. Museum of Tropical Queensland, 9:00 AM – 3:00 PM.</li>
-            <li>Mother's Day: <strong>Colour Frenzy</strong> at Riverway (8:30 AM) and the <strong>Charity Fun Run</strong> at Rossiter Park (7:00 AM) — Sunday, May 10.</li>
+            <li>Expo: <strong>Townsville Caravan, 4x4 & Outdoor Adventure Expo</strong> — Friday 15 to Sunday 17 May at Reid Park Complex. Check out the latest 2026 caravans, 4x4 gear, and camping tech.</li>
+            <li>Markets: <strong>Mundingburra Markets</strong> — Sunday, May 17. A great local Sunday morning for fresh produce and crafts.</li>
+            <li>Footy: <strong>NRL Magic Round — Cowboys vs Roosters</strong> (Away at Suncorp). Sat 16 May, 5:30 PM kick-off. Ideal for local sports bars and watch parties.</li>
           </ul>
         </section>
 
@@ -92,48 +92,48 @@ const Events = () => {
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Cowboys vs Eels — Round 10 (TOP HIGHLIGHT) */}
-            <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
+            {/* Caravan & 4x4 Expo (TOP HIGHLIGHT) */}
+            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                    Footy — Round 10 Home Game
+                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
+                    Expo — This Weekend
                   </Badge>
-                  <Trophy className="w-5 h-5 text-gray-400" />
+                  <Star className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Round 10: Cowboys vs Parramatta Eels (Home)</CardTitle>
+                <CardTitle className="text-xl mt-2">Townsville Caravan, 4x4 & Outdoor Adventure Expo</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, May 8 | Kick-off: 8:00 PM (Gates open 6:30 PM)</span>
+                    <span>Friday 15 – Sunday 17 May 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>QLD Country Bank Stadium</span>
+                    <span>Reid Park Complex, Townsville</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The Cowboys host Parramatta in a Round 10 blockbuster. <strong>Heads up:</strong> Lowths Bridge closes to traffic from <strong>4:30 PM</strong> — plan your march across early to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                  The biggest outdoor adventure event of the year. Check out the latest <strong>2026 caravans, 4x4 gear, and camping tech</strong> from leading Aussie brands — plus live demos and family-friendly displays across the weekend.
                 </p>
               </CardContent>
             </Card>
 
-            {/* World Science Festival QLD */}
+            {/* Born or Built? Closing Soon */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Science — Family Day Out
+                    Closing Soon — Last Chance
                   </Badge>
                   <Star className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">World Science Festival Queensland</CardTitle>
+                <CardTitle className="text-xl mt-2">"Born or Built? Our Robotic Future"</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, May 9 | 9:00 AM – 3:00 PM</span>
+                    <span>Closing Sunday, May 17, 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -143,17 +143,17 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  A massive day of <strong>hands-on science and turtle talks</strong> at the Museum of Tropical Queensland. Perfect for curious kids and families — interactive exhibits, marine biology sessions, and live demonstrations across the day.
+                  Last chance to see this <strong>interactive AI and robotics exhibition</strong>. Perfect for a shaded family afternoon — don't leave it until closing weekend.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Dream Fields Festival — May Preview */}
+            {/* Dream Fields Festival — Next Weekend */}
             <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                    May Preview — Festival
+                    Next Weekend — Festival
                   </Badge>
                   <Star className="w-5 h-5 text-gray-400" />
                 </div>
@@ -161,7 +161,7 @@ const Events = () => {
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, May 23</span>
+                    <span>Saturday, May 23 (Next Weekend)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -171,161 +171,11 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat</strong> and <strong>Skegss</strong>. Tickets selling fast — mark this one in the calendar.
+                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat</strong> and <strong>Skegss</strong>. <strong>Tickets are moving fast</strong> — don't leave it too late.
                 </p>
               </CardContent>
             </Card>
 
-          </div>
-        </section>
-
-        {/* Mother's Day in Townsville */}
-        <section className="space-y-6">
-          <div className="flex items-center gap-2">
-            <h2 className="text-2xl font-bold text-gray-900">Mother's Day in Townsville (Sunday, May 10)</h2>
-            <Badge variant="secondary" className="bg-pink-100 text-pink-800 hover:bg-pink-100">
-              Family
-            </Badge>
-          </div>
-          <p className="text-gray-600 max-w-3xl">
-            Celebrate Mum with a Townsville morning out — from charity fun runs at sunrise to a colourful family-friendly run at Riverway, plus an early Mother's Day Market for local gifts.
-          </p>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            {/* Colour Frenzy */}
-            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-pink-500">
-              <CardHeader className="pb-3">
-                <Badge className="bg-pink-100 text-pink-700 hover:bg-pink-100 border-none w-fit">
-                  Sunday, May 10 — Family Run
-                </Badge>
-                <CardTitle className="text-lg mt-2">Mother's Day Colour Frenzy</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Sunday, May 10 | Start: 8:30 AM</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Riverway Stadium, Thuringowa</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  A fun, non-competitive colour run for all ages. Bring the family, get covered in colour, and celebrate Mum in style.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Charity Fun Run/Walk */}
-            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-rose-500">
-              <CardHeader className="pb-3">
-                <Badge className="bg-rose-100 text-rose-700 hover:bg-rose-100 border-none w-fit">
-                  Sunday, May 10 — Charity
-                </Badge>
-                <CardTitle className="text-lg mt-2">Mother's Day Charity Fun Run / Walk</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Sunday, May 10 | Start: 7:00 AM</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Rossiter Park, Mundingburra</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  A long-standing local tradition supporting <strong>Safe Nights Townsville</strong>. Lace up before sunrise for a great cause and a beautiful start to Mother's Day.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Mother's Day Market */}
-            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-fuchsia-500 md:col-span-2">
-              <CardHeader className="pb-3">
-                <Badge className="bg-fuchsia-100 text-fuchsia-700 hover:bg-fuchsia-100 border-none w-fit">
-                  Sunday, May 3 — Market
-                </Badge>
-                <CardTitle className="text-lg mt-2">Mother's Day Market</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Sunday, May 3</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Townsville (local market — check official listings for venue)</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  The perfect spot for early local gifts — handmade crafts, fresh flowers, and Townsville-made treats from local stallholders.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Community & Nature Highlights */}
-        <section className="space-y-6">
-          <div className="flex items-center gap-2">
-            <Leaf className="w-6 h-6 text-emerald-600" />
-            <h2 className="text-2xl font-bold text-gray-900">Community & Nature Highlights</h2>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            {/* Woodstock Nationals */}
-            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-yellow-500">
-              <CardHeader className="pb-3">
-                <Badge className="bg-yellow-100 text-yellow-800 hover:bg-yellow-100 border-none w-fit">
-                  Sunday, May 3 — Motorsport
-                </Badge>
-                <CardTitle className="text-lg mt-2">Woodstock Nationals — No Prep Drag Racing</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Sunday, May 3 | Racing from 11:00 AM</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Drive It NQ, Woodstock</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  A high-octane Sunday out for the family. Watch local and visiting cars take on the No Prep surface in one of North Queensland's biggest grassroots motorsport events.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Born or Built Last Chance */}
-            <Card className="hover:shadow-md transition-shadow border-l-4 border-l-red-500 bg-red-50/30">
-              <CardHeader className="pb-3">
-                <Badge className="bg-red-100 text-red-700 hover:bg-red-100 border-none w-fit">
-                  Last Chance — Closes May 17
-                </Badge>
-                <CardTitle className="text-lg mt-2">"Born or Built? Our Robotic Future" Exhibition</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Closing Sunday, May 17, 2026</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Museum of Tropical Queensland, Townsville</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  Final weeks to explore this hands-on robotics and AI exhibition — perfect for a shaded family afternoon. Don't leave it until closing weekend.
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </section>
 
@@ -335,7 +185,7 @@ const Events = () => {
           <div>
             <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
             <p className="text-amber-800 text-sm mt-1">
-              Townsville's tropical climate means outdoor events are usually best early morning or late afternoon. Locals often avoid midday heat, especially during the warmer months. Check out our <Link to="/guides/beat-the-heat" className="text-primary font-medium hover:underline">Beat the Heat guide</Link> for more tips.
+              May marks the start of the "Perfect Dry." The humidity has dropped, and the nights are getting cooler — perfect for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or a sunset walk along the Ross River Parkway.
             </p>
           </div>
         </div>
@@ -424,7 +274,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">Next home game: <strong>Round 10 — Cowboys vs Parramatta Eels, Friday May 8</strong> — early 6:00 PM kick-off at QCB Stadium.</p>
+                <p className="text-sm text-gray-600">Next home game: <strong>Round 12 — Cowboys vs Rabbitohs, Sunday, May 24 (4:05 PM)</strong> at QCB Stadium.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
