@@ -240,7 +240,7 @@ const LocalTips = () => {
                 <div>
                   <p className="font-medium text-sm text-foreground">Tropical Tip: The 2kg Overhead Hazard</p>
                   <p className="text-xs text-muted-foreground mt-1">
-                    While the palms in Anzac Memorial Park and along The Strand provide the best shade, locals know to do a quick "overhead check." As the Dry Season breezes pick up in May, falling coconuts are a real risk. A local was nearly hit just last week—look up before you set up your picnic!
+                    While the palms in Anzac Memorial Park and along The Strand provide the best shade, locals know to do a quick "overhead check." A falling coconut weighs around 2kg and can cause serious injury. As the May breezes strengthen, this risk increases. Always look up for heavy coconuts before choosing a palm tree for your Strand picnic!
                   </p>
                 </div>
               </div>
