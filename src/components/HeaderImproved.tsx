@@ -40,6 +40,7 @@ const HeaderImproved = () => {
       label: "Local Tips",
       subItems: [
         { to: "/accessible-townsville", label: "Accessibility Guide" },
+        { to: "/useful-contacts", label: "Useful Contacts" },
       ],
     },
     { to: "/history", label: "History" },
