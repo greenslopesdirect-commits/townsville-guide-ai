@@ -128,7 +128,7 @@ const DogFriendly = () => {
                     className="w-full h-64 md:h-full object-cover"
                   />
                   <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm p-3">
-                    Early evening golden hour at the Quayside Terminal. Max watching the Crown Princess prepare for departure during its January 17th visit. This area is perfect for a sunset walk when the sea breeze kicks in!
+                    Golden hour at the Quayside Terminal. This wide, paved precinct is a local favorite for evening walks—the sea breeze is reliable, and the ground cools down much faster than inland bitumen.
                   </figcaption>
                 </figure>
                 <CardContent className="p-5 sm:p-6 flex flex-col justify-center">
