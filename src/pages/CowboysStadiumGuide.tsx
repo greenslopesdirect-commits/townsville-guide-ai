@@ -13,7 +13,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Detailed guide for the Round 10 Eels match on May 8, including parking, free shuttles, and the walk across Lowths Bridge."
+        description="Plan your 2026 Cowboys game day in Townsville. Detailed guide for Round 12 vs Rabbitohs (Sun May 24, 4:05 PM) — parking, free shuttles, and Sunday arvo logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
@@ -46,7 +46,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – May 4 Update: Round 10 Friday Night Footy!
+               2026 Season – May 11 Update: Magic Round & Round 12 Home Game
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -54,11 +54,11 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Season Update
                    </Badge>
-                    <CardTitle className="text-lg mt-2">Round 10 — The Eels are coming to Town</CardTitle>
+                    <CardTitle className="text-lg mt-2">Magic Round Bound, Rabbitohs Next at Home</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      After a high-energy home stand in April, we look forward to hosting <strong>Parramatta</strong> for a massive Friday night clash at QCB Stadium.
+                      Following a Golden Point thriller against the Eels (<strong>30–33</strong>), we're looking ahead to <strong>Magic Round in Brisbane</strong> before returning home for a Sunday afternoon blockbuster against the <strong>Rabbitohs</strong>.
                     </p>
                  </CardContent>
                </Card>
@@ -68,21 +68,24 @@ const CowboysStadiumGuide = () => {
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                     Next Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 10 – Cowboys vs. Parramatta Eels</CardTitle>
+                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 12 – Cowboys vs. South Sydney Rabbitohs</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar className="w-4 h-4 flex-shrink-0" />
-                      <span>Friday, May 8, 2026</span>
+                      <span>Sunday, May 24, 2026</span>
                     </div>
                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
                       <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                       <span>
                         Queensland Country Bank Stadium.<br />
-                        <span className="font-medium text-foreground">Gates Open: 6:30 PM | Kick-off: 8:00 PM</span>
+                        <span className="font-medium text-foreground">Gates Open: 2:30 PM | Kick-off: 4:05 PM</span>
                       </span>
                     </div>
+                  </div>
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-900">
+                    <strong>☀️ Stadium Tip — Sun Protection:</strong> Sunday arvo footy is back! If you're seated in the <strong>Western Stand</strong>, you'll face significant sun glare for the first half. Bring your sunnies and a hat — the <strong>Eastern Stand</strong> will be in the shade much earlier.
                   </div>
                   <Button asChild className="w-full sm:w-auto">
                     <a href="https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825" target="_blank" rel="noopener noreferrer">
@@ -95,12 +98,62 @@ const CowboysStadiumGuide = () => {
             </div>
           </section>
 
+          {/* Upcoming Schedule */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+              <Calendar className="w-6 h-6 text-primary" />
+              Upcoming Schedule
+            </h2>
+            <Card>
+              <CardContent className="p-0">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead className="bg-muted/50 text-foreground">
+                      <tr>
+                        <th className="text-left font-semibold px-4 py-3">Round</th>
+                        <th className="text-left font-semibold px-4 py-3">Match</th>
+                        <th className="text-left font-semibold px-4 py-3">Date & Time</th>
+                        <th className="text-left font-semibold px-4 py-3">Venue</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-border">
+                      <tr>
+                        <td className="px-4 py-3 font-medium">Round 11 <span className="text-xs text-muted-foreground">(Magic Round)</span></td>
+                        <td className="px-4 py-3">Away vs Roosters</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat May 16, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">Suncorp Stadium</td>
+                      </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 12 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Rabbitohs</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sun May 24, 4:05 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3 font-medium">Round 13</td>
+                        <td className="px-4 py-3">Away vs Raiders</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sun May 31, 4:05 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">GIO Stadium</td>
+                      </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 14 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Dolphins</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat June 6, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
           {/* Visiting from out of town CTA */}
           <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
             <CardContent className="p-6 sm:p-8 space-y-3">
-              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Eels Game?</h3>
+              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Rabbitohs Game?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Don't get caught out—last-minute stays near the stadium fill up fast for Friday night blockbusters. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
+                Don't get caught out — last-minute stays near the stadium fill up fast for Sunday afternoon home games. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
               </p>
               <Button asChild variant="default" size="lg" className="w-full sm:w-auto">
                 <Link to="/accommodation">
@@ -161,10 +214,10 @@ const CowboysStadiumGuide = () => {
               <div>
                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                  <p className="text-amber-800 text-sm mt-1">
-                   With an <strong>8:00 PM kick-off</strong> for the Eels game, the Leagues Club will fill from late afternoon. The 'Stampede' march across Lowths Bridge will depart at <strong>around 7:15 PM</strong> — leaving the Leagues Club <strong>45 minutes before kick-off</strong>.
+                   For the <strong>4:05 PM kick-off</strong>, the Leagues Club will be buzzing from lunch. The 'Stampede' march across Lowths Bridge will depart at <strong>approximately 3:15 PM</strong>.
                  </p>
                  <p className="text-amber-800 text-sm mt-2 font-semibold">
-                   Since this is a Friday afternoon, expect heavy CBD traffic as the work week ends. If you're joining the Stampede, aim to be at the Leagues Club by 6:00 PM.
+                   Sunday arvo means a relaxed pre-game — aim to be at the Leagues Club by 1:30 PM for a long lunch and a few drinks before the march.
                  </p>
               </div>
             </div>
@@ -228,21 +281,26 @@ const CowboysStadiumGuide = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <span><strong>Lou Litster Park</strong> — Ample free parking with regular shuttle service</span>
+                    <div>
+                      <span><strong>Lou Litster Park</strong> — Ample free parking with regular shuttle service</span>
+                      <p className="text-xs text-muted-foreground mt-1 italic">
+                        Searching for Cowboys Stadium parking? <strong>Lou Litster Park</strong> is the easiest free parking option with a direct shuttle — avoid the CBD gridlock entirely.
+                      </p>
+                    </div>
                   </li>
                 </ul>
                 <p className="text-sm text-muted-foreground italic">
-                  Free Park & Ride shuttle service commences at <strong>6:15 PM</strong> and runs up to 1 hour after the final whistle.
+                  Free Park & Ride shuttle service commences at <strong>2:15 PM</strong> (2 hours before kick-off) and runs up to 1 hour after the final whistle.
                 </p>
                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                    <span className="text-sm">⚠️</span>
                     <p className="text-amber-800 text-sm">
-                      <strong>Friday Night Alert:</strong> CBD traffic will be heavy from <strong>4:00 PM</strong>. The <strong>Lowths Bridge vehicle closure is at 4:30 PM</strong>, so plan your entry into the city early if you aren't using the Park & Ride. The <strong>Lou Litster Park & Ride</strong> remains your best bet to skip the Friday afternoon gridlock entirely.
+                      <strong>Sunday Game Alert:</strong> The <strong>Lowths Bridge vehicle closure is at 12:30 PM</strong> for this Sunday game — much earlier than Friday nights. Plan your city parking accordingly. The <strong>Lou Litster Park & Ride</strong> remains your best bet to skip the city traffic entirely.
                     </p>
                  </div>
               </CardContent>
             </Card>
-            <AirportTransferCard className="mt-2" proTipExtra="Perfect for fans flying in on Friday afternoon to avoid the CBD taxi rush." />
+            <AirportTransferCard className="mt-2" proTipExtra="Perfect for fans flying in on Sunday morning to avoid the CBD taxi rush." />
           </section>
 
           {/* Where to Eat & Drink */}
