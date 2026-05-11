@@ -1,16 +1,19 @@
 import { Link } from "react-router-dom";
-import { 
-  Waves, 
-  Utensils, 
-  Dog, 
-  Building, 
-  Ticket, 
-  Calendar, 
-  ShoppingBag, 
-  TreePine, 
+import {
+  Waves,
+  Utensils,
+  Dog,
+  Building,
+  Ticket,
+  Calendar,
+  ShoppingBag,
+  TreePine,
   Lightbulb,
   Baby,
-  Truck
+  Truck,
+  Plane,
+  Phone,
+  Accessibility,
 } from "lucide-react";
 
 const QuickAccess = () => {
@@ -80,6 +83,24 @@ const QuickAccess = () => {
       title: "Moving to Townsville",
       desc: "Your 2026 local guide to suburbs, rentals, and the $40B infrastructure boom.",
       link: "/moving-to-townsville",
+    },
+    {
+      icon: Plane,
+      title: "Townsville Airport Guide",
+      desc: "Arrivals, parking, transfers and what to know before you land.",
+      link: "/townsville-airport",
+    },
+    {
+      icon: Phone,
+      title: "Useful Contacts",
+      desc: "Emergency numbers, hospitals, vets and council — all in one place.",
+      link: "/useful-contacts",
+    },
+    {
+      icon: Accessibility,
+      title: "Accessibility Guide",
+      desc: "Wheelchair-friendly walks, ramp-entry pools, and sensory-friendly venues.",
+      link: "/accessible-townsville",
     },
   ];
 

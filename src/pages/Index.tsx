@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import WeatherWidget from "@/components/WeatherWidget";
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
@@ -18,7 +17,9 @@ import AboutSection from "@/components/AboutSection";
 import FaqSection from "@/components/FaqSection";
 import AdSensePlaceholder from "@/components/AdSensePlaceholder";
 import CommunityTrustSection from "@/components/TestimonialSection";
-import LocalInsightCard from "@/components/LocalInsightCard";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { ArrowRight } from "lucide-react";
 import maxKissingPoint2 from "@/assets/max-at-kissing-point2.webp";
 
 const Index = () => {
@@ -115,29 +116,49 @@ const Index = () => {
         
         <Hero />
         
-        {/* Local Insight - Introduction */}
-        <div className="container mx-auto px-4 max-w-4xl py-8">
-           <LocalInsightCard title="The 'Perfect Dry' Has Arrived" variant="insight">
-               <p>
-                 The <strong>"Perfect Dry"</strong> has arrived. This week, we're gearing up for the massive <strong>Caravan & 4x4 Expo at Reid Park (May 15–17)</strong> and counting down to the <strong>Dream Fields Festival on May 23</strong>. If you're heading to Brisbane for Magic Round, safe travels — otherwise, we'll see you at the stadium for the <strong>Rabbitohs clash on May 24</strong>!
-                 Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
-               </p>
-              <p className="font-medium text-amber-700 dark:text-amber-300">
-               🌴 We run on "Tropical Time," so slow down, check the trading hours, and enjoy the rhythm of the North.
-             </p>
-             <figure className="mt-4 rounded-lg overflow-hidden border border-border/40">
-               <img
-                 src={maxKissingPoint2}
-                 alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
-                 className="w-full h-auto rounded-lg"
-                 loading="lazy"
-               />
-               <figcaption className="p-3 text-sm text-muted-foreground italic bg-muted/30">
-                 May 11: The 'Perfect Dry' has arrived. Crisp air, clear skies, and world-class sunsets at the Fort.
-               </figcaption>
-             </figure>
-           </LocalInsightCard>
-        </div>
+        {/* Live Bulletin — May 11 Update */}
+        <section className="py-12 sm:py-16 bg-background">
+          <div className="container mx-auto px-4 max-w-6xl">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+              {/* Image */}
+              <figure className="rounded-2xl overflow-hidden border border-border/40 shadow-sm order-1 md:order-none">
+                <img
+                  src={maxKissingPoint2}
+                  alt="Max the Schnauzer at Kissing Point Fort, Townsville — Perfect Dry season sunset"
+                  className="w-full h-full object-cover aspect-[4/3]"
+                  loading="lazy"
+                />
+              </figure>
+
+              {/* Content */}
+              <div className="space-y-5">
+                <Badge variant="secondary" className="bg-emerald-50 text-emerald-700 border border-emerald-100 w-fit">
+                  Live Bulletin · May 11, 2026
+                </Badge>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
+                  Current Status: The 'Perfect Dry' is here!
+                </h2>
+                <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                  The humidity has dropped, and the 'Best of Townsville' window is
+                  officially open. We're gearing up for a massive month with the{" "}
+                  <strong className="text-foreground">Caravan &amp; 4x4 Expo (May 15–17)</strong>{" "}
+                  and the{" "}
+                  <strong className="text-foreground">Dream Fields Festival (May 23)</strong>.
+                </p>
+                <p className="text-sm sm:text-base text-amber-800 bg-amber-50 border border-amber-100 rounded-lg p-3">
+                  🌴 We run on <strong>"Tropical Time"</strong> here. Slow down,
+                  check the trading hours, and enjoy the rhythm.
+                </p>
+                <Button asChild size="lg" variant="outline" className="gap-2">
+                  <Link to="/events">
+                    See All May Events
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
         
         {/* Newsletter Section */}
         <NewsletterSection />
