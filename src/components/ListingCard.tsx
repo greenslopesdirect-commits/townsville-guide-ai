@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Check, ArrowRight } from "lucide-react";
+import { MapPin, Check, ArrowRight, Accessibility } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
 import { Link } from "react-router-dom";
 
