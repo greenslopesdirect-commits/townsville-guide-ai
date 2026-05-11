@@ -116,9 +116,9 @@ const Index = () => {
         
         {/* Local Insight - Introduction */}
         <div className="container mx-auto px-4 max-w-4xl py-8">
-           <LocalInsightCard title="Welcome to the Dry Season" variant="insight">
+           <LocalInsightCard title="The 'Perfect Dry' Has Arrived" variant="insight">
                <p>
-                 Townsville is in the swing of the <strong>Dry Season</strong>. Expect crisp morning breezes, lower humidity, and a packed May events calendar. Whether you are here for the <strong>Cowboys vs Eels blockbuster (May 8)</strong>, the <strong>World Science Festival (May 9)</strong>, or <strong>Mother's Day (May 10)</strong>, we have the local intel you need.
+                 The <strong>"Perfect Dry"</strong> has arrived. This week, we're gearing up for the massive <strong>Caravan & 4x4 Expo at Reid Park (May 15–17)</strong> and counting down to the <strong>Dream Fields Festival on May 23</strong>. If you're heading to Brisbane for Magic Round, safe travels — otherwise, we'll see you at the stadium for the <strong>Rabbitohs clash on May 24</strong>!
                  Arriving by air? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> covers everything you need to know before landing.
                </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
