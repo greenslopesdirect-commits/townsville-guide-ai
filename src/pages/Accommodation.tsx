@@ -236,7 +236,7 @@ const Accommodation = () => {
                 </div>
                 <div className="p-6 rounded-xl border-2 bg-card">
                   <h3 className="font-semibold text-foreground mb-2">CBD / Palmer Street</h3>
-                  <p className="text-muted-foreground text-sm">Best for restaurants, events, and convenience. Walk everywhere.</p>
+                  <p className="text-muted-foreground text-sm">Best for restaurants, events, and convenience. Walk everywhere. Perfect for festival-goers attending Dream Fields at Central Park—most hotels here are within easy walking or rideshare distance.</p>
                 </div>
                 <div className="p-6 rounded-xl border-2 bg-card">
                   <h3 className="font-semibold text-foreground mb-2">Magnetic Island</h3>
