@@ -157,7 +157,8 @@ const ThingsToDo = () => {
       guideLink: "/the-strand",
       guideLinkText: "View Strand Guide",
       badge: "🐾 Schnauzer Approved",
-      badgeNote: "Great for morning walks and sunset snacks."
+      badgeNote: "Great for morning walks and sunset snacks.",
+      accessibilityNote: "♿ Wheelchair & Pram Friendly. Ramp access to Rockpool."
     },
     {
       title: "Magnetic Island",
