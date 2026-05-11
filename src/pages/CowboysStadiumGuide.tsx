@@ -13,7 +13,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Detailed guide for the Round 10 Eels match on May 8, including parking, free shuttles, and the walk across Lowths Bridge."
+        description="Plan your 2026 Cowboys game day in Townsville. Detailed guide for Round 12 vs Rabbitohs (Sun May 24, 4:05 PM) — parking, free shuttles, and Sunday arvo logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
