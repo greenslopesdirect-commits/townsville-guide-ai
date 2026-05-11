@@ -89,6 +89,12 @@ const ListingCard = ({
       {badgeNote && (
         <p className="text-xs font-medium text-[#00A693] italic">{badgeNote}</p>
       )}
+      {accessibilityNote && (
+        <p className="text-xs font-medium text-blue-700 flex items-start gap-1.5">
+          <Accessibility className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" aria-hidden="true" />
+          <span>{accessibilityNote}</span>
+        </p>
+      )}
       
       {tags && tags.length > 0 && (
         <div className="flex flex-wrap gap-1.5">
