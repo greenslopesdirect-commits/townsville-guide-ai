@@ -21,7 +21,7 @@ const StingerSeasonAlert = ({ className = "" }: StingerSeasonAlertProps) => {
           Check with lifesavers for current conditions before entering the water.
         </p>
         <p className="font-semibold">
-          ☀️ April 20 Update: With Term 2 now underway, the holiday crowds have thinned out, but the water is still warm! Stinger nets remain active and essential. If you're planning a dip before the ANZAC Day long weekend, stick to the netted enclosures at The Strand and Pallarenda.{" "}
+          ☀️ May 11 Update: We are in the final month of the official stinger season (Nov–May). While the 'Dry Season' breezes are making the water look tempting and visibility is excellent, the stinger nets at The Strand and Pallarenda remain ACTIVE and essential. Continue to swim inside the enclosures for a worry-free dip.{" "}
           <Link 
             to="/guides/stinger-safety"
             className="text-amber-800 dark:text-amber-300 hover:underline"
