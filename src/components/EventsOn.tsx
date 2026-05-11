@@ -36,14 +36,14 @@ const EventsOn = () => {
                         May 2026 Highlights
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
-                    <p className="text-blue-100 font-medium">Footy, science, markets & Mother's Day</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏉 Cowboys vs Eels — Friday May 8, 8:00 PM</p>
-                     <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">Dry Season Is Here</span>
+                    <p className="text-blue-100 font-medium">Caravan expo, festivals & Sunday arvo footy</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🚐 Caravan & 4x4 Expo — May 15–17, Reid Park</p>
+                     <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">The Perfect Dry</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
                         <MapPin className="w-4 h-4" />
-                        <span>The Strand, MTQ, Riverway & QLD Country Bank Stadium</span>
+                        <span>Reid Park, Central Park & QLD Country Bank Stadium</span>
                      </div>
                 </div>
             </div>
