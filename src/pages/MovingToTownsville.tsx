@@ -62,7 +62,7 @@ const MovingToTownsville = () => {
               For most newcomers, the choice comes down to commute, schools, and how close to the water
               you want to be. Two of our most popular deep-dive guides:
             </p>
-            <div className="grid gap-4 md:grid-cols-2">
+            <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-l-4 border-l-blue-500">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-lg">Saunders Beach</CardTitle>
@@ -92,6 +92,23 @@ const MovingToTownsville = () => {
                   <Button asChild variant="outline" size="sm">
                     <Link to="/rowes-bay">
                       View Rowes Bay Guide <ArrowRight className="w-3 h-3 ml-1" />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-amber-500">
+                <CardHeader className="pb-2">
+                  <CardTitle className="text-lg">North Shore</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-3">
+                  <p className="text-sm text-muted-foreground">
+                    The northern growth heart. Perfect for families wanting modern homes, 42km of walking
+                    trails, and the best community leisure centre in the city.
+                  </p>
+                  <Button asChild variant="outline" size="sm">
+                    <Link to="/north-shore-townsville">
+                      View North Shore Guide <ArrowRight className="w-3 h-3 ml-1" />
                     </Link>
                   </Button>
                 </CardContent>
