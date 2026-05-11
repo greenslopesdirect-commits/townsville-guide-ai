@@ -236,7 +236,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-        ☀️ April 27 Update: Dry Season has officially arrived! Stinger nets remain ACTIVE at The Strand and Pallarenda, but Dry Season breezes are clearing the water — visibility is improving daily. With the humidity dropping, it’s peak season for long beach walks and morning runs.{" "}
+          Continue to swim inside the netted enclosures for a worry-free dip.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
