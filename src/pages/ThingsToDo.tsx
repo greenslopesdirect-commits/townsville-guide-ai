@@ -37,7 +37,8 @@ const ThingsToDo = () => {
       guideLink: "/castle-hill",
       guideLinkText: "Local Guide",
       badge: "🐾 Schnauzer Approved",
-      badgeNote: "Take your pup up the Goat Track (before 7am) for the best views in the city."
+      badgeNote: "Take your pup up the Goat Track (before 7am) for the best views in the city.",
+      accessibilityNote: "♿ Summit accessible via vehicle. Accessible parking at the lookout."
     },
     {
   title: "Little Crystal Creek",
