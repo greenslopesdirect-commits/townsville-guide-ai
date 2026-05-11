@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
 import maxQuaysideImg from "@/assets/max-quayside-crown-princess.jpg";
+import maxKissingPoint1 from "@/assets/max-at-kissing-point1.webp";
 
 const dogSpots = [
   {
@@ -149,6 +150,39 @@ const DogFriendly = () => {
                   >
                     View Quayside on Google Maps <ArrowRight className="w-3 h-3" />
                   </a>
+                </CardContent>
+              </div>
+            </Card>
+          </section>
+
+          {/* Local Spotlight - Kissing Point */}
+          <section aria-labelledby="local-spotlight-kissing-point" className="my-8">
+            <Card className="overflow-hidden border-2 border-primary/20">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <figure className="relative">
+                  <img
+                    src={maxKissingPoint1}
+                    alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
+                    loading="lazy"
+                    className="w-full h-64 md:h-full object-cover rounded-lg"
+                  />
+                  <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm p-3">
+                    Schnauzer Approved: Max taking in the view from the Kissing Point battery. The wide, paved paths at the barracks stay cooler than inland roads—perfect for large breeds during the May golden hour.
+                  </figcaption>
+                </figure>
+                <CardContent className="p-5 sm:p-6 flex flex-col justify-center">
+                  <div className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-wider text-xs mb-3">
+                    <MapPin className="w-4 h-4" /> Dog-Friendly Coastal Walks
+                  </div>
+                  <h2 id="local-spotlight-kissing-point" className="text-xl sm:text-2xl font-bold text-foreground mb-3 leading-tight">
+                    Kissing Point & Jezzine Boardwalks
+                  </h2>
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
+                    <strong className="text-foreground">May Local Tip:</strong> The elevated boardwalks at Jezzine Barracks are paved, shaded by Norfolk pines, and catch the evening sea breeze. Ideal for an on-leash sunset stroll with your dog before dinner on Gregory Street.
+                  </p>
+                  <Link to="/jezzine-barracks" className="text-sm font-medium text-primary hover:underline inline-flex items-center gap-1">
+                    View Jezzine Guide <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </CardContent>
               </div>
             </Card>
