@@ -1,4 +1,5 @@
 import SEOHead from "@/components/SEOHead";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -8,6 +9,8 @@ import {
   Building2,
   PawPrint,
   Bus,
+  Download,
+  Lightbulb,
 } from "lucide-react";
 
 interface ContactItem {
@@ -79,7 +82,7 @@ const UsefulContacts = () => {
       <div className="min-h-screen bg-gray-50">
         <main className="container mx-auto px-4 py-10 max-w-3xl space-y-8">
           {/* Hero */}
-          <header className="space-y-3">
+          <header className="space-y-4">
             <Badge variant="secondary" className="bg-red-50 text-red-700 w-fit">
               Keep Handy
             </Badge>
@@ -90,7 +93,28 @@ const UsefulContacts = () => {
               The numbers you hope you don't need, but should have on hand while
               exploring Townsville. Tap any number to call directly from your phone.
             </p>
+            <Button asChild variant="outline" size="lg" className="gap-2 w-full sm:w-auto">
+              <a
+                href="/townsville-useful-contacts.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                <Download className="w-4 h-4" />
+                Download PDF Guide
+              </a>
+            </Button>
           </header>
+
+          {/* Pro Tip */}
+          <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm text-amber-900">
+            <Lightbulb className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+            <p>
+              <strong>Pro-Tip:</strong> Save this page to your home screen or
+              download the PDF for offline access in areas with spotty signal like
+              Paluma or the Northern Beaches.
+            </p>
+          </div>
 
           {/* Emergency */}
           <ContactSection
@@ -136,9 +160,12 @@ const UsefulContacts = () => {
             ]}
           >
             <div className="mt-4 p-3 rounded-md bg-rose-50 border border-rose-100 text-sm text-rose-900">
-              <strong>24-Hour Pharmacy:</strong> Whole Health Pharmacy on Peels St
-              (CBD) is the most reliable late-night option. Several Chemist
-              Warehouse locations also extend hours during peak season.
+              <strong>24-Hour Pharmacy:</strong> Whole Health Pharmacy &amp;
+              Healthfoods (Peels St) —{" "}
+              <a href="tel:0747285500" className="font-mono font-semibold underline">
+                (07) 4728 5500
+              </a>
+              . The most reliable late-night option in the CBD.
             </div>
           </ContactSection>
 
@@ -167,13 +194,13 @@ const UsefulContacts = () => {
             accent="border-l-amber-500"
             items={[
               {
-                label: "JCU Veterinary Hospital",
-                number: "(07) 4781 6803",
+                label: "JCU Vet (Emergency)",
+                number: "(07) 4781 3600",
                 note: "After-hours emergency vet care",
               },
               {
-                label: "Townsville Vet Clinic (Emergency)",
-                number: "(07) 4779 4222",
+                label: "Townsville Vet Clinic",
+                number: "(07) 4779 0233",
               },
               {
                 label: "North Queensland Wildlife Care",
