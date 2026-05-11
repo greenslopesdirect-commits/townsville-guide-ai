@@ -95,7 +95,7 @@ const FoodDrink = () => {
       aiPrompt: "Tell me about the menu, price range, and vibe at Juliette's Gelateria.",
       subtitle: "Gelato & Coffee",
        badge: "🐾 Schnauzer Approved",
-       badgeNote: "Perfect for a post-walk treat on The Strand (Water bowls available). Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
+       badgeNote: "Shaded outdoor seating and water bowls make this a top pick for your post-walk cooldown with the pup. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
        dogGuideLink: true
     },
     {
@@ -154,7 +154,7 @@ const FoodDrink = () => {
       aiPrompt: "Tell me about the menu, price range, and vibe at Hoi Polloi Café.",
       subtitle: "Specialty Brunch",
        badge: "🐾 Schnauzer Approved",
-       badgeNote: "Shaded outdoor seating and a very dog-friendly vibe. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
+       badgeNote: "Shaded outdoor seating and water bowls make this a top pick for your post-walk cooldown with the pup. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
        dogGuideLink: true
     },
     {
@@ -204,8 +204,8 @@ const FoodDrink = () => {
   return (
     <>
       <SEOHead
-        title="Best Restaurants & Cafés in Townsville (March 2026 Guide)"
-        description="From fine dining on Palmer Street to the best coffee on The Strand, discover where Townsville locals eat and drink. Updated for March 23–29 with game day tips and dog-friendly spots."
+       title="Best Restaurants & Cafés in Townsville (May 2026 Guide)"
+       description="From fine dining on Palmer Street to the best coffee on The Strand, discover where Townsville locals eat and drink. Updated May 11, 2026 with Magic Round game day tips and dog-friendly spots."
         canonical="https://www.myaussieguide.com.au/food"
       />
       <Helmet>
@@ -274,15 +274,15 @@ const FoodDrink = () => {
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                 ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving. <em>March 23 Update: Most CBD cafes are back to their regular rhythm today following a busy Harmony Week. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi remain the local picks for an early start.</em>
+                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>May 11 Update: As we settle into the Dry Season, most CBD and Strand cafes are at full capacity on weekends. While many boutique spots close early on Mondays, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit.</em>
                </p>
             </LocalInsightCard>
 
             {/* Weekly Highlight */}
              <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
-               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (March 23–29)</h3>
+               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (May 11–17)</h3>
                <p className="text-sm text-muted-foreground leading-relaxed">
-                 🌅 <strong>March 23–29:</strong> The focus is on the waterfront this week. With the humidity dropping slightly, it's the perfect time for alfresco dining at A Touch of Salt or a sunset gelato at Juliette's.
+                 🌅 <strong>May 11–17:</strong> The focus is on alfresco dining this week. With the humidity gone and crisp evening breezes, it is the absolute peak window for a riverfront dinner at A Touch of Salt or a sunset cocktail on the Rambutan Rooftop. If you're out for a weekend treat, the Juliette's line-up on The Strand is the place to be.
                </p>
              </div>
 
@@ -380,7 +380,7 @@ const FoodDrink = () => {
                 </div>
                  <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
                    <p className="text-sm text-foreground">
-                     🎸 <strong>Game Day Vibes (Saturday, March 28):</strong> Heading to the Cowboys vs. Storm blockbuster? Tiny Mountain Brewery and the City Lane precinct will be the heart of the pre-game atmosphere. For post-match celebrations (or debriefs), Palmer Street's dining strip is the place to be—book ahead as Saturday nights are always at capacity.
+                     🎸 <strong>Magic Round & Beyond (May 16–24):</strong> With the Cowboys away for Magic Round this Saturday (May 16), the City Lane precinct and Tiny Mountain Brewery are the top spots to catch the game on the big screens with a local crowd. Looking ahead to the Rabbitohs home game (Sunday, May 24), Palmer Street will be the heart of the pre-game lunch rush—we strongly recommend booking your table by mid-week.
                    </p>
                  </div>
               </div>
