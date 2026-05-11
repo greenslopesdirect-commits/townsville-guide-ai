@@ -147,7 +147,7 @@ const Index = () => {
             <div>
               <h3 className="font-bold text-amber-900 dark:text-amber-200 text-base sm:text-lg">Did You Know?</h3>
               <p className="text-amber-800 dark:text-amber-300 text-sm sm:text-base mt-1 leading-relaxed">
-                <strong>May 10:</strong> Celebrate Mother's Day with a sunrise walk at <strong>Rossiter Park</strong> or the <strong>Colour Frenzy at Riverway</strong> — both are great local traditions.
+                The <strong>Townsville Caravan & 4x4 Expo (May 15–17)</strong> is the biggest of its kind in NQ. It's the perfect spot to grab <strong>"Expo-only" deals</strong> on camping gear before the winter school holidays.
               </p>
             </div>
           </div>
