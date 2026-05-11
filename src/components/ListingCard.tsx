@@ -40,11 +40,13 @@ const ListingCard = ({
   accessibilityNote
 }: ListingCardProps) => (
   <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col relative">
-    {badge && (
+    {(badge || accessibilityNote) && (
       <div className="absolute -top-1 right-2 z-10 flex items-center gap-1">
-        <span className="bg-[#00A693] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
-          {badge}
-        </span>
+        {badge && (
+          <span className="bg-[#00A693] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+            {badge}
+          </span>
+        )}
         {accessibilityNote && (
           <span
             className="bg-blue-600 text-white p-1 rounded-full shadow-md"
