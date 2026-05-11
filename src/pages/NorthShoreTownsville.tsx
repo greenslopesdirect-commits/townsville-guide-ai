@@ -188,13 +188,13 @@ const NorthShoreTownsville = () => {
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
-                The Wetlands Loop is absolutely vibrant this week (March 23–29)! Following the rain, the Brolgas and Jabirus are incredibly active at sunrise. The paved tracks are dry and perfect for a morning walk before the midday heat kicks in.
+                The Wetlands Loop is at its absolute best this week (May 11–17). While the vibrant green of March is beginning to mellow, the brolgas and jabirus are incredibly active at sunrise. The 20°C mornings are perfect for the 3.5km loop before the UV index climbs.
               </p>
             </LocalInsightCard>
 
-            <LocalInsightCard title="Dog Owners" variant="insight">
+            <LocalInsightCard title="Dog Owners (May Update)" variant="insight">
               <p>
-                A favourite for local dog owners — just remember to keep your furry friends on a lead to protect the local birdlife.
+                Those cooling May breezes make the North Shore trails ideal for larger breeds. Just a reminder to keep dogs on-lead through the Bohle River Wetlands to protect the nesting brolgas.
               </p>
             </LocalInsightCard>
           </section>
