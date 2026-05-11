@@ -272,6 +272,22 @@ const TheStrand = () => {
           </div>
         </section>
 
+        {/* Dog-Friendly Strand Tip */}
+        <section className="space-y-3">
+          <h2 className="text-2xl font-bold text-foreground">🐾 Dog-Friendly Strand Tip (May 11)</h2>
+          <div className="p-4 rounded-lg bg-jade/10 border border-jade/30 text-sm text-foreground">
+            The cooler 20°C mornings are perfect for the full 2.2km length of The Strand. Remember: Dogs must be on-leash on the main path. If you're looking for an off-leash run, head to the northern end of <Link to="/pallarenda-beach" className="text-primary hover:underline font-medium">Pallarenda</Link> where the low-tide sand flats are massive this week.
+          </div>
+        </section>
+
+        {/* Seasonal Photography Tip */}
+        <section className="space-y-3">
+          <h2 className="text-2xl font-bold text-foreground">📸 May Photography Tip</h2>
+          <div className="p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm text-amber-900">
+            <strong>Sunset vs. Sunrise:</strong> In May, the sun rises directly over Cleveland Bay, making for incredible silhouette shots of the pier. Sunset is best captured from the Jezzine Barracks end, looking back across the Strand toward the Port.
+          </div>
+        </section>
+
         {/* Combine With Nearby Attractions */}
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
