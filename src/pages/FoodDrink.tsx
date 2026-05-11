@@ -380,7 +380,7 @@ const FoodDrink = () => {
                 </div>
                  <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
                    <p className="text-sm text-foreground">
-                     🎸 <strong>Game Day Vibes (Saturday, March 28):</strong> Heading to the Cowboys vs. Storm blockbuster? Tiny Mountain Brewery and the City Lane precinct will be the heart of the pre-game atmosphere. For post-match celebrations (or debriefs), Palmer Street's dining strip is the place to be—book ahead as Saturday nights are always at capacity.
+                     🎸 <strong>Magic Round & Beyond (May 16–24):</strong> With the Cowboys away for Magic Round this Saturday (May 16), the City Lane precinct and Tiny Mountain Brewery are the top spots to catch the game on the big screens with a local crowd. Looking ahead to the Rabbitohs home game (Sunday, May 24), Palmer Street will be the heart of the pre-game lunch rush—we strongly recommend booking your table by mid-week.
                    </p>
                  </div>
               </div>
