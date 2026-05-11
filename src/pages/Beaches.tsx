@@ -128,7 +128,7 @@ const faqItems = [
   },
   {
     question: "When is stinger season in Townsville?",
-    answer: "Stinger season in Townsville runs from November to May. During this time, always swim within stinger nets or enclosures. The Strand, Pallarenda, and Rowes Bay all have stinger nets available."
+    answer: "Stinger season traditionally ends in late May, but nets usually stay in until water temperatures drop consistently. Always check the current status on our Stinger & Safety Guide."
   },
   {
     question: "Which Townsville beaches have stinger nets?",
