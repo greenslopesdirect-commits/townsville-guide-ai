@@ -52,7 +52,7 @@ const EventsOn = () => {
             <div className="lg:col-span-3 p-8 flex flex-col justify-center">
                 <div className="prose prose-slate mb-6">
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        From the <strong>Cowboys vs Eels</strong> Round 10 blockbuster (Friday May 8, 8:00 PM kick-off) to the <strong>World Science Festival QLD</strong> at the Museum of Tropical Queensland (Saturday May 9), and a massive <strong>Mother's Day Sunday</strong> with the Colour Frenzy at Riverway and the Charity Fun Run at Rossiter Park —
+                        From the <strong>Townsville Caravan, 4x4 & Outdoor Adventure Expo</strong> at Reid Park (May 15–17) to the <strong>Dream Fields Festival</strong> at Central Park (May 23) and the <strong>Cowboys vs Rabbitohs</strong> Sunday arvo home game (May 24, 4:05 PM) —
                         there's always something happening in Townsville.
                     </p>
                 </div>
@@ -64,7 +64,7 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Updated May 4, 2026.
+                        Updated May 11, 2026.
                     </span>
                 </div>
             </div>
