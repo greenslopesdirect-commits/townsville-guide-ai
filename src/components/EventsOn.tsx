@@ -136,28 +136,8 @@ const EventsOn = () => {
 
         </div>
 
-        {/* May Preview — Featured */}
-        <div className="grid md:grid-cols-1 gap-6 mt-6">
-          <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-green-500 border-slate-200">
-            <CardContent className="p-6">
-              <div className="flex justify-between items-start mb-4">
-                <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
-                  May 23 — Festival Preview
-                </div>
-                <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
-              </div>
-              <h4 className="text-lg font-bold mb-2">Dream Fields Festival</h4>
-              <p className="text-xs text-primary font-medium mb-1">Saturday, May 23</p>
-              <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                <MapPin className="w-4 h-4" /> Central Park, Townsville
-              </div>
-              <p className="text-xs text-slate-500 mt-2">🎶 Galantis, Peking Duk, Mallrat & Skegss at Central Park</p>
-            </CardContent>
-          </Card>
-        </div>
-
         <p className="text-center text-sm text-slate-600 mt-6">
-          🏉 Cowboys vs Eels Friday May 8 (8:00 PM kick-off), World Science Festival Saturday, and Mother's Day events Sunday! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🚐 Caravan & 4x4 Expo May 15–17, Dream Fields Festival May 23, and Cowboys vs Rabbitohs Sunday May 24! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
