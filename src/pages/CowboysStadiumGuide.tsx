@@ -281,21 +281,26 @@ const CowboysStadiumGuide = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <span><strong>Lou Litster Park</strong> — Ample free parking with regular shuttle service</span>
+                    <div>
+                      <span><strong>Lou Litster Park</strong> — Ample free parking with regular shuttle service</span>
+                      <p className="text-xs text-muted-foreground mt-1 italic">
+                        Searching for Cowboys Stadium parking? <strong>Lou Litster Park</strong> is the easiest free parking option with a direct shuttle — avoid the CBD gridlock entirely.
+                      </p>
+                    </div>
                   </li>
                 </ul>
                 <p className="text-sm text-muted-foreground italic">
-                  Free Park & Ride shuttle service commences at <strong>6:15 PM</strong> and runs up to 1 hour after the final whistle.
+                  Free Park & Ride shuttle service commences at <strong>2:15 PM</strong> (2 hours before kick-off) and runs up to 1 hour after the final whistle.
                 </p>
                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 flex gap-2 items-start mt-2">
                    <span className="text-sm">⚠️</span>
                     <p className="text-amber-800 text-sm">
-                      <strong>Friday Night Alert:</strong> CBD traffic will be heavy from <strong>4:00 PM</strong>. The <strong>Lowths Bridge vehicle closure is at 4:30 PM</strong>, so plan your entry into the city early if you aren't using the Park & Ride. The <strong>Lou Litster Park & Ride</strong> remains your best bet to skip the Friday afternoon gridlock entirely.
+                      <strong>Sunday Game Alert:</strong> The <strong>Lowths Bridge vehicle closure is at 12:30 PM</strong> for this Sunday game — much earlier than Friday nights. Plan your city parking accordingly. The <strong>Lou Litster Park & Ride</strong> remains your best bet to skip the city traffic entirely.
                     </p>
                  </div>
               </CardContent>
             </Card>
-            <AirportTransferCard className="mt-2" proTipExtra="Perfect for fans flying in on Friday afternoon to avoid the CBD taxi rush." />
+            <AirportTransferCard className="mt-2" proTipExtra="Perfect for fans flying in on Sunday morning to avoid the CBD taxi rush." />
           </section>
 
           {/* Where to Eat & Drink */}
