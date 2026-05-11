@@ -324,9 +324,9 @@ const MovingToTownsville = () => {
                   Starting a business in Townsville?
                 </h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                  Need a local web presence for your new Townsville business? <strong>Website Reviver</strong>{" "}
-                  builds fast, SEO-ready websites for North Queensland operators — built locally, optimised
-                  for Townsville search.
+                  Moving your business to the North? <strong>Website Reviver</strong> helps new arrivals
+                  establish a local digital footprint fast — fast, SEO-ready websites built locally and
+                  optimised for Townsville search.
                 </p>
                 <Button asChild size="lg" className="gap-2">
                   <a href="https://websitereviver.com.au" target="_blank" rel="noopener noreferrer">
