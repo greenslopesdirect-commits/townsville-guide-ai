@@ -54,6 +54,7 @@ import NorthShoreTownsville from "@/pages/NorthShoreTownsville";
 import TownsvilleAirport from "@/pages/TownsvilleAirport";
 import MovingToTownsville from "@/pages/MovingToTownsville";
 import SaundersBeach from "@/pages/beaches/SaundersBeach";
+import AccessibleTownsville from "@/pages/AccessibleTownsville";
 
 const queryClient = new QueryClient();
 
