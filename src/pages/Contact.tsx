@@ -56,6 +56,12 @@ const Contact = () => {
               <p className="mt-4 text-base text-foreground/80 max-w-2xl mx-auto">
                 Interested in becoming a Founding Partner? Reach out below.
               </p>
+              <p className="mt-3 text-sm text-muted-foreground">
+                Need help right now?{" "}
+                <a href="/useful-contacts" className="text-primary font-medium hover:underline">
+                  View Emergency Info →
+                </a>
+              </p>
             </header>
 
             {/* Contact Card */}

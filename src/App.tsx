@@ -55,6 +55,7 @@ import TownsvilleAirport from "@/pages/TownsvilleAirport";
 import MovingToTownsville from "@/pages/MovingToTownsville";
 import SaundersBeach from "@/pages/beaches/SaundersBeach";
 import AccessibleTownsville from "@/pages/AccessibleTownsville";
+import UsefulContacts from "@/pages/UsefulContacts";
 
 const queryClient = new QueryClient();
 
@@ -110,6 +111,7 @@ const App = () => (
             <Route path="nature" element={<Nature />} />
             <Route path="moving-to-townsville" element={<MovingToTownsville />} />
             <Route path="accessible-townsville" element={<AccessibleTownsville />} />
+            <Route path="useful-contacts" element={<UsefulContacts />} />
             
             {/* MONETISATION PAGES */}
             <Route path="flights" element={<FlightsToTownsville />} />
