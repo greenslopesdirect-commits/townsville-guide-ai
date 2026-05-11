@@ -20,7 +20,7 @@ const Accommodation = () => {
   const hotels = [
     {
       title: "The Ville Resort–Casino",
-      description: "Townsville's premier oceanfront resort featuring lagoon pool, casino, multiple restaurants and stunning ocean views. Perfect for luxury getaways. Expect a high-energy vibe this weekend as fans arrive for the Saturday night footy and the ABBA tribute at the TECC.",
+      description: "Townsville's premier oceanfront resort featuring lagoon pool, casino, multiple restaurants and stunning ocean views. Perfect for luxury getaways. Expect a high-energy vibe this month as the Dream Fields Festival crowd hits the pool deck and the CBD buzzes with Magic Round watch parties (May 16).",
       image: theVilleImage,
       tags: ["Luxury", "Waterfront", "Pool"],
       features: [
@@ -97,7 +97,7 @@ const Accommodation = () => {
     },
     {
       title: "BIG4 Rowes Bay Holiday Park",
-      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families. Note: Council camping spots at Saunders and Balgal Beach for Easter are booking out now—get in early!",
+      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families. May Tip: Sites are filling up with travelers in town for the Caravan & 4x4 Expo. It's the perfect base if you want to be near the beach but close to the Reid Park action.",
       image: big4Image,
       tags: ["Family Friendly", "Budget", "Beachfront"],
       features: [
@@ -117,8 +117,8 @@ const Accommodation = () => {
   return (
     <>
       <SEOHead
-        title="Where to Stay in Townsville (Updated March 2026)"
-        description="From luxury resorts to dog-friendly caravan parks, find the best Townsville accommodation. Updated for March 23–29 with last-minute Easter tips and Cowboys game day advice."
+        title="Where to Stay in Townsville (Updated May 2026)"
+        description="From luxury resorts to dog-friendly caravan parks, find the best Townsville accommodation. Updated May 11, 2026 with Caravan Expo, Dream Fields Festival, and Cowboys vs Rabbitohs game day advice."
         canonical="https://www.myaussieguide.com.au/accommodation"
       />
       <Helmet>
@@ -167,11 +167,9 @@ const Accommodation = () => {
 
             {/* Seasonal Alert */}
             <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-12">
-              <p className="text-amber-800 dark:text-amber-300 leading-relaxed mb-3">
-                ⚠️ <strong>Last Call for Easter:</strong> With only 1 week until the school holidays begin (April 2), availability across Townsville is extremely limited. If you haven't booked your Magnetic Island or beachfront stay yet, do it today.
-              </p>
+              <p className="text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 font-semibold mb-2">Updated: May 11, 2026</p>
               <p className="text-amber-800 dark:text-amber-300 leading-relaxed">
-                🏆 <strong>Cowboys vs. Storm (Saturday, March 28):</strong> This Saturday night is a blockbuster. Expect CBD and Palmer Street hotels (like the Grand Chancellor and Oaks) to be at 100% capacity. If you're coming for the game, look for availability in North Shore or the Northern Suburbs as a backup.
+                ⚠️ <strong>May High-Demand Alert:</strong> Between the Caravan & 4x4 Expo (May 15–17) and the Dream Fields Festival (May 23), accommodation in the CBD and South Townsville is booking out fast. If you're heading in for the Cowboys vs. Rabbitohs home game on May 24, we recommend securing your stay immediately.
               </p>
             </div>
 
@@ -238,7 +236,7 @@ const Accommodation = () => {
                 </div>
                 <div className="p-6 rounded-xl border-2 bg-card">
                   <h3 className="font-semibold text-foreground mb-2">CBD / Palmer Street</h3>
-                  <p className="text-muted-foreground text-sm">Best for restaurants, events, and convenience. Walk everywhere.</p>
+                  <p className="text-muted-foreground text-sm">Best for restaurants, events, and convenience. Walk everywhere. Perfect for festival-goers attending Dream Fields at Central Park—most hotels here are within easy walking or rideshare distance.</p>
                 </div>
                 <div className="p-6 rounded-xl border-2 bg-card">
                   <h3 className="font-semibold text-foreground mb-2">Magnetic Island</h3>
