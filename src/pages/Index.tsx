@@ -19,6 +19,7 @@ import FaqSection from "@/components/FaqSection";
 import AdSensePlaceholder from "@/components/AdSensePlaceholder";
 import CommunityTrustSection from "@/components/TestimonialSection";
 import LocalInsightCard from "@/components/LocalInsightCard";
+import maxKissingPoint2 from "@/assets/max-at-kissing-point2.webp";
 
 const Index = () => {
   return (
@@ -124,6 +125,17 @@ const Index = () => {
               <p className="font-medium text-amber-700 dark:text-amber-300">
                🌴 We run on "Tropical Time," so slow down, check the trading hours, and enjoy the rhythm of the North.
              </p>
+             <figure className="mt-4 rounded-lg overflow-hidden border border-border/40">
+               <img
+                 src={maxKissingPoint2}
+                 alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
+                 className="w-full h-auto rounded-lg"
+                 loading="lazy"
+               />
+               <figcaption className="p-3 text-sm text-muted-foreground italic bg-muted/30">
+                 May 11: The 'Perfect Dry' has arrived. Crisp air, clear skies, and world-class sunsets at the Fort.
+               </figcaption>
+             </figure>
            </LocalInsightCard>
         </div>
         
