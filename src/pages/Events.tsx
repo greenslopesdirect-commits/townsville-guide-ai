@@ -39,7 +39,7 @@ const Events = () => {
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
            <p className="text-lg text-gray-600 max-w-2xl">
-              Coming up: The <strong>Cowboys vs Eels</strong> blockbuster (Friday), <strong>World Science Festival</strong> (Saturday), and a massive <strong>Mother's Day Sunday</strong>!
+              Coming up: The massive <strong>Caravan & 4x4 Expo</strong> (this weekend), <strong>Dream Fields Festival</strong> (May 23), and the <strong>Cowboys' Magic Round watch party</strong>!
             </p>
         </div>
 
