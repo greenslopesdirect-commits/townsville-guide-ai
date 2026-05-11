@@ -92,48 +92,48 @@ const Events = () => {
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Cowboys vs Eels — Round 10 (TOP HIGHLIGHT) */}
-            <Card className="border-l-4 border-l-blue-500 shadow-md hover:shadow-lg transition-shadow">
+            {/* Caravan & 4x4 Expo (TOP HIGHLIGHT) */}
+            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-blue-100 text-blue-700 hover:bg-blue-100 border-none">
-                    Footy — Round 10 Home Game
+                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
+                    Expo — This Weekend
                   </Badge>
-                  <Trophy className="w-5 h-5 text-gray-400" />
+                  <Star className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Round 10: Cowboys vs Parramatta Eels (Home)</CardTitle>
+                <CardTitle className="text-xl mt-2">Townsville Caravan, 4x4 & Outdoor Adventure Expo</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday, May 8 | Kick-off: 8:00 PM (Gates open 6:30 PM)</span>
+                    <span>Friday 15 – Sunday 17 May 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>QLD Country Bank Stadium</span>
+                    <span>Reid Park Complex, Townsville</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The Cowboys host Parramatta in a Round 10 blockbuster. <strong>Heads up:</strong> Lowths Bridge closes to traffic from <strong>4:30 PM</strong> — plan your march across early to beat the rush. <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">View our Stadium Guide →</Link>
+                  The biggest outdoor adventure event of the year. Check out the latest <strong>2026 caravans, 4x4 gear, and camping tech</strong> from leading Aussie brands — plus live demos and family-friendly displays across the weekend.
                 </p>
               </CardContent>
             </Card>
 
-            {/* World Science Festival QLD */}
+            {/* Born or Built? Closing Soon */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Science — Family Day Out
+                    Closing Soon — Last Chance
                   </Badge>
                   <Star className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">World Science Festival Queensland</CardTitle>
+                <CardTitle className="text-xl mt-2">"Born or Built? Our Robotic Future"</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, May 9 | 9:00 AM – 3:00 PM</span>
+                    <span>Closing Sunday, May 17, 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -143,17 +143,17 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  A massive day of <strong>hands-on science and turtle talks</strong> at the Museum of Tropical Queensland. Perfect for curious kids and families — interactive exhibits, marine biology sessions, and live demonstrations across the day.
+                  Last chance to see this <strong>interactive AI and robotics exhibition</strong>. Perfect for a shaded family afternoon — don't leave it until closing weekend.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Dream Fields Festival — May Preview */}
+            {/* Dream Fields Festival — Next Weekend */}
             <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                    May Preview — Festival
+                    Next Weekend — Festival
                   </Badge>
                   <Star className="w-5 h-5 text-gray-400" />
                 </div>
@@ -161,7 +161,7 @@ const Events = () => {
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, May 23</span>
+                    <span>Saturday, May 23 (Next Weekend)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -171,15 +171,10 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat</strong> and <strong>Skegss</strong>. Tickets selling fast — mark this one in the calendar.
+                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat</strong> and <strong>Skegss</strong>. <strong>Tickets are moving fast</strong> — don't leave it too late.
                 </p>
               </CardContent>
             </Card>
-
-          </div>
-        </section>
-
-        {/* Mother's Day in Townsville */}
         <section className="space-y-6">
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">Mother's Day in Townsville (Sunday, May 10)</h2>
