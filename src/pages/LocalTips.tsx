@@ -84,6 +84,18 @@ const LocalTips = () => {
         "Indoor attractions are great wet-day options"
       ],
       aiPrompt: "What should I know about cyclone season if visiting Townsville?"
+    },
+    {
+      title: "Accessibility Tip",
+      icon: <Accessibility className="w-6 h-6" />,
+      description: "Townsville's newer developments like North Shore and the Jezzine Barracks refurbishment have prioritized accessibility. Most local ferries to Magnetic Island are wheelchair accessible, but it's best to check with SeaLink 24 hours ahead for peak-time boarding assistance.",
+      tips: [
+        "Pre-book SeaLink boarding assistance 24 hours ahead for peak ferry times",
+        "North Shore and Jezzine Barracks both feature flat, paved paths and accessible parking",
+        "UV/Heat Note: For heat sensitivity, the Museum of Tropical Queensland and Riverway Lagoons offer the best midday climate-controlled or shaded escapes",
+        "See our Accessible Townsville Guide for the full hub of wheelchair-friendly spots"
+      ],
+      aiPrompt: "What accessibility options are there in Townsville for wheelchair users and visitors with sensory needs?"
     }
   ];
 
