@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Check, ArrowRight } from "lucide-react";
+import { MapPin, Check, ArrowRight, Accessibility } from "lucide-react";
 import { triggerAiGuide } from "@/utils/aiGuide";
 import { Link } from "react-router-dom";
 
@@ -19,6 +19,7 @@ interface ListingCardProps {
   guideLinkText?: string;
   badge?: string;
   badgeNote?: string;
+  accessibilityNote?: string;
 }
 
 const ListingCard = ({ 
@@ -35,12 +36,26 @@ const ListingCard = ({
   guideLink,
   guideLinkText,
   badge,
-  badgeNote
+  badgeNote,
+  accessibilityNote
 }: ListingCardProps) => (
   <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30 flex flex-col relative">
-    {badge && (
-      <div className="absolute -top-1 right-2 z-10 bg-[#00A693] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
-        {badge}
+    {(badge || accessibilityNote) && (
+      <div className="absolute -top-1 right-2 z-10 flex items-center gap-1">
+        {badge && (
+          <span className="bg-[#00A693] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
+            {badge}
+          </span>
+        )}
+        {accessibilityNote && (
+          <span
+            className="bg-blue-600 text-white p-1 rounded-full shadow-md"
+            title="Accessibility info available"
+            aria-label="Accessibility info available"
+          >
+            <Accessibility className="w-3 h-3" />
+          </span>
+        )}
       </div>
     )}
     {image && (
@@ -75,6 +90,12 @@ const ListingCard = ({
       <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
       {badgeNote && (
         <p className="text-xs font-medium text-[#00A693] italic">{badgeNote}</p>
+      )}
+      {accessibilityNote && (
+        <p className="text-xs font-medium text-blue-700 flex items-start gap-1.5">
+          <Accessibility className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" aria-hidden="true" />
+          <span>{accessibilityNote}</span>
+        </p>
       )}
       
       {tags && tags.length > 0 && (

@@ -37,7 +37,8 @@ const ThingsToDo = () => {
       guideLink: "/castle-hill",
       guideLinkText: "Local Guide",
       badge: "🐾 Schnauzer Approved",
-      badgeNote: "Take your pup up the Goat Track (before 7am) for the best views in the city."
+      badgeNote: "Take your pup up the Goat Track (before 7am) for the best views in the city.",
+      accessibilityNote: "♿ Summit accessible via vehicle. Accessible parking at the lookout."
     },
     {
   title: "Little Crystal Creek",
@@ -156,7 +157,8 @@ const ThingsToDo = () => {
       guideLink: "/the-strand",
       guideLinkText: "View Strand Guide",
       badge: "🐾 Schnauzer Approved",
-      badgeNote: "Great for morning walks and sunset snacks."
+      badgeNote: "Great for morning walks and sunset snacks.",
+      accessibilityNote: "♿ Wheelchair & Pram Friendly. Ramp access to Rockpool."
     },
     {
       title: "Magnetic Island",
@@ -250,7 +252,8 @@ const ThingsToDo = () => {
       aiPrompt: "How much time should I spend at Riverway Parklands and what is the best time to visit?",
       subtitle: "Parks & Recreation",
       badge: "🐾 Schnauzer Approved",
-      badgeNote: "10km of shaded river walks perfect for dogs on-lead."
+      badgeNote: "10km of shaded river walks perfect for dogs on-lead.",
+      accessibilityNote: "♿ Accessible swimming ramps and paved riverside paths."
     },
     {
       title: "Anderson Park Botanic Gardens",
