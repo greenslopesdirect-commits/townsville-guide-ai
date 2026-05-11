@@ -589,7 +589,7 @@ const ThingsToDo = () => {
                   <Sun className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do These School Holidays (April 2026)</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do in Townsville (May 2026 Update)</h2>
                   <p className="text-muted-foreground text-sm">Keep the family entertained without spending a cent</p>
                 </div>
               </div>
