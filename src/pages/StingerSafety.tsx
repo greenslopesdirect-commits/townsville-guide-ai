@@ -15,16 +15,17 @@ const StingerSafety = () => (
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
     <SEOHead
       title="Is it Safe to Swim in Townsville Today? | 2026 Stinger Guide"
-      description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated April 27, 2026."
+      description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated May 11, 2026."
       canonical="https://www.myaussieguide.com.au/guides/stinger-safety"
     />
     <h1 className="text-4xl font-bold mb-4 text-center">May 2026 Stinger Update</h1>
+    <p className="text-center text-sm text-muted-foreground mb-6">Updated: May 11, 2026</p>
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 April 27 Status</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 May 11 Status</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        <strong>Stinger nets remain ACTIVE</strong> at <strong>The Strand, Pallarenda, and Magnetic Island</strong> through May. The good news: <strong>Dry Season breezes are clearing the water</strong> and visibility is improving daily. Always swim within the nets.
+        We are officially in the home stretch of the 2025/2026 stinger season. <strong>Stinger nets remain ACTIVE</strong> at <strong>The Strand, Pallarenda, and Magnetic Island</strong>. While the water is clearing beautifully with the Dry Season breezes, do not be tempted to swim outside the enclosures yet.
       </p>
     </div>
 
@@ -36,7 +37,7 @@ const StingerSafety = () => (
     </div>
     <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
-      <p>"March is the peak for Irukandji activity as the waters stay warm. Even if the 'stinger nets' look clear of debris, the microscopic stingers are still there. Don't risk it—stay in the nets."</p>
+      <p>"As we hit May, the air is cooling down but the water temperature is still hovering in the mid-20s—which means stingers are still a risk. Don't let the 'Perfect Dry' weather trick you into dropping your guard. If you're in the ocean, stay in the nets until the Council officially hauls them in for winter."</p>
     </div>
 
     {/* Stinger Safety for Dogs */}
@@ -47,7 +48,7 @@ const StingerSafety = () => (
       </p>
       <div className="bg-[#00A693]/10 rounded-lg p-4">
         <p className="text-sm font-medium text-foreground">
-          🐾 <strong>Schnauzer Approved Safety:</strong> During March, keep your dogs on the sand or in the very shallow wash-zone at off-leash beaches. Avoid letting them swim in deep open water outside of the nets at Pallarenda.
+          🐾 <strong>May Safety Update:</strong> Even as humidity drops, keep your dogs in the shallow wash-zone or on the wet sand at off-leash beaches. Avoid deep-water swimming for your pups at Saunders or Bushland Beach until the season officially wraps at the end of the month.
         </p>
       </div>
     </div>
@@ -69,9 +70,9 @@ const StingerSafety = () => (
 
     {/* Autumn Tip */}
     <div className="bg-sky-50 dark:bg-sky-950/30 border border-sky-300 dark:border-sky-700 rounded-xl p-6 mb-12">
-      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">🍂 Mid-March Update</h4>
+      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">🍂 Final Weeks of Season</h4>
       <p className="text-sky-700 dark:text-sky-400 leading-relaxed">
-        The transition to Autumn is starting, but the 'Stinger Season' doesn't care about the calendar. Nets stay in until at least May. Keep those stinger suits handy for Magnetic Island trips this week!
+        The official season typically concludes at the end of May. However, the exact date the nets are removed depends on consistent water temperature drops. Check back here or on the homepage for the 'Nets Out' announcement usually expected in early June.
       </p>
     </div>
 
@@ -82,7 +83,7 @@ const StingerSafety = () => (
         Stinger season in Townsville typically runs from November to May, during the warmer months in North Queensland. During this period, marine stingers such as box jellyfish and Irukandji may be present in coastal waters.
       </p>
       <p className="mb-4 text-muted-foreground leading-relaxed font-semibold">
-        We are currently in the peak of the 2025/2026 season. Stay vigilant through to May.
+        We are currently in the final weeks of the 2025/2026 season. Stay vigilant through to the end of May.
       </p>
       <p className="text-muted-foreground leading-relaxed">
         Swimming is considered safe when using patrolled stinger enclosures at The Strand, Pallarenda, and other netted beaches. Always check local signage or Surf Life Saving updates before entering the water.
@@ -91,16 +92,16 @@ const StingerSafety = () => (
 
     {/* Section 2 */}
     <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-4">Where Are Stinger Nets in Townsville?</h2>
+      <h2 className="text-2xl font-bold mb-4">Where Are Stinger Nets in Townsville? (Including Magnetic Island Stinger Nets)</h2>
       <p className="mb-4 text-muted-foreground leading-relaxed">Stinger nets are installed during the season at:</p>
       <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">
         <li>The Strand (Townsville Foreshore)</li>
         <li>Pallarenda Beach</li>
         <li>Rowes Bay</li>
-        <li>Horseshoe Bay (Magnetic Island)</li>
+        <li><strong>Magnetic Island stinger nets</strong> — Horseshoe Bay and Picnic Bay</li>
       </ul>
       <p className="text-muted-foreground leading-relaxed">
-        These enclosures provide a safer swimming environment during stinger season. Conditions can vary depending on weather and tides.
+        The <strong>Magnetic Island stinger nets</strong> at Horseshoe Bay are the main patrolled enclosure on the island and remain active through May. These enclosures provide a safer swimming environment during stinger season, though conditions can vary depending on weather and tides.
       </p>
     </section>
 
