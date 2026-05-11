@@ -150,6 +150,11 @@ const MovingToTownsville = () => {
                     easy access to everything, but far enough away to enjoy a peaceful evening stroll under
                     the light of Castle Hill.
                   </p>
+                  <p className="mt-3">
+                    <strong>May 11 Update:</strong> With the evening temps dropping to 20°C, the walk under
+                    Castle Hill is at its absolute best right now. It's the perfect example of the
+                    "Quiet Business" lifestyle.
+                  </p>
                 </LocalInsightCard>
                 <Button asChild variant="outline" size="sm">
                   <Link to="/dog-friendly">
