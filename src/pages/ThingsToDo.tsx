@@ -639,9 +639,9 @@ const ThingsToDo = () => {
               </div>
 
               <div className="mt-6">
-                <LocalInsightCard title="April Photography Tip" variant="tip">
+                <LocalInsightCard title="May Photography Tip" variant="tip">
                   <p>
-                    April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. Perfect for outdoor photography!
+                    May in Townsville offers some of the best light of the year. With the humidity gone, the air is clearer — perfect for capturing the sunset from Castle Hill or the mountain views at Paluma Range.
                   </p>
                 </LocalInsightCard>
               </div>
