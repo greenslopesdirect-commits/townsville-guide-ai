@@ -182,17 +182,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: May 4, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Updated: May 11, 2026)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Heading to the <strong>Cowboys vs Eels game on May 8</strong>? The CBD will be busy from late afternoon. Plan to walk across <strong>Lowths Bridge before the 4:30 PM closure</strong> if you're parking in the city.
+                Planning for the <strong>Cowboys vs Rabbitohs on May 24</strong>? Sunday afternoon games are a local favourite. Expect the CBD and ferry terminals to be busy from <strong>2:00 PM</strong>.
               </p>
             </div>
 
-            {/* Friday Night Footy Local Tip */}
+            {/* Sunday Arvo Footy Local Tip */}
             <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-300 dark:border-blue-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-blue-800 dark:text-blue-300 font-medium leading-relaxed">
-                🏉 Heads-Up Friday May 8: Cowboys vs Eels at QCB Stadium — <strong>8:00 PM kick-off</strong> (gates open 6:30 PM). Lowths Bridge closes at <strong>4:30 PM</strong>, so plan parking, dinner bookings and your walk across early.
+                🏟️ Stadium Tip: The sun hits the <strong>Western Stand</strong> hard during afternoon games — bring your sunnies!
               </p>
             </div>
           </div>
