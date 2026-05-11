@@ -249,7 +249,7 @@ const DogFriendly = () => {
                   <Droplets className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-sm text-foreground">Post-Beach Rinse</p>
-                    <p className="text-sm text-muted-foreground mt-1">Tropical salt and humidity can cause skin irritation. Always use the fresh-water showers at the Pallarenda boat ramp or The Strand to rinse your dog's coat and paws.</p>
+                    <p className="text-sm text-muted-foreground mt-1">Tropical salt and humidity can cause skin irritation. The fresh-water showers at the Pallarenda boat ramp are a lifesaver for rinsing salt out of thick coats (like Max's!) before the drive home. The Strand showers also work in a pinch.</p>
                   </div>
                 </li>
               </ul>
