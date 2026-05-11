@@ -74,9 +74,27 @@ const TheStrand = () => {
         {/* Current Status - Critical for Tourists */}
         <Alert className="bg-amber-50 border-amber-200">
           <AlertTriangle className="h-4 w-4 text-amber-600" />
-          <AlertTitle className="text-amber-800 font-semibold">Stinger Season is Active (Nov – May)</AlertTitle>
+          <AlertTitle className="text-amber-800 font-semibold">Final Month of Stinger Season (Nov – May)</AlertTitle>
           <AlertDescription className="text-amber-700 mt-1">
-            Do not swim in the open ocean. Only swim inside the <strong>Stinger Nets</strong> (located near the Surf Club and Gregory St) or in the <strong>Rockpool</strong>.
+            Final month of stinger season! The nets are still in and essential. Visibility is at 100%, but the stingers are still there—don't risk the open water yet. Only swim inside the <strong>Stinger Nets</strong> (near the Surf Club and Gregory St) or in the <strong>Rockpool</strong>.
+          </AlertDescription>
+        </Alert>
+
+        {/* Footy Alert */}
+        <Alert className="bg-blue-50 border-blue-200">
+          <AlertTriangle className="h-4 w-4 text-blue-600" />
+          <AlertTitle className="text-blue-900 font-semibold">🏟️ Footy Alert (May 16 & 24)</AlertTitle>
+          <AlertDescription className="text-blue-800 mt-1">
+            With the Cowboys away for Magic Round this weekend (May 16), Strand bars like The Seaview and Longboard will be the prime spots for watch parties. Looking ahead: For the Rabbitohs game (Sunday, May 24), expect parking along the Strand to be tighter than usual as fans head in early for a pre-game beach walk.
+          </AlertDescription>
+        </Alert>
+
+        {/* Night Markets */}
+        <Alert className="bg-emerald-50 border-emerald-200">
+          <Info className="h-4 w-4 text-emerald-700" />
+          <AlertTitle className="text-emerald-900 font-semibold">🌙 Strand Night Markets</AlertTitle>
+          <AlertDescription className="text-emerald-800 mt-1">
+            The May markets were a blast! The next Strand Night Markets are scheduled for <strong>Friday, June 5</strong>. Mark your calendar for the first Friday of the month.
           </AlertDescription>
         </Alert>
 
