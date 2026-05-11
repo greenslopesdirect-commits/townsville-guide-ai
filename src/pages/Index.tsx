@@ -116,7 +116,17 @@ const Index = () => {
         
         <Hero />
         
-        {/* Live Bulletin — May 11 Update */}
+        {/* Newsletter Section */}
+        <NewsletterSection />
+        
+        <section id="weather">
+          <WeatherInfo />
+        </section>
+        <section id="quick-access">
+          <QuickAccess />
+        </section>
+        
+        {/* Live Bulletin — Current Status Card */}
         <section className="py-12 sm:py-16 bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -160,15 +170,6 @@ const Index = () => {
           </div>
         </section>
         
-        {/* Newsletter Section */}
-        <NewsletterSection />
-        
-        <section id="weather">
-          <WeatherInfo />
-        </section>
-        <section id="quick-access">
-          <QuickAccess />
-        </section>
         <section id="top-picks">
           <TopPicks />
         </section>
