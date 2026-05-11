@@ -20,11 +20,11 @@ const Footer = () => {
                 Essential Townsville Guides
               </h4>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/magnetic-island-day-trip" className="text-muted-foreground hover:text-primary transition-colors">Magnetic Island Day Trip</Link></li>
-                <li><Link to="/stinger-safety" className="text-muted-foreground hover:text-primary transition-colors">Stinger & Safety Guide</Link></li>
+                <li><Link to="/guides/magnetic-island-day-trip" className="text-muted-foreground hover:text-primary transition-colors">Magnetic Island Day Trip</Link></li>
+                <li><Link to="/guides/stinger-safety" className="text-muted-foreground hover:text-primary transition-colors">Stinger & Safety Guide</Link></li>
                 <li><Link to="/cowboys-stadium-guide" className="text-muted-foreground hover:text-primary transition-colors">Cowboys Stadium & NRL Info</Link></li>
                 <li><Link to="/townsville-airport" className="text-muted-foreground hover:text-primary transition-colors">Townsville Airport Guide</Link></li>
-                <li><Link to="/beat-the-heat" className="text-muted-foreground hover:text-primary transition-colors">Beat the Heat Guide</Link></li>
+                <li><Link to="/guides/beat-the-heat" className="text-muted-foreground hover:text-primary transition-colors">Beat the Heat Guide</Link></li>
               </ul>
             </div>
 
@@ -39,7 +39,7 @@ const Footer = () => {
                 <li><Link to="/great-barrier-reef-townsville" className="text-muted-foreground hover:text-primary transition-colors">Great Barrier Reef Tours</Link></li>
                 <li><Link to="/billabong-sanctuary" className="text-muted-foreground hover:text-primary transition-colors">Billabong Sanctuary</Link></li>
                 <li><Link to="/little-crystal-creek-townsville" className="text-muted-foreground hover:text-primary transition-colors">Little Crystal Creek</Link></li>
-                <li><Link to="/sunset-walks" className="text-muted-foreground hover:text-primary transition-colors">Sunset Walks & Trails</Link></li>
+                <li><Link to="/guides/sunset-walks" className="text-muted-foreground hover:text-primary transition-colors">Sunset Walks & Trails</Link></li>
               </ul>
             </div>
 
@@ -95,7 +95,7 @@ const Footer = () => {
               <li><Link to="/accommodation" className="hover:text-primary transition-colors">Accommodation</Link></li>
               <li><Link to="/flights" className="hover:text-primary transition-colors">Flights</Link></li>
               <li><Link to="/local-tips" className="hover:text-primary transition-colors">Local Tips</Link></li>
-              <li><Link to="/magnetic-island-day-trip" className="hover:text-primary transition-colors">Wild Koala Guide</Link></li>
+              <li><Link to="/guides/magnetic-island-day-trip" className="hover:text-primary transition-colors">Wild Koala Guide</Link></li>
               <li><Link to="/cowboys-stadium-guide" className="hover:text-primary transition-colors">Cowboys Game Day</Link></li>
               <li><Link to="/north-shore-townsville" className="hover:text-primary transition-colors">North Shore Guide</Link></li>
               <li><Link to="/moving-to-townsville" className="hover:text-primary transition-colors">Moving to Townsville Guide</Link></li>
