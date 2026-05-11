@@ -2,6 +2,7 @@ import { ArrowLeft, MapPin, Landmark, Palette, Mountain, Flag, Car, Footprints }
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import maxKissingPoint from "@/assets/max-at-kissing-point.webp";
 
 const highlights = [
   {
@@ -32,9 +33,9 @@ const JezzineBarracks = () => {
       {/* Hero Section */}
       <div className="relative bg-slate-900">
         <img
-          src="/jezzine-barracks-townsville.webp"
-          alt="Jezzine Barracks coastal boardwalk and heritage precinct in Townsville"
-          className="w-full h-[300px] md:h-[500px] object-cover opacity-60"
+          src={maxKissingPoint}
+          alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
+          className="w-full h-[300px] md:h-[500px] object-cover opacity-80 rounded-b-lg"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent" />
@@ -50,6 +51,19 @@ const JezzineBarracks = () => {
       </div>
 
       <div className="container mx-auto max-w-4xl px-4 mt-8 space-y-8">
+
+        {/* Feature Image Caption */}
+        <figure className="rounded-lg overflow-hidden border border-border/40 bg-muted/30">
+          <img
+            src={maxKissingPoint}
+            alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
+            className="w-full h-auto rounded-lg"
+            loading="lazy"
+          />
+          <figcaption className="p-4 text-sm text-muted-foreground italic">
+            Sunset at Kissing Point Fort. The elevated boardwalks at Jezzine are the best spot in Townsville to catch the evening breeze and watch the light change over Cleveland Bay.
+          </figcaption>
+        </figure>
 
         {/* Quick Summary */}
         <Card className="bg-muted/30 border-border/40">
