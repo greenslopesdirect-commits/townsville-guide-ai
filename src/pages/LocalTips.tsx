@@ -223,8 +223,8 @@ const LocalTips = () => {
               <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">🏟️ May 8 Footy Alert — QCB Stadium</p>
-                  <p className="text-xs text-muted-foreground mt-1"><strong>Expect heavy CBD traffic and a busy Lowths Bridge from 5:00 PM on Friday, May 8, for the Cowboys vs Eels game.</strong></p>
+                  <p className="font-medium text-sm text-foreground">🏟️ May 24 Footy Alert — Sunday Afternoon Clash</p>
+                  <p className="text-xs text-muted-foreground mt-1">For the <strong>Cowboys vs Rabbitohs</strong> (4:05 PM kick-off), expect the CBD and Lowths Bridge to be busy from 1:00 PM. Local Tip: Sunday games bring more families—parking at Lou Litster Park and taking the shuttle is your best bet to avoid the pre-game rush.</p>
                 </div>
               </div>
             </section>
