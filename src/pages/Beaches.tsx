@@ -178,8 +178,8 @@ const Beaches = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
-            Beaches Guide
+          <span className="text-xs font-medium text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
+            Updated: May 11, 2026
           </span>
         </div>
       </div>
