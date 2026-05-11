@@ -167,11 +167,9 @@ const Accommodation = () => {
 
             {/* Seasonal Alert */}
             <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-12">
-              <p className="text-amber-800 dark:text-amber-300 leading-relaxed mb-3">
-                ⚠️ <strong>Last Call for Easter:</strong> With only 1 week until the school holidays begin (April 2), availability across Townsville is extremely limited. If you haven't booked your Magnetic Island or beachfront stay yet, do it today.
-              </p>
+              <p className="text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 font-semibold mb-2">Updated: May 11, 2026</p>
               <p className="text-amber-800 dark:text-amber-300 leading-relaxed">
-                🏆 <strong>Cowboys vs. Storm (Saturday, March 28):</strong> This Saturday night is a blockbuster. Expect CBD and Palmer Street hotels (like the Grand Chancellor and Oaks) to be at 100% capacity. If you're coming for the game, look for availability in North Shore or the Northern Suburbs as a backup.
+                ⚠️ <strong>May High-Demand Alert:</strong> Between the Caravan & 4x4 Expo (May 15–17) and the Dream Fields Festival (May 23), accommodation in the CBD and South Townsville is booking out fast. If you're heading in for the Cowboys vs. Rabbitohs home game on May 24, we recommend securing your stay immediately.
               </p>
             </div>
 
