@@ -1,7 +1,8 @@
 import { Helmet } from "react-helmet";
 import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
-import { Mail, Calendar, AlertCircle, Handshake, Copy, Check } from "lucide-react";
+import { Mail, Calendar, AlertCircle, Handshake, Copy, Check, Phone, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
 const EMAIL = "hello@myaussieguide.com.au";
@@ -44,7 +45,23 @@ const Contact = () => {
       <div className="min-h-screen bg-background">
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-4xl">
-            
+
+            {/* Urgent Inquiries Callout */}
+            <div className="mb-8 flex items-start gap-3 p-4 rounded-lg bg-red-50 border border-red-200">
+              <Phone className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+              <div className="flex-1 text-sm">
+                <p className="font-semibold text-red-900">Need help right now?</p>
+                <p className="text-red-800 mt-0.5">
+                  This inbox isn't monitored 24/7. For urgent inquiries — emergency services,
+                  hospitals, council, vets, transport — see our{" "}
+                  <Link to="/useful-contacts" className="font-medium underline hover:no-underline inline-flex items-center gap-0.5">
+                    Useful Contacts &amp; Emergency Info <ArrowRight className="w-3 h-3" />
+                  </Link>{" "}
+                  page. In a life-threatening emergency, always dial <strong>000</strong>.
+                </p>
+              </div>
+            </div>
+
             {/* Hero Section */}
             <header className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
