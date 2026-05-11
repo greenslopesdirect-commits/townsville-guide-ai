@@ -131,7 +131,7 @@ const TheStrand = () => {
                   A man-made saltwater lagoon. Safe from stingers year-round. Gentle sloping entry makes it perfect for toddlers.
                 </p>
                 <div className="bg-blue-50 p-3 rounded-md text-xs text-blue-800">
-                  <strong>Local Tip:</strong> Usually closed on <span className="font-bold">Wednesdays</span> for cleaning.
+                  <strong>Local Tip:</strong> Closed every <span className="font-bold">Wednesday</span> for cleaning. <em>May Update: The water is crisp and clear—ideal for a morning lap before the UV peaks.</em>
                 </div>
               </CardContent>
             </Card>
