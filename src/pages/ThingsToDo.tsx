@@ -252,7 +252,8 @@ const ThingsToDo = () => {
       aiPrompt: "How much time should I spend at Riverway Parklands and what is the best time to visit?",
       subtitle: "Parks & Recreation",
       badge: "🐾 Schnauzer Approved",
-      badgeNote: "10km of shaded river walks perfect for dogs on-lead."
+      badgeNote: "10km of shaded river walks perfect for dogs on-lead.",
+      accessibilityNote: "♿ Accessible swimming ramps and paved riverside paths."
     },
     {
       title: "Anderson Park Botanic Gardens",
