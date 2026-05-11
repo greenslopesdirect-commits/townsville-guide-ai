@@ -160,7 +160,7 @@ const TheStrand = () => {
                   Freshwater playground. The "Big Bucket" drops every few minutes. Surrounded by BBQ areas and grass.
                 </p>
                 <div className="bg-purple-50 p-3 rounded-md text-xs text-purple-800">
-                  <strong>Local Tip:</strong> Usually closed on <span className="font-bold">Tuesdays</span> for maintenance.
+                  <strong>Local Tip:</strong> May–October Schedule: <span className="font-bold">8:00 AM – 5:00 PM</span>. Closed every <span className="font-bold">Tuesday</span> for scheduled maintenance.
                 </div>
               </CardContent>
             </Card>
