@@ -252,6 +252,13 @@ const DogFriendly = () => {
                     <p className="text-sm text-muted-foreground mt-1">Tropical salt and humidity can cause skin irritation. The fresh-water showers at the Pallarenda boat ramp are a lifesaver for rinsing salt out of thick coats (like Max's!) before the drive home. The Strand showers also work in a pinch.</p>
                   </div>
                 </li>
+                <li className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-sm text-foreground">🌿 Dry Season Bonus</p>
+                    <p className="text-sm text-muted-foreground mt-1">Not a beach fan? In May, the Ross River Parkway (near Loam Island) offers miles of shaded, wind-swept paths that are much cooler than the coastal dunes during midday.</p>
+                  </div>
+                </li>
               </ul>
               <Button asChild variant="outline" className="w-full sm:w-auto border-jade text-jade hover:bg-jade hover:text-white">
                 <a href="https://aussiedogguide.com.au" target="_blank" rel="noopener noreferrer">
