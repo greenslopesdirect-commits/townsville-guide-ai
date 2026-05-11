@@ -48,7 +48,7 @@ const StingerSafety = () => (
       </p>
       <div className="bg-[#00A693]/10 rounded-lg p-4">
         <p className="text-sm font-medium text-foreground">
-          🐾 <strong>Schnauzer Approved Safety:</strong> During March, keep your dogs on the sand or in the very shallow wash-zone at off-leash beaches. Avoid letting them swim in deep open water outside of the nets at Pallarenda.
+          🐾 <strong>May Safety Update:</strong> Even as humidity drops, keep your dogs in the shallow wash-zone or on the wet sand at off-leash beaches. Avoid deep-water swimming for your pups at Saunders or Bushland Beach until the season officially wraps at the end of the month.
         </p>
       </div>
     </div>
