@@ -46,7 +46,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – May 4 Update: Round 10 Friday Night Footy!
+               2026 Season – May 11 Update: Magic Round & Round 12 Home Game
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -54,11 +54,11 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Season Update
                    </Badge>
-                    <CardTitle className="text-lg mt-2">Round 10 — The Eels are coming to Town</CardTitle>
+                    <CardTitle className="text-lg mt-2">Magic Round Bound, Rabbitohs Next at Home</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      After a high-energy home stand in April, we look forward to hosting <strong>Parramatta</strong> for a massive Friday night clash at QCB Stadium.
+                      Following a Golden Point thriller against the Eels (<strong>30–33</strong>), we're looking ahead to <strong>Magic Round in Brisbane</strong> before returning home for a Sunday afternoon blockbuster against the <strong>Rabbitohs</strong>.
                     </p>
                  </CardContent>
                </Card>
@@ -68,21 +68,24 @@ const CowboysStadiumGuide = () => {
                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                     Next Home Game
                   </Badge>
-                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 10 – Cowboys vs. Parramatta Eels</CardTitle>
+                  <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 12 – Cowboys vs. South Sydney Rabbitohs</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar className="w-4 h-4 flex-shrink-0" />
-                      <span>Friday, May 8, 2026</span>
+                      <span>Sunday, May 24, 2026</span>
                     </div>
                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
                       <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                       <span>
                         Queensland Country Bank Stadium.<br />
-                        <span className="font-medium text-foreground">Gates Open: 6:30 PM | Kick-off: 8:00 PM</span>
+                        <span className="font-medium text-foreground">Gates Open: 2:30 PM | Kick-off: 4:05 PM</span>
                       </span>
                     </div>
+                  </div>
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-900">
+                    <strong>☀️ Stadium Tip — Sun Protection:</strong> Sunday arvo footy is back! If you're seated in the <strong>Western Stand</strong>, you'll face significant sun glare for the first half. Bring your sunnies and a hat — the <strong>Eastern Stand</strong> will be in the shade much earlier.
                   </div>
                   <Button asChild className="w-full sm:w-auto">
                     <a href="https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825" target="_blank" rel="noopener noreferrer">
@@ -93,6 +96,56 @@ const CowboysStadiumGuide = () => {
                 </CardContent>
               </Card>
             </div>
+          </section>
+
+          {/* Upcoming Schedule */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+              <Calendar className="w-6 h-6 text-primary" />
+              Upcoming Schedule
+            </h2>
+            <Card>
+              <CardContent className="p-0">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead className="bg-muted/50 text-foreground">
+                      <tr>
+                        <th className="text-left font-semibold px-4 py-3">Round</th>
+                        <th className="text-left font-semibold px-4 py-3">Match</th>
+                        <th className="text-left font-semibold px-4 py-3">Date & Time</th>
+                        <th className="text-left font-semibold px-4 py-3">Venue</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-border">
+                      <tr>
+                        <td className="px-4 py-3 font-medium">Round 11 <span className="text-xs text-muted-foreground">(Magic Round)</span></td>
+                        <td className="px-4 py-3">Away vs Roosters</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat May 16, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">Suncorp Stadium</td>
+                      </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 12 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Rabbitohs</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sun May 24, 4:05 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
+                      <tr>
+                        <td className="px-4 py-3 font-medium">Round 13</td>
+                        <td className="px-4 py-3">Away vs Raiders</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sun May 31, 4:05 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">GIO Stadium</td>
+                      </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 14 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Dolphins</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat June 6, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </CardContent>
+            </Card>
           </section>
 
           {/* Visiting from out of town CTA */}
