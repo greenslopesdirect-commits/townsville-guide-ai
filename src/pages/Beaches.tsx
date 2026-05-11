@@ -98,7 +98,7 @@ const northernBeaches = [
     badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
     tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that becomes very shallow at low tide. April 27 Update: As we transition into the Dry Season, the sunset photography at Toolakea is at its peak. Visit at low tide to capture the vast, reflective sand flats.",
+    description: "A sleepy residential beach that becomes very shallow at low tide. May 11 Update: Sunset photography at Toolakea is hitting its peak right now. The clear May skies provide incredible reflections on the sand flats at low tide. Pack the camera and arrive 30 minutes before sunset.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
