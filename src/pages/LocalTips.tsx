@@ -20,14 +20,14 @@ const LocalTips = () => {
         "Dry season: Best for hiking, beaches, outdoor events",
         "Wet season: Fewer crowds, cheaper accommodation",
         "Shoulder months (April–May, Sept–Oct) are ideal",
-        "Check Today's Weather Forecast: April 27 Update — Crisp mornings and sunny 26°C days. The Dry Season has arrived, but the UV remains Extreme (11+) through midday."
+        "Check Today's Weather Forecast: May 11 Update — Crisp mornings and sunny 26°C days. The Dry Season is in full swing, but don't let the cooler air fool you—the UV index is still hitting Extreme (11+) by midday."
       ],
       aiPrompt: "What's the best time of year to visit Townsville based on weather and activities?"
     },
     {
       title: "Staying Safe in the Heat",
       icon: <ThermometerSun className="w-6 h-6" />,
-      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. April 27 Alert: UV Index is Extreme (11+). Crisp 26°C mornings — but stay hydrated and SPF up by 10am.",
+      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. May 11 Alert: The air feels cooler, but hydration is still key. If you're hiking the Goat Track, finish before 9:00 AM to avoid the UV spike (11+).",
       tips: [
         "Walk Castle Hill at sunrise or sunset only",
         "Carry at least 1L water per person",
@@ -69,7 +69,7 @@ const LocalTips = () => {
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
         "Many cafés provide water bowls",
-        "🐾 Schnauzer Approved Tip: April 27 Update — Those cooling morning breezes are back! It's peak season for the sand flats at Pallarenda. Aim for a 7:30 AM run to beat the midday UV spike, and remember to bring fresh water for the pups as the humidity drops."
+        "🐾 Schnauzer Approved Tip: May 11 Update — With the lower humidity, it's peak season for the Pallarenda sand flats. Aim for a 7:30 AM run to enjoy the best of the morning breeze. Safety Reminder: Stinger season is in its final weeks—keep your pups on the wet sand and out of the deep water outside the nets."
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
@@ -78,7 +78,7 @@ const LocalTips = () => {
       icon: <CloudRain className="w-6 h-6" />,
       description: "Cyclones are part of life in North Queensland (November–April), though direct hits are rare. Locals prepare but don't panic — most heavy rain passes quickly.",
       tips: [
-        "Cyclone season runs November–April",
+        "Cyclone season has officially concluded for 2025/2026, though we remain prepared for late-season tropical activity until the end of May",
         "Follow Bureau of Meteorology updates",
         "Most storms pass quickly",
         "Indoor attractions are great wet-day options"
@@ -126,7 +126,7 @@ const LocalTips = () => {
     <>
       <SEOHead
         title="Local Townsville Tips 2026 | Safety, Weather & Insider Advice"
-        description="Updated April 27: Essential local-verified tips for Townsville. Includes stinger safety, coconut hazards, May 2026 weather advice, and infrastructure updates."
+        description="Updated May 11, 2026: Essential local-verified tips for Townsville. Includes stinger safety, coconut hazards, May 2026 weather advice, and infrastructure updates."
         canonical="https://www.myaussieguide.com.au/local-tips"
       />
       <Helmet>
@@ -193,7 +193,7 @@ const LocalTips = () => {
             <div className="space-y-4 mb-8">
               <div className="p-4 rounded-lg border bg-card">
                 <p className="text-sm text-muted-foreground">
-                  ☀️ Current Status (April 27, 2026): Dry Season has arrived! Stinger nets remain ACTIVE. Conditions are clear with crisp mornings and sunny 26°C days—the "Best of Townsville" window is officially open.
+                  ☀️ Current Status (May 11, 2026): The 'Perfect Dry' is officially here! Stinger nets remain ACTIVE. With crisp 20°C mornings and sunny 26°C days, Townsville is at its absolute best. Humidity is low, making it prime time for outdoor exploration.
                 </p>
               </div>
               <StingerSeasonAlert />
@@ -223,8 +223,8 @@ const LocalTips = () => {
               <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">🏟️ May 8 Footy Alert — QCB Stadium</p>
-                  <p className="text-xs text-muted-foreground mt-1"><strong>Expect heavy CBD traffic and a busy Lowths Bridge from 5:00 PM on Friday, May 8, for the Cowboys vs Eels game.</strong></p>
+                  <p className="font-medium text-sm text-foreground">🏟️ May 24 Footy Alert — Sunday Afternoon Clash</p>
+                  <p className="text-xs text-muted-foreground mt-1">For the <strong>Cowboys vs Rabbitohs</strong> (4:05 PM kick-off), expect the CBD and Lowths Bridge to be busy from 1:00 PM. Local Tip: Sunday games bring more families—parking at Lou Litster Park and taking the shuttle is your best bet to avoid the pre-game rush.</p>
                 </div>
               </div>
             </section>
@@ -240,7 +240,7 @@ const LocalTips = () => {
                 <div>
                   <p className="font-medium text-sm text-foreground">Tropical Tip: The 2kg Overhead Hazard</p>
                   <p className="text-xs text-muted-foreground mt-1">
-                    While the palms in Anzac Memorial Park and along The Strand provide the best shade, locals know to do a quick "overhead check." As the Dry Season breezes pick up in May, falling coconuts are a real risk. A local was nearly hit just last week—look up before you set up your picnic!
+                    While the palms in Anzac Memorial Park and along The Strand provide the best shade, locals know to do a quick "overhead check." A falling coconut weighs around 2kg and can cause serious injury. As the May breezes strengthen, this risk increases. Always look up for heavy coconuts before choosing a palm tree for your Strand picnic!
                   </p>
                 </div>
               </div>
