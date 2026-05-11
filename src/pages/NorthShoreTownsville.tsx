@@ -10,8 +10,8 @@ const NorthShoreTownsville = () => {
   return (
     <>
       <SEOHead
-        title="North Shore Townsville: Nature, Community & Guide (March 2026)"
-        description="Discover Townsville's North Shore. From the Burdell Wetlands and Leisure Centre to the best local coffee, explore our updated 2026 guide to the northern heart of the city."
+        title="North Shore Townsville: Nature, Community & Guide (May 2026)"
+        description="Discover Townsville's North Shore. From the Burdell Wetlands and Leisure Centre to the best local coffee, explore our updated May 2026 guide to the northern heart of the city."
         canonical="https://www.myaussieguide.com.au/north-shore-townsville"
       />
 
