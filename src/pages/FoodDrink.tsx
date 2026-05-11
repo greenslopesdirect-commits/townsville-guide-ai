@@ -274,15 +274,15 @@ const FoodDrink = () => {
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                 ⚠️ <strong>The Monday & Sunday Check:</strong> While Townsville is waking up, remember that many boutique CBD cafes close early today (Monday) and Sunday. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi are local favorites that open early to keep the city moving. <em>March 23 Update: Most CBD cafes are back to their regular rhythm today following a busy Harmony Week. For a guaranteed Monday caffeine hit, Tide Cafe and Hoi Polloi remain the local picks for an early start.</em>
+                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>May 11 Update: As we settle into the Dry Season, most CBD and Strand cafes are at full capacity on weekends. While many boutique spots close early on Mondays, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit.</em>
                </p>
             </LocalInsightCard>
 
             {/* Weekly Highlight */}
              <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
-               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (March 23–29)</h3>
+               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (May 11–17)</h3>
                <p className="text-sm text-muted-foreground leading-relaxed">
-                 🌅 <strong>March 23–29:</strong> The focus is on the waterfront this week. With the humidity dropping slightly, it's the perfect time for alfresco dining at A Touch of Salt or a sunset gelato at Juliette's.
+                 🌅 <strong>May 11–17:</strong> The focus is on alfresco dining this week. With the humidity gone and crisp evening breezes, it is the absolute peak window for a riverfront dinner at A Touch of Salt or a sunset cocktail on the Rambutan Rooftop. If you're out for a weekend treat, the Juliette's line-up on The Strand is the place to be.
                </p>
              </div>
 
