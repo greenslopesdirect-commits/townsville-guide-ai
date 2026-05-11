@@ -274,7 +274,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">Next home game: <strong>Round 10 — Cowboys vs Parramatta Eels, Friday May 8</strong> — early 6:00 PM kick-off at QCB Stadium.</p>
+                <p className="text-sm text-gray-600">Next home game: <strong>Round 12 — Cowboys vs Rabbitohs, Sunday, May 24 (4:05 PM)</strong> at QCB Stadium.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
