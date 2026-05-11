@@ -83,7 +83,7 @@ const northernBeaches = [
     badge: { label: "⭐ Top Search Pick", color: "bg-amber-100 text-amber-800 hover:bg-amber-100" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Quiet", "Dog Friendly"],
-    description: "6km of unspoilt sand—the ultimate local pick for a peaceful escape. New for May 2026: Check our updated guide for the best stargazing spots and family-friendly beach activities north of the city.",
+    description: "6km of unspoilt sand — the ultimate local pick for a peaceful escape. New for May 2026: With the humidity gone, the 6km stretch of Saunders is perfect for long, quiet walks. Tip: The northern end is currently offering the best beachcombing after the recent tides.",
     guideLink: "/beaches/saunders-beach",
     guideLinkText: "View Full Saunders Beach Guide →",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
