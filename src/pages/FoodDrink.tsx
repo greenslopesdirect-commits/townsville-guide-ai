@@ -154,7 +154,7 @@ const FoodDrink = () => {
       aiPrompt: "Tell me about the menu, price range, and vibe at Hoi Polloi Café.",
       subtitle: "Specialty Brunch",
        badge: "🐾 Schnauzer Approved",
-       badgeNote: "Shaded outdoor seating and a very dog-friendly vibe. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
+       badgeNote: "Shaded outdoor seating and water bowls make this a top pick for your post-walk cooldown with the pup. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
        dogGuideLink: true
     },
     {
