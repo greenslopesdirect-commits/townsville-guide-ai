@@ -109,6 +109,7 @@ const App = () => (
             <Route path="shopping" element={<Shopping />} />
             <Route path="nature" element={<Nature />} />
             <Route path="moving-to-townsville" element={<MovingToTownsville />} />
+            <Route path="accessible-townsville" element={<AccessibleTownsville />} />
             
             {/* MONETISATION PAGES */}
             <Route path="flights" element={<FlightsToTownsville />} />
