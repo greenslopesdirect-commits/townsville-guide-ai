@@ -275,6 +275,18 @@ const NorthShoreTownsville = () => {
             </LocalInsightCard>
           </section>
 
+          {/* Accessibility Cross-Link */}
+          <div className="flex items-start gap-2 p-4 rounded-lg bg-blue-50 border border-blue-100 text-sm text-blue-800">
+            <span className="mt-0.5">♿</span>
+            <p>
+              View our full{" "}
+              <Link to="/accessible-townsville" className="font-medium text-blue-700 hover:underline">
+                Townsville Accessibility Guide
+              </Link>{" "}
+              for more mobility-friendly locations.
+            </p>
+          </div>
+
           {/* Getting There */}
           <section className="space-y-4">
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
