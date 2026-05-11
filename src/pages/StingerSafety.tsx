@@ -92,16 +92,16 @@ const StingerSafety = () => (
 
     {/* Section 2 */}
     <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-4">Where Are Stinger Nets in Townsville?</h2>
+      <h2 className="text-2xl font-bold mb-4">Where Are Stinger Nets in Townsville? (Including Magnetic Island Stinger Nets)</h2>
       <p className="mb-4 text-muted-foreground leading-relaxed">Stinger nets are installed during the season at:</p>
       <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">
         <li>The Strand (Townsville Foreshore)</li>
         <li>Pallarenda Beach</li>
         <li>Rowes Bay</li>
-        <li>Horseshoe Bay (Magnetic Island)</li>
+        <li><strong>Magnetic Island stinger nets</strong> — Horseshoe Bay and Picnic Bay</li>
       </ul>
       <p className="text-muted-foreground leading-relaxed">
-        These enclosures provide a safer swimming environment during stinger season. Conditions can vary depending on weather and tides.
+        The <strong>Magnetic Island stinger nets</strong> at Horseshoe Bay are the main patrolled enclosure on the island and remain active through May. These enclosures provide a safer swimming environment during stinger season, though conditions can vary depending on weather and tides.
       </p>
     </section>
 
