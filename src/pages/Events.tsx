@@ -185,7 +185,7 @@ const Events = () => {
           <div>
             <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
             <p className="text-amber-800 text-sm mt-1">
-              Townsville's tropical climate means outdoor events are usually best early morning or late afternoon. Locals often avoid midday heat, especially during the warmer months. Check out our <Link to="/guides/beat-the-heat" className="text-primary font-medium hover:underline">Beat the Heat guide</Link> for more tips.
+              May marks the start of the "Perfect Dry." The humidity has dropped, and the nights are getting cooler — perfect for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or a sunset walk along the Ross River Parkway.
             </p>
           </div>
         </div>
