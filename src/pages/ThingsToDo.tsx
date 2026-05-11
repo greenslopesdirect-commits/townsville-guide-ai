@@ -271,8 +271,8 @@ const ThingsToDo = () => {
   return (
     <>
       <SEOHead
-        title="25 Best Things to Do in Townsville (Updated March 2026)"
-        description="From secret waterfalls to Castle Hill sunrises, explore the ultimate local guide to Townsville. Updated for March 23–29 with event tips, school holiday prep, and hidden gems."
+        title="25 Best Things to Do in Townsville (Updated May 2026)"
+        description="From dry-season waterfall swims to Castle Hill sunsets, explore the ultimate local guide to Townsville. Updated May 11 with seasonal tips and hidden gems."
         canonical="https://www.myaussieguide.com.au/things-to-do"
       />
       <Helmet>
@@ -334,7 +334,7 @@ const ThingsToDo = () => {
             {/* Weekly Highlight */}
             <div className="mb-12 p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-300 dark:border-emerald-700">
               <p className="text-emerald-800 dark:text-emerald-300 leading-relaxed">
-                🌊 <strong>Waterfall Watch (March 23):</strong> With the clearing skies this week, the flow at Little Crystal Creek and Jourama Falls is perfect. This is the peak 'lush' window before the dry season kicks in—ideal for photographers.
+                🌊 <strong>Waterfall Watch (May 11):</strong> As we move further into the Dry Season, the waterfalls at Little Crystal Creek and Jourama Falls are at perfect swimming levels — clear, crisp, and refreshing without the heavy summer humidity.
               </p>
             </div>
 
@@ -473,7 +473,7 @@ const ThingsToDo = () => {
                 </h3>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                   {[
-                    { time: "Morning", activity: "Castle Hill, walks, outdoor exploring", icon: Sunrise },
+                    { time: "Morning", activity: "Perfect for a brisk walk up the Goat Track or Jezzine Barracks before the midday sun.", icon: Sunrise },
                     { time: "Midday", activity: "Museum, lunch, Riverway lagoons, shade activities", icon: CloudSun },
                     { time: "Afternoon", activity: "Magnetic Island or The Strand", icon: Sunset },
                     { time: "Evening", activity: "Sunset at The Strand or Castle Hill", icon: Moon, link: "/guides/sunset-walks" }
@@ -580,82 +580,7 @@ const ThingsToDo = () => {
               </div>
             </section>
 
-            {/* Easter & School Holiday Guide 2026 */}
-            <section className="mb-16">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <Calendar className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Easter & School Holiday Guide 2026</h2>
-                  <p className="text-muted-foreground text-sm">Key dates, events & booking tips for the Easter break</p>
-                </div>
-              </div>
-
-              {/* Key Dates */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-                <div className="p-4 rounded-2xl bg-primary/5 border-2 border-primary/20 text-center">
-                  <p className="text-xs font-bold text-primary uppercase tracking-wider">Term 1 Ends</p>
-                  <p className="text-lg font-bold text-foreground mt-1">Thursday, April 2</p>
-                </div>
-                <div className="p-4 rounded-2xl bg-primary/5 border-2 border-primary/20 text-center">
-                  <p className="text-xs font-bold text-primary uppercase tracking-wider">Easter Long Weekend</p>
-                  <p className="text-lg font-bold text-foreground mt-1">April 3–6</p>
-                </div>
-                <div className="p-4 rounded-2xl bg-primary/5 border-2 border-primary/20 text-center">
-                  <p className="text-xs font-bold text-primary uppercase tracking-wider">School Holidays</p>
-                  <p className="text-lg font-bold text-foreground mt-1">April 3–19</p>
-                </div>
-              </div>
-
-              <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4 mb-8 flex gap-3 items-start">
-                <span className="text-lg">⚠️</span>
-                <p className="text-amber-800 dark:text-amber-300 text-sm font-medium">
-                  Update: Only 1 week until Term 1 ends (Thursday, April 2)! If you haven't booked your Magnetic Island ferry or Billabong Sanctuary sessions for the Easter break, do it this week. Spots are filling up fast.
-                </p>
-              </div>
-
-              {/* Holiday Highlights */}
-              <div className="grid gap-4 md:grid-cols-2 mb-8">
-                <div className="p-5 rounded-2xl bg-card border-2 border-border/40">
-                  <span className="text-2xl mb-2 block">🏃</span>
-                  <h3 className="font-semibold text-foreground mb-1">Elliot's Revenge Trail Run</h3>
-                  <p className="text-sm text-muted-foreground">Saturday, April 11 — Elliot Springs</p>
-                  <p className="text-sm text-muted-foreground mt-2">A classic North Queensland adventure trail run.</p>
-                </div>
-                <div className="p-5 rounded-2xl bg-card border-2 border-border/40">
-                  <span className="text-2xl mb-2 block">🎵</span>
-                  <h3 className="font-semibold text-foreground mb-1">Kings of Country Rock</h3>
-                  <p className="text-sm text-muted-foreground">Friday, April 10 — Townsville Civic Theatre</p>
-                  <p className="text-sm text-muted-foreground mt-2">A two-hour stage spectacular celebrating country rock.</p>
-                </div>
-                <div className="p-5 rounded-2xl bg-card border-2 border-border/40">
-                  <span className="text-2xl mb-2 block">🐾</span>
-                  <h3 className="font-semibold text-foreground mb-1">Billabong Sanctuary — Easter Bilbies</h3>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Spot the 'Easter Bilbies' and join school holiday wildlife programs. <Link to="/billabong-sanctuary" className="text-primary font-medium hover:underline">View guide →</Link>
-                  </p>
-                </div>
-                <div className="p-5 rounded-2xl bg-card border-2 border-border/40">
-                  <span className="text-2xl mb-2 block">🚢</span>
-                  <h3 className="font-semibold text-foreground mb-1">Great Barrier Reef & Magnetic Island</h3>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Boats fill up weeks in advance for Easter. <Link to="/guides/magnetic-island-day-trip" className="text-primary font-medium hover:underline">Plan your day trip →</Link>
-                  </p>
-                </div>
-              </div>
-
-              <p className="text-sm text-muted-foreground mb-6">
-                Heading to the coast? Browse our <Link to="/beaches" className="text-primary font-medium hover:underline">Beaches Guide</Link> for the best spots. Catching a game? Check the <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">Cowboys Game Day Guide</Link> for stadium tips.
-              </p>
-
-              {/* Local Tip */}
-              <LocalInsightCard title="Easter Camping Tip" variant="tip">
-                <p>
-                  If you're planning a camping trip to Saunders Beach or Rollingstone for the long weekend, Council bookings open early — get in now to secure a spot!
-                </p>
-              </LocalInsightCard>
-            </section>
+            {/* (Easter & School Holiday section removed for May 2026 refresh) */}
 
             {/* Top 10 Free Things to Do These School Holidays */}
             <section className="mb-16">
@@ -664,7 +589,7 @@ const ThingsToDo = () => {
                   <Sun className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do These School Holidays (April 2026)</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do in Townsville (May 2026 Update)</h2>
                   <p className="text-muted-foreground text-sm">Keep the family entertained without spending a cent</p>
                 </div>
               </div>
@@ -672,7 +597,7 @@ const ThingsToDo = () => {
               <div className="grid gap-4 md:grid-cols-2">
                 {[
                   { num: "1", title: "The Strand Water Park", desc: "A local holiday staple. Open daily (check the Council site for any maintenance closures).", link: "/the-strand", linkText: "Strand Guide →" },
-                  { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families during the humid April break." },
+                  { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families during the beautiful sunny May days." },
                   { num: "3", title: "Castle Hill Goat Track", desc: "Challenge the kids to a sunrise hike for the best 360-degree views of the city.", link: "/castle-hill", linkText: "Castle Hill Guide →" },
                   { num: "4", title: "Jezzine Barracks Coastal Walk", desc: "Explore the public art, military history, and the scenic boardwalk toward Rowes Bay.", link: "/jezzine-barracks", linkText: "Jezzine Guide →" },
                   { num: "5", title: "Townsville Bulletin Square Water Feature", desc: "A great (and free) way to cool down right in the heart of the CBD." },
@@ -714,9 +639,9 @@ const ThingsToDo = () => {
               </div>
 
               <div className="mt-6">
-                <LocalInsightCard title="April Photography Tip" variant="tip">
+                <LocalInsightCard title="May Photography Tip" variant="tip">
                   <p>
-                    April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. Perfect for outdoor photography!
+                    May in Townsville offers some of the best light of the year. With the humidity gone, the air is clearer — perfect for capturing the sunset from Castle Hill or the mountain views at Paluma Range.
                   </p>
                 </LocalInsightCard>
               </div>
