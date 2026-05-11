@@ -10,8 +10,8 @@ const NorthShoreTownsville = () => {
   return (
     <>
       <SEOHead
-        title="North Shore Townsville: Nature, Community & Guide (March 2026)"
-        description="Discover Townsville's North Shore. From the Burdell Wetlands and Leisure Centre to the best local coffee, explore our updated 2026 guide to the northern heart of the city."
+        title="North Shore Townsville: Nature, Community & Guide (May 2026)"
+        description="Discover Townsville's North Shore. From the Burdell Wetlands and Leisure Centre to the best local coffee, explore our updated May 2026 guide to the northern heart of the city."
         canonical="https://www.myaussieguide.com.au/north-shore-townsville"
       />
 
@@ -25,9 +25,13 @@ const NorthShoreTownsville = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
               North Shore: Nature, Community & Modern Living
             </h1>
+            <p className="text-sm text-muted-foreground">Updated: May 11, 2026</p>
             <p className="text-lg text-muted-foreground max-w-2xl">
               Discover Townsville's northern heart, where wetlands meet world-class leisure facilities.
             </p>
+            <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-sm text-emerald-900 max-w-2xl">
+              ☀️ <strong>May 11 Update:</strong> The humidity has dropped, making the Burdell Forest trails and wetlands loops perfect for morning walks. The 'Perfect Dry' weather means the paths are firm and the morning birdlife is at its peak.
+            </div>
           </div>
         </section>
 
@@ -85,7 +89,7 @@ const NorthShoreTownsville = () => {
           <section className="space-y-4">
             <div className="flex items-center gap-2">
               <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-none">
-                🌿 March Highlight
+                🌿 May Highlight
               </Badge>
             </div>
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
@@ -184,13 +188,13 @@ const NorthShoreTownsville = () => {
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
-                The Wetlands Loop is absolutely vibrant this week (March 23–29)! Following the rain, the Brolgas and Jabirus are incredibly active at sunrise. The paved tracks are dry and perfect for a morning walk before the midday heat kicks in.
+                The Wetlands Loop is at its absolute best this week (May 11–17). While the vibrant green of March is beginning to mellow, the brolgas and jabirus are incredibly active at sunrise. The 20°C mornings are perfect for the 3.5km loop before the UV index climbs.
               </p>
             </LocalInsightCard>
 
-            <LocalInsightCard title="Dog Owners" variant="insight">
+            <LocalInsightCard title="Dog Owners (May Update)" variant="insight">
               <p>
-                A favourite for local dog owners — just remember to keep your furry friends on a lead to protect the local birdlife.
+                Those cooling May breezes make the North Shore trails ideal for larger breeds. Just a reminder to keep dogs on-lead through the Bohle River Wetlands to protect the nesting brolgas.
               </p>
             </LocalInsightCard>
           </section>
@@ -225,6 +229,12 @@ const NorthShoreTownsville = () => {
                 If the ocean is a bit rough or you're keeping an eye on stinger season, this is the local's alternative. 
                 With four pools and plenty of shade, it's a high-quality facility that feels like a resort but functions 
                 like a community hub.
+              </p>
+            </LocalInsightCard>
+
+            <LocalInsightCard title="May Tip" variant="tip">
+              <p>
+                With the ocean still in stinger season for a few more weeks, the Northern Beaches Leisure Centre is the local's go-to for a worry-free swim. The slides are a hit on these sunny 26°C afternoons.
               </p>
             </LocalInsightCard>
           </section>
@@ -293,10 +303,10 @@ const NorthShoreTownsville = () => {
               <CardContent className="p-6 space-y-3">
                 <div className="flex items-center gap-2">
                   <Trophy className="w-5 h-5 text-primary" />
-                  <h3 className="font-semibold text-foreground text-lg">Game Day: Cowboys vs. Storm (Saturday, March 28)</h3>
+                  <h3 className="font-semibold text-foreground text-lg">🏟️ Magic Round & Sunday Arvo Footy (May 16–24)</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  The North Shore Tavern is the place to be this Saturday night for the pre-game atmosphere. With a 6:30 PM kickoff against the Storm, expect the bistro and bar to be buzzing from 4:00 PM. It's the perfect local alternative to the CBD crowds.
+                  The North Shore Tavern is the local heartbeat for Magic Round this Saturday (May 16). Catch the Cowboys vs Roosters clash on the big screens from 5:30 PM. Looking ahead: It's the perfect spot for a pre-game lunch before the Rabbitohs home game on Sunday, May 24.
                 </p>
                 <Button asChild variant="outline" size="sm" className="gap-2">
                   <Link to="/cowboys-stadium-guide">
