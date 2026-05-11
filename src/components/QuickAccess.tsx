@@ -69,7 +69,7 @@ const QuickAccess = () => {
     {
       icon: Lightbulb,
       title: "Stinger & Safety Guide",
-      desc: "☀️ March 23 Update: Stinger nets are ACTIVE. Conditions are clear and stunning—perfect for a northern beach run or exploring the Paluma range.",
+      desc: "☀️ May 11 Update: Stinger nets are ACTIVE. Conditions are clear and stunning—perfect for a northern beach run or exploring the Paluma range.",
       link: "/guides/stinger-safety",
     },
     {
