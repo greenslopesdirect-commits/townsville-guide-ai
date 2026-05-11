@@ -113,9 +113,9 @@ const DogFriendly = () => {
         <Alert className="max-w-3xl mx-auto bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800 mb-6 sm:mb-8">
           <Dog className="h-5 w-5 text-amber-600 flex-shrink-0" />
           <AlertDescription className="ml-2">
-              <strong className="text-foreground block sm:inline">☀️ Heat Check (April 27):</strong>
+              <strong className="text-foreground block sm:inline">☀️ Heat Check (May 11):</strong>
              <span className="text-muted-foreground sm:ml-2 block sm:inline mt-1 sm:mt-0">
-                Dry Season is here! UV is still hitting <strong>11+ midday</strong>, but those morning breezes are perfect for the <strong>Castle Hill goat track</strong>. Stinger nets remain <strong>ACTIVE</strong> at The Strand and Pallarenda — always swim between the red and yellow flags.
+                The "Perfect Dry" is here! Humidity has dropped significantly. Morning UV is still high, but those <strong>5:30 PM sunsets at Castle Hill</strong> are world-class right now. <strong>Pallarenda Beach</strong> is our top pick for low-tide runs with the dog. Stinger nets remain <strong>ACTIVE</strong> — stay safe in the water!
               </span>
           </AlertDescription>
         </Alert>
