@@ -122,6 +122,10 @@ const NorthShoreTownsville = () => {
                     <Dog className="w-3 h-3" /> Dog-Friendly (On Lead)
                   </Badge>
                 </div>
+                <p className="text-xs font-medium text-blue-700 flex items-start gap-1.5">
+                  <Accessibility className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                  <span>♿ 100% Paved &amp; Flat. Excellent for prams and mobility aids.</span>
+                </p>
 
                 {/* Trail Info Card */}
                 <div className="relative overflow-hidden rounded-xl shadow-md border border-emerald-200 dark:border-emerald-800/40 bg-gradient-to-br from-emerald-50 via-emerald-50/80 to-amber-50/40 dark:from-emerald-950/30 dark:via-emerald-950/20 dark:to-amber-950/10">
