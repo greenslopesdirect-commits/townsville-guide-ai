@@ -303,10 +303,10 @@ const NorthShoreTownsville = () => {
               <CardContent className="p-6 space-y-3">
                 <div className="flex items-center gap-2">
                   <Trophy className="w-5 h-5 text-primary" />
-                  <h3 className="font-semibold text-foreground text-lg">Game Day: Cowboys vs. Storm (Saturday, March 28)</h3>
+                  <h3 className="font-semibold text-foreground text-lg">🏟️ Magic Round & Sunday Arvo Footy (May 16–24)</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  The North Shore Tavern is the place to be this Saturday night for the pre-game atmosphere. With a 6:30 PM kickoff against the Storm, expect the bistro and bar to be buzzing from 4:00 PM. It's the perfect local alternative to the CBD crowds.
+                  The North Shore Tavern is the local heartbeat for Magic Round this Saturday (May 16). Catch the Cowboys vs Roosters clash on the big screens from 5:30 PM. Looking ahead: It's the perfect spot for a pre-game lunch before the Rabbitohs home game on Sunday, May 24.
                 </p>
                 <Button asChild variant="outline" size="sm" className="gap-2">
                   <Link to="/cowboys-stadium-guide">
