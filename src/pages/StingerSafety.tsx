@@ -37,7 +37,7 @@ const StingerSafety = () => (
     </div>
     <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
-      <p>"March is the peak for Irukandji activity as the waters stay warm. Even if the 'stinger nets' look clear of debris, the microscopic stingers are still there. Don't risk it—stay in the nets."</p>
+      <p>"As we hit May, the air is cooling down but the water temperature is still hovering in the mid-20s—which means stingers are still a risk. Don't let the 'Perfect Dry' weather trick you into dropping your guard. If you're in the ocean, stay in the nets until the Council officially hauls them in for winter."</p>
     </div>
 
     {/* Stinger Safety for Dogs */}
