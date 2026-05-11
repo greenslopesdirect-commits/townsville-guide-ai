@@ -50,11 +50,11 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (May 4 – May 10)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (May 11 – May 17)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Footy: <strong>Cowboys vs Eels (Home)</strong> — Friday, May 8. 8:00 PM kick-off at QLD Country Bank Stadium.</li>
-            <li>Science: <strong>World Science Festival QLD</strong> — Saturday, May 9. Museum of Tropical Queensland, 9:00 AM – 3:00 PM.</li>
-            <li>Mother's Day: <strong>Colour Frenzy</strong> at Riverway (8:30 AM) and the <strong>Charity Fun Run</strong> at Rossiter Park (7:00 AM) — Sunday, May 10.</li>
+            <li>Expo: <strong>Townsville Caravan, 4x4 & Outdoor Adventure Expo</strong> — Friday 15 to Sunday 17 May at Reid Park Complex. Check out the latest 2026 caravans, 4x4 gear, and camping tech.</li>
+            <li>Markets: <strong>Mundingburra Markets</strong> — Sunday, May 17. A great local Sunday morning for fresh produce and crafts.</li>
+            <li>Footy: <strong>NRL Magic Round — Cowboys vs Roosters</strong> (Away at Suncorp). Sat 16 May, 5:30 PM kick-off. Ideal for local sports bars and watch parties.</li>
           </ul>
         </section>
 
