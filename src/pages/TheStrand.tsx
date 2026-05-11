@@ -29,10 +29,14 @@ const TheStrand = () => {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
             The Strand
           </h1>
+          <p className="text-sm text-gray-500">Updated: May 11, 2026</p>
           <p className="text-xl text-gray-600 max-w-2xl">
-            2.2km of tropical foreshore. It's not just a beach; it's the city's living room. 
+            2.2km of tropical foreshore. It's not just a beach; it's the city's living room.
             From the <strong>Rockpool</strong> to the <strong>Water Park</strong>, here is how to do The Strand like a local.
           </p>
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-900">
+            ☀️ <strong>May 11 Update:</strong> The 'Perfect Dry' has arrived. With 26°C days and clear water, it's the best time of year for a Strand walk. Note: Stinger nets are in their final month of operation—stay safe and swim inside the enclosures.
+          </div>
         </div>
 
         {/* Hero Image */}
