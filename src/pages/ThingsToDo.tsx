@@ -473,7 +473,7 @@ const ThingsToDo = () => {
                 </h3>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                   {[
-                    { time: "Morning", activity: "Castle Hill, walks, outdoor exploring", icon: Sunrise },
+                    { time: "Morning", activity: "Perfect for a brisk walk up the Goat Track or Jezzine Barracks before the midday sun.", icon: Sunrise },
                     { time: "Midday", activity: "Museum, lunch, Riverway lagoons, shade activities", icon: CloudSun },
                     { time: "Afternoon", activity: "Magnetic Island or The Strand", icon: Sunset },
                     { time: "Evening", activity: "Sunset at The Strand or Castle Hill", icon: Moon, link: "/guides/sunset-walks" }
