@@ -214,10 +214,10 @@ const CowboysStadiumGuide = () => {
               <div>
                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                  <p className="text-amber-800 text-sm mt-1">
-                   With an <strong>8:00 PM kick-off</strong> for the Eels game, the Leagues Club will fill from late afternoon. The 'Stampede' march across Lowths Bridge will depart at <strong>around 7:15 PM</strong> — leaving the Leagues Club <strong>45 minutes before kick-off</strong>.
+                   For the <strong>4:05 PM kick-off</strong>, the Leagues Club will be buzzing from lunch. The 'Stampede' march across Lowths Bridge will depart at <strong>approximately 3:15 PM</strong>.
                  </p>
                  <p className="text-amber-800 text-sm mt-2 font-semibold">
-                   Since this is a Friday afternoon, expect heavy CBD traffic as the work week ends. If you're joining the Stampede, aim to be at the Leagues Club by 6:00 PM.
+                   Sunday arvo means a relaxed pre-game — aim to be at the Leagues Club by 1:30 PM for a long lunch and a few drinks before the march.
                  </p>
               </div>
             </div>
