@@ -106,10 +106,10 @@ const DogFriendly = () => {
           {/* Local Tip */}
            <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
            <p>
-               ☀️ Heat Check (April 27): Dry Season has arrived. Perfect conditions for morning runs at Pallarenda before the midday UV spike — the afternoon pavement is still a paw-burner.
+               ☀️ Heat Check (May 11): Dry Season is in full swing. Mornings are crisp (around 20°C), making it the perfect time for the Castle Hill Goat Track or Pallarenda runs. Note: Afternoon UV is still hitting 11+, so keep those long walks to the 'golden hour'.
               </p>
               <p>
-                🐸 Twilight Toad Alert (April 27): With humidity easing, toad activity is dropping but they're still around at dusk near the Bushland Beach dunes. Keep dogs leashed if you're out for sunset.
+                🐸 Twilight Toad Alert (May 11): With the humidity dropping, toad activity is decreasing, but they are still frequenting the dunes at Bushland Beach and Saunders at dusk. Keep the leash short during sunset walks.
              </p>
           </LocalInsightCard>
 
@@ -128,7 +128,7 @@ const DogFriendly = () => {
                     className="w-full h-64 md:h-full object-cover"
                   />
                   <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm p-3">
-                    Early evening golden hour at the Quayside Terminal. Max watching the Crown Princess prepare for departure during its January 17th visit. This area is perfect for a sunset walk when the sea breeze kicks in!
+                    Golden hour at the Quayside Terminal. This wide, paved precinct is a local favorite for evening walks—the sea breeze is reliable, and the ground cools down much faster than inland bitumen.
                   </figcaption>
                 </figure>
                 <CardContent className="p-5 sm:p-6 flex flex-col justify-center">
@@ -249,7 +249,14 @@ const DogFriendly = () => {
                   <Droplets className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-sm text-foreground">Post-Beach Rinse</p>
-                    <p className="text-sm text-muted-foreground mt-1">Tropical salt and humidity can cause skin irritation. Always use the fresh-water showers at the Pallarenda boat ramp or The Strand to rinse your dog's coat and paws.</p>
+                    <p className="text-sm text-muted-foreground mt-1">Tropical salt and humidity can cause skin irritation. The fresh-water showers at the Pallarenda boat ramp are a lifesaver for rinsing salt out of thick coats (like Max's!) before the drive home. The Strand showers also work in a pinch.</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-sm text-foreground">🌿 Dry Season Bonus</p>
+                    <p className="text-sm text-muted-foreground mt-1">Not a beach fan? In May, the Ross River Parkway (near Loam Island) offers miles of shaded, wind-swept paths that are much cooler than the coastal dunes during midday.</p>
                   </div>
                 </li>
               </ul>
@@ -287,7 +294,7 @@ const DogFriendly = () => {
                 <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                  <p className="text-xs text-muted-foreground mt-1">☀️ April 13 Update: Nets remain active at The Strand and Pallarenda. For off-leash runs at Saunders, keep dogs on the wet sand to keep paws cool and stay clear of the deep water.</p>
+                  <p className="text-xs text-muted-foreground mt-1">☀️ May 11 Update: We are in the final month of the official stinger season. Visibility is excellent, but nets at The Strand and Pallarenda remain ACTIVE. Stick to the wet sand for fetch to keep paws cool and stay safe.</p>
                   <p className="text-xs text-muted-foreground mt-1">Review our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> for full details.</p>
                 </div>
               </div>
