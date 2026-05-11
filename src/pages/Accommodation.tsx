@@ -97,7 +97,7 @@ const Accommodation = () => {
     },
     {
       title: "BIG4 Rowes Bay Holiday Park",
-      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families. Note: Council camping spots at Saunders and Balgal Beach for Easter are booking out now—get in early!",
+      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families. May Tip: Sites are filling up with travelers in town for the Caravan & 4x4 Expo. It's the perfect base if you want to be near the beach but close to the Reid Park action.",
       image: big4Image,
       tags: ["Family Friendly", "Budget", "Beachfront"],
       features: [
