@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Calendar, MapPin, Users, Car, Utensils, Volume2, Trophy, ExternalLink } from "lucide-react";
+import { ArrowRight, Calendar, MapPin, Users, Car, Utensils, Volume2, Trophy, ExternalLink, Accessibility, Brain, Armchair } from "lucide-react";
 import stampedeMap from "@/assets/cowboys-stampede-map.webp";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -330,6 +330,67 @@ const CowboysStadiumGuide = () => {
                 </CardContent>
               </Card>
             </div>
+          </section>
+
+          {/* Accessibility & Sensory Info */}
+          <section className="space-y-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2">
+              <Accessibility className="w-7 h-7 text-blue-600" />
+              Accessibility &amp; Sensory Info
+            </h2>
+            <p className="text-muted-foreground">
+              Queensland Country Bank Stadium was designed with accessibility front-of-mind. Here's
+              what to know before you go.
+            </p>
+            <div className="grid gap-4 md:grid-cols-3">
+              <Card className="border-l-4 border-l-blue-500">
+                <CardContent className="p-5 space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Car className="w-5 h-5 text-blue-600" />
+                    <h3 className="font-semibold text-foreground">Accessible Parking</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Accessible parking is available directly at the stadium (<strong>pre-booking
+                    required</strong> via the stadium website). For general fans, the Lou Litster
+                    "Park &amp; Ride" shuttle is wheelchair accessible.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-violet-500">
+                <CardContent className="p-5 space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Brain className="w-5 h-5 text-violet-600" />
+                    <h3 className="font-semibold text-foreground">Sensory Support</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    A dedicated <strong>Quiet Room on Level 1</strong> is available for fans
+                    needing a break from the crowd noise — ideal for sensory-sensitive visitors and
+                    young families.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-l-emerald-500">
+                <CardContent className="p-5 space-y-2">
+                  <div className="flex items-center gap-2">
+                    <Armchair className="w-5 h-5 text-emerald-600" />
+                    <h3 className="font-semibold text-foreground">Accessible Seating</h3>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    QCB Stadium offers world-class accessible viewing platforms and companion
+                    seating throughout <strong>all levels</strong> of the venue.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Planning a wider trip? See our{" "}
+              <Link to="/accessible-townsville" className="text-primary hover:underline font-medium">
+                Accessible Townsville Guide
+              </Link>{" "}
+              for accessible beaches, parks and transport across the city.
+            </p>
           </section>
 
           {/* CTA */}
