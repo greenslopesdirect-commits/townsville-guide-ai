@@ -223,6 +223,26 @@ const MovingToTownsville = () => {
                 </p>
               </CardContent>
             </Card>
+
+            <Card className="bg-blue-50/60 border-blue-200">
+              <CardContent className="p-5 flex gap-3 items-start">
+                <TrendingUp className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" />
+                <p className="text-sm text-blue-900">
+                  <strong>Infrastructure Alert — Port Expansion:</strong> The $400M+ Channel Upgrade is
+                  nearing completion, paving the way for larger cruise ships and increased trade capacity
+                  by late 2026.
+                </p>
+              </CardContent>
+            </Card>
+
+            <LocalInsightCard title="Local Tip — May is Relocation Peak Season" variant="insight">
+              <p>
+                May is relocation peak season in Townsville. The weather is perfect for moving house, and
+                the city is buzzing with events like the <strong>Caravan Expo</strong> and{" "}
+                <strong>Dream Fields Festival</strong> — a great time to see the city's social side in
+                full swing.
+              </p>
+            </LocalInsightCard>
           </section>
 
           {/* Local Essentials */}
