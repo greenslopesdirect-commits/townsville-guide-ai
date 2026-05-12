@@ -174,15 +174,15 @@ const AccessibleTownsville = () => {
             </h2>
             <LocalInsightCard title="Sunbus & Wheelchair-Accessible Taxis" variant="insight">
               <p>
-                <strong>All Townsville Sunbus services are low-floor and wheelchair
-                accessible</strong>, with priority seating and ramp deployment at every stop. For
-                door-to-door travel, the local wheelchair-accessible taxi fleet (WATs) is
-                bookable in advance and runs the same metered fare as a standard cab.
+                Townsville Sunbus services include low-floor, wheelchair-accessible buses with priority seating and ramp access available for passengers who need it. For door-to-door travel, wheelchair-accessible taxis operate in Townsville and are fitted with ramps and secure anchor points.
+              </p>
+              <p className="mt-2">
+                Eligible passengers may be able to use Queensland's Taxi Subsidy Scheme, which covers 50% of eligible taxi fares up to $30 per trip. Pre-booking wheelchair-accessible taxis is recommended, especially during busy periods, weekends, major events, medical appointments, or transport connections.
               </p>
               <div className="mt-3 flex flex-wrap gap-2">
                 <Button asChild variant="outline" size="sm">
                   <a
-                    href="https://www.translink.com.au/travel-information/network-information/buses/sunbus-townsville"
+                    href="https://www.wearekinetic.com/au/townsville"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
