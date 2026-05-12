@@ -191,11 +191,11 @@ const AccessibleTownsville = () => {
                 </Button>
                 <Button asChild variant="outline" size="sm">
                   <a
-                    href="https://tsvtaxi.com.au/"
+                    href="https://www.13cabs.com.au/locations/townsville/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Townsville Taxis (WATs) <ExternalLink className="w-3 h-3 ml-1" />
+                    13cabs Townsville (WATs) <ExternalLink className="w-3 h-3 ml-1" />
                   </a>
                 </Button>
               </div>
