@@ -11,6 +11,7 @@ import {
   Bus,
   ExternalLink,
   MapPin,
+  Info,
 } from "lucide-react";
 import LocalInsightCard from "@/components/LocalInsightCard";
 
