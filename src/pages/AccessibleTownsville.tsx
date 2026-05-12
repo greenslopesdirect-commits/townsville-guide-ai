@@ -11,6 +11,7 @@ import {
   Bus,
   ExternalLink,
   MapPin,
+  Info,
 } from "lucide-react";
 import LocalInsightCard from "@/components/LocalInsightCard";
 
@@ -34,12 +35,26 @@ const AccessibleTownsville = () => {
               Exploring Townsville for All: The Local Guide to Accessible Beaches, Parks &amp; Venues
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Townsville is one of the most accessible coastal cities in North Queensland — flat
-              foreshore paths, ramp-entry pools, and modern transport infrastructure make it easy
-              for visitors with mobility or sensory needs to enjoy the very best of the Dry Season.
-              This local-verified guide covers the spots we recommend most.
+              Townsville is one of the more accessible coastal cities in North Queensland — flat
+              foreshore paths, ramp-entry pools, and modern transport options help make it easier
+              for visitors, locals, carers and families with mobility or sensory needs to enjoy
+              the very best of the Dry Season. This local guide covers the spots we recommend most.
             </p>
           </header>
+
+          {/* Accuracy note */}
+          <aside
+            role="note"
+            className="flex gap-3 rounded-lg border border-border bg-muted/40 p-4 text-sm text-muted-foreground"
+          >
+            <Info className="w-5 h-5 mt-0.5 text-primary shrink-0" aria-hidden="true" />
+            <p>
+              Accessibility details can change due to maintenance, weather, events or facility
+              updates. This guide is intended as a local starting point, and we recommend
+              checking current access details with the venue or transport provider before
+              travelling.
+            </p>
+          </aside>
 
           {/* Quick Links */}
           <section className="space-y-4">
@@ -139,9 +154,10 @@ const AccessibleTownsville = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Fully accessible with elevators on all levels. Quieter sensory-friendly
+                    Accessible features include elevators on all levels. Quieter sensory-friendly
                     windows are typically <strong>Tuesday and Wednesday mornings</strong> just
-                    after opening — ideal for visitors who prefer a calmer environment.
+                    after opening — generally a calmer time for visitors who prefer a
+                    low-stimulation environment.
                   </p>
                 </CardContent>
               </Card>
