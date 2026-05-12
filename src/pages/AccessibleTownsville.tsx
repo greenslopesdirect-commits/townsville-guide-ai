@@ -69,8 +69,9 @@ const AccessibleTownsville = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Ramp-entry pools at Riverway Lagoons and Strand Rockpool — safe, free, and
-                    open year-round outside stinger season.
+                    Ramp-entry pools at Riverway Lagoons and Strand Rockpool — free, popular,
+                    and generally available year-round, with seasonal safety guidance still
+                    worth checking before you go.
                   </p>
                 </CardContent>
               </Card>
