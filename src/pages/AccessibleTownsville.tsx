@@ -191,7 +191,7 @@ const AccessibleTownsville = () => {
                 </Button>
                 <Button asChild variant="outline" size="sm">
                   <a
-                    href="https://www.tsvtaxi.com.au/"
+                    href="https://tsvtaxi.com.au/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
