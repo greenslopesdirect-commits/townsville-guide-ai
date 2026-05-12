@@ -154,9 +154,10 @@ const AccessibleTownsville = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Fully accessible with elevators on all levels. Quieter sensory-friendly
+                    Accessible features include elevators on all levels. Quieter sensory-friendly
                     windows are typically <strong>Tuesday and Wednesday mornings</strong> just
-                    after opening — ideal for visitors who prefer a calmer environment.
+                    after opening — generally a calmer time for visitors who prefer a
+                    low-stimulation environment.
                   </p>
                 </CardContent>
               </Card>
