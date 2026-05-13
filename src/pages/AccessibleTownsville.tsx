@@ -124,7 +124,7 @@ const AccessibleTownsville = () => {
           </section>
 
           {/* Top Recommendations */}
-          <section className="space-y-4">
+          <section id="wheelchair-friendly-walks" className="space-y-4 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2">
               <MapPin className="w-7 h-7 text-primary" />
               Top Recommendations
@@ -150,7 +150,7 @@ const AccessibleTownsville = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card id="accessible-swimming" className="scroll-mt-24">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-lg">Riverway Lagoons</CardTitle>
                 </CardHeader>
@@ -163,7 +163,7 @@ const AccessibleTownsville = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card id="sensory-friendly-spots" className="scroll-mt-24">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-lg">Museum of Tropical Queensland</CardTitle>
                 </CardHeader>
@@ -199,7 +199,7 @@ const AccessibleTownsville = () => {
           </section>
 
           {/* Transport */}
-          <section className="space-y-4">
+          <section id="accessible-transport" className="space-y-4 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2">
               <Bus className="w-7 h-7 text-primary" />
               Accessible Transport
