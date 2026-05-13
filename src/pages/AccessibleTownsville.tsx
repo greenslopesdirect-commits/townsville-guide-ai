@@ -57,59 +57,74 @@ const AccessibleTownsville = () => {
           </aside>
 
           {/* Quick Links */}
-          <section className="space-y-4">
+          <section className="space-y-4" aria-label="Quick links">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground">Quick Links</h2>
             <div className="grid gap-4 md:grid-cols-3">
-              <Card className="border-l-4 border-l-blue-500">
-                <CardHeader className="pb-2">
-                  <div className="flex items-center gap-2">
-                    <Accessibility className="w-5 h-5 text-blue-600" />
-                    <CardTitle className="text-lg">Wheelchair-Friendly Walks</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Flat, paved foreshore paths and accessible boardwalks across The Strand,
-                    Riverway and Jezzine Barracks.
-                  </p>
-                </CardContent>
-              </Card>
+              <a
+                href="#wheelchair-friendly-walks"
+                className="block rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              >
+                <Card className="border-l-4 border-l-blue-500 h-full transition-shadow hover:shadow-md">
+                  <CardHeader className="pb-2">
+                    <div className="flex items-center gap-2">
+                      <Accessibility className="w-5 h-5 text-blue-600" />
+                      <CardTitle className="text-lg">Wheelchair-Friendly Walks</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">
+                      Flat, paved foreshore paths and accessible boardwalks across The Strand,
+                      Riverway and Jezzine Barracks.
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
 
-              <Card className="border-l-4 border-l-cyan-500">
-                <CardHeader className="pb-2">
-                  <div className="flex items-center gap-2">
-                    <Waves className="w-5 h-5 text-cyan-600" />
-                    <CardTitle className="text-lg">Accessible Swimming</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Ramp-entry pools at Riverway Lagoons and Strand Rockpool — free, popular,
-                    and generally available year-round, with seasonal safety guidance still
-                    worth checking before you go.
-                  </p>
-                </CardContent>
-              </Card>
+              <a
+                href="#accessible-swimming"
+                className="block rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              >
+                <Card className="border-l-4 border-l-cyan-500 h-full transition-shadow hover:shadow-md">
+                  <CardHeader className="pb-2">
+                    <div className="flex items-center gap-2">
+                      <Waves className="w-5 h-5 text-cyan-600" />
+                      <CardTitle className="text-lg">Accessible Swimming</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">
+                      Ramp-entry pools at Riverway Lagoons and Strand Rockpool — free, popular,
+                      and generally available year-round, with seasonal safety guidance still
+                      worth checking before you go.
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
 
-              <Card className="border-l-4 border-l-violet-500">
-                <CardHeader className="pb-2">
-                  <div className="flex items-center gap-2">
-                    <Brain className="w-5 h-5 text-violet-600" />
-                    <CardTitle className="text-lg">Sensory-Friendly Spots</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Quiet morning windows at the Museum of Tropical Queensland and shaded,
-                    low-stimulation parks around the city.
-                  </p>
-                </CardContent>
-              </Card>
+              <a
+                href="#sensory-friendly-spots"
+                className="block rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              >
+                <Card className="border-l-4 border-l-violet-500 h-full transition-shadow hover:shadow-md">
+                  <CardHeader className="pb-2">
+                    <div className="flex items-center gap-2">
+                      <Brain className="w-5 h-5 text-violet-600" />
+                      <CardTitle className="text-lg">Sensory-Friendly Spots</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-muted-foreground">
+                      Quiet morning windows at the Museum of Tropical Queensland and shaded,
+                      low-stimulation parks around the city.
+                    </p>
+                  </CardContent>
+                </Card>
+              </a>
             </div>
           </section>
 
           {/* Top Recommendations */}
-          <section className="space-y-4">
+          <section id="wheelchair-friendly-walks" className="space-y-4 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2">
               <MapPin className="w-7 h-7 text-primary" />
               Top Recommendations
@@ -135,7 +150,7 @@ const AccessibleTownsville = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card id="accessible-swimming" className="scroll-mt-24">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-lg">Riverway Lagoons</CardTitle>
                 </CardHeader>
@@ -148,7 +163,7 @@ const AccessibleTownsville = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card id="sensory-friendly-spots" className="scroll-mt-24">
                 <CardHeader className="pb-2">
                   <CardTitle className="text-lg">Museum of Tropical Queensland</CardTitle>
                 </CardHeader>
@@ -184,7 +199,7 @@ const AccessibleTownsville = () => {
           </section>
 
           {/* Transport */}
-          <section className="space-y-4">
+          <section id="accessible-transport" className="space-y-4 scroll-mt-24">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2">
               <Bus className="w-7 h-7 text-primary" />
               Accessible Transport
