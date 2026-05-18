@@ -148,30 +148,30 @@ const Events = () => {
               </CardContent>
             </Card>
 
-            {/* Dream Fields Festival — Next Weekend */}
+            {/* Card 3 — North Australian Festival of Arts */}
             <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                    Next Weekend — Festival
+                    Next Month — Major Festival
                   </Badge>
                   <Star className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Dream Fields Festival</CardTitle>
+                <CardTitle className="text-xl mt-2">North Australian Festival of Arts (NAFA)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, May 23 (Next Weekend)</span>
+                    <span>June – July 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Central Park, Townsville</span>
+                    <span>Multiple Venues Across Townsville</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat</strong> and <strong>Skegss</strong>. <strong>Tickets are moving fast</strong> — don't leave it too late.
+                  Get ready to plan your winter calendar. <strong>NAFA</strong> returns next month with an incredible program of theatre, comedy, circus, live music, and open-air light installations.
                 </p>
               </CardContent>
             </Card>
