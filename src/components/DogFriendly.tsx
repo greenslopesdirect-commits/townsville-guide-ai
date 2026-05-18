@@ -115,7 +115,7 @@ const DogFriendly = () => {
           <AlertDescription className="ml-2">
               <strong className="text-foreground block sm:inline">☀️ Heat Check (May 18):</strong>
              <span className="text-muted-foreground sm:ml-2 block sm:inline mt-1 sm:mt-0">
-                The "Perfect Dry" is here! Humidity has dropped significantly. Morning UV is still high, but those <strong>5:30 PM sunsets at Castle Hill</strong> are world-class right now. <strong>Pallarenda Beach</strong> is our top pick for low-tide runs with the dog. Stinger nets remain <strong>ACTIVE</strong> — stay safe in the water!
+                The "Perfect Dry" is spectacular! Humidity has bottomed out. Morning UV is still high, but those <strong>5:30 PM sunsets at Castle Hill</strong> are world-class right now. <strong>Pallarenda Beach</strong> is our top pick for low-tide runs with the dog on the firm sand. Stinger nets remain <strong>ACTIVE</strong> — stay safe in the water!
               </span>
           </AlertDescription>
         </Alert>
