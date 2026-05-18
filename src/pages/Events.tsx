@@ -92,68 +92,12 @@ const Events = () => {
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Caravan & 4x4 Expo (TOP HIGHLIGHT) */}
+            {/* Card 1 — Dream Fields Festival */}
             <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Expo — This Weekend
-                  </Badge>
-                  <Star className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">Townsville Caravan, 4x4 & Outdoor Adventure Expo</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Friday 15 – Sunday 17 May 2026</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Reid Park Complex, Townsville</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  The biggest outdoor adventure event of the year. Check out the latest <strong>2026 caravans, 4x4 gear, and camping tech</strong> from leading Aussie brands — plus live demos and family-friendly displays across the weekend.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Born or Built? Closing Soon */}
-            <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Closing Soon — Last Chance
-                  </Badge>
-                  <Star className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">"Born or Built? Our Robotic Future"</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Closing Sunday, May 17, 2026</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Museum of Tropical Queensland</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  Last chance to see this <strong>interactive AI and robotics exhibition</strong>. Perfect for a shaded family afternoon — don't leave it until closing weekend.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Dream Fields Festival — Next Weekend */}
-            <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                    Next Weekend — Festival
+                    This Weekend — Festival
                   </Badge>
                   <Star className="w-5 h-5 text-gray-400" />
                 </div>
@@ -161,7 +105,7 @@ const Events = () => {
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, May 23 (Next Weekend)</span>
+                    <span>Saturday, May 23, 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
@@ -171,7 +115,63 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat</strong> and <strong>Skegss</strong>. <strong>Tickets are moving fast</strong> — don't leave it too late.
+                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat, and Skegss</strong>. Tickets are moving incredibly fast—grab yours before final release closes.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card 2 — Cowboys vs Rabbitohs */}
+            <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
+                    Sunday Afternoon Footy
+                  </Badge>
+                  <Star className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">Cowboys vs Rabbitohs (NRL Round 12)</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Sunday, May 24, 2026 (4:05 PM Kick-off)</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Queensland Country Bank Stadium, CBD</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  The Cowboys return to North Queensland for a massive family-friendly Sunday afternoon clash. CBD parking will be tight, so utilize the <strong>Lou Litster Park park-and-ride shuttle</strong> to beat the pre-game rush.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card 3 — North Australian Festival of Arts */}
+            <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
+                    Next Month — Major Festival
+                  </Badge>
+                  <Star className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">North Australian Festival of Arts (NAFA)</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>June – July 2026</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Multiple Venues Across Townsville</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  Get ready to plan your winter calendar. <strong>NAFA</strong> returns next month with an incredible program of theatre, comedy, circus, live music, and open-air light installations.
                 </p>
               </CardContent>
             </Card>
