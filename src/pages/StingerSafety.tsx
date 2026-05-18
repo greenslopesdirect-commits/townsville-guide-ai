@@ -48,7 +48,7 @@ const StingerSafety = () => (
       </p>
       <div className="bg-[#00A693]/10 rounded-lg p-4">
         <p className="text-sm font-medium text-foreground">
-          🐾 <strong>May Safety Update:</strong> Even as humidity drops, keep your dogs in the shallow wash-zone or on the wet sand at off-leash beaches. Avoid deep-water swimming for your pups at Saunders or Bushland Beach until the season officially wraps at the end of the month.
+          🐾 <strong>Late May Safety Update:</strong> With the humidity completely gone, the morning beach runs are fantastic, but please keep your dogs on the wet sand or in the shallow wash-zone. Avoid letting your pups swim out into deep water at un-netted beaches like Saunders, Toolakea, or Bushland Beach until the season officially wraps up at the end of the month.
         </p>
       </div>
     </div>
