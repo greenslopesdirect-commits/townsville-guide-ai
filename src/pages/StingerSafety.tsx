@@ -19,13 +19,13 @@ const StingerSafety = () => (
       canonical="https://www.myaussieguide.com.au/guides/stinger-safety"
     />
     <h1 className="text-4xl font-bold mb-4 text-center">May 2026 Stinger Update</h1>
-    <p className="text-center text-sm text-muted-foreground mb-6">Updated: May 11, 2026</p>
+    <p className="text-center text-sm text-muted-foreground mb-6">Updated: May 18, 2026</p>
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 May 11 Status</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 May 18 Status</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        We are officially in the home stretch of the 2025/2026 stinger season. <strong>Stinger nets remain ACTIVE</strong> at <strong>The Strand, Pallarenda, and Magnetic Island</strong>. While the water is clearing beautifully with the Dry Season breezes, do not be tempted to swim outside the enclosures yet.
+        We are now entering the final two weeks of the official 2025/2026 stinger season. <strong>Stinger nets remain ACTIVE and essential</strong> at <strong>The Strand, Pallarenda, and Magnetic Island</strong>. Even though the water looks crystal clear and inviting under the Dry Season blue skies, marine stingers are absolutely still present. Do not swim outside the enclosures under any circumstances.
       </p>
     </div>
 
