@@ -38,8 +38,8 @@ const Events = () => {
            <p className="text-sm text-gray-500">
              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
            </p>
-           <p className="text-lg text-gray-600 max-w-2xl">
-              Coming up: The massive <strong>Caravan & 4x4 Expo</strong> (this weekend), <strong>Dream Fields Festival</strong> (May 23), and the <strong>Cowboys' Magic Round watch party</strong>!
+            <p className="text-lg text-gray-600 max-w-2xl">
+              Coming up: The massive <strong>Dream Fields Festival</strong> (this Saturday!), the <strong>Cowboys vs Rabbitohs</strong> home game clash, and <strong>Sunday's Cotters Market</strong>!
             </p>
         </div>
 
