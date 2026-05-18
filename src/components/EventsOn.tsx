@@ -12,9 +12,9 @@ const EventsOn = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
             <span className="text-primary font-bold tracking-wider uppercase text-sm">Upcoming Events & Local Highlights</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">What's On: Caravan Expo, Dream Fields & Cowboys vs Rabbitohs</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">What's On: Dream Fields Festival & Cowboys vs Rabbitohs</h2>
             <p className="text-slate-600 mt-2 max-w-xl text-lg">
-              Townsville hosts markets, festivals, live shows, and community events throughout the year.
+              From the Dream Fields Festival at Central Park (this Saturday, May 23) to the Cowboys vs Rabbitohs Sunday arvo home game (May 24, 4:05 PM) — there's a massive weekend of entertainment lining up in Townsville.
             </p>
           </div>
           
@@ -36,14 +36,14 @@ const EventsOn = () => {
                         May 2026 Highlights
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
-                    <p className="text-blue-100 font-medium">Caravan expo, festivals & Sunday arvo footy</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🚐 Caravan & 4x4 Expo — May 15–17, Reid Park</p>
+                    <p className="text-blue-100 font-medium">Music, markets & Sunday arvo footy</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🎶 Dream Fields Festival — May 23, Central Park</p>
                      <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">The Perfect Dry</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
                         <MapPin className="w-4 h-4" />
-                        <span>Reid Park, Central Park & QLD Country Bank Stadium</span>
+                        <span>Central Park, Flinders Street & QLD Country Bank Stadium</span>
                      </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ const EventsOn = () => {
             <div className="lg:col-span-3 p-8 flex flex-col justify-center">
                 <div className="prose prose-slate mb-6">
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        From the <strong>Townsville Caravan, 4x4 & Outdoor Adventure Expo</strong> at Reid Park (May 15–17) to the <strong>Dream Fields Festival</strong> at Central Park (May 23) and the <strong>Cowboys vs Rabbitohs</strong> Sunday arvo home game (May 24, 4:05 PM) —
+                        From the <strong>Dream Fields Festival</strong> at Central Park (this Saturday, May 23) to the <strong>Cowboys vs Rabbitohs</strong> Sunday arvo home game (May 24, 4:05 PM) —
                         there's always something happening in Townsville.
                     </p>
                 </div>
@@ -64,7 +64,7 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Updated May 11, 2026.
+                        Updated May 18, 2026.
                     </span>
                 </div>
             </div>
@@ -77,21 +77,21 @@ const EventsOn = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
             
-            {/* Card 1 — Caravan & 4x4 Expo (May 15–17) */}
+            {/* Card 1 — Cotters Market (May 24) */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-orange-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
-                            May 15–17 — Expo
+                            This Sunday — Markets
                         </div>
                         <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Caravan, 4x4 & Outdoor Adventure Expo</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Friday 15 – Sunday 17 May</p>
+                    <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Sunday, May 24, 2026</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Reid Park Complex
+                        <MapPin className="w-4 h-4" /> Flinders Street, CBD
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">🚐 The ultimate showcase of 2026 caravans, hybrids, and smart camping tech.</p>
+                    <p className="text-xs text-slate-500 mt-2">Townsville's premier Sunday morning market. Grab a fresh coffee, browse local North Queensland crafts, and enjoy the live street entertainment in the crisp morning air.</p>
                 </CardContent>
             </Card>
 
@@ -100,16 +100,16 @@ const EventsOn = () => {
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
-                            May 23 — Festival
+                            This Saturday — Festival
                         </div>
                         <Music className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Dream Fields Festival</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, May 23</p>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, May 23, 2026</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> Central Park, Townsville
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">🎶 Final tickets remaining for Galantis, Peking Duk, and Mallrat.</p>
+                    <p className="text-xs text-slate-500 mt-2">🎶 Final tickets remaining for Galantis, Peking Duk, Mallrat, and Skegss. Central Park is going to be buzzing for the biggest outdoor music event of the month.</p>
                 </CardContent>
             </Card>
 
@@ -118,26 +118,26 @@ const EventsOn = () => {
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
-                            May 24 — Round 12
+                            This Sunday — NRL Round 12
                         </div>
                         <Trophy className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Cowboys vs Rabbitohs (Home)</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Sunday, May 24</p>
+                    <h4 className="text-lg font-bold mb-2">Cowboys vs Rabbitohs (Home Game)</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Sunday, May 24, 2026</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
                         <Clock className="w-4 h-4" /> Kick-off: 4:05 PM
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">🏉 Sunday arvo footy returns to QCB Stadium.</p>
+                    <p className="text-xs text-slate-500 mt-2">🏉 Sunday arvo footy returns to QCB Stadium. Fresh off an 18–12 win at Magic Round, the Cowboys return home with serious momentum. Kick-off is at 4:05 PM.</p>
                 </CardContent>
             </Card>
 
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🚐 Caravan & 4x4 Expo May 15–17, Dream Fields Festival May 23, and Cowboys vs Rabbitohs Sunday May 24! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🎶 Dream Fields Festival May 23, Cotters Market, and Cowboys vs Rabbitohs Sunday May 24! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
