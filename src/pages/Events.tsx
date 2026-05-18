@@ -120,30 +120,30 @@ const Events = () => {
               </CardContent>
             </Card>
 
-            {/* Born or Built? Closing Soon */}
+            {/* Card 2 — Cowboys vs Rabbitohs */}
             <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Closing Soon — Last Chance
+                    Sunday Afternoon Footy
                   </Badge>
                   <Star className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">"Born or Built? Our Robotic Future"</CardTitle>
+                <CardTitle className="text-xl mt-2">Cowboys vs Rabbitohs (NRL Round 12)</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Closing Sunday, May 17, 2026</span>
+                    <span>Sunday, May 24, 2026 (4:05 PM Kick-off)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Museum of Tropical Queensland</span>
+                    <span>Queensland Country Bank Stadium, CBD</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Last chance to see this <strong>interactive AI and robotics exhibition</strong>. Perfect for a shaded family afternoon — don't leave it until closing weekend.
+                  The Cowboys return to North Queensland for a massive family-friendly Sunday afternoon clash. CBD parking will be tight, so utilize the <strong>Lou Litster Park park-and-ride shuttle</strong> to beat the pre-game rush.
                 </p>
               </CardContent>
             </Card>
