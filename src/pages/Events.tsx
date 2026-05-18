@@ -92,30 +92,30 @@ const Events = () => {
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Caravan & 4x4 Expo (TOP HIGHLIGHT) */}
+            {/* Card 1 — Dream Fields Festival */}
             <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Expo — This Weekend
+                    This Weekend — Festival
                   </Badge>
                   <Star className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Townsville Caravan, 4x4 & Outdoor Adventure Expo</CardTitle>
+                <CardTitle className="text-xl mt-2">Dream Fields Festival</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Friday 15 – Sunday 17 May 2026</span>
+                    <span>Saturday, May 23, 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Reid Park Complex, Townsville</span>
+                    <span>Central Park, Townsville</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  The biggest outdoor adventure event of the year. Check out the latest <strong>2026 caravans, 4x4 gear, and camping tech</strong> from leading Aussie brands — plus live demos and family-friendly displays across the weekend.
+                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat, and Skegss</strong>. Tickets are moving incredibly fast—grab yours before final release closes.
                 </p>
               </CardContent>
             </Card>
