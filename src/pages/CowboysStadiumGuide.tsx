@@ -26,7 +26,7 @@ const CowboysStadiumGuide = () => {
               Back to Events
             </Link>
             <Badge variant="secondary" className="bg-green-50 text-green-700">
-              2026 Season
+              May 18 Update
             </Badge>
           </div>
         </div>
@@ -46,7 +46,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – May 11 Update: Magic Round & Round 12 Home Game
+               2026 Season – May 18 Update: Rabbitohs Clash This Sunday!
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -54,11 +54,11 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Season Update
                    </Badge>
-                    <CardTitle className="text-lg mt-2">Magic Round Bound, Rabbitohs Next at Home</CardTitle>
+                    <CardTitle className="text-lg mt-2">Magic Round Win, Rabbitohs Next at Home</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      Following a Golden Point thriller against the Eels (<strong>30–33</strong>), we're looking ahead to <strong>Magic Round in Brisbane</strong> before returning home for a Sunday afternoon blockbuster against the <strong>Rabbitohs</strong>.
+                      Fresh off a massive <strong>18–12 Magic Round victory</strong> over the Roosters in Brisbane, the Cowboys are coming back to Townsville with serious momentum. Our full focus now shifts to a massive Sunday afternoon blockbuster against the <strong>South Sydney Rabbitohs</strong> right here at home.
                     </p>
                  </CardContent>
                </Card>
