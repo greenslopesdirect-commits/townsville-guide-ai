@@ -240,6 +240,19 @@ const Beaches = () => {
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
+        {/* Deciding Where to Head: Townsville's Diverse Coastline */}
+        <section className="mb-8 space-y-4">
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+            Deciding Where to Head: Townsville's Diverse Coastline
+          </h2>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+            Unlike traditional surf coasts, the beaches flanking Townsville and the greater North Queensland region offer a diverse mix of manicured foreshores, sprawling tidal flats, and rugged, untamed coastal escapes. The geography here is heavily influenced by the protective barrier of Magnetic Island and massive tropical tidal movements. Depending on what you are looking for, your beach choice will completely dictate your day. If you want a bustling, cosmopolitan atmosphere with paved walkways, beachside cafes, and a protected, year-round swimming enclosure, the inner-city Strand waterfront is unmatched. However, if you are looking to truly escape the crowds, travel just ten minutes north to the wide sand flats of Pallarenda, or venture further out to the expansive, wind-swept stretches of Saunders and Toolakea Beach.
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+            When planning a beach day in the tropics, understanding local safety and environmental dynamics is just as important as choosing a scenic view. Our coastline experiences significant tidal ranges that can expose hundreds of meters of shallow sand flats at low tide—perfect for beachcombing and letting dogs explore, but less ideal for a deep swim. Additionally, ocean swimming requires sticking to dedicated stinger-net enclosures during the warmer months to guarantee a worry-free dip. By familiarising yourself with how our local beaches change with the tides, wind patterns, and seasons, you can safely find the absolute perfect patch of sand, whether you are after a family-friendly rockpool, a secluded photography spot, or an off-leash run for your dogs.
+          </p>
+        </section>
+
         {/* Beach Listings */}
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-foreground">Beach Guide</h2>
