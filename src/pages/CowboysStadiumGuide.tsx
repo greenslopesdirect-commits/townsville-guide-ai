@@ -119,8 +119,8 @@ const CowboysStadiumGuide = () => {
                     <tbody className="divide-y divide-border">
                       <tr>
                         <td className="px-4 py-3 font-medium">Round 11 <span className="text-xs text-muted-foreground">(Magic Round)</span></td>
-                        <td className="px-4 py-3">Away vs Roosters</td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat May 16, 5:30 PM</td>
+                        <td className="px-4 py-3">Away vs Roosters <span className="text-green-600 font-medium">(Won 18-12)</span></td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat May 16</td>
                         <td className="px-4 py-3 text-muted-foreground">Suncorp Stadium</td>
                       </tr>
                       <tr className="bg-primary/5">
