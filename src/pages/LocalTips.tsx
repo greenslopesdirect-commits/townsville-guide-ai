@@ -201,7 +201,21 @@ const LocalTips = () => {
               ))}
             </div>
 
+            {/* Navigating Townsville Like a True Local */}
+            <section className="mb-12 space-y-4">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                Navigating Townsville Like a True Local
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                Understanding the local rhythm of Townsville is the secret to unlocking the best of tropical North Queensland without the usual tourist pitfalls. Life here is dictated by the sun and the seasons. Because our tropical climate delivers high UV levels and distinct seasonal shifts, you will find that the city operates on an "early to bed, early to rise" philosophy. If you want to experience the region comfortably, you need to adjust your clock: locals tackle the heavy outdoor tracks like Castle Hill or the boardwalks at sunrise, retreat to air-conditioned hubs or shaded rockpools during the intense midday heat, and emerge again as the afternoon coastal breezes roll in.
+              </p>
+              <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                Beyond the weather, navigating Townsville safely means respecting the local environment. Whether it is knowing when it is safe to enter the ocean during marine stinger season, keeping an eye on local infrastructure updates like the Magnetic Island bridge works, or simply checking the tree canopy before setting up a family picnic on The Strand, a little local foresight goes a long way. This insider guide compiles our daily lived experiences, live community updates, and essential safety protocol to ensure your time in Townsville is seamless, safe, and perfectly tailored to the tropical lifestyle.
+              </p>
+            </section>
+
             {/* Safety Alerts & Current Status */}
+
             <div className="space-y-4 mb-8">
               <div className="p-4 rounded-lg border bg-card">
                 <p className="text-sm text-muted-foreground">
