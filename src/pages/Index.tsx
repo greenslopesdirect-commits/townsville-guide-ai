@@ -143,17 +143,17 @@ const Index = () => {
               {/* Content */}
               <div className="space-y-5">
                 <Badge variant="secondary" className="bg-emerald-50 text-emerald-700 border border-emerald-100 w-fit">
-                  Live Bulletin · May 11, 2026
+                  Live Bulletin · May 18, 2026
                 </Badge>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
                   Current Status: The 'Perfect Dry' is here!
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                   The humidity has dropped, and the 'Best of Townsville' window is
-                  officially open. We're gearing up for a massive month with the{" "}
-                  <strong className="text-foreground">Caravan &amp; 4x4 Expo (May 15–17)</strong>{" "}
+                  officially open. We're gearing up for a massive weekend ahead with the{" "}
+                  <strong className="text-foreground">Dream Fields Festival (May 23)</strong>{" "}
                   and the{" "}
-                  <strong className="text-foreground">Dream Fields Festival (May 23)</strong>.
+                  <strong className="text-foreground">Cowboys vs Rabbitohs home game blockbuster (May 24)</strong>.
                 </p>
                 <p className="text-sm sm:text-base text-amber-800 bg-amber-50 border border-amber-100 rounded-lg p-3">
                   🌴 We run on <strong>"Tropical Time"</strong> here. Slow down,
