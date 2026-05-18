@@ -50,11 +50,11 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (May 11 – May 17)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (May 18 – May 24)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li>Expo: <strong>Townsville Caravan, 4x4 & Outdoor Adventure Expo</strong> — Friday 15 to Sunday 17 May at Reid Park Complex. Check out the latest 2026 caravans, 4x4 gear, and camping tech.</li>
-            <li>Markets: <strong>Mundingburra Markets</strong> — Sunday, May 17. A great local Sunday morning for fresh produce and crafts.</li>
-            <li>Footy: <strong>NRL Magic Round — Cowboys vs Roosters</strong> (Away at Suncorp). Sat 16 May, 5:30 PM kick-off. Ideal for local sports bars and watch parties.</li>
+            <li><strong>Festival:</strong> <strong>Dream Fields Festival</strong> — Saturday, May 23 at Central Park. Townsville's premier music and arts festival featuring Galantis, Peking Duk, and Mallrat.</li>
+            <li><strong>Footy:</strong> <strong>NRL Round 12 — Cowboys vs Rabbitohs</strong>. Sunday, May 24, 4:05 PM kick-off at Queensland Country Bank Stadium. Expect the CBD to be buzzing from 1:00 PM.</li>
+            <li><strong>Markets:</strong> <strong>Cotters Market</strong> — Sunday, May 24, morning on Flinders Street. Enjoy the great weather with live street music, local stalls, and fresh morning coffee.</li>
           </ul>
         </section>
 
