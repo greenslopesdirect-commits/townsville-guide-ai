@@ -249,7 +249,7 @@ const Events = () => {
             <div>
               <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
               <p className="text-amber-800 text-sm mt-1">
-                April in Townsville is the sweet spot — the heavy rains are easing, but the landscape is still vibrant and green. It's the best time of year for outdoor photography at our secret northern beaches like Saunders and Toolakea.
+                Late May into June is an absolute spectacle across North Queensland. The landscape is still lush and green from the earlier wet season, but the crisp, low-humidity air has settled in. This is the ultimate window for afternoon photography at our secret northern beaches like Saunders and Toolakea, where the clear skies create perfect glass-like reflections on the low-tide sand flats.
               </p>
             </div>
           </div>
