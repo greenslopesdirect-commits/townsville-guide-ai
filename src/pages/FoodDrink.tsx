@@ -290,7 +290,7 @@ const FoodDrink = () => {
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>May 19 Update: As we settle into the Dry Season, most CBD and Strand cafes are at full capacity on weekends. While many boutique spots close early on Mondays, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit.</em>
+                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>May 19 Update: As we settle into the Dry Season, most CBD and Strand cafes are at full capacity on weekends. While many boutique spots close early on Mondays, Cbar, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit or waterfront lunch.</em>
                </p>
             </LocalInsightCard>
 
