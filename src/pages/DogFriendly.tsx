@@ -117,6 +117,63 @@ const DogFriendly = () => {
           {/* Stinger Alert */}
           <StingerSeasonAlert />
 
+          {/* Pallarenda Off-Leash Feature Showcase */}
+          <section aria-labelledby="pallarenda-offleash-showcase" className="my-8">
+            <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+              <div className="p-6 border-b border-gray-50 bg-gradient-to-r from-teal-50/50 to-transparent">
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">🐕</span>
+                  <div>
+                    <h2 id="pallarenda-offleash-showcase" className="text-2xl font-bold text-gray-950">Pallarenda Off-Leash Dog Beach</h2>
+                    <p className="text-sm text-gray-600">The premier off-leash coastal run in Townsville — Curated by Max the Giant Schnauzer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6">
+                <div className="rounded-lg overflow-hidden border border-gray-100 h-80 bg-gray-50">
+                  <img src="/assets/images/Pallarenda-max2.webp" alt="Max at Heatley Parade Beach Access Sign" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+
+                <div className="grid grid-cols-2 gap-4 h-80">
+                  <div className="rounded-lg overflow-hidden border border-gray-100 bg-gray-50">
+                    <img src="/assets/images/Pallarenda-max1.webp" alt="Max looking out at Pallarenda Beach at sunset" className="w-full h-full object-cover" loading="lazy" />
+                  </div>
+                  <div className="rounded-lg overflow-hidden border border-gray-100 bg-gray-50">
+                    <img src="/assets/images/Pallarenda-max4.webp" alt="Giant Schnauzer rolling in the sand at Pallarenda" className="w-full h-full object-cover" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="px-6 pb-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700">
+                <div className="md:col-span-2 space-y-4">
+                  <h3 className="font-bold text-gray-950 text-base">How to Find It & Access Info</h3>
+                  <p>The main off-leash zone is located at <strong>Beach Access Point 1 on Heatley Parade</strong> (right where the pavement ends and the coastal road loops back). Look for the green and white Townsville City Council signpost next to the blue pedestrian footbridge.</p>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                    <div className="flex gap-2 items-start">
+                      <span className="text-teal-600 font-bold">✔</span>
+                      <span><strong>Stinger Safety Station:</strong> Access point includes public vinegar stands for peace of mind.</span>
+                    </div>
+                    <div className="flex gap-2 items-start">
+                      <span className="text-teal-600 font-bold">✔</span>
+                      <span><strong>Firm Sand Flats:</strong> Low tide uncovers wide, flat stretches perfect for big dog sprints.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-amber-50/60 border border-amber-100 rounded-xl p-4 text-amber-950 self-start">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-lg">🐾</span>
+                    <strong className="text-sm font-bold">Max's Ambassador Pro-Tip:</strong>
+                  </div>
+                  <p className="text-xs leading-relaxed mb-2">"When you hit the sand at Access 1, head left toward the northern flats. If you come down during a low-tide sunset, the sand is beautifully cool on the paws, the breeze is steady, and the sand quality is absolutely premier for a post-walk roll!"</p>
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-amber-700 bg-amber-100/60 px-2 py-0.5 rounded">Schnauzer Approved</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Local Spotlight - Quayside */}
           <section aria-labelledby="local-spotlight-quayside" className="my-8">
             <Card className="overflow-hidden border-2 border-primary/20">
