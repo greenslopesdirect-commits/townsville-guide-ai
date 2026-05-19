@@ -280,9 +280,9 @@ const FoodDrink = () => {
 
             {/* Weekly Highlight */}
              <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
-               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (May 19–25)</h3>
+               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (May 18–24)</h3>
                <p className="text-sm text-muted-foreground leading-relaxed">
-                 🌅 <strong>May 19–25:</strong> With the Dream Fields Festival and Cowboys vs Rabbitohs both landing this weekend, expect a massive dining rush across the CBD and The Strand. Book ahead for Friday and Saturday nights — Otto's Market, The Quarters, and Juliette's on The Strand are already filling up fast. Sunday will be quieter post-game, making it ideal for a relaxed long lunch at Hoi Polloi or A Touch of Salt.
+                 🌅 <strong>May 18–24:</strong> The focus is on pre-festival fueling and Sunday game-day lunches. With the Dream Fields Festival arriving this Saturday and the Cowboys playing at home on Sunday afternoon, expect local restaurant strips to be absolutely buzzing. Secure an outdoor deck spot early at Longboard or a riverfront dinner at A Touch of Salt to enjoy the crisp evening breezes.
                </p>
              </div>
 
