@@ -129,18 +129,18 @@ const FoodDrink = () => {
     },
     {
       title: "C Bar",
-      description: "Perched on the headland at the northern end of The Strand, C Bar offers uninterrupted panoramic views across Cleveland Bay to Magnetic Island. The ultimate spot for an outdoor deck lunch.",
+      description: "Perched right on the Gregory Street headland on The Strand, offering an incredible open-air deck experience right on the water's edge. The ultimate spot for a relaxed outdoor lunch over the beach.",
       image: cbarImage,
-      tags: ["Waterfront", "Cafe & Bistro", "Ocean Views", "Al Fresco Deck"],
+      tags: ["Beachfront Deck", "Al Fresco Dining", "Lunch & Dinner", "Great Coffee"],
       features: [
-        "Spectacular open-air deck jutting out over the water",
-        "Modern bistro menu featuring fresh seafood, salads & burgers",
-        "Fully licensed with cold beers and wine",
-        "Great coffee — lunch & dinner service"
+        "Beautiful outdoor seating pulling in a steady coastal sea breeze",
+        "Modern bistro menu with fantastic lunch shares, fresh salads, and seafood",
+        "Fully licensed — perfect for a casual afternoon drink right by the sand",
+        "Duncan's Tip: Score a table on the outer edge of the deck for the direct sea breeze"
       ],
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Cbar+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at C Bar Townsville.",
-      subtitle: "Waterfront Cafe & Bistro"
+      subtitle: "Cafe & Bistro"
     },
     {
       title: "Rambutan Rooftop Bar",
