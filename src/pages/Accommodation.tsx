@@ -167,9 +167,9 @@ const Accommodation = () => {
 
             {/* Seasonal Alert */}
             <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-12">
-              <p className="text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 font-semibold mb-2">Updated: May 11, 2026</p>
+              <p className="text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 font-semibold mb-2">Updated: May 19, 2026</p>
               <p className="text-amber-800 dark:text-amber-300 leading-relaxed">
-                ⚠️ <strong>May High-Demand Alert:</strong> Between the Caravan & 4x4 Expo (May 15–17) and the Dream Fields Festival (May 23), accommodation in the CBD and South Townsville is booking out fast. If you're heading in for the Cowboys vs. Rabbitohs home game on May 24, we recommend securing your stay immediately.
+                ⚠️ <strong>May High-Demand Alert:</strong> We are heading into the busiest weekend of the month. Between the massive Dream Fields Festival (May 23) taking over Central Park and the Cowboys vs. Rabbitohs home game blockbuster (May 24), accommodation in the CBD, South Townsville, and The Strand is at near-total capacity. If you haven't secured your room yet, book immediately to avoid being left with zero options.
               </p>
             </div>
 
