@@ -14,6 +14,7 @@ import saltImage from "@/assets/a-touch-of-salt-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
 import cactusImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import juliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
+import cbarImage from "@/assets/cbar-townsville.webp";
 
 
 const FoodDrink = () => {
