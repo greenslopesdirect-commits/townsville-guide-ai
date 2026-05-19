@@ -337,7 +337,7 @@ const ThingsToDo = () => {
             {/* Weekly Highlight */}
             <div className="mb-12 p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-300 dark:border-emerald-700">
               <p className="text-emerald-800 dark:text-emerald-300 leading-relaxed">
-                🌊 <strong>Waterfall Watch (May 11):</strong> As we move further into the Dry Season, the waterfalls at Little Crystal Creek and Jourama Falls are at perfect swimming levels — clear, crisp, and refreshing without the heavy summer humidity.
+                🌊 <strong>Waterfall Watch (May 19):</strong> As we move further into the Dry Season, the waterfalls at Little Crystal Creek and Jourama Falls are at perfect swimming levels — clear, crisp, and refreshing without the heavy summer humidity.
               </p>
             </div>
 
