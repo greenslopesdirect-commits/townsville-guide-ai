@@ -128,6 +128,20 @@ const FoodDrink = () => {
       subtitle: "Seafood & Views"
     },
     {
+      title: "C Bar",
+      description: "Perched on the headland at the northern end of The Strand, C Bar offers uninterrupted panoramic views across Cleveland Bay to Magnetic Island. The ultimate spot for an outdoor deck lunch.",
+      image: cbarImage,
+      tags: ["Waterfront", "Cafe & Bistro", "Ocean Views", "Al Fresco Deck"],
+      features: [
+        "Spectacular open-air deck jutting out over the water",
+        "Modern bistro menu featuring fresh seafood, salads & burgers",
+        "Fully licensed with cold beers and wine",
+        "Great coffee — lunch & dinner service"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Cbar+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at C Bar Townsville.",
+      subtitle: "Waterfront Cafe & Bistro"
+    {
       title: "Rambutan Rooftop Bar",
       description: "Rooftop dining in the CBD with wood-fired pizzas, cocktails and views of the stadium and Castle Hill. Vibey weekend atmosphere with rooftop views.",
       tags: ["Bar", "Casual", "Rooftop", "🎧 DJ Sets"],
