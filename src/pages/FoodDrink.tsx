@@ -14,6 +14,7 @@ import saltImage from "@/assets/a-touch-of-salt-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
 import cactusImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import juliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
+import cbarImage from "@/assets/cbar-townsville.webp";
 
 
 const FoodDrink = () => {
@@ -125,6 +126,21 @@ const FoodDrink = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Watermark+Restaurant+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at Watermark Restaurant.",
       subtitle: "Seafood & Views"
+    },
+    {
+      title: "C Bar",
+      description: "Perched on the headland at the northern end of The Strand, C Bar offers uninterrupted panoramic views across Cleveland Bay to Magnetic Island. The ultimate spot for an outdoor deck lunch.",
+      image: cbarImage,
+      tags: ["Waterfront", "Cafe & Bistro", "Ocean Views", "Al Fresco Deck"],
+      features: [
+        "Spectacular open-air deck jutting out over the water",
+        "Modern bistro menu featuring fresh seafood, salads & burgers",
+        "Fully licensed with cold beers and wine",
+        "Great coffee — lunch & dinner service"
+      ],
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Cbar+Townsville",
+      aiPrompt: "Tell me about the menu, price range, and vibe at C Bar Townsville.",
+      subtitle: "Waterfront Cafe & Bistro"
     },
     {
       title: "Rambutan Rooftop Bar",
