@@ -141,6 +141,7 @@ const FoodDrink = () => {
       mapUrl: "https://www.google.com/maps/search/?api=1&query=Cbar+Townsville",
       aiPrompt: "Tell me about the menu, price range, and vibe at C Bar Townsville.",
       subtitle: "Waterfront Cafe & Bistro"
+    },
     {
       title: "Rambutan Rooftop Bar",
       description: "Rooftop dining in the CBD with wood-fired pizzas, cocktails and views of the stadium and Castle Hill. Vibey weekend atmosphere with rooftop views.",
