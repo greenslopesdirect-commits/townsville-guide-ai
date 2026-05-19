@@ -606,7 +606,7 @@ const ThingsToDo = () => {
                   { num: "5", title: "Townsville Bulletin Square Water Feature", desc: "A great (and free) way to cool down right in the heart of the CBD." },
                   { num: "6", title: "Anderson Park Botanical Gardens", desc: "Perfect for a shaded holiday picnic or letting the kids explore the world-class tropical plant collection." },
                   { num: "7", title: "Pallarenda Beach Beachcombing", desc: "Head to the northern end for a quieter beach day and low-tide exploration.", link: "/pallarenda-beach", linkText: "Pallarenda Guide →" },
-                  { num: "8", title: "Townsville City Libraries", desc: "Check the 'School Holiday Program' for free workshops, LEGO clubs, and storytime sessions." },
+                  { num: "8", title: "Townsville City Libraries", desc: "Check the library website for free weekly workshops, weekend LEGO clubs, and interactive baby and toddler storytime sessions." },
                   { num: "9", title: "Ross River Parkway", desc: "Miles of shared paths for a family bike ride or a sunset walk near the weirs." },
                   { num: "10", title: "Cotters Market (Sunday Mornings)", desc: "While the stalls cost money, the atmosphere, live music, and street performance are free to enjoy in Flinders Street." },
                 ].map((item) => (
