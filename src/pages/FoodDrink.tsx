@@ -274,15 +274,15 @@ const FoodDrink = () => {
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>May 11 Update: As we settle into the Dry Season, most CBD and Strand cafes are at full capacity on weekends. While many boutique spots close early on Mondays, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit.</em>
+                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>May 19 Update: As we settle into the Dry Season, most CBD and Strand cafes are at full capacity on weekends. While many boutique spots close early on Mondays, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit.</em>
                </p>
             </LocalInsightCard>
 
             {/* Weekly Highlight */}
              <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
-               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (May 11–17)</h3>
+               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (May 19–25)</h3>
                <p className="text-sm text-muted-foreground leading-relaxed">
-                 🌅 <strong>May 11–17:</strong> The focus is on alfresco dining this week. With the humidity gone and crisp evening breezes, it is the absolute peak window for a riverfront dinner at A Touch of Salt or a sunset cocktail on the Rambutan Rooftop. If you're out for a weekend treat, the Juliette's line-up on The Strand is the place to be.
+                 🌅 <strong>May 19–25:</strong> With the Dream Fields Festival and Cowboys vs Rabbitohs both landing this weekend, expect a massive dining rush across the CBD and The Strand. Book ahead for Friday and Saturday nights — Otto's Market, The Quarters, and Juliette's on The Strand are already filling up fast. Sunday will be quieter post-game, making it ideal for a relaxed long lunch at Hoi Polloi or A Touch of Salt.
                </p>
              </div>
 
