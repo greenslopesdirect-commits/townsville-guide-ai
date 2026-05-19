@@ -90,7 +90,7 @@ const Advertise = () => {
                     <div>
                       <h3 className="font-semibold text-foreground text-lg mb-2">Feature Your Business</h3>
                       <p className="text-muted-foreground">
-                        Apply to join as a Founding Partner. We are currently waiving our standard review and photography fees for select Townsville cafes, tours, and accommodation during our Q2 growth phase.
+                        Apply to join as a Founding Partner. We are currently waiving our standard review and photography fees for select Townsville cafes, tours, and accommodation during our May 2026 growth phase.
                       </p>
                     </div>
                   </div>
