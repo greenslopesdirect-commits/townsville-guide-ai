@@ -380,7 +380,7 @@ const FoodDrink = () => {
                 </div>
                  <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
                    <p className="text-sm text-foreground">
-                     🎸 <strong>Magic Round & Beyond (May 16–24):</strong> With the Cowboys away for Magic Round this Saturday (May 16), the City Lane precinct and Tiny Mountain Brewery are the top spots to catch the game on the big screens with a local crowd. Looking ahead to the Rabbitohs home game (Sunday, May 24), Palmer Street will be the heart of the pre-game lunch rush—we strongly recommend booking your table by mid-week.
+                     🎸 <strong>Festival & Footy Weekend (May 18–24):</strong> With the massive Dream Fields Festival taking over Central Park this Saturday (May 23), the City Lane precinct, Flinders Street cafés, and Rambutan Rooftop will be packed with festival-goers all afternoon. Looking ahead to the Cowboys vs Rabbitohs home game on Sunday (May 24), Palmer Street will be the absolute heart of the pre-game lunch rush. We strongly recommend booking your tables at JAM, A Touch of Salt, or Copper Bar & Grill by mid-week to guarantee a spot.
                    </p>
                  </div>
               </div>
