@@ -299,80 +299,49 @@ const Events = () => {
           </div>
         </section>
 
-        {/* Major 2026 Events to Plan For */}
+        {/* Major Annual Events Timeline — Remainder of 2026 */}
         <section className="pt-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Major 2026 Events to Plan For</h2>
-          <p className="text-gray-600 mb-6">Mark your calendar for these highlights. Need a place to stay? Check our <Link to="/accommodation" className="text-primary font-medium hover:underline">Accommodation guide</Link>.</p>
-          
-          <div className="space-y-4">
-            <Card>
-              <CardContent className="p-4">
-                <h3 className="font-semibold text-gray-900">Strand Ephemera</h3>
-                <p className="text-sm text-gray-600 mt-1">Australia's leading outdoor sculpture festival. Biennial event transforming The Strand into an open-air gallery with installations from local and international artists.</p>
-              </CardContent>
-            </Card>
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">Major Annual Events — Remainder of 2026</h2>
+          <p className="text-gray-600 mb-8">Your chronological dry season &amp; spring calendar of Townsville's flagship events. Need a place to stay? Check our <Link to="/accommodation" className="text-primary font-medium hover:underline">Accommodation guide</Link>.</p>
 
-            <Card>
-              <CardContent className="p-4">
-                <h3 className="font-semibold text-gray-900">Magnetic Island Race Week</h3>
-                <p className="text-sm text-gray-600 mt-1">Late August. Sailing yachts compete around Magnetic Island's stunning bays in one of North Queensland's biggest sailing spectacles and a major regional tourism draw.</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-4">
-                <h3 className="font-semibold text-gray-900">North Australian Festival of Arts</h3>
-                <p className="text-sm text-gray-600 mt-1">June–July. Flagship arts festival featuring theatre, music, and circus, plus comedy nights, outdoor installations, and light shows across multiple Townsville venues.</p>
-              </CardContent>
-            </Card>
-          </div>
+          <ol className="relative border-l-2 border-primary/30 ml-3 space-y-8">
+            {[
+              {
+                date: "July 2026",
+                title: "V8 Supercars Townsville 500",
+                body: "The streets of Reid Park come alive for the annual supercar street circuit. Expect high CBD buzz and trackside action."
+              },
+              {
+                date: "31 July – 9 August 2026",
+                title: "Australian Festival of Chamber Music",
+                body: "Internationally acclaimed classical musicians performing across beautiful local venues, including acoustic highlights at St James' Cathedral."
+              },
+              {
+                date: "Late August 2026",
+                title: "Magnetic Island Race Week",
+                body: "The ultimate social regatta with yachts racing across Cleveland Bay and lively community events around Maggie Island."
+              },
+              {
+                date: "25 September – 11 October 2026",
+                title: "North Australian Festival of Arts (NAFA)",
+                body: "Townsville's flagship arts festival is locked in for spring 2026, bringing comedy, circus, theatre, and light installations to Strand Park."
+              },
+              {
+                date: "December 2026",
+                title: "Townsville Christmas Festival",
+                body: "Festive lights, markets, and family-friendly entertainment across the CBD and waterfront."
+              },
+            ].map((event) => (
+              <li key={event.title} className="ml-6">
+                <span className="absolute -left-[9px] flex h-4 w-4 items-center justify-center rounded-full bg-primary ring-4 ring-background" aria-hidden="true" />
+                <div className="text-xs font-bold uppercase tracking-wide text-primary mb-1">{event.date}</div>
+                <h3 className="font-semibold text-gray-900">{event.title}</h3>
+                <p className="text-sm text-gray-600 mt-1">{event.body}</p>
+              </li>
+            ))}
+          </ol>
         </section>
 
-        {/* Annual Festivals - Detailed List */}
-        <section className="pt-8">
-           <h2 className="text-2xl font-bold text-gray-900 mb-6">Annual Festivals Calendar</h2>
-           <div className="space-y-4">
-              <Card>
-                <CardContent className="p-4 flex gap-4">
-                  <div className="text-xs font-bold text-gray-500 w-16 pt-1">JUN-JUL</div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">North Australian Festival of Arts (NAFA)</h3>
-                    <p className="text-sm text-gray-600 mt-1">Townsville's flagship arts festival featuring theatre, music, circus, comedy, light shows and outdoor performances. It's the largest multi-arts festival in Northern Australia, drawing performers from across the country.</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-4 flex gap-4">
-                  <div className="text-xs font-bold text-gray-500 w-16 pt-1">JUL-AUG</div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Australian Festival of Chamber Music</h3>
-                    <p className="text-sm text-gray-600 mt-1">World-class chamber music performed across stunning venues including St James' Cathedral. The festival attracts internationally acclaimed musicians and is one of Australia's premier classical music events.</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-4 flex gap-4">
-                  <div className="text-xs font-bold text-gray-500 w-16 pt-1">AUGUST</div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Townsville Running Festival</h3>
-                    <p className="text-sm text-gray-600 mt-1">Marathon, half-marathon and fun run options through scenic streets and waterfront. A fantastic community event with courses winding past <Link to="/the-strand" className="text-primary font-medium hover:underline">The Strand</Link> and Castle Hill.</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-4 flex gap-4">
-                  <div className="text-xs font-bold text-gray-500 w-16 pt-1">DECEMBER</div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">Townsville Christmas Festival</h3>
-                    <p className="text-sm text-gray-600 mt-1">Festive lights, markets, food stalls and entertainment to celebrate the holiday season. A family-friendly atmosphere with spectacular light displays across the CBD and waterfront.</p>
-                  </div>
-                </CardContent>
-              </Card>
-           </div>
-        </section>
 
 
         {/* FAQ Section */}
