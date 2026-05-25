@@ -72,7 +72,9 @@ const Footer = () => {
           {/* Column 1 – Branding */}
           <div>
             <h3 className="text-xl font-bold text-foreground mb-3">
-              My Aussie Guide – Townsville
+              <Link to="/" className="hover:text-primary transition-colors">
+                My Aussie Guide – Townsville
+              </Link>
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Your friendly local guide to the best of Townsville:

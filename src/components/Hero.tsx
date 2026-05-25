@@ -18,6 +18,9 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container relative z-10 px-4 pt-20 text-center mx-auto max-w-3xl">
+        <p className="text-sm md:text-base uppercase tracking-[0.25em] text-yellow-300/90 font-semibold mb-4 drop-shadow">
+          My Aussie Guide
+        </p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-5 drop-shadow-xl leading-tight tracking-tight">
           Discover the Best of{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-400">
@@ -25,7 +28,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="text-lg md:text-xl text-slate-100 mb-10 max-w-xl mx-auto font-medium drop-shadow">
-          Beaches, food, events, and local secrets — curated by locals.
+          Your trusted local guide to Townsville — beaches, food, events, and local secrets.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center max-w-md sm:max-w-none mx-auto">
