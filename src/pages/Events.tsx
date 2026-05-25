@@ -186,7 +186,7 @@ const Events = () => {
           <div>
             <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
             <p className="text-amber-800 text-sm mt-1">
-              May marks the start of the "Perfect Dry." The humidity has dropped, and the nights are getting cooler — perfect for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or a sunset walk along the Ross River Parkway.
+              Winter has officially arrived in Townsville. The humidity has dropped, the nights are cool, and the days are crystal clear — perfect for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or a sunset walk along the Ross River Parkway.
             </p>
           </div>
         </div>
