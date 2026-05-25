@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On in Townsville | Winter & Upcoming Events 2026"
-        description="Updated May 2026: Townsville's crisp winter season is here. Discover upcoming NAFA events, recurring markets, NRL games, and year-round festivals."
+        title="What's On in Townsville | Dry Season & Upcoming Events 2026"
+        description="Updated May 2026: Townsville's beautiful 'Perfect Dry' season is here. Discover upcoming NAFA events, recurring markets, NRL games, and year-round festivals."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
