@@ -52,9 +52,9 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">What's On Now (Late May & Early June 2026)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li><strong>Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The crisp winter air makes the stroll even better.</li>
+            <li><strong>Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The cool morning breeze makes the stroll even better.</li>
             <li><strong>Festival:</strong> <strong>North Australian Festival of Arts (NAFA)</strong> — Returns 25 September – 11 October 2026 across multiple Townsville venues. Theatre, comedy, circus, and open-air light installations at Strand Park.</li>
-            <li><strong>Footy:</strong> <strong>Cowboys NRL Home Games</strong> — Check the draw for upcoming Sunday arvo fixtures at Queensland Country Bank Stadium through winter.</li>
+            <li><strong>Footy:</strong> <strong>Cowboys NRL Home Games</strong> — Check the draw for upcoming Sunday arvo fixtures at Queensland Country Bank Stadium through the dry season.</li>
             <li><strong>Outdoors:</strong> Perfect hiking and beach weather. The humidity has dropped and the days are crystal clear.</li>
           </ul>
         </section>
@@ -102,7 +102,7 @@ const Events = () => {
                   </Badge>
                   <Sun className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Crisp Winter Days in Townsville</CardTitle>
+                <CardTitle className="text-xl mt-2">Perfect Dry Season Days in Townsville</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
@@ -172,7 +172,7 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Townsville's premier Sunday market. Fresh coffee, local North Queensland crafts, and live street music in the crisp winter air. The perfect start to a Sunday before exploring the Strand or Riverway.
+                  Townsville's premier Sunday market. Fresh coffee, local North Queensland crafts, and live street music in the fresh morning air. The perfect start to a Sunday before exploring the Strand or Riverway.
                 </p>
               </CardContent>
             </Card>
@@ -186,7 +186,7 @@ const Events = () => {
           <div>
             <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
             <p className="text-amber-800 text-sm mt-1">
-              Winter has officially arrived in Townsville. The humidity has dropped, the nights are cool, and the days are crystal clear — perfect for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or a sunset walk along the Ross River Parkway.
+              The dry season has officially arrived in Townsville. The humidity has dropped, the nights are cool, and the days are crystal clear — perfect for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or a sunset walk along the Ross River Parkway.
             </p>
           </div>
         </div>
@@ -275,7 +275,7 @@ const Events = () => {
                 <p className="text-sm text-gray-500">March–September</p>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">NRL home games run through winter at QCB Stadium. Check the draw for upcoming Sunday fixtures and plan your visit with our stadium guide.</p>
+                <p className="text-sm text-gray-600">NRL home games run all through the dry season at QCB Stadium. Check the draw for upcoming Sunday fixtures and plan your visit with our stadium guide.</p>
                 <Button asChild variant="outline" size="sm" className="w-full gap-2">
                   <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
                 </Button>
