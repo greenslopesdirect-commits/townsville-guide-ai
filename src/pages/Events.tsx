@@ -33,14 +33,14 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: Winter & Upcoming Events 2026
+             What's On in Townsville: Dry Season & Upcoming Events 2026
            </h1>
            <p className="text-sm text-gray-500">
               Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
             </p>
-             <p className="text-lg text-gray-600 max-w-2xl">
-               Townsville's crisp, low-humidity winter season has officially arrived. Clear skies, cool mornings, and perfect outdoor conditions make late May and June prime time for markets, coastal walks, and the lead-up to the <strong>North Australian Festival of Arts</strong>.
-             </p>
+              <p className="text-lg text-gray-600 max-w-2xl">
+                The beautiful, low-humidity "Perfect Dry" season has officially arrived. Clear sunny days and cool mornings make late May and June ideal for markets, coastal walks, and the upcoming <strong>North Australian Festival of Arts</strong>.
+              </p>
          </div>
 
          {/* SEO Intro Paragraph */}
