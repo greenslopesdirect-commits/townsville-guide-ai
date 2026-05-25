@@ -248,6 +248,62 @@ const Beaches = () => {
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
+        {/* Stinger Net Locations Table */}
+        <section className="mt-8 mb-4">
+          <h2 className="text-2xl font-bold text-foreground mb-4">Townsville &amp; Magnetic Island Stinger Net Locations</h2>
+          <div className="overflow-x-auto rounded-lg border">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead className="w-[220px]">Beach Location</TableHead>
+                  <TableHead>Exact Enclosure Details</TableHead>
+                  <TableHead className="w-[180px]">Safety Status</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                <TableRow>
+                  <TableCell className="font-medium">The Strand (North)</TableCell>
+                  <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
+                  <TableCell>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">The Strand (South)</TableCell>
+                  <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
+                  <TableCell>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Pallarenda Beach</TableCell>
+                  <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
+                  <TableCell>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
+                  <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
+                  <TableCell>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                  </TableCell>
+                </TableRow>
+                <TableRow>
+                  <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
+                  <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
+                  <TableCell>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                  </TableCell>
+                </TableRow>
+              </TableBody>
+            </Table>
+          </div>
+          <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+            Note: While the cooler dry season lowers stinger risks, swimming inside these dedicated enclosures is always recommended for absolute peace of mind.
+          </p>
+        </section>
+
         {/* Deciding Where to Head: Townsville's Diverse Coastline */}
         <section className="mb-8 space-y-4">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">

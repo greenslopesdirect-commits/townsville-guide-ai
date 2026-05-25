@@ -100,16 +100,57 @@ const StingerSafety = () => (
 
     {/* Section 2 */}
     <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-4">Where Are Stinger Nets in Townsville? (Including Magnetic Island Stinger Nets)</h2>
-      <p className="mb-4 text-muted-foreground leading-relaxed">Stinger nets are installed during the season at:</p>
-      <ul className="list-disc list-inside space-y-2 text-muted-foreground mb-4">
-        <li>The Strand (Townsville Foreshore)</li>
-        <li>Pallarenda Beach</li>
-        <li>Rowes Bay</li>
-        <li><strong>Magnetic Island stinger nets</strong> — Horseshoe Bay and Picnic Bay</li>
-      </ul>
-      <p className="text-muted-foreground leading-relaxed">
-        The <strong>Magnetic Island stinger nets</strong> at Horseshoe Bay are the main patrolled enclosure on the island and remain active through May. These enclosures provide a safer swimming environment during stinger season, though conditions can vary depending on weather and tides.
+      <h2 className="text-2xl font-bold mb-4">Townsville &amp; Magnetic Island Stinger Net Locations</h2>
+      <div className="overflow-x-auto rounded-lg border">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="w-[220px]">Beach Location</TableHead>
+              <TableHead>Exact Enclosure Details</TableHead>
+              <TableHead className="w-[180px]">Safety Status</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            <TableRow>
+              <TableCell className="font-medium">The Strand (North)</TableCell>
+              <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
+              <TableCell>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className="font-medium">The Strand (South)</TableCell>
+              <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
+              <TableCell>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className="font-medium">Pallarenda Beach</TableCell>
+              <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
+              <TableCell>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
+              <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
+              <TableCell>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
+              <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
+              <TableCell>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </div>
+      <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+        Note: While the cooler dry season lowers stinger risks, swimming inside these dedicated enclosures is always recommended for absolute peace of mind.
       </p>
     </section>
 
