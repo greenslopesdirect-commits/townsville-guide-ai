@@ -28,7 +28,7 @@ const Index = () => {
       {/* UPDATE: Revised for Evergreen/February Strategy */}
       <SEOHead
         title="Townsville Guide 2026 | Things to Do, Events & Local Tips"
-        description="Discover the best of Townsville in May 2026. Updated local guide for events, Cowboys game days, Magnetic Island trips, and stinger safety."
+        description="Discover the best of Townsville in 2026. Updated local guide for events, Cowboys game days, Magnetic Island trips, and stinger safety."
         canonical="https://www.myaussieguide.com.au/"
       />
       <Helmet>
@@ -143,17 +143,13 @@ const Index = () => {
               {/* Content */}
               <div className="space-y-5">
                 <Badge variant="secondary" className="bg-emerald-50 text-emerald-700 border border-emerald-100 w-fit">
-                  Live Bulletin · May 18, 2026
+                  Live Bulletin · Dry Season Update
                 </Badge>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground leading-tight">
                   Current Status: The 'Perfect Dry' is here!
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  The humidity has dropped, and the 'Best of Townsville' window is
-                  officially open. We're gearing up for a massive weekend ahead with the{" "}
-                  <strong className="text-foreground">Dream Fields Festival (May 23)</strong>{" "}
-                  and the{" "}
-                  <strong className="text-foreground">Cowboys vs Rabbitohs home game blockbuster (May 24)</strong>.
+                  The humidity has bottomed out, and the best outdoor window of the year is officially open. We're gearing up for beautiful weekend markets, clear hiking days, and upcoming blockbusters at the stadium.
                 </p>
                 <p className="text-sm sm:text-base text-amber-800 bg-amber-50 border border-amber-100 rounded-lg p-3">
                   🌴 We run on <strong>"Tropical Time"</strong> here. Slow down,
@@ -161,7 +157,7 @@ const Index = () => {
                 </p>
                 <Button asChild size="lg" variant="outline" className="gap-2">
                   <Link to="/events">
-                    See All May Events
+                    See All Events
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </Button>
@@ -181,7 +177,7 @@ const Index = () => {
             <div>
               <h3 className="font-bold text-amber-900 dark:text-amber-200 text-base sm:text-lg">Did You Know?</h3>
               <p className="text-amber-800 dark:text-amber-300 text-sm sm:text-base mt-1 leading-relaxed">
-                The upcoming <strong>Dream Fields Festival (May 23)</strong> brings some of Australia's biggest music acts straight to Central Park. If you are planning to head down, grab your tickets early as final releases are selling out fast!
+                May to October brings the best outdoor weather of the year to North Queensland. If you're heading up Castle Hill for a sunset or sunrise walk, the cool morning and late afternoon breezes make it the perfect time to tackle the Goat Track.
               </p>
             </div>
           </div>
@@ -216,17 +212,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: May 18, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Dry Season Update)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Planning for the <strong>Cowboys vs Rabbitohs on May 24</strong>? Sunday afternoon games are a local favourite. Expect the CBD, stadium walkways, and ferry terminals to get busy early from <strong>1:30 PM onwards</strong>.
+                Planning to attend a Saturday night match at the stadium? Game days are a local favourite. Expect the CBD, stadium walkways, and ferry terminals to get busy early from <strong>3:30 PM onwards</strong>.
               </p>
             </div>
 
-            {/* Sunday Arvo Footy Local Tip */}
+            {/* Saturday Night Match Local Tip */}
             <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-300 dark:border-blue-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-blue-800 dark:text-blue-300 font-medium leading-relaxed">
-                🏟️ Stadium Tip: The sun hits the <strong>Western Stand</strong> hard during afternoon games — bring your sunnies!
+                🏟️ Stadium Tip: Bring a light hoodie or jacket as the cool breezes set in quickly after sunset.
               </p>
             </div>
           </div>
