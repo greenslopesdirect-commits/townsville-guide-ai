@@ -113,7 +113,7 @@ const DogFriendly = () => {
         <Alert className="max-w-3xl mx-auto bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-800 mb-6 sm:mb-8">
           <Dog className="h-5 w-5 text-amber-600 flex-shrink-0" />
           <AlertDescription className="ml-2">
-              <strong className="text-foreground block sm:inline">☀️ Heat Check (May 18):</strong>
+              <strong className="text-foreground block sm:inline">☀️ Current Vibe:</strong>
              <span className="text-muted-foreground sm:ml-2 block sm:inline mt-1 sm:mt-0">
                 The "Perfect Dry" is spectacular! Humidity has bottomed out. Morning UV is still high, but those <strong>5:30 PM sunsets at Castle Hill</strong> are world-class right now. <strong>Pallarenda Beach</strong> is our top pick for low-tide runs with the dog on the firm sand. Stinger nets remain <strong>ACTIVE</strong> — stay safe in the water!
               </span>
