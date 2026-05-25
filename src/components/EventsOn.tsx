@@ -12,9 +12,9 @@ const EventsOn = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
           <div>
             <span className="text-primary font-bold tracking-wider uppercase text-sm">Upcoming Events & Local Highlights</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">What's On: Dream Fields Festival & Cowboys vs Rabbitohs</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mt-2">What's On: Dry Season & Upcoming Events 2026</h2>
             <p className="text-slate-600 mt-2 max-w-xl text-lg">
-              From the Dream Fields Festival at Central Park (this Saturday, May 23) to the Cowboys vs Rabbitohs Sunday arvo home game (May 24, 4:05 PM) — there's a massive weekend of entertainment lining up in Townsville.
+              From weekly morning markets to massive stadium blockbusters, here is what is coming up across Townsville.
             </p>
           </div>
           
@@ -33,17 +33,17 @@ const EventsOn = () => {
                 <div className="absolute top-0 right-0 p-32 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
                 <div className="relative z-10">
                     <span className="inline-block px-3 py-1 bg-yellow-400 text-blue-900 font-bold text-xs uppercase tracking-wider rounded-full mb-4">
-                        May 2026 Highlights
+                        Dry Season 2026
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
-                    <p className="text-blue-100 font-medium">Music, markets & Sunday arvo footy</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🎶 Dream Fields Festival — May 23, Central Park</p>
+                    <p className="text-blue-100 font-medium">Markets, motorsport & footy blockbusters</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏎️ V8 Supercars Townsville 500 — July 2026</p>
                      <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">The Perfect Dry</span>
                 </div>
                 <div className="relative z-10 mt-8">
                      <div className="flex items-center gap-2 text-sm font-medium opacity-90">
                         <MapPin className="w-4 h-4" />
-                        <span>Central Park, Flinders Street & QLD Country Bank Stadium</span>
+                        <span>Reid Park, Flinders Street & Queensland Country Bank Stadium</span>
                      </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@ const EventsOn = () => {
             <div className="lg:col-span-3 p-8 flex flex-col justify-center">
                 <div className="prose prose-slate mb-6">
                     <p className="text-slate-600 text-lg leading-relaxed">
-                        From the <strong>Dream Fields Festival</strong> at Central Park (this Saturday, May 23) to the <strong>Cowboys vs Rabbitohs</strong> Sunday arvo home game (May 24, 4:05 PM) —
+                        From the <strong>V8 Supercars Townsville 500</strong> in July to the <strong>Cowboys home games</strong> at Queensland Country Bank Stadium —
                         there's always something happening in Townsville.
                     </p>
                 </div>
@@ -64,7 +64,7 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Updated May 18, 2026.
+                        Updated Late May 2026.
                     </span>
                 </div>
             </div>
@@ -77,67 +77,67 @@ const EventsOn = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
             
-            {/* Card 1 — Cotters Market (May 24) */}
+            {/* Card 1 — Cotters Market */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-orange-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
-                            This Sunday — Markets
+                            Every Sunday — Markets
                         </div>
                         <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Sunday, May 24, 2026</p>
+                    <p className="text-xs text-primary font-medium mb-1">Every Sunday Morning</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> Flinders Street, CBD
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">Townsville's premier Sunday morning market. Grab a fresh coffee, browse local North Queensland crafts, and enjoy the live street entertainment in the crisp morning air.</p>
+                    <p className="text-xs text-slate-500 mt-2">Townsville's premier Sunday morning market. Grab a fresh coffee, browse local North Queensland crafts, and enjoy the live street entertainment in the fresh morning air.</p>
                 </CardContent>
             </Card>
 
-            {/* Card 2 — Dream Fields Festival (May 23) */}
+            {/* Card 2 — V8 Supercars Townsville 500 */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-green-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
-                            This Saturday — Festival
+                            July 2026 — Motorsport
                         </div>
-                        <Music className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                        <Trophy className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Dream Fields Festival</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, May 23, 2026</p>
+                    <h4 className="text-lg font-bold mb-2">V8 Supercars Townsville 500</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Coming up July 2026</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> Central Park, Townsville
+                        <MapPin className="w-4 h-4" /> Reid Park Street Circuit
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">🎶 Final tickets remaining for Galantis, Peking Duk, Mallrat, and Skegss. Central Park is going to be buzzing for the biggest outdoor music event of the month.</p>
+                    <p className="text-xs text-slate-500 mt-2">The streets of Reid Park come alive for the annual supercar street circuit. Plan your accommodation early!</p>
                 </CardContent>
             </Card>
 
-            {/* Card 3 — Cowboys vs Rabbitohs (May 24) */}
+            {/* Card 3 — Cowboys vs Dolphins */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-blue-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
-                            This Sunday — NRL Round 12
+                            Upcoming NRL Home Game
                         </div>
                         <Trophy className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Cowboys vs Rabbitohs (Home Game)</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Sunday, May 24, 2026</p>
+                    <h4 className="text-lg font-bold mb-2">Cowboys vs. Dolphins</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, June 6, 2026</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
-                        <MapPin className="w-4 h-4" /> QLD Country Bank Stadium
+                        <MapPin className="w-4 h-4" /> Queensland Country Bank Stadium
                     </div>
                     <div className="flex items-center gap-2 text-sm text-slate-500">
-                        <Clock className="w-4 h-4" /> Kick-off: 4:05 PM
+                        <Clock className="w-4 h-4" /> Kick-off: 5:30 PM
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">🏉 Sunday arvo footy returns to QCB Stadium. Fresh off an 18–12 win at Magic Round, the Cowboys return home with serious momentum. Kick-off is at 4:05 PM.</p>
+                    <p className="text-xs text-slate-500 mt-2">🏉 Footy returns to QCB Stadium for a massive Saturday night clash. Utilize the free park-and-ride shuttle to beat the traffic.</p>
                 </CardContent>
             </Card>
 
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🎶 Dream Fields Festival May 23, Cotters Market, and Cowboys vs Rabbitohs Sunday May 24! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏎️ V8 Supercars Townsville 500, Cotters Market every Sunday, and Cowboys vs Dolphins Saturday June 6! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
