@@ -87,8 +87,8 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">Featured Events</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               Winter & Beyond 2026
-             </Badge>
+                Dry Season & Beyond 2026
+              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
