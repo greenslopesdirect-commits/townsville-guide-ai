@@ -126,7 +126,7 @@ const Events = () => {
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
                   <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                    Next Month — Major Festival
+                    Spring Festival — Locked In
                   </Badge>
                   <Star className="w-5 h-5 text-gray-400" />
                 </div>
@@ -134,17 +134,17 @@ const Events = () => {
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>June – July 2026</span>
+                    <span>25 September – 11 October 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Multiple Venues Across Townsville</span>
+                    <span>Strand Park & Venues Across Townsville</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Townsville's flagship winter arts festival returns with an incredible program of theatre, comedy, circus, live music, and stunning open-air light installations across the CBD.
+                  Townsville's flagship arts festival is locked in for spring 2026, bringing theatre, comedy, circus, live music, and stunning open-air light installations to Strand Park and venues across the CBD.
                 </p>
               </CardContent>
             </Card>
