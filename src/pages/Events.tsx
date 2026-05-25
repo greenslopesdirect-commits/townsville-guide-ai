@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On in Townsville | Winter & Upcoming Events 2026"
-        description="Updated May 2026: Townsville's crisp winter season is here. Discover upcoming NAFA events, recurring markets, NRL games, and year-round festivals."
+        title="What's On in Townsville | Dry Season & Upcoming Events 2026"
+        description="Updated May 2026: Townsville's beautiful 'Perfect Dry' season is here. Discover upcoming NAFA events, recurring markets, NRL games, and year-round festivals."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
@@ -33,14 +33,14 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: Winter & Upcoming Events 2026
+             What's On in Townsville: Dry Season & Upcoming Events 2026
            </h1>
            <p className="text-sm text-gray-500">
               Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
             </p>
-             <p className="text-lg text-gray-600 max-w-2xl">
-               Townsville's crisp, low-humidity winter season has officially arrived. Clear skies, cool mornings, and perfect outdoor conditions make late May and June prime time for markets, coastal walks, and the lead-up to the <strong>North Australian Festival of Arts</strong>.
-             </p>
+              <p className="text-lg text-gray-600 max-w-2xl">
+                The beautiful, low-humidity "Perfect Dry" season has officially arrived. Clear sunny days and cool mornings make late May and June ideal for markets, coastal walks, and the upcoming <strong>North Australian Festival of Arts</strong>.
+              </p>
          </div>
 
          {/* SEO Intro Paragraph */}
@@ -87,8 +87,8 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">Featured Events</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               Winter & Beyond 2026
-             </Badge>
+                Dry Season & Beyond 2026
+              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
