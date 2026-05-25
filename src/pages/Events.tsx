@@ -50,11 +50,12 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On This Week (May 18 – May 24)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On Now (Late May & Early June 2026)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li><strong>Festival:</strong> <strong>Dream Fields Festival</strong> — Saturday, May 23 at Central Park. Townsville's premier music and arts festival featuring Galantis, Peking Duk, and Mallrat.</li>
-            <li><strong>Footy:</strong> <strong>NRL Round 12 — Cowboys vs Rabbitohs</strong>. Sunday, May 24, 4:05 PM kick-off at Queensland Country Bank Stadium. Expect the CBD to be buzzing from 1:00 PM.</li>
-            <li><strong>Markets:</strong> <strong>Cotters Market</strong> — Sunday, May 24, morning on Flinders Street. Enjoy the great weather with live street music, local stalls, and fresh morning coffee.</li>
+            <li><strong>Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The crisp winter air makes the stroll even better.</li>
+            <li><strong>Festival:</strong> <strong>North Australian Festival of Arts (NAFA)</strong> — Returns June–July 2026 across multiple Townsville venues. Theatre, comedy, circus, and open-air light installations.</li>
+            <li><strong>Footy:</strong> <strong>Cowboys NRL Home Games</strong> — Check the draw for upcoming Sunday arvo fixtures at Queensland Country Bank Stadium through winter.</li>
+            <li><strong>Outdoors:</strong> Perfect hiking and beach weather. The humidity has dropped and the days are crystal clear.</li>
           </ul>
         </section>
 
