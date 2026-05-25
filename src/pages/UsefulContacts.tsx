@@ -116,16 +116,34 @@ const UsefulContacts = () => {
             </p>
           </div>
 
-          {/* Emergency */}
+          {/* Essential & Non-Urgent Numbers */}
           <ContactSection
             icon={<AlertTriangle className="w-5 h-5 text-red-600" />}
-            title="Emergency — Call 000"
+            title="Townsville Essential & Non-Urgent Numbers"
             accent="border-l-red-500"
             items={[
               {
-                label: "Police, Fire, Ambulance",
+                label: "Emergency (Police, Fire, Ambulance)",
                 number: "000",
                 note: "Life-threatening emergencies only",
+              },
+              {
+                label: "Non-Urgent Ambulance Transport & Bookings",
+                number: "13 12 33",
+                note: "Queensland Ambulance Service non-emergency line",
+              },
+              {
+                label: "Non-Urgent Medical Advice (13 HEALTH)",
+                number: "13 43 25 84",
+                note: "Registered nurse phone service available 24/7",
+              },
+              {
+                label: "Townsville Hospital Switchboard",
+                number: "(07) 4433 1111",
+              },
+              {
+                label: "Townsville City Council (General Enquiries)",
+                number: "1300 878 001",
               },
               {
                 label: "Non-Emergency Police (PoliceLink)",
