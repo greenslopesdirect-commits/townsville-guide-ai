@@ -87,69 +87,41 @@ const Events = () => {
           <div className="flex items-center gap-2">
             <h2 className="text-2xl font-bold text-gray-900">Featured Events</h2>
              <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-               May 2026
+               Winter & Beyond 2026
              </Badge>
           </div>
 
           <div className="grid gap-6 md:grid-cols-1">
 
-            {/* Card 1 — Dream Fields Festival */}
-            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
+            {/* Card 1 — Crisp Winter Season */}
+            <Card className="border-l-4 border-l-teal-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
-                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    This Weekend — Festival
+                  <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100 border-none">
+                    Seasonal Highlight
                   </Badge>
-                  <Star className="w-5 h-5 text-gray-400" />
+                  <Sun className="w-5 h-5 text-gray-400" />
                 </div>
-                <CardTitle className="text-xl mt-2">Dream Fields Festival</CardTitle>
+                <CardTitle className="text-xl mt-2">Crisp Winter Days in Townsville</CardTitle>
                 <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    <span>Saturday, May 23, 2026</span>
+                    <span>May – August 2026</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4" />
-                    <span>Central Park, Townsville</span>
+                    <span>Across Townsville & North Queensland</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Townsville's premier outdoor music and arts festival returns to Central Park with a massive 2026 lineup: <strong>Galantis, Peking Duk, Mallrat, and Skegss</strong>. Tickets are moving incredibly fast—grab yours before final release closes.
+                  The "Perfect Dry" is here. Morning temperatures are comfortably cool, humidity has dropped, and the skies are postcard-clear. It's the best window of the year for sunrise hikes up <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill</Link>, beach walks along The Strand, and open-air markets without the summer heat.
                 </p>
               </CardContent>
             </Card>
 
-            {/* Card 2 — Cowboys vs Rabbitohs */}
-            <Card className="border-l-4 border-l-purple-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-purple-100 text-purple-700 hover:bg-purple-100 border-none">
-                    Sunday Afternoon Footy
-                  </Badge>
-                  <Star className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">Cowboys vs Rabbitohs (NRL Round 12)</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Sunday, May 24, 2026 (4:05 PM Kick-off)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Queensland Country Bank Stadium, CBD</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  The Cowboys return to North Queensland for a massive family-friendly Sunday afternoon clash. CBD parking will be tight, so utilize the <strong>Lou Litster Park park-and-ride shuttle</strong> to beat the pre-game rush.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Card 3 — North Australian Festival of Arts */}
+            {/* Card 2 — North Australian Festival of Arts */}
             <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
               <CardHeader className="pb-3">
                 <div className="flex justify-between items-start">
@@ -172,7 +144,35 @@ const Events = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-sm">
-                  Get ready to plan your winter calendar. <strong>NAFA</strong> returns next month with an incredible program of theatre, comedy, circus, live music, and open-air light installations.
+                  Townsville's flagship winter arts festival returns with an incredible program of theatre, comedy, circus, live music, and stunning open-air light installations across the CBD.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card 3 — Cotters Market */}
+            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex justify-between items-start">
+                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
+                    Every Sunday — Markets
+                  </Badge>
+                  <ShoppingBasket className="w-5 h-5 text-gray-400" />
+                </div>
+                <CardTitle className="text-xl mt-2">Cotters Market</CardTitle>
+                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-4 h-4" />
+                    <span>Sunday Mornings</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="w-4 h-4" />
+                    <span>Flinders Street, Townsville CBD</span>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-sm">
+                  Townsville's premier Sunday market. Fresh coffee, local North Queensland crafts, and live street music in the crisp winter air. The perfect start to a Sunday before exploring the Strand or Riverway.
                 </p>
               </CardContent>
             </Card>
