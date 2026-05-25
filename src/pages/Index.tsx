@@ -27,8 +27,8 @@ const Index = () => {
     <>
       {/* UPDATE: Revised for Evergreen/February Strategy */}
       <SEOHead
-        title="Townsville Guide 2026 | Things to Do, Events & Local Tips"
-        description="Discover the best of Townsville in 2026. Updated local guide for events, Cowboys game days, Magnetic Island trips, and stinger safety."
+        title="My Aussie Guide | Townsville Travel Guide 2026 — Things to Do, Events & Local Tips"
+        description="My Aussie Guide is Townsville's trusted local travel guide. Discover beaches, events, Cowboys game days, Magnetic Island trips and real local tips."
         canonical="https://www.myaussieguide.com.au/"
       />
       <Helmet>
