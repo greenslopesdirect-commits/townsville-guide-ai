@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On in Townsville This Weekend | May 2026 Event Calendar"
-        description="Updated May 11: Caravan & 4x4 Expo, Dream Fields Festival, and the Cowboys' Magic Round watch party. Your local guide to Townsville events."
+        title="What's On in Townsville | Winter & Upcoming Events 2026"
+        description="Updated May 2026: Townsville's crisp winter season is here. Discover upcoming NAFA events, recurring markets, NRL games, and year-round festivals."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-05-11">
-            <time dateTime="2026-05-11">Updated: May 11, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-05-25">
+            <time dateTime="2026-05-25">Updated: May 25, 2026</time>
           </span>
         </div>
       </div>
@@ -33,20 +33,20 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: May 2026
+             What's On in Townsville: Winter & Upcoming Events 2026
            </h1>
            <p className="text-sm text-gray-500">
-             Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
-           </p>
-            <p className="text-lg text-gray-600 max-w-2xl">
-              Coming up: The massive <strong>Dream Fields Festival</strong> (this Saturday!), the <strong>Cowboys vs Rabbitohs</strong> home game clash, and <strong>Sunday's Cotters Market</strong>!
+              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
             </p>
-        </div>
+             <p className="text-lg text-gray-600 max-w-2xl">
+               Townsville's crisp, low-humidity winter season has officially arrived. Clear skies, cool mornings, and perfect outdoor conditions make late May and June prime time for markets, coastal walks, and the lead-up to the <strong>North Australian Festival of Arts</strong>.
+             </p>
+         </div>
 
-        {/* SEO Intro Paragraph */}
-        <p className="text-gray-600 max-w-3xl">
-          Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
-        </p>
+         {/* SEO Intro Paragraph */}
+         <p className="text-gray-600 max-w-3xl">
+           Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
+         </p>
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
