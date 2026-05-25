@@ -53,7 +53,7 @@ const Events = () => {
           <h2 className="text-2xl font-bold text-gray-900">What's On Now (Late May & Early June 2026)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
             <li><strong>Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The crisp winter air makes the stroll even better.</li>
-            <li><strong>Festival:</strong> <strong>North Australian Festival of Arts (NAFA)</strong> — Returns June–July 2026 across multiple Townsville venues. Theatre, comedy, circus, and open-air light installations.</li>
+            <li><strong>Festival:</strong> <strong>North Australian Festival of Arts (NAFA)</strong> — Returns 25 September – 11 October 2026 across multiple Townsville venues. Theatre, comedy, circus, and open-air light installations at Strand Park.</li>
             <li><strong>Footy:</strong> <strong>Cowboys NRL Home Games</strong> — Check the draw for upcoming Sunday arvo fixtures at Queensland Country Bank Stadium through winter.</li>
             <li><strong>Outdoors:</strong> Perfect hiking and beach weather. The humidity has dropped and the days are crystal clear.</li>
           </ul>
