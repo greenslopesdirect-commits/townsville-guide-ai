@@ -177,7 +177,7 @@ const Index = () => {
             <div>
               <h3 className="font-bold text-amber-900 dark:text-amber-200 text-base sm:text-lg">Did You Know?</h3>
               <p className="text-amber-800 dark:text-amber-300 text-sm sm:text-base mt-1 leading-relaxed">
-                The upcoming <strong>Dream Fields Festival (May 23)</strong> brings some of Australia's biggest music acts straight to Central Park. If you are planning to head down, grab your tickets early as final releases are selling out fast!
+                May to October brings the best outdoor weather of the year to North Queensland. If you're heading up Castle Hill for a sunset or sunrise walk, the cool morning and late afternoon breezes make it the perfect time to tackle the Goat Track.
               </p>
             </div>
           </div>
@@ -212,17 +212,17 @@ const Index = () => {
             <div className="bg-background border-2 border-border/40 rounded-2xl p-6 sm:p-8 space-y-3">
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">The Ville Today 🌴</h2>
-                <span className="text-sm text-muted-foreground font-medium">(Updated: May 18, 2026)</span>
+                <span className="text-sm text-muted-foreground font-medium">(Dry Season Update)</span>
               </div>
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                Planning for the <strong>Cowboys vs Rabbitohs on May 24</strong>? Sunday afternoon games are a local favourite. Expect the CBD, stadium walkways, and ferry terminals to get busy early from <strong>1:30 PM onwards</strong>.
+                Planning to attend a Saturday night match at the stadium? Game days are a local favourite. Expect the CBD, stadium walkways, and ferry terminals to get busy early from <strong>3:30 PM onwards</strong>.
               </p>
             </div>
 
-            {/* Sunday Arvo Footy Local Tip */}
+            {/* Saturday Night Match Local Tip */}
             <div className="mt-6 bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-300 dark:border-blue-700 rounded-2xl p-5 sm:p-6">
               <p className="text-base sm:text-lg text-blue-800 dark:text-blue-300 font-medium leading-relaxed">
-                🏟️ Stadium Tip: The sun hits the <strong>Western Stand</strong> hard during afternoon games — bring your sunnies!
+                🏟️ Stadium Tip: Bring a light hoodie or jacket as the cool breezes set in quickly after sunset.
               </p>
             </div>
           </div>
