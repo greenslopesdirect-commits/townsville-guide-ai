@@ -317,6 +317,16 @@ const DogFriendly = () => {
             </div>
           </section>
 
+          {/* Exact Off-Leash Dog Beach Boundaries */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground">Exact Off-Leash Dog Beach Boundaries</h2>
+            <ul className="list-disc pl-5 space-y-3 text-sm text-muted-foreground">
+              <li><strong>Pallarenda Dog Beach:</strong> Fully off-leash on the sand starting exclusively from Beach Access Ramp 17 (clearly signposted) heading North all the way to the Cape Pallarenda National Park boundary. Dogs must remain on-leash in the main park, playground, and car park areas.</li>
+              <li><strong>Saunders Beach:</strong> Dogs are permitted off-leash on the wide open beach area starting from the northern side of the main boat ramp area heading north. Ensure dogs are under effective voice control at all times.</li>
+              <li><strong>Bushland Beach:</strong> Designated off-leash sandy areas are located further along the beach flats well away from the resort and main stinger/swimming zones. Check the local entry signage for exact daily seasonal zoning.</li>
+            </ul>
+          </section>
+
           {/* Duncan's Local Pro-Tips */}
           <section className="space-y-4">
             <div className="rounded-xl border-2 border-jade bg-[hsl(var(--sand))] p-5 sm:p-6 space-y-4">
