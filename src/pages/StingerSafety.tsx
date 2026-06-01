@@ -43,9 +43,9 @@ const StingerSafety = () => (
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 June 1 Status: Nets are OUT for Winter!</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 June 1 Status: Nets are OUT for the Dry Season!</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        Townsville City Council officially removed the stinger nets on May 28, 2026, marking the official end of the 2025/2026 stinger season. The water is clear, the low-humidity Dry Season is here, and open swimming is now generally safe across local beaches. However, always check local beach flags and Surf Life Saving signs before jumping in.
+        Townsville City Council officially removed the stinger nets on May 28, 2026, marking the official end of the 2025/2026 stinger season. The water is clear, the low-humidity Dry Season is fully underway, and open swimming is now generally safe across local beaches. However, always check local beach flags and Surf Life Saving signs before jumping in.
       </p>
     </div>
 
@@ -127,35 +127,35 @@ const StingerSafety = () => (
               <TableCell className="font-medium">The Strand (North)</TableCell>
               <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">The Strand (South)</TableCell>
               <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Pallarenda Beach</TableCell>
               <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
               <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
               <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
               </TableCell>
             </TableRow>
           </TableBody>
