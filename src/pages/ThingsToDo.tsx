@@ -407,7 +407,7 @@ const ThingsToDo = () => {
               </p>
               <Link to="/guides/free-things">
                 <Button className="gap-2">
-                  Discover 5 Free Things to Do
+                  Discover the Top 10 Free Things to Do
                 </Button>
               </Link>
             </section>
@@ -636,7 +636,7 @@ const ThingsToDo = () => {
                 </Link>
                 <Link to="/guides/free-things">
                   <Button variant="outline" className="gap-2">
-                    5 Free Things Guide <ArrowLeft className="w-4 h-4 rotate-180" />
+                    Top 10 Free Things Guide <ArrowLeft className="w-4 h-4 rotate-180" />
                   </Button>
                 </Link>
               </div>
