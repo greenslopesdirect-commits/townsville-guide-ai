@@ -1,6 +1,5 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertTriangle } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Sun } from "lucide-react";
 
 interface StingerSeasonAlertProps {
   className?: string;
@@ -11,23 +10,13 @@ const StingerSeasonAlert = ({ className = "" }: StingerSeasonAlertProps) => {
     <Alert 
       className={`bg-amber-50 dark:bg-amber-950/30 border-amber-300 dark:border-amber-700 ${className}`}
     >
-      <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+      <Sun className="h-5 w-5 text-amber-600 dark:text-amber-400" />
       <AlertTitle className="text-amber-800 dark:text-amber-300 font-semibold">
-        ⚠️ Stinger Season Notice: November–May
+        ☀️ June Update: Stinger Season Has Ended!
       </AlertTitle>
       <AlertDescription className="text-amber-700 dark:text-amber-400 mt-2">
-        <p className="mb-2">
-          Always swim within stinger nets or enclosures during marine stinger season. 
-          Check with lifesavers for current conditions before entering the water.
-        </p>
-        <p className="font-semibold">
-          ☀️ May 11 Update: We are in the final month of the official stinger season (Nov–May). While the 'Dry Season' breezes are making the water look tempting and visibility is excellent, the stinger nets at The Strand and Pallarenda remain ACTIVE and essential. Continue to swim inside the enclosures for a worry-free dip.{" "}
-          <Link 
-            to="/guides/stinger-safety"
-            className="text-amber-800 dark:text-amber-300 hover:underline"
-          >
-            View the latest Safety Guide →
-          </Link>
+        <p>
+          The 2025/2026 marine stinger season has officially wrapped up, and Townsville City Council hauled the nets out on May 28. While deep-water beach swimming is now significantly safer for your dogs across North Queensland, always stay vigilant for general marine conditions and local crocodile signage.
         </p>
       </AlertDescription>
     </Alert>

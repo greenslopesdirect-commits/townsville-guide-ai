@@ -107,10 +107,10 @@ const DogFriendly = () => {
           {/* Local Tip */}
            <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
            <p>
-               ☀️ Heat Check (May 11): Dry Season is in full swing. Mornings are crisp (around 20°C), making it the perfect time for the Castle Hill Goat Track or Pallarenda runs. Note: Afternoon UV is still hitting 11+, so keep those long walks to the 'golden hour'.
+               ☀️ Heat Check (June Update): The Dry Season is in full glory. Mornings are beautifully crisp (around 20°C), making it the ultimate time for the Castle Hill Goat Track or Pallarenda sand flat runs. Note: Midday UV is still extreme, so protect those paws and stick to the early mornings or golden hour.
               </p>
               <p>
-                🐸 Twilight Toad Alert (May 11): With the humidity dropping, toad activity is decreasing, but they are still frequenting the dunes at Bushland Beach and Saunders at dusk. Keep the leash short during sunset walks.
+                🐸 Twilight Toad Alert: With the humidity bottomed out, cane toad activity has slowed down significantly, but they still lurk near the dunes at Bushland Beach and Saunders at dusk. Keep a close eye out during sunset walks.
              </p>
           </LocalInsightCard>
 
