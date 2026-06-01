@@ -131,8 +131,8 @@ const CowboysStadiumGuide = () => {
                       </tr>
                       <tr>
                         <td className="px-4 py-3 font-medium">Round 13</td>
-                        <td className="px-4 py-3">Away vs Raiders</td>
-                        <td className="px-4 py-3 text-muted-foreground">Sun May 31, 4:05 PM</td>
+                        <td className="px-4 py-3">Away vs Raiders <span className="text-red-600 font-medium">(Lost 12-26)</span></td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat May 30 (Lost 12-26)</td>
                         <td className="px-4 py-3 text-muted-foreground">GIO Stadium</td>
                       </tr>
                       <tr className="bg-primary/5">
