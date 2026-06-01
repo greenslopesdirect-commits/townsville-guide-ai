@@ -39,7 +39,7 @@ const TownsvilleAirport = () => {
                 Townsville Airport Guide
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Townsville Airport is the main gateway to North Queensland, serving both visitors and locals. Whether you're arriving for a holiday, relocating, or visiting family, here's a practical local guide to transport, facilities, and what to know when you land.
+                Townsville Airport (TSV) is the main gateway to North Queensland. If you're searching for cheap flights to Townsville, comparing Townsville flights options, or need reliable ground transport after landing, this local guide covers flight arrivals, airport facilities, and everything you need to know once you touch down.
               </p>
             </header>
 
