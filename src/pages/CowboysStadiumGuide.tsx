@@ -76,13 +76,13 @@ const CowboysStadiumGuide = () => {
                        <Calendar className="w-4 h-4 flex-shrink-0" />
                        <span>Saturday, June 6, 2026</span>
                      </div>
-                     <div className="flex items-start gap-2 text-sm text-muted-foreground">
-                       <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                       <span>
-                         Queensland Country Bank Stadium.<br />
-                         <span className="font-medium text-foreground">Gates Open: 4:00 PM | Kick-off: 5:30 PM</span>
-                       </span>
-                     </div>
+                      <div className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                        <span>
+                          Queensland Country Bank Stadium.<br />
+                          <span className="font-medium text-foreground">Gates Open: 2:15 PM | Kick-off: 5:30 PM</span>
+                        </span>
+                      </div>
                    </div>
                    <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-900">
                      <strong>☀️ Stadium Tip:</strong> With a 5:30 PM Saturday kick-off, you'll catch the tail end of the afternoon winter sky, but the sun drops fast behind the Western stand. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly after dark during the dry season.
