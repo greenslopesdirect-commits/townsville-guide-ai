@@ -26,7 +26,7 @@ const CowboysStadiumGuide = () => {
               Back to Events
             </Link>
             <Badge variant="secondary" className="bg-green-50 text-green-700">
-              Late May Update
+              June Update
             </Badge>
           </div>
         </div>
@@ -46,7 +46,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – Late May Update: Dolphins Blockbuster Next!
+               2026 Season – June Update: Dolphins Blockbuster Next!
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
