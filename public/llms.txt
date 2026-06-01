@@ -1,0 +1,50 @@
+# My Aussie Guide
+
+> Townsville's trusted local travel and lifestyle guide for North Queensland — beaches, food, events, accommodation, dog-friendly spots, and real local insight.
+
+## Pages
+
+- [Home](/): Local-led travel guide to Townsville and North Queensland.
+- [Things to Do](/things-to-do): 25 best things to do in Townsville and top attractions.
+- [Beaches](/beaches): Townsville beaches guide with swimming, safety and dog-beach rules.
+- [Food & Drink](/food): Local cafes, restaurants and food spots in Townsville.
+- [Events](/events): Upcoming events and local highlights in Townsville.
+- [Accommodation](/accommodation): Hotels, resorts and stays across Townsville.
+- [Local Tips](/local-tips): Insider tips from a Townsville local.
+- [Dog Friendly](/dog-friendly): Dog-friendly beaches, parks and cafes.
+- [Shopping](/shopping): Where to shop in Townsville.
+- [Nature](/nature): Parks, walks and natural attractions.
+- [Moving to Townsville](/moving-to-townsville): Relocation guide for new residents.
+- [Accessible Townsville](/accessible-townsville): Accessibility info for visitors.
+- [Useful Contacts](/useful-contacts): Emergency and local contact directory.
+- [Flights to Townsville](/flights): Cheap flights to Townsville and flights to TSV.
+- [Townsville Airport](/townsville-airport): Airport guide and transfer info.
+- [History of Townsville](/history): The story of Townsville.
+
+## Featured spots
+
+- [The Strand](/the-strand): Townsville's iconic beachfront promenade.
+- [Castle Hill](/castle-hill): The pink-granite landmark and walking tracks.
+- [Magnetic Island Day Trip](/guides/magnetic-island-day-trip): How to spend a perfect day on Maggie.
+- [Billabong Sanctuary](/billabong-sanctuary): Family-friendly wildlife park south of the city.
+- [Great Barrier Reef from Townsville](/great-barrier-reef-townsville): Reef trips and the SS Yongala.
+- [Little Crystal Creek](/little-crystal-creek-townsville): Paluma Range swimming hole.
+- [Saunders Beach](/beaches/saunders-beach): Quiet northern beach escape.
+- [Pallarenda Beach](/pallarenda-beach): Off-leash dog beach and walking trails.
+- [Rowes Bay](/rowes-bay): Beachfront park near the city.
+- [North Shore Townsville](/north-shore-townsville): Master-planned community guide.
+- [Cowboys Stadium Guide](/cowboys-stadium-guide): Queensland Country Bank Stadium tips.
+- [Townsville with Kids](/townsville-with-kids): Family-friendly itinerary.
+
+## Guides
+
+- [Stinger Safety](/guides/stinger-safety): When and where it's safe to swim.
+- [Beat the Heat](/guides/beat-the-heat): Staying cool in the tropics.
+- [Sunset Walks](/guides/sunset-walks): Best spots to catch the sunset.
+- [Free Things to Do](/guides/free-things): No-cost activities around Townsville.
+- [Jezzine Barracks](/guides/jezzine-barracks): Heritage headland walk.
+
+## Optional
+
+- [Advertise](/advertise): Partner with My Aussie Guide.
+- [Contact](/contact): Get in touch.
