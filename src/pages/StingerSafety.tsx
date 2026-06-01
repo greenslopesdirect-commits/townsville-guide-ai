@@ -43,9 +43,9 @@ const StingerSafety = () => (
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 June 1 Status: Nets are OUT for Winter!</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 June 1 Status: Nets are OUT for the Dry Season!</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        Townsville City Council officially removed the stinger nets on May 28, 2026, marking the official end of the 2025/2026 stinger season. The water is clear, the low-humidity Dry Season is here, and open swimming is now generally safe across local beaches. However, always check local beach flags and Surf Life Saving signs before jumping in.
+        Townsville City Council officially removed the stinger nets on May 28, 2026, marking the official end of the 2025/2026 stinger season. The water is clear, the low-humidity Dry Season is fully underway, and open swimming is now generally safe across local beaches. However, always check local beach flags and Surf Life Saving signs before jumping in.
       </p>
     </div>
 
