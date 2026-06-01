@@ -57,7 +57,7 @@ const StingerSafety = () => (
     </div>
     <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
-      <p>"As we hit May, the air is cooling down but the water temperature is still hovering in the mid-20s—which means stingers are still a risk. Don't let the 'Perfect Dry' weather trick you into dropping your guard. If you're in the ocean, stay in the nets until the Council officially hauls them in for winter."</p>
+      <p>"The stinger nets are officially packed away for the cooler months! It’s the absolute best time of year to enjoy our beaches. While the risk of box jellyfish and Irukandji drops right down during the dry season, remember to always swim between the red and yellow flags where the lifeguards can keep an eye on you."</p>
     </div>
 
     {/* Stinger Safety for Dogs */}
@@ -68,7 +68,7 @@ const StingerSafety = () => (
       </p>
       <div className="bg-[#00A693]/10 rounded-lg p-4">
         <p className="text-sm font-medium text-foreground">
-          🐾 <strong>Late May Safety Update:</strong> With the humidity completely gone, the morning beach runs are fantastic, but please keep your dogs on the wet sand or in the shallow wash-zone. Avoid letting your pups swim out into deep water at un-netted beaches like Saunders, Toolakea, or Bushland Beach until the season officially wraps up at the end of the month.
+          🐾 <strong>Dry Season Update:</strong> Now that the stinger season has wrapped up and the nets are out, deep-water swimming is significantly safer for your dogs at un-netted northern beaches like Saunders, Toolakea, and Bushland Beach. Enjoy those beautiful, crisp morning beach runs!
         </p>
       </div>
     </div>
@@ -100,12 +100,9 @@ const StingerSafety = () => (
     <section className="mb-10">
       <h2 className="text-2xl font-bold mb-4">When Is Stinger Season in Townsville?</h2>
       <p className="mb-4 text-muted-foreground leading-relaxed">
-        Stinger season in Townsville typically runs from November to May, during the warmer months in North Queensland. During this period, marine stingers such as box jellyfish and Irukandji may be present in coastal waters.
+        Stinger season in Townsville typically runs from November to May. The 2025/2026 season has now officially concluded as of late May, and nets have been removed across all local beaches. The next season will commence in November 2026.
       </p>
       <p className="mb-4 text-muted-foreground leading-relaxed font-semibold">
-        We are currently in the final two weeks of the 2025/2026 season. Stay completely vigilant and stick strictly to the nets through to the end of May.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
         Swimming is considered safe when using patrolled stinger enclosures at The Strand, Pallarenda, and other netted beaches. Always check local signage or Surf Life Saving updates before entering the water.
       </p>
     </section>
