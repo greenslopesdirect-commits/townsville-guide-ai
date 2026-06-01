@@ -274,8 +274,8 @@ const ThingsToDo = () => {
   return (
     <>
       <SEOHead
-        title="25 Best Things to Do in Townsville (Updated May 2026)"
-        description="From dry-season waterfall swims to Castle Hill sunsets, explore the ultimate local guide to Townsville. Updated May 11 with seasonal tips and hidden gems."
+        title="Activities Guide: Best Things to Do in Townsville (June 2026)"
+        description="From hiking Castle Hill at sunrise to exploring Magnetic Island's hidden bays, discover the ultimate Townsville attractions and experiences for every type of traveller."
         canonical="https://www.myaussieguide.com.au/things-to-do"
       />
       <Helmet>
@@ -312,10 +312,10 @@ const ThingsToDo = () => {
                 Activities Guide
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                Things to Do in Townsville — 25 Best Townsville Attractions for 2026
+                Activities Guide: Best Things to Do in Townsville
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                From hiking Castle Hill at sunrise to exploring Magnetic Island's hidden bays, discover the best things to do in Townsville for families, weekend travellers, and visitors looking for unforgettable Townsville attractions.
+                From hiking Castle Hill at sunrise to exploring Magnetic Island's hidden bays, discover the ultimate Townsville attractions and experiences for every type of traveller.
               </p>
               <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">
                 Just arrived? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> helps you get oriented before heading to the Strand, Castle Hill, or Magnetic Island.
@@ -337,7 +337,7 @@ const ThingsToDo = () => {
             {/* Weekly Highlight */}
             <div className="mb-12 p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-300 dark:border-emerald-700">
               <p className="text-emerald-800 dark:text-emerald-300 leading-relaxed">
-                🌊 <strong>Waterfall Watch (May 19):</strong> As we move further into the Dry Season, the waterfalls at Little Crystal Creek and Jourama Falls are at perfect swimming levels — clear, crisp, and refreshing without the heavy summer humidity.
+                🌊 <strong>Waterfall Watch (June Update):</strong> As the Dry Season progresses beautifully, the freshwater rock pools at Little Crystal Creek and Jourama Falls are sitting at pristine swimming levels—clear, crisp, and incredibly refreshing.
               </p>
             </div>
 
