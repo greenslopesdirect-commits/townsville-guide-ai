@@ -10,8 +10,8 @@ const TownsvilleAirport = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Airport Guide (2026) – Flights, Transport & Local Tips"
-        description="Flying into Townsville? Here's a local guide to airport transport, parking, nearby accommodation, and practical arrival tips for North Queensland visitors."
+        title="Townsville Airport Guide (2026) – Cheap Flights to Townsville, TSV Transport & Local Tips"
+        description="Your ultimate resource for flights to TSV — cheap flights to Townsville, arrival info, airport transport, parking, and local transfer tips for North Queensland visitors."
         canonical="https://www.myaussieguide.com.au/townsville-airport"
       />
       <Helmet>
@@ -39,7 +39,7 @@ const TownsvilleAirport = () => {
                 Townsville Airport Guide
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Townsville Airport is the main gateway to North Queensland, serving both visitors and locals. Whether you're arriving for a holiday, relocating, or visiting family, here's a practical local guide to transport, facilities, and what to know when you land.
+                Townsville Airport (TSV) is the main gateway to North Queensland. If you're searching for cheap flights to Townsville, comparing Townsville flights options, or need reliable ground transport after landing, this local guide covers flight arrivals, airport facilities, and everything you need to know once you touch down.
               </p>
             </header>
 
@@ -151,11 +151,11 @@ const TownsvilleAirport = () => {
               <section>
                 <div className="flex items-center gap-3 mb-4">
                   <Plane className="w-6 h-6 text-primary" />
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Looking for Flights?</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Townsville Flights Options & Deals</h2>
                 </div>
                 <div className="bg-muted/30 p-6 rounded-lg text-center">
                   <p className="text-muted-foreground mb-6">
-                    Compare flights to Townsville from major Australian cities. Check our flight tips for the best deals and travel advice.
+                    Comparing flights to TSV from major Australian cities? Check our flight tips for the best deals and travel advice.
                   </p>
                   <Button size="lg" asChild>
                     <Link to="/flights">Compare Flight Prices</Link>
