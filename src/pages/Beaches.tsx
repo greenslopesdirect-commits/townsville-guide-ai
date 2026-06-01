@@ -197,7 +197,7 @@ const Beaches = () => {
         {/* Intro Section */}
         <section className="space-y-4 text-center sm:text-left">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
-            Best Beaches in Townsville — Swimming, Safety & Local Tips
+            Best Beaches in Townsville — Your Complete Townsville Beaches Guide
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl">
             Townsville offers a variety of beaches for swimming, walking, relaxing, and exploring. This guide covers the safest swimming spots, stinger-net beaches, quieter locations, and dedicated dog-friendly areas across North Queensland.
