@@ -99,10 +99,9 @@ const TownsvilleAirport = () => {
                 </div>
                 <div className="bg-muted/30 p-6 rounded-lg">
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-                    <li><strong>Tropical heat:</strong> Townsville is warm year-round — hydrate well and wear sun protection, especially between October and April</li>
-                    <li><strong>Wet season (Dec–March):</strong> Afternoon storms are common but usually pass quickly. Plan outdoor activities for the morning</li>
-                    <li><strong>Travel comfort:</strong> Early morning or late afternoon arrivals are more comfortable in the warmer months</li>
-                    <li><strong>Easy orientation:</strong> The Strand, Castle Hill, and the ferry terminal are all within a short drive of the airport</li>
+                    <li><strong>Dry Season climate:</strong> June features beautiful low humidity, clear skies, and comfortably cool mornings. It is the perfect outdoor weather window.</li>
+                    <li><strong>Hydrate well:</strong> Even with the cooler, fresh dry season breezes, the tropical sun is strong—keep water handy and wear sun protection.</li>
+                    <li><strong>Easy orientation:</strong> The Strand, Castle Hill lookouts, and the Magnetic Island ferry terminal are all within a short 10–15 minute drive of the airport.</li>
                   </ul>
                 </div>
               </section>
