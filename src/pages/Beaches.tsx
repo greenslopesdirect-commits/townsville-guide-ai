@@ -166,7 +166,7 @@ const Beaches = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
         title="Best Beaches in Townsville 2026 | Swimming, Safety & Local Tips"
-        description="Updated May 11, 2026: Your local-verified guide to Townsville beaches. Includes the Saunders Beach deep-dive, dry-season stinger safety, and the best off-leash dog spots."
+        description="Local-verified guide to Townsville beaches — Saunders Beach deep-dive, dry-season stinger safety, and the best off-leash dog spots."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
       <Helmet>
@@ -177,6 +177,19 @@ const Beaches = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
+            { "@type": "ListItem", "position": 2, "name": "Beaches", "item": "https://www.myaussieguide.com.au/beaches/" }
+          ]
+        }) }}
       />
 
       {/* Header */}

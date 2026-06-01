@@ -26,6 +26,18 @@ const StingerSafety = () => (
       description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated May 11, 2026."
       canonical="https://www.myaussieguide.com.au/guides/stinger-safety"
     />
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.myaussieguide.com.au/" },
+          { "@type": "ListItem", "position": 3, "name": "Stinger Safety", "item": "https://www.myaussieguide.com.au/guides/stinger-safety/" }
+        ]
+      }) }}
+    />
     <h1 className="text-4xl font-bold mb-4 text-center">May 2026 Stinger Update</h1>
     <p className="text-center text-sm text-muted-foreground mb-6">Updated: May 18, 2026</p>
 
