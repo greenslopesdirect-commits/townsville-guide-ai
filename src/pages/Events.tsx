@@ -307,14 +307,14 @@ const Events = () => {
           <ol className="relative border-l-2 border-primary/30 ml-3 space-y-8">
             {[
               {
-                date: "July 2026",
-                title: "V8 Supercars Townsville 500",
-                body: "The streets of Reid Park come alive for the annual supercar street circuit. Expect high CBD buzz and trackside action."
+                date: "10 – 12 July 2026",
+                title: "NTI Townsville 500",
+                body: "The streets of Reid Park come alive for the annual supercar street circuit. Expect high CBD buzz, trackside action, plus the return of the Summernats car show and rock concerts."
               },
               {
-                date: "31 July – 9 August 2026",
-                title: "Australian Festival of Chamber Music",
-                body: "Internationally acclaimed classical musicians performing across beautiful local venues, including acoustic highlights at St James' Cathedral."
+                date: "August 2026",
+                title: "Townsville Running Festival & Local Rodeos",
+                body: "August features top-tier community events, including the iconic McDonald's Townsville Running Festival on August 2 (featuring a marathon course over the weirs and the Strand) and the North Queensland Elite Rodeo under lights on August 14."
               },
               {
                 date: "Late August 2026",
