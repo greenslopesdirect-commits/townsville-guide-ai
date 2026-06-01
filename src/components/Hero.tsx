@@ -12,6 +12,10 @@ const Hero = () => {
           src={heroImage}
           alt="Townsville Strand foreshore — wide tropical waterfront view"
           className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-black/35" />
       </div>
