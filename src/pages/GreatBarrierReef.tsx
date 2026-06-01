@@ -178,6 +178,7 @@ const GreatBarrierReef = () => {
                 <li>• Calmer seas and clearer visibility</li>
                 <li>• More reliable tour departures</li>
                 <li>• Cooler, more comfortable boat trips</li>
+                <li>• The absolute prime window for flat seas, 100% underwater visibility, and comfortable day-trip boat travel.</li>
               </ul>
             </CardContent>
           </Card>
