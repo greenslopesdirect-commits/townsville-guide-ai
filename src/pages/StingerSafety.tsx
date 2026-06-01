@@ -127,7 +127,7 @@ const StingerSafety = () => (
               <TableCell className="font-medium">The Strand (North)</TableCell>
               <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
               </TableCell>
             </TableRow>
             <TableRow>
