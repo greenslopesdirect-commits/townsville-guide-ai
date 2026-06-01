@@ -56,7 +56,7 @@ const BillabongSanctuary = () => {
     <>
       <SEOHead
         title="Billabong Sanctuary Townsville – Wildlife Experience Guide"
-        description="Your local guide to Billabong Sanctuary in Townsville. Hold a koala, feed kangaroos, watch croc shows & enjoy a relaxed wildlife experience. Family-friendly tips from MyAussieGuide."
+        description="Local guide to Billabong Sanctuary Townsville — hold a koala, feed kangaroos, watch croc shows and enjoy a family-friendly wildlife day out."
         canonical="https://www.myaussieguide.com.au/billabong-sanctuary"
         ogType="article"
       />
