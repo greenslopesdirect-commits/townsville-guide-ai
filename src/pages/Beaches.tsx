@@ -197,7 +197,7 @@ const Beaches = () => {
         {/* Intro Section */}
         <section className="space-y-4 text-center sm:text-left">
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
-            Best Beaches in Townsville — Swimming, Safety & Local Tips
+            Best Beaches in Townsville — Your Complete Townsville Beaches Guide
           </h1>
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl">
             Townsville offers a variety of beaches for swimming, walking, relaxing, and exploring. This guide covers the safest swimming spots, stinger-net beaches, quieter locations, and dedicated dog-friendly areas across North Queensland.
@@ -306,7 +306,7 @@ const Beaches = () => {
 
         {/* Exact Off-Leash Dog Beach Boundaries */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Exact Off-Leash Dog Beach Boundaries</h2>
+          <h2 className="text-2xl font-bold text-foreground">Pallarenda Dog Beach Rules &amp; Off-Leash Boundaries</h2>
           <ul className="list-disc pl-5 space-y-3 text-sm text-muted-foreground">
             <li><strong>Pallarenda Dog Beach:</strong> Fully off-leash on the sand starting exclusively from Beach Access Ramp 17 (clearly signposted) heading North all the way to the Cape Pallarenda National Park boundary. Dogs must remain on-leash in the main park, playground, and car park areas.</li>
             <li><strong>Saunders Beach:</strong> Dogs are permitted off-leash on the wide open beach area starting from the northern side of the main boat ramp area heading north. Ensure dogs are under effective voice control at all times.</li>
@@ -392,7 +392,7 @@ const Beaches = () => {
 
         {/* Northern Beaches Section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Northern Beaches & Hidden Gems</h2>
+          <h2 className="text-2xl font-bold text-foreground">Northern Beaches & Saunders Beach Coastal Escape</h2>
           <p className="text-sm text-muted-foreground">Looking for the best beaches north of Townsville? These local favorites offer the best off-leash walking and quiet escapes away from the city crowd.</p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {northernBeaches.map((beach) => (
