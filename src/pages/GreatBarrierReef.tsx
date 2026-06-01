@@ -149,6 +149,21 @@ const GreatBarrierReef = () => {
         </ul>
       </section>
 
+      {/* Townsville's Signature Reef Experiences */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-4">Townsville's Signature Reef Experiences</h2>
+        <ul className="space-y-2 text-muted-foreground">
+          <li className="flex items-start gap-2">
+            <span className="text-primary mt-1">•</span>
+            <span><strong>Museum of Underwater Art (MOUA):</strong> Located at John Brewer Reef, this is the Southern Hemisphere's only underwater museum. Snorkellers and divers can explore the stunning 'Coral Greenhouse' and 'Ocean Sentinels' sculptures that double as thriving artificial reefs.</span>
+          </li>
+          <li className="flex items-start gap-2">
+            <span className="text-primary mt-1">•</span>
+            <span><strong>The SS Yongala Wreck:</strong> Rated as one of the top wreck dives in the world. Sitting within the marine park, it is an absolute magnet for megafauna like giant trevally, turtles, and manta rays (recommended for experienced certified divers).</span>
+          </li>
+        </ul>
+      </section>
+
       {/* Best Time of Year */}
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-4">Best Time of Year</h2>
