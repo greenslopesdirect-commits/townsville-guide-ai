@@ -20,7 +20,7 @@ const Accommodation = () => {
   const hotels = [
     {
       title: "The Ville Resort–Casino",
-      description: "Townsville's premier oceanfront resort featuring a lagoon pool, casino, multiple restaurants, and stunning ocean views. Perfect for luxury getaways. Expect a high-energy vibe across the entire complex this weekend as the Dream Fields Festival crowd hits the pool deck and the city gears up for Sunday afternoon footy.",
+      description: "Luxury resort with ocean views, lagoon-style pools, casino facilities, and premium restaurants. A popular high-energy hub on major event and stadium match weekends.",
       image: theVilleImage,
       tags: ["Luxury", "Waterfront", "Pool"],
       features: [
