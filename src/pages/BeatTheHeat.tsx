@@ -63,6 +63,9 @@ const BeatTheHeat = () => {
           <CardContent className="p-6">
             <h3 className="text-2xl font-bold mb-2">3. Indoor Refuges</h3>
             <p className="text-lg text-left">When the humidity is unbearable, head to the Museum of Tropical Queensland. It is 100% air-conditioned and has great interactive displays to keep you busy while you cool down.</p>
+            <p className="text-base text-muted-foreground mt-4 leading-relaxed">
+              ☀️ Local Safety Reminder: While heat management is simple during the stunning dry season, staying safe means knowing your local resources. Keep our full list of Townsville emergency numbers, medical help, and non-emergency ambulance contacts handy on our Useful Contacts Guide page before heading out on long outdoor adventures.
+            </p>
           </CardContent>
         </Card>
       </div>
