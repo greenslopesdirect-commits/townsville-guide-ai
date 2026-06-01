@@ -312,10 +312,10 @@ const ThingsToDo = () => {
                 Activities Guide
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                25 Best Things to Do in Townsville 2026
+                Things to Do in Townsville — 25 Best Townsville Attractions for 2026
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                From hiking Castle Hill at sunrise to exploring Magnetic Island's hidden bays, Townsville offers unforgettable experiences for every type of traveller.
+                From hiking Castle Hill at sunrise to exploring Magnetic Island's hidden bays, discover the best things to do in Townsville for families, weekend travellers, and visitors looking for unforgettable Townsville attractions.
               </p>
               <p className="text-muted-foreground mt-4 max-w-3xl mx-auto">
                 Just arrived? Our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> helps you get oriented before heading to the Strand, Castle Hill, or Magnetic Island.
