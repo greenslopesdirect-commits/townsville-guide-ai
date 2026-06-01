@@ -10,8 +10,8 @@ const TownsvilleAirport = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Airport Guide (2026) – Flights, Transport & Local Tips"
-        description="Flying into Townsville? Here's a local guide to airport transport, parking, nearby accommodation, and practical arrival tips for North Queensland visitors."
+        title="Townsville Airport Guide (2026) – Cheap Flights to Townsville, TSV Transport & Local Tips"
+        description="Your ultimate resource for flights to TSV — cheap flights to Townsville, arrival info, airport transport, parking, and local transfer tips for North Queensland visitors."
         canonical="https://www.myaussieguide.com.au/townsville-airport"
       />
       <Helmet>
