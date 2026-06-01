@@ -23,7 +23,7 @@ const StingerSafety = () => (
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
     <SEOHead
       title="Is it Safe to Swim in Townsville Today? | 2026 Stinger Guide"
-      description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated May 11, 2026."
+      description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated June 1, 2026."
       canonical="https://www.myaussieguide.com.au/guides/stinger-safety"
     />
     <script
@@ -38,14 +38,14 @@ const StingerSafety = () => (
         ]
       }) }}
     />
-    <h1 className="text-4xl font-bold mb-4 text-center">May 2026 Stinger Update</h1>
-    <p className="text-center text-sm text-muted-foreground mb-6">Updated: May 18, 2026</p>
+    <h1 className="text-4xl font-bold mb-4 text-center">June 2026 Stinger Update</h1>
+    <p className="text-center text-sm text-muted-foreground mb-6">Updated: June 1, 2026</p>
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 May 18 Status</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 June 1 Status: Nets are OUT for Winter!</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        We are now entering the final two weeks of the official 2025/2026 stinger season. <strong>Stinger nets remain ACTIVE and essential</strong> at <strong>The Strand, Pallarenda, and Magnetic Island</strong>. Even though the water looks crystal clear and inviting under the Dry Season blue skies, marine stingers are absolutely still present. Do not swim outside the enclosures under any circumstances.
+        Townsville City Council officially removed the stinger nets on May 28, 2026, marking the official end of the 2025/2026 stinger season. The water is clear, the low-humidity Dry Season is here, and open swimming is now generally safe across local beaches. However, always check local beach flags and Surf Life Saving signs before jumping in.
       </p>
     </div>
 
@@ -127,35 +127,35 @@ const StingerSafety = () => (
               <TableCell className="font-medium">The Strand (North)</TableCell>
               <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">The Strand (South)</TableCell>
               <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Pallarenda Beach</TableCell>
               <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
               <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
               <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Winter (Open Swimming)</span>
               </TableCell>
             </TableRow>
           </TableBody>
