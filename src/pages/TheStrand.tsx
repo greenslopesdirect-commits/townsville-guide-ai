@@ -83,9 +83,9 @@ const TheStrand = () => {
         {/* Footy Alert */}
         <Alert className="bg-blue-50 border-blue-200">
           <AlertTriangle className="h-4 w-4 text-blue-600" />
-          <AlertTitle className="text-blue-900 font-semibold">🏟️ Footy Alert (May 16 & 24)</AlertTitle>
+          <AlertTitle className="text-blue-900 font-semibold">🏟️ Footy Alert: Cowboys vs. Dolphins (Saturday, June 6)</AlertTitle>
           <AlertDescription className="text-blue-800 mt-1">
-            With the Cowboys away for Magic Round this weekend (May 16), Strand bars like The Seaview and Longboard will be the prime spots for watch parties. Looking ahead: For the Rabbitohs game (Sunday, May 24), expect parking along the Strand to be tighter than usual as fans head in early for a pre-game beach walk.
+            With the massive QLD blockbuster kicking off at 5:30 PM this Saturday, Strand bars like The Seaview and Longboard will be absolutely buzzing for pre-game drinks. If you are heading down, expect parking along the Strand to fill up early in the afternoon as fans catch the pre-game beach vibe before walking over to the stadium.
           </AlertDescription>
         </Alert>
 
@@ -94,7 +94,7 @@ const TheStrand = () => {
           <Info className="h-4 w-4 text-emerald-700" />
           <AlertTitle className="text-emerald-900 font-semibold">🌙 Strand Night Markets</AlertTitle>
           <AlertDescription className="text-emerald-800 mt-1">
-            The May markets were a blast! The next Strand Night Markets are scheduled for <strong>Friday, June 5</strong>. Mark your calendar for the first Friday of the month.
+            Lock it in: The next Strand Night Markets are happening this Friday, June 5! Strand Park comes alive from 5:00 PM with local North Queensland food trucks, arts, crafts, and live music under the palms. It's the perfect way to spend a fresh Dry Season Friday night.
           </AlertDescription>
         </Alert>
 
@@ -131,7 +131,7 @@ const TheStrand = () => {
                   A man-made saltwater lagoon. Safe from stingers year-round. Gentle sloping entry makes it perfect for toddlers.
                 </p>
                 <div className="bg-blue-50 p-3 rounded-md text-xs text-blue-800">
-                  <strong>Local Tip:</strong> Closed every <span className="font-bold">Wednesday</span> for cleaning. <em>May Update: The water is crisp and clear—ideal for a morning lap before the UV peaks.</em>
+                  <strong>Local Tip:</strong> Closed every <span className="font-bold">Wednesday</span> for cleaning. <em>June Update: The water is refreshing and crystal clear—ideal for morning laps before the midday UV peaks.</em>
                 </div>
               </CardContent>
             </Card>
