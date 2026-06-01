@@ -392,7 +392,7 @@ const Beaches = () => {
 
         {/* Northern Beaches Section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Northern Beaches & Hidden Gems</h2>
+          <h2 className="text-2xl font-bold text-foreground">Northern Beaches & Saunders Beach Coastal Escape</h2>
           <p className="text-sm text-muted-foreground">Looking for the best beaches north of Townsville? These local favorites offer the best off-leash walking and quiet escapes away from the city crowd.</p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {northernBeaches.map((beach) => (
