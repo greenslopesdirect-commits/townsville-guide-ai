@@ -29,7 +29,7 @@ const TheStrand = () => {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
             The Strand
           </h1>
-          <p className="text-sm text-gray-500">Updated: May 11, 2026</p>
+          <p className="text-sm text-gray-500">Updated: June 1, 2026</p>
           <p className="text-xl text-gray-600 max-w-2xl">
             2.2km of tropical foreshore. It's not just a beach; it's the city's living room.
             From the <strong>Rockpool</strong> to the <strong>Water Park</strong>, here is how to do The Strand like a local.
