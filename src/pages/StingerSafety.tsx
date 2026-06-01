@@ -100,12 +100,9 @@ const StingerSafety = () => (
     <section className="mb-10">
       <h2 className="text-2xl font-bold mb-4">When Is Stinger Season in Townsville?</h2>
       <p className="mb-4 text-muted-foreground leading-relaxed">
-        Stinger season in Townsville typically runs from November to May, during the warmer months in North Queensland. During this period, marine stingers such as box jellyfish and Irukandji may be present in coastal waters.
+        Stinger season in Townsville typically runs from November to May. The 2025/2026 season has now officially concluded as of late May, and nets have been removed across all local beaches. The next season will commence in November 2026.
       </p>
       <p className="mb-4 text-muted-foreground leading-relaxed font-semibold">
-        We are currently in the final two weeks of the 2025/2026 season. Stay completely vigilant and stick strictly to the nets through to the end of May.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
         Swimming is considered safe when using patrolled stinger enclosures at The Strand, Pallarenda, and other netted beaches. Always check local signage or Surf Life Saving updates before entering the water.
       </p>
     </section>
