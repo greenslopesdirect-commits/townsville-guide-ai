@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-05-25">
-            <time dateTime="2026-05-25">Updated: May 25, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-06-01">
+            <time dateTime="2026-06-01">Updated: June 1, 2026</time>
           </span>
         </div>
       </div>
@@ -36,12 +36,12 @@ const Events = () => {
              What's On in Townsville: Dry Season & Upcoming Events 2026
            </h1>
            <p className="text-sm text-gray-500">
-              Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
-            </p>
-              <p className="text-lg text-gray-600 max-w-2xl">
-                The beautiful, low-humidity "Perfect Dry" season has officially arrived. Clear sunny days and cool mornings make late May and June ideal for markets, coastal walks, and the upcoming <strong>North Australian Festival of Arts</strong>.
-              </p>
-         </div>
+               Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
+             </p>
+               <p className="text-lg text-gray-600 max-w-2xl">
+                 The beautiful, low-humidity "Perfect Dry" season has officially arrived. Clear sunny days and cool mornings make June ideal for markets, coastal walks, and outdoor adventures.
+               </p>
+          </div>
 
          {/* SEO Intro Paragraph */}
          <p className="text-gray-600 max-w-3xl">
@@ -50,7 +50,7 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On Now (Late May & Early June 2026)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On Now (June 2026)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
             <li><strong>Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The cool morning breeze makes the stroll even better.</li>
             <li><strong>Festival:</strong> <strong>North Australian Festival of Arts (NAFA)</strong> — Returns 25 September – 11 October 2026 across multiple Townsville venues. Theatre, comedy, circus, and open-air light installations at Strand Park.</li>
