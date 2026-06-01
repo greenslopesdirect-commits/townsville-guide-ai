@@ -19,7 +19,7 @@ const PrivacyPolicy = () => {
           {`
           {
             "@context": "https://schema.org",
-            "@type": "PrivacyPolicy",
+            "@type": "WebPage",
             "name": "Privacy Policy",
             "url": "https://www.myaussieguide.com.au/privacy-policy",
             "description": "Privacy Policy for My Aussie Guide explaining data usage, cookies, analytics and how user information is handled.",
