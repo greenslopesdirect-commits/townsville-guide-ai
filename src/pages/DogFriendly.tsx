@@ -14,9 +14,9 @@ const dogSpots = [
     name: "Pallarenda Dog Beach",
     type: "Off-Leash Beach",
     dogAccess: "Off-leash area available",
-    stingerNet: true,
-    description: "Our top pick for May. One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs. The stinger net keeps the swim area safe, and the off-leash zone is perfect for a game of fetch on the wet sand.",
-    features: ["Off-leash beach access", "Long sandy stretches for running", "Shallow, calm waters for swimming dogs", "Stinger net active through May", "Natural setting with mangroves nearby"],
+    stingerNet: false,
+    description: "Our top pick for May. One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs. The massive low-tide sand flats are completely wide open, making it the perfect spot in Townsville for a long game of fetch on the wet sand.",
+    features: ["Off-leash beach access", "Long sandy stretches for running", "Shallow, calm waters for swimming dogs", "Nets are now out for the Dry Season, making deep-water fetch much safer.", "Natural setting with mangroves nearby"],
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Off+Leash+Dog+Beach",
     badge: "🏆 May Top Pick",
     guideLink: "/pallarenda-beach",
@@ -394,9 +394,8 @@ const DogFriendly = () => {
               <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
                 <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                  <p className="text-xs text-muted-foreground mt-1">☀️ May 11 Update: We are in the final month of the official stinger season. Visibility is excellent, but nets at The Strand and Pallarenda remain ACTIVE. Stick to the wet sand for fetch to keep paws cool and stay safe.</p>
-                  <p className="text-xs text-muted-foreground mt-1">Review our <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">Townsville Stinger Season Guide</Link> for full details.</p>
+                  <p className="font-medium text-sm text-foreground">Stinger Season Ended</p>
+                  <p className="text-xs text-muted-foreground mt-1">☀️ June Update: The stinger season has concluded and the beach enclosures are packed away. This means you can finally let your dogs enjoy deep-water swimming at un-netted northern beaches like Saunders, Toolakea, and Bushland Beach without the summer worry. Remember to give them a good fresh-water rinse afterward to remove the tropical salt and sand!</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
