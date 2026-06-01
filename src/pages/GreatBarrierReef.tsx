@@ -56,13 +56,11 @@ const GreatBarrierReef = () => {
 
       {/* H1 */}
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-        Great Barrier Reef from Townsville – What to Expect
+        Great Barrier Reef Tours from Townsville – What to Expect
       </h1>
 
       <p className="text-lg text-muted-foreground leading-relaxed mb-2">
-        Townsville offers direct access to the Great Barrier Reef via day tours and dive operators departing from the city marina. 
-        While Cairns is the more commercialised gateway, Townsville provides a quieter, more relaxed reef experience — 
-        with smaller boats, fewer crowds, and genuine outer reef sites.
+        Townsville offers direct access to the Central Section of the Great Barrier Reef via world-class day tours and dive operators departing from the city marina. While Cairns is the more commercialised gateway, a Townsville reef tour provides a quieter, more exclusive experience—featuring pristine outer reef sites, the globally unique Museum of Underwater Art (MOUA), and the world-famous SS Yongala shipwreck.
       </p>
       <p className="text-base text-muted-foreground leading-relaxed mb-6">
         If you're visiting Townsville and want to see the reef, a full-day tour is one of the most rewarding things you can do.
@@ -94,7 +92,7 @@ const GreatBarrierReef = () => {
                 <Fish className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                 <div>
                   <p className="font-semibold text-foreground">Activities</p>
-                  <p className="text-sm text-muted-foreground">Snorkelling, diving, reef viewing</p>
+                  <p className="text-sm text-muted-foreground">Snorkelling outer reefs, diving the SS Yongala wreck, exploring MOUA sculptures</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
@@ -146,7 +144,7 @@ const GreatBarrierReef = () => {
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary mt-1">•</span>
-            <span>More relaxed pace overall</span>
+            <span>Access to world-renowned specific sites like the Coral Greenhouse and Ocean Sentinels at John Brewer Reef.</span>
           </li>
         </ul>
       </section>
