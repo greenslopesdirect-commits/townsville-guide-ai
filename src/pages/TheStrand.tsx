@@ -35,7 +35,7 @@ const TheStrand = () => {
             From the <strong>Rockpool</strong> to the <strong>Water Park</strong>, here is how to do The Strand like a local.
           </p>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-900">
-            ☀️ <strong>May 11 Update:</strong> The 'Perfect Dry' has arrived. With 26°C days and clear water, it's the best time of year for a Strand walk. Note: Stinger nets are in their final month of operation—stay safe and swim inside the enclosures.
+            ☀️ <strong>June 1 Update:</strong> The 'Perfect Dry' is fully underway. With crisp 26°C days and clear water, it's the absolute best time of year for a Strand walk. Note: The Council officially removed the stinger nets on May 28, marking the end of stinger season—open swimming is now safe across the beach!
           </div>
         </div>
 
@@ -60,7 +60,7 @@ const TheStrand = () => {
                 { icon: "💰", text: "Free attraction" },
                 { icon: "👨‍👩‍👧", text: "Family friendly" },
                 { icon: "🌴", text: "Shade available along most paths" },
-                { icon: "🌊", text: "Swim only in Rockpool or stinger nets (Nov–May)" },
+                { icon: "🌊", text: "Swim safely year-round in the Rockpool, or enjoy open ocean swimming now that the stinger nets are out for the Dry Season." },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span className="text-lg flex-shrink-0">{item.icon}</span>
@@ -72,11 +72,11 @@ const TheStrand = () => {
         </Card>
 
         {/* Current Status - Critical for Tourists */}
-        <Alert className="bg-amber-50 border-amber-200">
-          <AlertTriangle className="h-4 w-4 text-amber-600" />
-          <AlertTitle className="text-amber-800 font-semibold">Final Month of Stinger Season (Nov – May)</AlertTitle>
-          <AlertDescription className="text-amber-700 mt-1">
-            Final month of stinger season! The nets are still in and essential. Visibility is at 100%, but the stingers are still there—don't risk the open water yet. Only swim inside the <strong>Stinger Nets</strong> (near the Surf Club and Gregory St) or in the <strong>Rockpool</strong>.
+        <Alert className="bg-emerald-50 border-emerald-200">
+          <Sun className="h-4 w-4 text-emerald-600" />
+          <AlertTitle className="text-emerald-800 font-semibold">Dry Season Swimming Freedom!</AlertTitle>
+          <AlertDescription className="text-emerald-700 mt-1">
+            The 2025/2026 stinger season has officially concluded and the nets have been packed away for the cooler months. Ocean visibility is excellent and marine stinger risks are at their yearly low. While open water swimming is safe right now, we always recommend staying close to patrolled lifeguards or enjoying the completely stinger-free Rockpool at the northern end.
           </AlertDescription>
         </Alert>
 
