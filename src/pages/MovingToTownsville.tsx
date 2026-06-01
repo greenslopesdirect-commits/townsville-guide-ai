@@ -235,12 +235,9 @@ const MovingToTownsville = () => {
               </CardContent>
             </Card>
 
-            <LocalInsightCard title="Local Tip — May is Relocation Peak Season" variant="insight">
+            <LocalInsightCard title="Local Tip — Mid-Year Relocation Peak" variant="insight">
               <p>
-                May is relocation peak season in Townsville. The weather is perfect for moving house, and
-                the city is buzzing with events like the <strong>Caravan Expo</strong> and{" "}
-                <strong>Dream Fields Festival</strong> — a great time to see the city's social side in
-                full swing.
+                The middle months of the year are the peak relocation season in Townsville. The spectacular low-humidity dry season weather is absolute perfection for moving house, unpacking, and getting out to explore the city's active social, market, and stadium event scene in ideal conditions.
               </p>
             </LocalInsightCard>
           </section>
