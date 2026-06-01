@@ -37,7 +37,7 @@ const EventsOn = () => {
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
                     <p className="text-blue-100 font-medium">Markets, motorsport & footy blockbusters</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏎️ V8 Supercars Townsville 500 — July 2026</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏎️ NTI Townsville 500 — 10–12 July 2026</p>
                      <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">The Perfect Dry</span>
                 </div>
                 <div className="relative z-10 mt-8">
@@ -64,7 +64,7 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-slate-500 italic">
-                        Updated Late May 2026.
+                        Updated June 2026.
                     </span>
                 </div>
             </div>
@@ -104,8 +104,8 @@ const EventsOn = () => {
                         </div>
                         <Trophy className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">V8 Supercars Townsville 500</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Coming up July 2026</p>
+                    <h4 className="text-lg font-bold mb-2">NTI Townsville 500</h4>
+                    <p className="text-xs text-primary font-medium mb-1">10–12 July 2026</p>
                     <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
                         <MapPin className="w-4 h-4" /> Reid Park Street Circuit
                     </div>
