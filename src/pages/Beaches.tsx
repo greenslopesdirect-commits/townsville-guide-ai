@@ -179,6 +179,19 @@ const Beaches = () => {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
+      {/* Breadcrumb Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
+            { "@type": "ListItem", "position": 2, "name": "Beaches", "item": "https://www.myaussieguide.com.au/beaches/" }
+          ]
+        }) }}
+      />
+
       {/* Header */}
       <div className="bg-card border-b sticky top-0 z-10">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
