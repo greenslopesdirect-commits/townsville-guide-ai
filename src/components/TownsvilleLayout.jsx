@@ -2,18 +2,15 @@ import { Outlet } from "react-router-dom";
 import HeaderImproved from "@/components/HeaderImproved";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
-import SEOHead from "@/components/SEOHead";
 
+// NOTE: Do NOT render <SEOHead> here. Each route owns its own title,
+// description, and canonical via its own <SEOHead>/<Helmet>. Injecting a
+// sitewide canonical at the layout level caused every page to ship a
+// duplicate canonical pointing at the homepage — a classic keyword
+// cannibalisation trigger.
 const TownsvilleLayout = () => {
   return (
     <div className="relative">
-      {/* Global SEO for Townsville pages */}
-      <SEOHead
-        title="MyAussieGuide – Townsville"
-        description="Your complete local guide to Townsville — beaches, food, events, dog-friendly spots, and insider tips."
-        canonical="https://www.myaussieguide.com.au"
-      />
-
       <HeaderImproved />
 
       {/* Main content area - starts below fixed header */}
@@ -28,4 +25,3 @@ const TownsvilleLayout = () => {
 };
 
 export default TownsvilleLayout;
-

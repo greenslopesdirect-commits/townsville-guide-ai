@@ -1,8 +1,15 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const FreeThings = () => (
+  <>
+  <SEOHead
+    title="Top 10 Free Things to Do in Townsville"
+    description="A local's guide to the best completely free things to do in Townsville — Castle Hill, The Strand, Riverway, Jezzine Barracks and more."
+    canonical="https://www.myaussieguide.com.au/guides/free-things/"
+  />
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
     <h1 className="text-4xl font-bold mb-4 text-center">5 Completely Free Things to do in Townsville</h1>
     <img src="/5-free-things-to-do.webp" alt="Castle Hill View" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8" />
@@ -18,5 +25,6 @@ const FreeThings = () => (
       <p>"Pack a picnic and head to Jezzine Barracks at sunset. There are plenty of free BBQ stations and the view over Rowes Bay is world-class."</p>
     </div>
   </div>
+  </>
 );
 export default FreeThings;
