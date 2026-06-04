@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import { Droplets, Sun, Wind, Thermometer } from "lucide-react";
+import { Droplets, Sun, Wind, Thermometer, CloudRain } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 
 const BeatTheHeat = () => {
@@ -22,6 +23,19 @@ const BeatTheHeat = () => {
           className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8"
         />
       </section>
+
+      {/* Rainy Day Cross-link */}
+      <div className="bg-sky-50 dark:bg-sky-950/30 border-2 border-sky-200 dark:border-sky-800 rounded-xl p-5 mb-8 flex items-start gap-3">
+        <CloudRain className="w-5 h-5 text-sky-700 dark:text-sky-300 shrink-0 mt-1" />
+        <p className="text-sky-900 dark:text-sky-200 leading-relaxed">
+          Caught in a sudden tropical storm instead? Check out our{" "}
+          <Link to="/guides/rainy-day-activities" className="font-semibold underline hover:text-sky-700 dark:hover:text-sky-100">
+            Rainy Day Survival Guide
+          </Link>{" "}
+          for the best indoor spots when the heavens open up.
+        </p>
+      </div>
+
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 text-center">
         <div className="p-4 bg-blue-50 rounded-lg flex flex-col items-center">

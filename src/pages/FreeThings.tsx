@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
