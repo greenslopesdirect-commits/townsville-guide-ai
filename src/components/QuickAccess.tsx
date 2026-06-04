@@ -14,6 +14,7 @@ import {
   Plane,
   Phone,
   Accessibility,
+  CloudRain,
 } from "lucide-react";
 
 const QuickAccess = () => {
@@ -71,6 +72,12 @@ const QuickAccess = () => {
       title: "Stinger & Safety Guide",
       desc: "☀️ Dry Season Status: Stinger nets are ACTIVE. Conditions are clear, fresh, and stunning — perfect for a northern beach run or exploring the Paluma range.",
       link: "/guides/stinger-safety",
+    },
+    {
+      icon: CloudRain,
+      title: "Rainy Day Survival Guide",
+      desc: "Indoor things to do in Townsville when the wet season storms roll in — museums, bowling, cinemas & cosy cafes.",
+      link: "/guides/rainy-day-activities",
     },
     {
       icon: Baby,
