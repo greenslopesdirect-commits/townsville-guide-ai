@@ -56,7 +56,7 @@ const picks = [
     image: billabongSanctuaryImage,
     query: "What animals are at Billabong Sanctuary?",
     link: "/billabong-sanctuary",
-    buttonText: "Learn More"
+    buttonText: "Explore Billabong Sanctuary"
   },
 ];
 
