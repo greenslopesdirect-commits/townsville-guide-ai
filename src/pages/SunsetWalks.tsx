@@ -22,5 +22,6 @@ const SunsetWalks = () => (
       <p>"My favorite loop is the Breakwater. It's flat, well-lit, and usually 2-3 degrees cooler than the city streets because of the sea breeze."</p>
     </div>
   </div>
+  </>
 );
 export default SunsetWalks;
