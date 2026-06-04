@@ -25,6 +25,7 @@ const Footer = () => {
                 <li><Link to="/cowboys-stadium-guide" className="text-muted-foreground hover:text-primary transition-colors">Cowboys Stadium & NRL Info</Link></li>
                 <li><Link to="/townsville-airport" className="text-muted-foreground hover:text-primary transition-colors">Townsville Airport Guide</Link></li>
                 <li><Link to="/guides/beat-the-heat" className="text-muted-foreground hover:text-primary transition-colors">Beat the Heat Guide</Link></li>
+                <li><Link to="/guides/rainy-day-activities" className="text-muted-foreground hover:text-primary transition-colors">Rainy Day Survival Guide</Link></li>
                 <li><Link to="/useful-contacts" className="text-muted-foreground hover:text-primary transition-colors">Useful Contacts & Emergency Info</Link></li>
                 <li><Link to="/accessible-townsville" className="text-muted-foreground hover:text-primary transition-colors">Accessibility Guide</Link></li>
               </ul>
