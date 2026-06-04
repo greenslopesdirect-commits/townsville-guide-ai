@@ -8,7 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { CloudRain, Coffee, Film, Bowling, Landmark, AlertTriangle, MapPin, DollarSign, Users } from "lucide-react";
+import { CloudRain, Coffee, Film, Target, Landmark, AlertTriangle, MapPin, DollarSign, Users } from "lucide-react";
 
 const QuickFact = ({
   location,
@@ -107,7 +107,7 @@ const RainyDayActivities = () => (
     {/* Section 2: Energy Burners */}
     <section className="mb-12">
       <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-        <Bowling className="w-6 h-6 text-primary" />
+        <Target className="w-6 h-6 text-primary" />
         Energy Burners (Active Indoor)
       </h2>
       <Card>
