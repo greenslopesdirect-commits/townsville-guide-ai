@@ -38,6 +38,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import BeatTheHeat from "@/pages/BeatTheHeat";
 import MagneticIslandDayTrip from "@/pages/MagneticIslandDayTrip";
 import FreeThings from "@/pages/FreeThings";
+import RainyDayActivities from "@/pages/RainyDayActivities";
 import StingerSafety from "@/pages/StingerSafety";
 import SunsetWalks from "@/pages/SunsetWalks";
 import PallarendaBeach from "@/pages/PallarendaBeach";
@@ -87,6 +88,7 @@ const App = () => (
             <Route path="guides/beat-the-heat" element={<BeatTheHeat />} />
             <Route path="guides/magnetic-island-day-trip" element={<MagneticIslandDayTrip />} />
             <Route path="guides/free-things" element={<FreeThings />} />
+            <Route path="guides/rainy-day-activities" element={<RainyDayActivities />} />
             <Route path="guides/stinger-safety" element={<StingerSafety />} />
             <Route path="guides/sunset-walks" element={<SunsetWalks />} />
             <Route path="guides/jezzine-barracks" element={<JezzineBarracks />} />
