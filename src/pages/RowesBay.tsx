@@ -142,6 +142,7 @@ const RowesBay = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

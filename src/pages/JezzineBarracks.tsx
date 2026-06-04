@@ -169,6 +169,7 @@ const JezzineBarracks = () => {
 
       </div>
     </div>
+    </>
   );
 };
 

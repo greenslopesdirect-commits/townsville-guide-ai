@@ -354,6 +354,7 @@ const TheStrand = () => {
 
       </main>
     </div>
+    </>
   );
 };
 
