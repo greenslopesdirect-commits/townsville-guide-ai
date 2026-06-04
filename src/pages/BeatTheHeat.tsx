@@ -1,10 +1,17 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Droplets, Sun, Wind, Thermometer } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const BeatTheHeat = () => {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
+    <>
+      <SEOHead
+        title="Beat the Heat in Townsville — Local Survival Guide"
+        description="Local shortcuts to stay cool in Townsville's tropical climate — when to go out, where to find shade and breeze, and how to plan around the heat."
+        canonical="https://www.myaussieguide.com.au/guides/beat-the-heat/"
+      />
+      <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <section className="mb-12 text-center">
         <h1 className="text-4xl font-bold mb-4">3 Best Ways to Beat the Townsville Heat</h1>
         <p className="text-xl text-muted-foreground mb-6">Actionable local shortcuts to stay cool in the tropics.</p>

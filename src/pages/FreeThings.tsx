@@ -25,5 +25,6 @@ const FreeThings = () => (
       <p>"Pack a picnic and head to Jezzine Barracks at sunset. There are plenty of free BBQ stations and the view over Rowes Bay is world-class."</p>
     </div>
   </div>
+  </>
 );
 export default FreeThings;
