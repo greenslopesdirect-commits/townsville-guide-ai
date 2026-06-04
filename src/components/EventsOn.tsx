@@ -63,7 +63,7 @@ const EventsOn = () => {
                             View Full Events Calendar
                         </Button>
                     </Link>
-                    <span className="text-sm text-slate-500 italic">
+                    <span className="text-sm text-muted-foreground italic">
                         Updated June 2026.
                     </span>
                 </div>
@@ -84,14 +84,14 @@ const EventsOn = () => {
                         <div className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-bold">
                             Every Sunday — Markets
                         </div>
-                        <Star className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                        <Star className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
                     <p className="text-xs text-primary font-medium mb-1">Every Sunday Morning</p>
-                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Flinders Street, CBD
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">Townsville's premier Sunday morning market. Grab a fresh coffee, browse local North Queensland crafts, and enjoy the live street entertainment in the fresh morning air.</p>
+                    <p className="text-xs text-muted-foreground mt-2">Townsville's premier Sunday morning market. Grab a fresh coffee, browse local North Queensland crafts, and enjoy the live street entertainment in the fresh morning air.</p>
                 </CardContent>
             </Card>
 
@@ -102,14 +102,14 @@ const EventsOn = () => {
                         <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
                             July 2026 — Motorsport
                         </div>
-                        <Trophy className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                        <Trophy className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">NTI Townsville 500</h4>
                     <p className="text-xs text-primary font-medium mb-1">10–12 July 2026</p>
-                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Reid Park Street Circuit
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">The streets of Reid Park come alive for the annual supercar street circuit. Plan your accommodation early!</p>
+                    <p className="text-xs text-muted-foreground mt-2">The streets of Reid Park come alive for the annual supercar street circuit. Plan your accommodation early!</p>
                 </CardContent>
             </Card>
 
@@ -120,17 +120,17 @@ const EventsOn = () => {
                         <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
                             Upcoming NRL Home Game
                         </div>
-                        <Trophy className="w-5 h-5 text-slate-300 group-hover:text-primary transition-colors" />
+                        <Trophy className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Cowboys vs. Dolphins</h4>
                     <p className="text-xs text-primary font-medium mb-1">Saturday, June 6, 2026</p>
-                    <div className="flex items-center gap-2 text-sm text-slate-500 mb-1">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Queensland Country Bank Stadium
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-slate-500">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Clock className="w-4 h-4" /> Kick-off: 5:30 PM
                     </div>
-                    <p className="text-xs text-slate-500 mt-2">🏉 Footy returns to QCB Stadium for a massive Saturday night clash. Utilize the free park-and-ride shuttle to beat the traffic.</p>
+                    <p className="text-xs text-muted-foreground mt-2">🏉 Footy returns to QCB Stadium for a massive Saturday night clash. Utilize the free park-and-ride shuttle to beat the traffic.</p>
                 </CardContent>
             </Card>
 
