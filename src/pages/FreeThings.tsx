@@ -25,6 +25,15 @@ const FreeThings = () => (
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
       <p>"Pack a picnic and head to Jezzine Barracks at sunset. There are plenty of free BBQ stations and the view over Rowes Bay is world-class."</p>
     </div>
+    <div className="mt-6 bg-sky-50 border-2 border-sky-200 rounded-xl p-5 text-left">
+      <p className="text-sky-900 leading-relaxed">
+        ☔ Wet season cutting your free outdoor plans short? Pivot to our{" "}
+        <Link to="/guides/rainy-day-activities" className="font-semibold underline hover:text-sky-700">
+          Rainy Day Survival Guide
+        </Link>{" "}
+        for the best indoor things to do in Townsville.
+      </p>
+    </div>
   </div>
   </>
 );
