@@ -274,7 +274,7 @@ const ThingsToDo = () => {
   return (
     <>
       <SEOHead
-        title="Activities Guide: Best Things to Do in Townsville (June 2026)"
+        title="Best Things to Do in Townsville (June 2026 Guide)"
         description="From hiking Castle Hill at sunrise to exploring Magnetic Island's hidden bays, discover the ultimate Townsville attractions and experiences for every type of traveller."
         canonical="https://www.myaussieguide.com.au/things-to-do"
       />
