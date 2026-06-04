@@ -2,6 +2,7 @@ import { ArrowLeft, MapPin, Landmark, Palette, Mountain, Flag, Car, Footprints }
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import SEOHead from "@/components/SEOHead";
 import maxKissingPoint from "@/assets/max-at-kissing-point.webp";
 
 const highlights = [
@@ -29,6 +30,12 @@ const highlights = [
 
 const JezzineBarracks = () => {
   return (
+    <>
+      <SEOHead
+        title="Jezzine Barracks Townsville — Local Guide"
+        description="A local guide to Jezzine Barracks Townsville — Army Museum, public art trail, Kissing Point Fort and Kennedy Regiment Plaza."
+        canonical="https://www.myaussieguide.com.au/guides/jezzine-barracks/"
+      />
     <div className="min-h-screen bg-background pb-20">
       {/* Hero Section */}
       <div className="relative bg-slate-900">

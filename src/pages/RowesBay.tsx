@@ -2,9 +2,16 @@ import { ArrowLeft, MapPin, Info, Sun, Coffee, AlertTriangle } from "lucide-reac
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import SEOHead from "@/components/SEOHead";
 
 const RowesBay = () => {
   return (
+    <>
+      <SEOHead
+        title="Rowes Bay Townsville — Sunset Beach Guide"
+        description="A local guide to Rowes Bay Townsville — sunset views, dog-friendly zones, parking and what to know before you visit."
+        canonical="https://www.myaussieguide.com.au/rowes-bay/"
+      />
     <div className="min-h-screen bg-neutral-50 pb-20">
       {/* Hero Section */}
       <div className="relative h-[40vh] bg-slate-900 flex items-end">

@@ -4,9 +4,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import SEOHead from "@/components/SEOHead";
 
 const TheStrand = () => {
   return (
+    <>
+      <SEOHead
+        title="The Strand Townsville — Local Guide"
+        description="A local guide to The Strand in Townsville — 2.2km of foreshore, Rockpool, Water Park, dining and how to do it like a local."
+        canonical="https://www.myaussieguide.com.au/the-strand/"
+      />
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
       <div className="bg-white border-b sticky top-0 z-10">
