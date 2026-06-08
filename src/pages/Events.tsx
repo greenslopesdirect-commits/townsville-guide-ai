@@ -250,7 +250,7 @@ const Events = () => {
             <div>
               <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
               <p className="text-amber-800 text-sm mt-1">
-                Late May into June is an absolute spectacle across North Queensland. The landscape is still lush and green from the earlier wet season, but the crisp, low-humidity air has settled in. This is the ultimate window for afternoon photography at our secret northern beaches like Saunders and Toolakea, where the clear skies create perfect glass-like reflections on the low-tide sand flats.
+                Late May into June is an absolute spectacle across North Queensland. The landscape is still lush and green from the earlier wet season, but the crisp, low-humidity air has settled in. This is the ultimate window for afternoon photography at our secret northern beaches like Saunders Beach and Toolakea Beach, where clear winter skies create perfect glass-like reflections on the expansive low-tide sand flats with zero crowds.
               </p>
             </div>
           </div>
