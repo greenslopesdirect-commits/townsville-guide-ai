@@ -33,7 +33,7 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: Dry Season & Upcoming Events 2026
+             What's On in Townsville This Weekend: Dry Season & Local Event Calendar
            </h1>
            <p className="text-sm text-gray-500">
                Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
@@ -45,12 +45,12 @@ const Events = () => {
 
          {/* SEO Intro Paragraph */}
          <p className="text-gray-600 max-w-3xl">
-           Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
+           Searching for <strong>what's on in Townsville this weekend</strong> or planning the week ahead? This regularly updated <strong>Townsville events calendar</strong> highlights what's happening around the city — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
          </p>
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On Now (June 2026)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (June 2026)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
             <li><strong>Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The cool morning breeze makes the stroll even better.</li>
             <li><strong>Festival:</strong> <strong>North Australian Festival of Arts (NAFA)</strong> — Returns 25 September – 11 October 2026 across multiple Townsville venues. Theatre, comedy, circus, and open-air light installations at Strand Park.</li>
