@@ -236,9 +236,9 @@ const NorthShoreTownsville = () => {
               </p>
             </LocalInsightCard>
 
-            <LocalInsightCard title="May Tip" variant="tip">
+            <LocalInsightCard title="June Tip" variant="tip">
               <p>
-                With the ocean still in stinger season for a few more weeks, the Northern Beaches Leisure Centre is the local's go-to for a worry-free swim. The slides are a hit on these sunny 26°C afternoons.
+                With the dry season in full swing, the Northern Beaches Leisure Centre is the local's go-to for a worry-free swim on a sunny 26°C afternoon — the slides are a hit with the kids while the lap pool stays quiet on weekday mornings.
               </p>
             </LocalInsightCard>
           </section>
