@@ -33,7 +33,7 @@ const Events = () => {
         {/* Hero Section — SEO-enhanced H1 */}
         <div className="space-y-4 text-center sm:text-left">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville: Dry Season & Upcoming Events 2026
+             What's On in Townsville This Weekend: Dry Season & Local Event Calendar
            </h1>
            <p className="text-sm text-gray-500">
                Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
@@ -45,12 +45,12 @@ const Events = () => {
 
          {/* SEO Intro Paragraph */}
          <p className="text-gray-600 max-w-3xl">
-           Looking for events in Townsville this weekend or planning the week ahead? This regularly updated local guide highlights what's happening around Townsville — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
+           Searching for <strong>what's on in Townsville this weekend</strong> or planning the week ahead? This regularly updated <strong>Townsville events calendar</strong> highlights what's happening around the city — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
          </p>
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On Now (June 2026)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (June 2026)</h2>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
             <li><strong>Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The cool morning breeze makes the stroll even better.</li>
             <li><strong>Festival:</strong> <strong>North Australian Festival of Arts (NAFA)</strong> — Returns 25 September – 11 October 2026 across multiple Townsville venues. Theatre, comedy, circus, and open-air light installations at Strand Park.</li>
@@ -208,7 +208,7 @@ const Events = () => {
         <section className="pt-8 border-t">
           <div className="flex items-center gap-2 mb-2">
             <Sun className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do in Townsville</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do in Townsville This Weekend</h2>
           </div>
           <p className="text-gray-600 mb-6">You don't need to spend a cent to keep the family entertained. Here are our top free picks across Townsville.</p>
 
@@ -250,7 +250,7 @@ const Events = () => {
             <div>
               <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
               <p className="text-amber-800 text-sm mt-1">
-                Late May into June is an absolute spectacle across North Queensland. The landscape is still lush and green from the earlier wet season, but the crisp, low-humidity air has settled in. This is the ultimate window for afternoon photography at our secret northern beaches like Saunders and Toolakea, where the clear skies create perfect glass-like reflections on the low-tide sand flats.
+                Late May into June is an absolute spectacle across North Queensland. The landscape is still lush and green from the earlier wet season, but the crisp, low-humidity air has settled in. This is the ultimate window for afternoon photography at our secret northern beaches like Saunders Beach and Toolakea Beach, where clear winter skies create perfect glass-like reflections on the expansive low-tide sand flats with zero crowds.
               </p>
             </div>
           </div>
@@ -309,12 +309,17 @@ const Events = () => {
               {
                 date: "10 – 12 July 2026",
                 title: "NTI Townsville 500",
-                body: "The streets of Reid Park come alive for the annual supercar street circuit. Expect high CBD buzz, trackside action, plus the return of the Summernats car show and rock concerts."
+                body: "The streets of Reid Park come alive for the annual supercar street circuit. Expect high CBD buzz, trackside action, plus the return of the Summernats car show and rock concerts. Free public parking is available at the Dean Street carpark during event days."
               },
               {
-                date: "August 2026",
-                title: "Townsville Running Festival & Local Rodeos",
-                body: "August features top-tier community events, including the iconic McDonald's Townsville Running Festival on August 2 (featuring a marathon course over the weirs and the Strand) and the North Queensland Elite Rodeo under lights on August 14."
+                date: "2 August 2026",
+                title: "McDonald's Townsville Running Festival",
+                body: "The iconic community running festival featuring a marathon course over the weirs and along The Strand, with shorter distances for families and first-timers."
+              },
+              {
+                date: "14 – 16 August 2026",
+                title: "North Queensland Elite Rodeo (Hervey Range)",
+                body: "Three nights of bull riding, barrel racing, and country entertainment under lights at Hervey Range — one of the dry season's biggest community drawcards."
               },
               {
                 date: "Late August 2026",
@@ -323,7 +328,7 @@ const Events = () => {
               },
               {
                 date: "25 September – 11 October 2026",
-                title: "North Australian Festival of Arts (NAFA)",
+                title: "NAFA Festival (North Australian Festival of Arts)",
                 body: "Townsville's flagship arts festival is locked in for spring 2026, bringing comedy, circus, theatre, and light installations to Strand Park."
               },
               {
