@@ -16,7 +16,7 @@ const StingerSeasonAlert = ({ className = "" }: StingerSeasonAlertProps) => {
       </AlertTitle>
       <AlertDescription className="text-amber-700 dark:text-amber-400 mt-2">
         <p>
-          The 2025/2026 marine stinger season has officially wrapped up, and Townsville City Council hauled the nets out on May 28. While deep-water beach swimming is now significantly safer for your dogs across North Queensland, always stay vigilant for general marine conditions and local crocodile signage.
+          The 2025/2026 marine stinger season has officially wrapped up. Townsville City Council wrapped up the seasonal beach netting maintenance in late May as the high-risk stinger period concluded. While deep-water beach swimming is now significantly safer for your dogs across North Queensland, always stay vigilant for general marine conditions and local crocodile signage.
         </p>
       </AlertDescription>
     </Alert>
