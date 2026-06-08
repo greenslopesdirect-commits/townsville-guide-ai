@@ -30,7 +30,7 @@ const NorthShoreTownsville = () => {
               Discover Townsville's northern heart, where wetlands meet world-class leisure facilities.
             </p>
             <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-sm text-emerald-900 max-w-2xl">
-              ☀️ <strong>May 11 Update:</strong> The humidity has dropped, making the Burdell Forest trails and wetlands loops perfect for morning walks. The 'Perfect Dry' weather means the paths are firm and the morning birdlife is at its peak.
+              ☀️ <strong>June 2026 Update:</strong> The humidity has dropped, making the Burdell Forest trails and wetlands loops perfect for morning walks. The 'Perfect Dry' weather means the paths are firm and the morning birdlife is at its peak.
             </div>
           </div>
         </section>
