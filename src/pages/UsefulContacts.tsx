@@ -255,7 +255,7 @@ const UsefulContacts = () => {
           />
 
           <p className="text-xs text-muted-foreground pt-4 border-t">
-            Numbers verified May 2026. If you spot an out-of-date listing, please
+            Numbers verified June 2026. If you spot an out-of-date listing, please
             let us know via the Contact page.
           </p>
         </main>
