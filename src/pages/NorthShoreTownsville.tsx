@@ -196,9 +196,9 @@ const NorthShoreTownsville = () => {
               </p>
             </LocalInsightCard>
 
-            <LocalInsightCard title="Dog Owners (May Update)" variant="insight">
+            <LocalInsightCard title="Dog Owners (June Update)" variant="insight">
               <p>
-                Those cooling May breezes make the North Shore trails ideal for larger breeds. Just a reminder to keep dogs on-lead through the Bohle River Wetlands to protect the nesting brolgas.
+                Those cooling dry season breezes make the North Shore trails ideal for larger breeds. Just a reminder to keep dogs on-lead through the Bohle River Wetlands to protect the nesting brolgas.
               </p>
             </LocalInsightCard>
           </section>
