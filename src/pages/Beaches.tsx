@@ -483,7 +483,7 @@ const Beaches = () => {
             <div>
               <p className="font-bold text-emerald-900 dark:text-emerald-200 text-base sm:text-lg">Local Secret: Northern Beaches (Saunders &amp; Toolakea)</p>
               <p className="text-emerald-800 dark:text-emerald-300 text-sm sm:text-base mt-1 leading-relaxed">
-                In May, these beaches catch the best of the cooling northern breezes. Perfect for those who want a quiet sunset walk without the Strand crowds.
+                During these dry season months, these beaches catch the best of the cooling breezes. Perfect for those who want a quiet sunset walk without the Strand crowds.
               </p>
             </div>
           </div>
