@@ -174,7 +174,9 @@ const BillabongSanctuary = () => {
         </section>
 
         {/* Show Times - June 2026 Verified */}
-...
+        <section className="mb-8">
+          <div className="flex items-center gap-3 mb-4">
+            <Clock className="w-6 h-6 text-primary" />
             <h2 className="text-2xl md:text-3xl font-bold">Show Times - June 2026 Verified</h2>
           </div>
           <p className="text-sm text-muted-foreground mb-4">
