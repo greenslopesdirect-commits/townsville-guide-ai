@@ -66,7 +66,13 @@ const WeatherInfo = () => {
               Explore Townsville
             </CardTitle>
           </CardHeader>
-          <CardContent className="flex justify-center">
+          <CardContent className="flex flex-col items-center gap-3">
+            <p className="text-sm text-muted-foreground text-center max-w-md">
+              Wondering <strong>what to do in Townsville today</strong>, or planning ahead for <strong>things to do in Townsville this weekend</strong>? Tap below for live local picks.
+            </p>
+            <p className="text-xs text-muted-foreground/80 text-center italic max-w-md">
+              Ask me: "Where is the best place to park for the Cowboys game?" or "Which beaches are completely off-leash for dogs near me?"
+            </p>
             <Link to="/things-to-do">
               <Button 
                 variant="default"

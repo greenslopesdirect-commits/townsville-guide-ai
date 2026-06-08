@@ -10,7 +10,7 @@ const SeoContentSections = () => {
       icon: Waves,
       title: "Best Beaches in Townsville",
       content:
-        "Townsville boasts some of Queensland's most stunning beaches. The Strand is the city's iconic 2.2km waterfront promenade, perfect for swimming, walking, and sunset views. For a quieter coastal escape, head to the secret northern beaches like Saunders Beach or Toolakea — easy parking, fewer crowds, and a steady sea breeze. Rowes Bay provides calm waters ideal for families.",
+        "Townsville boasts some of Queensland's most stunning beaches. The Strand is the city's iconic 2.2km waterfront promenade, perfect for swimming, walking, and sunset views. Pallarenda Beach offers a quieter stretch with views across to Magnetic Island, while the secret northern beaches like Saunders Beach and Toolakea Beach deliver easy parking, fewer crowds, and a steady sea breeze. Rowes Bay rounds it out with calm waters ideal for families.",
       linkText: "See all beaches",
       linkTo: "/beaches"
     },
