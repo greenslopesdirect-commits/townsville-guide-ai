@@ -309,12 +309,17 @@ const Events = () => {
               {
                 date: "10 – 12 July 2026",
                 title: "NTI Townsville 500",
-                body: "The streets of Reid Park come alive for the annual supercar street circuit. Expect high CBD buzz, trackside action, plus the return of the Summernats car show and rock concerts."
+                body: "The streets of Reid Park come alive for the annual supercar street circuit. Expect high CBD buzz, trackside action, plus the return of the Summernats car show and rock concerts. Free public parking is available at the Dean Street carpark during event days."
               },
               {
-                date: "August 2026",
-                title: "Townsville Running Festival & Local Rodeos",
-                body: "August features top-tier community events, including the iconic McDonald's Townsville Running Festival on August 2 (featuring a marathon course over the weirs and the Strand) and the North Queensland Elite Rodeo under lights on August 14."
+                date: "2 August 2026",
+                title: "McDonald's Townsville Running Festival",
+                body: "The iconic community running festival featuring a marathon course over the weirs and along The Strand, with shorter distances for families and first-timers."
+              },
+              {
+                date: "14 – 16 August 2026",
+                title: "North Queensland Elite Rodeo (Hervey Range)",
+                body: "Three nights of bull riding, barrel racing, and country entertainment under lights at Hervey Range — one of the dry season's biggest community drawcards."
               },
               {
                 date: "Late August 2026",
@@ -323,7 +328,7 @@ const Events = () => {
               },
               {
                 date: "25 September – 11 October 2026",
-                title: "North Australian Festival of Arts (NAFA)",
+                title: "NAFA Festival (North Australian Festival of Arts)",
                 body: "Townsville's flagship arts festival is locked in for spring 2026, bringing comedy, circus, theatre, and light installations to Strand Park."
               },
               {
