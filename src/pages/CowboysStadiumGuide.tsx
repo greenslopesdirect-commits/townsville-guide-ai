@@ -311,30 +311,35 @@ const CowboysStadiumGuide = () => {
               <Car className="w-6 h-6 text-primary" />
               Getting There
             </h2>
-            <Card>
+            <Card className="border-l-4 border-l-green-600">
               <CardContent className="p-6 space-y-4">
-                <h3 className="font-semibold text-foreground text-lg">Free Park & Ride</h3>
+                <Badge className="bg-green-100 text-green-800 hover:bg-green-100 border-none w-fit">Primary Free Parking Hub</Badge>
+                <h3 className="font-semibold text-foreground text-lg">Lou Litster Park — Park &amp; Ride</h3>
                 <p className="text-muted-foreground">
-                  Skip the traffic and use the free 'Park & Ride' shuttle buses available on game days. 
-                  Two main pick-up points:
+                  <strong>Lou Litster Park</strong> is the recommended free parking hub for every Cowboys home game. Ample sealed parking, easy in/out access, and a direct, accessible <strong>Park &amp; Ride shuttle bus</strong> running from <strong>2 hours before kick-off</strong> straight to the stadium gates — skip the CBD gridlock entirely.
                 </p>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground text-sm">
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <span><strong>Townsville CBD</strong> — Multiple stops along Flinders Street</span>
+                    <span><strong className="text-foreground">Shuttle from:</strong> 2 hours before kick-off (e.g. from 3:30 PM for a 5:30 PM game).</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <div>
-                      <span><strong>Lou Litster Park</strong> — Ample free parking with regular shuttle service</span>
-                      <p className="text-xs text-muted-foreground mt-1 italic">
-                        Searching for Cowboys Stadium parking? <strong>Lou Litster Park</strong> is the easiest free parking option with a direct shuttle — avoid the CBD gridlock entirely.
-                      </p>
-                    </div>
+                    <span><strong className="text-foreground">Accessibility:</strong> Buses are low-floor, wheelchair-accessible, and pram-friendly.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
+                    <span><strong className="text-foreground">Return service:</strong> Runs continuously for up to 1 hour after the final whistle.</span>
                   </li>
                 </ul>
-                <p className="text-sm text-muted-foreground italic">
-                  Free Park & Ride shuttle service commences at <strong>3:30 PM</strong> (2 hours before kick-off) and runs up to 1 hour after the final whistle.
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <h3 className="font-semibold text-foreground text-lg">Secondary Option: Townsville CBD Shuttle Stops</h3>
+                <p className="text-muted-foreground text-sm">
+                  Free 'Park &amp; Ride' shuttles also collect fans from multiple stops along <strong>Flinders Street</strong> in the CBD — handy if you're already in town for pre-game food &amp; drinks. Note: CBD on-street parking fills quickly on game days, so Lou Litster Park remains the easiest option.
                 </p>
               </CardContent>
             </Card>
