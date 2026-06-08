@@ -142,6 +142,56 @@ const CowboysStadiumGuide = () => {
             </Card>
           </section>
 
+          {/* QCB Stadium Game Day Schedule */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+              <Calendar className="w-6 h-6 text-primary" />
+              Queensland Country Bank Stadium Game Day Schedule
+            </h2>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">Free Park &amp; Ride shuttle starts:</strong> 2 hours before kick-off from Lou Litster Park &amp; CBD stops.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">Stadium gates open:</strong> Approximately 3 hours before kick-off (e.g. 2:30 PM for a 5:30 PM start).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">'The Stampede' departs:</strong> Roughly 45 minutes before kick-off from Cowboys Leagues Club across Lowths Bridge.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">Kick-off:</strong> As scheduled (5:30 PM or 7:35 PM for prime-time fixtures).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">When does a Cowboys game end?</strong> Approximately <strong>1 hour and 50 minutes after kick-off time</strong> (allowing for two 40-minute halves, a 10-minute half-time, and stoppages). A 5:30 PM game typically wraps around 7:20 PM; a 7:35 PM game around 9:25 PM.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">Return shuttles:</strong> Run continuously for up to 1 hour after the final whistle.</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Dean Street Carpark Warning */}
+            <div className="bg-red-50 border-2 border-red-300 rounded-lg p-5 flex gap-3 items-start">
+              <span className="text-2xl" aria-hidden="true">⚠️</span>
+              <div>
+                <p className="text-red-900 font-bold text-base">Dean Street Carpark — Game Day Closure</p>
+                <p className="text-red-800 text-sm mt-2">
+                  Townsville City Council laws state that the <strong>Dean Street Carpark completely closes to public parking from 2:00 PM on Cowboys home game days</strong>. Vehicles left inside risk being towed at the owner's expense.
+                </p>
+              </div>
+            </div>
+          </section>
+
+
           {/* Visiting from out of town CTA */}
           <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
             <CardContent className="p-6 sm:p-8 space-y-3">
