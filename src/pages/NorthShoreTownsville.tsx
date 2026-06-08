@@ -25,7 +25,7 @@ const NorthShoreTownsville = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
               North Shore: Nature, Community & Modern Living
             </h1>
-            <p className="text-sm text-muted-foreground">Updated: May 11, 2026</p>
+            <p className="text-sm text-muted-foreground">Updated: June 2026</p>
             <p className="text-lg text-muted-foreground max-w-2xl">
               Discover Townsville's northern heart, where wetlands meet world-class leisure facilities.
             </p>
