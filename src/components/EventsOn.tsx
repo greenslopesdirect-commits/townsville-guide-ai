@@ -137,7 +137,7 @@ const EventsOn = () => {
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🏎️ V8 Supercars Townsville 500, Cotters Market every Sunday, and Cowboys vs Dolphins Saturday June 6! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏎️ V8 Supercars Townsville 500, Cotters Market every Sunday, and Cowboys vs Panthers Saturday June 27! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
