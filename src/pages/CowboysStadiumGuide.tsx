@@ -36,7 +36,7 @@ const CowboysStadiumGuide = () => {
           {/* Hero Section */}
           <header className="space-y-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              The Local's Guide to the Cowboys & QLD Country Bank Stadium
+              Cowboys Game Day Guide & Queensland Country Bank Stadium Parking Tips
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
               Everything you need to know for game day in Townsville, from the 'Stampede' to the best local seats.
@@ -117,28 +117,22 @@ const CowboysStadiumGuide = () => {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border">
-                      <tr>
-                        <td className="px-4 py-3 font-medium">Round 11 <span className="text-xs text-muted-foreground">(Magic Round)</span></td>
-                        <td className="px-4 py-3">Away vs Roosters <span className="text-green-600 font-medium">(Won 18-12)</span></td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat May 16</td>
-                        <td className="px-4 py-3 text-muted-foreground">Suncorp Stadium</td>
-                      </tr>
-                      <tr className="bg-primary/5">
-                        <td className="px-4 py-3 font-medium">Round 12 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
-                        <td className="px-4 py-3">vs Rabbitohs <span className="text-green-600 font-medium">(Won 30-18)</span></td>
-                        <td className="px-4 py-3 text-muted-foreground">Sun May 24, 4:05 PM</td>
-                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
-                      </tr>
-                      <tr>
-                        <td className="px-4 py-3 font-medium">Round 13</td>
-                        <td className="px-4 py-3">Away vs Raiders <span className="text-red-600 font-medium">(Lost 12-26)</span></td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat May 30 (Lost 12-26)</td>
-                        <td className="px-4 py-3 text-muted-foreground">GIO Stadium</td>
-                      </tr>
                       <tr className="bg-primary/5">
                         <td className="px-4 py-3 font-medium">Round 14 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
                         <td className="px-4 py-3 font-semibold">vs Dolphins</td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat June 6, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat June 6, 2026, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 17 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Penrith Panthers</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat June 27, 2026, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 21 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Brisbane Broncos</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat July 25, 2026, 7:35 PM</td>
                         <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
                       </tr>
                     </tbody>
@@ -147,6 +141,56 @@ const CowboysStadiumGuide = () => {
               </CardContent>
             </Card>
           </section>
+
+          {/* QCB Stadium Game Day Schedule */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
+              <Calendar className="w-6 h-6 text-primary" />
+              Queensland Country Bank Stadium Game Day Schedule
+            </h2>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">Free Park &amp; Ride shuttle starts:</strong> 2 hours before kick-off from Lou Litster Park &amp; CBD stops.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">Stadium gates open:</strong> Approximately 3 hours before kick-off (e.g. 2:30 PM for a 5:30 PM start).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">'The Stampede' departs:</strong> Roughly 45 minutes before kick-off from Cowboys Leagues Club across Lowths Bridge.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">Kick-off:</strong> As scheduled (5:30 PM or 7:35 PM for prime-time fixtures).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">When does a Cowboys game end?</strong> Approximately <strong>1 hour and 50 minutes after kick-off time</strong> (allowing for two 40-minute halves, a 10-minute half-time, and stoppages). A 5:30 PM game typically wraps around 7:20 PM; a 7:35 PM game around 9:25 PM.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold">•</span>
+                    <span><strong className="text-foreground">Return shuttles:</strong> Run continuously for up to 1 hour after the final whistle.</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Dean Street Carpark Warning */}
+            <div className="bg-red-50 border-2 border-red-300 rounded-lg p-5 flex gap-3 items-start">
+              <span className="text-2xl" aria-hidden="true">⚠️</span>
+              <div>
+                <p className="text-red-900 font-bold text-base">Dean Street Carpark — Game Day Closure</p>
+                <p className="text-red-800 text-sm mt-2">
+                  Townsville City Council laws state that the <strong>Dean Street Carpark completely closes to public parking from 2:00 PM on Cowboys home game days</strong>. Vehicles left inside risk being towed at the owner's expense.
+                </p>
+              </div>
+            </div>
+          </section>
+
 
           {/* Visiting from out of town CTA */}
           <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
@@ -267,30 +311,35 @@ const CowboysStadiumGuide = () => {
               <Car className="w-6 h-6 text-primary" />
               Getting There
             </h2>
-            <Card>
+            <Card className="border-l-4 border-l-green-600">
               <CardContent className="p-6 space-y-4">
-                <h3 className="font-semibold text-foreground text-lg">Free Park & Ride</h3>
+                <Badge className="bg-green-100 text-green-800 hover:bg-green-100 border-none w-fit">Primary Free Parking Hub</Badge>
+                <h3 className="font-semibold text-foreground text-lg">Lou Litster Park — Park &amp; Ride</h3>
                 <p className="text-muted-foreground">
-                  Skip the traffic and use the free 'Park & Ride' shuttle buses available on game days. 
-                  Two main pick-up points:
+                  <strong>Lou Litster Park</strong> is the recommended free parking hub for every Cowboys home game. Ample sealed parking, easy in/out access, and a direct, accessible <strong>Park &amp; Ride shuttle bus</strong> running from <strong>2 hours before kick-off</strong> straight to the stadium gates — skip the CBD gridlock entirely.
                 </p>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-muted-foreground text-sm">
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <span><strong>Townsville CBD</strong> — Multiple stops along Flinders Street</span>
+                    <span><strong className="text-foreground">Shuttle from:</strong> 2 hours before kick-off (e.g. from 3:30 PM for a 5:30 PM game).</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <div>
-                      <span><strong>Lou Litster Park</strong> — Ample free parking with regular shuttle service</span>
-                      <p className="text-xs text-muted-foreground mt-1 italic">
-                        Searching for Cowboys Stadium parking? <strong>Lou Litster Park</strong> is the easiest free parking option with a direct shuttle — avoid the CBD gridlock entirely.
-                      </p>
-                    </div>
+                    <span><strong className="text-foreground">Accessibility:</strong> Buses are low-floor, wheelchair-accessible, and pram-friendly.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
+                    <span><strong className="text-foreground">Return service:</strong> Runs continuously for up to 1 hour after the final whistle.</span>
                   </li>
                 </ul>
-                <p className="text-sm text-muted-foreground italic">
-                  Free Park & Ride shuttle service commences at <strong>3:30 PM</strong> (2 hours before kick-off) and runs up to 1 hour after the final whistle.
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <h3 className="font-semibold text-foreground text-lg">Secondary Option: Townsville CBD Shuttle Stops</h3>
+                <p className="text-muted-foreground text-sm">
+                  Free 'Park &amp; Ride' shuttles also collect fans from multiple stops along <strong>Flinders Street</strong> in the CBD — handy if you're already in town for pre-game food &amp; drinks. Note: CBD on-street parking fills quickly on game days, so Lou Litster Park remains the easiest option.
                 </p>
               </CardContent>
             </Card>
