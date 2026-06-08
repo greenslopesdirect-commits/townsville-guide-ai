@@ -113,7 +113,7 @@ const EventsOn = () => {
                 </CardContent>
             </Card>
 
-            {/* Card 3 — Cowboys vs Dolphins */}
+            {/* Card 3 — Cowboys vs Panthers */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-blue-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
@@ -122,15 +122,15 @@ const EventsOn = () => {
                         </div>
                         <Trophy className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Cowboys vs. Dolphins</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, June 6, 2026</p>
+                    <h4 className="text-lg font-bold mb-2">Cowboys vs. Penrith Panthers</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, June 27, 2026</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Queensland Country Bank Stadium
                     </div>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Clock className="w-4 h-4" /> Kick-off: 5:30 PM
+                        <Clock className="w-4 h-4" /> Gates: 3:30 PM | Kick-off: 5:30 PM
                     </div>
-                    <p className="text-xs text-muted-foreground mt-2">🏉 Footy returns to QCB Stadium for a massive Saturday night clash. Utilize the free park-and-ride shuttle to beat the traffic.</p>
+                    <p className="text-xs text-muted-foreground mt-2">🏉 Footy returns to QCB Stadium for a massive Saturday night clash under the dry season winter skies. Gates open at 3:30 PM; kick-off at 5:30 PM. Utilize the free Park & Ride shuttle at Lou Litster Park to bypass CBD traffic entirely.</p>
                 </CardContent>
             </Card>
 
