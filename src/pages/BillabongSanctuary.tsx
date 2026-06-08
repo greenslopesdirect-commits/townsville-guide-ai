@@ -86,7 +86,7 @@ const BillabongSanctuary = () => {
           className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-2"
         />
         <p className="text-xs text-muted-foreground italic text-center mb-8">
-          Welcome to Billabong Sanctuary — Looking lush and vibrant in May 2026.
+          Welcome to Billabong Sanctuary — Looking lush and vibrant for the dry season.
         </p>
 
         {/* Intro */}
@@ -96,9 +96,9 @@ const BillabongSanctuary = () => {
           </p>
         </section>
 
-        {/* Local May 2026 Update */}
+        {/* Local June 2026 Update */}
         <section className="mb-8">
-          <LocalInsightCard title="Local Update (May 4, 2026)" variant="tip">
+          <LocalInsightCard title="Local June 2026 Update" variant="tip">
             <p>
               We visited yesterday and the park is in peak condition. The morning air is perfect for the <strong>9:45 AM Wombat experience</strong>, and the water levels are high, making the <strong>1:30 PM Turtle feeding</strong> particularly active!
             </p>
@@ -173,11 +173,11 @@ const BillabongSanctuary = () => {
           </p>
         </section>
 
-        {/* Show Times - May 2026 Verified */}
+        {/* Show Times - June 2026 Verified */}
         <section className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <Clock className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl md:text-3xl font-bold">Show Times (May 2026 Verified)</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">Show Times - June 2026 Verified</h2>
           </div>
           <p className="text-sm text-muted-foreground mb-4">
             Park open daily 9:00 AM – 4:00 PM. All experiences below are included with entry.
