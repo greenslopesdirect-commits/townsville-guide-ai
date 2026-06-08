@@ -208,7 +208,7 @@ const Events = () => {
         <section className="pt-8 border-t">
           <div className="flex items-center gap-2 mb-2">
             <Sun className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do in Townsville</h2>
+            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do in Townsville This Weekend</h2>
           </div>
           <p className="text-gray-600 mb-6">You don't need to spend a cent to keep the family entertained. Here are our top free picks across Townsville.</p>
 
