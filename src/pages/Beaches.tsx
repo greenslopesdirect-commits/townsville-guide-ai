@@ -200,7 +200,7 @@ const Beaches = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
-            Updated: May 11, 2026
+            Updated: June 2026
           </span>
         </div>
       </div>
