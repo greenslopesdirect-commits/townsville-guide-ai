@@ -86,7 +86,7 @@ const BillabongSanctuary = () => {
           className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-2"
         />
         <p className="text-xs text-muted-foreground italic text-center mb-8">
-          Welcome to Billabong Sanctuary — Looking lush and vibrant in May 2026.
+          Welcome to Billabong Sanctuary — Looking lush and vibrant for the dry season.
         </p>
 
         {/* Intro */}
