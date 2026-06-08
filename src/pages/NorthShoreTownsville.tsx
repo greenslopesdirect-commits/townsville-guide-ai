@@ -192,7 +192,7 @@ const NorthShoreTownsville = () => {
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
-                The Wetlands Loop is at its absolute best this week (May 11–17). While the vibrant green of March is beginning to mellow, the brolgas and jabirus are incredibly active at sunrise. The 20°C mornings are perfect for the 3.5km loop before the UV index climbs.
+                The Wetlands Loop is at its absolute best this month. While the lush landscape of the early dry season is beginning to mellow, the brolgas and jabirus are incredibly active at sunrise. The 20°C mornings are perfect for the 3.5km loop before the UV index climbs.
               </p>
             </LocalInsightCard>
 
