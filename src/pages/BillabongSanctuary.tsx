@@ -173,11 +173,9 @@ const BillabongSanctuary = () => {
           </p>
         </section>
 
-        {/* Show Times - May 2026 Verified */}
-        <section className="mb-8">
-          <div className="flex items-center gap-3 mb-4">
-            <Clock className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl md:text-3xl font-bold">Show Times (May 2026 Verified)</h2>
+        {/* Show Times - June 2026 Verified */}
+...
+            <h2 className="text-2xl md:text-3xl font-bold">Show Times - June 2026 Verified</h2>
           </div>
           <p className="text-sm text-muted-foreground mb-4">
             Park open daily 9:00 AM – 4:00 PM. All experiences below are included with entry.
