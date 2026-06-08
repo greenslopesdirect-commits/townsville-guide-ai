@@ -89,7 +89,7 @@ const NorthShoreTownsville = () => {
           <section className="space-y-4">
             <div className="flex items-center gap-2">
               <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-none">
-                🌿 May Highlight
+                🌿 June Highlight
               </Badge>
             </div>
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
