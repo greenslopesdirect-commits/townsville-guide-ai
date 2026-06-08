@@ -319,10 +319,10 @@ const NorthShoreTownsville = () => {
               <CardContent className="p-6 space-y-3">
                 <div className="flex items-center gap-2">
                   <Trophy className="w-5 h-5 text-primary" />
-                  <h3 className="font-semibold text-foreground text-lg">🏟️ Magic Round & Sunday Arvo Footy (May 16–24)</h3>
+                  <h3 className="font-semibold text-foreground text-lg">🏟️ Dry Season Home Games at QCB Stadium</h3>
                 </div>
                 <p className="text-muted-foreground">
-                  The North Shore Tavern is the local heartbeat for Magic Round this Saturday (May 16). Catch the Cowboys vs Roosters clash on the big screens from 5:30 PM. Looking ahead: It's the perfect spot for a pre-game lunch before the Rabbitohs home game on Sunday, May 24.
+                  The North Shore Tavern is the local heartbeat for Cowboys home games through the dry season. Catch upcoming fixtures at Queensland Country Bank Stadium on the big screens, or make it your pre-game lunch stop before walking down to the Stampede.
                 </p>
                 <Button asChild variant="outline" size="sm" className="gap-2">
                   <Link to="/cowboys-stadium-guide">
