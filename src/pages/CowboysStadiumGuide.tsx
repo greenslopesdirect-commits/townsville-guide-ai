@@ -117,28 +117,22 @@ const CowboysStadiumGuide = () => {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border">
-                      <tr>
-                        <td className="px-4 py-3 font-medium">Round 11 <span className="text-xs text-muted-foreground">(Magic Round)</span></td>
-                        <td className="px-4 py-3">Away vs Roosters <span className="text-green-600 font-medium">(Won 18-12)</span></td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat May 16</td>
-                        <td className="px-4 py-3 text-muted-foreground">Suncorp Stadium</td>
-                      </tr>
-                      <tr className="bg-primary/5">
-                        <td className="px-4 py-3 font-medium">Round 12 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
-                        <td className="px-4 py-3">vs Rabbitohs <span className="text-green-600 font-medium">(Won 30-18)</span></td>
-                        <td className="px-4 py-3 text-muted-foreground">Sun May 24, 4:05 PM</td>
-                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
-                      </tr>
-                      <tr>
-                        <td className="px-4 py-3 font-medium">Round 13</td>
-                        <td className="px-4 py-3">Away vs Raiders <span className="text-red-600 font-medium">(Lost 12-26)</span></td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat May 30 (Lost 12-26)</td>
-                        <td className="px-4 py-3 text-muted-foreground">GIO Stadium</td>
-                      </tr>
                       <tr className="bg-primary/5">
                         <td className="px-4 py-3 font-medium">Round 14 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
                         <td className="px-4 py-3 font-semibold">vs Dolphins</td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat June 6, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat June 6, 2026, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 17 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Penrith Panthers</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat June 27, 2026, 5:30 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 21 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Brisbane Broncos</td>
+                        <td className="px-4 py-3 text-muted-foreground">Sat July 25, 2026, 7:35 PM</td>
                         <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
                       </tr>
                     </tbody>
