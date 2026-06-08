@@ -4,64 +4,72 @@
     "region": "North Queensland, Australia",
     "timezone": "AEST (UTC+10)",
     "description": "Local verified data for MyAussieGuide – Townsville",
-    "last_updated": "2026-04-06",
-    "current_context": "Easter Monday (April 6, 2026). School holidays run April 3–19. Public holiday trading hours apply today."
+    "last_updated": "2026-06-08",
+    "current_context": "June 2026. Standard trading hours apply across attractions and retail — no public holidays or school holiday blockages in effect."
   },
 
   "current_status": {
-    "date": "2026-04-06",
-    "season": "Late Wet / Early Dry transition",
-    "stinger_nets": "ACTIVE (November–May)",
-    "weather": "Sunny, 28°C, moderate humidity",
-    "uv_index": "Extreme (11+)",
-    "low_tide_today": "3:55 PM — great for afternoon dog walks at Pallarenda or Saunders Beach",
-    "school_holidays": "April 3–19, 2026 — mid-way through the break",
-    "public_holiday": "Easter Monday — reduced trading hours across most retail"
+    "date": "2026-06-08",
+    "season": "Perfect Dry Season",
+    "climate_status": "Perfect Dry Season — low humidity, cool mornings, clear blue skies, and mild sunny afternoons (typical 24–26°C).",
+    "stinger_nets": "REMOVED — marine stinger season concluded late May 2026",
+    "weather": "Sunny and clear, 25°C, low humidity",
+    "uv_index": "High (8) — still wear sunscreen mid-day",
+    "low_tide_today": "Late afternoon low tides — ideal for sunset dog walks at Pallarenda or Saunders Beach",
+    "school_holidays": "None — next Queensland school holidays begin late June / early July",
+    "public_holiday": "None — standard trading hours across retail and attractions"
   },
 
   "cowboys": {
     "season": "2026 NRL Season",
-    "latest_result": "Cowboys 32 – Dragons 0 (Round 5, April 4 away)",
-    "home_record": "Undefeated at home",
+    "home_record": "Strong home form continuing through the dry season",
     "next_home_game": {
-      "round": 7,
-      "opponent": "Manly Sea Eagles",
-      "date": "Thursday, April 16, 2026",
+      "round": 17,
+      "opponent": "Penrith Panthers",
+      "date": "Saturday, June 27, 2026",
       "venue": "Queensland Country Bank Stadium",
-      "gates_open": "5:30 PM",
-      "kickoff": "7:50 PM",
-      "stampede_departs": "Approximately 7:00 PM from Cowboys Leagues Club across Lowths Bridge",
-      "parking_tip": "Thursday night game — CBD parking at a premium with workers and fans overlapping. Use the free Park & Ride from Lou Litster Park.",
+      "gates_open": "3:30 PM",
+      "kickoff": "5:30 PM",
+      "stampede_departs": "Approximately 4:45 PM from Cowboys Leagues Club across Lowths Bridge",
+      "parking_tip": "Saturday twilight game under dry-season winter skies. Use the free Park & Ride shuttle from Lou Litster Park (runs from 2 hours before kick-off) to bypass CBD traffic entirely.",
       "tickets": "https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825"
+    },
+    "following_home_game": {
+      "round": 21,
+      "opponent": "Brisbane Broncos",
+      "date": "Saturday, July 25, 2026",
+      "venue": "Queensland Country Bank Stadium",
+      "notes": "Queensland derby — expect a sellout. Book early and plan for the free Park & Ride from Lou Litster Park."
     }
   },
 
   "upcoming_events": [
     {
+      "name": "Cowboys vs Penrith Panthers (Round 17)",
+      "date": "Saturday, June 27, 2026",
+      "time": "Gates 3:30 PM, kick-off 5:30 PM",
+      "location": "Queensland Country Bank Stadium",
+      "notes": "Massive Saturday twilight clash. Use the free Park & Ride shuttle from Lou Litster Park."
+    },
+    {
       "name": "The Strand Night Markets",
-      "date": "Friday, April 10, 2026",
+      "date": "First Friday of each month",
       "time": "5:00 PM – 9:00 PM",
       "location": "The Strand, North Ward",
-      "notes": "Rescheduled from Good Friday. Live music, food trucks, and local crafts along the waterfront."
-    },
-    {
-      "name": "Killer Queen Experience",
-      "date": "Friday, April 10, 2026",
-      "location": "TECC (Townsville Entertainment Centre)",
-      "notes": "The ultimate Queen tribute show. Family-friendly."
-    },
-    {
-      "name": "Elliot's Revenge Trail Run",
-      "date": "Sunday, April 12, 2026",
-      "location": "Elliot Springs",
-      "notes": "Trail running event through North Queensland terrain. Multiple distances available."
+      "notes": "Live music, food trucks, and local crafts along the waterfront — perfect dry-season evening out."
     },
     {
       "name": "Cotters Market",
       "date": "Every Sunday",
       "time": "8:00 AM – 1:00 PM",
       "location": "Flinders Street, CBD",
-      "notes": "Local arts, crafts, and fresh produce."
+      "notes": "Local arts, crafts, and fresh produce — cool dry-season mornings are prime market weather."
+    },
+    {
+      "name": "Cowboys vs Brisbane Broncos (Round 21)",
+      "date": "Saturday, July 25, 2026",
+      "location": "Queensland Country Bank Stadium",
+      "notes": "Queensland derby — expect a sellout."
     }
   ],
 
@@ -69,7 +77,7 @@
     {
       "title": "Magnetic Island — Sooning Street Bridge",
       "status": "CLOSED to vehicles",
-      "details": "Piling is now complete. Bridge remains closed to vehicles as construction enters the next phase. Pedestrian access is available. Expect mid-2026 reopening.",
+      "details": "Bridge remains closed to vehicles as construction continues. Pedestrian access is available. Expect mid-to-late 2026 reopening.",
       "detour": "Use Kelly St and Mandalay Ave to access the island's north side."
     },
     {
@@ -79,8 +87,8 @@
     },
     {
       "title": "Game Day Traffic — Lowths Bridge",
-      "status": "Thursday April 16",
-      "details": "Expect heavy pedestrian traffic around Lowths Bridge and the Stadium from 5:00 PM for the Cowboys vs Manly home game."
+      "status": "Saturday June 27",
+      "details": "Expect heavy pedestrian traffic around Lowths Bridge and the Stadium from 3:00 PM for the Cowboys vs Penrith home game."
     }
   ],
 
@@ -89,7 +97,7 @@
       "name": "The Strand",
       "type": "Urban Beachfront",
       "address": "The Strand, North Ward",
-      "notes": "Townsville's iconic 2.5 km foreshore with swimming enclosures, cafes, and walking paths. Stinger nets active."
+      "notes": "Townsville's iconic 2.5 km foreshore with swimming enclosures, cafes, and walking paths. Stinger nets removed for the dry season — open-water swimming risk significantly reduced."
     },
     {
       "name": "Pallarenda Beach",
@@ -269,7 +277,7 @@
       "name": "Billabong Sanctuary",
       "type": "Wildlife Park",
       "address": "Bruce Highway, Nome",
-      "notes": "Meet koalas and feed kangaroos at this award-winning sanctuary. School holiday wildlife programs running."
+      "notes": "Meet koalas and feed kangaroos at this award-winning sanctuary. Open daily 9:00 AM – 4:00 PM with standard show schedule running."
     },
     {
       "name": "Riverway Lagoons",
