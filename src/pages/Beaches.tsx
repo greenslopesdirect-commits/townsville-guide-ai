@@ -43,7 +43,7 @@ const beaches = [
     badge: { label: "Dog Friendly", color: "bg-emerald-100 text-emerald-800 hover:bg-emerald-100" },
     icon: <Dog className="w-5 h-5 text-muted-foreground" />,
     tags: ["Off-Leash Area", "Stinger Net"],
-    description: "A long stretch of sand perfect for dog walking. Features a permanent STINGER NET and designated OFF-LEASH zones. May is the best month for Pallarenda — the lower humidity and firm sand at low tide make it the #1 choice for local dog owners.",
+    description: "A long stretch of sand perfect for dog walking. Features a permanent STINGER NET and designated OFF-LEASH zones. June is prime time for Pallarenda — the lower humidity and firm sand at low tide make it the #1 choice for local dog owners.",
     guideLink: "/pallarenda-beach",
     guideLinkText: "View Dog Beach Guide",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Beach+Townsville",
@@ -91,7 +91,7 @@ const northernBeaches = [
     badge: { label: "⭐ Top Search Pick", color: "bg-amber-100 text-amber-800 hover:bg-amber-100" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Quiet", "Dog Friendly"],
-    description: "6km of unspoilt sand — the ultimate local pick for a peaceful escape. New for May 2026: With the humidity gone, the 6km stretch of Saunders is perfect for long, quiet walks. Tip: The northern end is currently offering the best beachcombing after the recent tides.",
+    description: "6km of unspoilt sand — the ultimate local pick for a peaceful escape. Updated for June 2026: With the humidity gone, the 6km stretch of Saunders is perfect for long, quiet walks. Tip: The northern end is currently offering the best beachcombing after the recent tides.",
     guideLink: "/beaches/saunders-beach",
     guideLinkText: "View Full Saunders Beach Guide →",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
@@ -106,7 +106,7 @@ const northernBeaches = [
     badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
     tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that becomes very shallow at low tide. May 11 Update: Sunset photography at Toolakea is hitting its peak right now. The clear May skies provide incredible reflections on the sand flats at low tide. Pack the camera and arrive 30 minutes before sunset.",
+    description: "A sleepy residential beach that becomes very shallow at low tide. June Update: Sunset photography at Toolakea is hitting its peak right now. The clear dry season skies provide incredible reflections on the sand flats at low tide. Pack the camera and arrive 30 minutes before sunset.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
@@ -200,7 +200,7 @@ const Beaches = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
-            Updated: May 11, 2026
+            Updated: June 2026
           </span>
         </div>
       </div>
@@ -238,7 +238,7 @@ const Beaches = () => {
               <div className="flex-1 min-w-0">
                 <h2 className="text-lg font-semibold text-foreground mb-1">Dog-Friendly Beaches Guide</h2>
                 <p className="text-sm text-muted-foreground">
-                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville. <strong className="text-foreground">In May, Pallarenda is our top pick for morning runs</strong> — the lower humidity makes it perfect for an early off-leash adventure.
+                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville. <strong className="text-foreground">In June, Pallarenda is our top pick for morning runs</strong> — the lower humidity makes it perfect for an early off-leash adventure.
                 </p>
               </div>
               <Button asChild className="w-full sm:w-auto flex-shrink-0">
@@ -483,7 +483,7 @@ const Beaches = () => {
             <div>
               <p className="font-bold text-emerald-900 dark:text-emerald-200 text-base sm:text-lg">Local Secret: Northern Beaches (Saunders &amp; Toolakea)</p>
               <p className="text-emerald-800 dark:text-emerald-300 text-sm sm:text-base mt-1 leading-relaxed">
-                In May, these beaches catch the best of the cooling northern breezes. Perfect for those who want a quiet sunset walk without the Strand crowds.
+                During these dry season months, these beaches catch the best of the cooling breezes. Perfect for those who want a quiet sunset walk without the Strand crowds.
               </p>
             </div>
           </div>
@@ -641,14 +641,14 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">☀️ April 27 Update: Dry Season has arrived and the breezes are clearing the water. Stinger nets remain ACTIVE at The Strand and Pallarenda through May — stick to the enclosures for a worry-free swim. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">☀️ June Update: The dry season is in full swing and conditions are crisp and clear. Stinger nets at The Strand and Pallarenda have been removed for the season — but always check signage and stick to patrolled areas for a worry-free swim. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. May 11–17: Low tide is shifting toward the late afternoon/early evening this week. This is the perfect window for exploring the secret northern beaches or letting the dogs run on the wide sand flats at Pallarenda.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. June dry season pattern: Low tides typically fall in the late afternoon — the perfect window for exploring the secret northern beaches or letting the dogs run on the wide sand flats at Pallarenda.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
