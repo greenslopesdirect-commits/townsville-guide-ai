@@ -36,7 +36,7 @@ const CowboysStadiumGuide = () => {
           {/* Hero Section */}
           <header className="space-y-4">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              The Local's Guide to the Cowboys & QLD Country Bank Stadium
+              Cowboys Game Day Guide & Queensland Country Bank Stadium Parking Tips
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl">
               Everything you need to know for game day in Townsville, from the 'Stampede' to the best local seats.
