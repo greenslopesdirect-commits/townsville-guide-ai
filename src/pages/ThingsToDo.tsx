@@ -593,7 +593,7 @@ const ThingsToDo = () => {
                   <Sun className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do in Townsville (May 2026 Update)</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do in Townsville (June 2026 Update)</h2>
                   <p className="text-muted-foreground text-sm">Keep the family entertained without spending a cent</p>
                 </div>
               </div>
@@ -601,7 +601,7 @@ const ThingsToDo = () => {
               <div className="grid gap-4 md:grid-cols-2">
                 {[
                   { num: "1", title: "The Strand Water Park", desc: "A local holiday staple. Open daily (check the Council site for any maintenance closures).", link: "/the-strand", linkText: "Strand Guide →" },
-                  { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families during the beautiful sunny May days." },
+                  { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families during the beautiful sunny winter days." },
                   { num: "3", title: "Castle Hill Goat Track", desc: "Challenge the kids to a sunrise hike for the best 360-degree views of the city.", link: "/castle-hill", linkText: "Castle Hill Guide →" },
                   { num: "4", title: "Jezzine Barracks Coastal Walk", desc: "Explore the public art, military history, and the scenic boardwalk toward Rowes Bay.", link: "/guides/jezzine-barracks", linkText: "Jezzine Guide →" },
                   { num: "5", title: "Townsville Bulletin Square Water Feature", desc: "A great (and free) way to cool down right in the heart of the CBD." },
@@ -643,9 +643,9 @@ const ThingsToDo = () => {
               </div>
 
               <div className="mt-6">
-                <LocalInsightCard title="May Photography Tip" variant="tip">
+                <LocalInsightCard title="June Photography Tip" variant="tip">
                   <p>
-                    May in Townsville offers some of the best light of the year. With the humidity gone, the air is clearer — perfect for capturing the sunset from Castle Hill or the mountain views at Paluma Range.
+                    June in Townsville offers some of the best light of the year. With the humidity gone, the air is clearer — perfect for capturing the sunset from Castle Hill or the mountain views at Paluma Range.
                   </p>
                 </LocalInsightCard>
               </div>
