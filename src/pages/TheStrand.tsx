@@ -301,9 +301,9 @@ const TheStrand = () => {
 
         {/* Seasonal Photography Tip */}
         <section className="space-y-3">
-          <h2 className="text-2xl font-bold text-foreground">📸 May Photography Tip</h2>
+          <h2 className="text-2xl font-bold text-foreground">📸 June Photography Tip</h2>
           <div className="p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm text-amber-900">
-            <strong>Sunset vs. Sunrise:</strong> In May, the sun rises directly over Cleveland Bay, making for incredible silhouette shots of the pier. Sunset is best captured from the Jezzine Barracks end, looking back across the Strand toward the Port.
+            <strong>Sunset vs. Sunrise:</strong> During the dry season, the sun rises directly over Cleveland Bay, making for incredible silhouette shots of the pier. Sunset is best captured from the Jezzine Barracks end, looking back across the Strand toward the Port.
           </div>
         </section>
 
