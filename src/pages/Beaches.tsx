@@ -648,7 +648,7 @@ const Beaches = () => {
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. May 11–17: Low tide is shifting toward the late afternoon/early evening this week. This is the perfect window for exploring the secret northern beaches or letting the dogs run on the wide sand flats at Pallarenda.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. June dry season pattern: Low tides typically fall in the late afternoon — the perfect window for exploring the secret northern beaches or letting the dogs run on the wide sand flats at Pallarenda.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
