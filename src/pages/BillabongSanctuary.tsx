@@ -96,9 +96,9 @@ const BillabongSanctuary = () => {
           </p>
         </section>
 
-        {/* Local May 2026 Update */}
+        {/* Local June 2026 Update */}
         <section className="mb-8">
-          <LocalInsightCard title="Local Update (May 4, 2026)" variant="tip">
+          <LocalInsightCard title="Local June 2026 Update" variant="tip">
             <p>
               We visited yesterday and the park is in peak condition. The morning air is perfect for the <strong>9:45 AM Wombat experience</strong>, and the water levels are high, making the <strong>1:30 PM Turtle feeding</strong> particularly active!
             </p>
