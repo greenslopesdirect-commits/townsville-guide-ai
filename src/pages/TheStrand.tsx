@@ -293,7 +293,7 @@ const TheStrand = () => {
 
         {/* Dog-Friendly Strand Tip */}
         <section className="space-y-3">
-          <h2 className="text-2xl font-bold text-foreground">🐾 Dog-Friendly Strand Tip (May 11)</h2>
+          <h2 className="text-2xl font-bold text-foreground">🐾 Dog-Friendly Strand Tip (June 2026)</h2>
           <div className="p-4 rounded-lg bg-jade/10 border border-jade/30 text-sm text-foreground">
             The cooler 20°C mornings are perfect for the full 2.2km length of The Strand. Remember: Dogs must be on-leash on the main path. If you're looking for an off-leash run, head to the northern end of <Link to="/pallarenda-beach" className="text-primary hover:underline font-medium">Pallarenda</Link> where the low-tide sand flats are massive this week.
           </div>
