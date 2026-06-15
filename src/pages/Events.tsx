@@ -48,35 +48,17 @@ const Events = () => {
            Searching for <strong>what's on in Townsville this weekend</strong> or planning the week ahead? This regularly updated <strong>Townsville events calendar</strong> highlights what's happening around the city — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
          </p>
 
-        {/* Recent Highlights & Visual Proof */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">Recent Highlights & Visual Proof</h2>
-          <p className="text-gray-600 max-w-3xl">
-            What a weekend! The 35th <strong>Townsville Folk Festival</strong> at Foots Hill Station (June 12–14) drew its biggest crowd in years, while <strong>Country Fest QLD</strong> at Cluden Park (June 12–13) packed out the grounds with two days of headline country acts. Both events wrapped up this past weekend and confirmed mid-June is now one of the busiest spots on the North Queensland calendar.
-          </p>
-          <figure className="rounded-lg overflow-hidden border border-gray-200 bg-gray-100">
-            <div
-              className="relative w-full bg-gradient-to-br from-amber-50 to-emerald-50 flex items-center justify-center text-gray-500 text-sm"
-              style={{ aspectRatio: "16 / 9" }}
-              role="img"
-              aria-label="Placeholder for original local photography of Townsville Folk Festival at Foots Hill Station and Country Fest QLD at Cluden Park, June 2026"
-            >
-              <span className="px-4 text-center">Original local photography — Folk Festival (Foots Hill Station) & Country Fest QLD (Cluden Park), June 2026</span>
-            </div>
-            <figcaption className="text-xs text-gray-500 px-3 py-2">
-              Photo placeholder: drop in a 16:9 WebP/AVIF hero from the weekend to anchor this section.
-            </figcaption>
-          </figure>
-        </section>
-
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville This Weekend (Mid-June 2026)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (June 2026)</h2>
+          <p className="text-gray-600 max-w-3xl">
+            Mid-June has just delivered one of the biggest weekends of the dry season — <strong>Country Fest QLD</strong> at Cluden Park and the 35th <strong>Townsville Folk Festival</strong> at Foots Hill Station both wrapped up on June 14 with massive turnouts, cementing this stretch as a peak point on the North Queensland calendar.
+          </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
             <li><strong>Sunday Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The cool dry-season breeze makes the stroll even better.</li>
             <li><strong>Friday Night:</strong> <strong>Riverway Movie Night</strong> — Friday, June 19 at Riverway Lagoons. Family-friendly outdoor screening under crisp winter skies.</li>
             <li><strong>Saturday Drawcard:</strong> <strong>Bartlett Park Rodeo</strong> — Saturday, June 20. A premier regional rodeo and one of the biggest dry-season drawcards just outside Townsville.</li>
-            <li><strong>Sunday, June 21:</strong> <strong>International Yoga Day</strong> sessions and the <strong>JCU Open Day</strong> taking over <strong>Strand Park</strong> — campus tours, info booths, food trucks and waterfront yoga.</li>
+            <li><strong>Sunday Morning, June 21:</strong> <strong>International Yoga Day</strong> sessions at <strong>Strand Park</strong> — waterfront classes welcoming all levels.</li>
             <li><strong>Footy:</strong> <strong>Cowboys NRL Home Games</strong> — Round 17 vs Penrith Panthers, Saturday June 27 at Queensland Country Bank Stadium.</li>
             <li><strong>Outdoors:</strong> Perfect hiking and beach weather across The Strand, Castle Hill and Magnetic Island. Humidity is low and the skies are crystal clear.</li>
           </ul>
