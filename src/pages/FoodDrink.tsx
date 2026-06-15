@@ -220,8 +220,8 @@ const FoodDrink = () => {
   return (
     <>
       <SEOHead
-       title="Best Restaurants & Cafés in Townsville (May 2026 Guide)"
-       description="From fine dining on Palmer Street to the best coffee on The Strand, discover where Townsville locals eat and drink. Updated May 11, 2026 with Magic Round game day tips and dog-friendly spots."
+       title="Best Restaurants in Townsville | Local Dining Guide June 2026"
+       description="Updated June 15, 2026. Discover the best breakfast, coffee, dinner, and waterfront dining..."
         canonical="https://www.myaussieguide.com.au/food"
       />
       <Helmet>
@@ -290,15 +290,15 @@ const FoodDrink = () => {
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>May 19 Update: As we settle into the Dry Season, most CBD and Strand cafes are at full capacity on weekends. While many boutique spots close early on Mondays, Cbar, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit or waterfront lunch.</em>
+                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>Mid-June 2026 Update: As we settle into the Dry Season, most CBD and Strand cafes are at full capacity on weekends. While many boutique spots close early on Mondays, Cbar, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit or waterfront lunch.</em>
                </p>
             </LocalInsightCard>
 
             {/* Weekly Highlight */}
              <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
-               <h3 className="font-bold text-foreground text-lg">📅 Weekly Highlight (May 18–24)</h3>
+               <h3 className="font-bold text-foreground text-lg">📅 June Winter Vibe</h3>
                <p className="text-sm text-muted-foreground leading-relaxed">
-                 🌅 <strong>May 18–24:</strong> The focus is on pre-festival fueling and Sunday game-day lunches. With the Dream Fields Festival arriving this Saturday and the Cowboys playing at home on Sunday afternoon, expect local restaurant strips to be absolutely buzzing. Secure an outdoor deck spot early at Longboard or a riverfront dinner at A Touch of Salt to enjoy the crisp evening breezes.
+                 With the humidity bottomed out, North Queensland's winter dining is at its absolute peak. It's the perfect weather for open-air deck dining at C Bar or a crisp Sunday morning coffee down City Lane before the crowd builds.
                </p>
              </div>
 
@@ -332,9 +332,12 @@ const FoodDrink = () => {
 
             {/* Best Areas Section */}
             <section className="mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
                 Best Dining Areas
               </h2>
+              <p className="text-muted-foreground mb-6">
+                While major hubs like Palmer Street and The Strand hold the spotlight, fantastic local eateries, hidden cafes, and family pubs are scattered across thriving suburbs from Garbutt and West End out to Burdell.
+              </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="p-6 rounded-xl border-2 bg-card">
                   <h3 className="font-semibold text-foreground mb-2">The Strand</h3>
