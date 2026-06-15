@@ -13,7 +13,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Detailed guide for Round 14 vs Dolphins (Sat June 6, 5:30 PM) — parking, free shuttles, and Saturday evening logistics."
+        description="Plan your 2026 Cowboys game day in Townsville. Updated June 15, 2026 — Round 17 vs Penrith Panthers (Sat June 27, 5:30 PM): parking, free shuttles, and Saturday evening logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
@@ -26,7 +26,7 @@ const CowboysStadiumGuide = () => {
               Back to Events
             </Link>
             <Badge variant="secondary" className="bg-green-50 text-green-700">
-              June Update
+              Updated: June 15, 2026
             </Badge>
           </div>
         </div>
@@ -46,7 +46,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – June Update: Dolphins Blockbuster Next!
+               2026 Season – June Update: Premiers Blockbuster Next!
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -54,27 +54,27 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Season Update
                    </Badge>
-                     <CardTitle className="text-lg mt-2">Rabbitohs Victory, Dolphins Next at Home</CardTitle>
+                     <CardTitle className="text-lg mt-2">Dolphins Wrapped, Panthers Next at Home</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">
                      <p className="text-sm text-muted-foreground">
-                       Fresh off a stellar <strong>30–18 home victory</strong> against the Rabbitohs in front of a buzzing Townsville crowd, the Cowboys are keeping the momentum rolling. Our focus now shifts to the next massive Queensland blockbuster at home against the <strong>Dolphins</strong>.
+                       The Round 14 Queensland blockbuster against the <strong>Dolphins</strong> on June 6 has wrapped up, and focus now shifts to the biggest home test of the year — a Round 17 showdown against the reigning premiers, the <strong>Penrith Panthers</strong>, in front of a packed Townsville crowd.
                      </p>
-                 </CardContent>
-               </Card>
+                  </CardContent>
+                </Card>
 
                <Card className="border-l-4 border-l-primary shadow-sm">
                  <CardHeader className="pb-2">
                    <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                      Next Home Game
                    </Badge>
-                   <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 14 – Cowboys vs. Dolphins</CardTitle>
+                   <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 17 – Cowboys vs. Penrith Panthers</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-4">
                    <div className="space-y-2">
                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
                        <Calendar className="w-4 h-4 flex-shrink-0" />
-                       <span>Saturday, June 6, 2026</span>
+                       <span>Saturday, June 27, 2026</span>
                      </div>
                       <div className="flex items-start gap-2 text-sm text-muted-foreground">
                         <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
@@ -117,12 +117,6 @@ const CowboysStadiumGuide = () => {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border">
-                      <tr className="bg-primary/5">
-                        <td className="px-4 py-3 font-medium">Round 14 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
-                        <td className="px-4 py-3 font-semibold">vs Dolphins</td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat June 6, 2026, 5:30 PM</td>
-                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
-                      </tr>
                       <tr className="bg-primary/5">
                         <td className="px-4 py-3 font-medium">Round 17 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
                         <td className="px-4 py-3 font-semibold">vs Penrith Panthers</td>
@@ -195,9 +189,9 @@ const CowboysStadiumGuide = () => {
           {/* Visiting from out of town CTA */}
           <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
             <CardContent className="p-6 sm:p-8 space-y-3">
-              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Dolphins Game?</h3>
+              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Panthers Game?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Don't get caught out — last-minute stays near the stadium fill up fast for Saturday evening home games. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
+                Don't get caught out — last-minute stays near the stadium fill up fast for Saturday evening home games against the reigning premiers. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
               </p>
               <Button asChild variant="default" size="lg" className="w-full sm:w-auto">
                 <Link to="/accommodation">
