@@ -9,8 +9,8 @@ const FlightsToTownsville = () => {
   return (
     <>
       <SEOHead
-        title="Best Flights to Townsville 2026 | Airlines, Tips & Airport Guide"
-        description="Finding the best flights to Townsville in 2026? Get our local tips on airlines, transport from the airport, and our exclusive 'Moving to the Ville' guide for newcomers. Updated April 13."
+        title="Townsville Airport (TSV) Arrival & Flight Guide (June 2026)"
+        description="Updated June 15, 2026. Your local guide to Townsville Airport (TSV) flights, arrivals, taxi ranks, and transfer logistics."
         canonical="https://www.myaussieguide.com.au/flights"
       />
       <Helmet>
@@ -37,10 +37,10 @@ const FlightsToTownsville = () => {
                 <Plane className="w-8 h-8 text-primary" />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-                Flights to Townsville (TSV)
+                Townsville Airport (TSV) Arrival & Flight Guide (June 2026)
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                Compare flights to and from Townsville — coming soon.
+                Welcome to North Queensland. Whether you are flying into Townsville Airport (TSV) for business, a tropical holiday on Magnetic Island, or a massive weekend at Queensland Country Bank Stadium, this practical arrival guide covers your transit, taxi, and airport transfer logistics.
               </p>
               <FlightsButton size="lg" className="text-lg px-8 py-6" />
               <div className="mt-4">
