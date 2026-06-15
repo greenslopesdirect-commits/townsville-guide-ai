@@ -29,7 +29,7 @@ const AccessibleTownsville = () => {
           {/* Hero */}
           <header className="space-y-4">
             <Badge variant="secondary" className="bg-emerald-50 text-emerald-700 w-fit">
-              Updated: May 11, 2026
+              Updated: June 15, 2026
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
               Exploring Townsville for All: The Local Guide to Accessible Beaches, Parks &amp; Venues
@@ -137,10 +137,7 @@ const AccessibleTownsville = () => {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <p className="text-sm text-muted-foreground">
-                    2.2km of flat, paved paths running the full length of the foreshore. Ramp
-                    access leads down to the <strong>Strand Rockpool</strong> and the free{" "}
-                    <strong>Water Park</strong>, with accessible toilets and shaded rest stops
-                    along the way.
+                    The Strand foreshore serves as Townsville's premier wheelchair accessible beach destination, offering flat, continuous paths connecting directly to all major parking hubs and accessible amenities blocks. Ramp access leads down to the <strong>Strand Rockpool</strong> and the free <strong>Water Park</strong>, with accessible toilets and shaded rest stops along the way.
                   </p>
                   <Button asChild variant="outline" size="sm">
                     <Link to="/the-strand">
@@ -230,6 +227,15 @@ const AccessibleTownsville = () => {
                     13cabs Townsville (WATs) <ExternalLink className="w-3 h-3 ml-1" />
                   </a>
                 </Button>
+              </div>
+              <div className="mt-4 space-y-3">
+                <p className="font-semibold text-foreground">Magnetic Island Ferry Accessibility</p>
+                <p>
+                  <strong>SeaLink Queensland (Passenger Ferry):</strong> The passenger ferry terminal features level ramp access to the vessels. Boarding ramps are wide, low-gradient, and wheelchair-friendly, with designated accessible seating spaces and clear accessible restrooms available on board the newer catamarans.
+                </p>
+                <p>
+                  <strong>Magnetic Island Ferries (Car & Passenger Barge):</strong> The vehicle barge offers a fully roll-on, roll-off layout. Passengers traveling with mobility requirements or wheelchairs can easily board via the main vehicle deck, with staff on hand to assist with safe positioning.
+                </p>
               </div>
             </LocalInsightCard>
           </section>
