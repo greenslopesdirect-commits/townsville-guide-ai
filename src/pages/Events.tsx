@@ -50,7 +50,7 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (June 2026)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (Mid-June 2026)</h2>
           <p className="text-gray-600 max-w-3xl">
             Mid-June has just delivered one of the biggest weekends of the dry season — <strong>Country Fest QLD</strong> at Cluden Park and the 35th <strong>Townsville Folk Festival</strong> at Foots Hill Station both wrapped up on June 14 with massive turnouts, cementing this stretch as a peak point on the North Queensland calendar.
           </p>
