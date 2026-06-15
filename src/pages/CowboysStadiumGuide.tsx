@@ -80,7 +80,7 @@ const CowboysStadiumGuide = () => {
                         <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                         <span>
                           Queensland Country Bank Stadium.<br />
-                          <span className="font-medium text-foreground">Gates Open: 2:15 PM | Kick-off: 5:30 PM</span>
+                          <span className="font-medium text-foreground">Gates: 3:30 PM | Kick-off: 5:30 PM</span>
                         </span>
                       </div>
                    </div>
