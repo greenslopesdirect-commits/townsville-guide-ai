@@ -91,7 +91,7 @@ const northernBeaches = [
     badge: { label: "⭐ Top Search Pick", color: "bg-amber-100 text-amber-800 hover:bg-amber-100" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Quiet", "Dog Friendly"],
-    description: "6km of unspoilt sand — the ultimate local pick for a peaceful escape. Updated for June 2026: With the humidity gone, the 6km stretch of Saunders is perfect for long, quiet walks. Tip: The northern end is currently offering the best beachcombing after the recent tides.",
+    description: "6km of unspoilt sand — the ultimate local pick for a peaceful escape. Updated for June 2026: With the humidity gone, the 6km stretch of Saunders is perfect for long, quiet walks, and uncomplicated, easy parking right near the boat ramp makes it stress-free to access. Tip: The northern end is currently offering the best beachcombing after the recent tides.",
     guideLink: "/beaches/saunders-beach",
     guideLinkText: "View Full Saunders Beach Guide →",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
@@ -106,7 +106,7 @@ const northernBeaches = [
     badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
     tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that becomes very shallow at low tide. June Update: Sunset photography at Toolakea is hitting its peak right now. The clear dry season skies provide incredible reflections on the sand flats at low tide. Pack the camera and arrive 30 minutes before sunset.",
+    description: "A sleepy residential beach that features easy parking and wide-open sand flats perfect for low-tide photography. June Update: Sunset photography at Toolakea is hitting its peak right now. The clear dry season skies provide incredible reflections on the sand flats at low tide. Pack the camera and arrive 30 minutes before sunset.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
@@ -641,7 +641,7 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">☀️ June Update: The dry season is in full swing and conditions are crisp and clear. Stinger nets at The Strand and Pallarenda have been removed for the season — but always check signage and stick to patrolled areas for a worry-free swim. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">☀️ June Update: Stinger nets at The Strand, Pallarenda, and Magnetic Island remain ACTIVE and fully maintained. Always swim inside the enclosures and check local safety signs. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
