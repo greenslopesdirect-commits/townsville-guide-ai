@@ -9,8 +9,8 @@ const FlightsToTownsville = () => {
   return (
     <>
       <SEOHead
-        title="Best Flights to Townsville 2026 | Airlines, Tips & Airport Guide"
-        description="Finding the best flights to Townsville in 2026? Get our local tips on airlines, transport from the airport, and our exclusive 'Moving to the Ville' guide for newcomers. Updated April 13."
+        title="Townsville Airport (TSV) Arrival & Flight Guide (June 2026)"
+        description="Updated June 15, 2026. Your local guide to Townsville Airport (TSV) flights, arrivals, taxi ranks, and transfer logistics."
         canonical="https://www.myaussieguide.com.au/flights"
       />
       <Helmet>
@@ -37,10 +37,10 @@ const FlightsToTownsville = () => {
                 <Plane className="w-8 h-8 text-primary" />
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-                Flights to Townsville (TSV)
+                Townsville Airport (TSV) Arrival & Flight Guide (June 2026)
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                Compare flights to and from Townsville — coming soon.
+                Welcome to North Queensland. Whether you are flying into Townsville Airport (TSV) for business, a tropical holiday on Magnetic Island, or a massive weekend at Queensland Country Bank Stadium, this practical arrival guide covers your transit, taxi, and airport transfer logistics.
               </p>
               <FlightsButton size="lg" className="text-lg px-8 py-6" />
               <div className="mt-4">
@@ -55,7 +55,31 @@ const FlightsToTownsville = () => {
 
             {/* Content Sections */}
             <div className="space-y-12">
-              
+
+              {/* TSV to City & Stadium Transit */}
+              <section>
+                <div className="flex items-center gap-3 mb-4">
+                  <MapPin className="w-6 h-6 text-primary" />
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Getting from Townsville Airport to the City & Strand
+                  </h2>
+                </div>
+                <div className="bg-muted/30 p-6 rounded-lg space-y-4">
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-2">Taxi Rank & Ride-Share</h3>
+                    <p className="text-muted-foreground">
+                      A fully maintained taxi rank is located directly outside the arrivals terminal, alongside designated pickup zones for ride-sharing apps (Uber and DiDi). A trip to the CBD or The Strand takes approximately 10–15 minutes depending on traffic.
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-2">Private Transfers</h3>
+                    <p className="text-muted-foreground">
+                      Pre-booking a private airport transfer is highly recommended for families and groups looking to bypass the taxi queues during peak event arrival windows.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
               {/* Best Times to Fly */}
               <section>
                 <div className="flex items-center gap-3 mb-4">
@@ -66,7 +90,7 @@ const FlightsToTownsville = () => {
                 </div>
                 <div className="bg-muted/30 p-6 rounded-lg">
                   <p className="text-muted-foreground mb-4">
-                    The best time to find cheap flights to Townsville is typically during the shoulder seasons — April to June and September to November. Avoid school holidays and peak tourist periods for the best deals.
+                    <strong>Winter Event Peak:</strong> Late June through July brings a massive influx of travelers to Townsville. Flight demand spikes heavily for major event weekends, including the Cowboys vs. Penrith Panthers blockbuster on Saturday, June 27, and the NTI Townsville 500 supercar street circuit on July 10–12. If you are flying in for the footy or motorsport, ensure your airport transfers and accommodation are locked in early.
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                     <li>Dry season (April–November): Best weather, higher demand</li>
