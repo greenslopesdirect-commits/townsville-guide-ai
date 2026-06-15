@@ -46,19 +46,19 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season – June Update: Premiers Blockbuster Next!
+               2026 Season Update: Reigning Premiers Next at Home
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
                  <CardHeader className="pb-2">
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
-                     Season Update
+                     Next Home Blockbuster
                    </Badge>
-                     <CardTitle className="text-lg mt-2">Dolphins Wrapped, Panthers Next at Home</CardTitle>
+                     <CardTitle className="text-lg mt-2">Panthers Clashes Under the Dry Season Sky</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">
                      <p className="text-sm text-muted-foreground">
-                       The Round 14 Queensland blockbuster against the <strong>Dolphins</strong> on June 6 has wrapped up, and focus now shifts to the biggest home test of the year — a Round 17 showdown against the reigning premiers, the <strong>Penrith Panthers</strong>, in front of a packed Townsville crowd.
+                       With the early June fixtures wrapped up, the Cowboys are keeping the momentum rolling. All eyes are now locked on the massive Saturday night blockbuster at home against the reigning premier <strong>Penrith Panthers</strong> on June 27. Expect an electric atmosphere at Queensland Country Bank Stadium.
                      </p>
                   </CardContent>
                 </Card>
