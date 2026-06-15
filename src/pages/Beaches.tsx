@@ -641,7 +641,7 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">☀️ June Update: The dry season is in full swing and conditions are crisp and clear. Stinger nets at The Strand and Pallarenda have been removed for the season — but always check signage and stick to patrolled areas for a worry-free swim. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">☀️ June Update: Stinger nets at The Strand, Pallarenda, and Magnetic Island remain ACTIVE and fully maintained. Always swim inside the enclosures and check local safety signs. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
