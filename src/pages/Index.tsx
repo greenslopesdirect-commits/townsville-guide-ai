@@ -149,7 +149,7 @@ const Index = () => {
                   Current Status: The 'Perfect Dry' is here!
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  Mid-June and the winter dry season is in full swing. Humidity has bottomed out, morning UV is already high (sunscreen on by 8 AM), and the 5:30 PM sunsets from the top of Castle Hill are at their seasonal peak — clear horizons, golden light, and cool breezes rolling in off the coast.
+                  Late June and the winter dry season is in full swing. Humidity has bottomed out, morning UV is already high (sunscreen on by 8 AM), and the 5:30 PM sunsets from the top of Castle Hill are at their seasonal peak — clear horizons, golden light, and cool breezes rolling in off the coast.
                 </p>
                 <p className="text-sm sm:text-base text-amber-800 bg-amber-50 border border-amber-100 rounded-lg p-3">
                   🌴 We run on <strong>"Tropical Time"</strong> here. Slow down,
