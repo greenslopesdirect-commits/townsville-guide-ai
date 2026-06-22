@@ -58,7 +58,7 @@ const CowboysStadiumGuide = () => {
                   </CardHeader>
                   <CardContent className="space-y-2">
                      <p className="text-sm text-muted-foreground">
-                       With the early June fixtures wrapped up, the Cowboys are keeping the momentum rolling. All eyes are now locked on the massive Saturday night blockbuster at home against the reigning premier <strong>Penrith Panthers</strong> on June 27. Expect an electric atmosphere at Queensland Country Bank Stadium.
+                       The mid-season intensity is hitting its peak under perfect, crisp dry-season skies. All eyes are locked on the massive Saturday night blockbuster at home against the reigning premier <strong>Penrith Panthers</strong> this weekend on June 27. Expect an electric, packed house at Queensland Country Bank Stadium.
                      </p>
                   </CardContent>
                 </Card>
