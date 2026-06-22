@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What’s On In Townsville This Weekend | June 2026 Event Calendar"
-        description="Updated June 15, 2026: Mid-June dry season highlights — Riverway Movie Night, Bartlett Park Rodeo, Cotters Market, JCU Open Day at Strand Park, and more across Townsville, The Strand, Cluden Park and Magnetic Island."
+        title="What's On In Townsville This Weekend | June 26–28, 2026"
+        description="Updated June 26, 2026: Late-June dry season weekend — Cowboys vs Panthers Round 17, Cotters Market, Paluma Bush Dance, Queensland Country Rugby Championships, and the Soroptimist Park community planting at Rowes Bay."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-06-15">
-            <time dateTime="2026-06-15">Updated: June 15, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-06-26">
+            <time dateTime="2026-06-26">Updated: June 26, 2026</time>
           </span>
         </div>
       </div>
@@ -50,17 +50,17 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (Mid-June 2026)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (Late June 2026)</h2>
           <p className="text-gray-600 max-w-3xl">
-            Mid-June has just delivered one of the biggest weekends of the dry season — <strong>Country Fest QLD</strong> at Cluden Park and the 35th <strong>Townsville Folk Festival</strong> at Foots Hill Station both wrapped up on June 14 with massive turnouts, cementing this stretch as a peak point on the North Queensland calendar.
+            Earlier this June delivered some of the biggest festival crowds of the dry season, with <strong>Country Fest QLD</strong> and the 35th <strong>Townsville Folk Festival</strong> wrapping up to massive turnouts. If you're searching for <strong>what's on in Townsville this weekend (June 26–28)</strong>, here is the latest lineup:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li><strong>Sunday Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The cool dry-season breeze makes the stroll even better.</li>
-            <li><strong>Friday Night:</strong> <strong>Riverway Movie Night</strong> — Friday, June 19 at Riverway Lagoons. Family-friendly outdoor screening under crisp winter skies.</li>
-            <li><strong>Saturday Drawcard:</strong> <strong>Bartlett Park Rodeo</strong> — Saturday, June 20. A premier regional rodeo and one of the biggest dry-season drawcards just outside Townsville.</li>
-            <li><strong>Sunday Morning, June 21:</strong> <strong>International Yoga Day</strong> sessions at <strong>Strand Park</strong> — waterfront classes welcoming all levels.</li>
-            <li><strong>Footy:</strong> <strong>Cowboys NRL Home Games</strong> — Round 17 vs Penrith Panthers, Saturday June 27 at Queensland Country Bank Stadium.</li>
-            <li><strong>Outdoors:</strong> Perfect hiking and beach weather across The Strand, Castle Hill and Magnetic Island. Humidity is low and the skies are crystal clear.</li>
+            <li><strong>Footy Drawcard:</strong> <strong>Cowboys NRL Home Games</strong> — Round 17 vs Penrith Panthers, Saturday June 27 at Queensland Country Bank Stadium. A massive Saturday night clash in the heart of the city.</li>
+            <li><strong>Sunday Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The cool dry-season breeze makes the morning stroll even better.</li>
+            <li><strong>Regional Treat:</strong> <strong>Paluma Bush Dance</strong> — Saturday night, June 27. Head up the mountain to the cool rainforest for live music, dancing, and community supper.</li>
+            <li><strong>Local Sport:</strong> <strong>2026 Queensland Country Rugby Championships</strong> — Kicking off Friday, June 26, bringing top regional rugby talent to town.</li>
+            <li><strong>Community & Environment:</strong> <strong>Soroptimist Park Community Planting Day</strong> — Saturday morning, June 27. A great free family activity helping green the Rowes Bay foreshore.</li>
+            <li><strong>Outdoors:</strong> Perfect hiking and beach weather across The Strand, Castle Hill and Magnetic Island. Humidity remains very low and skies are crystal clear.</li>
           </ul>
         </section>
 

@@ -7,27 +7,27 @@ import { triggerAiGuide } from "@/utils/aiGuide";
 const WeeklyEventsHero = () => {
   const featureCards = [
     {
-      title: "NRL Season Opener: Cowboys vs Knights",
+      title: "Cowboys vs Penrith Panthers — Round 17",
       icon: MapPin,
-      details: "Sunday, March 1 | 1:15 PM AEST",
-      description: "The season kicks off in Las Vegas! Join the local crowd at Leagues Club or North Shore Tavern for a midday watch party.",
-      badge: "Big Event",
+      details: "Saturday, June 27 | Queensland Country Bank Stadium",
+      description: "A massive Saturday night NRL clash in the heart of the city. Use the free Park & Ride at Lou Litster Park to skip CBD traffic.",
+      badge: "Footy Drawcard",
       badgeColor: "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400",
     },
     {
       title: "Cotters Market",
       icon: ShoppingBasket,
-      details: "Sunday, March 1 | 8:00 AM – 1:00 PM",
-      description: "Perfect for a Sunday stroll before the footy starts. Local arts, crafts, and coffee on Flinders Street.",
-      badge: "Markets",
+      details: "Sunday, June 28 | 8:00 AM – 1:00 PM",
+      description: "Every Sunday morning on Flinders Street. The cool dry-season breeze makes the morning stroll even better.",
+      badge: "Sunday Markets",
       badgeColor: "bg-primary/10 text-primary",
     },
     {
-      title: "Clean Up Australia Day",
+      title: "Paluma Bush Dance",
       icon: Music,
-      details: "Sunday, March 1 | Various Locations",
-      description: "Join the local teams at Pallarenda or the Ross River to keep our backyard beautiful.",
-      badge: "Nature",
+      details: "Saturday night, June 27 | Paluma Village",
+      description: "Head up the mountain to the cool rainforest for live music, dancing, and a community supper.",
+      badge: "Regional Treat",
       badgeColor: "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
     },
   ];
@@ -40,13 +40,13 @@ const WeeklyEventsHero = () => {
           variant="outline" 
           className="mb-4 px-3 py-1 text-xs font-medium border-primary/30 text-muted-foreground"
         >
-          Last Updated: Feb 23, 2026
+          Last Updated: June 26, 2026
         </Badge>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
-          What's On: Feb 23 – March 1
+          What's On in Townsville: June 26 – 28
         </h1>
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          Late February and early March in Townsville brings the excitement of the NRL season launch alongside our beautiful tropical mornings. Plan your outdoor activities early.
+          Earlier this June delivered some of the biggest festival crowds of the dry season, with Country Fest QLD and the 35th Townsville Folk Festival wrapping to massive turnouts. This weekend brings footy, markets, rugby and a rainforest bush dance under crystal-clear winter skies.
         </p>
       </header>
 
