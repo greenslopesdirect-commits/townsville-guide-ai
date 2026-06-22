@@ -26,7 +26,7 @@ const CowboysStadiumGuide = () => {
               Back to Events
             </Link>
             <Badge variant="secondary" className="bg-green-50 text-green-700">
-              Updated: June 15, 2026
+              Updated: June 22, 2026
             </Badge>
           </div>
         </div>
