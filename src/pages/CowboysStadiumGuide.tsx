@@ -13,7 +13,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Updated June 15, 2026 — Round 17 vs Penrith Panthers (Sat June 27, 5:30 PM): parking, free shuttles, and Saturday evening logistics."
+        description="Plan your 2026 Cowboys game day in Townsville. Updated June 22, 2026 — Round 17 vs Penrith Panthers (Sat June 27, 5:30 PM): parking, free shuttles, and Saturday evening logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
