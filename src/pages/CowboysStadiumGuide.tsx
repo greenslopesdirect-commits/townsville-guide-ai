@@ -13,7 +13,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Updated June 15, 2026 — Round 17 vs Penrith Panthers (Sat June 27, 5:30 PM): parking, free shuttles, and Saturday evening logistics."
+        description="Plan your 2026 Cowboys game day in Townsville. Updated June 22, 2026 — Round 17 vs Penrith Panthers (Sat June 27, 5:30 PM): parking, free shuttles, and Saturday evening logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
@@ -26,7 +26,7 @@ const CowboysStadiumGuide = () => {
               Back to Events
             </Link>
             <Badge variant="secondary" className="bg-green-50 text-green-700">
-              Updated: June 15, 2026
+              Updated: June 22, 2026
             </Badge>
           </div>
         </div>
@@ -58,7 +58,7 @@ const CowboysStadiumGuide = () => {
                   </CardHeader>
                   <CardContent className="space-y-2">
                      <p className="text-sm text-muted-foreground">
-                       With the early June fixtures wrapped up, the Cowboys are keeping the momentum rolling. All eyes are now locked on the massive Saturday night blockbuster at home against the reigning premier <strong>Penrith Panthers</strong> on June 27. Expect an electric atmosphere at Queensland Country Bank Stadium.
+                       The mid-season intensity is hitting its peak under perfect, crisp dry-season skies. All eyes are locked on the massive Saturday night blockbuster at home against the reigning premier <strong>Penrith Panthers</strong> this weekend on June 27. Expect an electric, packed house at Queensland Country Bank Stadium.
                      </p>
                   </CardContent>
                 </Card>
@@ -127,6 +127,12 @@ const CowboysStadiumGuide = () => {
                         <td className="px-4 py-3 font-medium">Round 21 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
                         <td className="px-4 py-3 font-semibold">vs Brisbane Broncos</td>
                         <td className="px-4 py-3 text-muted-foreground">Sat July 25, 2026, 7:35 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 22 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Sydney Roosters</td>
+                        <td className="px-4 py-3 text-muted-foreground">Thu July 30, 2026, 7:50 PM</td>
                         <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
                       </tr>
                     </tbody>
