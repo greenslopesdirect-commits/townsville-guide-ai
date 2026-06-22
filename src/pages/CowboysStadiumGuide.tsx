@@ -129,6 +129,12 @@ const CowboysStadiumGuide = () => {
                         <td className="px-4 py-3 text-muted-foreground">Sat July 25, 2026, 7:35 PM</td>
                         <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
                       </tr>
+                      <tr className="bg-primary/5">
+                        <td className="px-4 py-3 font-medium">Round 22 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
+                        <td className="px-4 py-3 font-semibold">vs Sydney Roosters</td>
+                        <td className="px-4 py-3 text-muted-foreground">Thu July 30, 2026, 7:50 PM</td>
+                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
