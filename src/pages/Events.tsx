@@ -10,8 +10,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What’s On In Townsville This Weekend | June 2026 Event Calendar"
-        description="Updated June 15, 2026: Mid-June dry season highlights — Riverway Movie Night, Bartlett Park Rodeo, Cotters Market, JCU Open Day at Strand Park, and more across Townsville, The Strand, Cluden Park and Magnetic Island."
+        title="What's On In Townsville This Weekend | June 26–28, 2026"
+        description="Updated June 26, 2026: Late-June dry season weekend — Cowboys vs Panthers Round 17, Cotters Market, Paluma Bush Dance, Queensland Country Rugby Championships, and the Soroptimist Park community planting at Rowes Bay."
         canonical="https://www.myaussieguide.com.au/events/"
       />
 
