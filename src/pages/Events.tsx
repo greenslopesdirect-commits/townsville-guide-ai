@@ -52,15 +52,14 @@ const Events = () => {
         <section className="space-y-4">
           <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (Late June 2026)</h2>
           <p className="text-gray-600 max-w-3xl">
-            Earlier this June delivered some of the biggest festival crowds of the dry season, with <strong>Country Fest QLD</strong> and the 35th <strong>Townsville Folk Festival</strong> wrapping up to massive turnouts. If you're searching for <strong>what's on in Townsville this weekend (June 26–28)</strong>, here is the latest lineup:
+            As we move through the final weekend of June and into the first week of July, the dry season energy is still in full swing. Here is the latest lineup of what's on in Townsville now through July 6, 2026:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li><strong>Footy Drawcard:</strong> <strong>Cowboys NRL Home Games</strong> — Round 17 vs Penrith Panthers, Saturday June 27 at Queensland Country Bank Stadium. A massive Saturday night clash in the heart of the city.</li>
-            <li><strong>Sunday Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning on Flinders Street. The cool dry-season breeze makes the morning stroll even better.</li>
-            <li><strong>Regional Treat:</strong> <strong>Paluma Bush Dance</strong> — Saturday night, June 27. Head up the mountain to the cool rainforest for live music, dancing, and community supper.</li>
-            <li><strong>Local Sport:</strong> <strong>2026 Queensland Country Rugby Championships</strong> — Kicking off Friday, June 26, bringing top regional rugby talent to town.</li>
-            <li><strong>Community & Environment:</strong> <strong>Soroptimist Park Community Planting Day</strong> — Saturday morning, June 27. A great free family activity helping green the Rowes Bay foreshore.</li>
-            <li><strong>Outdoors:</strong> Perfect hiking and beach weather across The Strand, Castle Hill and Magnetic Island. Humidity remains very low and skies are crystal clear.</li>
+            <li><strong>Footy Drawcard:</strong> <strong>Cowboys NRL Home Games</strong> — Round 17 vs Penrith Panthers, Saturday June 27 at Queensland Country Bank Stadium. A massive Saturday night clash in the heart of the city marking Jason Taumalolo's historic 300th NRL game. (Note: The Cowboys have a Round 18 Bye next weekend July 3–5, so this is the last home game for a fortnight).</li>
+            <li><strong>School Holidays Feature:</strong> <strong>Free Family Fun</strong> — With school holidays now in full swing across Queensland, local hotspots like the Riverway Lagoons, The Strand Water Park, and Jezzine Barracks are running daily. Perfect for keeping the kids entertained in the low-humidity winter weather.</li>
+            <li><strong>Sunday Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning (June 28 and July 5) on Flinders Street from 8:00 AM to 1:00 PM. Fresh coffee, local food stalls, and North Queensland crafts in the cool dry-season breeze.</li>
+            <li><strong>The Next Big Hype:</strong> <strong>NTI Townsville 500 Build-Up</strong> — The city is already buzzing as track preparations ramp up at Reid Park for the Supercars street circuit (July 10–12). Accommodation is booking out fast across the CBD this week.</li>
+            <li><strong>Outdoors:</strong> <strong>Clear Winter Skies</strong> — Exceptional conditions all week for the Castle Hill Goat Track, sunset walks along the Ross River Parkway, or a day trip to Magnetic Island with zero summer humidity.</li>
           </ul>
         </section>
 
@@ -314,7 +313,7 @@ const Events = () => {
               {
                 date: "10 – 12 July 2026",
                 title: "NTI Townsville 500",
-                body: "The streets of Reid Park come alive for the annual supercar street circuit. Expect high CBD buzz, trackside action, plus the return of the Summernats car show and rock concerts. Free public parking is available at the Dean Street carpark during event days."
+                body: "We are now less than two weeks away from the annual supercar street circuit. Expect high CBD buzz, trackside action, plus the return of the Summernats car show and rock concerts."
               },
               {
                 date: "2 August 2026",
