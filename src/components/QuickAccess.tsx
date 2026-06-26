@@ -70,7 +70,7 @@ const QuickAccess = () => {
     {
       icon: Lightbulb,
       title: "Stinger & Safety Guide",
-      desc: "☀️ Late June Status: Stinger nets remain ACTIVE along The Strand and Pallarenda beach runs through this mid-year window. Conditions are clear, fresh, and stunning — perfect for a northern beach run or exploring the Paluma range.",
+      desc: "☀️ Mid-Winter Status: Stinger nets remain ACTIVE along The Strand and Pallarenda beach runs. Conditions are beautifully clear, crisp, and fresh—perfect for a morning northern beach run or exploring the Paluma range during the current school holidays.",
       link: "/guides/stinger-safety",
     },
     {
