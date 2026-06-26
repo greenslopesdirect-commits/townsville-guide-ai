@@ -13,7 +13,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Updated June 22, 2026 — Round 17 vs Penrith Panthers (Sat June 27, 5:30 PM): parking, free shuttles, and Saturday evening logistics."
+        description="Plan your 2026 Cowboys game day in Townsville. Updated June 26, 2026 — Round 17 vs Penrith Panthers (Sat June 27, 5:30 PM): parking, free shuttles, and Saturday evening logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
 
@@ -26,7 +26,7 @@ const CowboysStadiumGuide = () => {
               Back to Events
             </Link>
             <Badge variant="secondary" className="bg-green-50 text-green-700">
-              Updated: June 22, 2026
+              Updated: June 26, 2026
             </Badge>
           </div>
         </div>
@@ -57,9 +57,9 @@ const CowboysStadiumGuide = () => {
                      <CardTitle className="text-lg mt-2">Panthers Clashes Under the Dry Season Sky</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">
-                     <p className="text-sm text-muted-foreground">
-                       The mid-season intensity is hitting its peak under perfect, crisp dry-season skies. All eyes are locked on the massive Saturday night blockbuster at home against the reigning premier <strong>Penrith Panthers</strong> this weekend on June 27. Expect an electric, packed house at Queensland Country Bank Stadium.
-                     </p>
+                    <p className="text-sm text-muted-foreground">
+                      The mid-season intensity is hitting its peak under perfect, crisp dry-season skies. All eyes are locked on the massive Saturday night blockbuster at home against the reigning premier <strong>Penrith Panthers</strong> this weekend on June 27. Expect an electric, packed house at Queensland Country Bank Stadium. Please note: Following this Saturday night match (June 27), the Cowboys move into an official Round 18 BYE weekend from July 3–5. There are no live home or away fixtures scheduled during this period, giving the squad a mid-season rest before they travel south to face Manly on July 12.
+                    </p>
                   </CardContent>
                 </Card>
 
@@ -84,9 +84,12 @@ const CowboysStadiumGuide = () => {
                         </span>
                       </div>
                    </div>
-                   <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-900">
-                     <strong>☀️ Stadium Tip:</strong> With a 5:30 PM Saturday kick-off, you'll catch the tail end of the afternoon winter sky, but the sun drops fast behind the Western stand. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly after dark during the dry season.
-                   </div>
+                    <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-900">
+                      <strong>☀️ Stadium Tip:</strong> With a 5:30 PM Saturday kick-off, you'll catch the tail end of the afternoon winter sky, but the sun drops fast behind the Western stand. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly after dark during the dry season.
+                    </div>
+                    <p className="text-sm italic text-muted-foreground border-l-2 border-primary/30 pl-3">
+                      *Notice for Visitors & Locals: This is our final home fixture for a fortnight. The following weekend (July 3–5) is the NRL Round 18 Bye week. Our next major home game at Queensland Country Bank Stadium will be the massive Queensland Derby against the Brisbane Broncos on Saturday, July 25.*
+                    </p>
                    <Button asChild className="w-full sm:w-auto">
                      <a href="https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825" target="_blank" rel="noopener noreferrer">
                        Get Tickets on Ticketmaster
