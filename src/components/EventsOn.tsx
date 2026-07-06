@@ -130,7 +130,7 @@ const EventsOn = () => {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Clock className="w-4 h-4" /> Gates Open: 1:30 PM | Main Kick-off: 3:30 PM
                     </div>
-                    <p className="text-xs text-muted-foreground mt-2">🏉 Footy returns to QCB Stadium for a massive Saturday night clash under the dry season winter skies. Gates open at 3:30 PM; kick-off at 5:30 PM. Utilize the free Park & Ride shuttle at Lou Litster Park to bypass CBD traffic entirely.<br /><br />*(Please note: Following the June 27 match, the Cowboys have an official Round 18 BYE from July 3–5, with no live stadium matches in town next weekend).*</p>
+                    <p className="text-xs text-muted-foreground mt-2">🏉 Elite football action returns to QCB Stadium this Saturday afternoon for an historic NRLW double-header season opener! (The men's NRL squad is playing away at Manly this Sunday, July 12, ahead of our massive home Queensland Derby vs the Broncos on July 25).</p>
                 </CardContent>
             </Card>
 
