@@ -22,8 +22,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-06-26">
-            <time dateTime="2026-06-26">Updated: June 26, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-07-06">
+            <time dateTime="2026-07-06">Updated: July 6, 2026</time>
           </span>
         </div>
       </div>
@@ -50,15 +50,15 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (Late June 2026)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (Early July 2026)</h2>
           <p className="text-gray-600 max-w-3xl">
-            As we move through the final weekend of June and into the first week of July, the dry season energy is still in full swing. Here is the latest lineup of what's on in Townsville now through July 6, 2026:
+            As we head into the second week of July, the winter dry season is delivering perfect crystal-clear skies. Here is the latest lineup of what's on in Townsville now through July 13, 2026:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li><strong>Footy Drawcard:</strong> <strong>Cowboys NRL Home Games</strong> — Round 17 vs Penrith Panthers, Saturday June 27 at Queensland Country Bank Stadium. A massive Saturday night clash in the heart of the city marking Jason Taumalolo's historic 300th NRL game. (Note: The Cowboys have a Round 18 Bye next weekend July 3–5, so this is the last home game for a fortnight).</li>
+            <li><strong>Footy Drawcard:</strong> <strong>Cowboys NRLW Action</strong> — Following the NRL team's recent bye, the spotlight hits Queensland Country Bank Stadium this Saturday, July 11 for an incredible NRLW double-header featuring the NQ Cowboys vs Wests Tigers. (The NRL squad plays away against Manly this Sunday, July 12).</li>
             <li><strong>School Holidays Feature:</strong> <strong>Free Family Fun</strong> — With school holidays now in full swing across Queensland, local hotspots like the Riverway Lagoons, The Strand Water Park, and Jezzine Barracks are running daily. Perfect for keeping the kids entertained in the low-humidity winter weather.</li>
-            <li><strong>Sunday Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning (June 28 and July 5) on Flinders Street from 8:00 AM to 1:00 PM. Fresh coffee, local food stalls, and North Queensland crafts in the cool dry-season breeze.</li>
-            <li><strong>The Next Big Hype:</strong> <strong>NTI Townsville 500 Build-Up</strong> — The city is already buzzing as track preparations ramp up at Reid Park for the Supercars street circuit (July 10–12). Accommodation is booking out fast across the CBD this week.</li>
+            <li><strong>Sunday Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning (July 12 and July 19) on Flinders Street from 8:00 AM to 1:00 PM. Fresh local coffee, food stalls, and seasonal produce in the cool morning air.</li>
+            <li><strong>The Big Event:</strong> <strong>NTI Townsville 500 Is Here!</strong> — The Supercars street circuit takes over Reid Park this weekend (July 10–12). Expect massive CBD buzz, roaring engines, trackside entertainment, and rock concerts. CBD parking and accommodation are completely packed out this week.</li>
             <li><strong>Outdoors:</strong> <strong>Clear Winter Skies</strong> — Exceptional conditions all week for the Castle Hill Goat Track, sunset walks along the Ross River Parkway, or a day trip to Magnetic Island with zero summer humidity.</li>
           </ul>
         </section>
@@ -313,7 +313,7 @@ const Events = () => {
               {
                 date: "10 – 12 July 2026",
                 title: "NTI Townsville 500",
-                body: "We are now less than two weeks away from the annual supercar street circuit. Expect high CBD buzz, trackside action, plus the return of the Summernats car show and rock concerts."
+                body: "NTI Townsville 500 — The annual supercar street circuit is officially live this weekend! Enjoy intense trackside action, the return of the popular car shows, and massive live concert events in the heart of the city."
               },
               {
                 date: "2 August 2026",
