@@ -88,7 +88,7 @@ const CowboysStadiumGuide = () => {
                       <strong>☀️ Stadium Tip:</strong> With a 5:30 PM Saturday kick-off, you'll catch the tail end of the afternoon winter sky, but the sun drops fast behind the Western stand. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly after dark during the dry season.
                     </div>
                     <p className="text-sm italic text-muted-foreground border-l-2 border-primary/30 pl-3">
-                      *Notice for Visitors & Locals: This is our final home fixture for a fortnight. The following weekend (July 3–5) is the NRL Round 18 Bye week. Our next major home game at Queensland Country Bank Stadium will be the massive Queensland Derby against the Brisbane Broncos on Saturday, July 25.*
+                      *Notice for Visitors & Locals: This weekend features elite NRLW action! Our next major men's NRL home fixture at Queensland Country Bank Stadium will be the blockbuster Queensland Derby against the Brisbane Broncos on Saturday, July 25.*
                     </p>
                    <Button asChild className="w-full sm:w-auto">
                      <a href="https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825" target="_blank" rel="noopener noreferrer">
