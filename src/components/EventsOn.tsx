@@ -37,7 +37,7 @@ const EventsOn = () => {
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
                     <p className="text-blue-100 font-medium">Markets, motorsport & footy blockbusters</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏎️ NTI Townsville 500 — 10–12 July 2026</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏎️ NTI Townsville 500 Is Live This Weekend! — 10–12 July 2026</p>
                      <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">The Perfect Dry</span>
                 </div>
                 <div className="relative z-10 mt-8">
@@ -64,7 +64,7 @@ const EventsOn = () => {
                         </Button>
                     </Link>
                     <span className="text-sm text-muted-foreground italic">
-                        Updated June 2026.
+                        Updated July 2026.
                     </span>
                 </div>
             </div>
@@ -87,7 +87,7 @@ const EventsOn = () => {
                         <Star className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Every Sunday Morning</p>
+                    <p className="text-xs text-primary font-medium mb-1">Sunday Mornings (July 12 &amp; 19)</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Flinders Street, CBD
                     </div>
@@ -109,7 +109,7 @@ const EventsOn = () => {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Reid Park Street Circuit
                     </div>
-                    <p className="text-xs text-muted-foreground mt-2">The streets of Reid Park come alive for the annual supercar street circuit. Plan your accommodation early!</p>
+                    <p className="text-xs text-muted-foreground mt-2">The streets of Reid Park are officially transforming right now for the annual supercar street circuit this weekend! Expect major roaring engines, live concerts, and trackside action.</p>
                 </CardContent>
             </Card>
 
@@ -122,22 +122,22 @@ const EventsOn = () => {
                         </div>
                         <Trophy className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Cowboys vs. Penrith Panthers</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, June 27, 2026</p>
+                    <h4 className="text-lg font-bold mb-2">Upcoming Stadium Game: NRLW Cowboys vs Wests Tigers</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, July 11, 2026</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Queensland Country Bank Stadium
                     </div>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Clock className="w-4 h-4" /> Gates: 3:30 PM | Kick-off: 5:30 PM
+                        <Clock className="w-4 h-4" /> Gates Open: 1:30 PM | Main Kick-off: 3:30 PM
                     </div>
-                    <p className="text-xs text-muted-foreground mt-2">🏉 Footy returns to QCB Stadium for a massive Saturday night clash under the dry season winter skies. Gates open at 3:30 PM; kick-off at 5:30 PM. Utilize the free Park & Ride shuttle at Lou Litster Park to bypass CBD traffic entirely.<br /><br />*(Please note: Following the June 27 match, the Cowboys have an official Round 18 BYE from July 3–5, with no live stadium matches in town next weekend).*</p>
+                    <p className="text-xs text-muted-foreground mt-2">🏉 Elite football action returns to QCB Stadium this Saturday afternoon for an historic NRLW double-header season opener! (The men's NRL squad is playing away at Manly this Sunday, July 12, ahead of our massive home Queensland Derby vs the Broncos on July 25).</p>
                 </CardContent>
             </Card>
 
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🏎️ V8 Supercars Townsville 500, Cotters Market every Sunday, and Cowboys vs Panthers Saturday June 27! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏎️ V8 Supercars Townsville 500 July 10–12, Cotters Market every Sunday, and Cowboys NRLW action Saturday July 11! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}

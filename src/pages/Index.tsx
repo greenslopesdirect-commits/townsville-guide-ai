@@ -149,7 +149,7 @@ const Index = () => {
                   Current Status: The 'Perfect Dry' is here!
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  Late June and early July mean the winter dry season and school holidays are in full swing! Humidity has bottomed out, morning UV is high (sunscreen on early), and the 5:30 PM sunsets from the top of Castle Hill are at their absolute peak—clear horizons, golden light, and cool breezes rolling in off the coast.
+                  Current Status: The 'Perfect Dry' is here! Early July means the winter dry season, school holidays, and massive local events are in full swing! Humidity has bottomed out, morning UV is high (sunscreen on early), and the 5:30 PM sunsets from the top of Castle Hill are at their absolute peak—clear horizons, golden light, and cool breezes rolling in off the coast. The city is buzzing this week as we head straight into the Supercars street circuit!
                 </p>
                 <p className="text-sm sm:text-base text-amber-800 bg-amber-50 border border-amber-100 rounded-lg p-3">
                   🌴 We run on <strong>"Tropical Time"</strong> here. Slow down,
