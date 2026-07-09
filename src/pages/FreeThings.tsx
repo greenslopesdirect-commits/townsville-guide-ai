@@ -9,7 +9,7 @@ const FreeThings = () => (
   <SEOHead
     title="Top 10 Free Things to Do in Townsville"
     description="A local's guide to the best completely free things to do in Townsville — Castle Hill, The Strand, Riverway, Jezzine Barracks and more."
-    canonical="https://www.myaussieguide.com.au/guides/free-things/"
+    canonical="https://www.myaussieguide.com.au/guides/free-things"
   />
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
     <h1 className="text-4xl font-bold mb-4 text-center">5 Completely Free Things to do in Townsville</h1>

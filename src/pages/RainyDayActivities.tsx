@@ -49,7 +49,7 @@ const RainyDayActivities = () => (
     <SEOHead
       title="Rainy Day Activities in Townsville: Wet Season Guide"
       description="A local's guide to the best rainy day activities in Townsville — indoor things to do with kids, cosy cafes, bowling, cinemas and wet season safety tips."
-      canonical="https://www.myaussieguide.com.au/guides/rainy-day-activities/"
+      canonical="https://www.myaussieguide.com.au/guides/rainy-day-activities"
     />
     <script
       type="application/ld+json"

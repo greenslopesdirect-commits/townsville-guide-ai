@@ -12,7 +12,7 @@ const TheStrand = () => {
       <SEOHead
         title="The Strand Townsville — Local Guide"
         description="A local guide to The Strand in Townsville — 2.2km of foreshore, Rockpool, Water Park, dining and how to do it like a local."
-        canonical="https://www.myaussieguide.com.au/the-strand/"
+        canonical="https://www.myaussieguide.com.au/the-strand"
       />
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}

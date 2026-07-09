@@ -7,7 +7,7 @@ const SunsetWalks = () => (
   <SEOHead
     title="Best Sunset Walks in Townsville"
     description="A local guide to the best places to catch a sunset walk in Townsville — The Breakwater, Pallarenda Jetty and Castle Hill."
-    canonical="https://www.myaussieguide.com.au/guides/sunset-walks/"
+    canonical="https://www.myaussieguide.com.au/guides/sunset-walks"
   />
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
     <h1 className="text-4xl font-bold mb-4 text-center">Best Places for a Sunset Walk</h1>

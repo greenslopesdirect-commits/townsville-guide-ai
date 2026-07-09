@@ -12,7 +12,7 @@ const Events = () => {
       <SEOHead
         title="What's On In Townsville This Weekend | June 26–28, 2026"
         description="Updated June 26, 2026: Late-June dry season weekend — Cowboys vs Panthers Round 17, Cotters Market, Paluma Bush Dance, Queensland Country Rugby Championships, and the Soroptimist Park community planting at Rowes Bay."
-        canonical="https://www.myaussieguide.com.au/events/"
+        canonical="https://www.myaussieguide.com.au/events"
       />
 
       {/* Header Section */}
