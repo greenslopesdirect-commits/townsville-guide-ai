@@ -30,14 +30,48 @@ const StingerSafety = () => (
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.myaussieguide.com.au/" },
-          { "@type": "ListItem", "position": 3, "name": "Stinger Safety", "item": "https://www.myaussieguide.com.au/guides/stinger-safety/" }
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
+              { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.myaussieguide.com.au/" },
+              { "@type": "ListItem", "position": 3, "name": "Stinger Safety", "item": "https://www.myaussieguide.com.au/guides/stinger-safety/" }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can you swim in Townsville during stinger season?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Swim only within stinger nets or wear a full stinger suit when swimming outside enclosures."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What should I do if stung by a jellyfish?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Apply vinegar immediately and call 000 if symptoms are severe."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are stingers present all year?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. They are most common between November and May."
+                }
+              }
+            ]
+          }
         ]
       }) }}
     />
+
     <h1 className="text-4xl font-bold mb-4 text-center">June 2026 Stinger Update</h1>
     <p className="text-center text-sm text-muted-foreground mb-6">Updated: June 1, 2026</p>
 
