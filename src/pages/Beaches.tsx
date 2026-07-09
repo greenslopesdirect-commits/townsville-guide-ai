@@ -200,8 +200,9 @@ const Beaches = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
-            Updated: June 2026
+            Last updated: July 6, 2026
           </span>
+
         </div>
       </div>
 
@@ -257,9 +258,10 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-          Continue to swim inside the netted enclosures for a worry-free dip.{" "}
+          Nets you still see along the foreshore are precautionary leftovers from the season, not an active warning. You're welcome to swim inside them for extra peace of mind.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
+
 
         {/* Stinger Net Locations Table */}
         <section className="mt-8 mb-4">
@@ -278,43 +280,44 @@ const Beaches = () => {
                   <TableCell className="font-medium">The Strand (North)</TableCell>
                   <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">The Strand (South)</TableCell>
                   <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">Pallarenda Beach</TableCell>
                   <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
                   <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
                   <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Active &amp; Maintained</span>
+                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
                   </TableCell>
                 </TableRow>
               </TableBody>
             </Table>
           </div>
           <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-            Note: While the cooler dry season lowers stinger risks, swimming inside these dedicated enclosures is always recommended for absolute peace of mind.
+            Note: The high-risk stinger season has officially ended, so nets are no longer required for safe swimming. Council typically leaves the enclosures up and maintained for a period after the season as a precaution while water temperatures drop — you'll still see them at the beaches above, but they reflect caution rather than an active warning.
           </p>
+
         </section>
 
         {/* Exact Off-Leash Dog Beach Boundaries */}
@@ -641,7 +644,8 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">☀️ June Update: Stinger nets at The Strand, Pallarenda, and Magnetic Island remain ACTIVE and fully maintained. Always swim inside the enclosures and check local safety signs. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">The 2025/26 marine stinger season has ended. Nets at The Strand, Pallarenda and Magnetic Island are often left in place as a precaution after season's end — you may still see them, but they no longer indicate active danger. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
