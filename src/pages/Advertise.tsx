@@ -270,7 +270,7 @@ const Advertise = () => {
                         className="w-full mt-auto"
                       >
                         <a
-                          href={`mailto:${EMAIL}?subject=${encodeURIComponent(tier.ctaSubject)}`}
+                          href={mailtoHref(tier.ctaSubject, tier.ctaBody)}
                         >
                           {tier.ctaLabel}
                         </a>
@@ -343,7 +343,7 @@ const Advertise = () => {
                     </p>
                   </div>
                   <Button asChild variant="default" className="md:flex-shrink-0">
-                    <a href={`mailto:${EMAIL}?subject=${encodeURIComponent("Game Day / Peak Placement Enquiry")}`}>
+                    <a href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}>
                       Enquire
                     </a>
                   </Button>
@@ -364,7 +364,8 @@ const Advertise = () => {
               </p>
               <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
                 <a
-                  href={`mailto:${EMAIL}?subject=${encodeURIComponent("Founding Partner Application")}`}
+                  href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}
+
                   className="text-xl sm:text-2xl font-semibold text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors break-all"
                 >
                   {EMAIL}
@@ -379,7 +380,7 @@ const Advertise = () => {
                 </button>
               </div>
               <Button size="lg" asChild>
-                <a href={`mailto:${EMAIL}?subject=${encodeURIComponent("Founding Partner Application")}`}>
+                <a href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}>
                   Email Duncan to Apply
                 </a>
               </Button>
