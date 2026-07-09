@@ -21,11 +21,26 @@ const SEOHead = ({
     ? title
     : `${title} | My Aussie Guide`;
 
-  const siteUrl = "https://www.myaussieguide.com.au/";
-  // Ensure canonical always has trailing slash for consistency with sitemap
-  const canonicalUrl = canonical
-    ? (canonical.endsWith("/") ? canonical : `${canonical}/`)
-    : siteUrl;
+  // Standardize on NO trailing slash (except the root "/"). Accept either a
+  // full URL or a path in the `canonical` prop; if none is supplied, derive
+  // the canonical from the current route's pathname so we never silently
+  // default to the homepage.
+  const SITE = "https://www.myaussieguide.com.au";
+  let path: string;
+  if (canonical) {
+    try {
+      path = new URL(canonical, SITE).pathname;
+    } catch {
+      path = canonical.startsWith("/") ? canonical : `/${canonical}`;
+    }
+  } else if (typeof window !== "undefined") {
+    path = window.location.pathname || "/";
+  } else {
+    path = "/";
+  }
+  if (path.length > 1 && path.endsWith("/")) path = path.slice(0, -1);
+  const canonicalUrl = `${SITE}${path}`;
+
 
   return (
     <Helmet>
