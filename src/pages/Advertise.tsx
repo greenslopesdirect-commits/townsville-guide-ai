@@ -20,29 +20,26 @@ import { toast } from "sonner";
 const EMAIL = "hello@myaussieguide.com.au";
 
 // -----------------------------------------------------------------------------
-// Editable stats — Duncan, drop your real numbers in here. Leave a placeholder
-// in the value string (e.g. "12,000+") and it will render as shown.
+// Editable stats — swap heading/body copy here.
 // -----------------------------------------------------------------------------
-const STATS: { label: string; value: string; note: string; Icon: typeof Users }[] = [
+const STATS: { label?: string; value: string; note: string; Icon: typeof Users }[] = [
   {
-    label: "Monthly readers",
-    value: "[add number]",
-    note: "Locals + visitors planning their week",
-    Icon: Users,
-  },
-  {
-    label: "Growth trend",
-    value: "[add %]",
-    note: "Month-on-month through mid-2026",
+    value: "Growing fast",
+    note: "Seen by thousands of searches every month for Townsville events, beaches, safety info and Cowboys game day.",
     Icon: TrendingUp,
   },
   {
-    label: "Top-performing sections",
-    value: "Events · Beaches · Cowboys",
-    note: "Where partners get the most eyes",
+    value: "Hyper-local, not generic",
+    note: "Every guide written and kept current by a real Townsville local — not scraped or AI-generated content.",
+    Icon: MapPin,
+  },
+  {
+    value: "Ground floor",
+    note: "We're hand-picking a small number of Founding Partners during our early growth phase — this is the best time to lock in launch pricing.",
     Icon: Star,
   },
 ];
+
 
 // -----------------------------------------------------------------------------
 // Pricing tiers
@@ -163,21 +160,27 @@ const Advertise = () => {
               <h2 id="stats-heading" className="sr-only">Audience & reach</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {STATS.map(({ label, value, note, Icon }) => (
-                  <Card key={label} className="border-2 border-border/40">
+                  <Card key={value} className="border-2 border-border/40">
                     <CardContent className="p-5">
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                        <Icon className="w-4 h-4 text-primary" />
-                        <span>{label}</span>
+                      {label && (
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+                          <Icon className="w-4 h-4 text-primary" />
+                          <span>{label}</span>
+                        </div>
+                      )}
+                      <div className="flex items-center gap-2 mb-2">
+                        {!label && <Icon className="w-5 h-5 text-primary flex-shrink-0" />}
+                        <div className="text-xl font-bold text-foreground leading-snug">{value}</div>
                       </div>
-                      <div className="text-2xl font-bold text-foreground mb-1">{value}</div>
-                      <p className="text-xs text-muted-foreground leading-relaxed">{note}</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{note}</p>
                     </CardContent>
                   </Card>
                 ))}
               </div>
               <p className="text-center text-sm text-muted-foreground mt-4 max-w-2xl mx-auto">
-                Fastest-growing local guide for Townsville events, beaches, safety info and Cowboys game day. No inflated vanity metrics — happy to share the real analytics on request.
+                Townsville's fastest-growing independent local guide — built by a local, for locals and visitors alike.
               </p>
+
             </section>
 
             {/* Pricing Tiers */}
