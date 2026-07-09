@@ -14,13 +14,14 @@ const QCB_LOCATION = {
   name: "Queensland Country Bank Stadium",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "3 Stadium Drive",
-    addressLocality: "Townsville City",
+    streetAddress: "2 Pride Close",
+    addressLocality: "Railway Estate",
     addressRegion: "QLD",
     postalCode: "4810",
     addressCountry: "AU",
   },
 };
+
 
 const cowboysJsonLd = {
   "@context": "https://schema.org",
