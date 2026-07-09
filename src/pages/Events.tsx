@@ -154,6 +154,10 @@ const Events = () => {
         description="Updated June 26, 2026: Late-June dry season weekend — Cowboys vs Panthers Round 17, Cotters Market, Paluma Bush Dance, Queensland Country Rugby Championships, and the Soroptimist Park community planting at Rowes Bay."
         canonical="https://www.myaussieguide.com.au/events"
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(eventsJsonLd)}</script>
+      </Helmet>
+
 
       {/* Header Section */}
       <div className="bg-white border-b sticky top-0 z-10">
