@@ -40,6 +40,38 @@ const STATS: { label?: string; value: string; note: string; Icon: typeof Users }
   },
 ];
 
+// -----------------------------------------------------------------------------
+// Pre-filled mailto bodies. Real newlines here — encodeURIComponent turns them
+// into %0A so Gmail / Outlook / Apple Mail render them as line breaks.
+// -----------------------------------------------------------------------------
+const BODY_COMMUNITY = `Business name:
+
+Website / Instagram:
+
+What you'd like listed:
+
+(Just fill in what you can — I'll follow up with any questions!)`;
+
+const BODY_FOUNDING = `Business name:
+
+Website / Instagram:
+
+What you'd like listed:
+
+(Just fill in what you can — I'll follow up with any questions!)`;
+
+const BODY_GAMEDAY = `Business name:
+
+Website / Instagram:
+
+Which upcoming event are you interested in sponsoring?
+
+(Just fill in what you can — I'll follow up with any questions!)`;
+
+const mailtoHref = (subject: string, body: string) =>
+  `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+
 
 // -----------------------------------------------------------------------------
 // Pricing tiers
