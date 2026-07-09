@@ -40,6 +40,38 @@ const STATS: { label?: string; value: string; note: string; Icon: typeof Users }
   },
 ];
 
+// -----------------------------------------------------------------------------
+// Pre-filled mailto bodies. Real newlines here — encodeURIComponent turns them
+// into %0A so Gmail / Outlook / Apple Mail render them as line breaks.
+// -----------------------------------------------------------------------------
+const BODY_COMMUNITY = `Business name:
+
+Website / Instagram:
+
+What you'd like listed:
+
+(Just fill in what you can — I'll follow up with any questions!)`;
+
+const BODY_FOUNDING = `Business name:
+
+Website / Instagram:
+
+What you'd like listed:
+
+(Just fill in what you can — I'll follow up with any questions!)`;
+
+const BODY_GAMEDAY = `Business name:
+
+Website / Instagram:
+
+Which upcoming event are you interested in sponsoring?
+
+(Just fill in what you can — I'll follow up with any questions!)`;
+
+const mailtoHref = (subject: string, body: string) =>
+  `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+
 
 // -----------------------------------------------------------------------------
 // Pricing tiers
@@ -59,6 +91,8 @@ const TIERS = [
     ],
     ctaLabel: "Apply for a Community Listing",
     ctaSubject: "Community Listing Application",
+    ctaBody: BODY_COMMUNITY,
+
     highlight: false,
   },
   {
@@ -77,6 +111,8 @@ const TIERS = [
     ],
     ctaLabel: "Apply as a Founding Partner",
     ctaSubject: "Founding Partner Application",
+    ctaBody: BODY_FOUNDING,
+
     highlight: true,
   },
   {
@@ -95,6 +131,8 @@ const TIERS = [
     ],
     ctaLabel: "Enquire about Peak Placement",
     ctaSubject: "Game Day / Peak Placement Enquiry",
+    ctaBody: BODY_GAMEDAY,
+
     highlight: false,
   },
 ];
@@ -232,7 +270,7 @@ const Advertise = () => {
                         className="w-full mt-auto"
                       >
                         <a
-                          href={`mailto:${EMAIL}?subject=${encodeURIComponent(tier.ctaSubject)}`}
+                          href={mailtoHref(tier.ctaSubject, tier.ctaBody)}
                         >
                           {tier.ctaLabel}
                         </a>
@@ -305,7 +343,7 @@ const Advertise = () => {
                     </p>
                   </div>
                   <Button asChild variant="default" className="md:flex-shrink-0">
-                    <a href={`mailto:${EMAIL}?subject=${encodeURIComponent("Game Day / Peak Placement Enquiry")}`}>
+                    <a href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}>
                       Enquire
                     </a>
                   </Button>
@@ -326,7 +364,8 @@ const Advertise = () => {
               </p>
               <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
                 <a
-                  href={`mailto:${EMAIL}?subject=${encodeURIComponent("Founding Partner Application")}`}
+                  href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}
+
                   className="text-xl sm:text-2xl font-semibold text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors break-all"
                 >
                   {EMAIL}
@@ -341,7 +380,7 @@ const Advertise = () => {
                 </button>
               </div>
               <Button size="lg" asChild>
-                <a href={`mailto:${EMAIL}?subject=${encodeURIComponent("Founding Partner Application")}`}>
+                <a href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}>
                   Email Duncan to Apply
                 </a>
               </Button>
