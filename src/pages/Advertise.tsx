@@ -20,29 +20,26 @@ import { toast } from "sonner";
 const EMAIL = "hello@myaussieguide.com.au";
 
 // -----------------------------------------------------------------------------
-// Editable stats — Duncan, drop your real numbers in here. Leave a placeholder
-// in the value string (e.g. "12,000+") and it will render as shown.
+// Editable stats — swap heading/body copy here.
 // -----------------------------------------------------------------------------
-const STATS: { label: string; value: string; note: string; Icon: typeof Users }[] = [
+const STATS: { label?: string; value: string; note: string; Icon: typeof Users }[] = [
   {
-    label: "Monthly readers",
-    value: "[add number]",
-    note: "Locals + visitors planning their week",
-    Icon: Users,
-  },
-  {
-    label: "Growth trend",
-    value: "[add %]",
-    note: "Month-on-month through mid-2026",
+    value: "Growing fast",
+    note: "Seen by thousands of searches every month for Townsville events, beaches, safety info and Cowboys game day.",
     Icon: TrendingUp,
   },
   {
-    label: "Top-performing sections",
-    value: "Events · Beaches · Cowboys",
-    note: "Where partners get the most eyes",
+    value: "Hyper-local, not generic",
+    note: "Every guide written and kept current by a real Townsville local — not scraped or AI-generated content.",
+    Icon: MapPin,
+  },
+  {
+    value: "Ground floor",
+    note: "We're hand-picking a small number of Founding Partners during our early growth phase — this is the best time to lock in launch pricing.",
     Icon: Star,
   },
 ];
+
 
 // -----------------------------------------------------------------------------
 // Pricing tiers
