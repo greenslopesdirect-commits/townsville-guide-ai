@@ -91,6 +91,8 @@ const TIERS = [
     ],
     ctaLabel: "Apply for a Community Listing",
     ctaSubject: "Community Listing Application",
+    ctaBody: BODY_COMMUNITY,
+
     highlight: false,
   },
   {
@@ -109,6 +111,8 @@ const TIERS = [
     ],
     ctaLabel: "Apply as a Founding Partner",
     ctaSubject: "Founding Partner Application",
+    ctaBody: BODY_FOUNDING,
+
     highlight: true,
   },
   {
@@ -127,6 +131,8 @@ const TIERS = [
     ],
     ctaLabel: "Enquire about Peak Placement",
     ctaSubject: "Game Day / Peak Placement Enquiry",
+    ctaBody: BODY_GAMEDAY,
+
     highlight: false,
   },
 ];
