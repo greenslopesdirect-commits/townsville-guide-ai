@@ -10,7 +10,7 @@ const RowesBay = () => {
       <SEOHead
         title="Rowes Bay Townsville — Sunset Beach Guide"
         description="A local guide to Rowes Bay Townsville — sunset views, dog-friendly zones, parking and what to know before you visit."
-        canonical="https://www.myaussieguide.com.au/rowes-bay/"
+        canonical="https://www.myaussieguide.com.au/rowes-bay"
       />
     <div className="min-h-screen bg-neutral-50 pb-20">
       {/* Hero Section */}

@@ -34,7 +34,7 @@ const JezzineBarracks = () => {
       <SEOHead
         title="Jezzine Barracks Townsville — Local Guide"
         description="A local guide to Jezzine Barracks Townsville — Army Museum, public art trail, Kissing Point Fort and Kennedy Regiment Plaza."
-        canonical="https://www.myaussieguide.com.au/guides/jezzine-barracks/"
+        canonical="https://www.myaussieguide.com.au/guides/jezzine-barracks"
       />
     <div className="min-h-screen bg-background pb-20">
       {/* Hero Section */}
