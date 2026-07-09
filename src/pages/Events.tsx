@@ -1,10 +1,150 @@
 import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog, Footprints, Trophy, Leaf, Sun, Thermometer, Laugh, Star, ShoppingBasket } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
+
+const TOWNSVILLE_ADDRESS = {
+  "@type": "PostalAddress",
+  addressLocality: "Townsville",
+  addressRegion: "QLD",
+  addressCountry: "AU",
+};
+
+const eventsJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Event",
+      name: "NTI Townsville 500",
+      startDate: "2026-07-10",
+      endDate: "2026-07-12",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "The annual Supercars street circuit takes over Reid Park with trackside action, car shows, and live concert events in the heart of the city.",
+      location: {
+        "@type": "Place",
+        name: "Reid Park Street Circuit",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Reid Park" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Cotters Market",
+      startDate: "2026-07-12",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Townsville's premier Sunday market on Flinders Street from 8:00 AM to 1:00 PM — fresh coffee, local North Queensland crafts, food stalls, and live street music.",
+      location: {
+        "@type": "Place",
+        name: "Flinders Street, Townsville CBD",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Flinders Street" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Cotters Market",
+      startDate: "2026-07-19",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Townsville's premier Sunday market on Flinders Street from 8:00 AM to 1:00 PM — fresh coffee, local North Queensland crafts, food stalls, and live street music.",
+      location: {
+        "@type": "Place",
+        name: "Flinders Street, Townsville CBD",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Flinders Street" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "McDonald's Townsville Running Festival",
+      startDate: "2026-08-02",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "The iconic community running festival featuring a marathon course over the weirs and along The Strand, with shorter distances for families and first-timers.",
+      location: {
+        "@type": "Place",
+        name: "The Strand, Townsville",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "The Strand" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "North Queensland Elite Rodeo",
+      startDate: "2026-08-14",
+      endDate: "2026-08-16",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Three nights of bull riding, barrel racing, and country entertainment under lights at Hervey Range — one of the dry season's biggest community drawcards.",
+      location: {
+        "@type": "Place",
+        name: "Hervey Range",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Hervey Range",
+          addressRegion: "QLD",
+          addressCountry: "AU",
+        },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Magnetic Island Race Week",
+      startDate: "2026-08",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "The ultimate social regatta with yachts racing across Cleveland Bay and lively community events around Magnetic Island.",
+      location: {
+        "@type": "Place",
+        name: "Magnetic Island",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Magnetic Island",
+          addressRegion: "QLD",
+          addressCountry: "AU",
+        },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "North Australian Festival of Arts (NAFA)",
+      startDate: "2026-09-25",
+      endDate: "2026-10-11",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Townsville's flagship arts festival, bringing comedy, circus, theatre, live music, and light installations to Strand Park and venues across the CBD.",
+      location: {
+        "@type": "Place",
+        name: "Strand Park & venues across Townsville",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Strand Park" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Townsville Christmas Festival",
+      startDate: "2026-12",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Festive lights, markets, and family-friendly entertainment across the CBD and waterfront.",
+      location: {
+        "@type": "Place",
+        name: "Townsville CBD & waterfront",
+        address: TOWNSVILLE_ADDRESS,
+      },
+    },
+  ],
+};
+
 
 const Events = () => {
   return (
@@ -14,6 +154,10 @@ const Events = () => {
         description="Updated June 26, 2026: Late-June dry season weekend — Cowboys vs Panthers Round 17, Cotters Market, Paluma Bush Dance, Queensland Country Rugby Championships, and the Soroptimist Park community planting at Rowes Bay."
         canonical="https://www.myaussieguide.com.au/events"
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(eventsJsonLd)}</script>
+      </Helmet>
+
 
       {/* Header Section */}
       <div className="bg-white border-b sticky top-0 z-10">

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { ArrowRight, Calendar, MapPin, Users, Car, Utensils, Volume2, Trophy, ExternalLink, Accessibility, Brain, Armchair } from "lucide-react";
 import stampedeMap from "@/assets/cowboys-stampede-map.webp";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,61 @@ import SEOHead from "@/components/SEOHead";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import AirportTransferCard from "@/components/AirportTransferCard";
 
+const QCB_LOCATION = {
+  "@type": "Place",
+  name: "Queensland Country Bank Stadium",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "3 Stadium Drive",
+    addressLocality: "Townsville City",
+    addressRegion: "QLD",
+    postalCode: "4810",
+    addressCountry: "AU",
+  },
+};
+
+const cowboysJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SportsEvent",
+      name: "North Queensland Cowboys vs Wests Tigers (NRLW Round 1 Double Header)",
+      startDate: "2026-07-11T15:30:00+10:00",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "NRLW Round 1 double header home game — North Queensland Cowboys vs Wests Tigers at Queensland Country Bank Stadium, Saturday July 11, 2026, 3:30 PM.",
+      location: QCB_LOCATION,
+      homeTeam: { "@type": "SportsTeam", name: "North Queensland Cowboys" },
+      awayTeam: { "@type": "SportsTeam", name: "Wests Tigers" },
+    },
+    {
+      "@type": "SportsEvent",
+      name: "North Queensland Cowboys vs Brisbane Broncos (Round 21)",
+      startDate: "2026-07-25T19:35:00+10:00",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "NRL Round 21 Queensland Derby home game — North Queensland Cowboys vs Brisbane Broncos at Queensland Country Bank Stadium, Saturday July 25, 2026, 7:35 PM.",
+      location: QCB_LOCATION,
+      homeTeam: { "@type": "SportsTeam", name: "North Queensland Cowboys" },
+      awayTeam: { "@type": "SportsTeam", name: "Brisbane Broncos" },
+    },
+    {
+      "@type": "SportsEvent",
+      name: "North Queensland Cowboys vs Sydney Roosters (Round 22)",
+      startDate: "2026-07-30T19:50:00+10:00",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "NRL Round 22 home game — North Queensland Cowboys vs Sydney Roosters at Queensland Country Bank Stadium, Thursday July 30, 2026, 7:50 PM.",
+      location: QCB_LOCATION,
+      homeTeam: { "@type": "SportsTeam", name: "North Queensland Cowboys" },
+      awayTeam: { "@type": "SportsTeam", name: "Sydney Roosters" },
+    },
+  ],
+};
+
 const CowboysStadiumGuide = () => {
   return (
     <>
@@ -16,6 +72,10 @@ const CowboysStadiumGuide = () => {
         description="Plan your 2026 Cowboys game day in Townsville. Updated June 26, 2026 — Round 17 vs Penrith Panthers (Sat June 27, 5:30 PM): parking, free shuttles, and Saturday evening logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(cowboysJsonLd)}</script>
+      </Helmet>
+
 
       <div className="min-h-screen bg-gray-50">
         {/* Header */}
