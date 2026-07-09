@@ -292,7 +292,40 @@ const ThingsToDo = () => {
             }))
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How many days do you need in Townsville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "To truly experience Townsville, 2 to 3 days is ideal. This gives you one day to explore The Strand and Castle Hill, one day for a day trip to Magnetic Island, and a third day to swim at the Riverway Lagoons or visit the Museum of Tropical Queensland."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Townsville worth visiting?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely. Townsville offers a unique mix of tropical coastlines, historic World War II sites, incredible wildlife at Billabong Sanctuary, and acts as the perfect gateway to Magnetic Island and the Great Barrier Reef."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is there to do in Townsville at night?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Popular evening activities include walking along The Strand as it cools down, driving up Castle Hill for panoramic sunset views over the ocean, or visiting the local restaurants and bars in the Palmer Street dining precinct."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
+
       
       <div className="min-h-screen bg-background">
         <main className="pt-24 pb-16">

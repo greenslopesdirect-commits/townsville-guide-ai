@@ -14,6 +14,32 @@ const TheStrand = () => {
         description="A local guide to The Strand in Townsville — 2.2km of foreshore, Rockpool, Water Park, dining and how to do it like a local."
         canonical="https://www.myaussieguide.com.au/the-strand"
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Are dogs allowed?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, on the promenade (on-leash). Not on the sand near swimming nets or the Rockpool."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there shade?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Plenty. The path is lined with huge Fig and Palm trees. Great for walking even at midday."
+              }
+            }
+          ]
+        }) }}
+      />
+
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
       <div className="bg-white border-b sticky top-0 z-10">

@@ -44,6 +44,19 @@ const MagneticIslandDayTrip = () => {
         description="Planning a day trip to Magnetic Island? Get the local-verified itinerary for koala spotting, secret bays, and the best ferry times. Updated April 27, 2026 — perfect Dry Season conditions with cooler mornings and lower humidity for hiking the Forts Walk."
         canonical="https://www.myaussieguide.com.au/guides/magnetic-island-day-trip"
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": faqs.map(f => ({
+            "@type": "Question",
+            "name": f.question,
+            "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+          }))
+        }) }}
+      />
+
     <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <h1 className="text-4xl font-bold mb-4 text-center">Magnetic Island Family Day Trip</h1>
       <p className="text-muted-foreground text-lg text-center max-w-3xl mx-auto mb-8 leading-relaxed">

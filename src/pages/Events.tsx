@@ -156,7 +156,38 @@ const Events = () => {
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(eventsJsonLd)}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is happening in Townsville this weekend?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Markets, sports events, seasonal festivals, and outdoor activities typically feature each week. This page is updated regularly with current highlights. You can also check the official Townsville events calendar for additional listings."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where can I find live music in Townsville?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Popular spots include Palmer Street venues, Cowboys Leagues Club, Strand Night Markets, and seasonal festival stages. Browse our Food & Drink guide for dining spots with live entertainment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are Townsville events family friendly?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most community markets, festivals, lagoon activities, and outdoor events welcome families. Always check venue-specific details. For family activity ideas, see our Things to Do and Dog-Friendly guides."
+              }
+            }
+          ]
+        })}</script>
       </Helmet>
+
 
 
       {/* Header Section */}

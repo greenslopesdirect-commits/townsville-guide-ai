@@ -56,15 +56,49 @@ const RainyDayActivities = () => (
       dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://www.myaussieguide.com.au/" },
-            { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.myaussieguide.com.au/" },
-            { "@type": "ListItem", position: 3, name: "Rainy Day Activities", item: "https://www.myaussieguide.com.au/guides/rainy-day-activities/" },
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.myaussieguide.com.au/" },
+                { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.myaussieguide.com.au/" },
+                { "@type": "ListItem", position: 3, name: "Rainy Day Activities", item: "https://www.myaussieguide.com.au/guides/rainy-day-activities/" },
+              ],
+            },
+            {
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "When is the wet season in Townsville?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "The wet season generally runs from November through to April, with the heaviest rainfall typically in January, February and March.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Does it rain all day in Townsville's wet season?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Rarely. Most wet season days bring intense bursts of rain lasting 30–90 minutes, often followed by sunshine. All-day rain typically only happens during a tropical low or cyclone system.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "What's the best free rainy day activity in Townsville?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Browsing Townsville Central or Castletown shopping centres is free and undercover. For more ideas, see our Top 10 Free Things to Do guide.",
+                  },
+                },
+              ],
+            },
           ],
         }),
       }}
     />
+
 
     <h1 className="text-4xl font-bold mb-3 text-center">Rainy Day Activities in Townsville</h1>
     <p className="text-center text-lg text-muted-foreground mb-2">Your Wet Season Survival Guide</p>

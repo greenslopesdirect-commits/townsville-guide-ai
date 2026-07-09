@@ -61,18 +61,31 @@ const BillabongSanctuary = () => {
         ogType="article"
       />
 
-      {/* Breadcrumb Schema */}
+      {/* Breadcrumb + FAQ Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-            { "@type": "ListItem", "position": 2, "name": "Billabong Sanctuary", "item": "https://www.myaussieguide.com.au/billabong-sanctuary/" }
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
+                { "@type": "ListItem", "position": 2, "name": "Billabong Sanctuary", "item": "https://www.myaussieguide.com.au/billabong-sanctuary/" }
+              ]
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": faqs.map(f => ({
+                "@type": "Question",
+                "name": f.question,
+                "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+              }))
+            }
           ]
         }) }}
       />
+
 
       <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
         <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
