@@ -160,21 +160,27 @@ const Advertise = () => {
               <h2 id="stats-heading" className="sr-only">Audience & reach</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {STATS.map(({ label, value, note, Icon }) => (
-                  <Card key={label} className="border-2 border-border/40">
+                  <Card key={value} className="border-2 border-border/40">
                     <CardContent className="p-5">
-                      <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                        <Icon className="w-4 h-4 text-primary" />
-                        <span>{label}</span>
+                      {label && (
+                        <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+                          <Icon className="w-4 h-4 text-primary" />
+                          <span>{label}</span>
+                        </div>
+                      )}
+                      <div className="flex items-center gap-2 mb-2">
+                        {!label && <Icon className="w-5 h-5 text-primary flex-shrink-0" />}
+                        <div className="text-xl font-bold text-foreground leading-snug">{value}</div>
                       </div>
-                      <div className="text-2xl font-bold text-foreground mb-1">{value}</div>
-                      <p className="text-xs text-muted-foreground leading-relaxed">{note}</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{note}</p>
                     </CardContent>
                   </Card>
                 ))}
               </div>
               <p className="text-center text-sm text-muted-foreground mt-4 max-w-2xl mx-auto">
-                Fastest-growing local guide for Townsville events, beaches, safety info and Cowboys game day. No inflated vanity metrics — happy to share the real analytics on request.
+                Townsville's fastest-growing independent local guide — built by a local, for locals and visitors alike.
               </p>
+
             </section>
 
             {/* Pricing Tiers */}
