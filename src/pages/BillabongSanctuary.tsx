@@ -63,9 +63,8 @@ const BillabongSanctuary = () => {
       />
 
       {/* Breadcrumb + FAQ Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
             {
@@ -84,8 +83,8 @@ const BillabongSanctuary = () => {
               }))
             }
           ]
-        }) }}
-      />
+        })}</script>
+      </Helmet>
 
 
       <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
