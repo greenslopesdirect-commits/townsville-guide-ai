@@ -1,4 +1,5 @@
 import { ArrowRight, MapPin, Waves, Umbrella, Info, Coffee, Car, AlertTriangle, Sun, ShieldCheck, Mountain } from "lucide-react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,9 +15,8 @@ const TheStrand = () => {
         description="A local guide to The Strand in Townsville — 2.2km of foreshore, Rockpool, Water Park, dining and how to do it like a local."
         canonical="https://www.myaussieguide.com.au/the-strand"
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
           "mainEntity": [
@@ -37,8 +37,8 @@ const TheStrand = () => {
               }
             }
           ]
-        }) }}
-      />
+        })}</script>
+      </Helmet>
 
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
