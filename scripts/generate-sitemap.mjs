@@ -1,7 +1,14 @@
 #!/usr/bin/env node
 /**
  * Generates public/sitemap.xml from an explicit URL -> source-file map.
- * Each <lastmod> is derived from the filesystem mtime of the mapped source file.
+ *
+ * Each <lastmod> is derived from the source file's LAST GIT COMMIT DATE
+ * (`git log -1 --format=%cs -- <file>`). If git is unavailable or the file
+ * is untracked, it falls back to the filesystem mtime.
+ *
+ * Why git log instead of mtime: build sandboxes (including Lovable's) re-check-out
+ * files on every build, so mtime = build day for every file. Git commit date is the
+ * only reliable signal of when a page was actually edited.
  *
  * Runs automatically via the "prebuild" npm script, so it re-runs before every
  * `vite build` (and therefore before every Lovable publish).
@@ -10,8 +17,10 @@
  */
 
 import { statSync, writeFileSync, existsSync } from "node:fs";
+import { execSync } from "node:child_process";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -71,6 +80,23 @@ function isoDate(mtime) {
   return mtime.toISOString().slice(0, 10); // YYYY-MM-DD
 }
 
+function gitLastModified(absPath) {
+  try {
+    const out = execSync(`git log -1 --format=%cs -- "${absPath}"`, {
+      cwd: ROOT,
+      stdio: ["ignore", "pipe", "ignore"],
+    }).toString().trim();
+    return out || null; // empty = untracked/new file
+  } catch {
+    return null; // git unavailable
+  }
+}
+
+function lastmodFor(absPath) {
+  return gitLastModified(absPath) || isoDate(statSync(absPath).mtime);
+}
+
+
 function buildXml() {
   const missing = [];
   const entries = PAGES.map((p) => {
@@ -79,7 +105,7 @@ function buildXml() {
       missing.push(`${p.path} -> ${p.source}`);
       return null;
     }
-    const lastmod = isoDate(statSync(abs).mtime);
+    const lastmod = lastmodFor(abs);
     return `  <url>
     <loc>${SITE}${p.path}</loc>
     <lastmod>${lastmod}</lastmod>
