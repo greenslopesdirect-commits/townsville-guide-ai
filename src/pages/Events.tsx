@@ -16,32 +16,17 @@ const TOWNSVILLE_ADDRESS = {
 
 const eventsGraph = [
     {
-      "@type": "Event",
-      name: "NTI Townsville 500",
-      startDate: "2026-07-10",
-      endDate: "2026-07-12",
+      "@type": "SportsEvent",
+      name: "NRL Round 21: North Queensland Cowboys vs Brisbane Broncos (Queensland Derby)",
+      startDate: "2026-07-25",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       description:
-        "The annual Supercars street circuit takes over Reid Park with trackside action, car shows, and live concert events in the heart of the city.",
+        "The Queensland Derby returns to Townsville — Cowboys host the Brisbane Broncos in a Round 21 blockbuster at Queensland Country Bank Stadium.",
       location: {
         "@type": "Place",
-        name: "Reid Park Street Circuit",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Reid Park" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Cotters Market",
-      startDate: "2026-07-12",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Townsville's premier Sunday market on Flinders Street from 8:00 AM to 1:00 PM — fresh coffee, local North Queensland crafts, food stalls, and live street music.",
-      location: {
-        "@type": "Place",
-        name: "Flinders Street, Townsville CBD",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Flinders Street" },
+        name: "Queensland Country Bank Stadium",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
       },
     },
     {
