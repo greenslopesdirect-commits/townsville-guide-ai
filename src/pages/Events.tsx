@@ -474,9 +474,9 @@ const Events = () => {
           <ol className="relative border-l-2 border-primary/30 ml-3 space-y-8">
             {[
               {
-                date: "10 – 12 July 2026",
-                title: "NTI Townsville 500",
-                body: "NTI Townsville 500 — The annual supercar street circuit is officially live this weekend! Enjoy intense trackside action, the return of the popular car shows, and massive live concert events in the heart of the city."
+                date: "Saturday 25 July 2026",
+                title: "NRL Round 21: Cowboys vs Broncos (Queensland Derby)",
+                body: "The Queensland Derby returns to Townsville — Cowboys host the Brisbane Broncos at Queensland Country Bank Stadium in a Round 21 blockbuster. Use the free Park & Ride at Lou Litster Park to skip CBD traffic."
               },
               {
                 date: "2 August 2026",
