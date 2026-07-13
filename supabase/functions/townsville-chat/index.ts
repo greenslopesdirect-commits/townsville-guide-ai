@@ -551,7 +551,6 @@ DAY TRIPS
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Jourama+Falls+Queensland)
 
 ====================================================
-
 SECRET BEACHES & LOCAL TIPS
 ====================================================
 • Saunders Beach: Local favourite for a peaceful escape north of Townsville. Easy parking, fewer crowds, steady sea breeze. About 30 mins north. Off-leash dog-friendly.
