@@ -169,11 +169,11 @@ const CowboysStadiumGuide = () => {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border">
-                      <tr className="bg-primary/5">
-                        <td className="px-4 py-3 font-medium">NRLW Round 1 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
-                        <td className="px-4 py-3 font-semibold">vs Wests Tigers</td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat July 11, 2026, 3:30 PM</td>
-                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      <tr className="bg-muted/30 text-muted-foreground">
+                        <td className="px-4 py-3 font-medium">NRLW Round 1 <Badge variant="outline" className="ml-1 text-muted-foreground border-muted-foreground/30">PAST</Badge></td>
+                        <td className="px-4 py-3 font-semibold line-through">vs Wests Tigers</td>
+                        <td className="px-4 py-3">Sat July 11, 2026, 3:30 PM</td>
+                        <td className="px-4 py-3">QCB Stadium</td>
                       </tr>
                       <tr className="bg-primary/5">
                         <td className="px-4 py-3 font-medium">Round 21 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
