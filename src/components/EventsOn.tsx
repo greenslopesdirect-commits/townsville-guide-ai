@@ -87,7 +87,7 @@ const EventsOn = () => {
                         <Star className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Sunday Mornings (July 12 &amp; 19)</p>
+                    <p className="text-xs text-primary font-medium mb-1">Next: Sunday July 19, 2026 (8 AM – 1 PM)</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Flinders Street, CBD
                     </div>
