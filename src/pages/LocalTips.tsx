@@ -20,7 +20,7 @@ const LocalTips = () => {
         "Dry season: Best for hiking, beaches, outdoor events",
         "Wet season: Fewer crowds, cheaper accommodation",
         "Shoulder months (April–May, Sept–Oct) are ideal",
-        "Check Today's Weather Forecast: May 11 Update — Crisp mornings and sunny 26°C days. The Dry Season is in full swing, but don't let the cooler air fool you—the UV index is still hitting Extreme (11+) by midday."
+        "Check Today's Weather Forecast: July 13, 2026 Update — Cool 17°C mornings warming to sunny 25°C days with very low humidity. Peak dry-season conditions, but the UV index still climbs to High–Very High (8–9) by midday, so sun protection is essential."
       ],
       aiPrompt: "What's the best time of year to visit Townsville based on weather and activities?"
     },
