@@ -370,7 +370,7 @@ const CowboysStadiumGuide = () => {
                 <ul className="space-y-2 text-muted-foreground text-sm">
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <span><strong className="text-foreground">Shuttle from:</strong> 2 hours before kick-off (e.g. from 3:30 PM for a 5:30 PM game).</span>
+                    <span><strong className="text-foreground">Shuttle from:</strong> 2 hours before kick-off (e.g. from 5:35 PM for a 7:35 PM game).</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
