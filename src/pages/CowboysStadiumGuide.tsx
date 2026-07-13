@@ -28,18 +28,6 @@ const cowboysJsonLd = {
   "@graph": [
     {
       "@type": "SportsEvent",
-      name: "North Queensland Cowboys vs Wests Tigers (NRLW Round 1 Double Header)",
-      startDate: "2026-07-11T15:30:00+10:00",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "NRLW Round 1 double header home game — North Queensland Cowboys vs Wests Tigers at Queensland Country Bank Stadium, Saturday July 11, 2026, 3:30 PM.",
-      location: QCB_LOCATION,
-      homeTeam: { "@type": "SportsTeam", name: "North Queensland Cowboys" },
-      awayTeam: { "@type": "SportsTeam", name: "Wests Tigers" },
-    },
-    {
-      "@type": "SportsEvent",
       name: "North Queensland Cowboys vs Brisbane Broncos (Round 21)",
       startDate: "2026-07-25T19:35:00+10:00",
       eventStatus: "https://schema.org/EventScheduled",
