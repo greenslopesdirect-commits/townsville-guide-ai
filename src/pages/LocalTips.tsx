@@ -249,8 +249,8 @@ const LocalTips = () => {
               <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">🏟️ May 24 Footy Alert — Sunday Afternoon Clash</p>
-                  <p className="text-xs text-muted-foreground mt-1">For the <strong>Cowboys vs Rabbitohs</strong> (4:05 PM kick-off), expect the CBD and Lowths Bridge to be busy from 1:00 PM. Local Tip: Sunday games bring more families—parking at Lou Litster Park and taking the shuttle is your best bet to avoid the pre-game rush.</p>
+                  <p className="font-medium text-sm text-foreground">🏟️ July 25 Footy Alert — Queensland Derby, Saturday Night</p>
+                  <p className="text-xs text-muted-foreground mt-1">For the <strong>Cowboys vs Brisbane Broncos</strong> (7:35 PM kick-off), expect the CBD and Lowths Bridge to get busy from around 5:00 PM, with heavier congestion from 6:00 PM as derby crowds head in. Local Tip: Park at Lou Litster Park and grab the free shuttle, or arrive by 5:30 PM if you want a pre-game meal on Palmer Street.</p>
                 </div>
               </div>
             </section>
