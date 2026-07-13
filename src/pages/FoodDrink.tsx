@@ -220,8 +220,8 @@ const FoodDrink = () => {
   return (
     <>
       <SEOHead
-       title="Best Restaurants in Townsville | Local Dining Guide June 2026"
-       description="Updated June 15, 2026. Discover the best breakfast, coffee, dinner, and waterfront dining..."
+       title="Best Restaurants in Townsville | Local Dining Guide July 2026"
+       description="Updated July 13, 2026. Discover the best breakfast, coffee, dinner, and waterfront dining..."
         canonical="https://www.myaussieguide.com.au/food"
       />
       <Helmet>
@@ -290,16 +290,16 @@ const FoodDrink = () => {
                 It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>Mid-June 2026 Update: As we settle into the Dry Season, most CBD and Strand cafes are at full capacity on weekends. While many boutique spots close early on Mondays, Cbar, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit or waterfront lunch.</em>
+                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>Mid-July 2026 Update: We're deep into the Dry Season now, and most CBD and Strand cafes are still at full capacity on weekends. While many boutique spots close early on Mondays, Cbar, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit or waterfront lunch.</em>
                </p>
             </LocalInsightCard>
 
             {/* Weekly Highlight */}
              <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
-               <h3 className="font-bold text-foreground text-lg">📅 June Winter Vibe</h3>
-               <p className="text-sm text-muted-foreground leading-relaxed">
-                 With the humidity bottomed out, North Queensland's winter dining is at its absolute peak. It's the perfect weather for open-air deck dining at C Bar or a crisp Sunday morning coffee down City Lane before the crowd builds.
-               </p>
+                <h3 className="font-bold text-foreground text-lg">📅 July Winter Vibe</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  With humidity still low and the dry season in full swing, North Queensland's winter dining is at its absolute peak. It's the perfect weather for open-air deck dining at C Bar or a crisp Sunday morning coffee down City Lane before the crowd builds.
+                </p>
              </div>
 
             {/* Coffee Culture */}
@@ -398,10 +398,10 @@ const FoodDrink = () => {
                   </p>
                 </div>
                  <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
-                   <p className="text-sm text-foreground">
-                     🎸 <strong>Festival & Footy Weekend (May 18–24):</strong> With the massive Dream Fields Festival taking over Central Park this Saturday (May 23), the City Lane precinct, Flinders Street cafés, and Rambutan Rooftop will be packed with festival-goers all afternoon. Looking ahead to the Cowboys vs Rabbitohs home game on Sunday (May 24), Palmer Street will be the absolute heart of the pre-game lunch rush. We strongly recommend booking your tables at JAM, A Touch of Salt, or Copper Bar & Grill by mid-week to guarantee a spot.
-                   </p>
-                 </div>
+                    <p className="text-sm text-foreground">
+                      🏉 <strong>Footy Weekend (July 25):</strong> The Queensland Derby is here — Cowboys vs Brisbane Broncos at Queensland Country Bank Stadium on Saturday, July 25. Palmer Street will be the heart of the pre-game lunch rush. We strongly recommend booking your table at JAM, A Touch of Salt, or Copper Bar & Grill by mid-week to guarantee a spot.
+                    </p>
+                  </div>
               </div>
             </section>
 
