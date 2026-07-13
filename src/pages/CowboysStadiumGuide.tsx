@@ -310,7 +310,7 @@ const CowboysStadiumGuide = () => {
               <div>
                  <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                   <p className="text-amber-800 text-sm mt-1">
-                    For the Saturday afternoon NRLW kick-off, the Leagues Club will be buzzing from midday. The 'Stampede' march across Lowths Bridge will depart at approximately 2:45 PM. Aim to be at the Leagues Club by 1:30 PM for pre-game drinks and atmosphere before the march.
+                    For the Saturday night Queensland Derby kick-off, the Leagues Club will be buzzing from late afternoon. The 'Stampede' march across Lowths Bridge will depart at approximately 6:45 PM. Aim to be at the Leagues Club by 5:00 PM for pre-game drinks and atmosphere before the march.
                   </p>
               </div>
             </div>
