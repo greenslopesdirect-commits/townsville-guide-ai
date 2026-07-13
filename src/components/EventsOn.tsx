@@ -134,7 +134,7 @@ const EventsOn = () => {
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🏎️ V8 Supercars Townsville 500 July 10–12, Cotters Market every Sunday, and Cowboys NRLW action Saturday July 11! <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏉 Next home game: Queensland Derby vs Broncos, Sat 25 July · Cotters Market returns Sun 19 July · NTI Townsville 500 just wrapped. <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
