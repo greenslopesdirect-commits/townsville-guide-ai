@@ -70,7 +70,7 @@ const QuickAccess = () => {
     {
       icon: Lightbulb,
       title: "Stinger & Safety Guide",
-      desc: "☀️ Mid-Winter Status: Stinger nets remain ACTIVE along The Strand and Pallarenda beach runs. Conditions are beautifully clear, crisp, and fresh—perfect for a morning northern beach run or exploring the Paluma range during the current school holidays.",
+      desc: "☀️ Mid-Winter Status: The 2025/26 stinger season has ended — any nets still up at The Strand or Pallarenda are precautionary while water temperatures settle, not an active warning. Conditions are beautifully clear and crisp — perfect for a morning northern beach run or exploring the Paluma range now that Queensland Term 3 is underway.",
       link: "/guides/stinger-safety",
     },
     {
