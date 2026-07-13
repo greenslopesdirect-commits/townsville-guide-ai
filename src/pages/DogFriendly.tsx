@@ -224,7 +224,7 @@ const DogFriendly = () => {
                     className="w-full h-64 md:h-full object-cover rounded-lg"
                   />
                   <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm p-3">
-                    Schnauzer Approved: Max taking in the view from the Kissing Point battery. The wide, paved paths at the barracks stay cooler than inland roads—perfect for large breeds during the May golden hour.
+                    Schnauzer Approved: Max taking in the view from the Kissing Point battery. The wide, paved paths at the barracks stay cooler than inland roads—perfect for large breeds during the July golden hour.
                   </figcaption>
                 </figure>
                 <CardContent className="p-5 sm:p-6 flex flex-col justify-center">

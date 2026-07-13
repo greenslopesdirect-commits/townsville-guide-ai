@@ -43,7 +43,7 @@ const beaches = [
     badge: { label: "Dog Friendly", color: "bg-emerald-100 text-emerald-800 hover:bg-emerald-100" },
     icon: <Dog className="w-5 h-5 text-muted-foreground" />,
     tags: ["Off-Leash Area", "Stinger Net"],
-    description: "A long stretch of sand perfect for dog walking. Features a permanent STINGER NET and designated OFF-LEASH zones. June is prime time for Pallarenda — the lower humidity and firm sand at low tide make it the #1 choice for local dog owners.",
+    description: "A long stretch of sand perfect for dog walking. Features a permanent STINGER NET and designated OFF-LEASH zones. July is prime time for Pallarenda — the lower humidity and firm sand at low tide make it the #1 choice for local dog owners.",
     guideLink: "/pallarenda-beach",
     guideLinkText: "View Dog Beach Guide",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Beach+Townsville",
