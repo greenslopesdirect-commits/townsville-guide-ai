@@ -78,7 +78,7 @@ const LocalTips = () => {
       icon: <CloudRain className="w-6 h-6" />,
       description: "Cyclones are part of life in North Queensland (November–April), though direct hits are rare. Locals prepare but don't panic — most heavy rain passes quickly.",
       tips: [
-        "Cyclone season has officially concluded for 2025/2026, though we remain prepared for late-season tropical activity until the end of May",
+        "The 2025/2026 cyclone season has concluded — the next season officially runs November 2026 to April 2027",
         "Follow Bureau of Meteorology updates",
         "Most storms pass quickly",
         "Indoor attractions are great wet-day options"
