@@ -43,7 +43,7 @@ const beaches = [
     badge: { label: "Dog Friendly", color: "bg-emerald-100 text-emerald-800 hover:bg-emerald-100" },
     icon: <Dog className="w-5 h-5 text-muted-foreground" />,
     tags: ["Off-Leash Area", "Stinger Net"],
-    description: "A long stretch of sand perfect for dog walking. Features a permanent STINGER NET and designated OFF-LEASH zones. June is prime time for Pallarenda — the lower humidity and firm sand at low tide make it the #1 choice for local dog owners.",
+    description: "A long stretch of sand perfect for dog walking. Features a permanent STINGER NET and designated OFF-LEASH zones. July is prime time for Pallarenda — the lower humidity and firm sand at low tide make it the #1 choice for local dog owners.",
     guideLink: "/pallarenda-beach",
     guideLinkText: "View Dog Beach Guide",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Beach+Townsville",
@@ -91,7 +91,7 @@ const northernBeaches = [
     badge: { label: "⭐ Top Search Pick", color: "bg-amber-100 text-amber-800 hover:bg-amber-100" },
     icon: <Sun className="w-5 h-5 text-muted-foreground" />,
     tags: ["Quiet", "Dog Friendly"],
-    description: "6km of unspoilt sand — the ultimate local pick for a peaceful escape. Updated for June 2026: With the humidity gone, the 6km stretch of Saunders is perfect for long, quiet walks, and uncomplicated, easy parking right near the boat ramp makes it stress-free to access. Tip: The northern end is currently offering the best beachcombing after the recent tides.",
+    description: "6km of unspoilt sand — the ultimate local pick for a peaceful escape. Updated for July 2026: We're deep into the dry season now, and the 6km stretch of Saunders is perfect for long, quiet walks. Uncomplicated, easy parking right near the boat ramp makes it stress-free to access. Tip: The northern end is currently offering the best beachcombing after the recent tides.",
     guideLink: "/beaches/saunders-beach",
     guideLinkText: "View Full Saunders Beach Guide →",
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
@@ -106,7 +106,7 @@ const northernBeaches = [
     badge: { label: "Remote", color: "" },
     icon: <Waves className="w-5 h-5 text-muted-foreground" />,
     tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that features easy parking and wide-open sand flats perfect for low-tide photography. June Update: Sunset photography at Toolakea is hitting its peak right now. The clear dry season skies provide incredible reflections on the sand flats at low tide. Pack the camera and arrive 30 minutes before sunset.",
+    description: "A sleepy residential beach that features easy parking and wide-open sand flats perfect for low-tide photography. July Update: Sunset photography at Toolakea remains excellent. The clear dry season skies continue to provide incredible reflections on the sand flats at low tide. Pack the camera and arrive 30 minutes before sunset.",
     guideLink: undefined,
     guideLinkText: undefined,
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
@@ -200,7 +200,7 @@ const Beaches = () => {
             Back to Home
           </Link>
           <span className="text-xs font-medium text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
-            Last updated: July 6, 2026
+            Last updated: July 13, 2026
           </span>
 
         </div>
@@ -239,7 +239,7 @@ const Beaches = () => {
               <div className="flex-1 min-w-0">
                 <h2 className="text-lg font-semibold text-foreground mb-1">Dog-Friendly Beaches Guide</h2>
                 <p className="text-sm text-muted-foreground">
-                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville. <strong className="text-foreground">In June, Pallarenda is our top pick for morning runs</strong> — the lower humidity makes it perfect for an early off-leash adventure.
+                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville. <strong className="text-foreground">In July, Pallarenda remains our top pick for morning runs</strong> — the lower humidity and firm sand make it perfect for an early off-leash adventure.
                 </p>
               </div>
               <Button asChild className="w-full sm:w-auto flex-shrink-0">
@@ -652,7 +652,7 @@ const Beaches = () => {
               <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. June dry season pattern: Low tides typically fall in the late afternoon — the perfect window for exploring the secret northern beaches or letting the dogs run on the wide sand flats at Pallarenda.</p>
+                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. July dry season pattern: Low tides still typically fall in the late afternoon — the perfect window for exploring the secret northern beaches or letting the dogs run on the wide sand flats at Pallarenda.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">

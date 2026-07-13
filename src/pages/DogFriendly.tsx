@@ -15,10 +15,10 @@ const dogSpots = [
     type: "Off-Leash Beach",
     dogAccess: "Off-leash area available",
     stingerNet: false,
-    description: "Our top pick for May. One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs. The massive low-tide sand flats are completely wide open, making it the perfect spot in Townsville for a long game of fetch on the wet sand.",
+    description: "Our top pick for July. One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs. The massive low-tide sand flats are completely wide open, making it the perfect spot in Townsville for a long game of fetch on the wet sand.",
     features: ["Off-leash beach access", "Long sandy stretches for running", "Shallow, calm waters for swimming dogs", "Nets are now out for the Dry Season, making deep-water fetch much safer.", "Natural setting with mangroves nearby"],
     mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Off+Leash+Dog+Beach",
-    badge: "🏆 May Top Pick",
+    badge: "🏆 July Top Pick",
     guideLink: "/pallarenda-beach",
     guideLinkText: "View Off-Leash Guide",
   },
@@ -56,7 +56,7 @@ const faqItems = [
   },
   {
     question: "Are Townsville beaches safe for dogs during stinger season?",
-    answer: "During stinger season (November to May), keep dogs out of the water outside stinger-netted areas. The Strand and Pallarenda have stinger nets. Supervise dogs closely near the waterline and rinse them after beach visits."
+    answer: "Stinger season typically runs November to May. During that period, keep dogs out of the water outside stinger-netted areas. The Strand and Pallarenda have stinger nets. Supervise dogs closely near the waterline and rinse them after beach visits."
   },
 ];
 
@@ -107,7 +107,7 @@ const DogFriendly = () => {
           {/* Local Tip */}
            <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
            <p>
-               ☀️ Heat Check (June Update): The Dry Season is in full glory. Mornings are beautifully crisp (around 20°C), making it the ultimate time for the Castle Hill Goat Track or Pallarenda sand flat runs. Note: Midday UV is still extreme, so protect those paws and stick to the early mornings or golden hour.
+               ☀️ Heat Check (July Update): The Dry Season is in full glory. Mornings are beautifully crisp (around 20°C), making it the ultimate time for the Castle Hill Goat Track or Pallarenda sand flat runs. Note: Midday UV is still extreme, so protect those paws and stick to the early mornings or golden hour.
               </p>
               <p>
                 🐸 Twilight Toad Alert: With the humidity bottomed out, cane toad activity has slowed down significantly, but they still lurk near the dunes at Bushland Beach and Saunders at dusk. Keep a close eye out during sunset walks.
@@ -224,7 +224,7 @@ const DogFriendly = () => {
                     className="w-full h-64 md:h-full object-cover rounded-lg"
                   />
                   <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm p-3">
-                    Schnauzer Approved: Max taking in the view from the Kissing Point battery. The wide, paved paths at the barracks stay cooler than inland roads—perfect for large breeds during the May golden hour.
+                    Schnauzer Approved: Max taking in the view from the Kissing Point battery. The wide, paved paths at the barracks stay cooler than inland roads—perfect for large breeds during the July golden hour.
                   </figcaption>
                 </figure>
                 <CardContent className="p-5 sm:p-6 flex flex-col justify-center">
@@ -235,7 +235,7 @@ const DogFriendly = () => {
                     Kissing Point & Jezzine Boardwalks
                   </h2>
                   <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
-                    <strong className="text-foreground">May Local Tip:</strong> The elevated boardwalks at Jezzine Barracks are paved, shaded by Norfolk pines, and catch the evening sea breeze. Ideal for an on-leash sunset stroll with your dog before dinner on Gregory Street.
+                    <strong className="text-foreground">July Local Tip:</strong> The elevated boardwalks at Jezzine Barracks are paved, shaded by Norfolk pines, and catch the evening sea breeze. Ideal for an on-leash sunset stroll with your dog before dinner on Gregory Street.
                   </p>
                   <Link to="/guides/jezzine-barracks" className="text-sm font-medium text-primary hover:underline inline-flex items-center gap-1">
                     View Jezzine Guide <ArrowRight className="w-3 h-3" />
@@ -357,7 +357,7 @@ const DogFriendly = () => {
                   <MapPin className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-sm text-foreground">🌿 Dry Season Bonus</p>
-                    <p className="text-sm text-muted-foreground mt-1">Not a beach fan? In May, the Ross River Parkway (near Loam Island) offers miles of shaded, wind-swept paths that are much cooler than the coastal dunes during midday.</p>
+                    <p className="text-sm text-muted-foreground mt-1">Not a beach fan? In July, the Ross River Parkway (near Loam Island) offers miles of shaded, wind-swept paths that are much cooler than the coastal dunes during midday.</p>
                   </div>
                 </li>
               </ul>
@@ -395,7 +395,7 @@ const DogFriendly = () => {
                 <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Stinger Season Ended</p>
-                  <p className="text-xs text-muted-foreground mt-1">☀️ June Update: The stinger season has concluded and the beach enclosures are packed away. This means you can finally let your dogs enjoy deep-water swimming at un-netted northern beaches like Saunders, Toolakea, and Bushland Beach without the summer worry. Remember to give them a good fresh-water rinse afterward to remove the tropical salt and sand!</p>
+                  <p className="text-xs text-muted-foreground mt-1">☀️ July Update: The stinger season has concluded, but council often leaves the beach enclosures in place for a while as a precaution while water temperatures settle. You may still see nets at The Strand, Pallarenda, or Magnetic Island — treat them as a comfort option rather than an active warning. This means you can finally let your dogs enjoy deep-water swimming at un-netted northern beaches like Saunders, Toolakea, and Bushland Beach without the summer worry. Remember to give them a good fresh-water rinse afterward to remove the tropical salt and sand!</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
