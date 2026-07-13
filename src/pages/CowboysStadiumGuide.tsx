@@ -28,18 +28,6 @@ const cowboysJsonLd = {
   "@graph": [
     {
       "@type": "SportsEvent",
-      name: "North Queensland Cowboys vs Wests Tigers (NRLW Round 1 Double Header)",
-      startDate: "2026-07-11T15:30:00+10:00",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "NRLW Round 1 double header home game — North Queensland Cowboys vs Wests Tigers at Queensland Country Bank Stadium, Saturday July 11, 2026, 3:30 PM.",
-      location: QCB_LOCATION,
-      homeTeam: { "@type": "SportsTeam", name: "North Queensland Cowboys" },
-      awayTeam: { "@type": "SportsTeam", name: "Wests Tigers" },
-    },
-    {
-      "@type": "SportsEvent",
       name: "North Queensland Cowboys vs Brisbane Broncos (Round 21)",
       startDate: "2026-07-25T19:35:00+10:00",
       eventStatus: "https://schema.org/EventScheduled",
@@ -70,7 +58,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Updated June 26, 2026 — Round 17 vs Penrith Panthers (Sat June 27, 5:30 PM): parking, free shuttles, and Saturday evening logistics."
+        description="Plan your 2026 Cowboys game day in Townsville. Updated July 13, 2026 — Round 21 Queensland Derby vs Brisbane Broncos (Sat July 25, 7:35 PM): parking, free shuttles, and Saturday evening logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
       <Helmet>
@@ -87,7 +75,7 @@ const CowboysStadiumGuide = () => {
               Back to Events
             </Link>
             <Badge variant="secondary" className="bg-green-50 text-green-700">
-              Updated: July 6, 2026
+              Updated: July 13, 2026
             </Badge>
           </div>
         </div>
@@ -107,7 +95,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season Update: Reigning Premiers Next at Home
+               2026 Season Update: Queensland Derby Next at Home
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -115,11 +103,11 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Next Home Blockbuster
                    </Badge>
-                     <CardTitle className="text-lg mt-2">Derby Clashes &amp; NRLW Action Under the Dry Season Sky</CardTitle>
+                     <CardTitle className="text-lg mt-2">Derby Clashes Under the Dry Season Sky</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      The mid-season intensity is hitting its peak under perfect, crisp dry-season skies. Following our recent Round 18 Bye, all eyes turn to the stadium this Saturday, July 11, for an incredible NRLW double-header featuring our North Queensland Cowboys vs Wests Tigers! The NRL men's squad travels away to face Manly this Sunday, July 12, before returning home for the ultimate state blockbuster: the massive Queensland Derby against the Brisbane Broncos on Saturday, July 25. Expect a completely packed house.
+                      The mid-season intensity is hitting its peak under perfect, crisp dry-season skies. With the Round 18 bye and the July 11 NRLW home opener now behind us, all eyes turn to the stadium for the biggest home fixture on the calendar: the massive Queensland Derby against the Brisbane Broncos on Saturday, July 25. Expect a completely packed house and a vocal Stampede march across Lowths Bridge.
                     </p>
                   </CardContent>
                 </Card>
@@ -129,27 +117,27 @@ const CowboysStadiumGuide = () => {
                    <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                      Next Home Game
                    </Badge>
-                   <CardTitle className="text-lg mt-2">NEXT HOME GAME: NRLW Round 1 – Cowboys vs. Wests Tigers (Double Header)</CardTitle>
+                   <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 21 – Cowboys vs. Brisbane Broncos (Queensland Derby)</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-4">
                    <div className="space-y-2">
                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
                        <Calendar className="w-4 h-4 flex-shrink-0" />
-                       <span>Saturday, July 11, 2026</span>
+                       <span>Saturday, July 25, 2026 · 7:35 PM</span>
                      </div>
                       <div className="flex items-start gap-2 text-sm text-muted-foreground">
                         <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                         <span>
                           Queensland Country Bank Stadium.<br />
-                          <span className="font-medium text-foreground">Gates Open: 1:30 PM | Main Kick-off: 3:30 PM</span>
+                          <span className="font-medium text-foreground">Gates Open: 4:35 PM | Kick-off: 7:35 PM</span>
                         </span>
                       </div>
                    </div>
                     <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-900">
-                      <strong>☀️ Stadium Tip:</strong> With a 5:30 PM Saturday kick-off, you'll catch the tail end of the afternoon winter sky, but the sun drops fast behind the Western stand. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly after dark during the dry season.
+                      <strong>🌙 Stadium Tip:</strong> With a 7:35 PM Saturday kick-off, you'll arrive after sunset. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly during the dry season.
                     </div>
                     <p className="text-sm italic text-muted-foreground border-l-2 border-primary/30 pl-3">
-                      *Notice for Visitors & Locals: This weekend features elite NRLW action! Our next major men's NRL home fixture at Queensland Country Bank Stadium will be the blockbuster Queensland Derby against the Brisbane Broncos on Saturday, July 25.*
+                      *Notice for Visitors & Locals: This is the marquee men's NRL home fixture at Queensland Country Bank Stadium — the Queensland Derby against the Brisbane Broncos. Tickets typically move fast for this one.*
                     </p>
                    <Button asChild className="w-full sm:w-auto">
                      <a href="https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825" target="_blank" rel="noopener noreferrer">
@@ -181,11 +169,11 @@ const CowboysStadiumGuide = () => {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-border">
-                      <tr className="bg-primary/5">
-                        <td className="px-4 py-3 font-medium">NRLW Round 1 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
-                        <td className="px-4 py-3 font-semibold">vs Wests Tigers</td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat July 11, 2026, 3:30 PM</td>
-                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      <tr className="bg-muted/30 text-muted-foreground">
+                        <td className="px-4 py-3 font-medium">NRLW Round 1 <Badge variant="outline" className="ml-1 text-muted-foreground border-muted-foreground/30">PAST</Badge></td>
+                        <td className="px-4 py-3 font-semibold line-through">vs Wests Tigers</td>
+                        <td className="px-4 py-3">Sat July 11, 2026, 3:30 PM</td>
+                        <td className="px-4 py-3">QCB Stadium</td>
                       </tr>
                       <tr className="bg-primary/5">
                         <td className="px-4 py-3 font-medium">Round 21 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
@@ -221,7 +209,7 @@ const CowboysStadiumGuide = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">Stadium gates open:</strong> Approximately 3 hours before kick-off (e.g. 2:30 PM for a 5:30 PM start).</span>
+                    <span><strong className="text-foreground">Stadium gates open:</strong> Approximately 3 hours before kick-off (e.g. 4:35 PM for a 7:35 PM start).</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
@@ -229,11 +217,11 @@ const CowboysStadiumGuide = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">Kick-off:</strong> As scheduled (5:30 PM or 7:35 PM for prime-time fixtures).</span>
+                    <span><strong className="text-foreground">Kick-off:</strong> As scheduled (7:35 PM for the Round 21 Queensland Derby).</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">When does a Cowboys game end?</strong> Approximately <strong>1 hour and 50 minutes after kick-off time</strong> (allowing for two 40-minute halves, a 10-minute half-time, and stoppages). A 5:30 PM game typically wraps around 7:20 PM; a 7:35 PM game around 9:25 PM.</span>
+                    <span><strong className="text-foreground">When does a Cowboys game end?</strong> Approximately <strong>1 hour and 50 minutes after kick-off time</strong> (allowing for two 40-minute halves, a 10-minute half-time, and stoppages). A 7:35 PM game typically wraps around 9:25 PM.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
@@ -259,9 +247,9 @@ const CowboysStadiumGuide = () => {
           {/* Visiting from out of town CTA */}
           <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
             <CardContent className="p-6 sm:p-8 space-y-3">
-              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Panthers Game?</h3>
+              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Broncos Derby?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Don't get caught out — last-minute stays near the stadium fill up fast for Saturday evening home games against the reigning premiers. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
+                Don't get caught out — last-minute stays near the stadium fill up fast for Saturday evening home games, especially the Queensland Derby. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
               </p>
               <Button asChild variant="default" size="lg" className="w-full sm:w-auto">
                 <Link to="/accommodation">
@@ -322,7 +310,7 @@ const CowboysStadiumGuide = () => {
               <div>
                  <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                   <p className="text-amber-800 text-sm mt-1">
-                    For the Saturday afternoon NRLW kick-off, the Leagues Club will be buzzing from midday. The 'Stampede' march across Lowths Bridge will depart at approximately 2:45 PM. Aim to be at the Leagues Club by 1:30 PM for pre-game drinks and atmosphere before the march.
+                    For the Saturday night Queensland Derby kick-off, the Leagues Club will be buzzing from late afternoon. The 'Stampede' march across Lowths Bridge will depart at approximately 6:45 PM. Aim to be at the Leagues Club by 5:00 PM for pre-game drinks and atmosphere before the march.
                   </p>
               </div>
             </div>
@@ -382,7 +370,7 @@ const CowboysStadiumGuide = () => {
                 <ul className="space-y-2 text-muted-foreground text-sm">
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <span><strong className="text-foreground">Shuttle from:</strong> 2 hours before kick-off (e.g. from 3:30 PM for a 5:30 PM game).</span>
+                    <span><strong className="text-foreground">Shuttle from:</strong> 2 hours before kick-off (e.g. from 5:35 PM for a 7:35 PM game).</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
