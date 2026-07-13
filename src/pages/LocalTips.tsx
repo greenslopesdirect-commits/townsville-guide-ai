@@ -236,7 +236,7 @@ const LocalTips = () => {
                 <AlertTriangle className="w-5 h-5 text-destructive mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Magnetic Island — Sooning Street Bridge CLOSED</p>
-                  <p className="text-xs text-muted-foreground mt-1">Piling is now complete! The bridge remains closed to vehicles as construction enters the next phase, but pedestrian access is available. Expect a mid-2026 reopening.</p>
+                  <p className="text-xs text-muted-foreground mt-1">Piling and deck construction are complete — Council expects the bridge to reopen to vehicle traffic in late July 2026, with final line marking and site clean-up continuing into August. As of today, the bridge may still be in its final construction stages, but pedestrian access remains available in the meantime.</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
