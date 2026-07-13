@@ -274,7 +274,7 @@ const ThingsToDo = () => {
   return (
     <>
       <SEOHead
-        title="Best Things to Do in Townsville (June 2026 Guide)"
+        title="Best Things to Do in Townsville (July 2026 Guide)"
         description="From hiking Castle Hill at sunrise to exploring Magnetic Island's hidden bays, discover the ultimate Townsville attractions and experiences for every type of traveller."
         canonical="https://www.myaussieguide.com.au/things-to-do"
       />
@@ -371,7 +371,7 @@ const ThingsToDo = () => {
             {/* Weekly Highlight */}
             <div className="mb-12 p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-300 dark:border-emerald-700">
               <p className="text-emerald-800 dark:text-emerald-300 leading-relaxed">
-                🌊 <strong>Waterfall Watch (June Update):</strong> As the Dry Season progresses beautifully, the freshwater rock pools at Little Crystal Creek and Jourama Falls are sitting at pristine swimming levels—clear, crisp, and incredibly refreshing.
+                🌊 <strong>Waterfall Watch (July Update):</strong> We're deep into the Dry Season now, and the freshwater rock pools at Little Crystal Creek and Jourama Falls are still sitting at pristine swimming levels—clear, crisp, and incredibly refreshing.
               </p>
             </div>
 
@@ -627,7 +627,7 @@ const ThingsToDo = () => {
                   <Sun className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do in Townsville (June 2026 Update)</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do in Townsville</h2>
                   <p className="text-muted-foreground text-sm">Keep the family entertained without spending a cent</p>
                 </div>
               </div>
@@ -677,9 +677,9 @@ const ThingsToDo = () => {
               </div>
 
               <div className="mt-6">
-                <LocalInsightCard title="June Photography Tip" variant="tip">
+                <LocalInsightCard title="July Photography Tip" variant="tip">
                   <p>
-                    June in Townsville offers some of the best light of the year. With the humidity gone, the air is clearer — perfect for capturing the sunset from Castle Hill or the mountain views at Paluma Range.
+                    July in Townsville offers some of the best light of the year. With the humidity gone, the air is clearer — perfect for capturing the sunset from Castle Hill or the mountain views at Paluma Range.
                   </p>
                 </LocalInsightCard>
               </div>
