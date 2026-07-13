@@ -16,32 +16,17 @@ const TOWNSVILLE_ADDRESS = {
 
 const eventsGraph = [
     {
-      "@type": "Event",
-      name: "NTI Townsville 500",
-      startDate: "2026-07-10",
-      endDate: "2026-07-12",
+      "@type": "SportsEvent",
+      name: "NRL Round 21: North Queensland Cowboys vs Brisbane Broncos (Queensland Derby)",
+      startDate: "2026-07-25",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       description:
-        "The annual Supercars street circuit takes over Reid Park with trackside action, car shows, and live concert events in the heart of the city.",
+        "The Queensland Derby returns to Townsville — Cowboys host the Brisbane Broncos in a Round 21 blockbuster at Queensland Country Bank Stadium.",
       location: {
         "@type": "Place",
-        name: "Reid Park Street Circuit",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Reid Park" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Cotters Market",
-      startDate: "2026-07-12",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Townsville's premier Sunday market on Flinders Street from 8:00 AM to 1:00 PM — fresh coffee, local North Queensland crafts, food stalls, and live street music.",
-      location: {
-        "@type": "Place",
-        name: "Flinders Street, Townsville CBD",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Flinders Street" },
+        name: "Queensland Country Bank Stadium",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
       },
     },
     {
@@ -182,8 +167,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On In Townsville This Weekend | June 26–28, 2026"
-        description="Updated June 26, 2026: Late-June dry season weekend — Cowboys vs Panthers Round 17, Cotters Market, Paluma Bush Dance, Queensland Country Rugby Championships, and the Soroptimist Park community planting at Rowes Bay."
+        title="What's On In Townsville This Week | July 13–20, 2026"
+        description="Updated July 13, 2026: Mid-July dry season week — Cotters Market Sunday July 19, Cowboys Queensland Derby vs Broncos on July 25, and clear winter skies for Castle Hill and The Strand."
         canonical="https://www.myaussieguide.com.au/events"
       />
       <Helmet>
@@ -199,8 +184,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-07-06">
-            <time dateTime="2026-07-06">Updated: July 6, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-07-13">
+            <time dateTime="2026-07-13">Updated: July 13, 2026</time>
           </span>
         </div>
       </div>
@@ -227,18 +212,19 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville Today (Early July 2026)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville This Week (Mid-July 2026)</h2>
           <p className="text-gray-600 max-w-3xl">
-            As we head into the second week of July, the winter dry season is delivering perfect crystal-clear skies. Here is the latest lineup of what's on in Townsville now through July 13, 2026:
+            The NTI Townsville 500 wrapped up on Sunday and the CBD is settling back into its normal rhythm. Here is what's on in Townsville from today through <strong>Sunday, July 20, 2026</strong>:
           </p>
           <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li><strong>Footy Drawcard:</strong> <strong>Cowboys NRLW Action</strong> — Following the NRL team's recent bye, the spotlight hits Queensland Country Bank Stadium this Saturday, July 11 for an incredible NRLW double-header featuring the NQ Cowboys vs Wests Tigers. (The NRL squad plays away against Manly this Sunday, July 12).</li>
-            <li><strong>School Holidays Feature:</strong> <strong>Free Family Fun</strong> — With school holidays now in full swing across Queensland, local hotspots like the Riverway Lagoons, The Strand Water Park, and Jezzine Barracks are running daily. Perfect for keeping the kids entertained in the low-humidity winter weather.</li>
-            <li><strong>Sunday Markets:</strong> <strong>Cotters Market</strong> — Every Sunday morning (July 12 and July 19) on Flinders Street from 8:00 AM to 1:00 PM. Fresh local coffee, food stalls, and seasonal produce in the cool morning air.</li>
-            <li><strong>The Big Event:</strong> <strong>NTI Townsville 500 Is Here!</strong> — The Supercars street circuit takes over Reid Park this weekend (July 10–12). Expect massive CBD buzz, roaring engines, trackside entertainment, and rock concerts. CBD parking and accommodation are completely packed out this week.</li>
+            <li><strong>Just Wrapped:</strong> <strong>NTI Townsville 500</strong> — The Supercars street circuit at Reid Park (July 10–12) has concluded. Pack-down of the circuit is underway this week, so expect some temporary road changes around Reid Park while barriers come down.</li>
+            <li><strong>Back to School:</strong> <strong>QLD Term 3 starts today</strong> — Queensland state school holidays have ended and Term 3 kicks off on Monday, July 13. Expect the usual school-run traffic in the mornings and quieter weekday crowds at Riverway Lagoons and The Strand Water Park.</li>
+            <li><strong>Next Home Game:</strong> <strong>Queensland Derby — Cowboys vs Broncos, Sat July 25</strong> — The next NRL fixture at Queensland Country Bank Stadium is the Round 21 Queensland Derby against the Brisbane Broncos on Saturday, July 25. Tickets are moving fast — see our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">stadium guide</Link> for parking and Park &amp; Ride tips.</li>
+            <li><strong>Sunday Markets:</strong> <strong>Cotters Market — Sunday July 19</strong> — Every Sunday morning on Flinders Street from 8:00 AM to 1:00 PM. Fresh local coffee, food stalls, and seasonal produce in the cool morning air.</li>
             <li><strong>Outdoors:</strong> <strong>Clear Winter Skies</strong> — Exceptional conditions all week for the Castle Hill Goat Track, sunset walks along the Ross River Parkway, or a day trip to Magnetic Island with zero summer humidity.</li>
           </ul>
         </section>
+
 
         {/* AI Call to Action + Official Calendar */}
         <Card className="bg-primary/5 border-primary/20 shadow-sm">
@@ -488,9 +474,9 @@ const Events = () => {
           <ol className="relative border-l-2 border-primary/30 ml-3 space-y-8">
             {[
               {
-                date: "10 – 12 July 2026",
-                title: "NTI Townsville 500",
-                body: "NTI Townsville 500 — The annual supercar street circuit is officially live this weekend! Enjoy intense trackside action, the return of the popular car shows, and massive live concert events in the heart of the city."
+                date: "Saturday 25 July 2026",
+                title: "NRL Round 21: Cowboys vs Broncos (Queensland Derby)",
+                body: "The Queensland Derby returns to Townsville — Cowboys host the Brisbane Broncos at Queensland Country Bank Stadium in a Round 21 blockbuster. Use the free Park & Ride at Lou Litster Park to skip CBD traffic."
               },
               {
                 date: "2 August 2026",
