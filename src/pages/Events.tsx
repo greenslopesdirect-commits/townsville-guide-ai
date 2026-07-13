@@ -167,8 +167,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On In Townsville This Weekend | June 26–28, 2026"
-        description="Updated June 26, 2026: Late-June dry season weekend — Cowboys vs Panthers Round 17, Cotters Market, Paluma Bush Dance, Queensland Country Rugby Championships, and the Soroptimist Park community planting at Rowes Bay."
+        title="What's On In Townsville This Week | July 13–20, 2026"
+        description="Updated July 13, 2026: Mid-July dry season week — Cotters Market Sunday July 19, Cowboys Queensland Derby vs Broncos on July 25, and clear winter skies for Castle Hill and The Strand."
         canonical="https://www.myaussieguide.com.au/events"
       />
       <Helmet>
@@ -184,8 +184,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-07-06">
-            <time dateTime="2026-07-06">Updated: July 6, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-07-13">
+            <time dateTime="2026-07-13">Updated: July 13, 2026</time>
           </span>
         </div>
       </div>
