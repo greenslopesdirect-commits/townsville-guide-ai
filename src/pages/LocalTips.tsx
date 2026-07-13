@@ -219,7 +219,7 @@ const LocalTips = () => {
             <div className="space-y-4 mb-8">
               <div className="p-4 rounded-lg border bg-card">
                 <p className="text-sm text-muted-foreground">
-                  ☀️ Current Status (May 11, 2026): The 'Perfect Dry' is officially here! Stinger nets remain ACTIVE. With crisp 20°C mornings and sunny 26°C days, Townsville is at its absolute best. Humidity is low, making it prime time for outdoor exploration.
+                  ☀️ Current Status (July 13, 2026): The 'Perfect Dry' is in full swing. Cool 17°C mornings, sunny 25°C days and very low humidity — prime time for outdoor exploration. Stinger season has ended; any nets still in the water are a precaution only.
                 </p>
               </div>
               <StingerSeasonAlert />
