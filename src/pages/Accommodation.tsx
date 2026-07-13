@@ -97,7 +97,7 @@ const Accommodation = () => {
     },
     {
       title: "BIG4 Rowes Bay Holiday Park",
-      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families. May Tip: Sites are filling up incredibly fast with winter grey nomads and festival-goers arriving for the beautiful late-May Dry Season weather. It's the absolute perfect base if you want to be right opposite the beach while remaining just a short drive from the CBD.",
+      description: "Family-friendly beachfront holiday park with cabins, caravan sites, pool and playground. Great for budget travellers and families. Dry-Season Tip: Sites stay popular with winter travellers and families making the most of the mild July weather. It's the absolute perfect base if you want to be right opposite the beach while remaining just a short drive from the CBD.",
       image: big4Image,
       tags: ["Family Friendly", "Budget", "Beachfront"],
       features: [
@@ -117,8 +117,8 @@ const Accommodation = () => {
   return (
     <>
       <SEOHead
-        title="Where to Stay in Townsville (Updated May 2026)"
-        description="From luxury resorts to dog-friendly caravan parks, find the best Townsville accommodation. Updated May 11, 2026 with Caravan Expo, Dream Fields Festival, and Cowboys vs Rabbitohs game day advice."
+        title="Where to Stay in Townsville (Updated July 2026)"
+        description="From luxury resorts to dog-friendly caravan parks, find the best Townsville accommodation. Updated July 13, 2026 with current dry-season demand tips and Queensland Derby weekend advice."
         canonical="https://www.myaussieguide.com.au/accommodation"
       />
       <Helmet>
@@ -167,9 +167,9 @@ const Accommodation = () => {
 
             {/* Seasonal Alert */}
             <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-12">
-              <p className="text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 font-semibold mb-2">Updated: May 19, 2026</p>
+              <p className="text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 font-semibold mb-2">Updated: July 13, 2026</p>
               <p className="text-amber-800 dark:text-amber-300 leading-relaxed">
-                ⚠️ <strong>May High-Demand Alert:</strong> We are heading into the busiest weekend of the month. Between the massive Dream Fields Festival (May 23) taking over Central Park and the Cowboys vs. Rabbitohs home game blockbuster (May 24), accommodation in the CBD, South Townsville, and The Strand is at near-total capacity. If you haven't secured your room yet, book immediately to avoid being left with zero options.
+                ⚠️ <strong>July High-Demand Alert:</strong> The next big home-game weekend is the Queensland Derby — Cowboys vs. Broncos on Saturday, July 25, 2026. Accommodation near the CBD, South Townsville, and The Strand typically books out quickly around Cowboys home games, so if you're travelling for the match, reserve your room as early as you can.
               </p>
             </div>
 
@@ -198,8 +198,7 @@ const Accommodation = () => {
                 (locals call it the "Sugar Shaker"). For a younger vibe, check out <strong>Rambutan</strong>.
               </p>
               <p className="font-medium text-amber-700 dark:text-amber-300">
-                💰 <strong>Budget Tip:</strong> Prices are dynamic! Rates can double during the V8 Supercars (July), 
-                so book months in advance if travelling then.
+                💰 <strong>Budget Tip:</strong> Prices are dynamic! Rates can spike around major event weekends such as Cowboys home games and the spring festival season (around September/October), so book well in advance if you're travelling then.
               </p>
             </LocalInsightCard>
 
@@ -236,7 +235,7 @@ const Accommodation = () => {
                 </div>
                 <div className="p-6 rounded-xl border-2 bg-card">
                   <h3 className="font-semibold text-foreground mb-2">CBD / Palmer Street</h3>
-                  <p className="text-muted-foreground text-sm">Best for restaurants, events, and convenience. Walk everywhere. Perfect for festival-goers attending Dream Fields at Central Park—most hotels here are within easy walking or rideshare distance.</p>
+                  <p className="text-muted-foreground text-sm">Best for restaurants, nightlife, events, and convenience. Walk everywhere. Ideal if you're in town for a Cowboys game or a night out, with easy rideshare access to Queensland Country Bank Stadium.</p>
                 </div>
                 <div className="p-6 rounded-xl border-2 bg-card">
                   <h3 className="font-semibold text-foreground mb-2">Magnetic Island</h3>
