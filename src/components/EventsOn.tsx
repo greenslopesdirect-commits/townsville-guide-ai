@@ -37,7 +37,7 @@ const EventsOn = () => {
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
                     <p className="text-blue-100 font-medium">Markets, motorsport & footy blockbusters</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏎️ NTI Townsville 500 Is Live This Weekend! — 10–12 July 2026</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏉 Next Up: Queensland Derby — Cowboys vs Broncos, Sat 25 July 2026</p>
                      <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">The Perfect Dry</span>
                 </div>
                 <div className="relative z-10 mt-8">
