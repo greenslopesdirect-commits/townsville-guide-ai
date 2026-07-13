@@ -95,42 +95,39 @@ const EventsOn = () => {
                 </CardContent>
             </Card>
 
-            {/* Card 2 — V8 Supercars Townsville 500 */}
-            <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-green-500 border-slate-200">
+            {/* Card 2 — NTI Townsville 500 (just wrapped) */}
+            <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-slate-400 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                        <div className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs font-bold">
-                            July 2026 — Motorsport
+                        <div className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-bold">
+                            Just Wrapped — Motorsport
                         </div>
                         <Trophy className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">NTI Townsville 500</h4>
-                    <p className="text-xs text-primary font-medium mb-1">10–12 July 2026</p>
+                    <p className="text-xs text-primary font-medium mb-1">Concluded Sunday 12 July 2026</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Reid Park Street Circuit
                     </div>
-                    <p className="text-xs text-muted-foreground mt-2">The streets of Reid Park are officially transforming right now for the annual supercar street circuit this weekend! Expect major roaring engines, live concerts, and trackside action.</p>
+                    <p className="text-xs text-muted-foreground mt-2">The annual supercar street circuit wrapped up on Sunday. Pack-down of the Reid Park circuit is underway this week — expect some temporary road changes while barriers come down. Returns July 2027.</p>
                 </CardContent>
             </Card>
 
-            {/* Card 3 — Cowboys vs Panthers */}
+            {/* Card 3 — Cowboys vs Broncos (Queensland Derby) */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-blue-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Upcoming NRL Home Game
+                            Next NRL Home Game
                         </div>
                         <Trophy className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Upcoming Stadium Game: NRLW Cowboys vs Wests Tigers</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, July 11, 2026</p>
+                    <h4 className="text-lg font-bold mb-2">Queensland Derby: Cowboys vs Broncos (Round 21)</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Saturday, July 25, 2026</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Queensland Country Bank Stadium
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <Clock className="w-4 h-4" /> Gates Open: 1:30 PM | Main Kick-off: 3:30 PM
-                    </div>
-                    <p className="text-xs text-muted-foreground mt-2">🏉 Elite football action returns to QCB Stadium this Saturday afternoon for an historic NRLW double-header season opener! (The men's NRL squad is playing away at Manly this Sunday, July 12, ahead of our massive home Queensland Derby vs the Broncos on July 25).</p>
+                    <p className="text-xs text-muted-foreground mt-2">🏉 The Queensland Derby returns to Townsville — Cowboys host the Brisbane Broncos in a Round 21 blockbuster. Tickets are moving fast; use the free Park &amp; Ride at Lou Litster Park to skip CBD traffic.</p>
                 </CardContent>
             </Card>
 
