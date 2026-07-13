@@ -149,7 +149,7 @@ const Index = () => {
                   Current Status: The 'Perfect Dry' is here!
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  Current Status: The 'Perfect Dry' is here! Early July means the winter dry season, school holidays, and massive local events are in full swing! Humidity has bottomed out, morning UV is high (sunscreen on early), and the 5:30 PM sunsets from the top of Castle Hill are at their absolute peak—clear horizons, golden light, and cool breezes rolling in off the coast. The city is buzzing this week as we head straight into the Supercars street circuit!
+                  Current Status: The 'Perfect Dry' is here! Mid-July is delivering the postcard version of Townsville — humidity has bottomed out, mornings are cool and crisp, and the 5:30 PM sunsets from the top of Castle Hill are at their absolute peak with clear horizons and golden light. Queensland state schools are back today for Term 3, the CBD is settling back down after last weekend's Supercars street circuit, and the next big drawcard is the Cowboys' Queensland Derby vs the Broncos on Saturday, July 25.
                 </p>
                 <p className="text-sm sm:text-base text-amber-800 bg-amber-50 border border-amber-100 rounded-lg p-3">
                   🌴 We run on <strong>"Tropical Time"</strong> here. Slow down,
