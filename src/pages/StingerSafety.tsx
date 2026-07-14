@@ -102,7 +102,7 @@ const StingerSafety = () => (
       </p>
       <div className="bg-[#00A693]/10 rounded-lg p-4">
         <p className="text-sm font-medium text-foreground">
-          🐾 <strong>Dry Season Update:</strong> Now that the stinger season has wrapped up and the nets are out, deep-water swimming is significantly safer for your dogs at un-netted northern beaches like Saunders, Toolakea, and Bushland Beach. Enjoy those beautiful, crisp morning beach runs!
+          🐾 <strong>Dry Season Update:</strong> Now that the stinger season has wrapped up, deep-water swimming is significantly safer for your dogs at northern beaches like Saunders, Toolakea, and Bushland Beach. Even where nets remain in place as a precaution, the stinger risk is considered low. Enjoy those beautiful, crisp morning beach runs!
         </p>
       </div>
     </div>
