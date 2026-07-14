@@ -41,8 +41,8 @@ const MagneticIslandDayTrip = () => {
   return (
     <>
       <SEOHead
-        title="Magnetic Island Day Trip: The 'No-Fluff' Local Guide"
-        description="Planning a day trip to Magnetic Island? Get the local-verified itinerary for koala spotting, secret bays, and the best ferry times. Updated April 27, 2026 — perfect Dry Season conditions with cooler mornings and lower humidity for hiking the Forts Walk."
+        title="Magnetic Island Day Trip: Ferries & Koalas"
+        description="Planning a day trip to Magnetic Island? Ferry times, koala spotting on the Forts Walk, and the best swimming bays — from a local."
         canonical="https://www.myaussieguide.com.au/guides/magnetic-island-day-trip"
       />
       <Helmet>

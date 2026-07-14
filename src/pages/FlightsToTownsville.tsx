@@ -9,8 +9,8 @@ const FlightsToTownsville = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Airport (TSV) Arrival & Flight Guide (June 2026)"
-        description="Updated June 15, 2026. Your local guide to Townsville Airport (TSV) flights, arrivals, taxi ranks, and transfer logistics."
+        title="Townsville Airport (TSV): Getting Around"
+        description="Landing in Townsville? A local's guide to getting from TSV airport into the city — transfers, taxis, and what to expect on arrival."
         canonical="https://www.myaussieguide.com.au/flights"
       />
       <Helmet>
