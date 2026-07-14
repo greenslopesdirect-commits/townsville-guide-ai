@@ -193,7 +193,7 @@ const StingerSafety = () => (
         </Table>
       </div>
       <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-        Note: While the cooler dry season lowers stinger risks, swimming inside these dedicated enclosures is always recommended for absolute peace of mind.
+        Note: While the cooler dry season lowers stinger risks, swimming inside these dedicated enclosures is always recommended for absolute peace of mind. If nets are still in place, treat them as a comfort option rather than an active warning.
       </p>
     </section>
 
