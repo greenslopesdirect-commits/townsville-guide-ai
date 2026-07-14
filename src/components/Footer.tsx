@@ -57,6 +57,7 @@ const Footer = () => {
                 <li><Link to="/moving-to-townsville" className="text-muted-foreground hover:text-primary transition-colors">Moving to Townsville Guide</Link></li>
                 <li><Link to="/events" className="text-muted-foreground hover:text-primary transition-colors">Local Event Calendar</Link></li>
                 <li><Link to="/dog-friendly" className="text-muted-foreground hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
+                <li><Link to="/shopping" className="text-muted-foreground hover:text-primary transition-colors">Shopping & Markets</Link></li>
               </ul>
             </div>
 
@@ -95,6 +96,7 @@ const Footer = () => {
               <li><Link to="/things-to-do" className="hover:text-primary transition-colors">Things to Do</Link></li>
               <li><Link to="/beaches" className="hover:text-primary transition-colors">Beaches</Link></li>
               <li><Link to="/food" className="hover:text-primary transition-colors">Food & Drink</Link></li>
+              <li><Link to="/shopping" className="hover:text-primary transition-colors">Shopping & Markets</Link></li>
               <li><Link to="/events" className="hover:text-primary transition-colors">Events</Link></li>
               <li><Link to="/dog-friendly" className="hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
               <li><Link to="/accommodation" className="hover:text-primary transition-colors">Accommodation</Link></li>
