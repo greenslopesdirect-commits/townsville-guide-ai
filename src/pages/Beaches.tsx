@@ -315,7 +315,7 @@ const Beaches = () => {
             </Table>
           </div>
           <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-            Note: The high-risk stinger season has officially ended, so nets are no longer required for safe swimming. Council typically leaves the enclosures up and maintained for a period after the season as a precaution while water temperatures drop — you'll still see them at the beaches above, but they reflect caution rather than an active warning.
+            Note: The 2025/26 stinger season has ended and Townsville City Council physically removed these enclosures on 27 May 2026 after weeks of clear net drags confirmed no stinger presence. This is standard annual practice — the nets return each November for the next season. Open-water swimming across these beaches is no longer considered high-risk for box jellyfish or Irukandji.
           </p>
 
         </section>
