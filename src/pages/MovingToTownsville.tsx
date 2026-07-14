@@ -32,7 +32,7 @@ const MovingToTownsville = () => {
           {/* Hero */}
           <header className="space-y-4">
             <Badge variant="secondary" className="bg-emerald-50 text-emerald-700 w-fit">
-              Updated: June 1, 2026
+              Updated: July 13, 2026
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
               Moving to Townsville 2026: The Local's Relocation & Growth Guide
@@ -151,7 +151,7 @@ const MovingToTownsville = () => {
                     the light of Castle Hill.
                   </p>
                   <p className="mt-3">
-                    <strong>June Update:</strong> With the evening temperatures dropping to a comfortable 20°C, a twilight walk under
+                    <strong>July Update:</strong> With the cooler dry-season evenings settling in, a twilight walk under
                     Castle Hill is spectacular. It's a classic example of enjoying our relaxed, coastal dry season lifestyle.
                   </p>
                 </LocalInsightCard>
@@ -227,9 +227,10 @@ const MovingToTownsville = () => {
               <CardContent className="p-5 flex gap-3 items-start">
                 <TrendingUp className="w-5 h-5 text-blue-600 mt-0.5 shrink-0" />
                 <p className="text-sm text-blue-900">
-                  <strong>Infrastructure Alert — Port Expansion:</strong> The $400M+ Channel Upgrade is
-                  nearing completion, paving the way for larger cruise ships and increased trade capacity
-                  by late 2026.
+                  <strong>Infrastructure Alert — Port Expansion:</strong> Stage 1 of the Port of Townsville
+                  Channel Upgrade ($251M) was completed in 2025, allowing larger vessels to access the port.
+                  Stage 2, the $690 million Outer Harbour Development, is now in planning and could be delivered
+                  between 2026 and 2030, pending funding — a major next chapter for trade and cruise capacity.
                 </p>
               </CardContent>
             </Card>
