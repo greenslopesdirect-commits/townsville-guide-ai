@@ -165,8 +165,8 @@ const Beaches = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <SEOHead
-        title="Best Beaches in Townsville 2026: Swimming & Safety Tips"
-        description="Local-verified guide to Townsville beaches — Saunders Beach deep-dive, dry-season stinger safety, and the best off-leash dog spots."
+        title="Townsville Beaches: Family & Dog-Friendly"
+        description="Which Townsville beach is best for you? Family swimming spots, off-leash dog beaches, and current stinger safety — from a local."
         canonical="https://www.myaussieguide.com.au/beaches"
       />
       <Helmet>
