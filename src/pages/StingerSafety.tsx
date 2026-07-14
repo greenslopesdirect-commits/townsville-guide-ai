@@ -158,35 +158,35 @@ const StingerSafety = () => (
               <TableCell className="font-medium">The Strand (North)</TableCell>
               <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">The Strand (South)</TableCell>
               <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Pallarenda Beach</TableCell>
               <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
               <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
               <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
               </TableCell>
             </TableRow>
           </TableBody>
