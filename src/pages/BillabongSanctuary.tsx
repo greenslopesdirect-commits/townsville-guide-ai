@@ -194,10 +194,10 @@ const BillabongSanctuary = () => {
         <section className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <Clock className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl md:text-3xl font-bold">Show Times - June 2026 Verified</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">Show Times — Verified July 13, 2026</h2>
           </div>
           <p className="text-sm text-muted-foreground mb-4">
-            Park open daily 9:00 AM – 4:00 PM. All experiences below are included with entry.
+            Park open daily 9:00 AM – 4:00 PM. All experiences below are included with entry unless noted (Meerkat Encounter is a paid bookable session).
           </p>
           <Card className="border-l-4 border-primary">
             <CardContent className="p-5">
