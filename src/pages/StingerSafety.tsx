@@ -122,11 +122,11 @@ const StingerSafety = () => (
       </p>
     </div>
 
-    {/* Autumn Tip */}
+    {/* Dry Season Confirmation */}
     <div className="bg-sky-50 dark:bg-sky-950/30 border border-sky-300 dark:border-sky-700 rounded-xl p-6 mb-12">
-      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">🍂 Final Weeks of Season</h4>
+      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">☀️ Dry Season Swimming</h4>
       <p className="text-sky-700 dark:text-sky-400 leading-relaxed">
-        The official season typically concludes at the end of May. However, the exact date the nets are removed depends on consistent water temperature drops. Check back here or on the homepage for the 'Nets Out' announcement usually expected in early June.
+        The 2025/26 stinger season has concluded. Water temperatures have dropped and stinger risk is now considered low across Townsville and Magnetic Island beaches. Nets may still be in place as a precaution at some locations — you can still swim inside them, but they are no longer an active warning sign. As always, follow beach flags, lifeguard directions, and any local signage.
       </p>
     </div>
 
