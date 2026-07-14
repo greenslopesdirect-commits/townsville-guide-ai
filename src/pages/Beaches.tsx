@@ -644,7 +644,7 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">The 2025/26 marine stinger season has ended. Nets at The Strand, Pallarenda and Magnetic Island are often left in place as a precaution after season's end — you may still see them, but they no longer indicate active danger. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">The 2025/26 marine stinger season has ended. Council removed the enclosures at The Strand, Pallarenda, Magnetic Island and Balgal Beach on 27 May 2026 after weeks of clear net drags — they'll be reinstalled in November for the next season. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
 
               </div>
             </div>
