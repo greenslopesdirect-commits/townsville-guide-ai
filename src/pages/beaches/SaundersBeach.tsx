@@ -1,9 +1,56 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, MapPin, Dog, ShieldAlert, Sparkles } from "lucide-react";
+import { ArrowLeft, MapPin, Dog, ShieldAlert, Sparkles, Quote } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import SaundersGallery from "@/components/SaundersGallery";
 import AirportTransferCard from "@/components/AirportTransferCard";
 import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+const faqs = [
+  {
+    q: "Is Saunders Beach good for stargazing?",
+    a: "Yes — it's one of the best spots in the Townsville region for it. Because Saunders sits about 35 minutes north of the city, there's very little light pollution, and the open beach + tree-line combo gives you a clear southern sky. Bring a telescope or just a picnic rug.",
+  },
+  {
+    q: "Are dogs allowed at Saunders Beach?",
+    a: "Yes — Saunders is 100% dog-friendly. There's plenty of room for a high-energy run, especially at low tide when the sand flats are exposed.",
+  },
+  {
+    q: "Is there a stinger net at Saunders Beach?",
+    a: "No. There's no stinger enclosure at Saunders. It's beautiful for walks and wading at low tide, but during stinger season (Nov–May) stick to the seasonal nets at Pallarenda Main Beach or The Strand, or the year-round stinger-free Rockpool at The Strand for actual swimming.",
+  },
+  {
+    q: "How far is Saunders Beach from Townsville?",
+    a: "About 35 minutes' drive north of the Townsville CBD, and roughly the same from Townsville Airport. It's an easy day trip or a quiet base if you're staying up in the northern beaches.",
+  },
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.myaussieguide.com.au/" },
+        { "@type": "ListItem", position: 2, name: "Beaches", item: "https://www.myaussieguide.com.au/beaches" },
+        { "@type": "ListItem", position: 3, name: "Saunders Beach", item: "https://www.myaussieguide.com.au/beaches/saunders-beach" },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  ],
+};
 
 const SaundersBeach = () => {
   return (
@@ -14,6 +61,8 @@ const SaundersBeach = () => {
         canonical="https://www.myaussieguide.com.au/beaches/saunders-beach"
         ogImage="https://www.myaussieguide.com.au/saunders-beach-blue-sky.webp"
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
 
       {/* Hero */}
       <section
