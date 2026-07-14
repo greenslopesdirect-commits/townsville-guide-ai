@@ -76,10 +76,10 @@ const StingerSafety = () => (
     <p className="text-center text-sm text-muted-foreground mb-6">Updated: July 13, 2026</p>
 
     {/* Current Status Banner */}
-    <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 July 13 Status: Stinger Season Has Ended — Nets May Still Be In Place</h2>
-      <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        The 2025/26 marine stinger season has officially wrapped up, so swimming at Townsville and Magnetic Island beaches is no longer considered high-risk for stings. Council typically leaves the beach enclosures up and maintained for a period afterwards as a precaution while water temperatures settle — so if you still see nets at The Strand, Pallarenda, or Magnetic Island, treat them as a comfort option rather than an active warning. Continue to check local signage and stay aware of general marine and crocodile advisories.
+    <div className="bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-400 dark:border-emerald-600 rounded-xl p-6 mb-8">
+      <h2 className="text-2xl font-bold text-emerald-800 dark:text-emerald-300 mb-2">🌊 July 13 Status: Stinger Season Has Ended — Nets Removed for the Dry Season</h2>
+      <p className="text-emerald-700 dark:text-emerald-400 leading-relaxed">
+        Townsville City Council confirmed on 27 May 2026 that the marine stinger enclosures at The Strand, Pallarenda, Magnetic Island (Picnic Bay and Horseshoe Bay) and Balgal Beach have been physically removed for the season, after weeks of clear net drags confirmed no stinger presence. This is standard annual practice — the nets are reinstalled each November when the next stinger season begins. Open-water swimming is no longer considered high-risk for box jellyfish or Irukandji. As always, follow beach flags, lifeguard directions and general marine and crocodile advisories.
       </p>
     </div>
 
