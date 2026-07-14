@@ -134,7 +134,7 @@ const StingerSafety = () => (
     <section className="mb-10">
       <h2 className="text-2xl font-bold mb-4">When Is Stinger Season in Townsville?</h2>
       <p className="mb-4 text-muted-foreground leading-relaxed">
-        Stinger season in Townsville typically runs from November to May. The 2025/2026 season has now officially concluded as of late May, and nets have been removed across all local beaches. The next season will commence in November 2026.
+        Stinger season in Townsville typically runs from November to May. The 2025/2026 season has now officially concluded as of late May. Nets may remain in place at some beaches for a period afterwards as a precaution while water temperatures settle. The next season will commence in November 2026.
       </p>
       <p className="mb-4 text-muted-foreground leading-relaxed font-semibold">
         Swimming is considered safe when using patrolled stinger enclosures at The Strand, Pallarenda, and other netted beaches. Always check local signage or Surf Life Saving updates before entering the water.
