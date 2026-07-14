@@ -3,14 +3,22 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { 
-  ArrowLeft, 
-  MapPin, 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  ArrowLeft,
+  MapPin,
   ShoppingBag,
   Check,
   Store,
   Coffee,
-  Calendar
+  Calendar,
+  Quote,
+  HelpCircle,
 } from "lucide-react";
 
 interface ShoppingCardProps {
@@ -20,9 +28,10 @@ interface ShoppingCardProps {
   mapUrl: string;
   icon: React.ReactNode;
   type: string;
+  bestFor?: string;
 }
 
-const ShoppingCard = ({ title, description, features, mapUrl, icon, type }: ShoppingCardProps) => (
+const ShoppingCard = ({ title, description, features, mapUrl, icon, type, bestFor }: ShoppingCardProps) => (
   <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30">
     <CardHeader className="bg-gradient-to-br from-primary/5 to-transparent pb-4">
       <div className="flex items-start justify-between">
@@ -47,10 +56,16 @@ const ShoppingCard = ({ title, description, features, mapUrl, icon, type }: Shop
           </li>
         ))}
       </ul>
+      {bestFor && (
+        <div className="rounded-lg bg-primary/5 border border-primary/10 px-3 py-2 text-sm">
+          <span className="font-semibold text-foreground">Best for: </span>
+          <span className="text-muted-foreground">{bestFor}</span>
+        </div>
+      )}
       <Button variant="outline" size="sm" asChild className="gap-2 w-full sm:w-auto">
-        <a 
-          href={mapUrl} 
-          target="_blank" 
+        <a
+          href={mapUrl}
+          target="_blank"
           rel="noopener noreferrer"
           aria-label={`View ${title} on Google Maps`}
         >
@@ -66,115 +81,156 @@ const Shopping = () => {
   const shoppingCentres: ShoppingCardProps[] = [
     {
       title: "Castletown Shopping Centre",
-      description: "Indoor shopping centre with a great mix of retail, dining, and essential stores. Located in the heart of Townsville's northern suburbs with easy parking and air-conditioned comfort.",
+      description:
+        "A well-established, walkable centre in Hyde Park, just a short drive south of the CBD. Castletown has a relaxed, community feel — locals pop in for groceries, a coffee, and a browse rather than a full-day shop. It's fully air-conditioned, which makes it a genuine relief in the wet season.",
       features: [
-        "Major supermarkets (Coles, Woolworths)",
-        "Fashion and retail stores",
-        "Food court with diverse options",
-        "Ample free parking"
+        "Supermarket and everyday essentials",
+        "Cafés and casual dining",
+        "Fashion, homewares and specialty stores",
+        "Undercover and outdoor parking",
       ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Castletown+Townsville",
+      bestFor:
+        "A quick, low-stress shop close to town — groceries, a coffee stop, or errands without the crowds of a mega-centre.",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Castletown+Shopping+World+Townsville",
       icon: <Store className="w-6 h-6" />,
-      type: "Shopping Centre"
+      type: "Neighbourhood Centre · Hyde Park",
     },
     {
       title: "Willows Shopping Centre",
-      description: "Large shopping hub featuring supermarkets, big brand stores, and regular weekend markets. A favourite for families with a cinema and kids' play areas.",
+      description:
+        "Out in the western suburbs around Kirwan, Willows is a big family-focused centre with a cinema, major supermarkets, and a strong mix of national retailers. It's typically a 15–20 minute drive from the CBD and popular with locals from Kirwan, Thuringowa and the Upper Ross.",
       features: [
-        "Birch Carroll & Coyle Cinema",
-        "Big W and Target",
-        "Weekend markets in the car park",
-        "Kids' play areas"
+        "Cinema complex on-site",
+        "Full-line supermarkets and department stores",
+        "Fashion, sports and homewares",
+        "Large free car park",
       ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Willows+Townsville",
+      bestFor:
+        "Families and western-suburbs locals wanting a one-stop weekend outing — shop, eat, and catch a movie in one trip.",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Willows+Shopping+Centre+Townsville",
       icon: <ShoppingBag className="w-6 h-6" />,
-      type: "Shopping Centre"
+      type: "Regional Centre · Kirwan",
     },
     {
       title: "Stockland Townsville",
-      description: "Townsville's biggest shopping centre with over 180 stores including fashion, tech, homewares, and a fantastic food precinct. The go-to destination for serious shopping.",
+      description:
+        "Townsville's largest shopping centre, in Aitkenvale about 10 minutes south of the CBD. This is where you go for serious retail — a broad specialty-store lineup, department-store anchors, a big food precinct and cinemas. It gets busy on weekends and public holidays.",
       features: [
-        "180+ specialty stores",
-        "Myer and Kmart anchor stores",
-        "Event Cinemas",
-        "Extensive dining precinct"
+        "Extensive specialty-store lineup",
+        "Department stores and major anchors",
+        "Large dining and food-court precinct",
+        "Cinemas and entertainment",
+        "Multi-level covered parking",
       ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Stockland+Townsville",
+      bestFor:
+        "A proper shopping day out — fashion browsing, gift hunting, or anything you can't find at your local centre.",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Stockland+Townsville+Aitkenvale",
       icon: <ShoppingBag className="w-6 h-6" />,
-      type: "Major Shopping Centre"
-    }
+      type: "Major Regional Centre · Aitkenvale",
+    },
   ];
 
   const markets: ShoppingCardProps[] = [
     {
       title: "Cotters Market",
-      description: "Popular Sunday market featuring fresh produce, handmade crafts, artisan food stalls, and live entertainment. A true Townsville institution running for over 20 years.",
+      description:
+        "Townsville's flagship Sunday market and a proper local institution. Runs every Sunday morning on Flinders Street in the CBD, from 8:00 AM to 1:00 PM. Expect fresh coffee, local North Queensland crafts, artisan food stalls and live street music — a perfect way to start a Sunday before heading to the Strand.",
       features: [
-        "Fresh local produce",
-        "Handmade crafts and art",
-        "Street food and coffee",
-        "Live music entertainment"
+        "Every Sunday, 8:00 AM – 1:00 PM",
+        "Flinders Street, Townsville CBD",
+        "Fresh coffee, food stalls and local produce",
+        "Handmade crafts and live music",
       ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Cotters+Market+Townsville",
+      bestFor:
+        "A slow Sunday morning — coffee, a wander, and a bit of local colour before the day heats up.",
+      mapUrl: "https://www.google.com/maps/search/?api=1&query=Cotters+Market+Flinders+Street+Townsville",
       icon: <Coffee className="w-6 h-6" />,
-      type: "Sunday Market"
+      type: "Weekly · Sunday Morning",
     },
     {
       title: "North Shore Market",
-      description: "A family-friendly weekend market with local stalls, food vendors, and a relaxed community atmosphere. Great for breakfast and a morning browse.",
+      description:
+        "A smaller, family-friendly community market in the North Shore area. It has a relaxed, neighbourhood feel — local stalls, breakfast vendors, and plenty of space for kids. Good for a morning browse if you're already staying out north.",
       features: [
-        "Local artisan stalls",
-        "Fresh food vendors",
-        "Family-friendly atmosphere",
-        "Saturday morning trading"
+        "Local artisan and craft stalls",
+        "Breakfast and coffee vendors",
+        "Family-friendly, kid-friendly space",
+        "Quieter alternative to Cotters",
       ],
+      bestFor:
+        "Locals and visitors staying on the north side who'd rather skip the CBD run.",
       mapUrl: "https://www.google.com/maps/search/?api=1&query=North+Shore+Market+Townsville",
       icon: <Calendar className="w-6 h-6" />,
-      type: "Weekend Market"
-    }
+      type: "Community Market · North Shore",
+    },
+  ];
+
+  const faqs = [
+    {
+      question: "What are the best shopping centres in Townsville?",
+      answer:
+        "The three main centres are Stockland Townsville in Aitkenvale (the largest, with the widest range of stores and a cinema), Willows Shopping Centre in Kirwan (family-focused with a cinema, great for the western suburbs), and Castletown in Hyde Park (a smaller, walkable centre closer to the CBD, good for a quick shop). Which suits you best depends on where you're staying and how much shopping you actually want to do.",
+    },
+    {
+      question: "When is Cotters Market on?",
+      answer:
+        "Cotters Market runs every Sunday morning on Flinders Street in the Townsville CBD, from 8:00 AM to 1:00 PM. Get there early in the dry season — the morning air is cool and the atmosphere is at its best before the sun climbs.",
+    },
+    {
+      question: "Is there a night market in Townsville?",
+      answer:
+        "Yes — the Strand Night Markets run along The Strand foreshore on the first Friday of the month during the dry season, typically from around 5:00 PM. You'll find North Queensland food trucks, arts, crafts and live music under the palms. It's seasonal, so it winds down over the wet-season months. See our Strand guide for the next date.",
+    },
+    {
+      question: "Where's the best place to shop for local souvenirs and crafts?",
+      answer:
+        "Skip the tourist trinkets and head to the markets. Cotters Market on Sunday morning has genuine local craft, art and produce, and the Strand Night Markets (first Friday of the month, dry season) are strong for handmade pieces from North Queensland makers.",
+    },
+    {
+      question: "Are the shopping centres open on Sundays and public holidays?",
+      answer:
+        "The major centres — Stockland, Willows and Castletown — generally trade on Sundays with reduced hours, and most public holidays with further reduced or restricted hours. Trading hours can change around Christmas, Easter and Anzac Day, so check the individual centre's website before making a special trip.",
+    },
   ];
 
   return (
     <>
       <SEOHead
-        title="Shopping & Markets in Townsville – Complete Guide | MyAussieGuide"
-        description="Discover the best shopping centres and local markets in Townsville. From Stockland to Cotters Market, find where to shop for retail, produce, and local crafts."
+        title="Shopping & Markets in Townsville — Local Guide"
+        description="A local guide to shopping in Townsville — Stockland, Willows and Castletown shopping centres, plus Cotters Market and the Strand Night Markets."
         canonical="https://www.myaussieguide.com.au/shopping"
+        ogType="article"
       />
       <Helmet>
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "Shopping & Markets in Townsville",
-            "description": "Complete guide to shopping in Townsville",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Stockland Townsville",
-                "url": "https://www.myaussieguide.com.au/shopping"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Cotters Market",
-                "url": "https://www.myaussieguide.com.au/shopping"
-              }
-            ]
-          }
-          `}
-        </script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
+                { "@type": "ListItem", "position": 2, "name": "Shopping & Markets", "item": "https://www.myaussieguide.com.au/shopping" },
+              ],
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": faqs.map((f) => ({
+                "@type": "Question",
+                "name": f.question,
+                "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+              })),
+            },
+          ],
+        })}</script>
       </Helmet>
-      
+
       <div className="min-h-screen bg-background">
         <main className="pt-24 pb-16">
           <div className="container mx-auto px-4 max-w-5xl">
             {/* Back Button */}
             <Link to="/">
-              <Button 
-                variant="ghost" 
+              <Button
+                variant="ghost"
                 className="mb-6 group"
                 aria-label="Back to home"
               >
@@ -193,17 +249,17 @@ const Shopping = () => {
                 Shopping & Markets in Townsville
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                From major shopping centres with all the big brands to vibrant weekend markets featuring local produce and crafts, discover where to shop in Townsville.
+                Townsville's retail scene is split between three main shopping centres — Stockland, Willows and Castletown — and a small but loyal weekend market circuit. This guide covers where each one fits, what it's best for, and when the markets are actually on.
               </p>
             </header>
 
             {/* Quick Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
               {[
-                { icon: <ShoppingBag className="w-5 h-5" />, label: "3 Major Centres", sublabel: "All brands" },
-                { icon: <Coffee className="w-5 h-5" />, label: "5+ Markets", sublabel: "Every weekend" },
-                { icon: <Store className="w-5 h-5" />, label: "180+ Stores", sublabel: "At Stockland" },
-                { icon: <Calendar className="w-5 h-5" />, label: "Sunday Best", sublabel: "Cotters Market" }
+                { icon: <ShoppingBag className="w-5 h-5" />, label: "3 Major Centres", sublabel: "Stockland, Willows, Castletown" },
+                { icon: <Store className="w-5 h-5" />, label: "Aitkenvale Hub", sublabel: "Stockland — the largest" },
+                { icon: <Coffee className="w-5 h-5" />, label: "Sunday Mornings", sublabel: "Cotters Market, CBD" },
+                { icon: <Calendar className="w-5 h-5" />, label: "First Friday", sublabel: "Strand Night Markets" },
               ].map((stat, index) => (
                 <div key={index} className="text-center p-4 rounded-2xl bg-card border-2 hover:border-primary/30 transition-colors">
                   <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary mb-2">
@@ -225,7 +281,7 @@ const Shopping = () => {
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                     Shopping Centres
                   </h2>
-                  <p className="text-muted-foreground">Major retail destinations in Townsville</p>
+                  <p className="text-muted-foreground">The three main indoor centres, and what each one is actually good for</p>
                 </div>
               </div>
 
@@ -233,6 +289,21 @@ const Shopping = () => {
                 {shoppingCentres.map((centre, index) => (
                   <ShoppingCard key={index} {...centre} />
                 ))}
+              </div>
+            </section>
+
+            {/* Duncan Local Tip */}
+            <section className="mb-16">
+              <div className="rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent p-6 md:p-8">
+                <div className="flex gap-4">
+                  <Quote className="w-8 h-8 text-primary flex-shrink-0" />
+                  <div>
+                    <p className="text-base md:text-lg text-foreground leading-relaxed italic mb-3">
+                      "In the wet season, an air-conditioned centre stops being a shopping trip and starts being a genuine escape. Stockland's my pick on a 34-degree humid afternoon — you can drift between shops, grab a coffee, and still be indoors when the storm rolls through."
+                    </p>
+                    <p className="text-sm font-semibold text-foreground">— Duncan, MyAussieGuide</p>
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -246,7 +317,7 @@ const Shopping = () => {
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                     Local Markets
                   </h2>
-                  <p className="text-muted-foreground">Weekend markets with local produce and crafts</p>
+                  <p className="text-muted-foreground">Weekend markets for coffee, produce and North Queensland crafts</p>
                 </div>
               </div>
 
@@ -255,6 +326,48 @@ const Shopping = () => {
                   <ShoppingCard key={index} {...market} />
                 ))}
               </div>
+
+              {/* Night Markets callout */}
+              <div className="mt-6 rounded-xl border border-border bg-card p-5">
+                <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                  <Calendar className="w-5 h-5 text-primary" />
+                  Strand Night Markets
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  On the first Friday of each month during the dry season, The Strand Night Markets take over Strand Park from around 5:00 PM — local food trucks, arts, crafts and live music under the palms. Full details, next date and location on our{" "}
+                  <Link to="/the-strand" className="text-primary font-medium hover:underline">
+                    Strand guide
+                  </Link>.
+                </p>
+              </div>
+            </section>
+
+            {/* FAQ Section */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <HelpCircle className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Shopping FAQs
+                  </h2>
+                  <p className="text-muted-foreground">The questions we get asked most about shopping in Townsville</p>
+                </div>
+              </div>
+
+              <Accordion type="single" collapsible className="w-full">
+                {faqs.map((faq, i) => (
+                  <AccordionItem key={i} value={`item-${i}`}>
+                    <AccordionTrigger className="text-left font-semibold">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </section>
 
             {/* CTA Section */}
@@ -263,14 +376,17 @@ const Shopping = () => {
                 Explore More of Townsville
               </h2>
               <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-                Discover food and drink, beaches, and local attractions across Townsville.
+                Pair your shopping trip with a coffee, a beach, or a Sunday event.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button asChild>
                   <Link to="/food">Food & Drink</Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <Link to="/things-to-do">Things To Do</Link>
+                  <Link to="/events">Events Calendar</Link>
+                </Button>
+                <Button variant="outline" asChild>
+                  <Link to="/the-strand">The Strand</Link>
                 </Button>
               </div>
             </section>
