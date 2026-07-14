@@ -72,14 +72,14 @@ const StingerSafety = () => (
       })}</script>
     </Helmet>
 
-    <h1 className="text-4xl font-bold mb-4 text-center">June 2026 Stinger Update</h1>
-    <p className="text-center text-sm text-muted-foreground mb-6">Updated: June 1, 2026</p>
+    <h1 className="text-4xl font-bold mb-4 text-center">July 13, 2026 Stinger Update</h1>
+    <p className="text-center text-sm text-muted-foreground mb-6">Updated: July 13, 2026</p>
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 June 1 Status: Nets are OUT for the Dry Season!</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 July 13 Status: Stinger Season Has Ended — Nets May Still Be In Place</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        Townsville City Council officially removed the stinger nets on May 28, 2026, marking the official end of the 2025/2026 stinger season. The water is clear, the low-humidity Dry Season is fully underway, and open swimming is now generally safe across local beaches. However, always check local beach flags and Surf Life Saving signs before jumping in.
+        The 2025/26 marine stinger season has officially wrapped up, so swimming at Townsville and Magnetic Island beaches is no longer considered high-risk for stings. Council typically leaves the beach enclosures up and maintained for a period afterwards as a precaution while water temperatures settle — so if you still see nets at The Strand, Pallarenda, or Magnetic Island, treat them as a comfort option rather than an active warning. Continue to check local signage and stay aware of general marine and crocodile advisories.
       </p>
     </div>
 
