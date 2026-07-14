@@ -136,7 +136,7 @@ const faqItems = [
   },
   {
     question: "When is stinger season in Townsville?",
-    answer: "Stinger season traditionally ends in late May, but nets usually stay in until water temperatures drop consistently. Always check the current status on our Stinger & Safety Guide."
+    answer: "Stinger season runs November to May. For the 2025/26 season, Townsville City Council removed all stinger enclosures on 27 May 2026 after weeks of clear net drags — they'll be reinstalled in November 2026. Always check the current status on our Stinger & Safety Guide."
   },
   {
     question: "Which Townsville beaches have stinger nets?",
