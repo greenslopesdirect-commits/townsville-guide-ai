@@ -57,7 +57,6 @@ const Footer = () => {
                 <li><Link to="/moving-to-townsville" className="text-muted-foreground hover:text-primary transition-colors">Moving to Townsville Guide</Link></li>
                 <li><Link to="/events" className="text-muted-foreground hover:text-primary transition-colors">Local Event Calendar</Link></li>
                 <li><Link to="/dog-friendly" className="text-muted-foreground hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
-                <li><Link to="/accessible-townsville" className="text-muted-foreground hover:text-primary transition-colors">Accessibility Guide</Link></li>
               </ul>
             </div>
 
