@@ -395,7 +395,7 @@ const DogFriendly = () => {
                 <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-medium text-sm text-foreground">Stinger Season Ended</p>
-                  <p className="text-xs text-muted-foreground mt-1">☀️ July Update: The stinger season has concluded, but council often leaves the beach enclosures in place for a while as a precaution while water temperatures settle. You may still see nets at The Strand, Pallarenda, or Magnetic Island — treat them as a comfort option rather than an active warning. This means you can finally let your dogs enjoy deep-water swimming at un-netted northern beaches like Saunders, Toolakea, and Bushland Beach without the summer worry. Remember to give them a good fresh-water rinse afterward to remove the tropical salt and sand!</p>
+                  <p className="text-xs text-muted-foreground mt-1">☀️ July Update: The 2025/26 stinger season has concluded and Townsville City Council removed the enclosures at The Strand, Pallarenda, Magnetic Island and Balgal Beach on 27 May 2026, after weeks of clear net drags confirmed no stinger presence. Nets return each November for the next season. Your dogs can now safely enjoy deep-water swimming at northern beaches like Saunders, Toolakea, and Bushland Beach without the summer worry. Remember to give them a good fresh-water rinse afterward to remove the tropical salt and sand!</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">

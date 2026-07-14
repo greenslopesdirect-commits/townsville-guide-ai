@@ -8,15 +8,15 @@ interface StingerSeasonAlertProps {
 const StingerSeasonAlert = ({ className = "" }: StingerSeasonAlertProps) => {
   return (
     <Alert 
-      className={`bg-amber-50 dark:bg-amber-950/30 border-amber-300 dark:border-amber-700 ${className}`}
+      className={`bg-emerald-50 dark:bg-emerald-950/30 border-emerald-300 dark:border-emerald-700 ${className}`}
     >
-      <Sun className="h-5 w-5 text-amber-600 dark:text-amber-400" />
-      <AlertTitle className="text-amber-800 dark:text-amber-300 font-semibold">
-        ☀️ Stinger Season Has Ended — Nets May Still Be In Place
+      <Sun className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+      <AlertTitle className="text-emerald-800 dark:text-emerald-300 font-semibold">
+        ☀️ Stinger Season Has Ended — Nets Removed for the Dry Season
       </AlertTitle>
-      <AlertDescription className="text-amber-700 dark:text-amber-400 mt-2">
+      <AlertDescription className="text-emerald-700 dark:text-emerald-400 mt-2">
         <p>
-          The 2025/26 marine stinger season has officially wrapped up, so swimming at Townsville and Magnetic Island beaches is no longer considered high-risk for stings. Council typically leaves the beach enclosures up and maintained for a period afterwards as a precaution while water temperatures settle — so if you still see nets at The Strand, Pallarenda, or Magnetic Island, treat them as a comfort option rather than an active warning. Continue to check local signage and stay aware of general marine and crocodile advisories.
+          Townsville City Council confirmed on 27 May 2026 that the marine stinger enclosures at The Strand, Pallarenda, Magnetic Island (Picnic Bay and Horseshoe Bay) and Balgal Beach have been physically removed for the season, after weeks of clear net drags confirmed no stinger presence. This is standard annual practice — the nets are reinstalled each November when the next stinger season begins. Open-water swimming is no longer considered high-risk for box jellyfish or Irukandji. As always, follow beach flags, lifeguard directions and general marine and crocodile advisories.
         </p>
       </AlertDescription>
 

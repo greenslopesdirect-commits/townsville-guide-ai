@@ -136,7 +136,7 @@ const faqItems = [
   },
   {
     question: "When is stinger season in Townsville?",
-    answer: "Stinger season traditionally ends in late May, but nets usually stay in until water temperatures drop consistently. Always check the current status on our Stinger & Safety Guide."
+    answer: "Stinger season runs November to May. For the 2025/26 season, Townsville City Council removed all stinger enclosures on 27 May 2026 after weeks of clear net drags — they'll be reinstalled in November 2026. Always check the current status on our Stinger & Safety Guide."
   },
   {
     question: "Which Townsville beaches have stinger nets?",
@@ -258,7 +258,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-          Nets you still see along the foreshore are precautionary leftovers from the season, not an active warning. You're welcome to swim inside them for extra peace of mind.{" "}
+          Council removed the enclosures on 27 May 2026 after weeks of clear net drags — they'll return in November for the next stinger season.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
@@ -280,42 +280,42 @@ const Beaches = () => {
                   <TableCell className="font-medium">The Strand (North)</TableCell>
                   <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">The Strand (South)</TableCell>
                   <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">Pallarenda Beach</TableCell>
                   <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
                   <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
                   </TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
                   <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
                   <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-300">Nets in place (precautionary)</span>
+                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
                   </TableCell>
                 </TableRow>
               </TableBody>
             </Table>
           </div>
           <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-            Note: The high-risk stinger season has officially ended, so nets are no longer required for safe swimming. Council typically leaves the enclosures up and maintained for a period after the season as a precaution while water temperatures drop — you'll still see them at the beaches above, but they reflect caution rather than an active warning.
+            Note: The 2025/26 stinger season has ended and Townsville City Council physically removed these enclosures on 27 May 2026 after weeks of clear net drags confirmed no stinger presence. This is standard annual practice — the nets return each November for the next season. Open-water swimming across these beaches is no longer considered high-risk for box jellyfish or Irukandji.
           </p>
 
         </section>
@@ -644,7 +644,7 @@ const Beaches = () => {
               <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">The 2025/26 marine stinger season has ended. Nets at The Strand, Pallarenda and Magnetic Island are often left in place as a precaution after season's end — you may still see them, but they no longer indicate active danger. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
+                <p className="text-xs text-muted-foreground mt-1">The 2025/26 marine stinger season has ended. Council removed the enclosures at The Strand, Pallarenda, Magnetic Island and Balgal Beach on 27 May 2026 after weeks of clear net drags — they'll be reinstalled in November for the next season. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
 
               </div>
             </div>

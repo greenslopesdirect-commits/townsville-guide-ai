@@ -115,7 +115,7 @@ const DogFriendly = () => {
           <AlertDescription className="ml-2">
               <strong className="text-foreground block sm:inline">☀️ Current Vibe:</strong>
               <span className="text-muted-foreground sm:ml-2 block sm:inline mt-1 sm:mt-0">
-                The "Perfect Dry" is spectacular right now. Humidity has bottomed out and those <strong>5:30 PM sunsets at Castle Hill</strong> are world-class. <strong>Pallarenda Beach</strong> remains our top pick for low-tide runs with the dog on the firm sand. The 2025/26 stinger season has ended — any nets still up along The Strand or Pallarenda are precautionary while water temperatures settle, not an active warning. Always keep an eye on local signage and general marine advisories.
+                The "Perfect Dry" is spectacular right now. Humidity has bottomed out and those <strong>5:30 PM sunsets at Castle Hill</strong> are world-class. <strong>Pallarenda Beach</strong> remains our top pick for low-tide runs with the dog on the firm sand. The 2025/26 stinger season has ended and Townsville City Council removed the beach enclosures at The Strand, Pallarenda, Magnetic Island and Balgal Beach in late May 2026 after weeks of clear net drags — nets are reinstalled each November. Always keep an eye on local signage and general marine advisories.
               </span>
           </AlertDescription>
         </Alert>
