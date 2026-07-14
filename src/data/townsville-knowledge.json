@@ -376,5 +376,20 @@
       "address": "Palmer Street, South Townsville",
       "notes": "Traditional barber offering hot towel shaves, beard trims, and modern cuts."
     }
+  ],
+
+  "suburbs": [
+    { "name": "North Ward", "vibe": "Coastal, walkable CBD-adjacent suburb — heritage Queenslanders and apartments right on The Strand.", "guide": "/suburbs#north-ward" },
+    { "name": "Kirwan", "vibe": "Large established western family suburb — big blocks, strong school catchments, close to Willows.", "guide": "/suburbs#kirwan" },
+    { "name": "Idalia", "vibe": "Newer masterplanned suburb across the Ross River — modern homes close to the Hospital and stadium.", "guide": "/suburbs#idalia" },
+    { "name": "Douglas", "vibe": "University and Hospital precinct — built around JCU and Townsville University Hospital.", "guide": "/suburbs#douglas" },
+    { "name": "Aitkenvale", "vibe": "Central retail and services hub — home to Stockland Townsville and most of the city's medical/dining strip.", "guide": "/suburbs#aitkenvale" },
+    { "name": "Annandale", "vibe": "Leafy south-side family suburb — quieter streets, local shops, handy to the Hospital and JCU.", "guide": "/suburbs#annandale" },
+    { "name": "Garbutt", "vibe": "Airport-adjacent redevelopment story — newer developments like The Haven bringing modern homes close to the CBD.", "guide": "/suburbs#garbutt" },
+    { "name": "Bushland Beach", "vibe": "Coastal community on the northern fringe — genuine local-swim beach, roughly 20–25 minutes from the CBD.", "guide": "/suburbs#bushland-beach" },
+    { "name": "Rowes Bay", "vibe": "Beachfront living minutes from the CBD, The Strand and Jezzine Barracks — popular with Defence families.", "guide": "/rowes-bay" },
+    { "name": "North Shore", "vibe": "Northern growth heart — modern homes, 42km of walking trails, and the best community leisure centre in the city.", "guide": "/north-shore-townsville" },
+    { "name": "Pallarenda", "vibe": "Quiet peninsula suburb wrapped around a national park with an off-leash dog beach.", "guide": "/pallarenda-beach" },
+    { "name": "Saunders Beach", "vibe": "Quiet northern escape — 6km of unspoilt sand, about 30 minutes from the CBD, locals-only feel.", "guide": "/beaches/saunders-beach" }
   ]
 }
