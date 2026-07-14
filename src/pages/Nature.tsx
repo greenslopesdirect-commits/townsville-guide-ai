@@ -152,27 +152,58 @@ const Nature = () => {
           {`
           {
             "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "Nature & Walks in Townsville",
-            "description": "Complete guide to nature walks and hiking in Townsville",
-            "itemListElement": [
+            "@graph": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Castle Hill Walking Tracks",
-                "url": "https://www.myaussieguide.com.au/nature"
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
+                  { "@type": "ListItem", "position": 2, "name": "Things to Do", "item": "https://www.myaussieguide.com.au/things-to-do" },
+                  { "@type": "ListItem", "position": 3, "name": "Nature & Walks", "item": "https://www.myaussieguide.com.au/nature" }
+                ]
               },
               {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Townsville Town Common",
-                "url": "https://www.myaussieguide.com.au/nature"
+                "@type": "ItemList",
+                "name": "Nature & Walks in Townsville",
+                "description": "Complete guide to nature walks and hiking in Townsville",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Castle Hill Walking Tracks", "url": "https://www.myaussieguide.com.au/castle-hill" },
+                  { "@type": "ListItem", "position": 2, "name": "Townsville Town Common", "url": "https://www.myaussieguide.com.au/nature" },
+                  { "@type": "ListItem", "position": 3, "name": "Cape Pallarenda Trails", "url": "https://www.myaussieguide.com.au/nature" },
+                  { "@type": "ListItem", "position": 4, "name": "Little Crystal Creek", "url": "https://www.myaussieguide.com.au/little-crystal-creek-townsville" },
+                  { "@type": "ListItem", "position": 5, "name": "Sunset Walks & Trails", "url": "https://www.myaussieguide.com.au/guides/sunset-walks" }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What's the best nature walk in Townsville?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you're after. For iconic views, Castle Hill is the classic climb with 360° panoramas of the city, Cleveland Bay and Magnetic Island. For wetlands and birdlife, the Townsville Town Common is hard to beat. For a cool rainforest swim, Little Crystal Creek in the Paluma Range is a local favourite." }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Are Townsville's nature trails dog-friendly?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Some are, some aren't. Castle Hill's walking tracks allow dogs on-lead, and much of The Strand foreshore is dog-friendly. National parks and conservation areas such as the Townsville Town Common and Cape Pallarenda generally do not allow dogs, to protect native wildlife. Always check the signage at the trailhead — see our Dog-Friendly Spots guide for a fuller breakdown." }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is Cape Pallarenda good for birdwatching?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cape Pallarenda's mix of mangroves, coastal scrub and wetlands attracts a wide range of shorebirds and bushland species, and the trails link into the broader Town Common wetlands, which are one of North Queensland's best-known birding sites." }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "When is the best time of year for walks in Townsville?",
+                    "acceptedAnswer": { "@type": "Answer", "text": "The dry season, roughly May to November, offers the most comfortable walking conditions — lower humidity, firmer trails and clearer skies. In the wet season (December to April), start early to beat the heat and check trail conditions after heavy rain." }
+                  }
+                ]
               }
             ]
           }
           `}
         </script>
       </Helmet>
+
       
       <div className="min-h-screen bg-background">
         <main className="pt-24 pb-16">
