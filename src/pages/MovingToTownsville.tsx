@@ -60,7 +60,9 @@ const MovingToTownsville = () => {
             <p className="text-muted-foreground leading-relaxed">
               Townsville's suburbs each have a distinct flavour — coastal, leafy-suburban, or quiet rural.
               For most newcomers, the choice comes down to commute, schools, and how close to the water
-              you want to be. Two of our most popular deep-dive guides:
+              you want to be. Our full <Link to="/suburbs" className="text-primary font-medium hover:underline">Townsville Suburbs Guide</Link> covers
+              North Ward, Kirwan, Idalia, Douglas, Aitkenvale, Annandale, Garbutt and Bushland Beach
+              side-by-side. Three of the deep-dive guides worth starting with:
             </p>
             <div className="grid gap-4 md:grid-cols-3">
               <Card className="border-l-4 border-l-blue-500">
