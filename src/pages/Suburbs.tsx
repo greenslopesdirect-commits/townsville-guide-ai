@@ -178,7 +178,7 @@ const Suburbs = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Suburbs Guide — Where to Live & What's It Like"
+        title="Townsville Suburbs Guide: Where to Live | My Aussie Guide"
         description="A local's guide to Townsville's suburbs — North Ward, Kirwan, Idalia, Douglas, Aitkenvale, Annandale, Garbutt, Bushland Beach and more. Vibe, who each suits, and where they sit."
         canonical="https://www.myaussieguide.com.au/suburbs"
         ogType="article"
