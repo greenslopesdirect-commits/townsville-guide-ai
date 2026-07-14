@@ -305,6 +305,95 @@ const Nature = () => {
               </Card>
             </section>
 
+            {/* Sibling Guides Cross-links */}
+            <section className="mb-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Compass className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                    Dedicated Guides
+                  </h2>
+                  <p className="text-muted-foreground">Go deeper on Townsville's headline nature spots</p>
+                </div>
+              </div>
+              <div className="grid gap-4 md:grid-cols-3">
+                <Link to="/castle-hill" className="group block p-5 rounded-xl border-2 hover:border-primary/40 transition-colors bg-card">
+                  <Mountain className="w-6 h-6 text-primary mb-2" />
+                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Castle Hill Guide</h3>
+                  <p className="text-sm text-muted-foreground mt-1">Tracks, lookouts and the best times to climb Townsville's landmark.</p>
+                </Link>
+                <Link to="/little-crystal-creek-townsville" className="group block p-5 rounded-xl border-2 hover:border-primary/40 transition-colors bg-card">
+                  <Waves className="w-6 h-6 text-primary mb-2" />
+                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Little Crystal Creek</h3>
+                  <p className="text-sm text-muted-foreground mt-1">Rainforest swimming holes and the historic stone bridge up in Paluma.</p>
+                </Link>
+                <Link to="/guides/sunset-walks" className="group block p-5 rounded-xl border-2 hover:border-primary/40 transition-colors bg-card">
+                  <Compass className="w-6 h-6 text-primary mb-2" />
+                  <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Sunset Walks & Trails</h3>
+                  <p className="text-sm text-muted-foreground mt-1">Where locals head for the best golden-hour views around town.</p>
+                </Link>
+              </div>
+            </section>
+
+            {/* Duncan's Tip */}
+            <section className="mb-16">
+              <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 font-semibold">
+                      D
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-2">Duncan's Local Tip</h3>
+                      <p className="text-muted-foreground text-sm leading-relaxed">
+                        If you've only got one morning, do Castle Hill's Goat Track at first light — you'll be back down before it gets hot, 
+                        and the whole city is still quiet. Save the Town Common for a cooler dry-season afternoon when the birdlife around 
+                        the waterholes is most active. And don't overlook Cape Pallarenda: it's the one locals default to when Castle Hill 
+                        feels too busy.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </section>
+
+            {/* FAQ */}
+            <section className="mb-16">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Frequently Asked Questions</h2>
+              <div className="space-y-4">
+                {[
+                  {
+                    q: "What's the best nature walk in Townsville?",
+                    a: "It depends on what you're after. For iconic views, Castle Hill is the classic climb with 360° panoramas of the city, Cleveland Bay and Magnetic Island. For wetlands and birdlife, the Townsville Town Common is hard to beat. For a cool rainforest swim, Little Crystal Creek in the Paluma Range is a local favourite."
+                  },
+                  {
+                    q: "Are Townsville's nature trails dog-friendly?",
+                    a: "Some are, some aren't. Castle Hill's walking tracks allow dogs on-lead, and much of The Strand foreshore is dog-friendly. National parks and conservation areas such as the Townsville Town Common and Cape Pallarenda generally do not allow dogs, to protect native wildlife. Always check signage at the trailhead — see our Dog-Friendly Spots guide for a fuller breakdown."
+                  },
+                  {
+                    q: "Is Cape Pallarenda good for birdwatching?",
+                    a: "Yes. Its mix of mangroves, coastal scrub and wetlands attracts a wide range of shorebirds and bushland species, and the trails link into the broader Town Common wetlands — one of North Queensland's best-known birding sites."
+                  },
+                  {
+                    q: "When is the best time of year for walks in Townsville?",
+                    a: "The dry season, roughly May to November, offers the most comfortable walking conditions — lower humidity, firmer trails and clearer skies. In the wet season (December to April), start early to beat the heat and check trail conditions after heavy rain."
+                  }
+                ].map((item, i) => (
+                  <details key={i} className="group rounded-xl border-2 bg-card p-5 hover:border-primary/30 transition-colors">
+                    <summary className="cursor-pointer font-semibold text-foreground list-none flex items-center justify-between">
+                      <span>{item.q}</span>
+                      <span className="text-primary text-xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{item.a}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+
+
+
             {/* CTA Section */}
             <section className="text-center bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-8 border-2">
               <h2 className="text-2xl font-bold text-foreground mb-4">
