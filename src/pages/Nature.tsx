@@ -239,7 +239,7 @@ const Nature = () => {
               {[
                 { icon: <Mountain className="w-5 h-5" />, label: "Castle Hill", sublabel: "286m summit" },
                 { icon: <Bird className="w-5 h-5" />, label: "280+ Bird Species", sublabel: "Town Common" },
-                { icon: <TreePine className="w-5 h-5" />, label: "20+ Trails", sublabel: "All skill levels" },
+                { icon: <TreePine className="w-5 h-5" />, label: "Dozens of Trails", sublabel: "All skill levels" },
                 { icon: <Compass className="w-5 h-5" />, label: "Year-Round", sublabel: "Perfect weather" }
               ].map((stat, index) => (
                 <div key={index} className="text-center p-4 rounded-2xl bg-card border-2 hover:border-primary/30 transition-colors">
