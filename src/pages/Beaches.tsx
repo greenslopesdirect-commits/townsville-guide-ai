@@ -258,7 +258,7 @@ const Beaches = () => {
         {/* Stinger Alert */}
         <StingerSeasonAlert />
         <p className="text-sm text-muted-foreground mt-3">
-          Nets you still see along the foreshore are precautionary leftovers from the season, not an active warning. You're welcome to swim inside them for extra peace of mind.{" "}
+          Council removed the enclosures on 27 May 2026 after weeks of clear net drags — they'll return in November for the next stinger season.{" "}
           <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
         </p>
 
