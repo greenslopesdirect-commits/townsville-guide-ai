@@ -21,12 +21,16 @@ const BillabongSanctuary = () => {
     { time: "09:15 AM", event: "Koala Feeding" },
     { time: "09:30 AM", event: "Cassowary Feeding" },
     { time: "09:45 AM", event: "Wombat Experience" },
+    { time: "10:05 AM", event: "Koala Experience (selfie session)" },
     { time: "11:00 AM", event: "Reptile Experience" },
-    { time: "11:30 AM", event: "Dingo Walk / Meet the Meerkats" },
+    { time: "11:30 AM", event: "Meet the Meerkats" },
+    { time: "11:45 AM", event: "Meerkat Encounter (first bookable session)" },
     { time: "12:00 PM", event: "Crocodile Feeding" },
     { time: "01:00 PM", event: "Free-Flight Bird Show" },
     { time: "01:30 PM", event: "Turtle Feeding" },
-    { time: "02:00 PM", event: "Meerkat Encounter" },
+    { time: "01:45 PM", event: "Dingo Experience" },
+    { time: "02:00 PM", event: "Koala / Wombat / Reptile Short Show" },
+    { time: "02:00 PM", event: "Meerkat Encounter (second bookable session)" },
     { time: "03:15 PM", event: "Crocodile Feeding (Final Session)" },
   ];
 
