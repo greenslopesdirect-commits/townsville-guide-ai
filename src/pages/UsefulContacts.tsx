@@ -225,11 +225,6 @@ const UsefulContacts = () => {
                 number: "(07) 4728 6197",
                 note: "Injured native wildlife rescue",
               },
-              {
-                label: "Local Snake Catcher (24/7)",
-                number: "0407 ___ ___",
-                note: "Licensed catcher — placeholder, confirm before saving",
-              },
             ]}
           />
 
@@ -255,7 +250,7 @@ const UsefulContacts = () => {
           />
 
           <p className="text-xs text-muted-foreground pt-4 border-t">
-            Numbers verified June 2026. If you spot an out-of-date listing, please
+            Numbers verified July 13, 2026. If you spot an out-of-date listing, please
             let us know via the Contact page.
           </p>
         </main>
