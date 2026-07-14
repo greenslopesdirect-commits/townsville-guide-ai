@@ -67,6 +67,7 @@ const PAGES = [
   { path: "/guides/rainy-day-activities",         source: "src/pages/RainyDayActivities.tsx",          changefreq: "monthly", priority: "0.7" },
   { path: "/guides/sunset-walks",                 source: "src/pages/SunsetWalks.tsx",                 changefreq: "monthly", priority: "0.6" },
   { path: "/moving-to-townsville",                source: "src/pages/MovingToTownsville.tsx",          changefreq: "monthly", priority: "0.8" },
+  { path: "/suburbs",                             source: "src/pages/Suburbs.tsx",                     changefreq: "monthly", priority: "0.8" },
   { path: "/beaches/saunders-beach",              source: "src/pages/beaches/SaundersBeach.tsx",       changefreq: "monthly", priority: "0.7" },
   { path: "/accessible-townsville",               source: "src/pages/AccessibleTownsville.tsx",        changefreq: "monthly", priority: "0.7" },
   { path: "/useful-contacts",                     source: "src/pages/UsefulContacts.tsx",              changefreq: "monthly", priority: "0.7" },
