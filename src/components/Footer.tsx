@@ -37,6 +37,7 @@ const Footer = () => {
                 Explore & Nature
               </h4>
               <ul className="space-y-2 text-sm">
+                <li><Link to="/nature" className="text-muted-foreground hover:text-primary transition-colors">Nature & Walks (Hub)</Link></li>
                 <li><Link to="/the-strand" className="text-muted-foreground hover:text-primary transition-colors">The Strand Waterfront</Link></li>
                 <li><Link to="/castle-hill" className="text-muted-foreground hover:text-primary transition-colors">Castle Hill Lookouts</Link></li>
                 <li><Link to="/great-barrier-reef-townsville" className="text-muted-foreground hover:text-primary transition-colors">Great Barrier Reef Tours</Link></li>
@@ -95,6 +96,7 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
               <li><Link to="/things-to-do" className="hover:text-primary transition-colors">Things to Do</Link></li>
               <li><Link to="/beaches" className="hover:text-primary transition-colors">Beaches</Link></li>
+              <li><Link to="/nature" className="hover:text-primary transition-colors">Nature & Walks</Link></li>
               <li><Link to="/food" className="hover:text-primary transition-colors">Food & Drink</Link></li>
               <li><Link to="/shopping" className="hover:text-primary transition-colors">Shopping & Markets</Link></li>
               <li><Link to="/events" className="hover:text-primary transition-colors">Events</Link></li>
