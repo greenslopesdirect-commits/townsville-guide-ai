@@ -45,6 +45,7 @@ const Footer = () => {
                 <li><Link to="/little-crystal-creek-townsville" className="text-muted-foreground hover:text-primary transition-colors">Little Crystal Creek</Link></li>
                 <li><Link to="/guides/sunset-walks" className="text-muted-foreground hover:text-primary transition-colors">Sunset Walks & Trails</Link></li>
                 <li><Link to="/rowes-bay" className="text-muted-foreground hover:text-primary transition-colors">Rowes Bay Beach</Link></li>
+                <li><Link to="/pallarenda-beach" className="text-muted-foreground hover:text-primary transition-colors">Pallarenda Beach (Off-Leash)</Link></li>
               </ul>
             </div>
 
@@ -98,6 +99,7 @@ const Footer = () => {
               <li><Link to="/things-to-do" className="hover:text-primary transition-colors">Things to Do</Link></li>
               <li><Link to="/beaches" className="hover:text-primary transition-colors">Beaches</Link></li>
               <li><Link to="/rowes-bay" className="hover:text-primary transition-colors">Rowes Bay</Link></li>
+              <li><Link to="/pallarenda-beach" className="hover:text-primary transition-colors">Pallarenda Beach</Link></li>
               <li><Link to="/nature" className="hover:text-primary transition-colors">Nature & Walks</Link></li>
               <li><Link to="/food" className="hover:text-primary transition-colors">Food & Drink</Link></li>
               <li><Link to="/shopping" className="hover:text-primary transition-colors">Shopping & Markets</Link></li>
