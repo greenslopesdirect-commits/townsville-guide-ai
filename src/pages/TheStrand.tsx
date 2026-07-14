@@ -62,13 +62,13 @@ const TheStrand = () => {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
             The Strand
           </h1>
-          <p className="text-sm text-gray-500">Updated: June 1, 2026</p>
+          <p className="text-sm text-gray-500">Updated: July 13, 2026</p>
           <p className="text-xl text-gray-600 max-w-2xl">
             2.2km of tropical foreshore. It's not just a beach; it's the city's living room.
             From the <strong>Rockpool</strong> to the <strong>Water Park</strong>, here is how to do The Strand like a local.
           </p>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-900">
-            ☀️ <strong>June 1 Update:</strong> The 'Perfect Dry' is fully underway. With crisp 26°C days and clear water, it's the absolute best time of year for a Strand walk. Note: The Council officially removed the stinger nets on May 28, marking the end of stinger season—open swimming is now safe across the beach!
+            ☀️ <strong>July 13 Update:</strong> The 'Perfect Dry' is in full swing. With crisp 26°C days, clear water, and low humidity, it's still the best time of year for a Strand walk. The Council removed the stinger nets on May 28 after weeks of clear drags, so open swimming is safe across the beach until nets are reinstalled in November.
           </div>
         </div>
 
@@ -116,9 +116,9 @@ const TheStrand = () => {
         {/* Footy Alert */}
         <Alert className="bg-blue-50 border-blue-200">
           <AlertTriangle className="h-4 w-4 text-blue-600" />
-          <AlertTitle className="text-blue-900 font-semibold">🏟️ Footy Alert: Cowboys vs. Dolphins (Saturday, June 6)</AlertTitle>
+          <AlertTitle className="text-blue-900 font-semibold">🏟️ Footy Alert: Queensland Derby — Cowboys vs. Brisbane Broncos (Saturday, July 25)</AlertTitle>
           <AlertDescription className="text-blue-800 mt-1">
-            With the massive QLD blockbuster kicking off at 5:30 PM this Saturday, Strand bars like The Seaview and Longboard will be absolutely buzzing for pre-game drinks. If you are heading down, expect parking along the Strand to fill up early in the afternoon as fans catch the pre-game beach vibe before walking over to the stadium.
+            With the Queensland Derby kicking off at 5:30 PM this Saturday, Strand bars like The Seaview and Longboard will be buzzing for pre-game drinks. If you are heading down, expect parking along the Strand to fill up early in the afternoon as fans catch the pre-game beach vibe before walking over to the stadium.
           </AlertDescription>
         </Alert>
 
@@ -127,7 +127,7 @@ const TheStrand = () => {
           <Info className="h-4 w-4 text-emerald-700" />
           <AlertTitle className="text-emerald-900 font-semibold">🌙 Strand Night Markets</AlertTitle>
           <AlertDescription className="text-emerald-800 mt-1">
-            Lock it in: The next Strand Night Markets are happening this Friday, June 5! Strand Park comes alive from 5:00 PM with local North Queensland food trucks, arts, crafts, and live music under the palms. It's the perfect way to spend a fresh Dry Season Friday night.
+            The Strand Night Markets run on the first Friday of each month. The next one is Friday, August 1, from 5:00 PM. Strand Park comes alive with local North Queensland food trucks, arts, crafts, and live music under the palms — the perfect way to spend a fresh Dry Season Friday night.
           </AlertDescription>
         </Alert>
 
@@ -164,7 +164,7 @@ const TheStrand = () => {
                   A man-made saltwater lagoon. Safe from stingers year-round. Gentle sloping entry makes it perfect for toddlers.
                 </p>
                 <div className="bg-blue-50 p-3 rounded-md text-xs text-blue-800">
-                  <strong>Local Tip:</strong> Closed every <span className="font-bold">Wednesday</span> for cleaning. <em>June Update: The water is refreshing and crystal clear—ideal for morning laps before the midday UV peaks.</em>
+                  <strong>Local Tip:</strong> Closed every <span className="font-bold">Wednesday</span> for cleaning. <em>July Update: The water is refreshing and crystal clear—ideal for morning laps before the midday UV peaks.</em>
                 </div>
               </CardContent>
             </Card>
@@ -204,7 +204,7 @@ const TheStrand = () => {
               <div>
                 <p className="font-medium text-sm text-foreground">Tropical Tip: The 2kg Overhead Hazard</p>
                 <p className="text-xs text-muted-foreground mt-1">
-                  As the Dry Season breezes pick up this week, keep an eye out for falling coconuts near the picnic tables at Strand Park and the palms in Anzac Memorial Park. Those 2kg hazards are no joke when the wind kicks in—do a quick "overhead check" before you set up your picnic rug or beach chair.
+                  During the Dry Season, keep an eye out for falling coconuts near the picnic tables at Strand Park and the palms in Anzac Memorial Park. Those 2kg hazards are no joke when the wind kicks in—do a quick "overhead check" before you set up your picnic rug or beach chair.
                 </p>
               </div>
             </div>
@@ -319,15 +319,15 @@ const TheStrand = () => {
 
         {/* Dog-Friendly Strand Tip */}
         <section className="space-y-3">
-          <h2 className="text-2xl font-bold text-foreground">🐾 Dog-Friendly Strand Tip (June 2026)</h2>
+          <h2 className="text-2xl font-bold text-foreground">🐾 Dog-Friendly Strand Tip (July 2026)</h2>
           <div className="p-4 rounded-lg bg-jade/10 border border-jade/30 text-sm text-foreground">
-            The cooler 20°C mornings are perfect for the full 2.2km length of The Strand. Remember: Dogs must be on-leash on the main path. If you're looking for an off-leash run, head to the northern end of <Link to="/pallarenda-beach" className="text-primary hover:underline font-medium">Pallarenda</Link> where the low-tide sand flats are massive this week.
+            The cooler 20°C mornings are perfect for the full 2.2km length of The Strand. Remember: Dogs must be on-leash on the main path. If you're looking for an off-leash run, head to the northern end of <Link to="/pallarenda-beach" className="text-primary hover:underline font-medium">Pallarenda</Link> where the low-tide sand flats open up for a good run.
           </div>
         </section>
 
         {/* Seasonal Photography Tip */}
         <section className="space-y-3">
-          <h2 className="text-2xl font-bold text-foreground">📸 June Photography Tip</h2>
+          <h2 className="text-2xl font-bold text-foreground">📸 July Photography Tip</h2>
           <div className="p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm text-amber-900">
             <strong>Sunset vs. Sunrise:</strong> During the dry season, the sun rises directly over Cleveland Bay, making for incredible silhouette shots of the pier. Sunset is best captured from the Jezzine Barracks end, looking back across the Strand toward the Port.
           </div>
