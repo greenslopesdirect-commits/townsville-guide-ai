@@ -181,12 +181,12 @@ const MagneticIslandDayTrip = () => {
           </Card>
           <Card className="border-l-4 border-blue-400">
             <CardContent className="p-4">
-              <strong>12:30 PM:</strong> Feed the rock wallabies at Arcadia Jetty.
+              <strong>12:30 PM:</strong> Relax and swim at the protected Alma Bay.
             </CardContent>
           </Card>
           <Card className="border-l-4 border-blue-400">
             <CardContent className="p-4">
-              <strong>2:30 PM:</strong> Relax and swim at the protected Alma Bay.
+              <strong>4:00 PM:</strong> See the rock wallabies at the old Arcadia Jetty at Geoffrey Bay, near Bremner Point. You'll likely see them bounding out of the rocks here — there's no need to feed them, but if you do, stick to approved food only (carrots, sweet potato, rockmelon, apple, or wallaby pellets from local shops) and never bread or avocado, which can harm them.
             </CardContent>
           </Card>
         </div>
@@ -206,7 +206,7 @@ const MagneticIslandDayTrip = () => {
             <strong className="text-foreground">🏖️ Midday:</strong> Head to <strong>Horseshoe Bay</strong> for lunch and a swim inside the stinger nets. During stinger season, check our <Link to="/guides/stinger-safety" className="text-primary font-medium hover:underline">Stinger Safety Guide</Link> before getting in the water.
           </li>
           <li className="bg-muted/30 rounded-lg p-4">
-            <strong className="text-foreground">🦘 Afternoon:</strong> <strong>Rock wallaby feeding at Geoffrey Bay</strong> around <strong>4:00 PM</strong>, then catch the sunset ferry back to Townsville.
+            <strong className="text-foreground">🦘 Late afternoon:</strong> Head to the <strong>old Arcadia Jetty at Geoffrey Bay</strong>, near Bremner Point, around <strong>4:00–4:30 PM</strong> to see the rock wallabies emerge. You'll likely see them bounding out of the rocks here — there's no need to feed them, but if you do, stick to approved food only (carrots, sweet potato, rockmelon, apple, or wallaby pellets from local shops) and never bread or avocado, which can harm them. Then catch the sunset ferry back to Townsville.
           </li>
         </ul>
       </section>
