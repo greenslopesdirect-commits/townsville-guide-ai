@@ -69,7 +69,7 @@ const LocalTips = () => {
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
         "Many cafés provide water bowls",
-        "🐾 Schnauzer Approved Tip: July 13, 2026 Update — With low humidity and cool mornings, it's peak season for the Pallarenda sand flats. Aim for a 7:30 AM run to enjoy the best of the morning breeze. Safety Reminder: Stinger season has ended, but nets may still be in the water as a precaution — keep your pups on the wet sand and supervise around any deep channels."
+        "🐾 Schnauzer Approved Tip: July 13, 2026 Update — With low humidity and cool mornings, it's peak season for the Pallarenda sand flats. Aim for a 7:30 AM run to enjoy the best of the morning breeze. Safety Reminder: The 2025/26 stinger season has ended and council removed the beach enclosures on 27 May 2026 after weeks of clear net drags — deep-water swimming is safe again, but always supervise your pups around deep channels."
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
