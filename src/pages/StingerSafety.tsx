@@ -72,14 +72,14 @@ const StingerSafety = () => (
       })}</script>
     </Helmet>
 
-    <h1 className="text-4xl font-bold mb-4 text-center">June 2026 Stinger Update</h1>
-    <p className="text-center text-sm text-muted-foreground mb-6">Updated: June 1, 2026</p>
+    <h1 className="text-4xl font-bold mb-4 text-center">July 13, 2026 Stinger Update</h1>
+    <p className="text-center text-sm text-muted-foreground mb-6">Updated: July 13, 2026</p>
 
     {/* Current Status Banner */}
     <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 June 1 Status: Nets are OUT for the Dry Season!</h2>
+      <h2 className="text-2xl font-bold text-amber-800 dark:text-amber-300 mb-2">🌊 July 13 Status: Stinger Season Has Ended — Nets May Still Be In Place</h2>
       <p className="text-amber-700 dark:text-amber-400 leading-relaxed">
-        Townsville City Council officially removed the stinger nets on May 28, 2026, marking the official end of the 2025/2026 stinger season. The water is clear, the low-humidity Dry Season is fully underway, and open swimming is now generally safe across local beaches. However, always check local beach flags and Surf Life Saving signs before jumping in.
+        The 2025/26 marine stinger season has officially wrapped up, so swimming at Townsville and Magnetic Island beaches is no longer considered high-risk for stings. Council typically leaves the beach enclosures up and maintained for a period afterwards as a precaution while water temperatures settle — so if you still see nets at The Strand, Pallarenda, or Magnetic Island, treat them as a comfort option rather than an active warning. Continue to check local signage and stay aware of general marine and crocodile advisories.
       </p>
     </div>
 
@@ -91,7 +91,7 @@ const StingerSafety = () => (
     </div>
     <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
-      <p>"The stinger nets are officially packed away for the cooler months! It’s the absolute best time of year to enjoy our beaches. While the risk of box jellyfish and Irukandji drops right down during the dry season, remember to always swim between the red and yellow flags where the lifeguards can keep an eye on you."</p>
+      <p>"Stinger season has wound up, so it's the absolute best time of year to enjoy our beaches. Council often leaves the nets in place for a while as a precaution, so don't be surprised if you still see them — they're a comfort option while the water settles. Always swim between the red and yellow flags where the lifeguards can keep an eye on you."</p>
     </div>
 
     {/* Stinger Safety for Dogs */}
@@ -102,7 +102,7 @@ const StingerSafety = () => (
       </p>
       <div className="bg-[#00A693]/10 rounded-lg p-4">
         <p className="text-sm font-medium text-foreground">
-          🐾 <strong>Dry Season Update:</strong> Now that the stinger season has wrapped up and the nets are out, deep-water swimming is significantly safer for your dogs at un-netted northern beaches like Saunders, Toolakea, and Bushland Beach. Enjoy those beautiful, crisp morning beach runs!
+          🐾 <strong>Dry Season Update:</strong> Now that the stinger season has wrapped up, deep-water swimming is significantly safer for your dogs at northern beaches like Saunders, Toolakea, and Bushland Beach. Even where nets remain in place as a precaution, the stinger risk is considered low. Enjoy those beautiful, crisp morning beach runs!
         </p>
       </div>
     </div>
@@ -122,11 +122,11 @@ const StingerSafety = () => (
       </p>
     </div>
 
-    {/* Autumn Tip */}
+    {/* Dry Season Confirmation */}
     <div className="bg-sky-50 dark:bg-sky-950/30 border border-sky-300 dark:border-sky-700 rounded-xl p-6 mb-12">
-      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">🍂 Final Weeks of Season</h4>
+      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">☀️ Dry Season Swimming</h4>
       <p className="text-sky-700 dark:text-sky-400 leading-relaxed">
-        The official season typically concludes at the end of May. However, the exact date the nets are removed depends on consistent water temperature drops. Check back here or on the homepage for the 'Nets Out' announcement usually expected in early June.
+        The 2025/26 stinger season has concluded. Water temperatures have dropped and stinger risk is now considered low across Townsville and Magnetic Island beaches. Nets may still be in place as a precaution at some locations — you can still swim inside them, but they are no longer an active warning sign. As always, follow beach flags, lifeguard directions, and any local signage.
       </p>
     </div>
 
@@ -134,7 +134,7 @@ const StingerSafety = () => (
     <section className="mb-10">
       <h2 className="text-2xl font-bold mb-4">When Is Stinger Season in Townsville?</h2>
       <p className="mb-4 text-muted-foreground leading-relaxed">
-        Stinger season in Townsville typically runs from November to May. The 2025/2026 season has now officially concluded as of late May, and nets have been removed across all local beaches. The next season will commence in November 2026.
+        Stinger season in Townsville typically runs from November to May. The 2025/2026 season has now officially concluded as of late May. Nets may remain in place at some beaches for a period afterwards as a precaution while water temperatures settle. The next season will commence in November 2026.
       </p>
       <p className="mb-4 text-muted-foreground leading-relaxed font-semibold">
         Swimming is considered safe when using patrolled stinger enclosures at The Strand, Pallarenda, and other netted beaches. Always check local signage or Surf Life Saving updates before entering the water.
@@ -158,42 +158,42 @@ const StingerSafety = () => (
               <TableCell className="font-medium">The Strand (North)</TableCell>
               <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">The Strand (South)</TableCell>
               <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Pallarenda Beach</TableCell>
               <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
               <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
               </TableCell>
             </TableRow>
             <TableRow>
               <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
               <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
               <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for Dry Season</span>
+                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Season ended — may remain as precaution</span>
               </TableCell>
             </TableRow>
           </TableBody>
         </Table>
       </div>
       <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-        Note: While the cooler dry season lowers stinger risks, swimming inside these dedicated enclosures is always recommended for absolute peace of mind.
+        Note: While the cooler dry season lowers stinger risks, swimming inside these dedicated enclosures is always recommended for absolute peace of mind. If nets are still in place, treat them as a comfort option rather than an active warning.
       </p>
     </section>
 
