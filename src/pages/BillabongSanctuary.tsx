@@ -21,12 +21,16 @@ const BillabongSanctuary = () => {
     { time: "09:15 AM", event: "Koala Feeding" },
     { time: "09:30 AM", event: "Cassowary Feeding" },
     { time: "09:45 AM", event: "Wombat Experience" },
+    { time: "10:05 AM", event: "Koala Experience (selfie session)" },
     { time: "11:00 AM", event: "Reptile Experience" },
-    { time: "11:30 AM", event: "Dingo Walk / Meet the Meerkats" },
+    { time: "11:30 AM", event: "Meet the Meerkats" },
+    { time: "11:45 AM", event: "Meerkat Encounter (first bookable session)" },
     { time: "12:00 PM", event: "Crocodile Feeding" },
     { time: "01:00 PM", event: "Free-Flight Bird Show" },
     { time: "01:30 PM", event: "Turtle Feeding" },
-    { time: "02:00 PM", event: "Meerkat Encounter" },
+    { time: "01:45 PM", event: "Dingo Experience" },
+    { time: "02:00 PM", event: "Koala / Wombat / Reptile Short Show" },
+    { time: "02:00 PM", event: "Meerkat Encounter (second bookable session)" },
     { time: "03:15 PM", event: "Crocodile Feeding (Final Session)" },
   ];
 
@@ -109,11 +113,11 @@ const BillabongSanctuary = () => {
           </p>
         </section>
 
-        {/* Local June 2026 Update */}
+        {/* Local Update - early June 2026 */}
         <section className="mb-8">
-          <LocalInsightCard title="Local June 2026 Update" variant="tip">
+          <LocalInsightCard title="Local Update (early June 2026)" variant="tip">
             <p>
-              We visited yesterday and the park is in peak condition. The morning air is perfect for the <strong>9:45 AM Wombat experience</strong>, and the water levels are high, making the <strong>1:30 PM Turtle feeding</strong> particularly active!
+              We visited and the park was in peak condition. The morning air was perfect for the <strong>9:45 AM Wombat Experience</strong>, and the water levels were high, making the <strong>1:30 PM Turtle Feeding</strong> particularly active.
             </p>
           </LocalInsightCard>
         </section>
@@ -190,10 +194,10 @@ const BillabongSanctuary = () => {
         <section className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <Clock className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl md:text-3xl font-bold">Show Times - June 2026 Verified</h2>
+            <h2 className="text-2xl md:text-3xl font-bold">Show Times — Verified July 13, 2026</h2>
           </div>
           <p className="text-sm text-muted-foreground mb-4">
-            Park open daily 9:00 AM – 4:00 PM. All experiences below are included with entry.
+            Park open daily 9:00 AM – 4:00 PM. All experiences below are included with entry unless noted (Meerkat Encounter is a paid bookable session).
           </p>
           <Card className="border-l-4 border-primary">
             <CardContent className="p-5">
