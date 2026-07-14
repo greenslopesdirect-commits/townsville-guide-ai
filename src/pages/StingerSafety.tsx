@@ -91,7 +91,7 @@ const StingerSafety = () => (
     </div>
     <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
       <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
-      <p>"Stinger season has wound up, so it's the absolute best time of year to enjoy our beaches. Council often leaves the nets in place for a while as a precaution, so don't be surprised if you still see them — they're a comfort option while the water settles. Always swim between the red and yellow flags where the lifeguards can keep an eye on you."</p>
+      <p>"Stinger season has wound up and council pulled the nets on 27 May after weeks of clear net drags — it's the absolute best time of year to enjoy our beaches. They'll be back in November for the next season. Always swim between the red and yellow flags where the lifeguards can keep an eye on you."</p>
     </div>
 
     {/* Stinger Safety for Dogs */}
