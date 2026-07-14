@@ -124,6 +124,14 @@ const MovingToTownsville = () => {
                 before signing a lease.
               </p>
             </LocalInsightCard>
+
+            <div>
+              <Button asChild>
+                <Link to="/suburbs">
+                  Compare all Townsville suburbs <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
+              </Button>
+            </div>
           </section>
 
           {/* Suburban Life Spotlight */}
