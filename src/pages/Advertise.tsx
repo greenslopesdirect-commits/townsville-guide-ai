@@ -243,14 +243,7 @@ const Advertise = () => {
                 >
                   {EMAIL}
                 </a>
-                <button
-                  type="button"
-                  onClick={handleCopy}
-                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors font-medium"
-                >
-                  {copied ? <Check className="w-3.5 h-3.5 text-primary" /> : <Copy className="w-3.5 h-3.5" />}
-                  {copied ? "Copied" : "Copy"}
-                </button>
+                <CopyEmailButton showLabel />
               </div>
             </header>
 
