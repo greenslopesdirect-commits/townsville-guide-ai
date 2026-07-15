@@ -318,15 +318,18 @@ const Advertise = () => {
                           </li>
                         ))}
                       </ul>
-                      <Button
-                        asChild
-                        variant={tier.highlight ? "default" : "outline"}
-                        className="w-full mt-auto"
-                      >
-                        <a href={mailtoHref(tier.ctaSubject, tier.ctaBody)}>
-                          {tier.ctaLabel}
-                        </a>
-                      </Button>
+                      <div className="flex items-center gap-2 mt-auto">
+                        <Button
+                          asChild
+                          variant={tier.highlight ? "default" : "outline"}
+                          className="flex-1"
+                        >
+                          <a href={mailtoHref(tier.ctaSubject, tier.ctaBody)}>
+                            {tier.ctaLabel}
+                          </a>
+                        </Button>
+                        <CopyEmailButton />
+                      </div>
                     </CardContent>
                   </Card>
                 ))}
