@@ -1,0 +1,1 @@
+DELETE FROM public.partner_enquiries WHERE email = 'test@example.com';

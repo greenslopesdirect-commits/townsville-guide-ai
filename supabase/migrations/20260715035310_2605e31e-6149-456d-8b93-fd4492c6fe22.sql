@@ -1,0 +1,1 @@
+CREATE POLICY "Service role can read enquiries" ON public.partner_enquiries FOR SELECT TO service_role USING (true);

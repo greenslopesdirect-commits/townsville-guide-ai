@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import PartnerEnquiryForm from "@/components/PartnerEnquiryForm";
 import {
   Handshake,
   Mail,
@@ -394,6 +395,21 @@ const Advertise = () => {
                   </div>
                 </CardContent>
               </Card>
+            </section>
+
+            {/* Enquiry Form */}
+            <section className="mb-16">
+              <div className="text-center mb-8">
+                <h2 id="form-heading" className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                  Apply online
+                </h2>
+                <p className="text-muted-foreground max-w-xl mx-auto">
+                  Rather than relying on your mail app, send your enquiry straight through here. Duncan will review it and reply by email.
+                </p>
+              </div>
+              <div className="max-w-2xl mx-auto">
+                <PartnerEnquiryForm />
+              </div>
             </section>
 
             {/* Contact CTA */}
