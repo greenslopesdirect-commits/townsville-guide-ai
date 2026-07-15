@@ -1,0 +1,2 @@
+REVOKE EXECUTE ON FUNCTION public.submit_partner_enquiry(text, text, text, text, text, text) FROM PUBLIC;
+GRANT EXECUTE ON FUNCTION public.submit_partner_enquiry(text, text, text, text, text, text) TO service_role;
