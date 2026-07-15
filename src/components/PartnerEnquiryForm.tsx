@@ -21,8 +21,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Loader2, Send, CheckCircle } from "lucide-react";
+import { Loader2, Send, CheckCircle, Copy, Check } from "lucide-react";
 import { toast } from "sonner";
+
+const FALLBACK_EMAIL = "hello@myaussieguide.com.au";
 
 const formSchema = z.object({
   name: z
