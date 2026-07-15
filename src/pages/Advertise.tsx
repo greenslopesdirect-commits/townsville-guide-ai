@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,19 +8,15 @@ import {
   Handshake,
   Mail,
   MapPin,
-  Copy,
   Check,
   Users,
   TrendingUp,
   Star,
   Trophy,
 } from "lucide-react";
-import { toast } from "sonner";
-
-const EMAIL = "hello@myaussieguide.com.au";
 
 // -----------------------------------------------------------------------------
-// Editable stats — swap heading/body copy here.
+// Editable stats
 // -----------------------------------------------------------------------------
 const STATS: { label?: string; value: string; note: string; Icon: typeof Users }[] = [
   {
@@ -41,85 +36,27 @@ const STATS: { label?: string; value: string; note: string; Icon: typeof Users }
   },
 ];
 
-// -----------------------------------------------------------------------------
-// Pre-filled mailto bodies. Real newlines here — encodeURIComponent turns them
-// into %0A so Gmail / Outlook / Apple Mail render them as line breaks.
-// -----------------------------------------------------------------------------
-const BODY_COMMUNITY = `Business name:
+type TierId = "community" | "founding" | "gameday";
 
-Website / Instagram:
-
-What you'd like listed:
-
-(Just fill in what you can — I'll follow up with any questions!)`;
-
-const BODY_FOUNDING = `Business name:
-
-Website / Instagram:
-
-What you'd like listed:
-
-(Just fill in what you can — I'll follow up with any questions!)`;
-
-const BODY_GAMEDAY = `Business name:
-
-Website / Instagram:
-
-Which upcoming event are you interested in sponsoring?
-
-(Just fill in what you can — I'll follow up with any questions!)`;
-
-const mailtoHref = (subject: string, body: string) =>
-  `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-// ---------------------------------------------------------------------------
-// Reusable copy-email fallback
-// ---------------------------------------------------------------------------
-const CopyEmailButton = ({
-  size = "sm",
-  showLabel = false,
-}: {
-  size?: "sm" | "default";
-  showLabel?: boolean;
-}) => {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(EMAIL);
-      setCopied(true);
-      toast.success("Email copied to clipboard");
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      toast.error("Could not copy. Please copy manually.");
-    }
-  };
-
-  const sizeClasses =
-    size === "default" ? "px-3 py-2.5 text-sm" : "p-2";
-
-  return (
-    <button
-      type="button"
-      onClick={handleCopy}
-      className={`inline-flex items-center justify-center gap-1.5 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors shrink-0 font-medium ${sizeClasses}`}
-      aria-label={copied ? "Email copied" : "Copy email address"}
-      title={copied ? "Copied!" : "Copy email address"}
-    >
-      {copied ? (
-        <Check className="w-4 h-4 text-primary" />
-      ) : (
-        <Copy className="w-4 h-4" />
-      )}
-      {showLabel && (copied ? "Copied" : "Copy")}
-    </button>
-  );
+const scrollToForm = (tier: TierId) => {
+  window.dispatchEvent(new CustomEvent("preselect-partner-tier", { detail: tier }));
+  const el = document.getElementById("apply-form");
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 // -----------------------------------------------------------------------------
 // Pricing tiers
 // -----------------------------------------------------------------------------
-const TIERS = [
+const TIERS: {
+  id: TierId;
+  name: string;
+  price: string;
+  priceNote: string;
+  tagline: string;
+  features: string[];
+  ctaLabel: string;
+  highlight: boolean;
+}[] = [
   {
     id: "community",
     name: "Community Listing",
@@ -133,9 +70,6 @@ const TIERS = [
       "Reviewed & approved by Duncan personally",
     ],
     ctaLabel: "Apply for a Community Listing",
-    ctaSubject: "Community Listing Application",
-    ctaBody: BODY_COMMUNITY,
-
     highlight: false,
   },
   {
@@ -153,9 +87,6 @@ const TIERS = [
       "Cancel anytime — no lock-in",
     ],
     ctaLabel: "Apply as a Founding Partner",
-    ctaSubject: "Founding Partner Application",
-    ctaBody: BODY_FOUNDING,
-
     highlight: true,
   },
   {
@@ -173,9 +104,6 @@ const TIERS = [
       "Priority scheduling around confirmed peak weekends",
     ],
     ctaLabel: "Enquire about Peak Placement",
-    ctaSubject: "Game Day / Peak Placement Enquiry",
-    ctaBody: BODY_GAMEDAY,
-
     highlight: false,
   },
 ];
@@ -221,18 +149,6 @@ const Advertise = () => {
                 <MapPin className="w-4 h-4 text-primary" />
                 <span>Curated personally by Duncan Ross — Townsville local</span>
               </div>
-
-              {/* Persistent email fallback — visible before any tier CTA is clicked */}
-              <div className="mt-5 inline-flex flex-wrap items-center justify-center gap-2 text-sm text-muted-foreground bg-muted/50 rounded-full px-4 py-2 mx-auto">
-                <span>Prefer to copy the email?</span>
-                <a
-                  href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}
-                  className="text-primary hover:underline underline-offset-2 break-all"
-                >
-                  {EMAIL}
-                </a>
-                <CopyEmailButton showLabel />
-              </div>
             </header>
 
             {/* Stats */}
@@ -260,7 +176,6 @@ const Advertise = () => {
               <p className="text-center text-sm text-muted-foreground mt-4 max-w-2xl mx-auto">
                 Townsville's fastest-growing independent local guide — built by a local, for locals and visitors alike.
               </p>
-
             </section>
 
             {/* Pricing Tiers */}
@@ -306,18 +221,13 @@ const Advertise = () => {
                           </li>
                         ))}
                       </ul>
-                      <div className="flex items-center gap-2 mt-auto">
-                        <Button
-                          asChild
-                          variant={tier.highlight ? "default" : "outline"}
-                          className="flex-1"
-                        >
-                          <a href={mailtoHref(tier.ctaSubject, tier.ctaBody)}>
-                            {tier.ctaLabel}
-                          </a>
-                        </Button>
-                        <CopyEmailButton />
-                      </div>
+                      <Button
+                        variant={tier.highlight ? "default" : "outline"}
+                        className="w-full mt-auto"
+                        onClick={() => scrollToForm(tier.id)}
+                      >
+                        {tier.ctaLabel}
+                      </Button>
                     </CardContent>
                   </Card>
                 ))}
@@ -385,26 +295,26 @@ const Advertise = () => {
                       These are the two biggest traffic spikes on the site — locals and visitors specifically checking the Game Day guide and Events calendar to plan their day. If your venue benefits from that crowd — pubs, function rooms, transfers, accommodation — Peak Placement puts your business in front of them at exactly the moment they're deciding where to go.
                     </p>
                   </div>
-                  <div className="flex items-center gap-2 md:flex-shrink-0">
-                    <Button asChild variant="default">
-                      <a href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}>
-                        Enquire
-                      </a>
+                  <div className="md:flex-shrink-0">
+                    <Button variant="default" onClick={() => scrollToForm("gameday")}>
+                      Enquire
                     </Button>
-                    <CopyEmailButton />
                   </div>
                 </CardContent>
               </Card>
             </section>
 
             {/* Enquiry Form */}
-            <section className="mb-16">
+            <section id="apply-form" className="mb-16 scroll-mt-24">
               <div className="text-center mb-8">
-                <h2 id="form-heading" className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                <div className="inline-flex items-center justify-center gap-2 mb-3 text-primary">
+                  <Mail className="w-6 h-6" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
                   Apply online
                 </h2>
                 <p className="text-muted-foreground max-w-xl mx-auto">
-                  Rather than relying on your mail app, send your enquiry straight through here. Duncan will review it and reply by email.
+                  Send your enquiry straight through here. Duncan will review it personally and reply by email within 1–2 business days.
                 </p>
               </div>
               <div className="max-w-2xl mx-auto">
@@ -412,43 +322,12 @@ const Advertise = () => {
               </div>
             </section>
 
-            {/* Contact CTA */}
-            <section className="text-center pt-8 border-t border-border">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Mail className="w-6 h-6 text-primary" />
-                <h2 className="text-2xl font-bold text-foreground">
-                  Apply for a Founding Partner Listing
-                </h2>
-              </div>
-              <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                Every tier is reviewed personally by Duncan to keep the guide authentic and hyper-local. Tell me which tier you're interested in (Community, Founding Partner, or Game Day) and a bit about what you run — I'll come back with the next steps.
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
-                <a
-                  href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}
-                  className="text-xl sm:text-2xl font-semibold text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors break-all"
-                >
-                  {EMAIL}
-                </a>
-                <CopyEmailButton size="default" showLabel />
-              </div>
-              <p className="text-sm text-muted-foreground mb-6">
-                No default mail app? Click “Copy email” above and paste it into your email client.
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-2">
-                <Button size="lg" asChild>
-                  <a href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}>
-                    Email Duncan to Apply
-                  </a>
-                </Button>
-                <CopyEmailButton size="default" />
-              </div>
-              <div className="mt-8">
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="/">← Back to Home</Link>
-                </Button>
-              </div>
-            </section>
+            {/* Back to home */}
+            <div className="text-center pt-8 border-t border-border">
+              <Button variant="outline" size="lg" asChild>
+                <Link to="/">← Back to Home</Link>
+              </Button>
+            </div>
 
           </div>
         </main>

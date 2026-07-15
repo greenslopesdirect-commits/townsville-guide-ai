@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -21,8 +21,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Loader2, Send, CheckCircle } from "lucide-react";
+import { Loader2, Send, CheckCircle, Copy, Check } from "lucide-react";
 import { toast } from "sonner";
+
+const FALLBACK_EMAIL = "hello@myaussieguide.com.au";
 
 const formSchema = z.object({
   name: z
@@ -61,6 +63,7 @@ const tierOptions = [
 
 const PartnerEnquiryForm = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -73,6 +76,27 @@ const PartnerEnquiryForm = () => {
       message: "",
     },
   });
+
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const detail = (e as CustomEvent).detail as FormValues["tier"];
+      if (detail) form.setValue("tier", detail, { shouldValidate: true });
+    };
+    window.addEventListener("preselect-partner-tier", handler);
+    return () => window.removeEventListener("preselect-partner-tier", handler);
+  }, [form]);
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(FALLBACK_EMAIL);
+      setCopied(true);
+      toast.success("Email copied to clipboard");
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      toast.error("Could not copy. Please copy manually.");
+    }
+  };
+
 
   const onSubmit = async (values: FormValues) => {
     try {
@@ -210,24 +234,44 @@ const PartnerEnquiryForm = () => {
             </FormItem>
           )}
         />
-        <Button
-          type="submit"
-          size="lg"
-          className="w-full md:w-auto"
-          disabled={form.formState.isSubmitting}
-        >
-          {form.formState.isSubmitting ? (
-            <>
-              <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-              Sending...
-            </>
-          ) : (
-            <>
-              <Send className="w-4 h-4 mr-2" />
-              Submit enquiry
-            </>
-          )}
-        </Button>
+        <div className="flex flex-col md:flex-row md:items-center gap-3">
+          <Button
+            type="submit"
+            size="lg"
+            className="w-full md:w-auto"
+            disabled={form.formState.isSubmitting}
+          >
+            {form.formState.isSubmitting ? (
+              <>
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                Sending...
+              </>
+            ) : (
+              <>
+                <Send className="w-4 h-4 mr-2" />
+                Submit enquiry
+              </>
+            )}
+          </Button>
+          <p className="text-sm text-muted-foreground flex flex-wrap items-center gap-2">
+            <span>Prefer email instead?</span>
+            <a
+              href={`mailto:${FALLBACK_EMAIL}`}
+              className="text-primary hover:underline underline-offset-2 break-all"
+            >
+              {FALLBACK_EMAIL}
+            </a>
+            <button
+              type="button"
+              onClick={copyEmail}
+              className="inline-flex items-center gap-1 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors px-2 py-1 text-xs font-medium"
+              aria-label={copied ? "Email copied" : "Copy email address"}
+            >
+              {copied ? <Check className="w-3 h-3 text-primary" /> : <Copy className="w-3 h-3" />}
+              {copied ? "Copied" : "Copy"}
+            </button>
+          </p>
+        </div>
       </form>
     </Form>
   );
