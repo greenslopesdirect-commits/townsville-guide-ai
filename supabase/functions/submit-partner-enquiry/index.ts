@@ -117,17 +117,17 @@ serve(async (req) => {
     }
 
     const supabase = createClient(supabaseUrl, serviceRoleKey);
-    const { error: insertError } = await supabase.from("partner_enquiries").insert({
-      name: name.trim(),
-      email: email.trim().toLowerCase(),
-      business_name: business_name?.trim() || null,
-      website: website?.trim() || null,
-      tier,
-      message: message?.trim() || null,
+    const { error: rpcError } = await supabase.rpc("submit_partner_enquiry", {
+      _name: name.trim(),
+      _email: email.trim().toLowerCase(),
+      _business_name: business_name?.trim() || null,
+      _website: website?.trim() || null,
+      _tier: tier,
+      _message: message?.trim() || null,
     });
 
-    if (insertError) {
-      console.error("Insert error:", insertError);
+    if (rpcError) {
+      console.error("RPC error:", rpcError);
       return new Response(
         JSON.stringify({ error: "Could not save your enquiry. Please try again later." }),
         { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
