@@ -388,7 +388,11 @@ const Advertise = () => {
                 </button>
               </div>
               <Button size="lg" asChild>
-                <a href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}>
+                <a
+                  href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Email Duncan to Apply
                 </a>
               </Button>
