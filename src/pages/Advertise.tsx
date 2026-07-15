@@ -71,7 +71,49 @@ Which upcoming event are you interested in sponsoring?
 const mailtoHref = (subject: string, body: string) =>
   `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
+// ---------------------------------------------------------------------------
+// Reusable copy-email fallback
+// ---------------------------------------------------------------------------
+const CopyEmailButton = ({
+  size = "sm",
+  showLabel = false,
+}: {
+  size?: "sm" | "default";
+  showLabel?: boolean;
+}) => {
+  const [copied, setCopied] = useState(false);
 
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      toast.success("Email copied to clipboard");
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      toast.error("Could not copy. Please copy manually.");
+    }
+  };
+
+  const sizeClasses =
+    size === "default" ? "px-3 py-2.5 text-sm" : "p-2";
+
+  return (
+    <button
+      type="button"
+      onClick={handleCopy}
+      className={`inline-flex items-center justify-center gap-1.5 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors shrink-0 font-medium ${sizeClasses}`}
+      aria-label={copied ? "Email copied" : "Copy email address"}
+      title={copied ? "Copied!" : "Copy email address"}
+    >
+      {copied ? (
+        <Check className="w-4 h-4 text-primary" />
+      ) : (
+        <Copy className="w-4 h-4" />
+      )}
+      {showLabel && (copied ? "Copied" : "Copy")}
+    </button>
+  );
+};
 
 // -----------------------------------------------------------------------------
 // Pricing tiers
@@ -138,19 +180,6 @@ const TIERS = [
 ];
 
 const Advertise = () => {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(EMAIL);
-      setCopied(true);
-      toast.success("Email copied to clipboard");
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      toast.error("Could not copy. Please copy manually.");
-    }
-  };
-
   return (
     <>
       <SEOHead
@@ -201,14 +230,7 @@ const Advertise = () => {
                 >
                   {EMAIL}
                 </a>
-                <button
-                  type="button"
-                  onClick={handleCopy}
-                  className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors font-medium"
-                >
-                  {copied ? <Check className="w-3.5 h-3.5 text-primary" /> : <Copy className="w-3.5 h-3.5" />}
-                  {copied ? "Copied" : "Copy"}
-                </button>
+                <CopyEmailButton showLabel />
               </div>
             </header>
 
@@ -283,15 +305,18 @@ const Advertise = () => {
                           </li>
                         ))}
                       </ul>
-                      <Button
-                        asChild
-                        variant={tier.highlight ? "default" : "outline"}
-                        className="w-full mt-auto"
-                      >
-                        <a href={mailtoHref(tier.ctaSubject, tier.ctaBody)}>
-                          {tier.ctaLabel}
-                        </a>
-                      </Button>
+                      <div className="flex items-center gap-2 mt-auto">
+                        <Button
+                          asChild
+                          variant={tier.highlight ? "default" : "outline"}
+                          className="flex-1"
+                        >
+                          <a href={mailtoHref(tier.ctaSubject, tier.ctaBody)}>
+                            {tier.ctaLabel}
+                          </a>
+                        </Button>
+                        <CopyEmailButton />
+                      </div>
                     </CardContent>
                   </Card>
                 ))}
@@ -359,11 +384,14 @@ const Advertise = () => {
                       The Cowboys Game Day guide and Events calendar are the two biggest traffic spikes on the site. If your venue benefits from those crowds — pubs, function rooms, transfers, accommodation — Peak Placement puts you in front of them on the exact day they're planning.
                     </p>
                   </div>
-                  <Button asChild variant="default" className="md:flex-shrink-0">
-                    <a href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}>
-                      Enquire
-                    </a>
-                  </Button>
+                  <div className="flex items-center gap-2 md:flex-shrink-0">
+                    <Button asChild variant="default">
+                      <a href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}>
+                        Enquire
+                      </a>
+                    </Button>
+                    <CopyEmailButton />
+                  </div>
                 </CardContent>
               </Card>
             </section>
@@ -386,23 +414,19 @@ const Advertise = () => {
                 >
                   {EMAIL}
                 </a>
-                <button
-                  type="button"
-                  onClick={handleCopy}
-                  className="inline-flex items-center justify-center gap-2 px-3 py-2 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors shrink-0 text-sm font-medium"
-                >
-                  {copied ? <Check className="w-4 h-4 text-primary" /> : <Copy className="w-4 h-4" />}
-                  {copied ? "Copied" : "Copy email"}
-                </button>
+                <CopyEmailButton size="default" showLabel />
               </div>
               <p className="text-sm text-muted-foreground mb-6">
                 No default mail app? Click “Copy email” above and paste it into your email client.
               </p>
-              <Button size="lg" asChild>
-                <a href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}>
-                  Email Duncan to Apply
-                </a>
-              </Button>
+              <div className="flex flex-wrap items-center justify-center gap-2">
+                <Button size="lg" asChild>
+                  <a href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}>
+                    Email Duncan to Apply
+                  </a>
+                </Button>
+                <CopyEmailButton size="default" />
+              </div>
               <div className="mt-8">
                 <Button variant="outline" size="lg" asChild>
                   <Link to="/">← Back to Home</Link>
