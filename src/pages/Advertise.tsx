@@ -372,7 +372,8 @@ const Advertise = () => {
               <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
                 <a
                   href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}
-
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-xl sm:text-2xl font-semibold text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors break-all"
                 >
                   {EMAIL}
