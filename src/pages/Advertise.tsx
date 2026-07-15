@@ -269,12 +269,7 @@ const Advertise = () => {
                         variant={tier.highlight ? "default" : "outline"}
                         className="w-full mt-auto"
                       >
-                        <a
-                          href={mailtoHref(tier.ctaSubject, tier.ctaBody)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        
-                        >
+                        <a href={mailtoHref(tier.ctaSubject, tier.ctaBody)}>
                           {tier.ctaLabel}
                         </a>
                       </Button>
