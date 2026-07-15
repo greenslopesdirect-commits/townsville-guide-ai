@@ -271,6 +271,9 @@ const Advertise = () => {
                       >
                         <a
                           href={mailtoHref(tier.ctaSubject, tier.ctaBody)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        
                         >
                           {tier.ctaLabel}
                         </a>
