@@ -397,11 +397,14 @@ const Advertise = () => {
                       The Cowboys Game Day guide and Events calendar are the two biggest traffic spikes on the site. If your venue benefits from those crowds — pubs, function rooms, transfers, accommodation — Peak Placement puts you in front of them on the exact day they're planning.
                     </p>
                   </div>
-                  <Button asChild variant="default" className="md:flex-shrink-0">
-                    <a href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}>
-                      Enquire
-                    </a>
-                  </Button>
+                  <div className="flex items-center gap-2 md:flex-shrink-0">
+                    <Button asChild variant="default">
+                      <a href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}>
+                        Enquire
+                      </a>
+                    </Button>
+                    <CopyEmailButton />
+                  </div>
                 </CardContent>
               </Card>
             </section>
