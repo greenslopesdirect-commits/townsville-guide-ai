@@ -419,11 +419,14 @@ const Advertise = () => {
               <p className="text-sm text-muted-foreground mb-6">
                 No default mail app? Click “Copy email” above and paste it into your email client.
               </p>
-              <Button size="lg" asChild>
-                <a href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}>
-                  Email Duncan to Apply
-                </a>
-              </Button>
+              <div className="flex flex-wrap items-center justify-center gap-2">
+                <Button size="lg" asChild>
+                  <a href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}>
+                    Email Duncan to Apply
+                  </a>
+                </Button>
+                <CopyEmailButton size="default" />
+              </div>
               <div className="mt-8">
                 <Button variant="outline" size="lg" asChild>
                   <Link to="/">← Back to Home</Link>
