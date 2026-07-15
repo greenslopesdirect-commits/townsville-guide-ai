@@ -234,24 +234,44 @@ const PartnerEnquiryForm = () => {
             </FormItem>
           )}
         />
-        <Button
-          type="submit"
-          size="lg"
-          className="w-full md:w-auto"
-          disabled={form.formState.isSubmitting}
-        >
-          {form.formState.isSubmitting ? (
-            <>
-              <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-              Sending...
-            </>
-          ) : (
-            <>
-              <Send className="w-4 h-4 mr-2" />
-              Submit enquiry
-            </>
-          )}
-        </Button>
+        <div className="flex flex-col md:flex-row md:items-center gap-3">
+          <Button
+            type="submit"
+            size="lg"
+            className="w-full md:w-auto"
+            disabled={form.formState.isSubmitting}
+          >
+            {form.formState.isSubmitting ? (
+              <>
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                Sending...
+              </>
+            ) : (
+              <>
+                <Send className="w-4 h-4 mr-2" />
+                Submit enquiry
+              </>
+            )}
+          </Button>
+          <p className="text-sm text-muted-foreground flex flex-wrap items-center gap-2">
+            <span>Prefer email instead?</span>
+            <a
+              href={`mailto:${FALLBACK_EMAIL}`}
+              className="text-primary hover:underline underline-offset-2 break-all"
+            >
+              {FALLBACK_EMAIL}
+            </a>
+            <button
+              type="button"
+              onClick={copyEmail}
+              className="inline-flex items-center gap-1 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors px-2 py-1 text-xs font-medium"
+              aria-label={copied ? "Email copied" : "Copy email address"}
+            >
+              {copied ? <Check className="w-3 h-3 text-primary" /> : <Copy className="w-3 h-3" />}
+              {copied ? "Copied" : "Copy"}
+            </button>
+          </p>
+        </div>
       </form>
     </Form>
   );
