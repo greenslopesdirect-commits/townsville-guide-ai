@@ -346,11 +346,7 @@ const Advertise = () => {
                     </p>
                   </div>
                   <Button asChild variant="default" className="md:flex-shrink-0">
-                    <a
-                      href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <a href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}>
                       Enquire
                     </a>
                   </Button>
@@ -372,8 +368,6 @@ const Advertise = () => {
               <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
                 <a
                   href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="text-xl sm:text-2xl font-semibold text-primary underline underline-offset-4 decoration-primary/40 hover:decoration-primary transition-colors break-all"
                 >
                   {EMAIL}
@@ -381,18 +375,17 @@ const Advertise = () => {
                 <button
                   type="button"
                   onClick={handleCopy}
-                  aria-label="Copy email address to clipboard"
-                  className="inline-flex items-center justify-center w-10 h-10 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors shrink-0"
+                  className="inline-flex items-center justify-center gap-2 px-3 py-2 rounded-md border border-border bg-background hover:bg-accent hover:text-accent-foreground transition-colors shrink-0 text-sm font-medium"
                 >
                   {copied ? <Check className="w-4 h-4 text-primary" /> : <Copy className="w-4 h-4" />}
+                  {copied ? "Copied" : "Copy email"}
                 </button>
               </div>
+              <p className="text-sm text-muted-foreground mb-6">
+                No default mail app? Click “Copy email” above and paste it into your email client.
+              </p>
               <Button size="lg" asChild>
-                <a
-                  href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={mailtoHref("Founding Partner Application", BODY_FOUNDING)}>
                   Email Duncan to Apply
                 </a>
               </Button>
