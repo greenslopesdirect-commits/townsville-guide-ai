@@ -346,7 +346,11 @@ const Advertise = () => {
                     </p>
                   </div>
                   <Button asChild variant="default" className="md:flex-shrink-0">
-                    <a href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}>
+                    <a
+                      href={mailtoHref("Game Day / Peak Placement Enquiry", BODY_GAMEDAY)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Enquire
                     </a>
                   </Button>
