@@ -52,7 +52,17 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      submit_partner_enquiry: {
+        Args: {
+          _business_name: string
+          _email: string
+          _message: string
+          _name: string
+          _tier: string
+          _website: string
+        }
+        Returns: undefined
+      }
     }
     Enums: {
       [_ in never]: never
