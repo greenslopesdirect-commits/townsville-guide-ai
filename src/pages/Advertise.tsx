@@ -381,7 +381,7 @@ const Advertise = () => {
                       Cowboys home games & V8 Supercars weekends
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      The Cowboys Game Day guide and Events calendar are the two biggest traffic spikes on the site. If your venue benefits from those crowds — pubs, function rooms, transfers, accommodation — Peak Placement puts you in front of them on the exact day they're planning.
+                      These are the two biggest traffic spikes on the site — locals and visitors specifically checking the Game Day guide and Events calendar to plan their day. If your venue benefits from that crowd — pubs, function rooms, transfers, accommodation — Peak Placement puts your business in front of them at exactly the moment they're deciding where to go.
                     </p>
                   </div>
                   <div className="flex items-center gap-2 md:flex-shrink-0">
