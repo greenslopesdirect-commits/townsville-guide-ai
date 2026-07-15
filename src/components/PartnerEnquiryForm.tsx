@@ -63,6 +63,7 @@ const tierOptions = [
 
 const PartnerEnquiryForm = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -75,6 +76,27 @@ const PartnerEnquiryForm = () => {
       message: "",
     },
   });
+
+  useEffect(() => {
+    const handler = (e: Event) => {
+      const detail = (e as CustomEvent).detail as FormValues["tier"];
+      if (detail) form.setValue("tier", detail, { shouldValidate: true });
+    };
+    window.addEventListener("preselect-partner-tier", handler);
+    return () => window.removeEventListener("preselect-partner-tier", handler);
+  }, [form]);
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(FALLBACK_EMAIL);
+      setCopied(true);
+      toast.success("Email copied to clipboard");
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      toast.error("Could not copy. Please copy manually.");
+    }
+  };
+
 
   const onSubmit = async (values: FormValues) => {
     try {
