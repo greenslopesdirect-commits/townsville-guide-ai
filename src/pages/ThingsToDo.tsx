@@ -3,7 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog, Plane, UtensilsCrossed, ShoppingBag, BookOpen, Sun, Clock, Calendar, Sunrise, CloudSun, Sunset, Moon } from "lucide-react";
+import { ArrowLeft, Mountain, Compass, Camera, Users, MapPin, Palmtree, Building2, Dog, Plane, UtensilsCrossed, ShoppingBag, BookOpen, Sun, Clock, Calendar, Sunrise, CloudSun, Sunset, Moon, Trophy } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import ListingCard from "@/components/ListingCard";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
@@ -598,11 +598,12 @@ const ThingsToDo = () => {
                   Plan the Rest of Your Townsville Trip
                 </h2>
               </div>
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
                 {[
                   { to: "/flights", icon: Plane, title: "Flights to Townsville", desc: "Find the best flight options" },
                   { to: "/food", icon: UtensilsCrossed, title: "Townsville Food Guide", desc: "Best restaurants and cafés" },
                   { to: "/shopping", icon: ShoppingBag, title: "Townsville Shopping", desc: "Markets, malls and local stores" },
+                  { to: "/cowboys-stadium-guide", icon: Trophy, title: "Cowboys Stadium Guide", desc: "Game day at Queensland Country Bank Stadium" },
                   { to: "/history", icon: BookOpen, title: "Townsville History", desc: "Heritage and culture" }
                 ].map((item, index) => (
                   <Link key={index} to={item.to} className="block group">

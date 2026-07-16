@@ -681,11 +681,12 @@ const Beaches = () => {
         {/* Internal Links */}
         <section className="space-y-4">
           <h2 className="text-xl font-bold text-foreground">More Townsville Guides</h2>
-          <div className="grid gap-3 sm:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {[
               { to: "/the-strand", label: "The Strand Beach Guide" },
               { to: "/dog-friendly", label: "Dog-Friendly Beaches" },
               { to: "/guides/magnetic-island-day-trip", label: "Magnetic Island Day Trip" },
+              { to: "/cowboys-stadium-guide", label: "Cowboys Stadium Guide" },
             ].map((link) => (
               <Button key={link.to} asChild variant="outline" className="w-full justify-start gap-2 h-auto py-3">
                 <Link to={link.to}>
