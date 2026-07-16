@@ -67,7 +67,34 @@ const PallarendaBeach = () => {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <div className="min-h-screen bg-background">
-        <main className="pt-24 pb-16">
+        {/* Hero Image */}
+        <section className="relative w-full h-[55vh] min-h-[380px] max-h-[620px] overflow-hidden -mt-20">
+          <img
+            src={heroAsset.url}
+            alt="Pallarenda Beach at sunset with Max the giant schnauzer on-lead, low-tide sand flats and Magnetic Island in the distance"
+            className="w-full h-full object-cover"
+            width={1200}
+            height={1600}
+            fetchPriority="high"
+            decoding="async"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/40" />
+          <div className="absolute inset-x-0 bottom-0">
+            <div className="container mx-auto px-4 max-w-4xl pb-8 md:pb-10">
+              <div className="flex items-center gap-2 text-yellow-300 font-bold uppercase tracking-wider text-xs md:text-sm mb-2 drop-shadow">
+                <MapPin className="w-4 h-4" /> Northern Suburbs
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 drop-shadow-lg leading-tight">
+                Pallarenda Beach
+              </h1>
+              <p className="text-base md:text-xl text-slate-100 max-w-2xl drop-shadow">
+                A quieter alternative to The Strand — famous for its off-leash dog zones, fishing channels, and views of Magnetic Island.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <main className="pt-10 pb-16">
           <div className="container mx-auto px-4 max-w-4xl">
             
             {/* Back Button */}
@@ -80,18 +107,7 @@ const PallarendaBeach = () => {
               </Link>
             </div>
 
-            {/* Header Section */}
-            <div className="mb-10">
-                <div className="flex items-center gap-2 text-primary font-bold uppercase tracking-wider text-sm mb-3">
-                    <MapPin className="w-4 h-4" /> Northern Suburbs
-                </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                    Pallarenda Beach
-                </h1>
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                    A quieter alternative to The Strand. Famous for its off-leash dog zones, fishing channels, and views of Magnetic Island.
-                </p>
-            </div>
+
 
             {/* Quick Info Grid */}
             <div className="grid md:grid-cols-3 gap-4 mb-10">
