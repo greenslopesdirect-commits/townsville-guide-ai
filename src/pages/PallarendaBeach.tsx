@@ -68,12 +68,19 @@ const PallarendaBeach = () => {
 
       <div className="min-h-screen bg-background">
         {/* Hero Image */}
-        <section className="relative w-full h-[55vh] min-h-[380px] max-h-[620px] overflow-hidden -mt-20">
+        <section className="relative w-full h-[70vh] min-h-[460px] max-h-[720px] overflow-hidden -mt-20 bg-slate-900">
+          {/* Blurred fill so the portrait photo has no black bars */}
+          <img
+            src={heroAsset.url}
+            alt=""
+            aria-hidden
+            className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-70"
+          />
+          {/* Sharp, uncropped photo */}
           <img
             src={heroAsset.url}
             alt="Pallarenda Beach at sunset with Max the giant schnauzer on-lead, low-tide sand flats and Magnetic Island in the distance"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: "75% 78%" }}
+            className="relative w-full h-full object-contain"
             width={1200}
             height={1600}
             fetchPriority="high"
