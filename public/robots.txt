@@ -9,5 +9,16 @@ Allow: /sitemap.xml
 User-agent: Bingbot
 Allow: /sitemap.xml
 
+# OpenAI crawlers — explicitly allow full access
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 # Sitemap location
 Sitemap: https://www.myaussieguide.com.au/sitemap.xml
+
