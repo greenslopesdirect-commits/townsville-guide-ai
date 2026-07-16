@@ -73,6 +73,7 @@ const PallarendaBeach = () => {
             src={heroAsset.url}
             alt="Pallarenda Beach at sunset with Max the giant schnauzer on-lead, low-tide sand flats and Magnetic Island in the distance"
             className="w-full h-full object-cover"
+            style={{ objectPosition: "75% 78%" }}
             width={1200}
             height={1600}
             fetchPriority="high"
