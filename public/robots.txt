@@ -19,6 +19,33 @@ Allow: /
 User-agent: ChatGPT-User
 Allow: /
 
+# Anthropic / Claude crawlers — explicitly allow full access
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity crawlers — explicitly allow full access
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Amazon, You.com, DuckDuckGo AI crawlers — explicitly allow full access
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
 # Sitemap location
 Sitemap: https://www.myaussieguide.com.au/sitemap.xml
 
