@@ -9,6 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import heroAsset from "@/assets/pallarenda-max-hero.webp.asset.json";
 
 const faqs = [
   {
