@@ -68,13 +68,14 @@ const PallarendaBeach = () => {
 
       <div className="min-h-screen bg-background">
         {/* Hero Image */}
-        <section className="relative w-full h-[70vh] min-h-[460px] max-h-[720px] overflow-hidden -mt-20 bg-slate-900">
-          {/* Blurred fill so the portrait photo has no black bars */}
+        <section className="relative w-full h-[70vh] min-h-[460px] max-h-[720px] overflow-hidden -mt-20">
+          {/* Blurred fill so the portrait photo has no black bars on the sides */}
           <img
             src={heroAsset.url}
             alt=""
             aria-hidden
-            className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-70"
+            className="absolute inset-0 w-full h-full object-cover scale-125"
+            style={{ filter: "blur(48px) saturate(1.2)" }}
           />
           {/* Sharp, uncropped photo */}
           <img
