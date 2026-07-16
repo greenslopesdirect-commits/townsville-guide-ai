@@ -69,22 +69,7 @@ const SEOHead = ({
       <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
       <meta name="googlebot" content={noindex ? "noindex, follow" : "index, follow"} />
 
-      {/* Verification Script */}
-      <script
-        data-noptimize="1"
-        data-cfasync="false"
-        data-wpfc-render="false"
-        dangerouslySetInnerHTML={{
-          __html: `
-            (function () {
-                var script = document.createElement("script");
-                script.async = 1;
-                script.src = 'https://emrld.cc/NDgwMzM2.js?t=480336';
-                document.head.appendChild(script);
-            })();
-          `,
-        }}
-      ></script>
+      {/* Verification script is injected once statically in index.html — do not duplicate here. */}
     </Helmet>
   );
 };
