@@ -101,6 +101,11 @@ const BillabongSanctuary = () => {
           src={billabongHero}
           alt="Billabong Sanctuary Townsville entrance sign surrounded by lush palm trees"
           className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-2"
+          width={1600}
+          height={900}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
         <p className="text-xs text-muted-foreground italic text-center mb-8">
           Welcome to Billabong Sanctuary — Looking lush and vibrant for the dry season.

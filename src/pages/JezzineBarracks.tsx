@@ -43,7 +43,11 @@ const JezzineBarracks = () => {
           src={maxKissingPoint}
           alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
           className="w-full h-[300px] md:h-[500px] object-cover object-top opacity-80 rounded-b-lg"
-          loading="lazy"
+          width={1600}
+          height={900}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 z-10">

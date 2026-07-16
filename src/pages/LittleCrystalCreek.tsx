@@ -69,7 +69,11 @@ const LittleCrystalCreek = () => {
           src="/little-crystal-creek-townsville.webp"
           alt="Aerial view of Little Crystal Creek stone arch bridge surrounded by rainforest"
           className="w-full h-[400px] md:h-[500px] object-cover rounded-xl shadow-lg"
-          loading="lazy"
+          width={1600}
+          height={900}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
       </div>
       <p className="text-xs text-muted-foreground mb-6">

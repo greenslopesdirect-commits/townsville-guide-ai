@@ -83,7 +83,7 @@ const StingerSafety = () => (
       </p>
     </div>
 
-    <img src="/summer-safety-guide.webp" alt="Stinger net floats" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover object-bottom mb-8" />
+    <img src="/summer-safety-guide.webp" alt="Stinger net floats" width={1600} height={900} fetchPriority="high" loading="eager" decoding="async" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover object-bottom mb-8" />
     <div className="space-y-6 mb-8 text-red-900 font-medium text-left">
       <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>1. Swim in the Nets:</strong> Use the patrolled enclosures at The Strand and Pallarenda.</CardContent></Card>
       <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>2. Stinger Suits:</strong> Wear Lycra suits when swimming in open bays at Magnetic Island.</CardContent></Card>
