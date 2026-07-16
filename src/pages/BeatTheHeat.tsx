@@ -17,10 +17,15 @@ const BeatTheHeat = () => {
         <h1 className="text-4xl font-bold mb-4">3 Best Ways to Beat the Townsville Heat</h1>
         <p className="text-xl text-muted-foreground mb-6">Actionable local shortcuts to stay cool in the tropics.</p>
         
-        <img 
-          src="/beat-the-heat-guide.webp" 
-          alt="Max using a water station in Townsville" 
+        <img
+          src="/beat-the-heat-guide.webp"
+          alt="Max using a water station in Townsville"
           className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8"
+          width={1600}
+          height={900}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
       </section>
 

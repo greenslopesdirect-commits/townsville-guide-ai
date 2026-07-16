@@ -78,6 +78,11 @@ const SunsetWalks = () => {
           src="/sunset-walks-guide.webp"
           alt="Sunset walk along the Breakwater in Townsville with golden light over Cleveland Bay"
           className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover object-[center_30%] mb-2"
+          width={1600}
+          height={900}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
         <p className="text-xs text-muted-foreground italic text-center mb-8">
           Golden hour along the Breakwater — one of the easiest sunset loops in town.

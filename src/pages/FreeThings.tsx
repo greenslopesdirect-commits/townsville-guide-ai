@@ -78,6 +78,11 @@ const FreeThings = () => {
           src="/5-free-things-to-do.webp"
           alt="View from Castle Hill lookout over Townsville, The Strand and Cleveland Bay — one of the city's best free attractions"
           className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-2"
+          width={1600}
+          height={900}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
         <p className="text-xs text-muted-foreground italic text-center mb-8">
           The Castle Hill view — Townsville's most popular free attraction.

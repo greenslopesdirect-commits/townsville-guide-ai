@@ -78,7 +78,11 @@ const TheStrand = () => {
             src="/the-strand-townsville-2.webp"
             alt="The Strand Townsville foreshore walkway with palm trees and tropical waterfront"
             className="w-full h-[300px] md:h-[500px] object-cover rounded-xl"
-            loading="lazy"
+            width={1600}
+            height={900}
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
           />
         </div>
 

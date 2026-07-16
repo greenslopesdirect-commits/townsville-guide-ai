@@ -129,10 +129,15 @@ const MagneticIslandDayTrip = () => {
       </section>
 
       {/* Hero Image */}
-      <img 
-        src="/magnetic-island-guide.webp" 
-        alt="Magnetic Island Ferry" 
-        className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8" 
+      <img
+        src="/magnetic-island-guide.webp"
+        alt="Magnetic Island Ferry"
+        className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover mb-8"
+        width={1600}
+        height={900}
+        fetchPriority="high"
+        loading="eager"
+        decoding="async"
       />
 
       {/* Getting There Section */}

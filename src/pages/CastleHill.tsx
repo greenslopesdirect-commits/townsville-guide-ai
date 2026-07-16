@@ -25,6 +25,11 @@ const CastleHill = () => {
               src={castleHillImage}
               alt="Castle Hill Lookout overlooking Townsville and Cleveland Bay"
               className="w-full h-full object-cover"
+              width={1600}
+              height={900}
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
             />
             <p className="text-xs text-muted-foreground italic text-center mt-2 px-4">
               Castle Hill lookout with panoramic views over Townsville and Magnetic Island.
