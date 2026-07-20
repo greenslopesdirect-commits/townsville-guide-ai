@@ -87,7 +87,7 @@ const EventsOn = () => {
                         <Star className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Next: Sunday July 19, 2026 (8 AM – 1 PM)</p>
+                    <p className="text-xs text-primary font-medium mb-1">Next: Sunday July 26, 2026 (8 AM – 1 PM)</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Flinders Street, CBD
                     </div>
@@ -134,7 +134,7 @@ const EventsOn = () => {
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🏉 Next home game: Queensland Derby vs Broncos, Sat 25 July · Cotters Market returns Sun 19 July · NTI Townsville 500 just wrapped. <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏉 Next home game: Queensland Derby vs Broncos, Sat 25 July · Cotters Market returns Sun 26 July · NTI Townsville 500 wrapped up on July 12. <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}

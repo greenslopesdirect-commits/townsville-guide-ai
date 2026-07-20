@@ -32,7 +32,7 @@ const eventsGraph = [
     {
       "@type": "Event",
       name: "Cotters Market",
-      startDate: "2026-07-19",
+      startDate: "2026-07-26",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       description:
@@ -167,8 +167,8 @@ const Events = () => {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
-        title="What's On In Townsville This Week | July 13–20, 2026"
-        description="Updated July 13, 2026: Mid-July dry season week — Cotters Market Sunday July 19, Cowboys Queensland Derby vs Broncos on July 25, and clear winter skies for Castle Hill and The Strand."
+        title="What's On In Townsville This Week | July 20–27, 2026"
+        description="Updated July 20, 2026: Late July dry season week — Cotters Market Sunday July 26, Cowboys Queensland Derby vs Broncos on July 25, and clear winter skies for Castle Hill and The Strand."
         canonical="https://www.myaussieguide.com.au/events"
       />
       <Helmet>
@@ -184,8 +184,8 @@ const Events = () => {
             <ArrowRight className="w-4 h-4 rotate-180" />
             Back to Home
           </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-07-13">
-            <time dateTime="2026-07-13">Updated: July 13, 2026</time>
+          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-07-20">
+            <time dateTime="2026-07-20">Updated: July 20, 2026</time>
           </span>
         </div>
       </div>
@@ -212,17 +212,15 @@ const Events = () => {
 
         {/* This Week's Highlights Quick Summary */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville This Week (Mid-July 2026)</h2>
+          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville This Week (Late July 2026)</h2>
           <p className="text-gray-600 max-w-3xl">
-            The NTI Townsville 500 wrapped up on Sunday and the CBD is settling back into its normal rhythm. Here is what's on in Townsville from today through <strong>Sunday, July 20, 2026</strong>:
-          </p>
-          <ul className="list-disc list-inside space-y-2 text-gray-600">
-            <li><strong>Just Wrapped:</strong> <strong>NTI Townsville 500</strong> — The Supercars street circuit at Reid Park (July 10–12) has concluded. Pack-down of the circuit is underway this week, so expect some temporary road changes around Reid Park while barriers come down.</li>
-            <li><strong>Back to School:</strong> <strong>QLD Term 3 starts today</strong> — Queensland state school holidays have ended and Term 3 kicks off on Monday, July 13. Expect the usual school-run traffic in the mornings and quieter weekday crowds at Riverway Lagoons and The Strand Water Park.</li>
-            <li><strong>Next Home Game:</strong> <strong>Queensland Derby — Cowboys vs Broncos, Sat July 25</strong> — The next NRL fixture at Queensland Country Bank Stadium is the Round 21 Queensland Derby against the Brisbane Broncos on Saturday, July 25. Tickets are moving fast — see our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">stadium guide</Link> for parking and Park &amp; Ride tips.</li>
-            <li><strong>Sunday Markets:</strong> <strong>Cotters Market — Sunday July 19</strong> — Every Sunday morning on Flinders Street from 8:00 AM to 1:00 PM. Fresh local coffee, food stalls, and seasonal produce in the cool morning air.</li>
-            <li><strong>Outdoors:</strong> <strong>Clear Winter Skies</strong> — Exceptional conditions all week for the Castle Hill Goat Track, sunset walks along the Ross River Parkway, or a day trip to Magnetic Island with zero summer humidity.</li>
-          </ul>
+             The NTI Townsville 500 has wrapped up and the CBD is back into its normal rhythm. Here is what's on in Townsville from today through <strong>Sunday, July 27, 2026</strong>:
+           </p>
+           <ul className="list-disc list-inside space-y-2 text-gray-600">
+             <li><strong>Next Home Game:</strong> <strong>Queensland Derby — Cowboys vs Broncos, Sat July 25</strong> — The next NRL fixture at Queensland Country Bank Stadium is the Round 21 Queensland Derby against the Brisbane Broncos on Saturday, July 25. Tickets are moving fast — see our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">stadium guide</Link> for parking and Park &amp; Ride tips.</li>
+             <li><strong>Sunday Markets:</strong> <strong>Cotters Market — Sunday July 26</strong> — Every Sunday morning on Flinders Street from 8:00 AM to 1:00 PM. Fresh local coffee, food stalls, and seasonal produce in the cool morning air.</li>
+             <li><strong>Outdoors:</strong> <strong>Clear Winter Skies</strong> — Exceptional conditions all week for the Castle Hill Goat Track, sunset walks along the Ross River Parkway, or a day trip to Magnetic Island with zero summer humidity.</li>
+           </ul>
         </section>
 
 
@@ -417,7 +415,7 @@ const Events = () => {
             <div>
               <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
               <p className="text-amber-800 text-sm mt-1">
-                Late May into June is an absolute spectacle across North Queensland. The landscape is still lush and green from the earlier wet season, but the crisp, low-humidity air has settled in. This is the ultimate window for afternoon photography at our secret northern beaches like Saunders Beach and Toolakea Beach, where clear winter skies create perfect glass-like reflections on the expansive low-tide sand flats with zero crowds.
+                Late July is one of the best stretches of the dry season in North Queensland. The humidity stays low, the skies are reliably clear, and the early sunsets throw warm golden light across the beaches and headlands. It's an ideal window for afternoon photography at our quieter northern beaches like Saunders Beach and Toolakea Beach, where glass-like reflections on the expansive low-tide sand flats are common and the crowds are thin.
               </p>
             </div>
           </div>
