@@ -95,12 +95,12 @@ const EventsOn = () => {
                 </CardContent>
             </Card>
 
-            {/* Card 2 — NTI Townsville 500 (just wrapped) */}
+            {/* Card 2 — NTI Townsville 500 (wrapped) */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-slate-400 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
                         <div className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs font-bold">
-                            Just Wrapped — Motorsport
+                            Wrapped — Motorsport
                         </div>
                         <Trophy className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
@@ -109,7 +109,7 @@ const EventsOn = () => {
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Reid Park Street Circuit
                     </div>
-                    <p className="text-xs text-muted-foreground mt-2">The annual supercar street circuit wrapped up on Sunday. Pack-down of the Reid Park circuit is underway this week — expect some temporary road changes while barriers come down. Returns July 2027.</p>
+                    <p className="text-xs text-muted-foreground mt-2">The annual Supercars street circuit wrapped up on July 12 and the Reid Park pack-down is now complete — the CBD is back to its normal traffic flow. The event returns July 2027.</p>
                 </CardContent>
             </Card>
 
