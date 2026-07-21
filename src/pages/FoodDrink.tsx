@@ -221,7 +221,7 @@ const FoodDrink = () => {
     <>
       <SEOHead
        title="Best Restaurants in Townsville | Local Dining Guide July 2026"
-       description="Updated July 13, 2026. Discover the best breakfast, coffee, dinner, and waterfront dining..."
+       description="Discover Townsville's best restaurants, cafés and bars — from Palmer Street fine dining to beachfront casual spots on The Strand. A local's honest guide to where to eat."
         canonical="https://www.myaussieguide.com.au/food"
       />
       <Helmet>
@@ -236,6 +236,46 @@ const FoodDrink = () => {
               "position": index + 1,
               "name": item.title
             }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What are the best restaurants in Townsville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Townsville's best restaurants include JAM Restaurant on Palmer Street for creative modern Australian cuisine, A Touch of Salt for award-winning waterfront fine dining, Longboard Bar & Grill for casual beachfront dining on The Strand, Cactus Jack's for lively Tex-Mex, and Watermark Restaurant for seafood with ocean views."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where's good for waterfront dining in Townsville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Strand is the top spot for waterfront dining in Townsville. Standouts include Longboard Bar & Grill, C Bar, Watermark Restaurant, Juliette's Gelateria, and the Seaview Hotel — all offering ocean views, sea breezes, and relaxed coastal atmosphere."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What's the best area for restaurants in Townsville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Palmer Street is Townsville's premier dining precinct, home to fine-dining restaurants, cocktail bars, and riverside venues. The Strand offers beachfront casual dining, Flinders Street has CBD cafés and pubs, and Magnetic Island provides relaxed island eateries."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where can I find live music and dining in Townsville?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The Seaview Hotel hosts iconic Sunday Sessions on The Strand, The Mansfield is the go-to venue for live bands in the CBD, Longboard Bar & Grill offers beachfront acoustic sets, and The Commonwealth Hotel features local acts in its beer garden."
+                }
+              }
+            ]
           })}
         </script>
       </Helmet>
@@ -261,7 +301,7 @@ const FoodDrink = () => {
                 Food & Drink in Townsville
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                From waterfront dining on The Strand to award-winning restaurants on Palmer Street, discover where locals eat and drink in Townsville.
+                Discover the best restaurants in Townsville, from Palmer Street fine dining to beachfront casual spots on The Strand — a local's guide to where to eat, drink, and catch live music.
               </p>
             </header>
 
