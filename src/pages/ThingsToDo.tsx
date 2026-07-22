@@ -274,7 +274,7 @@ const ThingsToDo = () => {
   return (
     <>
       <SEOHead
-        title="Things to Do in Townsville: A Local's Picks"
+        title="Best Things to Do & Attractions in Townsville (July 2026 Guide)"
         description="Skip the tourist traps. A local's honest list of Townsville's best beaches, walks, wildlife and hidden gems."
         canonical="https://www.myaussieguide.com.au/things-to-do"
       />
@@ -285,8 +285,8 @@ const ThingsToDo = () => {
             "@graph": [
               {
                 "@type": "ItemList",
-                "name": "Things to Do in Townsville",
-                "description": "Top attractions and activities in Townsville",
+                "name": "Top Townsville Attractions",
+                "description": "The best attractions and must-see experiences in Townsville, Queensland",
                 "itemListElement": attractions.map((item, index) => ({
                   "@type": "ListItem",
                   "position": index + 1,
@@ -371,7 +371,7 @@ const ThingsToDo = () => {
             {/* Weekly Highlight */}
             <div className="mb-12 p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-300 dark:border-emerald-700">
               <p className="text-emerald-800 dark:text-emerald-300 leading-relaxed">
-                🌊 <strong>Waterfall Watch (July Update):</strong> We're deep into the Dry Season now, and the freshwater rock pools at Little Crystal Creek and Jourama Falls are still sitting at pristine swimming levels—clear, crisp, and incredibly refreshing.
+                🌊 <strong>Waterfall Watch (July Update):</strong> Deep into the Dry Season now, the freshwater rock pools at Little Crystal Creek and Jourama Falls are running clear and cool — some of the best swimming conditions of the year.
               </p>
             </div>
 
@@ -473,7 +473,7 @@ const ThingsToDo = () => {
                 </div>
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                    Top Attractions & Experiences
+                    Top Townsville Attractions & Experiences
                   </h2>
                   <p className="text-muted-foreground">Must-see spots for visitors</p>
                 </div>
@@ -628,7 +628,7 @@ const ThingsToDo = () => {
                   <Sun className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do in Townsville</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Top 10 Free Things to Do in Townsville (July 2026 Update)</h2>
                   <p className="text-muted-foreground text-sm">Keep the family entertained without spending a cent</p>
                 </div>
               </div>
@@ -680,7 +680,7 @@ const ThingsToDo = () => {
               <div className="mt-6">
                 <LocalInsightCard title="July Photography Tip" variant="tip">
                   <p>
-                    July in Townsville offers some of the best light of the year. With the humidity gone, the air is clearer — perfect for capturing the sunset from Castle Hill or the mountain views at Paluma Range.
+                    July keeps the dry-season clarity going strong. Low humidity and crisp air still make this one of the best months for sunset shots from Castle Hill or the mountain views at Paluma Range.
                   </p>
                 </LocalInsightCard>
               </div>
