@@ -680,7 +680,7 @@ const ThingsToDo = () => {
               <div className="mt-6">
                 <LocalInsightCard title="July Photography Tip" variant="tip">
                   <p>
-                    July in Townsville offers some of the best light of the year. With the humidity gone, the air is clearer — perfect for capturing the sunset from Castle Hill or the mountain views at Paluma Range.
+                    July keeps the dry-season clarity going strong. Low humidity and crisp air still make this one of the best months for sunset shots from Castle Hill or the mountain views at Paluma Range.
                   </p>
                 </LocalInsightCard>
               </div>
