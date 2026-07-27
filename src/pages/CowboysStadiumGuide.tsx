@@ -58,7 +58,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Updated July 20, 2026 — Round 21 Queensland Derby vs Brisbane Broncos (Sat July 25, 7:35 PM): parking, free shuttles, and Saturday evening logistics."
+        description="Plan your 2026 Cowboys game day in Townsville. Updated July 27, 2026 — Round 22 vs Sydney Roosters (Thu July 30, 7:50 PM): parking, free shuttles, and Thursday-night logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
       <Helmet>
@@ -75,7 +75,7 @@ const CowboysStadiumGuide = () => {
               Back to Events
             </Link>
             <Badge variant="secondary" className="bg-green-50 text-green-700">
-              Updated: July 20, 2026
+              Updated: July 27, 2026
             </Badge>
           </div>
         </div>
@@ -95,7 +95,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season Update: Queensland Derby Next at Home
+               2026 Season Update: Round 22 vs Roosters Next at Home
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -103,11 +103,11 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Next Home Blockbuster
                    </Badge>
-                     <CardTitle className="text-lg mt-2">Derby Clashes Under the Dry Season Sky</CardTitle>
+                     <CardTitle className="text-lg mt-2">Thursday-Night Football Under the Dry Season Sky</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      The mid-season intensity is hitting its peak under perfect, crisp dry-season skies. With the Round 18 bye and the July 11 NRLW home opener now behind us, all eyes turn to the stadium for the biggest home fixture on the calendar: the massive Queensland Derby against the Brisbane Broncos on Saturday, July 25. Expect a completely packed house and a vocal Stampede march across Lowths Bridge.
+                      The mid-season run continues under perfect, crisp dry-season skies. With the July 11 NRLW home opener and the Round 21 Queensland Derby against the Broncos now behind us, all eyes turn to the stadium for the next home fixture: Round 22 against the Sydney Roosters on Thursday, July 30 (7:50 PM kick-off). Expect a strong Thursday-night crowd and the Stampede march across Lowths Bridge.
                     </p>
                   </CardContent>
                 </Card>
@@ -117,27 +117,27 @@ const CowboysStadiumGuide = () => {
                    <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                      Next Home Game
                    </Badge>
-                   <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 21 – Cowboys vs. Brisbane Broncos (Queensland Derby)</CardTitle>
+                   <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 22 – Cowboys vs. Sydney Roosters</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-4">
                    <div className="space-y-2">
                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
                        <Calendar className="w-4 h-4 flex-shrink-0" />
-                       <span>Saturday, July 25, 2026 · 7:35 PM</span>
+                       <span>Thursday, July 30, 2026 · 7:50 PM</span>
                      </div>
                       <div className="flex items-start gap-2 text-sm text-muted-foreground">
                         <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                         <span>
                           Queensland Country Bank Stadium.<br />
-                          <span className="font-medium text-foreground">Gates Open: 4:35 PM | Kick-off: 7:35 PM</span>
+                          <span className="font-medium text-foreground">Gates Open: 4:50 PM | Kick-off: 7:50 PM</span>
                         </span>
                       </div>
                    </div>
                     <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-900">
-                      <strong>🌙 Stadium Tip:</strong> With a 7:35 PM Saturday kick-off, you'll arrive after sunset. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly during the dry season.
+                      <strong>🌙 Stadium Tip:</strong> With a 7:50 PM Thursday kick-off, you'll arrive after sunset. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly during the dry season.
                     </div>
                     <p className="text-sm italic text-muted-foreground border-l-2 border-primary/30 pl-3">
-                      *Notice for Visitors & Locals: This is the marquee men's NRL home fixture at Queensland Country Bank Stadium — the Queensland Derby against the Brisbane Broncos. Tickets typically move fast for this one.*
+                      *Notice for Visitors & Locals: This is a Thursday-night men's NRL home fixture at Queensland Country Bank Stadium — Cowboys vs Sydney Roosters. Plan to leave work a little earlier than usual to beat the CBD traffic.*
                     </p>
                    <Button asChild className="w-full sm:w-auto">
                      <a href="https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825" target="_blank" rel="noopener noreferrer">
@@ -175,11 +175,11 @@ const CowboysStadiumGuide = () => {
                         <td className="px-4 py-3">Sat July 11, 2026, 3:30 PM</td>
                         <td className="px-4 py-3">QCB Stadium</td>
                       </tr>
-                      <tr className="bg-primary/5">
-                        <td className="px-4 py-3 font-medium">Round 21 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
-                        <td className="px-4 py-3 font-semibold">vs Brisbane Broncos</td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat July 25, 2026, 7:35 PM</td>
-                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium</td>
+                      <tr className="bg-muted/30 text-muted-foreground">
+                        <td className="px-4 py-3 font-medium">Round 21 <Badge variant="outline" className="ml-1 text-muted-foreground border-muted-foreground/30">PAST</Badge></td>
+                        <td className="px-4 py-3 font-semibold line-through">vs Brisbane Broncos</td>
+                        <td className="px-4 py-3">Sat July 25, 2026, 7:35 PM</td>
+                        <td className="px-4 py-3">QCB Stadium</td>
                       </tr>
                       <tr className="bg-primary/5">
                         <td className="px-4 py-3 font-medium">Round 22 <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
@@ -217,7 +217,7 @@ const CowboysStadiumGuide = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">Kick-off:</strong> As scheduled (7:35 PM for the Round 21 Queensland Derby).</span>
+                    <span><strong className="text-foreground">Kick-off:</strong> As scheduled (7:50 PM for the Round 22 clash vs Sydney Roosters).</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
@@ -247,9 +247,9 @@ const CowboysStadiumGuide = () => {
           {/* Visiting from out of town CTA */}
           <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
             <CardContent className="p-6 sm:p-8 space-y-3">
-              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Broncos Derby?</h3>
+              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Roosters Game?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Don't get caught out — last-minute stays near the stadium fill up fast for Saturday evening home games, especially the Queensland Derby. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
+                Don't get caught out — last-minute stays near the stadium fill up fast for Cowboys home games. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
               </p>
               <Button asChild variant="default" size="lg" className="w-full sm:w-auto">
                 <Link to="/accommodation">
@@ -310,7 +310,7 @@ const CowboysStadiumGuide = () => {
               <div>
                  <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
                   <p className="text-amber-800 text-sm mt-1">
-                    For the Saturday night Queensland Derby kick-off, the Leagues Club will be buzzing from late afternoon. The 'Stampede' march across Lowths Bridge will depart at approximately 6:45 PM. Aim to be at the Leagues Club by 5:00 PM for pre-game drinks and atmosphere before the march.
+                    For the Thursday night Round 22 kick-off vs the Roosters, the Leagues Club will be buzzing from late afternoon. The 'Stampede' march across Lowths Bridge will depart at approximately 7:05 PM (about 45 minutes before the 7:50 PM kick-off). Aim to be at the Leagues Club by 5:30 PM for pre-game drinks and atmosphere before the march.
                   </p>
               </div>
             </div>

@@ -37,7 +37,7 @@ const EventsOn = () => {
                     </span>
                     <h3 className="text-3xl font-bold leading-tight mb-2">Events & Festivals</h3>
                     <p className="text-blue-100 font-medium">Markets, motorsport & footy blockbusters</p>
-                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏉 Next Up: Queensland Derby — Cowboys vs Broncos, Sat 25 July 2026</p>
+                     <p className="mt-3 text-sm font-semibold text-yellow-300">🏉 Next Up: Cowboys vs Sydney Roosters (Round 22) — Thu 30 July 2026, 7:50 PM</p>
                      <span className="inline-block mt-2 px-2 py-0.5 bg-green-400 text-green-900 font-bold text-xs uppercase tracking-wider rounded-full">The Perfect Dry</span>
                 </div>
                 <div className="relative z-10 mt-8">
@@ -87,7 +87,7 @@ const EventsOn = () => {
                         <Star className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
                     <h4 className="text-lg font-bold mb-2">Cotters Market</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Next: Sunday July 26, 2026 (8 AM – 1 PM)</p>
+                    <p className="text-xs text-primary font-medium mb-1">Next: Sunday August 2, 2026 (8 AM – 1 PM)</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Flinders Street, CBD
                     </div>
@@ -113,7 +113,7 @@ const EventsOn = () => {
                 </CardContent>
             </Card>
 
-            {/* Card 3 — Cowboys vs Broncos (Queensland Derby) */}
+            {/* Card 3 — Cowboys vs Roosters (Round 22) */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-blue-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
@@ -122,19 +122,19 @@ const EventsOn = () => {
                         </div>
                         <Trophy className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Queensland Derby: Cowboys vs Broncos (Round 21)</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, July 25, 2026</p>
+                    <h4 className="text-lg font-bold mb-2">Cowboys vs Sydney Roosters (Round 22)</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Thursday, July 30, 2026 · 7:50 PM</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Queensland Country Bank Stadium
                     </div>
-                    <p className="text-xs text-muted-foreground mt-2">🏉 The Queensland Derby returns to Townsville — Cowboys host the Brisbane Broncos in a Round 21 blockbuster. Tickets are moving fast; use the free Park &amp; Ride at Lou Litster Park to skip CBD traffic.</p>
+                    <p className="text-xs text-muted-foreground mt-2">🏉 Cowboys host the Sydney Roosters in a Thursday-night Round 22 clash. Use the free Park &amp; Ride at Lou Litster Park to skip CBD traffic.</p>
                 </CardContent>
             </Card>
 
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🏉 Next home game: Queensland Derby vs Broncos, Sat 25 July · Cotters Market returns Sun 26 July · NTI Townsville 500 wrapped up on July 12. <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏉 Next home game: Cowboys vs Roosters, Thu 30 July · Cotters Market returns Sun 2 August · NTI Townsville 500 wrapped up on July 12. <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
