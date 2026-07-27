@@ -113,7 +113,7 @@ const EventsOn = () => {
                 </CardContent>
             </Card>
 
-            {/* Card 3 — Cowboys vs Broncos (Queensland Derby) */}
+            {/* Card 3 — Cowboys vs Roosters (Round 22) */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-blue-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">
@@ -122,12 +122,12 @@ const EventsOn = () => {
                         </div>
                         <Trophy className="w-5 h-5 text-muted-foreground/60 group-hover:text-primary transition-colors" />
                     </div>
-                    <h4 className="text-lg font-bold mb-2">Queensland Derby: Cowboys vs Broncos (Round 21)</h4>
-                    <p className="text-xs text-primary font-medium mb-1">Saturday, July 25, 2026</p>
+                    <h4 className="text-lg font-bold mb-2">Cowboys vs Sydney Roosters (Round 22)</h4>
+                    <p className="text-xs text-primary font-medium mb-1">Thursday, July 30, 2026 · 7:50 PM</p>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-1">
                         <MapPin className="w-4 h-4" /> Queensland Country Bank Stadium
                     </div>
-                    <p className="text-xs text-muted-foreground mt-2">🏉 The Queensland Derby returns to Townsville — Cowboys host the Brisbane Broncos in a Round 21 blockbuster. Tickets are moving fast; use the free Park &amp; Ride at Lou Litster Park to skip CBD traffic.</p>
+                    <p className="text-xs text-muted-foreground mt-2">🏉 Cowboys host the Sydney Roosters in a Thursday-night Round 22 clash. Use the free Park &amp; Ride at Lou Litster Park to skip CBD traffic.</p>
                 </CardContent>
             </Card>
 
