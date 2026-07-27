@@ -217,8 +217,8 @@ const Events = () => {
              The NTI Townsville 500 has wrapped up and the CBD is back into its normal rhythm. Here is what's on in Townsville from today through <strong>Sunday, July 27, 2026</strong>:
            </p>
            <ul className="list-disc list-inside space-y-2 text-gray-600">
-             <li><strong>Next Home Game:</strong> <strong>Queensland Derby — Cowboys vs Broncos, Sat July 25</strong> — The next NRL fixture at Queensland Country Bank Stadium is the Round 21 Queensland Derby against the Brisbane Broncos on Saturday, July 25. Tickets are moving fast — see our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">stadium guide</Link> for parking and Park &amp; Ride tips.</li>
-             <li><strong>Sunday Markets:</strong> <strong>Cotters Market — Sunday July 26</strong> — Every Sunday morning on Flinders Street from 8:00 AM to 1:00 PM. Fresh local coffee, food stalls, and seasonal produce in the cool morning air.</li>
+             <li><strong>Next Home Game:</strong> <strong>Cowboys vs Sydney Roosters (Round 22), Thu July 30 · 7:50 PM</strong> — The next NRL fixture at Queensland Country Bank Stadium is the Round 22 clash against the Sydney Roosters on Thursday, July 30. See our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">stadium guide</Link> for parking and Park &amp; Ride tips.</li>
+             <li><strong>Sunday Markets:</strong> <strong>Cotters Market — Sunday August 2</strong> — Every Sunday morning on Flinders Street from 8:00 AM to 1:00 PM. Fresh local coffee, food stalls, and seasonal produce in the cool morning air.</li>
              <li><strong>Outdoors:</strong> <strong>Clear Winter Skies</strong> — Exceptional conditions all week for the Castle Hill Goat Track, sunset walks along the Ross River Parkway, or a day trip to Magnetic Island with zero summer humidity.</li>
            </ul>
         </section>
