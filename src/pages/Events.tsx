@@ -168,7 +168,7 @@ const Events = () => {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <SEOHead
         title="What's On In Townsville This Week | July 20–27, 2026"
-        description="Updated July 20, 2026: Late July dry season week — Cotters Market Sunday July 26, Cowboys Queensland Derby vs Broncos on July 25, and clear winter skies for Castle Hill and The Strand."
+        description="Updated July 27, 2026: Late July dry season week — Cotters Market returns Sunday August 2, Cowboys vs Sydney Roosters (Round 22) on Thursday July 30, and clear winter skies for Castle Hill and The Strand."
         canonical="https://www.myaussieguide.com.au/events"
       />
       <Helmet>
