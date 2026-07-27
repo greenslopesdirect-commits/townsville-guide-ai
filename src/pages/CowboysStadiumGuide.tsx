@@ -95,7 +95,7 @@ const CowboysStadiumGuide = () => {
           <section className="space-y-4">
              <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
                <Trophy className="w-6 h-6 text-primary" />
-               2026 Season Update: Queensland Derby Next at Home
+               2026 Season Update: Round 22 vs Roosters Next at Home
              </h2>
              <div className="grid gap-4 md:grid-cols-2">
                <Card className="border-l-4 border-l-green-500 bg-green-50/30">
@@ -103,11 +103,11 @@ const CowboysStadiumGuide = () => {
                    <Badge variant="secondary" className="w-fit bg-green-100 text-green-700">
                      Next Home Blockbuster
                    </Badge>
-                     <CardTitle className="text-lg mt-2">Derby Clashes Under the Dry Season Sky</CardTitle>
+                     <CardTitle className="text-lg mt-2">Thursday-Night Football Under the Dry Season Sky</CardTitle>
                   </CardHeader>
                   <CardContent className="space-y-2">
                     <p className="text-sm text-muted-foreground">
-                      The mid-season intensity is hitting its peak under perfect, crisp dry-season skies. With the Round 18 bye and the July 11 NRLW home opener now behind us, all eyes turn to the stadium for the biggest home fixture on the calendar: the massive Queensland Derby against the Brisbane Broncos on Saturday, July 25. Expect a completely packed house and a vocal Stampede march across Lowths Bridge.
+                      The mid-season run continues under perfect, crisp dry-season skies. With the July 11 NRLW home opener and the Round 21 Queensland Derby against the Broncos now behind us, all eyes turn to the stadium for the next home fixture: Round 22 against the Sydney Roosters on Thursday, July 30 (7:50 PM kick-off). Expect a strong Thursday-night crowd and the Stampede march across Lowths Bridge.
                     </p>
                   </CardContent>
                 </Card>
@@ -117,27 +117,27 @@ const CowboysStadiumGuide = () => {
                    <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
                      Next Home Game
                    </Badge>
-                   <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 21 – Cowboys vs. Brisbane Broncos (Queensland Derby)</CardTitle>
+                   <CardTitle className="text-lg mt-2">NEXT HOME GAME: Round 22 – Cowboys vs. Sydney Roosters</CardTitle>
                  </CardHeader>
                  <CardContent className="space-y-4">
                    <div className="space-y-2">
                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
                        <Calendar className="w-4 h-4 flex-shrink-0" />
-                       <span>Saturday, July 25, 2026 · 7:35 PM</span>
+                       <span>Thursday, July 30, 2026 · 7:50 PM</span>
                      </div>
                       <div className="flex items-start gap-2 text-sm text-muted-foreground">
                         <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                         <span>
                           Queensland Country Bank Stadium.<br />
-                          <span className="font-medium text-foreground">Gates Open: 4:35 PM | Kick-off: 7:35 PM</span>
+                          <span className="font-medium text-foreground">Gates Open: 4:50 PM | Kick-off: 7:50 PM</span>
                         </span>
                       </div>
                    </div>
                     <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-900">
-                      <strong>🌙 Stadium Tip:</strong> With a 7:35 PM Saturday kick-off, you'll arrive after sunset. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly during the dry season.
+                      <strong>🌙 Stadium Tip:</strong> With a 7:50 PM Thursday kick-off, you'll arrive after sunset. Bring a light jacket or hoodie, as the stadium cool breeze sets in quickly during the dry season.
                     </div>
                     <p className="text-sm italic text-muted-foreground border-l-2 border-primary/30 pl-3">
-                      *Notice for Visitors & Locals: This is the marquee men's NRL home fixture at Queensland Country Bank Stadium — the Queensland Derby against the Brisbane Broncos. Tickets typically move fast for this one.*
+                      *Notice for Visitors & Locals: This is a Thursday-night men's NRL home fixture at Queensland Country Bank Stadium — Cowboys vs Sydney Roosters. Plan to leave work a little earlier than usual to beat the CBD traffic.*
                     </p>
                    <Button asChild className="w-full sm:w-auto">
                      <a href="https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825" target="_blank" rel="noopener noreferrer">
