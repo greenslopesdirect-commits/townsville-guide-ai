@@ -201,7 +201,7 @@ const Events = () => {
                Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
              </p>
                <p className="text-lg text-gray-600 max-w-2xl">
-                 The beautiful, low-humidity "Perfect Dry" season has officially arrived. Clear sunny days and cool mornings make June ideal for markets, coastal walks, and outdoor adventures.
+                 The beautiful, low-humidity "Perfect Dry" season has officially arrived. Clear sunny days and cool mornings make late July ideal for markets, coastal walks, and outdoor adventures.
                </p>
           </div>
 
