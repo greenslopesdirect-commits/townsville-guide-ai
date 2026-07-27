@@ -17,12 +17,12 @@ const TOWNSVILLE_ADDRESS = {
 const eventsGraph = [
     {
       "@type": "SportsEvent",
-      name: "NRL Round 21: North Queensland Cowboys vs Brisbane Broncos (Queensland Derby)",
-      startDate: "2026-07-25",
+      name: "NRL Round 22: North Queensland Cowboys vs Sydney Roosters",
+      startDate: "2026-07-30",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       description:
-        "The Queensland Derby returns to Townsville — Cowboys host the Brisbane Broncos in a Round 21 blockbuster at Queensland Country Bank Stadium.",
+        "NRL Round 22 home game — North Queensland Cowboys host the Sydney Roosters at Queensland Country Bank Stadium, Thursday July 30, 2026, 7:50 PM.",
       location: {
         "@type": "Place",
         name: "Queensland Country Bank Stadium",
@@ -32,7 +32,7 @@ const eventsGraph = [
     {
       "@type": "Event",
       name: "Cotters Market",
-      startDate: "2026-07-26",
+      startDate: "2026-08-02",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       description:
