@@ -134,7 +134,7 @@ const EventsOn = () => {
         </div>
 
         <p className="text-center text-sm text-slate-600 mt-6">
-          🏉 Next home game: Queensland Derby vs Broncos, Sat 25 July · Cotters Market returns Sun 26 July · NTI Townsville 500 wrapped up on July 12. <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
+          🏉 Next home game: Cowboys vs Roosters, Thu 30 July · Cotters Market returns Sun 2 August · NTI Townsville 500 wrapped up on July 12. <Link to="/events" className="text-primary font-medium hover:underline">View the full calendar →</Link>
         </p>
 
         {/* Mobile View All Button */}
