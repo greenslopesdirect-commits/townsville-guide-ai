@@ -58,7 +58,7 @@ const CowboysStadiumGuide = () => {
     <>
       <SEOHead
         title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Updated July 20, 2026 — Round 21 Queensland Derby vs Brisbane Broncos (Sat July 25, 7:35 PM): parking, free shuttles, and Saturday evening logistics."
+        description="Plan your 2026 Cowboys game day in Townsville. Updated July 27, 2026 — Round 22 vs Sydney Roosters (Thu July 30, 7:50 PM): parking, free shuttles, and Thursday-night logistics."
         canonical="https://www.myaussieguide.com.au/cowboys-stadium-guide"
       />
       <Helmet>
