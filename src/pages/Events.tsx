@@ -472,9 +472,9 @@ const Events = () => {
           <ol className="relative border-l-2 border-primary/30 ml-3 space-y-8">
             {[
               {
-                date: "Saturday 25 July 2026",
-                title: "NRL Round 21: Cowboys vs Broncos (Queensland Derby)",
-                body: "The Queensland Derby returns to Townsville — Cowboys host the Brisbane Broncos at Queensland Country Bank Stadium in a Round 21 blockbuster. Use the free Park & Ride at Lou Litster Park to skip CBD traffic."
+                date: "Thursday 30 July 2026",
+                title: "NRL Round 22: Cowboys vs Sydney Roosters",
+                body: "Cowboys host the Sydney Roosters at Queensland Country Bank Stadium in a Round 22 Thursday-night home game (kick-off 7:50 PM). Use the free Park & Ride at Lou Litster Park to skip CBD traffic."
               },
               {
                 date: "2 August 2026",
