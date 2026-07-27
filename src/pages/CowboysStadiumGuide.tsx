@@ -217,7 +217,7 @@ const CowboysStadiumGuide = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">Kick-off:</strong> As scheduled (7:35 PM for the Round 21 Queensland Derby).</span>
+                    <span><strong className="text-foreground">Kick-off:</strong> As scheduled (7:50 PM for the Round 22 clash vs Sydney Roosters).</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-primary font-bold">•</span>
