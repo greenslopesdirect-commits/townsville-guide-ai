@@ -247,9 +247,9 @@ const CowboysStadiumGuide = () => {
           {/* Visiting from out of town CTA */}
           <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
             <CardContent className="p-6 sm:p-8 space-y-3">
-              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Broncos Derby?</h3>
+              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Roosters Game?</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Don't get caught out — last-minute stays near the stadium fill up fast for Saturday evening home games, especially the Queensland Derby. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
+                Don't get caught out — last-minute stays near the stadium fill up fast for Cowboys home games. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
               </p>
               <Button asChild variant="default" size="lg" className="w-full sm:w-auto">
                 <Link to="/accommodation">
