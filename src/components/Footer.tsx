@@ -79,7 +79,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold text-foreground mb-3">
               <Link to="/" className="hover:text-primary transition-colors">
-                My Aussie Guide – Townsville
+                Townsville Guide
               </Link>
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -155,7 +155,7 @@ const Footer = () => {
               Acknowledgement of Country
             </h4>
             <p className="text-xs text-muted-foreground/80 leading-relaxed">
-              My Aussie Guide acknowledges the Traditional Owners of the land on which we live and work, 
+              Townsville Guide acknowledges the Traditional Owners of the land on which we live and work, 
               the Wulgurukaba and Bindal people, and recognises their continuing connection to land, 
               sea and community. We pay our respects to their Elders past and present and extend that 
               respect to all Aboriginal and Torres Strait Islander peoples today.
@@ -166,7 +166,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-6 border-t border-border/20 pt-6 text-center space-y-2">
           <p className="text-xs text-muted-foreground">
-            © 2026 My Aussie Guide — Curated by Duncan Ross, Townsville Local. Operated by DKR Sales (ABN 63 824 596 227)
+            © 2026 Townsville Guide — Curated by Duncan Ross, Townsville Local. Operated by DKR Sales (ABN 63 824 596 227)
           </p>
           <p className="text-xs text-muted-foreground">
             Townsville's trusted source for beaches, food, events and local tips.

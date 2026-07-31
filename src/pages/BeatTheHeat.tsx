@@ -10,7 +10,7 @@ const BeatTheHeat = () => {
       <SEOHead
         title="Beat the Heat in Townsville — Local Survival Guide"
         description="Local shortcuts to stay cool in Townsville's tropical climate — when to go out, where to find shade and breeze, and how to plan around the heat."
-        canonical="https://www.myaussieguide.com.au/guides/beat-the-heat"
+        canonical="https://www.townsvilleguide.com.au/guides/beat-the-heat"
       />
       <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <section className="mb-12 text-center">

@@ -12,7 +12,7 @@ const TownsvilleAirport = () => {
       <SEOHead
         title="Townsville Airport Guide (2026) – Cheap Flights to Townsville, TSV Transport & Local Tips"
         description="Your ultimate resource for flights to TSV — cheap flights to Townsville, arrival info, airport transport, parking, and local transfer tips for North Queensland visitors."
-        canonical="https://www.myaussieguide.com.au/townsville-airport"
+        canonical="https://www.townsvilleguide.com.au/townsville-airport"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -20,7 +20,7 @@ const TownsvilleAirport = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Townsville Airport Guide",
-            "url": "https://www.myaussieguide.com.au/townsville-airport",
+            "url": "https://www.townsvilleguide.com.au/townsville-airport",
             "description": "A local guide to Townsville Airport — transport, parking, arrival tips, and nearby accommodation for North Queensland visitors."
           })}
         </script>

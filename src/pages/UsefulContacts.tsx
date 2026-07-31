@@ -76,7 +76,7 @@ const UsefulContacts = () => {
       <SEOHead
         title="Useful Townsville Contacts | Emergency, Health & Council Numbers"
         description="A handy mobile-friendly list of essential Townsville phone numbers — emergency services, hospitals, council, utilities, vets, wildlife rescue and transport."
-        canonical="https://www.myaussieguide.com.au/useful-contacts"
+        canonical="https://www.townsvilleguide.com.au/useful-contacts"
       />
 
       <div className="min-h-screen bg-gray-50">

@@ -139,7 +139,7 @@ const LocalTips = () => {
       <SEOHead
         title="Local Townsville Tips 2026 | Safety, Weather & Insider Advice"
         description="Updated July 13, 2026: Essential local-verified tips for Townsville. Includes stinger safety, coconut hazards, current dry-season weather advice, and infrastructure updates."
-        canonical="https://www.myaussieguide.com.au/local-tips"
+        canonical="https://www.townsvilleguide.com.au/local-tips"
       />
       <Helmet>
         <script type="application/ld+json">

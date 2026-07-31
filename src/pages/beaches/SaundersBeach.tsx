@@ -36,9 +36,9 @@ const jsonLd = {
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.myaussieguide.com.au/" },
-        { "@type": "ListItem", position: 2, name: "Beaches", item: "https://www.myaussieguide.com.au/beaches" },
-        { "@type": "ListItem", position: 3, name: "Saunders Beach", item: "https://www.myaussieguide.com.au/beaches/saunders-beach" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.townsvilleguide.com.au/" },
+        { "@type": "ListItem", position: 2, name: "Beaches", item: "https://www.townsvilleguide.com.au/beaches" },
+        { "@type": "ListItem", position: 3, name: "Saunders Beach", item: "https://www.townsvilleguide.com.au/beaches/saunders-beach" },
       ],
     },
     {
@@ -58,8 +58,8 @@ const SaundersBeach = () => {
       <SEOHead
         title="Saunders Beach Townsville | Local Guide, Photos & Tips"
         description="A local's guide to Saunders Beach, Townsville: 6km of unspoilt sand, dog-friendly low-tide runs, stargazing tips, and honest stinger-season safety advice."
-        canonical="https://www.myaussieguide.com.au/beaches/saunders-beach"
-        ogImage="https://www.myaussieguide.com.au/saunders-beach-blue-sky.webp"
+        canonical="https://www.townsvilleguide.com.au/beaches/saunders-beach"
+        ogImage="https://www.townsvilleguide.com.au/saunders-beach-blue-sky.webp"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 

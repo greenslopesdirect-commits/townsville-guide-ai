@@ -51,7 +51,7 @@ const LittleCrystalCreek = () => {
       <SEOHead
         title="Little Crystal Creek Townsville – Swimming, Access & Local Tips"
         description="Planning a visit to Little Crystal Creek near Townsville? Here's what to know about swimming, facilities, safety and the best time to go."
-        canonical="https://www.myaussieguide.com.au/little-crystal-creek-townsville"
+        canonical="https://www.townsvilleguide.com.au/little-crystal-creek-townsville"
       />
       <script
         type="application/ld+json"

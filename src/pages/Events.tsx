@@ -169,7 +169,7 @@ const Events = () => {
       <SEOHead
         title="What's On In Townsville This Week | July 20–27, 2026"
         description="Updated July 27, 2026: Late July dry season week — Cotters Market returns Sunday August 2, Cowboys vs Sydney Roosters (Round 22) on Thursday July 30, and clear winter skies for Castle Hill and The Strand."
-        canonical="https://www.myaussieguide.com.au/events"
+        canonical="https://www.townsvilleguide.com.au/events"
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(eventsJsonLd)}</script>

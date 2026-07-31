@@ -92,7 +92,7 @@ const HeaderImproved = () => {
             {/* ✅ NO NEGATIVE MARGINS */}
             <img
               src={logo}
-              alt="My Aussie Guide – Townsville"
+              alt="Townsville Guide"
               className="h-16 md:h-20"
             />
           </Link>

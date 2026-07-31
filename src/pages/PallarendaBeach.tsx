@@ -40,9 +40,9 @@ const jsonLd = {
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.myaussieguide.com.au/" },
-        { "@type": "ListItem", position: 2, name: "Beaches", item: "https://www.myaussieguide.com.au/beaches" },
-        { "@type": "ListItem", position: 3, name: "Pallarenda Beach", item: "https://www.myaussieguide.com.au/pallarenda-beach" },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://www.townsvilleguide.com.au/" },
+        { "@type": "ListItem", position: 2, name: "Beaches", item: "https://www.townsvilleguide.com.au/beaches" },
+        { "@type": "ListItem", position: 3, name: "Pallarenda Beach", item: "https://www.townsvilleguide.com.au/pallarenda-beach" },
       ],
     },
     {
@@ -60,9 +60,9 @@ const PallarendaBeach = () => {
   return (
     <>
       <SEOHead
-        title="Pallarenda Beach & Dog Off-Leash Guide | My Aussie Guide"
+        title="Pallarenda Beach & Dog Off-Leash Guide | Townsville Guide"
         description="Local guide to Pallarenda Beach. Maps for the Gate 8-10 off-leash dog zone, fishing spots, and stinger safety tips."
-        canonical="https://www.myaussieguide.com.au/pallarenda-beach"
+        canonical="https://www.townsvilleguide.com.au/pallarenda-beach"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 

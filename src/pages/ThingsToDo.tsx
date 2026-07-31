@@ -276,7 +276,7 @@ const ThingsToDo = () => {
       <SEOHead
         title="Best Things to Do & Attractions in Townsville (July 2026 Guide)"
         description="Skip the tourist traps. A local's honest list of Townsville's best beaches, walks, wildlife and hidden gems."
-        canonical="https://www.myaussieguide.com.au/things-to-do"
+        canonical="https://www.townsvilleguide.com.au/things-to-do"
       />
       <Helmet>
         <script type="application/ld+json">

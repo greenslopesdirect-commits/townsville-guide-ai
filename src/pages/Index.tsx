@@ -27,9 +27,9 @@ const Index = () => {
     <>
       {/* UPDATE: Revised for Evergreen/February Strategy */}
       <SEOHead
-        title="My Aussie Guide — Townsville Travel Guide"
-        description="My Aussie Guide is Townsville's trusted local travel guide. Discover beaches, events, Cowboys game days, Magnetic Island trips and real local tips."
-        canonical="https://www.myaussieguide.com.au/"
+        title="Townsville Guide — Townsville's Trusted Local Travel Guide"
+        description="Townsville Guide is Townsville's trusted local travel guide. Discover beaches, events, Cowboys game days, Magnetic Island trips and real local tips."
+        canonical="https://www.townsvilleguide.com.au/"
       />
       <Helmet>
 
@@ -39,8 +39,8 @@ const Index = () => {
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "name": "My Aussie Guide: Townsville & North Queensland",
-            "url": "https://www.myaussieguide.com.au"
+            "name": "Townsville Guide: Townsville & North Queensland",
+            "url": "https://www.townsvilleguide.com.au"
           }
           `}
         </script>
@@ -51,9 +51,9 @@ const Index = () => {
           {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "My Aussie Guide: Townsville & North Queensland",
+            "name": "Townsville Guide: Townsville & North Queensland",
             "description": "Your AI-powered local guide to Townsville and North Queensland.",
-            "url": "https://www.myaussieguide.com.au"
+            "url": "https://www.townsvilleguide.com.au"
           }
           `}
         </script>

@@ -25,7 +25,7 @@ const StingerSafety = () => (
     <SEOHead
       title="Is it Safe to Swim in Townsville Today? | 2026 Stinger Guide"
       description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated June 1, 2026."
-      canonical="https://www.myaussieguide.com.au/guides/stinger-safety"
+      canonical="https://www.townsvilleguide.com.au/guides/stinger-safety"
     />
     <Helmet>
       <script type="application/ld+json">{JSON.stringify({
@@ -34,9 +34,9 @@ const StingerSafety = () => (
           {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-              { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.myaussieguide.com.au/" },
-              { "@type": "ListItem", "position": 3, "name": "Stinger Safety", "item": "https://www.myaussieguide.com.au/guides/stinger-safety/" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
+              { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.townsvilleguide.com.au/" },
+              { "@type": "ListItem", "position": 3, "name": "Stinger Safety", "item": "https://www.townsvilleguide.com.au/guides/stinger-safety/" }
             ]
           },
           {

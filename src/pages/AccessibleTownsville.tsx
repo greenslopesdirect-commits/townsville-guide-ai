@@ -21,7 +21,7 @@ const AccessibleTownsville = () => {
       <SEOHead
         title="Accessible Townsville | Wheelchair-Friendly Beaches, Parks & Venues"
         description="A local guide to accessible Townsville — wheelchair-friendly walks at The Strand, ramp-entry swimming at Riverway Lagoons, sensory-friendly venues, and accessible transport options."
-        canonical="https://www.myaussieguide.com.au/accessible-townsville"
+        canonical="https://www.townsvilleguide.com.au/accessible-townsville"
       />
 
       <div className="min-h-screen bg-gray-50">

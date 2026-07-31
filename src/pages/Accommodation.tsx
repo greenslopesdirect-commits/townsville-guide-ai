@@ -119,7 +119,7 @@ const Accommodation = () => {
       <SEOHead
         title="Where to Stay in Townsville (Updated July 2026)"
         description="From luxury resorts to dog-friendly caravan parks, find the best Townsville accommodation. Updated July 13, 2026 with current dry-season demand tips and Queensland Derby weekend advice."
-        canonical="https://www.myaussieguide.com.au/accommodation"
+        canonical="https://www.townsvilleguide.com.au/accommodation"
       />
       <Helmet>
         <script type="application/ld+json">

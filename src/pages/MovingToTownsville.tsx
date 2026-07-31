@@ -24,7 +24,7 @@ const MovingToTownsville = () => {
       <SEOHead
         title="Moving to Townsville 2026 | Local Relocation & Growth Guide"
         description="A local-verified relocation guide to Townsville for 2026. Suburbs, the $40B infrastructure boom, jobs in Defence and Green Energy, schools, healthcare and the airport — all in one place."
-        canonical="https://www.myaussieguide.com.au/moving-to-townsville"
+        canonical="https://www.townsvilleguide.com.au/moving-to-townsville"
       />
 
       <div className="min-h-screen bg-gray-50">

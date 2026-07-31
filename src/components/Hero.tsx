@@ -106,7 +106,7 @@ const Hero = () => {
 
       <div className="container relative z-10 px-4 pt-20 pb-12 text-center mx-auto max-w-3xl">
         <p className="text-sm md:text-base uppercase tracking-[0.25em] text-yellow-300/90 font-semibold mb-4 drop-shadow">
-          My Aussie Guide
+          Townsville Guide
         </p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-5 drop-shadow-xl leading-tight tracking-tight">
           Discover the Best of{" "}
@@ -178,7 +178,7 @@ const Hero = () => {
           <div className="mt-6 max-w-2xl mx-auto text-left bg-white/95 text-slate-900 rounded-2xl p-5 shadow-2xl border border-white/40 animate-fade-in">
             <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-500 mb-3">
               <Sparkles className="w-3.5 h-3.5 text-orange-500" />
-              MyAussieGuide AI
+              Townsville Guide AI
             </div>
             {loading && !displayed ? (
               <div className="flex items-center gap-2 text-slate-600 text-sm">
