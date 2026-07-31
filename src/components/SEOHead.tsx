@@ -60,10 +60,10 @@ const SEOHead = ({
 
       {/* Twitter Card Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content={canonicalUrl} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:site" content="@myaussieguide" />
 
       {/* Indexing Control */}
       <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
