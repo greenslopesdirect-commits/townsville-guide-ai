@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import { Menu, ChevronDown } from "lucide-react";
-import logo from "@/assets/myaussieguide-logo.png";
+import logo from "@/assets/townsvilleguide-logo.png";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";

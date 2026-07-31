@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/myaussieguide-logo.png";
+import logo from "@/assets/townsvilleguide-logo.png";
 import HeaderWeather from "@/components/HeaderWeather";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
