@@ -14,7 +14,7 @@ const FoundingPartnerCTA = () => {
             Own a local business?
           </h3>
           <p className="text-sm text-muted-foreground">
-            Join My Aussie Guide as a Founding Partner. Limited complimentary listings are currently available during our mid-year 2026 growth phase.
+            Join Townsville Guide as a Founding Partner. Limited complimentary listings are currently available during our mid-year 2026 growth phase.
           </p>
         </div>
         <Button asChild className="flex-shrink-0">

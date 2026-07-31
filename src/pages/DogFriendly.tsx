@@ -79,7 +79,7 @@ const DogFriendly = () => {
       <SEOHead
         title="Dog-Friendly Beaches & Walks Townsville | Local Guide"
         description="Looking for dog-friendly beaches and coastal walks in Townsville? Here is the 2026 local guide to Pallarenda, Rowes Bay, The Strand, and scenic waterfront paths to beat the heat. Includes stinger safety and off-leash times."
-        canonical="https://www.myaussieguide.com.au/dog-friendly"
+        canonical="https://www.townsvilleguide.com.au/dog-friendly"
       />
 
       <script

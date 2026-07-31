@@ -41,7 +41,7 @@ const FreeThings = () => {
       <SEOHead
         title="Free Things to Do in Townsville — Local Budget Guide"
         description="A local guide to the best genuinely free things to do in Townsville — Castle Hill, The Strand, Riverway, Jezzine Barracks, the Palmetum, Anderson Park, Cotters Market and more."
-        canonical="https://www.myaussieguide.com.au/guides/free-things"
+        canonical="https://www.townsvilleguide.com.au/guides/free-things"
         ogType="article"
       />
 
@@ -52,9 +52,9 @@ const FreeThings = () => {
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.myaussieguide.com.au/guides" },
-                { "@type": "ListItem", "position": 3, "name": "Free Things to Do", "item": "https://www.myaussieguide.com.au/guides/free-things" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.townsvilleguide.com.au/guides" },
+                { "@type": "ListItem", "position": 3, "name": "Free Things to Do", "item": "https://www.townsvilleguide.com.au/guides/free-things" },
               ],
             },
             {

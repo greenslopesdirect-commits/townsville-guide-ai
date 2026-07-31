@@ -7,9 +7,9 @@ const PrivacyPolicy = () => {
   return (
     <>
       <SEOHead
-        title="Privacy Policy | My Aussie Guide – Townsville"
-        description="Read the Privacy Policy for My Aussie Guide – Townsville. Learn how we handle data, cookies, analytics and AI interactions on this website."
-        canonical="https://www.myaussieguide.com.au/privacy-policy"
+        title="Privacy Policy | Townsville Guide"
+        description="Read the Privacy Policy for Townsville Guide. Learn how we handle data, cookies, analytics and AI interactions on this website."
+        canonical="https://www.townsvilleguide.com.au/privacy-policy"
         noindex={true}
       />
       <Helmet>
@@ -21,8 +21,8 @@ const PrivacyPolicy = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Privacy Policy",
-            "url": "https://www.myaussieguide.com.au/privacy-policy",
-            "description": "Privacy Policy for My Aussie Guide explaining data usage, cookies, analytics and how user information is handled.",
+            "url": "https://www.townsvilleguide.com.au/privacy-policy",
+            "description": "Privacy Policy for Townsville Guide explaining data usage, cookies, analytics and how user information is handled.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -30,20 +30,20 @@ const PrivacyPolicy = () => {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://www.myaussieguide.com.au"
+                  "item": "https://www.townsvilleguide.com.au"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Privacy Policy",
-                  "item": "https://www.myaussieguide.com.au/privacy-policy"
+                  "item": "https://www.townsvilleguide.com.au/privacy-policy"
                 }
               ]
             },
             "publisher": {
               "@type": "Organization",
-              "name": "My Aussie Guide",
-              "url": "https://www.myaussieguide.com.au"
+              "name": "Townsville Guide",
+              "url": "https://www.townsvilleguide.com.au"
             }
           }
           `}
@@ -64,12 +64,12 @@ const PrivacyPolicy = () => {
           
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-6">
             <p>
-              MyAussieGuide is operated by DKR Sales (ABN 63 824 596 227) in Queensland, Australia. 
+              Townsville Guide is operated by DKR Sales (ABN 63 824 596 227) in Queensland, Australia. 
               We take privacy seriously and comply with Australian privacy requirements.
             </p>
 
             <p>
-              MyAussieGuide – Townsville respects your privacy. This Privacy Policy explains what information 
+              Townsville Guide – Townsville respects your privacy. This Privacy Policy explains what information 
               we collect, how it is used, and how you can contact us with questions.
             </p>
 
@@ -85,7 +85,7 @@ const PrivacyPolicy = () => {
 
             <h2 className="text-2xl font-semibold text-foreground">How We Use Your Information</h2>
             <p>
-              We use collected data solely to improve My Aussie Guide. We do <strong>not</strong> sell, trade, 
+              We use collected data solely to improve Townsville Guide. We do <strong>not</strong> sell, trade, 
               or share personal information with third parties.
             </p>
 

@@ -50,7 +50,7 @@ const RainyDayActivities = () => (
     <SEOHead
       title="Rainy Day Activities in Townsville: Wet Season Guide"
       description="A local's guide to the best rainy day activities in Townsville — indoor things to do with kids, cosy cafes, bowling, cinemas and wet season safety tips."
-      canonical="https://www.myaussieguide.com.au/guides/rainy-day-activities"
+      canonical="https://www.townsvilleguide.com.au/guides/rainy-day-activities"
     />
     <Helmet>
       <script type="application/ld+json">{JSON.stringify({
@@ -59,9 +59,9 @@ const RainyDayActivities = () => (
           {
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.myaussieguide.com.au/" },
-              { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.myaussieguide.com.au/" },
-              { "@type": "ListItem", position: 3, name: "Rainy Day Activities", item: "https://www.myaussieguide.com.au/guides/rainy-day-activities/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.townsvilleguide.com.au/" },
+              { "@type": "ListItem", position: 2, name: "Guides", item: "https://www.townsvilleguide.com.au/" },
+              { "@type": "ListItem", position: 3, name: "Rainy Day Activities", item: "https://www.townsvilleguide.com.au/guides/rainy-day-activities/" },
             ],
           },
           {

@@ -143,9 +143,9 @@ const Nature = () => {
   return (
     <>
       <SEOHead
-        title="Nature & Walks in Townsville – Trails & Hiking Guide | MyAussieGuide"
+        title="Nature & Walks in Townsville – Trails & Hiking Guide | Townsville Guide"
         description="Discover the best nature walks and hiking trails in Townsville. From Castle Hill to Town Common, explore scenic bushland, coastal paths, and wildlife spotting."
-        canonical="https://www.myaussieguide.com.au/nature"
+        canonical="https://www.townsvilleguide.com.au/nature"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -156,9 +156,9 @@ const Nature = () => {
               {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
-                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-                  { "@type": "ListItem", "position": 2, "name": "Things to Do", "item": "https://www.myaussieguide.com.au/things-to-do" },
-                  { "@type": "ListItem", "position": 3, "name": "Nature & Walks", "item": "https://www.myaussieguide.com.au/nature" }
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
+                  { "@type": "ListItem", "position": 2, "name": "Things to Do", "item": "https://www.townsvilleguide.com.au/things-to-do" },
+                  { "@type": "ListItem", "position": 3, "name": "Nature & Walks", "item": "https://www.townsvilleguide.com.au/nature" }
                 ]
               },
               {
@@ -166,11 +166,11 @@ const Nature = () => {
                 "name": "Nature & Walks in Townsville",
                 "description": "Complete guide to nature walks and hiking in Townsville",
                 "itemListElement": [
-                  { "@type": "ListItem", "position": 1, "name": "Castle Hill Walking Tracks", "url": "https://www.myaussieguide.com.au/castle-hill" },
-                  { "@type": "ListItem", "position": 2, "name": "Townsville Town Common", "url": "https://www.myaussieguide.com.au/nature" },
-                  { "@type": "ListItem", "position": 3, "name": "Cape Pallarenda Trails", "url": "https://www.myaussieguide.com.au/nature" },
-                  { "@type": "ListItem", "position": 4, "name": "Little Crystal Creek", "url": "https://www.myaussieguide.com.au/little-crystal-creek-townsville" },
-                  { "@type": "ListItem", "position": 5, "name": "Sunset Walks & Trails", "url": "https://www.myaussieguide.com.au/guides/sunset-walks" }
+                  { "@type": "ListItem", "position": 1, "name": "Castle Hill Walking Tracks", "url": "https://www.townsvilleguide.com.au/castle-hill" },
+                  { "@type": "ListItem", "position": 2, "name": "Townsville Town Common", "url": "https://www.townsvilleguide.com.au/nature" },
+                  { "@type": "ListItem", "position": 3, "name": "Cape Pallarenda Trails", "url": "https://www.townsvilleguide.com.au/nature" },
+                  { "@type": "ListItem", "position": 4, "name": "Little Crystal Creek", "url": "https://www.townsvilleguide.com.au/little-crystal-creek-townsville" },
+                  { "@type": "ListItem", "position": 5, "name": "Sunset Walks & Trails", "url": "https://www.townsvilleguide.com.au/guides/sunset-walks" }
                 ]
               },
               {

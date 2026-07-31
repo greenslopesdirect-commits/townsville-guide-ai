@@ -7,9 +7,9 @@ const CookiePolicy = () => {
   return (
     <>
       <SEOHead
-        title="Cookie Policy | My Aussie Guide – Townsville"
-        description="Learn how My Aussie Guide – Townsville uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
-        canonical="https://www.myaussieguide.com.au/cookie-policy"
+        title="Cookie Policy | Townsville Guide"
+        description="Learn how Townsville Guide uses cookies to improve functionality, analyse traffic, and enhance user experience. Includes details on analytics, consent, and cookie control."
+        canonical="https://www.townsvilleguide.com.au/cookie-policy"
         noindex={true}
       />
       <Helmet>
@@ -21,8 +21,8 @@ const CookiePolicy = () => {
             "@context": "https://schema.org",
             "@type": "CookiePolicy",
             "name": "Cookie Policy",
-            "url": "https://www.myaussieguide.com.au/cookie-policy",
-            "description": "Information about how cookies are used on My Aussie Guide – Townsville, including analytics, affiliate cookies, and user consent.",
+            "url": "https://www.townsvilleguide.com.au/cookie-policy",
+            "description": "Information about how cookies are used on Townsville Guide, including analytics, affiliate cookies, and user consent.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -30,20 +30,20 @@ const CookiePolicy = () => {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://www.myaussieguide.com.au"
+                  "item": "https://www.townsvilleguide.com.au"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Cookie Policy",
-                  "item": "https://www.myaussieguide.com.au/cookie-policy"
+                  "item": "https://www.townsvilleguide.com.au/cookie-policy"
                 }
               ]
             },
             "publisher": {
               "@type": "Organization",
-              "name": "My Aussie Guide",
-              "url": "https://www.myaussieguide.com.au"
+              "name": "Townsville Guide",
+              "url": "https://www.townsvilleguide.com.au"
             }
           }
           `}
@@ -68,7 +68,7 @@ const CookiePolicy = () => {
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-6">
 
             <p>
-              My Aussie Guide – Townsville uses cookies to enhance your browsing experience, analyse website
+              Townsville Guide uses cookies to enhance your browsing experience, analyse website
               performance, and deliver relevant content. Cookies are small text files stored on your device
               when you visit our site.
             </p>

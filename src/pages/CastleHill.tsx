@@ -1,21 +1,18 @@
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Mountain, Sunrise, Camera, Car, Footprints, Clock, DollarSign, MapPin, Thermometer, Wind, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 import castleHillImage from "@/assets/castle-hill-townsville-2.webp";
 
 const CastleHill = () => {
   return (
     <>
-      <Helmet>
-        <title>Castle Hill Townsville – Local Guide | My Aussie Guide</title>
-        <meta
-          name="description"
-          content="Castle Hill Townsville local guide — panoramic views, walking tracks, sunrise and sunset tips. Free attraction near the city centre."
-        />
-        <link rel="canonical" href="https://www.myaussieguide.com.au/castle-hill/" />
-      </Helmet>
+      <SEOHead
+        title="Castle Hill Townsville – Local Guide | Townsville Guide"
+        description="Castle Hill Townsville local guide — panoramic views, walking tracks, sunrise and sunset tips. Free attraction near the city centre."
+        canonical="https://www.townsvilleguide.com.au/castle-hill"
+      />
 
       <div className="min-h-screen bg-background">
         {/* Hero */}

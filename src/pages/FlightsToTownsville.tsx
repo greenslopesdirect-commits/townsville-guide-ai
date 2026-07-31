@@ -11,7 +11,7 @@ const FlightsToTownsville = () => {
       <SEOHead
         title="Townsville Airport (TSV): Getting Around"
         description="Landing in Townsville? A local's guide to getting from TSV airport into the city — transfers, taxis, and what to expect on arrival."
-        canonical="https://www.myaussieguide.com.au/flights"
+        canonical="https://www.townsvilleguide.com.au/flights"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -20,7 +20,7 @@ const FlightsToTownsville = () => {
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Flights to Townsville",
-            "url": "https://www.myaussieguide.com.au/flights",
+            "url": "https://www.townsvilleguide.com.au/flights",
             "description": "Compare and book flights to Townsville Airport (TSV)"
           }
           `}

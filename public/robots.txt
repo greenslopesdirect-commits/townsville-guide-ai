@@ -47,5 +47,5 @@ User-agent: DuckAssistBot
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.myaussieguide.com.au/sitemap.xml
+Sitemap: https://www.townsvilleguide.com.au/sitemap.xml
 

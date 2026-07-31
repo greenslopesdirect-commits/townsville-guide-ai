@@ -112,9 +112,9 @@ const Advertise = () => {
   return (
     <>
       <SEOHead
-        title="Partner With Us | My Aussie Guide Townsville"
-        description="Partner with My Aussie Guide — the fastest-growing local guide for Townsville events, beaches, safety info and Cowboys game day. Free community listings, $49/mo Founding Partner spots, and Game Day placements."
-        canonical="https://www.myaussieguide.com.au/advertise"
+        title="Partner With Us | Townsville Guide"
+        description="Partner with Townsville Guide — the fastest-growing local guide for Townsville events, beaches, safety info and Cowboys game day. Free community listings, $49/mo Founding Partner spots, and Game Day placements."
+        canonical="https://www.townsvilleguide.com.au/advertise"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -122,9 +122,9 @@ const Advertise = () => {
           {
             "@context": "https://schema.org",
             "@type": "WebPage",
-            "name": "Partner With My Aussie Guide",
-            "url": "https://www.myaussieguide.com.au/advertise",
-            "description": "Partner tiers and pricing for My Aussie Guide Townsville — Community, Founding Partner, and Game Day placements curated by Duncan Ross."
+            "name": "Partner With Townsville Guide",
+            "url": "https://www.townsvilleguide.com.au/advertise",
+            "description": "Partner tiers and pricing for Townsville Guide — Community, Founding Partner, and Game Day placements curated by Duncan Ross."
           }
           `}
         </script>
@@ -143,7 +143,7 @@ const Advertise = () => {
                 Partner With Townsville's Independent Local Guide
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                My Aussie Guide is in its mid-2026 growth phase — a personal, local-first guide to Townsville that's picking up serious momentum through the July dry season, with the Queensland Derby (Cowboys vs Broncos, July 25) coming up as the next big game-day weekend. If you run something worth telling people about, there's a spot for you here.
+                Townsville Guide is in its mid-2026 growth phase — a personal, local-first guide to Townsville that's picking up serious momentum through the July dry season, with the Queensland Derby (Cowboys vs Broncos, July 25) coming up as the next big game-day weekend. If you run something worth telling people about, there's a spot for you here.
               </p>
               <div className="flex items-center justify-center gap-2 mt-4 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />

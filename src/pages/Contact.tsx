@@ -24,9 +24,9 @@ const Contact = () => {
   return (
     <>
       <SEOHead
-        title="Contact Us - My Aussie Guide Townsville"
-        description="Get in touch with My Aussie Guide. Submit events, report corrections, or explore partnership opportunities for your Townsville business."
-        canonical="https://www.myaussieguide.com.au/contact"
+        title="Contact Us - Townsville Guide"
+        description="Get in touch with Townsville Guide. Submit events, report corrections, or explore partnership opportunities for your Townsville business."
+        canonical="https://www.townsvilleguide.com.au/contact"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -35,8 +35,8 @@ const Contact = () => {
             "@context": "https://schema.org",
             "@type": "ContactPage",
             "name": "Contact Us",
-            "url": "https://www.myaussieguide.com.au/contact",
-            "description": "Contact My Aussie Guide for event listings, corrections, and partnership enquiries"
+            "url": "https://www.townsvilleguide.com.au/contact",
+            "description": "Contact Townsville Guide for event listings, corrections, and partnership enquiries"
           }
           `}
         </script>

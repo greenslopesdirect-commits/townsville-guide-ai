@@ -13,19 +13,19 @@ const SEOHead = ({
   title,
   description,
   canonical,
-  ogImage = "https://www.myaussieguide.com.au/og-image.jpg",
+  ogImage = "https://www.townsvilleguide.com.au/og-image.jpg",
   ogType = "website",
   noindex = false,
 }: SEOHeadProps) => {
-  const fullTitle = title.includes("My Aussie Guide")
+  const fullTitle = title.includes("Townsville Guide")
     ? title
-    : `${title} | My Aussie Guide`;
+    : `${title} | Townsville Guide`;
 
   // Standardize on NO trailing slash (except the root "/"). Accept either a
   // full URL or a path in the `canonical` prop; if none is supplied, derive
   // the canonical from the current route's pathname so we never silently
   // default to the homepage.
-  const SITE = "https://www.myaussieguide.com.au";
+  const SITE = "https://www.townsvilleguide.com.au";
   let path: string;
   if (canonical) {
     try {
@@ -55,15 +55,15 @@ const SEOHead = ({
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:site_name" content="My Aussie Guide – Townsville" />
+      <meta property="og:site_name" content="Townsville Guide" />
       <meta property="og:locale" content="en_AU" />
 
       {/* Twitter Card Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content={canonicalUrl} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:site" content="@myaussieguide" />
 
       {/* Indexing Control */}
       <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />

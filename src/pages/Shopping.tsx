@@ -198,7 +198,7 @@ const Shopping = () => {
       <SEOHead
         title="Shopping & Markets in Townsville — Local Guide"
         description="A local guide to shopping in Townsville — Stockland, Willows and Castletown shopping centres, plus Cotters Market and the Strand Night Markets."
-        canonical="https://www.myaussieguide.com.au/shopping"
+        canonical="https://www.townsvilleguide.com.au/shopping"
         ogType="article"
       />
       <Helmet>
@@ -208,8 +208,8 @@ const Shopping = () => {
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-                { "@type": "ListItem", "position": 2, "name": "Shopping & Markets", "item": "https://www.myaussieguide.com.au/shopping" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
+                { "@type": "ListItem", "position": 2, "name": "Shopping & Markets", "item": "https://www.townsvilleguide.com.au/shopping" },
               ],
             },
             {
@@ -301,7 +301,7 @@ const Shopping = () => {
                     <p className="text-base md:text-lg text-foreground leading-relaxed italic mb-3">
                       "In the wet season, an air-conditioned centre stops being a shopping trip and starts being a genuine escape. Stockland's my pick on a 34-degree humid afternoon — you can drift between shops, grab a coffee, and still be indoors when the storm rolls through."
                     </p>
-                    <p className="text-sm font-semibold text-foreground">— Duncan, MyAussieGuide</p>
+                    <p className="text-sm font-semibold text-foreground">— Duncan, Townsville Guide</p>
                   </div>
                 </div>
               </div>

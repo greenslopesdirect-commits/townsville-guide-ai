@@ -6,17 +6,17 @@ import { Link } from "react-router-dom";
 const AboutSection = () => {
   return <section className="py-16 px-4 bg-gradient-to-br from-primary/5 to-background">
       <div className="container mx-auto max-w-4xl space-y-8">
-        {/* About MyAussieGuide Card */}
+        {/* About Townsville Guide Card */}
         <Card className="rounded-3xl shadow-[var(--shadow-card)] border-2 animate-fade-in backdrop-blur-sm bg-card/95">
           <CardContent className="pt-8 pb-8 px-6 md:px-10">
             <div className="text-center mb-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">About My Aussie Guide – Townsville 💛</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">About Townsville Guide 💛</h2>
             </div>
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
-              <p>My Aussie Guide (MyAussieGuide.com.au) is a locally built Townsville travel and lifestyle guide helping locals, visitors, and newcomers discover the best of North Queensland — powered by real local insight and AI-assisted recommendations.</p>
+              <p>Townsville Guide (Townsville Guide.com.au) is a locally built Townsville travel and lifestyle guide helping locals, visitors, and newcomers discover the best of North Queensland — powered by real local insight and AI-assisted recommendations.</p>
               <p>This guide brings together hand-picked recommendations, carefully curated lists, and AI-assisted suggestions to make exploring easy. From beaches and restaurants to dog parks, events, and hidden gems, it's designed to help you experience Townsville like a local.</p>
-              <p>Whether you're planning your first trip or exploring new corners of the city you already call home, MyAussieGuide delivers updated recommendations, accurate information, and smart tools that adapt to your needs.</p>
+              <p>Whether you're planning your first trip or exploring new corners of the city you already call home, Townsville Guide delivers updated recommendations, accurate information, and smart tools that adapt to your needs.</p>
             </div>
           </CardContent>
         </Card>
@@ -35,7 +35,7 @@ const AboutSection = () => {
             </div>
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
-              <p>Hi, I'm Duncan — the real person behind My Aussie Guide and a proud Townsville local.</p>
+              <p>Hi, I'm Duncan — the real person behind Townsville Guide and a proud Townsville local.</p>
               <p>After moving to North Queensland, I quickly fell in love with Townsville's relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. With a background in digital design, websites, and AI tools, I created this platform to share the very best of our city in a simple, friendly, and genuinely helpful way.</p>
               <p>
                 I explore Townsville every day — beaches, cafés, dog-friendly spots, local events — and I've built this guide to make it easier for others to do the same.

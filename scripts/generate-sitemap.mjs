@@ -24,7 +24,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
-const SITE = "https://www.myaussieguide.com.au";
+const SITE = "https://www.townsvilleguide.com.au";
 const OUTPUT = resolve(ROOT, "public/sitemap.xml");
 
 /**

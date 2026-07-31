@@ -7,9 +7,9 @@ const AffiliateDisclosure = () => {
   return (
     <>
       <SEOHead
-        title="Affiliate Disclosure | My Aussie Guide – Townsville"
-        description="Read My Aussie Guide affiliate disclosure, explaining how affiliate links work and how they support our Townsville local guide."
-        canonical="https://www.myaussieguide.com.au/affiliate-disclosure"
+        title="Affiliate Disclosure | Townsville Guide"
+        description="Read Townsville Guide affiliate disclosure, explaining how affiliate links work and how they support our Townsville local guide."
+        canonical="https://www.townsvilleguide.com.au/affiliate-disclosure"
         noindex={true}
       />
       <Helmet>
@@ -21,8 +21,8 @@ const AffiliateDisclosure = () => {
             "@context": "https://schema.org",
             "@type": "AboutPage",
             "name": "Affiliate Disclosure",
-            "url": "https://www.myaussieguide.com.au/affiliate-disclosure",
-            "description": "Information about how affiliate links on My Aussie Guide operate and how they support the website.",
+            "url": "https://www.townsvilleguide.com.au/affiliate-disclosure",
+            "description": "Information about how affiliate links on Townsville Guide operate and how they support the website.",
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
@@ -30,20 +30,20 @@ const AffiliateDisclosure = () => {
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://www.myaussieguide.com.au"
+                  "item": "https://www.townsvilleguide.com.au"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Affiliate Disclosure",
-                  "item": "https://www.myaussieguide.com.au/affiliate-disclosure"
+                  "item": "https://www.townsvilleguide.com.au/affiliate-disclosure"
                 }
               ]
             },
             "publisher": {
               "@type": "Organization",
-              "name": "My Aussie Guide",
-              "url": "https://www.myaussieguide.com.au"
+              "name": "Townsville Guide",
+              "url": "https://www.townsvilleguide.com.au"
             }
           }
           `}
@@ -64,7 +64,7 @@ const AffiliateDisclosure = () => {
           
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-4">
             <p>
-              My Aussie Guide is operated by DKR Sales (ABN 63 824 596 227). We may receive commissions 
+              Townsville Guide is operated by DKR Sales (ABN 63 824 596 227). We may receive commissions 
               when users click on external booking links or make purchases through affiliate partners 
               such as Booking.com, Skyscanner, or other travel platforms. This helps support the site 
               at no extra cost to you.
@@ -83,7 +83,7 @@ const AffiliateDisclosure = () => {
 
             <p>
               Affiliate earnings help support the operation and ongoing development of 
-              My Aussie Guide — including maintaining server costs, improving our local features, 
+              Townsville Guide — including maintaining server costs, improving our local features, 
               and providing up-to-date local Townsville guides.
             </p>
 

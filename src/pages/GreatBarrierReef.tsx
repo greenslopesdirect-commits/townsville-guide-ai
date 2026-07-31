@@ -48,7 +48,7 @@ const GreatBarrierReef = () => {
       <SEOHead
         title="Great Barrier Reef from Townsville – Tours, Tips & Best Time to Visit"
         description="Planning to visit the Great Barrier Reef from Townsville? Learn what to expect, best months to go, tour length, and practical local tips."
-        canonical="https://www.myaussieguide.com.au/great-barrier-reef-townsville"
+        canonical="https://www.townsvilleguide.com.au/great-barrier-reef-townsville"
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

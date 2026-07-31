@@ -43,7 +43,7 @@ const MagneticIslandDayTrip = () => {
       <SEOHead
         title="Magnetic Island Day Trip: Ferries & Koalas"
         description="Planning a day trip to Magnetic Island? Ferry times, koala spotting on the Forts Walk, and the best swimming bays — from a local."
-        canonical="https://www.myaussieguide.com.au/guides/magnetic-island-day-trip"
+        canonical="https://www.townsvilleguide.com.au/guides/magnetic-island-day-trip"
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify({

@@ -167,7 +167,7 @@ const Beaches = () => {
       <SEOHead
         title="Townsville Beaches: Family & Dog-Friendly"
         description="Which Townsville beach is best for you? Family swimming spots, off-leash dog beaches, and current stinger safety — from a local."
-        canonical="https://www.myaussieguide.com.au/beaches"
+        canonical="https://www.townsvilleguide.com.au/beaches"
       />
       <Helmet>
         <meta name="keywords" content="beaches north of townsville, saunders beach, bushland beach townsville, dog friendly beaches townsville, stinger safety townsville" />
@@ -186,8 +186,8 @@ const Beaches = () => {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-            { "@type": "ListItem", "position": 2, "name": "Beaches", "item": "https://www.myaussieguide.com.au/beaches/" }
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
+            { "@type": "ListItem", "position": 2, "name": "Beaches", "item": "https://www.townsvilleguide.com.au/beaches/" }
           ]
         }) }}
       />

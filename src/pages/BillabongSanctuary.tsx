@@ -62,7 +62,7 @@ const BillabongSanctuary = () => {
       <SEOHead
         title="Billabong Sanctuary Townsville – Wildlife Experience Guide"
         description="Local guide to Billabong Sanctuary Townsville — hold a koala, feed kangaroos, watch croc shows and enjoy a family-friendly wildlife day out."
-        canonical="https://www.myaussieguide.com.au/billabong-sanctuary"
+        canonical="https://www.townsvilleguide.com.au/billabong-sanctuary"
         ogType="article"
       />
 
@@ -74,8 +74,8 @@ const BillabongSanctuary = () => {
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-                { "@type": "ListItem", "position": 2, "name": "Billabong Sanctuary", "item": "https://www.myaussieguide.com.au/billabong-sanctuary/" }
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
+                { "@type": "ListItem", "position": 2, "name": "Billabong Sanctuary", "item": "https://www.townsvilleguide.com.au/billabong-sanctuary/" }
               ]
             },
             {

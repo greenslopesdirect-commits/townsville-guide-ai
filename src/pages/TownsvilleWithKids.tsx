@@ -22,7 +22,7 @@ const TownsvilleWithKids = () => {
       <SEOHead
         title="Best Things to Do in Townsville With Kids | Family Guide"
         description="A practical family guide to Townsville covering free activities, easy day trips, and tips for managing the tropical heat with kids. Perfect for planning your visit."
-        canonical="https://www.myaussieguide.com.au/townsville-with-kids"
+        canonical="https://www.townsvilleguide.com.au/townsville-with-kids"
       />
 
       <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">

@@ -1,4 +1,4 @@
-# My Aussie Guide
+# Townsville Guide
 
 > Townsville's trusted local travel and lifestyle guide for North Queensland — beaches, food, events, accommodation, dog-friendly spots, and real local insight.
 
@@ -46,5 +46,5 @@
 
 ## Optional
 
-- [Advertise](/advertise): Partner with My Aussie Guide.
+- [Advertise](/advertise): Partner with Townsville Guide.
 - [Contact](/contact): Get in touch.

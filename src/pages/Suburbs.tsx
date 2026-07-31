@@ -178,9 +178,9 @@ const Suburbs = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Suburbs Guide: Where to Live | My Aussie Guide"
+        title="Townsville Suburbs Guide: Where to Live | Townsville Guide"
         description="A local's guide to Townsville's suburbs — North Ward, Kirwan, Idalia, Douglas, Aitkenvale, Annandale, Garbutt, Bushland Beach and more. Vibe, who each suits, and where they sit."
-        canonical="https://www.myaussieguide.com.au/suburbs"
+        canonical="https://www.townsvilleguide.com.au/suburbs"
         ogType="article"
       />
       <Helmet>
@@ -190,8 +190,8 @@ const Suburbs = () => {
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-                { "@type": "ListItem", "position": 2, "name": "Suburbs Guide", "item": "https://www.myaussieguide.com.au/suburbs" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
+                { "@type": "ListItem", "position": 2, "name": "Suburbs Guide", "item": "https://www.townsvilleguide.com.au/suburbs" },
               ],
             },
             {
@@ -202,13 +202,13 @@ const Suburbs = () => {
                   "@type": "ListItem",
                   "position": i + 1,
                   "name": s.name,
-                  "url": `https://www.myaussieguide.com.au/suburbs#${s.name.toLowerCase().replace(/\s+/g, "-")}`,
+                  "url": `https://www.townsvilleguide.com.au/suburbs#${s.name.toLowerCase().replace(/\s+/g, "-")}`,
                 })),
                 ...featuredGuides.map((g, i) => ({
                   "@type": "ListItem",
                   "position": suburbs.length + i + 1,
                   "name": g.name,
-                  "url": `https://www.myaussieguide.com.au${g.href}`,
+                  "url": `https://www.townsvilleguide.com.au${g.href}`,
                 })),
               ],
             },
@@ -315,7 +315,7 @@ const Suburbs = () => {
                     <p className="text-base md:text-lg text-foreground leading-relaxed italic mb-3">
                       "Pick the commute, not just the postcode. Townsville is small, but Friday-afternoon traffic across Lowths Bridge on a Cowboys game day is real. If you're working in the CBD or at the Hospital, test-drive the route at peak hour before you sign a lease — half the suburb regret I hear about is really commute regret in disguise."
                     </p>
-                    <p className="text-sm font-semibold text-foreground">— Duncan, MyAussieGuide</p>
+                    <p className="text-sm font-semibold text-foreground">— Duncan, Townsville Guide</p>
                   </div>
                 </div>
               </div>

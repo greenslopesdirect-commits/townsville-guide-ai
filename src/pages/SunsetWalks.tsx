@@ -41,7 +41,7 @@ const SunsetWalks = () => {
       <SEOHead
         title="Best Sunset Walks in Townsville — Local Guide"
         description="A local guide to the best sunset walks in Townsville — The Breakwater, Pallarenda Jetty, Castle Hill, Jezzine Barracks, Rowes Bay and The Strand foreshore."
-        canonical="https://www.myaussieguide.com.au/guides/sunset-walks"
+        canonical="https://www.townsvilleguide.com.au/guides/sunset-walks"
         ogType="article"
       />
 
@@ -52,9 +52,9 @@ const SunsetWalks = () => {
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.myaussieguide.com.au/" },
-                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.myaussieguide.com.au/guides" },
-                { "@type": "ListItem", "position": 3, "name": "Sunset Walks", "item": "https://www.myaussieguide.com.au/guides/sunset-walks" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
+                { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.townsvilleguide.com.au/guides" },
+                { "@type": "ListItem", "position": 3, "name": "Sunset Walks", "item": "https://www.townsvilleguide.com.au/guides/sunset-walks" },
               ],
             },
             {

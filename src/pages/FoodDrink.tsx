@@ -222,7 +222,7 @@ const FoodDrink = () => {
       <SEOHead
        title="Best Restaurants in Townsville | Local Dining Guide July 2026"
        description="Discover Townsville's best restaurants, cafés and bars — from Palmer Street fine dining to beachfront casual spots on The Strand. A local's honest guide to where to eat."
-        canonical="https://www.myaussieguide.com.au/food"
+        canonical="https://www.townsvilleguide.com.au/food"
       />
       <Helmet>
         <script type="application/ld+json">
