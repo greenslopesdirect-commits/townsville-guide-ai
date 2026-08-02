@@ -58,6 +58,7 @@ import SaundersBeach from "@/pages/beaches/SaundersBeach";
 import AccessibleTownsville from "@/pages/AccessibleTownsville";
 import UsefulContacts from "@/pages/UsefulContacts";
 import Suburbs from "@/pages/Suburbs";
+import WeekendCostCalculator from "@/pages/WeekendCostCalculator";
 
 const queryClient = new QueryClient();
 
