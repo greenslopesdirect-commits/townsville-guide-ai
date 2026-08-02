@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calculator, Sparkles } from "lucide-react";
 
@@ -27,20 +28,15 @@ const NewsletterSection = () => {
             size="lg"
             className="h-12 px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all"
           >
-            <a
-              href="https://greenslopesdirect-commits.github.io/townsville-weekend-cost-calculator/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2"
-            >
+            <Link to="/weekend-cost-calculator" className="inline-flex items-center gap-2">
               <Calculator className="w-5 h-5" />
               Calculate My Weekend Cost
-            </a>
+            </Link>
           </Button>
 
           {/* Reassurance */}
           <p className="text-xs text-muted-foreground mt-4">
-            We’ll only email you when we have something genuinely useful to share. Unsubscribe anytime.
+            Free to use, no email required — just a quick local price estimate.
           </p>
         </div>
       </div>

@@ -58,6 +58,7 @@ import SaundersBeach from "@/pages/beaches/SaundersBeach";
 import AccessibleTownsville from "@/pages/AccessibleTownsville";
 import UsefulContacts from "@/pages/UsefulContacts";
 import Suburbs from "@/pages/Suburbs";
+import WeekendCostCalculator from "@/pages/WeekendCostCalculator";
 
 const queryClient = new QueryClient();
 
@@ -116,7 +117,9 @@ const App = () => (
             <Route path="suburbs" element={<Suburbs />} />
             <Route path="accessible-townsville" element={<AccessibleTownsville />} />
             <Route path="useful-contacts" element={<UsefulContacts />} />
+            <Route path="weekend-cost-calculator" element={<WeekendCostCalculator />} />
             
+
             {/* MONETISATION PAGES */}
             <Route path="flights" element={<FlightsToTownsville />} />
             <Route path="advertise" element={<Advertise />} />
