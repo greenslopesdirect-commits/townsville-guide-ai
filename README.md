@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# Townsville Guide
 
-## Project info
+Build a one-page React + Tailwind + TypeScript site called “Duncan’s Guide – Townsville.”
+Design tone: bright, tropical, welcoming (turquoise + coral accents, soft shadows, rounded cards). Mobile-first, responsive.
 
-**URL**: https://lovable.dev/projects/635a14a2-4baa-4ad2-8154-8df3747ceb77
+Sections & behavior:
 
-## How can I edit this code?
+Hero (full-height)
 
-There are several ways of editing your application.
+Uses my own Townsville background photo (I will upload after generation).
 
-**Use Lovable**
+Headline: “Welcome to Townsville 👋”
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/635a14a2-4baa-4ad2-8154-8df3747ceb77) and start prompting.
+Subheading: “Your local AI guide to everything in North Queensland.”
 
-Changes made via Lovable will be committed automatically to this repo.
+Add a visible chat/search box below the text with placeholder:
 
-**Use your preferred IDE**
+“Hi! I’m your Townsville guide. Ask me anything — restaurants, beaches, dog parks, events, accommodation.”
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Add a subtle scroll indicator at the bottom of the hero.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Quick Access Categories (grid of 6 rounded buttons/cards):
 
-Follow these steps:
+Restaurants • Beaches • Things to Do • Dog Parks • Accommodation • Shopping
+
+Top 5 Local Picks (placeholder list/cards I can edit later)
+
+Map Section
+
+Embedded Google Map centered on Townsville, QLD.
+
+Title: “Find Your Way Around”
+
+About / FAQ (short)
+
+Friendly 2–3 lines about the site being created by a Townsville local.
+
+Contact / Footer
+
+“Questions or suggestions? Email Duncan Ross at greenslopesdirect@gmail.com
+.”
+
+Implementation notes:
+
+Create a Hero component (src/components/Hero.tsx) with a background image layer, a light gradient overlay (10–25%), and centered content.
+
+Put the hero background image reference in a variable so I can swap it easily after upload.
+
+Create an assets folder (src/assets/) with a placeholder image named strand-hero.jpg. I will replace it with my photo.
+
+Keep classes semantic (e.g., container, max-w-*, bg-cover bg-center, rounded-3xl, shadow-*).
+
+Leave a clear TODO comment where to replace the hero image.
+
+After generation, I will:
+
+Upload my Townsville hero image into src/assets/ and replace strand-hero.jpg.
+
+(Optional later) embed a real AI agent/script into the chat box.
+
+This project was built with [Lovable](https://lovable.dev).
+
+**Live app**: https://townsville-guide-ai.lovable.app
+
+## Build with Lovable
+
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/f97cf9bd-3df6-48af-9628-493b0a309f6d).
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+git clone <this-repository-url>
+cd <repository-name>
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/635a14a2-4baa-4ad2-8154-8df3747ceb77) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
