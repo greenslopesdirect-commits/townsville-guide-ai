@@ -117,7 +117,9 @@ const App = () => (
             <Route path="suburbs" element={<Suburbs />} />
             <Route path="accessible-townsville" element={<AccessibleTownsville />} />
             <Route path="useful-contacts" element={<UsefulContacts />} />
+            <Route path="weekend-cost-calculator" element={<WeekendCostCalculator />} />
             
+
             {/* MONETISATION PAGES */}
             <Route path="flights" element={<FlightsToTownsville />} />
             <Route path="advertise" element={<Advertise />} />
