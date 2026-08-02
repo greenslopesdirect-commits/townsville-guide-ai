@@ -24,7 +24,7 @@ import {
 import { Loader2, Send, CheckCircle, Copy, Check } from "lucide-react";
 import { toast } from "sonner";
 
-const FALLBACK_EMAIL = "hello@myaussieguide.com.au";
+const FALLBACK_EMAIL = "Greenslopesdirect@gmail.com";
 
 const formSchema = z.object({
   name: z
