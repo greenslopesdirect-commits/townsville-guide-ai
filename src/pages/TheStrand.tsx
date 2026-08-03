@@ -62,13 +62,13 @@ const TheStrand = () => {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
             The Strand
           </h1>
-          <p className="text-sm text-gray-500">Updated: July 13, 2026</p>
+          <p className="text-sm text-gray-500">Updated: August 3, 2026</p>
           <p className="text-xl text-gray-600 max-w-2xl">
             2.2km of tropical foreshore. It's not just a beach; it's the city's living room.
             From the <strong>Rockpool</strong> to the <strong>Water Park</strong>, here is how to do The Strand like a local.
           </p>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-900">
-            ☀️ <strong>July 13 Update:</strong> The 'Perfect Dry' is in full swing. With crisp 26°C days, clear water, and low humidity, it's still the best time of year for a Strand walk. The Council removed the stinger nets on 27 May after weeks of clear drags, so open swimming is safe across the beach until nets are reinstalled in November.
+            ☀️ <strong>Dry Season Update:</strong> The 'Perfect Dry' is in full swing. With crisp 26°C days, clear water, and low humidity, it's the best time of year for a Strand walk. The Council removed the stinger nets on 27 May after weeks of clear drags, so open swimming is safe across the beach until nets are reinstalled in November.
           </div>
         </div>
 
@@ -168,7 +168,7 @@ const TheStrand = () => {
                   A man-made saltwater lagoon. Safe from stingers year-round. Gentle sloping entry makes it perfect for toddlers.
                 </p>
                 <div className="bg-blue-50 p-3 rounded-md text-xs text-blue-800">
-                  <strong>Local Tip:</strong> Closed every <span className="font-bold">Wednesday</span> for cleaning. <em>July Update: The water is refreshing and crystal clear—ideal for morning laps before the midday UV peaks.</em>
+                  <strong>Local Tip:</strong> Closed every <span className="font-bold">Wednesday</span> for cleaning. <em>Dry Season Tip: The water is refreshing and crystal clear—ideal for morning laps before the midday UV peaks.</em>
                 </div>
               </CardContent>
             </Card>
@@ -323,7 +323,7 @@ const TheStrand = () => {
 
         {/* Dog-Friendly Strand Tip */}
         <section className="space-y-3">
-          <h2 className="text-2xl font-bold text-foreground">🐾 Dog-Friendly Strand Tip (July 2026)</h2>
+          <h2 className="text-2xl font-bold text-foreground">🐾 Dog-Friendly Strand Tip (Dry Season)</h2>
           <div className="p-4 rounded-lg bg-jade/10 border border-jade/30 text-sm text-foreground">
             The cooler 20°C mornings are perfect for the full 2.2km length of The Strand. Remember: Dogs must be on-leash on the main path. If you're looking for an off-leash run, head to the northern end of <Link to="/pallarenda-beach" className="text-primary hover:underline font-medium">Pallarenda</Link> where the low-tide sand flats open up for a good run.
           </div>
@@ -331,7 +331,7 @@ const TheStrand = () => {
 
         {/* Seasonal Photography Tip */}
         <section className="space-y-3">
-          <h2 className="text-2xl font-bold text-foreground">📸 July Photography Tip</h2>
+          <h2 className="text-2xl font-bold text-foreground">📸 Dry-Season Photography Tip</h2>
           <div className="p-4 rounded-lg bg-amber-50 border border-amber-200 text-sm text-amber-900">
             <strong>Sunset vs. Sunrise:</strong> During the dry season, the sun rises directly over Cleveland Bay, making for incredible silhouette shots of the pier. Sunset is best captured from the Jezzine Barracks end, looking back across the Strand toward the Port.
           </div>

@@ -32,7 +32,7 @@ const MovingToTownsville = () => {
           {/* Hero */}
           <header className="space-y-4">
             <Badge variant="secondary" className="bg-emerald-50 text-emerald-700 w-fit">
-              Updated: July 13, 2026
+              Updated: August 3, 2026
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
               Moving to Townsville 2026: The Local's Relocation & Growth Guide
@@ -161,7 +161,7 @@ const MovingToTownsville = () => {
                     the light of Castle Hill.
                   </p>
                   <p className="mt-3">
-                    <strong>July Update:</strong> With the cooler dry-season evenings settling in, a twilight walk under
+                    <strong>Local Tip:</strong> During the cooler dry-season evenings, a twilight walk under
                     Castle Hill is spectacular. It's a classic example of enjoying our relaxed, coastal dry season lifestyle.
                   </p>
                 </LocalInsightCard>

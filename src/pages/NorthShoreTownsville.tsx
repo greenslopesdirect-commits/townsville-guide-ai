@@ -10,8 +10,8 @@ const NorthShoreTownsville = () => {
   return (
     <>
       <SEOHead
-        title="North Shore Townsville: Nature, Community & Guide (July 2026)"
-        description="Discover Townsville's North Shore. From the Burdell Wetlands and Leisure Centre to the best local coffee, explore our updated July 2026 guide to the northern heart of the city."
+        title="North Shore Townsville: Nature, Community & Guide (2026)"
+        description="Discover Townsville's North Shore. From the Burdell Wetlands and Leisure Centre to the best local coffee, explore our locally updated guide to the northern heart of the city."
         canonical="https://www.townsvilleguide.com.au/north-shore-townsville"
       />
 
@@ -25,12 +25,12 @@ const NorthShoreTownsville = () => {
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
               North Shore: Nature, Community & Modern Living
             </h1>
-            <p className="text-sm text-muted-foreground">Updated: July 13, 2026</p>
+            <p className="text-sm text-muted-foreground">Updated: August 3, 2026</p>
             <p className="text-lg text-muted-foreground max-w-2xl">
               Discover Townsville's northern heart, where wetlands meet world-class leisure facilities.
             </p>
             <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4 text-sm text-emerald-900 max-w-2xl">
-              ☀️ <strong>July 2026 Update:</strong> The humidity has dropped, making the Burdell Forest trails and wetlands loops perfect for morning walks. The 'Perfect Dry' weather means the paths are firm and the morning birdlife is at its peak.
+              ☀️ <strong>Dry Season Update:</strong> Through the dry season, humidity drops, making the Burdell Forest trails and wetlands loops perfect for morning walks. The 'Perfect Dry' weather means the paths are firm and the morning birdlife is at its peak.
             </div>
           </div>
         </section>
@@ -89,7 +89,7 @@ const NorthShoreTownsville = () => {
           <section className="space-y-4">
             <div className="flex items-center gap-2">
               <Badge variant="secondary" className="bg-amber-100 text-amber-800 border-none">
-                🌿 July Highlight
+                🌿 Dry Season Highlight
               </Badge>
             </div>
             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
@@ -192,11 +192,11 @@ const NorthShoreTownsville = () => {
 
             <LocalInsightCard title="Seasonal Tip" variant="tip">
               <p>
-                The Wetlands Loop remains at its absolute best through July. The early dry season lushness has mellowed into crisp, clear mornings, and the brolgas and jabirus are incredibly active at sunrise. Cool dry-season mornings are perfect for the 3.5km loop before the UV index climbs.
+                The Wetlands Loop is at its absolute best through the dry season. The early-season lushness mellows into crisp, clear mornings, and the brolgas and jabirus are incredibly active at sunrise. Cool dry-season mornings are perfect for the 3.5km loop before the UV index climbs.
               </p>
             </LocalInsightCard>
 
-            <LocalInsightCard title="Dog Owners (July Update)" variant="insight">
+            <LocalInsightCard title="Dog Owners (Dry Season Tip)" variant="insight">
               <p>
                 Those cooling dry season breezes make the North Shore trails ideal for larger breeds. Just a reminder to keep dogs on-lead through the Bohle River Wetlands to protect the nesting brolgas.
               </p>
@@ -236,7 +236,7 @@ const NorthShoreTownsville = () => {
               </p>
             </LocalInsightCard>
 
-            <LocalInsightCard title="July Tip" variant="tip">
+            <LocalInsightCard title="Winter Swim Tip" variant="tip">
               <p>
                 With the dry season in full swing, the Northern Beaches Leisure Centre is the local's go-to for a worry-free swim on a sunny winter afternoon — the slides are a hit with the kids while the lap pool stays quiet on weekday mornings.
               </p>
