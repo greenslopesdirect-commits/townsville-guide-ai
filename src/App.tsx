@@ -58,6 +58,7 @@ import SaundersBeach from "@/pages/beaches/SaundersBeach";
 import AccessibleTownsville from "@/pages/AccessibleTownsville";
 import UsefulContacts from "@/pages/UsefulContacts";
 import Suburbs from "@/pages/Suburbs";
+import Directory from "@/pages/Directory";
 
 
 const queryClient = new QueryClient();
@@ -115,6 +116,7 @@ const App = () => (
             <Route path="nature" element={<Nature />} />
             <Route path="moving-to-townsville" element={<MovingToTownsville />} />
             <Route path="suburbs" element={<Suburbs />} />
+            <Route path="directory" element={<Directory />} />
             <Route path="accessible-townsville" element={<AccessibleTownsville />} />
             <Route path="useful-contacts" element={<UsefulContacts />} />
             

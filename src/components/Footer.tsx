@@ -56,6 +56,7 @@ const Footer = () => {
                 Planning & Lifestyle
               </h4>
               <ul className="space-y-2 text-sm">
+                <li><Link to="/directory" className="text-muted-foreground hover:text-primary transition-colors">Townsville Business Directory</Link></li>
                 <li><Link to="/townsville-with-kids" className="text-muted-foreground hover:text-primary transition-colors">Townsville with Kids</Link></li>
                 <li><Link to="/guides/free-things" className="text-muted-foreground hover:text-primary transition-colors">Free Things to Do</Link></li>
                 <li><Link to="/moving-to-townsville" className="text-muted-foreground hover:text-primary transition-colors">Moving to Townsville Guide</Link></li>

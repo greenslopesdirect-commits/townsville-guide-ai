@@ -37,6 +37,7 @@ const HeaderImproved = () => {
     { to: "/shopping", label: "Shopping" },
     { to: "/accommodation", label: "Accommodation" },
     { to: "/suburbs", label: "Suburbs" },
+    { to: "/directory", label: "Directory" },
     { to: "/events", label: "Events" },
     {
       to: "/local-tips",
