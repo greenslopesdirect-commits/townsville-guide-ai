@@ -9,8 +9,61 @@ import { triggerAiGuide, AI_PRESETS } from "@/utils/aiGuide";
 import StingerSeasonAlert from "@/components/StingerSeasonAlert";
 import HeatSafetyAlert from "@/components/HeatSafetyAlert";
 import LocalInsightCard from "@/components/LocalInsightCard";
+import { useTownsvilleWeather, type TownsvilleWeatherState } from "@/hooks/use-townsville-weather";
+
+// Standard UV index scale (WHO)
+function uvLabel(uv: number): string {
+  if (uv >= 11) return "Extreme";
+  if (uv >= 8) return "Very High";
+  if (uv >= 6) return "High";
+  if (uv >= 3) return "Moderate";
+  return "Low";
+}
+
+// "Best Time to Visit" card — live weather bullet, with evergreen fallback
+function bestTimeWeatherTip(weather: TownsvilleWeatherState): string {
+  if (weather.status === "success") {
+    const uvPart =
+      weather.uvIndex !== null
+        ? ` UV index is currently ${uvLabel(weather.uvIndex)} (${Math.round(weather.uvIndex)})`
+        : " the UV index typically climbs High–Very High by midday";
+    return `Right now in Townsville: ${weather.temperatureC}°C and ${weather.condition}.${uvPart} — sun protection is essential even on cooler mornings.`;
+  }
+  if (weather.status === "loading") {
+    return "Checking today's live Townsville weather…";
+  }
+  return "Dry season mornings are typically cool, warming to sunny 24–28°C afternoons with low humidity. The UV index still climbs to High–Very High by midday, so sun protection is essential.";
+}
+
+// "Staying Safe in the Heat" card — live weather bullet, with evergreen fallback
+function heatWeatherTip(weather: TownsvilleWeatherState): string {
+  if (weather.status === "success") {
+    const uvPart =
+      weather.uvIndex !== null
+        ? `UV index ${uvLabel(weather.uvIndex)} (${Math.round(weather.uvIndex)})`
+        : "UV climbing fast";
+    return `Right now: ${weather.temperatureC}°C, ${uvPart} — check before you head out, even on cooler-feeling mornings.`;
+  }
+  if (weather.status === "loading") {
+    return "Checking today's live temperature and UV index…";
+  }
+  return "UV typically peaks High–Very High by midday, even on cooler dry-season mornings — check the current index before you head out.";
+}
+
+// "Dog-Friendly Tips" card — live weather bullet, with evergreen fallback
+function dogWeatherTip(weather: TownsvilleWeatherState): string {
+  const conditionsPart =
+    weather.status === "success"
+      ? `It's currently ${weather.temperatureC}°C and ${weather.condition} — ideal for the sand flats.`
+      : weather.status === "loading"
+      ? "Checking today's conditions…"
+      : "Through the dry season, low humidity and cool mornings make it prime time for the sand flats.";
+  return `🐾 Schnauzer Approved Tip: ${conditionsPart} Aim for a 7:30 AM run to enjoy the best of the morning breeze. Safety Reminder: The 2025/26 stinger season has ended and council removed the beach enclosures on 27 May 2026 after weeks of clear net drags — deep-water swimming is safe again, but always supervise your pups around deep channels.`;
+}
 
 const LocalTips = () => {
+  const weather = useTownsvilleWeather();
+
   const tips = [
     {
       title: "Best Time to Visit",
@@ -20,15 +73,16 @@ const LocalTips = () => {
         "Dry season: Best for hiking, beaches, outdoor events",
         "Wet season: Fewer crowds, cheaper accommodation",
         "Shoulder months (April–May, Sept–Oct) are ideal",
-        "Check Today's Weather Forecast: July 13, 2026 Update — Cool 17°C mornings warming to sunny 25°C days with very low humidity. Peak dry-season conditions, but the UV index still climbs to High–Very High (8–9) by midday, so sun protection is essential."
+        bestTimeWeatherTip(weather)
       ],
       aiPrompt: "What's the best time of year to visit Townsville based on weather and activities?"
     },
     {
       title: "Staying Safe in the Heat",
       icon: <ThermometerSun className="w-6 h-6" />,
-      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. July 13, 2026 Alert: Mornings feel genuinely cool right now, but the midday UV still reaches High–Very High. If you're hiking the Goat Track, finish before 9:30 AM and carry water even on cooler days.",
+      description: "Townsville's tropical sun is intense year-round. The UV index is extreme in summer, so sun protection is essential for any outdoor activity. If you're hiking the Goat Track, finish before 9:30 AM and carry water even on cooler dry-season mornings.",
       tips: [
+        heatWeatherTip(weather),
         "Walk Castle Hill at sunrise or sunset only",
         "Carry at least 1L water per person",
         "Wear SPF 50+, hat, and sunglasses",
@@ -69,7 +123,7 @@ const LocalTips = () => {
         "Pavement burns paws — touch it first",
         "Rowes Bay and Pallarenda are best for dogs",
         "Many cafés provide water bowls",
-        "🐾 Schnauzer Approved Tip: July 13, 2026 Update — With low humidity and cool mornings, it's peak season for the Pallarenda sand flats. Aim for a 7:30 AM run to enjoy the best of the morning breeze. Safety Reminder: The 2025/26 stinger season has ended and council removed the beach enclosures on 27 May 2026 after weeks of clear net drags — deep-water swimming is safe again, but always supervise your pups around deep channels."
+        dogWeatherTip(weather)
       ],
       aiPrompt: "Where are the best dog-friendly spots in Townsville?"
     },
@@ -138,7 +192,7 @@ const LocalTips = () => {
     <>
       <SEOHead
         title="Local Townsville Tips 2026 | Safety, Weather & Insider Advice"
-        description="Updated July 13, 2026: Essential local-verified tips for Townsville. Includes stinger safety, coconut hazards, current dry-season weather advice, and infrastructure updates."
+        description="Essential local-verified tips for Townsville. Includes stinger safety, coconut hazards, dry-season weather advice, and infrastructure updates."
         canonical="https://www.townsvilleguide.com.au/local-tips"
       />
       <Helmet>
@@ -219,7 +273,23 @@ const LocalTips = () => {
             <div className="space-y-4 mb-8">
               <div className="p-4 rounded-lg border bg-card">
                 <p className="text-sm text-muted-foreground">
-                  ☀️ Current Status (July 13, 2026): The 'Perfect Dry' is in full swing. Cool 17°C mornings, sunny 25°C days and very low humidity — prime time for outdoor exploration. The 2025/26 stinger season has ended and Townsville City Council removed the beach enclosures on 27 May 2026 after weeks of clear net drags; nets return in November.
+                  {weather.status === "success" && (
+                    <>
+                      ☀️ <strong className="text-foreground">Current Conditions:</strong> {weather.temperatureC}°C and {weather.condition} in Townsville
+                      {weather.uvIndex !== null ? `, UV index ${uvLabel(weather.uvIndex)} (${Math.round(weather.uvIndex)})` : ""}
+                      {" "}— prime time for outdoor exploration. The 2025/26 stinger season has ended and Townsville City Council removed the beach enclosures on 27 May 2026 after weeks of clear net drags; nets return in November.
+                    </>
+                  )}
+                  {weather.status === "loading" && (
+                    <>
+                      ☀️ <strong className="text-foreground">Current Conditions:</strong> Checking today's live Townsville weather… The 2025/26 stinger season has ended and Townsville City Council removed the beach enclosures on 27 May 2026 after weeks of clear net drags; nets return in November.
+                    </>
+                  )}
+                  {weather.status === "error" && (
+                    <>
+                      ☀️ <strong className="text-foreground">Dry Season Status:</strong> Townsville is in the 'Perfect Dry' — cool mornings, sunny days and low humidity are typical through the season, prime time for outdoor exploration. The 2025/26 stinger season has ended and Townsville City Council removed the beach enclosures on 27 May 2026 after weeks of clear net drags; nets return in November.
+                    </>
+                  )}
                 </p>
               </div>
               <StingerSeasonAlert />
