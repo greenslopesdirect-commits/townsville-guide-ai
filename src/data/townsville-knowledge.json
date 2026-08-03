@@ -72,10 +72,82 @@
       "notes": "Local arts, crafts, and fresh produce — cool dry-season mornings are prime market weather."
     },
     {
+      "name": "Bingo Loco Townsville",
+      "date": "Saturday, August 15, 2026",
+      "location": "FLNDRS Bar & Nightclub",
+      "notes": "Forget church-hall bingo — this is bingo with a DJ, dancers, confetti cannons and prizes that have nothing to do with numbers. One of Townsville's rowdiest nights out."
+    },
+    {
+      "name": "Urzila Carlson: Fatty on a Yacht",
+      "date": "Friday, August 21, 2026",
+      "location": "Townsville Entertainment & Convention Centre",
+      "notes": "The Kiwi-South African stand-up favourite brings her new show to the Convention Centre for one night only — sharp, self-deprecating comedy from one of the country's most-loved comedians."
+    },
+    {
+      "name": "Festival of Stories (Children's Book Week)",
+      "date": "22–29 August 2026 (headline weekend Fri 28 – Sat 29)",
+      "location": "Citylibraries Aitkenvale and branches across Townsville",
+      "notes": "A week of author visits, storytelling sessions and dress-up days across Townsville's libraries, building to a headline weekend of family activities at Citylibraries Aitkenvale."
+    },
+    {
+      "name": "SeaLink Magnetic Island Race Week",
+      "date": "27 August – 2 September 2026",
+      "location": "Magnetic Island",
+      "notes": "A week of yachts racing across Cleveland Bay and lively community events around Magnetic Island — one of the dry season's most popular regattas."
+    },
+    {
       "name": "Cowboys vs Wests Tigers (Next Home Game)",
       "date": "Saturday, August 29, 2026",
       "location": "Queensland Country Bank Stadium",
       "notes": "NRLW Knights also playing that day — expect an earlier, bigger crowd. Book early and plan for the free Park & Ride from Lou Litster Park."
+    },
+    {
+      "name": "Cape Pallarenda Trail Run",
+      "date": "Sunday, August 30, 2026",
+      "location": "Cape Pallarenda",
+      "notes": "Townsville's toughest trail race, taking runners through the coastal bushland and headland tracks of Cape Pallarenda. Choose from 5km, 12km, 21km or a full 42km ultra."
+    },
+    {
+      "name": "WNBL Townsville Tip Off",
+      "date": "17–20 September 2026",
+      "location": "Townsville",
+      "notes": "The WNBL season kicks off with a showcase of the league's biggest teams and talent right here in Townsville — a rare chance to see elite women's basketball up close."
+    },
+    {
+      "name": "Queensland Football Series: Australia vs Brazil",
+      "date": "Friday, September 25, 2026",
+      "location": "Queensland Country Bank Stadium",
+      "notes": "The Socceroos take on Brazil in a rare international friendly — a notable stop on the Queensland Football Series calendar."
+    },
+    {
+      "name": "Björn Again",
+      "date": "Saturday, October 10, 2026",
+      "location": "Townsville Entertainment & Convention Centre",
+      "notes": "The world's favourite ABBA tribute show brings the platform boots and glitter back to the Convention Centre for a full night of sing-along classics."
+    },
+    {
+      "name": "Rugby League World Cup 2026: Australia vs Cook Islands",
+      "date": "Saturday, October 31, 2026",
+      "location": "Queensland Country Bank Stadium",
+      "notes": "Townsville hosts a Rugby League World Cup pool match as the Kangaroos take on the Cook Islands — a huge night for the city on the international stage."
+    },
+    {
+      "name": "Foo Fighters",
+      "date": "Saturday, November 7, 2026",
+      "location": "Queensland Country Bank Stadium",
+      "notes": "Foo Fighters play Queensland Country Bank Stadium for a single huge night — a major stadium show landing right here in North Queensland."
+    },
+    {
+      "name": "PBR Monster Energy Grand Final",
+      "date": "13–14 November 2026",
+      "location": "Townsville Entertainment and Convention Centre",
+      "notes": "Two nights of the country's best bull riders chasing the season title — high-adrenaline arena action at the Convention Centre."
+    },
+    {
+      "name": "Guns N' Roses (Airbourne Tour)",
+      "date": "Wednesday, December 2, 2026",
+      "location": "Queensland Country Bank Stadium",
+      "notes": "Guns N' Roses close out the stadium's big 2026, with Airbourne also on the bill — a mid-week rock spectacular to wrap the year."
     }
   ],
 

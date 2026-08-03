@@ -16,34 +16,6 @@ const TOWNSVILLE_ADDRESS = {
 
 const eventsGraph = [
     {
-      "@type": "SportsEvent",
-      name: "North Queensland Cowboys vs Wests Tigers",
-      startDate: "2026-08-29",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "NRL home game — North Queensland Cowboys host the Wests Tigers at Queensland Country Bank Stadium, Saturday August 29, 2026, 7:35 PM. NRLW Knights also playing that day.",
-      location: {
-        "@type": "Place",
-        name: "Queensland Country Bank Stadium",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Cotters Market",
-      startDate: "2026-08-09",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Townsville's premier Sunday market on Flinders Street from 8:00 AM to 1:00 PM — fresh coffee, local North Queensland crafts, food stalls, and live street music.",
-      location: {
-        "@type": "Place",
-        name: "Flinders Street, Townsville CBD",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Flinders Street" },
-      },
-    },
-    {
       "@type": "Event",
       name: "The Great Island Trek",
       startDate: "2026-08-08",
@@ -60,6 +32,20 @@ const eventsGraph = [
           addressRegion: "QLD",
           addressCountry: "AU",
         },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Cotters Market",
+      startDate: "2026-08-09",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Townsville's premier Sunday market on Flinders Street from 8:00 AM to 1:00 PM — fresh coffee, local North Queensland crafts, food stalls, and live street music.",
+      location: {
+        "@type": "Place",
+        name: "Flinders Street, Townsville CBD",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Flinders Street" },
       },
     },
     {
@@ -84,12 +70,56 @@ const eventsGraph = [
     },
     {
       "@type": "Event",
-      name: "Magnetic Island Race Week",
-      startDate: "2026-08",
+      name: "Bingo Loco Townsville",
+      startDate: "2026-08-15",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       description:
-        "The ultimate social regatta with yachts racing across Cleveland Bay and lively community events around Magnetic Island.",
+        "Forget church-hall bingo — this is bingo with a DJ, dancers, confetti cannons and prizes that have nothing to do with numbers. FLNDRS gets loud for one of Townsville's rowdiest nights out.",
+      location: {
+        "@type": "Place",
+        name: "FLNDRS Bar & Nightclub",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "FLNDRS Bar & Nightclub" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Urzila Carlson: Fatty on a Yacht",
+      startDate: "2026-08-21",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "The Kiwi-South African stand-up favourite brings her new show to the Convention Centre for one night only — sharp, self-deprecating comedy from one of the country's most-loved comedians.",
+      location: {
+        "@type": "Place",
+        name: "Townsville Entertainment & Convention Centre",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Townsville Entertainment & Convention Centre" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Festival of Stories (Children's Book Week)",
+      startDate: "2026-08-22",
+      endDate: "2026-08-29",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "A week of author visits, storytelling sessions and dress-up days across Townsville's libraries celebrating Children's Book Week, building to a headline weekend of family activities at Citylibraries Aitkenvale on Friday 28 and Saturday 29 August.",
+      location: {
+        "@type": "Place",
+        name: "Citylibraries Aitkenvale (and branches across Townsville)",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Citylibraries Aitkenvale" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "SeaLink Magnetic Island Race Week",
+      startDate: "2026-08-27",
+      endDate: "2026-09-02",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "A week of yachts racing across Cleveland Bay and lively community events around Magnetic Island — one of the dry season's most popular regattas.",
       location: {
         "@type": "Place",
         name: "Magnetic Island",
@@ -100,6 +130,65 @@ const eventsGraph = [
           addressCountry: "AU",
         },
       },
+    },
+    {
+      "@type": "SportsEvent",
+      name: "North Queensland Cowboys vs Wests Tigers",
+      startDate: "2026-08-29",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "NRL home game — North Queensland Cowboys host the Wests Tigers at Queensland Country Bank Stadium, Saturday August 29, 2026, 7:35 PM. NRLW Knights also playing that day.",
+      location: {
+        "@type": "Place",
+        name: "Queensland Country Bank Stadium",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Cape Pallarenda Trail Run",
+      startDate: "2026-08-30",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Townsville's toughest trail race, taking runners through the coastal bushland and headland tracks of Cape Pallarenda. Choose from 5km, 12km, 21km or a full 42km ultra — most locals stick to the shorter distances and just enjoy the views.",
+      location: {
+        "@type": "Place",
+        name: "Cape Pallarenda",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Pallarenda" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "WNBL Townsville Tip Off",
+      startDate: "2026-09-17",
+      endDate: "2026-09-20",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "The WNBL season kicks off with a showcase of the league's biggest teams and talent right here in Townsville — a rare chance to see elite women's basketball up close.",
+      location: {
+        "@type": "Place",
+        name: "Townsville",
+        address: TOWNSVILLE_ADDRESS,
+      },
+    },
+    {
+      "@type": "SportsEvent",
+      name: "Queensland Football Series: Australia vs Brazil",
+      startDate: "2026-09-25",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "The Socceroos take on Brazil in a rare international friendly at Queensland Country Bank Stadium — a notable stop on the Queensland Football Series calendar.",
+      location: {
+        "@type": "Place",
+        name: "Queensland Country Bank Stadium",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
+      },
+      homeTeam: { "@type": "SportsTeam", name: "Australia" },
+      awayTeam: { "@type": "SportsTeam", name: "Brazil" },
     },
     {
       "@type": "Event",
@@ -114,6 +203,79 @@ const eventsGraph = [
         "@type": "Place",
         name: "Strand Park & venues across Townsville",
         address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Strand Park" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Björn Again",
+      startDate: "2026-10-10",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "The world's favourite ABBA tribute show brings the platform boots and glitter back to the Convention Centre for a full night of sing-along classics.",
+      location: {
+        "@type": "Place",
+        name: "Townsville Entertainment & Convention Centre",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Townsville Entertainment & Convention Centre" },
+      },
+    },
+    {
+      "@type": "SportsEvent",
+      name: "Rugby League World Cup 2026: Australia vs Cook Islands",
+      startDate: "2026-10-31",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Townsville hosts a Rugby League World Cup pool match as the Kangaroos take on the Cook Islands at Queensland Country Bank Stadium — a huge night for the city on the international stage.",
+      location: {
+        "@type": "Place",
+        name: "Queensland Country Bank Stadium",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
+      },
+      homeTeam: { "@type": "SportsTeam", name: "Australia" },
+      awayTeam: { "@type": "SportsTeam", name: "Cook Islands" },
+    },
+    {
+      "@type": "Event",
+      name: "Foo Fighters",
+      startDate: "2026-11-07",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Foo Fighters play Queensland Country Bank Stadium for a single huge night — a major stadium show landing right here in North Queensland.",
+      location: {
+        "@type": "Place",
+        name: "Queensland Country Bank Stadium",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "PBR Monster Energy Grand Final",
+      startDate: "2026-11-13",
+      endDate: "2026-11-14",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Two nights of the country's best bull riders chasing the season title at the PBR Grand Final — high-adrenaline arena action at the Convention Centre.",
+      location: {
+        "@type": "Place",
+        name: "Townsville Entertainment and Convention Centre",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Townsville Entertainment and Convention Centre" },
+      },
+    },
+    {
+      "@type": "Event",
+      name: "Guns N' Roses (Airbourne Tour)",
+      startDate: "2026-12-02",
+      eventStatus: "https://schema.org/EventScheduled",
+      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+      description:
+        "Guns N' Roses close out the stadium's big 2026, with Airbourne also on the bill — a mid-week rock spectacular to wrap the year at Queensland Country Bank Stadium.",
+      location: {
+        "@type": "Place",
+        name: "Queensland Country Bank Stadium",
+        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
       },
     },
     {
@@ -493,19 +655,74 @@ const Events = () => {
                 body: "Three nights of bull riding, barrel racing, and country entertainment under lights at Hervey Range — one of the dry season's biggest community drawcards."
               },
               {
+                date: "Saturday 15 August 2026",
+                title: "Bingo Loco Townsville (FLNDRS)",
+                body: "Forget church-hall bingo — this is bingo with a DJ, dancers, confetti cannons and prizes that have nothing to do with numbers. One of Townsville's rowdiest nights out."
+              },
+              {
+                date: "Friday 21 August 2026",
+                title: "Urzila Carlson: Fatty on a Yacht",
+                body: "The Kiwi-South African stand-up favourite brings her new show to the Convention Centre for one night only — sharp, self-deprecating comedy from one of the country's most-loved comedians."
+              },
+              {
+                date: "22 – 29 August 2026",
+                title: "Festival of Stories (Children's Book Week)",
+                body: "A week of author visits, storytelling sessions and dress-up days across Townsville's libraries, building to a headline weekend of family activities at Citylibraries Aitkenvale on Friday 28 and Saturday 29 August."
+              },
+              {
+                date: "27 August – 2 September 2026",
+                title: "SeaLink Magnetic Island Race Week",
+                body: "A week of yachts racing across Cleveland Bay and lively community events around Magnetic Island — one of the dry season's most popular regattas."
+              },
+              {
                 date: "Saturday 29 August 2026",
                 title: "NRL: Cowboys vs Wests Tigers (Next Home Game)",
                 body: "Cowboys host the Wests Tigers at Queensland Country Bank Stadium (kick-off 7:35 PM), with NRLW Knights also playing that day. Use the free Park & Ride at Lou Litster Park to skip CBD traffic."
               },
               {
-                date: "Late August 2026",
-                title: "Magnetic Island Race Week",
-                body: "The ultimate social regatta with yachts racing across Cleveland Bay and lively community events around Maggie Island."
+                date: "Sunday 30 August 2026",
+                title: "Cape Pallarenda Trail Run",
+                body: "Townsville's toughest trail race, taking runners through the coastal bushland and headland tracks of Cape Pallarenda. Choose from 5km, 12km, 21km or a full 42km ultra — most locals stick to the shorter distances and just enjoy the views."
+              },
+              {
+                date: "17 – 20 September 2026",
+                title: "WNBL Townsville Tip Off",
+                body: "The WNBL season kicks off with a showcase of the league's biggest teams and talent right here in Townsville — a rare chance to see elite women's basketball up close."
+              },
+              {
+                date: "Friday 25 September 2026",
+                title: "Queensland Football Series: Australia vs Brazil",
+                body: "The Socceroos take on Brazil in a rare international friendly at Queensland Country Bank Stadium — a notable stop on the Queensland Football Series calendar."
               },
               {
                 date: "25 September – 11 October 2026",
                 title: "NAFA Festival (North Australian Festival of Arts)",
                 body: "Townsville's flagship arts festival is locked in for spring 2026, bringing comedy, circus, theatre, and light installations to Strand Park."
+              },
+              {
+                date: "Saturday 10 October 2026",
+                title: "Björn Again",
+                body: "The world's favourite ABBA tribute show brings the platform boots and glitter back to the Convention Centre for a full night of sing-along classics."
+              },
+              {
+                date: "Saturday 31 October 2026",
+                title: "Rugby League World Cup: Australia vs Cook Islands",
+                body: "Townsville hosts a Rugby League World Cup pool match as the Kangaroos take on the Cook Islands at Queensland Country Bank Stadium — a huge night for the city on the international stage."
+              },
+              {
+                date: "Saturday 7 November 2026",
+                title: "Foo Fighters",
+                body: "Foo Fighters play Queensland Country Bank Stadium for a single huge night — a major stadium show landing right here in North Queensland."
+              },
+              {
+                date: "13 – 14 November 2026",
+                title: "PBR Monster Energy Grand Final",
+                body: "Two nights of the country's best bull riders chasing the season title at the PBR Grand Final — high-adrenaline arena action at the Convention Centre."
+              },
+              {
+                date: "Wednesday 2 December 2026",
+                title: "Guns N' Roses (Airbourne Tour)",
+                body: "Guns N' Roses close out the stadium's big 2026, with Airbourne also on the bill — a mid-week rock spectacular to wrap the year at Queensland Country Bank Stadium."
               },
               {
                 date: "December 2026",
