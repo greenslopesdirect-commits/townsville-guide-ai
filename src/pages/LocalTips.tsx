@@ -249,8 +249,8 @@ const LocalTips = () => {
               <div className="flex items-start gap-3 p-4 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/50">
                 <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-medium text-sm text-foreground">🏟️ July 25 Footy Alert — Queensland Derby, Saturday Night</p>
-                  <p className="text-xs text-muted-foreground mt-1">For the <strong>Cowboys vs Brisbane Broncos</strong> (7:35 PM kick-off), expect the CBD and Lowths Bridge to get busy from around 5:00 PM, with heavier congestion from 6:00 PM as derby crowds head in. Local Tip: Park at Lou Litster Park and grab the free shuttle, or arrive by 5:30 PM if you want a pre-game meal on Palmer Street.</p>
+                  <p className="font-medium text-sm text-foreground">🏟️ Footy Alert — Cowboys Away This Week</p>
+                  <p className="text-xs text-muted-foreground mt-1">The Cowboys are on the road this week (<strong>Gold Coast Titans</strong>, Thursday August 6), so no CBD or Lowths Bridge game-day congestion in Townsville. The next home game is <strong>Cowboys vs Wests Tigers</strong> on Saturday, August 29 (7:35 PM kick-off) — Local Tip: Park at Lou Litster Park and grab the free shuttle, or arrive early for a pre-game meal on Palmer Street.</p>
                 </div>
               </div>
             </section>

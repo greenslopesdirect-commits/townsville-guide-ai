@@ -439,7 +439,7 @@ const FoodDrink = () => {
                 </div>
                  <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
                     <p className="text-sm text-foreground">
-                      🏉 <strong>Footy Weekend (July 25):</strong> The Queensland Derby is here — Cowboys vs Brisbane Broncos at Queensland Country Bank Stadium on Saturday, July 25. Palmer Street will be the heart of the pre-game lunch rush. We strongly recommend booking your table at JAM, A Touch of Salt, or Copper Bar & Grill by mid-week to guarantee a spot.
+                      🏉 <strong>Cowboys Away This Week:</strong> The Cowboys are on the road (Gold Coast Titans, Thursday August 6), so it's a quieter week around Palmer Street. The next home game is Cowboys vs Wests Tigers at Queensland Country Bank Stadium on Saturday, August 29 — we strongly recommend booking your table at JAM, A Touch of Salt, or Copper Bar & Grill by mid-week to guarantee a spot for that one.
                     </p>
                   </div>
               </div>

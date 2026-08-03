@@ -4,8 +4,8 @@
     "region": "North Queensland, Australia",
     "timezone": "AEST (UTC+10)",
     "description": "Local verified data for Townsville Guide – Townsville",
-    "last_updated": "2026-06-08",
-    "current_context": "June 2026. Standard trading hours apply across attractions and retail — no public holidays or school holiday blockages in effect."
+    "last_updated": "2026-08-03",
+    "current_context": "Early August 2026. Standard trading hours apply across attractions and retail — no public holidays or school holiday blockages in effect."
   },
 
   "current_status": {
@@ -23,33 +23,39 @@
   "cowboys": {
     "season": "2026 NRL Season",
     "home_record": "Strong home form continuing through the dry season",
-    "next_home_game": {
-      "round": 17,
-      "opponent": "Penrith Panthers",
-      "date": "Saturday, June 27, 2026",
-      "venue": "Queensland Country Bank Stadium",
-      "gates_open": "3:30 PM",
-      "kickoff": "5:30 PM",
-      "stampede_departs": "Approximately 4:45 PM from Cowboys Leagues Club across Lowths Bridge",
-      "parking_tip": "Saturday twilight game under dry-season winter skies. Use the free Park & Ride shuttle from Lou Litster Park (runs from 2 hours before kick-off) to bypass CBD traffic entirely.",
-      "tickets": "https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825"
+    "this_week_away_game": {
+      "status": "AWAY",
+      "opponent": "Gold Coast Titans",
+      "date": "Thursday, August 6, 2026",
+      "venue": "Cbus Super Stadium, Robina",
+      "kickoff": "7:50 PM",
+      "notes": "No home game in Townsville this week — no Stampede, no stadium-day parking or traffic changes."
     },
-    "following_home_game": {
-      "round": 21,
-      "opponent": "Brisbane Broncos",
-      "date": "Saturday, July 25, 2026",
+    "next_home_game": {
+      "opponent": "Wests Tigers",
+      "date": "Saturday, August 29, 2026",
       "venue": "Queensland Country Bank Stadium",
-      "notes": "Queensland derby — expect a sellout. Book early and plan for the free Park & Ride from Lou Litster Park."
+      "gates_open": "4:35 PM",
+      "kickoff": "7:35 PM",
+      "stampede_departs": "Approximately 6:50 PM from Cowboys Leagues Club across Lowths Bridge",
+      "parking_tip": "NRLW Knights also playing that day — expect an earlier, bigger crowd. Use the free Park & Ride shuttle from Lou Litster Park (runs from 2 hours before kick-off) to bypass CBD traffic entirely.",
+      "tickets": "https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825"
     }
   },
 
   "upcoming_events": [
     {
-      "name": "Cowboys vs Penrith Panthers (Round 17)",
-      "date": "Saturday, June 27, 2026",
-      "time": "Gates 3:30 PM, kick-off 5:30 PM",
-      "location": "Queensland Country Bank Stadium",
-      "notes": "Massive Saturday twilight clash. Use the free Park & Ride shuttle from Lou Litster Park."
+      "name": "Gold Coast Titans vs Cowboys (Away)",
+      "date": "Thursday, August 6, 2026",
+      "time": "Kick-off 7:50 PM",
+      "location": "Cbus Super Stadium, Robina",
+      "notes": "Cowboys away game — no impact on Townsville CBD traffic or parking this week."
+    },
+    {
+      "name": "The Great Island Trek",
+      "date": "Saturday, August 8, 2026",
+      "location": "Magnetic Island",
+      "notes": "Trail running event with multiple distances across tropical bushland and coastal terrain — suited to experienced trekkers and casual participants alike."
     },
     {
       "name": "The Strand Night Markets",
@@ -66,10 +72,10 @@
       "notes": "Local arts, crafts, and fresh produce — cool dry-season mornings are prime market weather."
     },
     {
-      "name": "Cowboys vs Brisbane Broncos (Round 21)",
-      "date": "Saturday, July 25, 2026",
+      "name": "Cowboys vs Wests Tigers (Next Home Game)",
+      "date": "Saturday, August 29, 2026",
       "location": "Queensland Country Bank Stadium",
-      "notes": "Queensland derby — expect a sellout."
+      "notes": "NRLW Knights also playing that day — expect an earlier, bigger crowd. Book early and plan for the free Park & Ride from Lou Litster Park."
     }
   ],
 
@@ -87,8 +93,8 @@
     },
     {
       "title": "Game Day Traffic — Lowths Bridge",
-      "status": "Saturday June 27",
-      "details": "Expect heavy pedestrian traffic around Lowths Bridge and the Stadium from 3:00 PM for the Cowboys vs Penrith home game."
+      "status": "Saturday August 29",
+      "details": "Expect heavy pedestrian traffic around Lowths Bridge and the Stadium from early afternoon for the Cowboys vs Wests Tigers home game (NRLW Knights also playing that day). No game-day traffic impact this week — the Cowboys are away at the Gold Coast Titans on Thursday August 6."
     }
   ],
 

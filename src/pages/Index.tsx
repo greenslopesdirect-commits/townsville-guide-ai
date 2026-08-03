@@ -149,7 +149,7 @@ const Index = () => {
                   Current Status: The 'Perfect Dry' is here!
                 </h2>
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  Current Status: The 'Perfect Dry' is here! Late July is delivering the postcard version of Townsville — humidity has bottomed out, mornings are cool and crisp, and the 5:30 PM sunsets from the top of Castle Hill are at their absolute peak with clear horizons and golden light. Queensland state schools are back for Term 3, the CBD has settled back into its normal rhythm after this month's Supercars street circuit, and the next big drawcard is the Cowboys' Round 22 clash vs the Sydney Roosters on Thursday, July 30 (7:50 PM kick-off).
+                  Current Status: The 'Perfect Dry' is here! Early August is delivering the postcard version of Townsville — humidity has bottomed out, mornings are cool and crisp, and the 5:30 PM sunsets from the top of Castle Hill are at their absolute peak with clear horizons and golden light. The Cowboys are away this week (Gold Coast Titans, Thursday August 6), with the next home blockbuster vs the Wests Tigers on Saturday, August 29, and The Great Island Trek brings trail runners to Magnetic Island on Saturday, August 8.
                 </p>
                 <p className="text-sm sm:text-base text-amber-800 bg-amber-50 border border-amber-100 rounded-lg p-3">
                   🌴 We run on <strong>"Tropical Time"</strong> here. Slow down,

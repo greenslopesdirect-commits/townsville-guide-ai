@@ -143,7 +143,7 @@ const Advertise = () => {
                 Partner With Townsville's Independent Local Guide
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Townsville Guide is in its mid-2026 growth phase — a personal, local-first guide to Townsville that's picking up serious momentum through the July dry season, with the Queensland Derby (Cowboys vs Broncos, July 25) coming up as the next big game-day weekend. If you run something worth telling people about, there's a spot for you here.
+                Townsville Guide is in its mid-2026 growth phase — a personal, local-first guide to Townsville that's picking up serious momentum through the August dry season, with Cowboys vs Wests Tigers (Saturday, August 29) coming up as the next big home game-day weekend. If you run something worth telling people about, there's a spot for you here.
               </p>
               <div className="flex items-center justify-center gap-2 mt-4 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />

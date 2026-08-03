@@ -120,9 +120,9 @@ const TheStrand = () => {
         {/* Footy Alert */}
         <Alert className="bg-blue-50 border-blue-200">
           <AlertTriangle className="h-4 w-4 text-blue-600" />
-          <AlertTitle className="text-blue-900 font-semibold">🏟️ Footy Alert: Queensland Derby — Cowboys vs. Brisbane Broncos (Saturday, July 25)</AlertTitle>
+          <AlertTitle className="text-blue-900 font-semibold">🏟️ Footy Alert: Cowboys Away This Week (Gold Coast Titans, Thursday August 6)</AlertTitle>
           <AlertDescription className="text-blue-800 mt-1">
-            With the Queensland Derby kicking off at 5:30 PM this Saturday, Strand bars like The Seaview and Longboard will be buzzing for pre-game drinks. If you are heading down, expect parking along the Strand to fill up early in the afternoon as fans catch the pre-game beach vibe before walking over to the stadium.
+            The Cowboys are on the road this week, so no game-day crowds or parking squeeze along the Strand. The next home game is Saturday, August 29 vs the Wests Tigers — expect Strand bars like The Seaview and Longboard to get busy for pre-game drinks that weekend.
           </AlertDescription>
         </Alert>
 

@@ -167,9 +167,9 @@ const Accommodation = () => {
 
             {/* Seasonal Alert */}
             <div className="bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400 dark:border-amber-600 rounded-xl p-6 mb-12">
-              <p className="text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 font-semibold mb-2">Updated: July 13, 2026</p>
+              <p className="text-xs uppercase tracking-wider text-amber-700 dark:text-amber-400 font-semibold mb-2">Updated: August 3, 2026</p>
               <p className="text-amber-800 dark:text-amber-300 leading-relaxed">
-                ⚠️ <strong>July High-Demand Alert:</strong> The next big home-game weekend is the Queensland Derby — Cowboys vs. Broncos on Saturday, July 25, 2026. Accommodation near the CBD, South Townsville, and The Strand typically books out quickly around Cowboys home games, so if you're travelling for the match, reserve your room as early as you can.
+                ⚠️ <strong>August High-Demand Alert:</strong> The Cowboys are away this week (Gold Coast Titans, Thursday August 6), so it's a quieter week for game-day demand. The next big home-game weekend is Cowboys vs. Wests Tigers on Saturday, August 29, 2026 — with NRLW Knights also playing that day. Accommodation near the CBD, South Townsville, and The Strand typically books out quickly around Cowboys home games, so if you're travelling for the match, reserve your room as early as you can.
               </p>
             </div>
 
