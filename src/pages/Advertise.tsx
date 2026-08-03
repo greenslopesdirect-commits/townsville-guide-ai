@@ -3,6 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import type { ReactNode } from "react";
 import PartnerEnquiryForm from "@/components/PartnerEnquiryForm";
 import {
   Handshake,
@@ -53,7 +54,7 @@ const TIERS: {
   price: string;
   priceNote: string;
   tagline: string;
-  features: string[];
+  features: ReactNode[];
   ctaLabel: string;
   highlight: boolean;
 }[] = [
@@ -66,7 +67,12 @@ const TIERS: {
     features: [
       "One paragraph listing (no photos)",
       "Business or community event",
-      "Appears in the relevant guide page",
+      <>
+        Appears on our{" "}
+        <Link to="/directory" className="text-primary hover:underline">
+          Directory page
+        </Link>
+      </>,
       "Reviewed & approved by Duncan personally",
     ],
     ctaLabel: "Apply for a Community Listing",
@@ -187,6 +193,13 @@ const Advertise = () => {
                 <p className="text-muted-foreground max-w-xl mx-auto">
                   Pick the level that fits — start with a free listing, or step up when you want proper featured placement.
                 </p>
+                <p className="text-sm text-muted-foreground mt-2">
+                  See it in action: our{" "}
+                  <Link to="/directory" className="text-primary hover:underline font-medium">
+                    Directory
+                  </Link>{" "}
+                  already features 50 local businesses.
+                </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -214,8 +227,8 @@ const Advertise = () => {
                         {tier.tagline}
                       </p>
                       <ul className="space-y-2 mb-6 text-sm text-foreground flex-1">
-                        {tier.features.map((f) => (
-                          <li key={f} className="flex items-start gap-2">
+                        {tier.features.map((f, i) => (
+                          <li key={i} className="flex items-start gap-2">
                             <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                             <span className="text-muted-foreground">{f}</span>
                           </li>
@@ -276,6 +289,13 @@ const Advertise = () => {
                 </Card>
                 <p className="text-xs text-center text-muted-foreground mt-3">
                   Preview only — your live card appears on relevant guide pages.
+                </p>
+                <p className="text-xs text-center text-muted-foreground mt-2">
+                  Compare this to a free{" "}
+                  <Link to="/directory" className="text-primary hover:underline font-medium">
+                    Community Listing on our Directory
+                  </Link>
+                  .
                 </p>
               </div>
             </section>
