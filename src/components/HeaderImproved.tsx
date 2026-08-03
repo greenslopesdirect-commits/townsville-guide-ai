@@ -36,7 +36,6 @@ const HeaderImproved = () => {
     { to: "/food", label: "Food & Drink" },
     { to: "/shopping", label: "Shopping" },
     { to: "/accommodation", label: "Accommodation" },
-    { to: "/suburbs", label: "Suburbs" },
     { to: "/directory", label: "Directory" },
     { to: "/events", label: "Events" },
     {
@@ -47,6 +46,7 @@ const HeaderImproved = () => {
         { to: "/useful-contacts", label: "Useful Contacts" },
       ],
     },
+    { to: "/suburbs", label: "Suburbs" },
     { to: "/history", label: "History" },
     { to: "/advertise", label: "Partner With Us" },
     { to: "/contact", label: "Contact" },
