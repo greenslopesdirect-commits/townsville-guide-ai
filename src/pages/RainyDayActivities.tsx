@@ -100,7 +100,7 @@ const RainyDayActivities = () => (
 
     <h1 className="text-4xl font-bold mb-3 text-center">Rainy Day Activities in Townsville</h1>
     <p className="text-center text-lg text-muted-foreground mb-2">Your Wet Season Survival Guide</p>
-    <p className="text-center text-sm text-muted-foreground mb-8">Updated: July 13, 2026</p>
+    <p className="text-center text-sm text-muted-foreground mb-8">Updated: August 3, 2026</p>
 
     {/* Empathetic Intro */}
     <div className="bg-sky-50 dark:bg-sky-950/30 border-2 border-sky-200 dark:border-sky-800 rounded-xl p-6 mb-10">

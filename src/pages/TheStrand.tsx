@@ -68,7 +68,7 @@ const TheStrand = () => {
             From the <strong>Rockpool</strong> to the <strong>Water Park</strong>, here is how to do The Strand like a local.
           </p>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-blue-900">
-            ☀️ <strong>July 13 Update:</strong> The 'Perfect Dry' is in full swing. With crisp 26°C days, clear water, and low humidity, it's still the best time of year for a Strand walk. The Council removed the stinger nets on May 28 after weeks of clear drags, so open swimming is safe across the beach until nets are reinstalled in November.
+            ☀️ <strong>July 13 Update:</strong> The 'Perfect Dry' is in full swing. With crisp 26°C days, clear water, and low humidity, it's still the best time of year for a Strand walk. The Council removed the stinger nets on 27 May after weeks of clear drags, so open swimming is safe across the beach until nets are reinstalled in November.
           </div>
         </div>
 

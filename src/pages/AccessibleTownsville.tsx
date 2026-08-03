@@ -29,7 +29,7 @@ const AccessibleTownsville = () => {
           {/* Hero */}
           <header className="space-y-4">
             <Badge variant="secondary" className="bg-emerald-50 text-emerald-700 w-fit">
-              Updated: July 13, 2026
+              Updated: August 3, 2026
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
               Exploring Townsville for All: The Local Guide to Accessible Beaches, Parks &amp; Venues

@@ -90,7 +90,7 @@ const FlightsToTownsville = () => {
                 </div>
                 <div className="bg-muted/30 p-6 rounded-lg">
                   <p className="text-muted-foreground mb-4">
-                    <strong>Winter Event Peak:</strong> Late June through July brings a massive influx of travelers to Townsville. Flight demand spikes heavily for major event weekends, including the Cowboys vs. Penrith Panthers blockbuster on Saturday, June 27, and the NTI Townsville 500 supercar street circuit on July 10–12. If you are flying in for the footy or motorsport, ensure your airport transfers and accommodation are locked in early.
+                    <strong>Dry Season Event Peak:</strong> The dry season (May–October) is Townsville's busiest travel window, and flight demand spikes around major event weekends — including Cowboys home games at Queensland Country Bank Stadium (next up: Saturday, August 29 vs Wests Tigers) and the North Australian Festival of Arts (25 September – 11 October). If you're flying in around a big event weekend, lock in your airport transfers and accommodation early.
                   </p>
                   <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                     <li>Dry season (April–November): Best weather, higher demand</li>

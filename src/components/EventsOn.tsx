@@ -113,7 +113,7 @@ const EventsOn = () => {
                 </CardContent>
             </Card>
 
-            {/* Card 3 — Cowboys vs Roosters (Round 22) */}
+            {/* Card 3 — Cowboys vs Wests Tigers (Next Home Game) */}
             <Card className="hover:shadow-lg transition-all cursor-pointer group border-l-4 border-l-blue-500 border-slate-200">
                 <CardContent className="p-6">
                     <div className="flex justify-between items-start mb-4">

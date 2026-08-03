@@ -24,7 +24,7 @@ const StingerSafety = () => (
   <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
     <SEOHead
       title="Is it Safe to Swim in Townsville Today? | 2026 Stinger Guide"
-      description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated June 1, 2026."
+      description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated August 3, 2026."
       canonical="https://www.townsvilleguide.com.au/guides/stinger-safety"
     />
     <Helmet>
@@ -72,12 +72,12 @@ const StingerSafety = () => (
       })}</script>
     </Helmet>
 
-    <h1 className="text-4xl font-bold mb-4 text-center">July 13, 2026 Stinger Update</h1>
-    <p className="text-center text-sm text-muted-foreground mb-6">Updated: July 13, 2026</p>
+    <h1 className="text-4xl font-bold mb-4 text-center">August 3, 2026 Stinger Update</h1>
+    <p className="text-center text-sm text-muted-foreground mb-6">Updated: August 3, 2026</p>
 
     {/* Current Status Banner */}
     <div className="bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-400 dark:border-emerald-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-emerald-800 dark:text-emerald-300 mb-2">🌊 July 13 Status: Stinger Season Has Ended — Nets Removed for the Dry Season</h2>
+      <h2 className="text-2xl font-bold text-emerald-800 dark:text-emerald-300 mb-2">🌊 August 3 Status: Stinger Season Has Ended — Nets Removed for the Dry Season</h2>
       <p className="text-emerald-700 dark:text-emerald-400 leading-relaxed">
         Townsville City Council confirmed on 27 May 2026 that the marine stinger enclosures at The Strand, Pallarenda, Magnetic Island (Picnic Bay and Horseshoe Bay) and Balgal Beach have been physically removed for the season, after weeks of clear net drags confirmed no stinger presence. This is standard annual practice — the nets are reinstalled each November when the next stinger season begins. Open-water swimming is no longer considered high-risk for box jellyfish or Irukandji. As always, follow beach flags, lifeguard directions and general marine and crocodile advisories.
       </p>

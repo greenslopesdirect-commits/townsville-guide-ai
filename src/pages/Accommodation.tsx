@@ -117,8 +117,8 @@ const Accommodation = () => {
   return (
     <>
       <SEOHead
-        title="Where to Stay in Townsville (Updated July 2026)"
-        description="From luxury resorts to dog-friendly caravan parks, find the best Townsville accommodation. Updated July 13, 2026 with current dry-season demand tips and Queensland Derby weekend advice."
+        title="Where to Stay in Townsville (Updated August 2026)"
+        description="From luxury resorts to dog-friendly caravan parks, find the best Townsville accommodation. Updated August 3, 2026 with current dry-season demand tips and Cowboys home-game weekend advice."
         canonical="https://www.townsvilleguide.com.au/accommodation"
       />
       <Helmet>
