@@ -116,6 +116,7 @@ const App = () => (
             <Route path="nature" element={<Nature />} />
             <Route path="moving-to-townsville" element={<MovingToTownsville />} />
             <Route path="suburbs" element={<Suburbs />} />
+            <Route path="directory" element={<Directory />} />
             <Route path="accessible-townsville" element={<AccessibleTownsville />} />
             <Route path="useful-contacts" element={<UsefulContacts />} />
             
