@@ -111,8 +111,7 @@ const LISTINGS: Listing[] = [
     suburb: "The Strand",
     description:
       "Budget-friendly and right on the Strand, with shops and restaurants an easy walk away. It's got a loyal following of repeat guests who keep coming back.",
-    // TODO: confirm website URL for Strand Motel
-    websitePending: true,
+    website: "https://www.strandmotel.com.au/",
   },
   {
     name: "Aquarius on the Beach",
