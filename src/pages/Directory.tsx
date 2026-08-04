@@ -135,8 +135,7 @@ const LISTINGS: Listing[] = [
     suburb: "Townsville CBD",
     description:
       "Hard to miss — this 20-storey tower sits right across from the Cowboys Leagues Club, so it's a genuine walk-to-the-game option on home game weekends. There's a rooftop pool with Castle Hill views for afterwards, and it's about a 15-minute walk down to the Magnetic Island ferry if you're island-hopping the next day.",
-    // TODO: confirm website URL for Hotel Grand Chancellor Townsville
-    websitePending: true,
+    website: "https://www.grandchancellorhotels.com/hotel-grand-chancellor-townsville",
   },
   {
     name: "Oaks Townsville Hotel",
