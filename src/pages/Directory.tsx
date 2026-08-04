@@ -87,8 +87,7 @@ const LISTINGS: Listing[] = [
     suburb: "The Strand",
     description:
       "A resort-style stay right on the Strand, with a pool, dining options, casino and entertainment all on site. Rated 8.3/10 across 1,448+ reviews.",
-    // TODO: confirm website URL for The Ville Resort – Casino
-    websitePending: true,
+    website: "https://www.the-ville.com.au/",
   },
   {
     name: "Mariners North Holiday Apartments",
