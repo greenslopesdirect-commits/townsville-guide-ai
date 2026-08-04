@@ -151,8 +151,7 @@ const LISTINGS: Listing[] = [
     suburb: "Townsville CBD",
     description:
       "Budget-friendly and in the CBD, with a short walk to the stadium if you're here for the footy.",
-    // TODO: confirm website URL for Madison Plaza Townsville
-    websitePending: true,
+    website: "https://madisonplazatownsville.com-hotel.info/",
   },
   {
     name: "BIG4 Tasman Holiday Parks – Rowes Bay",
