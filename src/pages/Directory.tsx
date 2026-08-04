@@ -158,8 +158,7 @@ const LISTINGS: Listing[] = [
     category: "accommodation",
     suburb: "Rowes Bay",
     description: "A caravan and holiday park option out at Rowes Bay.",
-    // TODO: confirm website URL for BIG4 Tasman Holiday Parks – Rowes Bay
-    websitePending: true,
+    website: "https://tasmanholidayparks.com/queensland/townsville/",
   },
 
   // --- Tours ---
