@@ -119,8 +119,7 @@ const LISTINGS: Listing[] = [
     suburb: "The Strand",
     description:
       "Beachfront and family-friendly, rated 8.0/10 across more than 4,500 reviews.",
-    // TODO: confirm website URL for Aquarius on the Beach
-    websitePending: true,
+    website: "https://www.aquariusonthebeach.com.au/",
   },
   {
     name: "City Oasis Inn Townsville",
