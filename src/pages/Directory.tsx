@@ -103,8 +103,7 @@ const LISTINGS: Listing[] = [
     suburb: "Townsville CBD",
     description:
       "A 4-star hotel in the CBD with Castle Hill views — a solid pick if you're in town for business or just want to be central.",
-    // TODO: confirm website URL for Rydges Southbank Townsville
-    websitePending: true,
+    website: "https://www.rydges.com/accommodation/townsville-qld/townsville/",
   },
   {
     name: "Strand Motel",
