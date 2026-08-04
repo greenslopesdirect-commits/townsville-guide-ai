@@ -127,8 +127,7 @@ const LISTINGS: Listing[] = [
     suburb: "Townsville CBD",
     description:
       "A CBD hotel just minutes from Queensland Country Bank Stadium — a handy base if you're in town for a Cowboys game.",
-    // TODO: confirm website URL for City Oasis Inn Townsville
-    websitePending: true,
+    website: "https://cityoasis.com.au/",
   },
   {
     name: "Hotel Grand Chancellor Townsville",
