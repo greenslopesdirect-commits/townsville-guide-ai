@@ -95,8 +95,7 @@ const LISTINGS: Listing[] = [
     suburb: "The Strand",
     description:
       "Apartment-style stays on the Strand, popular for their sea views. A good option if you want a kitchen for a longer stay or you're travelling as a family.",
-    // TODO: confirm website URL for Mariners North Holiday Apartments
-    websitePending: true,
+    website: "https://www.marinersnorth.com.au/",
   },
   {
     name: "Rydges Southbank Townsville",
