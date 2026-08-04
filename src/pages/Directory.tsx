@@ -143,8 +143,7 @@ const LISTINGS: Listing[] = [
     suburb: "Townsville",
     description:
       "A 4.5-star aparthotel with ocean views and kitchenette apartments, plus a gym and pool on site.",
-    // TODO: confirm website URL for Oaks Townsville Hotel
-    websitePending: true,
+    website: "https://www.oakshotels.com/en/oaks-townsville-hotel",
   },
   {
     name: "Madison Plaza Townsville",
