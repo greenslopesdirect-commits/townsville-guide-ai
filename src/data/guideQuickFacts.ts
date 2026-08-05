@@ -3,6 +3,8 @@ export interface QuickFacts {
   timeNeeded?: string;
   cost?: string;
   distanceFromCBD?: string;
+  /** Length of a walking/foreshore route, where "distance from CBD" does not apply. */
+  routeLength?: string;
   drivingTimeFromCBD?: string;
   journeyTime?: string;
   carNeeded?: string;
