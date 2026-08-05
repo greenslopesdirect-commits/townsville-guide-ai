@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import heroImage from "@/assets/magnetic-island-townsville.webp";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
@@ -238,8 +239,8 @@ const FortsWalkMagneticIsland = () => {
             </p>
             <p className="text-sm text-muted-foreground">Updated {LAST_UPDATED}</p>
             <img
-              src="/magnetic-island-guide.webp"
-              alt="Magnetic Island coastline with granite headlands, dry tropical woodland and blue water"
+              src={heroImage}
+              alt="Yachts moored at Nelly Bay marina on Magnetic Island, with the island's wooded hills rising behind"
               className="rounded-xl shadow-lg w-full h-[280px] md:h-[440px] object-cover"
               width={1600}
               height={900}
