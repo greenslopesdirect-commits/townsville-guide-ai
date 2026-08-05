@@ -100,6 +100,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     ],
   },
   "/castle-hill": {
+    visitStatus: "personally-visited",
     lastChecked: "5 August 2026",
     officialSourcesChecked: true,
     officialSources: [
