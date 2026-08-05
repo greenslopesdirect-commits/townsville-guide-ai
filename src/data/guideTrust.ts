@@ -168,6 +168,7 @@ export const GUIDE_PATHS: string[] = [
   "/guides/stinger-safety",
   "/guides/sunset-walks",
   "/guides/jezzine-barracks",
+  "/guides/walking-castle-hill",
   "/cowboys-stadium-guide",
   "/north-shore-townsville",
   "/beaches/saunders-beach",
