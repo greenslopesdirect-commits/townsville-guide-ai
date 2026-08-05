@@ -61,7 +61,7 @@ const StartPlanning = () => {
           {pathways.map((item) => (
             <Card
               key={item.link}
-              className="group overflow-hidden border border-border/60 shadow-[var(--shadow-card)] transition-shadow hover:shadow-[var(--shadow-tropical)] focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2"
+              className="group relative overflow-hidden border border-border/60 shadow-[var(--shadow-card)] transition-shadow hover:shadow-[var(--shadow-tropical)] focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2"
             >
               <div className="aspect-[4/3] w-full overflow-hidden bg-muted">
                 <img

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
+import StartPlanning from "@/components/StartPlanning";
 import NewsletterSection from "@/components/NewsletterSection";
 import WeatherInfo from "@/components/WeatherInfo";
 import QuickAccess from "@/components/QuickAccess";
@@ -115,6 +116,8 @@ const Index = () => {
         <AdSensePlaceholder slot="header" />
         
         <Hero />
+
+        <StartPlanning />
         
         {/* Newsletter Section */}
         <NewsletterSection />
