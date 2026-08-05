@@ -12,6 +12,7 @@ import {
   Timer,
   Bath,
   Quote,
+  Ship,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getQuickFacts, type QuickFacts } from "@/data/guideQuickFacts";
@@ -43,6 +44,7 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(Ticket, "Cost", data.cost);
   push(MapPin, "Distance from CBD", data.distanceFromCBD);
   push(Timer, "Driving time from CBD", data.drivingTimeFromCBD);
+  push(Ship, "Journey time", data.journeyTime);
   push(Car, "Car needed", data.carNeeded);
   push(ParkingCircle, "Parking", data.parking);
   push(Bath, "Toilets", data.toilets);
