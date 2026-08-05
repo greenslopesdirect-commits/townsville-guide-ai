@@ -42,7 +42,7 @@ const Footer = () => {
                 <li><Link to="/castle-hill" className="text-muted-foreground hover:text-primary transition-colors">Castle Hill Lookouts</Link></li>
                 <li><Link to="/great-barrier-reef-townsville" className="text-muted-foreground hover:text-primary transition-colors">Great Barrier Reef Tours</Link></li>
                 <li><Link to="/billabong-sanctuary" className="text-muted-foreground hover:text-primary transition-colors">Billabong Sanctuary</Link></li>
-                <li><Link to="/little-crystal-creek-townsville" className="text-muted-foreground hover:text-primary transition-colors">Little Crystal Creek</Link></li>
+                <li><Link to="/little-crystal-creek-townsville" className="text-muted-foreground hover:text-primary transition-colors">Little Crystal Creek (closed)</Link></li>
                 <li><Link to="/guides/sunset-walks" className="text-muted-foreground hover:text-primary transition-colors">Sunset Walks & Trails</Link></li>
                 <li><Link to="/rowes-bay" className="text-muted-foreground hover:text-primary transition-colors">Rowes Bay Beach</Link></li>
                 <li><Link to="/pallarenda-beach" className="text-muted-foreground hover:text-primary transition-colors">Pallarenda Beach (Off-Leash)</Link></li>

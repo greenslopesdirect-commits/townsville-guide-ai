@@ -50,8 +50,8 @@ const LittleCrystalCreek = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <SEOHead
-        title="Little Crystal Creek Townsville – Swimming, Access & Local Tips"
-        description="Planning a visit to Little Crystal Creek near Townsville? Here's what to know about swimming, facilities, safety and the best time to go."
+        title="Little Crystal Creek Townsville – Closure, Access & Visitor Guide"
+        description="Little Crystal Creek is temporarily closed. Check current access, reopening information and how to plan a future visit from Townsville."
         canonical="https://www.townsvilleguide.com.au/little-crystal-creek-townsville"
       />
       <script
@@ -128,7 +128,7 @@ const LittleCrystalCreek = () => {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4">
           {[
-            { icon: Clock, label: "Drive time", value: "~1 hour 15 min" },
+            { icon: Clock, label: "Drive time", value: "~1 hr 15 min – 1 hr 30 min" },
             { icon: Car, label: "Road access", value: "Fully sealed road" },
             { icon: MapPin, label: "Vehicle type", value: "Standard vehicles OK" },
           ].map((item) => (
@@ -234,13 +234,31 @@ const LittleCrystalCreek = () => {
       {/* Section 7: Local Tips */}
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-4">Local Tips</h2>
+        <p className="text-sm text-muted-foreground mb-3">
+          These tips apply to a future visit after the day-use area reopens.
+        </p>
         <ul className="space-y-2 text-muted-foreground">
-          <li>• Arrive early on weekends — parking fills quickly</li>
-          <li>• Upper pools are usually quieter</li>
+          <li>• Check the current Queensland Parks alert before planning any trip</li>
+          <li>• Allow time for the slow, winding mountain drive</li>
           <li>• Bring insect repellent in warmer months</li>
-          <li>• The water is colder than coastal beaches</li>
-          <li>• Combine with a visit to Paluma village for a full day trip</li>
+          <li>• Bring water, food and suitable footwear — there are no shops on site</li>
+          <li>• Never jump or dive, and avoid the water during or after heavy rain</li>
         </ul>
+      </section>
+
+      {/* What can you visit instead? */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-bold text-foreground mb-4">What Can You Visit Instead?</h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          While Little Crystal Creek remains closed, the Paluma day-trip guide explains current
+          alternatives, road conditions and other places that may be available.
+        </p>
+        <Button asChild>
+          <Link to="/guides/paluma-day-trip">
+            Plan a Paluma Day Trip
+            <ArrowRight className="w-4 h-4" aria-hidden="true" />
+          </Link>
+        </Button>
       </section>
 
       {/* Section 8: FAQ */}
@@ -267,6 +285,7 @@ const LittleCrystalCreek = () => {
         <h2 className="text-2xl font-bold text-foreground mb-4">Explore More Around Townsville</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {[
+            { label: "Paluma Day Trip from Townsville", to: "/guides/paluma-day-trip" },
             { label: "Free Things to Do in Townsville", to: "/guides/free-things" },
             { label: "Best Time to Visit Townsville", to: "/local-tips" },
             { label: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip" },

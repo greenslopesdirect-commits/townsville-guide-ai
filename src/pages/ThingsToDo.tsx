@@ -44,19 +44,19 @@ const ThingsToDo = () => {
   title: "Little Crystal Creek",
   image: "/little-crystal-creek-townsville.webp",
   imageCaption: "Courtesy of Tourism and Events Queensland",
-  description: "A stunning rainforest swimming hole with a historic stone arch bridge, crystal clear water and granite boulders. One of the most beautiful day trips from Townsville.",
+  description: "Little Crystal Creek is temporarily closed following severe weather damage. Check the dedicated guide and current Queensland Parks alert before travelling.",
   tags: ["Swimming", "Rainforest", "Day Trip"],
   features: [
+    "Temporarily closed — check the current park alert",
     "Historic stone arch bridge",
-    "Crystal clear swimming water",
-    "Granite boulders and rainforest",
-    "About 1.5 hours from Townsville"
+    "Rainforest and granite boulder setting",
+    "Allow roughly 1 hour 15 minutes to 1 hour 30 minutes, depending on the starting point and road conditions"
   ],
   mapUrl: "https://www.google.com/maps/search/?api=1&query=Little+Crystal+Creek",
-  aiPrompt: "Is Little Crystal Creek suitable for swimming and families?",
-  subtitle: "Rainforest Swimming Hole",
+  aiPrompt: "Is Little Crystal Creek open, and what are the alternatives?",
+  subtitle: "Temporarily Closed — Rainforest Swimming Hole",
   guideLink: "/little-crystal-creek-townsville",
-  guideLinkText: "Explore Guide"
+  guideLinkText: "Check Closure Info"
 },
 
     {
