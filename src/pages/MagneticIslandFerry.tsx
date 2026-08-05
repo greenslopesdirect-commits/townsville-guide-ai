@@ -108,6 +108,7 @@ const MISTAKES = [
 
 const RELATED = [
   { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip" },
+  { name: "Forts Walk Magnetic Island", to: "/guides/forts-walk-magnetic-island" },
   { name: "Townsville Without a Car", to: "/townsville-without-a-car" },
   { name: "First Time in Townsville", to: "/first-time-in-townsville" },
   { name: "Townsville in One Day", to: "/townsville-in-one-day" },

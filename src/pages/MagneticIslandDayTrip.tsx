@@ -78,6 +78,7 @@ const FAQS = [
 
 const RELATED = [
   { name: "Magnetic Island Ferry Guide", to: "/guides/magnetic-island-ferry" },
+  { name: "Forts Walk Magnetic Island", to: "/guides/forts-walk-magnetic-island" },
   { name: "First Time in Townsville", to: "/first-time-in-townsville" },
   { name: "Townsville in One Day", to: "/townsville-in-one-day" },
   { name: "Townsville Without a Car", to: "/townsville-without-a-car" },
@@ -536,6 +537,15 @@ const MagneticIslandDayTrip = () => {
               </li>
             </ul>
             <p className="text-muted-foreground leading-relaxed">
+              <Link
+                to="/guides/forts-walk-magnetic-island"
+                className="text-primary hover:underline font-medium"
+              >
+                Read the complete Forts Walk guide
+              </Link>{" "}
+              for distance, difficulty, bus access, heat planning and current alerts.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
               Current track and alert information is published by{" "}
               <a
                 href={QLD_PARKS}
@@ -584,7 +594,14 @@ const MagneticIslandDayTrip = () => {
                 <CardContent className="p-4">
                   <p className="font-semibold text-foreground mb-1">2. Morning — choose one</p>
                   <p className="text-sm text-muted-foreground">
-                    Either the Forts Walk while conditions are cooler, or a relaxed beach and
+                    Either the{" "}
+                    <Link
+                      to="/guides/forts-walk-magnetic-island"
+                      className="text-primary hover:underline"
+                    >
+                      Forts Walk
+                    </Link>{" "}
+                    while conditions are cooler, or a relaxed beach and
                     village start for families and visitors avoiding a steep, exposed walk.
                     Attempting both usually costs the rest of the day.
                   </p>
@@ -837,7 +854,14 @@ const MagneticIslandDayTrip = () => {
               <Link to="/guides/rainy-day-activities" className="text-primary hover:underline">
                 Rainy Day Activities
               </Link>{" "}
-              for alternatives.
+              for alternatives. If you still plan to walk,{" "}
+              <Link
+                to="/guides/forts-walk-magnetic-island"
+                className="text-primary hover:underline"
+              >
+                read the complete Forts Walk guide
+              </Link>{" "}
+              first.
             </p>
           </section>
 

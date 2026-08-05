@@ -97,6 +97,26 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "A worthwhile scenic day trip when open, but do not travel without checking the current Queensland Parks alert.",
   },
+  "/guides/forts-walk-magnetic-island": {
+    bestFor: [
+      "World War II history",
+      "Island views",
+      "Wildlife spotting",
+      "Moderate bushwalking",
+    ],
+    timeNeeded: "Allow approximately 2 hours, plus transport and rest time",
+    cost: "Free",
+    routeLength: "Approximately 4 kilometres return",
+    carNeeded: "No \u2014 the walk can be reached by island bus, taxi, bicycle or car",
+    parking: "Parking is available around Forts Junction, subject to current signs and availability",
+    toilets: "Confirm current toilet locations before beginning the walk",
+    accessibility:
+      "Grade 3 track with slopes, uneven surfaces and steps; not suitable for all mobility levels",
+    dogFriendly: "No \u2014 dogs and other domestic animals are not permitted in the national park",
+    bestTimeToVisit: "Early morning or later in the afternoon, avoiding peak heat",
+    localVerdict:
+      "A rewarding Magnetic Island walk for prepared visitors, but the exposed terrain, heat and return-ferry timing should not be underestimated.",
+  },
   "/guides/magnetic-island-ferry": {
     bestFor: [
       "Magnetic Island day trips",

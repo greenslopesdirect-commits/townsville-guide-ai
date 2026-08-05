@@ -120,6 +120,41 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/guides/forts-walk-magnetic-island": {
+    visitStatus: "research-based",
+    lastChecked: "5 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Queensland Parks \u2014 Forts Walk, Magnetic Island National Park",
+        url: "https://parks.desi.qld.gov.au/parks/magnetic-island/about/walks/forts-walk",
+      },
+      {
+        name: "Queensland Parks \u2014 Magnetic Island National Park (Forts Junction access)",
+        url: "https://parks.desi.qld.gov.au/parks/magnetic-island",
+      },
+      {
+        name: "Queensland Parks \u2014 Magnetic Island park alerts",
+        url: "https://parks.desi.qld.gov.au/parks/magnetic-island/alerts",
+      },
+      {
+        name: "Queensland Parks \u2014 visiting safely, Magnetic Island",
+        url: "https://parks.desi.qld.gov.au/parks/magnetic-island/about/safety",
+      },
+      {
+        name: "Queensland Parks \u2014 nature, culture and history",
+        url: "https://parks.desi.qld.gov.au/parks/magnetic-island/about/culture",
+      },
+      {
+        name: "Translink \u2014 Route 250 and journey planner",
+        url: "https://translink.com.au/",
+      },
+      {
+        name: "Bureau of Meteorology \u2014 Townsville forecast",
+        url: "http://www.bom.gov.au/qld/forecasts/townsville.shtml",
+      },
+    ],
+  },
   "/guides/magnetic-island-ferry": {
     visitStatus: "research-based",
     lastChecked: "5 August 2026",
@@ -230,6 +265,7 @@ export const GUIDE_PATHS: string[] = [
   "/guides/beat-the-heat",
   "/guides/magnetic-island-day-trip",
   "/guides/magnetic-island-ferry",
+  "/guides/forts-walk-magnetic-island",
   "/guides/free-things",
   "/guides/rainy-day-activities",
   "/guides/stinger-safety",
