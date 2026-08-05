@@ -1,6 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import LocalInsightCard from "@/components/LocalInsightCard";
@@ -63,6 +64,8 @@ const MagneticIslandDayTrip = () => {
         Wondering <strong>what to do on Magnetic Island for a day</strong>? This local-verified guide walks you through the best ferry times, koala spots, swimming bays, and the perfect one-day itinerary — no fluff, just what works.
       </p>
       
+      <GuideQuickFacts className="mb-8" />
+
       {/* Is This Trip Right for You? */}
       <section className="mb-8">
         <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800/50 rounded-xl p-6">

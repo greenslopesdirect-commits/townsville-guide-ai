@@ -1,4 +1,5 @@
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 import { MapPin, Bone, Waves, ArrowRight, Dog, ShieldCheck, Thermometer, Droplets, Fish } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";

@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 import AirportTransferCard from "@/components/AirportTransferCard";
 import { Link } from "react-router-dom";
 import { Dog } from "lucide-react";

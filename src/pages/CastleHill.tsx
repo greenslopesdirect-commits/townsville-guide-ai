@@ -3,6 +3,7 @@ import { Mountain, Sunrise, Camera, Car, Footprints, Clock, DollarSign, MapPin, 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 import castleHillImage from "@/assets/castle-hill-townsville-2.webp";
 
 const CastleHill = () => {
