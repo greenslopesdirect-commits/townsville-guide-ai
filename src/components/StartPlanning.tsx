@@ -5,6 +5,8 @@ import castleHillImage from "@/assets/castle-hill-townsville.webp";
 import strandImage from "@/assets/the-strand-townsville.webp";
 import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
 import jezzineBarracksImage from "@/assets/jezzine-barracks-townsville.webp";
+import castleHillTwoImage from "@/assets/castle-hill-townsville-2.webp";
+
 
 const pathways = [
   {
