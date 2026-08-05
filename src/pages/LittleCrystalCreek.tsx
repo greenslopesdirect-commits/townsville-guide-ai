@@ -64,6 +64,33 @@ const LittleCrystalCreek = () => {
         Little Crystal Creek, Townsville – Local Guide
       </h1>
 
+      {/* Current closure notice */}
+      <div className="mb-6 rounded-xl border-2 border-amber-300 dark:border-amber-800/60 bg-amber-50 dark:bg-amber-900/20 p-5">
+        <div className="flex items-start gap-3">
+          <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+          <div>
+            <h2 className="text-lg font-bold text-amber-900 dark:text-amber-200 mb-1">
+              Current closure
+            </h2>
+            <p className="text-sm md:text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">
+              Little Crystal Creek day-use area is temporarily closed following severe weather damage.
+              Queensland Parks currently lists the closure as continuing until 6 December 2026. Check the
+              official park alert before travelling because reopening dates may change.
+            </p>
+            <a
+              href="https://parks.desi.qld.gov.au/parks/paluma-range/alerts"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-amber-900 dark:text-amber-200 underline underline-offset-4"
+            >
+              View the Queensland Parks alert for Paluma Range National Park
+              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+
       {/* Hero Image */}
       <div className="mb-2">
         <img
