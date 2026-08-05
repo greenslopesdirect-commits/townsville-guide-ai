@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { UserRound, CalendarCheck, ShieldCheck, ChevronDown, ExternalLink } from "lucide-react";
