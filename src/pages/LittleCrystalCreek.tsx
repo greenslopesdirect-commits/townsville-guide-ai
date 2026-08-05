@@ -12,13 +12,13 @@ import { Separator } from "@/components/ui/separator";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
-import { Clock, Car, MapPin, Droplets, Sun, CloudRain, TreePine, Baby, Dog, ArrowRight } from "lucide-react";
+import { Clock, Car, MapPin, Droplets, Sun, CloudRain, TreePine, Baby, Dog, ArrowRight, AlertTriangle } from "lucide-react";
 
 const LittleCrystalCreek = () => {
   const faqItems = [
     {
       question: "Is Little Crystal Creek free to visit?",
-      answer: "Yes, entry is free.",
+      answer: "Entry is free, but the day-use area is temporarily closed — check the Queensland Parks alert before travelling.",
     },
     {
       question: "Do you need a 4WD?",
@@ -30,7 +30,7 @@ const LittleCrystalCreek = () => {
     },
     {
       question: "Is it suitable year-round?",
-      answer: "Accessible most of the year, but conditions vary during wet season.",
+      answer: "Normally accessible most of the year, but conditions vary during wet season and the area is currently closed.",
     },
   ];
 
@@ -113,6 +113,10 @@ const LittleCrystalCreek = () => {
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         If you're planning a free day trip from Townsville, this is one of the most scenic options in North Queensland.
       </p>
+      <p className="text-sm text-muted-foreground leading-relaxed mb-6">
+        The visitor information below describes the site as it normally operates and applies after the day-use
+        area reopens. Swimming, picnicking, parking and toilets are not available while the closure is in place.
+      </p>
       <GuideQuickFacts className="mb-10" />
       <Separator className="mb-10" />
 
@@ -148,10 +152,10 @@ const LittleCrystalCreek = () => {
       <section className="mb-10">
         <h2 className="text-2xl font-bold text-foreground mb-4">Can You Swim at Little Crystal Creek?</h2>
         <p className="text-muted-foreground leading-relaxed mb-4">
-          Yes — swimming is allowed and very popular. The creek forms natural pools beneath the historic stone bridge. Water is typically clear and cool, especially during dry season.
+          Not at present — the day-use area is closed. When open, swimming is allowed and very popular. The creek forms natural pools beneath the historic stone bridge. Water is typically clear and cool, especially during dry season.
         </p>
         <LocalInsightCard variant="warning" title="Safety Note">
-          <p>Avoid swimming after heavy rainfall, as currents and water levels can rise quickly.</p>
+          <p>Check current conditions before entering the water. Avoid swimming after heavy rainfall, as currents and water levels can rise quickly.</p>
         </LocalInsightCard>
       </section>
 
@@ -192,7 +196,7 @@ const LittleCrystalCreek = () => {
 
       {/* Section 4: Facilities */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-foreground mb-4">Facilities</h2>
+        <h2 className="text-2xl font-bold text-foreground mb-4">Facilities (when open)</h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
           {["Picnic tables", "Public toilets", "Parking area", "Walking paths"].map((f) => (
             <Card key={f} className="bg-muted/30">
