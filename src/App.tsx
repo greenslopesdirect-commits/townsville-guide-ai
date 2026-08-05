@@ -120,6 +120,8 @@ const App = () => (
             <Route path="directory" element={<Directory />} />
             <Route path="accessible-townsville" element={<AccessibleTownsville />} />
             <Route path="useful-contacts" element={<UsefulContacts />} />
+            <Route path="first-time-in-townsville" element={<FirstTimeInTownsville />} />
+
             
             
 
