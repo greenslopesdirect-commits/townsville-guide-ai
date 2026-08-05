@@ -53,6 +53,7 @@ const PAGES = [
   { path: "/contact",                             source: "src/pages/Contact.tsx",                     changefreq: "monthly", priority: "0.5" },
   { path: "/the-strand",                          source: "src/pages/TheStrand.tsx",                   changefreq: "weekly",  priority: "0.8" },
   { path: "/castle-hill",                         source: "src/pages/CastleHill.tsx",                  changefreq: "monthly", priority: "0.8" },
+  { path: "/guides/paluma-day-trip",             source: "src/pages/PalumaDayTrip.tsx",               changefreq: "monthly", priority: "0.8" },
   { path: "/guides/walking-castle-hill",          source: "src/pages/WalkingCastleHill.tsx",           changefreq: "monthly", priority: "0.7" },
   { path: "/billabong-sanctuary",                 source: "src/pages/BillabongSanctuary.tsx",          changefreq: "monthly", priority: "0.7" },
   { path: "/great-barrier-reef-townsville",       source: "src/pages/GreatBarrierReef.tsx",            changefreq: "monthly", priority: "0.8" },

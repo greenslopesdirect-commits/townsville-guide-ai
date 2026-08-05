@@ -28,6 +28,46 @@ export const DEFAULT_GUIDE_TRUST: GuideTrustMeta = {
  * Anything not listed here falls back to DEFAULT_GUIDE_TRUST.
  */
 export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
+  "/guides/paluma-day-trip": {
+    visitStatus: "research-based",
+    lastChecked: "5 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Transport and Main Roads \u2014 Mount Spec Road reconstruction",
+        url: "https://www.tmr.qld.gov.au/projects/mount-spec-road-reconstruction",
+      },
+      { name: "Queensland Traffic \u2014 current road conditions", url: "https://qldtraffic.qld.gov.au/" },
+      {
+        name: "Queensland Reconstruction Authority \u2014 Mount Spec Road permit restrictions update",
+        url: "https://www.qra.qld.gov.au/news",
+      },
+      {
+        name: "Queensland Parks \u2014 Paluma Range National Park alerts",
+        url: "https://parks.desi.qld.gov.au/parks/paluma-range/alerts",
+      },
+      {
+        name: "Queensland Parks \u2014 Paluma Range National Park overview",
+        url: "https://parks.desi.qld.gov.au/parks/paluma-range",
+      },
+      {
+        name: "Queensland Parks \u2014 Paluma Range facilities (Big Crystal Creek, McClellands Lookout, Birthday Creek Falls)",
+        url: "https://parks.desi.qld.gov.au/parks/paluma-range/about/facilities",
+      },
+      {
+        name: "Queensland Parks \u2014 water and swimming safety",
+        url: "https://parks.desi.qld.gov.au/safety/water",
+      },
+      {
+        name: "Queensland Parks \u2014 domestic animals in national parks",
+        url: "https://parks.desi.qld.gov.au/safety",
+      },
+      {
+        name: "Bureau of Meteorology \u2014 Paluma forecast",
+        url: "http://www.bom.gov.au/places/qld/paluma/",
+      },
+    ],
+  },
   "/guides/walking-castle-hill": {
     visitStatus: "partially-firsthand",
     lastChecked: "5 August 2026",
@@ -259,6 +299,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
 
 /** Routes that are guide articles and should show the trust panel. */
 export const GUIDE_PATHS: string[] = [
+  "/guides/paluma-day-trip",
   "/first-time-in-townsville",
   "/townsville-in-one-day",
   "/townsville-without-a-car",

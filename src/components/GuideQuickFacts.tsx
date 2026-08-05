@@ -14,6 +14,7 @@ import {
   Quote,
   Ship,
   Route,
+  AlertTriangle,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getQuickFacts, type QuickFacts } from "@/data/guideQuickFacts";
@@ -36,6 +37,7 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
     if (value && value.trim()) rows.push({ icon, label, value: value.trim() });
   };
 
+  push(AlertTriangle, "Current access", data.currentAccess);
   push(
     Users,
     "Best for",

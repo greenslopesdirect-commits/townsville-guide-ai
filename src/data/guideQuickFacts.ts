@@ -13,6 +13,8 @@ export interface QuickFacts {
   accessibility?: string;
   dogFriendly?: string;
   bestTimeToVisit?: string;
+  /** Current access status, e.g. a temporary closure. */
+  currentAccess?: string;
   localVerdict?: string;
 }
 
@@ -23,6 +25,34 @@ export interface QuickFacts {
  * simply omit a field when there is no reliable information at all.
  */
 export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
+  "/guides/paluma-day-trip": {
+    bestFor: [
+      "Rainforest scenery",
+      "Mountain day trips",
+      "Lookouts and short walks",
+      "Freshwater swimming when open",
+    ],
+    timeNeeded:
+      "Allow most of a day, including the mountain drive and two or three carefully chosen stops",
+    cost: "Most natural attractions are free; food, fuel, camping and other activities cost extra",
+    distanceFromCBD:
+      "Approximately 80 kilometres to Paluma village, depending on the route and starting point",
+    drivingTimeFromCBD:
+      "Allow roughly 1 hour 30 minutes or more, depending on road conditions and stops",
+    carNeeded: "Yes \u2014 a private vehicle is effectively essential for a practical Paluma day trip",
+    parking:
+      "Parking varies by village, lookout, walking track and day-use area; follow current signs",
+    toilets: "Facilities vary by location and may be unavailable during closures",
+    accessibility:
+      "Some day-use facilities and lookout paths may be accessible, but conditions vary considerably",
+    dogFriendly: "Dogs and other domestic animals are generally not permitted in national park areas",
+    bestTimeToVisit:
+      "Check road, park and weather conditions before leaving; cooler and drier conditions are generally easier",
+    currentAccess:
+      "Mount Spec Road is open to public access, but reconstruction continues and some park facilities remain closed \u2014 check current alerts",
+    localVerdict:
+      "Paluma is a rewarding regional day trip, but visitors should choose only a few stops and never assume every road, track or swimming area is currently open.",
+  },
   "/townsville-without-a-car": {
     bestFor: [
       "Short stays",
@@ -85,12 +115,15 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     timeNeeded: "Allow several hours or combine it with a Paluma day trip when the area reopens",
     cost: "Free when open",
     distanceFromCBD: "Approximately 65–70 km from Townsville",
-    drivingTimeFromCBD: "Approximately 1 hour 15 minutes, depending on conditions",
+    drivingTimeFromCBD:
+      "Allow roughly 1 hour 15 minutes to 1 hour 30 minutes, depending on the starting point and road conditions",
     carNeeded: "Yes",
     parking: "Parking is normally available at the day-use area when open",
     toilets: "Toilets are normally available when the day-use area is open",
     accessibility:
-      "Some day-use facilities are normally wheelchair-accessible, but current access is unavailable during the closure",
+      "The toilets and shelter shed are normally wheelchair-accessible when the day-use area is open. These facilities are not accessible during the closure",
+    currentAccess:
+      "Temporarily closed \u2014 check the current Queensland Parks alert before travelling",
     dogFriendly: "No — dogs are not permitted in the national park",
     bestTimeToVisit:
       "After the area reopens and current road, weather and park conditions have been checked",
