@@ -6,6 +6,7 @@ import strandImage from "@/assets/the-strand-townsville.webp";
 import magneticIslandImage from "@/assets/magnetic-island-townsville.webp";
 import jezzineBarracksImage from "@/assets/jezzine-barracks-townsville.webp";
 import castleHillTwoImage from "@/assets/castle-hill-townsville-2.webp";
+import strandCarFreeImage from "@/assets/strand-hero.jpg";
 
 
 const pathways = [
@@ -53,6 +54,15 @@ const pathways = [
     alt: "Townsville city and coastline seen from the Castle Hill lookout in the late afternoon",
     link: "/townsville-in-one-day",
     label: "Read the Townsville in one day itinerary",
+  },
+  {
+    title: "Townsville Without a Car",
+    description:
+      "See which areas are easiest to explore on foot, by bus, taxi or rideshare, and where transport planning matters.",
+    image: strandCarFreeImage,
+    alt: "Palm-lined walkway along The Strand in Townsville, easily explored on foot",
+    link: "/townsville-without-a-car",
+    label: "Read the Townsville without a car guide",
   },
 ];
 

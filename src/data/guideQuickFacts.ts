@@ -21,6 +21,23 @@ export interface QuickFacts {
  * simply omit a field when there is no reliable information at all.
  */
 export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
+  "/townsville-without-a-car": {
+    bestFor: [
+      "Short stays",
+      "Visitors staying centrally",
+      "The Strand and North Ward",
+      "Magnetic Island foot passengers",
+    ],
+    timeNeeded: "Suitable for one- to three-day visits with a simplified itinerary",
+    cost: "Walking is free; taxis, rideshare, buses and tours add variable costs",
+    carNeeded:
+      "Not essential for a central visit, but useful for Castle Hill, suburban attractions and regional day trips",
+    accessibility:
+      "Depends on the chosen route, footpath conditions and transport provider",
+    bestTimeToVisit: "Plan outdoor walking for the cooler parts of the day",
+    localVerdict:
+      "Townsville can work without a car if you stay centrally and focus on The Strand, North Ward, the CBD and Magnetic Island rather than trying to cover the wider region.",
+  },
   "/castle-hill": {
     bestFor: ["Panoramic views", "Sunrise and sunset", "Photography", "Walking"],
     timeNeeded: "20–60 minutes",
