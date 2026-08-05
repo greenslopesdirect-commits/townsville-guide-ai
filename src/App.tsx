@@ -61,6 +61,7 @@ import Suburbs from "@/pages/Suburbs";
 import Directory from "@/pages/Directory";
 import FirstTimeInTownsville from "@/pages/FirstTimeInTownsville";
 import TownsvilleInOneDay from "@/pages/TownsvilleInOneDay";
+import WalkingCastleHill from "./pages/WalkingCastleHill";
 import TownsvilleWithoutACar from "@/pages/TownsvilleWithoutACar";
 
 
@@ -98,6 +99,7 @@ const App = () => (
             <Route path="guides/stinger-safety" element={<StingerSafety />} />
             <Route path="guides/sunset-walks" element={<SunsetWalks />} />
             <Route path="guides/jezzine-barracks" element={<JezzineBarracks />} />
+            <Route path="guides/walking-castle-hill" element={<WalkingCastleHill />} />
             <Route path="cowboys-stadium-guide" element={<CowboysStadiumGuide />} />
             <Route path="north-shore-townsville" element={<NorthShoreTownsville />} />
             
