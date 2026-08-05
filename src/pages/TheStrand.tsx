@@ -88,26 +88,7 @@ const TheStrand = () => {
         </div>
 
         {/* Quick Visitor Snapshot */}
-        <Card className="bg-muted/30 shadow-sm">
-          <CardContent className="p-5 md:p-6">
-            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">Quick Visitor Snapshot</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {[
-                { icon: "📍", text: "Townsville foreshore" },
-                { icon: "📏", text: "2.2km waterfront promenade" },
-                { icon: "💰", text: "Free attraction" },
-                { icon: "👨‍👩‍👧", text: "Family friendly" },
-                { icon: "🌴", text: "Shade available along most paths" },
-                { icon: "🌊", text: "Swim safely year-round in the Rockpool, or enjoy open ocean swimming now that the stinger nets are out for the Dry Season." },
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <span className="text-lg flex-shrink-0">{item.icon}</span>
-                  <span className="text-sm text-muted-foreground">{item.text}</span>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+        <GuideQuickFacts />
 
         {/* Current Status - Critical for Tourists */}
         <Alert className="bg-emerald-50 border-emerald-200">

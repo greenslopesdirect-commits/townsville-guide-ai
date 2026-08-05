@@ -105,6 +105,8 @@ const DogFriendly = () => {
           <div className="h-px bg-border w-full mt-6" />
         </section>
 
+          <GuideQuickFacts />
+
           {/* Local Tip */}
            <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
            <p>

@@ -55,6 +55,8 @@ const TownsvilleWithKids = () => {
           </Card>
         </section>
 
+        <GuideQuickFacts className="mb-12" />
+
         {/* Section 1: Free & Easy Family Activities */}
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">

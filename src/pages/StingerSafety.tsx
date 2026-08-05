@@ -76,6 +76,8 @@ const StingerSafety = () => (
     <h1 className="text-4xl font-bold mb-4 text-center">August 3, 2026 Stinger Update</h1>
     <p className="text-center text-sm text-muted-foreground mb-6">Updated: August 3, 2026</p>
 
+    <GuideQuickFacts className="mb-8" />
+
     {/* Current Status Banner */}
     <div className="bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-400 dark:border-emerald-600 rounded-xl p-6 mb-8">
       <h2 className="text-2xl font-bold text-emerald-800 dark:text-emerald-300 mb-2">🌊 August 3 Status: Stinger Season Has Ended — Nets Removed for the Dry Season</h2>
