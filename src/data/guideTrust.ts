@@ -28,6 +28,20 @@ export const DEFAULT_GUIDE_TRUST: GuideTrustMeta = {
  * Anything not listed here falls back to DEFAULT_GUIDE_TRUST.
  */
 export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
+  "/townsville-without-a-car": {
+    visitStatus: "partially-firsthand",
+    lastChecked: "5 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      { name: "Translink journey planner", url: "https://translink.com.au/" },
+      { name: "Townsville Airport", url: "https://www.townsvilleairport.com.au/" },
+      {
+        name: "SeaLink Magnetic Island ferry information",
+        url: "https://www.sealinkqld.com.au/",
+      },
+      { name: "Townsville City Council", url: "https://www.townsville.qld.gov.au/" },
+    ],
+  },
   "/townsville-in-one-day": {
     visitStatus: "partially-firsthand",
     lastChecked: "5 August 2026",
@@ -127,6 +141,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
 export const GUIDE_PATHS: string[] = [
   "/first-time-in-townsville",
   "/townsville-in-one-day",
+  "/townsville-without-a-car",
   "/guides/beat-the-heat",
   "/guides/magnetic-island-day-trip",
   "/guides/free-things",
