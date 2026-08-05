@@ -112,17 +112,20 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
       "One of the strongest day trips from Townsville. A full day allows enough time for beaches, walks and island transport without rushing.",
   },
   "/the-strand": {
-    bestFor: ["Walking", "Families", "Waterfront views", "Parks and casual stops"],
-    timeNeeded: "1–3 hours",
-    cost: "Free",
-    distanceFromCBD: "Adjoins the city centre — around 2.2 km of foreshore",
-    carNeeded: "No — it is walkable from the city centre",
-    parking: "Free street parking along the foreshore, subject to current signs",
-    accessibility: "The foreshore promenade is flat and sealed for its full length",
+    bestFor: ["Waterfront walks", "Families", "Swimming facilities", "Sunrise and sunset"],
+    timeNeeded:
+      "Allow 1–3 hours, or longer when combining swimming, playgrounds, food and Jezzine Barracks",
+    cost: "Free to visit; food, paid activities and Tobruk Memorial Baths cost extra",
+    routeLength: "Approximately 2.2 kilometres along the waterfront",
+    carNeeded: "No for visitors staying near The Strand, North Ward or central Townsville",
+    parking:
+      "Parking is available in several areas; follow current signs and expect busier conditions during events and popular periods",
+    toilets: "Public toilets are available at selected facilities along The Strand",
+    accessibility: "Many main paths are paved, but access and facilities vary by location",
     dogFriendly: "Keep dogs leashed unless current signs identify a designated off-leash area",
     bestTimeToVisit: "Morning or late afternoon for cooler conditions",
     localVerdict:
-      "The easiest place for first-time visitors to experience Townsville's waterfront, particularly in the morning or late afternoon. Swimming conditions change through the year — see our stinger safety guide before swimming.",
+      "The Strand is one of the easiest places for first-time visitors to experience Townsville's waterfront, especially when combined with Jezzine Barracks.",
   },
   "/guides/stinger-safety": {
     bestFor: ["Beach visitors", "Families", "Swimmers", "First-time visitors"],
