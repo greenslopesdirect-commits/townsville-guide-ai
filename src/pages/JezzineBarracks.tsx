@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 import maxKissingPoint from "@/assets/max-at-kissing-point.webp";
 
 const highlights = [
@@ -62,6 +63,9 @@ const JezzineBarracks = () => {
       </div>
 
       <div className="container mx-auto max-w-4xl px-4 mt-8 space-y-8">
+
+        {/* Quick visitor information */}
+        <GuideQuickFacts />
 
         {/* Feature Image Caption */}
         <figure className="rounded-lg overflow-hidden border border-border/40 bg-muted/30">
