@@ -98,20 +98,25 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
       "A worthwhile scenic day trip when open, but do not travel without checking the current Queensland Parks alert.",
   },
   "/guides/magnetic-island-day-trip": {
-    bestFor: ["Beaches", "Walks and wildlife", "Families", "First-time visitors"],
-    timeNeeded: "A full day is best for a first visit",
-    cost: "Costs vary depending on ferry, island transport and activities",
-    journeyTime: "The passenger ferry crossing is approximately 20 minutes",
-    parking:
-      "Paid parking is available at Breakwater Terminal. Check SeaLink for the current daily rate",
+    bestFor: ["Beaches and bays", "Wildlife", "Walking", "Full-day trips"],
+    timeNeeded: "Allow one full day; an overnight stay provides more flexibility",
+    cost: "Costs vary depending on ferry, island transport, food and activities",
+    journeyTime:
+      "The passenger ferry crossing is generally around 20 minutes; check current operator information",
     carNeeded:
-      "Not required — the island bus service is timed with ferry arrivals; a car or hire vehicle is optional",
+      "No — foot passengers can use island buses, taxis or tours, but taking a car provides more flexibility",
+    parking:
+      "Paid parking is available near Breakwater Terminal; check the current operator information and parking rate",
+    toilets:
+      "Public facilities are available in several island villages and visitor areas, but locations vary",
     accessibility:
-      "Some bays and foreshore areas are flat, but tracks such as the Forts Walk have uneven terrain",
+      "Ferry, bus, beach and walking access vary considerably; check each part of the planned route",
+    dogFriendly:
+      "Dog access varies across ferries, beaches, national park areas and other locations; check current rules",
     bestTimeToVisit:
-      "Dry season (May–October) for walking; plan walks for early morning in warmer months",
+      "Allow a full day and plan outdoor walking for the cooler parts of the day",
     localVerdict:
-      "One of the strongest day trips from Townsville. A full day allows enough time for beaches, walks and island transport without rushing.",
+      "Magnetic Island is one of Townsville's strongest day trips, but it is more enjoyable when visitors choose a small number of stops and organise transport before travelling.",
   },
   "/the-strand": {
     bestFor: ["Waterfront walks", "Families", "Swimming facilities", "Sunrise and sunset"],
