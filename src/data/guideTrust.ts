@@ -131,12 +131,21 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     ],
   },
   "/the-strand": {
+    visitStatus: "personally-visited",
     lastChecked: "5 August 2026",
     officialSourcesChecked: true,
     officialSources: [
       {
         name: "Townsville City Council — Dog off-leash areas",
         url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs/dog-off-leash-areas",
+      },
+      {
+        name: "Townsville City Council — The Strand facilities, pools and closures",
+        url: "https://www.townsville.qld.gov.au/",
+      },
+      {
+        name: "Beachsafe (Surf Life Saving Australia) — patrol and beach conditions",
+        url: "https://beachsafe.org.au/",
       },
     ],
   },
