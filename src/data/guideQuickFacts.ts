@@ -4,6 +4,7 @@ export interface QuickFacts {
   cost?: string;
   distanceFromCBD?: string;
   drivingTimeFromCBD?: string;
+  journeyTime?: string;
   carNeeded?: string;
   parking?: string;
   toilets?: string;
@@ -27,34 +28,40 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     carNeeded:
       "Not essential — it is close to the city centre, but driving to the summit is the easiest option",
     parking: "Parking at the summit; it fills quickly around sunset",
+    toilets: "Public toilets are available at the summit",
     accessibility:
-      "The sealed road allows vehicle access to the summit lookout areas; the walking tracks are steep and are not suitable for all visitors",
+      "The sealed road allows vehicle access to the summit lookout areas; the walking tracks are steep, exposed and are not suitable for all visitors",
+    dogFriendly:
+      "Dogs should remain on a leash. Follow current signs and carry waste bags",
     bestTimeToVisit:
       "Early morning or late afternoon — exposed tracks are uncomfortable in midday heat",
     localVerdict:
       "One of the best places for a first overview of Townsville, particularly near sunrise or sunset, but daytime heat can make exposed walking uncomfortable.",
   },
   "/little-crystal-creek-townsville": {
-    bestFor: ["Freshwater swimming", "Picnics", "Rainforest scenery", "Day trips"],
-    timeNeeded: "Half to full day, including travel",
-    cost: "Free",
-    distanceFromCBD: "Approximately 65–70 km north of Townsville",
-    drivingTimeFromCBD: "Around 1 hour 15 minutes",
-    carNeeded: "Yes — a standard vehicle is fine on the sealed road in normal conditions",
-    parking: "On-site parking area; it fills quickly on weekends",
-    toilets: "Public toilets on site",
+    bestFor: ["Future scenic day trips", "Rainforest surroundings", "Picnics and swimming when open"],
+    timeNeeded: "Allow several hours or combine it with a Paluma day trip when the area reopens",
+    cost: "Free when open",
+    distanceFromCBD: "Approximately 65–70 km from Townsville",
+    drivingTimeFromCBD: "Approximately 1 hour 15 minutes, depending on conditions",
+    carNeeded: "Yes",
+    parking: "Parking is normally available at the day-use area when open",
+    toilets: "Toilets are normally available when the day-use area is open",
     accessibility:
-      "Natural creek setting with rocks and uneven ground; conditions vary and are not suited to all visitors",
-    dogFriendly: "No — dogs are not permitted within the national park",
+      "Some day-use facilities are normally wheelchair-accessible, but current access is unavailable during the closure",
+    dogFriendly: "No — dogs are not permitted in the national park",
     bestTimeToVisit:
-      "Dry season (May–October) for clearer water; check road and weather conditions in the wet season",
+      "After the area reopens and current road, weather and park conditions have been checked",
     localVerdict:
-      "A worthwhile scenic day trip for swimming, picnics and rainforest surroundings, provided road and weather conditions are suitable. Check current conditions before entering the water.",
+      "A worthwhile scenic day trip when open, but do not travel without checking the current Queensland Parks alert.",
   },
   "/guides/magnetic-island-day-trip": {
     bestFor: ["Beaches", "Walks and wildlife", "Families", "First-time visitors"],
     timeNeeded: "A full day is best for a first visit",
-    cost: "Costs vary depending on ferry, transport and activities",
+    cost: "Costs vary depending on ferry, island transport and activities",
+    journeyTime: "The passenger ferry crossing is approximately 20 minutes",
+    parking:
+      "Paid parking is available at Breakwater Terminal. Check SeaLink for the current daily rate",
     carNeeded:
       "Not required — the island bus service is timed with ferry arrivals; a car or hire vehicle is optional",
     accessibility:
@@ -72,8 +79,7 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     carNeeded: "No — it is walkable from the city centre",
     parking: "Free street parking along the foreshore, subject to current signs",
     accessibility: "The foreshore promenade is flat and sealed for its full length",
-    dogFriendly:
-      "Dogs are allowed on the promenade on-leash; designated off-leash times apply in some areas — check local signage",
+    dogFriendly: "Keep dogs leashed unless current signs identify a designated off-leash area",
     bestTimeToVisit: "Morning or late afternoon for cooler conditions",
     localVerdict:
       "The easiest place for first-time visitors to experience Townsville's waterfront, particularly in the morning or late afternoon. Swimming conditions change through the year — see our stinger safety guide before swimming.",
