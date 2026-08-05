@@ -242,7 +242,7 @@ const GreatBarrierReef = () => {
           <Card className="hover:shadow-md transition-shadow">
             <CardContent className="p-5 text-center">
               <h3 className="font-semibold text-foreground mb-2">Little Crystal Creek</h3>
-              <p className="text-sm text-muted-foreground mb-3">Freshwater swimming in the Paluma Range.</p>
+              <p className="text-sm text-muted-foreground mb-3">Temporarily closed following severe weather damage — check current access.</p>
               <Button asChild variant="outline" size="sm" className="gap-1">
                 <Link to="/little-crystal-creek-townsville">Explore Guide <ArrowRight className="w-3 h-3" /></Link>
               </Button>

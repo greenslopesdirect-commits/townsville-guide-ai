@@ -144,7 +144,7 @@ const faqItems = [
   },
   {
     question: "What is the best stinger-free swimming spot near Townsville?",
-    answer: "Little Crystal Creek in Paluma National Park offers refreshing freshwater mountain pools that are completely safe from stingers year-round."
+    answer: "Freshwater swimming in the Paluma Range is naturally stinger-free. Little Crystal Creek is temporarily closed following severe weather damage, so check the dedicated guide and current Queensland Parks alert before travelling, and consider the alternatives in our Paluma day-trip guide."
   },
 ];
 

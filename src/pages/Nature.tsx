@@ -179,7 +179,7 @@ const Nature = () => {
                   {
                     "@type": "Question",
                     "name": "What's the best nature walk in Townsville?",
-                    "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you're after. For iconic views, Castle Hill is the classic climb with 360° panoramas of the city, Cleveland Bay and Magnetic Island. For wetlands and birdlife, the Townsville Town Common is hard to beat. For a cool rainforest swim, Little Crystal Creek in the Paluma Range is a local favourite." }
+                    "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you're after. For iconic views, Castle Hill is the classic climb with 360° panoramas of the city, Cleveland Bay and Magnetic Island. For wetlands and birdlife, the Townsville Town Common is hard to beat. For rainforest scenery, the Paluma Range is a rewarding day trip — though Little Crystal Creek is temporarily closed following severe weather damage, so check the current Queensland Parks alert before travelling." }
                   },
                   {
                     "@type": "Question",
@@ -327,7 +327,7 @@ const Nature = () => {
                 <Link to="/little-crystal-creek-townsville" className="group block p-5 rounded-xl border-2 hover:border-primary/40 transition-colors bg-card">
                   <Waves className="w-6 h-6 text-primary mb-2" />
                   <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">Little Crystal Creek</h3>
-                  <p className="text-sm text-muted-foreground mt-1">Rainforest swimming holes and the historic stone bridge up in Paluma.</p>
+                  <p className="text-sm text-muted-foreground mt-1">Temporarily closed following severe weather damage — check current access before travelling.</p>
                 </Link>
                 <Link to="/guides/sunset-walks" className="group block p-5 rounded-xl border-2 hover:border-primary/40 transition-colors bg-card">
                   <Compass className="w-6 h-6 text-primary mb-2" />
@@ -366,7 +366,7 @@ const Nature = () => {
                 {[
                   {
                     q: "What's the best nature walk in Townsville?",
-                    a: "It depends on what you're after. For iconic views, Castle Hill is the classic climb with 360° panoramas of the city, Cleveland Bay and Magnetic Island. For wetlands and birdlife, the Townsville Town Common is hard to beat. For a cool rainforest swim, Little Crystal Creek in the Paluma Range is a local favourite."
+                    a: "It depends on what you're after. For iconic views, Castle Hill is the classic climb with 360° panoramas of the city, Cleveland Bay and Magnetic Island. For wetlands and birdlife, the Townsville Town Common is hard to beat. For rainforest scenery, the Paluma Range is a rewarding day trip — though Little Crystal Creek is temporarily closed following severe weather damage, so check the current Queensland Parks alert before travelling."
                   },
                   {
                     q: "Are Townsville's nature trails dog-friendly?",
