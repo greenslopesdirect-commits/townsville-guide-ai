@@ -131,6 +131,18 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "A worthwhile free stop that combines waterfront views, open space and Townsville history.",
   },
+  "/townsville-in-one-day": {
+    bestFor: ["First-time visitors", "Couples", "Families", "Short stays"],
+    timeNeeded: "Approximately 8–10 hours",
+    cost: "Includes both free and optional paid activities",
+    carNeeded:
+      "Helpful, particularly for Castle Hill and moving between city areas",
+    accessibility:
+      "The itinerary can be adjusted, but accessibility varies by attraction",
+    bestTimeToVisit: "Start early, particularly during hotter months",
+    localVerdict:
+      "A realistic introduction to Townsville that covers the waterfront, local history and Castle Hill without making the day unnecessarily rushed.",
+  },
 };
 
 const normalise = (path: string) => (path !== "/" ? path.replace(/\/+$/, "") : path);

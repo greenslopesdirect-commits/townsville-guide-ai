@@ -60,6 +60,7 @@ import UsefulContacts from "@/pages/UsefulContacts";
 import Suburbs from "@/pages/Suburbs";
 import Directory from "@/pages/Directory";
 import FirstTimeInTownsville from "@/pages/FirstTimeInTownsville";
+import TownsvilleInOneDay from "@/pages/TownsvilleInOneDay";
 
 
 const queryClient = new QueryClient();
@@ -121,6 +122,7 @@ const App = () => (
             <Route path="accessible-townsville" element={<AccessibleTownsville />} />
             <Route path="useful-contacts" element={<UsefulContacts />} />
             <Route path="first-time-in-townsville" element={<FirstTimeInTownsville />} />
+            <Route path="townsville-in-one-day" element={<TownsvilleInOneDay />} />
 
             
             
