@@ -121,12 +121,29 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     ],
   },
   "/guides/magnetic-island-day-trip": {
+    visitStatus: "research-based",
     lastChecked: "5 August 2026",
     officialSourcesChecked: true,
     officialSources: [
       {
-        name: "SeaLink Queensland — Magnetic Island ferry fares and terminal parking",
-        url: "https://www.sealinkqld.com.au/magnetic-island-ferry/fares",
+        name: "SeaLink Queensland — Magnetic Island passenger ferry",
+        url: "https://www.sealinkqld.com.au/magnetic-island-ferry",
+      },
+      {
+        name: "Translink — bus services and timetables",
+        url: "https://translink.com.au/",
+      },
+      {
+        name: "Queensland Parks — Magnetic Island National Park",
+        url: "https://parks.desi.qld.gov.au/parks/magnetic-island",
+      },
+      {
+        name: "Beachsafe — beach and swimming safety information",
+        url: "https://beachsafe.org.au/",
+      },
+      {
+        name: "Bureau of Meteorology — Queensland weather warnings",
+        url: "http://www.bom.gov.au/qld/",
       },
     ],
   },
