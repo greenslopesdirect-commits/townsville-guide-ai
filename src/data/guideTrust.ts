@@ -47,6 +47,46 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/castle-hill": {
+    lastChecked: "5 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — Castle Hill",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds/castle-hill",
+      },
+    ],
+  },
+  "/little-crystal-creek-townsville": {
+    lastChecked: "5 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Queensland Parks — Paluma Range National Park park alerts",
+        url: "https://parks.desi.qld.gov.au/parks/paluma-range/alerts",
+      },
+    ],
+  },
+  "/guides/magnetic-island-day-trip": {
+    lastChecked: "5 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "SeaLink Queensland — Magnetic Island ferry fares and terminal parking",
+        url: "https://www.sealinkqld.com.au/magnetic-island-ferry/fares",
+      },
+    ],
+  },
+  "/the-strand": {
+    lastChecked: "5 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — Dog off-leash areas",
+        url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs/dog-off-leash-areas",
+      },
+    ],
+  },
   "/guides/jezzine-barracks": {
     visitStatus: "personally-visited",
     lastChecked: "August 2026",
