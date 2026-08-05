@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mountain, Sunrise, Camera, Car, Footprints, Clock, DollarSign, MapPin, Thermometer, Wind, Heart } from "lucide-react";
+import { Mountain, Sunrise, Camera, Footprints, Thermometer, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
@@ -91,23 +91,65 @@ const CastleHill = () => {
               <Footprints className="w-6 h-6 text-primary" />
               Walking Options
             </h2>
-            <div className="grid gap-4 md:grid-cols-3">
-              {[
-                { name: "Goat Track", desc: "Steeper popular walk — the locals' favourite for a workout." },
-                { name: "Castle Hill Road", desc: "Drive or gentle walk along the sealed road to the summit." },
-                { name: "Cudmore Track", desc: "Quieter alternative with a more shaded, scenic route." },
-              ].map((track) => (
-                <Card key={track.name} className="border-2 hover:border-primary/30 transition-colors">
-                  <CardContent className="p-5">
-                    <h3 className="font-semibold text-foreground mb-2">{track.name}</h3>
-                    <p className="text-sm text-muted-foreground">{track.desc}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              You can reach the summit on foot using one of Castle Hill's dedicated walking tracks —
+              including the Goat Track and the Cudtheringa Track — or by walking the sealed Castle
+              Hill Road, which is shared with vehicles and cyclists. Either way the climb is steep
+              and exposed, with limited shade.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Preparation matters: carry water, wear suitable shoes, avoid the middle of the day and
+              check current Townsville City Council notices, because tracks and road access can close
+              temporarily for repairs, weather or events.
+            </p>
+            <Button asChild>
+              <Link to="/guides/walking-castle-hill">Read the Walking Castle Hill Guide</Link>
+            </Button>
             <p className="mt-4 text-sm text-muted-foreground flex items-center gap-2">
               <Thermometer className="w-4 h-4 text-primary" />
-              Bring water — it gets hot quickly in North Queensland.
+              Bring water — it gets hot quickly in North Queensland. See our{" "}
+              <Link to="/guides/beat-the-heat" className="text-primary hover:underline">
+                Beat the Heat guide
+              </Link>
+              .
+            </p>
+          </section>
+
+          {/* Children */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-4">
+              Is Castle Hill Suitable for Children?
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              For most families, driving to the summit is the easier option. Walking suitability
+              depends on a child's age, fitness and the weather on the day — the tracks are steep and
+              fully exposed, and heat is usually the deciding factor.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              More family planning ideas are in our{" "}
+              <Link to="/townsville-with-kids" className="text-primary hover:underline">
+                Townsville with Kids guide
+              </Link>
+              , and there are indoor alternatives in our{" "}
+              <Link to="/guides/rainy-day-activities" className="text-primary hover:underline">
+                rainy day activities guide
+              </Link>
+              .
+            </p>
+          </section>
+
+          {/* Accessibility */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-foreground mb-4">Accessibility</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              The walking tracks are steep and are not suitable for all mobility levels. Visitors who
+              cannot manage steep terrain will find driving to the summit far more practical, with
+              parking close to the lookout areas. Surfaces and lookout access vary between viewing
+              points, so check current details before visiting — see{" "}
+              <Link to="/accessible-townsville" className="text-primary hover:underline">
+                Accessible Townsville
+              </Link>{" "}
+              for more.
             </p>
           </section>
 
@@ -159,29 +201,6 @@ const CastleHill = () => {
             </p>
           </section>
 
-          {/* Quick Summary */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-foreground mb-6">Quick Summary</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                { icon: <Camera className="w-5 h-5" />, label: "Best for", value: "Views & photos" },
-                { icon: <Clock className="w-5 h-5" />, label: "Time needed", value: "20–60 minutes" },
-                { icon: <DollarSign className="w-5 h-5" />, label: "Cost", value: "Free" },
-                { icon: <Car className="w-5 h-5" />, label: "Access", value: "Drive or walk" },
-              ].map((item) => (
-                <Card key={item.label} className="border-2 text-center">
-                  <CardContent className="p-4 space-y-2">
-                    <div className="mx-auto w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                      {item.icon}
-                    </div>
-                    <p className="text-xs text-muted-foreground">{item.label}</p>
-                    <p className="font-semibold text-foreground text-sm">{item.value}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </section>
-
           {/* Combine With Nearby Stops */}
           <section className="mb-12">
             <h2 className="text-2xl font-bold text-foreground mb-4">Combine Castle Hill With These Nearby Stops</h2>
@@ -190,14 +209,16 @@ const CastleHill = () => {
             </p>
             <ul className="space-y-2">
               {[
-                "The Strand beachfront (walking, swimming, cafés)",
-                "Magnetic Island ferry terminal nearby",
-                "Townsville CBD restaurants and cafés",
-                "Sunset viewing at Rowes Bay",
+                { text: "The Strand beachfront (walking, swimming, cafés)", to: "/the-strand" },
+                { text: "Magnetic Island day trip from the nearby ferry terminal", to: "/guides/magnetic-island-day-trip" },
+                { text: "Free things to do around the city centre", to: "/guides/free-things" },
+                { text: "Sunset viewing at Rowes Bay", to: "/rowes-bay" },
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3 text-muted-foreground">
                   <span className="text-primary mt-1">•</span>
-                  <span>{item}</span>
+                  <Link to={item.to} className="hover:text-primary hover:underline">
+                    {item.text}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -218,6 +239,24 @@ const CastleHill = () => {
               </Button>
               <Button asChild variant="outline">
                 <Link to="/local-tips">Local Tips</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/guides/walking-castle-hill">Walking Castle Hill</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/first-time-in-townsville">First Time in Townsville</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/townsville-in-one-day">Townsville in One Day</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/townsville-without-a-car">Townsville Without a Car</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/guides/sunset-walks">Sunset Walks</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/accessible-townsville">Accessible Townsville</Link>
               </Button>
             </div>
           </section>
