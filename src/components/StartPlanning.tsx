@@ -43,7 +43,17 @@ const pathways = [
     link: "/guides/free-things",
     label: "Read the free things to do in Townsville guide",
   },
+  {
+    title: "Townsville in One Day",
+    description:
+      "Follow a realistic one-day plan covering the main sights without trying to fit too much into a single visit.",
+    image: castleHillTwoImage,
+    alt: "Townsville city and coastline seen from the Castle Hill lookout in the late afternoon",
+    link: "/townsville-in-one-day",
+    label: "Read the Townsville in one day itinerary",
+  },
 ];
+
 
 const StartPlanning = () => {
   return (
