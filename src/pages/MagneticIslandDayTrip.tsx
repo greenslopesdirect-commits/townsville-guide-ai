@@ -77,6 +77,7 @@ const FAQS = [
 ];
 
 const RELATED = [
+  { name: "Magnetic Island Ferry Guide", to: "/guides/magnetic-island-ferry" },
   { name: "First Time in Townsville", to: "/first-time-in-townsville" },
   { name: "Townsville in One Day", to: "/townsville-in-one-day" },
   { name: "Townsville Without a Car", to: "/townsville-without-a-car" },
@@ -188,7 +189,11 @@ const MagneticIslandDayTrip = () => {
               <p className="mb-2">
                 Ferry fares, timetables, terminal parking, island buses, road access and
                 walking-track conditions can change. Check the passenger ferry, vehicle ferry,
-                Translink and Queensland Parks information before travelling.
+                Translink and Queensland Parks information before travelling.{" "}
+                <Link to="/guides/magnetic-island-ferry" className="text-primary hover:underline">
+                  Read the complete Magnetic Island ferry guide
+                </Link>
+                .
               </p>
               <ul className="list-disc pl-5 space-y-1">
                 <li>
@@ -328,7 +333,11 @@ const MagneticIslandDayTrip = () => {
               <Link to="/townsville-airport" className="text-primary hover:underline">
                 Townsville Airport
               </Link>{" "}
-              guide.
+              guide. For terminals, crossing times, parking and booking detail,{" "}
+              <Link to="/guides/magnetic-island-ferry" className="text-primary hover:underline">
+                read the complete Magnetic Island ferry guide
+              </Link>
+              .
             </p>
           </section>
 
@@ -379,6 +388,14 @@ const MagneticIslandDayTrip = () => {
               Neither option is universally better. A car suits families, larger groups and
               visitors planning to move between several bays; foot-passenger travel suits
               shorter, simpler days built around two or three stops.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              The vehicle ferry uses a different Townsville terminal and takes longer than the
+              passenger ferry —{" "}
+              <Link to="/guides/magnetic-island-ferry" className="text-primary hover:underline">
+                read the complete Magnetic Island ferry guide
+              </Link>{" "}
+              before booking.
             </p>
           </section>
 
@@ -922,6 +939,12 @@ const MagneticIslandDayTrip = () => {
               <li>Recheck service notices during the day, particularly in poor weather.</li>
               <li>Do not assume alternative transport will be immediately available.</li>
             </ul>
+            <p className="text-muted-foreground leading-relaxed">
+              <Link to="/guides/magnetic-island-ferry" className="text-primary hover:underline">
+                Read the complete Magnetic Island ferry guide
+              </Link>{" "}
+              for return-planning detail and operator timetable links.
+            </p>
           </section>
 
           {/* FAQ */}
