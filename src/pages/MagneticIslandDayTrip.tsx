@@ -171,7 +171,7 @@ const MagneticIslandDayTrip = () => {
             <p className="text-sm text-muted-foreground">Updated {LAST_UPDATED}</p>
             <img
               src="/magnetic-island-guide.webp"
-              alt="Coastal view of Magnetic Island with a sandy bay, headland and clear water"
+              alt="Magnetic Island ferry terminal building beside the water, with the vehicle marshalling area in the foreground"
               className="rounded-xl shadow-lg w-full h-[280px] md:h-[440px] object-cover"
               width={1600}
               height={900}
