@@ -173,7 +173,6 @@ const TheStrand = () => {
             className="w-full h-[260px] md:h-[460px] object-cover rounded-xl"
             width={1600}
             height={900}
-            fetchPriority="high"
             loading="eager"
             decoding="async"
           />
