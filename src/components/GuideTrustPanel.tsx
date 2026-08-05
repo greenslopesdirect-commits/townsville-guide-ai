@@ -33,10 +33,16 @@ const GuideTrustPanel = ({ guideTitle, className, ...overrides }: GuideTrustPane
     ...Object.fromEntries(Object.entries(overrides).filter(([, v]) => v !== undefined)),
   } as GuideTrustMeta;
 
-  const title =
-    guideTitle ||
-    (typeof document !== "undefined" ? document.title : "") ||
-    "Townsville Guide";
+  // document.title is set by react-helmet after the first render, so read it in
+  // an effect (and on route change) rather than during render, otherwise the
+  // report link falls back to the generic site title.
+  const [docTitle, setDocTitle] = useState("");
+  useEffect(() => {
+    const id = window.setTimeout(() => setDocTitle(document.title), 0);
+    return () => window.clearTimeout(id);
+  }, [location.pathname]);
+
+  const title = guideTitle || docTitle || "Townsville Guide";
   const url =
     typeof window !== "undefined"
       ? `${window.location.origin}${location.pathname}`
