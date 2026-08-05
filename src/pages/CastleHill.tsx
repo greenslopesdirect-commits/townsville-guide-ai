@@ -3,6 +3,7 @@ import { Mountain, Sunrise, Camera, Car, Footprints, Clock, DollarSign, MapPin, 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 import castleHillImage from "@/assets/castle-hill-townsville-2.webp";
 
 const CastleHill = () => {
@@ -46,28 +47,8 @@ const CastleHill = () => {
           </header>
 
           {/* Quick Visitor Info */}
-          <section className="mb-12">
-            <Card className="bg-muted/30 shadow-sm">
-              <CardContent className="p-5 md:p-6">
-                <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">Quick Visitor Info</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {[
-                    { icon: "📍", text: "Location: Central Townsville" },
-                    { icon: "⏱", text: "Typical visit: 20–60 minutes" },
-                    { icon: "🚗", text: "Drive to summit available" },
-                    { icon: "🥾", text: "Walking tracks for all fitness levels" },
-                    { icon: "🌅", text: "Best times: Sunrise or sunset" },
-                    { icon: "💧", text: "Bring water — it gets very hot" },
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <span className="text-lg flex-shrink-0">{item.icon}</span>
-                      <span className="text-sm text-muted-foreground">{item.text}</span>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          </section>
+          <GuideQuickFacts className="mb-12" />
+
 
           {/* Why Visit */}
           <section className="mb-12">

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 import { 
   Baby, 
   Sun, 
@@ -53,6 +54,8 @@ const TownsvilleWithKids = () => {
             </CardContent>
           </Card>
         </section>
+
+        <GuideQuickFacts className="mb-12" />
 
         {/* Section 1: Free & Easy Family Activities */}
         <section className="mb-12">

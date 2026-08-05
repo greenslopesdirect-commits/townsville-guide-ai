@@ -11,6 +11,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 import { Clock, Car, MapPin, Droplets, Sun, CloudRain, TreePine, Baby, Dog, ArrowRight } from "lucide-react";
 
 const LittleCrystalCreek = () => {
@@ -85,6 +86,7 @@ const LittleCrystalCreek = () => {
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         If you're planning a free day trip from Townsville, this is one of the most scenic options in North Queensland.
       </p>
+      <GuideQuickFacts className="mb-10" />
       <Separator className="mb-10" />
 
       {/* Section 1: Where */}
