@@ -63,6 +63,9 @@ const JezzineBarracks = () => {
 
       <div className="container mx-auto max-w-4xl px-4 mt-8 space-y-8">
 
+        {/* Quick visitor information */}
+        <GuideQuickFacts />
+
         {/* Feature Image Caption */}
         <figure className="rounded-lg overflow-hidden border border-border/40 bg-muted/30">
           <img
