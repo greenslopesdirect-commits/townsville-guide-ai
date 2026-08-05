@@ -66,6 +66,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
 
 /** Routes that are guide articles and should show the trust panel. */
 export const GUIDE_PATHS: string[] = [
+  "/first-time-in-townsville",
   "/guides/beat-the-heat",
   "/guides/magnetic-island-day-trip",
   "/guides/free-things",
