@@ -97,6 +97,28 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "A worthwhile scenic day trip when open, but do not travel without checking the current Queensland Parks alert.",
   },
+  "/guides/magnetic-island-ferry": {
+    bestFor: [
+      "Magnetic Island day trips",
+      "Foot passengers",
+      "Visitors taking a car",
+      "First-time ferry travellers",
+    ],
+    timeNeeded: "Allow extra time for parking, check-in, boarding and the return journey",
+    cost: "Fares vary by operator, passenger type, vehicle and booking conditions",
+    journeyTime:
+      "Passenger ferry approximately 20 minutes; vehicle ferry approximately 40 minutes",
+    carNeeded:
+      "No \u2014 use the passenger ferry and island transport, or book the vehicle ferry when taking a car",
+    parking:
+      "Paid parking is available near Breakwater Terminal; vehicle-ferry customers should check current Ross Street arrangements",
+    accessibility:
+      "Boarding and vehicle arrangements vary by operator; contact the ferry company before travelling",
+    dogFriendly: "Pet rules vary by operator and service; confirm current conditions before booking",
+    bestTimeToVisit: "Choose outward and return services before finalising the island itinerary",
+    localVerdict:
+      "The trip is straightforward once visitors understand that the passenger and vehicle ferries use different Townsville terminals and have different crossing times.",
+  },
   "/guides/magnetic-island-day-trip": {
     bestFor: ["Beaches and bays", "Wildlife", "Walking", "Full-day trips"],
     timeNeeded: "Allow one full day; an overnight stay provides more flexibility",

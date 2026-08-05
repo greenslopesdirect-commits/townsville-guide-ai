@@ -64,6 +64,7 @@ const PAGES = [
   { path: "/north-shore-townsville",              source: "src/pages/NorthShoreTownsville.tsx",        changefreq: "monthly", priority: "0.6" },
   { path: "/townsville-airport",                  source: "src/pages/TownsvilleAirport.tsx",           changefreq: "monthly", priority: "0.6" },
   { path: "/guides/magnetic-island-day-trip",     source: "src/pages/MagneticIslandDayTrip.tsx",       changefreq: "monthly", priority: "0.8" },
+  { path: "/guides/magnetic-island-ferry",        source: "src/pages/MagneticIslandFerry.tsx",         changefreq: "monthly", priority: "0.7" },
   { path: "/guides/stinger-safety",               source: "src/pages/StingerSafety.tsx",               changefreq: "daily",   priority: "0.7" },
   { path: "/guides/jezzine-barracks",             source: "src/pages/JezzineBarracks.tsx",             changefreq: "monthly", priority: "0.7" },
   { path: "/guides/free-things",                  source: "src/pages/FreeThings.tsx",                  changefreq: "monthly", priority: "0.7" },
