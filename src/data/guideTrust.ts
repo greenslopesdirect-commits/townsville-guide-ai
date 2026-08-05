@@ -28,6 +28,25 @@ export const DEFAULT_GUIDE_TRUST: GuideTrustMeta = {
  * Anything not listed here falls back to DEFAULT_GUIDE_TRUST.
  */
 export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
+  "/guides/walking-castle-hill": {
+    visitStatus: "partially-firsthand",
+    lastChecked: "5 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — Castle Hill lookout and walking tracks",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds/castle-hill",
+      },
+      {
+        name: "Townsville City Council — walking and cycling trails",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/sport-and-recreation/walking-and-cycling",
+      },
+      {
+        name: "Townsville City Council — news, closures and road information",
+        url: "https://www.townsville.qld.gov.au/about-council/news-and-publications",
+      },
+    ],
+  },
   "/townsville-without-a-car": {
     visitStatus: "partially-firsthand",
     lastChecked: "5 August 2026",

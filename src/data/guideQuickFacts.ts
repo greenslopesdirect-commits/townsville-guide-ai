@@ -38,13 +38,36 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "Townsville can work without a car if you stay centrally and focus on The Strand, North Ward, the CBD and Magnetic Island rather than trying to cover the wider region.",
   },
+  "/guides/walking-castle-hill": {
+    bestFor: [
+      "Regular walkers",
+      "Fitness walks",
+      "Townsville views",
+      "Early-morning exercise",
+    ],
+    timeNeeded: "Varies considerably by route, fitness, weather and rest stops",
+    cost: "Free",
+    carNeeded:
+      "No for walking from a track entrance, but transport to and from the starting point may still be useful",
+    parking:
+      "Parking availability depends on the chosen starting point and current restrictions",
+    toilets: "Public toilets are available at the summit",
+    accessibility:
+      "The walking tracks are steep and are not suitable for all mobility levels",
+    dogFriendly: "Keep dogs leashed and follow current signs",
+    bestTimeToVisit: "Early morning or later in the day, avoiding peak heat",
+    localVerdict:
+      "A rewarding Townsville walk for prepared visitors, but the steep terrain, exposed conditions and heat should not be underestimated.",
+  },
   "/castle-hill": {
     bestFor: ["Panoramic views", "Sunrise and sunset", "Photography", "Walking"],
-    timeNeeded: "20–60 minutes",
+    timeNeeded:
+      "Allow 20–60 minutes for a summit visit by car; walking time varies considerably by route and fitness",
     cost: "Free",
     carNeeded:
       "Not essential — it is close to the city centre, but driving to the summit is the easiest option",
-    parking: "Parking at the summit; it fills quickly around sunset",
+    parking:
+      "Parking is available at the summit but demand is high around sunrise and sunset, and temporary restrictions may apply",
     toilets: "Public toilets are available at the summit",
     accessibility:
       "The sealed road allows vehicle access to the summit lookout areas; the walking tracks are steep, exposed and are not suitable for all visitors",
