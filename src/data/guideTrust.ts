@@ -120,6 +120,45 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/guides/magnetic-island-ferry": {
+    visitStatus: "research-based",
+    lastChecked: "5 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "SeaLink Queensland — Magnetic Island passenger ferry",
+        url: "https://www.sealinkqld.com.au/magnetic-island-ferry",
+      },
+      {
+        name: "SeaLink Queensland — Magnetic Island ferry timetables",
+        url: "https://www.sealinkqld.com.au/magnetic-island-ferry/timetables",
+      },
+      {
+        name: "SeaLink Queensland — fares and terminal parking",
+        url: "https://www.sealinkqld.com.au/magnetic-island-ferry/fares",
+      },
+      {
+        name: "Magnetic Island Ferries — vehicle ferry",
+        url: "https://www.magneticislandferries.com.au/",
+      },
+      {
+        name: "Magnetic Island Ferries — timetable",
+        url: "https://www.magneticislandferries.com.au/timetable/",
+      },
+      {
+        name: "Magnetic Island Ferries — fares and bookings",
+        url: "https://www.magneticislandferries.com.au/fares/",
+      },
+      {
+        name: "Translink — Route 250 and journey planner",
+        url: "https://translink.com.au/",
+      },
+      {
+        name: "Bureau of Meteorology — Queensland weather warnings",
+        url: "http://www.bom.gov.au/qld/",
+      },
+    ],
+  },
   "/guides/magnetic-island-day-trip": {
     visitStatus: "research-based",
     lastChecked: "5 August 2026",
@@ -190,6 +229,7 @@ export const GUIDE_PATHS: string[] = [
   "/townsville-without-a-car",
   "/guides/beat-the-heat",
   "/guides/magnetic-island-day-trip",
+  "/guides/magnetic-island-ferry",
   "/guides/free-things",
   "/guides/rainy-day-activities",
   "/guides/stinger-safety",
