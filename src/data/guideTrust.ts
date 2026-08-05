@@ -28,6 +28,25 @@ export const DEFAULT_GUIDE_TRUST: GuideTrustMeta = {
  * Anything not listed here falls back to DEFAULT_GUIDE_TRUST.
  */
 export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
+  "/first-time-in-townsville": {
+    visitStatus: "partially-firsthand",
+    lastChecked: "August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council",
+        url: "https://www.townsville.qld.gov.au/",
+      },
+      {
+        name: "Bureau of Meteorology — Townsville forecast",
+        url: "http://www.bom.gov.au/qld/forecasts/townsville.shtml",
+      },
+      {
+        name: "Townsville Airport",
+        url: "https://www.townsvilleairport.com.au/",
+      },
+    ],
+  },
   "/guides/jezzine-barracks": {
     visitStatus: "personally-visited",
     lastChecked: "August 2026",
@@ -47,6 +66,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
 
 /** Routes that are guide articles and should show the trust panel. */
 export const GUIDE_PATHS: string[] = [
+  "/first-time-in-townsville",
   "/guides/beat-the-heat",
   "/guides/magnetic-island-day-trip",
   "/guides/free-things",

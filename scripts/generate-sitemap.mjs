@@ -35,6 +35,7 @@ const OUTPUT = resolve(ROOT, "public/sitemap.xml");
  */
 const PAGES = [
   { path: "/",                                    source: "src/pages/Index.tsx",                       changefreq: "weekly",  priority: "1.0" },
+  { path: "/first-time-in-townsville",            source: "src/pages/FirstTimeInTownsville.tsx",       changefreq: "monthly", priority: "0.9" },
   { path: "/history",                             source: "src/pages/HistoryOfTownsville.tsx",         changefreq: "monthly", priority: "0.8" },
   { path: "/things-to-do",                        source: "src/pages/ThingsToDo.tsx",                  changefreq: "weekly",  priority: "0.9" },
   { path: "/beaches",                             source: "src/pages/Beaches.tsx",                     changefreq: "weekly",  priority: "0.9" },
