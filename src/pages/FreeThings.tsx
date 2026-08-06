@@ -525,7 +525,6 @@ const FreeThings = () => {
         width={1600}
         height={900}
         loading="eager"
-        loading="eager"
         decoding="async"
       />
 
