@@ -28,7 +28,26 @@ export interface QuickFacts {
   typicalStay?: string;
   /** Main practical challenge visitors should plan around. */
   mainChallenge?: string;
+  /** Best time of day to be outdoors, used on hot-weather planning guides. */
+  bestOutdoorTime?: string;
+  /** Best free way to cool down. */
+  bestCoolDown?: string;
+  /** Best shaded option. */
+  bestShadedOption?: string;
+  /** Best indoor or air-conditioned break. */
+  bestIndoorBreak?: string;
+  /** Hardest activity in hot conditions. */
+  hardestInHeat?: string;
+  /** Best approach for families on a hot day. */
+  bestFamilyApproach?: string;
+  /** Main safety risk to plan around. */
+  mainRisk?: string;
+  /** What to check before heading out. */
+  checkBeforeHeadingOut?: string;
+  /** Emergency guidance line. */
+  emergency?: string;
   timeNeeded?: string;
+
 
   cost?: string;
   distanceFromCBD?: string;
