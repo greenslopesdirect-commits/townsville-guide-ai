@@ -19,7 +19,13 @@ import {
   Sparkles,
   Waves,
   CalendarDays,
+  TreePine,
+  Building2,
+  Flame,
+  CloudSun,
+  PhoneCall,
 } from "lucide-react";
+
 import { cn } from "@/lib/utils";
 import { getQuickFacts, type QuickFacts } from "@/data/guideQuickFacts";
 
@@ -60,8 +66,18 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(Sun, "Best hot-day option", data.bestHotDayOption);
   push(Ship, "Best day trip", data.bestDayTrip);
   push(CalendarDays, "Typical family stay", data.typicalStay);
+  push(Sun, "Best outdoor time", data.bestOutdoorTime);
+  push(Waves, "Best free cool-down", data.bestCoolDown);
+  push(TreePine, "Best shaded option", data.bestShadedOption);
+  push(Building2, "Best indoor break", data.bestIndoorBreak);
+  push(Flame, "Hardest activity in heat", data.hardestInHeat);
+  push(Baby, "Best family approach", data.bestFamilyApproach);
+  push(AlertTriangle, "Main risk", data.mainRisk);
+  push(CloudSun, "Check before heading out", data.checkBeforeHeadingOut);
+  push(PhoneCall, "Emergency", data.emergency);
   push(AlertTriangle, "Main challenge", data.mainChallenge);
   push(Clock, "Time needed", data.timeNeeded);
+
 
   push(Ticket, "Cost", data.cost);
   push(Route, "Route length", data.routeLength);

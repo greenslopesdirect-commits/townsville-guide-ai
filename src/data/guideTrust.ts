@@ -31,6 +31,49 @@ export const DEFAULT_GUIDE_TRUST: GuideTrustMeta = {
  * Anything not listed here falls back to DEFAULT_GUIDE_TRUST.
  */
 export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
+  "/guides/beat-the-heat": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand experience of Townsville's tropical heat with current advice from Queensland Health, the Bureau of Meteorology, Townsville City Council and official emergency-information services.",
+    lastChecked: "6 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Queensland Health — heat and health",
+        url: "https://www.health.qld.gov.au/newsroom/features/how-to-beat-the-heat",
+      },
+      {
+        name: "Queensland Government — heatwave preparation",
+        url: "https://www.qld.gov.au/emergency/dealing-disasters/heatwave",
+      },
+      {
+        name: "Bureau of Meteorology — Townsville forecast",
+        url: "http://www.bom.gov.au/qld/forecasts/townsville.shtml",
+      },
+      {
+        name: "Bureau of Meteorology — heatwave service",
+        url: "http://www.bom.gov.au/australia/heatwave/",
+      },
+      {
+        name: "Townsville Disaster Dashboard",
+        url: "https://disaster.townsville.qld.gov.au/",
+      },
+      {
+        name: "Townsville City Council — pools and lagoons",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/pools",
+      },
+      {
+        name: "Queensland Parks and Wildlife Service — park alerts",
+        url: "https://parks.desi.qld.gov.au/park-alerts",
+      },
+      {
+        name: "Queensland Traffic — road conditions",
+        url: "https://qldtraffic.qld.gov.au/",
+      },
+      { name: "13 HEALTH (13 43 25 84)", url: "https://www.health.qld.gov.au/13health" },
+    ],
+  },
+
   "/guides/free-things": {
     visitStatus: "partially-firsthand",
     visitNote:
