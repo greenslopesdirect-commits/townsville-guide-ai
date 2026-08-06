@@ -68,7 +68,6 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
         name: "Queensland Parks and Wildlife Service — park alerts",
         url: "https://parks.desi.qld.gov.au/park-alerts",
       },
-      { name: "Cotters Market, Townsville", url: "https://www.townsville.qld.gov.au/" },
     ],
   },
   "/townsville-with-kids": {
