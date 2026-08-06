@@ -524,7 +524,7 @@ const FreeThings = () => {
         className="w-full h-[280px] md:h-[420px] object-cover"
         width={1600}
         height={900}
-        fetchPriority="high"
+        loading="eager"
         loading="eager"
         decoding="async"
       />
