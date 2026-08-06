@@ -427,7 +427,7 @@ const BeatTheHeat = () => {
 
       <img
         src="/beat-the-heat-guide.webp"
-        alt="Using a chilled public water station on The Strand in Townsville on a hot tropical day"
+        alt="A dog drinking from a chilled public water station in a Townsville park on a hot tropical day"
         className="w-full h-[280px] md:h-[420px] object-cover"
         width={1600}
         height={900}
