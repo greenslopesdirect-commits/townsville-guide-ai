@@ -54,6 +54,20 @@ export interface QuickFacts {
  * simply omit a field when there is no reliable information at all.
  */
 export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
+  "/guides/free-things": {
+    bestOverall: "The Strand",
+    bestView: "Castle Hill",
+    bestSwimming: "Riverway Lagoons",
+    bestWithKids: "Strand Water Park",
+    bestWalk: "Jezzine Barracks and Kissing Point",
+    bestWithoutCar: "The Strand and the CBD",
+    bestHotDayOption: "Riverway Lagoons or the Strand Water Park",
+    bestSunset: "Castle Hill or Rowes Bay",
+    cost: "Free, excluding transport, parking and food",
+    mainChallenge: "Heat and limited midday shade",
+    localVerdict:
+      "Townsville is genuinely good value: the beaches, lookouts, parks and public swimming areas cost nothing, and the main planning task is working around the heat rather than the budget.",
+  },
   "/guides/paluma-day-trip": {
     bestFor: [
       "Rainforest scenery",
