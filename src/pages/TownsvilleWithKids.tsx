@@ -714,9 +714,9 @@ const TownsvilleWithKids = () => {
             <CardContent className="p-5 flex items-start gap-3">
               <AlertTriangle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Reef HQ Great Barrier Reef Aquarium is not operating as a normal visitor attraction
-                and should not be counted on as a rainy-day option. Check official information for
-                its current status before mentioning it to children.
+                The Great Barrier Reef Aquarium, formerly known as Reef HQ, is closed for
+                redevelopment and is not currently available as a wet-weather family attraction.
+                Check the official aquarium website for redevelopment and reopening updates.
               </p>
             </CardContent>
           </Card>
