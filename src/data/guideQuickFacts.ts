@@ -1,6 +1,21 @@
 export interface QuickFacts {
   bestFor?: string[];
+  /** Age range a location or guide suits best, e.g. "Toddlers to teenagers". */
+  bestAges?: string;
+  /** Standout free option, used mainly on planning hub guides. */
+  bestFreeActivity?: string;
+  /** Standout paid option, used mainly on planning hub guides. */
+  bestPaidActivity?: string;
+  /** Best option on a hot day. */
+  bestHotDayOption?: string;
+  /** Best day trip from the city. */
+  bestDayTrip?: string;
+  /** Typical length of stay, e.g. "2–4 days". */
+  typicalStay?: string;
+  /** Main practical challenge visitors should plan around. */
+  mainChallenge?: string;
   timeNeeded?: string;
+
   cost?: string;
   distanceFromCBD?: string;
   /** Length of a walking/foreshore route, where "distance from CBD" does not apply. */
