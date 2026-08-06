@@ -17,6 +17,7 @@ import {
   AlertTriangle,
   Baby,
   Sparkles,
+  Waves,
   CalendarDays,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
