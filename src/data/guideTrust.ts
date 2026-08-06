@@ -31,6 +31,37 @@ export const DEFAULT_GUIDE_TRUST: GuideTrustMeta = {
  * Anything not listed here falls back to DEFAULT_GUIDE_TRUST.
  */
 export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
+  "/townsville-with-kids": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines our family experience of living in Townsville with current information from Townsville City Council, attraction operators, Queensland Government sources and official transport and safety information.",
+    lastChecked: "6 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — The Strand",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds/the-strand",
+      },
+      {
+        name: "Townsville City Council — parks and playgrounds",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds",
+      },
+      {
+        name: "Townsville City Council — Riverway",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway",
+      },
+      { name: "Billabong Sanctuary", url: "https://billabongsanctuary.com.au/" },
+      { name: "Museum of Tropical Queensland", url: "https://www.museum.qld.gov.au/mtq" },
+      { name: "SeaLink Queensland — Magnetic Island ferry", url: "https://www.sealinkqld.com.au/" },
+      { name: "Surf Life Saving Queensland — beach safety", url: "https://lifesaving.com.au/" },
+      {
+        name: "Queensland Health — marine stingers",
+        url: "https://www.health.qld.gov.au/news-events/news/marine-stingers-jellyfish-irukandji-box-safety-swimming-beaches",
+      },
+      { name: "Bureau of Meteorology — Townsville warnings", url: "http://www.bom.gov.au/qld/" },
+    ],
+  },
+
   "/guides/paluma-day-trip": {
     visitStatus: "research-based",
     lastChecked: "5 August 2026",
