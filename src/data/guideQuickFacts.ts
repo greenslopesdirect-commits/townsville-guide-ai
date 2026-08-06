@@ -73,6 +73,20 @@ export interface QuickFacts {
  * simply omit a field when there is no reliable information at all.
  */
 export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
+  "/guides/beat-the-heat": {
+    bestOutdoorTime: "Early morning and late afternoon",
+    bestCoolDown: "Riverway Lagoons or the Strand Water Park",
+    bestShadedOption: "The botanic gardens early in the day",
+    bestIndoorBreak: "Museum, library, cinema or shopping centre",
+    hardestInHeat: "Castle Hill walking tracks",
+    bestFamilyApproach: "Water play followed by a midday rest",
+    mainRisk: "Heat illness during exposed activity",
+    checkBeforeHeadingOut: "Current weather and heatwave warnings",
+    emergency: "Call Triple Zero (000) for suspected heatstroke",
+    localVerdict:
+      "Townsville is very manageable in hot weather when the day is planned around the heat rather than against it — outdoors early and late, water or air conditioning through the middle.",
+  },
+
   "/guides/free-things": {
     bestOverall: "The Strand",
     bestView: "Castle Hill",
