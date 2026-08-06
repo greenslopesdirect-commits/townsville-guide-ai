@@ -9,10 +9,13 @@ export interface GuideTrustMeta {
   author: string;
   authorLocationText: string;
   visitStatus: VisitStatus;
+  /** Optional wording that replaces the default visit-status sentence. */
+  visitNote?: string;
   lastChecked: string;
   officialSourcesChecked: boolean;
   officialSources?: OfficialSource[];
 }
+
 
 /** Safe defaults — never claim firsthand experience unless explicitly confirmed. */
 export const DEFAULT_GUIDE_TRUST: GuideTrustMeta = {
