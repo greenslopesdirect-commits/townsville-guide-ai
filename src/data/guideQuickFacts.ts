@@ -1,5 +1,19 @@
 export interface QuickFacts {
   bestFor?: string[];
+  /** Strongest all-round option, used mainly on planning hub guides. */
+  bestOverall?: string;
+  /** Best free viewpoint or lookout. */
+  bestView?: string;
+  /** Best free swimming option. */
+  bestSwimming?: string;
+  /** Best option with children. */
+  bestWithKids?: string;
+  /** Best walk. */
+  bestWalk?: string;
+  /** Best option for visitors without a car. */
+  bestWithoutCar?: string;
+  /** Best sunrise or sunset spot. */
+  bestSunset?: string;
   /** Age range a location or guide suits best, e.g. "Toddlers to teenagers". */
   bestAges?: string;
   /** Standout free option, used mainly on planning hub guides. */
