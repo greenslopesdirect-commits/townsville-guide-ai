@@ -31,6 +31,46 @@ export const DEFAULT_GUIDE_TRUST: GuideTrustMeta = {
  * Anything not listed here falls back to DEFAULT_GUIDE_TRUST.
  */
 export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
+  "/guides/free-things": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local knowledge of Townsville's public spaces with current information from Townsville City Council, Queensland Government sources, attraction operators and official event organisers.",
+    lastChecked: "6 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — The Strand",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds/the-strand",
+      },
+      {
+        name: "Townsville City Council — Riverway",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway",
+      },
+      {
+        name: "Townsville City Council — parks and playgrounds",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds",
+      },
+      {
+        name: "Townsville City Council — libraries",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/libraries",
+      },
+      {
+        name: "Townsville City Council — parking",
+        url: "https://www.townsville.qld.gov.au/roads-and-transport/parking",
+      },
+      {
+        name: "Queensland Health — marine stingers",
+        url: "https://www.health.qld.gov.au/news-events/news/marine-stingers-jellyfish-irukandji-box-safety-swimming-beaches",
+      },
+      { name: "Surf Life Saving Queensland — beach safety", url: "https://lifesaving.com.au/" },
+      { name: "Bureau of Meteorology — Queensland warnings", url: "http://www.bom.gov.au/qld/warnings/" },
+      {
+        name: "Queensland Parks and Wildlife Service — park alerts",
+        url: "https://parks.desi.qld.gov.au/park-alerts",
+      },
+      { name: "Cotters Market, Townsville", url: "https://www.townsville.qld.gov.au/" },
+    ],
+  },
   "/townsville-with-kids": {
     visitStatus: "partially-firsthand",
     visitNote:
