@@ -19,7 +19,13 @@ import {
   Sparkles,
   Waves,
   CalendarDays,
+  TreePine,
+  Building2,
+  Flame,
+  CloudSun,
+  PhoneCall,
 } from "lucide-react";
+
 import { cn } from "@/lib/utils";
 import { getQuickFacts, type QuickFacts } from "@/data/guideQuickFacts";
 
