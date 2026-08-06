@@ -78,8 +78,9 @@ const GuideTrustPanel = ({ guideTitle, className, ...overrides }: GuideTrustPane
 
         <div className="flex items-start gap-3">
           <ShieldCheck className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" aria-hidden="true" />
-          <p>{VISIT_TEXT[meta.visitStatus]}</p>
+          <p>{meta.visitNote || VISIT_TEXT[meta.visitStatus]}</p>
         </div>
+
 
         <div className="flex items-start gap-3">
           <CalendarCheck className="w-4 h-4 mt-0.5 flex-shrink-0 text-primary" aria-hidden="true" />

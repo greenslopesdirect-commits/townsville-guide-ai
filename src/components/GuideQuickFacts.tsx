@@ -15,6 +15,9 @@ import {
   Ship,
   Route,
   AlertTriangle,
+  Baby,
+  Sparkles,
+  CalendarDays,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getQuickFacts, type QuickFacts } from "@/data/guideQuickFacts";
@@ -43,7 +46,15 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
     "Best for",
     data.bestFor?.filter(Boolean).length ? data.bestFor.filter(Boolean).join(" · ") : undefined,
   );
+  push(Baby, "Best ages", data.bestAges);
+  push(Sparkles, "Best free activity", data.bestFreeActivity);
+  push(Ticket, "Best paid activity", data.bestPaidActivity);
+  push(Sun, "Best hot-day option", data.bestHotDayOption);
+  push(Ship, "Best day trip", data.bestDayTrip);
+  push(CalendarDays, "Typical family stay", data.typicalStay);
+  push(AlertTriangle, "Main challenge", data.mainChallenge);
   push(Clock, "Time needed", data.timeNeeded);
+
   push(Ticket, "Cost", data.cost);
   push(Route, "Route length", data.routeLength);
   push(MapPin, "Distance from CBD", data.distanceFromCBD);
