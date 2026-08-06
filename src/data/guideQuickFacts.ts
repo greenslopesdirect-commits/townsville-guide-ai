@@ -244,17 +244,23 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
       "Townsville has several useful dog-friendly walks and open spaces, but owners should check local signs, heat conditions and seasonal hazards at each location.",
   },
   "/townsville-with-kids": {
-    bestFor: ["Toddlers", "Primary-school children", "Teenagers", "Family visitors"],
-    timeNeeded: "From a few hours to a full day, depending on the activities chosen",
-    cost: "Includes both free and paid activities",
-    carNeeded: "Helpful for attractions outside the central area",
+    bestFor: ["Outdoor family activities and wildlife"],
+    bestAges: "Toddlers to teenagers",
+    bestFreeActivity: "The Strand",
+    bestPaidActivity: "Billabong Sanctuary",
+    bestHotDayOption: "Strand Water Park or Riverway Lagoons",
+    bestDayTrip: "Magnetic Island",
+    typicalStay: "2–4 days",
+    mainChallenge: "Heat, especially through the middle of the day",
+    carNeeded: "Helpful, but not essential for The Strand and the CBD",
     accessibility:
       "Many waterfront areas are flat and pram-friendly; some walks and tracks are not — check each activity",
     bestTimeToVisit:
       "Outdoor activities are generally more comfortable in the morning or late afternoon during hotter weather",
     localVerdict:
-      "Townsville offers a good mixture of free outdoor spaces, waterfront activities and day trips, but the best choices depend on the children's ages and the weather.",
+      "Townsville suits families who enjoy outdoor days, wildlife and swimming rather than large all-weather attractions, and the best plan depends on the children's ages and the weather.",
   },
+
   "/guides/jezzine-barracks": {
     bestFor: ["Waterfront walks", "Families", "Local history", "Views"],
     timeNeeded: "1–2 hours",
