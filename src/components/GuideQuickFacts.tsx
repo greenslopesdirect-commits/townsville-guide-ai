@@ -15,6 +15,9 @@ import {
   Ship,
   Route,
   AlertTriangle,
+  Baby,
+  Sparkles,
+  CalendarDays,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { getQuickFacts, type QuickFacts } from "@/data/guideQuickFacts";
