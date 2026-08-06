@@ -17,6 +17,7 @@ import {
   AlertTriangle,
   Baby,
   Sparkles,
+  Waves,
   CalendarDays,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -46,6 +47,13 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
     "Best for",
     data.bestFor?.filter(Boolean).length ? data.bestFor.filter(Boolean).join(" · ") : undefined,
   );
+  push(Sparkles, "Best overall", data.bestOverall);
+  push(MapPin, "Best free view", data.bestView);
+  push(Waves, "Best free swimming", data.bestSwimming);
+  push(Baby, "Best with kids", data.bestWithKids);
+  push(Route, "Best walk", data.bestWalk);
+  push(Users, "Best without a car", data.bestWithoutCar);
+  push(Sun, "Best sunset", data.bestSunset);
   push(Baby, "Best ages", data.bestAges);
   push(Sparkles, "Best free activity", data.bestFreeActivity);
   push(Ticket, "Best paid activity", data.bestPaidActivity);

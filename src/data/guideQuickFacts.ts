@@ -1,5 +1,19 @@
 export interface QuickFacts {
   bestFor?: string[];
+  /** Strongest all-round option, used mainly on planning hub guides. */
+  bestOverall?: string;
+  /** Best free viewpoint or lookout. */
+  bestView?: string;
+  /** Best free swimming option. */
+  bestSwimming?: string;
+  /** Best option with children. */
+  bestWithKids?: string;
+  /** Best walk. */
+  bestWalk?: string;
+  /** Best option for visitors without a car. */
+  bestWithoutCar?: string;
+  /** Best sunrise or sunset spot. */
+  bestSunset?: string;
   /** Age range a location or guide suits best, e.g. "Toddlers to teenagers". */
   bestAges?: string;
   /** Standout free option, used mainly on planning hub guides. */
@@ -40,6 +54,20 @@ export interface QuickFacts {
  * simply omit a field when there is no reliable information at all.
  */
 export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
+  "/guides/free-things": {
+    bestOverall: "The Strand",
+    bestView: "Castle Hill",
+    bestSwimming: "Riverway Lagoons",
+    bestWithKids: "Strand Water Park",
+    bestWalk: "Jezzine Barracks and Kissing Point",
+    bestWithoutCar: "The Strand and the CBD",
+    bestHotDayOption: "Riverway Lagoons or the Strand Water Park",
+    bestSunset: "Castle Hill or Rowes Bay",
+    cost: "Free, excluding transport, parking and food",
+    mainChallenge: "Heat and limited midday shade",
+    localVerdict:
+      "Townsville is genuinely good value: the beaches, lookouts, parks and public swimming areas cost nothing, and the main planning task is working around the heat rather than the budget.",
+  },
   "/guides/paluma-day-trip": {
     bestFor: [
       "Rainforest scenery",
