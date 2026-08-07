@@ -128,6 +128,8 @@ const Index = () => {
 
         <ExploreByInterest />
 
+        <ForLocals />
+
         <WhereToStay />
 
         <DayTrips />
@@ -140,7 +142,6 @@ const Index = () => {
 
         <PracticalResources />
 
-        <ForLocals />
 
         {/* Attraction status note */}
         <div className="container mx-auto px-4 max-w-4xl pb-4">
