@@ -637,6 +637,35 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/things-to-do": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local knowledge of Townsville with current information from official attraction, Council, transport and visitor sources.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council",
+        url: "https://www.townsville.qld.gov.au/",
+      },
+      {
+        name: "Townsville Enterprise — visitor information",
+        url: "https://www.townsvillenorthqueensland.com.au/",
+      },
+      {
+        name: "SeaLink Queensland — Magnetic Island ferry",
+        url: "https://www.sealinkqld.com.au/",
+      },
+      {
+        name: "Queensland Parks and Wildlife Service — park alerts",
+        url: "https://parks.desi.qld.gov.au/park-alerts",
+      },
+      {
+        name: "Translink — Townsville public transport",
+        url: "https://translink.com.au/",
+      },
+    ],
+  },
 };
 
 /** Routes that are guide articles and should show the trust panel. */
