@@ -15,6 +15,7 @@ import {
   WeatherAndWater,
   WhatsOn,
   PracticalResources,
+  ForLocals,
 } from "@/components/HomeHubs";
 import VideoSection from "@/components/VideoSection";
 import AboutSection from "@/components/AboutSection";
@@ -138,6 +139,8 @@ const Index = () => {
         <AdSensePlaceholder slot="content" className="my-8" />
 
         <PracticalResources />
+
+        <ForLocals />
 
         {/* Attraction status note */}
         <div className="container mx-auto px-4 max-w-4xl pb-4">

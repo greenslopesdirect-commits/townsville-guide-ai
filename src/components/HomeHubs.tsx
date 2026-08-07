@@ -80,6 +80,17 @@ const practical: LinkItem[] = [
   { title: "Townsville Directory", description: "Visitor-focused local businesses and places.", link: "/directory", icon: Store },
 ];
 
+const localLinks: LinkItem[] = [
+  { title: "Events", description: "See festivals, sport, markets and where to check what's on now.", link: "/events", icon: CalendarDays },
+  { title: "Townsville Directory", description: "Browse useful local businesses, services and places.", link: "/directory", icon: Store },
+  { title: "Food & Drink", description: "Find dining areas, cafés and local food ideas.", link: "/food", icon: Utensils },
+  { title: "Shopping", description: "Compare Townsville shopping centres, markets and local shopping areas.", link: "/shopping", icon: ShoppingBag },
+  { title: "Beaches", description: "Explore Townsville's beaches and coastal areas.", link: "/beaches", icon: Waves },
+  { title: "Dog Friendly", description: "Find dog-friendly beach, park and local outing information.", link: "/dog-friendly", icon: Dog },
+  { title: "Suburbs & Areas", description: "Understand Townsville's main suburbs and local areas.", link: "/suburbs", icon: Map },
+  { title: "Useful Contacts", description: "Find practical local, emergency and visitor contact information.", link: "/useful-contacts", icon: Phone },
+];
+
 const CardGrid = ({ items, cols = "lg:grid-cols-3" }: { items: LinkItem[]; cols?: string }) => (
   <div className={`grid sm:grid-cols-2 ${cols} gap-4`}>
     {items.map((item) => {
@@ -332,6 +343,28 @@ export const PracticalResources = () => (
         businesses and places.
       </p>
       <CardGrid items={practical} />
+    </div>
+  </section>
+);
+
+export const ForLocals = () => (
+  <section className="py-16 px-4 bg-muted/30">
+    <div className="container mx-auto max-w-6xl">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
+        Living in Townsville?
+      </h2>
+      <p className="text-center text-muted-foreground mb-10 text-lg max-w-2xl mx-auto">
+        Townsville Guide is useful for locals too. Find events, local businesses, food, shopping,
+        beaches, suburb information and practical Townsville resources.
+      </p>
+      <CardGrid items={localLinks} />
+      <div className="mt-8 flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm">
+        <span className="text-muted-foreground">Also useful for locals:</span>
+        <Link to="/riverway" className="text-primary hover:underline">Riverway</Link>
+        <Link to="/local-tips" className="text-primary hover:underline">Local Tips</Link>
+        <Link to="/nature" className="text-primary hover:underline">Nature</Link>
+        <Link to="/accessible-townsville" className="text-primary hover:underline">Accessible Townsville</Link>
+      </div>
     </div>
   </section>
 );
