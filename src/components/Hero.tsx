@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Waves, Sparkles, Send, Loader2 } from "lucide-react";
+import { ArrowRight, Compass, Sparkles, Send, Loader2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
@@ -115,7 +115,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="text-lg md:text-xl text-slate-100 mb-8 max-w-xl mx-auto font-medium drop-shadow">
-          Ask your local AI guide — beaches, food, events, and local secrets.
+          An independent local visitor guide — ask the AI guide, or start with things to do.
         </p>
 
         {/* AI Chat Box */}
@@ -207,9 +207,9 @@ const Hero = () => {
             variant="outline"
             className="rounded-full px-7 h-12 text-base bg-white/10 hover:bg-white/20 text-white border-white/40 hover:text-white backdrop-blur-sm gap-2"
           >
-            <Link to="/beaches">
-              <Waves className="w-4 h-4" />
-              View Beaches
+            <Link to="/first-time-in-townsville">
+              <Compass className="w-4 h-4" />
+              First Time in Townsville
             </Link>
           </Button>
         </div>
