@@ -88,6 +88,7 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(CloudSun, "Check before heading out", data.checkBeforeHeadingOut);
   push(PhoneCall, "Emergency", data.emergency);
   push(AlertTriangle, "Main challenge", data.mainChallenge);
+  push(Sparkles, "Main attraction", data.mainAttraction);
   push(Clock, "Time needed", data.timeNeeded);
 
 
