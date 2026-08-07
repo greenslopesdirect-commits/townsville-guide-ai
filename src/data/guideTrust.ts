@@ -583,6 +583,31 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/local-tips": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local experience of living in Townsville with current information from official local, transport, weather and attraction sources.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council",
+        url: "https://www.townsville.qld.gov.au/",
+      },
+      {
+        name: "Bureau of Meteorology \u2014 Townsville",
+        url: "http://www.bom.gov.au/qld/forecasts/townsville.shtml",
+      },
+      {
+        name: "Queensland Traffic \u2014 road conditions",
+        url: "https://qldtraffic.qld.gov.au/",
+      },
+      {
+        name: "Translink \u2014 Townsville public transport",
+        url: "https://translink.com.au/",
+      },
+    ],
+  },
   "/riverway": {
     visitStatus: "partially-firsthand",
     visitNote:
