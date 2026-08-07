@@ -259,7 +259,20 @@ export interface QuickFacts {
   bestCentralBase?: string;
   /** Where to check current flight schedules. */
   flightSchedules?: string;
+  /** Visitor area that is generally easier for lower-mobility visits. */
+  bestEasyAccessArea?: string;
+  /** Flattest waterfront option. */
+  bestFlatWaterfront?: string;
+  /** Best parkland option. */
+  bestParklandOption?: string;
+  /** Best heritage or coastal option. */
+  bestHeritageCoastalOption?: string;
+  /** Viewpoint that can be reached by vehicle. */
+  bestDriveUpViewpoint?: string;
+  /** Most useful planning habit for this guide. */
+  bestPlanningHabit?: string;
   localVerdict?: string;
+
 }
 
 
