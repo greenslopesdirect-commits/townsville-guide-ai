@@ -229,8 +229,19 @@ export interface QuickFacts {
   bestForIslandAtmosphere?: string;
   /** Best practical, non-tourist base. */
   bestPracticalLocation?: string;
+  /** Venue name, used on venue guides. */
+  venue?: string;
+  /** Main resident team or operator of a venue. */
+  mainTenant?: string;
+  /** Best area for food before or after an event. */
+  bestEventFood?: string;
+  /** Authoritative source for fixtures. */
+  fixtureSource?: string;
+  /** Weather consideration for event days. */
+  weatherFactor?: string;
   localVerdict?: string;
 }
+
 
 
 /**
