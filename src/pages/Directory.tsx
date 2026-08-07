@@ -73,7 +73,7 @@ const PLANNING_LINKS = [
   { to: "/things-to-do", label: "Things to Do", note: "Decide what's worth your time" },
   { to: "/food", label: "Food & Dining", note: "Where to eat and which area suits" },
   { to: "/accommodation", label: "Where to Stay", note: "Which area fits your trip" },
-  { to: "/shopping", label: "Shopping", label2: "", note: "Centres, CBD and markets" },
+  { to: "/shopping", label: "Shopping", note: "Centres, CBD and markets" },
   { to: "/nature", label: "Nature", note: "Beaches, hills, creeks and wildlife" },
   { to: "/first-time-in-townsville", label: "First Time in Townsville", note: "Start here if it's your first visit" },
   { to: "/townsville-without-a-car", label: "Townsville Without a Car", note: "Ferries, buses and walkable areas" },
@@ -166,7 +166,7 @@ const Directory = () => {
 
   return (
     <>
-      <SEOHead title={title} description={description} canonical="/directory" noindex={Boolean(active)} />
+      <SEOHead title={title} description={description} canonical="/directory" />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(collectionPage)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
