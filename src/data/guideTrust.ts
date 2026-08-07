@@ -424,6 +424,23 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/reef-hq-townsville": {
+    visitStatus: "research-based",
+    visitNote:
+      "This status page is based on current information from the Great Barrier Reef Aquarium and Great Barrier Reef Marine Park Authority, with visitor alternatives drawn from current Townsville attraction information.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Great Barrier Reef Aquarium — official site",
+        url: "https://www.gbraquarium.com.au/",
+      },
+      {
+        name: "Great Barrier Reef Marine Park Authority — Reef HQ redevelopment",
+        url: "https://www2.gbrmpa.gov.au/reef-hq-redevelopment",
+      },
+    ],
+  },
   "/guides/stinger-safety": {
     visitStatus: "research-based",
     visitNote:
@@ -610,6 +627,7 @@ export const GUIDE_PATHS: string[] = [
   "/castle-hill",
   "/little-crystal-creek-townsville",
   "/great-barrier-reef-townsville",
+  "/reef-hq-townsville",
   "/townsville-airport",
   "/dog-friendly",
   "/shopping",

@@ -72,6 +72,8 @@ export interface QuickFacts {
   mainAttraction?: string;
   /** Public transport access summary. */
   publicTransport?: string;
+  /** Location summary for an attraction. */
+  location?: string;
   /** Current open/closed status of an attraction. */
   currentStatus?: string;
   /** Current official name of an attraction. */
