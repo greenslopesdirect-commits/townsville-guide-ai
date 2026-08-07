@@ -50,6 +50,11 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   };
 
   push(AlertTriangle, "Current access", data.currentAccess);
+  push(Sparkles, "Don't miss", data.dontMiss);
+  push(CalendarDays, "Ideal first visit", data.idealFirstVisit);
+  push(Clock, "Minimum worthwhile stay", data.minimumStay);
+  push(MapPin, "Best area for first timers", data.bestArea);
+  push(AlertTriangle, "Main planning issue", data.mainPlanningIssue);
   push(
     Users,
     "Best for",

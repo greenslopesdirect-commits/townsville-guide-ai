@@ -283,7 +283,9 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
   },
   "/first-time-in-townsville": {
     visitStatus: "partially-firsthand",
-    lastChecked: "August 2026",
+    visitNote:
+      "This guide combines firsthand local experience of living in Townsville with current information from Townsville City Council, Queensland Government sources, transport operators and local attractions.",
+    lastChecked: "7 August 2026",
     officialSourcesChecked: true,
     officialSources: [
       {

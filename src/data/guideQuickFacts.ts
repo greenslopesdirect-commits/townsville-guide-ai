@@ -56,6 +56,16 @@ export interface QuickFacts {
   avoidInHeavyRain?: string;
   /** Main practical consideration to plan around. */
   mainConsideration?: string;
+  /** Headline "don't miss" experiences, used on orientation hub guides. */
+  dontMiss?: string;
+  /** Ideal length of a first visit. */
+  idealFirstVisit?: string;
+  /** Minimum worthwhile stay. */
+  minimumStay?: string;
+  /** Best area to base a first visit. */
+  bestArea?: string;
+  /** Main planning issue to work around. */
+  mainPlanningIssue?: string;
   timeNeeded?: string;
 
 
@@ -83,6 +93,19 @@ export interface QuickFacts {
  * simply omit a field when there is no reliable information at all.
  */
 export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
+  "/first-time-in-townsville": {
+    dontMiss: "The Strand, Castle Hill and Magnetic Island",
+    idealFirstVisit: "3–4 days",
+    minimumStay: "2 days",
+    carNeeded: "Helpful, but not essential for a short central stay",
+    bestArea: "The Strand / North Ward",
+    bestDayTrip: "Magnetic Island",
+    bestFreeActivity: "The Strand",
+    bestView: "Castle Hill",
+    mainPlanningIssue: "Tropical heat",
+    localVerdict:
+      "Townsville is an easy city to enjoy once you plan around distance and weather — stay centrally, get outdoors early and late, and keep at least one full day for Magnetic Island.",
+  },
   "/guides/rainy-day-activities": {
     bestIndoorAttraction: "Queensland Museum Tropics",
     bestWithKids: "Museum, library or an indoor activity venue",

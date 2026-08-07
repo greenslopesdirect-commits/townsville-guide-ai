@@ -1,18 +1,18 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
-  Clock,
   Car,
-  CalendarDays,
-  Footprints,
-  Ship,
-  Users,
   MapPin,
   Sun,
   ArrowRight,
+  Waves,
+  CloudRain,
+  Baby,
+  Wallet,
 } from "lucide-react";
 import heroImage from "@/assets/strand-hero.jpg";
 import strandImg from "@/assets/the-strand-townsville.webp";
@@ -20,165 +20,173 @@ import castleHillImg from "@/assets/castle-hill-townsville.webp";
 import jezzineImg from "@/assets/jezzine-barracks-townsville.webp";
 import magneticImg from "@/assets/magnetic-island-townsville.webp";
 import riverwayImg from "@/assets/ross-river-dam-townsville.webp";
-import reefImg from "@/assets/great-barrier-reef-aquarium-townsville.webp";
+import billabongImg from "@/assets/billabong-sanctuary-townsville.webp";
 
-const QUICK_ANSWERS = [
-  {
-    icon: Clock,
-    q: "How long should you stay?",
-    a: "Two to three days is enough for the main Townsville attractions. Allow an extra day if you are visiting Magnetic Island.",
-  },
-  {
-    icon: Car,
-    q: "Do you need a car?",
-    a: "A car is helpful for places outside the city centre, including Paluma, Little Crystal Creek, Billabong Sanctuary and some beaches. The Strand, CBD, North Ward and ferry terminal are easier to explore without one.",
-  },
-  {
-    icon: CalendarDays,
-    q: "Best time to visit",
-    a: "The cooler and drier months are generally the most comfortable for outdoor sightseeing. Visitors during the hotter and wetter months should plan around heat, humidity and possible heavy rain.",
-  },
-  {
-    icon: Footprints,
-    q: "Is Townsville walkable?",
-    a: "The Strand, North Ward, CBD and ferry area are reasonably walkable, but Townsville is spread out and many attractions require driving.",
-  },
-  {
-    icon: Ship,
-    q: "How many days for Magnetic Island?",
-    a: "A day trip works well for a first visit, although an overnight stay gives more time to explore the beaches, walks and quieter parts of the island.",
-  },
-  {
-    icon: Users,
-    q: "Is Townsville family-friendly?",
-    a: "Yes. The Strand, Riverway, Jezzine Barracks, Magnetic Island and several nearby day trips suit families.",
-  },
-];
+const SITE = "https://www.townsvilleguide.com.au";
 
 const STAY_AREAS = [
   {
-    name: "North Ward and The Strand",
-    text: "Best for first-time visitors who want beaches, walking paths, cafés, parks and easy access to central attractions.",
+    name: "The Strand and North Ward",
+    text: "The strongest general leisure base: waterfront access, restaurants and cafés, easy walking, Jezzine Barracks on the headland, and reasonably short trips into the CBD and the ferry area.",
   },
   {
     name: "Townsville CBD",
-    text: "Useful for business travel, events, dining and access to the ferry terminal.",
+    text: "Useful for business travel, dining, the museum and central access, with the ferry terminal close by.",
   },
   {
     name: "Palmer Street and South Townsville",
-    text: "Good for restaurants and visitors who want to stay near the city without being directly on The Strand.",
-  },
-  {
-    name: "Near the airport or suburban areas",
-    text: "More suitable for short overnight stays, work trips or visitors with a car.",
-  },
-];
-
-const ATTRACTIONS = [
-  {
-    name: "The Strand",
-    image: strandImg,
-    text: "Townsville's beachfront promenade with swimming areas, playgrounds, parks and cafés.",
-    time: "2–3 hours",
-    free: "Free",
-    to: "/the-strand",
-  },
-  {
-    name: "Castle Hill",
-    image: castleHillImg,
-    text: "The pink granite lookout above the city, reachable on foot or by car.",
-    time: "1–2 hours",
-    free: "Free",
-    to: "/castle-hill",
-  },
-  {
-    name: "Jezzine Barracks",
-    image: jezzineImg,
-    text: "A headland precinct combining coastal walks, public art and military history.",
-    time: "1–2 hours",
-    free: "Free",
-    to: "/guides/jezzine-barracks",
+    text: "Good for dining, with easy access to city attractions and the ferry area across the river.",
   },
   {
     name: "Magnetic Island",
-    image: magneticImg,
-    text: "A short passenger ferry ride to beaches, bushwalks and wildlife.",
-    time: "Full day",
-    free: "Ferry fare applies",
-    to: "/guides/magnetic-island-day-trip",
-  },
-  {
-    name: "Riverway",
-    image: riverwayImg,
-    text: "Riverside lagoons, parkland and walking paths along the Ross River — check current availability before visiting.",
-    time: "2–3 hours",
-    free: "Free",
-    to: "/things-to-do",
-  },
-  {
-    name: "Reef and marine attractions",
-    image: reefImg,
-    text: "Reef-focused attractions and tours operating from Townsville — check current availability before visiting.",
-    time: "Half day",
-    free: "Paid",
-    to: "/great-barrier-reef-townsville",
+    text: "Excellent if the island itself is the main focus of your trip, but it is a different holiday from using Townsville as your base — plan ferry timing around everything you do on the mainland.",
   },
 ];
 
-const DAY_PLAN = [
+const TRAVELLER_TYPES = [
   {
-    label: "Morning",
-    text: "Walk along The Strand and stop for breakfast or coffee.",
+    icon: Baby,
+    title: "With children",
+    text: "Water play, wildlife, short walks and shaded parks make Townsville easy with kids, provided you plan around heat and rest time.",
+    to: "/townsville-with-kids",
+    linkText: "Townsville with Kids",
   },
   {
-    label: "Late morning",
-    text: "Visit Jezzine Barracks and explore the waterfront and military history area.",
+    icon: Wallet,
+    title: "On a budget",
+    text: "The waterfront, lookouts, public swimming areas and parks cost nothing, so a good first visit does not need a big budget.",
+    to: "/guides/free-things",
+    linkText: "Free Things to Do",
   },
   {
-    label: "Afternoon",
-    text: "Spend time at the Museum of Tropical Queensland, Reef HQ area, Riverway or another suitable attraction depending on current availability and weather.",
+    icon: Car,
+    title: "Without a car",
+    text: "A central base plus the ferry covers most of the classic first-time experiences on foot.",
+    to: "/townsville-without-a-car",
+    linkText: "Townsville Without a Car",
   },
   {
-    label: "Late afternoon or sunset",
-    text: "Drive to Castle Hill for the views.",
+    icon: Sun,
+    title: "In very hot weather",
+    text: "Shift outdoor sightseeing to the cooler ends of the day and build water or air conditioning into the middle.",
+    to: "/guides/beat-the-heat",
+    linkText: "Beat the Heat",
   },
   {
-    label: "Evening",
-    text: "Choose dinner around Palmer Street, Gregory Street, The Strand or the CBD.",
+    icon: CloudRain,
+    title: "In wet weather",
+    text: "Passing showers rarely ruin a day, but steady rain or severe weather needs a different plan.",
+    to: "/guides/rainy-day-activities",
+    linkText: "Rainy Day Activities",
   },
+];
+
+const PATHWAYS = [
+  { label: "One day", to: "/townsville-in-one-day", name: "Townsville in One Day" },
+  { label: "No car", to: "/townsville-without-a-car", name: "Townsville Without a Car" },
+  { label: "Kids", to: "/townsville-with-kids", name: "Townsville with Kids" },
+  { label: "Budget", to: "/guides/free-things", name: "Free Things to Do" },
+  { label: "Hot weather", to: "/guides/beat-the-heat", name: "Beat the Heat" },
+  { label: "Rain", to: "/guides/rainy-day-activities", name: "Rainy Day Activities" },
+  { label: "Magnetic Island", to: "/guides/magnetic-island-day-trip", name: "Magnetic Island Day Trip" },
+  { label: "Mountain day trip", to: "/guides/paluma-day-trip", name: "Paluma Day Trip" },
 ];
 
 const MISTAKES = [
-  "Trying to walk everywhere.",
-  "Underestimating the heat.",
-  "Leaving Magnetic Island planning too late.",
+  "Attempting Castle Hill on foot in peak heat rather than early morning or late afternoon.",
+  "Trying to see all of Magnetic Island in a single day.",
   "Assuming every beach is suitable for swimming at all times.",
-  "Planning too many regional attractions in one day.",
-  "Not checking opening days and hours.",
-  "Visiting Castle Hill during the hottest part of the afternoon.",
-  "Assuming Townsville and the wider North Queensland region are all close together.",
+  "Allowing too little time for Magnetic Island — it deserves a full day, not a couple of hours.",
+  "Treating Paluma as a quick suburban stop rather than a mountain day trip.",
+  "Assuming Townsville is easily walkable end to end.",
+  "Overlooking The Strand because it is \u201cjust a waterfront\u201d.",
+  "Expecting Reef HQ to be open.",
+  "Ignoring wet-season weather, road conditions and official warnings.",
+  "Overpacking each day instead of leaving room for heat, rest and a slower pace.",
 ];
 
-const NEXT_GUIDES = [
-  { name: "Things to Do", to: "/things-to-do" },
-  { name: "Townsville with Kids", to: "/townsville-with-kids" },
-  { name: "Food and Dining", to: "/food" },
-  { name: "Dog-Friendly Townsville", to: "/dog-friendly" },
-  { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip" },
-  { name: "Stinger Safety", to: "/guides/stinger-safety" },
-  { name: "Local Tips", to: "/local-tips" },
-  { name: "Castle Hill", to: "/castle-hill" },
-  { name: "Little Crystal Creek", to: "/little-crystal-creek-townsville" },
+const NOT_TO_OVERTHINK = [
+  "You do not have to walk Castle Hill — you can drive to the lookout.",
+  "You do not need a car just to enjoy The Strand.",
+  "You do not need to stay overnight on Magnetic Island to experience it.",
+  "You do not need to fill every hour with attractions.",
+  "Townsville works well at a relaxed pace.",
+  "The Strand is worth visiting at more than one time of day — morning and evening feel quite different.",
 ];
 
-const SITE = "https://www.townsvilleguide.com.au";
+const RELATED_GUIDES = [
+  { name: "Townsville in One Day", to: "/townsville-in-one-day", image: strandImg },
+  { name: "Townsville Without a Car", to: "/townsville-without-a-car", image: jezzineImg },
+  { name: "Townsville with Kids", to: "/townsville-with-kids", image: billabongImg },
+  { name: "Free Things to Do", to: "/guides/free-things", image: castleHillImg },
+  { name: "Beat the Heat", to: "/guides/beat-the-heat", image: riverwayImg },
+  { name: "Rainy Day Activities", to: "/guides/rainy-day-activities", image: magneticImg },
+  { name: "The Strand", to: "/the-strand", image: strandImg },
+  { name: "Castle Hill", to: "/castle-hill", image: castleHillImg },
+  { name: "Walking Castle Hill", to: "/guides/walking-castle-hill", image: castleHillImg },
+  { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip", image: magneticImg },
+  { name: "Magnetic Island Ferry", to: "/guides/magnetic-island-ferry", image: magneticImg },
+  { name: "Paluma Day Trip", to: "/guides/paluma-day-trip", image: riverwayImg },
+  { name: "Stinger Safety", to: "/guides/stinger-safety", image: strandImg },
+];
+
+const FAQS: { q: string; a: string }[] = [
+  {
+    q: "How many days do you need in Townsville?",
+    a: "Three to four days suits most first visits. Two days is the minimum worthwhile stay: one for The Strand, Jezzine Barracks and Castle Hill, and one for Magnetic Island. Four days or more lets you add Paluma, the northern beaches, museums, wildlife or extra island time.",
+  },
+  {
+    q: "What should I do first in Townsville?",
+    a: "Walk The Strand. It is the easiest introduction to the city, it is free, it is close to most central accommodation, and it works well in the early morning or late afternoon while you get used to the heat.",
+  },
+  {
+    q: "What are the three must-see places in Townsville?",
+    a: "The Strand, Castle Hill and Magnetic Island. Between them they cover the waterfront, the city's best viewpoint and the region's best day trip. Everything else is an addition based on your time, transport, weather and budget.",
+  },
+  {
+    q: "Do I need a car in Townsville?",
+    a: "Not necessarily for a short first visit. If you stay around The Strand, North Ward or the CBD you can walk to the waterfront, Jezzine Barracks and the ferry terminal. A car makes the wider region — Riverway, Billabong Sanctuary, Pallarenda, the northern beaches and Paluma — much easier.",
+  },
+  {
+    q: "Where should first-time visitors stay?",
+    a: "The Strand and North Ward are the strongest general base for a leisure visit thanks to waterfront access, dining, walking and proximity to the CBD and ferry area. The CBD and Palmer Street also work well, particularly for dining and central access.",
+  },
+  {
+    q: "Is Magnetic Island worth visiting?",
+    a: "Yes. For most first-time visitors it is the single strongest experience in the region, and a passenger ferry day trip from Townsville is straightforward. Allow a full day rather than trying to squeeze it around other plans.",
+  },
+  {
+    q: "Can you visit Townsville without going to Magnetic Island?",
+    a: "Yes. The Strand, Castle Hill, Jezzine Barracks, Riverway, the museum and the CBD easily fill a short trip. If you only have one day, a focused mainland itinerary is usually more rewarding than a rushed island visit.",
+  },
+  {
+    q: "Can you swim at Townsville beaches?",
+    a: "In places, but do not assume every beach is suitable. Use designated swimming areas, follow current signs and local advice, understand marine-stinger risks, supervise children closely and check conditions before entering the water.",
+  },
+  {
+    q: "Is Townsville suitable for children?",
+    a: "Yes. The Strand water play areas, Riverway, Jezzine Barracks, Billabong Sanctuary and Magnetic Island all suit families. The main planning task is heat management and building rest into the middle of the day.",
+  },
+  {
+    q: "Is Townsville too hot for sightseeing?",
+    a: "No, but it needs a different rhythm from a cooler southern city. Do exposed outdoor sightseeing early, use shade, swimming, lunch or indoor time around the middle of the day, and head back outdoors later. Humidity can make conditions feel harder than the forecast maximum suggests.",
+  },
+  {
+    q: "What can you do when it rains?",
+    a: "Passing showers rarely stop a Townsville day. For steady rain there are museums, galleries, libraries, cinemas and food-based options. In severe weather, follow Bureau of Meteorology warnings and the Townsville Disaster Dashboard, and never drive through floodwater.",
+  },
+  {
+    q: "Is Reef HQ open?",
+    a: "No. The Great Barrier Reef Aquarium, formerly known as Reef HQ, is closed for redevelopment and is not currently available to visitors. Check the official aquarium website for redevelopment and reopening updates.",
+  },
+];
 
 const FirstTimeInTownsville = () => {
   return (
     <>
       <SEOHead
-        title="First Time in Townsville: Complete Visitor Guide"
-        description="Visiting Townsville for the first time? Learn how long to stay, where to stay, whether you need a car, what to see and how to plan your visit."
+        title="First Time in Townsville | Essential Local Visitor Guide"
+        description="Visiting Townsville for the first time? Find out what not to miss, how many days you need, where to stay, transport tips, weather advice and easy itineraries."
         canonical={`${SITE}/first-time-in-townsville`}
         ogType="article"
       />
@@ -187,11 +195,12 @@ const FirstTimeInTownsville = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "First Time in Townsville: Everything You Need to Know",
+            headline: "First Time in Townsville: What You Need to Know",
             description:
-              "Visiting Townsville for the first time? Learn how long to stay, where to stay, whether you need a car, what to see and how to plan your visit.",
+              "Visiting Townsville for the first time? Find out what not to miss, how many days you need, where to stay, transport tips, weather advice and easy itineraries.",
             author: { "@type": "Person", name: "Duncan Ross" },
             publisher: { "@type": "Organization", name: "Townsville Guide" },
+            dateModified: "2026-08-07",
             mainEntityOfPage: `${SITE}/first-time-in-townsville`,
           })}
         </script>
@@ -214,7 +223,7 @@ const FirstTimeInTownsville = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            mainEntity: QUICK_ANSWERS.map((item) => ({
+            mainEntity: FAQS.map((item) => ({
               "@type": "Question",
               name: item.q,
               acceptedAnswer: { "@type": "Answer", text: item.a },
@@ -223,7 +232,7 @@ const FirstTimeInTownsville = () => {
         </script>
       </Helmet>
 
-      {/* 1. Hero */}
+      {/* Hero */}
       <section className="relative">
         <div className="absolute inset-0">
           <img
@@ -235,103 +244,320 @@ const FirstTimeInTownsville = () => {
         </div>
         <div className="relative container mx-auto max-w-4xl px-4 py-16 md:py-24 text-center">
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-5">
-            First Time in Townsville? Start Here
+            First Time in Townsville: What You Need to Know
           </h1>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Townsville is easy to enjoy once you understand the distances, weather, transport and
-            best areas to visit. This practical first-time guide explains how long to stay, whether
-            you need a car, where to base yourself and what not to miss.
+            If you do nothing else on a first visit, do these three:{" "}
+            <Link to="/the-strand" className="text-primary underline underline-offset-2">
+              The Strand
+            </Link>
+            ,{" "}
+            <Link to="/castle-hill" className="text-primary underline underline-offset-2">
+              Castle Hill
+            </Link>{" "}
+            and{" "}
+            <Link
+              to="/guides/magnetic-island-day-trip"
+              className="text-primary underline underline-offset-2"
+            >
+              Magnetic Island
+            </Link>
+            . Everything else — Jezzine Barracks, Riverway, Billabong Sanctuary, the museums, Paluma
+            or the northern beaches — is an addition based on how long you are staying, whether you
+            have a car, the weather, whether you are travelling with children and your budget.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
             <Button asChild size="lg">
-              <a href="#plan-your-stay">Plan Your Stay</a>
+              <a href="#three-things">If You Only Do Three Things</a>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <Link to="/things-to-do">See the Top Attractions</Link>
+              <a href="#how-many-days">How Many Days Do You Need?</a>
             </Button>
           </div>
         </div>
       </section>
 
       <div className="container mx-auto max-w-4xl px-4 py-12 space-y-14">
-        {/* 2. Quick answers */}
-        <section aria-labelledby="quick-answers">
-          <h2 id="quick-answers" className="text-2xl md:text-3xl font-bold mb-6">
-            Quick Answers for First-Time Visitors
+        <GuideQuickFacts />
+
+        {/* Three things */}
+        <section id="three-things" aria-labelledby="three-things-heading" className="scroll-mt-24">
+          <h2 id="three-things-heading" className="text-2xl md:text-3xl font-bold mb-6">
+            If You Only Do Three Things
           </h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {QUICK_ANSWERS.map(({ icon: Icon, q, a }) => (
-              <Card key={q} className="bg-muted/40">
-                <CardContent className="p-5">
-                  <div className="flex items-start gap-3">
-                    <Icon className="w-5 h-5 mt-0.5 text-primary flex-shrink-0" aria-hidden="true" />
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-1">{q}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{a}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+
+          <div className="space-y-6">
+            <Card className="overflow-hidden">
+              <img
+                src={strandImg}
+                alt="The Strand promenade and beach in Townsville"
+                loading="lazy"
+                className="w-full aspect-[16/7] object-cover"
+              />
+              <CardContent className="p-5 md:p-6">
+                <h3 className="text-xl font-semibold mb-2">1. Walk The Strand</h3>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  The Strand is the easiest introduction to Townsville. It is a long waterfront
+                  promenade with easy walking, designated swimming areas and water-play options for
+                  children, cafés and restaurants close by, and shaded parks along the way. It suits
+                  families, it costs nothing, and it feels quite different in the morning and the
+                  evening — both are worth seeing.
+                </p>
+                <Link
+                  to="/the-strand"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                >
+                  Read the full Strand guide <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <img
+                src={castleHillImg}
+                alt="View over Townsville from the Castle Hill lookout"
+                loading="lazy"
+                className="w-full aspect-[16/7] object-cover"
+              />
+              <CardContent className="p-5 md:p-6">
+                <h3 className="text-xl font-semibold mb-2">2. See Townsville From Castle Hill</h3>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  The lookout is the quickest way to understand Townsville geographically — the
+                  city, the river, The Strand, the port and Magnetic Island all make sense from up
+                  there. You can drive to the summit; walking is entirely optional, and if you do
+                  walk, it needs more heat and fitness planning than most visitors expect.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    to="/castle-hill"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  >
+                    Castle Hill guide <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                  </Link>
+                  <Link
+                    to="/guides/walking-castle-hill"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  >
+                    Walking Castle Hill <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden">
+              <img
+                src={magneticImg}
+                alt="Bay and headland scenery on Magnetic Island near Townsville"
+                loading="lazy"
+                className="w-full aspect-[16/7] object-cover"
+              />
+              <CardContent className="p-5 md:p-6">
+                <h3 className="text-xl font-semibold mb-2">3. Spend a Day on Magnetic Island</h3>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  For most first-time visitors the island is the strongest experience in the region:
+                  bays and beaches, bushwalks, wildlife and a much slower pace, all reached by a
+                  short passenger ferry from the Townsville terminal. Give it a full day rather than
+                  a few hours, and decide in advance whether you are travelling as a foot passenger
+                  or taking a vehicle.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    to="/guides/magnetic-island-day-trip"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  >
+                    Magnetic Island Day Trip <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                  </Link>
+                  <Link
+                    to="/guides/magnetic-island-ferry"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  >
+                    Ferry guide <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                  </Link>
+                  <Link
+                    to="/guides/forts-walk-magnetic-island"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  >
+                    Forts Walk <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
-        {/* 3. Before you arrive */}
-        <section id="plan-your-stay" aria-labelledby="before-you-arrive" className="scroll-mt-24">
-          <h2 id="before-you-arrive" className="text-2xl md:text-3xl font-bold mb-4">
-            Before You Arrive
+        {/* How many days */}
+        <section id="how-many-days" aria-labelledby="how-many-days-heading" className="scroll-mt-24">
+          <h2 id="how-many-days-heading" className="text-2xl md:text-3xl font-bold mb-6">
+            How Many Days Do You Need?
           </h2>
-          <ul className="space-y-3 text-muted-foreground leading-relaxed list-disc pl-5">
-            <li>
-              <Link to="/townsville-airport" className="text-primary underline underline-offset-2">
-                Townsville Airport
-              </Link>{" "}
-              is close to the city, so transfers are short.
-            </li>
-            <li>
-              Public transport exists but is limited compared with larger Australian cities.
-            </li>
-            <li>
-              Check current weather and road conditions before regional day trips, such as{" "}
+          <div className="space-y-5">
+            <div className="rounded-lg border border-border bg-muted/30 p-5">
+              <h3 className="font-semibold text-foreground mb-1">One day</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                One day is enough for a genuinely useful introduction, but you have to prioritise
+                rather than trying to cover everything. Our dedicated itinerary sets out a realistic
+                version.
+              </p>
               <Link
-                to="/little-crystal-creek-townsville"
-                className="text-primary underline underline-offset-2"
+                to="/townsville-in-one-day"
+                className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
               >
-                Little Crystal Creek
+                Townsville in One Day <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </Link>
-              .
-            </li>
-            <li>
-              Sunscreen, water and sun protection matter throughout the year — see our{" "}
-              <Link to="/guides/beat-the-heat" className="text-primary underline underline-offset-2">
-                beat the heat guide
-              </Link>
-              .
-            </li>
-            <li>
-              Check swimming conditions and{" "}
-              <Link
-                to="/guides/stinger-safety"
-                className="text-primary underline underline-offset-2"
-              >
-                marine stinger advice
-              </Link>{" "}
-              before entering the water.
-            </li>
-            <li>
-              Some restaurants, cafés and attractions may close earlier than visitors expect — our{" "}
-              <Link to="/local-tips" className="text-primary underline underline-offset-2">
-                local tips
-              </Link>{" "}
-              cover the practical details.
-            </li>
-          </ul>
+            </div>
+
+            <div className="rounded-lg border border-border bg-muted/30 p-5">
+              <h3 className="font-semibold text-foreground mb-2">Two days</h3>
+              <ul className="text-sm text-muted-foreground leading-relaxed list-disc pl-5 space-y-1">
+                <li>
+                  <strong className="text-foreground">Day 1:</strong>{" "}
+                  <Link to="/the-strand" className="text-primary underline underline-offset-2">
+                    The Strand
+                  </Link>
+                  ,{" "}
+                  <Link
+                    to="/guides/jezzine-barracks"
+                    className="text-primary underline underline-offset-2"
+                  >
+                    Jezzine Barracks
+                  </Link>{" "}
+                  and{" "}
+                  <Link to="/castle-hill" className="text-primary underline underline-offset-2">
+                    Castle Hill
+                  </Link>
+                  .
+                </li>
+                <li>
+                  <strong className="text-foreground">Day 2:</strong>{" "}
+                  <Link
+                    to="/guides/magnetic-island-day-trip"
+                    className="text-primary underline underline-offset-2"
+                  >
+                    Magnetic Island
+                  </Link>
+                  .
+                </li>
+              </ul>
+            </div>
+
+            <div className="rounded-lg border border-border bg-muted/30 p-5">
+              <h3 className="font-semibold text-foreground mb-2">Three days</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+                Add one or two of the following — not all of them. A third day works best when it is
+                relaxed.
+              </p>
+              <ul className="text-sm text-muted-foreground leading-relaxed list-disc pl-5 space-y-1">
+                <li>
+                  <Link
+                    to="/billabong-sanctuary"
+                    className="text-primary underline underline-offset-2"
+                  >
+                    Billabong Sanctuary
+                  </Link>{" "}
+                  for wildlife.
+                </li>
+                <li>
+                  Riverway on the Ross River for lagoons, parkland and riverside paths — see{" "}
+                  <Link to="/things-to-do" className="text-primary underline underline-offset-2">
+                    things to do
+                  </Link>
+                  .
+                </li>
+                <li>The CBD and the Museum of Tropical Queensland.</li>
+                <li>More unhurried time on The Strand, including a second visit at another time of day.</li>
+              </ul>
+            </div>
+
+            <div className="rounded-lg border border-border bg-muted/30 p-5">
+              <h3 className="font-semibold text-foreground mb-2">Four days or more</h3>
+              <ul className="text-sm text-muted-foreground leading-relaxed list-disc pl-5 space-y-1">
+                <li>
+                  A mountain day trip to{" "}
+                  <Link
+                    to="/guides/paluma-day-trip"
+                    className="text-primary underline underline-offset-2"
+                  >
+                    Paluma
+                  </Link>
+                  .
+                </li>
+                <li>
+                  Northern beaches and{" "}
+                  <Link to="/pallarenda-beach" className="text-primary underline underline-offset-2">
+                    Pallarenda
+                  </Link>{" "}
+                  — see the{" "}
+                  <Link to="/beaches" className="text-primary underline underline-offset-2">
+                    beaches guide
+                  </Link>
+                  .
+                </li>
+                <li>
+                  Extra time on Magnetic Island, including the{" "}
+                  <Link
+                    to="/guides/forts-walk-magnetic-island"
+                    className="text-primary underline underline-offset-2"
+                  >
+                    Forts Walk
+                  </Link>
+                  .
+                </li>
+                <li>Museums, galleries and wildlife experiences.</li>
+                <li>
+                  Local{" "}
+                  <Link to="/events" className="text-primary underline underline-offset-2">
+                    events
+                  </Link>{" "}
+                  and slower Townsville days with no fixed plan.
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
 
-        {/* 4. Where to stay */}
+        {/* Car */}
+        <section aria-labelledby="need-a-car">
+          <h2 id="need-a-car" className="text-2xl md:text-3xl font-bold mb-4">
+            Do You Need a Car?
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-5">
+            Not necessarily for a short first visit — but a car makes the wider Townsville region
+            much easier to explore.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            <Card>
+              <CardContent className="p-5">
+                <h3 className="font-semibold text-foreground mb-2">Without a car</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  Base yourself around The Strand, North Ward or the CBD and you can reach the
+                  waterfront, Jezzine Barracks, dining and the ferry terminal without driving. That
+                  covers two of the three headline experiences plus the island.
+                </p>
+                <Link
+                  to="/townsville-without-a-car"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                >
+                  Townsville Without a Car <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-5">
+                <h3 className="font-semibold text-foreground mb-2">With a car</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  A car is genuinely useful for Riverway, Billabong Sanctuary, Paluma, Pallarenda,
+                  the northern beaches and wider regional exploration — and for driving to the
+                  Castle Hill lookout instead of walking.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Where to stay */}
         <section aria-labelledby="where-to-stay">
           <h2 id="where-to-stay" className="text-2xl md:text-3xl font-bold mb-2">
-            Where Should You Stay in Townsville?
+            Where Should First-Time Visitors Stay?
           </h2>
           <p className="text-muted-foreground mb-6">
             These are general area recommendations to help you choose a base, not endorsements of
@@ -342,7 +568,10 @@ const FirstTimeInTownsville = () => {
               <Card key={area.name}>
                 <CardContent className="p-5">
                   <div className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 mt-0.5 text-primary flex-shrink-0" aria-hidden="true" />
+                    <MapPin
+                      className="w-5 h-5 mt-0.5 text-primary flex-shrink-0"
+                      aria-hidden="true"
+                    />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">{area.name}</h3>
                       <p className="text-sm text-muted-foreground leading-relaxed">{area.text}</p>
@@ -361,174 +590,267 @@ const FirstTimeInTownsville = () => {
           </p>
         </section>
 
-        {/* 5. Attractions */}
-        <section aria-labelledby="see-first">
-          <h2 id="see-first" className="text-2xl md:text-3xl font-bold mb-6">
-            What Should You See First?
+        {/* Traveller type */}
+        <section aria-labelledby="traveller-type">
+          <h2 id="traveller-type" className="text-2xl md:text-3xl font-bold mb-6">
+            First Visit by Traveller Type
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {ATTRACTIONS.map((a) => (
-              <Card key={a.name} className="overflow-hidden flex flex-col">
-                <img
-                  src={a.image}
-                  alt={`${a.name}, Townsville`}
-                  loading="lazy"
-                  className="w-full aspect-[16/10] object-cover"
-                />
-                <CardContent className="p-5 flex flex-col flex-1">
-                  <h3 className="font-semibold text-foreground mb-1">{a.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">{a.text}</p>
-                  <div className="flex flex-wrap gap-2 text-xs text-muted-foreground mb-4">
-                    <span className="inline-flex items-center gap-1 rounded-full border border-border px-2 py-0.5">
-                      <Clock className="w-3 h-3" aria-hidden="true" />
-                      {a.time}
-                    </span>
-                    <span className="rounded-full border border-border px-2 py-0.5">{a.free}</span>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {TRAVELLER_TYPES.map(({ icon: Icon, title, text, to, linkText }) => (
+              <Card key={title}>
+                <CardContent className="p-5">
+                  <div className="flex items-start gap-3">
+                    <Icon className="w-5 h-5 mt-0.5 text-primary flex-shrink-0" aria-hidden="true" />
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1">{title}</h3>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-2">{text}</p>
+                      <Link
+                        to={to}
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                      >
+                        {linkText} <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                      </Link>
+                    </div>
                   </div>
-                  <Link
-                    to={a.to}
-                    className="mt-auto inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-                  >
-                    Read the guide
-                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
-                  </Link>
                 </CardContent>
               </Card>
             ))}
           </div>
         </section>
 
-        {/* 6. First day plan */}
-        <section aria-labelledby="first-day">
-          <h2 id="first-day" className="text-2xl md:text-3xl font-bold mb-2">
-            A Simple First Day in Townsville
-          </h2>
-          <p className="text-muted-foreground mb-6">
-            Attraction availability changes, so check current opening days and hours before
-            visiting.
-          </p>
-          <ol className="space-y-4">
-            {DAY_PLAN.map((step) => (
-              <li key={step.label} className="rounded-lg border border-border bg-muted/30 p-5">
-                <p className="font-semibold text-foreground">{step.label}</p>
-                <p className="text-sm text-muted-foreground leading-relaxed mt-1">{step.text}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-
-        {/* 7. Magnetic Island */}
-        <section aria-labelledby="magnetic-island">
-          <h2 id="magnetic-island" className="text-2xl md:text-3xl font-bold mb-4">
-            Should You Visit Magnetic Island?
-          </h2>
-          <div className="space-y-3 text-muted-foreground leading-relaxed">
-            <p>
-              Magnetic Island is one of the main reasons many visitors come to Townsville.
-              Passenger ferries leave from the Townsville ferry terminal, and a day trip is
-              comfortably possible.
-            </p>
-            <p>
-              Taking a car across is not always necessary — plan your transport on the island
-              before you travel. If you have more time, an extra day gives you room for the
-              beaches, walks and wildlife.
-            </p>
-          </div>
-          <Button asChild className="mt-6">
-            <Link to="/guides/magnetic-island-day-trip">Plan a Magnetic Island Day Trip</Link>
-          </Button>
-        </section>
-
-        {/* 8. Weather and safety */}
-        <section aria-labelledby="weather-safety">
-          <h2 id="weather-safety" className="text-2xl md:text-3xl font-bold mb-4">
-            Weather and Safety
+        {/* Swimming */}
+        <section aria-labelledby="swimming">
+          <h2 id="swimming" className="text-2xl md:text-3xl font-bold mb-4">
+            First-Time Swimming Advice
           </h2>
           <div className="rounded-xl border border-border bg-muted/40 p-5 md:p-6">
             <div className="flex items-start gap-3 mb-4">
-              <Sun className="w-5 h-5 mt-0.5 text-primary flex-shrink-0" aria-hidden="true" />
+              <Waves className="w-5 h-5 mt-0.5 text-primary flex-shrink-0" aria-hidden="true" />
               <p className="text-muted-foreground leading-relaxed">
-                Townsville's climate is warm year-round, with heat and humidity peaking in the
-                wetter months. A little planning keeps things comfortable.
+                Townsville is tropical coastal Queensland, and swimming here works differently from
+                a southern beach holiday.
               </p>
             </div>
             <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
-              <li>Plan outdoor walks for the early morning or late afternoon rather than midday.</li>
-              <li>Wet-season rain can be heavy — allow flexibility in your plans.</li>
-              <li>
-                Use sun protection and carry water; our{" "}
-                <Link
-                  to="/guides/beat-the-heat"
-                  className="text-primary underline underline-offset-2"
-                >
-                  beat the heat guide
-                </Link>{" "}
-                has more detail.
-              </li>
-              <li>
-                Check{" "}
-                <Link
-                  to="/guides/stinger-safety"
-                  className="text-primary underline underline-offset-2"
-                >
-                  marine stinger advice
-                </Link>{" "}
-                before swimming, and swim between the flags or inside stinger enclosures.
-              </li>
-              <li>
-                Be crocodile aware near natural waterways, creeks and estuaries, and do not swim
-                where signage advises against it.
-              </li>
-              <li>Follow official signs and warnings, including beach and creek closures.</li>
+              <li>Do not assume every beach is suitable for swimming.</li>
+              <li>Use designated swimming areas, including patrolled areas and stinger enclosures where appropriate.</li>
+              <li>Follow current signs and local advice, including closures.</li>
+              <li>Understand marine-stinger risks before entering the water.</li>
+              <li>Supervise children closely at all times.</li>
+              <li>Check current conditions before swimming.</li>
             </ul>
+            <p className="mt-4 text-sm text-muted-foreground">
+              More detail:{" "}
+              <Link
+                to="/guides/stinger-safety"
+                className="text-primary underline underline-offset-2"
+              >
+                stinger safety
+              </Link>
+              ,{" "}
+              <Link to="/beaches" className="text-primary underline underline-offset-2">
+                Townsville beaches
+              </Link>{" "}
+              and{" "}
+              <Link to="/the-strand" className="text-primary underline underline-offset-2">
+                The Strand
+              </Link>
+              .
+            </p>
           </div>
         </section>
 
-        {/* 9. Getting around */}
-        <section aria-labelledby="getting-around">
-          <h2 id="getting-around" className="text-2xl md:text-3xl font-bold mb-4">
-            Getting Around Townsville
+        {/* Heat */}
+        <section aria-labelledby="heat">
+          <h2 id="heat" className="text-2xl md:text-3xl font-bold mb-4">
+            First-Time Heat Advice
+          </h2>
+          <div className="space-y-3 text-muted-foreground leading-relaxed">
+            <p>
+              One of the easiest first-time mistakes is planning Townsville like a cooler southern
+              city.
+            </p>
+            <ul className="space-y-2 list-disc pl-5">
+              <li>Do exposed outdoor sightseeing early in the day.</li>
+              <li>Use shade, swimming, lunch or indoor time around the middle of the day.</li>
+              <li>Head back outdoors later in the afternoon and evening.</li>
+              <li>
+                Castle Hill walking tracks need particular care — see{" "}
+                <Link
+                  to="/guides/walking-castle-hill"
+                  className="text-primary underline underline-offset-2"
+                >
+                  Walking Castle Hill
+                </Link>
+                .
+              </li>
+              <li>
+                Humidity can make conditions feel harder than the forecast maximum suggests.
+              </li>
+            </ul>
+          </div>
+          <Button asChild variant="outline" className="mt-5">
+            <Link to="/guides/beat-the-heat">Read Beat the Heat</Link>
+          </Button>
+        </section>
+
+        {/* Wet season */}
+        <section aria-labelledby="wet-season">
+          <h2 id="wet-season" className="text-2xl md:text-3xl font-bold mb-4">
+            What Changes in the Wet Season?
           </h2>
           <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
-            <li>A car gives visitors the most flexibility, especially outside the city centre.</li>
-            <li>Rideshare and taxis are available.</li>
+            <li>Passing showers do not necessarily ruin a visit.</li>
+            <li>Significant tropical weather requires a different plan, not a rearranged one.</li>
             <li>
-              Buses can be useful for selected routes but may not suit every itinerary — check
-              current services before relying on them.
+              Check the Bureau of Meteorology forecast and warnings and the Townsville Disaster
+              Dashboard.
             </li>
-            <li>The Strand, CBD and ferry terminal area can be explored on foot.</li>
-            <li>
-              Regional attractions such as Paluma, Little Crystal Creek and Billabong Sanctuary
-              usually require a car.
-            </li>
-            <li>
-              Check driving times rather than judging distances from the map alone — North
-              Queensland distances are longer than they look.
-            </li>
+            <li>Never drive through floodwater.</li>
+            <li>Avoid rushing to creeks or swimming holes after heavy rain.</li>
+            <li>Ferry services and outdoor plans may need changing at short notice.</li>
+          </ul>
+          <Button asChild variant="outline" className="mt-5">
+            <Link to="/guides/rainy-day-activities">Rainy Day Activities</Link>
+          </Button>
+        </section>
+
+        {/* Not to overthink */}
+        <section aria-labelledby="not-overthink">
+          <h2 id="not-overthink" className="text-2xl md:text-3xl font-bold mb-4">
+            What Not to Overthink
+          </h2>
+          <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
+            {NOT_TO_OVERTHINK.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
           </ul>
         </section>
 
-        {/* 10. Mistakes */}
+        {/* Mistakes */}
         <section aria-labelledby="mistakes">
           <h2 id="mistakes" className="text-2xl md:text-3xl font-bold mb-4">
-            Common First-Time Visitor Mistakes
+            Common First-Time Mistakes
           </h2>
           <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
             {MISTAKES.map((m) => (
               <li key={m}>{m}</li>
             ))}
           </ul>
+          <p className="mt-4 text-sm text-muted-foreground">
+            The Great Barrier Reef Aquarium, formerly known as Reef HQ, is closed for redevelopment
+            and is not currently available to visitors. See our{" "}
+            <Link
+              to="/great-barrier-reef-townsville"
+              className="text-primary underline underline-offset-2"
+            >
+              reef and aquarium status page
+            </Link>{" "}
+            for current alternatives, and our{" "}
+            <Link to="/useful-contacts" className="text-primary underline underline-offset-2">
+              useful contacts
+            </Link>{" "}
+            page for official information sources.
+          </p>
         </section>
 
-        {/* 11. Next guides */}
-        <section aria-labelledby="next-guides">
-          <h2 id="next-guides" className="text-2xl md:text-3xl font-bold mb-6">
-            Plan the Rest of Your Visit
+        {/* First 24 hours */}
+        <section aria-labelledby="first-24">
+          <h2 id="first-24" className="text-2xl md:text-3xl font-bold mb-4">
+            Your First 24 Hours in Townsville
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {NEXT_GUIDES.map((g) => (
-              <Link key={g.to} to={g.to} className="group">
+          <ol className="space-y-4">
+            {[
+              {
+                label: "Arrival",
+                text: "Check in, get settled, and take a look at the weather forecast and how much daylight you have left.",
+              },
+              {
+                label: "Late afternoon",
+                text: "Head to The Strand for a walk, a swim in a designated area or simply a look at the waterfront as the heat eases.",
+              },
+              {
+                label: "Sunset",
+                text: "If conditions are suitable, drive up to the Castle Hill lookout for the view over the city, the river and the island.",
+              },
+              {
+                label: "Evening",
+                text: "Dinner around The Strand, the CBD or Palmer Street, depending on where you are staying.",
+              },
+              {
+                label: "Next morning",
+                text: "Either take the ferry to Magnetic Island for a full day, or keep exploring Townsville — Jezzine Barracks, the museum, Riverway — depending on how long your trip is.",
+              },
+            ].map((step) => (
+              <li key={step.label} className="rounded-lg border border-border bg-muted/30 p-5">
+                <p className="font-semibold text-foreground">{step.label}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed mt-1">{step.text}</p>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Only have one day? Follow{" "}
+            <Link to="/townsville-in-one-day" className="text-primary underline underline-offset-2">
+              Townsville in One Day
+            </Link>{" "}
+            instead.
+          </p>
+        </section>
+
+        {/* Pathways */}
+        <section aria-labelledby="plan-your-trip">
+          <h2 id="plan-your-trip" className="text-2xl md:text-3xl font-bold mb-6">
+            Plan Your First Townsville Trip
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {PATHWAYS.map((p) => (
+              <Link key={p.to + p.label} to={p.to} className="group">
                 <Card className="h-full transition-shadow hover:shadow-md">
+                  <CardContent className="p-4 flex items-center justify-between gap-3">
+                    <span className="text-sm text-muted-foreground">
+                      <span className="font-semibold text-foreground">{p.label}</span> → {p.name}
+                    </span>
+                    <ArrowRight
+                      className="w-4 h-4 text-muted-foreground flex-shrink-0"
+                      aria-hidden="true"
+                    />
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section aria-labelledby="faq">
+          <h2 id="faq" className="text-2xl md:text-3xl font-bold mb-6">
+            First-Time Visitor Questions
+          </h2>
+          <div className="space-y-4">
+            {FAQS.map((item) => (
+              <div key={item.q} className="rounded-lg border border-border bg-muted/30 p-5">
+                <h3 className="font-semibold text-foreground mb-1">{item.q}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Related guides */}
+        <section aria-labelledby="related-guides">
+          <h2 id="related-guides" className="text-2xl md:text-3xl font-bold mb-6">
+            Related Townsville Guides
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {RELATED_GUIDES.map((g) => (
+              <Link key={g.to} to={g.to} className="group">
+                <Card className="h-full overflow-hidden transition-shadow hover:shadow-md">
+                  <img
+                    src={g.image}
+                    alt={`${g.name} guide, Townsville`}
+                    loading="lazy"
+                    className="w-full aspect-[16/10] object-cover"
+                  />
                   <CardContent className="p-4 flex items-center justify-between gap-3">
                     <span className="font-medium text-foreground group-hover:text-primary">
                       {g.name}
