@@ -80,6 +80,17 @@ const practical: LinkItem[] = [
   { title: "Townsville Directory", description: "Visitor-focused local businesses and places.", link: "/directory", icon: Store },
 ];
 
+const localLinks: LinkItem[] = [
+  { title: "Events", description: "See festivals, sport, markets and where to check what's on now.", link: "/events", icon: CalendarDays },
+  { title: "Townsville Directory", description: "Browse useful local businesses, services and places.", link: "/directory", icon: Store },
+  { title: "Food & Drink", description: "Find dining areas, cafés and local food ideas.", link: "/food", icon: Utensils },
+  { title: "Shopping", description: "Compare Townsville shopping centres, markets and local shopping areas.", link: "/shopping", icon: ShoppingBag },
+  { title: "Beaches", description: "Explore Townsville's beaches and coastal areas.", link: "/beaches", icon: Waves },
+  { title: "Dog Friendly", description: "Find dog-friendly beach, park and local outing information.", link: "/dog-friendly", icon: Dog },
+  { title: "Suburbs & Areas", description: "Understand Townsville's main suburbs and local areas.", link: "/suburbs", icon: Map },
+  { title: "Useful Contacts", description: "Find practical local, emergency and visitor contact information.", link: "/useful-contacts", icon: Phone },
+];
+
 const CardGrid = ({ items, cols = "lg:grid-cols-3" }: { items: LinkItem[]; cols?: string }) => (
   <div className={`grid sm:grid-cols-2 ${cols} gap-4`}>
     {items.map((item) => {
