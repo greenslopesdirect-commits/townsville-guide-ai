@@ -187,8 +187,23 @@ export interface QuickFacts {
   bestCasualOption?: string;
   /** Practical booking advice. */
   bookingTip?: string;
+  /** Strongest all-round shopping centre. */
+  bestAllRoundCentre?: string;
+  /** Best western-suburbs shopping option. */
+  bestWesternOption?: string;
+  /** Best inner-city shopping centre. */
+  bestInnerCityCentre?: string;
+  /** Best area for local, independent browsing. */
+  bestForLocalBrowsing?: string;
+  /** Best market guidance. */
+  bestForMarkets?: string;
+  /** Best wet-weather option. */
+  bestRainyDayOption?: string;
+  /** Best option for everyday essentials. */
+  bestForEssentials?: string;
   localVerdict?: string;
 }
+
 
 /**
  * Per-route quick facts. Keys are route pathnames (no trailing slash).
