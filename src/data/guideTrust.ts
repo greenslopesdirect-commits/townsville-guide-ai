@@ -720,7 +720,37 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       { name: "Rex Airlines", url: "https://www.rex.com.au/" },
     ],
   },
+  "/accessible-townsville": {
+    visitStatus: "research-based",
+    visitNote:
+      "This guide combines local visitor-planning knowledge with current accessibility information from official Council, transport, venue and attraction sources. Accessibility varies by facility and may change, so confirm any feature that is essential to your visit directly with the venue or operator.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — facilities and recreation",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation",
+      },
+      {
+        name: "Translink — accessibility and travel information",
+        url: "https://translink.com.au/travel-with-us/accessibility",
+      },
+      {
+        name: "Townsville Airport — passenger information",
+        url: "https://www.townsvilleairport.com.au/",
+      },
+      {
+        name: "SeaLink Queensland — Magnetic Island ferry",
+        url: "https://www.sealinkqld.com.au/",
+      },
+      {
+        name: "Townsville Enterprise — official visitor information",
+        url: "https://www.townsvillenorthqueensland.com.au/",
+      },
+    ],
+  },
   "/suburbs": {
+
     visitStatus: "partially-firsthand",
     visitNote:
       "This guide combines firsthand local knowledge of Townsville's main areas with current visitor, transport and local-area information. Suburb boundaries and services are less important for visitors than understanding how each area fits into a trip.",
