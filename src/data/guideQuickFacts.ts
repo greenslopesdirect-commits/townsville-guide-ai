@@ -175,6 +175,18 @@ export interface QuickFacts {
   bestWildlifeExperience?: string;
   /** Strongest full-day nature trip. */
   bestFullDayNatureTrip?: string;
+  /** Strongest overall dining area. */
+  bestDiningArea?: string;
+  /** Best area for waterfront dining. */
+  bestWaterfrontDining?: string;
+  /** Best area for breakfast. */
+  bestBreakfastArea?: string;
+  /** Best area for a nicer dinner. */
+  bestNicerDinner?: string;
+  /** Best casual dining style or option. */
+  bestCasualOption?: string;
+  /** Practical booking advice. */
+  bookingTip?: string;
   localVerdict?: string;
 }
 
