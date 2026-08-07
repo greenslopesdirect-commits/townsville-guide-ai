@@ -72,6 +72,26 @@ export interface QuickFacts {
   mainAttraction?: string;
   /** Public transport access summary. */
   publicTransport?: string;
+  /** Location summary for an attraction. */
+  location?: string;
+  /** Current open/closed status of an attraction. */
+  currentStatus?: string;
+  /** Current official name of an attraction. */
+  currentName?: string;
+  /** Former name an attraction is still searched for under. */
+  formerName?: string;
+  /** Target reopening wording for a closed attraction. */
+  reopeningTarget?: string;
+  /** Operating organisation. */
+  operator?: string;
+  /** Funding status for a redevelopment. */
+  funding?: string;
+  /** Whether visitors can currently attend. */
+  canVisitNow?: string;
+  /** Strongest indoor alternative to a closed attraction. */
+  bestIndoorAlternative?: string;
+  /** Date the status information was last checked. */
+  lastChecked?: string;
   timeNeeded?: string;
 
 
@@ -362,6 +382,20 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     bestTimeToVisit: "Morning or late afternoon for cooler conditions",
     localVerdict:
       "The Strand is one of the easiest places for first-time visitors to experience Townsville's waterfront, especially when combined with Jezzine Barracks.",
+  },
+  "/reef-hq-townsville": {
+    currentStatus: "Closed for redevelopment",
+    currentName: "Great Barrier Reef Aquarium",
+    formerName: "Reef HQ",
+    reopeningTarget: "Currently targeted for 2029",
+    location: "Existing Townsville CBD site",
+    operator: "Great Barrier Reef Marine Park Authority",
+    funding: "Australian Government redevelopment funding secured",
+    canVisitNow: "No",
+    bestIndoorAlternative: "Queensland Museum Tropics",
+    lastChecked: "7 August 2026",
+    localVerdict:
+      "Treat the aquarium as unavailable when planning a current trip, and check the official Great Barrier Reef Aquarium website for project updates.",
   },
   "/guides/stinger-safety": {
     stingerSeason: "November to May",

@@ -28,6 +28,7 @@ import {
   Umbrella,
   ShieldAlert,
   Shirt,
+  Info,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -51,6 +52,16 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
     if (value && value.trim()) rows.push({ icon, label, value: value.trim() });
   };
 
+  push(AlertTriangle, "Current status", data.currentStatus);
+  push(Building2, "Current name", data.currentName);
+  push(Info, "Former name", data.formerName);
+  push(CalendarDays, "Reopening target", data.reopeningTarget);
+  push(MapPin, "Location", data.location);
+  push(Users, "Operator", data.operator);
+  push(Ticket, "Funding", data.funding);
+  push(AlertTriangle, "Can you visit now?", data.canVisitNow);
+  push(Building2, "Best indoor alternative", data.bestIndoorAlternative);
+  push(CalendarDays, "Last checked", data.lastChecked);
   push(AlertTriangle, "Current access", data.currentAccess);
   push(CalendarDays, "Typical stinger season", data.stingerSeason);
   push(Flame, "Highest-risk period", data.highestRiskPeriod);

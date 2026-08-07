@@ -96,7 +96,7 @@ const relatedGuides: { to: string; title: string; blurb: string }[] = [
   { to: "/guides/magnetic-island-day-trip", title: "Magnetic Island Day Trip", blurb: "Planning the island day, including when to reconsider." },
   { to: "/guides/paluma-day-trip", title: "Paluma Day Trip", blurb: "The mountain day trip, road conditions and current access." },
   { to: "/first-time-in-townsville", title: "First Time in Townsville", blurb: "Orientation for first-time visitors planning their days." },
-  { to: "/great-barrier-reef-townsville", title: "Reef HQ Status and Reef Trips", blurb: "Where the aquarium redevelopment leaves reef-focused plans." },
+  { to: "/reef-hq-townsville", title: "Reef HQ Status", blurb: "Closure, redevelopment and what to visit instead." },
 ];
 
 const RainyDayActivities = () => (
@@ -354,8 +354,8 @@ const RainyDayActivities = () => (
               The Great Barrier Reef Aquarium, formerly known as Reef HQ, is closed for
               redevelopment and is not currently available as a rainy-day attraction. Do not plan a
               wet day around it. For background and reef alternatives, see our{" "}
-              <Link to="/great-barrier-reef-townsville" className="text-primary hover:underline font-medium">
-                Great Barrier Reef from Townsville guide
+              <Link to="/reef-hq-townsville" className="text-primary hover:underline font-medium">
+                Reef HQ status page
               </Link>
               .
             </p>

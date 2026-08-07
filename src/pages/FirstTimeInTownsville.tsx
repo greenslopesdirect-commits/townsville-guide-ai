@@ -741,10 +741,10 @@ const FirstTimeInTownsville = () => {
             The Great Barrier Reef Aquarium, formerly known as Reef HQ, is closed for redevelopment
             and is not currently available to visitors. See our{" "}
             <Link
-              to="/great-barrier-reef-townsville"
+              to="/reef-hq-townsville"
               className="text-primary underline underline-offset-2"
             >
-              reef and aquarium status page
+              Reef HQ status page
             </Link>{" "}
             for current alternatives, and our{" "}
             <Link to="/useful-contacts" className="text-primary underline underline-offset-2">

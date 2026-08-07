@@ -576,10 +576,10 @@ const BeatTheHeat = () => {
                 redevelopment and is not currently available as an indoor hot-weather attraction.
                 See our{" "}
                 <Link
-                  to="/great-barrier-reef-townsville"
+                  to="/reef-hq-townsville"
                   className="text-primary underline underline-offset-2"
                 >
-                  reef and aquarium information
+                  Reef HQ status page
                 </Link>{" "}
                 for current context, and the{" "}
                 <Link
