@@ -13,7 +13,6 @@ import {
   MapPin,
   ShoppingBag,
   Sun,
-  Ticket,
   Trophy,
   Umbrella,
 } from "lucide-react";
