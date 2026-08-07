@@ -637,6 +637,35 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/nature": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local knowledge of Townsville's outdoor areas with current information from Queensland Parks, Townsville City Council and official attraction and safety sources.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Queensland Parks and Wildlife Service — park alerts",
+        url: "https://parks.desi.qld.gov.au/park-alerts",
+      },
+      {
+        name: "Townsville City Council — parks and recreation",
+        url: "https://www.townsville.qld.gov.au/",
+      },
+      {
+        name: "Queensland Government — Crocwise safety",
+        url: "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise",
+      },
+      {
+        name: "Surf Life Saving Queensland — beach safety",
+        url: "https://lifesaving.com.au/",
+      },
+      {
+        name: "Bureau of Meteorology — Townsville forecasts and warnings",
+        url: "http://www.bom.gov.au/qld/",
+      },
+    ],
+  },
   "/things-to-do": {
     visitStatus: "partially-firsthand",
     visitNote:

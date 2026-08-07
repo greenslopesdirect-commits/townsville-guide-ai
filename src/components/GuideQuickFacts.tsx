@@ -100,6 +100,11 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
     data.bestFor?.filter(Boolean).length ? data.bestFor.filter(Boolean).join(" · ") : undefined,
   );
   push(Sparkles, "Best overall", data.bestOverall);
+  push(TreePine, "Best rainforest day trip", data.bestRainforestDayTrip);
+  push(Waves, "Best coastal nature", data.bestCoastalNature);
+  push(MapPin, "Best easy local nature", data.bestEasyLocalNature);
+  push(Sparkles, "Best wildlife experience", data.bestWildlifeExperience);
+  push(Clock, "Best full-day nature trip", data.bestFullDayNatureTrip);
   push(MapPin, "Best free view", data.bestView);
   push(Waves, "Best free swimming", data.bestSwimming);
   push(Waves, "Best for swimming", data.bestForSwimming);
