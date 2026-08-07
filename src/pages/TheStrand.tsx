@@ -179,6 +179,16 @@ const TheStrand = () => {
 
           <GuideQuickFacts />
 
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville+QLD"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+          >
+            <MapPin className="w-4 h-4" aria-hidden="true" />
+            Get Directions
+          </a>
+
           {/* Swimming */}
           <section className="space-y-4" aria-labelledby="swimming">
             <h2

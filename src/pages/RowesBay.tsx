@@ -87,6 +87,16 @@ const RowesBay = () => {
           </span>
         </div>
 
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Townsville+QLD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline mb-8"
+        >
+          <MapPin className="w-4 h-4" aria-hidden="true" />
+          Get Directions
+        </a>
+
         {/* Main Content Grid */}
         <div className="grid md:grid-cols-3 gap-8">
           

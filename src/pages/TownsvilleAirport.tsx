@@ -236,7 +236,17 @@ const TownsvilleAirport = () => (
         and your airline as the current source of truth.
       </p>
 
-      <GuideQuickFacts className="mb-12" />
+      <GuideQuickFacts className="mb-4" />
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Townsville+Airport+Garbutt+QLD"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline mb-12"
+      >
+        <MapPin className="w-4 h-4" aria-hidden="true" />
+        Get Directions
+      </a>
 
       {/* Flying to Townsville */}
       <section className="mb-12">

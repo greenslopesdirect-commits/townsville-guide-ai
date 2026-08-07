@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mountain, Sunrise, Camera, Footprints, Thermometer, Heart } from "lucide-react";
+import { Mountain, Sunrise, Camera, Footprints, Thermometer, Heart, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
@@ -47,8 +47,17 @@ const CastleHill = () => {
           </header>
 
           {/* Quick Visitor Info */}
-          <GuideQuickFacts className="mb-12" />
+          <GuideQuickFacts className="mb-4" />
 
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Castle+Hill+Lookout+Townsville+QLD"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline mb-12"
+          >
+            <MapPin className="w-4 h-4" aria-hidden="true" />
+            Get Directions
+          </a>
 
           {/* Why Visit */}
           <section className="mb-12">

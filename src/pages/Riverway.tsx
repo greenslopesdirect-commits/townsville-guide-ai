@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/accordion";
 import {
   Waves,
+  MapPin,
   Baby,
   BookOpen,
   Palette,
@@ -253,6 +254,16 @@ const Riverway = () => {
 
       <div className="container mx-auto max-w-4xl px-4 py-12 space-y-14">
         <GuideQuickFacts />
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Riverway+Thuringowa+Central+QLD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+        >
+          <MapPin className="w-4 h-4" aria-hidden="true" />
+          Get Directions
+        </a>
 
         {/* Worth visiting */}
         <section aria-labelledby="worth-visiting">

@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/accordion";
 import {
   Landmark,
+  MapPin,
   Mountain,
   Palette,
   Footprints,
@@ -254,6 +255,16 @@ const JezzineBarracks = () => {
         </figure>
 
         <GuideQuickFacts />
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Jezzine+Barracks+North+Ward+QLD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
+        >
+          <MapPin className="w-4 h-4" aria-hidden="true" />
+          Get Directions
+        </a>
 
         {/* Worth visiting */}
         <section aria-labelledby="worth-visiting">

@@ -101,6 +101,15 @@ const SaundersBeach = () => {
             Townsville locals quietly keep to themselves. No big resorts, no crowds—just a
             long, soft stretch of sand framed by a natural tree line and the Coral Sea.
           </p>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Townsville+QLD"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-primary hover:underline"
+          >
+            <MapPin className="w-4 h-4" aria-hidden="true" />
+            Get Directions
+          </a>
         </section>
 
         {/* Gallery */}

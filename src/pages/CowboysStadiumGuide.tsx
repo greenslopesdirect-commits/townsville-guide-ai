@@ -233,7 +233,17 @@ const CowboysStadiumGuide = () => (
         you to official sources for anything that changes event by event.
       </p>
 
-      <GuideQuickFacts className="mb-10" />
+      <GuideQuickFacts className="mb-4" />
+
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Queensland+Country+Bank+Stadium+South+Townsville+QLD"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline mb-10"
+      >
+        <MapPin className="w-4 h-4" aria-hidden="true" />
+        Get Directions
+      </a>
 
       {/* Check your event first */}
       <section className="mb-12 rounded-xl border-2 border-primary/30 bg-primary/5 p-6 md:p-8">
