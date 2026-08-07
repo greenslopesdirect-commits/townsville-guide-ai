@@ -669,7 +669,21 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "Townsville's strongest nature experiences come from combining coast, island, hills and rainforest rather than looking for one single nature park.",
   },
+  "/cowboys-stadium-guide": {
+    venue: "Queensland Country Bank Stadium",
+    mainTenant: "North Queensland Cowboys",
+    bestEventBase: "The CBD or Palmer Street",
+    bestEventFood: "Palmer Street or the CBD",
+    bestWithoutCar: "Central Townsville",
+    mainConsideration: "Event-specific transport and entry details change",
+    eventSource: "The official stadium What's On listing",
+    fixtureSource: "The official Cowboys fixture list",
+    weatherFactor: "Heat and rain can affect event-day comfort",
+    localVerdict:
+      "Staying central makes stadium visits much easier — the closer you are, the less the event-day transport questions matter.",
+  },
   "/events": {
+
     eventSource: "What's On Townsville — the official council events calendar",
     biggestEventPeriod: "Dry season",
     bestForMajorSport: "The winter and dry-season sporting calendar",
