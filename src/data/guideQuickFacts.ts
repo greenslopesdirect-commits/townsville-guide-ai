@@ -657,6 +657,21 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "Townsville has several good shopping options, but the best one depends on where you are staying and what you actually need.",
   },
+  "/accommodation": {
+    bestAreaOverall: "The Strand / North Ward",
+    bestForFirstTimers: "The Strand / North Ward",
+    bestWithoutCar: "The Strand / North Ward, or the CBD",
+    bestForRestaurants: "Palmer Street or the CBD",
+    bestForFerryAccess: "Palmer Street or the CBD",
+    bestWithKids: "The Strand / North Ward",
+    bestForLongerStays: "Apartment-style accommodation",
+    bestForIslandAtmosphere: "Magnetic Island",
+    bestPracticalLocation:
+      "Aitkenvale and the western suburbs for JCU, hospital or longer local stays",
+    mainConsideration: "Pick the area first, then the property",
+    localVerdict:
+      "Staying in the right part of Townsville matters more than chasing a tiny difference in hotel ratings.",
+  },
   "/riverway": {
 
     bestFor: ["Families", "Free swimming", "Hot days", "Longer stays"],
