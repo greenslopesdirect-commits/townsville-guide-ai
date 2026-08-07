@@ -1,9 +1,10 @@
 import { Helmet } from "react-helmet";
-import { MapPin, ArrowRight, Umbrella, Waves, Dog, Sun, Anchor, ShieldCheck, Thermometer } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
+import LocalInsightCard from "@/components/LocalInsightCard";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Table,
   TableBody,
@@ -12,700 +13,971 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import SEOHead from "@/components/SEOHead";
-import LocalInsightCard from "@/components/LocalInsightCard";
-import StingerSeasonAlert from "@/components/StingerSeasonAlert";
-import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  Waves,
+  Sun,
+  Umbrella,
+  Baby,
+  Footprints,
+  Car,
+  CloudRain,
+  Thermometer,
+  AlertTriangle,
+  Dog,
+  Clock,
+  ShieldAlert,
+  ExternalLink,
+  ArrowRight,
+  MapPin,
+} from "lucide-react";
 
+const SITE = "https://www.townsvilleguide.com.au";
+const PATH = "/beaches";
 
-const beaches = [
+const TITLE = "Best Beaches in Townsville | Swimming, Pallarenda & Local Guide";
+const DESCRIPTION =
+  "Discover Townsville's best beaches, including The Strand, Pallarenda, Rowes Bay and northern beaches, with swimming, stinger, family and access advice.";
+
+const COMPARISON = [
   {
-    name: "The Strand",
-    location: "Townsville's Foreshore",
-    distance: "City Centre",
-    dogAccess: "On-leash only",
-    stingerNet: true,
-    badge: { label: "Most Popular", color: "bg-blue-600 hover:bg-blue-700" },
-    icon: <Umbrella className="w-5 h-5 text-muted-foreground" />,
-    tags: ["Stinger Nets", "Rockpool", "Water Park"],
-    description: "The city's playground. Features a swimming enclosure, the rockpool, water park for kids, and endless cafes. Safe for swimming inside nets.",
-    guideLink: "/the-strand",
-    guideLinkText: "View Strand Guide",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville",
-    buttonVariant: "default" as const,
+    beach: "The Strand",
+    bestFor: "First visits, families, easy beach access",
+    swimming: "Designated and patrolled options, depending on current conditions",
+    car: "No",
+    feel: "Main visitor waterfront",
+    to: "/the-strand",
   },
   {
-    name: "Pallarenda Beach",
-    location: "North of City (10min drive)",
-    distance: "10 min drive north",
-    dogAccess: "Off-leash area available",
-    stingerNet: true,
-    badge: { label: "Dog Friendly", color: "bg-emerald-100 text-emerald-800 hover:bg-emerald-100" },
-    icon: <Dog className="w-5 h-5 text-muted-foreground" />,
-    tags: ["Off-Leash Area", "Stinger Net"],
-    description: "A long stretch of sand perfect for dog walking. Features a permanent STINGER NET and designated OFF-LEASH zones. The dry season (May–October) is prime time for Pallarenda — the lower humidity and firm sand at low tide make it the #1 choice for local dog owners.",
-    guideLink: "/pallarenda-beach",
-    guideLinkText: "View Dog Beach Guide",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Beach+Townsville",
-    buttonVariant: "outline" as const,
+    beach: "Pallarenda",
+    bestFor: "Quieter beach outing, picnic, coastal scenery",
+    swimming: "Check current seasonal net and patrol status",
+    car: "Yes — very helpful",
+    feel: "Relaxed",
+    to: "/pallarenda-beach",
   },
   {
-    name: "Rowes Bay",
-    location: "Between Strand & Pallarenda",
-    distance: "5 min drive north",
-    dogAccess: "On-leash",
-    stingerNet: false,
-    badge: { label: "Sunset Spot", color: "" },
-    icon: <Sun className="w-5 h-5 text-muted-foreground" />,
-    tags: ["Quiet", "Sunset Views"],
-    description: "Quieter than the Strand. Excellent for sunset walks and fish & chips. Verify tide levels before heading out (it gets very shallow at low tide).",
-    guideLink: "/rowes-bay",
-    guideLinkText: "View Rowes Bay Guide",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Townsville",
-    buttonVariant: "outline" as const,
+    beach: "Rowes Bay",
+    bestFor: "Walking, views, sunset",
+    swimming: "Check current official status; not a primary swimming beach",
+    car: "Helpful",
+    feel: "Scenic and local",
+    to: "/rowes-bay",
   },
   {
-    name: "Magnetic Island Beaches",
-    location: "20min Ferry Ride",
-    distance: "20 min ferry",
-    dogAccess: "Varies by beach",
-    stingerNet: true,
-    badge: { label: "Day Trip", color: "" },
-    icon: <Anchor className="w-5 h-5 text-muted-foreground" />,
-    tags: ["Alma Bay", "Horseshoe Bay"],
-    description: "World-class beaches north of Townsville. Alma Bay is patrolled and family friendly. Horseshoe Bay has water sports and stinger nets.",
-    guideLink: "/guides/magnetic-island-day-trip",
-    guideLinkText: "View Day Trip Guide",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Magnetic+Island+Queensland",
-    buttonVariant: "outline" as const,
+    beach: "Bushland Beach",
+    bestFor: "Foreshore, picnic, local atmosphere",
+    swimming: "Check current official status",
+    car: "Yes",
+    feel: "Suburban and local",
+    to: undefined,
+  },
+  {
+    beach: "Balgal Beach",
+    bestFor: "Northern beach day, regional coastal outing",
+    swimming: "Check current seasonal arrangements",
+    car: "Yes",
+    feel: "Regional",
+    to: undefined,
+  },
+  {
+    beach: "Toomulla",
+    bestFor: "Quiet northern coast, relaxed stop",
+    swimming: "Check current official status",
+    car: "Yes",
+    feel: "Very local",
+    to: undefined,
   },
 ];
 
-const northernBeaches = [
+const ITINERARIES = [
   {
-    name: "Saunders Beach",
-    location: "30 min North",
-    distance: "30 min drive north",
-    dogAccess: "Dog friendly",
-    stingerNet: false,
-    badge: { label: "⭐ Top Search Pick", color: "bg-amber-100 text-amber-800 hover:bg-amber-100" },
-    icon: <Sun className="w-5 h-5 text-muted-foreground" />,
-    tags: ["Quiet", "Dog Friendly"],
-    description: "6km of unspoilt sand — the ultimate local pick for a peaceful escape. Through the dry season, the 6km stretch of Saunders is perfect for long, quiet walks. Uncomplicated, easy parking right near the boat ramp makes it stress-free to access. Tip: The northern end often offers the best beachcombing after a run of clear low tides.",
-    guideLink: "/beaches/saunders-beach",
-    guideLinkText: "View Full Saunders Beach Guide →",
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Queensland",
-    buttonVariant: "outline" as const,
+    title: "First-time beach morning",
+    steps: [
+      "Start early on The Strand",
+      "Water Park or the Rockpool, where conditions suit",
+      "Walk north toward Jezzine Barracks",
+      "Breakfast or coffee along the foreshore",
+    ],
   },
   {
-    name: "Toolakea Beach",
-    location: "40 min North",
-    distance: "40 min drive north",
-    dogAccess: "On-leash",
-    stingerNet: false,
-    badge: { label: "Remote", color: "" },
-    icon: <Waves className="w-5 h-5 text-muted-foreground" />,
-    tags: ["Birdwatching", "Remote"],
-    description: "A sleepy residential beach that features easy parking and wide-open sand flats perfect for low-tide photography. Sunset photography at Toolakea is excellent throughout the dry season, when clear skies provide incredible reflections on the sand flats at low tide. Pack the camera and arrive 30 minutes before sunset.",
-    guideLink: undefined,
-    guideLinkText: undefined,
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Toolakea+Beach+Queensland",
-    buttonVariant: "outline" as const,
+    title: "Quiet coastal afternoon",
+    steps: [
+      "Jezzine Barracks and Kissing Point",
+      "Continue to Rowes Bay",
+      "Drive on to Pallarenda",
+      "Stay for the late afternoon light",
+    ],
   },
   {
-    name: "Balgal Beach",
-    location: "1 hour North",
-    distance: "1 hr drive north",
-    dogAccess: "Dog friendly",
-    stingerNet: true,
-    badge: { label: "Day Trip", color: "" },
-    icon: <Anchor className="w-5 h-5 text-muted-foreground" />,
-    tags: ["Stinger Net", "Camping"],
-    description: "The only beach north of the city with a patrolled stinger net (Nov–May). Excellent boat ramp and a great \"day trip\" escape.",
-    guideLink: undefined,
-    guideLinkText: undefined,
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Balgal+Beach+Queensland",
-    buttonVariant: "outline" as const,
+    title: "Northern beaches drive",
+    steps: [
+      "Pick one or two beaches, not all of them",
+      "Pack a picnic and plenty of water",
+      "Relaxed coastal stops rather than a schedule",
+      "Head back before the worst of the afternoon heat",
+    ],
+  },
+  {
+    title: "Family beach outing",
+    steps: [
+      "The Strand or Pallarenda",
+      "Playground and picnic time first",
+      "Check current swimming status before anyone gets in",
+      "Wrap up or take a shaded break before peak heat",
+    ],
   },
 ];
 
-const faqItems = [
+const MISTAKES = [
+  "Assuming every Townsville beach is patrolled — most are not.",
+  "Assuming every beach has a stinger net. Only selected beaches do.",
+  "Treating a stinger net as complete protection rather than risk reduction.",
+  "Deciding to swim because the water looks calm.",
+  "Heading to Pallarenda or the northern beaches without enough drinking water.",
+  "Assuming food and cafés are available at every beach — outside The Strand, often nothing is.",
+  "Planning a long beach visit in the middle of the day in summer.",
+  "Ignoring current weather warnings or closure advice.",
+  "Treating Rowes Bay as a primary designated swimming location.",
+  "Assuming dog rules are the same at every beach instead of checking the dog beaches guide.",
+];
+
+const STATUS_CHECKS = [
   {
-    question: "Are dogs allowed on Townsville beaches?",
-    answer: "Yes, dogs are allowed on several Townsville beaches. Pallarenda Beach has designated off-leash areas, while most other beaches like The Strand require dogs to be on-leash. Always check local signage for current rules."
+    name: "Townsville City Council — beaches and lifeguard information",
+    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/beaches-and-pools",
+    text: "Current beach status, patrol arrangements and facility information.",
   },
   {
-    question: "When is stinger season in Townsville?",
-    answer: "Stinger season runs November to May. For the 2025/26 season, Townsville City Council removed all stinger enclosures on 27 May 2026 after weeks of clear net drags — they'll be reinstalled in November 2026. Always check the current status on our Stinger & Safety Guide."
+    name: "Surf Life Saving Queensland",
+    url: "https://lifesaving.com.au/",
+    text: "Patrol services and swimming safety guidance for Queensland beaches.",
   },
   {
-    question: "Which Townsville beaches have stinger nets?",
-    answer: "The Strand, Pallarenda Beach, and Rowes Bay all have stinger nets installed during stinger season (November to May). Horseshoe Bay on Magnetic Island also has nets. Always check with lifesavers for current conditions."
+    name: "Beachsafe (Surf Life Saving Australia)",
+    url: "https://beachsafe.org.au/",
+    text: "Beach-by-beach conditions, hazards and patrol details.",
   },
   {
-    question: "What is the best stinger-free swimming spot near Townsville?",
-    answer: "Freshwater swimming in the Paluma Range is naturally stinger-free. Little Crystal Creek is temporarily closed following severe weather damage, so check the dedicated guide and current Queensland Parks alert before travelling, and consider the alternatives in our Paluma day-trip guide."
+    name: "Bureau of Meteorology — Townsville",
+    url: "http://www.bom.gov.au/qld/forecasts/townsville.shtml",
+    text: "Forecast, heat, storm and marine warnings.",
+  },
+  {
+    name: "Townsville Disaster Dashboard",
+    url: "https://disaster.townsville.qld.gov.au/",
+    text: "Road, closure and severe-weather information.",
+  },
+  {
+    name: "Queensland Government — Be Crocwise",
+    url: "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise",
+    text: "Official crocodile safety guidance for North Queensland.",
+  },
+];
+
+const RELATED = [
+  { name: "The Strand", to: "/the-strand", text: "The full guide to Townsville's main beachfront." },
+  { name: "Pallarenda Beach", to: "/pallarenda-beach", text: "The quieter coastal option north of the city." },
+  { name: "Rowes Bay", to: "/rowes-bay", text: "Walking, views and late-afternoon coastline." },
+  { name: "Saunders Beach", to: "/beaches/saunders-beach", text: "A long, quiet northern beach." },
+  { name: "Jezzine Barracks", to: "/jezzine-barracks", text: "Coastal heritage precinct at the end of The Strand." },
+  { name: "Stinger Safety", to: "/guides/stinger-safety", text: "Marine stingers, nets and what to do." },
+  { name: "Townsville with Kids", to: "/townsville-with-kids", text: "Family planning for the whole city." },
+  { name: "Free Things to Do", to: "/guides/free-things", text: "Townsville without spending money." },
+  { name: "First Time in Townsville", to: "/first-time-in-townsville", text: "Orientation for a first visit." },
+  { name: "Townsville Without a Car", to: "/townsville-without-a-car", text: "What works on foot and by bus." },
+  { name: "Beat the Heat", to: "/guides/beat-the-heat", text: "Hot-weather planning and safety." },
+  { name: "Rainy Day Activities", to: "/guides/rainy-day-activities", text: "Wet-weather alternatives." },
+  { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip", text: "The island's bays, a ferry ride away." },
+  { name: "Dog-Friendly Townsville", to: "/dog-friendly", text: "Dog beach locations and access rules." },
+];
+
+const faqs = [
+  {
+    q: "What is the best beach in Townsville?",
+    a: "The Strand is the strongest all-round option, especially for first-time visitors. It combines a long beachfront and promenade with designated swimming areas, playgrounds, the Rockpool, the Strand Water Park, food and toilets, and it is easy to reach without a car. Pallarenda is the better choice if you want somewhere quieter.",
+  },
+  {
+    q: "Can you swim at Townsville beaches?",
+    a: "Yes, but swimming suitability varies significantly between locations and across the year. Use designated swimming areas where they are available, swim between the flags when lifeguards are operating, and check current Townsville City Council beach information before entering the water. Marine stingers are a genuine consideration in tropical Queensland, so do not judge a beach by how calm the water looks.",
+  },
+  {
+    q: "Which Townsville beaches have stinger nets?",
+    a: "Selected beaches around Townsville and Magnetic Island have seasonal stinger enclosures rather than permanent year-round nets. Installation and removal dates change from season to season and nets can be removed temporarily after severe weather, so check current Townsville City Council information for which enclosures are in place before you swim.",
+  },
+  {
+    q: "When is stinger season in Townsville?",
+    a: "The typical marine stinger season in North Queensland runs from November to May. Seasonal stinger enclosures are generally installed for that period, but exact dates vary each year and stingers can be present outside those months, so treat the season as a guide rather than a guarantee.",
+  },
+  {
+    q: "Is The Strand good for swimming?",
+    a: "The Strand is the most set-up beach for swimming in Townsville, with designated swimming areas and seasonal enclosures, lifeguard services at times, and the Rockpool as a netted alternative. Current patrol and net arrangements change through the year, so check Council information and follow on-beach signage and flags.",
+  },
+  {
+    q: "Is Pallarenda Beach good for swimming?",
+    a: "Pallarenda is a pleasant, quieter beach with a seasonal swimming enclosure arrangement, but it does not have the same continuous services as The Strand. Do not assume lifeguards are on duty. Check current Townsville City Council information on net and patrol status before entering the water.",
+  },
+  {
+    q: "Is Rowes Bay a swimming beach?",
+    a: "Rowes Bay is better thought of as a walking, views and sunset beach rather than a primary swimming location. It is quiet and scenic, and it links Jezzine Barracks with Pallarenda on foot. If you are considering swimming there, check current official beach information first.",
+  },
+  {
+    q: "Which Townsville beach is best with children?",
+    a: "The Strand is the strongest family choice, with playgrounds, the Strand Water Park, the Rockpool, shade, toilets, food nearby and designated swimming options. Pallarenda works well for a quieter family picnic if you have a car, with swimming decisions based on current conditions and official status.",
+  },
+  {
+    q: "Do you need a car to visit Townsville beaches?",
+    a: "Not for The Strand, which is the easiest beach experience in the city without a car and connects on foot to Jezzine Barracks and Rowes Bay. A car is helpful for Pallarenda and effectively necessary for the northern beaches, though taxis and rideshare are an option for shorter trips.",
+  },
+  {
+    q: "What are the best beaches near Townsville?",
+    a: "North of the city, Saunders Beach, Toolakea, Toomulla and Balgal Beach are the main options, and they suit a relaxed coastal drive rather than a rushed itinerary. Magnetic Island's bays, including Alma Bay and Horseshoe Bay, are a short ferry ride away and are the strongest beach day trip from Townsville.",
+  },
+  {
+    q: "Are Townsville beaches safe in the wet season?",
+    a: "Beaches should not be treated as suitable during thunderstorms or severe weather. Heavy rain can affect water quality, wash debris into coastal areas and change beach access, and stinger enclosures may be removed temporarily. Check the Bureau of Meteorology, the Townsville Disaster Dashboard and current Council beach information before heading out.",
+  },
+  {
+    q: "Where can I take my dog to the beach in Townsville?",
+    a: "Townsville has specific on-leash and off-leash beach rules that vary by location. See our dedicated Townsville dog beaches guide for current locations, access rules and dog-specific advice.",
   },
 ];
 
 const Beaches = () => {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
-  };
-
   return (
-    <div className="min-h-screen bg-background flex flex-col">
-      <SEOHead
-        title="Townsville Beaches: Family & Dog-Friendly"
-        description="Which Townsville beach is best for you? Family swimming spots, off-leash dog beaches, and current stinger safety — from a local."
-        canonical="https://www.townsvilleguide.com.au/beaches"
-      />
+    <>
+      <SEOHead title={TITLE} description={DESCRIPTION} canonical={PATH} ogType="article" />
       <Helmet>
-        <meta name="keywords" content="beaches north of townsville, saunders beach, bushland beach townsville, dog friendly beaches townsville, stinger safety townsville" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: TITLE,
+            description: DESCRIPTION,
+            author: { "@type": "Person", name: "Duncan Ross" },
+            publisher: { "@type": "Organization", name: "Townsville Guide" },
+            mainEntityOfPage: `${SITE}${PATH}`,
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+              { "@type": "ListItem", position: 2, name: "Beaches", item: `${SITE}${PATH}` },
+            ],
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          })}
+        </script>
       </Helmet>
 
-      {/* FAQ Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-
-      {/* Breadcrumb Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
-            { "@type": "ListItem", "position": 2, "name": "Beaches", "item": "https://www.townsvilleguide.com.au/beaches/" }
-          ]
-        }) }}
-      />
-
-      {/* Header */}
-      <div className="bg-card border-b sticky top-0 z-10">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="text-muted-foreground hover:text-primary flex items-center gap-2 text-sm font-medium transition-colors">
-            <ArrowRight className="w-4 h-4 rotate-180" />
-            Back to Home
-          </Link>
-          <span className="text-xs font-medium text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
-            Last updated: August 3, 2026
-          </span>
-
-        </div>
-      </div>
-
-      <main className="flex-grow container mx-auto px-4 py-8 max-w-4xl space-y-10">
-
-        {/* Intro Section */}
-        <section className="space-y-4 text-center sm:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
-            Best Beaches in Townsville — Your Complete Townsville Beaches Guide
+      {/* Hero */}
+      <section className="bg-muted/40 border-b border-border">
+        <div className="container mx-auto max-w-4xl px-4 py-14 md:py-20 text-center">
+          <p className="text-primary font-semibold uppercase tracking-wider text-sm mb-3">
+            Townsville Coastline
+          </p>
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-5">
+            Best Beaches in Townsville: Swimming, Pallarenda &amp; Local Guide
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground max-w-2xl">
-            Townsville offers a variety of beaches for swimming, walking, relaxing, and exploring. This guide covers the safest swimming spots, stinger-net beaches, quieter locations, and dedicated dog-friendly areas across North Queensland.
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            Townsville's beaches make more sense as part of a tropical coastal lifestyle than as
+            conventional surf beaches. Cleveland Bay is sheltered, the water is usually calm, and
+            the appeal is early morning walks, shaded foreshores, picnics and long views out toward
+            Magnetic Island rather than waves.
           </p>
-          <p className="text-sm text-muted-foreground">
-            🧭 Heading further north? Check out our <Link to="/north-shore-townsville" className="text-primary font-medium hover:underline">North Shore Guide</Link> for the best nature trails and the gateway to Bushland Beach.
+          <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-3xl mx-auto">
+            They are also not interchangeable. Swimming suitability varies significantly between
+            locations, and marine-stinger conditions, patrols and net arrangements need to be
+            checked before you get in the water anywhere.
           </p>
-          <div className="h-px bg-border w-full mt-4" />
-        </section>
+        </div>
+      </section>
 
-        {/* Local Tip */}
-        <LocalInsightCard variant="tip" title="☀️ Beach Timing Tip">
-          <p>
-            Early mornings and evenings are best for beach walks in Townsville. Sand temperatures can become very hot during the day, and dogs can overheat quickly in tropical conditions. Always check pavement with your hand before walking your dog.
-          </p>
-        </LocalInsightCard>
+      <div className="container mx-auto max-w-4xl px-4 py-12 space-y-14">
+        <GuideQuickFacts />
 
-        {/* Dog-Friendly Guide Card */}
-        <Card className="border-2 border-primary/20 bg-primary/5">
-          <CardContent className="p-5 sm:p-6 space-y-4">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <div className="p-3 rounded-xl bg-primary/10 text-primary flex-shrink-0">
-                <Dog className="w-6 h-6" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h2 className="text-lg font-semibold text-foreground mb-1">Dog-Friendly Beaches Guide</h2>
-                <p className="text-sm text-muted-foreground">
-                  Travelling with a dog? See our dedicated guide covering off-leash beaches, safety tips, and the best spots for dogs around Townsville. <strong className="text-foreground">Pallarenda remains our top pick for dry-season morning runs</strong> — the lower humidity and firm sand make it perfect for an early off-leash adventure.
+        {/* Which beach */}
+        <section aria-labelledby="which-beach">
+          <h2 id="which-beach" className="text-2xl md:text-3xl font-bold mb-5">
+            Which Townsville Beach Should You Visit?
+          </h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>The short version, before the detail:</p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>
+                <strong className="text-foreground">The Strand</strong> — the strongest all-round
+                visitor beach area, and the right default for a first visit.
+              </li>
+              <li>
+                <strong className="text-foreground">Pallarenda and Rowes Bay</strong> — quieter
+                coastal experiences, better for walking, picnics and late afternoons.
+              </li>
+              <li>
+                <strong className="text-foreground">Northern beaches</strong> — more local, more
+                car-dependent, and best treated as a relaxed drive rather than a must-do.
+              </li>
+            </ul>
+          </div>
+
+          <div className="mt-8 space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                <Umbrella className="w-5 h-5 text-primary" aria-hidden="true" /> The Strand
+              </h3>
+              <div className="space-y-3 text-muted-foreground leading-relaxed">
+                <p>
+                  If you only visit one Townsville beach, make it this one. The Strand is a long
+                  beachfront and promenade with everything built around it, and it is the only beach
+                  area in the city that works as a whole half-day on its own.
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Beachfront and continuous promenade</li>
+                  <li>Cafés, restaurants and food along the strip</li>
+                  <li>Multiple playgrounds and the Strand Water Park</li>
+                  <li>The Rockpool, a netted swimming alternative</li>
+                  <li>Designated swimming areas, with seasonal and patrol arrangements</li>
+                  <li>Toilets, showers, shade and picnic facilities</li>
+                  <li>Easy to reach on foot from North Ward and the CBD — no car needed</li>
+                </ul>
+                <p>
+                  Full detail — parking, swimming spots, food, markets and facilities — is in the{" "}
+                  <Link to="/the-strand" className="text-primary underline underline-offset-2 font-medium">
+                    complete Strand guide
+                  </Link>
+                  .
                 </p>
               </div>
-              <Button asChild className="w-full sm:w-auto flex-shrink-0">
-                <Link to="/dog-friendly">
-                  View Dog Beach Guide
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
             </div>
-            <p className="text-xs text-muted-foreground">
-              Heading out? Use the <a href="https://www.aussiedogguide.com.au/" target="_blank" rel="noopener noreferrer" className="font-medium text-primary hover:underline">Aussie Dog Guide</a>—Australia's comprehensive resource for safe training and travel. It includes essential tropical safety checklists (Cane Toads, Marine Stingers & Heat Protection) for anyone exploring the North.
-            </p>
-          </CardContent>
-        </Card>
 
-        {/* Stinger Alert */}
-        <StingerSeasonAlert />
-        <p className="text-sm text-muted-foreground mt-3">
-          Council removed the enclosures on 27 May 2026 after weeks of clear net drags — they'll return in November for the next stinger season.{" "}
-          <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link>
-        </p>
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                <Waves className="w-5 h-5 text-primary" aria-hidden="true" /> Pallarenda
+              </h3>
+              <div className="space-y-3 text-muted-foreground leading-relaxed">
+                <p>
+                  Pallarenda is the quieter coastal outing, about ten minutes north of the city. It
+                  is a long, open beach with a genuinely relaxed feel and far fewer people than The
+                  Strand, and it pairs naturally with Cape Pallarenda and the Town Common.
+                </p>
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>Wide beach and open coastal views</li>
+                  <li>Picnic facilities and shelters</li>
+                  <li>Public toilets and a playground</li>
+                  <li>Boat ramp area at the northern end</li>
+                  <li>
+                    Walking and cycling links to{" "}
+                    <Link to="/nature" className="text-primary underline underline-offset-2">
+                      Cape Pallarenda and Town Common
+                    </Link>{" "}
+                    trails
+                  </li>
+                  <li>Best in the morning or late afternoon</li>
+                </ul>
+                <p>
+                  On swimming, be careful with assumptions. Pallarenda has a seasonal enclosure
+                  arrangement rather than permanent protection, and lifeguard services are not the
+                  same as The Strand — do not assume anyone is patrolling. Check current Townsville
+                  City Council swimming-status information before entering the water. The{" "}
+                  <Link to="/pallarenda-beach" className="text-primary underline underline-offset-2 font-medium">
+                    Pallarenda Beach guide
+                  </Link>{" "}
+                  has the local detail.
+                </p>
+              </div>
+            </div>
 
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                <Sun className="w-5 h-5 text-primary" aria-hidden="true" /> Rowes Bay
+              </h3>
+              <div className="space-y-3 text-muted-foreground leading-relaxed">
+                <p>
+                  Rowes Bay is a walking and views beach first and foremost. It sits between{" "}
+                  <Link to="/jezzine-barracks" className="text-primary underline underline-offset-2">
+                    Jezzine Barracks
+                  </Link>{" "}
+                  and Pallarenda, and its real value is as the quiet middle section of the coastal
+                  route — wide, open, and at its best in the late afternoon.
+                </p>
+                <p>
+                  We would not casually recommend it as a swimming beach. It is shallow over a long
+                  distance at low tide and does not have the same swimming set-up as The Strand.
+                  Check current official information on patrol and net status before considering a
+                  swim, and see the{" "}
+                  <Link to="/rowes-bay" className="text-primary underline underline-offset-2 font-medium">
+                    Rowes Bay guide
+                  </Link>{" "}
+                  for what it does well.
+                </p>
+              </div>
+            </div>
 
-        {/* Stinger Net Locations Table */}
-        <section className="mt-8 mb-4">
-          <h2 className="text-2xl font-bold text-foreground mb-4">Townsville &amp; Magnetic Island Stinger Net Locations</h2>
-          <div className="overflow-x-auto rounded-lg border">
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-primary" aria-hidden="true" /> Bushland Beach
+              </h3>
+              <div className="space-y-3 text-muted-foreground leading-relaxed">
+                <p>
+                  Bushland Beach, north of the city, is a suburban foreshore rather than a visitor
+                  destination. The appeal is the local beach lifestyle: a grassed foreshore, an easy
+                  walk, somewhere to eat a picnic and open coastal views in the late afternoon.
+                </p>
+                <p>
+                  It is not automatically a recommended swimming beach. Use current Council
+                  information for patrol and net status before deciding to swim. Our{" "}
+                  <Link to="/north-shore-townsville" className="text-primary underline underline-offset-2">
+                    North Shore guide
+                  </Link>{" "}
+                  covers the wider area.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-3 flex items-center gap-2">
+                <Car className="w-5 h-5 text-primary" aria-hidden="true" /> Northern Beaches
+              </h3>
+              <div className="space-y-3 text-muted-foreground leading-relaxed">
+                <p>
+                  The northern beaches are more local, more car-dependent and better suited to a
+                  relaxed coastal drive than a rushed first-time itinerary. Pick one or two rather
+                  than trying to see them all.
+                </p>
+                <ul className="list-disc pl-5 space-y-2">
+                  <li>
+                    <strong className="text-foreground">Saunders Beach</strong> — around 30 minutes
+                    north, a long quiet stretch of sand with easy parking. See the{" "}
+                    <Link to="/beaches/saunders-beach" className="text-primary underline underline-offset-2">
+                      Saunders Beach guide
+                    </Link>
+                    .
+                  </li>
+                  <li>
+                    <strong className="text-foreground">Toomulla</strong> — a very local, very quiet
+                    stop on the northern coast; a relaxed pause rather than a destination.
+                  </li>
+                  <li>
+                    <strong className="text-foreground">Balgal Beach</strong> — about an hour north,
+                    the most substantial northern option, with a boat ramp and a foreshore area.
+                    Seasonal stinger enclosure arrangements may operate here; check current Council
+                    information rather than assuming.
+                  </li>
+                  <li>
+                    <strong className="text-foreground">Toolakea</strong> — sleepy and residential,
+                    with wide sand flats at low tide.
+                  </li>
+                </ul>
+                <p>
+                  Facilities thin out quickly as you head north. Carry water and food, and do not
+                  assume toilets, shade or cafés will be available.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Comparison table */}
+        <section aria-labelledby="comparison">
+          <h2 id="comparison" className="text-2xl md:text-3xl font-bold mb-5">
+            Townsville Beach Comparison
+          </h2>
+          <div className="overflow-x-auto rounded-lg border border-border">
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead className="w-[220px]">Beach Location</TableHead>
-                  <TableHead>Exact Enclosure Details</TableHead>
-                  <TableHead className="w-[180px]">Safety Status</TableHead>
+                  <TableHead className="w-[140px]">Beach</TableHead>
+                  <TableHead>Best for</TableHead>
+                  <TableHead>Swimming setup</TableHead>
+                  <TableHead className="w-[110px]">Car helpful?</TableHead>
+                  <TableHead className="w-[150px]">Visitor feel</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
-                <TableRow>
-                  <TableCell className="font-medium">The Strand (North)</TableCell>
-                  <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
-                  <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="font-medium">The Strand (South)</TableCell>
-                  <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
-                  <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="font-medium">Pallarenda Beach</TableCell>
-                  <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
-                  <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
-                  <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
-                  <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
-                  <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
-                  <TableCell>
-                    <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-                  </TableCell>
-                </TableRow>
+                {COMPARISON.map((row) => (
+                  <TableRow key={row.beach}>
+                    <TableCell className="font-medium text-foreground">
+                      {row.to ? (
+                        <Link to={row.to} className="text-primary underline underline-offset-2">
+                          {row.beach}
+                        </Link>
+                      ) : (
+                        row.beach
+                      )}
+                    </TableCell>
+                    <TableCell className="text-muted-foreground">{row.bestFor}</TableCell>
+                    <TableCell className="text-muted-foreground">{row.swimming}</TableCell>
+                    <TableCell className="text-muted-foreground">{row.car}</TableCell>
+                    <TableCell className="text-muted-foreground">{row.feel}</TableCell>
+                  </TableRow>
+                ))}
               </TableBody>
             </Table>
           </div>
-          <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-            Note: The 2025/26 stinger season has ended and Townsville City Council physically removed these enclosures on 27 May 2026 after weeks of clear net drags confirmed no stinger presence. This is standard annual practice — the nets return each November for the next season. Open-water swimming across these beaches is no longer considered high-risk for box jellyfish or Irukandji.
+          <p className="mt-3 text-sm text-muted-foreground">
+            Beach patrols, stinger nets and swimming conditions can change. Always check current
+            Townsville City Council information before swimming.
           </p>
-
         </section>
 
-        {/* Exact Off-Leash Dog Beach Boundaries */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Pallarenda Dog Beach Rules &amp; Off-Leash Boundaries</h2>
-          <ul className="list-disc pl-5 space-y-3 text-sm text-muted-foreground">
-            <li><strong>Pallarenda Dog Beach:</strong> Fully off-leash on the sand starting exclusively from Beach Access Ramp 17 (clearly signposted) heading North all the way to the Cape Pallarenda National Park boundary. Dogs must remain on-leash in the main park, playground, and car park areas.</li>
-            <li><strong>Saunders Beach:</strong> Dogs are permitted off-leash on the wide open beach area starting from the northern side of the main boat ramp area heading north. Ensure dogs are under effective voice control at all times.</li>
-            <li><strong>Bushland Beach:</strong> Designated off-leash sandy areas are located further along the beach flats well away from the resort and main stinger/swimming zones. Check the local entry signage for exact daily seasonal zoning.</li>
+        {/* Swimming */}
+        <section aria-labelledby="swimming">
+          <h2 id="swimming" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <Waves className="w-6 h-6 text-primary" aria-hidden="true" /> Swimming at Townsville Beaches
+          </h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              This is tropical coastal Queensland, and swimming here works differently to southern
+              Australian beaches. None of it should put you off — it just needs a couple of minutes
+              of thought before you get in.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Marine stingers are a genuine consideration, not a theoretical one</li>
+              <li>Stinger nets reduce risk but are not complete protection</li>
+              <li>Use designated or patrolled areas wherever they are available</li>
+              <li>Swim between the flags when lifeguards are operating</li>
+              <li>Follow all current signage and local advice on the day</li>
+              <li>A stinger suit may be appropriate during the season</li>
+              <li>Do not assume calm-looking water is automatically suitable for swimming</li>
+            </ul>
+            <p>
+              The{" "}
+              <Link to="/guides/stinger-safety" className="text-primary underline underline-offset-2 font-medium">
+                Stinger Safety guide
+              </Link>{" "}
+              covers species, symptoms, first aid and what nets actually do. Read it once before
+              your first swim and you will not need to think about it again.
+            </p>
+          </div>
+        </section>
+
+        {/* Stinger season */}
+        <section aria-labelledby="stinger-season">
+          <h2 id="stinger-season" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <ShieldAlert className="w-6 h-6 text-primary" aria-hidden="true" /> Stinger Season
+          </h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              <strong className="text-foreground">Typical stinger season: November to May.</strong>{" "}
+              That is the window most local arrangements are built around.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Selected beaches have seasonal stinger enclosures rather than permanent nets</li>
+              <li>Installation and removal dates change from year to year</li>
+              <li>Severe weather can result in nets being removed temporarily</li>
+              <li>Current beach status must be checked before swimming</li>
+              <li>Nets reduce risk — they do not remove it</li>
+            </ul>
+            <p>
+              We deliberately do not list which enclosures are in the water today, because that
+              changes. Townsville City Council publishes the current position, and it is the source
+              to trust.
+            </p>
+          </div>
+        </section>
+
+        {/* Families */}
+        <section aria-labelledby="families">
+          <h2 id="families" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <Baby className="w-6 h-6 text-primary" aria-hidden="true" /> Beaches for Families
+          </h2>
+          <div className="space-y-6 text-muted-foreground leading-relaxed">
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">The Strand</h3>
+              <p>
+                The strongest all-round family choice, by a clear margin. Playgrounds, the Strand
+                Water Park, food, toilets, shade, designated swimming options and easy walking
+                between all of it — you can change plans on the spot when someone gets tired or too
+                hot.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Pallarenda</h3>
+              <p>
+                Good for a picnic, the playground and a quieter beach experience if you have a car.
+                Swimming decisions should depend on current conditions and official status rather
+                than on how the water looks when you arrive.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">Northern beaches</h3>
+              <p>
+                These can work well for a relaxed family outing, but only with a bit of preparation:
+              </p>
+              <ul className="list-disc pl-5 space-y-1 mt-2">
+                <li>Have transport, and expect a drive at both ends</li>
+                <li>Carry drinking water — more than you think you need</li>
+                <li>Bring food; there may be nothing available</li>
+                <li>Check swimming conditions before you commit to a swim</li>
+                <li>Do not assume toilets, playgrounds or shade exist at every beach</li>
+                <li>Supervise children closely around the water at unpatrolled beaches</li>
+              </ul>
+            </div>
+            <p>
+              Age-by-age advice and the rest of the city's family options are in the{" "}
+              <Link to="/townsville-with-kids" className="text-primary underline underline-offset-2 font-medium">
+                Townsville with Kids
+              </Link>{" "}
+              guide.
+            </p>
+          </div>
+        </section>
+
+        {/* Without a car */}
+        <section aria-labelledby="without-car">
+          <h2 id="without-car" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <Footprints className="w-6 h-6 text-primary" aria-hidden="true" /> Beaches Without a Car
+          </h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              <strong className="text-foreground">
+                The Strand is by far the easiest Townsville beach experience without a car.
+              </strong>{" "}
+              If you are staying in North Ward or the CBD, you can walk to it, and everything you
+              need is along it.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>
+                <Link to="/jezzine-barracks" className="text-primary underline underline-offset-2">
+                  Jezzine Barracks
+                </Link>{" "}
+                and Rowes Bay can be added as a longer coastal walk for capable walkers
+              </li>
+              <li>Pallarenda is much less convenient without transport</li>
+              <li>Northern beaches are far easier by private vehicle, taxi or rideshare</li>
+            </ul>
+            <p>
+              See{" "}
+              <Link to="/townsville-without-a-car" className="text-primary underline underline-offset-2 font-medium">
+                Townsville Without a Car
+              </Link>{" "}
+              for the full walking and bus picture, and the{" "}
+              <Link to="/the-strand" className="text-primary underline underline-offset-2">
+                Strand guide
+              </Link>{" "}
+              for what is within walking distance.
+            </p>
+          </div>
+        </section>
+
+        {/* Walking */}
+        <section aria-labelledby="walking">
+          <h2 id="walking" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <Footprints className="w-6 h-6 text-primary" aria-hidden="true" /> Beaches for Walking Rather Than Swimming
+          </h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              Plenty of visitors get more out of Townsville's coastline on foot than in the water.
+              The city's best coastal walking runs almost continuously north from the CBD:
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>
+                <strong className="text-foreground">The Strand promenade</strong> — flat, shaded in
+                parts, and the easiest walk in the city
+              </li>
+              <li>
+                <strong className="text-foreground">The Strand → Jezzine Barracks</strong> — coastal
+                views, heritage and public art
+              </li>
+              <li>
+                <strong className="text-foreground">Jezzine → Rowes Bay</strong> — the quiet
+                transition out of North Ward
+              </li>
+              <li>
+                <strong className="text-foreground">Rowes Bay → Pallarenda</strong> — the longest and
+                most exposed stretch; take water
+              </li>
+              <li>
+                <strong className="text-foreground">Pallarenda foreshore</strong> — open beach
+                walking with Magnetic Island in view
+              </li>
+            </ul>
+            <p>
+              Coastal paths in North Queensland are not permanent fixtures. Erosion, storm damage,
+              access changes and maintenance works can all affect sections of the route, especially
+              after severe weather. Check current conditions after any major weather event rather
+              than assuming a path is open end to end.
+            </p>
+          </div>
+        </section>
+
+        {/* Sunrise and sunset */}
+        <section aria-labelledby="sunrise-sunset">
+          <h2 id="sunrise-sunset" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <Sun className="w-6 h-6 text-primary" aria-hidden="true" /> Sunrise and Sunset
+          </h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Card className="bg-muted/40">
+              <CardContent className="p-5">
+                <h3 className="font-semibold text-foreground mb-3">Early morning</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground list-disc pl-5">
+                  <li>The Strand, before it warms up</li>
+                  <li>Pallarenda, at its quietest</li>
+                  <li>Any of the coastal walking routes</li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="bg-muted/40">
+              <CardContent className="p-5">
+                <h3 className="font-semibold text-foreground mb-3">Late afternoon and sunset</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground list-disc pl-5">
+                  <li>Pallarenda</li>
+                  <li>Rowes Bay</li>
+                  <li>Jezzine Barracks and Kissing Point</li>
+                  <li>The Strand</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Conditions vary — cloud, haze and season all change what you get, so treat these as good
+            places to be rather than guaranteed displays. For more, see{" "}
+            <Link to="/guides/sunset-walks" className="text-primary underline underline-offset-2">
+              sunset walks in Townsville
+            </Link>
+            .
+          </p>
+        </section>
+
+        {/* Heat */}
+        <section aria-labelledby="heat">
+          <h2 id="heat" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <Thermometer className="w-6 h-6 text-primary" aria-hidden="true" /> Heat and Sun
+          </h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Sand and paved foreshore areas can become extremely hot underfoot</li>
+              <li>Shade is limited at some beaches and absent at others</li>
+              <li>Carry drinking water, particularly away from The Strand</li>
+              <li>Sunscreen and a hat, year-round, not just in summer</li>
+              <li>Mornings and later afternoons are far more comfortable</li>
+              <li>Swimming does not remove heat risk — you still dehydrate</li>
+            </ul>
+            <p>
+              The{" "}
+              <Link to="/guides/beat-the-heat" className="text-primary underline underline-offset-2 font-medium">
+                Beat the Heat
+              </Link>{" "}
+              guide has the full hot-weather playbook, including how to structure a day around the
+              worst of it.
+            </p>
+          </div>
+        </section>
+
+        {/* Wet weather */}
+        <section aria-labelledby="wet-weather">
+          <h2 id="wet-weather" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <CloudRain className="w-6 h-6 text-primary" aria-hidden="true" /> Beaches in Wet Weather
+          </h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              Beaches should not be treated as suitable during thunderstorms or severe weather. In
+              the wet season this matters more than visitors expect.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Heavy rain can affect coastal water quality</li>
+              <li>Debris washes into coastal areas after runoff</li>
+              <li>Beach access and parking areas can change or close</li>
+              <li>Stinger enclosures may be removed temporarily</li>
+              <li>Roads and foreshore areas can be affected, particularly further north</li>
+            </ul>
+            <p>
+              Check the Bureau of Meteorology, the Townsville Disaster Dashboard and current Council
+              beach information before heading out, and see{" "}
+              <Link to="/guides/rainy-day-activities" className="text-primary underline underline-offset-2 font-medium">
+                Rainy Day Activities
+              </Link>{" "}
+              for what to do instead.
+            </p>
+          </div>
+        </section>
+
+        {/* Crocodiles */}
+        <section aria-labelledby="crocodiles">
+          <h2 id="crocodiles" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <AlertTriangle className="w-6 h-6 text-primary" aria-hidden="true" /> Crocodile Awareness
+          </h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              Townsville is in North Queensland, and coastal and estuarine environments here can
+              overlap with crocodile habitat. This is a normal part of living and holidaying on this
+              coast rather than a reason to avoid the water.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>Read and follow crocodile warning signs wherever they appear</li>
+              <li>Stay clear of creek mouths and estuarine areas where warnings apply</li>
+              <li>Never feed wildlife of any kind</li>
+              <li>Follow Queensland Government Be Crocwise guidance</li>
+            </ul>
+            <p>
+              Crocodiles are not routinely present on every Townsville beach, and the main visitor
+              beaches are not managed as high-risk locations. Signage is the practical guide — where
+              there is a warning, take it seriously.
+            </p>
+          </div>
+        </section>
+
+        {/* Dogs */}
+        <section aria-labelledby="dogs">
+          <h2 id="dogs" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <Dog className="w-6 h-6 text-primary" aria-hidden="true" /> Dog Beaches
+          </h2>
+          <Card className="bg-muted/40">
+            <CardContent className="p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+              <p className="text-muted-foreground leading-relaxed flex-1">
+                <strong className="text-foreground">Travelling with a dog?</strong> Townsville has
+                specific on-leash and off-leash beach rules. See our dedicated Townsville dog
+                beaches guide for current locations, access rules and dog-specific advice.
+              </p>
+              <Button asChild className="flex-shrink-0">
+                <Link to="/dog-friendly">
+                  Dog beaches guide
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Itineraries */}
+        <section aria-labelledby="itineraries">
+          <h2 id="itineraries" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <Clock className="w-6 h-6 text-primary" aria-hidden="true" /> Suggested Beach Itineraries
+          </h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            {ITINERARIES.map((it) => (
+              <Card key={it.title} className="bg-muted/40">
+                <CardContent className="p-5">
+                  <h3 className="font-semibold text-foreground mb-3">{it.title}</h3>
+                  <ol className="space-y-2 text-sm text-muted-foreground list-decimal pl-5">
+                    {it.steps.map((s) => (
+                      <li key={s}>{s}</li>
+                    ))}
+                  </ol>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Keep these flexible — weather, tide and heat all have a vote. If you have a full day
+            spare,{" "}
+            <Link to="/guides/magnetic-island-day-trip" className="text-primary underline underline-offset-2">
+              Magnetic Island
+            </Link>{" "}
+            is the strongest beach day trip from Townsville.
+          </p>
+        </section>
+
+        {/* Mistakes */}
+        <section aria-labelledby="mistakes">
+          <h2 id="mistakes" className="text-2xl md:text-3xl font-bold mb-5 flex items-center gap-3">
+            <AlertTriangle className="w-6 h-6 text-primary" aria-hidden="true" /> Common Beach Mistakes
+          </h2>
+          <ul className="space-y-3 text-muted-foreground leading-relaxed list-disc pl-5">
+            {MISTAKES.map((m) => (
+              <li key={m}>{m}</li>
+            ))}
           </ul>
         </section>
 
-        {/* Deciding Where to Head: Townsville's Diverse Coastline */}
-        <section className="mb-8 space-y-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-            Deciding Where to Head: Townsville's Diverse Coastline
+        <LocalInsightCard variant="tip" title="Go early, and the whole thing changes">
+          <p>
+            Locals are on the beach before 8am for a reason. The sand is cool, the light is better,
+            the breeze is up, and parking is easy everywhere from The Strand to Pallarenda. A
+            midday beach visit in Townsville is a very different, much sweatier experience.
+          </p>
+        </LocalInsightCard>
+
+        {/* Status checks */}
+        <section aria-labelledby="status">
+          <h2 id="status" className="text-2xl md:text-3xl font-bold mb-5">
+            Current-Status Checks
           </h2>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            Unlike traditional surf coasts, the beaches flanking Townsville and the greater North Queensland region offer a diverse mix of manicured foreshores, sprawling tidal flats, and rugged, untamed coastal escapes. The geography here is heavily influenced by the protective barrier of Magnetic Island and massive tropical tidal movements. Depending on what you are looking for, your beach choice will completely dictate your day. If you want a bustling, cosmopolitan atmosphere with paved walkways, beachside cafes, and a protected, year-round swimming enclosure, the inner-city Strand waterfront is unmatched. However, if you are looking to truly escape the crowds, travel just ten minutes north to the wide sand flats of Pallarenda, or venture further out to the expansive, wind-swept stretches of Saunders and Toolakea Beach.
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Patrols, stinger enclosures, weather and beach access all change. Check these before you
+            swim:
           </p>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            When planning a beach day in the tropics, understanding local safety and environmental dynamics is just as important as choosing a scenic view. Our coastline experiences significant tidal ranges that can expose hundreds of meters of shallow sand flats at low tide—perfect for beachcombing and letting dogs explore, but less ideal for a deep swim. Additionally, ocean swimming requires sticking to dedicated stinger-net enclosures during the warmer months to guarantee a worry-free dip. By familiarising yourself with how our local beaches change with the tides, wind patterns, and seasons, you can safely find the absolute perfect patch of sand, whether you are after a family-friendly rockpool, a secluded photography spot, or an off-leash run for your dogs.
-          </p>
-        </section>
-
-        {/* Beach Listings */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Beach Guide</h2>
-          <div className="grid gap-6 md:grid-cols-2">
-            {beaches.map((beach) => (
-              <Card key={beach.name} className="hover:shadow-lg transition-shadow flex flex-col">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge
-                      className={beach.badge.color || undefined}
-                      variant={beach.badge.color ? "default" : "outline"}
-                    >
-                      {beach.badge.label}
-                    </Badge>
-                    {beach.icon}
-                  </div>
-                  <CardTitle className="text-xl mt-2">{beach.name}</CardTitle>
-                  <div className="space-y-1 text-sm text-muted-foreground mt-1">
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 flex-shrink-0" />
-                      <span>{beach.location}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Dog className="w-4 h-4 flex-shrink-0" />
-                      <span>{beach.dogAccess}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <ShieldCheck className="w-4 h-4 flex-shrink-0" />
-                      <span>{beach.stingerNet ? "Stinger net available" : "No stinger net"}</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4 flex-1 flex flex-col">
-                  <div className="flex gap-2 flex-wrap">
-                    {beach.tags.map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground text-sm">{beach.description}</p>
-                  <div className="mt-auto pt-2 flex flex-col gap-2">
-                    {beach.guideLink && (
-                      <Button asChild variant={beach.buttonVariant} className="w-full">
-                        <Link to={beach.guideLink}>{beach.guideLinkText}</Link>
-                      </Button>
-                    )}
-                    <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                      <a
-                        href={beach.mapUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`View ${beach.name} on Google Maps`}
-                      >
-                        <MapPin className="w-4 h-4" />
-                        View on Google Maps
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+          <ul className="space-y-3">
+            {STATUS_CHECKS.map((s) => (
+              <li key={s.url} className="text-sm">
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="inline-flex items-center gap-1.5 text-primary underline underline-offset-2 font-medium"
+                >
+                  {s.name}
+                  <ExternalLink className="w-3 h-3 flex-shrink-0" aria-hidden="true" />
+                </a>
+                <span className="block text-muted-foreground">{s.text}</span>
+              </li>
             ))}
-          </div>
-        </section>
-
-        {/* Northern Beaches Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Northern Beaches & Saunders Beach Coastal Escape</h2>
-          <p className="text-sm text-muted-foreground">Looking for the best beaches north of Townsville? These local favorites offer the best off-leash walking and quiet escapes away from the city crowd.</p>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {northernBeaches.map((beach) => (
-              <Card key={beach.name} className="hover:shadow-lg transition-shadow flex flex-col">
-                <CardHeader className="pb-3">
-                  <div className="flex justify-between items-start">
-                    <Badge
-                      className={beach.badge.color || undefined}
-                      variant={beach.badge.color ? "default" : "outline"}
-                    >
-                      {beach.badge.label}
-                    </Badge>
-                    {beach.icon}
-                  </div>
-                  <h2 className="text-xl font-semibold leading-none tracking-tight mt-2">{beach.name}</h2>
-                  <div className="space-y-1 text-sm text-muted-foreground mt-1">
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4 flex-shrink-0" />
-                      <span>{beach.location}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Dog className="w-4 h-4 flex-shrink-0" />
-                      <span>{beach.dogAccess}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <ShieldCheck className="w-4 h-4 flex-shrink-0" />
-                      <span>{beach.stingerNet ? "Stinger net available" : "No stinger net"}</span>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4 flex-1 flex flex-col">
-                  <div className="flex gap-2 flex-wrap">
-                    {beach.tags.map((tag) => (
-                      <Badge key={tag} variant="outline" className="text-xs">{tag}</Badge>
-                    ))}
-                  </div>
-                  <p className="text-muted-foreground text-sm">{beach.description}</p>
-                  <div className="mt-auto pt-2 flex flex-col gap-2">
-                    {beach.guideLink && (
-                      <Button asChild variant="default" size="sm" className="w-full">
-                        <Link to={beach.guideLink}>
-                          {beach.guideLinkText || "View Guide"}
-                        </Link>
-                      </Button>
-                    )}
-                    <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                      <a
-                        href={beach.mapUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`View ${beach.name} on Google Maps`}
-                      >
-                        <MapPin className="w-4 h-4" />
-                        View on Google Maps
-                      </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <p className="text-sm text-muted-foreground mt-4">
-            Looking for something even more secluded? Explore our <a href="#secret-beaches" className="text-primary font-medium hover:underline">🕵️ Secret Beaches guide</a>.
+          </ul>
+          <p className="mt-4 text-sm text-muted-foreground">
+            Council and emergency numbers are listed in{" "}
+            <Link to="/useful-contacts" className="text-primary underline underline-offset-2">
+              Useful Contacts
+            </Link>
+            .
           </p>
         </section>
 
-        {/* Secret Beaches Section */}
-        <section id="secret-beaches" className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">🕵️ Townsville's 5 Best Secret Beaches & Hidden Gems</h2>
-          <p className="text-sm text-muted-foreground">These hidden gems are known mostly to locals. They're off the beaten path and worth the effort to find.</p>
-
-          {/* Local Secret — Northern Beaches Callout */}
-          <div className="rounded-xl border-2 border-emerald-300 dark:border-emerald-700 bg-emerald-50/70 dark:bg-emerald-950/30 p-5 sm:p-6 flex gap-4 items-start">
-            <span className="text-2xl shrink-0" aria-hidden="true">🌅</span>
-            <div>
-              <p className="font-bold text-emerald-900 dark:text-emerald-200 text-base sm:text-lg">Local Secret: Northern Beaches (Saunders &amp; Toolakea)</p>
-              <p className="text-emerald-800 dark:text-emerald-300 text-sm sm:text-base mt-1 leading-relaxed">
-                During these dry season months, these beaches catch the best of the cooling breezes. Perfect for those who want a quiet sunset walk without the Strand crowds.
-              </p>
-            </div>
-          </div>
-
-
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {/* Secret Beach */}
-            <Card className="hover:shadow-lg transition-shadow flex flex-col relative">
-              <div className="absolute -top-1 right-2 z-10 bg-[#00A693] text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
-                🐾 Schnauzer Approved
-              </div>
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-emerald-100 text-emerald-800 hover:bg-emerald-100">Off-Leash</Badge>
-                  <Dog className="w-5 h-5 text-muted-foreground" />
-                </div>
-                <CardTitle className="text-xl mt-2">Secret Beach</CardTitle>
-                <div className="space-y-1 text-sm text-muted-foreground mt-1">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 flex-shrink-0" />
-                    <span>South Townsville (Benwell Rd)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Dog className="w-4 h-4 flex-shrink-0" />
-                    <span>Off-leash free-run area</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 flex-shrink-0" />
-                    <span>No stinger net</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4 flex-1 flex flex-col">
-                <div className="flex gap-2 flex-wrap">
-                  <Badge variant="outline" className="text-xs">Dog Friendly</Badge>
-                  <Badge variant="outline" className="text-xs">Hidden Gem</Badge>
-                </div>
-                <p className="text-muted-foreground text-sm">Tucked away at the end of Benwell Road, this is a local favorite for dog owners. It is an official off-leash free-run beach spanning about 520m of foreshore.</p>
-                <p className="text-xs font-medium text-[#00A693] italic">🐾 Schnauzer Approved. A true hidden gem for off-leash adventures — just keep an eye out near the water's edge.</p>
-                <p className="text-xs text-muted-foreground italic">💡 Best visited at low tide to give your dog plenty of room to run on the sand flats.</p>
-                <div className="p-3 rounded-lg bg-destructive/5 border border-destructive/20">
-                  <p className="text-xs font-medium text-destructive">🐊 Crocodile Caution: Near the mouth of the Ross River. Keep a close eye on your pets near the water's edge.</p>
-                </div>
-                <div className="mt-auto pt-2">
-                  <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                    <a href="https://www.google.com/maps/search/?api=1&query=Secret+Beach+South+Townsville" target="_blank" rel="noopener noreferrer" aria-label="View Secret Beach on Google Maps">
-                      <MapPin className="w-4 h-4" />
-                      View on Google Maps
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Shelly Beach */}
-            <Card className="hover:shadow-lg transition-shadow flex flex-col">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge variant="outline">Secluded</Badge>
-                  <Sun className="w-5 h-5 text-muted-foreground" />
-                </div>
-                <CardTitle className="text-xl mt-2">Shelly Beach</CardTitle>
-                <div className="space-y-1 text-sm text-muted-foreground mt-1">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 flex-shrink-0" />
-                    <span>Northern tip of Pallarenda</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Dog className="w-4 h-4 flex-shrink-0" />
-                    <span>No dogs (Conservation Park)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 flex-shrink-0" />
-                    <span>No stinger net</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4 flex-1 flex flex-col">
-                <div className="flex gap-2 flex-wrap">
-                  <Badge variant="outline" className="text-xs">Hike Access</Badge>
-                  <Badge variant="outline" className="text-xs">Pristine</Badge>
-                </div>
-                <p className="text-muted-foreground text-sm">A secluded, pristine stretch of sand at the northern tip of Pallarenda. Reachable via a hike or mountain bike through the Town Common.</p>
-                <p className="text-xs text-muted-foreground italic">💡 Dogs are not allowed in the Cape Pallarenda Conservation Park trails leading to the beach, so this one is for the humans only.</p>
-                <div className="mt-auto pt-2">
-                  <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                    <a href="https://www.google.com/maps/search/?api=1&query=Shelly+Beach+Pallarenda+Townsville" target="_blank" rel="noopener noreferrer" aria-label="View Shelly Beach on Google Maps">
-                      <MapPin className="w-4 h-4" />
-                      View on Google Maps
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Radical Bay */}
-            <Card className="hover:shadow-lg transition-shadow flex flex-col">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge variant="outline">Day Trip</Badge>
-                  <Anchor className="w-5 h-5 text-muted-foreground" />
-                </div>
-                <CardTitle className="text-xl mt-2">Radical Bay</CardTitle>
-                <div className="space-y-1 text-sm text-muted-foreground mt-1">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 flex-shrink-0" />
-                    <span>Magnetic Island (hike from Horseshoe Bay)</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Dog className="w-4 h-4 flex-shrink-0" />
-                    <span>On-leash only</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 flex-shrink-0" />
-                    <span>No stinger net</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent className="space-y-4 flex-1 flex flex-col">
-                <div className="flex gap-2 flex-wrap">
-                  <Badge variant="outline" className="text-xs">Hike Access</Badge>
-                  <Badge variant="outline" className="text-xs">Paradise</Badge>
-                </div>
-                <p className="text-muted-foreground text-sm">A secluded paradise on 'Maggie' accessible via a hike from Horseshoe Bay.</p>
-                <p className="text-xs text-muted-foreground italic">💡 Dogs are welcome on Magnetic Island but must be on-leash in these bay areas to protect local rock wallabies.</p>
-                <div className="mt-auto pt-2">
-                  <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                    <a href="https://www.google.com/maps/search/?api=1&query=Radical+Bay+Magnetic+Island" target="_blank" rel="noopener noreferrer" aria-label="View Radical Bay on Google Maps">
-                      <MapPin className="w-4 h-4" />
-                      View on Google Maps
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
+        {/* FAQ */}
+        <section aria-labelledby="faq">
+          <h2 id="faq" className="text-2xl md:text-3xl font-bold mb-5">
+            Townsville Beaches FAQ
+          </h2>
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((f, i) => (
+              <AccordionItem key={f.q} value={`faq-${i}`}>
+                <AccordionTrigger className="text-left font-semibold">{f.q}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground leading-relaxed">
+                  {f.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </section>
 
-        {/* Beach Safety Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Beach Safety in Townsville</h2>
-          <p className="text-muted-foreground text-sm">
-            North Queensland's tropical climate means a few extra precautions when visiting the beach.
-          </p>
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
-              <Thermometer className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-              <div>
-                <p className="font-medium text-sm text-foreground">Heat & Sun Safety</p>
-                <p className="text-xs text-muted-foreground mt-1">Sand can exceed 50°C in summer. Swim early morning or after 4pm. Always wear sunscreen and stay hydrated.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
-              <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
-              <div>
-                <p className="font-medium text-sm text-foreground">Stinger Season</p>
-                <p className="text-xs text-muted-foreground mt-1">The 2025/26 marine stinger season has ended. Council removed the enclosures at The Strand, Pallarenda, Magnetic Island and Balgal Beach on 27 May 2026 after weeks of clear net drags — they'll be reinstalled in November for the next season. <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">View the latest Safety Guide →</Link></p>
-
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
-              <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
-              <div>
-                <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Dry-season pattern: low tides typically fall in the late afternoon — the perfect window for exploring the secret northern beaches or letting the dogs run on the wide sand flats at Pallarenda.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
-              <Dog className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
-              <div>
-                <p className="font-medium text-sm text-foreground">Dogs at the Beach</p>
-                <p className="text-xs text-muted-foreground mt-1">For detailed dog access rules and safety advice, see our dedicated <Link to="/dog-friendly" className="text-primary hover:underline font-medium">Dog-Friendly Beaches Guide</Link>.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">Frequently Asked Questions</h2>
-          <div className="space-y-4">
-            {faqItems.map((faq, i) => (
-              <div key={i} className="p-4 rounded-lg border bg-card">
-                <h3 className="font-semibold text-foreground text-sm">{faq.question}</h3>
-                <p className="text-muted-foreground text-sm mt-2">{faq.answer}</p>
-              </div>
+        {/* Related */}
+        <section aria-labelledby="related">
+          <h2 id="related" className="text-2xl md:text-3xl font-bold mb-5">
+            Related Guides
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {RELATED.map((r) => (
+              <Link
+                key={r.to}
+                to={r.to}
+                className="block bg-card rounded-xl p-5 border hover:border-primary hover:shadow-md transition"
+              >
+                <h3 className="font-semibold text-foreground mb-1 flex items-center gap-1.5">
+                  {r.name}
+                  <ArrowRight className="w-4 h-4 text-primary" aria-hidden="true" />
+                </h3>
+                <p className="text-sm text-muted-foreground">{r.text}</p>
+              </Link>
             ))}
           </div>
         </section>
-
-        {/* Internal Links */}
-        <section className="space-y-4">
-          <h2 className="text-xl font-bold text-foreground">More Townsville Guides</h2>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              { to: "/the-strand", label: "The Strand Beach Guide" },
-              { to: "/dog-friendly", label: "Dog-Friendly Beaches" },
-              { to: "/guides/magnetic-island-day-trip", label: "Magnetic Island Day Trip" },
-              { to: "/cowboys-stadium-guide", label: "Cowboys Stadium Guide" },
-            ].map((link) => (
-              <Button key={link.to} asChild variant="outline" className="w-full justify-start gap-2 h-auto py-3">
-                <Link to={link.to}>
-                  <ArrowRight className="w-4 h-4 flex-shrink-0" />
-                  {link.label}
-                </Link>
-              </Button>
-            ))}
-          </div>
-        </section>
-
-        {/* Local Authority Footer */}
-        <p className="text-center text-xs text-muted-foreground pt-4 pb-2">
-          Helping Townsville locals and visitors discover safe, enjoyable beaches across North Queensland.
-        </p>
-
-      </main>
-      <FoundingPartnerCTA />
-    </div>
+      </div>
+    </>
   );
 };
 
