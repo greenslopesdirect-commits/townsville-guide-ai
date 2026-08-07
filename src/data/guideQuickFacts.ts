@@ -165,6 +165,16 @@ export interface QuickFacts {
   bestEasyView?: string;
   /** Headline local tip. */
   mainLocalTip?: string;
+  /** Strongest rainforest or mountain day trip. */
+  bestRainforestDayTrip?: string;
+  /** Strongest coastal nature area. */
+  bestCoastalNature?: string;
+  /** Easiest local nature option. */
+  bestEasyLocalNature?: string;
+  /** Strongest wildlife experience. */
+  bestWildlifeExperience?: string;
+  /** Strongest full-day nature trip. */
+  bestFullDayNatureTrip?: string;
   localVerdict?: string;
 }
 
