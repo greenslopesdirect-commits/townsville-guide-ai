@@ -424,6 +424,35 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/guides/stinger-safety": {
+    visitStatus: "research-based",
+    visitNote:
+      "This safety guide is based on current advice from Queensland Government health and emergency sources, Townsville City Council, Surf Life Saving guidance and official marine-stinger information.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — Beaches, lifeguards and marine stinger enclosures",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/beaches-parks-and-playgrounds",
+      },
+      {
+        name: "Queensland Government — Marine stingers",
+        url: "https://www.qld.gov.au/health/staying-healthy/environmental/marine-stingers",
+      },
+      {
+        name: "Queensland Poisons Information Centre — 13 11 26",
+        url: "https://www.childrens.health.qld.gov.au/poisons-information-centre",
+      },
+      {
+        name: "Surf Life Saving Australia — Beachsafe",
+        url: "https://beachsafe.org.au/",
+      },
+      {
+        name: "Townsville Disaster Dashboard",
+        url: "https://disaster.townsville.qld.gov.au/",
+      },
+    ],
+  },
   "/dog-friendly": {
     visitStatus: "partially-firsthand",
     visitNote:
