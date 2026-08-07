@@ -46,6 +46,16 @@ export interface QuickFacts {
   checkBeforeHeadingOut?: string;
   /** Emergency guidance line. */
   emergency?: string;
+  /** Strongest indoor attraction, used on wet-weather planning guides. */
+  bestIndoorAttraction?: string;
+  /** Best food-based option, used on wet-weather planning guides. */
+  bestFoodOption?: string;
+  /** Best option during light or passing rain. */
+  bestLightRainOption?: string;
+  /** What to avoid during heavy rain. */
+  avoidInHeavyRain?: string;
+  /** Main practical consideration to plan around. */
+  mainConsideration?: string;
   timeNeeded?: string;
 
 
@@ -73,6 +83,21 @@ export interface QuickFacts {
  * simply omit a field when there is no reliable information at all.
  */
 export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
+  "/guides/rainy-day-activities": {
+    bestIndoorAttraction: "Queensland Museum Tropics",
+    bestWithKids: "Museum, library or an indoor activity venue",
+    bestFreeActivity: "A library or gallery while open",
+    bestFoodOption: "A long lunch or café stop between showers",
+    bestLightRainOption: "The Strand or the CBD between showers",
+    bestWithoutCar: "The CBD and North Ward",
+    avoidInHeavyRain: "Creeks, waterfalls and exposed walks",
+    checkBeforeHeadingOut:
+      "Bureau of Meteorology warnings and the Townsville Disaster Dashboard",
+    mainConsideration: "Flooded roads and temporary closures",
+    localVerdict:
+      "Light rain is usually manageable in Townsville and rarely ruins a day, but steady rain calls for indoor plans and severe weather needs a different plan built around official advice.",
+  },
+
   "/guides/beat-the-heat": {
     bestOutdoorTime: "Early morning and late afternoon",
     bestCoolDown: "Riverway Lagoons or the Strand Water Park",
