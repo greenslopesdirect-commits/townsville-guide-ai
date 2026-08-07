@@ -229,6 +229,16 @@ export interface QuickFacts {
   bestForIslandAtmosphere?: string;
   /** Best practical, non-tourist base. */
   bestPracticalLocation?: string;
+  /** Best central area for visitors. */
+  bestCentralArea?: string;
+  /** Best area for shopping. */
+  bestForShopping?: string;
+  /** Best area for nature. */
+  bestForNature?: string;
+  /** Best western area. */
+  bestWesternArea?: string;
+  /** Best practical area. */
+  bestPracticalArea?: string;
   /** Venue name, used on venue guides. */
   venue?: string;
   /** Main resident team or operator of a venue. */
@@ -696,6 +706,20 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     mainConsideration: "Event dates change every year",
     localVerdict:
       "Townsville's event calendar is strongest when combined with the city's waterfront, sport, food and outdoor attractions rather than treated as the whole trip.",
+  },
+  "/suburbs": {
+    bestAreaOverall: "North Ward / The Strand",
+    bestCentralArea: "The Townsville CBD",
+    bestForRestaurants: "South Townsville / Palmer Street",
+    bestWithKids: "North Ward / The Strand",
+    bestForShopping: "Aitkenvale or Kirwan, depending on what you need",
+    bestForNature: "Pallarenda / Rowes Bay",
+    bestWesternArea: "Kirwan / Thuringowa Central",
+    bestPracticalArea: "Aitkenvale / Douglas",
+    bestWithoutCar: "North Ward, the CBD or South Townsville",
+    mainConsideration: "Townsville is spread out",
+    localVerdict:
+      "Choosing the right area can save more time than choosing between similar attractions.",
   },
   "/shopping": {
     bestAllRoundCentre: "Stockland Townsville",

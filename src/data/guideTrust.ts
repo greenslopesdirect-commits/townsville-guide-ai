@@ -705,6 +705,13 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/suburbs": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local knowledge of Townsville's main areas with current visitor, transport and local-area information. Suburb boundaries and services are less important for visitors than understanding how each area fits into a trip.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: false,
+  },
   "/shopping": {
     visitStatus: "partially-firsthand",
     visitNote:
