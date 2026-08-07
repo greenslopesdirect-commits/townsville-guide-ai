@@ -443,6 +443,35 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/beaches": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local knowledge of Townsville's coastline with current information from Townsville City Council, Surf Life Saving Queensland and official Queensland safety sources.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — beaches and pools",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/beaches-and-pools",
+      },
+      {
+        name: "Surf Life Saving Queensland",
+        url: "https://lifesaving.com.au/",
+      },
+      {
+        name: "Beachsafe (Surf Life Saving Australia)",
+        url: "https://beachsafe.org.au/",
+      },
+      {
+        name: "Queensland Government — Be Crocwise",
+        url: "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise",
+      },
+      {
+        name: "Bureau of Meteorology — Townsville",
+        url: "http://www.bom.gov.au/qld/forecasts/townsville.shtml",
+      },
+    ],
+  },
   "/jezzine-barracks": {
     visitStatus: "partially-firsthand",
     visitNote:
