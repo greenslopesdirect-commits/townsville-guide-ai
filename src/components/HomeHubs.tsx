@@ -346,3 +346,25 @@ export const PracticalResources = () => (
     </div>
   </section>
 );
+
+export const ForLocals = () => (
+  <section className="py-16 px-4 bg-muted/30">
+    <div className="container mx-auto max-w-6xl">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
+        Living in Townsville?
+      </h2>
+      <p className="text-center text-muted-foreground mb-10 text-lg max-w-2xl mx-auto">
+        Townsville Guide is useful for locals too. Find events, local businesses, food, shopping,
+        beaches, suburb information and practical Townsville resources.
+      </p>
+      <CardGrid items={localLinks} />
+      <div className="mt-8 flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm">
+        <span className="text-muted-foreground">Also useful for locals:</span>
+        <Link to="/riverway" className="text-primary hover:underline">Riverway</Link>
+        <Link to="/local-tips" className="text-primary hover:underline">Local Tips</Link>
+        <Link to="/nature" className="text-primary hover:underline">Nature</Link>
+        <Link to="/accessible-townsville" className="text-primary hover:underline">Accessible Townsville</Link>
+      </div>
+    </div>
+  </section>
+);
