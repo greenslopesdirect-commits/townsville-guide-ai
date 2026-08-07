@@ -187,8 +187,23 @@ export interface QuickFacts {
   bestCasualOption?: string;
   /** Practical booking advice. */
   bookingTip?: string;
+  /** Strongest all-round shopping centre. */
+  bestAllRoundCentre?: string;
+  /** Best western-suburbs shopping option. */
+  bestWesternOption?: string;
+  /** Best inner-city shopping centre. */
+  bestInnerCityCentre?: string;
+  /** Best area for local, independent browsing. */
+  bestForLocalBrowsing?: string;
+  /** Best market guidance. */
+  bestForMarkets?: string;
+  /** Best wet-weather option. */
+  bestRainyDayOption?: string;
+  /** Best option for everyday essentials. */
+  bestForEssentials?: string;
   localVerdict?: string;
 }
+
 
 /**
  * Per-route quick facts. Keys are route pathnames (no trailing slash).
@@ -615,7 +630,21 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "Townsville's strongest nature experiences come from combining coast, island, hills and rainforest rather than looking for one single nature park.",
   },
+  "/shopping": {
+    bestAllRoundCentre: "Stockland Townsville",
+    bestWesternOption: "Willows",
+    bestInnerCityCentre: "Castletown",
+    bestForLocalBrowsing: "The CBD and Flinders Street",
+    bestForMarkets: "Check the current local market schedule before travelling",
+    bestWithoutCar: "The CBD or Castletown, depending on where you are staying",
+    bestRainyDayOption: "The major shopping centres",
+    bestForEssentials: "Stockland, Castletown or Willows — whichever is closest",
+    mainConsideration: "Tenants and trading hours change",
+    localVerdict:
+      "Townsville has several good shopping options, but the best one depends on where you are staying and what you actually need.",
+  },
   "/riverway": {
+
     bestFor: ["Families", "Free swimming", "Hot days", "Longer stays"],
     mainAttraction: "Free supervised swimming lagoons",
     cost: "Free — lagoons, parklands, library and gallery",

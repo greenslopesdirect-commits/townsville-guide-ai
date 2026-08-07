@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet";
-import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
+import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
 import {
   Accordion,
   AccordionContent,
@@ -10,391 +10,592 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import {
-  ArrowLeft,
+  AlertTriangle,
+  Baby,
+  Building2,
+  Car,
+  Coffee,
   MapPin,
   ShoppingBag,
-  Check,
   Store,
-  Coffee,
-  Calendar,
-  Quote,
-  HelpCircle,
+  Sun,
+  Umbrella,
 } from "lucide-react";
 
-interface ShoppingCardProps {
-  title: string;
-  description: string;
-  features: string[];
-  mapUrl: string;
-  icon: React.ReactNode;
-  type: string;
-  bestFor?: string;
-}
+const SITE = "https://www.townsvilleguide.com.au";
+const PATH = "/shopping";
 
-const ShoppingCard = ({ title, description, features, mapUrl, icon, type, bestFor }: ShoppingCardProps) => (
-  <Card className="overflow-hidden hover:shadow-[var(--shadow-tropical)] transition-all duration-300 border-2 hover:border-primary/30">
-    <CardHeader className="bg-gradient-to-br from-primary/5 to-transparent pb-4">
-      <div className="flex items-start justify-between">
-        <div className="flex items-center gap-3">
-          <div className="p-3 rounded-xl bg-primary/10 text-primary">
-            {icon}
-          </div>
-          <div>
-            <CardTitle className="text-xl">{title}</CardTitle>
-            <CardDescription className="text-sm mt-1">{type}</CardDescription>
-          </div>
-        </div>
-      </div>
-    </CardHeader>
-    <CardContent className="pt-4 space-y-4">
-      <p className="text-muted-foreground leading-relaxed">{description}</p>
-      <ul className="space-y-2">
-        {features.map((feature, index) => (
-          <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
-            <Check className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-            <span>{feature}</span>
-          </li>
-        ))}
-      </ul>
-      {bestFor && (
-        <div className="rounded-lg bg-primary/5 border border-primary/10 px-3 py-2 text-sm">
-          <span className="font-semibold text-foreground">Best for: </span>
-          <span className="text-muted-foreground">{bestFor}</span>
-        </div>
-      )}
-      <Button variant="outline" size="sm" asChild className="gap-2 w-full sm:w-auto">
-        <a
-          href={mapUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`View ${title} on Google Maps`}
-        >
-          <MapPin className="w-4 h-4" />
-          View on Google Maps
-        </a>
-      </Button>
-    </CardContent>
-  </Card>
-);
+const TITLE = "Shopping in Townsville | Shopping Centres, Markets & Local Stores";
+const DESCRIPTION =
+  "Discover shopping in Townsville, from Stockland, Castletown and Willows to CBD stores, local markets, souvenirs, essentials and rainy-day options.";
 
-const Shopping = () => {
-  const shoppingCentres: ShoppingCardProps[] = [
-    {
-      title: "Castletown Shopping Centre",
-      description:
-        "A well-established, walkable centre in Hyde Park, just a short drive south of the CBD. Castletown has a relaxed, community feel — locals pop in for groceries, a coffee, and a browse rather than a full-day shop. It's fully air-conditioned, which makes it a genuine relief in the wet season.",
-      features: [
-        "Supermarket and everyday essentials",
-        "Cafés and casual dining",
-        "Fashion, homewares and specialty stores",
-        "Undercover and outdoor parking",
-      ],
-      bestFor:
-        "A quick, low-stress shop close to town — groceries, a coffee stop, or errands without the crowds of a mega-centre.",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Castletown+Shopping+World+Townsville",
-      icon: <Store className="w-6 h-6" />,
-      type: "Neighbourhood Centre · Hyde Park",
-    },
-    {
-      title: "Willows Shopping Centre",
-      description:
-        "Out in the western suburbs around Kirwan, Willows is a big family-focused centre with a cinema, major supermarkets, and a strong mix of national retailers. It's typically a 15–20 minute drive from the CBD and popular with locals from Kirwan, Thuringowa and the Upper Ross.",
-      features: [
-        "Cinema complex on-site",
-        "Full-line supermarkets and department stores",
-        "Fashion, sports and homewares",
-        "Large free car park",
-      ],
-      bestFor:
-        "Families and western-suburbs locals wanting a one-stop weekend outing — shop, eat, and catch a movie in one trip.",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Willows+Shopping+Centre+Townsville",
-      icon: <ShoppingBag className="w-6 h-6" />,
-      type: "Regional Centre · Kirwan",
-    },
-    {
-      title: "Stockland Townsville",
-      description:
-        "Townsville's largest shopping centre, in Aitkenvale about 10 minutes south of the CBD. This is where you go for serious retail — a broad specialty-store lineup, department-store anchors, a big food precinct and cinemas. It gets busy on weekends and public holidays.",
-      features: [
-        "Extensive specialty-store lineup",
-        "Department stores and major anchors",
-        "Large dining and food-court precinct",
-        "Cinemas and entertainment",
-        "Multi-level covered parking",
-      ],
-      bestFor:
-        "A proper shopping day out — fashion browsing, gift hunting, or anything you can't find at your local centre.",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Stockland+Townsville+Aitkenvale",
-      icon: <ShoppingBag className="w-6 h-6" />,
-      type: "Major Regional Centre · Aitkenvale",
-    },
-  ];
+const COMPARISON = [
+  {
+    place: "Stockland Townsville",
+    bestFor: "All-round shopping, essentials, fashion, longer visits",
+    area: "Aitkenvale",
+    car: "Helpful",
+    feel: "Major suburban centre",
+  },
+  {
+    place: "Castletown",
+    bestFor: "Convenient everyday shopping, central-city visitors, practical stops",
+    area: "Hyde Park / near-central",
+    car: "Helpful but not always essential depending on your stay",
+    feel: "Convenient inner-city centre",
+  },
+  {
+    place: "Willows",
+    bestFor: "Western suburbs, combining with Riverway, broad retail",
+    area: "Kirwan",
+    car: "Helpful",
+    feel: "Major western shopping centre",
+  },
+  {
+    place: "CBD / Flinders Street",
+    bestFor: "Local browsing, cafés, independent shops, central visitors",
+    area: "Townsville CBD",
+    car: "Not essential if staying centrally",
+    feel: "Walkable local shopping",
+  },
+];
 
-  const markets: ShoppingCardProps[] = [
-    {
-      title: "Cotters Market",
-      description:
-        "Townsville's flagship Sunday market and a proper local institution. Runs every Sunday morning on Flinders Street in the CBD, from 8:00 AM to 1:00 PM. Expect fresh coffee, local North Queensland crafts, artisan food stalls and live street music — a perfect way to start a Sunday before heading to the Strand.",
-      features: [
-        "Every Sunday, 8:00 AM – 1:00 PM",
-        "Flinders Street, Townsville CBD",
-        "Fresh coffee, food stalls and local produce",
-        "Handmade crafts and live music",
-      ],
-      bestFor:
-        "A slow Sunday morning — coffee, a wander, and a bit of local colour before the day heats up.",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Cotters+Market+Flinders+Street+Townsville",
-      icon: <Coffee className="w-6 h-6" />,
-      type: "Weekly · Sunday Morning",
-    },
-    {
-      title: "North Shore Market",
-      description:
-        "A smaller, family-friendly community market in the North Shore area. It has a relaxed, neighbourhood feel — local stalls, breakfast vendors, and plenty of space for kids. Good for a morning browse if you're already staying out north.",
-      features: [
-        "Local artisan and craft stalls",
-        "Breakfast and coffee vendors",
-        "Family-friendly, kid-friendly space",
-        "Quieter alternative to Cotters",
-      ],
-      bestFor:
-        "Locals and visitors staying on the north side who'd rather skip the CBD run.",
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=North+Shore+Market+Townsville",
-      icon: <Calendar className="w-6 h-6" />,
-      type: "Community Market · North Shore",
-    },
-  ];
+const TIPS = [
+  "Do not assume every centre keeps the same hours every day.",
+  "Public holidays regularly change trading hours across the city.",
+  "Specialty-store hours can differ from the centre's advertised hours.",
+  "Check current centre websites before making a dedicated shopping trip.",
+  "Supermarkets and major stores often trade different hours to smaller tenants.",
+  "Group suburban shopping with a nearby attraction rather than making a separate trip.",
+  "Do not drive across town just for minor supplies if a closer option will do.",
+  "Always check market listings before travelling — dates, locations and weather all affect them.",
+];
 
-  const faqs = [
-    {
-      question: "What are the best shopping centres in Townsville?",
-      answer:
-        "The three main centres are Stockland Townsville in Aitkenvale (the largest, with the widest range of stores and a cinema), Willows Shopping Centre in Kirwan (family-focused with a cinema, great for the western suburbs), and Castletown in Hyde Park (a smaller, walkable centre closer to the CBD, good for a quick shop). Which suits you best depends on where you're staying and how much shopping you actually want to do.",
-    },
-    {
-      question: "When is Cotters Market on?",
-      answer:
-        "Cotters Market runs every Sunday morning on Flinders Street in the Townsville CBD, from 8:00 AM to 1:00 PM. Get there early in the dry season — the morning air is cool and the atmosphere is at its best before the sun climbs.",
-    },
-    {
-      question: "Is there a night market in Townsville?",
-      answer:
-        "Yes — the Strand Night Markets run along The Strand foreshore on the first Friday of the month during the dry season, typically from around 5:00 PM. You'll find North Queensland food trucks, arts, crafts and live music under the palms. It's seasonal, so it winds down over the wet-season months. See our Strand guide for the next date.",
-    },
-    {
-      question: "Where's the best place to shop for local souvenirs and crafts?",
-      answer:
-        "Skip the tourist trinkets and head to the markets. Cotters Market on Sunday morning has genuine local craft, art and produce, and the Strand Night Markets (first Friday of the month, dry season) are strong for handmade pieces from North Queensland makers.",
-    },
-    {
-      question: "Are the shopping centres open on Sundays and public holidays?",
-      answer:
-        "The major centres — Stockland, Willows and Castletown — generally trade on Sundays with reduced hours, and most public holidays with further reduced or restricted hours. Trading hours can change around Christmas, Easter and Anzac Day, so check the individual centre's website before making a special trip.",
-    },
-  ];
+const MISTAKES = [
+  "Relying on old opening hours found in a search result or an old listing.",
+  "Assuming all shops stay open late, particularly outside the major centres.",
+  "Treating CBD shopping like a major mall — it is smaller and more independent.",
+  "Crossing the city for basics that a closer centre or supermarket already covers.",
+  "Assuming market schedules never change from season to season.",
+  "Overlooking Castletown when you only need convenient everyday shopping.",
+  "Overlooking Willows when you are already out at Riverway or Kirwan.",
+  "Expecting tourist souvenir shops on every corner.",
+  "Assuming every centre offers exactly the same stores and services.",
+  "Planning an outdoor market visit in poor weather without checking first.",
+];
 
-  return (
-    <>
-      <SEOHead
-        title="Shopping & Markets in Townsville — Local Guide"
-        description="A local guide to shopping in Townsville — Stockland, Willows and Castletown shopping centres, plus Cotters Market and the Strand Night Markets."
-        canonical="https://www.townsvilleguide.com.au/shopping"
-        ogType="article"
-      />
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify({
+const PATHWAYS = [
+  { label: "All-round shopping", name: "Stockland Townsville", to: "/things-to-do" },
+  { label: "Western suburbs", name: "Willows", to: "/riverway" },
+  { label: "Near-central", name: "Castletown", to: "/the-strand" },
+  { label: "Local browsing", name: "CBD / Flinders Street", to: "/things-to-do" },
+  { label: "Essentials", name: "Nearest major centre", to: "/first-time-in-townsville" },
+  { label: "Markets", name: "Check current schedule", to: "/food" },
+  { label: "No car", name: "CBD and central options", to: "/townsville-without-a-car" },
+  { label: "With kids", name: "Major centres", to: "/townsville-with-kids" },
+  { label: "Hot weather", name: "Air-conditioned centres", to: "/guides/beat-the-heat" },
+  { label: "Rain", name: "Major centres", to: "/guides/rainy-day-activities" },
+  { label: "Riverway day", name: "Willows", to: "/riverway" },
+  { label: "Strand stay", name: "Central or Castletown", to: "/the-strand" },
+];
+
+const RELATED = [
+  { to: "/things-to-do", name: "Things to Do in Townsville", text: "The main activity hub for planning your days." },
+  { to: "/food", name: "Food in Townsville", text: "Where to eat by area, meal and traveller type." },
+  { to: "/first-time-in-townsville", name: "First Time in Townsville", text: "What to prioritise on a first visit." },
+  { to: "/townsville-without-a-car", name: "Townsville Without a Car", text: "Getting around centrally on foot and by bus." },
+  { to: "/townsville-with-kids", name: "Townsville with Kids", text: "Family-friendly planning across the city." },
+  { to: "/guides/rainy-day-activities", name: "Rainy Day Activities", text: "Indoor options when the weather turns." },
+  { to: "/guides/beat-the-heat", name: "Beat the Heat", text: "Timing your day around Townsville's heat." },
+  { to: "/the-strand", name: "The Strand", text: "The waterfront precinct and its cafés and conveniences." },
+  { to: "/riverway", name: "Riverway", text: "Free lagoons and parkland out at Thuringowa Central." },
+  { to: "/local-tips", name: "Local Tips", text: "Practical observations that do not fit elsewhere." },
+  { to: "/guides/magnetic-island-ferry", name: "Magnetic Island Ferry", text: "Crossing times and what to do either side." },
+  { to: "/useful-contacts", name: "Useful Contacts", text: "Emergency, health and council contacts." },
+];
+
+const faqs = [
+  {
+    q: "What is the best shopping centre in Townsville?",
+    a: "Stockland Townsville in Aitkenvale is the best all-round choice for fashion, essentials and general retail. Willows suits visitors around Kirwan and Riverway, and Castletown is the most convenient centre if you are staying near the city. The right one depends on where you are based.",
+  },
+  {
+    q: "Where is the best place for shopping in central Townsville?",
+    a: "The CBD and Flinders Street for independent stores, services and cafés, and Castletown in Hyde Park for a conventional centre close to town. Central shopping is more about convenience and browsing than large-scale retail.",
+  },
+  {
+    q: "Is Stockland Townsville good for visitors?",
+    a: "Yes, particularly for longer stays or when you need a broad range of shops in one stop. It is easiest with a car. Check the centre's current website for trading hours before making a dedicated trip.",
+  },
+  {
+    q: "Is Castletown close to central Townsville?",
+    a: "It sits in Hyde Park, near-central and a short drive from the CBD, North Ward and The Strand. Depending on where you are staying it can be practical without a car, but a car or bus makes it easier.",
+  },
+  {
+    q: "Is Willows worth visiting for shopping?",
+    a: "It is worth it if you are already in the western suburbs or visiting Riverway. It is a major centre with broad retail, but it is not worth crossing the city for if a closer option covers what you need.",
+  },
+  {
+    q: "Where can you shop in Townsville without a car?",
+    a: "The CBD and Flinders Street are the easiest on foot for central visitors, with Castletown practical depending on your accommodation. Suburban centres are simpler by car or bus — see our without-a-car guide for getting around.",
+  },
+  {
+    q: "Where can you buy souvenirs in Townsville?",
+    a: "Local gifts, art and handmade products turn up at CBD stores, market stalls and attraction gift shops rather than in one dedicated souvenir precinct. Markets are often the best option for handmade and local items.",
+  },
+  {
+    q: "Are there markets in Townsville?",
+    a: "Yes — Cotters Market in the CBD is the best known, and other community markets run around the city. Days, locations and seasons change and weather can cancel events, so check current official listings before travelling.",
+  },
+  {
+    q: "What is good for shopping on a rainy day?",
+    a: "The major air-conditioned centres — Stockland, Castletown and Willows — plus CBD cafés and indoor shopping. Shopping is a useful wet-weather filler rather than a full rainy-day plan.",
+  },
+  {
+    q: "Do Townsville shopping centres open late?",
+    a: "Late trading is limited and varies by centre, day and individual store. Specialty-store hours often differ from the centre's own hours, so check the current centre website on the day.",
+  },
+  {
+    q: "Where can families shop in Townsville?",
+    a: "The major centres work best with children: air-conditioning, meals, toilets, parking and practical supplies in one place. They are also a reliable break in hot or wet weather.",
+  },
+  {
+    q: "Which shopping centre is closest to Riverway?",
+    a: "Willows at Kirwan is the closest major centre to Riverway, which makes it easy to combine a lagoon swim with shopping, lunch or picking up supplies.",
+  },
+];
+
+const Shopping = () => (
+  <>
+    <SEOHead title={TITLE} description={DESCRIPTION} canonical={PATH} ogType="article" />
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
           "@context": "https://schema.org",
           "@graph": [
             {
+              "@type": "Article",
+              headline: "Shopping in Townsville",
+              description: DESCRIPTION,
+              mainEntityOfPage: `${SITE}${PATH}`,
+              author: { "@type": "Person", name: "Duncan Ross" },
+              publisher: { "@type": "Organization", name: "Townsville Guide" },
+              dateModified: "2026-08-07",
+            },
+            {
               "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
-                { "@type": "ListItem", "position": 2, "name": "Shopping & Markets", "item": "https://www.townsvilleguide.com.au/shopping" },
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+                { "@type": "ListItem", position: 2, name: "Things to Do", item: `${SITE}/things-to-do` },
+                { "@type": "ListItem", position: 3, name: "Shopping in Townsville", item: `${SITE}${PATH}` },
               ],
             },
             {
               "@type": "FAQPage",
-              "mainEntity": faqs.map((f) => ({
+              mainEntity: faqs.map((f) => ({
                 "@type": "Question",
-                "name": f.question,
-                "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
               })),
             },
           ],
-        })}</script>
-      </Helmet>
+        })}
+      </script>
+    </Helmet>
 
-      <div className="min-h-screen bg-background">
-        <main className="pt-24 pb-16">
-          <div className="container mx-auto px-4 max-w-5xl">
-            {/* Back Button */}
-            <Link to="/">
-              <Button
-                variant="ghost"
-                className="mb-6 group"
-                aria-label="Back to home"
-              >
-                <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                Back to Home
-              </Button>
-            </Link>
-
-            {/* Hero Header */}
-            <header className="mb-12 text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                <ShoppingBag className="w-4 h-4" />
-                Shopping Guide
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                Shopping & Markets in Townsville
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Townsville's retail scene is split between three main shopping centres — Stockland, Willows and Castletown — and a small but loyal weekend market circuit. This guide covers where each one fits, what it's best for, and when the markets are actually on.
-              </p>
-            </header>
-
-            {/* Quick Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-              {[
-                { icon: <ShoppingBag className="w-5 h-5" />, label: "3 Major Centres", sublabel: "Stockland, Willows, Castletown" },
-                { icon: <Store className="w-5 h-5" />, label: "Aitkenvale Hub", sublabel: "Stockland — the largest" },
-                { icon: <Coffee className="w-5 h-5" />, label: "Sunday Mornings", sublabel: "Cotters Market, CBD" },
-                { icon: <Calendar className="w-5 h-5" />, label: "First Friday", sublabel: "Strand Night Markets" },
-              ].map((stat, index) => (
-                <div key={index} className="text-center p-4 rounded-2xl bg-card border-2 hover:border-primary/30 transition-colors">
-                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary mb-2">
-                    {stat.icon}
-                  </div>
-                  <p className="font-semibold text-foreground">{stat.label}</p>
-                  <p className="text-sm text-muted-foreground">{stat.sublabel}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Shopping Centres Section */}
-            <section className="mb-16">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <Store className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                    Shopping Centres
-                  </h2>
-                  <p className="text-muted-foreground">The three main indoor centres, and what each one is actually good for</p>
-                </div>
-              </div>
-
-              <div className="grid gap-6 md:grid-cols-2">
-                {shoppingCentres.map((centre, index) => (
-                  <ShoppingCard key={index} {...centre} />
-                ))}
-              </div>
-            </section>
-
-            {/* Duncan Local Tip */}
-            <section className="mb-16">
-              <div className="rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent p-6 md:p-8">
-                <div className="flex gap-4">
-                  <Quote className="w-8 h-8 text-primary flex-shrink-0" />
-                  <div>
-                    <p className="text-base md:text-lg text-foreground leading-relaxed italic mb-3">
-                      "In the wet season, an air-conditioned centre stops being a shopping trip and starts being a genuine escape. Stockland's my pick on a 34-degree humid afternoon — you can drift between shops, grab a coffee, and still be indoors when the storm rolls through."
-                    </p>
-                    <p className="text-sm font-semibold text-foreground">— Duncan, Townsville Guide</p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Markets Section */}
-            <section className="mb-16">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <Coffee className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                    Local Markets
-                  </h2>
-                  <p className="text-muted-foreground">Weekend markets for coffee, produce and North Queensland crafts</p>
-                </div>
-              </div>
-
-              <div className="grid gap-6 md:grid-cols-2">
-                {markets.map((market, index) => (
-                  <ShoppingCard key={index} {...market} />
-                ))}
-              </div>
-
-              {/* Night Markets callout */}
-              <div className="mt-6 rounded-xl border border-border bg-card p-5">
-                <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                  <Calendar className="w-5 h-5 text-primary" />
-                  Strand Night Markets
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  On the first Friday of each month during the dry season, The Strand Night Markets take over Strand Park from around 5:00 PM — local food trucks, arts, crafts and live music under the palms. Full details, next date and location on our{" "}
-                  <Link to="/the-strand" className="text-primary font-medium hover:underline">
-                    Strand guide
-                  </Link>.
-                </p>
-              </div>
-            </section>
-
-            {/* FAQ Section */}
-            <section className="mb-16">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <HelpCircle className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                    Shopping FAQs
-                  </h2>
-                  <p className="text-muted-foreground">The questions we get asked most about shopping in Townsville</p>
-                </div>
-              </div>
-
-              <Accordion type="single" collapsible className="w-full">
-                {faqs.map((faq, i) => (
-                  <AccordionItem key={i} value={`item-${i}`}>
-                    <AccordionTrigger className="text-left font-semibold">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground leading-relaxed">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </section>
-
-            {/* CTA Section */}
-            <section className="text-center bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-8 border-2">
-              <h2 className="text-2xl font-bold text-foreground mb-4">
-                Explore More of Townsville
-              </h2>
-              <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-                Pair your shopping trip with a coffee, a beach, or a Sunday event.
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <Button asChild>
-                  <Link to="/food">Food & Drink</Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link to="/events">Events Calendar</Link>
-                </Button>
-                <Button variant="outline" asChild>
-                  <Link to="/the-strand">The Strand</Link>
-                </Button>
-              </div>
-            </section>
-          </div>
-        </main>
+    <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
+      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+        <ShoppingBag className="w-4 h-4" aria-hidden="true" />
+        Shopping hub
       </div>
-    </>
-  );
-};
+
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">Shopping in Townsville</h1>
+
+      <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+        Townsville's shopping is spread out rather than concentrated in one precinct. Most of it sits
+        in a handful of major suburban centres, with the CBD and Flinders Street covering smaller
+        independent stores and services, local markets running on their own schedules, and{" "}
+        <Link to="/the-strand" className="text-primary hover:underline">
+          The Strand
+        </Link>{" "}
+        and North Ward good for convenience purchases rather than a proper shop.
+      </p>
+      <p className="text-muted-foreground leading-relaxed mb-8">
+        This page is a planning hub, not a store directory. It covers which centre makes sense for
+        what you actually need, how to shop without a car, what works with kids, and how to combine a
+        shopping stop with the rest of your day. Tenants and trading hours change often, so treat
+        everything here as a starting point and confirm current details with the centre before a
+        dedicated trip.
+      </p>
+
+      <GuideQuickFacts className="mb-10" />
+
+      {/* Main options */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">Start here: the main shopping options</h2>
+        <p className="text-muted-foreground mb-6">
+          Four options cover almost every visitor need. They are not equally important — pick by
+          where you are staying and what you are actually shopping for.
+        </p>
+
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <ShoppingBag className="w-5 h-5 text-primary" aria-hidden="true" /> Stockland Townsville
+              — Aitkenvale
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              One of Townsville's main all-round shopping centres, and the default answer when you
+              want fashion, essentials, food and general retail in a single stop. It suits longer
+              stays and anyone restocking properly rather than grabbing one or two things. Most
+              convenient with a car. Check the centre's current information for trading hours and
+              current tenants.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <Building2 className="w-5 h-5 text-primary" aria-hidden="true" /> Castletown — Hyde Park
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              The convenient near-central option. It handles everyday shopping well and is practical
+              from North Ward, the CBD or Garbutt depending on where you are staying, which makes it
+              easy to fold into a city day rather than planning around it. It is a useful centre, not
+              a tourist attraction.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <Store className="w-5 h-5 text-primary" aria-hidden="true" /> Willows — Kirwan
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              The major western-suburbs centre, with broad retail and practical shopping. It is the
+              obvious choice if you are staying around Kirwan or spending the day at{" "}
+              <Link to="/riverway" className="text-primary hover:underline">
+                Riverway
+              </Link>
+              , and it is much more convenient with a car than without one.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <Coffee className="w-5 h-5 text-primary" aria-hidden="true" /> CBD and Flinders Street
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Smaller independent businesses, services and cafés rather than mall-style retail. It is
+              the most walkable option for central visitors and the best place for browsing between
+              other city activities — but do not arrive expecting a large shopping destination.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Which shopping centre should you choose?</h2>
+        <div className="overflow-x-auto rounded-xl border">
+          <table className="w-full text-sm">
+            <thead className="bg-muted/50">
+              <tr>
+                <th className="text-left font-semibold px-4 py-3">Place</th>
+                <th className="text-left font-semibold px-4 py-3">Best for</th>
+                <th className="text-left font-semibold px-4 py-3">Area</th>
+                <th className="text-left font-semibold px-4 py-3">Car useful?</th>
+                <th className="text-left font-semibold px-4 py-3">Visitor feel</th>
+              </tr>
+            </thead>
+            <tbody>
+              {COMPARISON.map((row) => (
+                <tr key={row.place} className="border-t align-top">
+                  <td className="px-4 py-3 font-medium text-foreground whitespace-nowrap">{row.place}</td>
+                  <td className="px-4 py-3 text-muted-foreground">{row.bestFor}</td>
+                  <td className="px-4 py-3 text-muted-foreground">{row.area}</td>
+                  <td className="px-4 py-3 text-muted-foreground">{row.car}</td>
+                  <td className="px-4 py-3 text-muted-foreground">{row.feel}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* Shopping by need */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Shopping by need</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Everyday essentials</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Groceries, pharmacy items, clothing basics, travel essentials, toiletries and
+              replacements for anything forgotten or broken are all covered by the major centres.
+              Choose the closest one — Stockland, Castletown or Willows — rather than the biggest.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Fashion and general retail</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Stockland has the broadest range, with Willows a strong western alternative and
+              Castletown useful for a quicker, more convenient shop. Tenant mixes change, so check
+              the centre's current store list if you are after something specific.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Gifts and souvenirs</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Local gifts, tourism-related products, art and handmade items turn up across CBD
+              stores, market stalls and attraction or museum gift shops. There is no single definitive
+              souvenir shop in Townsville, so allow a little browsing rather than heading to one
+              address.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Local and independent shopping</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              This is a different experience to the major centres. The CBD, markets and a scattering
+              of independent retailers around the inner suburbs are where you will find the local
+              character — worth an hour of wandering rather than a planned shopping trip.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Markets */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-3">Markets</h2>
+        <p className="text-muted-foreground leading-relaxed mb-3">
+          Cotters Market in the CBD is Townsville's best-known market, and other community markets run
+          around the city. Markets are best for local stalls, food, handmade goods, casual browsing
+          and atmosphere rather than serious shopping.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Market days, locations and seasons change, and weather can cancel or shorten an event.
+          Always check current official listings before travelling. If you are building a market
+          morning into your day, our{" "}
+          <Link to="/food" className="text-primary hover:underline">
+            food guide
+          </Link>{" "}
+          and{" "}
+          <Link to="/things-to-do" className="text-primary hover:underline">
+            things to do
+          </Link>{" "}
+          hub cover what pairs well with it.
+        </p>
+      </section>
+
+      {/* Traveller pathways */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Shopping by traveller type</h2>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <Car className="w-5 h-5 text-primary" aria-hidden="true" /> Shopping without a car
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              CBD shopping is easiest if you are staying centrally, and Castletown can be practical
+              depending on your accommodation. Suburban centres are far simpler by car or bus, so
+              group any suburban shopping with a nearby activity rather than making a separate trip.
+              See{" "}
+              <Link to="/townsville-without-a-car" className="text-primary hover:underline">
+                Townsville Without a Car
+              </Link>{" "}
+              for getting around.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <Baby className="w-5 h-5 text-primary" aria-hidden="true" /> Shopping with kids
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              The major centres are genuinely useful with children: air-conditioned breaks, meals,
+              toilets, practical supplies and flexible time when the weather turns. See{" "}
+              <Link to="/townsville-with-kids" className="text-primary hover:underline">
+                Townsville with Kids
+              </Link>{" "}
+              for the rest of a family day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Heat and rain */}
+      <section className="mb-12">
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="rounded-xl border bg-card p-5">
+            <h2 className="text-lg font-semibold mb-1 flex items-center gap-2">
+              <Sun className="w-5 h-5 text-primary" aria-hidden="true" /> Shopping in hot weather
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              An air-conditioned centre is one of the easiest midday breaks in Townsville. Outdoor
+              markets are best timed for early, cooler conditions, so keep the outdoor parts of the
+              day early or late. See{" "}
+              <Link to="/guides/beat-the-heat" className="text-primary hover:underline">
+                Beat the Heat
+              </Link>
+              .
+            </p>
+          </div>
+          <div className="rounded-xl border bg-card p-5">
+            <h2 className="text-lg font-semibold mb-1 flex items-center gap-2">
+              <Umbrella className="w-5 h-5 text-primary" aria-hidden="true" /> Shopping when it rains
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              Stockland, Castletown and Willows all work as indoor time, with CBD cafés and indoor
+              shopping a lighter alternative. It is a useful filler rather than a whole wet day — see{" "}
+              <Link to="/guides/rainy-day-activities" className="text-primary hover:underline">
+                Rainy Day Activities
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Around attractions */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <MapPin className="w-6 h-6 text-primary" aria-hidden="true" /> Shopping around major
+          attractions
+        </h2>
+        <ul className="space-y-3 text-muted-foreground list-disc pl-5">
+          <li>
+            <strong className="text-foreground">
+              <Link to="/the-strand" className="text-primary hover:underline">
+                The Strand
+              </Link>{" "}
+              and North Ward
+            </strong>{" "}
+            — good for smaller purchases, cafés and convenience, not for large-scale retail. Do your
+            proper shopping elsewhere.
+          </li>
+          <li>
+            <strong className="text-foreground">CBD</strong> — combines well with the museum,
+            galleries and a coffee or lunch stop. See{" "}
+            <Link to="/things-to-do" className="text-primary hover:underline">
+              Things to Do
+            </Link>{" "}
+            for what else fits a city morning.
+          </li>
+          <li>
+            <strong className="text-foreground">
+              <Link to="/riverway" className="text-primary hover:underline">
+                Riverway
+              </Link>
+            </strong>{" "}
+            — Willows is close by, so a lagoon swim and a shopping stop fit comfortably in one trip.
+          </li>
+          <li>
+            <strong className="text-foreground">
+              <Link to="/castle-hill" className="text-primary hover:underline">
+                Castle Hill
+              </Link>
+            </strong>{" "}
+            — there is no retail at the lookout, so shop before or after rather than expecting
+            anything at the top.
+          </li>
+          <li>
+            <strong className="text-foreground">
+              <Link to="/guides/magnetic-island-ferry" className="text-primary hover:underline">
+                Magnetic Island ferry
+              </Link>
+            </strong>{" "}
+            — central, South Townsville and CBD shopping is far more practical before or after a
+            crossing than a suburban detour.
+          </li>
+        </ul>
+      </section>
+
+      {/* Tips */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Practical visitor shopping tips</h2>
+        <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+          {TIPS.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+        <p className="text-muted-foreground mt-4">
+          More small practicalities are collected in{" "}
+          <Link to="/local-tips" className="text-primary hover:underline">
+            Local Tips
+          </Link>
+          , and{" "}
+          <Link to="/useful-contacts" className="text-primary hover:underline">
+            Useful Contacts
+          </Link>{" "}
+          covers pharmacies, health and council services if you need more than a shop.
+        </p>
+      </section>
+
+      {/* Mistakes */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <AlertTriangle className="w-6 h-6 text-primary" aria-hidden="true" /> Common shopping
+          mistakes
+        </h2>
+        <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+          {MISTAKES.map((m) => (
+            <li key={m}>{m}</li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Pathways */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Plan by shopping need</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {PATHWAYS.map((p) => (
+            <Link
+              key={p.label}
+              to={p.to}
+              className="group flex items-center justify-between gap-3 rounded-lg border bg-card px-4 py-3 hover:border-primary/40 transition-colors"
+            >
+              <span className="text-sm font-medium text-foreground">{p.label}</span>
+              <span className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                {p.name}
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Townsville shopping questions</h2>
+        <Accordion type="single" collapsible className="w-full">
+          {faqs.map((f, i) => (
+            <AccordionItem key={f.q} value={`faq-${i}`}>
+              <AccordionTrigger className="text-left">{f.q}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
+
+      <div className="mb-12">
+        <FoundingPartnerCTA />
+      </div>
+
+      {/* Related */}
+      <section className="mb-4">
+        <h2 className="text-2xl font-bold mb-6">Related guides</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {RELATED.map((r) => (
+            <Link
+              key={r.to}
+              to={r.to}
+              className="group block rounded-xl border bg-card p-5 hover:border-primary/40 transition-colors"
+            >
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                {r.name}
+              </h3>
+              <p className="text-sm text-muted-foreground mt-1">{r.text}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </div>
+  </>
+);
 
 export default Shopping;

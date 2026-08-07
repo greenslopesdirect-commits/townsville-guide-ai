@@ -658,7 +658,33 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/shopping": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local knowledge of Townsville's main shopping areas with current official centre and visitor information. Store tenants and trading hours change, so check directly before making a dedicated trip.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Stockland Townsville — centre information",
+        url: "https://www.stockland.com.au/shopping-centres/centres/stockland-townsville",
+      },
+      {
+        name: "Castletown Shopping World",
+        url: "https://www.castletown.com.au/",
+      },
+      {
+        name: "Willows Shopping Centre",
+        url: "https://www.willowsshoppingcentre.com.au/",
+      },
+      {
+        name: "Townsville City Council — markets",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/markets",
+      },
+    ],
+  },
   "/nature": {
+
     visitStatus: "partially-firsthand",
     visitNote:
       "This guide combines firsthand local knowledge of Townsville's outdoor areas with current information from Queensland Parks, Townsville City Council and official attraction and safety sources.",
