@@ -1,511 +1,29 @@
 import { Helmet } from "react-helmet";
+import { useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { Bed, Compass, Utensils, Dog, Sparkles, MapPin, ExternalLink, LayoutGrid } from "lucide-react";
+import { MapPin, ExternalLink, LayoutGrid, Search, X, ArrowRight, Info } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
-
-type CategorySlug = "accommodation" | "tours" | "food-and-drink" | "dog-friendly" | "wellness-beauty";
-
-interface CategoryDef {
-  slug: CategorySlug;
-  label: string;
-  icon: typeof Bed;
-  title: string;
-  description: string;
-  intro: string;
-}
-
-const CATEGORIES: CategoryDef[] = [
-  {
-    slug: "accommodation",
-    label: "Accommodation",
-    icon: Bed,
-    title: "Townsville Accommodation Directory — Local Picks",
-    description:
-      "Browse Townsville accommodation hand-picked by Duncan — hotels, apartments and beachfront stays across The Strand, the CBD and the northern beaches.",
-    intro:
-      "Places to stay around Townsville, from The Strand to the northern beaches. Click through to book direct with the venue.",
-  },
-  {
-    slug: "tours",
-    label: "Tours",
-    icon: Compass,
-    title: "Townsville Tours Directory — Reef, Island & Local Operators",
-    description:
-      "Local Townsville tour operators: Great Barrier Reef trips, Magnetic Island day tours, fishing charters and guided walks, listed by a local.",
-    intro:
-      "Reef trips, island runs, fishing charters and guided walks run by Townsville-based operators.",
-  },
-  {
-    slug: "food-and-drink",
-    label: "Food and Drink",
-    icon: Utensils,
-    title: "Townsville Food & Drink Directory — Cafés, Bars & Restaurants",
-    description:
-      "A local's directory of Townsville cafés, restaurants, bars and bakeries — where to eat breakfast, dinner and everything between.",
-    intro:
-      "Cafés, bakeries, pubs, bars and restaurants worth your time across Townsville.",
-  },
-  {
-    slug: "dog-friendly",
-    label: "Dog-Friendly",
-    icon: Dog,
-    title: "Dog-Friendly Townsville Directory — Cafés, Stays & Services",
-    description:
-      "Dog-friendly Townsville businesses: cafés that welcome dogs, pet-friendly accommodation, groomers, vets and dog-walking services.",
-    intro:
-      "Businesses that genuinely welcome dogs — cafés, stays, groomers and pet services.",
-  },
-  {
-    slug: "wellness-beauty",
-    label: "Wellness & Beauty",
-    icon: Sparkles,
-    title: "Townsville Wellness & Beauty Directory — Salons, Spas & Studios",
-    description:
-      "Townsville wellness and beauty businesses — salons, day spas, massage, yoga and fitness studios, listed by a local guide.",
-    intro:
-      "Salons, day spas, massage therapists, yoga and fitness studios around town.",
-  },
-];
-
-interface Listing {
-  name: string;
-  category: CategorySlug;
-  suburb: string;
-  description: string;
-  /** Confirmed URL. Omit and set websitePending when the real link hasn't been verified yet. */
-  website?: string;
-  /** True when we don't yet have a confirmed website URL — renders a "[Link pending]" state instead of a link. */
-  websitePending?: boolean;
-}
-
-const LISTINGS: Listing[] = [
-  // --- Accommodation ---
-  {
-    name: "The Ville Resort – Casino",
-    category: "accommodation",
-    suburb: "The Strand",
-    description:
-      "A resort-style stay right on the Strand, with a pool, dining options, casino and entertainment all on site. Rated 8.3/10 across 1,448+ reviews.",
-    website: "https://www.the-ville.com.au/",
-  },
-  {
-    name: "Mariners North Holiday Apartments",
-    category: "accommodation",
-    suburb: "The Strand",
-    description:
-      "Apartment-style stays on the Strand, popular for their sea views. A good option if you want a kitchen for a longer stay or you're travelling as a family.",
-    website: "https://www.marinersnorth.com.au/",
-  },
-  {
-    name: "Rydges Southbank Townsville",
-    category: "accommodation",
-    suburb: "Townsville CBD",
-    description:
-      "A 4-star hotel in the CBD with Castle Hill views — a solid pick if you're in town for business or just want to be central.",
-    website: "https://www.rydges.com/accommodation/townsville-qld/townsville/",
-  },
-  {
-    name: "Strand Motel",
-    category: "accommodation",
-    suburb: "The Strand",
-    description:
-      "Budget-friendly and right on the Strand, with shops and restaurants an easy walk away. It's got a loyal following of repeat guests who keep coming back.",
-    website: "https://www.strandmotel.com.au/",
-  },
-  {
-    name: "Aquarius on the Beach",
-    category: "accommodation",
-    suburb: "The Strand",
-    description:
-      "Beachfront and family-friendly, rated 8.0/10 across more than 4,500 reviews.",
-    website: "https://www.aquariusonthebeach.com.au/",
-  },
-  {
-    name: "City Oasis Inn Townsville",
-    category: "accommodation",
-    suburb: "Townsville CBD",
-    description:
-      "A CBD hotel just minutes from Queensland Country Bank Stadium — a handy base if you're in town for a Cowboys game.",
-    website: "https://cityoasis.com.au/",
-  },
-  {
-    name: "Hotel Grand Chancellor Townsville",
-    category: "accommodation",
-    suburb: "Townsville CBD",
-    description:
-      "Hard to miss — this 20-storey tower sits right across from the Cowboys Leagues Club, so it's a genuine walk-to-the-game option on home game weekends. There's a rooftop pool with Castle Hill views for afterwards, and it's about a 15-minute walk down to the Magnetic Island ferry if you're island-hopping the next day.",
-    website: "https://www.grandchancellorhotels.com/hotel-grand-chancellor-townsville",
-  },
-  {
-    name: "Oaks Townsville Hotel",
-    category: "accommodation",
-    suburb: "Townsville",
-    description:
-      "A 4.5-star aparthotel with ocean views and kitchenette apartments, plus a gym and pool on site.",
-    website: "https://www.oakshotels.com/en/oaks-townsville-hotel",
-  },
-  {
-    name: "Madison Plaza Townsville",
-    category: "accommodation",
-    suburb: "Townsville CBD",
-    description:
-      "Budget-friendly and in the CBD, with a short walk to the stadium if you're here for the footy.",
-    website: "https://madisonplazatownsville.com-hotel.info/",
-  },
-  {
-    name: "BIG4 Tasman Holiday Parks – Rowes Bay",
-    category: "accommodation",
-    suburb: "Rowes Bay",
-    description: "A caravan and holiday park option out at Rowes Bay.",
-    website: "https://tasmanholidayparks.com/queensland/townsville/",
-  },
-
-  // --- Tours ---
-  {
-    name: "Adrenalin Snorkel and Dive",
-    category: "tours",
-    suburb: "Townsville",
-    description:
-      "The old hands of Townsville diving — over 30 years in the water and Eco Tourism Australia certified. They'll get you out to the Great Barrier Reef, down to the SS Yongala wreck, or over to the Museum of Underwater Art if you want something a bit different from a standard reef trip.",
-    website: "https://www.adrenalindive.com.au/",
-  },
-  {
-    name: "Pro Dive Magnetic Island",
-    category: "tours",
-    suburb: "Magnetic Island",
-    description: "Based on Magnetic Island and specialising in dives out to the SS Yongala wreck.",
-    // TODO: confirm website URL for Pro Dive Magnetic Island
-    websitePending: true,
-  },
-  {
-    name: "Yongala Dive",
-    category: "tours",
-    suburb: "Townsville",
-    description: "A dedicated operator that specialises in one thing: the SS Yongala wreck dive.",
-    // TODO: confirm website URL for Yongala Dive
-    websitePending: true,
-  },
-  {
-    name: "Poseidon Adventures",
-    category: "tours",
-    suburb: "Magnetic Island",
-    description:
-      "A well-reviewed boat tour and snorkelling trip around Magnetic Island, known for a friendly, safety-focused crew.",
-    // TODO: confirm website URL for Poseidon Adventures
-    websitePending: true,
-  },
-  {
-    name: "Poseidon Jet Ski Tours",
-    category: "tours",
-    suburb: "Magnetic Island",
-    description:
-      "Guided jet ski tours around Magnetic Island's bays, taking in the SS Adelaide shipwreck along the way.",
-    // TODO: confirm website URL for Poseidon Jet Ski Tours
-    websitePending: true,
-  },
-  {
-    name: "SeaLink",
-    category: "tours",
-    suburb: "Breakwater Terminal",
-    description:
-      "The regular ferry service running from Townsville's Breakwater terminal across to Magnetic Island.",
-    // TODO: confirm website URL for SeaLink
-    websitePending: true,
-  },
-  {
-    name: "Townsville Helicopters",
-    category: "tours",
-    suburb: "Townsville",
-    description: "Scenic helicopter flights over the reef and Magnetic Island.",
-    // TODO: confirm website URL for Townsville Helicopters
-    websitePending: true,
-  },
-  {
-    name: "Nautilus Aviation",
-    category: "tours",
-    suburb: "Townsville",
-    description: "Helicopter flights out to Palm Island and beyond.",
-    // TODO: confirm website URL for Nautilus Aviation
-    websitePending: true,
-  },
-  {
-    name: "Aussie Barra Charters",
-    category: "tours",
-    suburb: "Townsville",
-    description:
-      "Barramundi fishing specialists with over 40 years of local experience, running charters around Magnetic Island and Cleveland Bay.",
-    website: "https://aussiebarracharters.com.au/",
-  },
-  {
-    name: "Fish City Fishing Charters",
-    category: "tours",
-    suburb: "Townsville",
-    description:
-      "Charters covering Magnetic Island, Cleveland Bay, Halifax Bay and Cape Cleveland, with options ranging from a short budget half-day trip to a full offshore charter.",
-    website: "https://www.fishcity.com.au/",
-  },
-
-  // --- Food and Drink ---
-  {
-    name: "Seasoned",
-    category: "food-and-drink",
-    suburb: "Palmer Street, South Townsville",
-    description:
-      "Ask around and this is the name that keeps coming up as Townsville's best table. Tucked into Palmer Street with a menu that changes with the seasons, so what you get in July won't be what you get in January — worth booking ahead.",
-    // TODO: confirm website URL for Seasoned
-    websitePending: true,
-  },
-  {
-    name: "A Touch of Salt",
-    category: "food-and-drink",
-    suburb: "Ross River",
-    description:
-      "Modern Australian on Ross River, known for creative dishes like smoked kangaroo dumplings and duck ramen.",
-    // TODO: confirm website URL for A Touch of Salt
-    websitePending: true,
-  },
-  {
-    name: "Watermark Townsville",
-    category: "food-and-drink",
-    suburb: "The Strand",
-    description:
-      "Beachfront on the Strand, known for seafood platters, attentive service and ocean views.",
-    // TODO: confirm website URL for Watermark Townsville
-    websitePending: true,
-  },
-  {
-    name: "JAM",
-    category: "food-and-drink",
-    suburb: "Palmer Street Dining District",
-    description: "A Palmer Street staple for more than 14 years now.",
-    // TODO: confirm website URL for JAM
-    websitePending: true,
-  },
-  {
-    name: "Bridgewater Q",
-    category: "food-and-drink",
-    suburb: "South Townsville",
-    description: "Sophisticated riverside dining in South Townsville, with views across to Castle Hill.",
-    // TODO: confirm website URL for Bridgewater Q
-    websitePending: true,
-  },
-  {
-    name: "Longboard Bar & Grill",
-    category: "food-and-drink",
-    suburb: "The Strand",
-    description: "Casual, surf-shack-style burgers and beachfront drinks on the Strand.",
-    // TODO: confirm website URL for Longboard Bar & Grill
-    websitePending: true,
-  },
-  {
-    name: "Odyssey on the Strand",
-    category: "food-and-drink",
-    suburb: "The Strand",
-    description: "Greek and Mediterranean food with ocean views, open daily including breakfast.",
-    // TODO: confirm website URL for Odyssey on the Strand
-    websitePending: true,
-  },
-  {
-    name: "Masala Indian Cuisine",
-    category: "food-and-drink",
-    suburb: "Palmer Street Dining District",
-    description: "Family-friendly Indian cuisine in the Palmer Street dining district.",
-    // TODO: confirm website URL for Masala Indian Cuisine
-    websitePending: true,
-  },
-  {
-    name: "Sakana Sushi",
-    category: "food-and-drink",
-    suburb: "Townsville",
-    description: "Sushi and Japanese food that's consistently named among Townsville's best.",
-    // TODO: confirm website URL for Sakana Sushi
-    websitePending: true,
-  },
-  {
-    name: "Townsville Yacht Club",
-    category: "food-and-drink",
-    suburb: "Townsville",
-    description: "Waterfront dining and drinks — a casual, social pick.",
-    // TODO: confirm website URL for Townsville Yacht Club
-    websitePending: true,
-  },
-
-  // --- Dog-Friendly ---
-  {
-    name: "Juliette's",
-    category: "dog-friendly",
-    suburb: "The Strand",
-    description:
-      "The Strand's original dog-friendly café, open since 2007, with shady trees and sea views.",
-    // TODO: confirm website URL for Juliette's
-    websitePending: true,
-  },
-  {
-    name: "Strand Coffee Club",
-    category: "dog-friendly",
-    suburb: "The Strand",
-    description: "Dog-friendly on the Strand, with a popular Sunday brunch.",
-    // TODO: confirm website URL for Strand Coffee Club
-    websitePending: true,
-  },
-  {
-    name: "The Balcony",
-    category: "dog-friendly",
-    suburb: "Townsville CBD",
-    description: "In the city centre, with dogs welcome out on the verandah.",
-    // TODO: confirm website URL for The Balcony
-    websitePending: true,
-  },
-  {
-    name: "Tobruk Kiosk",
-    category: "dog-friendly",
-    suburb: "The Strand (southern end)",
-    description:
-      "Coffee and light meals on the southern Strand, with treats and drinks on offer for dogs too.",
-    // TODO: confirm website URL for Tobruk Kiosk
-    websitePending: true,
-  },
-  {
-    name: "Absolute Cravings",
-    category: "dog-friendly",
-    suburb: "Palmetum Botanic Garden",
-    description: "Right next to the Palmetum Botanic Garden, with pet-friendly outdoor seating.",
-    website: "https://www.absolutecravings.com.au/",
-  },
-  {
-    name: "Sirens Bayside",
-    category: "dog-friendly",
-    suburb: "Belgian Gardens",
-    description:
-      "In Belgian Gardens, named a top pick for dog-friendly cafés and known for a beautiful outdoor area.",
-    // TODO: confirm website URL for Sirens Bayside
-    websitePending: true,
-  },
-  {
-    name: "My Pet Hub Townsville",
-    category: "dog-friendly",
-    suburb: "Townsville",
-    description:
-      "Vet care, doggy daycare, grooming, retail, cat boarding and puppy school, all under one roof.",
-    website: "https://mypethub.com.au/townsville-vet/",
-  },
-  {
-    name: "Allsorts Doggie Daycare",
-    category: "dog-friendly",
-    suburb: "Townsville",
-    description: "Doggy daycare with structured classes as well as one-on-one options.",
-    // TODO: confirm website URL for Allsorts Doggie Daycare
-    websitePending: true,
-  },
-  {
-    name: "Shoredrive Motel",
-    category: "dog-friendly",
-    suburb: "The Strand",
-    description: "On the Strand, with dedicated pet-friendly rooms for guests travelling with a dog.",
-    // TODO: confirm website URL for Shoredrive Motel
-    websitePending: true,
-  },
-  {
-    name: "Pet Resorts Australia Townsville",
-    category: "dog-friendly",
-    suburb: "Yabulu",
-    description:
-      "My own pick, for what it's worth. Out at Yabulu, it's proper premium boarding — climate-controlled accommodation, a supervised splash park, and on-site training if your dog needs a bit of work while you're away. I trust them with my own dog.",
-    website: "https://petresortsaustralia.com.au/locations/townsville",
-  },
-
-  // --- Wellness & Beauty ---
-  {
-    name: "Tropical North Day Spa Townsville",
-    category: "wellness-beauty",
-    suburb: "Townsville",
-    description:
-      "Rated 4.8/5 from more than 120 Google reviews, offering relaxation and deep tissue massage, aromatherapy and facials.",
-    // TODO: confirm website URL for Tropical North Day Spa Townsville
-    websitePending: true,
-  },
-  {
-    name: "endota spa Townsville",
-    category: "wellness-beauty",
-    suburb: "Stockland",
-    description: "A well-loved national spa brand, located at Stockland.",
-    // TODO: confirm website URL for endota spa Townsville
-    websitePending: true,
-  },
-  {
-    name: "Chrysalis Medispa",
-    category: "wellness-beauty",
-    suburb: "Townsville",
-    description: "North Queensland's only skin clinic led by a Plastic & Reconstructive Surgeon.",
-    // TODO: confirm website URL for Chrysalis Medispa
-    websitePending: true,
-  },
-  {
-    name: "JoJo's Thai Massage and Spa",
-    category: "wellness-beauty",
-    suburb: "Townsville",
-    description: "A calm, ambient space offering magnesium float treatments.",
-    // TODO: confirm website URL for JoJo's Thai Massage and Spa
-    websitePending: true,
-  },
-  {
-    name: "City Cave Idalia",
-    category: "wellness-beauty",
-    suburb: "Idalia",
-    description: "A float therapy specialist out at Idalia.",
-    // TODO: confirm website URL for City Cave Idalia
-    websitePending: true,
-  },
-  {
-    name: "Beau Shea Massage & Beauty",
-    category: "wellness-beauty",
-    suburb: "Townsville",
-    description: "A locally recommended massage and beauty studio.",
-    // TODO: confirm website URL for Beau Shea Massage & Beauty
-    websitePending: true,
-  },
-  {
-    name: "Massage Relax Restore",
-    category: "wellness-beauty",
-    suburb: "Townsville",
-    description: "Remedial massage and fire cupping, with warmly reviewed therapists.",
-    // TODO: confirm website URL for Massage Relax Restore
-    websitePending: true,
-  },
-  {
-    name: "Senorita Nails Spa & Beauty",
-    category: "wellness-beauty",
-    suburb: "Thuringowa Central",
-    description: "Nails and spa services combined, out at Thuringowa Central.",
-    // TODO: confirm website URL for Senorita Nails Spa & Beauty
-    websitePending: true,
-  },
-  {
-    name: "YogaHealth Townsville",
-    category: "wellness-beauty",
-    suburb: "Currajong",
-    description:
-      "A Currajong studio that's quietly loved by long-time locals rather than chasing trends. There's a full class timetable if you want to make it a regular thing rather than a one-off.",
-    website: "https://yogahealth.net.au/",
-  },
-  {
-    name: "Diamond Barber",
-    category: "wellness-beauty",
-    suburb: "Townsville",
-    description: "A well-reviewed local barbershop that's family-friendly.",
-    // TODO: confirm website URL for Diamond Barber
-    websitePending: true,
-  },
-];
+import { Input } from "@/components/ui/input";
+import {
+  AREAS,
+  CATEGORIES,
+  LISTINGS,
+  countByCategory,
+  type Area,
+  type CategorySlug,
+  type Listing,
+} from "@/data/directoryListings";
 
 const SITE = "https://www.townsvilleguide.com.au";
 
-const ListingCardSimple = ({ listing }: { listing: Listing }) => {
+const ListingCard = ({ listing }: { listing: Listing }) => {
   const cat = CATEGORIES.find((c) => c.slug === listing.category)!;
   const Icon = cat.icon;
+  const mapQuery = encodeURIComponent(`${listing.name}, ${listing.locality ?? listing.area}, Townsville QLD`);
+
   return (
-    <article className="rounded-lg border border-border bg-card p-5 flex flex-col gap-3">
+    <article className="rounded-lg border border-border bg-card p-5 flex flex-col gap-3 h-full">
       <div className="flex items-center gap-2">
         <span className="p-1.5 rounded-md bg-muted text-muted-foreground">
           <Icon className="w-4 h-4" aria-hidden="true" />
@@ -515,20 +33,18 @@ const ListingCardSimple = ({ listing }: { listing: Listing }) => {
         </span>
       </div>
 
-      <h3 className="text-base font-semibold text-foreground">{listing.name}</h3>
+      <h3 className="text-base font-semibold text-foreground break-words">{listing.name}</h3>
+
+      <p className="flex items-start gap-1.5 text-xs text-muted-foreground">
+        <MapPin className="w-3.5 h-3.5 mt-0.5 shrink-0" aria-hidden="true" />
+        <span>{listing.locality ? `${listing.locality} · ${listing.area}` : listing.area}</span>
+      </p>
 
       <p className="text-sm text-muted-foreground leading-relaxed">{listing.description}</p>
 
-      <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
-        <MapPin className="w-3.5 h-3.5" aria-hidden="true" />
-        {listing.suburb}
-      </p>
-
-      <div className="mt-auto pt-2 flex items-center justify-between gap-3">
+      <div className="mt-auto pt-3 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border/60">
         {listing.websitePending ? (
-          <span className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground italic">
-            [Link pending]
-          </span>
+          <span className="text-sm text-muted-foreground italic">Website link to be confirmed</span>
         ) : (
           <a
             href={listing.website}
@@ -536,63 +52,104 @@ const ListingCardSimple = ({ listing }: { listing: Listing }) => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
           >
-            Visit Website
+            Visit website
             <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
           </a>
         )}
-        <Link
-          to="/advertise"
-          className="text-xs text-muted-foreground hover:text-primary transition-colors"
+        <a
+          href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
         >
-          Feature your business here
-        </Link>
+          Directions
+        </a>
       </div>
     </article>
   );
 };
 
+const PLANNING_LINKS = [
+  { to: "/things-to-do", label: "Things to Do", note: "Decide what's worth your time" },
+  { to: "/food", label: "Food & Dining", note: "Where to eat and which area suits" },
+  { to: "/accommodation", label: "Where to Stay", note: "Which area fits your trip" },
+  { to: "/shopping", label: "Shopping", note: "Centres, CBD and markets" },
+  { to: "/nature", label: "Nature", note: "Beaches, hills, creeks and wildlife" },
+  { to: "/first-time-in-townsville", label: "First Time in Townsville", note: "Start here if it's your first visit" },
+  { to: "/townsville-without-a-car", label: "Townsville Without a Car", note: "Ferries, buses and walkable areas" },
+  { to: "/townsville-with-kids", label: "Townsville with Kids", note: "Family-friendly planning" },
+  { to: "/local-tips", label: "Local Tips", note: "Practical advice from the ground" },
+];
+
 const Directory = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const raw = searchParams.get("category");
-  const active = CATEGORIES.find((c) => c.slug === raw) || null;
+  const rawCategory = searchParams.get("category");
+  const active = CATEGORIES.find((c) => c.slug === rawCategory) || null;
 
-  const listings = active ? LISTINGS.filter((l) => l.category === active.slug) : LISTINGS;
+  const [area, setArea] = useState<Area | null>(null);
+  const [query, setQuery] = useState("");
 
-  const path = active ? `/directory?category=${active.slug}` : "/directory";
-  const canonicalUrl = `${SITE}${path}`;
+  const listings = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return LISTINGS.filter((l) => {
+      if (active && l.category !== active.slug) return false;
+      if (area && l.area !== area) return false;
+      if (!q) return true;
+      const cat = CATEGORIES.find((c) => c.slug === l.category);
+      return [l.name, l.area, l.locality ?? "", l.description, cat?.label ?? ""]
+        .join(" ")
+        .toLowerCase()
+        .includes(q);
+    });
+  }, [active, area, query]);
 
-  const title = active
-    ? active.title
-    : "Townsville Business Directory — Local Picks by Townsville Guide";
-  const description = active
-    ? active.description
-    : "A browsable directory of Townsville businesses hand-picked by a local — accommodation, tours, food and drink, dog-friendly spots and wellness & beauty.";
+  const availableAreas = useMemo(
+    () =>
+      AREAS.filter((a) =>
+        LISTINGS.some((l) => l.area === a && (!active || l.category === active.slug))
+      ),
+    [active]
+  );
+
+  const isFiltered = Boolean(active || area || query.trim());
 
   const setCategory = (slug: CategorySlug | null) => {
+    setArea(null);
     if (slug) setSearchParams({ category: slug });
     else setSearchParams({});
   };
 
-  const itemList = {
+  const clearAll = () => {
+    setQuery("");
+    setArea(null);
+    setSearchParams({});
+  };
+
+  /**
+   * Canonical / indexing approach:
+   * - One indexable landing page: /directory
+   * - Category filtering uses ?category=, and canonicals back to /directory so
+   *   filter permutations never become separate indexed URLs.
+   * - Clean category paths (/directory/eat-drink) can be introduced later
+   *   without breaking these query-string links.
+   */
+  const canonicalUrl = `${SITE}/directory`;
+
+  const title = active
+    ? active.title
+    : "Townsville Directory | Places, Businesses & Visitor Services";
+  const description = active
+    ? active.description
+    : "Browse useful Townsville businesses and places for food, accommodation, attractions, shopping, tours, transport and practical visitor services.";
+
+  const collectionPage = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: title,
+    "@type": "CollectionPage",
+    name: "Townsville Directory",
     url: canonicalUrl,
-    itemListElement: listings.map((l, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      item: {
-        "@type": "LocalBusiness",
-        name: l.name,
-        ...(l.website ? { url: l.website } : {}),
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: l.suburb,
-          addressRegion: "QLD",
-          addressCountry: "AU",
-        },
-      },
-    })),
+    description:
+      "Browse useful Townsville businesses and places for food, accommodation, attractions, shopping, tours, transport and practical visitor services.",
+    isPartOf: { "@type": "WebSite", name: "Townsville Guide", url: `${SITE}/` },
   };
 
   const breadcrumb = {
@@ -600,117 +157,254 @@ const Directory = () => {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "Directory", item: `${SITE}/directory` },
-      ...(active
-        ? [{ "@type": "ListItem", position: 3, name: active.label, item: canonicalUrl }]
-        : []),
+      { "@type": "ListItem", position: 2, name: "Directory", item: canonicalUrl },
     ],
   };
 
+  const priority = CATEGORIES.filter((c) => c.priority);
+  const secondary = CATEGORIES.filter((c) => !c.priority);
+
   return (
     <>
-      <SEOHead title={title} description={description} canonical={path} />
+      <SEOHead title={title} description={description} canonical="/directory" />
       <Helmet>
-        <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta name="twitter:url" content={canonicalUrl} />
-        <script type="application/ld+json">{JSON.stringify(itemList)}</script>
+        <script type="application/ld+json">{JSON.stringify(collectionPage)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       </Helmet>
 
       {/* Intro */}
-      <section className="py-14 px-4 bg-gradient-to-b from-primary/5 to-transparent">
-        <div className="container mx-auto max-w-5xl text-center">
+      <section className="py-12 md:py-14 px-4 bg-gradient-to-b from-primary/5 to-transparent">
+        <div className="container mx-auto max-w-4xl text-center">
+          <nav aria-label="Breadcrumb" className="mb-3 text-xs text-muted-foreground">
+            <Link to="/" className="hover:text-primary">Home</Link>
+            <span className="mx-1.5">/</span>
+            <span className="text-foreground">Directory</span>
+          </nav>
           <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary mb-3">
             <LayoutGrid className="w-4 h-4" aria-hidden="true" />
             Townsville Directory
           </p>
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            {active ? `${active.label} in Townsville` : "Townsville Business Directory"}
+            Townsville Directory
           </h1>
-          <p className="text-muted-foreground text-lg leading-relaxed max-w-3xl mx-auto">
-            {active
-              ? active.intro
-              : "This is my running list of Townsville businesses worth knowing about — the places I actually point friends and visitors towards. No paid rankings, no stock photos: just a name, where it is, and a link straight through to the business so you can see their own photos and book direct."}
+          <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+            Browse useful Townsville places and businesses for eating, staying, shopping,
+            attractions, tours, transport and practical visitor needs. The directory complements
+            our local guides by helping you find the actual places behind your plans.
           </p>
-          <p className="text-sm text-muted-foreground mt-4">— Duncan, Townsville Guide</p>
         </div>
       </section>
 
-      {/* Filters */}
-      <section className="px-4">
+      {/* Categories */}
+      <section className="px-4 pb-2">
         <div className="container mx-auto max-w-6xl">
-          <nav aria-label="Directory categories" className="flex flex-wrap justify-center gap-2">
-            <button
-              type="button"
-              onClick={() => setCategory(null)}
-              aria-pressed={!active}
-              className={`text-sm px-4 py-2 rounded-full border transition-colors ${
-                !active
-                  ? "bg-primary text-primary-foreground border-primary"
-                  : "border-border text-muted-foreground hover:border-primary/40 hover:text-primary"
-              }`}
-            >
-              All
-            </button>
-            {CATEGORIES.map((c) => {
+          <h2 className="text-xl font-semibold text-foreground mb-4">Browse by category</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[...priority, ...secondary].map((c) => {
               const Icon = c.icon;
               const isOn = active?.slug === c.slug;
               return (
                 <button
                   key={c.slug}
                   type="button"
-                  onClick={() => setCategory(c.slug)}
+                  onClick={() => setCategory(isOn ? null : c.slug)}
                   aria-pressed={isOn}
-                  className={`text-sm px-4 py-2 rounded-full border transition-colors inline-flex items-center gap-2 ${
+                  className={`text-left rounded-lg border p-4 transition-colors ${
                     isOn
+                      ? "border-primary bg-primary/5"
+                      : "border-border bg-card hover:border-primary/40"
+                  }`}
+                >
+                  <span className="flex items-center gap-2 mb-1.5">
+                    <Icon className="w-4 h-4 text-primary shrink-0" aria-hidden="true" />
+                    <span className="font-semibold text-foreground">{c.label}</span>
+                    <span className="ml-auto text-xs text-muted-foreground shrink-0">
+                      {countByCategory(c.slug)}
+                    </span>
+                  </span>
+                  <span className="block text-sm text-muted-foreground leading-relaxed">
+                    {c.blurb}
+                  </span>
+                  <span className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary">
+                    {isOn ? "Showing this category" : "Browse"}
+                    <ArrowRight className="w-3 h-3" aria-hidden="true" />
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Search + area filter */}
+      <section className="px-4 pt-8">
+        <div className="container mx-auto max-w-6xl">
+          <div className="rounded-lg border border-border bg-card p-4 flex flex-col gap-4">
+            <div className="relative">
+              <Search
+                className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
+                aria-hidden="true"
+              />
+              <label htmlFor="directory-search" className="sr-only">
+                Search places, businesses or categories
+              </label>
+              <Input
+                id="directory-search"
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search places, businesses or categories"
+                className="pl-9 w-full"
+              />
+            </div>
+
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-xs font-medium uppercase tracking-wide text-muted-foreground mr-1">
+                Area
+              </span>
+              <button
+                type="button"
+                onClick={() => setArea(null)}
+                aria-pressed={!area}
+                className={`text-sm px-3 py-1.5 rounded-full border transition-colors ${
+                  !area
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "border-border text-muted-foreground hover:border-primary/40 hover:text-primary"
+                }`}
+              >
+                All areas
+              </button>
+              {availableAreas.map((a) => (
+                <button
+                  key={a}
+                  type="button"
+                  onClick={() => setArea(area === a ? null : a)}
+                  aria-pressed={area === a}
+                  className={`text-sm px-3 py-1.5 rounded-full border transition-colors ${
+                    area === a
                       ? "bg-primary text-primary-foreground border-primary"
                       : "border-border text-muted-foreground hover:border-primary/40 hover:text-primary"
                   }`}
                 >
-                  <Icon className="w-4 h-4" aria-hidden="true" />
-                  {c.label}
+                  {a}
                 </button>
-              );
-            })}
-          </nav>
+              ))}
+            </div>
+
+            {isFiltered && (
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <p className="text-sm text-muted-foreground">
+                  Showing {listings.length} {listings.length === 1 ? "listing" : "listings"}
+                  {active ? ` in ${active.label}` : ""}
+                  {area ? ` · ${area}` : ""}
+                </p>
+                <Button variant="ghost" size="sm" onClick={clearAll} className="gap-1.5">
+                  <X className="w-3.5 h-3.5" aria-hidden="true" />
+                  Clear filters
+                </Button>
+              </div>
+            )}
+          </div>
+
+          {active && (
+            <p className="mt-4 text-sm text-muted-foreground">
+              {active.intro}{" "}
+              <Link to={active.guidePath} className="text-primary hover:underline">
+                Read the {active.guideLabel}
+              </Link>{" "}
+              for advice on choosing.
+            </p>
+          )}
         </div>
       </section>
 
       {/* Listings */}
-      <section className="py-10 px-4">
+      <section className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
           {listings.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {listings.map((l) => (
-                <ListingCardSimple key={l.name} listing={l} />
+                <ListingCard key={`${l.category}-${l.name}`} listing={l} />
               ))}
             </div>
           ) : (
-            <div className="text-center border border-dashed border-border rounded-lg py-12">
-              <p className="text-muted-foreground">
-                Listings for this category are coming soon.
+            <div className="text-center border border-dashed border-border rounded-lg py-12 px-4">
+              <p className="font-medium text-foreground">No listings found</p>
+              <p className="text-muted-foreground text-sm mt-1">
+                Try another category, area or search term.
               </p>
-              <Button asChild variant="outline" size="sm" className="mt-4">
-                <Link to="/advertise">Be the first listed here</Link>
+              <Button variant="outline" size="sm" className="mt-4" onClick={clearAll}>
+                Show all listings
               </Button>
             </div>
           )}
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <section className="py-14 px-4 bg-muted/40">
+      {/* Trust + changing information */}
+      <section className="px-4 pb-4">
+        <div className="container mx-auto max-w-6xl grid gap-4 md:grid-cols-2">
+          <div className="rounded-lg border border-border bg-muted/40 p-5">
+            <h2 className="flex items-center gap-2 text-sm font-semibold text-foreground mb-2">
+              <Info className="w-4 h-4 text-primary" aria-hidden="true" />
+              About these listings
+            </h2>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Directory listings are provided to help visitors discover useful Townsville
+              businesses and places. Inclusion does not necessarily mean we have personally used
+              or recommend every listed business.
+            </p>
+          </div>
+          <div className="rounded-lg border border-border bg-muted/40 p-5">
+            <h2 className="text-sm font-semibold text-foreground mb-2">Details change</h2>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Opening hours, operators and services change, particularly outside peak season.
+              We don't publish hours here — check directly with the business before making a
+              special trip.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Guide integration */}
+      <section className="py-12 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-2xl font-bold text-foreground mb-2">Planning your visit?</h2>
+          <p className="text-muted-foreground mb-6 max-w-3xl">
+            Our guides help you decide what suits you — which area to stay in, what to do and when.
+            The directory helps you find the specific places behind those decisions.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {PLANNING_LINKS.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                className="rounded-lg border border-border bg-card p-4 hover:border-primary/40 transition-colors"
+              >
+                <span className="flex items-center gap-1.5 font-medium text-foreground">
+                  {l.label}
+                  <ArrowRight className="w-3.5 h-3.5 text-primary" aria-hidden="true" />
+                </span>
+                <span className="block text-sm text-muted-foreground mt-1">{l.note}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Submission CTA */}
+      <section className="py-12 px-4">
         <div className="container mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-            Run a Townsville business?
+          <h2 className="text-2xl font-bold text-foreground mb-3">
+            Own a visitor-focused Townsville business?
           </h2>
           <p className="text-muted-foreground mb-6">
-            Community listings are free, and Founding Partners get a richer, featured spot across
-            the guide. Tell me about your business and I'll get you listed.
+            Directory submissions will open as the directory grows. In the meantime you can get in
+            touch — we can't guarantee inclusion, but we're happy to hear about places useful to
+            visitors.
           </p>
           <Button asChild size="lg">
-            <Link to="/advertise">Partner With Us</Link>
+            <Link to="/advertise">Get in touch</Link>
           </Button>
         </div>
       </section>
