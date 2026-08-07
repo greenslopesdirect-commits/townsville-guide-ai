@@ -52,6 +52,7 @@ const PAGES = [
   { path: "/advertise",                           source: "src/pages/Advertise.tsx",                   changefreq: "monthly", priority: "0.8" },
   { path: "/contact",                             source: "src/pages/Contact.tsx",                     changefreq: "monthly", priority: "0.5" },
   { path: "/the-strand",                          source: "src/pages/TheStrand.tsx",                   changefreq: "weekly",  priority: "0.8" },
+  { path: "/riverway",                            source: "src/pages/Riverway.tsx",                    changefreq: "monthly", priority: "0.8" },
   { path: "/castle-hill",                         source: "src/pages/CastleHill.tsx",                  changefreq: "monthly", priority: "0.8" },
   { path: "/guides/paluma-day-trip",             source: "src/pages/PalumaDayTrip.tsx",               changefreq: "monthly", priority: "0.8" },
   { path: "/guides/walking-castle-hill",          source: "src/pages/WalkingCastleHill.tsx",           changefreq: "monthly", priority: "0.7" },
