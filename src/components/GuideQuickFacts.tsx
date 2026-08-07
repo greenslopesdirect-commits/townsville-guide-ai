@@ -145,6 +145,13 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(CalendarDays, "Best for markets", data.bestForMarkets);
   push(Umbrella, "Best rainy-day option", data.bestRainyDayOption);
   push(Users, "Best for essentials", data.bestForEssentials);
+  push(MapPin, "Best overall area", data.bestAreaOverall);
+  push(Sparkles, "Best for first-time visitors", data.bestForFirstTimers);
+  push(Coffee, "Best for restaurants", data.bestForRestaurants);
+  push(Ship, "Best for ferry access", data.bestForFerryAccess);
+  push(CalendarDays, "Best for longer stays", data.bestForLongerStays);
+  push(Waves, "Best for island atmosphere", data.bestForIslandAtmosphere);
+  push(Building2, "Best practical location", data.bestPracticalLocation);
   push(Umbrella, "Best light-rain option", data.bestLightRainOption);
   push(AlertTriangle, "Avoid in heavy rain", data.avoidInHeavyRain);
   push(AlertTriangle, "Main consideration", data.mainConsideration);

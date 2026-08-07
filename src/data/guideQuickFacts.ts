@@ -201,6 +201,20 @@ export interface QuickFacts {
   bestRainyDayOption?: string;
   /** Best option for everyday essentials. */
   bestForEssentials?: string;
+  /** Strongest all-round area, used on accommodation guides. */
+  bestAreaOverall?: string;
+  /** Best area for first-time visitors. */
+  bestForFirstTimers?: string;
+  /** Best area for restaurants and dining-focused stays. */
+  bestForRestaurants?: string;
+  /** Best area for Magnetic Island ferry convenience. */
+  bestForFerryAccess?: string;
+  /** Best accommodation style for longer stays. */
+  bestForLongerStays?: string;
+  /** Best option for island atmosphere. */
+  bestForIslandAtmosphere?: string;
+  /** Best practical, non-tourist base. */
+  bestPracticalLocation?: string;
   localVerdict?: string;
 }
 
@@ -642,6 +656,21 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     mainConsideration: "Tenants and trading hours change",
     localVerdict:
       "Townsville has several good shopping options, but the best one depends on where you are staying and what you actually need.",
+  },
+  "/accommodation": {
+    bestAreaOverall: "The Strand / North Ward",
+    bestForFirstTimers: "The Strand / North Ward",
+    bestWithoutCar: "The Strand / North Ward, or the CBD",
+    bestForRestaurants: "Palmer Street or the CBD",
+    bestForFerryAccess: "Palmer Street or the CBD",
+    bestWithKids: "The Strand / North Ward",
+    bestForLongerStays: "Apartment-style accommodation",
+    bestForIslandAtmosphere: "Magnetic Island",
+    bestPracticalLocation:
+      "Aitkenvale and the western suburbs for JCU, hospital or longer local stays",
+    mainConsideration: "Pick the area first, then the property",
+    localVerdict:
+      "Staying in the right part of Townsville matters more than chasing a tiny difference in hotel ratings.",
   },
   "/riverway": {
 

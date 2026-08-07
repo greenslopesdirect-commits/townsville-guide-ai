@@ -742,6 +742,27 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/accommodation": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local knowledge of Townsville's main accommodation areas with current visitor and property information. Hotel names, operators, prices and facilities can change, so check directly before booking.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville Enterprise — official visitor information",
+        url: "https://www.townsvillenorthqueensland.com.au/",
+      },
+      {
+        name: "SeaLink Queensland — Magnetic Island ferry",
+        url: "https://www.sealinkqld.com.au/",
+      },
+      {
+        name: "Translink — Townsville public transport",
+        url: "https://translink.com.au/",
+      },
+    ],
+  },
 };
 
 /** Routes that are guide articles and should show the trust panel. */
