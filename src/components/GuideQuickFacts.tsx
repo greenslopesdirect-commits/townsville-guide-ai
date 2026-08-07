@@ -19,6 +19,8 @@ import {
   Sparkles,
   Waves,
   CalendarDays,
+  Trophy,
+
   TreePine,
   Building2,
   Flame,
