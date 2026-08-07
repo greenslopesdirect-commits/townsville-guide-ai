@@ -658,7 +658,29 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/cowboys-stadium-guide": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines local visitor-planning knowledge with current information from Queensland Country Bank Stadium, Stadiums Queensland and official Cowboys sources. Event arrangements can change, so confirm details on the official event page before travelling.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Queensland Country Bank Stadium — official site",
+        url: "https://www.queenslandcountrybankstadium.com.au/",
+      },
+      {
+        name: "Stadiums Queensland — Queensland Country Bank Stadium",
+        url: "https://www.stadiums.qld.gov.au/our-venues/queensland-country-bank-stadium/",
+      },
+      {
+        name: "North Queensland Cowboys — draw",
+        url: "https://www.cowboys.com.au/draw/",
+      },
+    ],
+  },
   "/events": {
+
     visitStatus: "partially-firsthand",
     visitNote:
       "This guide combines local visitor-planning knowledge with current information from official Townsville event, venue and organiser sources. Event dates and programmes change regularly, so confirm details with the official organiser before travelling.",
