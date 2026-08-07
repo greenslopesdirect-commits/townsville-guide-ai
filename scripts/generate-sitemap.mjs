@@ -58,6 +58,7 @@ const PAGES = [
   { path: "/guides/walking-castle-hill",          source: "src/pages/WalkingCastleHill.tsx",           changefreq: "monthly", priority: "0.7" },
   { path: "/billabong-sanctuary",                 source: "src/pages/BillabongSanctuary.tsx",          changefreq: "monthly", priority: "0.7" },
   { path: "/great-barrier-reef-townsville",       source: "src/pages/GreatBarrierReef.tsx",            changefreq: "monthly", priority: "0.8" },
+  { path: "/reef-hq-townsville",                  source: "src/pages/ReefHQ.tsx",                      changefreq: "monthly", priority: "0.8" },
   { path: "/little-crystal-creek-townsville",     source: "src/pages/LittleCrystalCreek.tsx",          changefreq: "monthly", priority: "0.7" },
   { path: "/pallarenda-beach",                    source: "src/pages/PallarendaBeach.tsx",             changefreq: "monthly", priority: "0.6" },
   { path: "/rowes-bay",                           source: "src/pages/RowesBay.tsx",                    changefreq: "monthly", priority: "0.6" },

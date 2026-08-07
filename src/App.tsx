@@ -53,6 +53,7 @@ import CastleHill from "@/pages/CastleHill";
 import JezzineBarracks from "@/pages/JezzineBarracks";
 import LittleCrystalCreek from "@/pages/LittleCrystalCreek";
 import GreatBarrierReef from "@/pages/GreatBarrierReef";
+import ReefHQ from "@/pages/ReefHQ";
 import CowboysStadiumGuide from "@/pages/CowboysStadiumGuide";
 import NorthShoreTownsville from "@/pages/NorthShoreTownsville";
 import TownsvilleAirport from "@/pages/TownsvilleAirport";
@@ -122,6 +123,7 @@ const App = () => (
             <Route path="castle-hill" element={<CastleHill />} />
             <Route path="little-crystal-creek-townsville" element={<LittleCrystalCreek />} />
             <Route path="great-barrier-reef-townsville" element={<GreatBarrierReef />} />
+            <Route path="reef-hq-townsville" element={<ReefHQ />} />
             <Route path="townsville-airport" element={<TownsvilleAirport />} />
 
             {/* QUICK ACCESS ROUTES */}
