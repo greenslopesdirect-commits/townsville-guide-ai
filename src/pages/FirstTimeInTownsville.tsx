@@ -5,9 +5,7 @@ import GuideQuickFacts from "@/components/GuideQuickFacts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
-  Clock,
   Car,
-  Ship,
   MapPin,
   Sun,
   ArrowRight,
