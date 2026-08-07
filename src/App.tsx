@@ -46,6 +46,7 @@ import SunsetWalks from "@/pages/SunsetWalks";
 import PallarendaBeach from "@/pages/PallarendaBeach";
 import RowesBay from "@/pages/RowesBay";
 import TheStrand from "./pages/TheStrand";
+import Riverway from "./pages/Riverway";
 import TownsvilleWithKids from "@/pages/TownsvilleWithKids";
 import BillabongSanctuary from "@/pages/BillabongSanctuary";
 import CastleHill from "@/pages/CastleHill";
