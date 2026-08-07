@@ -175,6 +175,18 @@ export interface QuickFacts {
   bestWildlifeExperience?: string;
   /** Strongest full-day nature trip. */
   bestFullDayNatureTrip?: string;
+  /** Strongest overall dining area. */
+  bestDiningArea?: string;
+  /** Best area for waterfront dining. */
+  bestWaterfrontDining?: string;
+  /** Best area for breakfast. */
+  bestBreakfastArea?: string;
+  /** Best area for a nicer dinner. */
+  bestNicerDinner?: string;
+  /** Best casual dining style or option. */
+  bestCasualOption?: string;
+  /** Practical booking advice. */
+  bookingTip?: string;
   localVerdict?: string;
 }
 
@@ -573,6 +585,19 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     idealFirstVisit: "3–4 days",
     localVerdict:
       "Townsville is best when you mix the waterfront, views, island time and one or two local-style experiences.",
+  },
+  "/food": {
+    bestDiningArea: "Palmer Street or the CBD, depending on the meal",
+    bestWaterfrontDining: "The Strand / North Ward",
+    bestBreakfastArea: "The CBD and North Ward",
+    bestNicerDinner: "Palmer Street, with CBD alternatives",
+    bestWithKids: "The Strand",
+    bestWithoutCar: "The Strand, the CBD and Palmer Street",
+    bestCasualOption: "Cafés, pubs and waterfront dining",
+    bookingTip: "Consider booking popular weekend dinners",
+    mainConsideration: "Opening hours and menus change frequently",
+    localVerdict:
+      "Townsville has a strong mix of independent cafés, casual dining and destination restaurants — the trick is choosing the right area for the meal rather than driving across the city.",
   },
   "/nature": {
     bestOverall: "Magnetic Island",

@@ -1,456 +1,775 @@
 import { Helmet } from "react-helmet";
-import SEOHead from "@/components/SEOHead";
-import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft, UtensilsCrossed, Fish, Coffee, Wine, MapPin, Music } from "lucide-react";
-import ListingCard from "@/components/ListingCard";
+import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
+import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  AlertTriangle,
+  Baby,
+  Building2,
+  Car,
+  Coffee,
+  Coins,
+  MapPin,
+  Ship,
+  Sun,
+  Umbrella,
+  UtensilsCrossed,
+  Waves,
+} from "lucide-react";
 
-import LocalInsightCard from "@/components/LocalInsightCard";
-
-// Import images
 import jamImage from "@/assets/jam-corner-townsville.webp";
 import saltImage from "@/assets/a-touch-of-salt-restaurant-townsville.webp";
 import longboardImage from "@/assets/longboard-bar-and-grill-restaurant-townsville.webp";
-import cactusImage from "@/assets/cactus-jacks-restaurant-townsville.webp";
 import juliettesImage from "@/assets/Juliette's-Gelateria-townsville.webp";
 import cbarImage from "@/assets/cbar-townsville.webp";
 
+const SITE = "https://www.townsvilleguide.com.au";
+const PATH = "/food";
 
-const FoodDrink = () => {
-  const restaurants = [
-    {
-      title: "JAM Restaurant",
-      description: "One of Townsville's most awarded restaurants, known for creative dishes, local ingredients and a relaxed yet refined atmosphere on Palmer Street.",
-      image: jamImage,
-      tags: ["Fine Dining", "Breakfast", "Dinner"],
-      features: [
-        "Modern Australian menu",
-        "Seasonal local produce",
-        "Award-winning chef",
-        "Riverside location"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=JAM+Restaurant+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at JAM Restaurant.",
-      subtitle: "Modern Australian"
-    },
-    {
-      title: "A Touch of Salt",
-      description: "High-end modern dining on the riverfront with premium steaks, seafood and refined flavours. Perfect for special occasions.",
-      image: saltImage,
-      tags: ["Fine Dining", "Waterfront", "Date Night"],
-      features: [
-        "Multi-award-winning",
-        "River views outdoor seating",
-        "Premium steaks & seafood",
-        "Extensive wine list"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=A+Touch+of+Salt+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at A Touch of Salt.",
-      subtitle: "Award-Winning Dining"
-    },
-    {
-      title: "Longboard Bar & Grill",
-      description: "Laid-back beachfront dining right on The Strand with burgers, pizzas, cocktails and live music. Best for Sunday Sessions and acoustic Friday nights.",
-      image: longboardImage,
-      tags: ["Casual", "Waterfront", "Bar", "🎸 Live Music"],
-      features: [
-        "Direct beachfront location",
-        "Burgers and pizzas",
-        "Live acoustic music Fridays",
-        "Great sunset views & Sunday Sessions"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Longboard+Bar+Grill+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at Longboard Bar & Grill.",
-      subtitle: "Beachfront Casual",
-      badge: "🐾 Schnauzer Approved",
-      badgeNote: "Best for Sunday Sessions with your dog on the deck."
-    },
-    {
-      title: "Cactus Jack's",
-      description: "A Townsville institution — colourful Tex-Mex with big portions, great margaritas and a fun family atmosphere.",
-      image: cactusImage,
-      tags: ["Casual", "Family Friendly", "Bar"],
-      features: [
-        "Famous enchiladas",
-        "Great margaritas",
-        "Lively themed décor",
-        "Good value portions"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Cactus+Jack's+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at Cactus Jack's.",
-      subtitle: "Tex-Mex Favourite"
-    },
-    {
-      title: "Juliette's Gelateria",
-      description: "Iconic Strand spot for homemade gelato, coffee and light breakfast. Outdoor seating with ocean views — perfect after a beach walk.",
-      image: juliettesImage,
-      tags: ["Breakfast", "Dessert", "Coffee"],
-      features: [
-        "Homemade gelato",
-        "Beachfront location",
-        "Great coffee",
-        "Outdoor seating"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Juliette's+The+Strand+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at Juliette's Gelateria.",
-      subtitle: "Gelato & Coffee",
-       badge: "🐾 Schnauzer Approved",
-       badgeNote: "Shaded outdoor seating and water bowls make this a top pick for your post-walk cooldown with the pup. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
-       dogGuideLink: true
-    },
-    {
-      title: "Copper Bar & Grill",
-      description: "The newest addition to Palmer Street. Perfect for sophisticated sips and locally sourced seasonal plates in a modern contemporary setting.",
-      tags: ["Palmer Street", "New", "Cocktails"],
-      features: [
-        "Modern contemporary vibe",
-        "Locally sourced seasonal menu",
-        "Craft cocktails",
-        "Palmer Street location"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Copper+Bar+Grill+Palmer+Street+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at Copper Bar & Grill.",
-      subtitle: "Modern Contemporary"
-    },
-    {
-      title: "Watermark Restaurant",
-      description: "Stylish Strand restaurant with seafood platters, steaks and modern Australian dishes. Check for local soloists on weekends.",
-      tags: ["Fine Dining", "Waterfront", "Seafood", "🎸 Live Music"],
-      features: [
-        "The Strand location",
-        "Seafood platters",
-        "Live soloists on weekends",
-        "Great for groups"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Watermark+Restaurant+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at Watermark Restaurant.",
-      subtitle: "Seafood & Views"
-    },
-    {
-      title: "C Bar",
-      description: "Perched right on the Gregory Street headland on The Strand, offering an incredible open-air deck experience right on the water's edge. The ultimate spot for a relaxed outdoor lunch over the beach.",
-      image: cbarImage,
-      tags: ["Beachfront Deck", "Al Fresco Dining", "Lunch & Dinner", "Great Coffee"],
-      features: [
-        "Beautiful outdoor seating pulling in a steady coastal sea breeze",
-        "Modern bistro menu with fantastic lunch shares, fresh salads, and seafood",
-        "Fully licensed — perfect for a casual afternoon drink right by the sand",
-        "Duncan's Tip: Score a table on the outer edge of the deck for the direct sea breeze"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Cbar+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at C Bar Townsville.",
-      subtitle: "Cafe & Bistro"
-    },
-    {
-      title: "Rambutan Rooftop Bar",
-      description: "Rooftop dining in the CBD with wood-fired pizzas, cocktails and views of the stadium and Castle Hill. Vibey weekend atmosphere with rooftop views.",
-      tags: ["Bar", "Casual", "Rooftop", "🎧 DJ Sets"],
-      features: [
-        "Rooftop location",
-        "Wood-fired pizza",
-        "Castle Hill views",
-        "Weekend DJ sets"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Rambutan+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at Rambutan Rooftop Bar.",
-      subtitle: "Rooftop Dining"
-    },
-    {
-      title: "Hoi Polloi Café",
-      description: "Creative brunch spot with excellent coffee, inventive dishes and a hip atmosphere. A favourite among Townsville's café crowd.",
-      tags: ["Breakfast", "Coffee", "Brunch"],
-      features: [
-        "Creative brunch menu",
-        "Specialty coffee",
-        "Trendy atmosphere",
-        "Vegetarian options"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Hoi+Polloi+Cafe+Townsville",
-      aiPrompt: "Tell me about the menu, price range, and vibe at Hoi Polloi Café.",
-      subtitle: "Specialty Brunch",
-       badge: "🐾 Schnauzer Approved",
-       badgeNote: "Shaded outdoor seating and water bowls make this a top pick for your post-walk cooldown with the pup. Bringing the dog? Check our Full Dog-Friendly Guide for more pet-approved spots.",
-       dogGuideLink: true
-    },
-    {
-      title: "The Commonwealth Hotel",
-      description: "A classic South Townsville local known for live bands and a great beer garden atmosphere.",
-      tags: ["Pub", "🎸 Live Music", "Historic"],
-      features: [
-        "South Townsville location",
-        "Live bands regularly",
-        "Classic beer garden",
-        "Local favourite"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Commonwealth+Hotel+South+Townsville",
-      aiPrompt: "Tell me about the vibe and live music at The Commonwealth Hotel.",
-      subtitle: "Live Music Pub"
-    },
-    {
-      title: "The Mansfield",
-      description: "The heart of Townsville's live music scene. From local rock bands to touring acts, this is the place for late-night entertainment.",
-      tags: ["Live Bands", "Nightlife", "Pub"],
-      features: [
-        "CBD location",
-        "Live bands most weekends",
-        "Touring acts venue",
-        "Late-night entertainment"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Mansfield+Townsville",
-      aiPrompt: "Tell me about the live music scene at The Mansfield.",
-      subtitle: "Live Music Venue"
-    },
-    {
-      title: "Seaview Hotel",
-      description: "An iconic spot on The Strand. Great for a beer and live music overlooking the ocean on Sunday afternoons.",
-      tags: ["Waterfront", "🎸 Live Music", "Classic Pub"],
-      features: [
-        "The Strand location",
-        "Sunday afternoon live music",
-        "Ocean views",
-        "Classic pub atmosphere"
-      ],
-      mapUrl: "https://www.google.com/maps/search/?api=1&query=Seaview+Hotel+The+Strand+Townsville",
-      aiPrompt: "Tell me about the vibe and live music at the Seaview Hotel.",
-      subtitle: "Iconic Strand Pub"
-    }
-  ];
+const TITLE = "Best Places to Eat in Townsville | Local Food & Restaurant Guide";
+const DESCRIPTION =
+  "Discover where to eat in Townsville, from Strand cafés and Palmer Street restaurants to CBD breakfasts, family dining, local favourites and dinner spots.";
 
-  return (
-    <>
-      <SEOHead
-       title="Best Restaurants in Townsville | Local Dining Guide July 2026"
-       description="Discover Townsville's best restaurants, cafés and bars — from Palmer Street fine dining to beachfront casual spots on The Strand. A local's honest guide to where to eat."
-        canonical="https://www.townsvilleguide.com.au/food"
-      />
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "Townsville Restaurants & Cafés",
-            "description": "Best dining spots in Townsville",
-            "itemListElement": restaurants.map((item, index) => ({
-              "@type": "ListItem",
-              "position": index + 1,
-              "name": item.title
-            }))
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
+const EXAMPLES = [
+  {
+    name: "C Bar",
+    area: "The Strand — Gregory Street headland",
+    category: "Waterfront café and bistro",
+    text: "An open-air deck almost on the sand, and one of the easiest places to combine a Strand walk with a relaxed coffee, breakfast or lunch by the water.",
+    image: cbarImage,
+    map: "https://www.google.com/maps/search/?api=1&query=Cbar+Townsville",
+  },
+  {
+    name: "Longboard Bar & Grill",
+    area: "The Strand",
+    category: "Casual waterfront",
+    text: "Laid-back beachfront dining that suits groups, families and a casual evening meal near the water.",
+    image: longboardImage,
+    map: "https://www.google.com/maps/search/?api=1&query=Longboard+Bar+Grill+Townsville",
+  },
+  {
+    name: "Juliette's Gelateria",
+    area: "The Strand",
+    category: "Coffee, gelato and light bites",
+    text: "A long-standing Strand stop for gelato, coffee and something light, with shaded outdoor seating facing the water.",
+    image: juliettesImage,
+    map: "https://www.google.com/maps/search/?api=1&query=Juliette's+The+Strand+Townsville",
+  },
+  {
+    name: "Hoi Polloi",
+    area: "CBD",
+    category: "Breakfast and specialty coffee",
+    text: "A café-style option in the city centre that works well for breakfast or brunch before a CBD or museum morning.",
+    map: "https://www.google.com/maps/search/?api=1&query=Hoi+Polloi+Cafe+Townsville",
+  },
+  {
+    name: "Rambutan Rooftop",
+    area: "CBD",
+    category: "Rooftop bar and casual dinner",
+    text: "A rooftop setting in the city centre, useful when you want a drink and a casual meal with a view rather than a formal dinner.",
+    map: "https://www.google.com/maps/search/?api=1&query=Rambutan+Townsville",
+  },
+  {
+    name: "JAM Restaurant",
+    area: "Palmer Street",
+    category: "Destination dining",
+    text: "One of Townsville's better-known destination restaurants, and a common choice when visitors want a more considered meal on Palmer Street.",
+    image: jamImage,
+    map: "https://www.google.com/maps/search/?api=1&query=JAM+Restaurant+Townsville",
+  },
+  {
+    name: "A Touch of Salt",
+    area: "Palmer Street / riverfront",
+    category: "Nicer dinner",
+    text: "A long-established option for a nicer dinner near the river, popular for special occasions and couples.",
+    image: saltImage,
+    map: "https://www.google.com/maps/search/?api=1&query=A+Touch+of+Salt+Townsville",
+  },
+];
+
+const PATHWAYS = [
+  { label: "Waterfront", to: "/the-strand", name: "Strand / North Ward" },
+  { label: "Breakfast", to: "/things-to-do", name: "CBD / North Ward" },
+  { label: "Nice dinner", to: "/guides/magnetic-island-ferry", name: "Palmer Street / CBD" },
+  { label: "With kids", to: "/townsville-with-kids", name: "The Strand" },
+  { label: "Without a car", to: "/townsville-without-a-car", name: "Strand / CBD / Palmer Street" },
+  { label: "Before the ferry", to: "/guides/magnetic-island-ferry", name: "Palmer Street / CBD" },
+  { label: "Budget", to: "/guides/free-things", name: "Cafés, takeaway and markets" },
+  { label: "Coffee", to: "/local-tips", name: "CBD / North Ward" },
+  { label: "Hot weather", to: "/guides/beat-the-heat", name: "Shaded or indoor dining" },
+  { label: "Rain", to: "/guides/rainy-day-activities", name: "Cafés and indoor precincts" },
+];
+
+const RELATED = [
+  { name: "The Strand", to: "/the-strand", text: "The waterfront precinct most visitor meals sit near." },
+  { name: "First Time in Townsville", to: "/first-time-in-townsville", text: "Where to base yourself and how to plan a first visit." },
+  { name: "Townsville Without a Car", to: "/townsville-without-a-car", text: "Walkable areas, including most central dining." },
+  { name: "Townsville with Kids", to: "/townsville-with-kids", text: "Family-friendly areas and how to time meals." },
+  { name: "Things to Do", to: "/things-to-do", text: "The main activity hub to build meals around." },
+  { name: "Local Tips", to: "/local-tips", text: "Practical local habits, including everyday timing." },
+  { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip", text: "Plan the island day, then eat on your return." },
+  { name: "Magnetic Island Ferry", to: "/guides/magnetic-island-ferry", text: "Crossings and timings for pre- or post-ferry meals." },
+  { name: "Castle Hill", to: "/castle-hill", text: "Plan food before or after the lookout." },
+  { name: "Jezzine Barracks", to: "/jezzine-barracks", text: "Coastal heritage with North Ward dining nearby." },
+  { name: "Riverway", to: "/riverway", text: "Riverside parkland with food options nearby." },
+  { name: "Beat the Heat", to: "/guides/beat-the-heat", text: "How to time outdoor eating on hot days." },
+  { name: "Rainy Day Activities", to: "/guides/rainy-day-activities", text: "Indoor options when the weather changes plans." },
+];
+
+const MISTAKES = [
+  "Assuming every restaurant opens every day — many close one or two days a week.",
+  "Relying on old Google listings or blog posts for opening hours.",
+  "Expecting cafés to serve dinner; many Townsville cafés are daytime businesses.",
+  "Not checking kitchen closing times, which can be earlier than the venue's own closing time.",
+  "Driving across the city for every meal instead of eating near where you already are.",
+  "Treating Palmer Street as the only dining area in Townsville.",
+  "Overlooking the CBD for breakfast and coffee.",
+  "Heading to Paluma without checking current food options or taking water and supplies.",
+  "Not booking popular weekend dinners when you have a fixed plan or a group.",
+  "Assuming dietary requirements can always be handled on the spot without contacting the venue.",
+];
+
+const faqs = [
+  {
+    q: "What is the best area for restaurants in Townsville?",
+    a: "It depends on the meal. Palmer Street is the strongest single restaurant strip for dinner, the CBD is best for breakfast, coffee and independent restaurants, and The Strand and North Ward are best for waterfront and casual meals.",
+  },
+  {
+    q: "Where should first-time visitors eat in Townsville?",
+    a: "Keep most meals close to The Strand and North Ward, the CBD and Palmer Street. Those three areas cover breakfast through dinner and avoid unnecessary driving. See our first time in Townsville guide for how to plan the rest of the trip.",
+  },
+  {
+    q: "Where is the best waterfront dining in Townsville?",
+    a: "The Strand and North Ward. Venues along the foreshore and around the Gregory Street headland give you sea views, breeze and easy access from a Strand walk. It suits breakfast, casual lunch and evening meals.",
+  },
+  {
+    q: "Where is good for breakfast in Townsville?",
+    a: "The CBD and North Ward have the widest choice, with waterfront cafés along The Strand as the more scenic option. Many cafés operate mainly during daytime hours, so check current opening times before travelling.",
+  },
+  {
+    q: "Is Palmer Street good for restaurants?",
+    a: "Yes — it is the most concentrated restaurant precinct in Townsville and a common choice for dinner, couples and visitors staying in South Townsville. It is also convenient before or after a Magnetic Island ferry crossing.",
+  },
+  {
+    q: "Where can families eat in Townsville?",
+    a: "The Strand and North Ward suit families best, because meals can be combined with playgrounds, waterfront walking and swimming. Casual venues, cafés and pubs are generally the easiest with children.",
+  },
+  {
+    q: "Where can you eat in Townsville without a car?",
+    a: "The Strand, North Ward, the CBD and Palmer Street all work on foot from central accommodation, and Palmer Street is a short trip across the river from the CBD. Our without-a-car guide covers getting between them.",
+  },
+  {
+    q: "Do you need to book restaurants in Townsville?",
+    a: "Not always, but it is worth booking popular dinners on Friday and Saturday nights, during events, and for larger groups. Booking also confirms the venue is trading that day.",
+  },
+  {
+    q: "Are there vegetarian and vegan options in Townsville?",
+    a: "Yes. Many cafés and restaurants list vegetarian options and some offer vegan and gluten-free choices, but menus and kitchen practices change. For allergies or cross-contamination concerns, contact the venue directly before visiting.",
+  },
+  {
+    q: "What time do restaurants close in Townsville?",
+    a: "There is no single closing time. Cafés often finish earlier in the day than visitors expect, and kitchens can close before the venue itself. Check the venue's current hours on the day you plan to eat.",
+  },
+  {
+    q: "Where should you eat before or after Magnetic Island?",
+    a: "Palmer Street, South Townsville and the CBD are the most practical areas around the Breakwater ferry terminal. Check the ferry guide for crossing times so you are not rushing a meal.",
+  },
+  {
+    q: "Are there good cafés in Townsville?",
+    a: "Yes — the city has a solid independent café scene spread across the CBD, North Ward and inner suburbs such as West End, rather than one single coffee precinct.",
+  },
+];
+
+const FoodDrink = () => (
+  <>
+    <SEOHead title={TITLE} description={DESCRIPTION} canonical={PATH} ogType="article" />
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              headline: "Best Places to Eat in Townsville",
+              description: DESCRIPTION,
+              mainEntityOfPage: `${SITE}${PATH}`,
+              author: { "@type": "Person", name: "Duncan Ross" },
+              publisher: { "@type": "Organization", name: "Townsville Guide" },
+              dateModified: "2026-08-07",
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+                { "@type": "ListItem", position: 2, name: "Things to Do", item: `${SITE}/things-to-do` },
+                { "@type": "ListItem", position: 3, name: "Food in Townsville", item: `${SITE}${PATH}` },
+              ],
+            },
+            {
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
                 "@type": "Question",
-                "name": "What are the best restaurants in Townsville?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Townsville's best restaurants include JAM Restaurant on Palmer Street for creative modern Australian cuisine, A Touch of Salt for award-winning waterfront fine dining, Longboard Bar & Grill for casual beachfront dining on The Strand, Cactus Jack's for lively Tex-Mex, and Watermark Restaurant for seafood with ocean views."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Where's good for waterfront dining in Townsville?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The Strand is the top spot for waterfront dining in Townsville. Standouts include Longboard Bar & Grill, C Bar, Watermark Restaurant, Juliette's Gelateria, and the Seaview Hotel — all offering ocean views, sea breezes, and relaxed coastal atmosphere."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What's the best area for restaurants in Townsville?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Palmer Street is Townsville's premier dining precinct, home to fine-dining restaurants, cocktail bars, and riverside venues. The Strand offers beachfront casual dining, Flinders Street has CBD cafés and pubs, and Magnetic Island provides relaxed island eateries."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Where can I find live music and dining in Townsville?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The Seaview Hotel hosts iconic Sunday Sessions on The Strand, The Mansfield is the go-to venue for live bands in the CBD, Longboard Bar & Grill offers beachfront acoustic sets, and The Commonwealth Hotel features local acts in its beer garden."
-                }
-              }
-            ]
-          })}
-        </script>
-      </Helmet>
-      
-      <div className="min-h-screen bg-background">
-        <main className="pt-24 pb-16">
-          <div className="container mx-auto px-4 max-w-6xl">
-            {/* Back Button */}
-            <Link to="/">
-              <Button variant="ghost" className="mb-6 group" aria-label="Back to home">
-                <ArrowLeft className="mr-2 w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                Back to Home
-              </Button>
-            </Link>
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+          ],
+        })}
+      </script>
+    </Helmet>
 
-            {/* Hero Header */}
-            <header className="mb-12 text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                <UtensilsCrossed className="w-4 h-4" />
-                Dining Guide
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-                Food & Drink in Townsville
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Discover the best restaurants in Townsville, from Palmer Street fine dining to beachfront casual spots on The Strand — a local's guide to where to eat, drink, and catch live music.
-              </p>
-            </header>
+    <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
+      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+        <UtensilsCrossed className="w-4 h-4" aria-hidden="true" />
+        Food and dining hub
+      </div>
 
-            {/* Quick Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-              {[
-                { icon: <UtensilsCrossed className="w-5 h-5" />, label: "50+ Eateries", sublabel: "To explore" },
-                { icon: <Fish className="w-5 h-5" />, label: "Fresh Seafood", sublabel: "Local catch" },
-                { icon: <Coffee className="w-5 h-5" />, label: "Coffee Culture", sublabel: "Great cafés" },
-                { icon: <Wine className="w-5 h-5" />, label: "Waterfront Dining", sublabel: "Ocean views" }
-              ].map((stat, index) => (
-                <div key={index} className="text-center p-4 rounded-2xl bg-card border-2 hover:border-primary/30 transition-colors">
-                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary mb-2">
-                    {stat.icon}
-                  </div>
-                  <p className="font-semibold text-foreground">{stat.label}</p>
-                  <p className="text-sm text-muted-foreground">{stat.sublabel}</p>
-                </div>
-              ))}
-            </div>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">Best Places to Eat in Townsville</h1>
 
-            {/* Must-Visit & Monday/Sunday Warning */}
-            <LocalInsightCard title="Must-Visit & Opening Hours" variant="tip" className="mb-8">
-              <p>
-                <strong>Must-Visit:</strong> If you consider yourself a foodie, you cannot miss <strong>Otto's Market</strong>. 
-                It's the culinary soul of the city. <em>Monday Special: Check out the Gourmet Grocer for fresh artisan bread and the city's best deli selection.</em>
-              </p>
-              <p className="font-medium text-amber-700 dark:text-amber-300">
-                 ⚠️ <strong>The Monday & Sunday Check:</strong> <em>Mid-July 2026 Update: We're deep into the Dry Season now, and most CBD and Strand cafes are still at full capacity on weekends. While many boutique spots close early on Mondays, Cbar, Tide Cafe, Hoi Polloi, and The Quarters remain the local favorites for a guaranteed early-week caffeine hit or waterfront lunch.</em>
-               </p>
-            </LocalInsightCard>
+      <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+        Townsville does not have one single restaurant strip. Eating well here is mostly about
+        choosing the right area for the meal: the waterfront around{" "}
+        <Link to="/the-strand" className="text-primary hover:underline">
+          The Strand
+        </Link>{" "}
+        and North Ward, the CBD and Flinders Street, Palmer Street in South Townsville, and a
+        scattering of worthwhile suburban cafés, pubs and restaurants beyond them.
+      </p>
+      <p className="text-muted-foreground leading-relaxed mb-8">
+        This page is a planning hub rather than a directory. It covers where each area works best,
+        what to expect by meal type, how to eat well as a family, a couple, a budget traveller or
+        someone without a car, and what to check before you travel. Venues change often in a city
+        this size, so treat individual examples as starting points and confirm current hours
+        directly.
+      </p>
 
-            {/* Weekly Highlight */}
-             <div className="mb-12 p-6 rounded-2xl bg-card border-2 border-primary/20 space-y-3">
-                <h3 className="font-bold text-foreground text-lg">📅 July Winter Vibe</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  With humidity still low and the dry season in full swing, North Queensland's winter dining is at its absolute peak. It's the perfect weather for open-air deck dining at C Bar or a crisp Sunday morning coffee down City Lane before the crowd builds.
-                </p>
-             </div>
+      <GuideQuickFacts className="mb-10" />
 
-            {/* Coffee Culture */}
-            <LocalInsightCard title="☕ Coffee Culture" variant="insight" className="mb-12">
-              <p>
-                Looking for specialty beans? <strong>The Quarters</strong> and <strong>Pedlar Project</strong> are currently serving the best Melbourne-style roasts in the North.
-              </p>
-            </LocalInsightCard>
+      {/* Where should you eat */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">Where should you eat in Townsville?</h2>
+        <p className="text-muted-foreground mb-6">
+          Four broad areas cover almost every visitor meal. Pick by what you are already doing that
+          day.
+        </p>
 
-            {/* Restaurants Grid */}
-            <section className="mb-16">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <MapPin className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-                    Top Restaurants & Cafés
-                  </h2>
-                  <p className="text-muted-foreground">Local favourites and hidden gems</p>
-                </div>
-              </div>
-
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {restaurants.map((restaurant, index) => (
-                  <ListingCard key={index} {...restaurant} />
-                ))}
-              </div>
-            </section>
-
-            {/* Best Areas Section */}
-            <section className="mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-                Best Dining Areas
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                While major hubs like Palmer Street and The Strand hold the spotlight, fantastic local eateries, hidden cafes, and family pubs are scattered across thriving suburbs from Garbutt and West End out to Burdell.
-              </p>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="p-6 rounded-xl border-2 bg-card">
-                  <h3 className="font-semibold text-foreground mb-2">The Strand</h3>
-                  <p className="text-muted-foreground text-sm">Beachfront cafés, gelato, casual dining with ocean views.</p>
-                </div>
-                <div className="p-6 rounded-xl border-2 bg-card">
-                  <h3 className="font-semibold text-foreground mb-2">Palmer Street</h3>
-                  <p className="text-muted-foreground text-sm">Fine dining, cocktail bars, and upscale restaurants.</p>
-                </div>
-                <div className="p-6 rounded-xl border-2 bg-card">
-                  <h3 className="font-semibold text-foreground mb-2">Flinders Street</h3>
-                  <p className="text-muted-foreground text-sm">Cafés, pubs, and casual eateries in the CBD.</p>
-                </div>
-                <div className="p-6 rounded-xl border-2 bg-card">
-                  <h3 className="font-semibold text-foreground mb-2">Magnetic Island</h3>
-                  <p className="text-muted-foreground text-sm">Island cafés, beach bars, and relaxed dining.</p>
-                </div>
-              </div>
-            </section>
-
-            {/* Where to Catch a Beat */}
-            <section className="mb-16">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="p-2 rounded-lg bg-primary/10">
-                  <Music className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground">Where to Catch a Beat: Townsville's Best Live Music</h2>
-                </div>
-              </div>
-              <div className="p-6 rounded-2xl bg-card border-2 border-border/40 space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  From sunset acoustic sessions on The Strand to late-night rock in the CBD, here is where to find the best local vibes:
-                </p>
-
-                <div className="space-y-3">
-                  {[
-                    { name: "The Seaview Hotel", area: "The Strand", desc: "The iconic home of Sunday Sessions overlooking Cleveland Bay. Usually features acoustic soloists and duos starting at 2:00 PM." },
-                    { name: "The Mansfield", area: "CBD", desc: "Townsville's legendary venue for live bands. Perfect for late-night rock and touring acts." },
-                    { name: "Longboard Bar & Grill", area: "The Strand", desc: "Best for 'Beats on the Beach' with DJs and acoustic sets during the golden hour." },
-                    { name: "The Commonwealth Hotel", area: "South Townsville", desc: "A classic local pub with a massive beer garden hosting live local talent on weekends." },
-                    { name: "Tiny Mountain Brewery", area: "CBD", desc: "Relaxed afternoon vibes with local craft beer and acoustic sets." },
-                    { name: "Palmer Street Precinct", area: "Riverside", desc: "The place for sophisticated jazz or acoustic soloists while you dine." },
-                  ].map((venue) => (
-                    <div key={venue.name} className="flex gap-3 items-start p-3 rounded-xl bg-background/50">
-                      <Music className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      <div>
-                        <p className="text-sm font-semibold text-foreground">{venue.name} <span className="font-normal text-muted-foreground">({venue.area})</span></p>
-                        <p className="text-sm text-muted-foreground">{venue.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800/50 rounded-lg p-4 mt-2">
-                  <p className="text-sm text-amber-800 dark:text-amber-300">
-                    <strong>Local Tip:</strong> Most live music in the Ville kicks off from 4:00 PM on Fridays and 2:00 PM for Sunday Sessions. Check the venue socials for this week's specific lineup.
-                  </p>
-                </div>
-                 <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 mt-2">
-                    <p className="text-sm text-foreground">
-                      🏉 <strong>Cowboys Away This Week:</strong> The Cowboys are on the road (Gold Coast Titans, Thursday August 6), so it's a quieter week around Palmer Street. The next home game is Cowboys vs Wests Tigers at Queensland Country Bank Stadium on Saturday, August 29 — we strongly recommend booking your table at JAM, A Touch of Salt, or Copper Bar & Grill by mid-week to guarantee a spot for that one.
-                    </p>
-                  </div>
-              </div>
-            </section>
-
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <Waves className="w-5 h-5 text-primary" aria-hidden="true" /> The Strand / North Ward
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              The strongest area for waterfront atmosphere, breakfast, coffee, casual lunch, family
+              meals and relaxed evening dining. Venues sit along or just back from the foreshore, so
+              a meal slots naturally either side of a{" "}
+              <Link to="/the-strand" className="text-primary hover:underline">
+                Strand
+              </Link>{" "}
+              walk, a swim or playground time with{" "}
+              <Link to="/townsville-with-kids" className="text-primary hover:underline">
+                kids
+              </Link>
+              . Gregory Street and the northern end of the precinct hold much of the choice.
+            </p>
           </div>
-        </main>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <Building2 className="w-5 h-5 text-primary" aria-hidden="true" /> CBD / Flinders Street
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Best understood as pockets rather than one continuous restaurant strip: café clusters,
+              laneway spots, independent restaurants, bars and pubs spread across the city centre.
+              It is the easiest area for breakfast and specialty coffee, works well for lunch, and
+              suits visitors combining food with museums, galleries and CBD walking from our{" "}
+              <Link to="/things-to-do" className="text-primary hover:underline">
+                things to do
+              </Link>{" "}
+              hub. Dinner options exist, but fewer venues trade late than in a larger city.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <UtensilsCrossed className="w-5 h-5 text-primary" aria-hidden="true" /> Palmer Street /
+              South Townsville
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              The most concentrated restaurant precinct in the city, and the usual answer for
+              dinner, couples and a nicer meal. It suits anyone staying nearby, and it is practical
+              before or after a{" "}
+              <Link to="/guides/magnetic-island-ferry" className="text-primary hover:underline">
+                Magnetic Island ferry
+              </Link>{" "}
+              crossing or a full{" "}
+              <Link to="/guides/magnetic-island-day-trip" className="text-primary hover:underline">
+                island day trip
+              </Link>
+              . Weekend evenings are the busiest, so book if your plans are fixed.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2 flex items-center gap-2">
+              <Car className="w-5 h-5 text-primary" aria-hidden="true" /> Suburban and local spots
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Townsville also has good cafés, pubs and restaurants well outside the visitor areas —
+              West End, the inner north, and the growing suburbs further out. These are more
+              relevant if you have a car or a longer stay. On a short first visit, they are usually
+              not worth the drive; see our{" "}
+              <Link to="/local-tips" className="text-primary hover:underline">
+                local tips
+              </Link>{" "}
+              for how locals actually move around.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* By meal */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+          <Coffee className="w-6 h-6 text-primary" aria-hidden="true" /> Best places to eat by meal
+        </h2>
+
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold mb-1">Breakfast and coffee</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Start with North Ward and The Strand for a waterfront breakfast, or the CBD for the
+              widest café choice. Selected local cafés in the inner suburbs are worth it if you have
+              a car. Many Townsville cafés run primarily as daytime businesses, so plan breakfast and
+              brunch early rather than late.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-1">Casual lunch</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Cafés, pubs, waterfront venues and CBD lunch spots all work. Takeaway is a genuinely
+              good option here — a picnic on the foreshore, at{" "}
+              <Link to="/jezzine-barracks" className="text-primary hover:underline">
+                Jezzine Barracks
+              </Link>{" "}
+              or at{" "}
+              <Link to="/riverway" className="text-primary hover:underline">
+                Riverway
+              </Link>{" "}
+              often beats sitting indoors.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-1">Dinner</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Think in four categories rather than a ranking. Casual dinner suits pubs and family
+              venues across all areas. Waterfront dining sits on The Strand. A nicer dinner points to
+              Palmer Street or the CBD. A special occasion usually means Palmer Street or a
+              riverfront venue, booked ahead.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-1">Coffee</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Good coffee is spread across the CBD, North Ward and inner suburbs such as West End
+              rather than concentrated in one place. Roasters and cafés change, so ask locally rather
+              than chasing a single "best" cup.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Traveller type */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-6">Dining by traveller type</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold mb-1 flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-primary" aria-hidden="true" /> First-time visitors
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Keep most meals around The Strand and North Ward, the CBD and Palmer Street. It removes
+              most driving from the trip. See{" "}
+              <Link to="/first-time-in-townsville" className="text-primary hover:underline">
+                first time in Townsville
+              </Link>
+              .
+            </p>
+          </div>
+
+          <div className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold mb-1 flex items-center gap-2">
+              <Baby className="w-4 h-4 text-primary" aria-hidden="true" /> With kids
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              The Strand and North Ward first: casual venues, outdoor space and meals you can pair
+              with playgrounds, walking and swimming. See{" "}
+              <Link to="/townsville-with-kids" className="text-primary hover:underline">
+                Townsville with kids
+              </Link>
+              .
+            </p>
+          </div>
+
+          <div className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold mb-1 flex items-center gap-2">
+              <Car className="w-4 h-4 text-primary" aria-hidden="true" /> Without a car
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              The Strand, North Ward, the CBD and Palmer Street cover you on foot or with a short
+              trip. See{" "}
+              <Link to="/townsville-without-a-car" className="text-primary hover:underline">
+                Townsville without a car
+              </Link>
+              .
+            </p>
+          </div>
+
+          <div className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold mb-1 flex items-center gap-2">
+              <UtensilsCrossed className="w-4 h-4 text-primary" aria-hidden="true" /> Couples and a
+              nicer dinner
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Palmer Street is the usual starting point, with CBD restaurants and selected waterfront
+              venues as alternatives depending on the mood and the night.
+            </p>
+          </div>
+
+          <div className="rounded-xl border bg-card p-5 sm:col-span-2">
+            <h3 className="font-semibold mb-1 flex items-center gap-2">
+              <Coins className="w-4 h-4 text-primary" aria-hidden="true" /> Budget-conscious visitors
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Cafés, pub meals, takeaway, markets and a supermarket picnic on the foreshore all work
+              well here, and the weather usually cooperates. Pair them with{" "}
+              <Link to="/guides/free-things" className="text-primary hover:underline">
+                free things to do
+              </Link>{" "}
+              for a low-cost day.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Around attractions */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-6">Eating around major attractions</h2>
+        <div className="space-y-5">
+          <div>
+            <h3 className="font-semibold mb-1">The Strand</h3>
+            <p className="text-sm text-muted-foreground">
+              The widest convenient choice sits around North Ward, Gregory Street and the Strand
+              precinct itself. See the{" "}
+              <Link to="/the-strand" className="text-primary hover:underline">
+                Strand guide
+              </Link>
+              .
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-1">Castle Hill</h3>
+            <p className="text-sm text-muted-foreground">
+              There is no dining precinct at the summit, so plan food before or after the visit —
+              North Ward or the CBD are both close. See{" "}
+              <Link to="/castle-hill" className="text-primary hover:underline">
+                Castle Hill
+              </Link>
+              .
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-1">Jezzine Barracks</h3>
+            <p className="text-sm text-muted-foreground">
+              North Ward and Strand dining is a short walk away, which makes a coastal visit easy to
+              combine with breakfast or lunch. See{" "}
+              <Link to="/jezzine-barracks" className="text-primary hover:underline">
+                Jezzine Barracks
+              </Link>
+              .
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-1">Magnetic Island ferry</h3>
+            <p className="text-sm text-muted-foreground">
+              Palmer Street, South Townsville and the CBD are all practical before or after a
+              crossing. Check timings in the{" "}
+              <Link to="/guides/magnetic-island-ferry" className="text-primary hover:underline">
+                ferry guide
+              </Link>
+              .
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-1">Riverway</h3>
+            <p className="text-sm text-muted-foreground">
+              There are food and shopping options nearby, and a picnic beside the lagoons works well.
+              Operators in the precinct change, so check what is currently trading. See{" "}
+              <Link to="/riverway" className="text-primary hover:underline">
+                Riverway
+              </Link>
+              .
+            </p>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-1">Paluma</h3>
+            <p className="text-sm text-muted-foreground">
+              Do not assume food will be available on the day you visit. Check current options before
+              leaving and carry water and supplies. See the{" "}
+              <Link to="/guides/paluma-day-trip" className="text-primary hover:underline">
+                Paluma day trip guide
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Local food experiences */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-3">Local food experiences</h2>
+        <p className="text-muted-foreground leading-relaxed mb-3">
+          Some of the better food experiences here are not restaurant meals. Weekend markets,
+          bakeries, independent cafés, takeaway eaten on the foreshore and picnic-style meals all fit
+          the climate and the way the city is laid out. Tropical and North Queensland produce turns
+          up seasonally at markets and on local menus.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Cotters Market runs in the city centre and is the best known of the local markets, but
+          market schedules change with events, weather and the season — check the{" "}
+          <a
+            href="https://www.townsville.qld.gov.au/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            Townsville City Council
+          </a>{" "}
+          listings for current dates and times before planning a morning around one.
+        </p>
+      </section>
+
+      {/* Venue examples */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">A few current examples</h2>
+        <p className="text-muted-foreground mb-6">
+          A small cross-section rather than a ranking — one or two per category, so you have a
+          starting point in each area. Hours, menus and operators change, so check the venue directly
+          before travelling.
+        </p>
+        <div className="grid gap-5 sm:grid-cols-2">
+          {EXAMPLES.map((v) => (
+            <div key={v.name} className="rounded-xl border bg-card overflow-hidden">
+              {v.image && (
+                <img
+                  src={v.image}
+                  alt={`${v.name} in Townsville`}
+                  loading="lazy"
+                  className="w-full h-40 object-cover"
+                />
+              )}
+              <div className="p-5">
+                <h3 className="font-semibold text-foreground">{v.name}</h3>
+                <p className="text-xs uppercase tracking-wide text-primary mt-1">{v.category}</p>
+                <p className="text-sm text-muted-foreground mt-2">{v.text}</p>
+                <p className="text-xs text-muted-foreground mt-3 flex items-center gap-1">
+                  <MapPin className="w-3 h-3" aria-hidden="true" /> {v.area}
+                </p>
+                <a
+                  href={v.map}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline mt-2 inline-block"
+                >
+                  View on map
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Dietary */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-3">Dietary requirements</h2>
+        <p className="text-muted-foreground leading-relaxed">
+          Vegetarian options are common across cafés and restaurants, and vegan and gluten-free
+          choices appear on plenty of menus, particularly in the CBD and North Ward. Many Townsville
+          venues cater for common dietary requirements, but menus and kitchen practices change. For
+          allergies or cross-contamination concerns, contact the venue directly before visiting — do
+          not rely on a menu photo or a review.
+        </p>
+      </section>
+
+      {/* Booking and hours */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-3">Booking and opening-hour reality</h2>
+        <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+          <li>Opening days vary by venue, and many close at least one day a week.</li>
+          <li>Cafés often finish earlier in the day than visitors expect.</li>
+          <li>Kitchens can stop serving well before the venue itself closes.</li>
+          <li>Friday and Saturday evenings are the busiest, especially on Palmer Street.</li>
+          <li>Public holidays, events and stadium nights change trading and demand.</li>
+          <li>Check current hours on the day, and book when your plans are fixed or you have a group.</li>
+        </ul>
+      </section>
+
+      {/* Heat and rain */}
+      <section className="mb-12">
+        <div className="grid gap-4 sm:grid-cols-2">
+          <div className="rounded-xl border bg-card p-5">
+            <h2 className="text-lg font-semibold mb-1 flex items-center gap-2">
+              <Sun className="w-5 h-5 text-primary" aria-hidden="true" /> Eating in hot weather
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              Breakfast and early lunch are comfortable outdoors; shaded or air-conditioned venues
+              are the sensible choice through the middle of the day, and evening waterfront dining is
+              usually pleasant. Keep drinking water regardless. See{" "}
+              <Link to="/guides/beat-the-heat" className="text-primary hover:underline">
+                Beat the Heat
+              </Link>
+              .
+            </p>
+          </div>
+          <div className="rounded-xl border bg-card p-5">
+            <h2 className="text-lg font-semibold mb-1 flex items-center gap-2">
+              <Umbrella className="w-5 h-5 text-primary" aria-hidden="true" /> Eating when it rains
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              A long café stop, a proper lunch or an indoor precinct becomes one of the most flexible
+              wet-weather activities in the city. See{" "}
+              <Link to="/guides/rainy-day-activities" className="text-primary hover:underline">
+                Rainy Day Activities
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Combinations */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Food and activity combinations</h2>
+        <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+          <li>
+            Early{" "}
+            <Link to="/the-strand" className="text-primary hover:underline">
+              Strand
+            </Link>{" "}
+            walk, then breakfast on the waterfront.
+          </li>
+          <li>
+            <Link to="/jezzine-barracks" className="text-primary hover:underline">
+              Jezzine Barracks
+            </Link>{" "}
+            in the morning, then lunch in North Ward.
+          </li>
+          <li>
+            <Link to="/castle-hill" className="text-primary hover:underline">
+              Castle Hill
+            </Link>{" "}
+            at sunset, then dinner in the CBD or on Palmer Street.
+          </li>
+          <li>Museum and CBD wandering, broken up with lunch or coffee in the city centre.</li>
+          <li>
+            <Link to="/guides/magnetic-island-day-trip" className="text-primary hover:underline">
+              Magnetic Island
+            </Link>{" "}
+            return ferry, then dinner on Palmer Street.
+          </li>
+          <li>
+            <Link to="/riverway" className="text-primary hover:underline">
+              Riverway
+            </Link>{" "}
+            swimming, then a casual meal nearby.
+          </li>
+          <li>
+            <Link to="/pallarenda-beach" className="text-primary hover:underline">
+              Pallarenda
+            </Link>{" "}
+            with takeaway or a picnic packed beforehand.
+          </li>
+        </ul>
+      </section>
+
+      {/* Mistakes */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <AlertTriangle className="w-6 h-6 text-primary" aria-hidden="true" /> Common food-planning
+          mistakes
+        </h2>
+        <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+          {MISTAKES.map((m) => (
+            <li key={m}>{m}</li>
+          ))}
+        </ul>
+      </section>
+
+      {/* Pathways */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Plan by dining need</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {PATHWAYS.map((p) => (
+            <Link
+              key={p.label}
+              to={p.to}
+              className="group flex items-center justify-between gap-3 rounded-lg border bg-card px-4 py-3 hover:border-primary/40 transition-colors"
+            >
+              <span className="text-sm font-medium text-foreground">{p.label}</span>
+              <span className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                {p.name}
+              </span>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Townsville food questions</h2>
+        <Accordion type="single" collapsible className="w-full">
+          {faqs.map((f, i) => (
+            <AccordionItem key={f.q} value={`faq-${i}`}>
+              <AccordionTrigger className="text-left">{f.q}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
+
+      <div className="mb-12">
         <FoundingPartnerCTA />
       </div>
-    </>
-  );
-};
+
+      {/* Related */}
+      <section className="mb-4">
+        <h2 className="text-2xl font-bold mb-6">Related guides</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {RELATED.map((r) => (
+            <Link
+              key={r.to}
+              to={r.to}
+              className="group block rounded-xl border bg-card p-5 hover:border-primary/40 transition-colors"
+            >
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                {r.name}
+              </h3>
+              <p className="text-sm text-muted-foreground mt-1">{r.text}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </div>
+  </>
+);
 
 export default FoodDrink;

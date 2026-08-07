@@ -637,6 +637,27 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/food": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local knowledge of Townsville's main dining areas with current venue and visitor information. Restaurant hours, menus and operators can change, so check directly before travelling.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — markets and events",
+        url: "https://www.townsville.qld.gov.au/",
+      },
+      {
+        name: "Townsville Enterprise — visitor information",
+        url: "https://www.townsvillenorthqueensland.com.au/",
+      },
+      {
+        name: "Cotters Market (Townsville City)",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/markets",
+      },
+    ],
+  },
   "/nature": {
     visitStatus: "partially-firsthand",
     visitNote:
