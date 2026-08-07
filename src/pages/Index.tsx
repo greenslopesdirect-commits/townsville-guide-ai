@@ -15,6 +15,7 @@ import {
   WeatherAndWater,
   WhatsOn,
   PracticalResources,
+  ForLocals,
 } from "@/components/HomeHubs";
 import VideoSection from "@/components/VideoSection";
 import AboutSection from "@/components/AboutSection";
