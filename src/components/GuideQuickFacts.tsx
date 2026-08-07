@@ -73,6 +73,11 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(Flame, "Hardest activity in heat", data.hardestInHeat);
   push(Baby, "Best family approach", data.bestFamilyApproach);
   push(AlertTriangle, "Main risk", data.mainRisk);
+  push(Building2, "Best indoor attraction", data.bestIndoorAttraction);
+  push(Coffee, "Best food option", data.bestFoodOption);
+  push(Umbrella, "Best light-rain option", data.bestLightRainOption);
+  push(AlertTriangle, "Avoid in heavy rain", data.avoidInHeavyRain);
+  push(AlertTriangle, "Main consideration", data.mainConsideration);
   push(CloudSun, "Check before heading out", data.checkBeforeHeadingOut);
   push(PhoneCall, "Emergency", data.emergency);
   push(AlertTriangle, "Main challenge", data.mainChallenge);
