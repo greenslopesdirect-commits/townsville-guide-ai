@@ -18,7 +18,6 @@ import {
   HeartPulse,
   Languages,
   PawPrint,
-  Phone,
   PhoneCall,
   Waves,
   Zap,
@@ -498,10 +497,7 @@ const UsefulContacts = () => (
             <Link key={r.to} to={r.to} className="group block">
               <Card className="h-full transition-shadow hover:shadow-md">
                 <CardContent className="p-5">
-                  <h3 className="font-semibold text-foreground group-hover:text-primary flex items-center gap-2">
-                    <Phone className="w-0 h-0" aria-hidden="true" />
-                    {r.name}
-                  </h3>
+                  <h3 className="font-semibold text-foreground group-hover:text-primary">{r.name}</h3>
                   <p className="text-sm text-muted-foreground mt-1">{r.text}</p>
                 </CardContent>
               </Card>
