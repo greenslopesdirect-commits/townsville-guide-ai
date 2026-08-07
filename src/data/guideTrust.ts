@@ -424,6 +424,35 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/dog-friendly": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local dog-walking knowledge with current information from Townsville City Council and official Queensland animal and wildlife safety sources.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — Dog off-leash areas",
+        url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs/dog-off-leash-areas",
+      },
+      {
+        name: "Townsville City Council — Responsible pet ownership and dog rules",
+        url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs",
+      },
+      {
+        name: "Queensland Government — Be Crocwise",
+        url: "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise",
+      },
+      {
+        name: "Bureau of Meteorology — Queensland tide predictions",
+        url: "http://www.bom.gov.au/australia/tides/",
+      },
+      {
+        name: "Townsville Disaster Dashboard",
+        url: "https://disaster.townsville.qld.gov.au/",
+      },
+    ],
+  },
   "/the-strand": {
     visitStatus: "personally-visited",
     lastChecked: "5 August 2026",
