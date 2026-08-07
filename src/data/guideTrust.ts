@@ -424,6 +424,21 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/useful-contacts": {
+    visitStatus: "research-based",
+    visitNote:
+      "This page uses current contact information from Townsville City Council, Queensland Health, Queensland Police, transport authorities and official emergency services.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      { name: "Townsville City Council", url: "https://www.townsville.qld.gov.au/" },
+      { name: "Townsville Disaster Dashboard", url: "https://disaster.townsville.qld.gov.au/" },
+      { name: "Queensland Health", url: "https://www.health.qld.gov.au/" },
+      { name: "Queensland Police Service", url: "https://www.police.qld.gov.au/" },
+      { name: "Queensland Traffic", url: "https://qldtraffic.qld.gov.au/" },
+      { name: "Bureau of Meteorology — Queensland warnings", url: "http://www.bom.gov.au/qld/warnings/" },
+    ],
+  },
   "/reef-hq-townsville": {
     visitStatus: "research-based",
     visitNote:
@@ -628,6 +643,7 @@ export const GUIDE_PATHS: string[] = [
   "/little-crystal-creek-townsville",
   "/great-barrier-reef-townsville",
   "/reef-hq-townsville",
+  "/useful-contacts",
   "/townsville-airport",
   "/dog-friendly",
   "/shopping",

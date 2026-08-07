@@ -72,6 +72,24 @@ export interface QuickFacts {
   mainAttraction?: string;
   /** Public transport access summary. */
   publicTransport?: string;
+  /** Non-emergency police contact. */
+  nonEmergencyPolice?: string;
+  /** State Emergency Service contact. */
+  ses?: string;
+  /** Non-emergency health advice contact. */
+  healthAdvice?: string;
+  /** Local council contact. */
+  council?: string;
+  /** Road conditions contact. */
+  roadConditions?: string;
+  /** Disaster and severe weather information source. */
+  disasterInformation?: string;
+  /** Interpreting service contact. */
+  interpreter?: string;
+  /** Main hospital. */
+  hospital?: string;
+  /** Headline practical advice line. */
+  mainAdvice?: string;
   /** Location summary for an attraction. */
   location?: string;
   /** Current open/closed status of an attraction. */
@@ -382,6 +400,18 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     bestTimeToVisit: "Morning or late afternoon for cooler conditions",
     localVerdict:
       "The Strand is one of the easiest places for first-time visitors to experience Townsville's waterfront, especially when combined with Jezzine Barracks.",
+  },
+  "/useful-contacts": {
+    emergency: "000",
+    nonEmergencyPolice: "Policelink 13 14 44",
+    ses: "13 25 00",
+    healthAdvice: "13 HEALTH — 13 43 25 84",
+    council: "Townsville Council 13 48 10",
+    roadConditions: "Queensland Traffic — 13 19 40",
+    disasterInformation: "Townsville Disaster Dashboard",
+    interpreter: "TIS National — 13 14 50",
+    hospital: "Townsville University Hospital",
+    mainAdvice: "Use official live sources during emergencies or severe weather",
   },
   "/reef-hq-townsville": {
     currentStatus: "Closed for redevelopment",

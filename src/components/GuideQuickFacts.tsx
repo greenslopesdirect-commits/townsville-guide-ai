@@ -29,6 +29,8 @@ import {
   ShieldAlert,
   Shirt,
   Info,
+  HeartPulse,
+  Languages,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -52,6 +54,16 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
     if (value && value.trim()) rows.push({ icon, label, value: value.trim() });
   };
 
+  push(PhoneCall, "Emergency", data.emergency);
+  push(PhoneCall, "Non-emergency police", data.nonEmergencyPolice);
+  push(PhoneCall, "SES", data.ses);
+  push(HeartPulse, "Health advice", data.healthAdvice);
+  push(Building2, "Townsville Council", data.council);
+  push(Car, "Road conditions", data.roadConditions);
+  push(CloudSun, "Disaster information", data.disasterInformation);
+  push(Languages, "Interpreter", data.interpreter);
+  push(HeartPulse, "Hospital", data.hospital);
+  push(Info, "Main advice", data.mainAdvice);
   push(AlertTriangle, "Current status", data.currentStatus);
   push(Building2, "Current name", data.currentName);
   push(Info, "Former name", data.formerName);
@@ -112,7 +124,6 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(AlertTriangle, "Avoid in heavy rain", data.avoidInHeavyRain);
   push(AlertTriangle, "Main consideration", data.mainConsideration);
   push(CloudSun, "Check before heading out", data.checkBeforeHeadingOut);
-  push(PhoneCall, "Emergency", data.emergency);
   push(AlertTriangle, "Main challenge", data.mainChallenge);
   push(Sparkles, "Main attraction", data.mainAttraction);
   push(Clock, "Time needed", data.timeNeeded);
