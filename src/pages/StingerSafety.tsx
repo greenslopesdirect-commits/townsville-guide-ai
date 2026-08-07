@@ -1,11 +1,8 @@
-import React from "react";
 import { Helmet } from "react-helmet";
-import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
-import AirportTransferCard from "@/components/AirportTransferCard";
-import { Link } from "react-router-dom";
-import { Dog } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Accordion,
   AccordionContent,
@@ -13,246 +10,639 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+  AlertTriangle,
+  ArrowRight,
+  Baby,
+  CloudRain,
+  ExternalLink,
+  Flag,
+  LifeBuoy,
+  PhoneCall,
+  ShieldAlert,
+  Shirt,
+  Ship,
+  Waves,
+} from "lucide-react";
+
+const SITE = "https://www.townsvilleguide.com.au";
+const PATH = "/guides/stinger-safety";
+
+const TITLE = "Marine Stinger Safety in Townsville | Swimming & Jellyfish Guide";
+const DESCRIPTION =
+  "Learn how to swim more safely in Townsville during marine stinger season, including stinger nets, suits, beach advice, first aid and emergency guidance.";
+
+const COUNCIL_BEACHES =
+  "https://www.townsville.qld.gov.au/facilities-and-recreation/beaches-parks-and-playgrounds";
+const QLD_STINGERS =
+  "https://www.qld.gov.au/health/staying-healthy/environmental/marine-stingers";
+const POISONS = "https://www.childrens.health.qld.gov.au/poisons-information-centre";
+const BEACHSAFE = "https://beachsafe.org.au/";
+const CROCWISE =
+  "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise";
+const BOM = "http://www.bom.gov.au/qld/warnings/";
+const DASHBOARD = "https://disaster.townsville.qld.gov.au/";
+
+const MISTAKES = [
+  "Assuming stinger season is the only time marine stingers can occur",
+  "Treating stinger nets as complete protection",
+  "Swimming next to an enclosure rather than inside it",
+  "Ignoring the red-and-yellow flags",
+  "Swimming at an unpatrolled beach because the water looks calm",
+  "Not wearing protective clothing during higher-risk periods",
+  "Touching jellyfish washed onto the beach",
+  "Using vinegar indiscriminately for every jellyfish sting",
+  "Assuming Magnetic Island beaches are automatically safer",
+  "Relying on an old blog post for current stinger-net status",
+  "Ignoring beach closures after severe weather",
+];
+
+const RELATED = [
+  { name: "Townsville Beaches", to: "/beaches", text: "Where to swim, patrolled areas and beach planning." },
+  { name: "The Strand", to: "/the-strand", text: "Townsville's main patrolled foreshore and swimming precinct." },
+  { name: "Townsville with Kids", to: "/townsville-with-kids", text: "Family planning, including safer swimming options." },
+  { name: "First Time in Townsville", to: "/first-time-in-townsville", text: "Orientation and trip planning for first visits." },
+  { name: "Beat the Heat", to: "/guides/beat-the-heat", text: "Planning outdoor and water time around tropical heat." },
+  { name: "Rainy Day Activities", to: "/guides/rainy-day-activities", text: "Alternatives when weather closes beaches." },
+  { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip", text: "Planning a day on the island, including bays and beaches." },
+  { name: "Magnetic Island Ferry", to: "/guides/magnetic-island-ferry", text: "Getting across, timetables and practicalities." },
+  { name: "Useful Contacts", to: "/useful-contacts", text: "Emergency, Council and official contact details." },
+];
+
+const faqs = [
+  {
+    q: "When is stinger season in Townsville?",
+    a: "Townsville's typical marine stinger season runs from November to May, when tropical waters are warmest. This is a practical seasonal guide rather than a guarantee, so always check current beach signs and Townsville City Council beach information before swimming.",
+  },
+  {
+    q: "Are marine stingers present outside stinger season?",
+    a: "Yes, they can be. The November to May window describes when risk is generally highest, not a period outside which dangerous marine stingers cannot occur. Treat current signs, lifeguard advice and official Council information as the source of truth all year round.",
+  },
+  {
+    q: "Which Townsville beaches have stinger nets?",
+    a: "Selected Townsville and Magnetic Island beaches may have seasonal stinger enclosures. Installation and removal dates change from year to year and with weather events, so check current Townsville City Council beach information rather than relying on a list published online.",
+  },
+  {
+    q: "Are stinger nets completely safe?",
+    a: "No. Stinger nets reduce risk but do not eliminate it. Small jellyfish can pass through or around an enclosure. Stay well inside the designated area, avoid sitting on or swimming against the net, follow lifeguard advice, and consider a full-body stinger suit as an extra layer of protection.",
+  },
+  {
+    q: "Should I wear a stinger suit in Townsville?",
+    a: "A full-body Lycra-style stinger suit is commonly recommended for swimming in tropical North Queensland, particularly during the warmer, higher-risk months. It reduces exposed skin, but it does not remove all risk, and you still need sunscreen on any skin left uncovered.",
+  },
+  {
+    q: "Can you swim at The Strand during stinger season?",
+    a: "Many visitors do swim at The Strand during stinger season, using patrolled areas, swimming between the red-and-yellow flags and any seasonal enclosure that is in place, often with a stinger suit. Check current signs and Council beach information on the day, and follow lifeguard directions.",
+  },
+  {
+    q: "What should I do if someone is stung by a jellyfish?",
+    a: "For a suspected serious tropical jellyfish sting, call Triple Zero (000) immediately and follow the instructions given by emergency services. Use vinegar where current Queensland guidance recommends it for dangerous tropical jellyfish stings. If the person is unresponsive and not breathing normally, begin CPR. Do not delay calling for help.",
+  },
+  {
+    q: "Should vinegar be used on jellyfish stings?",
+    a: "Not for every sting. Vinegar is recommended by current Queensland guidance for suspected dangerous tropical jellyfish stings such as box jellyfish, but it should not be used for a suspected bluebottle sting, where first aid differs. Follow current Queensland Health and Poisons Information Centre guidance, and call Triple Zero (000) if the sting is serious.",
+  },
+  {
+    q: "What are the symptoms of an Irukandji sting?",
+    a: "The initial sting may seem relatively minor, with significant symptoms developing afterwards. Reported symptoms can include severe pain, restlessness, sweating, nausea, vomiting and worsening systemic symptoms. Seek urgent medical assessment if an Irukandji sting is suspected or symptoms become severe.",
+  },
+  {
+    q: "What should I do for a suspected box jellyfish sting?",
+    a: "Call Triple Zero (000) immediately for a suspected serious box jellyfish sting, particularly if the person collapses, has breathing difficulty, becomes unconscious or develops severe systemic symptoms. Follow emergency-services instructions, use vinegar where current Queensland guidance recommends it, and begin CPR if the person is unresponsive and not breathing normally.",
+  },
+  {
+    q: "Can children swim during stinger season?",
+    a: "Children can swim during stinger season when families use designated or patrolled swimming areas, supervise closely, use protective clothing during higher-risk months and follow current beach signs. Teach children not to touch jellyfish or tentacles washed onto the beach, because washed-up marine stingers may still sting.",
+  },
+  {
+    q: "Do Magnetic Island beaches have marine stingers?",
+    a: "Marine-stinger considerations apply on Magnetic Island as they do on the mainland. Selected island beaches may have seasonal enclosures, but not every bay has the same swimming setup or patrol arrangement, so check current local signs and official beach information before entering the water.",
+  },
+];
 
 const StingerSafety = () => (
-  <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
-    <SEOHead
-      title="Is it Safe to Swim in Townsville Today? | 2026 Stinger Guide"
-      description="Learn when stinger season runs in Townsville, where stinger nets are located, and how to swim safely in North Queensland. Updated August 3, 2026."
-      canonical="https://www.townsvilleguide.com.au/guides/stinger-safety"
-    />
+  <>
+    <SEOHead title={TITLE} description={DESCRIPTION} canonical={`${SITE}${PATH}`} ogType="article" />
     <Helmet>
-      <script type="application/ld+json">{JSON.stringify({
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
-              { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://www.townsvilleguide.com.au/" },
-              { "@type": "ListItem", "position": 3, "name": "Stinger Safety", "item": "https://www.townsvilleguide.com.au/guides/stinger-safety/" }
-            ]
-          },
-          {
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              headline: "Marine Stinger Safety in Townsville: What Visitors Need to Know",
+              description: DESCRIPTION,
+              mainEntityOfPage: `${SITE}${PATH}`,
+              author: { "@type": "Person", name: "Duncan Ross" },
+              publisher: { "@type": "Organization", name: "Townsville Guide" },
+              dateModified: "2026-08-07",
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+                { "@type": "ListItem", position: 2, name: "Beaches", item: `${SITE}/beaches` },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Marine Stinger Safety",
+                  item: `${SITE}${PATH}`,
+                },
+              ],
+            },
+            {
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
                 "@type": "Question",
-                "name": "Can you swim in Townsville during stinger season?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes. Swim only within stinger nets or wear a full stinger suit when swimming outside enclosures."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "What should I do if stung by a jellyfish?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Apply vinegar immediately and call 000 if symptoms are severe."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Are stingers present all year?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "No. They are most common between November and May."
-                }
-              }
-            ]
-          }
-        ]
-      })}</script>
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+          ],
+        })}
+      </script>
     </Helmet>
 
-    <h1 className="text-4xl font-bold mb-4 text-center">August 3, 2026 Stinger Update</h1>
-    <p className="text-center text-sm text-muted-foreground mb-6">Updated: August 3, 2026</p>
+    <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        Marine Stinger Safety in Townsville: What Visitors Need to Know
+      </h1>
 
-    <GuideQuickFacts className="mb-8" />
-
-    {/* Current Status Banner */}
-    <div className="bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-400 dark:border-emerald-600 rounded-xl p-6 mb-8">
-      <h2 className="text-2xl font-bold text-emerald-800 dark:text-emerald-300 mb-2">🌊 August 3 Status: Stinger Season Has Ended — Nets Removed for the Dry Season</h2>
-      <p className="text-emerald-700 dark:text-emerald-400 leading-relaxed">
-        Townsville City Council confirmed on 27 May 2026 that the marine stinger enclosures at The Strand, Pallarenda, Magnetic Island (Picnic Bay and Horseshoe Bay) and Balgal Beach have been physically removed for the season, after weeks of clear net drags confirmed no stinger presence. This is standard annual practice — the nets are reinstalled each November when the next stinger season begins. Open-water swimming is no longer considered high-risk for box jellyfish or Irukandji. As always, follow beach flags, lifeguard directions and general marine and crocodile advisories.
-      </p>
-    </div>
-
-    <img src="/summer-safety-guide.webp" alt="Stinger net floats" width={1600} height={900} fetchPriority="high" loading="eager" decoding="async" className="rounded-xl shadow-lg w-full h-[400px] md:h-[500px] object-cover object-bottom mb-8" />
-    <div className="space-y-6 mb-8 text-red-900 font-medium text-left">
-      <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>1. Swim in the Nets:</strong> Use the patrolled enclosures at The Strand and Pallarenda.</CardContent></Card>
-      <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>2. Stinger Suits:</strong> Wear Lycra suits when swimming in open bays at Magnetic Island.</CardContent></Card>
-      <Card className="bg-red-50 border-red-200"><CardContent className="p-6"><strong>3. Vinegar:</strong> Look for the vinegar stands at the beach. If stung, douse and call 000.</CardContent></Card>
-    </div>
-    <div className="bg-orange-50 border-2 border-orange-200 rounded-xl p-6 mb-8">
-      <h4 className="font-bold text-xl mb-2 text-orange-700">Duncan's Local Pro-Tip</h4>
-      <p>"Stinger season has wound up and council pulled the nets on 27 May after weeks of clear net drags — it's the absolute best time of year to enjoy our beaches. They'll be back in November for the next season. Always swim between the red and yellow flags where the lifeguards can keep an eye on you."</p>
-    </div>
-
-    {/* Stinger Safety for Dogs */}
-    <div className="bg-[#00A693]/10 border-2 border-[#00A693]/30 rounded-xl p-6 mb-8">
-      <h3 className="font-bold text-xl mb-3 text-[#00A693]">🐾 Can Dogs Get Stung?</h3>
-      <p className="text-muted-foreground leading-relaxed mb-3">
-        Yes. While a dog's fur provides some protection, their paws, nose, and belly are vulnerable.
-      </p>
-      <div className="bg-[#00A693]/10 rounded-lg p-4">
-        <p className="text-sm font-medium text-foreground">
-          🐾 <strong>Dry Season Update:</strong> With the stinger season wrapped up and the nets removed on 27 May 2026, deep-water swimming is safe again for your dogs at northern beaches like Saunders, Toolakea, and Bushland Beach. Enjoy those beautiful, crisp morning beach runs!
+      <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
+        <p>
+          Townsville sits in tropical North Queensland, where marine stinger risk is highest during
+          the warmer months. The typical local stinger season runs from{" "}
+          <strong className="text-foreground">November to May</strong>, although marine stingers can
+          still occur outside that period.
+        </p>
+        <p>
+          The practical answer for most visitors is simple: use designated or patrolled swimming
+          areas where they are available, swim between the red-and-yellow flags, and treat current
+          beach signs, lifeguard advice and{" "}
+          <a href={COUNCIL_BEACHES} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            Townsville City Council beach information
+          </a>{" "}
+          as the final word on the day you swim.
+        </p>
+        <p>
+          None of this makes Townsville an unsafe place to visit. People swim here year round. It
+          simply means swimming in the tropics comes with a short list of habits worth learning
+          before your first beach day — see our{" "}
+          <Link to="/beaches" className="text-primary hover:underline">
+            Townsville beaches guide
+          </Link>{" "}
+          and{" "}
+          <Link to="/first-time-in-townsville" className="text-primary hover:underline">
+            first-time visitor guide
+          </Link>{" "}
+          for the wider picture.
         </p>
       </div>
-    </div>
 
-    {/* Dog Beach Call-out */}
-    <div className="bg-blue-50 dark:bg-blue-950/30 border-2 border-blue-300 dark:border-blue-700 rounded-xl p-6 mb-8">
-      <h3 className="font-bold text-xl mb-3 text-blue-800 dark:text-blue-300 flex items-center gap-2">
-        <Dog className="w-5 h-5" />
-        🐕 Taking the Dog to the Beach?
-      </h3>
-      <p className="text-blue-700 dark:text-blue-400 leading-relaxed">
-        While stingers aren't as common in the shallow wash, always keep your dogs out of the deep water during stinger season (Nov–May). See our{" "}
-        <Link to="/dog-friendly" className="font-semibold text-blue-800 dark:text-blue-300 hover:underline">
-          Dog-Friendly Beach Guide
-        </Link>{" "}
-        for the safest off-leash spots like Pallarenda.
-      </p>
-    </div>
+      <GuideQuickFacts className="mb-10" />
 
-    {/* Dry Season Confirmation */}
-    <div className="bg-sky-50 dark:bg-sky-950/30 border border-sky-300 dark:border-sky-700 rounded-xl p-6 mb-12">
-      <h4 className="font-bold text-lg mb-2 text-sky-800 dark:text-sky-300">☀️ Dry Season Swimming</h4>
-      <p className="text-sky-700 dark:text-sky-400 leading-relaxed">
-        The 2025/26 stinger season has concluded. Townsville City Council physically removed the beach enclosures at The Strand, Pallarenda, Magnetic Island and Balgal Beach on 27 May 2026 after weeks of clear net drags confirmed no stinger presence. Nets will be reinstalled in November 2026 for the next season. As always, follow beach flags, lifeguard directions, and any local signage.
-      </p>
-    </div>
+      <img
+        src="/summer-safety-guide.webp"
+        alt="Stinger net floats marking a seasonal swimming enclosure on a Townsville beach"
+        width={1600}
+        height={900}
+        loading="eager"
+        decoding="async"
+        className="rounded-xl shadow-lg w-full h-[280px] md:h-[420px] object-cover object-bottom mb-10"
+      />
 
-    {/* Section 1 */}
-    <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-4">When Is Stinger Season in Townsville?</h2>
-      <p className="mb-4 text-muted-foreground leading-relaxed">
-        Stinger season in Townsville typically runs from November to May. The 2025/26 season officially concluded and Townsville City Council removed all beach enclosures on 27 May 2026 after weeks of clear net drags confirmed no stinger presence — this is standard annual practice. The nets will return in November 2026 for the next season.
-      </p>
-      <p className="mb-4 text-muted-foreground leading-relaxed font-semibold">
-        Swimming is considered safe when using patrolled stinger enclosures at The Strand, Pallarenda, and other netted beaches. Always check local signage or Surf Life Saving updates before entering the water.
-      </p>
-    </section>
+      {/* Emergency block */}
+      <section className="mb-12">
+        <div className="rounded-xl border-2 border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950/30 p-6">
+          <h2 className="text-2xl font-bold text-red-800 dark:text-red-300 mb-3 flex items-center gap-2">
+            <PhoneCall className="w-6 h-6" aria-hidden="true" />
+            In an emergency
+          </h2>
+          <p className="text-red-800/90 dark:text-red-200 leading-relaxed">
+            Call <strong>Triple Zero (000)</strong> immediately for a suspected serious marine sting,
+            particularly if the person collapses, has breathing difficulty, becomes unconscious or
+            develops severe symptoms. Follow the instructions given by emergency services. If the
+            person is unresponsive and not breathing normally, begin CPR.
+          </p>
+        </div>
+      </section>
 
-    {/* Section 2 */}
-    <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-4">Townsville &amp; Magnetic Island Stinger Net Locations</h2>
-      <div className="overflow-x-auto rounded-lg border">
-        <Table>
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-[220px]">Beach Location</TableHead>
-              <TableHead>Exact Enclosure Details</TableHead>
-              <TableHead className="w-[180px]">Safety Status</TableHead>
-            </TableRow>
-          </TableHeader>
-          <TableBody>
-            <TableRow>
-              <TableCell className="font-medium">The Strand (North)</TableCell>
-              <TableCell>Near the Rockpool and Jezzine Barracks end.</TableCell>
-              <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">The Strand (South)</TableCell>
-              <TableCell>Located directly opposite the Water Park and surf club precinct.</TableCell>
-              <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">Pallarenda Beach</TableCell>
-              <TableCell>Main enclosure located directly off the main foreshore parking area.</TableCell>
-              <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">Picnic Bay (Magnetic Island)</TableCell>
-              <TableCell>Enclosure situated right next to the historic Picnic Bay jetty.</TableCell>
-              <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-              </TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell className="font-medium">Horseshoe Bay (Magnetic Island)</TableCell>
-              <TableCell>Positioned in the center of the main bay swimming zone.</TableCell>
-              <TableCell>
-                <span className="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300">Removed for dry season (returns Nov 2026)</span>
-              </TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      </div>
-      <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-        Note: While the cooler dry season lowers stinger risks, swimming inside these dedicated enclosures is always recommended for absolute peace of mind. If nets are still in place, treat them as a comfort option rather than an active warning.
-      </p>
-    </section>
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">What is stinger season?</h2>
+        <div className="space-y-3 text-muted-foreground leading-relaxed">
+          <p>
+            Townsville's typical stinger season runs from November through May. Risk is generally
+            higher in warmer tropical waters, which is why the season tracks the build-up, wet
+            season and early autumn rather than the cooler dry-season months.
+          </p>
+          <p>
+            Treat that window as a practical seasonal guide, not a guarantee. Dangerous marine
+            stingers can occur outside the formal season, so the safest habit is to check current
+            signage and official beach information every time you plan to swim — not once at the
+            start of your trip.
+          </p>
+        </div>
+      </section>
 
-    {/* Section 3 */}
-    <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-4">Is It Safe to Swim in Townsville?</h2>
-      <p className="mb-4 text-muted-foreground leading-relaxed">Yes — when you follow local safety advice.</p>
-      <p className="mb-4 text-muted-foreground leading-relaxed">
-        During stinger season (November–May), always swim inside stinger nets or wear a full stinger suit when swimming in open water.
-      </p>
-      <p className="text-muted-foreground leading-relaxed">
-        Outside of stinger season, beaches in Townsville are generally safe, but visitors should always remain aware of marine conditions.
-      </p>
-    </section>
-
-    {/* Section 4: FAQ */}
-    <section className="mb-10">
-      <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-      <Accordion type="single" collapsible className="w-full">
-        <AccordionItem value="faq-1" className="border-border/40">
-          <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
-            Can you swim in Townsville during stinger season?
-          </AccordionTrigger>
-          <AccordionContent className="text-base text-muted-foreground leading-relaxed">
-            Yes. Swim only within stinger nets or wear a full stinger suit when swimming outside enclosures.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="faq-2" className="border-border/40">
-          <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
-            What should I do if stung by a jellyfish?
-          </AccordionTrigger>
-          <AccordionContent className="text-base text-muted-foreground leading-relaxed">
-            Apply vinegar immediately and call 000 if symptoms are severe.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="faq-3" className="border-border/40">
-          <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
-            Are stingers present all year?
-          </AccordionTrigger>
-          <AccordionContent className="text-base text-muted-foreground leading-relaxed">
-            No. They are most common between November and May.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-    </section>
-
-    {/* Airport Transfer CTA */}
-    <section className="mt-12 -mx-4 px-4 py-10 bg-slate-50 dark:bg-slate-900/40 rounded-xl">
-      <div className="max-w-3xl mx-auto">
-        <h3 className="text-2xl font-bold mb-2 text-foreground">Planning Your Townsville Arrival?</h3>
-        <p className="text-muted-foreground leading-relaxed mb-6">
-          Now that you're up to speed on beach safety, ensure your trip from the tarmac to the sand is just as smooth. Check the latest local transport and transfer options below.
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Which marine stingers matter?</h2>
+        <div className="grid gap-4 md:grid-cols-2">
+          <Card>
+            <CardContent className="p-5">
+              <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                <AlertTriangle className="w-4 h-4 text-primary" aria-hidden="true" />
+                Box jellyfish
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Box jellyfish can cause very painful and potentially life-threatening stings. They
+                are a serious tropical marine hazard, and a suspected serious sting needs immediate
+                action rather than a wait-and-see approach.
+              </p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-5">
+              <h3 className="font-semibold text-foreground mb-2 flex items-center gap-2">
+                <AlertTriangle className="w-4 h-4 text-primary" aria-hidden="true" />
+                Irukandji
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Irukandji jellyfish are very small, and the initial sting may seem relatively minor.
+                Significant symptoms can develop afterwards, so urgent medical assessment matters if
+                Irukandji syndrome is suspected.
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+        <p className="text-sm text-muted-foreground mt-4">
+          For clinical detail, follow{" "}
+          <a href={QLD_STINGERS} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            Queensland Government marine stinger guidance
+          </a>{" "}
+          and the{" "}
+          <a href={POISONS} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            Queensland Poisons Information Centre (13 11 26)
+          </a>
+          .
         </p>
-        <AirportTransferCard />
-      </div>
-    </section>
-  </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <Flag className="w-6 h-6 text-primary" aria-hidden="true" />
+          Where is it safest to swim?
+        </h2>
+        <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5 mb-4">
+          <li>Choose a patrolled beach where one is available.</li>
+          <li>Swim between the red-and-yellow flags.</li>
+          <li>Use designated swimming areas and stinger enclosures where they are provided.</li>
+          <li>Read and follow the current signs at the beach entrance.</li>
+          <li>Follow lifeguard and Council advice, which reflects conditions on the day.</li>
+        </ul>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          Selected Townsville and Magnetic Island beaches may have seasonal stinger enclosures.
+          Installation and removal dates change, so check current Council information before
+          swimming rather than relying on a fixed list.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link to="/beaches" className="inline-flex items-center gap-1.5 text-primary font-medium hover:underline">
+            Townsville beaches guide <ArrowRight className="w-4 h-4" aria-hidden="true" />
+          </Link>
+          <Link to="/the-strand" className="inline-flex items-center gap-1.5 text-primary font-medium hover:underline">
+            The Strand <ArrowRight className="w-4 h-4" aria-hidden="true" />
+          </Link>
+          <a
+            href={COUNCIL_BEACHES}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-primary font-medium hover:underline"
+          >
+            Council beach &amp; lifeguard information <ExternalLink className="w-4 h-4" aria-hidden="true" />
+          </a>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <ShieldAlert className="w-6 h-6 text-primary" aria-hidden="true" />
+          How effective are stinger nets?
+        </h2>
+        <p className="text-foreground font-semibold mb-3">
+          Stinger nets reduce risk but do not eliminate it.
+        </p>
+        <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
+          <li>Small jellyfish can pass through or around an enclosure.</li>
+          <li>Stay well inside the designated enclosure rather than swimming beside it.</li>
+          <li>Do not sit on, climb on or swim directly against the net.</li>
+          <li>Follow lifeguard advice, including any instruction to leave the water.</li>
+          <li>Protective clothing adds another useful layer of protection inside the net.</li>
+        </ul>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <Shirt className="w-6 h-6 text-primary" aria-hidden="true" />
+          Stinger suits
+        </h2>
+        <div className="space-y-3 text-muted-foreground leading-relaxed">
+          <p>
+            A full-body Lycra-style stinger suit reduces the amount of exposed skin, which is the
+            main practical reason they are commonly recommended for swimming in tropical North
+            Queensland. They make particular sense during the warmer, higher-risk months.
+          </p>
+          <p>
+            A suit is a sensible layer, not a guarantee — it does not remove all risk, and you still
+            need sunscreen on hands, feet, face and any other exposed skin. Hire and purchase
+            options exist locally; no particular brand is needed.
+          </p>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <Waves className="w-6 h-6 text-primary" aria-hidden="true" />
+          Beaches without nets or lifeguards
+        </h2>
+        <div className="space-y-3 text-muted-foreground leading-relaxed">
+          <p>
+            Many Townsville beaches are not patrolled, and some do not have seasonal stinger
+            enclosures at all. Calm-looking water does not mean a location is the safest place to
+            swim — quiet northern beaches often look the most inviting precisely because nobody is
+            watching over them.
+          </p>
+          <p>
+            Check current Council information before entering the water, and if you are unsure,
+            choose a patrolled option instead. Our{" "}
+            <Link to="/beaches" className="text-primary hover:underline">
+              beaches guide
+            </Link>{" "}
+            explains which beaches suit which kind of visit.
+          </p>
+        </div>
+      </section>
+
+      {/* First aid */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <LifeBuoy className="w-6 h-6 text-primary" aria-hidden="true" />
+          What to do if someone is stung
+        </h2>
+        <div className="rounded-xl border-2 border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950/30 p-6 mb-4">
+          <p className="font-semibold text-red-800 dark:text-red-300 mb-3">
+            Suspected serious tropical jellyfish sting:
+          </p>
+          <ol className="space-y-2 text-red-800/90 dark:text-red-200 leading-relaxed list-decimal pl-5">
+            <li>Call Triple Zero (000).</li>
+            <li>Follow the instructions given by emergency services.</li>
+            <li>
+              Use vinegar for suspected dangerous tropical jellyfish stings where current Queensland
+              guidance recommends it.
+            </li>
+            <li>Begin CPR if the person is unresponsive and not breathing normally.</li>
+          </ol>
+        </div>
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          Never delay emergency assistance to look up advice. For non-emergency questions about a
+          sting, the{" "}
+          <a href={POISONS} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            Queensland Poisons Information Centre on 13 11 26
+          </a>{" "}
+          can advise.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <div className="rounded-xl border-2 border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30 p-6">
+          <h2 className="text-2xl font-bold text-amber-900 dark:text-amber-300 mb-3 flex items-center gap-2">
+            <AlertTriangle className="w-6 h-6" aria-hidden="true" />
+            Vinegar: an important distinction
+          </h2>
+          <div className="space-y-3 text-amber-900/90 dark:text-amber-100 leading-relaxed">
+            <p>
+              Vinegar should not be treated as the correct first aid for every jellyfish sting.
+              Current Queensland guidance recommends it for suspected dangerous tropical jellyfish
+              stings, such as box jellyfish.
+            </p>
+            <p className="font-semibold">Do not use vinegar for a suspected bluebottle sting.</p>
+            <p>
+              Bluebottle first aid differs from dangerous tropical jellyfish first aid. If you are
+              not sure what caused the sting, follow current{" "}
+              <a href={QLD_STINGERS} target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                Queensland Health marine stinger guidance
+              </a>{" "}
+              or call the{" "}
+              <a href={POISONS} target="_blank" rel="noopener noreferrer" className="underline font-medium">
+                Poisons Information Centre on 13 11 26
+              </a>
+              , and call Triple Zero (000) if the sting looks serious.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Suspected box jellyfish emergency</h2>
+        <div className="rounded-xl border-2 border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950/30 p-6 space-y-3 text-red-800/90 dark:text-red-200 leading-relaxed">
+          <p className="font-semibold text-red-800 dark:text-red-300">
+            Call Triple Zero (000) immediately for a suspected serious box jellyfish sting,
+            particularly if the person collapses, has breathing difficulty, becomes unconscious or
+            develops severe systemic symptoms.
+          </p>
+          <p>If the person is unresponsive and not breathing normally, begin CPR and follow emergency-services instructions.</p>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Irukandji symptoms</h2>
+        <p className="text-muted-foreground leading-relaxed mb-3">
+          Reported symptoms of Irukandji syndrome can include:
+        </p>
+        <ul className="grid gap-2 sm:grid-cols-2 text-muted-foreground list-disc pl-5 mb-4">
+          <li>Severe pain</li>
+          <li>Restlessness</li>
+          <li>Sweating</li>
+          <li>Nausea</li>
+          <li>Vomiting</li>
+          <li>Worsening systemic symptoms</li>
+        </ul>
+        <p className="text-muted-foreground leading-relaxed">
+          Symptoms alone are not a diagnosis. Seek urgent medical assessment if an Irukandji sting is
+          suspected or symptoms become severe, and call Triple Zero (000) if the person deteriorates.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Bluebottles</h2>
+        <p className="text-muted-foreground leading-relaxed">
+          Bluebottles are a different animal from box jellyfish and Irukandji, and first aid differs.
+          Vinegar is not recommended for a suspected bluebottle sting. Follow current Queensland
+          Health guidance, and seek medical help if symptoms are severe or the person is unwell
+          beyond local pain at the sting site.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <Baby className="w-6 h-6 text-primary" aria-hidden="true" />
+          Children and stinger safety
+        </h2>
+        <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5 mb-4">
+          <li>Use designated or patrolled swimming areas.</li>
+          <li>Supervise children closely in and near the water.</li>
+          <li>Use protective clothing during the higher-risk months.</li>
+          <li>Follow the current signs at each beach.</li>
+          <li>
+            Teach children not to touch jellyfish or tentacles washed onto the beach — washed-up
+            marine stingers may still sting.
+          </li>
+        </ul>
+        <Link to="/townsville-with-kids" className="inline-flex items-center gap-1.5 text-primary font-medium hover:underline">
+          Townsville with Kids <ArrowRight className="w-4 h-4" aria-hidden="true" />
+        </Link>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <Ship className="w-6 h-6 text-primary" aria-hidden="true" />
+          Magnetic Island
+        </h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          Marine-stinger considerations apply on Magnetic Island just as they do on the mainland.
+          Selected island beaches may have seasonal enclosures, but not every bay has the same
+          swimming setup or patrol arrangement, so check current local signs and official beach
+          information before you swim.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Link to="/guides/magnetic-island-day-trip" className="inline-flex items-center gap-1.5 text-primary font-medium hover:underline">
+            Magnetic Island day trip <ArrowRight className="w-4 h-4" aria-hidden="true" />
+          </Link>
+          <Link to="/guides/magnetic-island-ferry" className="inline-flex items-center gap-1.5 text-primary font-medium hover:underline">
+            Magnetic Island ferry <ArrowRight className="w-4 h-4" aria-hidden="true" />
+          </Link>
+          <Link to="/beaches" className="inline-flex items-center gap-1.5 text-primary font-medium hover:underline">
+            Beaches guide <ArrowRight className="w-4 h-4" aria-hidden="true" />
+          </Link>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <CloudRain className="w-6 h-6 text-primary" aria-hidden="true" />
+          Wet weather and stinger nets
+        </h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          Severe weather can affect beaches and stinger enclosures. Nets may be temporarily removed,
+          swimming areas may close, and water quality and debris can change after heavy rain or a
+          storm. Check current beach status before heading down, and have a{" "}
+          <Link to="/guides/rainy-day-activities" className="text-primary hover:underline">
+            wet-weather plan
+          </Link>{" "}
+          ready.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Stinger safety and crocodile safety</h2>
+        <p className="text-muted-foreground leading-relaxed">
+          Stinger precautions do not replace crocodile awareness. Townsville is tropical North
+          Queensland, so follow all beach signage, use designated swimming areas and follow official{" "}
+          <a href={CROCWISE} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            Crocwise guidance
+          </a>{" "}
+          where relevant. Our{" "}
+          <Link to="/beaches" className="text-primary hover:underline">
+            beaches guide
+          </Link>{" "}
+          covers this alongside general beach planning.
+        </p>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Common stinger-safety mistakes</h2>
+        <ul className="grid gap-2 sm:grid-cols-2 text-muted-foreground list-disc pl-5">
+          {MISTAKES.map((m) => (
+            <li key={m}>{m}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Check current status before you swim</h2>
+        <div className="rounded-xl border bg-muted/40 p-6">
+          <ul className="space-y-3 text-muted-foreground">
+            <li>
+              <a href={COUNCIL_BEACHES} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                Townsville City Council — beaches, lifeguards and stinger enclosures
+              </a>
+            </li>
+            <li>
+              <a href={QLD_STINGERS} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                Queensland Government — marine stinger safety
+              </a>
+            </li>
+            <li>
+              <a href={POISONS} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                Queensland Poisons Information Centre — 13 11 26
+              </a>
+            </li>
+            <li>
+              <a href={BEACHSAFE} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                Surf Life Saving — Beachsafe beach and patrol information
+              </a>
+            </li>
+            <li>
+              <a href={BOM} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                Bureau of Meteorology — Queensland warnings
+              </a>{" "}
+              and the{" "}
+              <a href={DASHBOARD} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                Townsville Disaster Dashboard
+              </a>
+            </li>
+            <li>
+              <Link to="/useful-contacts" className="text-primary font-medium hover:underline">
+                Useful contacts for Townsville visitors
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-6">Frequently asked questions</h2>
+        <Accordion type="single" collapsible className="w-full">
+          {faqs.map((f, i) => (
+            <AccordionItem key={f.q} value={`faq-${i}`} className="border-border/40">
+              <AccordionTrigger className="text-left text-lg font-semibold hover:text-primary">
+                {f.q}
+              </AccordionTrigger>
+              <AccordionContent className="text-base text-muted-foreground leading-relaxed">
+                {f.a}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
+
+      <section className="mb-4">
+        <h2 className="text-2xl font-bold mb-4">Related guides</h2>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {RELATED.map((r) => (
+            <Link
+              key={r.to}
+              to={r.to}
+              className="block bg-card rounded-xl p-5 border hover:border-primary hover:shadow-md transition"
+            >
+              <h3 className="font-semibold text-foreground mb-1 flex items-center gap-1.5">
+                {r.name}
+                <ArrowRight className="w-4 h-4 text-primary" aria-hidden="true" />
+              </h3>
+              <p className="text-sm text-muted-foreground">{r.text}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+    </div>
+  </>
 );
+
 export default StingerSafety;

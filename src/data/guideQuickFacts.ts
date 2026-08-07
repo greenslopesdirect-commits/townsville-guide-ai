@@ -99,6 +99,20 @@ export interface QuickFacts {
   bestTimeToVisit?: string;
   /** Current access status, e.g. a temporary closure. */
   currentAccess?: string;
+  /** Typical marine stinger season window. */
+  stingerSeason?: string;
+  /** Period of highest marine stinger risk. */
+  highestRiskPeriod?: string;
+  /** Best swimming choice from a safety point of view. */
+  bestSwimmingChoice?: string;
+  /** What stinger nets do and do not do. */
+  stingerNets?: string;
+  /** Protective clothing guidance. */
+  protectiveClothing?: string;
+  /** Main species of concern. */
+  speciesOfConcern?: string;
+  /** What to check before swimming. */
+  beforeSwimming?: string;
   localVerdict?: string;
 }
 
@@ -350,12 +364,20 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
       "The Strand is one of the easiest places for first-time visitors to experience Townsville's waterfront, especially when combined with Jezzine Barracks.",
   },
   "/guides/stinger-safety": {
+    stingerSeason: "November to May",
+    highestRiskPeriod: "The warmer months",
+    bestSwimmingChoice: "Patrolled or designated swimming areas",
+    stingerNets: "Reduce risk, but are not complete protection",
+    protectiveClothing: "A full-body stinger suit is recommended in season",
+    speciesOfConcern: "Box jellyfish and Irukandji",
+    beforeSwimming: "Check current signs and Townsville City Council beach status",
+    emergency: "Call Triple Zero (000) for a suspected serious marine sting",
     bestFor: ["Beach visitors", "Families", "Swimmers", "First-time visitors"],
     timeNeeded: "A few minutes before visiting the beach",
     cost: "Free information",
     bestTimeToVisit: "Check before every planned swim",
     localVerdict:
-      "Current signs and official warnings should take priority over general online advice.",
+      "Townsville swimming is manageable when visitors follow current beach-safety advice, and current signs and official warnings should always take priority over general online advice.",
   },
   "/dog-friendly": {
     bestFor: ["Dog owners", "Off-leash beach runs", "Fenced dog parks", "Locals and visiting pets"],
