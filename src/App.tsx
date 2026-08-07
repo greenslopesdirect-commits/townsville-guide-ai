@@ -104,7 +104,8 @@ const App = () => (
             <Route path="guides/rainy-day-activities" element={<RainyDayActivities />} />
             <Route path="guides/stinger-safety" element={<StingerSafety />} />
             <Route path="guides/sunset-walks" element={<SunsetWalks />} />
-            <Route path="guides/jezzine-barracks" element={<JezzineBarracks />} />
+            <Route path="jezzine-barracks" element={<JezzineBarracks />} />
+            <Route path="guides/jezzine-barracks" element={<Navigate to="/jezzine-barracks" replace />} />
             <Route path="guides/walking-castle-hill" element={<WalkingCastleHill />} />
             <Route path="guides/paluma-day-trip" element={<PalumaDayTrip />} />
             <Route path="cowboys-stadium-guide" element={<CowboysStadiumGuide />} />

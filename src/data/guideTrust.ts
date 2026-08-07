@@ -443,9 +443,11 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
-  "/guides/jezzine-barracks": {
-    visitStatus: "personally-visited",
-    lastChecked: "August 2026",
+  "/jezzine-barracks": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand local knowledge of Jezzine Barracks and North Ward with current information from Townsville City Council and official heritage and visitor sources.",
+    lastChecked: "7 August 2026",
     officialSourcesChecked: true,
     officialSources: [
       {
@@ -455,6 +457,10 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       {
         name: "Army Museum North Queensland",
         url: "https://www.armymuseumnq.com.au/",
+      },
+      {
+        name: "Bureau of Meteorology — Townsville",
+        url: "http://www.bom.gov.au/qld/forecasts/townsville.shtml",
       },
     ],
   },
@@ -503,7 +509,7 @@ export const GUIDE_PATHS: string[] = [
   "/guides/rainy-day-activities",
   "/guides/stinger-safety",
   "/guides/sunset-walks",
-  "/guides/jezzine-barracks",
+  "/jezzine-barracks",
   "/guides/walking-castle-hill",
   "/cowboys-stadium-guide",
   "/north-shore-townsville",

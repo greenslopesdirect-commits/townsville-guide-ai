@@ -374,21 +374,24 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
       "Townsville suits families who enjoy outdoor days, wildlife and swimming rather than large all-weather attractions, and the best plan depends on the children's ages and the weather.",
   },
 
-  "/guides/jezzine-barracks": {
-    bestFor: ["Waterfront walks", "Families", "Local history", "Views"],
+  "/jezzine-barracks": {
+    bestFor: ["History", "Coastal views", "Easy walking", "Families"],
+    cost: "Free",
     timeNeeded: "1–2 hours",
-    cost: "Free entry",
-    carNeeded:
-      "No — it is a flat 10-minute walk from The Strand via the coastal boardwalk",
-    parking:
-      "Free parking off Mitchell Street, subject to current signs and availability",
-    toilets: "Check before visiting",
+    bestWithKids: "Fenced, shaded playground and open grassed space",
+    bestView: "Kissing Point",
+    mainAttraction: "Kissing Point headland, fort remains and coastal walk",
+    carNeeded: "No, if you are staying around The Strand or North Ward",
+    parking: "Public parking available around the precinct; busy at peak times",
+    toilets: "Public toilets, including accessible toilets",
     accessibility:
-      "Main paths and boardwalks are largely flat; confirm detailed accessibility before visiting",
-    dogFriendly: "Check current signage and council rules before visiting",
-    bestTimeToVisit: "Morning or late afternoon for cooler conditions",
+      "Much of the precinct has accessible paths and facilities; parts of the heritage area are more limited",
+    dogFriendly:
+      "Dogs allowed on leash in appropriate areas only — follow current signage",
+    mainConsideration: "Exposed sections can be very hot in the middle of the day",
+    bestTimeToVisit: "Early morning or late afternoon; best combined with The Strand",
     localVerdict:
-      "A worthwhile free stop that combines waterfront views, open space and Townsville history.",
+      "One of the easiest worthwhile additions to a Strand visit — free coastal views, heritage and public art in about an hour.",
   },
   "/townsville-in-one-day": {
     bestFor: ["First-time visitors", "Couples", "Families", "Short stays"],
