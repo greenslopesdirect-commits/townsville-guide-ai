@@ -658,6 +658,31 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/events": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines local visitor-planning knowledge with current information from official Townsville event, venue and organiser sources. Event dates and programmes change regularly, so confirm details with the official organiser before travelling.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "What's On Townsville — official events calendar",
+        url: "https://whatson.townsville.qld.gov.au/",
+      },
+      {
+        name: "Queensland Country Bank Stadium",
+        url: "https://www.queenslandcountrybankstadium.com.au/",
+      },
+      {
+        name: "North Queensland Cowboys — draw",
+        url: "https://www.cowboys.com.au/draw/",
+      },
+      {
+        name: "Townsville City Council — markets",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/markets",
+      },
+    ],
+  },
   "/shopping": {
     visitStatus: "partially-firsthand",
     visitNote:
@@ -798,6 +823,7 @@ export const GUIDE_PATHS: string[] = [
   "/townsville-airport",
   "/dog-friendly",
   "/shopping",
+  "/events",
   "/nature",
   "/moving-to-townsville",
   "/suburbs",

@@ -201,6 +201,20 @@ export interface QuickFacts {
   bestRainyDayOption?: string;
   /** Best option for everyday essentials. */
   bestForEssentials?: string;
+  /** Authoritative source for current event listings. */
+  eventSource?: string;
+  /** Period of the year with the most events. */
+  biggestEventPeriod?: string;
+  /** When the major sporting calendar is strongest. */
+  bestForMajorSport?: string;
+  /** When festivals are most common. */
+  bestForFestivals?: string;
+  /** Availability of free events. */
+  freeEvents?: string;
+  /** Availability of family events. */
+  familyEvents?: string;
+  /** Best area to base an event visit. */
+  bestEventBase?: string;
   /** Strongest all-round area, used on accommodation guides. */
   bestAreaOverall?: string;
   /** Best area for first-time visitors. */
@@ -643,6 +657,20 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
       "Current park alerts, track and road access, and local weather conditions",
     localVerdict:
       "Townsville's strongest nature experiences come from combining coast, island, hills and rainforest rather than looking for one single nature park.",
+  },
+  "/events": {
+    eventSource: "What's On Townsville — the official council events calendar",
+    biggestEventPeriod: "Dry season",
+    bestForMajorSport: "The winter and dry-season sporting calendar",
+    bestForFestivals: "Dry season and the shoulder months either side",
+    freeEvents: "Regularly available — check current listings",
+    familyEvents: "Regularly available — check current listings",
+    bestForMarkets: "Check the current market schedule before travelling",
+    bookingTip: "Book accommodation early for major event weekends",
+    bestEventBase: "Central Townsville, depending on the venue",
+    mainConsideration: "Event dates change every year",
+    localVerdict:
+      "Townsville's event calendar is strongest when combined with the city's waterfront, sport, food and outdoor attractions rather than treated as the whole trip.",
   },
   "/shopping": {
     bestAllRoundCentre: "Stockland Townsville",
