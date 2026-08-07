@@ -26,6 +26,8 @@ import {
   PhoneCall,
   Coffee,
   Umbrella,
+  ShieldAlert,
+  Shirt,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -50,6 +52,13 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   };
 
   push(AlertTriangle, "Current access", data.currentAccess);
+  push(CalendarDays, "Typical stinger season", data.stingerSeason);
+  push(Flame, "Highest-risk period", data.highestRiskPeriod);
+  push(Waves, "Best swimming choice", data.bestSwimmingChoice);
+  push(ShieldAlert, "Stinger nets", data.stingerNets);
+  push(Shirt, "Protective clothing", data.protectiveClothing);
+  push(AlertTriangle, "Main species of concern", data.speciesOfConcern);
+  push(CloudSun, "Before swimming", data.beforeSwimming);
   push(Sparkles, "Don't miss", data.dontMiss);
   push(CalendarDays, "Ideal first visit", data.idealFirstVisit);
   push(Clock, "Minimum worthwhile stay", data.minimumStay);
