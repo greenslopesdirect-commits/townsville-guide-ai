@@ -726,7 +726,7 @@ const TownsvilleWithKids = () => {
               <p className="text-sm text-muted-foreground leading-relaxed">
                 The Great Barrier Reef Aquarium, formerly known as Reef HQ, is closed for
                 redevelopment and is not currently available as a wet-weather family attraction.
-                Check the official aquarium website for redevelopment and reopening updates.
+                See our <Link to="/reef-hq-townsville" className="text-primary underline underline-offset-2">Reef HQ status page</Link> for the current closure and reopening position.
               </p>
             </CardContent>
           </Card>

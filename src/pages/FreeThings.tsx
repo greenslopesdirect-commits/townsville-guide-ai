@@ -973,8 +973,8 @@ const FreeThings = () => {
                 The Great Barrier Reef Aquarium, formerly known as Reef HQ, is closed for
                 redevelopment and is not currently available as a wet-weather attraction. Check the
                 official aquarium website for redevelopment and reopening updates, and see our{" "}
-                <Link to="/great-barrier-reef-townsville" className="text-primary underline underline-offset-2">
-                  reef and aquarium information
+                <Link to="/reef-hq-townsville" className="text-primary underline underline-offset-2">
+                  Reef HQ status page
                 </Link>{" "}
                 for current context.
               </p>
