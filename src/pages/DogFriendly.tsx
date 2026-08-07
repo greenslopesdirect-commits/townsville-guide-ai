@@ -1,472 +1,918 @@
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
-import { MapPin, Bone, Waves, ArrowRight, Dog, ShieldCheck, Thermometer, Droplets, Fish } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Link } from "react-router-dom";
 import LocalInsightCard from "@/components/LocalInsightCard";
-import StingerSeasonAlert from "@/components/StingerSeasonAlert";
-import maxQuaysideImg from "@/assets/max-quayside-crown-princess.jpg";
-import maxKissingPoint1 from "@/assets/max-at-kissing-point1.webp";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  Dog,
+  Waves,
+  Sun,
+  Thermometer,
+  AlertTriangle,
+  ShieldAlert,
+  Bird,
+  Clock,
+  MapPin,
+  Fence,
+  Backpack,
+  ExternalLink,
+  ArrowRight,
+  CheckCircle2,
+  XCircle,
+} from "lucide-react";
+import maxPallarenda from "@/assets/max-at-kissing-point1.webp";
 
-const dogSpots = [
+const SITE = "https://www.townsvilleguide.com.au";
+const PATH = "/dog-friendly";
+
+const TITLE = "Dog Beaches in Townsville | Off-Leash Beaches & Dog Parks";
+const DESCRIPTION =
+  "Find Townsville's dog beaches and off-leash areas, including Pallarenda and Benwell Road, with dog park, heat, tide, crocodile and local safety advice.";
+
+const COUNCIL_OFF_LEASH =
+  "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs/dog-off-leash-areas";
+const COUNCIL_DOGS =
+  "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs";
+const CROCWISE =
+  "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise";
+const TIDES = "http://www.bom.gov.au/australia/tides/";
+const DASHBOARD = "https://disaster.townsville.qld.gov.au/";
+
+const COMPARISON = [
   {
-    name: "Pallarenda Dog Beach",
-    type: "Off-Leash Beach",
-    dogAccess: "Off-leash area available",
-    stingerNet: false,
-    description: "Our top pick for July. One of Townsville's best off-leash beaches with long sandy stretches, shallow water, and plenty of space for energetic dogs. The massive low-tide sand flats are completely wide open, making it the perfect spot in Townsville for a long game of fetch on the wet sand.",
-    features: ["Off-leash beach access", "Long sandy stretches for running", "Shallow, calm waters for swimming dogs", "Nets are now out for the Dry Season, making deep-water fetch much safer.", "Natural setting with mangroves nearby"],
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Pallarenda+Off+Leash+Dog+Beach",
-    badge: "🏆 July Top Pick",
-    guideLink: "/pallarenda-beach",
-    guideLinkText: "View Off-Leash Guide",
+    beach: "Pallarenda Dog Beach",
+    area: "Pallarenda, north of the city",
+    length: "Approximately 570 metres, between beach access areas 8 and 9",
+    fenced: "No — unfenced",
+    water: "Ocean access, crocodile caution applies",
+    bestFor: "Longer beach runs and confident off-leash dogs",
   },
   {
-    name: "The Strand (Dog-Friendly Areas)",
-    type: "Beach & Promenade",
-    dogAccess: "Off-leash before 8am & after 5pm",
-    stingerNet: true,
-    description: "Townsville's iconic beachfront promenade with designated dog-friendly walking areas. Ideal for sunrise and evening walks with ocean views.",
-    features: ["Designated off-leash times (before 8am and after 5pm)", "Beautiful ocean views for walks", "Water fountains and shaded areas", "Close to cafés and restaurants"],
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=The+Strand+Townsville",
-    badge: "🐾 Schnauzer Approved",
-    guideLink: "/the-strand",
-    guideLinkText: "View Strand Guide",
-  },
-  {
-    name: "Bushland Beach Off-Leash Area",
-    type: "Off-Leash Beach",
-    dogAccess: "Designated off-leash zones",
-    stingerNet: false,
-    description: "A quieter beach north of Townsville with wide sandy areas and shallow tidal flats that dogs love to explore. Great for morning walks away from the crowds. Check the What's On page for local coffee spots near the beach for your post-walk caffeine fix.",
-    features: ["Designated off-leash zones", "Quiet, less crowded beach", "Shallow tidal flats to explore", "Great for morning walks"],
-    mapUrl: "https://www.google.com/maps/search/?api=1&query=Bushland+Beach+Townsville",
+    beach: "Benwell Road",
+    area: "South Townsville, close to the CBD and Palmer Street",
+    length: "Approximately 520 metres of beach foreshore",
+    fenced: "No — unfenced",
+    water: "Ocean access, tidally influenced, crocodile caution applies",
+    bestFor: "A central off-leash option planned around the tide",
   },
 ];
 
-const faqItems = [
+const FENCED_PARKS = [
+  "Cambridge Park",
+  "Charles Moroney Park",
+  "Edison Street Park",
+  "Mannikin Way Park",
+  "Mountview Park",
+  "Murray Park",
+  "Riverside Green Park",
+  "Peggy Banfield Park",
+  "Solaris Recreational Reserve",
+];
+
+const WATER_PARKS = ["Gleeson's Weir Park", "Apex Park", "Lou Litster Park"];
+
+const MISTAKES = [
+  "Assuming every Townsville beach allows off-leash dogs",
+  "Assuming all of Pallarenda Beach is off leash",
+  "Taking a dog with poor recall to an unfenced beach",
+  "Visiting in the middle of the day in hot weather",
+  "Forgetting drinking water and a portable bowl",
+  "Ignoring crocodile warning signs",
+  "Allowing dogs to chase shorebirds",
+  "Ignoring the tide at Benwell Road",
+  "Assuming river swimming is automatically safer than ocean swimming",
+  "Leaving dog waste behind",
+  "Leaving an aggressive or intrusive dog in an off-leash area",
+  "Relying on old social-media advice instead of current Council-designated areas",
+];
+
+const RELATED = [
+  { name: "Townsville Beaches", to: "/beaches", text: "General beach planning, swimming and access." },
+  { name: "Pallarenda Beach", to: "/pallarenda-beach", text: "The wider Pallarenda foreshore and day-out guide." },
+  { name: "Beat the Heat", to: "/guides/beat-the-heat", text: "Planning outdoor time around tropical heat." },
+  { name: "Townsville with Kids", to: "/townsville-with-kids", text: "Family planning across the city." },
+  { name: "Rainy Day Activities", to: "/guides/rainy-day-activities", text: "What to do when the weather turns." },
+  { name: "Useful Contacts", to: "/useful-contacts", text: "Council, emergency and official contacts." },
+  { name: "Accommodation", to: "/accommodation", text: "Where to stay, including pet-friendly enquiries." },
+  { name: "Stinger Safety", to: "/guides/stinger-safety", text: "Marine stingers, signage and seasonal advice." },
+];
+
+const faqs = [
   {
-    question: "Are dogs allowed on Townsville beaches?",
-    answer: "Yes, several Townsville beaches welcome dogs. Pallarenda has dedicated off-leash areas, The Strand allows off-leash access before 8am and after 5pm, and Bushland Beach has designated off-leash zones. Always check local signage for current rules."
+    q: "Where can dogs go off leash on Townsville beaches?",
+    a: "Dogs may only run off leash in Townsville City Council designated off-leash areas. On the coast, the two main designated off-leash beach areas are Pallarenda Dog Beach, between beach access areas 8 and 9, and the Benwell Road foreshore in South Townsville. Both are unfenced. Check current Council off-leash information before you go, because boundaries and designations can change.",
   },
   {
-    question: "When can dogs be off-leash on Townsville beaches?",
-    answer: "Off-leash times vary by beach. The Strand allows off-leash before 8am and after 5pm. Pallarenda and Bushland Beach have dedicated off-leash areas with broader access. Check council signage at each location."
+    q: "Is Pallarenda Dog Beach off leash?",
+    a: "Yes. Council designates an off-leash free-run beach area at Pallarenda of roughly 570 metres between beach access areas 8 and 9. It is unfenced, so your dog still needs to be under effective control, and crocodile caution applies as it does anywhere along this coast.",
   },
   {
-    question: "Are Townsville beaches safe for dogs during stinger season?",
-    answer: "Stinger season typically runs November to May. During that period, keep dogs out of the water outside stinger-netted areas. The Strand and Pallarenda have stinger nets. Supervise dogs closely near the waterline and rinse them after beach visits."
+    q: "Is all of Pallarenda Beach dog friendly?",
+    a: "No. Only the designated section between access areas 8 and 9 is an off-leash free-run area. Elsewhere along the Pallarenda foreshore and in nearby parks, dogs should remain on leash and under effective control, and you should follow the signs at each location.",
+  },
+  {
+    q: "Is Benwell Road a dog beach?",
+    a: "Yes. Benwell Road in South Townsville has a designated off-leash beach foreshore area of roughly 520 metres. It is unfenced, it is tidally influenced, and it is shared with other users such as fishers, so effective control of your dog is essential.",
+  },
+  {
+    q: "Are Townsville dog beaches fenced?",
+    a: "No. The designated off-leash beach areas at Pallarenda and Benwell Road are unfenced. If your dog may run off, choose one of the Council fenced off-leash dog parks instead.",
+  },
+  {
+    q: "Can dogs swim at Pallarenda?",
+    a: "The designated off-leash area at Pallarenda has ocean access, so dogs can enter the water there. Council specifically notes crocodile caution for this location, so follow warning signs, keep away from creek mouths and water edges, and do not assume the water is risk-free just because other dogs are in it.",
+  },
+  {
+    q: "Are there crocodiles near Townsville dog beaches?",
+    a: "Townsville is crocodile country, and coastal, estuarine and river environments can overlap with crocodile habitat. Council gives specific crocodile caution for both Pallarenda Dog Beach and the Benwell Road off-leash area. That does not mean a crocodile is present on any given day, but it does mean you should follow signage and Queensland Government Crocwise guidance.",
+  },
+  {
+    q: "What is the best fenced dog park in Townsville?",
+    a: "There is no single best park — it depends on where you are staying. Council provides a number of fully fenced off-leash parks, including Cambridge Park, Charles Moroney Park, Edison Street Park, Mannikin Way Park, Mountview Park, Murray Park, Riverside Green Park, Peggy Banfield Park and Solaris Recreational Reserve. Check current Council information for the nearest one and its facilities.",
+  },
+  {
+    q: "Where can small dogs exercise off leash?",
+    a: "Some Council fenced off-leash parks include a separate small-dog area. Facilities vary between parks and can change, so check the current Council off-leash listing for which nearby park has a dedicated small-dog section before you plan around it.",
+  },
+  {
+    q: "Can dogs walk on normal Townsville beaches?",
+    a: "In most public places dogs must remain on leash and under effective control unless you are inside a designated off-leash area. Some beach sections have their own rules, so follow the signage at the location. If you are planning general beach time rather than dog exercise, see our Townsville beaches guide.",
+  },
+  {
+    q: "What is the best time to take a dog to the beach in Townsville?",
+    a: "Early morning or late afternoon. Sand and paths can become very hot through the middle of the day, humidity adds to heat stress, and dogs can still overheat while swimming. Test surfaces with your hand before walking, carry drinking water and keep sessions shorter in humid conditions.",
+  },
+  {
+    q: "Do I need to pick up dog waste in off-leash areas?",
+    a: "Yes. Owners must pick up and dispose of dog waste in off-leash areas as they would anywhere else, fill in any holes their dog digs, and remove a dog that becomes aggressive or repeatedly bothers other users.",
   },
 ];
 
 const DogFriendly = () => {
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
-  };
-
   return (
     <>
-      <SEOHead
-        title="Dog-Friendly Beaches & Walks Townsville | Local Guide"
-        description="Looking for dog-friendly beaches and coastal walks in Townsville? Here is the 2026 local guide to Pallarenda, Rowes Bay, The Strand, and scenic waterfront paths to beat the heat. Includes stinger safety and off-leash times."
-        canonical="https://www.townsvilleguide.com.au/dog-friendly"
-      />
+      <SEOHead title={TITLE} description={DESCRIPTION} canonical={PATH} ogType="article" />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: TITLE,
+            description: DESCRIPTION,
+            author: { "@type": "Person", name: "Duncan Ross" },
+            publisher: { "@type": "Organization", name: "Townsville Guide" },
+            mainEntityOfPage: `${SITE}${PATH}`,
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+              { "@type": "ListItem", position: 2, name: "Dog Beaches in Townsville", item: `${SITE}${PATH}` },
+            ],
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+          })}
+        </script>
+      </Helmet>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-
-      <div className="min-h-screen bg-background pt-20 sm:pt-24 pb-12 sm:pb-16">
-        <div className="container mx-auto px-3 sm:px-4 max-w-4xl space-y-10">
-
-          {/* Intro */}
-          <section className="text-center sm:text-left">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4 leading-tight">
-              Dog-Friendly Beaches & Coastal Walks in Townsville
-            </h1>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto sm:mx-0 leading-relaxed">
-              Townsville has some excellent dog-friendly beaches and scenic coastal paths, but knowing when dogs are allowed off-leash, where stinger nets are active, and how the tropical climate affects dogs is essential. This local guide highlights the best beaches and waterfront walks where dogs can safely walk, swim, and explore in North Queensland.
-            </p>
-          <p className="text-sm text-muted-foreground mt-4">
-            Looking for general swimming beaches? See our full <Link to="/beaches" className="text-primary hover:underline font-medium">Townsville Beaches Guide</Link>.
+      {/* Hero */}
+      <section className="bg-muted/40 border-b border-border">
+        <div className="container mx-auto max-w-4xl px-4 py-12 md:py-20 text-center">
+          <p className="text-primary font-semibold uppercase tracking-wider text-sm mb-3">
+            Townsville with Dogs
           </p>
-          <div className="h-px bg-border w-full mt-6" />
+          <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-5">
+            Dog Beaches in Townsville: Off-Leash Beaches &amp; Dog Parks
+          </h1>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            Yes, dogs can visit many Townsville coastal areas — but dogs may only run off leash in
+            designated Townsville City Council off-leash areas. Not every beach is a dog beach, some
+            designated off-leash beaches are unfenced, and rules differ from one stretch of sand to
+            the next.
+          </p>
+        </div>
+      </section>
+
+      <div className="container mx-auto max-w-4xl px-4 py-10 md:py-14 space-y-12">
+        {/* Intro */}
+        <section aria-labelledby="intro">
+          <h2 id="intro" className="sr-only">
+            Overview
+          </h2>
+          <div className="space-y-4 text-muted-foreground leading-relaxed">
+            <p>
+              This is the dog-specific guide to Townsville: where dogs can legally run off leash,
+              which places are fenced, where dogs can reach the water, and what heat, tide, wildlife
+              and crocodile issues you need to understand first. For general swimming and beach
+              planning, use the{" "}
+              <Link to="/beaches" className="text-primary hover:underline font-medium">
+                Townsville beaches guide
+              </Link>{" "}
+              instead.
+            </p>
+            <p>
+              In normal public places, dogs must stay on leash and under effective control.
+              Designated off-leash areas have specific boundaries, and several of the coastal ones
+              are unfenced. Signage at the location should always be followed, and because
+              designations and boundaries can change, current{" "}
+              <a
+                href={COUNCIL_OFF_LEASH}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium inline-flex items-center gap-1"
+              >
+                Townsville City Council off-leash information
+                <ExternalLink className="w-3 h-3" aria-hidden="true" />
+              </a>{" "}
+              remains the authoritative source.
+            </p>
+          </div>
         </section>
 
-          <GuideQuickFacts />
+        <GuideQuickFacts />
 
-          {/* Local Tip */}
-           <LocalInsightCard variant="tip" title="☀️ Local Dog Owner Tip">
-           <p>
-               ☀️ Heat Check (July Update): The Dry Season is in full glory. Mornings are beautifully crisp (around 20°C), making it the ultimate time for the Castle Hill Goat Track or Pallarenda sand flat runs. Note: Midday UV is still extreme, so protect those paws and stick to the early mornings or golden hour.
+        {/* Can dogs go on Townsville beaches */}
+        <section aria-labelledby="can-dogs" className="space-y-4">
+          <h2 id="can-dogs" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <Dog className="w-6 h-6 text-primary" aria-hidden="true" />
+            Can Dogs Go on Townsville Beaches?
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Yes — but not every Townsville beach is an off-leash dog beach. The distinction matters
+            more here than in many cities, because the designated off-leash beach areas are short,
+            specific stretches rather than whole beaches.
+          </p>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {[
+              "Dogs may only run off leash in designated Council off-leash areas",
+              "Everywhere else, dogs should be on leash and under effective control",
+              "Specific beach sections can have different rules to the beach beside them",
+              "Follow the signs at the location — they override general advice",
+              "Owners remain responsible for their dog's behaviour at all times",
+            ].map((line) => (
+              <div key={line} className="flex items-start gap-2 rounded-lg border bg-card p-4">
+                <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <p className="text-sm text-muted-foreground">{line}</p>
+              </div>
+            ))}
+          </div>
+          <p className="text-muted-foreground leading-relaxed">
+            There is an environmental side too. Do not allow dogs to chase shorebirds, respect fenced
+            or signed habitat areas, and keep your dog controlled around wildlife.
+          </p>
+        </section>
+
+        {/* Pallarenda */}
+        <section aria-labelledby="pallarenda" className="space-y-4">
+          <h2 id="pallarenda" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <Waves className="w-6 h-6 text-primary" aria-hidden="true" />
+            Pallarenda Dog Beach
+          </h2>
+          <Card className="overflow-hidden">
+            <img
+              src={maxPallarenda}
+              alt="A large dog on the Townsville coastline at golden hour"
+              loading="lazy"
+              className="w-full h-56 md:h-72 object-cover"
+            />
+            <CardContent className="p-5 md:p-6 space-y-4">
+              <p className="text-muted-foreground leading-relaxed">
+                Pallarenda is Townsville's lead dog beach. Council designates an off-leash beach area
+                between beach access areas 8 and 9 — roughly 570 metres of free-run beach with
+                off-street parking and direct ocean access for dogs.
               </p>
-              <p>
-                🐸 Twilight Toad Alert: With the humidity bottomed out, cane toad activity has slowed down significantly, but they still lurk near the dunes at Bushland Beach and Saunders at dusk. Keep a close eye out during sunset walks.
-             </p>
-          </LocalInsightCard>
-
-          {/* Stinger Alert */}
-          <StingerSeasonAlert />
-
-          {/* Pallarenda Off-Leash Feature Showcase */}
-          <section aria-labelledby="pallarenda-offleash-showcase" className="my-8">
-            <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-              <div className="p-6 border-b border-gray-50 bg-gradient-to-r from-teal-50/50 to-transparent">
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">🐕</span>
-                  <div>
-                    <h2 id="pallarenda-offleash-showcase" className="text-2xl font-bold text-gray-950">Pallarenda Off-Leash Dog Beach</h2>
-                    <p className="text-sm text-gray-600">The premier off-leash coastal run in Townsville — Curated by Max the Giant Schnauzer</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-6">
-                <div className="rounded-lg overflow-hidden border border-gray-100 h-80 bg-gray-50">
-                  <img src="/assets/images/Pallarenda-max2.webp" alt="Max at Heatley Parade Beach Access Sign" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-
-                <div className="grid grid-cols-2 gap-4 h-80">
-                  <div className="rounded-lg overflow-hidden border border-gray-100 bg-gray-50">
-                    <img src="/assets/images/Pallarenda-max1.webp" alt="Max looking out at Pallarenda Beach at sunset" className="w-full h-full object-cover" loading="lazy" />
-                  </div>
-                  <div className="rounded-lg overflow-hidden border border-gray-100 bg-gray-50">
-                    <img src="/assets/images/Pallarenda-max4.webp" alt="Giant Schnauzer rolling in the sand at Pallarenda" className="w-full h-full object-cover" loading="lazy" />
-                  </div>
-                </div>
-              </div>
-
-              <div className="px-6 pb-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-gray-700">
-                <div className="md:col-span-2 space-y-4">
-                  <h3 className="font-bold text-gray-950 text-base">How to Find It & Access Info</h3>
-                  <p>The main off-leash zone is located at <strong>Beach Access Point 1 on Heatley Parade</strong> (right where the pavement ends and the coastal road loops back). Look for the green and white Townsville City Council signpost next to the blue pedestrian footbridge.</p>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                    <div className="flex gap-2 items-start">
-                      <span className="text-teal-600 font-bold">✔</span>
-                      <span><strong>Stinger Safety Station:</strong> Access point includes public vinegar stands for peace of mind.</span>
-                    </div>
-                    <div className="flex gap-2 items-start">
-                      <span className="text-teal-600 font-bold">✔</span>
-                      <span><strong>Firm Sand Flats:</strong> Low tide uncovers wide, flat stretches perfect for big dog sprints.</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-amber-50/60 border border-amber-100 rounded-xl p-4 text-amber-950 self-start">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-lg">🐾</span>
-                    <strong className="text-sm font-bold">Max's Ambassador Pro-Tip:</strong>
-                  </div>
-                  <p className="text-xs leading-relaxed mb-2">"When you hit the sand at Access 1, head left toward the northern flats. If you come down during a low-tide sunset, the sand is beautifully cool on the paws, the breeze is steady, and the sand quality is absolutely premier for a post-walk roll!"</p>
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-amber-700 bg-amber-100/60 px-2 py-0.5 rounded">Schnauzer Approved</span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Local Spotlight - Quayside */}
-          <section aria-labelledby="local-spotlight-quayside" className="my-8">
-            <Card className="overflow-hidden border-2 border-primary/20">
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                <figure className="relative">
-                  <img
-                    src={maxQuaysideImg}
-                    alt="Giant Schnauzer Max at Townsville Cruise Terminal during sunset walk with Crown Princess cruise ship"
-                    loading="lazy"
-                    className="w-full h-64 md:h-full object-cover"
-                  />
-                  <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm p-3">
-                    Golden hour at the Quayside Terminal. This wide, paved precinct is a local favorite for evening walks—the sea breeze is reliable, and the ground cools down much faster than inland bitumen.
-                  </figcaption>
-                </figure>
-                <CardContent className="p-5 sm:p-6 flex flex-col justify-center">
-                  <div className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-wider text-xs mb-3">
-                    <MapPin className="w-4 h-4" /> Local Spotlight
-                  </div>
-                  <h2 id="local-spotlight-quayside" className="text-xl sm:text-2xl font-bold text-foreground mb-3 leading-tight">
-                    Sunset Walks at Quayside Terminal
-                  </h2>
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
-                    <strong className="text-foreground">Local Tip:</strong> If you're walking a large breed like a Giant Schnauzer, the Quayside precinct is one of the best spots to beat the North Queensland heat. The wide, paved paths stay cooler than the inland bitumen, and you always get that late-afternoon breeze off the water.
-                  </p>
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&query=Quayside+Terminal+Townsville"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-medium text-primary hover:underline inline-flex items-center gap-1"
-                  >
-                    View Quayside on Google Maps <ArrowRight className="w-3 h-3" />
-                  </a>
-                </CardContent>
-              </div>
-            </Card>
-          </section>
-
-          {/* Local Spotlight - Kissing Point */}
-          <section aria-labelledby="local-spotlight-kissing-point" className="my-8">
-            <Card className="overflow-hidden border-2 border-primary/20">
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                <figure className="relative">
-                  <img
-                    src={maxKissingPoint1}
-                    alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
-                    loading="lazy"
-                    className="w-full h-64 md:h-full object-cover rounded-lg"
-                  />
-                  <figcaption className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-white text-xs sm:text-sm p-3">
-                    Schnauzer Approved: Max taking in the view from the Kissing Point battery. The wide, paved paths at the barracks stay cooler than inland roads—perfect for large breeds during the July golden hour.
-                  </figcaption>
-                </figure>
-                <CardContent className="p-5 sm:p-6 flex flex-col justify-center">
-                  <div className="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-wider text-xs mb-3">
-                    <MapPin className="w-4 h-4" /> Dog-Friendly Coastal Walks
-                  </div>
-                  <h2 id="local-spotlight-kissing-point" className="text-xl sm:text-2xl font-bold text-foreground mb-3 leading-tight">
-                    Kissing Point & Jezzine Boardwalks
-                  </h2>
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4">
-                    <strong className="text-foreground">July Local Tip:</strong> The elevated boardwalks at Jezzine Barracks are paved, shaded by Norfolk pines, and catch the evening sea breeze. Ideal for an on-leash sunset stroll with your dog before dinner on Gregory Street.
-                  </p>
-                  <Link to="/guides/jezzine-barracks" className="text-sm font-medium text-primary hover:underline inline-flex items-center gap-1">
-                    View Jezzine Guide <ArrowRight className="w-3 h-3" />
-                  </Link>
-                </CardContent>
-              </div>
-            </Card>
-          </section>
-
-          {/* Beach Listings */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground">Dog Beaches & Off-Leash Spots</h2>
-            <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-300 dark:border-amber-700 rounded-lg p-4 mb-2">
-              <p className="text-sm text-amber-800 dark:text-amber-300 font-medium">
-                ⚠️ Safety First: During Stinger Season, stick to the wet sand for fetch. Check our{" "}
-                <Link to="/guides/stinger-safety" className="text-amber-900 dark:text-amber-200 hover:underline font-semibold">
-                  Stinger Safety Guide
-                </Link>{" "}
-                for current net status before you head out.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-              {dogSpots.map((spot, index) => (
-                <Card key={index} className="hover:shadow-lg transition-shadow border-t-4 border-t-primary flex flex-col">
-                  <CardHeader className="p-4 sm:p-6 pb-3 sm:pb-4">
-                    <div className="mb-2">
-                      <span className="text-xs font-bold text-primary uppercase tracking-wider bg-primary/10 px-2 py-1 rounded-full inline-block">
-                        {spot.type}
-                      </span>
-                    </div>
-                    <CardTitle className="text-lg sm:text-xl mb-1 leading-tight break-words">{spot.name}</CardTitle>
-                    {spot.badge && (
-                      <div className="text-sm font-bold text-jade flex items-center gap-1 flex-wrap">
-                        {spot.badge}
-                      </div>
-                    )}
-                    <div className="space-y-1 text-xs text-muted-foreground mt-2">
-                      <div className="flex items-center gap-2">
-                        <Dog className="w-3.5 h-3.5 flex-shrink-0" />
-                        <span>{spot.dogAccess}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <ShieldCheck className="w-3.5 h-3.5 flex-shrink-0" />
-                        <span>{spot.stingerNet ? "Stinger net available" : "No stinger net"}</span>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-4 sm:p-6 pt-0 space-y-3 sm:space-y-4 flex-1 flex flex-col">
-                    <p className="text-muted-foreground text-sm leading-relaxed">{spot.description}</p>
-
-                    <div className="space-y-2 flex-1">
-                      {spot.features.map((feature, i) => (
-                        <div key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                          <Bone className="w-4 h-4 text-primary/60 mt-0.5 flex-shrink-0" />
-                          <span className="break-words">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="space-y-2 pt-2 mt-auto">
-                      {spot.guideLink && (
-                        <Button asChild className="w-full">
-                          <Link to={spot.guideLink}>
-                            <span className="truncate">{spot.guideLinkText}</span>
-                            <ArrowRight className="w-4 h-4 flex-shrink-0 ml-2" />
-                          </Link>
-                        </Button>
-                      )}
-                      <Button variant="outline" size="sm" asChild className="w-full gap-2">
-                        <a href={spot.mapUrl} target="_blank" rel="noopener noreferrer">
-                          <MapPin className="w-4 h-4 flex-shrink-0" />
-                          View on Google Maps
-                        </a>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </section>
-
-          {/* Exact Off-Leash Dog Beach Boundaries */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground">Exact Off-Leash Dog Beach Boundaries</h2>
-            <ul className="list-disc pl-5 space-y-3 text-sm text-muted-foreground">
-              <li><strong>Pallarenda Dog Beach:</strong> Fully off-leash on the sand starting exclusively from Beach Access Ramp 17 (clearly signposted) heading North all the way to the Cape Pallarenda National Park boundary. Dogs must remain on-leash in the main park, playground, and car park areas.</li>
-              <li><strong>Saunders Beach:</strong> Dogs are permitted off-leash on the wide open beach area starting from the northern side of the main boat ramp area heading north. Ensure dogs are under effective voice control at all times.</li>
-              <li><strong>Bushland Beach:</strong> Designated off-leash sandy areas are located further along the beach flats well away from the resort and main stinger/swimming zones. Check the local entry signage for exact daily seasonal zoning.</li>
-            </ul>
-          </section>
-
-          {/* Duncan's Local Pro-Tips */}
-          <section className="space-y-4">
-            <div className="rounded-xl border-2 border-jade bg-[hsl(var(--sand))] p-5 sm:p-6 space-y-4">
-              <h2 className="text-xl sm:text-2xl font-bold text-foreground">🐾 Duncan's Local Pro-Tips for Tropical Paws</h2>
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <Thermometer className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="font-semibold text-sm text-foreground">The 5-Second Test</p>
-                    <p className="text-sm text-muted-foreground mt-1">Sand and bitumen can reach 50°C by mid-morning. If you can't hold the back of your hand to the ground for 5 seconds, it's too hot for your dog's paws.</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Fish className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
-                  <div>
-                     <p className="font-semibold text-sm text-foreground">Twilight Toad Alert</p>
-                     <p className="text-sm text-muted-foreground mt-1">With the recent humidity, Cane Toads are active near the dunes at Saunders and Bushland Beach at dusk. Keep a close eye on your dog if you're out for a sunset stroll.</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Droplets className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="font-semibold text-sm text-foreground">Post-Beach Rinse</p>
-                    <p className="text-sm text-muted-foreground mt-1">Tropical salt and humidity can cause skin irritation. The fresh-water showers at the Pallarenda boat ramp are a lifesaver for rinsing salt out of thick coats (like Max's!) before the drive home. The Strand showers also work in a pinch.</p>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-jade mt-0.5 flex-shrink-0" />
-                  <div>
-                    <p className="font-semibold text-sm text-foreground">🌿 Dry Season Bonus</p>
-                    <p className="text-sm text-muted-foreground mt-1">Not a beach fan? In July, the Ross River Parkway (near Loam Island) offers miles of shaded, wind-swept paths that are much cooler than the coastal dunes during midday.</p>
-                  </div>
-                </li>
+              <ul className="grid gap-2 sm:grid-cols-2 text-sm text-muted-foreground">
+                {[
+                  "Designated off-leash beach between access areas 8 and 9",
+                  "Approximately 570 metres of beach",
+                  "Unfenced free-run area",
+                  "Off-street parking",
+                  "Ocean access for dogs",
+                  "Crocodile caution applies",
+                  "Other users, including horse riders in nearby areas, may be present",
+                ].map((f) => (
+                  <li key={f} className="flex items-start gap-2">
+                    <span className="text-primary mt-0.5" aria-hidden="true">
+                      •
+                    </span>
+                    {f}
+                  </li>
+                ))}
               </ul>
-              <Button asChild variant="outline" className="w-full sm:w-auto border-jade text-jade hover:bg-jade hover:text-white">
-                <a href="https://aussiedogguide.com.au" target="_blank" rel="noopener noreferrer">
-                  Need an Emergency Protocol? Visit AussieDogGuide.com.au
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </a>
-              </Button>
+              <div>
+                <p className="font-semibold text-foreground mb-1">Best for</p>
+                <p className="text-sm text-muted-foreground">
+                  Dogs with reliable recall, confident off-leash dogs, longer beach runs, and owners
+                  comfortable with an open, unfenced area.
+                </p>
+              </div>
+              <div className="rounded-lg border bg-muted/40 p-4 flex items-start gap-3">
+                <AlertTriangle className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <p className="text-sm text-muted-foreground">
+                  Because the area is unfenced, it is not suitable for every dog. Effective voice
+                  control is still required, even inside a designated off-leash area.
+                </p>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Planning a longer visit? See the full{" "}
+                <Link to="/pallarenda-beach" className="text-primary hover:underline font-medium">
+                  Pallarenda Beach guide
+                </Link>
+                .
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+
+        {/* Pallarenda on-leash */}
+        <section aria-labelledby="pallarenda-onleash" className="space-y-3">
+          <h2 id="pallarenda-onleash" className="text-2xl md:text-3xl font-bold">
+            Pallarenda On-Leash Areas
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Not all of Pallarenda is off leash. The free-run area is the designated section between
+            access points 8 and 9 only. Outside that section, along the wider foreshore and in nearby
+            parks, dogs should remain leashed and you should follow the signage in place. Treat the
+            off-leash section as an exception within an otherwise on-leash area, not the other way
+            around.
+          </p>
+        </section>
+
+        {/* Benwell Road */}
+        <section aria-labelledby="benwell" className="space-y-4">
+          <h2 id="benwell" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <MapPin className="w-6 h-6 text-primary" aria-hidden="true" />
+            Benwell Road Dog Beach
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Benwell Road in South Townsville is the most central designated off-leash beach area,
+            covering roughly 520 metres of beach foreshore. It is a free-run area with ocean access,
+            and it is unfenced.
+          </p>
+          <ul className="grid gap-2 sm:grid-cols-2 text-sm text-muted-foreground">
+            {[
+              "South Townsville location",
+              "Approximately 520 metres of beach foreshore",
+              "Designated off-leash free-run area",
+              "Unfenced",
+              "Ocean access",
+              "Crocodile caution applies",
+              "Tidally influenced — substantially more usable beach around lower tide",
+              "Shared use with other people, including fishers",
+            ].map((f) => (
+              <li key={f} className="flex items-start gap-2 rounded-lg border bg-card p-3">
+                <span className="text-primary mt-0.5" aria-hidden="true">
+                  •
+                </span>
+                {f}
+              </li>
+            ))}
+          </ul>
+          <p className="text-muted-foreground leading-relaxed">
+            It suits visitors staying around South Townsville, the CBD or Palmer Street who want
+            dog exercise without a longer drive. Like Pallarenda, it is unfenced and requires
+            effective control of your dog at all times.
+          </p>
+        </section>
+
+        {/* Comparison */}
+        <section aria-labelledby="compare" className="space-y-4">
+          <h2 id="compare" className="text-2xl md:text-3xl font-bold">
+            Pallarenda vs Benwell Road
+          </h2>
+          <div className="overflow-x-auto rounded-xl border">
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Beach</TableHead>
+                  <TableHead>Area</TableHead>
+                  <TableHead>Off-leash length</TableHead>
+                  <TableHead>Fenced</TableHead>
+                  <TableHead>Water</TableHead>
+                  <TableHead>Best for</TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {COMPARISON.map((c) => (
+                  <TableRow key={c.beach}>
+                    <TableCell className="font-medium">{c.beach}</TableCell>
+                    <TableCell>{c.area}</TableCell>
+                    <TableCell>{c.length}</TableCell>
+                    <TableCell>{c.fenced}</TableCell>
+                    <TableCell>{c.water}</TableCell>
+                    <TableCell>{c.bestFor}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="rounded-xl border bg-card p-5">
+              <h3 className="font-semibold text-foreground mb-2">Choose Pallarenda if</h3>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
+                <li>You want a longer beach run</li>
+                <li>You are staying around North Ward or northern Townsville</li>
+                <li>Your dog has reliable recall</li>
+                <li>You want to combine the trip with Pallarenda / Cape Pallarenda</li>
+              </ul>
             </div>
-          </section>
-
-          {/* Dog Safety Section */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground">Dog Safety at Townsville Beaches</h2>
-            <p className="text-muted-foreground text-sm">
-              North Queensland's tropical climate means a few extra precautions when taking your dog to the beach.
-            </p>
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
-                <Thermometer className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-sm text-foreground">Heat & Hydration</p>
-                  <p className="text-xs text-muted-foreground mt-1">Dogs overheat fast in the tropics. Walk early morning or after 4pm, carry fresh water, and watch for signs of heat stress.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
-                <Droplets className="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-sm text-foreground">Sand Temperature</p>
-                  <p className="text-xs text-muted-foreground mt-1">Sand can exceed 50°C in summer. Test the ground with your hand — if it's too hot for you, it's too hot for paws.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
-                <ShieldCheck className="w-5 h-5 text-amber-500 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-sm text-foreground">Stinger Season Ended</p>
-                  <p className="text-xs text-muted-foreground mt-1">☀️ July Update: The 2025/26 stinger season has concluded and Townsville City Council removed the enclosures at The Strand, Pallarenda, Magnetic Island and Balgal Beach on 27 May 2026, after weeks of clear net drags confirmed no stinger presence. Nets return each November for the next season. Your dogs can now safely enjoy deep-water swimming at northern beaches like Saunders, Toolakea, and Bushland Beach without the summer worry. Remember to give them a good fresh-water rinse afterward to remove the tropical salt and sand!</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border">
-                <Waves className="w-5 h-5 text-cyan-500 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-sm text-foreground">Tide Awareness</p>
-                  <p className="text-xs text-muted-foreground mt-1">Some beaches become very shallow or expose rocks at low tide. Check tide times before heading out.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3 p-4 rounded-lg bg-muted/40 border sm:col-span-2">
-                <Fish className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="font-medium text-sm text-foreground">Wildlife Awareness</p>
-                  <p className="text-xs text-muted-foreground mt-1">Cane toads can appear near dunes at dusk and are toxic to dogs. Crocodile warning signs should always be taken seriously. Keep dogs leashed in unfamiliar areas.</p>
-                </div>
-              </div>
+            <div className="rounded-xl border bg-card p-5">
+              <h3 className="font-semibold text-foreground mb-2">Choose Benwell Road if</h3>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
+                <li>You are staying around the CBD, Palmer Street or South Townsville</li>
+                <li>You want a more central off-leash beach</li>
+                <li>You can plan around the tide</li>
+                <li>Your dog is comfortable in an unfenced, shared space</li>
+              </ul>
             </div>
-          </section>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Neither is universally better — it comes down to where you are staying, the tide and how
+            your dog handles open space.
+          </p>
+        </section>
 
-          {/* Freshwater Swimming & Stinger Alternatives */}
-          <section className="space-y-3">
-            <h2 className="text-2xl font-bold text-foreground">Freshwater Swimming & Stinger Alternatives</h2>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Looking for a stinger-free dip? While Townsville's beaches are iconic, many locals head inland during the peak of the season. Popular spots like Ross River (Loam Island) offer freshwater access, but always be mindful of seasonal crocodile signage and water quality alerts. For the safest saltwater swimming, stick to the netted areas at The Strand and Pallarenda.
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Explore more inland options in our <Link to="/nature" className="text-primary hover:underline font-medium">Nature & Walks guide</Link>.
-            </p>
-          </section>
-
-          {/* FAQ */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground">Frequently Asked Questions</h2>
-            <div className="space-y-4">
-              {faqItems.map((faq, i) => (
-                <div key={i} className="p-4 rounded-lg border bg-card">
-                  <h3 className="font-semibold text-foreground text-sm">{faq.question}</h3>
-                  <p className="text-muted-foreground text-sm mt-2">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Internal Links */}
-          <section className="space-y-4">
-            <h2 className="text-xl font-bold text-foreground">More Townsville Dog & Beach Guides</h2>
-            <div className="grid gap-3 sm:grid-cols-3">
-              {[
-                { to: "/beaches", label: "Beaches & Swimming Guide" },
-                { to: "/guides/magnetic-island-day-trip", label: "Magnetic Island Day Trip" },
-                { to: "/pallarenda-beach", label: "Pallarenda Off-Leash Guide" },
-              ].map((link) => (
-                <Button key={link.to} asChild variant="outline" className="w-full justify-start gap-2 h-auto py-3">
-                  <Link to={link.to}>
-                    <ArrowRight className="w-4 h-4 flex-shrink-0" />
-                    {link.label}
-                  </Link>
-                </Button>
-              ))}
-            </div>
-          </section>
-
-          {/* Local Authority Footer */}
-          <p className="text-center text-xs text-muted-foreground pt-4 pb-2">
-            Helping Townsville dog owners and visitors find safe, enjoyable places across North Queensland.
+        {/* Dog parks */}
+        <section aria-labelledby="parks" className="space-y-5">
+          <h2 id="parks" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <Fence className="w-6 h-6 text-primary" aria-hidden="true" />
+            Best Dog Parks Away From the Beach
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Townsville City Council provides a large number of designated off-leash areas across the
+            city, including both fenced and unfenced options. If the beach is not right for your dog,
+            a park is usually the better call.
           </p>
 
-        </div>
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Fully fenced dog parks</h3>
+            <div className="flex flex-wrap gap-2">
+              {FENCED_PARKS.map((p) => (
+                <span key={p} className="rounded-full border bg-card px-3 py-1.5 text-sm">
+                  {p}
+                </span>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground mt-3">
+              Depending on the park, features can include a separate small-dog area, shade, seating,
+              agility equipment and lighting. Not every park has every feature, so check the current
+              Council listing for the one nearest you.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Water-access and riverside off-leash areas</h3>
+            <div className="flex flex-wrap gap-2">
+              {WATER_PARKS.map((p) => (
+                <span key={p} className="rounded-full border bg-card px-3 py-1.5 text-sm">
+                  {p}
+                </span>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground mt-3">
+              These riverside areas suit dogs that like water, but river and creek environments in
+              North Queensland carry their own crocodile and water-edge considerations. River
+              swimming is not automatically safer than the beach — follow signage at the location and
+              apply the same caution near water edges.
+            </p>
+          </div>
+        </section>
+
+        {/* Best option by dog type */}
+        <section aria-labelledby="by-dog" className="space-y-4">
+          <h2 id="by-dog" className="text-2xl md:text-3xl font-bold">
+            Best Option by Dog Type
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              {
+                title: "Reliable recall / confident off-leash dog",
+                body: "Pallarenda Dog Beach or the Benwell Road off-leash foreshore. Both are open, unfenced and reward a dog that comes back first time.",
+              },
+              {
+                title: "Dog that may run away",
+                body: "A fully fenced Council off-leash park. Do not use the unfenced beaches for a dog with unreliable recall.",
+              },
+              {
+                title: "Small dog",
+                body: "A fenced park with a dedicated small-dog section, where the current Council listing confirms one nearby.",
+              },
+              {
+                title: "Older dog",
+                body: "Shorter outings, shaded parks and cooler times of day. Long sand runs are hard work for older joints.",
+              },
+              {
+                title: "Dog that loves water",
+                body: "A designated area with water access — paired with crocodile awareness, current signage, heat management and an eye on tides and water conditions.",
+              },
+            ].map((c) => (
+              <div key={c.title} className="rounded-xl border bg-card p-5">
+                <h3 className="font-semibold text-foreground mb-1.5">{c.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{c.body}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Heat */}
+        <section aria-labelledby="heat" className="space-y-4">
+          <h2 id="heat" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <Thermometer className="w-6 h-6 text-primary" aria-hidden="true" />
+            Heat and Paw Safety
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Heat is the single most common problem for dogs in Townsville, and it catches out
+            visitors more than locals.
+          </p>
+          <ul className="grid gap-2 sm:grid-cols-2 text-sm text-muted-foreground">
+            {[
+              "Visit early in the morning or late in the afternoon",
+              "Avoid peak midday heat entirely in warmer months",
+              "Sand, bitumen and paths can become very hot",
+              "Test surfaces with your hand before walking",
+              "Carry drinking water and a portable bowl",
+              "Use shade wherever it is available",
+              "Keep exercise shorter in humid conditions",
+              "Dogs can still overheat while swimming",
+              "Never leave a dog in a parked vehicle",
+            ].map((t) => (
+              <li key={t} className="flex items-start gap-2 rounded-lg border bg-card p-3">
+                <Sun className="w-4 h-4 text-amber-500 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                {t}
+              </li>
+            ))}
+          </ul>
+          <p className="text-sm text-muted-foreground">
+            More on planning around the climate in our{" "}
+            <Link to="/guides/beat-the-heat" className="text-primary hover:underline font-medium">
+              Beat the Heat guide
+            </Link>
+            .
+          </p>
+        </section>
+
+        {/* Crocodiles */}
+        <section aria-labelledby="crocs" className="space-y-3">
+          <h2 id="crocs" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <ShieldAlert className="w-6 h-6 text-primary" aria-hidden="true" />
+            Crocodile Safety
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Townsville is crocodile country. Coastal, estuarine and river environments can overlap
+            with crocodile habitat, and Council gives specific crocodile caution for both Pallarenda
+            Dog Beach and the Benwell Road off-leash area. That does not mean crocodiles are routinely
+            present at every dog beach — it means the risk is real enough to plan around.
+          </p>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li>• Follow warning signs, every time</li>
+            <li>• Keep dogs away from creek mouths and water edges where risk may be greater</li>
+            <li>• Do not let your dog enter the water simply because other dogs are doing so</li>
+            <li>
+              • Follow Queensland Government{" "}
+              <a
+                href={CROCWISE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium inline-flex items-center gap-1"
+              >
+                Crocwise guidance
+                <ExternalLink className="w-3 h-3" aria-hidden="true" />
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        {/* Stingers */}
+        <section aria-labelledby="stingers" className="space-y-3">
+          <h2 id="stingers" className="text-2xl md:text-3xl font-bold">
+            Marine Stingers and Dogs
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Tropical marine hazards can apply along this coast. Follow current signage, do not assume
+            seawater is risk-free, use designated dog areas and check current conditions before
+            letting a dog swim. Human stinger-net enclosures are set up for swimmers and do not
+            automatically make dog swimming safe elsewhere. General stinger information is in our{" "}
+            <Link to="/guides/stinger-safety" className="text-primary hover:underline font-medium">
+              stinger safety guide
+            </Link>
+            .
+          </p>
+        </section>
+
+        {/* Tides */}
+        <section aria-labelledby="tides" className="space-y-3">
+          <h2 id="tides" className="text-2xl md:text-3xl font-bold">
+            Tides
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Benwell Road is tidally influenced. A lower tide exposes substantially more usable beach,
+            while a high tide can reduce the available exercise space considerably. Check current tide
+            information before planning a dedicated trip, and do not walk dogs onto unfamiliar mudflats
+            or tidal areas without understanding the conditions.
+          </p>
+          <a
+            href={TIDES}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-primary hover:underline font-medium inline-flex items-center gap-1"
+          >
+            Bureau of Meteorology tide predictions
+            <ExternalLink className="w-3 h-3" aria-hidden="true" />
+          </a>
+        </section>
+
+        {/* Wildlife */}
+        <section aria-labelledby="wildlife" className="space-y-3">
+          <h2 id="wildlife" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <Bird className="w-6 h-6 text-primary" aria-hidden="true" />
+            Wildlife and Shorebirds
+          </h2>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            <li>• Keep dogs away from shorebirds and do not allow chasing</li>
+            <li>• Shorten the leash around wildlife where appropriate</li>
+            <li>• Respect nesting areas, fenced sections and signs</li>
+            <li>• Uncontrolled dogs can disturb feeding and nesting birds</li>
+          </ul>
+        </section>
+
+        {/* Etiquette */}
+        <section aria-labelledby="etiquette" className="space-y-3">
+          <h2 id="etiquette" className="text-2xl md:text-3xl font-bold">
+            Dog Beach Etiquette
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Off leash does not mean uncontrolled. The basics that keep these areas open:
+          </p>
+          <div className="grid gap-2 sm:grid-cols-2 text-sm text-muted-foreground">
+            {[
+              "Maintain effective control of your dog at all times",
+              "Leash dogs before entering and after leaving designated off-leash areas",
+              "Remove a dog that becomes aggressive or repeatedly bothers others",
+              "Pick up and dispose of dog waste",
+              "Fill in any holes your dog digs",
+              "Do not interfere with other users",
+              "Respect fishers, walkers, families, horses and wildlife",
+            ].map((t) => (
+              <div key={t} className="flex items-start gap-2 rounded-lg border bg-card p-3">
+                <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" aria-hidden="true" />
+                {t}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Family + dog */}
+        <section aria-labelledby="family" className="space-y-4">
+          <h2 id="family" className="text-2xl md:text-3xl font-bold">
+            Family and Dog Outings
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div className="rounded-xl border bg-card p-5">
+              <h3 className="font-semibold text-foreground mb-1.5">Pallarenda</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                You can combine designated dog-beach time with nearby picnic and family areas plus
+                on-leash walking. Keep the zones clear in your head: free running belongs in the
+                section between access areas 8 and 9, and the leash goes back on elsewhere.
+              </p>
+            </div>
+            <div className="rounded-xl border bg-card p-5">
+              <h3 className="font-semibold text-foreground mb-1.5">
+                Peggy Banfield Park, Bushland Beach
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Where current Council information confirms it, this area combines fenced dog exercise
+                areas with a playground, toilets, barbecues, pathways and family recreation
+                facilities. Children and dogs do not need to share the same fenced exercise space —
+                run them as separate parts of the outing.
+              </p>
+            </div>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Building a wider family day? See{" "}
+            <Link to="/townsville-with-kids" className="text-primary hover:underline font-medium">
+              Townsville with Kids
+            </Link>
+            .
+          </p>
+        </section>
+
+        {/* Coastal walks */}
+        <section aria-labelledby="walks" className="space-y-3">
+          <h2 id="walks" className="text-2xl md:text-3xl font-bold">
+            Dog-Friendly Coastal Walks
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Where current Council rules confirm on-leash dog access — such as the wider Pallarenda
+            foreshore and nearby parks — these areas work well for a leashed coastal walk in the early
+            morning or late afternoon. For other stretches of coastline, including The Strand, Jezzine
+            and Rowes Bay, check current signage at the location before assuming dog access, because
+            rules vary section by section. General coastal planning lives in the{" "}
+            <Link to="/beaches" className="text-primary hover:underline font-medium">
+              beaches guide
+            </Link>
+            .
+          </p>
+        </section>
+
+        {/* What to bring */}
+        <section aria-labelledby="bring" className="space-y-3">
+          <h2 id="bring" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <Backpack className="w-6 h-6 text-primary" aria-hidden="true" />
+            What to Bring
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {[
+              "Leash",
+              "Waste bags",
+              "Drinking water",
+              "Portable bowl",
+              "Towel",
+              "Shade where practical",
+              "Phone",
+            ].map((t) => (
+              <span key={t} className="rounded-full border bg-card px-3 py-1.5 text-sm">
+                {t}
+              </span>
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Plus whatever your dog normally needs on an outing.
+          </p>
+        </section>
+
+        {/* Suggested outings */}
+        <section aria-labelledby="outings" className="space-y-4">
+          <h2 id="outings" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <Clock className="w-6 h-6 text-primary" aria-hidden="true" />
+            Suggested Dog Outings
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              {
+                title: "Pallarenda dog morning",
+                steps: [
+                  "Arrive early, before the heat builds",
+                  "Use the designated off-leash section",
+                  "Water and rest in shade",
+                  "Nearby on-leash walk or picnic",
+                ],
+              },
+              {
+                title: "South Townsville dog beach visit",
+                steps: [
+                  "Check the tide first",
+                  "Benwell Road off-leash section",
+                  "A short beach run",
+                  "Water and shade afterwards",
+                ],
+              },
+              {
+                title: "Fenced dog-park visit",
+                steps: [
+                  "Choose a current Council fenced off-leash area",
+                  "Ideal for dogs with unreliable recall",
+                  "Shorter, contained exercise",
+                ],
+              },
+              {
+                title: "Family and dog outing",
+                steps: [
+                  "Peggy Banfield Park or another verified family and dog location",
+                  "Separate dog exercise and family play time",
+                  "Finish before the middle of the day",
+                ],
+              },
+            ].map((o) => (
+              <div key={o.title} className="rounded-xl border bg-card p-5">
+                <h3 className="font-semibold text-foreground mb-2">{o.title}</h3>
+                <ul className="space-y-1.5 text-sm text-muted-foreground">
+                  {o.steps.map((s) => (
+                    <li key={s}>• {s}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <p className="text-sm text-muted-foreground">
+            Keep these flexible — the tide, the weather and your dog will all have opinions.
+          </p>
+        </section>
+
+        {/* Mistakes */}
+        <section aria-labelledby="mistakes" className="space-y-3">
+          <h2 id="mistakes" className="text-2xl md:text-3xl font-bold">
+            Common Dog-Beach Mistakes
+          </h2>
+          <div className="grid gap-2 sm:grid-cols-2 text-sm text-muted-foreground">
+            {MISTAKES.map((m) => (
+              <div key={m} className="flex items-start gap-2 rounded-lg border bg-card p-3">
+                <XCircle className="w-4 h-4 text-destructive mt-0.5 flex-shrink-0" aria-hidden="true" />
+                {m}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Current status */}
+        <section aria-labelledby="status">
+          <LocalInsightCard variant="tip" title="Check current status before you go">
+            <ul className="space-y-1.5 text-sm">
+              <li>
+                <a href={COUNCIL_OFF_LEASH} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Townsville City Council — dog off-leash areas
+                </a>{" "}
+                (including Pallarenda Dog Beach and the Benwell Road off-leash area)
+              </li>
+              <li>
+                <a href={COUNCIL_DOGS} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Townsville City Council — current dog rules
+                </a>
+              </li>
+              <li>
+                <a href={CROCWISE} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Queensland Government — Be Crocwise
+                </a>
+              </li>
+              <li>
+                <a href={TIDES} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Bureau of Meteorology — tide predictions
+                </a>
+              </li>
+              <li>
+                <a href={DASHBOARD} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Townsville Disaster Dashboard
+                </a>{" "}
+                for weather and closures
+              </li>
+            </ul>
+          </LocalInsightCard>
+        </section>
+
+        {/* FAQ */}
+        <section aria-labelledby="faq" className="space-y-4">
+          <h2 id="faq" className="text-2xl md:text-3xl font-bold">
+            Dog Beach FAQs
+          </h2>
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((f, i) => (
+              <AccordionItem key={f.q} value={`faq-${i}`}>
+                <AccordionTrigger className="text-left">{f.q}</AccordionTrigger>
+                <AccordionContent className="text-muted-foreground leading-relaxed">
+                  {f.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </section>
+
+        {/* Related */}
+        <section aria-labelledby="related">
+          <h2 id="related" className="text-2xl md:text-3xl font-bold mb-5">
+            Related Guides
+          </h2>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {RELATED.map((r) => (
+              <Link
+                key={r.to}
+                to={r.to}
+                className="block bg-card rounded-xl p-5 border hover:border-primary hover:shadow-md transition"
+              >
+                <h3 className="font-semibold text-foreground mb-1 flex items-center gap-1.5">
+                  {r.name}
+                  <ArrowRight className="w-4 h-4 text-primary" aria-hidden="true" />
+                </h3>
+                <p className="text-sm text-muted-foreground">{r.text}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
       </div>
     </>
   );
