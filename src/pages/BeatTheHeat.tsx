@@ -648,6 +648,12 @@ const BeatTheHeat = () => {
                 >
                   Read the full Strand guide <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
                 </Link>
+                <Link
+                  to="/riverway"
+                  className="inline-flex items-center gap-1.5 mt-3 ml-4 text-sm text-primary underline underline-offset-2"
+                >
+                  Riverway lagoons and shade <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
+                </Link>
               </CardContent>
             </Card>
 
