@@ -6,6 +6,8 @@ export interface QuickFacts {
   bestView?: string;
   /** Best free swimming option. */
   bestSwimming?: string;
+  /** Best swimming setup, used on beach planning guides. */
+  bestForSwimming?: string;
   /** Best option with children. */
   bestWithKids?: string;
   /** Best walk. */
@@ -376,7 +378,7 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
 
   "/beaches": {
     bestOverall: "The Strand — the strongest all-round visitor beach area",
-    bestSwimming:
+    bestForSwimming:
       "Designated swimming areas, subject to current patrol and net arrangements",
     bestWithKids: "The Strand",
     bestWalk: "Rowes Bay to Pallarenda",
