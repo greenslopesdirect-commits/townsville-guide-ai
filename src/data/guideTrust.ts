@@ -31,6 +31,51 @@ export const DEFAULT_GUIDE_TRUST: GuideTrustMeta = {
  * Anything not listed here falls back to DEFAULT_GUIDE_TRUST.
  */
 export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
+  "/guides/rainy-day-activities": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand experience of Townsville's wet-season weather with current information from the Bureau of Meteorology, Townsville City Council, Queensland Government road and park services, and local attraction operators.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Bureau of Meteorology — Townsville forecast",
+        url: "http://www.bom.gov.au/qld/forecasts/townsville.shtml",
+      },
+      {
+        name: "Bureau of Meteorology — Queensland warnings",
+        url: "http://www.bom.gov.au/qld/warnings/",
+      },
+      {
+        name: "Townsville Disaster Dashboard",
+        url: "https://disaster.townsville.qld.gov.au/",
+      },
+      {
+        name: "Queensland Traffic — road conditions",
+        url: "https://qldtraffic.qld.gov.au/",
+      },
+      {
+        name: "Queensland Parks and Wildlife Service — park alerts",
+        url: "https://parks.desi.qld.gov.au/park-alerts",
+      },
+      {
+        name: "Queensland Museum Tropics",
+        url: "https://www.museum.qld.gov.au/museum-of-tropical-queensland",
+      },
+      {
+        name: "Townsville CityLibraries",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/libraries",
+      },
+      {
+        name: "Perc Tucker Regional Gallery — Townsville City Council",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/galleries",
+      },
+      {
+        name: "Great Barrier Reef Marine Park Authority — Reef HQ redevelopment",
+        url: "https://www2.gbrmpa.gov.au/reef-hq-redevelopment",
+      },
+    ],
+  },
   "/guides/beat-the-heat": {
     visitStatus: "partially-firsthand",
     visitNote:
