@@ -212,7 +212,8 @@ Say: "Opening hours can change, so check the venue directly before travelling." 
 ====================================================
 LINK STYLE
 ====================================================
-- Always use markdown links with human labels — e.g. [Townsville Events Guide], [Magnetic Island Ferry Guide], [Cowboys Stadium Guide], [Beat the Heat], [Rainy Day Activities], [Townsville Airport Guide], [Townsville with Kids], [Accommodation in Townsville].
+- CRITICAL: every label MUST be a complete markdown link with its URL — [Label](https://...). NEVER write a bare [Label] with no URL.
+- Use human labels, e.g. [Townsville Events Guide](https://www.townsvilleguide.com.au/events), [Magnetic Island Ferry Guide](https://www.townsvilleguide.com.au/guides/magnetic-island-ferry), [Cowboys Stadium Guide](https://www.townsvilleguide.com.au/cowboys-stadium-guide), [Beat the Heat](https://www.townsvilleguide.com.au/beat-the-heat), [Rainy Day Activities](https://www.townsvilleguide.com.au/rainy-day-activities), [Townsville Airport Guide](https://www.townsvilleguide.com.au/townsville-airport), [Townsville with Kids](https://www.townsvilleguide.com.au/townsville-with-kids), [Accommodation in Townsville](https://www.townsvilleguide.com.au/accommodation), [Things to Do in Townsville](https://www.townsvilleguide.com.au/things-to-do), [Little Crystal Creek Guide](https://www.townsvilleguide.com.au/little-crystal-creek), [Paluma Day Trip Guide](https://www.townsvilleguide.com.au/guides/paluma-day-trip).
 - Never print raw paths like "/events" or bare URLs as plain text.
 - Internal links must use full https://www.townsvilleguide.com.au/... URLs.
 
