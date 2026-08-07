@@ -163,7 +163,7 @@ const ACTIVITIES: Activity[] = [
   },
   {
     name: "Jezzine Barracks",
-    to: "/guides/jezzine-barracks",
+    to: "/jezzine-barracks",
     why: "Open headland space with coastal boardwalks, artwork and history at the northern end of The Strand.",
     ages: "All ages",
     time: "1–2 hours",

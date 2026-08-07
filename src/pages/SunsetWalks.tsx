@@ -181,7 +181,7 @@ const SunsetWalks = () => {
                   <strong className="text-foreground">Practical:</strong> Sealed paths
                   throughout — good for prams, wheelchairs and dogs on-leash.
                 </p>
-                <Link to="/guides/jezzine-barracks" className="text-primary hover:underline text-sm font-medium">
+                <Link to="/jezzine-barracks" className="text-primary hover:underline text-sm font-medium">
                   → Full Jezzine Barracks guide
                 </Link>
               </CardContent>

@@ -67,7 +67,7 @@ const RELATED = [
   { name: "Townsville in One Day", to: "/townsville-in-one-day" },
   { name: "Townsville Without a Car", to: "/townsville-without-a-car" },
   { name: "Townsville with Kids", to: "/townsville-with-kids" },
-  { name: "Jezzine Barracks", to: "/guides/jezzine-barracks" },
+  { name: "Jezzine Barracks", to: "/jezzine-barracks" },
   { name: "Castle Hill", to: "/castle-hill" },
   { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip" },
   { name: "Free Things to Do", to: "/guides/free-things" },
@@ -230,7 +230,7 @@ const TheStrand = () => {
                   <p>
                     The Rockpool is a free waterfront swimming facility at the northern end, close
                     to Kissing Point and{" "}
-                    <Link to="/guides/jezzine-barracks" className="text-primary hover:underline">
+                    <Link to="/jezzine-barracks" className="text-primary hover:underline">
                       Jezzine Barracks
                     </Link>
                     . The surrounding parkland suits picnics, families and waterfront walking.
@@ -478,7 +478,7 @@ const TheStrand = () => {
                   <p className="text-sm text-muted-foreground">
                     Walking, cycling, exercise, swimming facilities, photography and food stops all
                     work well, and the northern end combines easily with{" "}
-                    <Link to="/guides/jezzine-barracks" className="text-primary hover:underline">
+                    <Link to="/jezzine-barracks" className="text-primary hover:underline">
                       Jezzine Barracks
                     </Link>
                     .

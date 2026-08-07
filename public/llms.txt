@@ -41,7 +41,7 @@
 - [Beat the Heat](/guides/beat-the-heat): Staying cool in the tropics.
 - [Sunset Walks](/guides/sunset-walks): Best spots to catch the sunset.
 - [Free Things to Do](/guides/free-things): No-cost activities around Townsville.
-- [Jezzine Barracks](/guides/jezzine-barracks): Heritage headland walk.
+- [Jezzine Barracks](/jezzine-barracks): Heritage headland walk.
 
 ## Optional
 

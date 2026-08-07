@@ -191,7 +191,7 @@ const RainyDayActivities = () => (
               </li>
               <li>
                 Visit{" "}
-                <Link to="/guides/jezzine-barracks" className="text-primary hover:underline font-medium">Jezzine Barracks</Link>
+                <Link to="/jezzine-barracks" className="text-primary hover:underline font-medium">Jezzine Barracks</Link>
               </li>
               <li>Explore the CBD, where shops, cafés and galleries are close together</li>
               <li>Combine outdoor stops with cafés, the museum or a gallery</li>
@@ -479,7 +479,7 @@ const RainyDayActivities = () => (
               rain. The headland is exposed, so save it for a break in the cloud rather than pushing
               through a downpour.
             </p>
-            <Link to="/guides/jezzine-barracks" className="text-primary hover:underline font-medium">
+            <Link to="/jezzine-barracks" className="text-primary hover:underline font-medium">
               Jezzine Barracks guide →
             </Link>
           </CardContent>
@@ -675,7 +675,7 @@ const RainyDayActivities = () => (
       <ul className="list-disc list-inside space-y-1 text-muted-foreground mb-4">
         <li><Link to="/the-strand" className="text-primary hover:underline font-medium">The Strand</Link></li>
         <li><Link to="/castle-hill" className="text-primary hover:underline font-medium">Castle Hill lookout</Link></li>
-        <li><Link to="/guides/jezzine-barracks" className="text-primary hover:underline font-medium">Jezzine Barracks</Link></li>
+        <li><Link to="/jezzine-barracks" className="text-primary hover:underline font-medium">Jezzine Barracks</Link></li>
         <li><Link to="/rowes-bay" className="text-primary hover:underline font-medium">Rowes Bay</Link></li>
         <li>The CBD, for a walk, coffee or early dinner</li>
         <li>Riverway, once council facilities are confirmed open</li>

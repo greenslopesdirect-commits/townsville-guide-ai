@@ -130,7 +130,7 @@ const RELATED = [
   { name: "First Time in Townsville", to: "/first-time-in-townsville" },
   { name: "Townsville in One Day", to: "/townsville-in-one-day" },
   { name: "The Strand", to: "/the-strand" },
-  { name: "Jezzine Barracks", to: "/guides/jezzine-barracks" },
+  { name: "Jezzine Barracks", to: "/jezzine-barracks" },
   { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip" },
   { name: "Townsville with Kids", to: "/townsville-with-kids" },
   { name: "Free Things to Do", to: "/guides/free-things" },
@@ -286,7 +286,7 @@ const TownsvilleWithoutACar = () => {
             </Link>
             ,{" "}
             <Link
-              to="/guides/jezzine-barracks"
+              to="/jezzine-barracks"
               className="text-primary underline underline-offset-2"
             >
               Jezzine Barracks guide

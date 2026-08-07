@@ -1007,7 +1007,7 @@ const FreeThings = () => {
               first-time visitor guide
             </Link>{" "}
             covers the wider basics, and the{" "}
-            <Link to="/guides/jezzine-barracks" className="text-primary underline underline-offset-2">
+            <Link to="/jezzine-barracks" className="text-primary underline underline-offset-2">
               Jezzine Barracks guide
             </Link>{" "}
             has the detail for the headland parkland.

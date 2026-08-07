@@ -47,6 +47,7 @@ const PAGES = [
   { path: "/shopping",                            source: "src/pages/Shopping.tsx",                    changefreq: "weekly",  priority: "0.7" },
   { path: "/nature",                              source: "src/pages/Nature.tsx",                      changefreq: "weekly",  priority: "0.7" },
   { path: "/accommodation",                       source: "src/pages/Accommodation.tsx",               changefreq: "weekly",  priority: "0.8" },
+  { path: "/directory",                           source: "src/pages/Directory.tsx",                   changefreq: "weekly",  priority: "0.8" },
   { path: "/local-tips",                          source: "src/pages/LocalTips.tsx",                   changefreq: "weekly",  priority: "0.8" },
   { path: "/advertise",                           source: "src/pages/Advertise.tsx",                   changefreq: "monthly", priority: "0.8" },
   { path: "/contact",                             source: "src/pages/Contact.tsx",                     changefreq: "monthly", priority: "0.5" },

@@ -109,7 +109,7 @@ const WET_WEATHER = [
 const RELATED = [
   { name: "First Time in Townsville", to: "/first-time-in-townsville" },
   { name: "The Strand", to: "/the-strand" },
-  { name: "Jezzine Barracks", to: "/guides/jezzine-barracks" },
+  { name: "Jezzine Barracks", to: "/jezzine-barracks" },
   { name: "Castle Hill", to: "/castle-hill" },
   { name: "Townsville with Kids", to: "/townsville-with-kids" },
   { name: "Free Things to Do", to: "/guides/free-things" },
@@ -278,7 +278,7 @@ const TownsvilleInOneDay = () => {
           <p className="text-muted-foreground leading-relaxed">
             Allow approximately 60–90 minutes. The full{" "}
             <Link
-              to="/guides/jezzine-barracks"
+              to="/jezzine-barracks"
               className="text-primary underline underline-offset-2"
             >
               Jezzine Barracks guide

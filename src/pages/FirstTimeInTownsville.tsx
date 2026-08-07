@@ -416,7 +416,7 @@ const FirstTimeInTownsville = () => {
                   </Link>
                   ,{" "}
                   <Link
-                    to="/guides/jezzine-barracks"
+                    to="/jezzine-barracks"
                     className="text-primary underline underline-offset-2"
                   >
                     Jezzine Barracks

@@ -167,7 +167,7 @@ const RowesBay = () => {
                   <h3 className="font-semibold text-gray-800 mb-1">Sunset Walks</h3>
                   <p className="text-sm text-gray-600">Best foreshore & headland walks for golden hour.</p>
                 </Link>
-                <Link to="/guides/jezzine-barracks" className="block bg-white rounded-xl p-5 shadow-sm border hover:border-primary hover:shadow-md transition">
+                <Link to="/jezzine-barracks" className="block bg-white rounded-xl p-5 shadow-sm border hover:border-primary hover:shadow-md transition">
                   <h3 className="font-semibold text-gray-800 mb-1">Jezzine Barracks</h3>
                   <p className="text-sm text-gray-600">Coastal boardwalk linking Rowes Bay to The Strand.</p>
                 </Link>
@@ -225,7 +225,7 @@ const RowesBay = () => {
                   Walking back? Explore the Jezzine Barracks coastal boardwalk on your way to The Strand.
                 </p>
                 <Button asChild variant="default" size="sm" className="w-full">
-                  <Link to="/guides/jezzine-barracks">View Jezzine Guide</Link>
+                  <Link to="/jezzine-barracks">View Jezzine Guide</Link>
                 </Button>
               </CardContent>
             </Card>
