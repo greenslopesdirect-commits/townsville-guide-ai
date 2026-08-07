@@ -63,6 +63,7 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(Sparkles, "Best overall", data.bestOverall);
   push(MapPin, "Best free view", data.bestView);
   push(Waves, "Best free swimming", data.bestSwimming);
+  push(Waves, "Best for swimming", data.bestForSwimming);
   push(Baby, "Best with kids", data.bestWithKids);
   push(Route, "Best walk", data.bestWalk);
   push(Users, "Best without a car", data.bestWithoutCar);

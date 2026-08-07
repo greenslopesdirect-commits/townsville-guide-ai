@@ -6,6 +6,8 @@ export interface QuickFacts {
   bestView?: string;
   /** Best free swimming option. */
   bestSwimming?: string;
+  /** Best swimming setup, used on beach planning guides. */
+  bestForSwimming?: string;
   /** Best option with children. */
   bestWithKids?: string;
   /** Best walk. */
@@ -374,6 +376,21 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
       "Townsville suits families who enjoy outdoor days, wildlife and swimming rather than large all-weather attractions, and the best plan depends on the children's ages and the weather.",
   },
 
+  "/beaches": {
+    bestOverall: "The Strand — the strongest all-round visitor beach area",
+    bestForSwimming:
+      "Designated swimming areas, subject to current patrol and net arrangements",
+    bestWithKids: "The Strand",
+    bestWalk: "Rowes Bay to Pallarenda",
+    bestSunset: "Pallarenda and Rowes Bay",
+    carNeeded: "Helpful for beaches outside The Strand",
+    mainConsideration: "Marine stingers and changing swimming conditions",
+    bestTimeToVisit: "Early morning or late afternoon; typical stinger season is November to May",
+    checkBeforeHeadingOut:
+      "Current Townsville City Council beach, patrol and stinger-enclosure information",
+    localVerdict:
+      "Townsville beaches are best enjoyed as part of the coastal lifestyle, not simply as surf beaches — and swimming suitability varies a lot between them.",
+  },
   "/jezzine-barracks": {
     bestFor: ["History", "Coastal views", "Easy walking", "Families"],
     cost: "Free",
