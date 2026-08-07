@@ -86,6 +86,16 @@ export interface QuickFacts {
   toilets?: string;
   accessibility?: string;
   dogFriendly?: string;
+  /** Strongest designated off-leash dog beach. */
+  bestDogBeach?: string;
+  /** Most central designated off-leash dog beach. */
+  bestCentralOffLeashBeach?: string;
+  /** Best fenced off-leash option. */
+  bestFencedOption?: string;
+  /** Best option where dogs can access water. */
+  bestDogSwimming?: string;
+  /** Single most important rule to understand. */
+  mainRule?: string;
   bestTimeToVisit?: string;
   /** Current access status, e.g. a temporary closure. */
   currentAccess?: string;
