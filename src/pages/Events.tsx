@@ -1,796 +1,793 @@
-import { Calendar, MapPin, Music, Info, ArrowRight, ExternalLink, Dog, Footprints, Trophy, Leaf, Sun, Thermometer, Laugh, Star, ShoppingBasket } from "lucide-react";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
+import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
+import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  AlertTriangle,
+  Baby,
+  Building2,
+  CalendarDays,
+  Car,
+  Coffee,
+  ExternalLink,
+  MapPin,
+  Music,
+  Palette,
+  ShoppingBasket,
+  Sun,
+  Ticket,
+  Trophy,
+  Umbrella,
+} from "lucide-react";
 
-const TOWNSVILLE_ADDRESS = {
-  "@type": "PostalAddress",
-  addressLocality: "Townsville",
-  addressRegion: "QLD",
-  addressCountry: "AU",
-};
+const SITE = "https://www.townsvilleguide.com.au";
+const PATH = "/events";
+/** Official council events calendar — the authoritative source for current listings. */
+const WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
-const eventsGraph = [
-    {
-      "@type": "Event",
-      name: "The Great Island Trek",
-      startDate: "2026-08-08",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Trail running event on Magnetic Island with multiple distances across tropical bushland and coastal terrain — suited to experienced trekkers and casual participants alike.",
-      location: {
-        "@type": "Place",
-        name: "Magnetic Island",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Magnetic Island",
-          addressRegion: "QLD",
-          addressCountry: "AU",
-        },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Cotters Market",
-      startDate: "2026-08-09",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Townsville's premier Sunday market on Flinders Street from 8:00 AM to 1:00 PM — fresh coffee, local North Queensland crafts, food stalls, and live street music.",
-      location: {
-        "@type": "Place",
-        name: "Flinders Street, Townsville CBD",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Flinders Street" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "North Queensland Elite Rodeo",
-      startDate: "2026-08-14",
-      endDate: "2026-08-16",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Three nights of bull riding, barrel racing, and country entertainment under lights at Hervey Range — one of the dry season's biggest community drawcards.",
-      location: {
-        "@type": "Place",
-        name: "Hervey Range",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Hervey Range",
-          addressRegion: "QLD",
-          addressCountry: "AU",
-        },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Bingo Loco Townsville",
-      startDate: "2026-08-15",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Forget church-hall bingo — this is bingo with a DJ, dancers, confetti cannons and prizes that have nothing to do with numbers. FLNDRS gets loud for one of Townsville's rowdiest nights out.",
-      location: {
-        "@type": "Place",
-        name: "FLNDRS Bar & Nightclub",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "FLNDRS Bar & Nightclub" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Urzila Carlson: Fatty on a Yacht",
-      startDate: "2026-08-21",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "The Kiwi-South African stand-up favourite brings her new show to the Convention Centre for one night only — sharp, self-deprecating comedy from one of the country's most-loved comedians.",
-      location: {
-        "@type": "Place",
-        name: "Townsville Entertainment & Convention Centre",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Townsville Entertainment & Convention Centre" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Festival of Stories (Children's Book Week)",
-      startDate: "2026-08-22",
-      endDate: "2026-08-29",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "A week of author visits, storytelling sessions and dress-up days across Townsville's libraries celebrating Children's Book Week, building to a headline weekend of family activities at Citylibraries Aitkenvale on Friday 28 and Saturday 29 August.",
-      location: {
-        "@type": "Place",
-        name: "Citylibraries Aitkenvale (and branches across Townsville)",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Citylibraries Aitkenvale" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "SeaLink Magnetic Island Race Week",
-      startDate: "2026-08-27",
-      endDate: "2026-09-02",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "A week of yachts racing across Cleveland Bay and lively community events around Magnetic Island — one of the dry season's most popular regattas.",
-      location: {
-        "@type": "Place",
-        name: "Magnetic Island",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Magnetic Island",
-          addressRegion: "QLD",
-          addressCountry: "AU",
-        },
-      },
-    },
-    {
-      "@type": "SportsEvent",
-      name: "North Queensland Cowboys vs Wests Tigers",
-      startDate: "2026-08-29",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "NRL home game — North Queensland Cowboys host the Wests Tigers at Queensland Country Bank Stadium, Saturday August 29, 2026, 7:35 PM. NRLW Knights also playing that day.",
-      location: {
-        "@type": "Place",
-        name: "Queensland Country Bank Stadium",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Cape Pallarenda Trail Run",
-      startDate: "2026-08-30",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Townsville's toughest trail race, taking runners through the coastal bushland and headland tracks of Cape Pallarenda. Choose from 5km, 12km, 21km or a full 42km ultra — most locals stick to the shorter distances and just enjoy the views.",
-      location: {
-        "@type": "Place",
-        name: "Cape Pallarenda",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Pallarenda" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "WNBL Townsville Tip Off",
-      startDate: "2026-09-17",
-      endDate: "2026-09-20",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "The WNBL season kicks off with a showcase of the league's biggest teams and talent right here in Townsville — a rare chance to see elite women's basketball up close.",
-      location: {
-        "@type": "Place",
-        name: "Townsville",
-        address: TOWNSVILLE_ADDRESS,
-      },
-    },
-    {
-      "@type": "SportsEvent",
-      name: "Queensland Football Series: Australia vs Brazil",
-      startDate: "2026-09-25",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "The Socceroos take on Brazil in a rare international friendly at Queensland Country Bank Stadium — a notable stop on the Queensland Football Series calendar.",
-      location: {
-        "@type": "Place",
-        name: "Queensland Country Bank Stadium",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
-      },
-      homeTeam: { "@type": "SportsTeam", name: "Australia" },
-      awayTeam: { "@type": "SportsTeam", name: "Brazil" },
-    },
-    {
-      "@type": "Event",
-      name: "North Australian Festival of Arts (NAFA)",
-      startDate: "2026-09-25",
-      endDate: "2026-10-11",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Townsville's flagship arts festival, bringing comedy, circus, theatre, live music, and light installations to Strand Park and venues across the CBD.",
-      location: {
-        "@type": "Place",
-        name: "Strand Park & venues across Townsville",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Strand Park" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Björn Again",
-      startDate: "2026-10-10",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "The world's favourite ABBA tribute show brings the platform boots and glitter back to the Convention Centre for a full night of sing-along classics.",
-      location: {
-        "@type": "Place",
-        name: "Townsville Entertainment & Convention Centre",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Townsville Entertainment & Convention Centre" },
-      },
-    },
-    {
-      "@type": "SportsEvent",
-      name: "Rugby League World Cup 2026: Australia vs Cook Islands",
-      startDate: "2026-10-31",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Townsville hosts a Rugby League World Cup pool match as the Kangaroos take on the Cook Islands at Queensland Country Bank Stadium — a huge night for the city on the international stage.",
-      location: {
-        "@type": "Place",
-        name: "Queensland Country Bank Stadium",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
-      },
-      homeTeam: { "@type": "SportsTeam", name: "Australia" },
-      awayTeam: { "@type": "SportsTeam", name: "Cook Islands" },
-    },
-    {
-      "@type": "Event",
-      name: "Foo Fighters",
-      startDate: "2026-11-07",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Foo Fighters play Queensland Country Bank Stadium for a single huge night — a major stadium show landing right here in North Queensland.",
-      location: {
-        "@type": "Place",
-        name: "Queensland Country Bank Stadium",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "PBR Monster Energy Grand Final",
-      startDate: "2026-11-13",
-      endDate: "2026-11-14",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Two nights of the country's best bull riders chasing the season title at the PBR Grand Final — high-adrenaline arena action at the Convention Centre.",
-      location: {
-        "@type": "Place",
-        name: "Townsville Entertainment and Convention Centre",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Townsville Entertainment and Convention Centre" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Guns N' Roses (Airbourne Tour)",
-      startDate: "2026-12-02",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Guns N' Roses close out the stadium's big 2026, with Airbourne also on the bill — a mid-week rock spectacular to wrap the year at Queensland Country Bank Stadium.",
-      location: {
-        "@type": "Place",
-        name: "Queensland Country Bank Stadium",
-        address: { ...TOWNSVILLE_ADDRESS, streetAddress: "Queensland Country Bank Stadium" },
-      },
-    },
-    {
-      "@type": "Event",
-      name: "Townsville Christmas Festival",
-      startDate: "2026-12",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "Festive lights, markets, and family-friendly entertainment across the CBD and waterfront.",
-      location: {
-        "@type": "Place",
-        name: "Townsville CBD & waterfront",
-        address: TOWNSVILLE_ADDRESS,
-      },
-    },
+const TITLE = "Townsville Events | Festivals, Sport, Markets & What's On";
+const DESCRIPTION =
+  "Discover major Townsville events, festivals, sport, markets and family activities, plus where to check what's on during your visit.";
+
+const EVENT_TYPES = [
+  {
+    icon: Trophy,
+    name: "Sport",
+    text: "Supercars, Cowboys and other rugby league fixtures, running and trail events, basketball and visiting national competitions. Fixtures and dates are set season by season, so always check the official source.",
+  },
+  {
+    icon: Music,
+    name: "Music & festivals",
+    text: "Concerts, community festivals and cultural celebrations run through the year, with the outdoor programme concentrated in the cooler months.",
+  },
+  {
+    icon: ShoppingBasket,
+    name: "Markets",
+    text: "Townsville has regular markets across the city and waterfront. Schedules, locations and seasonal breaks change, so check current listings before planning a morning around one.",
+  },
+  {
+    icon: Palette,
+    name: "Arts & culture",
+    text: "Theatre, galleries, exhibitions, performances, talks and workshops, mostly around the CBD and the city's main venues.",
+  },
+  {
+    icon: Baby,
+    name: "Family events",
+    text: "Library programmes, school-holiday activities, community days and family festivals appear regularly on the council calendar.",
+  },
+  {
+    icon: Ticket,
+    name: "Free events",
+    text: "Council and community calendars regularly include free events, though some have paid or ticketed components alongside the free parts.",
+  },
 ];
 
-const eventsFaq = {
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What is happening in Townsville this weekend?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Markets, sports events, seasonal festivals, and outdoor activities typically feature each week. This page is updated regularly with current highlights. You can also check the official Townsville events calendar for additional listings.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Where can I find live music in Townsville?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Popular spots include Palmer Street venues, Cowboys Leagues Club, Strand Night Markets, and seasonal festival stages. Browse our Food & Drink guide for dining spots with live entertainment.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Are Townsville events family friendly?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Most community markets, festivals, lagoon activities, and outdoor events welcome families. Always check venue-specific details. For family activity ideas, see our Things to Do and Dog-Friendly guides.",
-      },
-    },
-  ],
-};
+const VENUES = [
+  {
+    icon: Building2,
+    name: "Queensland Country Bank Stadium",
+    text: "The city's major sport and entertainment venue, on the edge of the CBD. Rugby league, other national fixtures and large concerts are held here. Fixtures change every season — check the venue or team for current dates.",
+  },
+  {
+    icon: Sun,
+    name: "The Strand",
+    text: "The main outdoor and waterfront setting for festivals, markets and community gatherings, especially through the cooler months.",
+    to: "/the-strand",
+    linkText: "The Strand guide",
+  },
+  {
+    icon: MapPin,
+    name: "Riverway",
+    text: "The western-suburbs community, family, cultural and outdoor event precinct, with lagoons, parkland, a library and a gallery in one place.",
+    to: "/riverway",
+    linkText: "Riverway guide",
+  },
+  {
+    icon: Palette,
+    name: "The CBD",
+    text: "Arts venues, galleries, theatre and city events, and the easiest area to combine an event with dinner or a night out.",
+    to: "/things-to-do",
+    linkText: "Things to do",
+  },
+  {
+    icon: MapPin,
+    name: "Jezzine Barracks & North Ward",
+    text: "Occasional community, commemorative and outdoor events on the headland, within walking distance of the northern Strand.",
+    to: "/jezzine-barracks",
+    linkText: "Jezzine Barracks guide",
+  },
+];
 
-const eventsJsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [...eventsGraph, eventsFaq],
-};
+const COMBOS = [
+  {
+    name: "Friday night event + Strand Saturday morning",
+    text: "An evening event, then an early walk, swim or breakfast on the waterfront before the heat builds.",
+  },
+  {
+    name: "Stadium event + Castle Hill + dinner",
+    text: "Sunrise or late-afternoon Castle Hill, an early dinner nearby, then walk to the stadium.",
+  },
+  {
+    name: "Strand festival + Jezzine Barracks",
+    text: "Pair a waterfront event with the headland walk at the northern end of The Strand.",
+  },
+  {
+    name: "Riverway event + western-suburbs stop",
+    text: "Combine a Riverway event with lunch or shopping at Willows on the way through.",
+  },
+  {
+    name: "Event weekend + Magnetic Island day trip",
+    text: "Keep one full day clear for the island rather than squeezing it around an event.",
+  },
+  {
+    name: "Event weekend + a Paluma extra day",
+    text: "Add a rainforest day if you have a spare day either side of the event.",
+  },
+];
 
+const MISTAKES = [
+  "Relying on last year's date for an annual event instead of the current confirmed date.",
+  "Assuming a recurring event lands on the same weekend every year — many move.",
+  "Not checking official event information again close to the date.",
+  "Leaving accommodation until late for a major event weekend.",
+  "Assuming parking and road arrangements are the same as a previous year.",
+  "Treating an old event article or blog post as a live calendar.",
+  "Planning an outdoor event day without checking the weather forecast.",
+  "Packing too many attractions around a major event and enjoying none of them.",
+  "Assuming every community event is completely free.",
+  "Ignoring ticket, registration or entry requirements until arrival.",
+  "Relying on old market times rather than the current schedule.",
+];
 
-const Events = () => {
-  return (
-    <div className="min-h-screen bg-gray-50 flex flex-col">
-      <SEOHead
-        title="What's On In Townsville This Week | August 3–9, 2026"
-        description="Updated August 3, 2026: Cowboys are away this week (Gold Coast Titans, Thu Aug 6), The Great Island Trek runs on Magnetic Island Saturday August 8, Cotters Market returns Sunday, and clear dry-season skies for Castle Hill and The Strand."
-        canonical="https://www.townsvilleguide.com.au/events"
-      />
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(eventsJsonLd)}</script>
-      </Helmet>
+const PATHWAYS = [
+  { label: "Current listings", name: "What's On Townsville", href: WHATS_ON_URL },
+  { label: "Sport", name: "Official fixtures", href: "https://www.cowboys.com.au/draw/" },
+  { label: "Festivals", name: "What's On Townsville", href: WHATS_ON_URL },
+  { label: "Markets", name: "What's On Townsville", href: WHATS_ON_URL },
+  { label: "With kids", name: "Townsville with Kids", to: "/townsville-with-kids" },
+  { label: "Free events", name: "Free Things to Do", to: "/guides/free-things" },
+  { label: "Stadium event", name: "Where to stay", to: "/accommodation" },
+  { label: "Strand event", name: "The Strand", to: "/the-strand" },
+  { label: "Riverway event", name: "Riverway", to: "/riverway" },
+  { label: "Event weekend", name: "Things to Do", to: "/things-to-do" },
+  { label: "An extra day", name: "Magnetic Island day trip", to: "/guides/magnetic-island-day-trip" },
+  { label: "Weather concerns", name: "Useful contacts", to: "/useful-contacts" },
+];
 
+const RELATED = [
+  { to: "/things-to-do", name: "Things to Do in Townsville", text: "The main activity hub for filling the rest of an event weekend." },
+  { to: "/accommodation", name: "Where to Stay in Townsville", text: "Which area suits your trip, and why it matters on event weekends." },
+  { to: "/food", name: "Food in Townsville", text: "Dining areas that work well before or after an event." },
+  { to: "/first-time-in-townsville", name: "First Time in Townsville", text: "Orientation if the event is your first visit to the city." },
+  { to: "/townsville-in-one-day", name: "Townsville in One Day", text: "A tight plan for the day either side of an event." },
+  { to: "/townsville-without-a-car", name: "Townsville Without a Car", text: "Ferries, buses and walkable areas around the main venues." },
+  { to: "/townsville-with-kids", name: "Townsville with Kids", text: "Family planning for community events and school holidays." },
+  { to: "/guides/free-things", name: "Free Things to Do", text: "Free options alongside free community events." },
+  { to: "/the-strand", name: "The Strand", text: "The city's main waterfront event and festival setting." },
+  { to: "/riverway", name: "Riverway", text: "The western-suburbs family and community event precinct." },
+  { to: "/guides/beat-the-heat", name: "Beat the Heat", text: "How to handle outdoor events in hot conditions." },
+  { to: "/guides/rainy-day-activities", name: "Rainy Day Activities", text: "Backup plans when an outdoor event is affected by weather." },
+];
 
+const faqs = [
+  {
+    q: "What events are held in Townsville?",
+    a: "Townsville hosts major sporting weekends, festivals, markets, live music, arts and theatre programmes, community celebrations and family activities through the year. The mix is strongest across the dry season, when most outdoor events are scheduled.",
+  },
+  {
+    q: "Where can I see what's on in Townsville now?",
+    a: "The official What's On Townsville calendar is the authoritative source for current dates, times, venues and newly announced events. This page explains the event scene and how to plan around it; the calendar tells you exactly what is on while you are here.",
+  },
+  {
+    q: "What are the biggest annual events in Townsville?",
+    a: "Townsville regularly hosts a major Supercars weekend, rugby league fixtures including Cowboys home games at Queensland Country Bank Stadium, a large arts festival, sailing and community festivals, and regular markets. Dates are set year by year, so check the current official calendar or organiser for the next confirmed edition.",
+  },
+  {
+    q: "When is the busiest event season in Townsville?",
+    a: "The dry season is generally the busiest period, with the most outdoor events, festivals, sport and markets. Shoulder months either side also carry a solid programme.",
+  },
+  {
+    q: "Are there free events in Townsville?",
+    a: "Yes — council and community calendars regularly include free events, including markets, community days and outdoor activities. Some events are free to attend but have paid or ticketed components, so check the current event details before assuming.",
+  },
+  {
+    q: "Are there family events in Townsville?",
+    a: "Family festivals, library and school-holiday programmes, community events and family-friendly sporting fixtures appear regularly. Confirm age suitability, ticket requirements, start and finish times and wet-weather arrangements with the organiser.",
+  },
+  {
+    q: "Are there markets in Townsville?",
+    a: "Yes, Townsville has regular markets across the city and waterfront. Schedules, locations and seasonal breaks change, so check the current listings rather than an older article before planning your morning around one.",
+  },
+  {
+    q: "Where are major events held in Townsville?",
+    a: "Queensland Country Bank Stadium hosts major sport and large concerts, The Strand hosts waterfront festivals and markets, Riverway hosts community and family events, and the CBD covers arts, galleries and theatre. Some events are held at Magnetic Island or other venues around the region.",
+  },
+  {
+    q: "Should I book accommodation early for a major event?",
+    a: "Yes. Major event weekends can increase demand, and central accommodation near the venue tends to fill first. Book early and check cancellation terms in case your plans change.",
+  },
+  {
+    q: "What should I do if an outdoor event is affected by rain?",
+    a: "The event organiser is the authoritative source for changes and cancellations, so check their current communications and the weather forecast. Have an indoor backup ready — our rainy day guide covers the main options.",
+  },
+  {
+    q: "Can I combine a Townsville event with Magnetic Island?",
+    a: "Easily. The ferry runs from the Breakwater terminal near the CBD, so an event weekend can include a full island day. Keep the island to its own day rather than squeezing it around an event.",
+  },
+  {
+    q: "Where should I check event dates before travelling?",
+    a: "Check the official What's On Townsville calendar for general listings, and the specific organiser, team or venue for sporting fixtures and ticketed events. Do not rely on last year's dates or older articles.",
+  },
+];
 
-      {/* Header Section */}
-      <div className="bg-white border-b sticky top-0 z-10">
-        <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="text-gray-600 hover:text-primary flex items-center gap-2 text-sm font-medium transition-colors">
-            <ArrowRight className="w-4 h-4 rotate-180" />
-            Back to Home
-          </Link>
-          <span className="text-xs font-medium text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full" data-last-updated="2026-08-03">
-            <time dateTime="2026-08-03">Updated: August 3, 2026</time>
-          </span>
-        </div>
+const Events = () => (
+  <>
+    <SEOHead title={TITLE} description={DESCRIPTION} canonical={PATH} ogType="article" />
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              headline: "Townsville Events, Festivals & What's On",
+              description: DESCRIPTION,
+              mainEntityOfPage: `${SITE}${PATH}`,
+              author: { "@type": "Person", name: "Duncan Ross" },
+              publisher: { "@type": "Organization", name: "Townsville Guide" },
+              dateModified: "2026-08-07",
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+                { "@type": "ListItem", position: 2, name: "Things to Do", item: `${SITE}/things-to-do` },
+                { "@type": "ListItem", position: 3, name: "Townsville Events", item: `${SITE}${PATH}` },
+              ],
+            },
+            {
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+          ],
+        })}
+      </script>
+    </Helmet>
+
+    <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
+      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+        <CalendarDays className="w-4 h-4" aria-hidden="true" />
+        Events planning hub
       </div>
 
-      <main className="flex-grow container mx-auto px-4 py-8 max-w-4xl space-y-8">
-        
-        {/* Hero Section — SEO-enhanced H1 */}
-        <div className="space-y-4 text-center sm:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary">
-             What's On in Townsville This Weekend: Dry Season & Local Event Calendar
-           </h1>
-           <p className="text-sm text-gray-500">
-               Updated weekly by a local Townsville guide to help you discover events, markets, festivals, and seasonal highlights.
-             </p>
-               <p className="text-lg text-gray-600 max-w-2xl">
-                 The beautiful, low-humidity "Perfect Dry" season continues. Clear sunny days and cool mornings make early August ideal for markets, coastal walks, and outdoor adventures.
-               </p>
-          </div>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        Townsville Events, Festivals &amp; What's On
+      </h1>
 
-         {/* SEO Intro Paragraph */}
-         <p className="text-gray-600 max-w-3xl">
-           Searching for <strong>what's on in Townsville this weekend</strong> or planning the week ahead? This regularly updated <strong>Townsville events calendar</strong> highlights what's happening around the city — from NRL home games and community markets to festivals and seasonal experiences across North Queensland. Visiting Townsville for an event? Check our <Link to="/townsville-airport" className="text-primary font-medium hover:underline">Townsville Airport Guide</Link> for transport, arrival tips, and local travel advice.
-         </p>
+      <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+        Townsville hosts major sporting weekends, festivals, markets, live music, arts events and
+        family activities throughout the year. This guide helps you understand the event scene and
+        plan a visit around it — while the official What's On Townsville calendar provides the
+        latest dates and listings.
+      </p>
+      <p className="text-muted-foreground leading-relaxed mb-8">
+        Event dates move from year to year, so nothing here is presented as a fixed schedule. Use
+        this page to work out what kind of event weekend suits you and how to build a trip around
+        it, then confirm the actual dates with the official calendar or the organiser.
+      </p>
 
-        {/* This Week's Highlights Quick Summary */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">What's On in Townsville This Week (Early August 2026)</h2>
-          <p className="text-gray-600 max-w-3xl">
-             Here is what's on in Townsville from today through <strong>Sunday, August 9, 2026</strong>:
-           </p>
-           <ul className="list-disc list-inside space-y-2 text-gray-600">
-             <li><strong>Cowboys Away This Week:</strong> <strong>Gold Coast Titans vs Cowboys, Thu Aug 6 · 7:50 PM</strong> — The Cowboys travel to Cbus Super Stadium, Robina this round, so it's a quiet week at Queensland Country Bank Stadium. The next home game is <strong>Cowboys vs Wests Tigers, Saturday August 29</strong> — see our <Link to="/cowboys-stadium-guide" className="text-primary font-medium hover:underline">stadium guide</Link> for parking and Park &amp; Ride tips.</li>
-             <li><strong>Trail Running:</strong> <strong>The Great Island Trek — Saturday August 8</strong> — A Magnetic Island trail run with multiple distances across tropical bushland and coastal terrain, suited to experienced trekkers and casual participants alike.</li>
-             <li><strong>Sunday Markets:</strong> <strong>Cotters Market — every Sunday</strong> — Flinders Street from 8:00 AM to 1:00 PM. Fresh local coffee, food stalls, and seasonal produce in the cool morning air.</li>
-             <li><strong>Outdoors:</strong> <strong>Clear Dry-Season Skies</strong> — Exceptional conditions all week for the Castle Hill Goat Track, sunset walks along the Ross River Parkway, or a day trip to Magnetic Island with zero summer humidity.</li>
-           </ul>
-        </section>
+      <GuideQuickFacts className="mb-10" />
 
+      {/* Primary official calendar CTA */}
+      <section className="mb-12 rounded-xl border-2 border-primary/30 bg-primary/5 p-6 md:p-8">
+        <h2 className="text-2xl font-bold mb-3">What's On in Townsville Right Now?</h2>
+        <p className="text-muted-foreground leading-relaxed mb-5">
+          Event dates, venues and schedules change regularly. For the latest confirmed listings,
+          check the official What's On Townsville calendar.
+        </p>
+        <Button asChild size="lg">
+          <a href={WHATS_ON_URL} target="_blank" rel="noopener noreferrer">
+            See What's On in Townsville Now
+            <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
+          </a>
+        </Button>
+      </section>
 
-        {/* AI Call to Action + Official Calendar */}
-        <Card className="bg-primary/5 border-primary/20 shadow-sm">
-          <CardContent className="flex flex-col md:flex-row items-center gap-6 p-6">
-            <div className="flex-grow space-y-2 text-center md:text-left">
-              <h3 className="font-semibold text-lg text-primary">What's On This Week?</h3>
-              <p className="text-sm text-gray-600">
-                Ask me: "What's the best sunrise walk in Townsville?" or "Is it safe to swim this weekend?"
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-              <Button asChild className="w-full sm:w-auto">
-                <Link to="/">Ask AI Agent</Link>
-              </Button>
-              <Button asChild variant="outline" className="w-full sm:w-auto gap-2">
-                <a href="https://whatson.townsville.qld.gov.au/" target="_blank" rel="noopener noreferrer">
-                  Official Event Calendar
-                  <ExternalLink className="w-4 h-4" />
-                </a>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-
-        {/* Featured Events */}
-        <section className="space-y-6">
-          <div className="flex items-center gap-2">
-            <h2 className="text-2xl font-bold text-gray-900">Featured Events</h2>
-             <Badge variant="secondary" className="bg-amber-100 text-amber-800 hover:bg-amber-100">
-                Dry Season & Beyond 2026
-              </Badge>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-1">
-
-            {/* Card 1 — Crisp Winter Season */}
-            <Card className="border-l-4 border-l-teal-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-100 border-none">
-                    Seasonal Highlight
-                  </Badge>
-                  <Sun className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">Perfect Dry Season Days in Townsville</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>May – August 2026</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Across Townsville & North Queensland</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  The "Perfect Dry" is here. Morning temperatures are comfortably cool, humidity has dropped, and the skies are postcard-clear. It's the best window of the year for sunrise hikes up <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill</Link>, beach walks along The Strand, and open-air markets without the summer heat.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Card 2 — North Australian Festival of Arts */}
-            <Card className="border-l-4 border-l-green-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-green-100 text-green-700 hover:bg-green-100 border-none">
-                    Spring Festival — Locked In
-                  </Badge>
-                  <Star className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">North Australian Festival of Arts (NAFA)</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>25 September – 11 October 2026</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Strand Park & Venues Across Townsville</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  Townsville's flagship arts festival is locked in for spring 2026, bringing theatre, comedy, circus, live music, and stunning open-air light installations to Strand Park and venues across the CBD.
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Card 3 — Cotters Market */}
-            <Card className="border-l-4 border-l-orange-500 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex justify-between items-start">
-                  <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-100 border-none">
-                    Every Sunday — Markets
-                  </Badge>
-                  <ShoppingBasket className="w-5 h-5 text-gray-400" />
-                </div>
-                <CardTitle className="text-xl mt-2">Cotters Market</CardTitle>
-                <div className="flex flex-col gap-1 text-sm text-gray-600 mt-1">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4" />
-                    <span>Sunday Mornings</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4" />
-                    <span>Flinders Street, Townsville CBD</span>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600 text-sm">
-                  Townsville's premier Sunday market. Fresh coffee, local North Queensland crafts, and live street music in the fresh morning air. The perfect start to a Sunday before exploring the Strand or Riverway.
-                </p>
-              </CardContent>
-            </Card>
-
-          </div>
-        </section>
-
-        {/* Local Climate Tip */}
-        <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start">
-          <Thermometer className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
-          <div>
-            <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
-            <p className="text-amber-800 text-sm mt-1">
-              The dry season has officially arrived in Townsville. The humidity has dropped, the nights are cool, and the days are crystal clear — perfect for the <Link to="/castle-hill" className="text-primary font-medium hover:underline">Castle Hill Goat Track</Link> or a sunset walk along the Ross River Parkway.
+      {/* Events worth planning around */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">Events worth planning a trip around</h2>
+        <p className="text-muted-foreground mb-6">
+          A handful of recurring events are big enough to shape a trip. These run regularly rather
+          than on fixed dates, so treat them as a reason to check the current calendar early.
+        </p>
+        <div className="space-y-4">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Trophy className="w-4 h-4 text-primary" aria-hidden="true" /> Major motorsport
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Townsville regularly hosts a major Supercars weekend during the dry-season calendar,
+              run on a street circuit near the city centre. It is the single busiest weekend of the
+              year for accommodation. Check the current Supercars schedule before planning your
+              trip.
             </p>
-          </div>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Trophy className="w-4 h-4 text-primary" aria-hidden="true" /> Cowboys and major rugby
+              league
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              North Queensland Cowboys home games and other major fixtures at Queensland Country
+              Bank Stadium create strong event weekends, with the CBD noticeably busier. Fixtures
+              are set season by season — check the{" "}
+              <a
+                href="https://www.cowboys.com.au/draw/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                official Cowboys draw
+              </a>{" "}
+              for current dates, and our{" "}
+              <Link to="/cowboys-stadium-guide" className="text-primary hover:underline">
+                stadium guide
+              </Link>{" "}
+              for getting there.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Music className="w-4 h-4 text-primary" aria-hidden="true" /> Festivals and community
+              events
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Cultural festivals, music events, food events, arts programmes and community
+              celebrations run through the year, concentrated in the cooler months. Programmes are
+              announced season by season, so check the official calendar for what falls inside your
+              dates.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <ShoppingBasket className="w-4 h-4 text-primary" aria-hidden="true" /> Markets and
+              waterfront events
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              The Strand and the CBD host regular markets, community gatherings and waterfront
+              events, mostly in the mornings or evenings rather than the middle of the day. Times
+              and locations change, so check current listings before travelling for one.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Palette className="w-4 h-4 text-primary" aria-hidden="true" /> Major arts and
+              entertainment
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Theatre, touring concerts, exhibitions and performances run across the city's main
+              venues and galleries. Programmes are released in blocks and sell separately, so check
+              venue listings for what is scheduled during your visit.
+            </p>
+          </article>
         </div>
+      </section>
 
-        {/* Rowes Bay Promo Block */}
-        <div className="bg-blue-50 border border-blue-100 rounded-lg p-6 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="space-y-2 text-center sm:text-left">
-            <h3 className="font-semibold text-lg text-blue-900">Looking for a quiet sunset spot?</h3>
-            <p className="text-blue-700 text-sm max-w-md">
-              For a quieter coastal escape, head to the secret northern beaches like Saunders Beach or Toolakea. Easy parking, fewer crowds, and a steady sea breeze.
+      {/* Event categories */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">Event types in Townsville</h2>
+        <p className="text-muted-foreground mb-6">
+          A quick way to work out what kind of event you are actually looking for before you open
+          the calendar.
+        </p>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {EVENT_TYPES.map(({ icon: Icon, name, text }) => (
+            <article key={name} className="rounded-xl border bg-card p-5">
+              <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+                <Icon className="w-4 h-4 text-primary" aria-hidden="true" />
+                {name}
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{text}</p>
+            </article>
+          ))}
+        </div>
+        <p className="text-sm text-muted-foreground mt-4">
+          Family plans work well alongside{" "}
+          <Link to="/townsville-with-kids" className="text-primary hover:underline">
+            Townsville with Kids
+          </Link>
+          , and free events pair naturally with{" "}
+          <Link to="/guides/free-things" className="text-primary hover:underline">
+            free things to do
+          </Link>
+          .
+        </p>
+      </section>
+
+      {/* Season */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Event seasons in Townsville</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Sun className="w-4 h-4 text-primary" aria-hidden="true" /> Dry season
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Generally the busiest stretch of the calendar: outdoor events, festivals, sport,
+              markets and waterfront activity all cluster here, helped by cooler, drier weather.
+              Accommodation is in higher demand, particularly on major event weekends.
             </p>
-          </div>
-          <Button asChild variant="outline" className="bg-white hover:bg-blue-50 text-blue-700 border-blue-200 shrink-0">
-            <Link to="/rowes-bay">View Rowes Bay Guide</Link>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Umbrella className="w-4 h-4 text-primary" aria-hidden="true" /> Wet season
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Events still run, with indoor venues, theatre, galleries and stadium events carrying
+              more of the programme. Outdoor events are more weather-dependent, and significant
+              weather can lead to changes or cancellations. Keep a{" "}
+              <Link to="/guides/rainy-day-activities" className="text-primary hover:underline">
+                rainy day plan
+              </Link>{" "}
+              handy and check{" "}
+              <Link to="/useful-contacts" className="text-primary hover:underline">
+                useful contacts
+              </Link>{" "}
+              for official weather and emergency information.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Venues */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">Where events are held</h2>
+        <p className="text-muted-foreground mb-6">
+          Knowing the venue usually tells you where to stay, how to get there and what else to do
+          around it.
+        </p>
+        <div className="space-y-4">
+          {VENUES.map(({ icon: Icon, name, text, to, linkText }) => (
+            <article key={name} className="rounded-xl border bg-card p-5">
+              <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+                <Icon className="w-4 h-4 text-primary" aria-hidden="true" />
+                {name}
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {text}
+                {to && (
+                  <>
+                    {" "}
+                    <Link to={to} className="text-primary hover:underline">
+                      {linkText}
+                    </Link>
+                    .
+                  </>
+                )}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Coming for a major event */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Coming for a major event?</h2>
+        <div className="space-y-4 text-muted-foreground leading-relaxed">
+          <p>
+            <strong className="text-foreground">Where to stay.</strong> Major event weekends
+            increase demand, and central options near the venue tend to go first. Work out the area
+            before the property — our{" "}
+            <Link to="/accommodation" className="text-primary hover:underline">
+              accommodation guide
+            </Link>{" "}
+            covers which part of town suits which kind of trip.
+          </p>
+          <p>
+            <strong className="text-foreground">Where to eat.</strong> Central dining areas combine
+            well with events, and booking is sensible on busy weekends. See the{" "}
+            <Link to="/food" className="text-primary hover:underline">
+              food guide
+            </Link>
+            .
+          </p>
+          <p>
+            <strong className="text-foreground">Getting around.</strong> Most central venues are
+            walkable from a central stay, and the ferry terminal is close to the CBD. See{" "}
+            <Link to="/townsville-without-a-car" className="text-primary hover:underline">
+              Townsville without a car
+            </Link>
+            .
+          </p>
+          <p>
+            <strong className="text-foreground">What else to do.</strong> Fill the rest of the
+            weekend from{" "}
+            <Link to="/things-to-do" className="text-primary hover:underline">
+              things to do
+            </Link>
+            , and add{" "}
+            <Link to="/castle-hill" className="text-primary hover:underline">
+              Castle Hill
+            </Link>{" "}
+            early or late in the day.
+          </p>
+          <p>
+            <strong className="text-foreground">Staying longer.</strong> Start with{" "}
+            <Link to="/first-time-in-townsville" className="text-primary hover:underline">
+              first time in Townsville
+            </Link>
+            ,{" "}
+            <Link to="/townsville-in-one-day" className="text-primary hover:underline">
+              Townsville in one day
+            </Link>{" "}
+            or a{" "}
+            <Link to="/guides/magnetic-island-day-trip" className="text-primary hover:underline">
+              Magnetic Island day trip
+            </Link>
+            . With a spare day, a{" "}
+            <Link to="/guides/paluma-day-trip" className="text-primary hover:underline">
+              Paluma day trip
+            </Link>{" "}
+            works well.
+          </p>
+        </div>
+      </section>
+
+      {/* Combos */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Event weekend combinations</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {COMBOS.map((c) => (
+            <article key={c.name} className="rounded-xl border bg-card p-5">
+              <h3 className="font-semibold text-foreground mb-1.5">{c.name}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{c.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* Kids / free / transport / accommodation / dining */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Practical event planning</h2>
+        <div className="space-y-4">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Baby className="w-4 h-4 text-primary" aria-hidden="true" /> Events with kids
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Family festivals, community events, markets, sporting fixtures and children's
+              programmes all appear regularly. Confirm age suitability, ticket requirements,
+              wet-weather arrangements and start and finish times directly with the organiser. See{" "}
+              <Link to="/townsville-with-kids" className="text-primary hover:underline">
+                Townsville with kids
+              </Link>
+              .
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Ticket className="w-4 h-4 text-primary" aria-hidden="true" /> Free events
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Many community events and markets are free to attend, though some include paid
+              activities or ticketed components. Always check the current event details rather than
+              assuming. Pair them with{" "}
+              <Link to="/guides/free-things" className="text-primary hover:underline">
+                free things to do
+              </Link>
+              .
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Car className="w-4 h-4 text-primary" aria-hidden="true" /> Event transport and
+              parking
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Major events can affect traffic, road access and parking near the venue, and public
+              transport arrangements are sometimes adjusted for the occasion. Check event-specific
+              transport information close to the date from the organiser or venue rather than
+              relying on older articles. See{" "}
+              <Link to="/townsville-without-a-car" className="text-primary hover:underline">
+                Townsville without a car
+              </Link>{" "}
+              and{" "}
+              <Link to="/useful-contacts" className="text-primary hover:underline">
+                useful contacts
+              </Link>
+              .
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Building2 className="w-4 h-4 text-primary" aria-hidden="true" /> Accommodation
+              reality
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Demand rises around major events and central accommodation fills faster than
+              suburban options. Book early if you are attending one, and check cancellation terms
+              in case dates or plans shift. See the{" "}
+              <Link to="/accommodation" className="text-primary hover:underline">
+                accommodation guide
+              </Link>
+              .
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Coffee className="w-4 h-4 text-primary" aria-hidden="true" /> Eating around an event
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Restaurants are busier on major event weekends, especially in the central dining
+              areas that suit a pre-event meal. Booking ahead is sensible, and hours vary by venue,
+              so confirm directly. See the{" "}
+              <Link to="/food" className="text-primary hover:underline">
+                food guide
+              </Link>
+              .
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Weather */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Weather and events</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Sun className="w-4 h-4 text-primary" aria-hidden="true" /> Heat
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Outdoor events in warm conditions need water, sun protection, shade breaks and
+              sensible timing — early or late is far easier than the middle of the day. See{" "}
+              <Link to="/guides/beat-the-heat" className="text-primary hover:underline">
+                beat the heat
+              </Link>
+              .
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Umbrella className="w-4 h-4 text-primary" aria-hidden="true" /> Rain and severe
+              weather
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Outdoor schedules can change at short notice. The event organiser is the
+              authoritative source for cancellations, so check their current communications
+              alongside the forecast. Keep{" "}
+              <Link to="/guides/rainy-day-activities" className="text-primary hover:underline">
+                rainy day options
+              </Link>{" "}
+              and{" "}
+              <Link to="/useful-contacts" className="text-primary hover:underline">
+                useful contacts
+              </Link>{" "}
+              on hand.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Regular markets and community events */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-3">Regular markets and community events</h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          Beyond the headline events, Townsville has a steady background programme: markets, local
+          music, community events, cultural celebrations, workshops and exhibitions. Most of these
+          run on their own schedules, take seasonal breaks and change venue occasionally, which is
+          exactly why we do not publish times here.
+        </p>
+        <div className="rounded-xl border bg-muted/40 p-5 flex flex-wrap items-center justify-between gap-4">
+          <p className="text-sm text-muted-foreground max-w-xl">
+            The official calendar carries current dates, times and venues for these events.
+          </p>
+          <Button asChild variant="default">
+            <a href={WHATS_ON_URL} target="_blank" rel="noopener noreferrer">
+              See What's On in Townsville Now
+              <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
+            </a>
           </Button>
         </div>
+      </section>
 
-        {/* Top 10 Free Things to Do */}
-        <section className="pt-8 border-t">
-          <div className="flex items-center gap-2 mb-2">
-            <Sun className="w-6 h-6 text-primary" />
-            <h2 className="text-2xl font-bold text-gray-900">Top 10 Free Things to Do in Townsville This Weekend</h2>
-          </div>
-          <p className="text-gray-600 mb-6">You don't need to spend a cent to keep the family entertained. Here are our top free picks across Townsville.</p>
+      {/* Mistakes */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <AlertTriangle className="w-6 h-6 text-primary" aria-hidden="true" /> Common
+          event-planning mistakes
+        </h2>
+        <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+          {MISTAKES.map((m) => (
+            <li key={m}>{m}</li>
+          ))}
+        </ul>
+      </section>
 
-          <div className="grid gap-4 md:grid-cols-2">
-            {[
-              { num: "1", title: "The Strand Water Park", desc: "A local favourite. Open daily (check the Council site for any maintenance closures).", link: "/the-strand", linkText: "Strand Guide →" },
-              { num: "2", title: "Riverway Lagoons", desc: "The ultimate free swimming alternative to the beach, perfect for families." },
-              { num: "3", title: "Castle Hill Goat Track", desc: "Challenge the kids to a sunrise hike for the best 360-degree views of the city.", link: "/castle-hill", linkText: "Castle Hill Guide →" },
-              { num: "4", title: "Jezzine Barracks Coastal Walk", desc: "Explore the public art, military history, and the scenic boardwalk toward Rowes Bay.", link: "/guides/jezzine-barracks", linkText: "Jezzine Guide →" },
-              { num: "5", title: "Townsville Bulletin Square Water Feature", desc: "A great (and free) way to cool down right in the heart of the CBD." },
-              { num: "6", title: "Anderson Park Botanical Gardens", desc: "Perfect for a shaded picnic or letting the kids explore the world-class tropical plant collection." },
-              { num: "7", title: "Pallarenda Beach Beachcombing", desc: "Head to the northern end for a quieter beach day and low-tide exploration.", link: "/pallarenda-beach", linkText: "Pallarenda Guide →" },
-              { num: "8", title: "Townsville City Libraries", desc: "Check the library website for free workshops, LEGO clubs, and storytime sessions." },
-              { num: "9", title: "Ross River Parkway", desc: "Miles of shared paths for a family bike ride or a sunset walk near the weirs." },
-              { num: "10", title: "Cotters Market (Sunday Mornings)", desc: "While the stalls cost money, the atmosphere, live music, and street performance are free to enjoy in Flinders Street." },
-            ].map((item) => (
-              <Card key={item.num} className="hover:shadow-md transition-shadow">
-                <CardContent className="p-4 flex gap-4 items-start">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary font-bold text-sm flex items-center justify-center">
-                    {item.num}
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">{item.title}</h4>
-                    <p className="text-sm text-gray-600 mt-1">{item.desc}</p>
-                    {item.link && (
-                      <Link to={item.link} className="text-primary text-sm font-medium hover:underline mt-1 inline-block">
-                        {item.linkText}
-                      </Link>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+      {/* Pathways */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Plan by event type</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {PATHWAYS.map((p) =>
+            p.to ? (
+              <Link
+                key={p.label}
+                to={p.to}
+                className="group flex items-center justify-between gap-3 rounded-lg border bg-card px-4 py-3 hover:border-primary/40 transition-colors"
+              >
+                <span className="text-sm font-medium text-foreground">{p.label}</span>
+                <span className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                  {p.name}
+                </span>
+              </Link>
+            ) : (
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between gap-3 rounded-lg border bg-card px-4 py-3 hover:border-primary/40 transition-colors"
+              >
+                <span className="text-sm font-medium text-foreground">{p.label}</span>
+                <span className="inline-flex items-center gap-1 text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                  {p.name}
+                  <ExternalLink className="w-3 h-3" aria-hidden="true" />
+                </span>
+              </a>
+            )
+          )}
+        </div>
+      </section>
 
-          {/* Local Tip */}
-          <div className="bg-amber-50 border border-amber-100 rounded-lg p-5 flex gap-4 items-start mt-6">
-            <Leaf className="w-5 h-5 text-amber-600 mt-0.5 shrink-0" />
-            <div>
-              <h3 className="font-semibold text-amber-900 text-sm">Local Tip</h3>
-              <p className="text-amber-800 text-sm mt-1">
-                Late July is one of the best stretches of the dry season in North Queensland. The humidity stays low, the skies are reliably clear, and the early sunsets throw warm golden light across the beaches and headlands. It's an ideal window for afternoon photography at our quieter northern beaches like Saunders Beach and Toolakea Beach, where glass-like reflections on the expansive low-tide sand flats are common and the crowds are thin.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="pt-8 border-t">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Recurring Events</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Strand Night Markets</CardTitle>
-                <p className="text-sm text-gray-500">First Friday of Month</p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">Check seasonality (Dry Season only). A popular evening out along <Link to="/the-strand" className="text-primary font-medium hover:underline">The Strand</Link> with live music, food, and local crafts.</p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Cowboys NRL Games</CardTitle>
-                <p className="text-sm text-gray-500">March–September</p>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-sm text-gray-600">NRL home games run all through the dry season at QCB Stadium. Check the draw for upcoming Sunday fixtures and plan your visit with our stadium guide.</p>
-                <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                  <Link to="/cowboys-stadium-guide">View Cowboys Guide <ArrowRight className="w-3 h-3" /></Link>
-                </Button>
-                <Button asChild variant="outline" size="sm" className="w-full gap-2">
-                  <a href="https://www.cowboys.com.au/draw/" target="_blank" rel="noopener noreferrer">
-                    Find next game <ExternalLink className="w-3 h-3" />
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Wet Season Planning</CardTitle>
-                <p className="text-sm text-gray-500">Jan – March</p>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-gray-600">Peak waterfall flow at Wallaman Falls and Crystal Creek. Check road conditions after heavy rain. Browse our <Link to="/things-to-do" className="text-primary font-medium hover:underline">Things to Do guide</Link> for wet-season ideas.</p>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Major Annual Events Timeline — Remainder of 2026 */}
-        <section className="pt-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Major Annual Events — Remainder of 2026</h2>
-          <p className="text-gray-600 mb-8">Your chronological dry season &amp; spring calendar of Townsville's flagship events. Need a place to stay? Check our <Link to="/accommodation" className="text-primary font-medium hover:underline">Accommodation guide</Link>.</p>
-
-          <ol className="relative border-l-2 border-primary/30 ml-3 space-y-8">
-            {[
-              {
-                date: "Thursday 6 August 2026",
-                title: "Cowboys Away: Gold Coast Titans vs Cowboys",
-                body: "The Cowboys travel to Cbus Super Stadium, Robina for this round (kick-off 7:50 PM) — no game-day traffic in Townsville this week."
-              },
-              {
-                date: "Saturday 8 August 2026",
-                title: "The Great Island Trek (Magnetic Island)",
-                body: "A trail running event on Magnetic Island with multiple distances across tropical bushland and coastal terrain, suited to experienced trekkers and casual participants alike."
-              },
-              {
-                date: "14 – 16 August 2026",
-                title: "North Queensland Elite Rodeo (Hervey Range)",
-                body: "Three nights of bull riding, barrel racing, and country entertainment under lights at Hervey Range — one of the dry season's biggest community drawcards."
-              },
-              {
-                date: "Saturday 15 August 2026",
-                title: "Bingo Loco Townsville (FLNDRS)",
-                body: "Forget church-hall bingo — this is bingo with a DJ, dancers, confetti cannons and prizes that have nothing to do with numbers. One of Townsville's rowdiest nights out."
-              },
-              {
-                date: "Friday 21 August 2026",
-                title: "Urzila Carlson: Fatty on a Yacht",
-                body: "The Kiwi-South African stand-up favourite brings her new show to the Convention Centre for one night only — sharp, self-deprecating comedy from one of the country's most-loved comedians."
-              },
-              {
-                date: "22 – 29 August 2026",
-                title: "Festival of Stories (Children's Book Week)",
-                body: "A week of author visits, storytelling sessions and dress-up days across Townsville's libraries, building to a headline weekend of family activities at Citylibraries Aitkenvale on Friday 28 and Saturday 29 August."
-              },
-              {
-                date: "27 August – 2 September 2026",
-                title: "SeaLink Magnetic Island Race Week",
-                body: "A week of yachts racing across Cleveland Bay and lively community events around Magnetic Island — one of the dry season's most popular regattas."
-              },
-              {
-                date: "Saturday 29 August 2026",
-                title: "NRL: Cowboys vs Wests Tigers (Next Home Game)",
-                body: "Cowboys host the Wests Tigers at Queensland Country Bank Stadium (kick-off 7:35 PM), with NRLW Knights also playing that day. Use the free Park & Ride at Lou Litster Park to skip CBD traffic."
-              },
-              {
-                date: "Sunday 30 August 2026",
-                title: "Cape Pallarenda Trail Run",
-                body: "Townsville's toughest trail race, taking runners through the coastal bushland and headland tracks of Cape Pallarenda. Choose from 5km, 12km, 21km or a full 42km ultra — most locals stick to the shorter distances and just enjoy the views."
-              },
-              {
-                date: "17 – 20 September 2026",
-                title: "WNBL Townsville Tip Off",
-                body: "The WNBL season kicks off with a showcase of the league's biggest teams and talent right here in Townsville — a rare chance to see elite women's basketball up close."
-              },
-              {
-                date: "Friday 25 September 2026",
-                title: "Queensland Football Series: Australia vs Brazil",
-                body: "The Socceroos take on Brazil in a rare international friendly at Queensland Country Bank Stadium — a notable stop on the Queensland Football Series calendar."
-              },
-              {
-                date: "25 September – 11 October 2026",
-                title: "NAFA Festival (North Australian Festival of Arts)",
-                body: "Townsville's flagship arts festival is locked in for spring 2026, bringing comedy, circus, theatre, and light installations to Strand Park."
-              },
-              {
-                date: "Saturday 10 October 2026",
-                title: "Björn Again",
-                body: "The world's favourite ABBA tribute show brings the platform boots and glitter back to the Convention Centre for a full night of sing-along classics."
-              },
-              {
-                date: "Saturday 31 October 2026",
-                title: "Rugby League World Cup: Australia vs Cook Islands",
-                body: "Townsville hosts a Rugby League World Cup pool match as the Kangaroos take on the Cook Islands at Queensland Country Bank Stadium — a huge night for the city on the international stage."
-              },
-              {
-                date: "Saturday 7 November 2026",
-                title: "Foo Fighters",
-                body: "Foo Fighters play Queensland Country Bank Stadium for a single huge night — a major stadium show landing right here in North Queensland."
-              },
-              {
-                date: "13 – 14 November 2026",
-                title: "PBR Monster Energy Grand Final",
-                body: "Two nights of the country's best bull riders chasing the season title at the PBR Grand Final — high-adrenaline arena action at the Convention Centre."
-              },
-              {
-                date: "Wednesday 2 December 2026",
-                title: "Guns N' Roses (Airbourne Tour)",
-                body: "Guns N' Roses close out the stadium's big 2026, with Airbourne also on the bill — a mid-week rock spectacular to wrap the year at Queensland Country Bank Stadium."
-              },
-              {
-                date: "December 2026",
-                title: "Townsville Christmas Festival",
-                body: "Festive lights, markets, and family-friendly entertainment across the CBD and waterfront."
-              },
-            ].map((event) => (
-              <li key={event.title} className="ml-6">
-                <span className="absolute -left-[9px] flex h-4 w-4 items-center justify-center rounded-full bg-primary ring-4 ring-background" aria-hidden="true" />
-                <div className="text-xs font-bold uppercase tracking-wide text-primary mb-1">{event.date}</div>
-                <h3 className="font-semibold text-gray-900">{event.title}</h3>
-                <p className="text-sm text-gray-600 mt-1">{event.body}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-
-
-
-        {/* FAQ Section */}
-        <section className="pt-8 border-t">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked About Townsville Events</h2>
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="faq-1">
-              <AccordionTrigger className="text-left font-semibold text-gray-900">What is happening in Townsville this weekend?</AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Markets, sports events, seasonal festivals, and outdoor activities typically feature each week. This page is updated regularly with current highlights. You can also check the <a href="https://whatson.townsville.qld.gov.au/" target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">official Townsville events calendar</a> for additional listings.
-              </AccordionContent>
+      {/* FAQ */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Townsville events questions</h2>
+        <Accordion type="single" collapsible className="w-full">
+          {faqs.map((f, i) => (
+            <AccordionItem key={f.q} value={`faq-${i}`}>
+              <AccordionTrigger className="text-left">{f.q}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
             </AccordionItem>
-            <AccordionItem value="faq-2">
-              <AccordionTrigger className="text-left font-semibold text-gray-900">Where can I find live music in Townsville?</AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Popular spots include Palmer Street venues, Cowboys Leagues Club, Strand Night Markets, and seasonal festival stages. Browse our <Link to="/food" className="text-primary font-medium hover:underline">Food & Drink guide</Link> for dining spots with live entertainment.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="faq-3">
-              <AccordionTrigger className="text-left font-semibold text-gray-900">Are Townsville events family friendly?</AccordionTrigger>
-              <AccordionContent className="text-gray-600">
-                Most community markets, festivals, lagoon activities, and outdoor events welcome families. Always check venue-specific details. For family activity ideas, see our <Link to="/things-to-do" className="text-primary font-medium hover:underline">Things to Do</Link> and <Link to="/dog-friendly" className="text-primary font-medium hover:underline">Dog-Friendly</Link> guides.
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
-        </section>
+          ))}
+        </Accordion>
+      </section>
 
-        {/* Footer CTA Section */}
-        <section className="pt-8 pb-8 border-t">
-          <div className="bg-primary/5 rounded-2xl p-8 text-center space-y-6">
-            <h2 className="text-2xl font-bold text-gray-900">Have specific questions about the weekend?</h2>
-            <p className="text-gray-600 max-w-xl mx-auto">
-              Not sure where to park or if your dog is allowed? Ask our AI agent on the homepage.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button asChild size="lg">
-                <Link to="/">Ask the Local AI</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="gap-2">
-                <Link to="/dog-friendly">
-                  <Dog className="w-4 h-4" />
-                  View Dog Beach Guide
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+      <div className="mb-12">
+        <FoundingPartnerCTA />
+      </div>
 
-      </main>
+      {/* Related */}
+      <section className="mb-4">
+        <h2 className="text-2xl font-bold mb-6">Related guides</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {RELATED.map((r) => (
+            <Link
+              key={r.to}
+              to={r.to}
+              className="group block rounded-xl border bg-card p-5 hover:border-primary/40 transition-colors"
+            >
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                {r.name}
+              </h3>
+              <p className="text-sm text-muted-foreground mt-1">{r.text}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
     </div>
-  );
-};
+  </>
+);
 
 export default Events;
