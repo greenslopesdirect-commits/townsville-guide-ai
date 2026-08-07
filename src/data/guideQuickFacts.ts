@@ -249,6 +249,16 @@ export interface QuickFacts {
   fixtureSource?: string;
   /** Weather consideration for event days. */
   weatherFactor?: string;
+  /** Airport name, used on air-travel guides. */
+  airport?: string;
+  /** IATA airport code. */
+  airportCode?: string;
+  /** Best onward transport option after landing. */
+  bestOnwardTransport?: string;
+  /** Best central area to base a stay after landing. */
+  bestCentralBase?: string;
+  /** Where to check current flight schedules. */
+  flightSchedules?: string;
   localVerdict?: string;
 }
 
@@ -748,6 +758,19 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     mainConsideration: "Pick the area first, then the property",
     localVerdict:
       "Staying in the right part of Townsville matters more than chasing a tiny difference in hotel ratings.",
+  },
+  "/townsville-airport": {
+    airport: "Townsville Airport",
+    airportCode: "TSV",
+    bestFor: ["Flying directly into Townsville"],
+    bestOnwardTransport: "Taxi, rideshare or car hire depending on your trip",
+    bestCentralBase: "The Strand / North Ward, the CBD or Palmer Street",
+    carNeeded: "Yes for wider Townsville and regional day trips",
+    flightSchedules: "Check the airline or Townsville Airport directly",
+    parking: "Check current airport parking information",
+    mainConsideration: "Routes and schedules change",
+    localVerdict:
+      "Flying is the simplest way to reach Townsville from many Australian cities, but your onward transport depends on where you plan to stay.",
   },
   "/riverway": {
 

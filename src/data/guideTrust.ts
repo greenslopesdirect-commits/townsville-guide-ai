@@ -705,6 +705,21 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/townsville-airport": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines local visitor-planning knowledge with current information from Townsville Airport, airlines and official transport sources. Flight schedules, parking and airport services can change, so confirm details before travelling.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      { name: "Townsville Airport", url: "https://www.townsvilleairport.com.au/" },
+      { name: "Translink — Townsville public transport", url: "https://translink.com.au/" },
+      { name: "Qantas", url: "https://www.qantas.com/" },
+      { name: "Virgin Australia", url: "https://www.virginaustralia.com/" },
+      { name: "Jetstar", url: "https://www.jetstar.com/" },
+      { name: "Rex Airlines", url: "https://www.rex.com.au/" },
+    ],
+  },
   "/suburbs": {
     visitStatus: "partially-firsthand",
     visitNote:
@@ -863,7 +878,6 @@ export const GUIDE_PATHS: string[] = [
   "/local-tips",
   "/accommodation",
   "/history",
-  "/flights",
 ];
 
 const normalise = (path: string) => (path !== "/" ? path.replace(/\/+$/, "") : path);

@@ -31,7 +31,6 @@ import FoodDrink from "@/pages/FoodDrink";
 import LocalTips from "@/pages/LocalTips";
 import Accommodation from "@/pages/Accommodation";
 import Events from "@/pages/Events";
-import FlightsToTownsville from "@/pages/FlightsToTownsville";
 import Advertise from "@/pages/Advertise";
 import Contact from "@/pages/Contact";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -143,7 +142,7 @@ const App = () => (
             
 
             {/* MONETISATION PAGES */}
-            <Route path="flights" element={<FlightsToTownsville />} />
+            <Route path="flights" element={<Navigate to="/townsville-airport" replace />} />
             <Route path="advertise" element={<Advertise />} />
             <Route path="contact" element={<Contact />} />
           </Route>
