@@ -116,6 +116,7 @@ const App = () => (
             <Route path="rowes-bay" element={<RowesBay />} />
             <Route path="townsville-with-kids" element={<TownsvilleWithKids />} />
             <Route path="the-strand" element={<TheStrand />} />
+            <Route path="riverway" element={<Riverway />} />
             <Route path="billabong-sanctuary" element={<BillabongSanctuary />} />
             <Route path="castle-hill" element={<CastleHill />} />
             <Route path="little-crystal-creek-townsville" element={<LittleCrystalCreek />} />
