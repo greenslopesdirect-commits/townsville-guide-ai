@@ -249,6 +249,16 @@ export interface QuickFacts {
   fixtureSource?: string;
   /** Weather consideration for event days. */
   weatherFactor?: string;
+  /** Airport name, used on air-travel guides. */
+  airport?: string;
+  /** IATA airport code. */
+  airportCode?: string;
+  /** Best onward transport option after landing. */
+  bestOnwardTransport?: string;
+  /** Best central area to base a stay after landing. */
+  bestCentralBase?: string;
+  /** Where to check current flight schedules. */
+  flightSchedules?: string;
   localVerdict?: string;
 }
 
