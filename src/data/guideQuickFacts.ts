@@ -151,6 +151,20 @@ export interface QuickFacts {
   speciesOfConcern?: string;
   /** What to check before swimming. */
   beforeSwimming?: string;
+  /** Everyday local habit worth copying. */
+  bestLocalHabit?: string;
+  /** Most practical area to base a visit. */
+  mostUsefulBase?: string;
+  /** Place most worth returning to more than once. */
+  bestRepeatVisit?: string;
+  /** Most common visitor mistake. */
+  mostCommonMistake?: string;
+  /** Best free outing that feels like local life. */
+  bestFreeOuting?: string;
+  /** Easiest way to get a good view. */
+  bestEasyView?: string;
+  /** Headline local tip. */
+  mainLocalTip?: string;
   localVerdict?: string;
 }
 
