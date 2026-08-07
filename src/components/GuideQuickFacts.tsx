@@ -34,6 +34,7 @@ import {
   HeartPulse,
   Languages,
   ShoppingBag,
+  Plane,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
@@ -148,6 +149,11 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(CalendarDays, "Best for markets", data.bestForMarkets);
   push(Umbrella, "Best rainy-day option", data.bestRainyDayOption);
   push(Users, "Best for essentials", data.bestForEssentials);
+  push(Plane, "Airport", data.airport);
+  push(Plane, "Airport code", data.airportCode);
+  push(Car, "Best onward transport", data.bestOnwardTransport);
+  push(MapPin, "Best central base", data.bestCentralBase);
+  push(CalendarDays, "Flight schedules", data.flightSchedules);
   push(Building2, "Venue", data.venue);
   push(Users, "Main tenant", data.mainTenant);
   push(Coffee, "Best for food before or after", data.bestEventFood);

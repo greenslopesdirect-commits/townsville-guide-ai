@@ -48,7 +48,6 @@ const PAGES = [
   { path: "/nature",                              source: "src/pages/Nature.tsx",                      changefreq: "weekly",  priority: "0.7" },
   { path: "/accommodation",                       source: "src/pages/Accommodation.tsx",               changefreq: "weekly",  priority: "0.8" },
   { path: "/local-tips",                          source: "src/pages/LocalTips.tsx",                   changefreq: "weekly",  priority: "0.8" },
-  { path: "/flights",                             source: "src/pages/FlightsToTownsville.tsx",         changefreq: "weekly",  priority: "0.6" },
   { path: "/advertise",                           source: "src/pages/Advertise.tsx",                   changefreq: "monthly", priority: "0.8" },
   { path: "/contact",                             source: "src/pages/Contact.tsx",                     changefreq: "monthly", priority: "0.5" },
   { path: "/the-strand",                          source: "src/pages/TheStrand.tsx",                   changefreq: "weekly",  priority: "0.8" },

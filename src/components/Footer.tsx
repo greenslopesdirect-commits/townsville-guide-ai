@@ -110,7 +110,7 @@ const Footer = () => {
               <li><Link to="/events" className="hover:text-primary transition-colors">Events</Link></li>
               <li><Link to="/dog-friendly" className="hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
               <li><Link to="/accommodation" className="hover:text-primary transition-colors">Accommodation</Link></li>
-              <li><Link to="/flights" className="hover:text-primary transition-colors">Flights</Link></li>
+              <li><Link to="/townsville-airport" className="hover:text-primary transition-colors">Airport &amp; Flights</Link></li>
               <li><Link to="/local-tips" className="hover:text-primary transition-colors">Local Tips</Link></li>
               <li><Link to="/guides/magnetic-island-day-trip" className="hover:text-primary transition-colors">Wild Koala Guide</Link></li>
               <li><Link to="/cowboys-stadium-guide" className="hover:text-primary transition-colors">Cowboys Game Day</Link></li>
