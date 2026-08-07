@@ -574,6 +574,22 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "Townsville is best when you mix the waterfront, views, island time and one or two local-style experiences.",
   },
+  "/nature": {
+    bestOverall: "Magnetic Island",
+    bestRainforestDayTrip: "Paluma Range",
+    bestCoastalNature: "Pallarenda and Cape Pallarenda",
+    bestEasyLocalNature: "Jezzine Barracks and Rowes Bay",
+    bestView: "Castle Hill",
+    bestWildlifeExperience:
+      "Billabong Sanctuary for a structured wildlife visit; Magnetic Island for wildlife in a natural setting",
+    bestFreeActivity: "Coastal walking, or the Castle Hill lookout",
+    bestWithoutCar: "Jezzine Barracks, The Strand and a ferry-based Magnetic Island day",
+    bestFullDayNatureTrip: "Magnetic Island or Paluma",
+    checkBeforeHeadingOut:
+      "Current park alerts, track and road access, and local weather conditions",
+    localVerdict:
+      "Townsville's strongest nature experiences come from combining coast, island, hills and rainforest rather than looking for one single nature park.",
+  },
   "/riverway": {
     bestFor: ["Families", "Free swimming", "Hot days", "Longer stays"],
     mainAttraction: "Free supervised swimming lagoons",
