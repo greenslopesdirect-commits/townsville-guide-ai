@@ -205,7 +205,6 @@ const StingerSafety = () => (
         alt="Stinger net floats marking a seasonal swimming enclosure on a Townsville beach"
         width={1600}
         height={900}
-        fetchPriority="high"
         loading="eager"
         decoding="async"
         className="rounded-xl shadow-lg w-full h-[280px] md:h-[420px] object-cover object-bottom mb-10"
