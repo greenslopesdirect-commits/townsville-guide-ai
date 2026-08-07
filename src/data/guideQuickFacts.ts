@@ -46,6 +46,16 @@ export interface QuickFacts {
   checkBeforeHeadingOut?: string;
   /** Emergency guidance line. */
   emergency?: string;
+  /** Strongest indoor attraction, used on wet-weather planning guides. */
+  bestIndoorAttraction?: string;
+  /** Best food-based option, used on wet-weather planning guides. */
+  bestFoodOption?: string;
+  /** Best option during light or passing rain. */
+  bestLightRainOption?: string;
+  /** What to avoid during heavy rain. */
+  avoidInHeavyRain?: string;
+  /** Main practical consideration to plan around. */
+  mainConsideration?: string;
   timeNeeded?: string;
 
 
