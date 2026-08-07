@@ -151,6 +151,20 @@ export interface QuickFacts {
   speciesOfConcern?: string;
   /** What to check before swimming. */
   beforeSwimming?: string;
+  /** Everyday local habit worth copying. */
+  bestLocalHabit?: string;
+  /** Most practical area to base a visit. */
+  mostUsefulBase?: string;
+  /** Place most worth returning to more than once. */
+  bestRepeatVisit?: string;
+  /** Most common visitor mistake. */
+  mostCommonMistake?: string;
+  /** Best free outing that feels like local life. */
+  bestFreeOuting?: string;
+  /** Easiest way to get a good view. */
+  bestEasyView?: string;
+  /** Headline local tip. */
+  mainLocalTip?: string;
   localVerdict?: string;
 }
 
@@ -523,6 +537,19 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     bestTimeToVisit: "Start early, particularly during hotter months",
     localVerdict:
       "A realistic introduction to Townsville that covers the waterfront, local history and Castle Hill without making the day unnecessarily rushed.",
+  },
+  "/local-tips": {
+    bestLocalHabit: "Plan outdoor time early and late",
+    mostUsefulBase: "The Strand / North Ward",
+    carNeeded: "Not always, but very useful beyond central Townsville",
+    bestRepeatVisit: "The Strand",
+    mostCommonMistake: "Underestimating heat and distance",
+    bestFreeOuting: "Riverway or Jezzine Barracks",
+    bestEasyView: "Castle Hill by car",
+    bestDayTrip: "Magnetic Island or Paluma, depending on your interests",
+    mainLocalTip: "Do less, but time it better",
+    localVerdict:
+      "Townsville is easier to enjoy once you stop trying to treat it like a compact southern city.",
   },
   "/riverway": {
     bestFor: ["Families", "Free swimming", "Hot days", "Longer stays"],
