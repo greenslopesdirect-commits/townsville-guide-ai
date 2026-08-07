@@ -201,6 +201,20 @@ export interface QuickFacts {
   bestRainyDayOption?: string;
   /** Best option for everyday essentials. */
   bestForEssentials?: string;
+  /** Strongest all-round area, used on accommodation guides. */
+  bestAreaOverall?: string;
+  /** Best area for first-time visitors. */
+  bestForFirstTimers?: string;
+  /** Best area for restaurants and dining-focused stays. */
+  bestForRestaurants?: string;
+  /** Best area for Magnetic Island ferry convenience. */
+  bestForFerryAccess?: string;
+  /** Best accommodation style for longer stays. */
+  bestForLongerStays?: string;
+  /** Best option for island atmosphere. */
+  bestForIslandAtmosphere?: string;
+  /** Best practical, non-tourist base. */
+  bestPracticalLocation?: string;
   localVerdict?: string;
 }
 
