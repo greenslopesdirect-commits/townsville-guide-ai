@@ -772,7 +772,22 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "Staying in the right part of Townsville matters more than chasing a tiny difference in hotel ratings.",
   },
+  "/accessible-townsville": {
+    bestEasyAccessArea: "The Strand",
+    bestFlatWaterfront: "The Strand / North Ward",
+    bestParklandOption: "Riverway",
+    bestHeritageCoastalOption: "Jezzine Barracks",
+    bestDriveUpViewpoint: "Castle Hill lookout",
+    bestCentralBase: "North Ward / CBD, depending on your needs",
+    bestWithoutCar: "Central Townsville",
+    mainChallenge: "Heat, distance and uneven terrain",
+    bestPlanningHabit: "Check exact accessibility details before travelling",
+    mainConsideration: "Accessibility varies by facility, not just by attraction",
+    localVerdict:
+      "Townsville can work well for a lower-mobility visit if you choose attractions carefully and plan around heat and distance.",
+  },
   "/townsville-airport": {
+
     airport: "Townsville Airport",
     airportCode: "TSV",
     bestFor: ["Flying directly into Townsville"],
