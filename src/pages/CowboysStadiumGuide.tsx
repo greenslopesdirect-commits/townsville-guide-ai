@@ -1,542 +1,745 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { ArrowRight, Calendar, MapPin, Users, Car, Utensils, Volume2, Trophy, ExternalLink, Accessibility, Brain, Armchair } from "lucide-react";
-import stampedeMap from "@/assets/cowboys-stampede-map.webp";
+import {
+  Accessibility,
+  AlertTriangle,
+  Baby,
+  Building2,
+  Bus,
+  Car,
+  Coffee,
+  ExternalLink,
+  Footprints,
+  MapPin,
+  ShoppingBag,
+  Sun,
+  Ticket,
+  Trophy,
+  Umbrella,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
-import LocalInsightCard from "@/components/LocalInsightCard";
-import AirportTransferCard from "@/components/AirportTransferCard";
+import GuideQuickFacts from "@/components/GuideQuickFacts";
 
-const QCB_LOCATION = {
-  "@type": "Place",
-  name: "Queensland Country Bank Stadium",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "2 Pride Close",
-    addressLocality: "Railway Estate",
-    addressRegion: "QLD",
-    postalCode: "4810",
-    addressCountry: "AU",
+const SITE = "https://www.townsvilleguide.com.au";
+const PATH = "/cowboys-stadium-guide";
+
+const TITLE = "Queensland Country Bank Stadium Guide | Cowboys Games & Event Days";
+const DESCRIPTION =
+  "Plan a visit to Queensland Country Bank Stadium in Townsville, with tips on getting there, where to stay, food, Cowboys games and event-day planning.";
+
+/** Official sources — the authoritative places for event-specific arrangements. */
+const STADIUM_URL = "https://www.queenslandcountrybankstadium.com.au/";
+const STADIUM_WHATS_ON_URL = "https://www.queenslandcountrybankstadium.com.au/events";
+const STADIUMS_QLD_URL =
+  "https://www.stadiums.qld.gov.au/our-venues/queensland-country-bank-stadium/";
+const COWBOYS_DRAW_URL = "https://www.cowboys.com.au/draw/";
+
+const MISTAKES = [
+  "Relying on an old fixture date instead of the current official draw.",
+  "Assuming every event uses the same gate and entry times.",
+  "Relying on old parking advice from a previous season or a different event.",
+  "Assuming event shuttles always operate, for every event.",
+  "Leaving food plans until after a major event, when venues are busiest.",
+  "Booking accommodation a long way out without thinking about how you will get back.",
+  "Underestimating the heat at daytime and early-evening events.",
+  "Not checking current bag, entry and prohibited-item rules before leaving.",
+  "Assuming all events use the same seating, entry and access arrangements.",
+  "Not checking official weather and event updates on the day.",
+  "Treating a concert exactly like a Cowboys game.",
+  "Trying to fit too much sightseeing around the event itself.",
+];
+
+const PATHWAYS = [
+  { label: "Current stadium event", name: "Official stadium What's On", href: STADIUM_WHATS_ON_URL },
+  { label: "Cowboys fixture", name: "Official Cowboys fixtures", href: COWBOYS_DRAW_URL },
+  { label: "Where to stay", name: "Accommodation", to: "/accommodation" },
+  { label: "Food", name: "Food in Townsville", to: "/food" },
+  { label: "No car", name: "Townsville Without a Car", to: "/townsville-without-a-car" },
+  { label: "With kids", name: "Townsville with Kids", to: "/townsville-with-kids" },
+  { label: "Hot weather", name: "Beat the Heat", to: "/guides/beat-the-heat" },
+  { label: "Rain", name: "Rainy Day Activities", to: "/guides/rainy-day-activities" },
+  { label: "Event weekend", name: "Things to Do", to: "/things-to-do" },
+  { label: "Extra day", name: "Magnetic Island day trip", to: "/guides/magnetic-island-day-trip" },
+  { label: "Waterfront time", name: "The Strand", to: "/the-strand" },
+  { label: "Emergency / live information", name: "Useful Contacts", to: "/useful-contacts" },
+];
+
+const COMBOS = [
+  {
+    name: "Stadium event + Castle Hill",
+    text: "Good before an evening event where timing allows — head up late afternoon, then come back down for dinner.",
+    to: "/castle-hill",
+    linkText: "Castle Hill guide",
   },
-};
+  {
+    name: "Stadium event + The Strand",
+    text: "Best used for the morning before, or the next day, when the waterfront is at its most pleasant.",
+    to: "/the-strand",
+    linkText: "The Strand guide",
+  },
+  {
+    name: "Stadium event + Palmer Street dinner",
+    text: "The simplest event-night combination if you are staying centrally.",
+    to: "/food",
+    linkText: "Food guide",
+  },
+  {
+    name: "Stadium event + Magnetic Island",
+    text: "Keep the island as its own day before or after the event rather than squeezing it in around one.",
+    to: "/guides/magnetic-island-day-trip",
+    linkText: "Magnetic Island day trip",
+  },
+  {
+    name: "Stadium event + Jezzine Barracks",
+    text: "Easy central sightseeing on the headland at the northern end of The Strand.",
+    to: "/jezzine-barracks",
+    linkText: "Jezzine Barracks guide",
+  },
+];
 
+const RELATED = [
+  { to: "/events", name: "Townsville Events", text: "The wider events picture and where to check what's on." },
+  { to: "/accommodation", name: "Where to Stay in Townsville", text: "Which area suits an event trip, and why." },
+  { to: "/food", name: "Food in Townsville", text: "Dining areas that work before or after an event." },
+  { to: "/townsville-without-a-car", name: "Townsville Without a Car", text: "Walking, ferries and buses around central Townsville." },
+  { to: "/things-to-do", name: "Things to Do in Townsville", text: "Filling the rest of an event weekend." },
+  { to: "/first-time-in-townsville", name: "First Time in Townsville", text: "Orientation if the event is your first visit." },
+  { to: "/townsville-in-one-day", name: "Townsville in One Day", text: "A tight plan for the day either side of the event." },
+  { to: "/the-strand", name: "The Strand", text: "The city's waterfront, best in the morning or evening." },
+  { to: "/castle-hill", name: "Castle Hill", text: "The city lookout, easy to fit around an evening event." },
+  { to: "/guides/magnetic-island-day-trip", name: "Magnetic Island Day Trip", text: "A full extra day from the Breakwater ferry terminal." },
+  { to: "/guides/beat-the-heat", name: "Beat the Heat", text: "Managing hot conditions at outdoor events." },
+  { to: "/useful-contacts", name: "Useful Contacts", text: "Official weather, emergency and live information sources." },
+];
 
-const cowboysJsonLd = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "SportsEvent",
-      name: "Gold Coast Titans vs North Queensland Cowboys",
-      startDate: "2026-08-06T19:50:00+10:00",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "NRL away game — North Queensland Cowboys travel to face the Gold Coast Titans at Cbus Super Stadium, Robina, Thursday August 6, 2026, 7:50 PM.",
-      location: {
-        "@type": "Place",
-        name: "Cbus Super Stadium",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Robina",
-          addressRegion: "QLD",
-          addressCountry: "AU",
-        },
-      },
-      homeTeam: { "@type": "SportsTeam", name: "Gold Coast Titans" },
-      awayTeam: { "@type": "SportsTeam", name: "North Queensland Cowboys" },
-    },
-    {
-      "@type": "SportsEvent",
-      name: "North Queensland Cowboys vs Wests Tigers",
-      startDate: "2026-08-29T19:35:00+10:00",
-      eventStatus: "https://schema.org/EventScheduled",
-      eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-      description:
-        "NRL home game — North Queensland Cowboys vs Wests Tigers at Queensland Country Bank Stadium, Saturday August 29, 2026, 7:35 PM. NRLW Knights also playing that day.",
-      location: QCB_LOCATION,
-      homeTeam: { "@type": "SportsTeam", name: "North Queensland Cowboys" },
-      awayTeam: { "@type": "SportsTeam", name: "Wests Tigers" },
-    },
-  ],
-};
+const faqs = [
+  {
+    q: "Where is Queensland Country Bank Stadium?",
+    a: "The stadium is in central Townsville, on the southern edge of the CBD near South Townsville and Palmer Street. Its central position is why staying in the CBD or on Palmer Street makes event days much simpler.",
+  },
+  {
+    q: "Is Queensland Country Bank Stadium the Cowboys' home ground?",
+    a: "Yes. Queensland Country Bank Stadium is the home ground of the North Queensland Cowboys, and it also hosts other sporting events, representative matches, concerts and major entertainment.",
+  },
+  {
+    q: "What is the best area to stay for a Cowboys game?",
+    a: "Palmer Street and the CBD are the most practical areas because they are central and close to dining. The Strand and North Ward suit visitors who want a broader holiday feel and are happy to travel a little further on event night. See our accommodation guide for the full comparison.",
+  },
+  {
+    q: "Can you walk to the stadium from the CBD?",
+    a: "Many visitors staying in the CBD or on Palmer Street find walking practical, though it depends on your exact accommodation, mobility and the conditions on the day. Check the route from your property before deciding.",
+  },
+  {
+    q: "Where should you eat before a Cowboys game?",
+    a: "Palmer Street is the strongest pre- and post-event dining strip, and the CBD offers cafés, pubs and flexible central dining. Both are busier on event nights, so booking is sensible. Hours vary by venue, so confirm directly.",
+  },
+  {
+    q: "Is there parking at Queensland Country Bank Stadium?",
+    a: "Parking arrangements vary by event, nearby roads are busier, and special restrictions can apply. Check the official event page for the specific event you are attending rather than relying on older advice.",
+  },
+  {
+    q: "Does public transport run to stadium events?",
+    a: "Public transport serves central Townsville and special-event arrangements are sometimes introduced for larger events. Services and arrangements vary, so check current official transport information close to the event date.",
+  },
+  {
+    q: "What should you check before going to the stadium?",
+    a: "Check the official event page for your specific match, concert or event. Gate times, transport, parking, entry conditions and prohibited items can all vary between events.",
+  },
+  {
+    q: "Is the stadium suitable for families?",
+    a: "Families attend regularly. Arrive with time, confirm ticketing and entry conditions, check current bag and food rules, plan for heat, agree a meeting point where appropriate, and think about how you will get back before the event finishes.",
+  },
+  {
+    q: "What happens if it rains on event day?",
+    a: "Event organisers decide any event-specific changes, so check their official communications and the current forecast. Wet weather can also affect transport and general comfort, so allow extra time.",
+  },
+  {
+    q: "Does the stadium host events other than Cowboys games?",
+    a: "Yes. It hosts other sporting fixtures, representative matches, concerts and major entertainment events. Arrangements differ between event types, so do not assume a concert follows Cowboys-game arrangements.",
+  },
+  {
+    q: "Where can I find current Cowboys fixtures?",
+    a: "Use the official Cowboys fixture list for the next confirmed home game, and the official stadium event listing for everything else scheduled at the venue.",
+  },
+];
 
-const CowboysStadiumGuide = () => {
-  return (
-    <>
-      <SEOHead
-        title="Cowboys Game Day Guide 2026 | Stadium Info, Parking & The Stampede"
-        description="Plan your 2026 Cowboys game day in Townsville. Updated August 3, 2026 — Cowboys are away this week (Titans, Thu Aug 6); next home game vs Wests Tigers is Sat Aug 29, 7:35 PM: parking, free shuttles, and game-day logistics."
-        canonical="https://www.townsvilleguide.com.au/cowboys-stadium-guide"
-      />
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify(cowboysJsonLd)}</script>
-      </Helmet>
+const CowboysStadiumGuide = () => (
+  <>
+    <SEOHead title={TITLE} description={DESCRIPTION} canonical={PATH} ogType="article" />
+    <Helmet>
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              headline: "Queensland Country Bank Stadium & Cowboys Game Day Guide",
+              description: DESCRIPTION,
+              mainEntityOfPage: `${SITE}${PATH}`,
+              author: { "@type": "Person", name: "Duncan Ross" },
+              publisher: { "@type": "Organization", name: "Townsville Guide" },
+              dateModified: "2026-08-07",
+            },
+            {
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
+                { "@type": "ListItem", position: 2, name: "Townsville Events", item: `${SITE}/events` },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Queensland Country Bank Stadium Guide",
+                  item: `${SITE}${PATH}`,
+                },
+              ],
+            },
+            {
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+          ],
+        })}
+      </script>
+    </Helmet>
 
+    <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
+      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+        <Trophy className="w-4 h-4" aria-hidden="true" />
+        Stadium event planning
+      </div>
 
-      <div className="min-h-screen bg-gray-50">
-        {/* Header */}
-        <div className="bg-white border-b">
-          <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-            <Link to="/events" className="text-gray-600 hover:text-primary flex items-center gap-2 text-sm font-medium transition-colors">
-              <ArrowRight className="w-4 h-4 rotate-180" />
-              Back to Events
-            </Link>
-            <Badge variant="secondary" className="bg-green-50 text-green-700">
-              Updated: August 3, 2026
-            </Badge>
-          </div>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        Queensland Country Bank Stadium &amp; Cowboys Game Day Guide
+      </h1>
+
+      <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+        Queensland Country Bank Stadium sits on the southern edge of central Townsville and is the
+        home ground of the North Queensland Cowboys. It also hosts other major sporting events and
+        entertainment, and arrangements can differ from one event to the next.
+      </p>
+      <p className="text-muted-foreground leading-relaxed mb-8">
+        This guide covers the durable parts of an event visit — getting there, where to stay, where
+        to eat, what event day feels like, heat and weather, families and accessibility — and points
+        you to official sources for anything that changes event by event.
+      </p>
+
+      <GuideQuickFacts className="mb-10" />
+
+      {/* Check your event first */}
+      <section className="mb-12 rounded-xl border-2 border-primary/30 bg-primary/5 p-6 md:p-8">
+        <h2 className="text-2xl font-bold mb-3">Check your event first</h2>
+        <p className="text-muted-foreground leading-relaxed mb-5">
+          Before travelling, check the official event page for your specific match, concert or
+          event. Gate times, transport, parking, entry conditions and prohibited items can vary.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Button asChild>
+            <a href={STADIUM_WHATS_ON_URL} target="_blank" rel="noopener noreferrer">
+              Official stadium What's On
+              <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
+            </a>
+          </Button>
+          <Button asChild variant="outline">
+            <a href={STADIUM_URL} target="_blank" rel="noopener noreferrer">
+              Stadium visitor information
+              <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
+            </a>
+          </Button>
+          <Button asChild variant="outline">
+            <a href={COWBOYS_DRAW_URL} target="_blank" rel="noopener noreferrer">
+              Official Cowboys fixtures
+              <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
+            </a>
+          </Button>
+        </div>
+        <p className="text-sm text-muted-foreground mt-4">
+          Stadiums Queensland also publishes{" "}
+          <a
+            href={STADIUMS_QLD_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            venue information for the stadium
+          </a>
+          .
+        </p>
+      </section>
+
+      {/* Getting to the stadium */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">Getting to the stadium</h2>
+        <p className="text-muted-foreground mb-6">
+          The stadium's central location is its biggest practical advantage. How you get there
+          mostly depends on where you are staying and what kind of event it is.
+        </p>
+        <div className="space-y-4">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Footprints className="w-4 h-4 text-primary" aria-hidden="true" /> Walking from
+              central Townsville
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Visitors staying in the CBD, or around Palmer Street and South Townsville, often find
+              walking practical. Whether it suits you depends on your exact accommodation, mobility
+              and the conditions on the day — check the route from your property before deciding.
+              See{" "}
+              <Link to="/townsville-without-a-car" className="text-primary hover:underline">
+                Townsville without a car
+              </Link>
+              .
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Bus className="w-4 h-4 text-primary" aria-hidden="true" /> Public transport
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Services around events can vary, and special-event arrangements are sometimes
+              introduced for larger events. Check the current official transport information close
+              to the event rather than relying on an older article.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Car className="w-4 h-4 text-primary" aria-hidden="true" /> Taxi and rideshare
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Both can be convenient, particularly after an evening event. Pickup and drop-off
+              arrangements may be changed for major events, and demand is highest immediately after
+              the final whistle or last song — check the event page and allow for a wait.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-primary" aria-hidden="true" /> Driving and parking
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Parking arrangements vary by event, nearby roads are busier before and after, and
+              temporary restrictions or closures may apply. Check the specific event page for
+              current parking and road information — arrangements from a previous season or a
+              different event are not a reliable guide.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Where to stay */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">Where to stay for a stadium event</h2>
+        <p className="text-muted-foreground mb-6">
+          Choose the area before the property. On an event night, how easily you get back matters
+          more than almost anything else.
+        </p>
+        <div className="space-y-4">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Building2 className="w-4 h-4 text-primary" aria-hidden="true" /> Palmer Street /
+              South Townsville
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              The most convenient area for stadium access, and the city's main dinner strip. Suits
+              couples, short event stays and anyone who wants dinner and the event within the same
+              small area.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Building2 className="w-4 h-4 text-primary" aria-hidden="true" /> The CBD
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Central, well served for dining and practical for event weekends. Walking is realistic
+              from many CBD properties, though it depends on exactly where you stay.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Sun className="w-4 h-4 text-primary" aria-hidden="true" /> The Strand / North Ward
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Better for waterfront atmosphere, family leisure time and a broader holiday feel,
+              accepting slightly less direct stadium convenience on event night. See{" "}
+              <Link to="/the-strand" className="text-primary hover:underline">
+                The Strand guide
+              </Link>
+              .
+            </p>
+          </article>
+        </div>
+        <p className="text-sm text-muted-foreground mt-4">
+          Our{" "}
+          <Link to="/accommodation" className="text-primary hover:underline">
+            accommodation guide
+          </Link>{" "}
+          compares these areas in more detail. Book early for major event weekends and check
+          cancellation terms.
+        </p>
+      </section>
+
+      {/* Food */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-2">Food before and after</h2>
+        <p className="text-muted-foreground mb-6">
+          Pick the area first — venues fill quickly on event nights, and hours vary, so confirm
+          directly and consider booking.
+        </p>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Coffee className="w-4 h-4 text-primary" aria-hidden="true" /> Palmer Street
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              The strongest pre- or post-event choice, with a concentrated run of restaurants close
+              to the stadium side of the river.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Coffee className="w-4 h-4 text-primary" aria-hidden="true" /> The CBD
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Cafés, dinner, drinks and flexible central dining, which works well if your plans are
+              still loose.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5 sm:col-span-2">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Coffee className="w-4 h-4 text-primary" aria-hidden="true" /> The Strand / North Ward
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Better when the event is part of a broader leisure weekend rather than the main reason
+              you are eating out. See the{" "}
+              <Link to="/food" className="text-primary hover:underline">
+                food guide
+              </Link>
+              .
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Cowboys games */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-3 flex items-center gap-2">
+          <Trophy className="w-6 h-6 text-primary" aria-hidden="true" /> Cowboys games
+        </h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          Queensland Country Bank Stadium is the home ground of the North Queensland Cowboys, and
+          home games are the venue's most regular major events. The city centre is noticeably busier
+          on game day, particularly around Palmer Street and the CBD.
+        </p>
+        <p className="text-muted-foreground leading-relaxed mb-5">
+          Fixtures are set season by season and change. For the next confirmed Cowboys home game,
+          check the official Cowboys fixture list, and check the stadium event listing for gate
+          times and event-specific arrangements.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <Button asChild variant="outline">
+            <a href={COWBOYS_DRAW_URL} target="_blank" rel="noopener noreferrer">
+              Official Cowboys fixtures
+              <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
+            </a>
+          </Button>
+          <Button asChild variant="outline">
+            <a href={STADIUM_WHATS_ON_URL} target="_blank" rel="noopener noreferrer">
+              Official stadium event listing
+              <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
+            </a>
+          </Button>
+        </div>
+      </section>
+
+      {/* Other major events */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-3">Other major events</h2>
+        <p className="text-muted-foreground leading-relaxed">
+          The stadium also hosts other sporting fixtures, representative matches, concerts and major
+          entertainment events. These do not necessarily follow Cowboys-game arrangements — entry,
+          seating, transport and timing can all differ, so treat each event on its own terms. Our{" "}
+          <Link to="/events" className="text-primary hover:underline">
+            Townsville events guide
+          </Link>{" "}
+          covers the wider event picture across the city.
+        </p>
+      </section>
+
+      {/* Event day */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-3">What event day is like</h2>
+        <p className="text-muted-foreground leading-relaxed mb-4">
+          Expect larger crowds than a normal day in central Townsville, queues at entry, security
+          and bag checks, and busier roads nearby before and after. Parts of the venue are open to
+          the weather, which matters more here than in cooler cities.
+        </p>
+        <p className="text-muted-foreground leading-relaxed">
+          Food and drink availability inside the venue depends on the event, and queues are longest
+          immediately before the start and at breaks. Arriving earlier than you think you need to is
+          the simplest way to make the whole thing easier.
+        </p>
+      </section>
+
+      {/* Heat + rain */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Heat, sun and weather</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Sun className="w-4 h-4 text-primary" aria-hidden="true" /> Heat and sun
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Daytime and early-evening events can feel hot. Sun protection and hydration matter,
+              and what you can bring inside is set by current venue rules, so check them before you
+              leave. Check the forecast before heading out. See{" "}
+              <Link to="/guides/beat-the-heat" className="text-primary hover:underline">
+                beat the heat
+              </Link>
+              .
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Umbrella className="w-4 h-4 text-primary" aria-hidden="true" /> Rain and severe
+              weather
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Event organisers decide any event-specific changes, so check their official
+              communications rather than assuming. Wet weather can also affect transport and
+              comfort. Keep{" "}
+              <Link to="/guides/rainy-day-activities" className="text-primary hover:underline">
+                rainy day options
+              </Link>{" "}
+              and{" "}
+              <Link to="/useful-contacts" className="text-primary hover:underline">
+                useful contacts
+              </Link>{" "}
+              handy.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Kids, accessibility, entry */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Families, accessibility and entry</h2>
+        <div className="space-y-4">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Baby className="w-4 h-4 text-primary" aria-hidden="true" /> Going with kids
+            </h3>
+            <ul className="text-sm text-muted-foreground leading-relaxed list-disc pl-5 space-y-1">
+              <li>Arrive with time rather than cutting it fine at the gates.</li>
+              <li>Confirm ticketing and entry conditions for children before you travel.</li>
+              <li>Check current bag, food and drink rules for the event.</li>
+              <li>Plan for heat at daytime and early-evening events.</li>
+              <li>Agree a meeting point where appropriate.</li>
+              <li>Think about how you will get back before the event ends.</li>
+            </ul>
+            <p className="text-sm text-muted-foreground mt-3">
+              See{" "}
+              <Link to="/townsville-with-kids" className="text-primary hover:underline">
+                Townsville with kids
+              </Link>
+              .
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <Accessibility className="w-4 h-4 text-primary" aria-hidden="true" /> Accessibility
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Accessibility facilities are available at the venue, but specific arrangements —
+              seating, parking, entry points and companion ticketing — can vary by event and are
+              updated over time. Check the{" "}
+              <a
+                href={STADIUM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline"
+              >
+                current official stadium accessibility information
+              </a>
+              , and contact the venue directly for event-specific needs. Our{" "}
+              <Link to="/accessible-townsville" className="text-primary hover:underline">
+                accessible Townsville guide
+              </Link>{" "}
+              covers the wider city.
+            </p>
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5 flex items-center gap-2">
+              <ShoppingBag className="w-4 h-4 text-primary" aria-hidden="true" /> Entry rules and
+              bags
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Prohibited items, bag sizes, security checks and food and drink rules may vary between
+              events and are updated from time to time. Check the official event page before
+              travelling rather than relying on what applied at a previous event.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Event weekend planning */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Event weekend planning</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {COMBOS.map((c) => (
+            <article key={c.name} className="rounded-xl border bg-card p-5">
+              <h3 className="font-semibold text-foreground mb-1.5">{c.name}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {c.text}{" "}
+                <Link to={c.to} className="text-primary hover:underline">
+                  {c.linkText}
+                </Link>
+                .
+              </p>
+            </article>
+          ))}
         </div>
 
-        <main className="container mx-auto px-4 py-8 max-w-4xl space-y-10">
-
-          {/* Hero Section */}
-          <header className="space-y-4">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-              Cowboys Game Day Guide & Queensland Country Bank Stadium Parking Tips
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl">
-              Everything you need to know for game day in Townsville, from the 'Stampede' to the best local seats.
-            </p>
-          </header>
-
-          <section className="space-y-4">
-             <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
-               <Trophy className="w-6 h-6 text-primary" />
-               2026 Season Update: Cowboys Away This Week, Home vs Wests Tigers Aug 29
-             </h2>
-             <div className="grid gap-4 md:grid-cols-2">
-               <Card className="border-l-4 border-l-slate-400 bg-slate-50/50">
-                 <CardHeader className="pb-2">
-                   <Badge variant="secondary" className="w-fit bg-slate-100 text-slate-700">
-                     Away This Week
-                   </Badge>
-                     <CardTitle className="text-lg mt-2">No Home Game in Townsville This Week</CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-2">
-                    <p className="text-sm text-muted-foreground">
-                      The Cowboys are on the road this round, facing the Gold Coast Titans at Cbus Super Stadium, Robina on Thursday, August 6 (7:50 PM kick-off). No Stampede, no stadium crowds, and no game-day parking changes in Townsville this week — the next home blockbuster is Saturday, August 29 against the Wests Tigers.
-                    </p>
-                  </CardContent>
-                </Card>
-
-               <Card className="border-l-4 border-l-primary shadow-sm">
-                 <CardHeader className="pb-2">
-                   <Badge className="bg-primary/10 text-primary hover:bg-primary/10 border-none w-fit">
-                     Next Home Game
-                   </Badge>
-                   <CardTitle className="text-lg mt-2">NEXT HOME GAME: Cowboys vs. Wests Tigers</CardTitle>
-                 </CardHeader>
-                 <CardContent className="space-y-4">
-                   <div className="space-y-2">
-                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                       <Calendar className="w-4 h-4 flex-shrink-0" />
-                       <span>Saturday, August 29, 2026 · 7:35 PM</span>
-                     </div>
-                      <div className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                        <span>
-                          Queensland Country Bank Stadium.<br />
-                          <span className="font-medium text-foreground">Gates Open: 4:35 PM | Kick-off: 7:35 PM</span>
-                        </span>
-                      </div>
-                   </div>
-                    <div className="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-900">
-                      <strong>🏉 Double-Header:</strong> NRLW Knights are also playing at the stadium that day — expect an earlier, bigger crowd building through the afternoon.
-                    </div>
-                    <p className="text-sm italic text-muted-foreground border-l-2 border-primary/30 pl-3">
-                      *Notice for Visitors & Locals: This is a Saturday-night NRL home fixture at Queensland Country Bank Stadium — Cowboys vs Wests Tigers. Plan to leave work a little earlier than usual to beat the CBD traffic.*
-                    </p>
-                   <Button asChild className="w-full sm:w-auto">
-                     <a href="https://www.ticketmaster.com.au/north-queensland-cowboys-tickets/artist/1109825" target="_blank" rel="noopener noreferrer">
-                       Get Tickets on Ticketmaster
-                       <ExternalLink className="w-4 h-4 ml-2" />
-                     </a>
-                   </Button>
-                 </CardContent>
-               </Card>
-            </div>
-          </section>
-
-          {/* Upcoming Schedule */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
-              <Calendar className="w-6 h-6 text-primary" />
-              Upcoming Schedule
-            </h2>
-            <Card>
-              <CardContent className="p-0">
-                <div className="overflow-x-auto">
-                  <table className="w-full text-sm">
-                    <thead className="bg-muted/50 text-foreground">
-                      <tr>
-                        <th className="text-left font-semibold px-4 py-3">Round</th>
-                        <th className="text-left font-semibold px-4 py-3">Match</th>
-                        <th className="text-left font-semibold px-4 py-3">Date & Time</th>
-                        <th className="text-left font-semibold px-4 py-3">Venue</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-border">
-                      <tr className="bg-muted/30 text-muted-foreground">
-                        <td className="px-4 py-3 font-medium">NRLW Round 1 <Badge variant="outline" className="ml-1 text-muted-foreground border-muted-foreground/30">PAST</Badge></td>
-                        <td className="px-4 py-3 font-semibold line-through">vs Wests Tigers</td>
-                        <td className="px-4 py-3">Sat July 11, 2026, 3:30 PM</td>
-                        <td className="px-4 py-3">QCB Stadium</td>
-                      </tr>
-                      <tr className="bg-muted/30 text-muted-foreground">
-                        <td className="px-4 py-3 font-medium">Round 21 <Badge variant="outline" className="ml-1 text-muted-foreground border-muted-foreground/30">PAST</Badge></td>
-                        <td className="px-4 py-3 font-semibold line-through">vs Brisbane Broncos</td>
-                        <td className="px-4 py-3">Sat July 25, 2026, 7:35 PM</td>
-                        <td className="px-4 py-3">QCB Stadium</td>
-                      </tr>
-                      <tr className="bg-muted/30 text-muted-foreground">
-                        <td className="px-4 py-3 font-medium">Round 22 <Badge variant="outline" className="ml-1 text-muted-foreground border-muted-foreground/30">PAST</Badge></td>
-                        <td className="px-4 py-3 font-semibold line-through">vs Sydney Roosters</td>
-                        <td className="px-4 py-3">Thu July 30, 2026, 7:50 PM</td>
-                        <td className="px-4 py-3">QCB Stadium</td>
-                      </tr>
-                      <tr className="bg-slate-50">
-                        <td className="px-4 py-3 font-medium">This Week <Badge variant="outline" className="ml-1 border-slate-300 text-slate-600">AWAY</Badge></td>
-                        <td className="px-4 py-3 font-semibold">vs Gold Coast Titans</td>
-                        <td className="px-4 py-3 text-muted-foreground">Thu Aug 6, 2026, 7:50 PM</td>
-                        <td className="px-4 py-3 text-muted-foreground">Cbus Super Stadium, Robina</td>
-                      </tr>
-                      <tr className="bg-primary/5">
-                        <td className="px-4 py-3 font-medium">Next Home Game <Badge className="ml-1 bg-primary/10 text-primary hover:bg-primary/10 border-none">HOME</Badge></td>
-                        <td className="px-4 py-3 font-semibold">vs Wests Tigers</td>
-                        <td className="px-4 py-3 text-muted-foreground">Sat Aug 29, 2026, 7:35 PM</td>
-                        <td className="px-4 py-3 text-muted-foreground">QCB Stadium (NRLW Knights also playing)</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </CardContent>
-            </Card>
-          </section>
-
-          {/* QCB Stadium Game Day Schedule */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
-              <Calendar className="w-6 h-6 text-primary" />
-              Queensland Country Bank Stadium Game Day Schedule
-            </h2>
-            <Card>
-              <CardContent className="p-6 space-y-3">
-                <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">Free Park &amp; Ride shuttle starts:</strong> 2 hours before kick-off from Lou Litster Park &amp; CBD stops.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">Stadium gates open:</strong> Approximately 3 hours before kick-off (e.g. 4:35 PM for a 7:35 PM start).</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">'The Stampede' departs:</strong> Roughly 45 minutes before kick-off from Cowboys Leagues Club across Lowths Bridge.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">Kick-off:</strong> As scheduled (7:35 PM for the next home clash vs Wests Tigers on August 29).</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">When does a Cowboys game end?</strong> Approximately <strong>1 hour and 50 minutes after kick-off time</strong> (allowing for two 40-minute halves, a 10-minute half-time, and stoppages). A 7:35 PM game typically wraps around 9:25 PM.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span><strong className="text-foreground">Return shuttles:</strong> Run continuously for up to 1 hour after the final whistle.</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            {/* Dean Street Carpark Warning */}
-            <div className="bg-red-50 border-2 border-red-300 rounded-lg p-5 flex gap-3 items-start">
-              <span className="text-2xl" aria-hidden="true">⚠️</span>
-              <div>
-                <p className="text-red-900 font-bold text-base">Dean Street Carpark — Game Day Closure</p>
-                <p className="text-red-800 text-sm mt-2">
-                  Townsville City Council laws state that the <strong>Dean Street Carpark completely closes to public parking from 2:00 PM on Cowboys home game days</strong>. Vehicles left inside risk being towed at the owner's expense.
-                </p>
-              </div>
-            </div>
-          </section>
-
-
-          {/* Visiting from out of town CTA */}
-          <Card className="bg-muted/40 border-2 border-border/60 shadow-sm">
-            <CardContent className="p-6 sm:p-8 space-y-3">
-              <h3 className="text-xl font-bold text-foreground">🏟️ Visiting for the Wests Tigers Game?</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Don't get caught out — last-minute stays near the stadium fill up fast for Cowboys home games. Whether you're after a luxury resort with a view or a budget-friendly apartment for the family, we've found the best spots.
-              </p>
-              <Button asChild variant="default" size="lg" className="w-full sm:w-auto">
-                <Link to="/accommodation">
-                  View Townsville Accommodation Guide
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
-            </CardContent>
-          </Card>
-
-          {/* The Game Day Experience */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
-              <Users className="w-6 h-6 text-primary" />
-              The Game Day Experience
-            </h2>
-            <Card>
-              <CardContent className="p-6 space-y-4">
-                <h3 className="text-xl font-semibold text-foreground">The Stampede</h3>
-                <p className="text-muted-foreground">
-                  Game day in Townsville starts at the Cowboys Leagues Club. Fans gather for pre-game drinks 
-                  before walking together across Lowths Bridge to the stadium — this is 'The Stampede'. 
-                  It's one of the most unique match-day experiences in the NRL.
-                </p>
-                <p className="text-muted-foreground">
-                  The walk takes about 15 minutes and the atmosphere builds as you cross the bridge with 
-                  thousands of fellow fans. Lowths Bridge becomes a pedestrian-only zone on game days, 
-                  turning it into a true fan parade. Face paint, jerseys, and singing are all part of the tradition.
-                </p>
-
-                {/* Stampede Map */}
-                <div className="space-y-3 pt-2">
-                  <img
-                    src={stampedeMap}
-                    alt="The Cowboys Stampede match day walking route from Cowboys Leagues Club across Lowths Bridge to Queensland Country Bank Stadium"
-                    className="w-full rounded-lg"
-                    loading="lazy"
-                  />
-                  <p className="text-sm text-muted-foreground italic text-center">
-                    The Match Day March: A scenic 15-minute walk from the CBD to the stadium gates.
-                  </p>
-                  <a
-                    href="https://www.google.com/maps/dir/Cowboys+Leagues+Club,+Townsville/Queensland+Country+Bank+Stadium,+Townsville/@-19.2590,146.7870,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x6978599e4b70bf71:0x2b1e3b3b3b3b3b3b!2m2!1d146.7814!2d-19.2567!1m5!1m1!1s0x6978599e4b70bf71:0x3c1e3b3b3b3b3b3b!2m2!1d146.7895!2d-19.2618!3e2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 text-sm font-medium w-full sm:w-auto transition-colors"
-                  >
-                    <MapPin className="w-4 h-4" />
-                    Open Walking Route in Google Maps
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
-
-            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 flex gap-3 items-start">
-              <span className="text-lg">💡</span>
-              <div>
-                 <p className="text-amber-900 text-sm font-semibold">Local Tip</p>
-                  <p className="text-amber-800 text-sm mt-1">
-                    For the Saturday night kick-off vs the Wests Tigers on August 29, the Leagues Club will be buzzing from early afternoon thanks to the NRLW Knights game earlier that day. The 'Stampede' march across Lowths Bridge will depart at approximately 6:50 PM (about 45 minutes before the 7:35 PM kick-off). Aim to be at the Leagues Club by 5:15 PM for pre-game drinks and atmosphere before the march.
-                  </p>
-              </div>
-            </div>
-
-            <LocalInsightCard title="Alternative Route" variant="insight">
-              <p>
-                Note: Lowths Bridge becomes a pedestrian-only zone on game days. It is the most direct route from City Lane, but if it's crowded, you can also use the Victoria Street Bridge to access the Central Park Boardwalk.
-              </p>
-            </LocalInsightCard>
-          </section>
-
-          {/* Stadium Pro-Tips */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground">Stadium Pro-Tips</h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card>
-                <CardContent className="p-5 space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Users className="w-5 h-5 text-primary" />
-                    <h3 className="font-semibold text-foreground">The Northern Green</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Best for families and a relaxed vibe. Grab a spot on the hill, spread out a blanket, 
-                    and let the kids run around while you watch the game.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-5 space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Volume2 className="w-5 h-5 text-primary" />
-                    <h3 className="font-semibold text-foreground">The Quiet Room</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Available on Level 1 for those needing a sensory break. The stadium provides a 
-                    calmer space away from the crowd noise — great for anyone who needs a moment.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-
-          {/* Getting There */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
-              <Car className="w-6 h-6 text-primary" />
-              Getting There
-            </h2>
-            <Card className="border-l-4 border-l-green-600">
-              <CardContent className="p-6 space-y-4">
-                <Badge className="bg-green-100 text-green-800 hover:bg-green-100 border-none w-fit">Primary Free Parking Hub</Badge>
-                <h3 className="font-semibold text-foreground text-lg">Lou Litster Park — Park &amp; Ride</h3>
-                <p className="text-muted-foreground">
-                  <strong>Lou Litster Park</strong> is the recommended free parking hub for every Cowboys home game. Ample sealed parking, easy in/out access, and a direct, accessible <strong>Park &amp; Ride shuttle bus</strong> running from <strong>2 hours before kick-off</strong> straight to the stadium gates — skip the CBD gridlock entirely.
-                </p>
-                <ul className="space-y-2 text-muted-foreground text-sm">
-                  <li className="flex items-start gap-2">
-                    <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <span><strong className="text-foreground">Shuttle from:</strong> 2 hours before kick-off (e.g. from 5:35 PM for a 7:35 PM game).</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <span><strong className="text-foreground">Accessibility:</strong> Buses are low-floor, wheelchair-accessible, and pram-friendly.</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <MapPin className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
-                    <span><strong className="text-foreground">Return service:</strong> Runs continuously for up to 1 hour after the final whistle.</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6 space-y-3">
-                <h3 className="font-semibold text-foreground text-lg">Secondary Option: Townsville CBD Shuttle Stops</h3>
-                <p className="text-muted-foreground text-sm">
-                  Free 'Park &amp; Ride' shuttles also collect fans from multiple stops along <strong>Flinders Street</strong> in the CBD — handy if you're already in town for pre-game food &amp; drinks. Note: CBD on-street parking fills quickly on game days, so Lou Litster Park remains the easiest option.
-                </p>
-              </CardContent>
-            </Card>
-            <AirportTransferCard className="mt-2" proTipExtra="Perfect for fans flying in on Saturday afternoon to avoid the CBD taxi rush." />
-          </section>
-
-          {/* Where to Eat & Drink */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-foreground flex items-center gap-2">
-              <Utensils className="w-6 h-6 text-primary" />
-              Where to Eat & Drink
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              <Card>
-                <CardContent className="p-5 space-y-2">
-                  <h3 className="font-semibold text-foreground">Pre-Game: City Lane</h3>
-                  <p className="text-sm text-muted-foreground">
-                    The laneway precinct in the CBD is buzzing on game days. Grab a craft beer, tacos, 
-                    or a coffee before joining The Stampede.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-5 space-y-2">
-                  <h3 className="font-semibold text-foreground">Post-Game: Palmer Street</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Townsville's restaurant strip comes alive after the siren. Great for a sit-down dinner, 
-                    celebratory drinks, or a quiet debrief after a tough loss.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-
-          {/* Accessibility & Sensory Info */}
-          <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2">
-              <Accessibility className="w-7 h-7 text-blue-600" />
-              Accessibility &amp; Sensory Info
-            </h2>
-            <p className="text-muted-foreground">
-              Queensland Country Bank Stadium was designed with accessibility front-of-mind. Here's
-              what to know before you go.
-            </p>
-            <div className="grid gap-4 md:grid-cols-3">
-              <Card className="border-l-4 border-l-blue-500">
-                <CardContent className="p-5 space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Car className="w-5 h-5 text-blue-600" />
-                    <h3 className="font-semibold text-foreground">Accessible Parking</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    Accessible parking is available directly at the stadium (<strong>pre-booking
-                    required</strong> via the stadium website). For general fans, the Lou Litster
-                    "Park &amp; Ride" shuttle is wheelchair accessible.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-4 border-l-violet-500">
-                <CardContent className="p-5 space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Brain className="w-5 h-5 text-violet-600" />
-                    <h3 className="font-semibold text-foreground">Sensory Support</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    A dedicated <strong>Quiet Room on Level 1</strong> is available for fans
-                    needing a break from the crowd noise — ideal for sensory-sensitive visitors and
-                    young families.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-4 border-l-emerald-500">
-                <CardContent className="p-5 space-y-2">
-                  <div className="flex items-center gap-2">
-                    <Armchair className="w-5 h-5 text-emerald-600" />
-                    <h3 className="font-semibold text-foreground">Accessible Seating</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
-                    QCB Stadium offers world-class accessible viewing platforms and companion
-                    seating throughout <strong>all levels</strong> of the venue.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-            <p className="text-sm text-muted-foreground">
-              Planning a wider trip? See our{" "}
-              <Link to="/accessible-townsville" className="text-primary hover:underline font-medium">
-                Accessible Townsville Guide
+        <div className="grid gap-4 sm:grid-cols-2 mt-4">
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5">One-night event stay</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Prioritise central accommodation, easy transport and nearby dining. Palmer Street or
+              the CBD are the two obvious choices, depending on whether dinner or general city
+              access matters more. A quick{" "}
+              <Link to="/local-tips" className="text-primary hover:underline">
+                local tips
               </Link>{" "}
-              for accessible beaches, parks and transport across the city.
+              read helps if it is your first visit.
             </p>
-          </section>
-
-          {/* CTA */}
-          <div className="bg-primary/5 rounded-2xl p-8 text-center space-y-4">
-            <h2 className="text-2xl font-bold text-foreground">Ready for game day?</h2>
-            <p className="text-muted-foreground max-w-md mx-auto">
-              Check the full events calendar for upcoming home games, markets, and things to do around match weekends.
+          </article>
+          <article className="rounded-xl border bg-card p-5">
+            <h3 className="font-semibold text-foreground mb-1.5">Two- or three-night event trip</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              Add The Strand, Castle Hill, Jezzine Barracks, a Magnetic Island day and{" "}
+              <Link to="/riverway" className="text-primary hover:underline">
+                Riverway
+              </Link>{" "}
+              where it suits. Start with{" "}
+              <Link to="/first-time-in-townsville" className="text-primary hover:underline">
+                first time in Townsville
+              </Link>
+              ,{" "}
+              <Link to="/townsville-in-one-day" className="text-primary hover:underline">
+                Townsville in one day
+              </Link>{" "}
+              or{" "}
+              <Link to="/things-to-do" className="text-primary hover:underline">
+                things to do
+              </Link>
+              .
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button asChild size="lg">
-                <Link to="/events">View Events Calendar</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="gap-2">
-                <Link to="/food">
-                  <Utensils className="w-4 h-4" />
-                  Food & Drink Guide
-                </Link>
-              </Button>
-            </div>
-          </div>
+          </article>
+        </div>
+      </section>
 
-          {/* North Shore Link */}
-          <p className="text-sm text-muted-foreground text-center">
-            Need a break from the noise? Check out our{" "}
-            <Link to="/north-shore-townsville" className="text-primary hover:underline font-medium">
-              North Shore Nature Guide
-            </Link>.
-          </p>
+      {/* Mistakes */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+          <AlertTriangle className="w-6 h-6 text-primary" aria-hidden="true" /> Common stadium-trip
+          mistakes
+        </h2>
+        <ul className="space-y-2 text-muted-foreground list-disc pl-5">
+          {MISTAKES.map((m) => (
+            <li key={m}>{m}</li>
+          ))}
+        </ul>
+      </section>
 
-        </main>
-      </div>
-    </>
-  );
-};
+      {/* Pathways */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Plan by event need</h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {PATHWAYS.map((p) =>
+            p.to ? (
+              <Link
+                key={p.label}
+                to={p.to}
+                className="group flex items-center justify-between gap-3 rounded-lg border bg-card px-4 py-3 hover:border-primary/40 transition-colors"
+              >
+                <span className="text-sm font-medium text-foreground">{p.label}</span>
+                <span className="text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                  {p.name}
+                </span>
+              </Link>
+            ) : (
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-between gap-3 rounded-lg border bg-card px-4 py-3 hover:border-primary/40 transition-colors"
+              >
+                <span className="text-sm font-medium text-foreground">{p.label}</span>
+                <span className="inline-flex items-center gap-1 text-sm text-muted-foreground group-hover:text-primary transition-colors">
+                  {p.name}
+                  <ExternalLink className="w-3 h-3" aria-hidden="true" />
+                </span>
+              </a>
+            )
+          )}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold mb-4">Stadium and Cowboys game questions</h2>
+        <Accordion type="single" collapsible className="w-full">
+          {faqs.map((f, i) => (
+            <AccordionItem key={f.q} value={`faq-${i}`}>
+              <AccordionTrigger className="text-left">{f.q}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">{f.a}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
+
+      {/* Related */}
+      <section className="mb-4">
+        <h2 className="text-2xl font-bold mb-6">Related guides</h2>
+        <div className="grid gap-4 sm:grid-cols-2">
+          {RELATED.map((r) => (
+            <Link
+              key={r.to}
+              to={r.to}
+              className="group block rounded-xl border bg-card p-5 hover:border-primary/40 transition-colors"
+            >
+              <h3 className="font-semibold text-foreground group-hover:text-primary transition-colors">
+                {r.name}
+              </h3>
+              <p className="text-sm text-muted-foreground mt-1">{r.text}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <p className="text-sm text-muted-foreground">
+        Buying tickets? Go through the official event or team ticketing links on the{" "}
+        <a
+          href={STADIUM_WHATS_ON_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:underline"
+        >
+          stadium event page
+        </a>{" "}
+        for your event.
+      </p>
+    </div>
+  </>
+);
 
 export default CowboysStadiumGuide;
