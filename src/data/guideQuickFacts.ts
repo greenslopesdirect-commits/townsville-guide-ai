@@ -551,6 +551,19 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     localVerdict:
       "Townsville is easier to enjoy once you stop trying to treat it like a compact southern city.",
   },
+  "/things-to-do": {
+    bestOverall: "The Strand",
+    bestView: "Castle Hill",
+    bestDayTrip: "Magnetic Island",
+    bestFreeActivity: "The Strand and Castle Hill",
+    bestWithKids: "The Strand or Riverway",
+    bestPaidActivity: "Billabong Sanctuary for wildlife",
+    bestShadedOption: "Paluma for a cooler nature day trip",
+    bestWithoutCar: "The Strand and North Ward",
+    idealFirstVisit: "3–4 days",
+    localVerdict:
+      "Townsville is best when you mix the waterfront, views, island time and one or two local-style experiences.",
+  },
   "/riverway": {
     bestFor: ["Families", "Free swimming", "Hot days", "Longer stays"],
     mainAttraction: "Free supervised swimming lagoons",
