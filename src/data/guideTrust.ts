@@ -512,6 +512,7 @@ export const GUIDE_PATHS: string[] = [
   "/rowes-bay",
   "/townsville-with-kids",
   "/the-strand",
+  "/riverway",
   "/billabong-sanctuary",
   "/castle-hill",
   "/little-crystal-creek-townsville",
