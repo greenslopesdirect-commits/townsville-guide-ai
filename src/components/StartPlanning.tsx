@@ -103,8 +103,8 @@ const StartPlanning = () => {
                     {item.title}
                   </Link>
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
-                <span className="inline-flex items-center gap-1.5 text-primary font-medium pt-1">
+                <p className="text-muted-foreground leading-relaxed pointer-events-none">{item.description}</p>
+                <span className="pointer-events-none inline-flex items-center gap-1.5 text-primary font-medium pt-1">
                   Read the guide
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </span>
