@@ -66,6 +66,10 @@ export interface QuickFacts {
   bestArea?: string;
   /** Main planning issue to work around. */
   mainPlanningIssue?: string;
+  /** Headline attraction within a precinct or place. */
+  mainAttraction?: string;
+  /** Public transport access summary. */
+  publicTransport?: string;
   timeNeeded?: string;
 
 
@@ -397,6 +401,24 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     bestTimeToVisit: "Start early, particularly during hotter months",
     localVerdict:
       "A realistic introduction to Townsville that covers the waterfront, local history and Castle Hill without making the day unnecessarily rushed.",
+  },
+  "/riverway": {
+    bestFor: ["Families", "Free swimming", "Hot days", "Longer stays"],
+    mainAttraction: "Free supervised swimming lagoons",
+    cost: "Free — lagoons, parklands, library and gallery",
+    timeNeeded: "2–4 hours; a half-day for families",
+    drivingTimeFromCBD: "Approximately 20 minutes from the Townsville CBD",
+    parking: "Free on-site public parking; nearest car parks fill first",
+    publicTransport: "Translink buses serve the area; check current routes",
+    accessibility:
+      "Extensive accessible infrastructure including ramps, wide paths and lagoon access ramps",
+    dogFriendly:
+      "Leashed dogs in appropriate parkland areas only; not in the lagoons or swimming areas",
+    bestTimeToVisit: "Morning, or late afternoon in hot weather",
+    checkBeforeHeadingOut:
+      "Current lagoon supervised opening hours with Townsville City Council",
+    localVerdict:
+      "Townsville's best free family half-day once the headline sights are done — swimming, shade, a library and a gallery in one place.",
   },
 };
 

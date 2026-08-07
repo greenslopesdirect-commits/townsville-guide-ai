@@ -644,6 +644,16 @@ const TownsvilleWithKids = () => {
           </Card>
         </section>
 
+        <p className="text-muted-foreground leading-relaxed">
+          If you have a car and want a quieter alternative to the waterfront, the free supervised
+          lagoons, parklands and library at{" "}
+          <Link to="/riverway" className="text-primary underline underline-offset-2 font-medium">
+            Riverway
+          </Link>{" "}
+          make an easy family half-day.
+        </p>
+
+
         {/* Free things */}
         <section aria-labelledby="free-with-kids">
           <h2 id="free-with-kids" className="text-2xl md:text-3xl font-bold mb-3">

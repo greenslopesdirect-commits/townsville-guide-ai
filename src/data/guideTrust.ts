@@ -458,6 +458,35 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/riverway": {
+    visitStatus: "partially-firsthand",
+    visitNote:
+      "This guide combines firsthand familiarity with the Riverway precinct and the Ross River parklands with current information from Townsville City Council, CityLibraries Townsville and Pinnacles Gallery. Lagoon opening hours and facility availability change, so always check Council before travelling.",
+    lastChecked: "7 August 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      {
+        name: "Townsville City Council — Riverway",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway",
+      },
+      {
+        name: "Townsville City Council — Riverway Lagoons",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway/riverway-lagoons",
+      },
+      {
+        name: "CityLibraries Townsville",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/libraries",
+      },
+      {
+        name: "Pinnacles Gallery — Townsville City Council",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/galleries",
+      },
+      {
+        name: "Translink — journey planner",
+        url: "https://translink.com.au/",
+      },
+    ],
+  },
 };
 
 /** Routes that are guide articles and should show the trust panel. */
@@ -483,6 +512,7 @@ export const GUIDE_PATHS: string[] = [
   "/rowes-bay",
   "/townsville-with-kids",
   "/the-strand",
+  "/riverway",
   "/billabong-sanctuary",
   "/castle-hill",
   "/little-crystal-creek-townsville",

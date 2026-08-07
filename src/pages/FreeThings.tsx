@@ -775,6 +775,9 @@ const FreeThings = () => {
                 <Link to="/the-strand" className="text-primary underline underline-offset-2">
                   Read the complete Strand guide
                 </Link>
+                <Link to="/riverway" className="text-primary underline underline-offset-2">
+                  Free lagoons at Riverway
+                </Link>
                 <Link to="/guides/stinger-safety" className="text-primary underline underline-offset-2">
                   Marine stinger safety
                 </Link>

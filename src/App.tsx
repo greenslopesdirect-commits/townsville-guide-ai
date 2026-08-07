@@ -46,6 +46,7 @@ import SunsetWalks from "@/pages/SunsetWalks";
 import PallarendaBeach from "@/pages/PallarendaBeach";
 import RowesBay from "@/pages/RowesBay";
 import TheStrand from "./pages/TheStrand";
+import Riverway from "./pages/Riverway";
 import TownsvilleWithKids from "@/pages/TownsvilleWithKids";
 import BillabongSanctuary from "@/pages/BillabongSanctuary";
 import CastleHill from "@/pages/CastleHill";
@@ -115,6 +116,7 @@ const App = () => (
             <Route path="rowes-bay" element={<RowesBay />} />
             <Route path="townsville-with-kids" element={<TownsvilleWithKids />} />
             <Route path="the-strand" element={<TheStrand />} />
+            <Route path="riverway" element={<Riverway />} />
             <Route path="billabong-sanctuary" element={<BillabongSanctuary />} />
             <Route path="castle-hill" element={<CastleHill />} />
             <Route path="little-crystal-creek-townsville" element={<LittleCrystalCreek />} />
