@@ -99,6 +99,7 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(Ship, "Journey time", data.journeyTime);
   push(Car, "Car needed", data.carNeeded);
   push(ParkingCircle, "Parking", data.parking);
+  push(Route, "Public transport", data.publicTransport);
   push(Bath, "Toilets", data.toilets);
   push(Accessibility, "Accessibility", data.accessibility);
   push(Dog, "Dog friendly", data.dogFriendly);
