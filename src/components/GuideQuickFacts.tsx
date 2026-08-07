@@ -24,6 +24,8 @@ import {
   Flame,
   CloudSun,
   PhoneCall,
+  Coffee,
+  Umbrella,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
