@@ -33,6 +33,7 @@ import {
   Info,
   HeartPulse,
   Languages,
+  ShoppingBag,
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
