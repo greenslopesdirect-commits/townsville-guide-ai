@@ -183,9 +183,11 @@ const UsefulContacts = () => (
 
       {/* Emergency block */}
       <div className="rounded-xl border-2 border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950/30 p-6 mb-8">
-        <p className="text-xl font-bold text-red-900 dark:text-red-200 flex items-center gap-3">
-          <PhoneCall className="w-6 h-6 shrink-0" aria-hidden="true" />
-          Emergency — Triple Zero (<a href="tel:000" className="underline">000</a>)
+        <p className="text-xl font-bold text-red-900 dark:text-red-200 flex items-start gap-3">
+          <PhoneCall className="w-6 h-6 shrink-0 mt-0.5" aria-hidden="true" />
+          <span>
+            Emergency — Triple Zero (<a href="tel:000" className="underline">000</a>)
+          </span>
         </p>
         <p className="mt-2 text-red-900 dark:text-red-200 font-medium">
           Call 000 for urgent police, fire or ambulance help.

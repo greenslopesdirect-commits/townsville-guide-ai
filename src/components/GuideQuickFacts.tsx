@@ -54,6 +54,7 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
     if (value && value.trim()) rows.push({ icon, label, value: value.trim() });
   };
 
+  push(PhoneCall, "Emergency", data.emergency);
   push(PhoneCall, "Non-emergency police", data.nonEmergencyPolice);
   push(PhoneCall, "SES", data.ses);
   push(HeartPulse, "Health advice", data.healthAdvice);
@@ -123,7 +124,6 @@ const GuideQuickFacts = ({ facts, className }: GuideQuickFactsProps) => {
   push(AlertTriangle, "Avoid in heavy rain", data.avoidInHeavyRain);
   push(AlertTriangle, "Main consideration", data.mainConsideration);
   push(CloudSun, "Check before heading out", data.checkBeforeHeadingOut);
-  push(PhoneCall, "Emergency", data.emergency);
   push(AlertTriangle, "Main challenge", data.mainChallenge);
   push(Sparkles, "Main attraction", data.mainAttraction);
   push(Clock, "Time needed", data.timeNeeded);
