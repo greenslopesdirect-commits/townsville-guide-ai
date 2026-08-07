@@ -66,6 +66,10 @@ export interface QuickFacts {
   bestArea?: string;
   /** Main planning issue to work around. */
   mainPlanningIssue?: string;
+  /** Headline attraction within a precinct or place. */
+  mainAttraction?: string;
+  /** Public transport access summary. */
+  publicTransport?: string;
   timeNeeded?: string;
 
 
