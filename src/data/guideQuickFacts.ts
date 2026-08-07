@@ -358,15 +358,21 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
       "Current signs and official warnings should take priority over general online advice.",
   },
   "/dog-friendly": {
-    bestFor: ["Dog owners", "Beach and park walks", "Locals and visiting pets"],
+    bestFor: ["Dog owners", "Off-leash beach runs", "Fenced dog parks", "Locals and visiting pets"],
+    bestDogBeach: "Pallarenda Dog Beach",
+    bestCentralOffLeashBeach: "Benwell Road, South Townsville",
+    bestFencedOption: "A Council-designated fenced dog park",
+    bestDogSwimming: "Designated off-leash areas with water access",
+    mainRule: "Off leash only in designated Council off-leash areas",
+    mainRisk: "Heat, crocodile habitat and changing tides",
     timeNeeded: "From a short walk to a half day",
-    cost: "Free at public beaches and parks",
-    carNeeded: "Helpful for beaches and parks outside the central area",
+    cost: "Free",
+    carNeeded: "Yes — helpful for reaching most off-leash areas",
     dogFriendly:
-      "Rules vary by location — check signs at each beach, park or walking area because leash and access rules differ",
-    bestTimeToVisit: "Early morning or evening, when sand and paths are cooler",
+      "Rules vary by location — follow signs at each beach or park, and check current Townsville City Council off-leash information",
+    bestTimeToVisit: "Early morning or late afternoon, when sand and paths are cooler",
     localVerdict:
-      "Townsville has several useful dog-friendly walks and open spaces, but owners should check local signs, heat conditions and seasonal hazards at each location.",
+      "Townsville has good dog exercise options, but beach rules vary and dogs cannot simply run off leash everywhere.",
   },
   "/townsville-with-kids": {
     bestFor: ["Outdoor family activities and wildlife"],
