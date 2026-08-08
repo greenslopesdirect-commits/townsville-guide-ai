@@ -64,6 +64,8 @@ const RELATED = [
   { name: "Beat the Heat", to: "/guides/beat-the-heat", text: "How to structure a comfortable hot day." },
   { name: "Rainy Day Activities", to: "/guides/rainy-day-activities", text: "Indoor and wet-weather options." },
   { name: "Paluma Day Trip", to: "/guides/paluma-day-trip", text: "Rainforest, lookouts and the mountain drive." },
+  { name: "Dog-Friendly Townsville", to: "/dog-friendly", text: "Off-leash areas, dog beaches and pet-friendly cafés." },
+  { name: "Reef HQ Status", to: "/reef-hq-townsville", text: "Current closure status for the Great Barrier Reef Aquarium." },
 ];
 
 const faqs = [

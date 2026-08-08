@@ -97,7 +97,7 @@ const EXAMPLES = [
 const PATHWAYS = [
   { label: "Waterfront", to: "/the-strand", name: "Strand / North Ward" },
   { label: "Breakfast", to: "/things-to-do", name: "CBD / North Ward" },
-  { label: "Nice dinner", to: "/guides/magnetic-island-ferry", name: "Palmer Street / CBD" },
+  { label: "Nice dinner", to: "/directory?category=eat-drink", name: "Palmer Street / CBD" },
   { label: "With kids", to: "/townsville-with-kids", name: "The Strand" },
   { label: "Without a car", to: "/townsville-without-a-car", name: "Strand / CBD / Palmer Street" },
   { label: "Before the ferry", to: "/guides/magnetic-island-ferry", name: "Palmer Street / CBD" },

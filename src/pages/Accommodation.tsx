@@ -130,6 +130,8 @@ const RELATED = [
   { to: "/guides/beat-the-heat", name: "Beat the Heat", text: "Timing your day around Townsville's heat." },
   { to: "/guides/rainy-day-activities", name: "Rainy Day Activities", text: "Indoor options when the weather turns." },
   { to: "/local-tips", name: "Local Tips", text: "Practical observations that do not fit elsewhere." },
+  { to: "/beaches", name: "Townsville Beaches", text: "Which beaches sit closest to which accommodation area." },
+  { to: "/dog-friendly", name: "Dog-Friendly Townsville", text: "Pet-friendly stays and where dogs are welcome." },
 ];
 
 const faqs = [
