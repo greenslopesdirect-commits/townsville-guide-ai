@@ -1,4 +1,5 @@
 import SEOHead from "@/components/SEOHead";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -26,6 +27,18 @@ const MovingToTownsville = () => {
         description="A local-verified relocation guide to Townsville for 2026. Suburbs, the $40B infrastructure boom, jobs in Defence and Green Energy, schools, healthcare and the airport — all in one place."
         canonical="https://www.townsvilleguide.com.au/moving-to-townsville"
       />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.townsvilleguide.com.au/" },
+              { "@type": "ListItem", position: 2, name: "Moving to Townsville", item: "https://www.townsvilleguide.com.au/moving-to-townsville" },
+            ],
+          })}
+        </script>
+      </Helmet>
 
       <div className="min-h-screen bg-gray-50">
         <main className="container mx-auto px-4 py-10 max-w-4xl space-y-12">

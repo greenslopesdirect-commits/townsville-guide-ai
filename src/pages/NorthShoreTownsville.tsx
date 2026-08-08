@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { ArrowRight, TreePine, Users, ShoppingBag, Bird, Trophy, MapPin, Waves, Camera, Coffee, Droplets, ExternalLink, Dog, Leaf, Ruler, Mountain, Heart, Accessibility } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -14,6 +15,19 @@ const NorthShoreTownsville = () => {
         description="Discover Townsville's North Shore. From the Burdell Wetlands and Leisure Centre to the best local coffee, explore our locally updated guide to the northern heart of the city."
         canonical="https://www.townsvilleguide.com.au/north-shore-townsville"
       />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.townsvilleguide.com.au/" },
+              { "@type": "ListItem", position: 2, name: "Suburbs", item: "https://www.townsvilleguide.com.au/suburbs" },
+              { "@type": "ListItem", position: 3, name: "North Shore Townsville", item: "https://www.townsvilleguide.com.au/north-shore-townsville" },
+            ],
+          })}
+        </script>
+      </Helmet>
 
       <div className="min-h-screen bg-background">
         {/* Hero */}

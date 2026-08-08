@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Mountain, Sunrise, Camera, Footprints, Thermometer, Heart, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -14,6 +15,19 @@ const CastleHill = () => {
         description="Castle Hill Townsville local guide — panoramic views, walking tracks, sunrise and sunset tips. Free attraction near the city centre."
         canonical="https://www.townsvilleguide.com.au/castle-hill"
       />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.townsvilleguide.com.au/" },
+              { "@type": "ListItem", position: 2, name: "Things to Do", item: "https://www.townsvilleguide.com.au/things-to-do" },
+              { "@type": "ListItem", position: 3, name: "Castle Hill", item: "https://www.townsvilleguide.com.au/castle-hill" },
+            ],
+          })}
+        </script>
+      </Helmet>
 
       <div className="min-h-screen bg-background">
         {/* Hero */}

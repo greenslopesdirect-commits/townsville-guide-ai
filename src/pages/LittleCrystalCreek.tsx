@@ -58,6 +58,20 @@ const LittleCrystalCreek = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.townsvilleguide.com.au/" },
+              { "@type": "ListItem", position: 2, name: "Nature", item: "https://www.townsvilleguide.com.au/nature" },
+              { "@type": "ListItem", position: 3, name: "Little Crystal Creek", item: "https://www.townsvilleguide.com.au/little-crystal-creek-townsville" },
+            ],
+          }),
+        }}
+      />
 
       {/* H1 & Intro */}
       <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
