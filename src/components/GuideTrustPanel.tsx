@@ -71,7 +71,7 @@ const GuideTrustPanel = ({ guideTitle, className, ...overrides }: GuideTrustPane
             <p className="font-medium text-foreground">Written by {meta.author}</p>
             <p>
               Duncan has lived in Townsville since 2023 and writes Townsville Guide using
-              firsthand local knowledge, personal visits and carefully checked information.
+              local knowledge and carefully checked information.
             </p>
           </div>
         </div>

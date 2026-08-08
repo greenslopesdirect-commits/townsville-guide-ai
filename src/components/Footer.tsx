@@ -170,7 +170,7 @@ const Footer = () => {
             © 2026 Townsville Guide — Curated by Duncan Ross, Townsville Local. Operated by DKR Sales (ABN 63 824 596 227)
           </p>
           <p className="text-xs text-muted-foreground">
-            Townsville's trusted source for beaches, food, events and local tips.
+            Practical local guides to Townsville's beaches, food, events and everyday visitor essentials.
           </p>
         </div>
 

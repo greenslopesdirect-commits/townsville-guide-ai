@@ -14,7 +14,7 @@ const AboutSection = () => {
             </div>
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
-              <p>Townsville Guide (Townsville Guide.com.au) is a locally built Townsville travel and lifestyle guide helping locals, visitors, and newcomers discover the best of North Queensland — powered by real local insight and AI-assisted recommendations.</p>
+              <p>Townsville Guide (TownsvilleGuide.com.au) is a locally built Townsville travel and lifestyle guide helping locals, visitors, and newcomers discover the best of North Queensland — powered by real local insight and AI-assisted recommendations.</p>
               <p>This guide brings together hand-picked recommendations, carefully curated lists, and AI-assisted suggestions to make exploring easy. From beaches and restaurants to dog parks, events, and hidden gems, it's designed to help you experience Townsville like a local.</p>
               <p>Whether you're planning your first trip or exploring new corners of the city you already call home, Townsville Guide delivers updated recommendations, accurate information, and smart tools that adapt to your needs.</p>
             </div>
@@ -38,7 +38,7 @@ const AboutSection = () => {
               <p>Hi, I'm Duncan — the real person behind Townsville Guide and a proud Townsville local.</p>
               <p>After moving to North Queensland, I quickly fell in love with Townsville's relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. With a background in digital design, websites, and AI tools, I created this platform to share the very best of our city in a simple, friendly, and genuinely helpful way.</p>
               <p>
-                I explore Townsville every day — beaches, cafés, dog-friendly spots, local events — and I've built this guide to make it easier for others to do the same.
+                I'm regularly out exploring Townsville — its beaches, cafés, dog-friendly spots and local events — and I've built this guide to make it easier for others to do the same.
               </p>
               <p>And if you ever see someone out walking a large black Giant Schnauzer, there's a very good chance that's me!</p>
             </div>
