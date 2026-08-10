@@ -297,12 +297,21 @@ const DogFriendly = () => {
             Pallarenda Dog Beach
           </h2>
           <Card className="overflow-hidden">
-            <img
-              src={maxPallarenda}
-              alt="Max the Giant Schnauzer at golden hour on the Townsville coast"
-              loading="lazy"
-              className="w-full h-56 md:h-72 object-cover"
-            />
+            <div className="relative w-full h-56 md:h-72 overflow-hidden">
+              <img
+                src={maxPallarenda}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover scale-125"
+                style={{ filter: "blur(24px) saturate(1.2)" }}
+              />
+              <img
+                src={maxPallarenda}
+                alt="Max the Giant Schnauzer at golden hour on the Townsville coast"
+                loading="lazy"
+                className="relative w-full h-full object-contain"
+              />
+            </div>
             <CardContent className="p-5 md:p-6 space-y-4">
               <p className="text-muted-foreground leading-relaxed">
                 Pallarenda is Townsville's lead dog beach. Council designates an off-leash beach area
@@ -749,12 +758,21 @@ const DogFriendly = () => {
           </h2>
           <div className="grid gap-6 sm:grid-cols-2">
             <Card className="overflow-hidden">
-              <img
-                src={maxQuaysideImg}
-                alt="Giant Schnauzer Max at Townsville Cruise Terminal during sunset walk with Crown Princess cruise ship"
-                loading="lazy"
-                className="w-full h-56 object-cover"
-              />
+              <div className="relative w-full h-56 overflow-hidden">
+                <img
+                  src={maxQuaysideImg}
+                  alt=""
+                  aria-hidden="true"
+                  className="absolute inset-0 w-full h-full object-cover scale-125"
+                  style={{ filter: "blur(24px) saturate(1.2)" }}
+                />
+                <img
+                  src={maxQuaysideImg}
+                  alt="Giant Schnauzer Max at Townsville Cruise Terminal during sunset walk with Crown Princess cruise ship"
+                  loading="lazy"
+                  className="relative w-full h-full object-contain"
+                />
+              </div>
               <CardContent className="p-5">
                 <p className="text-xs font-bold uppercase tracking-wider text-primary mb-2">
                   Quayside Terminal
@@ -767,12 +785,21 @@ const DogFriendly = () => {
               </CardContent>
             </Card>
             <Card className="overflow-hidden">
-              <img
-                src={maxPallarenda}
-                alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
-                loading="lazy"
-                className="w-full h-56 object-cover"
-              />
+              <div className="relative w-full h-56 overflow-hidden">
+                <img
+                  src={maxPallarenda}
+                  alt=""
+                  aria-hidden="true"
+                  className="absolute inset-0 w-full h-full object-cover scale-125"
+                  style={{ filter: "blur(24px) saturate(1.2)" }}
+                />
+                <img
+                  src={maxPallarenda}
+                  alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
+                  loading="lazy"
+                  className="relative w-full h-full object-contain"
+                />
+              </div>
               <CardContent className="p-5">
                 <p className="text-xs font-bold uppercase tracking-wider text-primary mb-2">
                   Kissing Point

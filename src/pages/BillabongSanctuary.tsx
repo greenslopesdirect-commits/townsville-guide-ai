@@ -185,7 +185,8 @@ const BillabongSanctuary = () => {
           <img
             src={billabongKangaroo}
             alt="Family feeding gentle kangaroos at Billabong Sanctuary Townsville"
-            className="rounded-xl shadow-lg w-full h-[350px] md:h-[450px] object-cover mb-2"
+            loading="lazy"
+            className="rounded-xl shadow-lg block w-full max-w-lg mx-auto aspect-[3/4] object-cover mb-2"
           />
           <p className="text-xs text-muted-foreground italic text-center mb-4">
             Getting up close for a feed. The kangaroos are incredibly gentle and a highlight for kids.
@@ -261,7 +262,8 @@ const BillabongSanctuary = () => {
           <img
             src={billabongTurtle}
             alt="Child feeding freshwater turtles by the billabong at Billabong Sanctuary"
-            className="rounded-xl shadow-lg w-full h-[350px] md:h-[450px] object-cover mb-2"
+            loading="lazy"
+            className="rounded-xl shadow-lg block w-full max-w-lg mx-auto aspect-[3/4] object-cover mb-2"
           />
           <p className="text-xs text-muted-foreground italic text-center mb-4">
             A local secret: The turtle feeding is interactive and a fantastic experience for young explorers.

@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
+import CurrentTownsvilleWeather from "@/components/CurrentTownsvilleWeather";
 import {
   Accordion,
   AccordionContent,
@@ -139,6 +140,8 @@ const LocalTips = () => (
         planning your days. It is deliberately light on detail: where something needs a full
         explanation, we point you at the guide that covers it properly.
       </p>
+
+      <CurrentTownsvilleWeather className="mb-10" />
 
       <GuideQuickFacts className="mb-10" />
 

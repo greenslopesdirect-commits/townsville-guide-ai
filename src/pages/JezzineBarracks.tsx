@@ -336,7 +336,7 @@ const JezzineBarracks = () => {
               jobs, and most visitors with time end up doing both.
             </p>
           </div>
-          <figure className="mt-6 rounded-xl overflow-hidden border border-border/40 bg-muted/30">
+          <figure className="mt-6 max-w-sm mx-auto rounded-xl overflow-hidden border border-border/40 bg-muted/30">
             <img
               src={maxKissingPoint}
               alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
