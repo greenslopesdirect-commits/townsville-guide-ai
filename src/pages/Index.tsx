@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
 import LocalTrustIntro from "@/components/LocalTrustIntro";
+import CurrentTownsvilleWeather from "@/components/CurrentTownsvilleWeather";
 import StartPlanning from "@/components/StartPlanning";
 import EssentialExperiences from "@/components/EssentialExperiences";
 import NewsletterSection from "@/components/NewsletterSection";
@@ -113,6 +114,12 @@ const Index = () => {
         <Hero />
 
         <LocalTrustIntro />
+
+        <section className="px-4 pb-6 md:pb-8">
+          <div className="container mx-auto max-w-5xl">
+            <CurrentTownsvilleWeather variant="compact" />
+          </div>
+        </section>
 
         {/* Primary visitor pathways */}
         <StartPlanning />
