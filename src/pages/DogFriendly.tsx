@@ -36,6 +36,7 @@ import {
   XCircle,
 } from "lucide-react";
 import maxPallarenda from "@/assets/max-at-kissing-point1.webp";
+import maxQuaysideImg from "@/assets/max-quayside-crown-princess.jpg";
 
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/dog-friendly";
@@ -298,7 +299,7 @@ const DogFriendly = () => {
           <Card className="overflow-hidden">
             <img
               src={maxPallarenda}
-              alt="A large dog on the Townsville coastline at golden hour"
+              alt="Max the Giant Schnauzer at golden hour on the Townsville coast"
               loading="lazy"
               className="w-full h-56 md:h-72 object-cover"
             />
@@ -739,6 +740,51 @@ const DogFriendly = () => {
             </Link>
             .
           </p>
+        </section>
+
+        {/* Local Spotlight */}
+        <section aria-labelledby="local-spotlight" className="space-y-6">
+          <h2 id="local-spotlight" className="text-2xl md:text-3xl font-bold">
+            Local Spotlight
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2">
+            <Card className="overflow-hidden">
+              <img
+                src={maxQuaysideImg}
+                alt="Giant Schnauzer Max at Townsville Cruise Terminal during sunset walk with Crown Princess cruise ship"
+                loading="lazy"
+                className="w-full h-56 object-cover"
+              />
+              <CardContent className="p-5">
+                <p className="text-xs font-bold uppercase tracking-wider text-primary mb-2">
+                  Quayside Terminal
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Golden hour at the Quayside Terminal. This wide, paved precinct is a local favorite
+                  for evening walks—the sea breeze is reliable, and the ground cools down much faster
+                  than inland bitumen.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden">
+              <img
+                src={maxPallarenda}
+                alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
+                loading="lazy"
+                className="w-full h-56 object-cover"
+              />
+              <CardContent className="p-5">
+                <p className="text-xs font-bold uppercase tracking-wider text-primary mb-2">
+                  Kissing Point
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Schnauzer Approved: Max taking in the view from the Kissing Point battery. The wide,
+                  paved paths at the barracks stay cooler than inland roads—perfect for large breeds
+                  during golden hour.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </section>
 
         {/* What to bring */}

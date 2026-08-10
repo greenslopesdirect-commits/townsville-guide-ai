@@ -31,6 +31,7 @@ import {
   Feather,
 } from "lucide-react";
 import jezzineHero from "@/assets/jezzine-barracks-townsville.webp";
+import maxKissingPoint from "@/assets/max-at-kissing-point.webp";
 
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/jezzine-barracks";
@@ -335,6 +336,19 @@ const JezzineBarracks = () => {
               jobs, and most visitors with time end up doing both.
             </p>
           </div>
+          <figure className="mt-6 rounded-xl overflow-hidden border border-border/40 bg-muted/30">
+            <img
+              src={maxKissingPoint}
+              alt="Giant Schnauzer at Kissing Point Fort Townsville sunset"
+              className="w-full h-auto"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption className="p-4 text-sm text-muted-foreground italic">
+              Sunset at Kissing Point Fort. The elevated boardwalks at Jezzine are the best spot in
+              Townsville to catch the evening breeze and watch the light change over Cleveland Bay.
+            </figcaption>
+          </figure>
         </section>
 
         {/* Military heritage */}
