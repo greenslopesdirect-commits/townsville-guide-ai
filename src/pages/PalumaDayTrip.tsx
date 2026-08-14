@@ -25,6 +25,7 @@ import {
   Waves,
   ExternalLink,
   Backpack,
+  MapPin,
 } from "lucide-react";
 
 const SITE = "https://www.townsvilleguide.com.au";

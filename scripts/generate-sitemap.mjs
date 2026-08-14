@@ -80,10 +80,9 @@ const PAGES = [
   { path: "/beaches/saunders-beach",              source: "src/pages/beaches/SaundersBeach.tsx",       changefreq: "monthly", priority: "0.7" },
   { path: "/accessible-townsville",               source: "src/pages/AccessibleTownsville.tsx",        changefreq: "monthly", priority: "0.7" },
   { path: "/useful-contacts",                     source: "src/pages/UsefulContacts.tsx",              changefreq: "monthly", priority: "0.7" },
-  { path: "/privacy-policy",                      source: "src/pages/PrivacyPolicy.tsx",               changefreq: "yearly",  priority: "0.2" },
-  { path: "/terms-of-use",                        source: "src/pages/TermsOfUse.tsx",                  changefreq: "yearly",  priority: "0.2" },
-  { path: "/affiliate-disclosure",                source: "src/pages/AffiliateDisclosure.tsx",         changefreq: "yearly",  priority: "0.2" },
-  { path: "/cookie-policy",                       source: "src/pages/CookiePolicy.tsx",               changefreq: "yearly",  priority: "0.2" },
+  // Privacy Policy, Terms of Use, Affiliate Disclosure and Cookie Policy are intentionally
+  // excluded here: each of those pages sets noindex, and Google's own guidance is that
+  // sitemaps should only list indexable URLs.
 ];
 
 function isoDate(mtime) {

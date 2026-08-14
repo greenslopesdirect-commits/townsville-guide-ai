@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet";
+import { publishSeo } from "@/lib/seoRegistry";
 
 interface SEOHeadProps {
   title: string;
@@ -41,6 +42,9 @@ const SEOHead = ({
   if (path.length > 1 && path.endsWith("/")) path = path.slice(0, -1);
   const canonicalUrl = `${SITE}${path}`;
 
+  // Plain, synchronous side-channel for the static prerender script — see
+  // src/lib/seoRegistry.ts. Does not affect runtime rendering or <Helmet>.
+  publishSeo({ title: fullTitle, description, canonical: canonicalUrl, ogImage, ogType, noindex });
 
   return (
     <Helmet>
