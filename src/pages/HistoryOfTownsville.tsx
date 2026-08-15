@@ -3,14 +3,14 @@ import { ArrowLeft } from "lucide-react";
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import LocalInsightCard from "@/components/LocalInsightCard";
-import thenAndNow from "@/assets/history-then-and-now.jpg";
+import thenAndNow from "@/assets/history-then-and-now.webp";
 import lifeOnCountry from "@/assets/history-life-on-country.jpg";
 import explorers from "@/assets/history-explorers.jpg";
 import firstCamp from "@/assets/history-first-camp.jpg";
 import goldRush from "@/assets/history-gold-rush.jpg";
 import cyclones from "@/assets/history-cyclones.jpg";
 import wwii from "@/assets/history-wwii.jpg";
-import theSaint from "@/assets/history-the-saint.jpg";
+import theSaint from "@/assets/history-the-saint.webp";
 import modernWaterfront from "@/assets/history-modern-waterfront.jpg";
 import today from "@/assets/history-today.jpg";
 
