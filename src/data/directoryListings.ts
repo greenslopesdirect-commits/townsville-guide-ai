@@ -168,7 +168,7 @@ export const LISTINGS: Listing[] = [
     locality: "Ross Creek waterfront",
     description:
       "Modern Australian dining on the Ross Creek waterfront, near the CBD. A sit-down dinner option rather than a casual stop.",
-    websitePending: true,
+    website: "https://www.atouchofsalt.com.au/",
   },
   {
     name: "Watermark Townsville",
@@ -177,7 +177,7 @@ export const LISTINGS: Listing[] = [
     locality: "The Strand",
     description:
       "Beachfront restaurant on The Strand with a seafood-led menu and ocean views. Handy if you're already walking the foreshore.",
-    websitePending: true,
+    website: "https://watermarktownsville.com.au/",
   },
   {
     name: "JAM",
@@ -186,7 +186,7 @@ export const LISTINGS: Listing[] = [
     locality: "Palmer Street",
     description:
       "A long-running Palmer Street restaurant. Convenient for anyone staying in the Palmer Street dining strip or near the ferry terminal.",
-    websitePending: true,
+    website: "https://www.jamcorner.com.au/",
   },
   {
     name: "Bridgewater Q",
@@ -195,7 +195,7 @@ export const LISTINGS: Listing[] = [
     locality: "Palmer Street riverside",
     description:
       "Riverside dining in South Townsville with views back across to Castle Hill. Suits an evening meal after a Strand or CBD day.",
-    websitePending: true,
+    website: "https://www.bridgewaterq.com.au/",
   },
   {
     name: "Longboard Bar & Grill",
@@ -204,7 +204,7 @@ export const LISTINGS: Listing[] = [
     locality: "Gregory Street, The Strand",
     description:
       "Casual burgers and beachfront drinks near the northern end of The Strand. An easy family or after-swim option.",
-    websitePending: true,
+    website: "https://longboardbar.au/",
   },
   {
     name: "Odyssey on the Strand",
@@ -213,7 +213,7 @@ export const LISTINGS: Listing[] = [
     locality: "The Strand",
     description:
       "Greek and Mediterranean food on The Strand, serving breakfast through to dinner. Useful for an early start before a walk or ferry.",
-    websitePending: true,
+    website: "https://www.odysseyonthestrandqld.com.au/",
   },
   {
     name: "Masala Indian Cuisine",
@@ -221,7 +221,7 @@ export const LISTINGS: Listing[] = [
     area: "South Townsville",
     locality: "Palmer Street",
     description: "Indian restaurant in the Palmer Street dining strip. A straightforward group or family dinner option.",
-    websitePending: true,
+    website: "https://www.masalaindian.com.au/",
   },
   {
     name: "Sakana Sushi",
@@ -237,7 +237,7 @@ export const LISTINGS: Listing[] = [
     locality: "Sir Leslie Thiess Drive",
     description:
       "Casual waterfront dining and drinks near the marina, a short walk from the CBD and the Breakwater ferry terminal.",
-    websitePending: true,
+    website: "https://www.townsvilleyachtclub.com.au/",
   },
 
   // --- Accommodation ---
@@ -336,21 +336,21 @@ export const LISTINGS: Listing[] = [
     area: "Suburban Townsville",
     locality: "Alva Beach departures",
     description: "A dive operator specialising in the SS Yongala wreck. Suits certified divers rather than first-timers.",
-    websitePending: true,
+    website: "https://www.yongaladive.com.au/",
   },
   {
     name: "Pro Dive Magnetic Island",
     category: "tours",
     area: "Magnetic Island",
     description: "A Magnetic Island-based dive operator, including trips out to the SS Yongala wreck.",
-    websitePending: true,
+    website: "https://prodivemagnetic.com/",
   },
   {
     name: "Poseidon Adventures",
     category: "tours",
     area: "Magnetic Island",
     description: "Boat tours and snorkelling trips around Magnetic Island's bays. Suits a half-day on the water.",
-    websitePending: true,
+    website: "https://www.poseidonadventure.com.au/townsville/",
   },
   {
     name: "Poseidon Jet Ski Tours",
@@ -358,14 +358,14 @@ export const LISTINGS: Listing[] = [
     area: "Magnetic Island",
     description:
       "Guided jet ski tours around Magnetic Island's coastline, passing the SS Adelaide wreck. An active alternative to a boat tour.",
-    websitePending: true,
+    website: "https://www.poseidonadventure.com.au/townsville/",
   },
   {
     name: "Nautilus Aviation",
     category: "tours",
     area: "Townsville CBD",
     description: "Helicopter flights over Townsville, Magnetic Island and out to the islands. A short scenic add-on to a trip.",
-    websitePending: true,
+    website: "https://www.nautilusaviation.com.au/locations/townsville/",
   },
   {
     name: "Aussie Barra Charters",
@@ -392,7 +392,7 @@ export const LISTINGS: Listing[] = [
     locality: "Breakwater ferry terminal",
     description:
       "The passenger ferry between Townsville's Breakwater terminal and Nelly Bay on Magnetic Island. The main option for day trips without a car.",
-    websitePending: true,
+    website: "https://www.sealink.com.au/magnetic-island/",
   },
 
   // --- Dog Friendly ---
@@ -402,7 +402,7 @@ export const LISTINGS: Listing[] = [
     area: "The Strand & North Ward",
     locality: "The Strand",
     description: "A long-running café on The Strand with shaded outdoor seating and sea views.",
-    websitePending: true,
+    website: "https://juliettes.com.au/",
   },
   {
     name: "Tobruk Kiosk",
@@ -426,7 +426,7 @@ export const LISTINGS: Listing[] = [
     area: "The Strand & North Ward",
     locality: "Belgian Gardens",
     description: "A Belgian Gardens café with a large outdoor area, close to Rowes Bay and the northern Strand.",
-    websitePending: true,
+    website: "https://www.sirensbayside.com.au/",
   },
   {
     name: "Shoredrive Motel",
@@ -434,7 +434,7 @@ export const LISTINGS: Listing[] = [
     area: "The Strand & North Ward",
     locality: "The Strand",
     description: "A motel on The Strand offering pet-friendly rooms. Confirm pet terms directly when booking.",
-    websitePending: true,
+    website: "https://www.shoredrive.com.au/",
   },
   {
     name: "My Pet Hub Townsville",
@@ -449,7 +449,7 @@ export const LISTINGS: Listing[] = [
     category: "dog-friendly",
     area: "Suburban Townsville",
     description: "Daycare for dogs, with group and one-on-one options. An option for day trips where dogs can't come along.",
-    websitePending: true,
+    website: "https://www.allsortspets.com.au/",
   },
   {
     name: "Pet Resorts Australia Townsville",
@@ -467,7 +467,7 @@ export const LISTINGS: Listing[] = [
     category: "beauty",
     area: "Townsville CBD",
     description: "A day spa offering massage, aromatherapy and facials. Suits a rest day between activities.",
-    websitePending: true,
+    website: "https://www.tnds.com.au/",
   },
   {
     name: "endota spa Townsville",
@@ -482,7 +482,7 @@ export const LISTINGS: Listing[] = [
     category: "beauty",
     area: "Townsville CBD",
     description: "Thai massage and spa treatments, including magnesium float sessions.",
-    websitePending: true,
+    website: "https://www.jojomassageandspa.com.au/",
   },
   {
     name: "City Cave Idalia",
@@ -490,14 +490,14 @@ export const LISTINGS: Listing[] = [
     area: "Suburban Townsville",
     locality: "Idalia",
     description: "Float therapy, sauna and massage in Idalia, close to the stadium side of town.",
-    websitePending: true,
+    website: "https://www.citycave.com.au/idalia",
   },
   {
     name: "Massage Relax Restore",
     category: "beauty",
     area: "Suburban Townsville",
     description: "Remedial massage and cupping. An option after a long walking or hiking day.",
-    websitePending: true,
+    website: "https://relaxrestore.com.au/",
   },
   {
     name: "Senorita Nails Spa & Beauty",
@@ -520,7 +520,7 @@ export const LISTINGS: Listing[] = [
     category: "beauty",
     area: "Townsville CBD",
     description: "A local barbershop in central Townsville.",
-    websitePending: true,
+    website: "https://www.diamondbarbers.com.au/",
   },
 ];
 
