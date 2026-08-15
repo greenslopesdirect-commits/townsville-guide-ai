@@ -1,11 +1,12 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
-import DogFriendly from "@/pages/DogFriendly";
-import Shopping from "@/pages/Shopping";
-import Nature from "@/pages/Nature";
+const DogFriendly = lazy(() => import("@/pages/DogFriendly"));
+const Shopping = lazy(() => import("@/pages/Shopping"));
+const Nature = lazy(() => import("@/pages/Nature"));
 
 // Component to redirect legacy /townsville/* paths to new root-based paths
 const TownsvilleRedirect = () => {
@@ -17,56 +18,57 @@ const TownsvilleRedirect = () => {
 // Townsville Layout (Handles Header and Footer for all Townsville routes)
 import TownsvilleLayout from "@/components/TownsvilleLayout";
 
-// Page Components
-import Index from "@/pages/Index";
-import NotFound from "@/pages/NotFound";
-import PrivacyPolicy from "@/pages/PrivacyPolicy";
-import TermsOfUse from "@/pages/TermsOfUse";
-import AffiliateDisclosure from "@/pages/AffiliateDisclosure";
-import CookiePolicy from "@/pages/CookiePolicy";
-import HistoryOfTownsville from "@/pages/HistoryOfTownsville";
-import ThingsToDo from "@/pages/ThingsToDo";
-import Beaches from "@/pages/Beaches";
-import FoodDrink from "@/pages/FoodDrink";
-import LocalTips from "@/pages/LocalTips";
-import Accommodation from "@/pages/Accommodation";
-import Events from "@/pages/Events";
-import Advertise from "@/pages/Advertise";
-import Contact from "@/pages/Contact";
+// Page Components (route-level code splitting: each page is its own chunk,
+// fetched on demand instead of being bundled into the initial JS payload)
+const Index = lazy(() => import("@/pages/Index"));
+const NotFound = lazy(() => import("@/pages/NotFound"));
+const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
+const TermsOfUse = lazy(() => import("@/pages/TermsOfUse"));
+const AffiliateDisclosure = lazy(() => import("@/pages/AffiliateDisclosure"));
+const CookiePolicy = lazy(() => import("@/pages/CookiePolicy"));
+const HistoryOfTownsville = lazy(() => import("@/pages/HistoryOfTownsville"));
+const ThingsToDo = lazy(() => import("@/pages/ThingsToDo"));
+const Beaches = lazy(() => import("@/pages/Beaches"));
+const FoodDrink = lazy(() => import("@/pages/FoodDrink"));
+const LocalTips = lazy(() => import("@/pages/LocalTips"));
+const Accommodation = lazy(() => import("@/pages/Accommodation"));
+const Events = lazy(() => import("@/pages/Events"));
+const Advertise = lazy(() => import("@/pages/Advertise"));
+const Contact = lazy(() => import("@/pages/Contact"));
 import ScrollToTop from "@/components/ScrollToTop";
-import BeatTheHeat from "@/pages/BeatTheHeat";
-import MagneticIslandDayTrip from "@/pages/MagneticIslandDayTrip";
-import MagneticIslandFerry from "./pages/MagneticIslandFerry";
-import FortsWalkMagneticIsland from "@/pages/FortsWalkMagneticIsland";
-import FreeThings from "@/pages/FreeThings";
-import RainyDayActivities from "@/pages/RainyDayActivities";
-import StingerSafety from "@/pages/StingerSafety";
-import SunsetWalks from "@/pages/SunsetWalks";
-import PallarendaBeach from "@/pages/PallarendaBeach";
-import RowesBay from "@/pages/RowesBay";
-import TheStrand from "./pages/TheStrand";
-import Riverway from "./pages/Riverway";
-import TownsvilleWithKids from "@/pages/TownsvilleWithKids";
-import BillabongSanctuary from "@/pages/BillabongSanctuary";
-import CastleHill from "@/pages/CastleHill";
-import JezzineBarracks from "@/pages/JezzineBarracks";
-import LittleCrystalCreek from "@/pages/LittleCrystalCreek";
-import GreatBarrierReef from "@/pages/GreatBarrierReef";
-import ReefHQ from "@/pages/ReefHQ";
-import CowboysStadiumGuide from "@/pages/CowboysStadiumGuide";
-import NorthShoreTownsville from "@/pages/NorthShoreTownsville";
-import TownsvilleAirport from "@/pages/TownsvilleAirport";
-import MovingToTownsville from "@/pages/MovingToTownsville";
-import SaundersBeach from "@/pages/beaches/SaundersBeach";
-import AccessibleTownsville from "@/pages/AccessibleTownsville";
-import UsefulContacts from "@/pages/UsefulContacts";
-import Suburbs from "@/pages/Suburbs";
-import Directory from "@/pages/Directory";
-import FirstTimeInTownsville from "@/pages/FirstTimeInTownsville";
-import TownsvilleInOneDay from "@/pages/TownsvilleInOneDay";
-import WalkingCastleHill from "./pages/WalkingCastleHill";
-import TownsvilleWithoutACar from "@/pages/TownsvilleWithoutACar";
-import PalumaDayTrip from "@/pages/PalumaDayTrip";
+const BeatTheHeat = lazy(() => import("@/pages/BeatTheHeat"));
+const MagneticIslandDayTrip = lazy(() => import("@/pages/MagneticIslandDayTrip"));
+const MagneticIslandFerry = lazy(() => import("./pages/MagneticIslandFerry"));
+const FortsWalkMagneticIsland = lazy(() => import("@/pages/FortsWalkMagneticIsland"));
+const FreeThings = lazy(() => import("@/pages/FreeThings"));
+const RainyDayActivities = lazy(() => import("@/pages/RainyDayActivities"));
+const StingerSafety = lazy(() => import("@/pages/StingerSafety"));
+const SunsetWalks = lazy(() => import("@/pages/SunsetWalks"));
+const PallarendaBeach = lazy(() => import("@/pages/PallarendaBeach"));
+const RowesBay = lazy(() => import("@/pages/RowesBay"));
+const TheStrand = lazy(() => import("./pages/TheStrand"));
+const Riverway = lazy(() => import("./pages/Riverway"));
+const TownsvilleWithKids = lazy(() => import("@/pages/TownsvilleWithKids"));
+const BillabongSanctuary = lazy(() => import("@/pages/BillabongSanctuary"));
+const CastleHill = lazy(() => import("@/pages/CastleHill"));
+const JezzineBarracks = lazy(() => import("@/pages/JezzineBarracks"));
+const LittleCrystalCreek = lazy(() => import("@/pages/LittleCrystalCreek"));
+const GreatBarrierReef = lazy(() => import("@/pages/GreatBarrierReef"));
+const ReefHQ = lazy(() => import("@/pages/ReefHQ"));
+const CowboysStadiumGuide = lazy(() => import("@/pages/CowboysStadiumGuide"));
+const NorthShoreTownsville = lazy(() => import("@/pages/NorthShoreTownsville"));
+const TownsvilleAirport = lazy(() => import("@/pages/TownsvilleAirport"));
+const MovingToTownsville = lazy(() => import("@/pages/MovingToTownsville"));
+const SaundersBeach = lazy(() => import("@/pages/beaches/SaundersBeach"));
+const AccessibleTownsville = lazy(() => import("@/pages/AccessibleTownsville"));
+const UsefulContacts = lazy(() => import("@/pages/UsefulContacts"));
+const Suburbs = lazy(() => import("@/pages/Suburbs"));
+const Directory = lazy(() => import("@/pages/Directory"));
+const FirstTimeInTownsville = lazy(() => import("@/pages/FirstTimeInTownsville"));
+const TownsvilleInOneDay = lazy(() => import("@/pages/TownsvilleInOneDay"));
+const WalkingCastleHill = lazy(() => import("./pages/WalkingCastleHill"));
+const TownsvilleWithoutACar = lazy(() => import("@/pages/TownsvilleWithoutACar"));
+const PalumaDayTrip = lazy(() => import("@/pages/PalumaDayTrip"));
 
 
 const queryClient = new QueryClient();
@@ -78,6 +80,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <Suspense fallback={null}>
         <Routes>
           {/* Redirect legacy /townsville paths to new root-based equivalents */}
           <Route path="/townsville" element={<Navigate to="/" replace />} />
@@ -157,6 +160,7 @@ const App = () => (
           {/* 3. Keep the catch-all NotFound route last */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
