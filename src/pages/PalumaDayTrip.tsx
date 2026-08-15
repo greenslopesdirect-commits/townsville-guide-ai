@@ -34,7 +34,7 @@ const PAGE_URL = `${SITE}/guides/paluma-day-trip`;
 const OFFICIAL_LINKS = {
   qldTraffic: "https://qldtraffic.qld.gov.au/",
   tmrMountSpec:
-    "https://www.tmr.qld.gov.au/projects/mount-spec-road-reconstruction",
+    "https://www.tmr.qld.gov.au/projects/mount-spec-road-reconstruction-works",
   palumaAlerts: "https://parks.desi.qld.gov.au/parks/paluma-range/alerts",
   palumaPark: "https://parks.desi.qld.gov.au/parks/paluma-range",
   bigCrystalCreek:

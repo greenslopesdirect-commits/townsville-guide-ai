@@ -71,7 +71,7 @@ const RELATED = [
   { name: "Castle Hill", to: "/castle-hill" },
   { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip" },
   { name: "Free Things to Do", to: "/guides/free-things" },
-  { name: "Food and Dining", to: "/food-drink" },
+  { name: "Food and Dining", to: "/food" },
   { name: "Stinger Safety", to: "/guides/stinger-safety" },
   { name: "Dog-Friendly Townsville", to: "/dog-friendly" },
   { name: "Rowes Bay", to: "/rowes-bay" },
@@ -289,7 +289,7 @@ const TheStrand = () => {
                     Cafés, casual dining and takeaway options operate along and near this end.
                     Business names and operating hours change, so check before relying on a specific
                     venue — see our{" "}
-                    <Link to="/food-drink" className="text-primary hover:underline">
+                    <Link to="/food" className="text-primary hover:underline">
                       food and dining guide
                     </Link>
                     .

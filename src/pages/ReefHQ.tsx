@@ -31,7 +31,7 @@ const DESCRIPTION =
   "Reef HQ is closed for redevelopment as the Great Barrier Reef Aquarium. See the current 2029 reopening target, project status and what to visit instead.";
 
 const AQUARIUM = "https://www.gbraquarium.com.au/";
-const GBRMPA = "https://www2.gbrmpa.gov.au/reef-hq-redevelopment";
+const GBRMPA = "https://www.gbrmpa.gov.au/great-barrier-reef-aquarium";
 
 const RELATED = [
   { name: "Rainy Day Activities", to: "/guides/rainy-day-activities", text: "Indoor and wet-weather options across Townsville." },

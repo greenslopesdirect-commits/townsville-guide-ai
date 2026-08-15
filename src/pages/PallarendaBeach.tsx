@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import heroAsset from "@/assets/pallarenda-max-hero.webp.asset.json";
+const heroImageUrl = "/assets/images/Pallarenda-max1.webp";
 
 const faqs = [
   {
@@ -71,7 +71,7 @@ const PallarendaBeach = () => {
         <section className="relative w-full h-[70vh] min-h-[460px] max-h-[720px] overflow-hidden -mt-20">
           {/* Blurred fill so the portrait photo has no black bars on the sides */}
           <img
-            src={heroAsset.url}
+            src={heroImageUrl}
             alt=""
             aria-hidden
             className="absolute inset-0 w-full h-full object-cover scale-125"
@@ -79,7 +79,7 @@ const PallarendaBeach = () => {
           />
           {/* Sharp, uncropped photo */}
           <img
-            src={heroAsset.url}
+            src={heroImageUrl}
             alt="Pallarenda Beach at sunset with Max the giant schnauzer on-lead, low-tide sand flats and Magnetic Island in the distance"
             className="relative w-full h-full object-contain"
             width={1200}

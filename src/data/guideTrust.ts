@@ -72,7 +72,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Great Barrier Reef Marine Park Authority — Reef HQ redevelopment",
-        url: "https://www2.gbrmpa.gov.au/reef-hq-redevelopment",
+        url: "https://www.gbrmpa.gov.au/great-barrier-reef-aquarium",
       },
     ],
   },
@@ -196,7 +196,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Transport and Main Roads \u2014 Mount Spec Road reconstruction",
-        url: "https://www.tmr.qld.gov.au/projects/mount-spec-road-reconstruction",
+        url: "https://www.tmr.qld.gov.au/projects/mount-spec-road-reconstruction-works",
       },
       { name: "Queensland Traffic \u2014 current road conditions", url: "https://qldtraffic.qld.gov.au/" },
       {
@@ -452,7 +452,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Great Barrier Reef Marine Park Authority — Reef HQ redevelopment",
-        url: "https://www2.gbrmpa.gov.au/reef-hq-redevelopment",
+        url: "https://www.gbrmpa.gov.au/great-barrier-reef-aquarium",
       },
     ],
   },
@@ -473,7 +473,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Queensland Poisons Information Centre — 13 11 26",
-        url: "https://www.childrens.health.qld.gov.au/poisons-information-centre",
+        url: "https://www.poisonsinfo.health.qld.gov.au/about-us",
       },
       {
         name: "Surf Life Saving Australia — Beachsafe",
@@ -671,7 +671,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Stadiums Queensland — Queensland Country Bank Stadium",
-        url: "https://www.stadiums.qld.gov.au/our-venues/queensland-country-bank-stadium/",
+        url: "https://stadiums.qld.gov.au/venues/queensland-country-bank-stadium",
       },
       {
         name: "North Queensland Cowboys — draw",

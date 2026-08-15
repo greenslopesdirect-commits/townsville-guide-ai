@@ -37,7 +37,7 @@ const DESCRIPTION =
 const STADIUM_URL = "https://www.queenslandcountrybankstadium.com.au/";
 const STADIUM_WHATS_ON_URL = "https://www.queenslandcountrybankstadium.com.au/events";
 const STADIUMS_QLD_URL =
-  "https://www.stadiums.qld.gov.au/our-venues/queensland-country-bank-stadium/";
+  "https://stadiums.qld.gov.au/venues/queensland-country-bank-stadium";
 const COWBOYS_DRAW_URL = "https://www.cowboys.com.au/draw/";
 
 const MISTAKES = [

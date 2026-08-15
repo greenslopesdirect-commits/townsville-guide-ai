@@ -50,7 +50,7 @@ const LINKS = {
   tis: "https://www.tisnational.gov.au/",
   beachsafe: "https://beachsafe.org.au/",
   tuh: "https://www.townsville.health.qld.gov.au/",
-  jcuvet: "https://www.jcu.edu.au/vet-clinic",
+  jcuvet: "https://jcuvet.com.au/",
 };
 
 const DECISION_TABLE: { situation: string; contact: string }[] = [

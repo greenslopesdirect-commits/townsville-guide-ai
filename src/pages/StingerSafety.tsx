@@ -35,7 +35,7 @@ const COUNCIL_BEACHES =
   "https://www.townsville.qld.gov.au/facilities-and-recreation/beaches-parks-and-playgrounds";
 const QLD_STINGERS =
   "https://www.qld.gov.au/health/staying-healthy/environmental/marine-stingers";
-const POISONS = "https://www.childrens.health.qld.gov.au/poisons-information-centre";
+const POISONS = "https://www.poisonsinfo.health.qld.gov.au/about-us";
 const BEACHSAFE = "https://beachsafe.org.au/";
 const CROCWISE =
   "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise";
