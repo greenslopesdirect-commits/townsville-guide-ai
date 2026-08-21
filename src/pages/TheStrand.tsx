@@ -60,6 +60,10 @@ const FAQS = [
     q: "Are there toilets along The Strand?",
     a: "Public toilets are available at selected facilities along The Strand rather than continuously along the full route. Check the current Council Strand map before visiting if you need facilities at a specific point.",
   },
+  {
+    q: "Is there parking along The Strand?",
+    a: "Yes — parking is available in several areas along and near The Strand, though availability varies by location, time of day and events. Popular areas can get busy on weekends, around sunset and during major events, so check signs for restrictions before you leave your vehicle.",
+  },
 ];
 
 const RELATED = [

@@ -74,6 +74,18 @@ const FAQS = [
     q: "What happens if you miss the return ferry?",
     a: "You may need to wait for a later service if one is running, or arrange island accommodation. Identify your intended return ferry before travelling, allow extra time to reach the terminal, and avoid planning around the final possible departure.",
   },
+  {
+    q: "Is Magnetic Island worth visiting if I only have two days in Townsville?",
+    a: "It depends what you'd rather see. Spending one of two days entirely on Magnetic Island means giving up a full mainland day — Castle Hill, The Strand and Jezzine Barracks are usually seen together in a single day, so the trade-off is genuine. It's worth prioritising the island if beaches, wildlife and walking are what you came for; if you'd rather see more of Townsville itself, a shorter island visit — or none at all — may suit a two-day trip better.",
+  },
+  {
+    q: "Should I visit Magnetic Island as a day trip or stay overnight?",
+    a: "A day trip gives a useful introduction and suits most visitors. Staying overnight gives more flexibility, allows a slower pace and removes the pressure of planning everything around the return ferry — worth considering if Magnetic Island is the main reason for your visit rather than one stop among several.",
+  },
+  {
+    q: "How long does a Magnetic Island day actually take?",
+    a: "Most of a full day, once you account for reaching the terminal, the ferry crossing, getting around the island, your chosen activities and the return journey with a buffer before your ferry. Treat it as a full-day commitment rather than a quick half-day add-on, and check the current ferry timetable before you plan your stages.",
+  },
 ];
 
 const RELATED = [

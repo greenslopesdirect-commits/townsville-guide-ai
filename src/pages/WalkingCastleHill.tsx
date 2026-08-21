@@ -4,6 +4,12 @@ import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
 import { Card, CardContent } from "@/components/ui/card";
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
   AlertTriangle,
   Footprints,
   Mountain,
@@ -18,6 +24,7 @@ import {
   Sunrise,
   Construction,
   ArrowRight,
+  HelpCircle,
 } from "lucide-react";
 import heroImage from "@/assets/castle-hill-townsville.webp";
 
@@ -38,6 +45,45 @@ const TAKE_LIST = [
   "Insect repellent if you are walking early or late",
   "A light source for pre-dawn or post-sunset walking",
   "Dog waste bags if you are walking a dog",
+];
+
+const FAQS = [
+  {
+    q: "Which Castle Hill walking route is easiest?",
+    a: "If you want the least technically demanding walking surface, Castle Hill Road is generally the gentler option — it's sealed rather than stepped or uneven, though it's shared with vehicles and cyclists and still climbs steadily. If you'd rather skip the walk altogether, driving to the summit is the easiest way up. Between the Goat Track and the Cudtheringa Track specifically, there isn't a verified basis for calling one easier than the other.",
+  },
+  {
+    q: "Which Castle Hill walking route is hardest?",
+    a: "The dedicated walking tracks — the Goat Track and the Cudtheringa Track — are the more demanding options. Both involve sustained steep climbing on uneven or stepped surfaces with limited shade, which is harder underfoot than the sealed Castle Hill Road. We don't have a reliable basis for ranking the two named tracks against each other, so treat both as a genuine climb and check current conditions before you go.",
+  },
+  {
+    q: "How long does it take to walk Castle Hill?",
+    a: "There's no single figure — it depends on your fitness, the route, heat and humidity, how many stops you take, and whether you're walking one way or return. Allow more time than you expect, and don't rely on the 20–60 minute figure quoted for a summit visit by car on our main Castle Hill guide — that's a driving time, not a walking time.",
+  },
+  {
+    q: "Is it safe to walk Castle Hill in hot weather?",
+    a: "It needs care. The routes are exposed with limited shade, and Townsville's heat and humidity make the climb harder than the distance alone suggests. Carry water, use sun protection, start early and turn back if conditions feel unsuitable — see our Beat the Heat guide.",
+  },
+  {
+    q: "What should I carry?",
+    a: "Sensible basics rather than specialist gear: water, suitable walking shoes, a hat, sunscreen, a charged phone, and a light if you're walking before sunrise or after sunset.",
+  },
+  {
+    q: "Can children walk Castle Hill?",
+    a: "It depends on the child's age, fitness and the conditions on the day — the tracks are steep, exposed and tiring, and younger children need close supervision. For many families, driving to the summit is the more practical option; let the heat make the final call.",
+  },
+  {
+    q: "Is sunrise or sunset better for walking Castle Hill?",
+    a: "Both have advantages, and neither is objectively better. These are the coolest, most comfortable times to walk, but low light adds visibility risk on shared routes, and sunset walkers need enough time to descend safely afterwards.",
+  },
+  {
+    q: "Can I drive instead of walking?",
+    a: "Yes — Castle Hill Road runs to the summit and is shared with pedestrians and cyclists, so you can drive to the lookout without walking at all. See our Castle Hill guide for the drive-up option.",
+  },
+  {
+    q: "Where can I park?",
+    a: "Parking depends on which starting point you use and current restrictions at the time, so check before you go. If you're driving to the summit instead of walking, parking is available there too — see our Castle Hill guide, though demand is high around sunrise and sunset.",
+  },
 ];
 
 const RELATED = [
@@ -88,6 +134,17 @@ const WalkingCastleHill = () => {
                 item: `${SITE}/guides/walking-castle-hill`,
               },
             ],
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
           })}
         </script>
       </Helmet>
@@ -176,8 +233,19 @@ const WalkingCastleHill = () => {
             <RouteIcon className="w-6 h-6 text-primary" aria-hidden="true" />
             Choose the Right Route
           </h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Visitors generally have two broad options. If you want the gentlest walking surface,
+            Castle Hill Road is the easier of the two — it's sealed rather than stepped or uneven,
+            though it climbs steadily and is shared with vehicles and cyclists. The dedicated
+            tracks are steeper and more technical underfoot, which makes them the harder choice
+            overall.
+          </p>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Visitors generally have two broad options.
+            Between the two named dedicated tracks — the Goat Track and the Cudtheringa Track —
+            there isn't a verified basis for calling one easier than the other. Both are steep,
+            exposed climbs, and current conditions on the day matter more than any general
+            difficulty label. Choose based on which is open and your own fitness rather than a
+            ranking.
           </p>
           <div className="grid gap-4 md:grid-cols-2">
             <Card className="h-full">
@@ -494,6 +562,29 @@ const WalkingCastleHill = () => {
               Council — walking and cycling trails →
             </a>
           </div>
+        </section>
+
+        {/* FAQ */}
+        <section aria-labelledby="walking-castle-hill-faq">
+          <h2
+            id="walking-castle-hill-faq"
+            className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-2"
+          >
+            <HelpCircle className="w-6 h-6 text-primary" aria-hidden="true" />
+            Walking Castle Hill Questions
+          </h2>
+          <Accordion type="single" collapsible className="w-full">
+            {FAQS.map((faq, i) => (
+              <AccordionItem key={faq.q} value={`item-${i}`} className="border-border/40">
+                <AccordionTrigger className="text-left text-base font-semibold hover:text-primary">
+                  {faq.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+                  {faq.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </section>
 
         {/* Related guides */}

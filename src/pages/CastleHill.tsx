@@ -1,11 +1,56 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { Mountain, Sunrise, Camera, Footprints, Thermometer, Heart, MapPin } from "lucide-react";
+import { Mountain, Sunrise, Camera, Footprints, Thermometer, Heart, MapPin, HelpCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
 import castleHillImage from "@/assets/castle-hill-townsville-2.webp";
+
+const FAQS = [
+  {
+    q: "Is Castle Hill worth visiting?",
+    a: "Yes — it's Townsville's best-known panoramic lookout, it's free, and it's a short drive from the city centre. Locals use it daily for walks, sunrise and sunset, and it's an easy first stop for visitors deciding what to prioritise in a short trip.",
+  },
+  {
+    q: "Can I drive to the top of Castle Hill?",
+    a: "Yes. Castle Hill Road is sealed and runs to the summit, with parking close to the lookout areas — the simplest way to get the view without a walk.",
+  },
+  {
+    q: "Can I walk up Castle Hill?",
+    a: "Yes, using the Goat Track, the Cudtheringa Track, or Castle Hill Road itself. All routes are steep and exposed with limited shade — see our Walking Castle Hill guide for a full route comparison.",
+  },
+  {
+    q: "How long should I allow at Castle Hill?",
+    a: "A lookout visit by car can take as little as 20–60 minutes depending on how long you stay at the top. If you're walking up, allow considerably longer — walking time depends on your fitness, route and the heat, so there's no single figure. See our Walking Castle Hill guide for more detail.",
+  },
+  {
+    q: "Is Castle Hill suitable for children?",
+    a: "Driving to the summit is the easier option for most families. Walking suitability depends on a child's age, fitness and the weather on the day, since the tracks are steep and fully exposed — heat is usually the deciding factor.",
+  },
+  {
+    q: "Is Castle Hill accessible for visitors with limited mobility?",
+    a: "The walking tracks are steep and not suitable for all mobility levels. Driving to the summit is far more practical, with parking close to the lookout areas — though surfaces and access vary between individual viewing points, so check current details before visiting.",
+  },
+  {
+    q: "Is sunrise or sunset better at Castle Hill?",
+    a: "Both work well, and it depends what you want. Sunrise tends to bring calmer conditions, while sunset produces more dramatic colour over Cleveland Bay and Magnetic Island.",
+  },
+  {
+    q: "What should I take to Castle Hill?",
+    a: "Water, suitable shoes and sun protection if you're walking — the climb is steep and exposed. If you're driving to the summit, you need far less preparation.",
+  },
+  {
+    q: "Is there parking at the Castle Hill summit?",
+    a: "Yes — parking is available at the summit. Demand is high around sunrise and sunset, and temporary restrictions can apply, so arrive a little early at those times if you want a good spot.",
+  },
+];
 
 const CastleHill = () => {
   return (
@@ -25,6 +70,17 @@ const CastleHill = () => {
               { "@type": "ListItem", position: 2, name: "Things to Do", item: "https://www.townsvilleguide.com.au/things-to-do" },
               { "@type": "ListItem", position: 3, name: "Castle Hill", item: "https://www.townsvilleguide.com.au/castle-hill" },
             ],
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: FAQS.map((f) => ({
+              "@type": "Question",
+              name: f.q,
+              acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
           })}
         </script>
       </Helmet>
@@ -222,6 +278,29 @@ const CastleHill = () => {
             <p className="text-muted-foreground leading-relaxed">
               Sunset usually produces the most dramatic colours.
             </p>
+          </section>
+
+          {/* FAQ */}
+          <section className="mb-12" aria-labelledby="castle-hill-faq">
+            <h2
+              id="castle-hill-faq"
+              className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2"
+            >
+              <HelpCircle className="w-6 h-6 text-primary" />
+              Castle Hill Questions
+            </h2>
+            <Accordion type="single" collapsible className="w-full">
+              {FAQS.map((faq, i) => (
+                <AccordionItem key={faq.q} value={`item-${i}`} className="border-border/40">
+                  <AccordionTrigger className="text-left text-base font-semibold hover:text-primary">
+                    {faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm text-muted-foreground leading-relaxed">
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </section>
 
           {/* Combine With Nearby Stops */}
