@@ -316,7 +316,7 @@ BEACHES
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=The+Strand+Beach+Townsville)
 • Pallarenda Beach (quiet, long walks, ocean breeze, dog-friendly areas) - Pallarenda
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Pallarenda+Beach+Townsville)
-• Rowes Bay (dog-friendly areas, picnic spots, calm waters) - Rowes Bay
+• Rowes Bay (dog-friendly on-leash only, picnic spots, calm waters) - Rowes Bay
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Beach+Townsville)
 • Bushland Beach (great sunset spot, shallow water, family-friendly) - Bushland Beach
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Bushland+Beach+Townsville)
@@ -388,8 +388,10 @@ ATTRACTIONS & LANDMARKS
 ====================================================
 DOG-FRIENDLY SPOTS
 ====================================================
-• Rowes Bay Dog Park (large open area, shaded, near beach) - Rowes Bay
-  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Dog+Park+Townsville)
+Off-leash rules vary by specific location. Pallarenda Dog Beach and the Benwell Road foreshore (South Townsville) are the two Council-designated off-leash beach areas; other locations below have their own specific rules (for example, Rowes Bay is on-leash only). Always advise checking current Townsville City Council signage for the specific beach or park, and do not assume every beach or park allows off-leash dogs.
+
+• Rowes Bay foreshore (dog-friendly, on-leash only — no dedicated dog park here) - Rowes Bay
+  [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Rowes+Bay+Townsville)
 • Murray Sporting Complex Dog Park (fenced, agility equipment) - Annandale
   [View on Google Maps](https://www.google.com/maps/search/?api=1&query=Murray+Sporting+Complex+Dog+Park+Townsville)
 • Pallarenda Dog Beach (off-leash beach area) - Pallarenda

@@ -25,7 +25,7 @@ const NewsletterSection = () => {
           <Button
             asChild
             size="lg"
-            className="h-12 px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all"
+            className="h-auto min-h-12 px-8 py-3 text-base font-semibold shadow-lg hover:shadow-xl transition-all whitespace-normal text-center max-w-full sm:whitespace-nowrap"
           >
             <a
               href="https://greenslopesdirect-commits.github.io/townsville-weekend-cost-calculator/"
