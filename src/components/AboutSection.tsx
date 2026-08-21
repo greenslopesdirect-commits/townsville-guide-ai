@@ -66,7 +66,7 @@ const AboutSection = () => {
         animationDelay: '0.4s'
       }}>
           <Link to="/history">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-6 text-base md:text-lg font-semibold" aria-label="Read the full history of Townsville">
+            <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-[var(--shadow-tropical)] hover:shadow-[var(--shadow-glow)] transition-all duration-300 rounded-full px-8 py-6 text-base md:text-lg font-semibold whitespace-normal text-center max-w-full sm:whitespace-nowrap" aria-label="Read the full history of Townsville">
               Read the Full History of Townsville 📜
             </Button>
           </Link>
