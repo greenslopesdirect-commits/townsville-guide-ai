@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
+import LocalInsightCard from "@/components/LocalInsightCard";
 import {
   Accordion,
   AccordionContent,
@@ -432,6 +433,18 @@ const Nature = () => (
             </p>
           </div>
         </div>
+      </section>
+
+      <section className="mb-12">
+        <LocalInsightCard title="Duncan's Local Take">
+          <p>
+            One family habit worth mentioning: Duncan's younger son enjoys using his telescope,
+            and they'll sometimes head to a beach outside the city, away from town lights, for a
+            clearer view of the night sky. It's a family activity rather than a formal stargazing
+            guide, so check access and general safety for wherever you choose to go, especially
+            after dark.
+          </p>
+        </LocalInsightCard>
       </section>
 
       <section className="mb-12">

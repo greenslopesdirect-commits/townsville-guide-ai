@@ -234,6 +234,17 @@ const LocalTips = () => (
           </div>
 
           <div>
+            <h3 className="text-xl font-semibold mb-2">Duncan finds Townsville easy to get around</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              In Duncan's experience, journeys around the city usually feel straightforward, and
+              places rarely feel excessively busy — though that doesn't mean there's never
+              congestion, especially around major events or roadworks. He also finds that whatever
+              you need, there's usually a shop somewhere in Townsville that sells it. It's part of
+              what gives the city its relaxed, easy feel.
+            </p>
+          </div>
+
+          <div>
             <h3 className="text-xl font-semibold mb-2">Generic guides rarely explain where you can actually take a dog</h3>
             <p className="text-muted-foreground leading-relaxed">
               Because Duncan walks his own dog regularly around Townsville, he notices when a

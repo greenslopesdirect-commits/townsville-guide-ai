@@ -593,6 +593,17 @@ const BeatTheHeat = () => {
             </CardContent>
           </Card>
 
+          <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+            In Duncan's experience, everyday life in Townsville carries on even in very hot
+            weather — the city feels built around coping with the heat rather than simply
+            stopping because of it, and there's usually somewhere practical to cool off for a few
+            hours, shopping centres included. He genuinely loves the climate despite knowing how
+            hot it gets, which is easier to believe once you've seen how normally the city keeps
+            functioning through a heatwave. That said, extreme conditions can still affect specific
+            services and events on the day — check current warnings rather than assuming nothing
+            ever closes.
+          </p>
+
           <h3 className="text-xl font-semibold mt-8 mb-2">Cooler regional alternatives</h3>
           <div className="flex items-start gap-3">
             <TreePine className="w-5 h-5 text-primary flex-shrink-0 mt-1" aria-hidden="true" />

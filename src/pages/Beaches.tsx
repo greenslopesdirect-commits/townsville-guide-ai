@@ -896,6 +896,17 @@ const Beaches = () => {
           </ul>
         </section>
 
+        <LocalInsightCard title="Duncan's Local Take">
+          <p>
+            One thing Duncan values about Townsville is how many beautiful beaches there are that
+            often feel uncrowded. Even in hot weather, he'll often find a quiet spot with shade
+            under nearby trees and relax there for hours. That's his own experience rather than a
+            guarantee — not every beach is quiet or shaded, it depends which one and when — and
+            enjoying time on the sand doesn't mean the water is safe to swim in. Follow the
+            swimming and stinger guidance above regardless of how calm a beach looks.
+          </p>
+        </LocalInsightCard>
+
         <LocalInsightCard variant="tip" title="Go early, and the whole thing changes">
           <p>
             Locals are on the beach before 8am for a reason. The sand is cool, the light is better,

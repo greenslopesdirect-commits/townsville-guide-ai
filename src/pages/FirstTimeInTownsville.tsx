@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
+import LocalInsightCard from "@/components/LocalInsightCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -729,6 +730,20 @@ const FirstTimeInTownsville = () => {
               <li key={item}>{item}</li>
             ))}
           </ul>
+        </section>
+
+        {/* What it actually feels like */}
+        <section>
+          <LocalInsightCard title="What Townsville Actually Feels Like">
+            <p>
+              Duncan sometimes describes living in Townsville as feeling like being on holiday
+              every day — a mix of warm weather, beaches, plenty of green space, a relative lack
+              of crowds and how easy the city is to get around. He also notices how clean
+              Townsville generally feels, how well-maintained the parks and grassed areas are, and
+              how friendly and relaxed the community comes across. Coming from the UK, one thing
+              he still finds amazingly convenient is having an airport so close to the city.
+            </p>
+          </LocalInsightCard>
         </section>
 
         {/* Mistakes */}

@@ -255,6 +255,11 @@ const CastleHill = () => {
                 to visit around sunset. In his experience, summit parking is usually manageable,
                 but it can get harder to find a spot around that time of day.
               </p>
+              <p>
+                When he first arrived in Townsville, he was told to use Castle Hill as a visual
+                reference point for working out where he was in the city — useful advice he's
+                found himself passing on since.
+              </p>
             </LocalInsightCard>
           </section>
 
