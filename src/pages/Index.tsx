@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
+import WorthVisiting from "@/components/WorthVisiting";
 import LocalTrustIntro from "@/components/LocalTrustIntro";
 import CurrentTownsvilleWeather from "@/components/CurrentTownsvilleWeather";
 import StartPlanning from "@/components/StartPlanning";
@@ -101,6 +102,38 @@ const Index = () => {
                   text: "Passenger ferries run daily from the Breakwater Terminal in Townsville and the crossing is short, with several departures through the day. Check current timetables and fares before you travel.",
                 },
               },
+              {
+                "@type": "Question",
+                name: "Is Townsville worth visiting?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, if you want a relaxed, less-touristy alternative to Cairns or the Whitsundays. The Strand, Castle Hill and Magnetic Island cover the essentials, and Townsville works best as an unhurried two-to-four-day stop rather than a packed week.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How many days do I need in Townsville?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "One focused day covers the essentials. Two days lets you add Magnetic Island properly. Three or more gives room for Paluma, the northern beaches or a slower pace.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can I see Townsville in one day?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, if you pick a handful of highlights rather than trying to cover everything — The Strand, Castle Hill and a relaxed lunch make a realistic day. Our Townsville in One Day itinerary sets out an hour-by-hour plan.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Can I visit Townsville without a car?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Yes, particularly if you stay around The Strand, North Ward or the CBD — most first-time experiences and the Magnetic Island ferry are walkable from there. Regional day trips like Paluma are much harder without one.",
+                },
+              },
             ],
           })}
         </script>
@@ -112,6 +145,8 @@ const Index = () => {
 
         {/* Hero — includes the Townsville Guide AI search */}
         <Hero />
+
+        <WorthVisiting />
 
         <LocalTrustIntro />
 

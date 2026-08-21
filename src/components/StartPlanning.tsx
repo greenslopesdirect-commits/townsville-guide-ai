@@ -20,6 +20,24 @@ const pathways = [
     label: "Read the First Time in Townsville guide",
   },
   {
+    title: "Townsville in One Day",
+    description:
+      "Follow a realistic one-day plan covering the main sights without trying to fit too much into a single visit.",
+    image: castleHillTwoImage,
+    alt: "Townsville city and coastline seen from the Castle Hill lookout in the late afternoon",
+    link: "/townsville-in-one-day",
+    label: "Read the Townsville in one day itinerary",
+  },
+  {
+    title: "Townsville Without a Car",
+    description:
+      "See which areas are easiest to explore on foot, by bus, taxi or rideshare, and where transport planning matters.",
+    image: strandCarFreeImage,
+    alt: "Palm-lined walkway along The Strand in Townsville, easily explored on foot",
+    link: "/townsville-without-a-car",
+    label: "Read the Townsville without a car guide",
+  },
+  {
     title: "Visiting With Kids",
     description:
       "Find family-friendly attractions, free activities and practical ideas for children of different ages.",
@@ -45,24 +63,6 @@ const pathways = [
     alt: "Coastal walkway and heritage displays at Jezzine Barracks, free to visit in Townsville",
     link: "/guides/free-things",
     label: "Read the free things to do in Townsville guide",
-  },
-  {
-    title: "Townsville in One Day",
-    description:
-      "Follow a realistic one-day plan covering the main sights without trying to fit too much into a single visit.",
-    image: castleHillTwoImage,
-    alt: "Townsville city and coastline seen from the Castle Hill lookout in the late afternoon",
-    link: "/townsville-in-one-day",
-    label: "Read the Townsville in one day itinerary",
-  },
-  {
-    title: "Townsville Without a Car",
-    description:
-      "See which areas are easiest to explore on foot, by bus, taxi or rideshare, and where transport planning matters.",
-    image: strandCarFreeImage,
-    alt: "Palm-lined walkway along The Strand in Townsville, easily explored on foot",
-    link: "/townsville-without-a-car",
-    label: "Read the Townsville without a car guide",
   },
 ];
 

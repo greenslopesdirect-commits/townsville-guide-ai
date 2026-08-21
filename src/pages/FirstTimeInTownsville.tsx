@@ -132,6 +132,10 @@ const RELATED_GUIDES = [
 
 const FAQS: { q: string; a: string }[] = [
   {
+    q: "Is Townsville worth visiting?",
+    a: "It suits travellers who want Magnetic Island access, a relaxed waterfront base and Castle Hill views without needing every day fully booked. It works less well if you want dense, back-to-back organised touring — Cairns has more tour infrastructure for that. Two to four days is the right amount of time to allow, and it fits naturally at the start or end of a longer North Queensland trip built around Magnetic Island, Paluma or the reef.",
+  },
+  {
     q: "How many days do you need in Townsville?",
     a: "Three to four days suits most first visits. Two days is the minimum worthwhile stay: one for The Strand, Jezzine Barracks and Castle Hill, and one for Magnetic Island. Four days or more lets you add Paluma, the northern beaches, museums, wildlife or extra island time.",
   },

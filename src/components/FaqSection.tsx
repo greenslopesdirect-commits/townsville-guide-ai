@@ -29,6 +29,28 @@ const FaqSection = () => {
     {
       question: "How do I get to Magnetic Island from Townsville?",
       answer: "SeaLink ferries depart daily from the Breakwater Terminal in Townsville. The journey takes just 20 minutes, with multiple departures throughout the day."
+    },
+    {
+      question: "Is Townsville worth visiting?",
+      answer: "Yes, if you want a relaxed, less-touristy alternative to Cairns or the Whitsundays. The Strand, Castle Hill and Magnetic Island cover the essentials, and Townsville works best as an unhurried two-to-four-day stop rather than a packed week."
+    },
+    {
+      question: "How many days do I need in Townsville?",
+      answer: "One focused day covers the essentials. Two days lets you add Magnetic Island properly. Three or more gives room for Paluma, the northern beaches or a slower pace.",
+      linkText: "Read the First Time in Townsville guide",
+      linkTo: "/first-time-in-townsville"
+    },
+    {
+      question: "Can I see Townsville in one day?",
+      answer: "Yes, if you pick a handful of highlights rather than trying to cover everything — The Strand, Castle Hill and a relaxed lunch make a realistic day. Our Townsville in One Day itinerary sets out an hour-by-hour plan.",
+      linkText: "Read the Townsville in One Day itinerary",
+      linkTo: "/townsville-in-one-day"
+    },
+    {
+      question: "Can I visit Townsville without a car?",
+      answer: "Yes, particularly if you stay around The Strand, North Ward or the CBD — most first-time experiences and the Magnetic Island ferry are walkable from there. Regional day trips like Paluma are much harder without one.",
+      linkText: "Read the Townsville Without a Car guide",
+      linkTo: "/townsville-without-a-car"
     }
   ];
 
