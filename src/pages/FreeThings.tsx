@@ -435,6 +435,10 @@ const FAQS: { q: string; a: string }[] = [
     a: "Riverway Lagoons, the Strand Water Park and the Rockpool when open are the best options. Shaded gardens early in the day and air-conditioned libraries work well through the middle of the day.",
   },
   {
+    q: "Where can I swim for free in Townsville?",
+    a: "Riverway Lagoons, the Strand Water Park and the Rockpool when open are the main free swimming options, along with designated beach swimming areas where conditions and signage allow. Check current opening hours and marine-stinger advice before you swim — see our stinger safety and beaches guides.",
+  },
+  {
     q: "Are Townsville markets free?",
     a: "Entry and browsing are free, although food, drinks and products cost extra. Check the current market schedule before travelling, as market days and times change.",
   },
@@ -793,7 +797,9 @@ const FreeThings = () => {
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
             Free swimming is one of the city's real strengths, provided you choose the right spot
-            for the conditions.
+            for the conditions. Duncan genuinely appreciates this about Townsville — having free,
+            supervised places to swim, including the Rockpool and the Riverway lagoons, is
+            something he considers excellent value for families and visitors alike.
           </p>
           <ul className="space-y-1.5 text-muted-foreground leading-relaxed list-disc pl-5 mb-4">
             <li>Riverway Lagoons</li>

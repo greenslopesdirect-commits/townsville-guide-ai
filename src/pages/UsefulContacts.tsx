@@ -20,6 +20,7 @@ import {
   PawPrint,
   PhoneCall,
   Waves,
+  Wind,
   Zap,
 } from "lucide-react";
 
@@ -47,6 +48,8 @@ const LINKS = {
   ferries: "https://www.magneticislandferries.com.au/",
   airport: "https://www.townsvilleairport.com.au/",
   parks: "https://parks.desi.qld.gov.au/park-alerts",
+  getReadyCyclone: "https://www.getready.qld.gov.au/getting-ready/know-your-risk/types-disasters/cyclone-and-storm-surge",
+  getReadyVisitor: "https://www.getready.qld.gov.au/visitor-safety-tips-understand-weather-risks",
   tis: "https://www.tisnational.gov.au/",
   beachsafe: "https://beachsafe.org.au/",
   tuh: "https://www.townsville.health.qld.gov.au/",
@@ -97,6 +100,22 @@ const faqs = [
   {
     q: "Where should I check Townsville flood and cyclone warnings?",
     a: "Use the Townsville Disaster Dashboard for current local emergency updates, road impacts, closures, outages and warnings, and the Bureau of Meteorology for forecasts and official warnings.",
+  },
+  {
+    q: "Should tourists worry about cyclones in Townsville?",
+    a: "It's worth understanding the risk rather than ignoring it, but cyclone season does not mean a cyclone is happening, or even threatening, most of the time. Visitors travelling during the season should monitor official Bureau of Meteorology warnings before and during their trip and follow local advice if a system develops. In Duncan's experience, local emergency messaging and preparedness are very visible when severe weather threatens, though that is a personal impression rather than a safety guarantee.",
+  },
+  {
+    q: "When is cyclone season in Queensland?",
+    a: "Queensland's official cyclone season runs from 1 November to 30 April, according to the Bureau of Meteorology and Get Ready Queensland, though cyclones can occur outside that window. Treat it as a season to stay aware during, not a guarantee that a storm will occur.",
+  },
+  {
+    q: "What should visitors do if a cyclone warning is issued?",
+    a: "Follow official warnings and your accommodation's advice, avoid unnecessary travel, and monitor the Bureau of Meteorology and the Townsville Disaster Dashboard rather than relying on this or any static page once a warning is active. Get Ready Queensland's visitor safety tips cover practical steps, including travel insurance and what to check before and during a trip.",
+  },
+  {
+    q: "Should I cancel my trip because it's cyclone season?",
+    a: "Not automatically. Most cyclone-season visits to Townsville go ahead without disruption, and the season itself is not a reason to cancel. It is worth checking that your travel insurance covers weather-related cancellations or delays, watching the forecast in the lead-up to your trip, and staying flexible if a specific system is being tracked toward North Queensland.",
   },
   {
     q: "What number do I call for Townsville City Council?",
@@ -311,6 +330,33 @@ const UsefulContacts = () => (
           <Link to="/guides/paluma-day-trip" className="text-primary hover:underline">Paluma day trip</Link> guide
           before heading into the range.
         </p>
+
+        <div className="mt-8 rounded-xl border border-border bg-muted/40 p-5">
+          <h3 className="font-semibold mb-2 flex items-center gap-2">
+            <Wind className="w-4 h-4 text-primary" aria-hidden="true" />
+            Cyclone season
+          </h3>
+          <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+            Townsville is in a cyclone-prone part of North Queensland, so visitors travelling
+            during cyclone season should monitor official warnings. Queensland's official cyclone
+            season runs from 1 November to 30 April, according to the{" "}
+            <Ext href={LINKS.getReadyCyclone}>Bureau of Meteorology and Get Ready Queensland</Ext>,
+            though cyclones can occur outside that window. That does not mean a cyclone is
+            happening — or even threatening — most days of the season; the large majority of a
+            cyclone-season visit goes ahead without any direct impact. It does mean that ferries,
+            roads, parks and attractions can change or close at short notice during severe
+            weather, so check current conditions rather than relying on this or any static page
+            once a warning is active.
+          </p>
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            In Duncan's experience, local emergency messaging and preparedness are very visible
+            when severe weather threatens — people generally seem to know what to do. That is his
+            personal impression rather than a safety guarantee, so still follow official warnings
+            and your accommodation's advice if a system develops.{" "}
+            <Ext href={LINKS.getReadyVisitor}>Get Ready Queensland's visitor safety tips</Ext>{" "}
+            cover travel insurance and what to check before and during a trip.
+          </p>
+        </div>
       </section>
 
       {/* Road and transport */}
@@ -475,6 +521,7 @@ const UsefulContacts = () => (
           <Ext href={LINKS.sealink}>SeaLink Magnetic Island</Ext>
           <Ext href={LINKS.ferries}>Magnetic Island Ferries</Ext>
           <Ext href={LINKS.parks}>Queensland Parks alerts</Ext>
+          <Ext href={LINKS.getReadyVisitor}>Get Ready Queensland — visitor safety tips</Ext>
         </div>
       </section>
 

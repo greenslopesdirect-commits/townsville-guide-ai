@@ -352,6 +352,14 @@ const FAQS: { q: string; a: string }[] = [
     q: "Can dogs safely walk in Townsville summer heat?",
     a: "Only with care. Walk early or late, test the ground temperature with your hand, carry water, keep outings short and never leave a dog in a parked vehicle. A swim cools a dog briefly but does not remove the risk.",
   },
+  {
+    q: "Do attractions and shops still operate in very hot weather?",
+    a: "Yes, generally — normal daily heat does not shut Townsville down. Shops, cafés, shopping centres and most attractions run as usual through summer; the practical adjustment is to your own schedule rather than to what's open. The exception is genuinely severe weather (a heatwave warning, cyclone or storm event), when specific services or events can be affected — check current warnings rather than assuming everything is unaffected on those days.",
+  },
+  {
+    q: "What should I pack for Townsville in summer?",
+    a: "A broad-brimmed hat, lightweight breathable clothing, sunscreen, sunglasses, a refillable water bottle and swimmers are the essentials. Add insect repellent and footwear suited to hill tracks if you're walking Castle Hill, and a light rain layer during the wet season. See the full kit list above for the complete version.",
+  },
 ];
 
 const BeatTheHeat = () => {

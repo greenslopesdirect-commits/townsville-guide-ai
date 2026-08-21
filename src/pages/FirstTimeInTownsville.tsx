@@ -704,6 +704,20 @@ const FirstTimeInTownsville = () => {
           <h2 id="wet-season" className="text-2xl md:text-3xl font-bold mb-4">
             What Changes in the Wet Season?
           </h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            Townsville is still worth visiting in the wet season (roughly November to April) for
+            most travellers. Humidity is higher and rain is more likely, including the region's
+            cyclone season, but that does not mean the city stops or that every day is a washout —
+            showers are often heavy but brief, plenty of days stay largely dry, and the main
+            attractions keep running. It suits visitors who do not mind some unpredictability and
+            want to see the region green and lush; if you would strongly prefer more reliably dry,
+            less humid weather, the cooler months from roughly May to October are more consistent.
+            See our{" "}
+            <Link to="/useful-contacts" className="text-primary underline underline-offset-2">
+              useful contacts page
+            </Link>{" "}
+            for cyclone-season guidance and current official warnings.
+          </p>
           <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
             <li>Passing showers do not necessarily ruin a visit.</li>
             <li>Significant tropical weather requires a different plan, not a rearranged one.</li>
