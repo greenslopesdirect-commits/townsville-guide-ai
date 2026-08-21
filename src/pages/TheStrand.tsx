@@ -714,6 +714,10 @@ const TheStrand = () => {
                 </li>
               ))}
             </ul>
+            <p className="text-sm text-muted-foreground">
+              Duncan learned that coconut habit the hard way, after a near-miss with a falling
+              coconut — now he always looks up before setting up under a palm.
+            </p>
           </section>
 
           {/* Events */}

@@ -162,6 +162,14 @@ const faqs = [
     q: "Do I need to pick up dog waste in off-leash areas?",
     a: "Yes. Owners must pick up and dispose of dog waste in off-leash areas as they would anywhere else, fill in any holes their dog digs, and remove a dog that becomes aggressive or repeatedly bothers other users.",
   },
+  {
+    q: "Are cane toads a concern for dogs in Townsville?",
+    a: "Yes — cane toads are toxic to pets at every life stage and are present across the region, so they're worth being aware of, particularly at night and around water. Not every dog is interested in them, but if your dog mouths or contacts a cane toad, treat it as a veterinary emergency and contact a vet immediately.",
+  },
+  {
+    q: "Should dog owners worry about snakes in Townsville?",
+    a: "It's worth being aware rather than worried — snakes can be found in parks, bushland and undergrowth around Townsville, but an encounter on a typical walk is uncommon. Many local dog owners simply stay alert as a habit. If you suspect your dog has been bitten, treat it as a veterinary emergency and get to a vet as quickly as you safely can.",
+  },
 ];
 
 const DogFriendly = () => {
@@ -584,7 +592,9 @@ const DogFriendly = () => {
             <Link to="/guides/beat-the-heat" className="text-primary hover:underline font-medium">
               Beat the Heat guide
             </Link>
-            .
+            . In Duncan's own routine, he tends to walk his dog later in the afternoon, around
+            sunset, when the UV and heat are lower — that's his personal habit rather than a rule
+            everyone needs to follow.
           </p>
         </section>
 
@@ -670,6 +680,53 @@ const DogFriendly = () => {
             <li>• Respect nesting areas, fenced sections and signs</li>
             <li>• Uncontrolled dogs can disturb feeding and nesting birds</li>
           </ul>
+        </section>
+
+        {/* Cane toads and snakes */}
+        <section aria-labelledby="hazards" className="space-y-4">
+          <h2 id="hazards" className="text-2xl md:text-3xl font-bold flex items-center gap-2">
+            <AlertTriangle className="w-6 h-6 text-primary" aria-hidden="true" />
+            Cane Toads and Snakes
+          </h2>
+          <div className="space-y-2">
+            <h3 className="font-semibold text-foreground">Cane toads</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Cane toads are toxic to pets at every life stage and are present across Townsville and
+              the wider region, so they are worth being aware of, particularly at night and around
+              water. In Duncan's experience, this is one of the more difficult everyday issues for
+              pet owners here — his own dog fortunately ignores them, but he knows many pets do not.
+              If your dog mouths or contacts a cane toad, treat it as a veterinary emergency and
+              contact a vet immediately rather than waiting to see if symptoms develop.
+            </p>
+          </div>
+          <div className="space-y-2">
+            <h3 className="font-semibold text-foreground">Snakes</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Snakes can be found in parks, bushland and undergrowth around Townsville, as in most
+              of Queensland, though an encounter on a typical walk is uncommon. When Duncan walks
+              his dog, he stays alert for snakes as a matter of routine — not because they're
+              constantly present, but because it's a sensible habit in this environment. If you
+              suspect your dog has been bitten, treat it as a veterinary emergency and get to a vet
+              as quickly as you safely can.
+            </p>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            See{" "}
+            <a
+              href="https://www.business.qld.gov.au/industries/farms-fishing-forestry/agriculture/biosecurity/animals/invasive/other/cane-toad"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline font-medium inline-flex items-center gap-1"
+            >
+              Queensland Government — cane toads
+              <ExternalLink className="w-3 h-3" aria-hidden="true" />
+            </a>{" "}
+            for background, and our{" "}
+            <Link to="/useful-contacts" className="text-primary hover:underline font-medium">
+              useful contacts page
+            </Link>{" "}
+            for the emergency vet number.
+          </p>
         </section>
 
         {/* Etiquette */}
