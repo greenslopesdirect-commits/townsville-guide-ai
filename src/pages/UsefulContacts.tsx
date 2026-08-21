@@ -349,10 +349,9 @@ const UsefulContacts = () => (
             once a warning is active.
           </p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            In Duncan's experience, local emergency messaging and preparedness are very visible
-            when severe weather threatens — people generally seem to know what to do. That is his
-            personal impression rather than a safety guarantee, so still follow official warnings
-            and your accommodation's advice if a system develops.{" "}
+            Duncan's own impression is that this preparedness is genuinely visible locally when
+            severe weather threatens — though that's personal experience, not a guarantee, so
+            official warnings and your accommodation's advice still come first.{" "}
             <Ext href={LINKS.getReadyVisitor}>Get Ready Queensland's visitor safety tips</Ext>{" "}
             cover travel insurance and what to check before and during a trip.
           </p>

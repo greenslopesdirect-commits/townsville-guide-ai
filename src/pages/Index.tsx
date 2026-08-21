@@ -91,7 +91,7 @@ const Index = () => {
                 name: "Is Townsville dog-friendly?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Very — Townsville has several off-leash dog parks including Rowes Bay, dog-friendly beach zones along The Strand, and many pet-friendly cafés and restaurants.",
+                  text: "Yes — Townsville has designated off-leash areas including Pallarenda Dog Beach and the Benwell Road foreshore, plus several fenced dog parks around the city. Elsewhere, including along The Strand, dogs need to stay on a leash unless local signage says otherwise.",
                 },
               },
               {

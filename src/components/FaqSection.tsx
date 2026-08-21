@@ -20,15 +20,19 @@ const FaqSection = () => {
     },
     {
       question: "What's the best free thing to do in Townsville?",
-      answer: "Watching sunset from The Strand beachfront or climbing Castle Hill Lookout for panoramic views are both completely free and unforgettable experiences."
+      answer: "Watching sunset from The Strand beachfront or heading up to the Castle Hill lookout for panoramic views are both free and easy to fit into a visit."
     },
     {
       question: "Is Townsville dog-friendly?",
-      answer: "Very — Townsville has several off-leash dog parks including Rowes Bay, dog-friendly beach zones along The Strand, and many pet-friendly cafés and restaurants."
+      answer: "Yes — Townsville has designated off-leash areas including Pallarenda Dog Beach and the Benwell Road foreshore, plus several fenced dog parks around the city. Elsewhere, including along The Strand, dogs need to stay on a leash unless local signage says otherwise.",
+      linkText: "Read the Dog-Friendly Townsville guide",
+      linkTo: "/dog-friendly"
     },
     {
       question: "How do I get to Magnetic Island from Townsville?",
-      answer: "SeaLink ferries depart daily from the Breakwater Terminal in Townsville. The journey takes just 20 minutes, with multiple departures throughout the day."
+      answer: "Passenger ferries run daily from the Breakwater Terminal in Townsville and the crossing is short, with several departures through the day. Check current timetables and fares before you travel.",
+      linkText: "Read the Magnetic Island Ferry guide",
+      linkTo: "/guides/magnetic-island-ferry"
     },
     {
       question: "Is Townsville worth visiting?",
