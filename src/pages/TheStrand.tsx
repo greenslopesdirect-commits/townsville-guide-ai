@@ -24,6 +24,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
+import LocalInsightCard from "@/components/LocalInsightCard";
 
 const SITE = "https://www.townsvilleguide.com.au";
 const LAST_UPDATED = "5 August 2026";
@@ -526,6 +527,14 @@ const TheStrand = () => {
               Street or near Queens Gardens, where current signs and restrictions must be checked —
               is often easier than circling a full car park.
             </p>
+            <LocalInsightCard title="Duncan's Local Take">
+              <p>
+                Duncan personally prefers The Strand around sunset, when the UV is lower, and it's
+                usually when he walks his dog there. He normally parks near the Memorial Gardens
+                and generally finds it easy to get a spot at that time — though that's his own
+                experience, not a guarantee of availability on any given day.
+              </p>
+            </LocalInsightCard>
           </section>
 
           {/* Car free */}

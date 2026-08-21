@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
+import LocalInsightCard from "@/components/LocalInsightCard";
 import castleHillImage from "@/assets/castle-hill-townsville-2.webp";
 
 const FAQS = [
@@ -40,7 +41,7 @@ const FAQS = [
   },
   {
     q: "Is sunrise or sunset better at Castle Hill?",
-    a: "Both work well, and it depends what you want. Sunrise tends to bring calmer conditions, while sunset produces more dramatic colour over Cleveland Bay and Magnetic Island.",
+    a: "Both work well, and it depends what you want. Sunrise tends to bring calmer conditions, while sunset produces more dramatic colour over Cleveland Bay and Magnetic Island. Duncan's own preference is sunset, for that colour over the bay.",
   },
   {
     q: "What should I take to Castle Hill?",
@@ -48,7 +49,7 @@ const FAQS = [
   },
   {
     q: "Is there parking at the Castle Hill summit?",
-    a: "Yes — parking is available at the summit. Demand is high around sunrise and sunset, and temporary restrictions can apply, so arrive a little early at those times if you want a good spot.",
+    a: "Yes — parking is available at the summit. Demand is high around sunrise and sunset, and temporary restrictions can apply, so arrive a little early at those times if you want a good spot. In Duncan's own experience it's usually manageable, but he's found it can get harder to find a spot specifically around sunset.",
   },
 ];
 
@@ -244,6 +245,17 @@ const CastleHill = () => {
             <p className="text-muted-foreground leading-relaxed">
               Sunrise often brings calm conditions, while sunset offers spectacular colours over Cleveland Bay and Magnetic Island.
             </p>
+          </section>
+
+          {/* Duncan's Local Take */}
+          <section className="mb-12">
+            <LocalInsightCard title="Duncan's Local Take">
+              <p>
+                Duncan normally drives to the top rather than walking, and his own preference is
+                to visit around sunset. In his experience, summit parking is usually manageable,
+                but it can get harder to find a spot around that time of day.
+              </p>
+            </LocalInsightCard>
           </section>
 
           {/* Local Tips */}

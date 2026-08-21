@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import LocalInsightCard from "@/components/LocalInsightCard";
 import {
   Accordion,
   AccordionContent,
@@ -76,7 +77,7 @@ const FAQS = [
   },
   {
     q: "Is Magnetic Island worth visiting if I only have two days in Townsville?",
-    a: "It depends what you'd rather see. Spending one of two days entirely on Magnetic Island means giving up a full mainland day — Castle Hill, The Strand and Jezzine Barracks are usually seen together in a single day, so the trade-off is genuine. It's worth prioritising the island if beaches, wildlife and walking are what you came for; if you'd rather see more of Townsville itself, a shorter island visit — or none at all — may suit a two-day trip better.",
+    a: "It depends what you'd rather see. Spending one of two days entirely on Magnetic Island means giving up a full mainland day — Castle Hill, The Strand and Jezzine Barracks are usually seen together in a single day, so the trade-off is genuine. It's worth prioritising the island if beaches, wildlife and walking are what you came for; if you'd rather see more of Townsville itself, a shorter island visit — or none at all — may suit a two-day trip better. Duncan's own call: with only two days, he'd personally spend one of them on the island.",
   },
   {
     q: "Should I visit Magnetic Island as a day trip or stay overnight?",
@@ -266,6 +267,14 @@ const MagneticIslandDayTrip = () => {
               around the return ferry. If Magnetic Island is the main reason for your visit, it
               is worth considering at least one night on the island.
             </p>
+            <LocalInsightCard title="Duncan's Local Take">
+              <p>
+                Duncan's family usually treats Magnetic Island as an overnight stay rather than a
+                rushed day trip, often travelling across as foot passengers on the car ferry. If
+                he only had two days in Townsville, he'd personally give one of them to the
+                island.
+              </p>
+            </LocalInsightCard>
           </section>
 
           {/* One day enough */}

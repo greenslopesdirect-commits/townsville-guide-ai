@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
 import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
+import LocalInsightCard from "@/components/LocalInsightCard";
 import {
   Accordion,
   AccordionContent,
@@ -556,6 +557,19 @@ const FoodDrink = () => (
           </a>{" "}
           listings for current dates and times before planning a morning around one.
         </p>
+      </section>
+
+      {/* Where Duncan actually goes */}
+      <section className="mb-12">
+        <LocalInsightCard title="Where Duncan Actually Goes">
+          <p>
+            Not a ranked "best of" list — just two places Duncan and his family genuinely use.
+            Twin Cities Hotel is one he considers very good value, and his kids enjoy it. Tony's
+            Pizza is another he genuinely orders from and recommends. There are plenty of other
+            good options across the city — see the examples below for a wider spread — but these
+            are the two he would mention if you asked him directly.
+          </p>
+        </LocalInsightCard>
       </section>
 
       {/* Venue examples */}

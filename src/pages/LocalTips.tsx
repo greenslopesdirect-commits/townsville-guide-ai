@@ -207,6 +207,44 @@ const LocalTips = () => (
               guide has the full version.
             </p>
           </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2">If Duncan only had one day, he'd skip the CBD</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              With only one day in Townsville, Duncan would personally prioritise The Strand,
+              Castle Hill and Magnetic Island over the CBD. That is a call about where to spend
+              limited time, not a claim that the CBD has nothing worth seeing — the museum, cafés
+              and city-centre wandering are still worth it if you have a spare afternoon. See{" "}
+              <Link to="/townsville-in-one-day" className="text-primary hover:underline">
+                Townsville in one day
+              </Link>{" "}
+              for a full itinerary.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2">What Duncan thinks is underrated</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Duncan is originally from the UK, and coming from there, what he notices most about
+              Townsville is how beautiful it is and how good the everyday services are — the kind
+              of things that are easy to take for granted if you have always lived here. It is his
+              personal perspective rather than an objective comparison, but it is part of why he
+              thinks the city deserves more attention than it gets.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Generic guides rarely explain where you can actually take a dog</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Because Duncan walks his own dog regularly around Townsville, he notices when a
+              guide skips the practical detail — which beaches and parks actually allow off-leash
+              dogs, and what is realistic when you are getting around the city with one. See our{" "}
+              <Link to="/dog-friendly" className="text-primary hover:underline">
+                dog-friendly Townsville guide
+              </Link>{" "}
+              for the specifics.
+            </p>
+          </div>
         </div>
       </section>
 

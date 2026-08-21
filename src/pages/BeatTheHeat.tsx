@@ -1085,7 +1085,7 @@ const BeatTheHeat = () => {
         </section>
 
         {/* Local tip */}
-        <section aria-labelledby="local-tip">
+        <section aria-labelledby="local-tip" className="space-y-4">
           <Card className="bg-muted/40">
             <CardContent className="p-6 flex flex-col md:flex-row gap-5 items-start">
               <Thermometer className="w-10 h-10 text-primary flex-shrink-0" aria-hidden="true" />
@@ -1098,6 +1098,24 @@ const BeatTheHeat = () => {
                   becomes dangerously hot within minutes. Plan around the afternoon heat soak, and
                   if you do have to go out, start the car and air conditioning a few minutes before
                   the kids or the dog get in — and never leave anyone in the vehicle."
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="bg-muted/40">
+            <CardContent className="p-6 flex flex-col md:flex-row gap-5 items-start">
+              <Sunrise className="w-10 h-10 text-primary flex-shrink-0" aria-hidden="true" />
+              <div>
+                <h3 className="text-xl md:text-2xl font-bold mb-2">
+                  Duncan's Own Hot-Weather Routine
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  "Early in the day I'm more likely to go for a jog while it's cooler, and later in
+                  the afternoon — especially around sunset when the UV is lower — I usually walk
+                  the dog instead. In January it can get extremely hot, so I wouldn't plan to be
+                  outdoors sightseeing all day. I'd use the hottest part of the day for somewhere
+                  indoors like a museum, and save outdoor things for earlier or later. That's just
+                  how I personally structure a hot day, not a rule everyone needs to follow."
                 </p>
               </div>
             </CardContent>
