@@ -148,6 +148,24 @@ const Index = () => {
 
         <WorthVisiting />
 
+        {/* The Siren, Cleveland Bay — main establishing photo */}
+        <section className="px-4 pb-4">
+          <div className="container mx-auto max-w-6xl">
+            <div className="rounded-2xl overflow-hidden border border-border/60 shadow-[var(--shadow-card)]">
+              <div className="aspect-[16/9] w-full overflow-hidden bg-muted">
+                <img
+                  src="/images/homepage/the-siren-townsville-cleveland-bay.webp"
+                  alt="The Siren in Cleveland Bay with Magnetic Island beyond, Townsville"
+                  loading="lazy"
+                  width={1600}
+                  height={900}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         <LocalTrustIntro />
 
         <section className="px-4 pb-6 md:pb-8">
@@ -158,27 +176,6 @@ const Index = () => {
 
         {/* Primary visitor pathways */}
         <StartPlanning />
-
-        {/* Castle Hill at dusk — feature photo */}
-        <section className="px-4 pb-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="rounded-2xl overflow-hidden border border-border/60 shadow-[var(--shadow-card)]">
-              <div className="aspect-[16/9] w-full overflow-hidden bg-muted">
-                <img
-                  src="/images/homepage/castle-hill-townsville-at-dusk.webp"
-                  alt="Castle Hill and Townsville city lights at dusk"
-                  loading="lazy"
-                  width={1600}
-                  height={900}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-            <p className="text-center text-sm text-muted-foreground mt-2">
-              Castle Hill at dusk, Townsville
-            </p>
-          </div>
-        </section>
 
         <EssentialExperiences />
 

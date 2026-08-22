@@ -59,6 +59,25 @@ const EssentialExperiences = () => {
           detail.
         </p>
 
+        <div className="mb-10">
+          <Link
+            to="/the-strand"
+            aria-label="Explore The Strand"
+            className="group block rounded-2xl overflow-hidden border border-border/60 shadow-[var(--shadow-card)] transition-shadow hover:shadow-[var(--shadow-tropical)]"
+          >
+            <div className="aspect-[16/9] w-full overflow-hidden bg-muted">
+              <img
+                src="/images/homepage/the-strand-north-ward-townsville.webp"
+                alt="The Strand beachfront at North Ward in Townsville"
+                loading="lazy"
+                width={1600}
+                height={900}
+                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+          </Link>
+        </div>
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {featured.map((item) => (
             <Link
@@ -109,25 +128,6 @@ const EssentialExperiences = () => {
               </Card>
             </Link>
           ))}
-        </div>
-
-        <div className="mt-6">
-          <Link
-            to="/the-strand"
-            aria-label="Explore The Strand"
-            className="group block rounded-2xl overflow-hidden border border-border/60 shadow-[var(--shadow-card)] transition-shadow hover:shadow-[var(--shadow-tropical)]"
-          >
-            <div className="aspect-[16/9] w-full overflow-hidden bg-muted">
-              <img
-                src="/images/homepage/the-strand-north-ward-townsville.webp"
-                alt="The Strand beachfront at North Ward in Townsville"
-                loading="lazy"
-                width={1600}
-                height={900}
-                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-          </Link>
         </div>
       </div>
     </section>
