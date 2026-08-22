@@ -212,7 +212,17 @@ export const DayTrips = () => (
       </p>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <Card className="border border-border/60">
+        <Card className="border border-border/60 overflow-hidden">
+          <div className="aspect-[4/3] w-full overflow-hidden bg-muted">
+            <img
+              src="/images/homepage/magnetic-island-beach-townsville.webp"
+              alt="Rocky beach and coastline on Magnetic Island near Townsville"
+              loading="lazy"
+              width={1200}
+              height={900}
+              className="h-full w-full object-cover object-top"
+            />
+          </div>
           <CardContent className="p-6 space-y-3">
             <h3 className="text-xl font-bold text-foreground">Magnetic Island</h3>
             <p className="text-muted-foreground leading-relaxed">

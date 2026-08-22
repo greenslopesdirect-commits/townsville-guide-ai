@@ -43,6 +43,19 @@ const AboutSection = () => {
               <p>And if you ever see someone out walking a large black Giant Schnauzer, there's a very good chance that's me!</p>
             </div>
 
+            <div className="max-w-sm mx-auto mb-8">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border/60 shadow-[var(--shadow-card)]">
+                <img
+                  src="/images/homepage/max-and-the-siren-townsville-waterfront.webp"
+                  alt="Max beside the illuminated Siren on the Townsville waterfront at night"
+                  loading="lazy"
+                  width={1600}
+                  height={1200}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+
             <Separator className="my-6" />
 
             <div className="space-y-3 text-center">
