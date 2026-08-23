@@ -121,7 +121,13 @@ const faqs = [
 
 const ThingsToDo = () => (
   <>
-    <SEOHead title={TITLE} description={DESCRIPTION} canonical={PATH} ogType="article" />
+    <SEOHead
+      title={TITLE}
+      description={DESCRIPTION}
+      canonical={PATH}
+      ogType="article"
+      ogImage="https://www.townsvilleguide.com.au/5-free-things-to-do.webp"
+    />
     <Helmet>
       <script type="application/ld+json">
         {JSON.stringify({

@@ -1,82 +1,57 @@
 # Townsville Guide
 
-Build a one-page React + Tailwind + TypeScript site called “Duncan’s Guide – Townsville.”
-Design tone: bright, tropical, welcoming (turquoise + coral accents, soft shadows, rounded cards). Mobile-first, responsive.
+**[townsvilleguide.com.au](https://www.townsvilleguide.com.au)** — an independent, locally written travel and lifestyle guide to Townsville and North Queensland, with a free AI concierge built in.
 
-Sections & behavior:
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white&labelColor=20232a)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white&labelColor=20232a)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white&labelColor=20232a)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white&labelColor=20232a)
+![Supabase](https://img.shields.io/badge/Supabase-Edge_Functions-3ECF8E?logo=supabase&logoColor=white&labelColor=20232a)
 
-Hero (full-height)
+![Townsville Guide preview](public/og-image.jpg)
 
-Uses my own Townsville background photo (I will upload after generation).
+## What this is
 
-Headline: “Welcome to Townsville 👋”
+Townsville Guide is a real, actively maintained visitor and local-resident guide for Townsville, QLD — not a tourism-board reprint. It covers beaches, day trips (Magnetic Island, Paluma Range), food, accommodation, events, dog-friendly spots, accessibility, and practical info for people moving to the city, written from a single local's actual experience.
 
-Subheading: “Your local AI guide to everything in North Queensland.”
+Built on top of the guide content is a working **AI travel concierge**: a chat box on the homepage that answers free-text questions ("best beach today," "dog-friendly spots," "what's on this weekend") using a Supabase Edge Function backed by Gemini 2.5 Flash, grounded in the site's own local knowledge rather than generic web search.
 
-Add a visible chat/search box below the text with placeholder:
+## Why it's built the way it is
 
-“Hi! I’m your Townsville guide. Ask me anything — restaurants, beaches, dog parks, events, accommodation.”
+This is a client-rendered React SPA, which normally fights search visibility — so the project ships its own fix for that instead of reaching for a heavier framework:
 
-Add a subtle scroll indicator at the bottom of the hero.
+- **Static prerendering.** `scripts/prerender.mjs` drives headless Chrome (Puppeteer) across every route at build time and writes real static HTML, so search engines and AI crawlers see fully rendered content, not an empty `<div id="root">`.
+- **SEO verification as a build step.** `scripts/verify-seo.mjs` asserts titles, meta descriptions, canonicals and schema across every route in the sitemap, so a broken prerender fails loudly instead of silently shipping blank pages.
+- **AI-crawler access, deliberately.** [`robots.txt`](public/robots.txt) explicitly allows GPTBot, ClaudeBot, PerplexityBot and friends, and [`llms.txt`](public/llms.txt) gives LLM-based answer engines a structured index of every page — this guide is built to be a good source for AI-generated travel answers, not just Google.
+- **Per-route SEO ownership.** Every page drives its own title, description, canonical URL, Open Graph/Twitter tags and `robots` directive through a single [`SEOHead`](src/components/SEOHead.tsx) component, backed by `Organization` and `SoftwareApplication` JSON-LD at the document level.
 
-Quick Access Categories (grid of 6 rounded buttons/cards):
+## Tech stack
 
-Restaurants • Beaches • Things to Do • Dog Parks • Accommodation • Shopping
+- **Framework:** React 18 + TypeScript, built with Vite (SWC), route-level code-splitting via `React.lazy` across 50+ routes
+- **UI:** Tailwind CSS + shadcn/ui (Radix primitives)
+- **Data/AI:** Supabase (Edge Functions + client SDK), TanStack Query
+- **Forms/validation:** React Hook Form + Zod
+- **SEO tooling:** react-helmet, Puppeteer-driven prerendering, a custom sitemap generator run on every build
 
-Top 5 Local Picks (placeholder list/cards I can edit later)
-
-Map Section
-
-Embedded Google Map centered on Townsville, QLD.
-
-Title: “Find Your Way Around”
-
-About / FAQ (short)
-
-Friendly 2–3 lines about the site being created by a Townsville local.
-
-Contact / Footer
-
-“Questions or suggestions? Email Duncan Ross at greenslopesdirect@gmail.com
-.”
-
-Implementation notes:
-
-Create a Hero component (src/components/Hero.tsx) with a background image layer, a light gradient overlay (10–25%), and centered content.
-
-Put the hero background image reference in a variable so I can swap it easily after upload.
-
-Create an assets folder (src/assets/) with a placeholder image named strand-hero.jpg. I will replace it with my photo.
-
-Keep classes semantic (e.g., container, max-w-*, bg-cover bg-center, rounded-3xl, shadow-*).
-
-Leave a clear TODO comment where to replace the hero image.
-
-After generation, I will:
-
-Upload my Townsville hero image into src/assets/ and replace strand-hero.jpg.
-
-(Optional later) embed a real AI agent/script into the chat box.
-
-This project was built with [Lovable](https://lovable.dev).
-
-**Live app**: https://townsville-guide-ai.lovable.app
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/f97cf9bd-3df6-48af-9628-493b0a309f6d).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## Local development
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+git clone https://github.com/greenslopesdirect-commits/townsville-guide-ai.git
+cd townsville-guide-ai
+npm install
 npm run dev
 ```
+
+Other scripts:
+
+```sh
+npm run build      # sitemap generation + production build
+npm run lint        # ESLint
+npm run sitemap      # regenerate public/sitemap.xml on demand
+node scripts/prerender.mjs     # static-HTML snapshot of every route
+node scripts/verify-seo.mjs    # assert SEO tags across the full sitemap
+```
+
+## About
+
+Built and maintained by Duncan Ross, a Townsville local. Questions, feedback or advertising enquiries: see [/contact](https://www.townsvilleguide.com.au/contact).

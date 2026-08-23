@@ -175,7 +175,13 @@ const faqs = [
 const DogFriendly = () => {
   return (
     <>
-      <SEOHead title={TITLE} description={DESCRIPTION} canonical={PATH} ogType="article" />
+      <SEOHead
+        title={TITLE}
+        description={DESCRIPTION}
+        canonical={PATH}
+        ogType="article"
+        ogImage="https://www.townsvilleguide.com.au/assets/images/Pallarenda-max1.webp"
+      />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({

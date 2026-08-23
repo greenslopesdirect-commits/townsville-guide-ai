@@ -90,6 +90,7 @@ const TheStrand = () => {
         description="Plan your visit to The Strand Townsville, including walking, swimming facilities, playgrounds, parking, accessibility, food and the best time to go."
         canonical={`${SITE}/the-strand`}
         ogType="article"
+        ogImage="https://www.townsvilleguide.com.au/the-strand-townsville-2.webp"
       />
       <Helmet>
         <script type="application/ld+json">

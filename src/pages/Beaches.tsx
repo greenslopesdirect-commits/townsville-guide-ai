@@ -251,7 +251,13 @@ const faqs = [
 const Beaches = () => {
   return (
     <>
-      <SEOHead title={TITLE} description={DESCRIPTION} canonical={PATH} ogType="article" />
+      <SEOHead
+        title={TITLE}
+        description={DESCRIPTION}
+        canonical={PATH}
+        ogType="article"
+        ogImage="https://www.townsvilleguide.com.au/rock-pool-townsville.webp"
+      />
       <Helmet>
         <script type="application/ld+json">
           {JSON.stringify({

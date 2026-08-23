@@ -114,6 +114,7 @@ const MagneticIslandDayTrip = () => {
         description={PAGE_DESCRIPTION}
         canonical={PAGE_URL}
         ogType="article"
+        ogImage="https://www.townsvilleguide.com.au/magnetic-island-guide.webp"
       />
       <Helmet>
         <script type="application/ld+json">
