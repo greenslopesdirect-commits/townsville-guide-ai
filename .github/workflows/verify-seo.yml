@@ -1,0 +1,34 @@
+name: Verify SEO Prerender
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    name: Typecheck, build, prerender, verify-seo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npx tsc --noEmit
+
+      - name: Build (includes sitemap generation)
+        run: npm run build
+
+      - name: Static prerender
+        run: node scripts/prerender.mjs
+
+      - name: Verify SEO output
+        run: node scripts/verify-seo.mjs
