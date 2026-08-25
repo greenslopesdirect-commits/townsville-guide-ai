@@ -31,16 +31,26 @@ function createSupabaseFetch(supabaseKey: string): typeof fetch {
   };
 }
 
-// Import the supabase client like this:
-// import { supabase } from "@/integrations/supabase/client";
+export const isSupabaseConfigured = Boolean(SUPABASE_URL && SUPABASE_PUBLISHABLE_KEY);
 
-export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
-  global: {
-    fetch: createSupabaseFetch(SUPABASE_PUBLISHABLE_KEY),
-  },
-  auth: {
-    storage: brokeredPreviewStorage(),
-    persistSession: true,
-    autoRefreshToken: true,
-  }
-});
+if (!isSupabaseConfigured) {
+  console.error(
+    "Supabase client is not configured. Check that VITE_SUPABASE_URL and VITE_SUPABASE_PUBLISHABLE_KEY are set at build time. The AI guide and partner enquiry form will be unavailable."
+  );
+}
+
+// Import the supabase client like this:
+// import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
+
+export const supabase = isSupabaseConfigured
+  ? createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
+      global: {
+        fetch: createSupabaseFetch(SUPABASE_PUBLISHABLE_KEY),
+      },
+      auth: {
+        storage: brokeredPreviewStorage(),
+        persistSession: true,
+        autoRefreshToken: true,
+      },
+    })
+  : null;
