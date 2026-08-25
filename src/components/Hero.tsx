@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Compass, Sparkles, Send, Loader2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { AI_PRESETS } from "@/utils/aiGuide";
 import heroImage from "@/assets/strand-hero.jpg";
@@ -62,6 +62,10 @@ const Hero = () => {
   }, [answer]);
 
   const ask = async (question: string) => {
+    if (!supabase) {
+      toast.error("AI guide is unavailable right now.");
+      return;
+    }
     const q = question.trim();
     if (!q || loading) return;
     setLoading(true);
@@ -135,15 +139,19 @@ const Hero = () => {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask anything about Townsville…"
+            placeholder={
+              isSupabaseConfigured
+                ? "Ask anything about Townsville…"
+                : "AI guide is temporarily unavailable"
+            }
             aria-label="Ask the Townsville AI guide"
-            disabled={loading}
+            disabled={loading || !isSupabaseConfigured}
             className="flex-1 bg-transparent text-white placeholder:text-white/70 outline-none px-1 py-3 text-base"
           />
           <Button
             type="submit"
             size="sm"
-            disabled={loading || !input.trim()}
+            disabled={loading || !input.trim() || !isSupabaseConfigured}
             className="rounded-xl h-11 px-4 gap-1.5 shadow-md"
           >
             {loading ? (
@@ -156,22 +164,24 @@ const Hero = () => {
         </form>
 
         {/* Suggestion chips */}
-        <div className="flex flex-wrap justify-center gap-2 mt-4">
-          {SUGGESTIONS.map((s) => (
-            <button
-              key={s.label}
-              type="button"
-              onClick={() => {
-                setInput(s.question);
-                ask(s.question);
-              }}
-              disabled={loading}
-              className="text-xs md:text-sm px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-sm transition disabled:opacity-50"
-            >
-              {s.label}
-            </button>
-          ))}
-        </div>
+        {isSupabaseConfigured && (
+          <div className="flex flex-wrap justify-center gap-2 mt-4">
+            {SUGGESTIONS.map((s) => (
+              <button
+                key={s.label}
+                type="button"
+                onClick={() => {
+                  setInput(s.question);
+                  ask(s.question);
+                }}
+                disabled={loading}
+                className="text-xs md:text-sm px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-sm transition disabled:opacity-50"
+              >
+                {s.label}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Streaming response panel */}
         {(loading || displayed) && (

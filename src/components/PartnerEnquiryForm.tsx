@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { supabase } from "@/integrations/supabase/client";
+import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -99,6 +99,10 @@ const PartnerEnquiryForm = () => {
 
 
   const onSubmit = async (values: FormValues) => {
+    if (!supabase) {
+      toast.error("Enquiry form is temporarily unavailable — please email us directly instead.");
+      return;
+    }
     try {
       const { data, error } = await supabase.functions.invoke("submit-partner-enquiry", {
         body: {
@@ -239,7 +243,7 @@ const PartnerEnquiryForm = () => {
             type="submit"
             size="lg"
             className="w-full md:w-auto"
-            disabled={form.formState.isSubmitting}
+            disabled={form.formState.isSubmitting || !isSupabaseConfigured}
           >
             {form.formState.isSubmitting ? (
               <>
