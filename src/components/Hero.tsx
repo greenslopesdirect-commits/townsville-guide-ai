@@ -151,7 +151,7 @@ const Hero = () => {
           <Button
             type="submit"
             size="sm"
-            disabled={loading || !input.trim()}
+            disabled={loading || !input.trim() || !isSupabaseConfigured}
             className="rounded-xl h-11 px-4 gap-1.5 shadow-md"
           >
             {loading ? (
