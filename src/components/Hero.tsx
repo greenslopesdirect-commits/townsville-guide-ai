@@ -164,22 +164,24 @@ const Hero = () => {
         </form>
 
         {/* Suggestion chips */}
-        <div className="flex flex-wrap justify-center gap-2 mt-4">
-          {SUGGESTIONS.map((s) => (
-            <button
-              key={s.label}
-              type="button"
-              onClick={() => {
-                setInput(s.question);
-                ask(s.question);
-              }}
-              disabled={loading}
-              className="text-xs md:text-sm px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-sm transition disabled:opacity-50"
-            >
-              {s.label}
-            </button>
-          ))}
-        </div>
+        {isSupabaseConfigured && (
+          <div className="flex flex-wrap justify-center gap-2 mt-4">
+            {SUGGESTIONS.map((s) => (
+              <button
+                key={s.label}
+                type="button"
+                onClick={() => {
+                  setInput(s.question);
+                  ask(s.question);
+                }}
+                disabled={loading}
+                className="text-xs md:text-sm px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-sm transition disabled:opacity-50"
+              >
+                {s.label}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Streaming response panel */}
         {(loading || displayed) && (
