@@ -99,6 +99,10 @@ const PartnerEnquiryForm = () => {
 
 
   const onSubmit = async (values: FormValues) => {
+    if (!supabase) {
+      toast.error("Enquiry form is temporarily unavailable — please email us directly instead.");
+      return;
+    }
     try {
       const { data, error } = await supabase.functions.invoke("submit-partner-enquiry", {
         body: {
