@@ -62,6 +62,10 @@ const Hero = () => {
   }, [answer]);
 
   const ask = async (question: string) => {
+    if (!supabase) {
+      toast.error("AI guide is unavailable right now.");
+      return;
+    }
     const q = question.trim();
     if (!q || loading) return;
     setLoading(true);
