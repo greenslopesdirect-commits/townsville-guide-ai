@@ -243,7 +243,7 @@ const PartnerEnquiryForm = () => {
             type="submit"
             size="lg"
             className="w-full md:w-auto"
-            disabled={form.formState.isSubmitting}
+            disabled={form.formState.isSubmitting || !isSupabaseConfigured}
           >
             {form.formState.isSubmitting ? (
               <>
