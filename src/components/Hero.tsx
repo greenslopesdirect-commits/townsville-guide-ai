@@ -139,9 +139,13 @@ const Hero = () => {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask anything about Townsville…"
+            placeholder={
+              isSupabaseConfigured
+                ? "Ask anything about Townsville…"
+                : "AI guide is temporarily unavailable"
+            }
             aria-label="Ask the Townsville AI guide"
-            disabled={loading}
+            disabled={loading || !isSupabaseConfigured}
             className="flex-1 bg-transparent text-white placeholder:text-white/70 outline-none px-1 py-3 text-base"
           />
           <Button
