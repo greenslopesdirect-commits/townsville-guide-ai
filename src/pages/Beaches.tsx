@@ -75,7 +75,7 @@ const COMPARISON = [
     swimming: "Check current official status",
     car: "Yes",
     feel: "Suburban and local",
-    to: undefined,
+    to: "/bushland-beach",
   },
   {
     beach: "Balgal Beach",
@@ -447,11 +447,15 @@ const Beaches = () => {
                 </p>
                 <p>
                   It is not automatically a recommended swimming beach. Use current Council
-                  information for patrol and net status before deciding to swim. Our{" "}
+                  information for patrol and net status before deciding to swim. See our{" "}
+                  <Link to="/bushland-beach" className="text-primary underline underline-offset-2 font-medium">
+                    Bushland Beach guide
+                  </Link>{" "}
+                  for Peggy Banfield Park and local detail, or our{" "}
                   <Link to="/north-shore-townsville" className="text-primary underline underline-offset-2">
                     North Shore guide
                   </Link>{" "}
-                  covers the wider area.
+                  for the wider area.
                 </p>
               </div>
             </div>

@@ -181,6 +181,10 @@ const RowesBay = () => {
                   <h3 className="font-semibold text-gray-800 mb-1">Jezzine Barracks</h3>
                   <p className="text-sm text-gray-600">Coastal boardwalk linking Rowes Bay to The Strand.</p>
                 </Link>
+                <Link to="/bushland-beach" className="block bg-white rounded-xl p-5 shadow-sm border hover:border-primary hover:shadow-md transition">
+                  <h3 className="font-semibold text-gray-800 mb-1">Bushland Beach</h3>
+                  <p className="text-sm text-gray-600">Suburban foreshore & Peggy Banfield dog park, further north.</p>
+                </Link>
               </div>
             </section>
 

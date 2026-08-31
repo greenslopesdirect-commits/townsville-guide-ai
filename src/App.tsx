@@ -46,6 +46,7 @@ const StingerSafety = lazy(() => import("@/pages/StingerSafety"));
 const SunsetWalks = lazy(() => import("@/pages/SunsetWalks"));
 const PallarendaBeach = lazy(() => import("@/pages/PallarendaBeach"));
 const RowesBay = lazy(() => import("@/pages/RowesBay"));
+const BushlandBeach = lazy(() => import("@/pages/BushlandBeach"));
 const TheStrand = lazy(() => import("./pages/TheStrand"));
 const Riverway = lazy(() => import("./pages/Riverway"));
 const TownsvilleWithKids = lazy(() => import("@/pages/TownsvilleWithKids"));
@@ -118,6 +119,7 @@ const App = () => (
             <Route path="beaches/saunders-beach" element={<SaundersBeach />} />
             <Route path="pallarenda-beach" element={<PallarendaBeach />} />
             <Route path="rowes-bay" element={<RowesBay />} />
+            <Route path="bushland-beach" element={<BushlandBeach />} />
             <Route path="townsville-with-kids" element={<TownsvilleWithKids />} />
             <Route path="the-strand" element={<TheStrand />} />
             <Route path="riverway" element={<Riverway />} />

@@ -210,6 +210,10 @@ const SaundersBeach = () => {
               <h3 className="font-semibold mb-1 text-foreground">North Shore Townsville</h3>
               <p className="text-sm text-muted-foreground">The suburb & lifestyle guide for Townsville's north.</p>
             </Link>
+            <Link to="/bushland-beach" className="block bg-card rounded-xl p-5 shadow-sm border hover:border-primary hover:shadow-md transition">
+              <h3 className="font-semibold mb-1 text-foreground">Bushland Beach</h3>
+              <p className="text-sm text-muted-foreground">Suburban foreshore & Peggy Banfield dog park, closer to town.</p>
+            </Link>
             <Link to="/dog-friendly" className="block bg-card rounded-xl p-5 shadow-sm border hover:border-primary hover:shadow-md transition">
               <h3 className="font-semibold mb-1 text-foreground">Dog-Friendly Townsville</h3>
               <p className="text-sm text-muted-foreground">Off-leash parks, dog cafés & pet-friendly stays.</p>

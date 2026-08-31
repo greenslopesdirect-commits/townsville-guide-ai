@@ -62,6 +62,7 @@ const PAGES = [
   { path: "/little-crystal-creek-townsville",     source: "src/pages/LittleCrystalCreek.tsx",          changefreq: "monthly", priority: "0.7" },
   { path: "/pallarenda-beach",                    source: "src/pages/PallarendaBeach.tsx",             changefreq: "monthly", priority: "0.6" },
   { path: "/rowes-bay",                           source: "src/pages/RowesBay.tsx",                    changefreq: "monthly", priority: "0.6" },
+  { path: "/bushland-beach",                      source: "src/pages/BushlandBeach.tsx",               changefreq: "monthly", priority: "0.6" },
   { path: "/townsville-with-kids",                source: "src/pages/TownsvilleWithKids.tsx",          changefreq: "monthly", priority: "0.7" },
   { path: "/cowboys-stadium-guide",               source: "src/pages/CowboysStadiumGuide.tsx",         changefreq: "monthly", priority: "0.7" },
   { path: "/north-shore-townsville",              source: "src/pages/NorthShoreTownsville.tsx",        changefreq: "monthly", priority: "0.6" },

@@ -473,7 +473,10 @@ const Suburbs = () => (
           <div>
             <h3 className="text-xl font-semibold mb-2">Northern Beaches</h3>
             <p className="text-muted-foreground leading-relaxed">
-              Bushland Beach, Saunders Beach, Toolakea, Toomulla and Balgal Beach sit along the coast
+              <Link to="/bushland-beach" className="text-primary hover:underline">
+                Bushland Beach
+              </Link>
+              , Saunders Beach, Toolakea, Toomulla and Balgal Beach sit along the coast
               north of the city. They are more spread out, residential and car-dependent, and they
               suit quieter coastal outings or longer local stays rather than central sightseeing. See{" "}
               <Link to="/beaches" className="text-primary hover:underline">

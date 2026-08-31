@@ -215,6 +215,10 @@ const PallarendaBeach = () => {
                             <h3 className="font-semibold mb-1">Saunders Beach</h3>
                             <p className="text-sm text-muted-foreground">Sleepy northern beach community, 30 min drive.</p>
                         </Link>
+                        <Link to="/bushland-beach" className="block bg-card rounded-xl p-5 shadow-sm border hover:border-primary hover:shadow-md transition">
+                            <h3 className="font-semibold mb-1">Bushland Beach</h3>
+                            <p className="text-sm text-muted-foreground">Suburban foreshore & Peggy Banfield dog park.</p>
+                        </Link>
                         <Link to="/guides/sunset-walks" className="block bg-card rounded-xl p-5 shadow-sm border hover:border-primary hover:shadow-md transition">
                             <h3 className="font-semibold mb-1">Sunset Walks</h3>
                             <p className="text-sm text-muted-foreground">Best foreshore & headland walks for golden hour.</p>
