@@ -1,53 +1,36 @@
 #!/usr/bin/env node
 /**
- * Static prerender for crawler visibility.
+ * Static prerender for crawler visibility — true server-side rendering.
  *
- * react-helmet's DOM-commit mechanism does not work reliably in this project
- * (confirmed by direct testing: zero head mutation across multiple Helmet
- * versions, in both dev and production builds). Rather than depend on it,
- * this script:
+ * This used to drive a real headless-Chromium browser (Puppeteer) across the
+ * built client app to capture rendered HTML and SEO data. That never ran as
+ * part of the actual production build (only in this repo's own CI checks),
+ * so every deployed route silently served the bare SPA shell with the
+ * homepage's title/description baked in.
  *
- *   1. Reads public/sitemap.xml as the single source of indexable routes.
- *   2. Serves the built dist/ from an in-memory SPA-fallback static server.
- *   3. For each route, drives a real headless-Chromium render of the actual
- *      built app (via Puppeteer) and waits for the page's own H1 as the
- *      render-completion signal.
- *   4. Reads back the EXACT values each page already passes to <SEOHead>/
- *      <Helmet> — not by relying on Helmet's broken DOM commit, but by:
- *        - a plain synchronous window global SEOHead already publishes
- *          during render (src/lib/seoRegistry.ts) for title/description/
- *          canonical/OG type/image/noindex, and
- *        - walking the React fiber tree to read react-helmet's own already-
- *          PARSED `script` prop (react-helmet turns <script> JSX children
- *          into a structured `props.script` array before any DOM commit is
- *          attempted, so this is available regardless of the commit bug) for
- *          each page's Article/BreadcrumbList/FAQPage JSON-LD.
- *   5. Builds a new static <head> from the original dist/index.html template
- *      (keeping GA, GSC verification, favicon, sitewide Organization/
- *      SoftwareApplication schema) with the route-specific tags swapped in,
- *      and writes the captured body HTML into the root div.
- *   6. Writes dist/<route>/index.html for every sitemap route (dist/index.html
- *      for the homepage), plus the four noindex legal pages (present for
- *      usability, never added to the sitemap), plus dist/404.html from the
- *      existing NotFound page.
+ * This version instead renders each route directly in Node, via
+ * `vite build --ssr src/entry-server.tsx` + `renderToPipeableStream`. No
+ * browser binary, no Puppeteer/Chromium download — safe to run as an
+ * ordinary step of `npm run build` on any plain Node build environment
+ * (see package.json's "build" script, which builds dist-ssr/ before this
+ * script runs). See src/entry-server.tsx for the render + SEO-extraction
+ * details (react-helmet's DOM-commit is broken client-side in this project,
+ * but its server-side static extraction is a separate, working code path).
  *
- * React still owns hydration for real browsers: main.tsx's createRoot(...).
- * render() replaces the prerendered markup with a fresh client render on
- * load, so nothing here changes runtime behaviour for users.
+ * Output contract is unchanged from the previous script: dist/<route>/
+ * index.html for every sitemap route (dist/index.html for the homepage),
+ * the four noindex legal pages, and dist/404.html.
  */
 
-import puppeteer from "puppeteer";
-import http from "node:http";
-import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync } from "node:fs";
-import { resolve, dirname, join, extname } from "node:path";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from "node:fs";
+import { resolve, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 const DIST = resolve(ROOT, "dist");
+const DIST_SSR = resolve(ROOT, "dist-ssr");
 const SITE = "https://www.townsvilleguide.com.au";
-const PORT = 4174;
-const BASE = `http://localhost:${PORT}`;
 const NOT_FOUND_PROBE = "/__prerender-404-probe__";
 
 const NOINDEX_ROUTES = [
@@ -57,34 +40,17 @@ const NOINDEX_ROUTES = [
   "/cookie-policy",
 ];
 
-const MIME = {
-  ".html": "text/html; charset=utf-8",
-  ".js": "text/javascript",
-  ".css": "text/css",
-  ".json": "application/json",
-  ".webp": "image/webp",
-  ".jpg": "image/jpeg",
-  ".jpeg": "image/jpeg",
-  ".png": "image/png",
-  ".svg": "image/svg+xml",
-  ".ico": "image/x-icon",
-  ".webmanifest": "application/manifest+json",
-  ".pdf": "application/pdf",
-  ".xml": "application/xml",
-  ".txt": "text/plain",
-};
-
 function escapeHtml(s) {
   return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
 
-function escapeJsonForScript(obj) {
-  // Prevent premature </script> termination inside JSON-LD content.
-  return JSON.stringify(obj).replace(/</g, "\\u003c");
-}
-
 if (!existsSync(DIST)) {
-  console.error("[prerender] dist/ not found — run `npm run build` first.");
+  console.error("[prerender] dist/ not found — run `vite build` first.");
+  process.exit(1);
+}
+const entryServerPath = resolve(DIST_SSR, "entry-server.js");
+if (!existsSync(entryServerPath)) {
+  console.error("[prerender] dist-ssr/entry-server.js not found — run `vite build --ssr src/entry-server.tsx --outDir dist-ssr` first.");
   process.exit(1);
 }
 
@@ -96,95 +62,11 @@ const sitemapRoutes = [...sitemapXml.matchAll(/<loc>(.*?)<\/loc>/g)]
 
 console.log(`[prerender] ${sitemapRoutes.length} sitemap routes found.`);
 
-// ---- 2. In-memory SPA-fallback static server -----------------------------
-// The original index.html is held in memory so later writes to dist/*/index.html
-// (including overwriting dist/index.html for the homepage, done LAST) never
-// corrupt the fallback shell used to render every other in-progress route.
 const originalIndexHtml = readFileSync(resolve(DIST, "index.html"), "utf-8");
+const { render } = await import(`file://${entryServerPath.replace(/\\/g, "/")}`);
 
-const server = http.createServer((req, res) => {
-  const urlPath = decodeURIComponent(req.url.split("?")[0]);
-  const filePath = join(DIST, urlPath);
-  if (urlPath !== "/" && existsSync(filePath) && statSync(filePath).isFile()) {
-    const ext = extname(filePath);
-    res.writeHead(200, { "Content-Type": MIME[ext] || "application/octet-stream" });
-    res.end(readFileSync(filePath));
-    return;
-  }
-  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-  res.end(originalIndexHtml);
-});
-
-await new Promise((res) => server.listen(PORT, res));
-console.log(`[prerender] serving dist/ at ${BASE}`);
-
-// ---- 3-4. Puppeteer extraction --------------------------------------------
-const browser = await puppeteer.launch({ headless: "new" });
-
-async function extractRoute(routePath, { isProbe = false } = {}) {
-  const page = await browser.newPage();
-  await page.goto(`${BASE}${routePath}`, { waitUntil: "networkidle0", timeout: 30000 });
-  try {
-    await page.waitForSelector("h1", { timeout: 10000 });
-  } catch {
-    console.warn(`[prerender] WARNING: no H1 found for ${routePath} within timeout`);
-  }
-  await new Promise((r) => setTimeout(r, 300)); // let SEOHead's render-time publish settle
-
-  const data = await page.evaluate(() => {
-    const seo = window.__TSG_SEO__ || null;
-    const rootEl = document.getElementById("root");
-    const bodyHtml = rootEl ? rootEl.innerHTML : "";
-    const h1 = document.querySelector("h1")?.innerText || null;
-
-    const schemas = [];
-    if (rootEl) {
-      const fiberKey = Object.keys(rootEl).find(
-        (k) => k.startsWith("__reactFiber$") || k.startsWith("__reactContainer$")
-      );
-      if (fiberKey) {
-        const seen = new Set();
-        const isHelmetType = (type) => {
-          if (!type) return false;
-          const name = type.displayName || type.name || "";
-          return name.includes("Helmet") || name.includes("SideEffect");
-        };
-        const walk = (fiber) => {
-          if (!fiber || seen.has(fiber)) return;
-          seen.add(fiber);
-          if (isHelmetType(fiber.type)) {
-            const src = fiber.memoizedProps || fiber.pendingProps;
-            const scripts = (src && src.script) || [];
-            scripts.forEach((s) => {
-              const raw = s.innerHTML || s.children || "";
-              try {
-                schemas.push(JSON.parse(raw));
-              } catch {
-                /* skip unparsable */
-              }
-            });
-          }
-          if (fiber.child) walk(fiber.child);
-          if (fiber.sibling) walk(fiber.sibling);
-        };
-        walk(rootEl[fiberKey]);
-      }
-    }
-    return { seo, bodyHtml, schemas, h1 };
-  });
-
-  await page.close();
-
-  if (!isProbe) {
-    if (!data.seo) console.warn(`[prerender] WARNING: no SEO registry data for ${routePath}`);
-    if (!data.h1) console.warn(`[prerender] WARNING: no H1 captured for ${routePath}`);
-  }
-  return data;
-}
-
-// ---- 5. Static HTML assembly ----------------------------------------------
-function buildHead(routeData, routePath) {
-  const seo = routeData.seo;
+// ---- 2. Static HTML assembly ----------------------------------------------
+function buildHead(seo, schemaHtml, routePath) {
   const canonical = seo?.canonical || `${SITE}${routePath}`;
   const title = seo?.title || "Townsville Guide — Townsville's Trusted Local Travel Guide";
   const description = seo?.description || "";
@@ -239,18 +121,14 @@ function buildHead(routeData, routePath) {
 
   const canonicalTag = `<link rel="canonical" href="${escapeHtml(canonical)}" />`;
   const robotsTags = `<meta name="robots" content="${robots}" />\n    <meta name="googlebot" content="${robots}" />`;
-  const schemaScripts = routeData.schemas
-    .map((s) => `<script type="application/ld+json">${escapeJsonForScript(s)}</script>`)
-    .join("\n    ");
 
-  const injected = [canonicalTag, robotsTags, schemaScripts].filter(Boolean).join("\n    ");
+  const injected = [canonicalTag, robotsTags, schemaHtml].filter(Boolean).join("\n    ");
   html = html.replace("</head>", `    ${injected}\n  </head>`);
 
   return html;
 }
 
-function build404Head() {
-  const seo = extract404Seo;
+function build404Head(seo) {
   const title = seo?.title || "Page Not Found | Townsville Guide";
   const description = seo?.description || "Sorry, this page could not be found.";
 
@@ -297,34 +175,38 @@ function writeRouteFile(routePath, html) {
   return outPath;
 }
 
-// ---- 6. Run for every route -------------------------------------------------
+// ---- 3. Run for every route -------------------------------------------------
 const results = [];
-let extract404Seo = null;
 
-// Process non-homepage routes first, homepage last (see server comment above).
 const nonHome = sitemapRoutes.filter((r) => r !== "/");
 const homeRoute = sitemapRoutes.includes("/") ? "/" : null;
 const orderedRoutes = [...nonHome, ...NOINDEX_ROUTES, ...(homeRoute ? [homeRoute] : [])];
 
 for (const routePath of orderedRoutes) {
-  const data = await extractRoute(routePath);
-  const html = buildHead(data, routePath).replace(
+  const { html: bodyHtml, seo, schemaHtml } = await render(routePath);
+  const h1 = bodyHtml.match(/<h1[^>]*>(.*?)<\/h1>/)?.[1] ?? null;
+  if (!seo) console.warn(`[prerender] WARNING: no SEO registry data for ${routePath}`);
+  if (!h1) console.warn(`[prerender] WARNING: no H1 captured for ${routePath}`);
+
+  const html = buildHead(seo, schemaHtml, routePath).replace(
     '<div id="root"></div>',
-    `<div id="root">${data.bodyHtml}</div>`
+    `<div id="root">${bodyHtml}</div>`
   );
   const outPath = writeRouteFile(routePath, html);
-  results.push({ routePath, outPath, h1: data.h1, title: data.seo?.title, schemaCount: data.schemas.length });
-  console.log(`[prerender] ${routePath} -> ${outPath.replace(ROOT, "")}  (h1: ${data.h1 ? "ok" : "MISSING"}, schema: ${data.schemas.length})`);
+  const schemaCount = (schemaHtml.match(/<script/g) || []).length;
+  results.push({ routePath, outPath, h1, title: seo?.title, schemaCount });
+  console.log(`[prerender] ${routePath} -> ${outPath.replace(ROOT, "")}  (h1: ${h1 ? "ok" : "MISSING"}, schema: ${schemaCount})`);
 }
 
-// ---- 7. 404 -----------------------------------------------------------------
-const probeData = await extractRoute(NOT_FOUND_PROBE, { isProbe: true });
-extract404Seo = probeData.seo;
-const html404 = build404Head().replace('<div id="root"></div>', `<div id="root">${probeData.bodyHtml}</div>`);
+// ---- 4. 404 -----------------------------------------------------------------
+const { html: probeBodyHtml, seo: probeSeo } = await render(NOT_FOUND_PROBE);
+const probeH1 = probeBodyHtml.match(/<h1[^>]*>(.*?)<\/h1>/)?.[1] ?? null;
+const html404 = build404Head(probeSeo).replace('<div id="root"></div>', `<div id="root">${probeBodyHtml}</div>`);
 writeFileSync(resolve(DIST, "404.html"), html404, "utf-8");
-console.log(`[prerender] 404 -> dist/404.html (h1: ${probeData.h1 ? "ok" : "MISSING"}, title: ${probeData.seo?.title})`);
+console.log(`[prerender] 404 -> dist/404.html (h1: ${probeH1 ? "ok" : "MISSING"}, title: ${probeSeo?.title})`);
 
-server.close();
-await browser.close();
+// ---- 5. Clean up the intermediate SSR bundle --------------------------------
+// Not needed once every route has been rendered to static HTML in dist/.
+rmSync(DIST_SSR, { recursive: true, force: true });
 
 console.log(`[prerender] Done. ${results.length} routes + 404.html written.`);
