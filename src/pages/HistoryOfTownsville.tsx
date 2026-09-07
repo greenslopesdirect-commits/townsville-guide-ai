@@ -43,7 +43,7 @@ const HistoryOfTownsville = () => {
         "name": "Townsville Guide",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.townsvilleguide.com.au/logo.png"
+          "url": "https://www.townsvilleguide.com.au/favicon.png"
         }
       },
       "mainEntityOfPage": {

@@ -385,7 +385,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Magnetic Island Ferries — fares and bookings",
-        url: "https://www.magneticislandferries.com.au/fares/",
+        url: "https://www.magneticislandferries.com.au/walk-on-passenger-pricing/",
       },
       {
         name: "Translink — Route 250 and journey planner",

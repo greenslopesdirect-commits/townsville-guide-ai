@@ -39,7 +39,7 @@ const SEALINK_TIMETABLE = "https://www.sealinkqld.com.au/magnetic-island-ferry/t
 const SEALINK_FARES = "https://www.sealinkqld.com.au/magnetic-island-ferry/fares";
 const MI_FERRIES = "https://www.magneticislandferries.com.au/";
 const MI_FERRIES_TIMETABLE = "https://www.magneticislandferries.com.au/timetable/";
-const MI_FERRIES_FARES = "https://www.magneticislandferries.com.au/fares/";
+const MI_FERRIES_FARES = "https://www.magneticislandferries.com.au/walk-on-passenger-pricing/";
 const TRANSLINK = "https://translink.com.au/";
 const BOM = "http://www.bom.gov.au/qld/";
 

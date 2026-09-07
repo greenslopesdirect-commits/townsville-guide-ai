@@ -75,9 +75,9 @@ const Contact = () => {
               </p>
               <p className="mt-3 text-sm text-muted-foreground">
                 Need help right now?{" "}
-                <a href="/useful-contacts" className="text-primary font-medium hover:underline">
+                <Link to="/useful-contacts" className="text-primary font-medium hover:underline">
                   View Emergency Info →
-                </a>
+                </Link>
               </p>
             </header>
 

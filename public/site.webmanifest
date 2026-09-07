@@ -1,6 +1,6 @@
 {
-  "name": "Duncan's Guide – Townsville",
-  "short_name": "Duncan's Guide",
+  "name": "Townsville Guide",
+  "short_name": "Townsville Guide",
   "description": "Your local AI guide to Townsville and North Queensland",
   "start_url": "/",
   "display": "standalone",

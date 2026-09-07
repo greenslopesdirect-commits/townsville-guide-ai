@@ -25,6 +25,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
 import LocalInsightCard from "@/components/LocalInsightCard";
+import { triggerAiGuide } from "@/utils/aiGuide";
 
 const SITE = "https://www.townsvilleguide.com.au";
 const LAST_UPDATED = "5 August 2026";
@@ -794,8 +795,12 @@ const TheStrand = () => {
           </section>
 
           <div className="flex justify-center pt-4">
-            <Button asChild size="lg" className="w-full sm:w-auto">
-              <Link to="/">Ask our Townsville AI a question</Link>
+            <Button
+              size="lg"
+              className="w-full sm:w-auto"
+              onClick={() => triggerAiGuide("Plan a day at The Strand")}
+            >
+              Ask our Townsville AI a question
             </Button>
           </div>
         </main>
