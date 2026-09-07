@@ -39,8 +39,8 @@ const sitemapRoutes = [...sitemapXml.matchAll(/<loc>(.*?)<\/loc>/g)]
   .map((m) => m[1].replace(SITE, "") || "/")
   .sort();
 
-console.log(`Sitemap URL count: ${sitemapRoutes.length} (expected 46)`);
-check("sitemap", "url-count", sitemapRoutes.length === 46, `got ${sitemapRoutes.length}`);
+console.log(`Sitemap URL count: ${sitemapRoutes.length} (expected 47)`);
+check("sitemap", "url-count", sitemapRoutes.length === 47, `got ${sitemapRoutes.length}`);
 
 const NOINDEX_ROUTES = ["/privacy-policy", "/terms-of-use", "/affiliate-disclosure", "/cookie-policy"];
 for (const r of NOINDEX_ROUTES) {

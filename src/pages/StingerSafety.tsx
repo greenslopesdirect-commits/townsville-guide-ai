@@ -27,7 +27,7 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/guides/stinger-safety";
 
-const TITLE = "Marine Stinger Safety in Townsville | Swimming & Jellyfish Guide";
+const TITLE = "Stinger Season in Townsville: Marine Stinger Safety Guide";
 const DESCRIPTION =
   "Learn how to swim more safely in Townsville during marine stinger season, including stinger nets, suits, beach advice, first aid and emergency guidance.";
 

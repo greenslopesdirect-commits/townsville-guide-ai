@@ -75,7 +75,7 @@ const BillabongSanctuary = () => {
               "@type": "BreadcrumbList",
               "itemListElement": [
                 { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.townsvilleguide.com.au/" },
-                { "@type": "ListItem", "position": 2, "name": "Billabong Sanctuary", "item": "https://www.townsvilleguide.com.au/billabong-sanctuary/" }
+                { "@type": "ListItem", "position": 2, "name": "Billabong Sanctuary", "item": "https://www.townsvilleguide.com.au/billabong-sanctuary" }
               ]
             },
             {
