@@ -35,13 +35,13 @@ const OFFICIAL_LINKS = {
   qldTraffic: "https://qldtraffic.qld.gov.au/",
   tmrMountSpec:
     "https://www.tmr.qld.gov.au/projects/mount-spec-road-reconstruction-works",
-  palumaAlerts: "https://parks.desi.qld.gov.au/parks/paluma-range/alerts",
+  palumaAlerts: "https://parks.qld.gov.au/parks/paluma-range/about",
   palumaPark: "https://parks.desi.qld.gov.au/parks/paluma-range",
   bigCrystalCreek:
-    "https://parks.desi.qld.gov.au/parks/paluma-range/about/facilities",
+    "https://parks.qld.gov.au/parks/paluma-range/things-to-do",
   bomPaluma: "http://www.bom.gov.au/places/qld/paluma/",
   parkSafety:
-    "https://parks.desi.qld.gov.au/safety/water",
+    "https://parks.qld.gov.au/before-you-visit/visit-with-care/water-safety",
 };
 
 const faqItems = [

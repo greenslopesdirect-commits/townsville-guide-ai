@@ -126,7 +126,7 @@ serve(async (req) => {
     const web3Payload = {
       access_key: accessKey,
       subject,
-      from_name: "My Aussie Guide — Partner Enquiries",
+      from_name: "Townsville Guide — Partner Enquiries",
       // Web3Forms will set the reply-to to this email address
       replyto: cleanEmail,
       // Human-friendly fields (Web3Forms includes all fields in the email body)

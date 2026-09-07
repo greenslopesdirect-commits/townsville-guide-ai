@@ -32,13 +32,13 @@ const DESCRIPTION =
   "Learn how to swim more safely in Townsville during marine stinger season, including stinger nets, suits, beach advice, first aid and emergency guidance.";
 
 const COUNCIL_BEACHES =
-  "https://www.townsville.qld.gov.au/facilities-and-recreation/beaches-parks-and-playgrounds";
+  "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/beaches-and-coastal-management";
 const QLD_STINGERS =
-  "https://www.qld.gov.au/health/staying-healthy/environmental/marine-stingers";
+  "https://www.qld.gov.au/emergency/safety/recreation/dangerous-marine";
 const POISONS = "https://www.poisonsinfo.health.qld.gov.au/about-us";
 const BEACHSAFE = "https://beachsafe.org.au/";
 const CROCWISE =
-  "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise";
+  "https://www.qld.gov.au/environment/plants-animals/animals/living-with/crocodiles/becrocwise";
 const BOM = "http://www.bom.gov.au/qld/warnings/";
 const DASHBOARD = "https://disaster.townsville.qld.gov.au/";
 

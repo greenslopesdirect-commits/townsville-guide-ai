@@ -68,7 +68,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Perc Tucker Regional Gallery — Townsville City Council",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/galleries",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/perc-tucker-regional-gallery",
       },
       {
         name: "Great Barrier Reef Marine Park Authority — Reef HQ redevelopment",
@@ -132,7 +132,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Townsville City Council — Riverway",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/riverway",
       },
       {
         name: "Townsville City Council — parks and playgrounds",
@@ -175,7 +175,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Townsville City Council — Riverway",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/riverway",
       },
       { name: "Billabong Sanctuary", url: "https://billabongsanctuary.com.au/" },
       { name: "Museum of Tropical Queensland", url: "https://www.museum.qld.gov.au/mtq" },
@@ -205,7 +205,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Queensland Parks \u2014 Paluma Range National Park alerts",
-        url: "https://parks.desi.qld.gov.au/parks/paluma-range/alerts",
+        url: "https://parks.qld.gov.au/parks/paluma-range/about",
       },
       {
         name: "Queensland Parks \u2014 Paluma Range National Park overview",
@@ -213,11 +213,11 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Queensland Parks \u2014 Paluma Range facilities (Big Crystal Creek, McClellands Lookout, Birthday Creek Falls)",
-        url: "https://parks.desi.qld.gov.au/parks/paluma-range/about/facilities",
+        url: "https://parks.qld.gov.au/parks/paluma-range/things-to-do",
       },
       {
         name: "Queensland Parks \u2014 water and swimming safety",
-        url: "https://parks.desi.qld.gov.au/safety/water",
+        url: "https://parks.qld.gov.au/before-you-visit/visit-with-care/water-safety",
       },
       {
         name: "Queensland Parks \u2014 domestic animals in national parks",
@@ -236,11 +236,11 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Townsville City Council — Castle Hill lookout and walking tracks",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds/castle-hill",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/popular-parks-and-playgrounds/parks/castle-hill-lookout-and-walking-tracks",
       },
       {
         name: "Townsville City Council — walking and cycling trails",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/sport-and-recreation/walking-and-cycling",
+        url: "https://www.townsville.qld.gov.au/community-support/health-and-exercise/walking-and-cycling-trails",
       },
       {
         name: "Townsville City Council — news, closures and road information",
@@ -309,7 +309,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Townsville City Council — Castle Hill",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds/castle-hill",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/popular-parks-and-playgrounds/parks/castle-hill-lookout-and-walking-tracks",
       },
     ],
   },
@@ -319,7 +319,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Queensland Parks — Paluma Range National Park park alerts",
-        url: "https://parks.desi.qld.gov.au/parks/paluma-range/alerts",
+        url: "https://parks.qld.gov.au/parks/paluma-range/about",
       },
     ],
   },
@@ -330,7 +330,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Queensland Parks \u2014 Forts Walk, Magnetic Island National Park",
-        url: "https://parks.desi.qld.gov.au/parks/magnetic-island/about/walks/forts-walk",
+        url: "https://parks.qld.gov.au/parks/magnetic-island/journeys/forts-walk",
       },
       {
         name: "Queensland Parks \u2014 Magnetic Island National Park (Forts Junction access)",
@@ -338,11 +338,11 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Queensland Parks \u2014 Magnetic Island park alerts",
-        url: "https://parks.desi.qld.gov.au/parks/magnetic-island/alerts",
+        url: "https://parks.qld.gov.au/parks/magnetic-island/about",
       },
       {
         name: "Queensland Parks \u2014 visiting safely, Magnetic Island",
-        url: "https://parks.desi.qld.gov.au/parks/magnetic-island/about/safety",
+        url: "https://parks.qld.gov.au/parks/magnetic-island/visiting-safely",
       },
       {
         name: "Queensland Parks \u2014 nature, culture and history",
@@ -465,11 +465,11 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Townsville City Council — Beaches, lifeguards and marine stinger enclosures",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/beaches-parks-and-playgrounds",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/beaches-and-coastal-management",
       },
       {
         name: "Queensland Government — Marine stingers",
-        url: "https://www.qld.gov.au/health/staying-healthy/environmental/marine-stingers",
+        url: "https://www.qld.gov.au/emergency/safety/recreation/dangerous-marine",
       },
       {
         name: "Queensland Poisons Information Centre — 13 11 26",
@@ -494,15 +494,15 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Townsville City Council — Dog off-leash areas",
-        url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs/dog-off-leash-areas",
+        url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/off-leash-areas",
       },
       {
         name: "Townsville City Council — Responsible pet ownership and dog rules",
-        url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs",
+        url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/be-a-responsible-pet-owner",
       },
       {
         name: "Queensland Government — Be Crocwise",
-        url: "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise",
+        url: "https://www.qld.gov.au/environment/plants-animals/animals/living-with/crocodiles/becrocwise",
       },
       {
         name: "Bureau of Meteorology — Queensland tide predictions",
@@ -521,7 +521,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Townsville City Council — Dog off-leash areas",
-        url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs/dog-off-leash-areas",
+        url: "https://www.townsville.qld.gov.au/community-support/pets-and-animals/off-leash-areas",
       },
       {
         name: "Townsville City Council — The Strand facilities, pools and closures",
@@ -542,7 +542,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Townsville City Council — beaches and pools",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/beaches-and-pools",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/beaches-and-coastal-management",
       },
       {
         name: "Surf Life Saving Queensland",
@@ -554,7 +554,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Queensland Government — Be Crocwise",
-        url: "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise",
+        url: "https://www.qld.gov.au/environment/plants-animals/animals/living-with/crocodiles/becrocwise",
       },
       {
         name: "Bureau of Meteorology — Townsville",
@@ -571,7 +571,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Townsville City Council — Jezzine Barracks",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds/jezzine-barracks",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/jezzine-barracks",
       },
       {
         name: "Army Museum North Queensland",
@@ -617,11 +617,11 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "Townsville City Council — Riverway",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/riverway",
       },
       {
         name: "Townsville City Council — Riverway Lagoons",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway/riverway-lagoons",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/sport-and-leisure-facilities/townsville-pools/riverway-lagoons",
       },
       {
         name: "CityLibraries Townsville",
@@ -629,7 +629,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Pinnacles Gallery — Townsville City Council",
-        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/galleries",
+        url: "https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/pinnacles-gallery",
       },
       {
         name: "Translink — journey planner",
@@ -800,7 +800,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Queensland Government — Crocwise safety",
-        url: "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise",
+        url: "https://www.qld.gov.au/environment/plants-animals/animals/living-with/crocodiles/becrocwise",
       },
       {
         name: "Surf Life Saving Queensland — beach safety",

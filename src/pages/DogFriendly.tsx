@@ -46,11 +46,11 @@ const DESCRIPTION =
   "Find Townsville's dog beaches and off-leash areas, including Pallarenda and Benwell Road, with dog park, heat, tide, crocodile and local safety advice.";
 
 const COUNCIL_OFF_LEASH =
-  "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs/dog-off-leash-areas";
+  "https://www.townsville.qld.gov.au/community-support/pets-and-animals/off-leash-areas";
 const COUNCIL_DOGS =
-  "https://www.townsville.qld.gov.au/community-support/pets-and-animals/dogs";
+  "https://www.townsville.qld.gov.au/community-support/pets-and-animals/be-a-responsible-pet-owner";
 const CROCWISE =
-  "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise";
+  "https://www.qld.gov.au/environment/plants-animals/animals/living-with/crocodiles/becrocwise";
 const TIDES = "http://www.bom.gov.au/australia/tides/";
 const DASHBOARD = "https://disaster.townsville.qld.gov.au/";
 

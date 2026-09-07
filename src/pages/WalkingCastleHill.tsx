@@ -31,9 +31,9 @@ import heroImage from "@/assets/castle-hill-townsville.webp";
 const SITE = "https://www.townsvilleguide.com.au";
 
 const COUNCIL_CASTLE_HILL =
-  "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds/castle-hill";
+  "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/popular-parks-and-playgrounds/parks/castle-hill-lookout-and-walking-tracks";
 const COUNCIL_TRAILS =
-  "https://www.townsville.qld.gov.au/facilities-and-recreation/sport-and-recreation/walking-and-cycling";
+  "https://www.townsville.qld.gov.au/community-support/health-and-exercise/walking-and-cycling-trails";
 
 const TAKE_LIST = [
   "Water — more than you think you need",

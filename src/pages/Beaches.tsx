@@ -150,7 +150,7 @@ const MISTAKES = [
 const STATUS_CHECKS = [
   {
     name: "Townsville City Council — beaches and lifeguard information",
-    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/beaches-and-pools",
+    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/beaches-and-coastal-management",
     text: "Current beach status, patrol arrangements and facility information.",
   },
   {
@@ -175,7 +175,7 @@ const STATUS_CHECKS = [
   },
   {
     name: "Queensland Government — Be Crocwise",
-    url: "https://www.qld.gov.au/environment/plants-animals/animals/crocodiles/crocwise",
+    url: "https://www.qld.gov.au/environment/plants-animals/animals/living-with/crocodiles/becrocwise",
     text: "Official crocodile safety guidance for North Queensland.",
   },
 ];

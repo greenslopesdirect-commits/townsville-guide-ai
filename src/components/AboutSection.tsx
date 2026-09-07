@@ -36,7 +36,7 @@ const AboutSection = () => {
             
             <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
               <p>Hi, I'm Duncan — the real person behind Townsville Guide and a proud Townsville local.</p>
-              <p>After moving to North Queensland, I quickly fell in love with Townsville's relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. With a background in digital design, websites, and AI tools, I created this platform to share the very best of our city in a simple, friendly, and genuinely helpful way.</p>
+              <p>I've called Townsville home for three years now, and in that time I've properly fallen for its relaxed energy, sunshine, community spirit, and endless outdoor lifestyle. Before that, my travel was mostly the long way round — flights in from the UK to Brisbane to see family, a few trips to Sydney, a stretch of a few weeks in Mission Beach — so actually living in North Queensland instead of just passing through has been the real difference. With a background in digital design, websites, and AI tools, I created this platform to share the very best of our city in a simple, friendly, and genuinely helpful way.</p>
               <p>
                 I'm regularly out exploring Townsville — its beaches, cafés, dog-friendly spots and local events — and I've built this guide to make it easier for others to do the same.
               </p>

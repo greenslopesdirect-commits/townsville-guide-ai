@@ -1,6 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { toast } from "@/components/ui/sonner";
 import { MapPinned, Wrench, Heart, MessageSquare } from "lucide-react";
+
+const EMAIL = "greenslopesdirect@gmail.com";
+
 const CommunityTrustSection = () => {
   const trustStats = [
     {
@@ -22,10 +25,10 @@ const CommunityTrustSection = () => {
 
   const handleCopyEmail = async () => {
     try {
-      await navigator.clipboard.writeText("duncankross@gmail.com");
+      await navigator.clipboard.writeText(EMAIL);
       toast("Email address copied to clipboard!");
     } catch (error) {
-      toast("Unable to copy email. Please copy it manually: duncankross@gmail.com");
+      toast(`Unable to copy email. Please copy it manually: ${EMAIL}`);
     }
   };
 

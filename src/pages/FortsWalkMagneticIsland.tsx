@@ -41,10 +41,10 @@ const PAGE_DESCRIPTION =
 const LAST_UPDATED = "5 August 2026";
 
 const QPWS_FORTS_WALK =
-  "https://parks.desi.qld.gov.au/parks/magnetic-island/about/walks/forts-walk";
-const QPWS_ALERTS = "https://parks.desi.qld.gov.au/parks/magnetic-island/alerts";
+  "https://parks.qld.gov.au/parks/magnetic-island/journeys/forts-walk";
+const QPWS_ALERTS = "https://parks.qld.gov.au/parks/magnetic-island/about";
 const QPWS_PARK = "https://parks.desi.qld.gov.au/parks/magnetic-island";
-const QPWS_SAFETY = "https://parks.desi.qld.gov.au/parks/magnetic-island/about/safety";
+const QPWS_SAFETY = "https://parks.qld.gov.au/parks/magnetic-island/visiting-safely";
 const QPWS_NATURE = "https://parks.desi.qld.gov.au/parks/magnetic-island/about/culture";
 const TRANSLINK = "https://translink.com.au/";
 const BOM = "http://www.bom.gov.au/qld/forecasts/townsville.shtml";

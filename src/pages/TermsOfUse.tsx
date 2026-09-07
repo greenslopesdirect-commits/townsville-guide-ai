@@ -3,6 +3,8 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
 
+const EMAIL = "greenslopesdirect@gmail.com";
+
 const TermsOfUse = () => {
   return (
     <>
@@ -119,10 +121,10 @@ const TermsOfUse = () => {
             </p>
             <p>
               <a
-                href="mailto:duncankross@gmail.com"
+                href={`mailto:${EMAIL}`}
                 className="text-primary underline"
               >
-                duncankross@gmail.com
+                {EMAIL}
               </a>
             </p>
           </div>

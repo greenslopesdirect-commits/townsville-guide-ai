@@ -88,12 +88,12 @@ const MISTAKES = [
 const STATUS_CHECKS = [
   {
     name: "Townsville City Council — Riverway",
-    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway",
+    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/riverway",
     text: "Precinct information, facilities and current notices.",
   },
   {
     name: "Riverway Lagoons — Townsville City Council",
-    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/riverway/riverway-lagoons",
+    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/sport-and-leisure-facilities/townsville-pools/riverway-lagoons",
     text: "Current supervised opening hours and any temporary closures.",
   },
   {
@@ -103,7 +103,7 @@ const STATUS_CHECKS = [
   },
   {
     name: "Pinnacles Gallery — Townsville City Council",
-    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/galleries",
+    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/pinnacles-gallery",
     text: "Current exhibitions and gallery opening information.",
   },
   {

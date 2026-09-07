@@ -84,7 +84,7 @@ const MISTAKES = [
 const STATUS_CHECKS = [
   {
     name: "Townsville City Council — Jezzine Barracks",
-    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-and-playgrounds/jezzine-barracks",
+    url: "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/jezzine-barracks",
     text: "Precinct information, facilities, access and current notices.",
   },
   {

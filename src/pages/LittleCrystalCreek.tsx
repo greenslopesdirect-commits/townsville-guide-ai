@@ -92,7 +92,7 @@ const LittleCrystalCreek = () => {
               official park alert before travelling because reopening dates may change.
             </p>
             <a
-              href="https://parks.desi.qld.gov.au/parks/paluma-range/alerts"
+              href="https://parks.qld.gov.au/parks/paluma-range/about"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-amber-900 dark:text-amber-200 underline underline-offset-4"
