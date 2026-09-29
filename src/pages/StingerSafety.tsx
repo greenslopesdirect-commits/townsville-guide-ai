@@ -27,9 +27,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/guides/stinger-safety";
 
-const TITLE = "Stinger Season in Townsville: Marine Stinger Safety Guide";
+const TITLE = "Townsville Stinger Season 2026–27: Safety Guide";
 const DESCRIPTION =
-  "Learn how to swim more safely in Townsville during marine stinger season, including stinger nets, suits, beach advice, first aid and emergency guidance.";
+  "Planning to swim in Townsville this stinger season (typically November–May)? Stinger nets, suits, beach advice, first aid and emergency guidance.";
 
 const COUNCIL_BEACHES =
   "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/beaches-and-coastal-management";
@@ -134,7 +134,7 @@ const StingerSafety = () => (
               mainEntityOfPage: `${SITE}${PATH}`,
               author: { "@type": "Person", name: "Duncan Ross" },
               publisher: { "@type": "Organization", name: "Townsville Guide" },
-              dateModified: "2026-08-07",
+              dateModified: "2026-09-29",
             },
             {
               "@type": "BreadcrumbList",

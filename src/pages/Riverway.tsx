@@ -188,7 +188,7 @@ const Riverway = () => {
   return (
     <>
       <SEOHead
-        title="Riverway Townsville | Lagoons, Parklands & Visitor Guide"
+        title="Riverway Townsville: Free Lagoons & Parks"
         description={DESCRIPTION}
         canonical={`${SITE}${PATH}`}
         ogType="article"

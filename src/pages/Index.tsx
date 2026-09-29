@@ -40,7 +40,8 @@ const Index = () => {
             "@context": "https://schema.org",
             "@type": "WebSite",
             name: "Townsville Guide",
-            url: "https://www.townsvilleguide.com.au",
+            alternateName: ["Townsville Guide AU", "townsvilleguide.com.au"],
+            url: "https://www.townsvilleguide.com.au/",
           })}
         </script>
 
