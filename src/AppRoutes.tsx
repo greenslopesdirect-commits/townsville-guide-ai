@@ -104,6 +104,7 @@ const AppRoutes = () => (
         <Route path="guides/walking-castle-hill" element={<WalkingCastleHill />} />
         <Route path="guides/paluma-day-trip" element={<PalumaDayTrip />} />
         <Route path="cowboys-stadium-guide" element={<CowboysStadiumGuide />} />
+        <Route path="cowboys-game-day" element={<Navigate to="/cowboys-stadium-guide" replace />} />
         <Route path="north-shore-townsville" element={<NorthShoreTownsville />} />
 
         {/* DEEP DIVE BEACH PAGES */}

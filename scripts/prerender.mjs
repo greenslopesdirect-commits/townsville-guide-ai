@@ -40,6 +40,15 @@ const NOINDEX_ROUTES = [
   "/cookie-policy",
 ];
 
+// Old URLs that must not serve the homepage shell. The host ignores public/_redirects,
+// so each gets a tiny static page: meta-refresh (treated by Google as a redirect) plus a
+// canonical pointing at the target. Keep in sync with the <Navigate> routes in AppRoutes.tsx.
+const REDIRECTS = {
+  "/flights": "/townsville-airport",
+  "/guides/jezzine-barracks": "/jezzine-barracks",
+  "/cowboys-game-day": "/cowboys-stadium-guide",
+};
+
 function escapeHtml(s) {
   return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 }
@@ -196,6 +205,28 @@ for (const routePath of orderedRoutes) {
   const schemaCount = (schemaHtml.match(/<script/g) || []).length;
   results.push({ routePath, outPath, h1, title: seo?.title, schemaCount });
   console.log(`[prerender] ${routePath} -> ${outPath.replace(ROOT, "")}  (h1: ${h1 ? "ok" : "MISSING"}, schema: ${schemaCount})`);
+}
+
+// ---- 3b. Redirect stubs -----------------------------------------------------
+for (const [from, to] of Object.entries(REDIRECTS)) {
+  const target = `${SITE}${to}`;
+  const stub = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting to ${escapeHtml(to)} | Townsville Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="${target}" />
+    <meta http-equiv="refresh" content="0; url=${target}" />
+    <script>window.location.replace(${JSON.stringify(target)});</script>
+  </head>
+  <body>
+    <p>This page has moved to <a href="${target}">${target}</a>.</p>
+  </body>
+</html>
+`;
+  const outPath = writeRouteFile(from, stub);
+  console.log(`[prerender] redirect ${from} -> ${to}  (${outPath.replace(ROOT, "")})`);
 }
 
 // ---- 4. 404 -----------------------------------------------------------------
