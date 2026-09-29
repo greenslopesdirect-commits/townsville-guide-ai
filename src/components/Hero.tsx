@@ -109,10 +109,10 @@ const Hero = () => {
       </div>
 
       <div className="container relative z-10 px-4 pt-20 pb-12 text-center mx-auto max-w-3xl">
-        <p className="text-sm md:text-base uppercase tracking-[0.25em] text-yellow-300/90 font-semibold mb-4 drop-shadow">
-          Townsville Guide
-        </p>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-5 drop-shadow-xl leading-tight tracking-tight">
+          <span className="block text-sm md:text-base uppercase tracking-[0.25em] text-yellow-300/90 font-semibold mb-4 drop-shadow">
+            Townsville Guide:
+          </span>
           Discover the Best of{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-400">
             Townsville

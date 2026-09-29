@@ -18,9 +18,10 @@ const SEOHead = ({
   ogType = "website",
   noindex = false,
 }: SEOHeadProps) => {
-  const fullTitle = title.includes("Townsville Guide")
-    ? title
-    : `${title} | Townsville Guide`;
+  // Append the brand suffix only while the full title stays within ~60 characters
+  // (longer titles are truncated in results); the homepage title already carries the brand.
+  const suffixed = `${title} | Townsville Guide`;
+  const fullTitle = title.includes("Townsville Guide") || suffixed.length > 60 ? title : suffixed;
 
   // Standardize on NO trailing slash (except the root "/"). Accept either a
   // full URL or a path in the `canonical` prop; if none is supplied, derive

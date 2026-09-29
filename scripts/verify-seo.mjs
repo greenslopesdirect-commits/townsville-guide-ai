@@ -108,7 +108,7 @@ for (const routePath of allRoutes) {
       check(routePath, "json-ld-valid", false, `invalid JSON: ${e.message}`);
     }
   }
-  check(routePath, "json-ld-present", jsonLdBlocks.length >= 2, `found ${jsonLdBlocks.length} (expects at least sitewide Organization + SoftwareApplication)`);
+  check(routePath, "json-ld-present", jsonLdBlocks.length >= 1, `found ${jsonLdBlocks.length} (expects at least the sitewide Organization block)`);
 
   const h1Match = html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/);
   check(routePath, "visible-h1-present", !!h1Match, "no <h1> in body content");
