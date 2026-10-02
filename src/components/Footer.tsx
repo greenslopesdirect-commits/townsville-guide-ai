@@ -152,10 +152,10 @@ const Footer = () => {
         {/* Acknowledgement of Country */}
         <div className="mt-12 border-t border-border/40 pt-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h4 className="text-sm font-medium text-muted-foreground mb-3">
+            <h4 className="text-sm font-semibold text-foreground mb-3">
               Acknowledgement of Country
             </h4>
-            <p className="text-xs text-muted-foreground/80 leading-relaxed">
+            <p className="text-sm text-foreground/80 leading-relaxed">
               Townsville Guide acknowledges the Traditional Owners of the land on which we live and work, 
               the Wulgurukaba and Bindal people, and recognises their continuing connection to land, 
               sea and community. We pay our respects to their Elders past and present and extend that 
