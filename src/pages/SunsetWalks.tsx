@@ -95,7 +95,8 @@ const SunsetWalks = () => {
             eases off, the tropical sea breeze picks up along the foreshore and the light turns
             gold over Cleveland Bay and Magnetic Island — and half the city seems to head
             outside. Whether it's a quick loop after work, a slow amble with the dog, or a
-            proper climb up Castle Hill, sunset is when Townsville is at its best.
+            proper climb up Castle Hill, sunset is when Townsville is at its best. For more ideas, see
+            our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
           </p>
         </section>
 

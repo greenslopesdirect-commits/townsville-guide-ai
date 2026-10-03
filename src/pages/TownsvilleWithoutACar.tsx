@@ -203,6 +203,7 @@ const TownsvilleWithoutACar = () => {
           <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-3xl mx-auto">
             The key is choosing the right place to stay and planning a simpler itinerary around the
             most walkable parts of the city.
+            For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
           </p>
         </div>
       </section>

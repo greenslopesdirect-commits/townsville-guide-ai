@@ -201,6 +201,7 @@ const MagneticIslandFerry = () => {
               Fares, timetables, parking charges and boarding requirements can change, so use this
               guide to understand the options and then confirm the latest details with the relevant
               operator.
+              For ideas once you arrive, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
             </p>
             <p className="text-sm text-muted-foreground">Updated {LAST_UPDATED}</p>
             <img

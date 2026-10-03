@@ -36,9 +36,9 @@ import maxKissingPoint from "@/assets/max-at-kissing-point.webp";
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/jezzine-barracks";
 
-const TITLE = "Jezzine Barracks Townsville | Kissing Point Visitor Guide";
+const TITLE = "Jezzine Barracks & Kissing Point: Walk, Playground & Views";
 const DESCRIPTION =
-  "Explore Jezzine Barracks and Kissing Point in Townsville, with coastal walks, military and Aboriginal heritage, playgrounds, views, parking and local tips.";
+  "Jezzine Barracks and Kissing Point in Townsville: the coastal boardwalk, playground, military and Aboriginal heritage, views, parking and local tips.";
 
 const ITINERARIES = [
   {

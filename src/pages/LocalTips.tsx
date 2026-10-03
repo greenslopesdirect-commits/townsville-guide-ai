@@ -139,6 +139,7 @@ const LocalTips = () => (
         Think of this as the practical little things a local would tell you before you start
         planning your days. It is deliberately light on detail: where something needs a full
         explanation, we point you at the guide that covers it properly.
+        If you are still deciding what to do, start with our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
       </p>
 
       <CurrentTownsvilleWeather className="mb-10" />

@@ -194,7 +194,7 @@ const StingerSafety = () => (
           <Link to="/first-time-in-townsville" className="text-primary hover:underline">
             first-time visitor guide
           </Link>{" "}
-          for the wider picture.
+          for the wider picture, or browse our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
         </p>
       </div>
 

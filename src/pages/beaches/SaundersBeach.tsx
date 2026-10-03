@@ -56,8 +56,8 @@ const SaundersBeach = () => {
   return (
     <>
       <SEOHead
-        title="Saunders Beach Townsville | Local Guide, Photos & Tips"
-        description="A local's guide to Saunders Beach, Townsville: 6km of unspoilt sand, dog-friendly low-tide runs, stargazing tips, and honest stinger-season safety advice."
+        title="Saunders Beach Townsville: Swimming, Dogs & Local Tips"
+        description="Saunders Beach is 35 minutes north of Townsville: quiet sand, dog-friendly low-tide walks, stinger-season advice and what to know before you go."
         canonical="https://www.townsvilleguide.com.au/beaches/saunders-beach"
         ogImage="https://www.townsvilleguide.com.au/saunders-beach-blue-sky.webp"
       />
@@ -100,6 +100,7 @@ const SaundersBeach = () => {
             Tucked about 35 minutes north of the city, Saunders Beach is the kind of place
             Townsville locals quietly keep to themselves. No big resorts, no crowds—just a
             long, soft stretch of sand framed by a natural tree line and the Coral Sea.
+            For more ideas, see our guide to the best <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
           </p>
           <a
             href="https://www.google.com/maps/search/?api=1&query=Saunders+Beach+Townsville+QLD"

@@ -236,6 +236,7 @@ const FortsWalkMagneticIsland = () => {
             <p className="text-muted-foreground leading-relaxed">
               The walk is exposed, can become very hot and may be affected by temporary park
               closures, so check current conditions and carry enough water before setting out.
+              If you are building a bigger itinerary, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
             </p>
             <p className="text-sm text-muted-foreground">Updated {LAST_UPDATED}</p>
             <img

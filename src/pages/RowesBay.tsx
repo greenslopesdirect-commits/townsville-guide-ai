@@ -110,7 +110,7 @@ const RowesBay = () => {
                 Rowes Bay offers a much quieter, more relaxed atmosphere than The Strand. It connects the city to Pallarenda and is famous for its wide, sweeping views of Magnetic Island.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Because of the bay's angle, this is one of the few places on the East Coast where you can watch the sunset over the water (to the North-West). It's a favorite spot for evening walks, fish and chips on the grass, and caravan travelers.
+                Because of the bay's angle, this is one of the few places on the East Coast where you can watch the sunset over the water (to the North-West). It's a favorite spot for evening walks, fish and chips on the grass, and caravan travelers. For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
               </p>
             </section>
 

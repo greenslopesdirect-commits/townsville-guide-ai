@@ -126,6 +126,7 @@ const LittleCrystalCreek = () => {
       </p>
       <p className="text-lg text-muted-foreground leading-relaxed mb-6">
         If you're planning a free day trip from Townsville, this is one of the most scenic options in North Queensland.
+        Looking for more? Browse our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
       </p>
       <p className="text-sm text-muted-foreground leading-relaxed mb-6">
         The visitor information below describes the site as it normally operates and applies after the day-use

@@ -34,9 +34,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/riverway";
 
-const TITLE = "Riverway Townsville: Lagoons, Parklands & Things to Do";
+const TITLE = "Riverway Lagoons Townsville: Free Swimming, Parking & Tips";
 const DESCRIPTION =
-  "Plan a visit to Riverway Townsville, with free swimming lagoons, parklands, library, gallery, walking paths, parking, family tips and local advice.";
+  "Free swimming lagoons, parklands, walking paths and playgrounds at Riverway, Townsville. Parking, what to bring and family tips from a local.";
 
 const LAGOON_STATUS =
   "Riverway Lagoons operate during supervised opening hours and the gates are locked outside those times. Check Townsville City Council for the current schedule before visiting.";
@@ -188,7 +188,7 @@ const Riverway = () => {
   return (
     <>
       <SEOHead
-        title="Riverway Townsville: Free Lagoons & Parks"
+        title={TITLE}
         description={DESCRIPTION}
         canonical={`${SITE}${PATH}`}
         ogType="article"

@@ -422,6 +422,7 @@ const BeatTheHeat = () => {
             works for locals is simple: start outdoor activities early, plan swimming, shade, lunch
             or indoor time around the middle of the day, then head back outside in the late
             afternoon and evening.
+            Our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link> has plenty of ideas for each part of the day.
           </p>
           <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-3xl mx-auto">
             The one thing worth staying flexible about is the plan itself. Change it when humidity,

@@ -171,6 +171,7 @@ const TheStrand = () => {
               Visitors can spend anything from an hour to most of a day here, and because it runs
               alongside North Ward and the city, it is one of the easiest Townsville attractions to
               enjoy without a car.
+              For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
             </p>
           </header>
 

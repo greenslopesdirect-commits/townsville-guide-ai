@@ -501,6 +501,7 @@ const TownsvilleWithKids = () => {
             fewer all-weather attractions than a major capital city. The family appeal comes from
             outdoor activities, wildlife, swimming, parks and easy day trips — and from planning
             around the heat, which matters most with younger children.
+            For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
           </p>
           <ul className="mt-6 flex flex-wrap justify-center gap-2">
             {FAMILY_STRENGTHS.map((s) => (

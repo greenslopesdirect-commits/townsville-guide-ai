@@ -307,6 +307,7 @@ const Beaches = () => {
             conventional surf beaches. Cleveland Bay is sheltered, the water is usually calm, and
             the appeal is early morning walks, shaded foreshores, picnics and long views out toward
             Magnetic Island rather than waves.
+            Once you have picked a beach, there are plenty more <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link> beyond the sand.
           </p>
           <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-3xl mx-auto">
             They are also not interchangeable. Swimming suitability varies significantly between

@@ -178,6 +178,7 @@ const TownsvilleInOneDay = () => {
           <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-3xl mx-auto">
             The plan works best with a car, although much of the morning can be completed on foot
             around The Strand and North Ward.
+            If you have more time, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
           </p>
         </div>
       </section>

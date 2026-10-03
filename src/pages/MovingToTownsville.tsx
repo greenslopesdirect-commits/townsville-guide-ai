@@ -61,6 +61,7 @@ const MovingToTownsville = () => {
             <p className="text-muted-foreground leading-relaxed">
               This guide is written by locals, for people thinking about the move. It covers where to live,
               what jobs are out there, and the day-to-day essentials you'll need to settle in.
+              Once you have settled in, our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link> is a good place to start exploring.
             </p>
           </header>
 

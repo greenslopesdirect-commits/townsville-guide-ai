@@ -103,7 +103,7 @@ const BushlandBeach = () => {
               one of the city's Northern Beaches. It's a suburban foreshore rather than a visitor
               destination — the appeal is the local beach lifestyle: a grassed foreshore, an easy
               walk, somewhere to eat a picnic, and open coastal views that are especially good in
-              the late afternoon.
+              the late afternoon. For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
             </p>
           </section>
 

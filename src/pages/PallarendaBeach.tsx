@@ -102,6 +102,7 @@ const PallarendaBeach = () => {
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 A quieter alternative to The Strand — famous for its off-leash dog zones, fishing channels, and views of Magnetic Island.
+                For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
               </p>
             </div>
 
