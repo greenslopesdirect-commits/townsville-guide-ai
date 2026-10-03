@@ -171,8 +171,7 @@ const WalkingCastleHill = () => {
           </p>
           <p className="text-muted-foreground leading-relaxed">
             Conditions can change after severe weather, maintenance or planned works, so check
-            current Townsville City Council notices before walking. For other ideas, see our guide to
-            <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
+            current Townsville City Council notices before walking. For other ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
           </p>
         </div>
       </section>
