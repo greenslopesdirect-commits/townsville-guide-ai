@@ -25,6 +25,6 @@ dist-ssr
 *.sw?
 
 # Environment (secrets must never be committed)
-.env
+# .env is committed on purpose: Lovable builds from the repo and needs these public VITE_ Supabase values. Never put secret keys in it.
 .env.*
 !.env.example
