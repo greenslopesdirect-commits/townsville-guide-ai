@@ -247,7 +247,8 @@ const Riverway = () => {
           <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-3xl mx-auto">
             Most visitors come for the lagoons, but Riverway is far more than the swimming — it is
             where a lot of Townsville families spend a relaxed morning or afternoon, and almost all
-            of it costs nothing.
+            of it costs nothing. It is one of the best free
+            <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
           </p>
         </div>
       </section>

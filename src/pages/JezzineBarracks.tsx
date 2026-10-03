@@ -233,7 +233,8 @@ const JezzineBarracks = () => {
           </p>
           <p className="mt-4 text-sm md:text-base text-muted-foreground max-w-3xl mx-auto">
             It is much more than a playground or a military site, and for most people it is a
-            comfortable one- to two-hour experience rather than an all-day attraction.
+            comfortable one- to two-hour experience rather than an all-day attraction. It fits well
+            alongside other <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
           </p>
         </div>
       </section>
