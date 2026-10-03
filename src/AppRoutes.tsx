@@ -1,4 +1,5 @@
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
+import { lazyWithRetry as lazy } from "@/lib/lazyWithRetry";
 import { Routes, Route, Navigate, useParams } from "react-router-dom";
 const DogFriendly = lazy(() => import("@/pages/DogFriendly"));
 const Shopping = lazy(() => import("@/pages/Shopping"));
