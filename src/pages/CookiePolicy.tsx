@@ -79,9 +79,9 @@ const CookiePolicy = () => {
             <p>We use cookies for several reasons:</p>
             <ul>
               <li>To improve website speed and functionality</li>
-              <li>To remember your preferences (such as cookie consent)</li>
+              <li>To remember your preferences</li>
               <li>To analyse anonymous visitor traffic through Google Analytics</li>
-              <li>To support affiliate links (e.g., Booking.com tracking)</li>
+              <li>To support affiliate links (e.g., Stay22 and Booking.com tracking)</li>
             </ul>
 
             <h2 className="text-2xl font-semibold text-foreground">2. Types of Cookies We Use</h2>
@@ -100,14 +100,17 @@ const CookiePolicy = () => {
 
             <h3 className="text-xl font-semibold text-foreground">Affiliate Cookies</h3>
             <p>
-              Some pages may include affiliate links (e.g., Booking.com or Skyscanner). These services
-              may set their own cookies to track referrals and purchases.
+              Some pages include affiliate links (e.g., Booking.com or Skyscanner), and we use
+              Stay22, which shows travel options and routes bookings to partners such as Booking.com,
+              Expedia, Agoda and GetYourGuide. Stay22 and these partners may set their own cookies to
+              track referrals and purchases.
             </p>
 
             <h2 className="text-2xl font-semibold text-foreground">3. Cookie Consent</h2>
             <p>
-              When you first visit the website, a cookie banner may appear to obtain your
-              consent for optional cookies such as analytics or affiliate tracking.
+              We do not currently show a cookie consent banner. Analytics and affiliate cookies may
+              be set when you visit the site or click an affiliate link. You can block or delete
+              them at any time using your browser settings (see below).
             </p>
 
             <h2 className="text-2xl font-semibold text-foreground">4. How to Disable Cookies</h2>

@@ -82,6 +82,13 @@ const AffiliateDisclosure = () => {
             </p>
 
             <p>
+              We also use Stay22, a travel technology service that shows accommodation and other
+              travel options on our pages and routes bookings to partners such as Booking.com,
+              Expedia, Agoda and GetYourGuide. Some links on this website are added automatically
+              by Stay22 rather than placed by us, and we may earn a commission if you book through them.
+            </p>
+
+            <p>
               Affiliate earnings help support the operation and ongoing development of 
               Townsville Guide — including maintaining server costs, improving our local features, 
               and providing up-to-date local Townsville guides.
