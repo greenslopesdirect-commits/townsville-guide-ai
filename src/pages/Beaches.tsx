@@ -40,9 +40,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/beaches";
 
-const TITLE = "Best Beaches in Townsville | Swimming, Pallarenda & Local Guide";
+const TITLE = "Townsville Beaches: Where You Can Swim & Stinger Season";
 const DESCRIPTION =
-  "Discover Townsville's best beaches, including The Strand, Pallarenda, Rowes Bay and northern beaches, with swimming, stinger, family and access advice.";
+  "Can you swim at Townsville beaches? Yes, in netted or patrolled areas. Stinger season runs Nov–May. Compare The Strand, Pallarenda, Rowes Bay and more.";
 
 const COMPARISON = [
   {
@@ -300,7 +300,7 @@ const Beaches = () => {
             Townsville Coastline
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-5">
-            Best Beaches in Townsville: Swimming, Pallarenda &amp; Local Guide
+            Townsville Beaches: Where to Swim, and What to Know First
           </h1>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
             Townsville's beaches make more sense as part of a tropical coastal lifestyle than as
@@ -318,6 +318,39 @@ const Beaches = () => {
       </section>
 
       <div className="container mx-auto max-w-4xl px-4 py-12 space-y-14">
+        <section
+          aria-labelledby="can-you-swim"
+          className="rounded-xl border-2 border-primary/30 bg-primary/5 p-6"
+        >
+          <h2 id="can-you-swim" className="text-2xl font-bold mb-3">
+            Can you swim at Townsville beaches?
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-3">
+            Yes, but not everywhere and not without checking first. Swim in designated areas,
+            between the flags where lifeguards are on duty, or at the netted Rockpool on The
+            Strand. Calm-looking water is not a safety guide.
+          </p>
+          <ul className="list-disc pl-5 space-y-2 text-muted-foreground leading-relaxed mb-3">
+            <li>
+              <strong className="text-foreground">Stingers:</strong> the typical season runs from
+              November to May, though stingers can be present outside those months. Only selected
+              beaches have seasonal nets, and nets reduce the risk rather than remove it.
+            </li>
+            <li>
+              <strong className="text-foreground">Crocodiles:</strong> they are not routinely on
+              the main visitor beaches, but creek mouths and estuaries can be crocodile habitat.
+              Obey warning signs.
+            </li>
+          </ul>
+          <p className="text-muted-foreground leading-relaxed">
+            Before your first swim, read the{" "}
+            <Link to="/guides/stinger-safety" className="text-primary underline underline-offset-2 font-medium">
+              Townsville stinger safety guide
+            </Link>
+            , and check current Townsville City Council beach information for net and patrol status.
+          </p>
+        </section>
+
         <GuideQuickFacts />
 
         {/* Which beach */}

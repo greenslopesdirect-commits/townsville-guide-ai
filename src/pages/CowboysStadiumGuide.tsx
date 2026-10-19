@@ -29,9 +29,9 @@ import GuideQuickFacts from "@/components/GuideQuickFacts";
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/cowboys-stadium-guide";
 
-const TITLE = "Queensland Country Bank Stadium Guide | Cowboys Games & Event Days";
+const TITLE = "Queensland Country Bank Stadium: Cowboys Game Day Guide";
 const DESCRIPTION =
-  "Plan a visit to Queensland Country Bank Stadium in Townsville, with tips on getting there, where to stay, food, Cowboys games and event-day planning.";
+  "Cowboys game day at Queensland Country Bank Stadium, Townsville: getting there, where to stay and eat nearby, and how to check details for your event.";
 
 /** Official sources — the authoritative places for event-specific arrangements. */
 const STADIUM_URL = "https://www.queenslandcountrybankstadium.com.au/";

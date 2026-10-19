@@ -30,9 +30,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/things-to-do";
 
-const TITLE = "Best Things to Do in Townsville | Local Visitor Guide";
+const TITLE = "Things to Do in Townsville: Top Picks, Free & Family Ideas";
 const DESCRIPTION =
-  "Discover the best things to do in Townsville, from The Strand and Castle Hill to Magnetic Island, family activities, beaches, free attractions and day trips.";
+  "Things to do in Townsville: The Strand, Castle Hill and a Magnetic Island day trip first, then free attractions, family days out and rainy-day ideas.";
 
 const PATHWAYS = [
   { label: "First visit", to: "/first-time-in-townsville", name: "First Time in Townsville" },
@@ -168,7 +168,7 @@ const ThingsToDo = () => (
         Activity discovery hub
       </div>
 
-      <h1 className="text-3xl md:text-4xl font-bold mb-4">Best Things to Do in Townsville</h1>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">Things to Do in Townsville</h1>
 
       <p className="text-lg text-muted-foreground leading-relaxed mb-4">
         If you only do three things in Townsville, make them{" "}
@@ -210,6 +210,39 @@ const ThingsToDo = () => (
         length, travel style, weather and transport, then follow the link through to the detailed
         guide for whatever you choose.
       </p>
+
+      <section className="mb-10 rounded-xl border bg-muted/40 p-5 md:p-6" aria-labelledby="things-quick-answer">
+        <h2 id="things-quick-answer" className="text-xl font-bold mb-3">
+          Things to do in Townsville, by what you need
+        </h2>
+        <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
+          <li>
+            <strong className="text-foreground">Free:</strong> The Strand, Castle Hill, the{" "}
+            <Link to="/riverway" className="text-primary hover:underline">Riverway lagoons</Link>,{" "}
+            <Link to="/jezzine-barracks" className="text-primary hover:underline">Jezzine Barracks</Link>{" "}
+            and the beaches. See{" "}
+            <Link to="/guides/free-things" className="text-primary hover:underline">free things to do</Link>.
+          </li>
+          <li>
+            <strong className="text-foreground">With kids:</strong> the Strand Water Park and
+            Rockpool, Riverway, Billabong Sanctuary and a Magnetic Island day. See{" "}
+            <Link to="/townsville-with-kids" className="text-primary hover:underline">Townsville with kids</Link>.
+          </li>
+          <li>
+            <strong className="text-foreground">Rain:</strong> Queensland Museum Tropics, galleries,
+            libraries and long café stops. See{" "}
+            <Link to="/guides/rainy-day-activities" className="text-primary hover:underline">rainy day activities</Link>.
+          </li>
+          <li>
+            <strong className="text-foreground">Day trips:</strong> Magnetic Island is the strongest;
+            Paluma is the alternative if you want rainforest and cooler air.
+          </li>
+        </ul>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Reef HQ (the Great Barrier Reef Aquarium) is closed for redevelopment, so it is not on
+          this list.
+        </p>
+      </section>
 
       <GuideQuickFacts className="mb-10" />
 

@@ -14,6 +14,28 @@ const SUGGESTIONS: { label: string; question: string }[] = [
   { label: "Dog-friendly spots", question: AI_PRESETS.dogFriendly },
 ];
 
+// The model occasionally invents or mistypes townsvilleguide.com.au URLs. Map known bad
+// paths to real pages and drop trailing slashes (canonical URLs have none).
+const SITE_LINK_FIXES: Record<string, string> = {
+  "/guides/free-truth": "/guides/free-things",
+  "/first-time-in-visitor-guide": "/first-time-in-townsville",
+  "/suburb": "/suburbs",
+  "/beat-the-heat": "/guides/beat-the-heat",
+  "/rainy-day-activities": "/guides/rainy-day-activities",
+  "/little-crystal-creek": "/little-crystal-creek-townsville",
+};
+
+function fixSiteLink(url: string): string {
+  return url.replace(
+    /^(https?:\/\/(?:www\.)?townsvilleguide\.com\.au)(\/[^?#]*)?/,
+    (_m, origin: string, path?: string) => {
+      let p = (path ?? "/").replace(/(.)\/+$/, "$1");
+      p = SITE_LINK_FIXES[p] ?? p;
+      return `${origin}${p}`;
+    }
+  );
+}
+
 // Minimal safe markdown → HTML (links, bold, bullets, line breaks)
 function renderMarkdown(md: string): string {
   const escape = (s: string) =>
@@ -21,7 +43,8 @@ function renderMarkdown(md: string): string {
   let html = escape(md);
   html = html.replace(
     /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
-    '<a href="$2" target="_blank" rel="noopener noreferrer" class="text-yellow-300 underline underline-offset-2 hover:text-yellow-200">$1</a>'
+    (_m, label: string, url: string) =>
+      `<a href="${fixSiteLink(url)}" target="_blank" rel="noopener noreferrer" class="text-yellow-300 underline underline-offset-2 hover:text-yellow-200">${label}</a>`
   );
   html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
   html = html.replace(/(^|\n)[•\-] +(.+)/g, "$1<li>$2</li>");

@@ -34,9 +34,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/riverway";
 
-const TITLE = "Riverway Lagoons Townsville: Free Swimming, Parking & Tips";
+const TITLE = "Riverway Townsville: Free Lagoons, Parking & What to Bring";
 const DESCRIPTION =
-  "Free swimming lagoons, parklands, walking paths and playgrounds at Riverway, Townsville. Parking, what to bring and family tips from a local.";
+  "Riverway, Thuringowa Central: free swimming lagoons on the Ross River, parklands, walking paths, library and gallery. Parking and family tips.";
 
 const LAGOON_STATUS =
   "Riverway Lagoons operate during supervised opening hours and the gates are locked outside those times. Check Townsville City Council for the current schedule before visiting.";
@@ -236,7 +236,7 @@ const Riverway = () => {
             Thuringowa Central
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-5">
-            Riverway Townsville: Lagoons, Parklands &amp; Things to Do
+            Riverway Townsville: Lagoons, Parklands &amp; Free Swimming
           </h1>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
             Riverway is a free riverside recreation precinct in Thuringowa Central, on the banks of

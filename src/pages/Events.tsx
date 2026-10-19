@@ -33,9 +33,9 @@ const PATH = "/events";
 /** Official council events calendar — the authoritative source for current listings. */
 const WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
-const TITLE = "What's On in Townsville | Events, Markets & Festivals";
+const TITLE = "What's On in Townsville This Weekend | Events Guide";
 const DESCRIPTION =
-  "What's on in Townsville: events on The Strand and at Riverway, markets, festivals, sport and family activities, plus how to check what's on this weekend.";
+  "What's on in Townsville this weekend? Where to find current listings, plus events and markets on The Strand and at Riverway, festivals and Cowboys games.";
 
 const EVENT_TYPES = [
   {
@@ -273,14 +273,15 @@ const Events = () => (
       </div>
 
       <h1 className="text-3xl md:text-4xl font-bold mb-4">
-        Townsville Events, Festivals &amp; What's On
+        What's On in Townsville: Events, Markets &amp; Festivals
       </h1>
 
       <p className="text-lg text-muted-foreground leading-relaxed mb-4">
         Townsville hosts major sporting weekends, festivals, markets, live music, arts events and
-        family activities throughout the year. This guide helps you understand the event scene and
-        plan a visit around it — while the official What's On Townsville calendar provides the
-        latest dates and listings.
+        family activities throughout the year. To see what's on this weekend, use the official
+        What's On Townsville calendar, which has the latest dates and listings. This guide covers
+        where events happen, including The Strand and Riverway, and how to plan a visit around
+        them.
       </p>
       <p className="text-muted-foreground leading-relaxed mb-8">
         Event dates move from year to year, so nothing here is presented as a fixed schedule. Use

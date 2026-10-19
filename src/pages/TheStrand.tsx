@@ -87,8 +87,8 @@ const TheStrand = () => {
   return (
     <>
       <SEOHead
-        title="The Strand Townsville: Complete Local Visitor Guide"
-        description="Plan your visit to The Strand Townsville, including walking, swimming facilities, playgrounds, parking, accessibility, food and the best time to go."
+        title="The Strand Townsville: Rockpool, Water Park & Walks"
+        description="The Strand Townsville: 2.2 km waterfront with the free Rockpool and Water Park, playgrounds, cafés, parking, dogs and what to know before you swim."
         canonical={`${SITE}/the-strand`}
         ogType="article"
         ogImage="https://www.townsvilleguide.com.au/the-strand-townsville-2.webp"
@@ -158,7 +158,7 @@ const TheStrand = () => {
           {/* Hero */}
           <header className="space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
-              The Strand Townsville
+              The Strand Townsville: Rockpool, Water Park &amp; Waterfront Walk
             </h1>
             <p className="text-sm text-muted-foreground">Updated: {LAST_UPDATED}</p>
             <p className="text-xl text-muted-foreground">
@@ -173,6 +173,12 @@ const TheStrand = () => {
               enjoy without a car.
               For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
             </p>
+            <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground leading-relaxed">
+              <li>Free: walking, playgrounds, the Water Park (central Strand) and the Rockpool (northern Strand).</li>
+              <li>Paid: Tobruk Memorial Baths, plus food and paid activities.</li>
+              <li>Swimming: check current signs, patrol and stinger information first; see the <Link to="/guides/stinger-safety" className="text-primary hover:underline">stinger safety guide</Link>.</li>
+              <li>Next door: <Link to="/jezzine-barracks" className="text-primary hover:underline">Jezzine Barracks</Link> at the northern end, and <Link to="/food" className="text-primary hover:underline">places to eat</Link> along the foreshore.</li>
+            </ul>
           </header>
 
           <img

@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { lazyWithRetry as lazy } from "@/lib/lazyWithRetry";
-import { Routes, Route, Navigate, useParams } from "react-router-dom";
+import { Routes, Route, Navigate, useParams, useLocation } from "react-router-dom";
 const DogFriendly = lazy(() => import("@/pages/DogFriendly"));
 const Shopping = lazy(() => import("@/pages/Shopping"));
 const Nature = lazy(() => import("@/pages/Nature"));
@@ -10,6 +10,15 @@ const TownsvilleRedirect = () => {
   const { path, "*": rest } = useParams();
   const newPath = rest ? `/${path}/${rest}` : `/${path}`;
   return <Navigate to={newPath} replace />;
+};
+
+// Canonical URLs have no trailing slash, so send /townsville-with-kids/ to /townsville-with-kids.
+const TrailingSlashRedirect = () => {
+  const { pathname, search, hash } = useLocation();
+  if (pathname.length > 1 && pathname.endsWith("/")) {
+    return <Navigate to={{ pathname: pathname.replace(/\/+$/, ""), search, hash }} replace />;
+  }
+  return null;
 };
 
 // Townsville Layout (Handles Header and Footer for all Townsville routes)
@@ -74,6 +83,7 @@ const PalumaDayTrip = lazy(() => import("@/pages/PalumaDayTrip"));
  */
 const AppRoutes = () => (
   <Suspense fallback={null}>
+    <TrailingSlashRedirect />
     <Routes>
       {/* Redirect legacy /townsville paths to new root-based equivalents */}
       <Route path="/townsville" element={<Navigate to="/" replace />} />
@@ -102,6 +112,10 @@ const AppRoutes = () => (
         <Route path="guides/sunset-walks" element={<SunsetWalks />} />
         <Route path="jezzine-barracks" element={<JezzineBarracks />} />
         <Route path="guides/jezzine-barracks" element={<Navigate to="/jezzine-barracks" replace />} />
+        {/* Mistyped / legacy URLs (e.g. from AI-chat links) -> real pages */}
+        <Route path="guides/free-truth" element={<Navigate to="/guides/free-things" replace />} />
+        <Route path="first-time-in-visitor-guide" element={<Navigate to="/first-time-in-townsville" replace />} />
+        <Route path="suburb" element={<Navigate to="/suburbs" replace />} />
         <Route path="guides/walking-castle-hill" element={<WalkingCastleHill />} />
         <Route path="guides/paluma-day-trip" element={<PalumaDayTrip />} />
         <Route path="cowboys-stadium-guide" element={<CowboysStadiumGuide />} />

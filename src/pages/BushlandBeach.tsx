@@ -54,8 +54,8 @@ const BushlandBeach = () => {
   return (
     <>
       <SEOHead
-        title="Bushland Beach Townsville | Local Guide & Peggy Banfield Park"
-        description="A local's guide to Bushland Beach, Townsville: the grassed foreshore, Peggy Banfield Park's dog exercise areas and playground, and honest swimming-safety advice."
+        title="Bushland Beach, Townsville: Low Tide, Dogs & Swimming"
+        description="Bushland Beach, Townsville: wide low-tide sand, Peggy Banfield Park's dog areas and playground, and whether it's safe to swim. Northern beaches tips."
         canonical="https://www.townsvilleguide.com.au/bushland-beach"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -67,8 +67,8 @@ const BushlandBeach = () => {
             <Link to="/beaches" className="inline-flex items-center text-sm text-gray-300 hover:text-primary mb-4 transition-colors">
               <ArrowLeft className="mr-2 h-4 w-4" /> Back to Beaches
             </Link>
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">Bushland Beach</h1>
-            <p className="text-xl text-gray-200">Townsville's Quiet Northern Foreshore</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">Bushland Beach, Townsville</h1>
+            <p className="text-xl text-gray-200">Low-tide sand, dogs and swimming on the northern foreshore</p>
           </div>
         </div>
 
@@ -100,10 +100,12 @@ const BushlandBeach = () => {
           <section className="mb-8">
             <p className="text-lg text-foreground leading-relaxed">
               Bushland Beach is a residential coastal community on the northern edge of Townsville,
-              one of the city's Northern Beaches. It's a suburban foreshore rather than a visitor
-              destination — the appeal is the local beach lifestyle: a grassed foreshore, an easy
-              walk, somewhere to eat a picnic, and open coastal views that are especially good in
-              the late afternoon. For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
+              one of the city's Northern Beaches. This guide covers the beach itself: the wide
+              sand at low tide, Peggy Banfield Park's dog areas and playground, and whether it's a
+              safe place to swim (it's unpatrolled, so check Council information first). It's a
+              suburban foreshore rather than a visitor destination — the appeal is the local beach
+              lifestyle: a grassed foreshore, an easy walk, somewhere to eat a picnic, and open
+              coastal views that are especially good in the late afternoon. For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
             </p>
           </section>
 

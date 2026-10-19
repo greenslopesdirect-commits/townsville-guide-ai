@@ -47,6 +47,9 @@ const REDIRECTS = {
   "/flights": "/townsville-airport",
   "/guides/jezzine-barracks": "/jezzine-barracks",
   "/cowboys-game-day": "/cowboys-stadium-guide",
+  "/guides/free-truth": "/guides/free-things",
+  "/first-time-in-visitor-guide": "/first-time-in-townsville",
+  "/suburb": "/suburbs",
 };
 
 function escapeHtml(s) {

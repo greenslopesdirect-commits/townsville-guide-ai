@@ -34,9 +34,9 @@ import cbarImage from "@/assets/cbar-townsville.webp";
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/food";
 
-const TITLE = "Best Places to Eat in Townsville | Local Food & Restaurant Guide";
+const TITLE = "Restaurants in Townsville: Best Places to Eat by Area";
 const DESCRIPTION =
-  "Discover where to eat in Townsville, from Strand cafés and Palmer Street restaurants to CBD breakfasts, family dining, local favourites and dinner spots.";
+  "Restaurants in Townsville by area: Strand waterfront cafés, CBD breakfast spots, Palmer Street dinners and family dining, plus hours and booking tips.";
 
 const EXAMPLES = [
   {
@@ -232,11 +232,13 @@ const FoodDrink = () => (
         Food and dining hub
       </div>
 
-      <h1 className="text-3xl md:text-4xl font-bold mb-4">Best Places to Eat in Townsville</h1>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">
+        Restaurants &amp; Places to Eat in Townsville
+      </h1>
 
       <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-        Townsville does not have one single restaurant strip. Eating well here is mostly about
-        choosing the right area for the meal: the waterfront around{" "}
+        Looking for restaurants in Townsville city? There is no single restaurant strip, so eating
+        well is mostly about choosing the right area for the meal: the waterfront around{" "}
         <Link to="/the-strand" className="text-primary hover:underline">
           The Strand
         </Link>{" "}
@@ -250,6 +252,31 @@ const FoodDrink = () => (
         this size, so treat individual examples as starting points and confirm current hours
         directly.
       </p>
+
+      <section className="mb-10 rounded-xl border bg-muted/40 p-5 md:p-6" aria-labelledby="eat-quick-answer">
+        <h2 id="eat-quick-answer" className="text-xl font-bold mb-3">
+          Where to eat in Townsville at a glance
+        </h2>
+        <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
+          <li>
+            <strong className="text-foreground">Dinner:</strong> Palmer Street in South Townsville is
+            the most concentrated restaurant precinct. JAM Restaurant and A Touch of Salt are both
+            on it.
+          </li>
+          <li>
+            <strong className="text-foreground">Breakfast and coffee:</strong> the CBD and North Ward
+            have the widest choice, such as Hoi Polloi in the CBD.
+          </li>
+          <li>
+            <strong className="text-foreground">Waterfront meals:</strong> The Strand, including C
+            Bar, Longboard Bar &amp; Grill and Juliette's Gelateria.
+          </li>
+        </ul>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Many Townsville cafés are daytime businesses and kitchens can close before the venue does,
+          so check hours before you go.
+        </p>
+      </section>
 
       <GuideQuickFacts className="mb-10" />
 

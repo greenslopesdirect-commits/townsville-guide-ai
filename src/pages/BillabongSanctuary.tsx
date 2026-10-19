@@ -60,8 +60,8 @@ const BillabongSanctuary = () => {
   return (
     <>
       <SEOHead
-        title="Billabong Sanctuary Townsville – Wildlife Experience Guide"
-        description="Local guide to Billabong Sanctuary Townsville — hold a koala, feed kangaroos, watch croc shows and enjoy a family-friendly wildlife day out."
+        title="Billabong Sanctuary Townsville: Koalas, Shows & Visit Tips"
+        description="Billabong Sanctuary, about 20 minutes south of Townsville: hold a koala, feed kangaroos, see croc feeding shows, plus visit length, parking and tips."
         canonical="https://www.townsvilleguide.com.au/billabong-sanctuary"
         ogType="article"
       />
@@ -93,7 +93,7 @@ const BillabongSanctuary = () => {
 
       <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
         <h1 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Billabong Sanctuary Townsville – Wildlife Experience Guide
+          Billabong Sanctuary Townsville: Koalas, Kangaroos &amp; Visit Tips
         </h1>
 
         {/* Hero Image */}

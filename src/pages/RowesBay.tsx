@@ -55,8 +55,8 @@ const RowesBay = () => {
   return (
     <>
       <SEOHead
-        title="Rowes Bay Townsville — Sunset Beach Guide"
-        description="A local guide to Rowes Bay Townsville — sunset views, dog-friendly zones, parking and what to know before you visit."
+        title="Rowes Bay Townsville: Sunset Views, Dogs & Swimming"
+        description="Rowes Bay, Townsville: sunset views over Magnetic Island, on-leash dog walking, no stinger net, and where to park and eat before you visit."
         canonical="https://www.townsvilleguide.com.au/rowes-bay"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -67,7 +67,7 @@ const RowesBay = () => {
           <Link to="/beaches" className="inline-flex items-center text-sm text-gray-300 hover:text-primary mb-4 transition-colors">
             <ArrowLeft className="mr-2 h-4 w-4" /> Back to Beaches
           </Link>
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">Rowes Bay</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Rowes Bay Townsville</h1>
           <p className="text-xl text-gray-200">The Sunset Strip & Quiet Alternative</p>
         </div>
       </div>

@@ -29,9 +29,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PAGE_PATH = "/guides/magnetic-island-ferry";
 const PAGE_URL = `${SITE}${PAGE_PATH}`;
-const PAGE_TITLE = "Magnetic Island Ferry Guide: Passenger and Car Ferries";
+const PAGE_TITLE = "Magnetic Island Ferry: Terminals, Timetables & Fares";
 const PAGE_DESCRIPTION =
-  "Compare Magnetic Island passenger and vehicle ferries from Townsville, including terminals, crossing times, parking, booking, fares and return planning.";
+  "Magnetic Island ferry from Townsville: SeaLink passenger ferry from Breakwater (about 20 min) or vehicle ferry from Ross Street. Timetable and fare links.";
 const LAST_UPDATED = "5 August 2026";
 
 const SEALINK = "https://www.sealinkqld.com.au/magnetic-island-ferry";
@@ -189,13 +189,17 @@ const MagneticIslandFerry = () => {
           {/* 1. Hero */}
           <header className="space-y-4">
             <h1 className="text-3xl md:text-5xl font-bold text-foreground">
-              Magnetic Island Ferry Guide
+              Magnetic Island Ferry from Townsville: Terminals, Timetables &amp; Fares
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Two different ferry services connect Townsville with Magnetic Island. SeaLink
               operates the faster passenger ferry from Breakwater Terminal, while Magnetic Island
               Ferries carries vehicles from Ross Street in South Townsville. Choosing the correct
-              ferry and terminal is the most important part of planning the trip.
+              ferry and terminal is the most important part of planning the trip. The passenger
+              ferry takes approximately 20 minutes and the vehicle ferry approximately 40 minutes.
+              Current timetables are on the operators' sites:{" "}
+              <ExternalLink href={SEALINK_TIMETABLE}>SeaLink timetable</ExternalLink> and{" "}
+              <ExternalLink href={MI_FERRIES_TIMETABLE}>Magnetic Island Ferries timetable</ExternalLink>.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Fares, timetables, parking charges and boarding requirements can change, so use this

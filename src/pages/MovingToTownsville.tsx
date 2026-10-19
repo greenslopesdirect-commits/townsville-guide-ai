@@ -23,8 +23,8 @@ const MovingToTownsville = () => {
   return (
     <>
       <SEOHead
-        title="Moving to Townsville 2026 | Local Relocation & Growth Guide"
-        description="A local-verified relocation guide to Townsville for 2026. Suburbs, the $40B infrastructure boom, jobs in Defence and Green Energy, schools, healthcare and the airport — all in one place."
+        title="Moving to Townsville: Suburbs, Jobs & From Brisbane"
+        description="Moving to Townsville? Suburbs, jobs in Defence and green energy, schools, healthcare and the airport, plus what to expect moving from Brisbane."
         canonical="https://www.townsvilleguide.com.au/moving-to-townsville"
       />
       <Helmet>
@@ -48,7 +48,7 @@ const MovingToTownsville = () => {
               Updated: August 3, 2026
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground">
-              Moving to Townsville 2026: The Local's Relocation & Growth Guide
+              Moving to Townsville: Suburbs, Jobs &amp; Moving from Brisbane
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Townsville is in the middle of a generational <strong>$40B infrastructure boom</strong> — Green
@@ -64,6 +64,39 @@ const MovingToTownsville = () => {
               Once you have settled in, our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link> is a good place to start exploring.
             </p>
           </header>
+
+          {/* Moving from Brisbane */}
+          <section className="space-y-4" aria-labelledby="from-brisbane">
+            <h2 id="from-brisbane" className="text-2xl md:text-3xl font-bold text-foreground">
+              Moving from Brisbane to Townsville
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              Townsville is roughly 1,350 km north of Brisbane by road via the Bruce Highway, which
+              is around 15 to 16 hours of driving before stops, so most people split the trip over
+              two or three days or move their car and belongings separately from their flights.
+              Get a removalist quote early, and book flights or the drive around your move-in date
+              rather than the other way round.
+            </p>
+            <ul className="list-disc pl-5 space-y-2 text-muted-foreground leading-relaxed">
+              <li>
+                <strong className="text-foreground">Climate:</strong> it is tropical, so expect a
+                hot, humid wet season and a milder dry season. Our{" "}
+                <Link to="/guides/beat-the-heat" className="text-primary hover:underline">Beat the Heat guide</Link>{" "}
+                covers how locals handle it.
+              </li>
+              <li>
+                <strong className="text-foreground">Where to live:</strong> compare commute, schools
+                and distance to the water in the{" "}
+                <Link to="/suburbs" className="text-primary hover:underline">suburbs guide</Link>{" "}
+                before you sign a lease.
+              </li>
+              <li>
+                <strong className="text-foreground">Getting back to family:</strong> see the{" "}
+                <Link to="/townsville-airport" className="text-primary hover:underline">Townsville Airport guide</Link>{" "}
+                for flights, transport and parking.
+              </li>
+            </ul>
+          </section>
 
           {/* Choosing a Suburb */}
           <section className="space-y-4">

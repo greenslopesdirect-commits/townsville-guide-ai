@@ -25,9 +25,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/shopping";
 
-const TITLE = "Shopping in Townsville | Shopping Centres, Markets & Local Stores";
+const TITLE = "Townsville Shopping: Centres, CBD Stores & Local Markets";
 const DESCRIPTION =
-  "Discover shopping in Townsville, from Stockland, Castletown and Willows to CBD stores, local markets, souvenirs, essentials and rainy-day options.";
+  "Where to shop in Townsville: Stockland, Castletown and Willows centres, Flinders Street and CBD stores, Cotters Market and other local markets.";
 
 const COMPARISON = [
   {

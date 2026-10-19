@@ -57,8 +57,8 @@ const CastleHill = () => {
   return (
     <>
       <SEOHead
-        title="Castle Hill Townsville – Local Guide | Townsville Guide"
-        description="Castle Hill Townsville local guide — panoramic views, walking tracks, sunrise and sunset tips. Free attraction near the city centre."
+        title="Castle Hill Townsville: Lookout, Driving & Sunset Guide"
+        description="Castle Hill lookout, Townsville: drive to the summit, parking, sunrise and sunset tips and access. Track and difficulty detail is in our walking guide."
         canonical="https://www.townsvilleguide.com.au/castle-hill"
       />
       <Helmet>
@@ -110,10 +110,11 @@ const CastleHill = () => {
           {/* Intro */}
           <header className="mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Castle Hill Townsville – Local Guide
+              Castle Hill Townsville: Lookout, Driving &amp; Sunset Guide
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Castle Hill is one of Townsville's most recognisable landmarks — a granite monolith rising 286 metres above the city with panoramic views over Cleveland Bay, Magnetic Island, and the Townsville skyline. It's a favourite local lookout for sunrise walks, sunset photos, and relaxed scenic drives.
+              Castle Hill is one of Townsville's most recognisable landmarks — a granite monolith rising 286 metres above the city with panoramic views over Cleveland Bay, Magnetic Island, and the Townsville skyline. It's a favourite local lookout for sunrise walks, sunset photos, and relaxed scenic drives. This page covers the lookout and the drive up; for the walking tracks, difficulty and conditions, see our{" "}
+              <Link to="/guides/walking-castle-hill" className="text-primary hover:underline">Walking Castle Hill guide</Link>.
             </p>
           </header>
 
