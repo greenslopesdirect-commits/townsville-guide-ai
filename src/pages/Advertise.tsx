@@ -27,7 +27,7 @@ const STATS: { label?: string; value: string; note: string; Icon: typeof Users }
   },
   {
     value: "Hyper-local, not generic",
-    note: "Every guide written and kept current by a real Townsville local — not scraped or AI-generated content.",
+    note: "Guides are researched and checked locally, with official sources linked where details change. Not scraped from other sites. The AI assistant is a separate tool for quick questions.",
     Icon: MapPin,
   },
   {
