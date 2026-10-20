@@ -460,7 +460,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     visitStatus: "research-based",
     visitNote:
       "This safety guide is based on current advice from Queensland Government health and emergency sources, Townsville City Council, Surf Life Saving guidance and official marine-stinger information.",
-    lastChecked: "7 August 2026",
+    lastChecked: "20 October 2026",
     officialSourcesChecked: true,
     officialSources: [
       {
@@ -478,6 +478,10 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       {
         name: "Surf Life Saving Australia — Beachsafe",
         url: "https://beachsafe.org.au/",
+      },
+      {
+        name: "Surf Life Saving — marine stingers first aid",
+        url: "https://lifesaving.com.au/safety-info/marine-stingers",
       },
       {
         name: "Townsville Disaster Dashboard",
@@ -583,31 +587,6 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
-  "/local-tips": {
-    visitStatus: "partially-firsthand",
-    visitNote:
-      "This guide combines firsthand local experience of living in Townsville with current information from official local, transport, weather and attraction sources.",
-    lastChecked: "7 August 2026",
-    officialSourcesChecked: true,
-    officialSources: [
-      {
-        name: "Townsville City Council",
-        url: "https://www.townsville.qld.gov.au/",
-      },
-      {
-        name: "Bureau of Meteorology \u2014 Townsville",
-        url: "http://www.bom.gov.au/qld/forecasts/townsville.shtml",
-      },
-      {
-        name: "Queensland Traffic \u2014 road conditions",
-        url: "https://qldtraffic.qld.gov.au/",
-      },
-      {
-        name: "Translink \u2014 Townsville public transport",
-        url: "https://translink.com.au/",
-      },
-    ],
-  },
   "/riverway": {
     visitStatus: "partially-firsthand",
     visitNote:
@@ -705,14 +684,51 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
     ],
   },
+  "/great-barrier-reef-townsville": {
+    visitStatus: "research-based",
+    visitNote:
+      "This guide is based on research and the operators' and agencies' own websites. It does not claim firsthand experience of the trips described. Tour prices, sites and departure times change, so confirm with the operator before booking.",
+    lastChecked: "20 October 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      { name: "Museum of Underwater Art", url: "https://www.moua.com.au/" },
+      { name: "Adrenalin Snorkel and Dive", url: "https://www.adrenalindive.com.au/" },
+      { name: "Yongala Dive", url: "https://www.yongaladive.com.au/" },
+      {
+        name: "Great Barrier Reef Marine Park Authority — environmental management charge",
+        url: "https://www.gbrmpa.gov.au/access/environmental-management-charge",
+      },
+      {
+        name: "Great Barrier Reef Marine Park Authority — responsible reef practices",
+        url: "https://www.gbrmpa.gov.au/access/responsible-reef-practices",
+      },
+    ],
+  },
+  "/history": {
+    visitStatus: "research-based",
+    visitNote:
+      "This is a short summary based on Queensland Heritage Register entries, Townsville City Council heritage material and the State Library of Queensland. Early dates differ slightly between sources. Images on this page are AI-generated illustrations, not photographs.",
+    lastChecked: "20 October 2026",
+    officialSourcesChecked: true,
+    officialSources: [
+      { name: "Queensland Heritage Register: Castle Hill", url: "https://apps.des.qld.gov.au/heritage-register/detail/?id=601218" },
+      { name: "Queensland Heritage Register: Rosebank", url: "https://apps.des.qld.gov.au/heritage-register/detail/?id=600877" },
+      { name: "Townsville City Council: history and heritage", url: "https://www.townsville.qld.gov.au/about-townsville/history-and-heritage" },
+      { name: "State Library of Queensland: bombing of Townsville", url: "https://www.slq.qld.gov.au/blog/70th-anniversary-bombing-townsville-during-world-war-ii" },
+    ],
+  },
   "/townsville-airport": {
     visitStatus: "partially-firsthand",
     visitNote:
       "This guide combines local visitor-planning knowledge with current information from Townsville Airport, airlines and official transport sources. Flight schedules, parking and airport services can change, so confirm details before travelling.",
-    lastChecked: "7 August 2026",
+    lastChecked: "20 October 2026",
     officialSourcesChecked: true,
     officialSources: [
       { name: "Townsville Airport", url: "https://www.townsvilleairport.com.au/" },
+      {
+        name: "Townsville Airport — transport options",
+        url: "https://www.townsvilleairport.com.au/transport/transport-overview/transport-options",
+      },
       { name: "Translink — Townsville public transport", url: "https://translink.com.au/" },
       { name: "Qantas", url: "https://www.qantas.com/" },
       { name: "Virgin Australia", url: "https://www.virginaustralia.com/" },
@@ -905,7 +921,6 @@ export const GUIDE_PATHS: string[] = [
   "/beaches",
   "/things-to-do",
   "/food",
-  "/local-tips",
   "/accommodation",
   "/history",
 ];

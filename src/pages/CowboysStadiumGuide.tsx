@@ -624,8 +624,8 @@ const CowboysStadiumGuide = () => (
               Prioritise central accommodation, easy transport and nearby dining. Palmer Street or
               the CBD are the two obvious choices, depending on whether dinner or general city
               access matters more. A quick{" "}
-              <Link to="/local-tips" className="text-primary hover:underline">
-                local tips
+              <Link to="/first-time-in-townsville" className="text-primary hover:underline">
+                first-time visitor guide
               </Link>{" "}
               read helps if it is your first visit.
             </p>

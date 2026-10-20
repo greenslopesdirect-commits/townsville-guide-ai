@@ -157,7 +157,6 @@ const PalumaDayTrip = () => {
     { label: "Rainy Day Activities", to: "/guides/rainy-day-activities" },
     { label: "Free Things to Do", to: "/guides/free-things" },
     { label: "Nature in Townsville", to: "/nature" },
-    { label: "Local Tips", to: "/local-tips" },
   ];
 
   const checklist = [

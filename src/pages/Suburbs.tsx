@@ -138,7 +138,6 @@ const RELATED = [
   { to: "/riverway", name: "Riverway", text: "Free lagoons and parkland at Thuringowa Central." },
   { to: "/pallarenda-beach", name: "Pallarenda", text: "Quiet coastal walking at the end of the peninsula." },
   { to: "/guides/magnetic-island-day-trip", name: "Magnetic Island Day Trip", text: "Planning the island as a separate destination." },
-  { to: "/local-tips", name: "Local Tips", text: "Practical local observations that save time." },
 ];
 
 const faqs = [
@@ -802,8 +801,8 @@ const Suburbs = () => (
         </ul>
         <p className="text-muted-foreground mt-4">
           More small practicalities are collected in{" "}
-          <Link to="/local-tips" className="text-primary hover:underline">
-            Local Tips
+          <Link to="/first-time-in-townsville" className="text-primary hover:underline">
+            First Time in Townsville
           </Link>
           , and{" "}
           <Link to="/useful-contacts" className="text-primary hover:underline">

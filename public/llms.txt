@@ -10,7 +10,6 @@
 - [Food & Drink](/food): Local cafes, restaurants and food spots in Townsville.
 - [Events](/events): Upcoming events and local highlights in Townsville.
 - [Accommodation](/accommodation): Hotels, resorts and stays across Townsville.
-- [Local Tips](/local-tips): Insider tips from a Townsville local.
 - [Dog Friendly](/dog-friendly): Dog-friendly beaches, parks and cafes.
 - [Shopping](/shopping): Where to shop in Townsville.
 - [Nature](/nature): Parks, walks and natural attractions.

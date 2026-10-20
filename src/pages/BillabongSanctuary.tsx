@@ -406,9 +406,9 @@ const BillabongSanctuary = () => {
               <span className="text-2xl mb-1 block">🏝️</span>
               <span className="text-sm font-medium text-foreground">Magnetic Island Day Trip</span>
             </Link>
-            <Link to="/local-tips" className="block p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors text-center">
+            <Link to="/first-time-in-townsville" className="block p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors text-center">
               <span className="text-2xl mb-1 block">💡</span>
-              <span className="text-sm font-medium text-foreground">Townsville Travel Tips</span>
+              <span className="text-sm font-medium text-foreground">First Time in Townsville</span>
             </Link>
             <Link to="/things-to-do" className="block p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors text-center">
               <span className="text-2xl mb-1 block">🗺️</span>

@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import SaundersGallery from "@/components/SaundersGallery";
 import AirportTransferCard from "@/components/AirportTransferCard";
 import { Button } from "@/components/ui/button";
+import StingerSeasonNote from "@/components/StingerSeasonNote";
 import {
   Accordion,
   AccordionContent,
@@ -22,7 +23,7 @@ const faqs = [
   },
   {
     q: "Is there a stinger net at Saunders Beach?",
-    a: "No. There's no stinger enclosure at Saunders. It's beautiful for walks and wading at low tide, but during stinger season (Nov–May) stick to the seasonal nets at Pallarenda Main Beach or The Strand, or the year-round stinger-free Rockpool at The Strand for actual swimming.",
+    a: "We aren't aware of one. Council's recent net sites have been The Strand, Pallarenda, Balgal Beach and Magnetic Island, not Saunders. It's good for walks at low tide, but during stinger season (Nov–May) there is no protection here, so keep out of the water. Nets elsewhere reduce risk but never remove it, so check the Council's net locations page and the signs.",
   },
   {
     q: "How far is Saunders Beach from Townsville?",
@@ -57,7 +58,7 @@ const SaundersBeach = () => {
     <>
       <SEOHead
         title="Saunders Beach, Townsville: Swimming, Dogs & Getting There"
-        description="Saunders Beach is about 35 minutes north of Townsville: quiet sand, no stinger nets, dog-friendly low-tide walks and what to know before you go."
+        description="Saunders Beach is about 35 minutes north of Townsville: quiet sand, no known stinger net, dog-friendly low-tide walks and what to know first."
         canonical="https://www.townsvilleguide.com.au/beaches/saunders-beach"
         ogImage="https://www.townsvilleguide.com.au/saunders-beach-blue-sky.webp"
       />
@@ -94,10 +95,11 @@ const SaundersBeach = () => {
       </section>
 
       <main className="max-w-4xl mx-auto px-4 py-10">
+        <StingerSeasonNote className="mb-6" />
         {/* Intro */}
         <section className="mb-8">
           <p className="text-lg text-foreground leading-relaxed">
-            Saunders Beach is about 35 minutes' drive north of Townsville, with no stinger nets and
+            Saunders Beach is about 35 minutes' drive north of Townsville, with no stinger net that we know of and
             plenty of room for dogs at low tide. It is the kind of place
             Townsville locals quietly keep to themselves. No big resorts, no crowds—just a
             long, soft stretch of sand framed by a natural tree line and the Coral Sea.
@@ -148,10 +150,10 @@ const SaundersBeach = () => {
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-1">Safety</h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  <strong>Note: No stinger nets here.</strong> Beautiful for walks and wading
-                  at low tide, but during stinger season (Nov–May), stick to the seasonal nets
-                  at Pallarenda Main Beach or The Strand, or the year-round stinger-free
-                  Rockpool at The Strand.
+                  <strong>Note: we aren't aware of any stinger net here.</strong> It's good for
+                  walks at low tide, but stingers can be present, mostly November to May, and there
+                  is no protection at this beach. Stay out of the water in stinger season and read
+                  the stinger safety guide.
                 </p>
               </div>
             </div>

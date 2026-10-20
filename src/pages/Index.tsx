@@ -3,21 +3,17 @@ import { Helmet } from "react-helmet";
 import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
 import WorthVisiting from "@/components/WorthVisiting";
-import LocalTrustIntro from "@/components/LocalTrustIntro";
-import CurrentTownsvilleWeather from "@/components/CurrentTownsvilleWeather";
+import AudienceChoice from "@/components/AudienceChoice";
+import SeasonalConditions from "@/components/SeasonalConditions";
+import AllGuides from "@/components/AllGuides";
 import StartPlanning from "@/components/StartPlanning";
 import EssentialExperiences from "@/components/EssentialExperiences";
-import NewsletterSection from "@/components/NewsletterSection";
 import {
   ThingsToDoCta,
-  PlanYourVisit,
-  ExploreByInterest,
+  WeekendCalculatorCta,
   WhereToStay,
   DayTrips,
-  WeatherAndWater,
   WhatsOn,
-  PracticalResources,
-  ForLocals,
 } from "@/components/HomeHubs";
 import VideoSection from "@/components/VideoSection";
 import AboutSection from "@/components/AboutSection";
@@ -29,8 +25,8 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Townsville Guide | Things to Do, Attractions & Local Travel Tips"
-        description="Plan your Townsville visit with a local guide to things to do, The Strand, Castle Hill, Magnetic Island, beaches, food, accommodation, family activities and day trips."
+        title="Townsville Guide | Things to Do, Beaches & Local Tips"
+        description="An independent local guide to Townsville: things to do, The Strand, Castle Hill, Magnetic Island, beaches, food and where to stay."
         canonical="https://www.townsvilleguide.com.au/"
       />
       <Helmet>
@@ -50,7 +46,7 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebPage",
-            name: "Townsville Guide | Things to Do, Attractions & Local Travel Tips",
+            name: "Townsville Guide | Things to Do, Beaches & Local Tips",
             description:
               "An independent local visitor guide to Townsville: things to do, The Strand, Castle Hill, Magnetic Island day trips, beaches, food, accommodation and practical planning.",
             url: "https://www.townsvilleguide.com.au",
@@ -147,6 +143,9 @@ const Index = () => {
         {/* Hero — includes the Townsville Guide AI search */}
         <Hero />
 
+        {/* Two clear choices straight after the hero */}
+        <AudienceChoice />
+
         <WorthVisiting />
 
         {/* The Siren, Cleveland Bay — main establishing photo */}
@@ -167,42 +166,25 @@ const Index = () => {
           </div>
         </section>
 
-        <LocalTrustIntro />
+        <div className="pt-6">
+          <SeasonalConditions />
+        </div>
 
-        <section className="px-4 pb-6 md:pb-8">
-          <div className="container mx-auto max-w-5xl">
-            <CurrentTownsvilleWeather variant="compact" />
-          </div>
-        </section>
-
-        {/* Primary visitor pathways */}
         <StartPlanning />
 
         <EssentialExperiences />
 
         <ThingsToDoCta />
 
-        {/* Weekend cost calculator */}
-        <NewsletterSection />
-
-        <PlanYourVisit />
-
-        <ExploreByInterest />
-
-        <ForLocals />
+        <WeekendCalculatorCta />
 
         <WhereToStay />
 
         <DayTrips />
 
-        <WeatherAndWater />
-
         <WhatsOn />
 
         <AdSensePlaceholder slot="content" className="my-8" />
-
-        <PracticalResources />
-
 
         {/* Attraction status note */}
         <div className="container mx-auto px-4 max-w-4xl pb-4">
@@ -215,6 +197,8 @@ const Index = () => {
             .
           </p>
         </div>
+
+        <AllGuides />
 
         <section id="video">
           <VideoSection />

@@ -13,6 +13,10 @@ export const AI_PRESETS = {
   whatsOn: "What's happening this weekend in Townsville?",
   magneticIsland: "Plan a day trip to Magnetic Island",
   accommodation: "Recommend accommodation near The Strand",
+  stingerSwimming: "What should I know about swimming in Townsville during stinger season?",
+  dogBeaches: "Which beaches near Townsville city allow dogs?",
+  rainyDay: "What are the best things to do in Townsville on a rainy day?",
+  needCar: "Do I need a car in Townsville?",
 } as const;
 
 export type AIPresetKey = keyof typeof AI_PRESETS;

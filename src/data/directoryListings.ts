@@ -118,8 +118,8 @@ export const CATEGORIES: CategoryDef[] = [
     title: "Townsville Beauty & Personal Care Directory | Salons & Spas",
     description:
       "Browse Townsville beauty and personal care businesses — salons, day spas, massage, float therapy, barbers and studios.",
-    guidePath: "/local-tips",
-    guideLabel: "Local tips",
+    guidePath: "/first-time-in-townsville",
+    guideLabel: "First time in Townsville",
     priority: false,
   },
 ];

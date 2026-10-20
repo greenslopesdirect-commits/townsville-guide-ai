@@ -9,9 +9,11 @@ import heroImage from "@/assets/strand-hero.jpg";
 
 const SUGGESTIONS: { label: string; question: string }[] = [
   { label: "What's on this weekend?", question: AI_PRESETS.whatsOn },
-  { label: "Best beach today", question: AI_PRESETS.bestBeach },
-  { label: "Dinner tonight", question: AI_PRESETS.dinnerSpot },
-  { label: "Dog-friendly spots", question: AI_PRESETS.dogFriendly },
+  { label: "Swimming in stinger season", question: AI_PRESETS.stingerSwimming },
+  { label: "Dog-friendly beaches near the city", question: AI_PRESETS.dogBeaches },
+  { label: "Things to do on a rainy day", question: AI_PRESETS.rainyDay },
+  { label: "A day on Magnetic Island", question: AI_PRESETS.magneticIsland },
+  { label: "Do I need a car?", question: AI_PRESETS.needCar },
 ];
 
 // The model occasionally invents or mistypes townsvilleguide.com.au URLs. Map known bad
@@ -23,6 +25,7 @@ const SITE_LINK_FIXES: Record<string, string> = {
   "/beat-the-heat": "/guides/beat-the-heat",
   "/rainy-day-activities": "/guides/rainy-day-activities",
   "/little-crystal-creek": "/little-crystal-creek-townsville",
+  "/local-tips": "/first-time-in-townsville",
 };
 
 function fixSiteLink(url: string): string {
@@ -186,9 +189,9 @@ const Hero = () => {
           </Button>
         </form>
 
-        {/* Suggestion chips */}
+        {/* Example questions: clicking one fills the box and sends it */}
         {isSupabaseConfigured && (
-          <div className="flex flex-wrap justify-center gap-2 mt-4">
+          <div className="flex flex-wrap justify-center gap-2 mt-4" aria-label="Example questions" role="group">
             {SUGGESTIONS.map((s) => (
               <button
                 key={s.label}

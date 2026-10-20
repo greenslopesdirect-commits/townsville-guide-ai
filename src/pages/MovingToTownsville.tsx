@@ -361,8 +361,8 @@ const MovingToTownsville = () => {
                     backed by a wide network of GPs, specialists and private clinics.
                   </p>
                   <Button asChild variant="outline" size="sm">
-                    <Link to="/local-tips">
-                      Local Tips <ArrowRight className="w-3 h-3 ml-1" />
+                    <Link to="/first-time-in-townsville">
+                      First Time in Townsville <ArrowRight className="w-3 h-3 ml-1" />
                     </Link>
                   </Button>
                 </CardContent>

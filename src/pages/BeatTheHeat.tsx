@@ -1082,8 +1082,8 @@ const BeatTheHeat = () => {
               Little Crystal Creek closure information
             </Link>{" "}
             first. More everyday shortcuts are in our{" "}
-            <Link to="/local-tips" className="text-primary underline underline-offset-2">
-              local tips
+            <Link to="/first-time-in-townsville" className="text-primary underline underline-offset-2">
+              first-time visitor guide
             </Link>
             .
           </p>

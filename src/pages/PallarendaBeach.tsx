@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, MapPin, AlertTriangle, CheckCircle, Fish, Dog, Quote } from "lucide-react";
 import LocalInsightCard from "@/components/LocalInsightCard";
+import StingerSeasonNote from "@/components/StingerSeasonNote";
 import {
   Accordion,
   AccordionContent,
@@ -18,15 +19,15 @@ const faqs = [
   },
   {
     q: "Are there stinger nets at Pallarenda?",
-    a: "There is normally one seasonal net at the Main Beach (installed roughly November–May for families). It's currently packed away for the Dry season and will be reinstalled in November. The off-leash dog zone at Gates 8–10 is never netted, so treat it as open ocean during stinger season.",
+    a: "Townsville City Council has put a seasonal net at Pallarenda in recent years (it was one of the 2025 installation sites). Nets are installed for the stinger season, usually from early November, and the dates change, so check the Council's lifeguard hours and stinger net page for this season. We aren't aware of a net at the off-leash zone at Gates 8–10, so treat it as open water with no protection.",
   },
   {
     q: "Where exactly is the off-leash zone?",
     a: "Drive north along Cape Pallarenda Road past the Main Beach and look for the beach access points signed Gate 8, 9 and 10. The off-leash boundary ends at the Conservation Park gate — don't take dogs beyond it.",
   },
   {
-    q: "Is it safe to swim at Pallarenda?",
-    a: "The Main Beach is the safer swimming option when the seasonal net is in (Nov–May). Outside of that, or anywhere in the off-leash zone, there's no net — so during stinger season it's wading and sand play only. For year-round stinger-free swimming, head to The Strand Rockpool.",
+    q: "Can you swim at Pallarenda?",
+    a: "Only with care, and we can't tell you it is OK on a given day. Where a Council net is in place at the Main Beach it reduces the risk but doesn't remove it. Everywhere else, including the off-leash zone, there is no net as far as we know, so during stinger season (November to May) keep yourself and your dog out of the water and stick to the sand. Read the stinger safety guide and check the signs.",
   },
   {
     q: "When's the best time to visit?",
@@ -104,6 +105,7 @@ const PallarendaBeach = () => {
                 A quieter alternative to The Strand — famous for its off-leash dog zones, fishing channels, and views of Magnetic Island.
                 For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
               </p>
+              <StingerSeasonNote className="mt-5" />
             </div>
 
             {/* Back Button */}
@@ -134,7 +136,7 @@ const PallarendaBeach = () => {
                         <AlertTriangle className="w-5 h-5" /> Stinger Nets?
                     </div>
                     <p className="text-sm text-amber-900 dark:text-amber-100">
-                        <strong>No net right now.</strong> Townsville's stinger nets (including Pallarenda Main Beach) are packed away for the Dry season — reinstalled Nov. For year-round stinger-free swimming, head to <Link to="/the-strand" className="underline font-semibold">The Strand Rockpool</Link>.
+                        <strong>Nets are seasonal.</strong> Council has installed a net at the Main Beach in recent stinger seasons (usually from early November), but dates change and a net only reduces the risk. Check this season's status on the <a href="https://townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/lifeguard-hours" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Council lifeguard hours and net locations page</a>. The off-leash zone has no net as far as we know.
                     </p>
                 </div>
 
@@ -161,7 +163,7 @@ const PallarendaBeach = () => {
                             Many visitors get confused because Pallarenda is a long stretch of sand. You cannot just let your dog off anywhere.
                         </p>
                         <ul className="list-disc pl-5 space-y-2 mt-4">
-                            <li><strong>The Main Beach:</strong> In stinger season (Nov–May) a net is installed here for families; it's currently out for the Dry. Dogs on-leash only in this zone.</li>
+                            <li><strong>The Main Beach:</strong> In recent stinger seasons (Nov–May) Council has installed a net here, so check what is in place now. Dogs on-leash only in this zone.</li>
                             <li><strong>The Off-Leash Zone:</strong> You need to drive further down Cape Pallarenda Road. Look for the beach access points labeled <strong>Gate 8, 9, or 10</strong>.</li>
                             <li><strong>The Boundary:</strong> The zone ends near the Conservation Park gate. Do not take dogs past the gate into the Conservation Park (heavy fines apply).</li>
                         </ul>
@@ -190,7 +192,7 @@ const PallarendaBeach = () => {
                         ⚠️ Important Safety Warning
                     </h2>
                     <p className="text-muted-foreground mb-4">
-                        Unlike The Strand, the off-leash area here has <strong>no stinger nets</strong>. During the summer months (Nov–May), dangerous Box Jellyfish and Irukandji are present in these waters.
+                        We aren't aware of any stinger net at the off-leash area. During stinger season (typically Nov–May), dangerous box jellyfish and Irukandji can be present in these waters, and they can occur at other times too.
                     </p>
                     <div className="flex flex-col gap-2">
                         <div className="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">

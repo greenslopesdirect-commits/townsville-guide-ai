@@ -1,130 +1,7 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import {
-  ArrowRight,
-  Compass,
-  TreePine,
-  Utensils,
-  ShoppingBag,
-  CalendarDays,
-  Waves,
-  Accessibility,
-  Dog,
-  Sun,
-  CloudRain,
-  Plane,
-  Phone,
-  Bus,
-  Map,
-  ShieldAlert,
-  Store,
-} from "lucide-react";
-
-type LinkItem = {
-  title: string;
-  description: string;
-  link: string;
-  icon?: React.ComponentType<{ className?: string }>;
-};
-
-const planning: LinkItem[] = [
-  {
-    title: "First Visit",
-    description: "How long to stay, where to base yourself and what to prioritise.",
-    link: "/first-time-in-townsville",
-  },
-  {
-    title: "One Day",
-    description: "A realistic single-day plan that does not try to fit in too much.",
-    link: "/townsville-in-one-day",
-  },
-  {
-    title: "Without a Car",
-    description: "Which areas work on foot, by bus, taxi or rideshare.",
-    link: "/townsville-without-a-car",
-  },
-  {
-    title: "With Kids",
-    description: "Family-friendly places, free activities and heat-aware planning.",
-    link: "/townsville-with-kids",
-  },
-  {
-    title: "On a Budget",
-    description: "Free lookouts, waterfront areas, parks and walks.",
-    link: "/guides/free-things",
-  },
-  {
-    title: "Local Tips",
-    description: "Local habits, timing advice and mistakes visitors often make.",
-    link: "/local-tips",
-  },
-];
-
-const interests: LinkItem[] = [
-  { title: "Nature", description: "Walks, wetlands, lookouts and national park country.", link: "/nature", icon: TreePine },
-  { title: "Food & Drink", description: "Where to eat across Palmer Street, the CBD and The Strand.", link: "/food", icon: Utensils },
-  { title: "Shopping", description: "Centres, markets and local shopping areas.", link: "/shopping", icon: ShoppingBag },
-  { title: "Events", description: "Sport, festivals, markets and community events.", link: "/events", icon: CalendarDays },
-  { title: "Beaches", description: "Which beaches suit which kind of visit.", link: "/beaches", icon: Waves },
-  { title: "Accessible Townsville", description: "Planning guidance for flatter routes and easier access.", link: "/accessible-townsville", icon: Accessibility },
-  { title: "Dog-Friendly", description: "Off-leash areas, dog beaches and pet-friendly spots.", link: "/dog-friendly", icon: Dog },
-];
-
-const practical: LinkItem[] = [
-  { title: "Townsville Airport & Flights", description: "Arrivals, transport, parking and car hire.", link: "/townsville-airport", icon: Plane },
-  { title: "Useful Contacts", description: "Emergency numbers, health services and council.", link: "/useful-contacts", icon: Phone },
-  { title: "Getting Around", description: "Buses, taxis, rideshare and walkable areas.", link: "/townsville-without-a-car", icon: Bus },
-  { title: "Townsville Areas", description: "Where the main parts of the city sit and what each suits.", link: "/suburbs", icon: Map },
-  { title: "Marine Stinger Safety", description: "How to check conditions and swim sensibly.", link: "/guides/stinger-safety", icon: ShieldAlert },
-  { title: "Townsville Directory", description: "Visitor-focused local businesses and places.", link: "/directory", icon: Store },
-];
-
-const localLinks: LinkItem[] = [
-  { title: "Events", description: "See festivals, sport, markets and where to check what's on now.", link: "/events", icon: CalendarDays },
-  { title: "Townsville Directory", description: "Browse useful local businesses, services and places.", link: "/directory", icon: Store },
-  { title: "Food & Drink", description: "Find dining areas, cafés and local food ideas.", link: "/food", icon: Utensils },
-  { title: "Shopping", description: "Compare Townsville shopping centres, markets and local shopping areas.", link: "/shopping", icon: ShoppingBag },
-  { title: "Beaches", description: "Explore Townsville's beaches and coastal areas.", link: "/beaches", icon: Waves },
-  { title: "Dog Friendly", description: "Find dog-friendly beach, park and local outing information.", link: "/dog-friendly", icon: Dog },
-  { title: "Suburbs & Areas", description: "Understand Townsville's main suburbs and local areas.", link: "/suburbs", icon: Map },
-  { title: "Useful Contacts", description: "Find practical local, emergency and visitor contact information.", link: "/useful-contacts", icon: Phone },
-];
-
-const CardGrid = ({ items, cols = "lg:grid-cols-3" }: { items: LinkItem[]; cols?: string }) => (
-  <div className={`grid sm:grid-cols-2 ${cols} gap-4`}>
-    {items.map((item) => {
-      const Icon = item.icon;
-      return (
-        <Link
-          key={item.link + item.title}
-          to={item.link}
-          className="group block rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-        >
-          <Card className="h-full border border-border/60 transition-colors hover:border-primary/40">
-            <CardContent className="p-5">
-              <div className="flex items-start gap-3">
-                {Icon && (
-                  <span className="p-2 rounded-lg bg-primary/10 text-primary shrink-0">
-                    <Icon className="w-5 h-5" />
-                  </span>
-                )}
-                <div className="min-w-0">
-                  <h3 className="font-bold text-foreground group-hover:text-primary transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mt-1">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </Link>
-      );
-    })}
-  </div>
-);
+import { ArrowRight, Calculator, CalendarDays, Compass } from "lucide-react";
 
 export const ThingsToDoCta = () => (
   <section className="py-14 px-4 bg-background">
@@ -149,30 +26,21 @@ export const ThingsToDoCta = () => (
   </section>
 );
 
-export const PlanYourVisit = () => (
-  <section className="py-16 px-4 bg-muted/30">
-    <div className="container mx-auto max-w-6xl">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-        Plan Your Visit
-      </h2>
-      <p className="text-center text-muted-foreground mb-10 text-lg max-w-2xl mx-auto">
-        Pick the planning guide that matches your trip.
+export const WeekendCalculatorCta = () => (
+  <section className="py-12 px-4 bg-gradient-to-br from-[hsl(195,75%,92%)] to-[hsl(45,90%,90%)] dark:from-[hsl(195,40%,18%)] dark:to-[hsl(45,40%,15%)]">
+    <div className="container mx-auto max-w-3xl text-center space-y-4">
+      <Calculator className="w-8 h-8 text-primary mx-auto" aria-hidden />
+      <h2 className="text-2xl md:text-3xl font-bold text-foreground">Weekend Cost Calculator</h2>
+      <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
+        Get a rough estimate of what a Townsville weekend will cost for your group, covering transport,
+        eating out and paid activities.
       </p>
-      <CardGrid items={planning} />
-    </div>
-  </section>
-);
-
-export const ExploreByInterest = () => (
-  <section className="py-16 px-4 bg-background">
-    <div className="container mx-auto max-w-6xl">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-        Explore Townsville Your Way
-      </h2>
-      <p className="text-center text-muted-foreground mb-10 text-lg max-w-2xl mx-auto">
-        Head straight to the hub that matches what you are interested in.
-      </p>
-      <CardGrid items={interests} />
+      <Button asChild size="lg" className="gap-2 rounded-full px-7">
+        <Link to="/weekend-cost-calculator">
+          Estimate My Weekend Cost
+          <ArrowRight className="w-4 h-4" />
+        </Link>
+      </Button>
     </div>
   </section>
 );
@@ -268,58 +136,6 @@ export const DayTrips = () => (
   </section>
 );
 
-export const WeatherAndWater = () => (
-  <section className="py-16 px-4 bg-muted/30">
-    <div className="container mx-auto max-w-6xl">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-        Planning Around the Weather &amp; the Water
-      </h2>
-      <p className="text-center text-muted-foreground mb-10 text-lg max-w-2xl mx-auto">
-        Townsville days often need adjusting for heat, rain or swimming conditions.
-      </p>
-
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <Link to="/guides/beat-the-heat" className="group block rounded-lg">
-          <Card className="h-full border border-border/60 transition-colors hover:border-primary/40">
-            <CardContent className="p-5 space-y-2">
-              <Sun className="w-6 h-6 text-primary" aria-hidden />
-              <h3 className="font-bold text-foreground">Hot Day</h3>
-              <p className="text-sm text-muted-foreground">Cooler timing, shade and water-based options.</p>
-            </CardContent>
-          </Card>
-        </Link>
-        <Link to="/guides/rainy-day-activities" className="group block rounded-lg">
-          <Card className="h-full border border-border/60 transition-colors hover:border-primary/40">
-            <CardContent className="p-5 space-y-2">
-              <CloudRain className="w-6 h-6 text-primary" aria-hidden />
-              <h3 className="font-bold text-foreground">Rainy Day</h3>
-              <p className="text-sm text-muted-foreground">Indoor and undercover ideas when storms roll through.</p>
-            </CardContent>
-          </Card>
-        </Link>
-        <Link to="/beaches" className="group block rounded-lg">
-          <Card className="h-full border border-border/60 transition-colors hover:border-primary/40">
-            <CardContent className="p-5 space-y-2">
-              <Waves className="w-6 h-6 text-primary" aria-hidden />
-              <h3 className="font-bold text-foreground">Beaches</h3>
-              <p className="text-sm text-muted-foreground">Not every beach suits swimming — see what each is best for.</p>
-            </CardContent>
-          </Card>
-        </Link>
-        <Link to="/guides/stinger-safety" className="group block rounded-lg">
-          <Card className="h-full border border-border/60 transition-colors hover:border-primary/40">
-            <CardContent className="p-5 space-y-2">
-              <ShieldAlert className="w-6 h-6 text-primary" aria-hidden />
-              <h3 className="font-bold text-foreground">Stinger Safety</h3>
-              <p className="text-sm text-muted-foreground">How to check current advice before entering the water.</p>
-            </CardContent>
-          </Card>
-        </Link>
-      </div>
-    </div>
-  </section>
-);
-
 export const WhatsOn = () => (
   <section className="py-14 px-4 bg-background">
     <div className="container mx-auto max-w-4xl">
@@ -341,40 +157,3 @@ export const WhatsOn = () => (
     </div>
   </section>
 );
-
-export const PracticalResources = () => (
-  <section className="py-16 px-4 bg-muted/30">
-    <div className="container mx-auto max-w-6xl">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-        Practical Visitor Resources
-      </h2>
-      <p className="text-center text-muted-foreground mb-10 text-lg max-w-2xl mx-auto">
-        The practical pages visitors reach for most, including the Townsville Directory of local
-        businesses and places.
-      </p>
-      <CardGrid items={practical} />
-    </div>
-  </section>
-);
-
-export const ForLocals = () => (
-  <section className="py-16 px-4 bg-muted/50 border-y border-border/40">
-    <div className="container mx-auto max-w-6xl">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-foreground">
-        Living in Townsville?
-      </h2>
-      <p className="text-center text-muted-foreground mb-10 text-lg max-w-2xl mx-auto">
-        Already live here? Discover what’s on, local businesses, places to eat, beaches, dog-friendly spots and useful Townsville information.
-      </p>
-      <CardGrid items={localLinks} />
-      <div className="mt-8 flex flex-wrap justify-center items-center gap-x-4 gap-y-2 text-sm">
-        <span className="text-muted-foreground">Also useful for locals:</span>
-        <Link to="/riverway" className="text-primary hover:underline">Riverway</Link>
-        <Link to="/local-tips" className="text-primary hover:underline">Local Tips</Link>
-        <Link to="/nature" className="text-primary hover:underline">Nature</Link>
-        <Link to="/accessible-townsville" className="text-primary hover:underline">Accessible Townsville</Link>
-      </div>
-    </div>
-  </section>
-);
-

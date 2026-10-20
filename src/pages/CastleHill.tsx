@@ -358,7 +358,7 @@ const CastleHill = () => {
                 <Link to="/the-strand">The Strand Guide</Link>
               </Button>
               <Button asChild variant="outline">
-                <Link to="/local-tips">Local Tips</Link>
+                <Link to="/first-time-in-townsville">First Time in Townsville</Link>
               </Button>
               <Button asChild variant="outline">
                 <Link to="/guides/walking-castle-hill">Walking Castle Hill</Link>

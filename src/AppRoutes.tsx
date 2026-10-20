@@ -36,7 +36,6 @@ const HistoryOfTownsville = lazy(() => import("@/pages/HistoryOfTownsville"));
 const ThingsToDo = lazy(() => import("@/pages/ThingsToDo"));
 const Beaches = lazy(() => import("@/pages/Beaches"));
 const FoodDrink = lazy(() => import("@/pages/FoodDrink"));
-const LocalTips = lazy(() => import("@/pages/LocalTips"));
 const Accommodation = lazy(() => import("@/pages/Accommodation"));
 const Events = lazy(() => import("@/pages/Events"));
 const Advertise = lazy(() => import("@/pages/Advertise"));
@@ -70,6 +69,7 @@ const AccessibleTownsville = lazy(() => import("@/pages/AccessibleTownsville"));
 const UsefulContacts = lazy(() => import("@/pages/UsefulContacts"));
 const Suburbs = lazy(() => import("@/pages/Suburbs"));
 const Directory = lazy(() => import("@/pages/Directory"));
+const WeekendCostCalculator = lazy(() => import("@/pages/WeekendCostCalculator"));
 const FirstTimeInTownsville = lazy(() => import("@/pages/FirstTimeInTownsville"));
 const TownsvilleInOneDay = lazy(() => import("@/pages/TownsvilleInOneDay"));
 const WalkingCastleHill = lazy(() => import("./pages/WalkingCastleHill"));
@@ -97,7 +97,7 @@ const AppRoutes = () => (
         <Route path="things-to-do" element={<ThingsToDo />} />
         <Route path="beaches" element={<Beaches />} />
         <Route path="food" element={<FoodDrink />} />
-        <Route path="local-tips" element={<LocalTips />} />
+        <Route path="local-tips" element={<Navigate to="/first-time-in-townsville" replace />} />
         <Route path="accommodation" element={<Accommodation />} />
         <Route path="events" element={<Events />} />
 
@@ -144,6 +144,7 @@ const AppRoutes = () => (
         <Route path="moving-to-townsville" element={<MovingToTownsville />} />
         <Route path="suburbs" element={<Suburbs />} />
         <Route path="directory" element={<Directory />} />
+        <Route path="weekend-cost-calculator" element={<WeekendCostCalculator />} />
         <Route path="accessible-townsville" element={<AccessibleTownsville />} />
         <Route path="useful-contacts" element={<UsefulContacts />} />
         <Route path="first-time-in-townsville" element={<FirstTimeInTownsville />} />

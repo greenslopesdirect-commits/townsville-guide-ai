@@ -39,8 +39,8 @@ const HeaderImproved = () => {
     { to: "/directory", label: "Directory" },
     { to: "/events", label: "Events" },
     {
-      to: "/local-tips",
-      label: "Local Tips",
+      to: "/first-time-in-townsville",
+      label: "First Time Visitors",
       subItems: [
         { to: "/accessible-townsville", label: "Accessibility Guide" },
         { to: "/useful-contacts", label: "Useful Contacts" },

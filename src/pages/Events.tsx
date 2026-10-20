@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
 import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
+import ThisWeekendInTownsville from "@/components/ThisWeekendInTownsville";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -288,6 +289,8 @@ const Events = () => (
         this page to work out what kind of event weekend suits you and how to build a trip around
         it, then confirm the actual dates with the official calendar or the organiser.
       </p>
+
+      <ThisWeekendInTownsville />
 
       <GuideQuickFacts className="mb-10" />
 

@@ -302,7 +302,7 @@ const LittleCrystalCreek = () => {
           {[
             { label: "Paluma Day Trip from Townsville", to: "/guides/paluma-day-trip" },
             { label: "Free Things to Do in Townsville", to: "/guides/free-things" },
-            { label: "Best Time to Visit Townsville", to: "/local-tips" },
+            { label: "First Time in Townsville", to: "/first-time-in-townsville" },
             { label: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip" },
             { label: "Townsville Beaches Guide", to: "/beaches" },
           ].map((link) => (

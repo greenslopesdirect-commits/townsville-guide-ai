@@ -18,8 +18,8 @@ const HistoryOfTownsville = () => {
   return (
     <>
       <SEOHead
-        title="Townsville History – A Simple, Engaging Story of the City"
-        description="Explore Townsville's history from First Nations Country to gold rush days, cyclones, WWII and modern life in this clear, easy-to-read local guide."
+        title="Townsville History: Founding, Gold Rush, WWII & Key Dates"
+        description="Townsville's history from First Nations Country to the 1864 settlement, gold, cyclones and WWII, with key dates and places to visit."
         canonical="https://www.townsvilleguide.com.au/history"
       />
       <Helmet>
@@ -318,7 +318,7 @@ const HistoryOfTownsville = () => {
             <div className="prose prose-lg max-w-none text-foreground/90 space-y-5 text-lg leading-relaxed"
                  style={{ lineHeight: '1.8' }}>
               <p>
-                Andrew Ball's party reached the mouth of a small tidal creek and camped beneath a striking pink-granite hill. He named it Castle Hill — a reminder of fortress-like cliffs in Britain.
+                Andrew Ball's party reached Ross Creek, a small tidal creek on Cleveland Bay, and camped beneath a striking pink-granite hill. Queensland heritage records say Ball first called the site Castletown. (Sources disagree about who first named Castle Hill itself.)
               </p>
               
               <p>The first settlement was rudimentary:</p>
@@ -332,7 +332,7 @@ const HistoryOfTownsville = () => {
               </ul>
               
               <p>
-                Robert Towns backed the settlement financially. In recognition of his support, the settlement became <strong>Townsville</strong>.
+                Robert Towns backed the settlement financially. When a government town site was surveyed in 1865, the name Castletown was replaced by <strong>Townsville</strong>, in honour of Towns.
               </p>
               
               <p>
@@ -604,7 +604,7 @@ const HistoryOfTownsville = () => {
               </p>
               
               <ul className="list-disc pl-6 space-y-2">
-                <li>On Castle Hill, where explorers camped and students painted</li>
+                <li>On Castle Hill, the landmark the early settlement grew up beneath</li>
                 <li>Along Jezzine, where Aboriginal story and WWII concrete meet</li>
                 <li>At the port, still pulsing with the same energy of the gold rush era</li>
                 <li>On The Strand, where generations have walked, fished, swum and gathered</li>
@@ -618,6 +618,45 @@ const HistoryOfTownsville = () => {
                 Understanding the history turns every lookout, every beach walk and every sunset into something richer.
               </p>
             </div>
+          </section>
+
+          {/* Key dates + see it in person + sources */}
+          <section className="mb-16 animate-fade-in pt-16 border-t border-border/30">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5">Key Dates at a Glance</h2>
+            <p className="text-muted-foreground mb-6">
+              Early dates differ slightly between sources, so where they disagree this timeline says so.
+            </p>
+            <ul className="space-y-3 text-lg text-foreground/90">
+              <li><strong>April 1864:</strong> Andrew Ball and Mark Watt Reid, working for John Melton Black and Robert Towns, reach Ross Creek on Cleveland Bay.</li>
+              <li><strong>November 1864:</strong> the first settlers arrive from Woodstock Station. Council heritage material gives this as the founding date.</li>
+              <li><strong>1865:</strong> the government town site is surveyed. The name changes from Castletown to Townsville, after Robert Towns.</li>
+              <li><strong>1866:</strong> the Municipality of Townsville is proclaimed, with John Melton Black elected mayor.</li>
+              <li><strong>Late 1860s to 1870s:</strong> gold at the Cape River, Ravenswood and Charters Towers turns Townsville into the port for the goldfields.</li>
+              <li><strong>Late July 1942:</strong> Japanese flying boats raid Townsville on three nights. Townsville was then a major Allied air base.</li>
+            </ul>
+          </section>
+
+          <section className="mb-16 animate-fade-in pt-16 border-t border-border/30">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-5">See the History in Person</h2>
+            <ul className="space-y-3 text-lg text-foreground/90">
+              <li><Link to="/castle-hill" className="text-primary hover:underline font-semibold">Castle Hill</Link>: the granite landmark above the original settlement, with lookouts over Cleveland Bay. See also the <Link to="/guides/walking-castle-hill" className="text-primary hover:underline">walking tracks</Link>.</li>
+              <li><Link to="/jezzine-barracks" className="text-primary hover:underline font-semibold">Jezzine Barracks</Link>: Kissing Point, with military heritage and Aboriginal heritage in one walk.</li>
+              <li><Link to="/the-strand" className="text-primary hover:underline font-semibold">The Strand</Link>: Townsville's waterfront on Cleveland Bay, a short distance from the original Ross Creek camp.</li>
+              <li><Link to="/guides/magnetic-island-day-trip" className="text-primary hover:underline font-semibold">Magnetic Island</Link>: Yunbenun, with its Wulgurukaba connection and its WWII forts. See the <Link to="/guides/forts-walk-magnetic-island" className="text-primary hover:underline">Forts Walk</Link>.</li>
+            </ul>
+          </section>
+
+          <section className="mb-16 animate-fade-in pt-16 border-t border-border/30">
+            <h2 className="text-2xl font-bold text-foreground mb-4">Sources and Further Reading</h2>
+            <p className="text-muted-foreground mb-3">
+              This is a short summary, not a full history. For more detail, start with these:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+              <li><a href="https://apps.des.qld.gov.au/heritage-register/detail/?id=601218" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Queensland Heritage Register: Castle Hill</a></li>
+              <li><a href="https://apps.des.qld.gov.au/heritage-register/detail/?id=600877" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Queensland Heritage Register: Rosebank (early settlement and the name Townsville)</a></li>
+              <li><a href="https://www.townsville.qld.gov.au/about-townsville/history-and-heritage" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Townsville City Council: history and heritage</a>, including heritage trail brochures</li>
+              <li><a href="https://www.slq.qld.gov.au/blog/70th-anniversary-bombing-townsville-during-world-war-ii" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">State Library of Queensland: bombing of Townsville in World War II</a></li>
+            </ul>
           </section>
 
           {/* Explore More Section */}

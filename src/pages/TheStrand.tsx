@@ -26,6 +26,7 @@ import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import { triggerAiGuide } from "@/utils/aiGuide";
+import StingerSeasonNote from "@/components/StingerSeasonNote";
 
 const SITE = "https://www.townsvilleguide.com.au";
 const LAST_UPDATED = "5 August 2026";
@@ -173,6 +174,7 @@ const TheStrand = () => {
               enjoy without a car.
               For more ideas, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
             </p>
+            <StingerSeasonNote />
             <ul className="list-disc pl-5 space-y-1.5 text-muted-foreground leading-relaxed">
               <li>Free: walking, playgrounds, the Water Park (central Strand) and the Rockpool (northern Strand).</li>
               <li>Paid: Tobruk Memorial Baths, plus food and paid activities.</li>

@@ -564,7 +564,7 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     cost: "Free information",
     bestTimeToVisit: "Check before every planned swim",
     localVerdict:
-      "Townsville swimming is manageable when visitors follow current beach-safety advice, and current signs and official warnings should always take priority over general online advice.",
+      "Stingers are a real seasonal risk here. Nets and suits reduce it but don't remove it, and current signs, lifeguards and official warnings always come before general online advice.",
   },
   "/dog-friendly": {
     bestFor: ["Dog owners", "Off-leash beach runs", "Fenced dog parks", "Locals and visiting pets"],
@@ -646,19 +646,6 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     bestTimeToVisit: "Start early, particularly during hotter months",
     localVerdict:
       "A realistic introduction to Townsville that covers the waterfront, local history and Castle Hill without making the day unnecessarily rushed.",
-  },
-  "/local-tips": {
-    bestLocalHabit: "Plan outdoor time early and late",
-    mostUsefulBase: "The Strand / North Ward",
-    carNeeded: "Not always, but very useful beyond central Townsville",
-    bestRepeatVisit: "The Strand",
-    mostCommonMistake: "Underestimating heat and distance",
-    bestFreeOuting: "Riverway or Jezzine Barracks",
-    bestEasyView: "Castle Hill by car",
-    bestDayTrip: "Magnetic Island or Paluma, depending on your interests",
-    mainLocalTip: "Do less, but time it better",
-    localVerdict:
-      "Townsville is easier to enjoy once you stop trying to treat it like a compact southern city.",
   },
   "/things-to-do": {
     bestOverall: "The Strand",
@@ -791,14 +778,14 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
     airport: "Townsville Airport",
     airportCode: "TSV",
     bestFor: ["Flying directly into Townsville"],
-    bestOnwardTransport: "Taxi, rideshare or car hire depending on your trip",
+    bestOnwardTransport: "Translink route 222, taxi, rideshare, shuttle or hire car",
     bestCentralBase: "The Strand / North Ward, the CBD or Palmer Street",
-    carNeeded: "Yes for wider Townsville and regional day trips",
+    carNeeded: "Not for a short central stay; yes for wider Townsville and regional day trips",
     flightSchedules: "Check the airline or Townsville Airport directly",
-    parking: "Check current airport parking information",
-    mainConsideration: "Routes and schedules change",
+    parking: "Saver and Select car parks; pre-book online",
+    mainConsideration: "Domestic flights only; terminal is locked overnight",
     localVerdict:
-      "Flying is the simplest way to reach Townsville from many Australian cities, but your onward transport depends on where you plan to stay.",
+      "A compact airport about 10 minutes from the city centre. Your onward transport depends on where you plan to stay.",
   },
   "/riverway": {
 

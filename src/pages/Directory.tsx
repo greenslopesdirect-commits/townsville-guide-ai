@@ -78,7 +78,6 @@ const PLANNING_LINKS = [
   { to: "/first-time-in-townsville", label: "First Time in Townsville", note: "Start here if it's your first visit" },
   { to: "/townsville-without-a-car", label: "Townsville Without a Car", note: "Ferries, buses and walkable areas" },
   { to: "/townsville-with-kids", label: "Townsville with Kids", note: "Family-friendly planning" },
-  { to: "/local-tips", label: "Local Tips", note: "Practical advice from the ground" },
 ];
 
 const Directory = () => {
@@ -188,9 +187,17 @@ const Directory = () => {
             Townsville Directory
           </h1>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-            Browse useful Townsville places and businesses for eating, staying, shopping,
-            attractions, tours, transport and practical visitor needs. The directory complements
-            our local guides by helping you find the actual places behind your plans.
+            A short, hand-picked list of {LISTINGS.length} Townsville places in {CATEGORIES.length} categories: eating
+            and drinking, accommodation, tours, transport, dog-friendly services and beauty. Pick a
+            category, filter by area or search by name. Each listing is a name, an area, a short
+            description and, where we have confirmed one, a link to the business's own website.
+          </p>
+          <p className="text-muted-foreground text-sm leading-relaxed mt-3">
+            There are no ratings or reviews here, and we don't publish prices or opening hours. For
+            advice on what to choose, start with the guides:{" "}
+            <Link to="/food" className="text-primary hover:underline">food</Link>,{" "}
+            <Link to="/accommodation" className="text-primary hover:underline">where to stay</Link> and{" "}
+            <Link to="/things-to-do" className="text-primary hover:underline">things to do</Link>.
           </p>
         </div>
       </section>

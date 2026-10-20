@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Dog, ShieldAlert, TreePine, Users, Quote } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
+import StingerSeasonNote from "@/components/StingerSeasonNote";
 import {
   Accordion,
   AccordionContent,
@@ -55,7 +56,7 @@ const BushlandBeach = () => {
     <>
       <SEOHead
         title="Bushland Beach, Townsville: Low Tide, Dogs & Swimming"
-        description="Bushland Beach, Townsville: wide low-tide sand, Peggy Banfield Park's dog areas and playground, and whether it's safe to swim. Northern beaches tips."
+        description="Bushland Beach, Townsville: wide low-tide sand, Peggy Banfield Park's dog areas and playground, and swimming cautions. Northern beaches tips."
         canonical="https://www.townsvilleguide.com.au/bushland-beach"
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -73,6 +74,7 @@ const BushlandBeach = () => {
         </div>
 
         <div className="container mx-auto max-w-4xl px-4 mt-8 relative z-30">
+          <StingerSeasonNote className="mb-6" />
           {/* Quick Chips */}
           <div className="flex flex-wrap gap-2 mb-8">
             <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
@@ -162,11 +164,7 @@ const BushlandBeach = () => {
                       Townsville City Council
                     </a>{" "}
                     information for patrol and net status before deciding to swim, especially during
-                    stinger season (November–May). For year-round stinger-free swimming, the{" "}
-                    <Link to="/the-strand" className="underline font-medium">
-                      Strand Rockpool
-                    </Link>{" "}
-                    is the reliable option. See our{" "}
+                    stinger season (November–May). If you are unsure, treat the water as unprotected and stay out of it in stinger season. See our{" "}
                     <Link to="/guides/stinger-safety" className="underline font-medium">
                       Stinger Safety guide
                     </Link>{" "}

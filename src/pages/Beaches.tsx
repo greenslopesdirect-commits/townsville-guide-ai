@@ -5,6 +5,7 @@ import GuideQuickFacts from "@/components/GuideQuickFacts";
 import LocalInsightCard from "@/components/LocalInsightCard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import StingerSeasonNote from "@/components/StingerSeasonNote";
 import {
   Table,
   TableBody,
@@ -314,6 +315,7 @@ const Beaches = () => {
             locations, and marine-stinger conditions, patrols and net arrangements need to be
             checked before you get in the water anywhere.
           </p>
+          <StingerSeasonNote className="mt-6 text-left" />
         </div>
       </section>
 
@@ -327,8 +329,8 @@ const Beaches = () => {
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-3">
             Yes, but not everywhere and not without checking first. Swim in designated areas,
-            between the flags where lifeguards are on duty, or at the netted Rockpool on The
-            Strand. Calm-looking water is not a safety guide.
+            between the flags where lifeguards are on duty, or at the Rockpool on The Strand
+            (check its current status with Council). Calm-looking water is not a safety guide.
           </p>
           <ul className="list-disc pl-5 space-y-2 text-muted-foreground leading-relaxed mb-3">
             <li>

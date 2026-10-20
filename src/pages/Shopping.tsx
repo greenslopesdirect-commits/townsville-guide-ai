@@ -109,7 +109,6 @@ const RELATED = [
   { to: "/guides/beat-the-heat", name: "Beat the Heat", text: "Timing your day around Townsville's heat." },
   { to: "/the-strand", name: "The Strand", text: "The waterfront precinct and its cafés and conveniences." },
   { to: "/riverway", name: "Riverway", text: "Free lagoons and parkland out at Thuringowa Central." },
-  { to: "/local-tips", name: "Local Tips", text: "Practical observations that do not fit elsewhere." },
   { to: "/guides/magnetic-island-ferry", name: "Magnetic Island Ferry", text: "Crossing times and what to do either side." },
   { to: "/useful-contacts", name: "Useful Contacts", text: "Emergency, health and council contacts." },
 ];
@@ -516,8 +515,8 @@ const Shopping = () => (
         </ul>
         <p className="text-muted-foreground mt-4">
           More small practicalities are collected in{" "}
-          <Link to="/local-tips" className="text-primary hover:underline">
-            Local Tips
+          <Link to="/first-time-in-townsville" className="text-primary hover:underline">
+            First Time in Townsville
           </Link>
           , and{" "}
           <Link to="/useful-contacts" className="text-primary hover:underline">

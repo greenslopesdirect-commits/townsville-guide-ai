@@ -129,7 +129,6 @@ const RELATED = [
   { to: "/riverway", name: "Riverway", text: "Free lagoons and parkland out at Thuringowa Central." },
   { to: "/guides/beat-the-heat", name: "Beat the Heat", text: "Timing your day around Townsville's heat." },
   { to: "/guides/rainy-day-activities", name: "Rainy Day Activities", text: "Indoor options when the weather turns." },
-  { to: "/local-tips", name: "Local Tips", text: "Practical observations that do not fit elsewhere." },
   { to: "/beaches", name: "Townsville Beaches", text: "Which beaches sit closest to which accommodation area." },
   { to: "/dog-friendly", name: "Dog-Friendly Townsville", text: "Pet-friendly stays and where dogs are welcome." },
 ];
@@ -703,8 +702,8 @@ const Accommodation = () => (
         </ul>
         <p className="text-muted-foreground mt-4">
           More small practicalities are collected in{" "}
-          <Link to="/local-tips" className="text-primary hover:underline">
-            Local Tips
+          <Link to="/first-time-in-townsville" className="text-primary hover:underline">
+            First Time in Townsville
           </Link>
           , and{" "}
           <Link to="/useful-contacts" className="text-primary hover:underline">

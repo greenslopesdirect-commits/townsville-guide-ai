@@ -37,6 +37,7 @@ import {
 } from "lucide-react";
 import maxPallarenda from "@/assets/max-at-kissing-point1.webp";
 import maxQuaysideImg from "@/assets/max-quayside-crown-princess.jpg";
+import StingerSeasonNote from "@/components/StingerSeasonNote";
 
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/dog-friendly";
@@ -233,6 +234,7 @@ const DogFriendly = () => {
             the next.
             For days out beyond the beach, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
           </p>
+          <StingerSeasonNote className="mt-6 text-left" />
         </div>
       </section>
 

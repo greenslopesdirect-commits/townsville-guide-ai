@@ -111,7 +111,7 @@ const Footer = () => {
               <li><Link to="/dog-friendly" className="hover:text-primary transition-colors">Dog-Friendly Spots</Link></li>
               <li><Link to="/accommodation" className="hover:text-primary transition-colors">Accommodation</Link></li>
               <li><Link to="/townsville-airport" className="hover:text-primary transition-colors">Airport &amp; Flights</Link></li>
-              <li><Link to="/local-tips" className="hover:text-primary transition-colors">Local Tips</Link></li>
+              <li><Link to="/first-time-in-townsville" className="hover:text-primary transition-colors">First Time in Townsville</Link></li>
               <li><Link to="/guides/magnetic-island-day-trip" className="hover:text-primary transition-colors">Magnetic Island Day Trip</Link></li>
               <li><Link to="/cowboys-stadium-guide" className="hover:text-primary transition-colors">Cowboys Game Day</Link></li>
               <li><Link to="/north-shore-townsville" className="hover:text-primary transition-colors">North Shore Guide</Link></li>

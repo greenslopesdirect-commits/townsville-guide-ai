@@ -50,6 +50,7 @@ const REDIRECTS = {
   "/guides/free-truth": "/guides/free-things",
   "/first-time-in-visitor-guide": "/first-time-in-townsville",
   "/suburb": "/suburbs",
+  "/local-tips": "/first-time-in-townsville",
 };
 
 function escapeHtml(s) {

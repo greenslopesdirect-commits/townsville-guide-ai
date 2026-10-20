@@ -9,11 +9,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import SEOHead from "@/components/SEOHead";
+import StingerSeasonNote from "@/components/StingerSeasonNote";
 
 const faqs = [
   {
     q: "Is Rowes Bay good for swimming?",
-    a: "Rowes Bay is better known for sunset walks and wading in the shallows than serious swimming. There's no stinger net here, so during stinger season (November–May) most locals stick to The Strand Rockpool at the northern end, which is stinger-free year-round.",
+    a: "Rowes Bay is better known for sunset walks than swimming. We aren't aware of a stinger net here, so during stinger season (November–May) treat the water as unprotected. Check the signs and the stinger safety guide before getting in, and see The Strand page for the Council swimming facilities.",
   },
   {
     q: "Are dogs allowed at Rowes Bay?",
@@ -21,7 +22,7 @@ const faqs = [
   },
   {
     q: "Is there a stinger net at Rowes Bay?",
-    a: "No. Unlike The Strand, Rowes Bay does not have a stinger enclosure. During stinger season (Nov–May) wear a stinger suit for any water contact, or swim at The Strand Rockpool instead — it's a fully enclosed saltwater lagoon that stays stinger-free all year.",
+    a: "We aren't aware of one. Council's net locations have been at places like The Strand, Pallarenda, Balgal Beach and Magnetic Island, not Rowes Bay. A suit reduces exposed skin but doesn't remove the risk, so during stinger season (Nov–May) the safest option here is to stay out of the water. Check the Council's lifeguard hours and net locations page.",
   },
   {
     q: "Where's the best spot to watch the sunset at Rowes Bay?",
@@ -73,6 +74,7 @@ const RowesBay = () => {
       </div>
 
       <div className="container mx-auto max-w-4xl px-4 mt-8 relative z-30">
+        <StingerSeasonNote className="mb-6" />
         
         {/* Quick Chips */}
         <div className="flex flex-wrap gap-2 mb-8">
@@ -141,12 +143,12 @@ const RowesBay = () => {
                 <div>
                   <h2 className="text-xl font-bold mb-2 text-gray-800">Swimming Safety</h2>
                   <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                    <li><strong>Stinger Season (Nov - May):</strong> Box Jellyfish and Irukandji are present. Unlike The Strand, Rowes Bay does <strong>not</strong> have a stinger net.</li>
+                    <li><strong>Stinger season (typically Nov to May):</strong> box jellyfish and Irukandji can be present. We aren't aware of a stinger net at Rowes Bay, and stingers can occur outside the season too.</li>
                     <li><strong>Crocodiles:</strong> While rare on the open beach, be "Croc Wise" near creek mouths and at dawn/dusk.</li>
-                    <li><strong>Recommendation:</strong> Great for walking and wading in the shallows (in stinger suits during season). For serious swimming, head to <Link to="/the-strand" className="underline text-primary">The Strand Rockpool</Link> — a fully enclosed saltwater lagoon that's stinger-free year-round.</li>
+                    <li><strong>Recommendation:</strong> Rowes Bay is for walking, sunsets and the shoreline. In stinger season, stay out of the water here. For swimming facilities, see <Link to="/the-strand" className="underline text-primary">The Strand</Link> and check current Council information first.</li>
                   </ul>
                   <p className="text-sm text-gray-600 mt-3">
-                    See our <Link to="/guides/stinger-safety" className="underline text-primary">Stinger &amp; Safety Guide</Link> for the current season status.
+                    See our <Link to="/guides/stinger-safety" className="underline text-primary">Stinger &amp; Safety Guide</Link> for first aid and the season, and check <a href="https://townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/lifeguard-hours" target="_blank" rel="noopener noreferrer" className="underline text-primary">Council net locations</a> before you swim.
                   </p>
                 </div>
               </div>

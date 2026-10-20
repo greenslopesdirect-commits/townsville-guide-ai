@@ -103,7 +103,6 @@ const PATHWAYS = [
   { label: "Without a car", to: "/townsville-without-a-car", name: "Strand / CBD / Palmer Street" },
   { label: "Before the ferry", to: "/guides/magnetic-island-ferry", name: "Palmer Street / CBD" },
   { label: "Budget", to: "/guides/free-things", name: "Cafés, takeaway and markets" },
-  { label: "Coffee", to: "/local-tips", name: "CBD / North Ward" },
   { label: "Hot weather", to: "/guides/beat-the-heat", name: "Shaded or indoor dining" },
   { label: "Rain", to: "/guides/rainy-day-activities", name: "Cafés and indoor precincts" },
 ];
@@ -114,7 +113,6 @@ const RELATED = [
   { name: "Townsville Without a Car", to: "/townsville-without-a-car", text: "Walkable areas, including most central dining." },
   { name: "Townsville with Kids", to: "/townsville-with-kids", text: "Family-friendly areas and how to time meals." },
   { name: "Things to Do", to: "/things-to-do", text: "The main activity hub to build meals around." },
-  { name: "Local Tips", to: "/local-tips", text: "Practical local habits, including everyday timing." },
   { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip", text: "Plan the island day, then eat on your return." },
   { name: "Magnetic Island Ferry", to: "/guides/magnetic-island-ferry", text: "Crossings and timings for pre- or post-ferry meals." },
   { name: "Castle Hill", to: "/castle-hill", text: "Plan food before or after the lookout." },
@@ -353,8 +351,8 @@ const FoodDrink = () => (
               West End, the inner north, and the growing suburbs further out. These are more
               relevant if you have a car or a longer stay. On a short first visit, they are usually
               not worth the drive; see our{" "}
-              <Link to="/local-tips" className="text-primary hover:underline">
-                local tips
+              <Link to="/first-time-in-townsville" className="text-primary hover:underline">
+                first-time visitor guide
               </Link>{" "}
               for how locals actually move around.
             </p>

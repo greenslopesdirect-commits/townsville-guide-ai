@@ -191,7 +191,7 @@ const FirstTimeInTownsville = () => {
     <>
       <SEOHead
         title="First Time in Townsville | Essential Local Visitor Guide"
-        description="Visiting Townsville for the first time? Find out what not to miss, how many days you need, where to stay, transport tips, weather advice and easy itineraries."
+        description="First time in Townsville? What not to miss, how many days you need, where to stay, getting around, weather, and practical local tips."
         canonical={`${SITE}/first-time-in-townsville`}
         ogType="article"
       />
@@ -205,7 +205,7 @@ const FirstTimeInTownsville = () => {
               "Visiting Townsville for the first time? Find out what not to miss, how many days you need, where to stay, transport tips, weather advice and easy itineraries.",
             author: { "@type": "Person", name: "Duncan Ross" },
             publisher: { "@type": "Organization", name: "Townsville Guide" },
-            dateModified: "2026-08-07",
+            dateModified: "2026-10-20",
             mainEntityOfPage: `${SITE}/first-time-in-townsville`,
           })}
         </script>
@@ -758,6 +758,67 @@ const FirstTimeInTownsville = () => {
               he still finds amazingly convenient is having an airport so close to the city.
             </p>
           </LocalInsightCard>
+        </section>
+
+        {/* Local tips (merged from the former /local-tips page) */}
+        <section aria-labelledby="local-tips">
+          <h2 id="local-tips" className="text-2xl md:text-3xl font-bold mb-4">
+            Local Tips and Combinations That Work
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-4">
+            A few things that are easier to know before you arrive, and some pairings that save driving.
+          </p>
+          <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5 mb-6">
+            <li>
+              <strong>It is more spread out than it looks.</strong> The Strand, North Ward and CBD are
+              compact. Riverway, Pallarenda, Billabong Sanctuary, the northern beaches and Paluma are
+              much further apart than a map suggests.
+            </li>
+            <li>
+              <strong>It is not a surf coast.</strong> The water is calm and sheltered, and beaches vary
+              in how suitable they are for swimming. Check the signs on arrival and read the{" "}
+              <Link to="/guides/stinger-safety" className="text-primary underline underline-offset-2">stinger safety guide</Link>.
+            </li>
+            <li>
+              <strong>Paluma is a proper day trip.</strong> It is a mountain drive where road conditions
+              and access matter. See the{" "}
+              <Link to="/guides/paluma-day-trip" className="text-primary underline underline-offset-2">Paluma guide</Link>.
+            </li>
+            <li>
+              <strong>Early evening is the best part of the day.</strong> The Strand, waterfront walking
+              and the Castle Hill lookout all work well once the heat drops.
+            </li>
+            <li>
+              <strong>Carry water, swimmers and repellent.</strong> Use sunscreen even on cloudy days,
+              and don't rely on old opening hours from blogs.
+            </li>
+          </ul>
+          <h3 className="text-xl font-semibold mb-3">Combinations that work well</h3>
+          <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
+            <li>
+              <Link to="/the-strand" className="text-primary underline underline-offset-2">The Strand</Link> +{" "}
+              <Link to="/jezzine-barracks" className="text-primary underline underline-offset-2">Jezzine Barracks</Link>:
+              an easy central half-day on foot.
+            </li>
+            <li>
+              <Link to="/castle-hill" className="text-primary underline underline-offset-2">Castle Hill</Link> + The Strand:
+              the lookout late in the afternoon, then dinner or a walk below.
+            </li>
+            <li>
+              <Link to="/riverway" className="text-primary underline underline-offset-2">Riverway</Link>: a family or
+              hot-weather outing built around the free lagoons.
+            </li>
+            <li>
+              <Link to="/pallarenda-beach" className="text-primary underline underline-offset-2">Pallarenda</Link> +{" "}
+              <Link to="/rowes-bay" className="text-primary underline underline-offset-2">Rowes Bay</Link>: a quiet
+              coastal afternoon on the northern side of the city.
+            </li>
+            <li>
+              <Link to="/guides/magnetic-island-day-trip" className="text-primary underline underline-offset-2">Magnetic Island</Link>{" "}
+              and Paluma are each their own day. Pick a couple of bays and a walk rather than trying to
+              see everything.
+            </li>
+          </ul>
         </section>
 
         {/* Mistakes */}

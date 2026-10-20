@@ -34,9 +34,9 @@ const PAGE_DESCRIPTION =
   "Magnetic Island ferry from Townsville: SeaLink passenger ferry from Breakwater (about 20 min) or vehicle ferry from Ross Street. Timetable and fare links.";
 const LAST_UPDATED = "5 August 2026";
 
-const SEALINK = "https://www.sealinkqld.com.au/magnetic-island-ferry";
-const SEALINK_TIMETABLE = "https://www.sealinkqld.com.au/magnetic-island-ferry/timetables";
-const SEALINK_FARES = "https://www.sealinkqld.com.au/magnetic-island-ferry/fares";
+const SEALINK = "https://www.sealink.com.au/magnetic-island/ferry-information";
+const SEALINK_TIMETABLE = "https://www.sealink.com.au/magnetic-island/ferry-information/timetable";
+const SEALINK_FARES = "https://www.sealink.com.au/magnetic-island/ferry-information";
 const MI_FERRIES = "https://www.magneticislandferries.com.au/";
 const MI_FERRIES_TIMETABLE = "https://www.magneticislandferries.com.au/timetable/";
 const MI_FERRIES_FARES = "https://www.magneticislandferries.com.au/walk-on-passenger-pricing/";

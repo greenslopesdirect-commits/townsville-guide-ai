@@ -29,7 +29,7 @@ const PATH = "/guides/stinger-safety";
 
 const TITLE = "Townsville Stinger Season 2026–27: Safety Guide";
 const DESCRIPTION =
-  "Planning to swim in Townsville this stinger season (typically November–May)? Stinger nets, suits, beach advice, first aid and emergency guidance.";
+  "Townsville stinger season runs November to May. Box jellyfish vs Irukandji, nets and suits, where to swim, and first aid steps including vinegar and 000.";
 
 const COUNCIL_BEACHES =
   "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/beaches-and-coastal-management";
@@ -37,6 +37,12 @@ const QLD_STINGERS =
   "https://www.qld.gov.au/emergency/safety/recreation/dangerous-marine";
 const POISONS = "https://www.poisonsinfo.health.qld.gov.au/about-us";
 const BEACHSAFE = "https://beachsafe.org.au/";
+const SLS_STINGERS = "https://lifesaving.com.au/safety-info/marine-stingers";
+const SLS_NQ_REPORT = "https://lifesaving.com.au/nqb-beach-report";
+const COUNCIL_LIFEGUARDS =
+  "https://townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/lifeguard-hours";
+const COUNCIL_NETS_2025 =
+  "https://www.townsville.qld.gov.au/about-council/news-and-publications/media-releases/2025/november/stinger-season-kicks-off-with-net-installation";
 const CROCWISE =
   "https://www.qld.gov.au/environment/plants-animals/animals/living-with/crocodiles/becrocwise";
 const BOM = "http://www.bom.gov.au/qld/warnings/";
@@ -71,7 +77,7 @@ const RELATED = [
 const faqs = [
   {
     q: "When is stinger season in Townsville?",
-    a: "Townsville's typical marine stinger season runs from November to May, when tropical waters are warmest. This is a practical seasonal guide rather than a guarantee, so always check current beach signs and Townsville City Council beach information before swimming.",
+    a: "Townsville's typical marine stinger season runs from November to May, when tropical waters are warmest. The Queensland Government and Surf Life Saving both give that window. It is a seasonal guide rather than a guarantee, so always check current beach signs and Townsville City Council beach information before swimming.",
   },
   {
     q: "Are marine stingers present outside stinger season?",
@@ -79,7 +85,7 @@ const faqs = [
   },
   {
     q: "Which Townsville beaches have stinger nets?",
-    a: "Selected Townsville and Magnetic Island beaches may have seasonal stinger enclosures. Installation and removal dates change from year to year and with weather events, so check current Townsville City Council beach information rather than relying on a list published online.",
+    a: "In 2025 Townsville City Council listed enclosures at The Strand, Pallarenda, Balgal Beach and Magnetic Island. Sites, installation dates and removal dates change from year to year and with weather events, and a net is not a guarantee of safety, so check current Townsville City Council beach information.",
   },
   {
     q: "Are stinger nets completely safe?",
@@ -95,7 +101,7 @@ const faqs = [
   },
   {
     q: "What should I do if someone is stung by a jellyfish?",
-    a: "For a suspected serious tropical jellyfish sting, call Triple Zero (000) immediately and follow the instructions given by emergency services. Use vinegar where current Queensland guidance recommends it for dangerous tropical jellyfish stings. If the person is unresponsive and not breathing normally, begin CPR. Do not delay calling for help.",
+    a: "For a suspected box jellyfish or Irukandji sting, call Triple Zero (000) and ask for an ambulance. Start CPR if the person is unresponsive and not breathing normally. Pour vinegar over the sting for at least 30 seconds, then pick off tentacles. Keep the person out of the water and monitored, because Irukandji symptoms can appear 20 to 40 minutes later.",
   },
   {
     q: "Should vinegar be used on jellyfish stings?",
@@ -103,11 +109,15 @@ const faqs = [
   },
   {
     q: "What are the symptoms of an Irukandji sting?",
-    a: "The initial sting may seem relatively minor, with significant symptoms developing afterwards. Reported symptoms can include severe pain, restlessness, sweating, nausea, vomiting and worsening systemic symptoms. Seek urgent medical assessment if an Irukandji sting is suspected or symptoms become severe.",
+    a: "The initial sting may seem minor. The Queensland Government says symptoms may take 20 to 40 minutes to develop and can include severe muscle pain, headache, restlessness, sweating, nausea and vomiting. Seek urgent medical help if an Irukandji sting is suspected, and call Triple Zero (000) if the person deteriorates.",
   },
   {
     q: "What should I do for a suspected box jellyfish sting?",
     a: "Call Triple Zero (000) immediately for a suspected serious box jellyfish sting, particularly if the person collapses, has breathing difficulty, becomes unconscious or develops severe systemic symptoms. Follow emergency-services instructions, use vinegar where current Queensland guidance recommends it, and begin CPR if the person is unresponsive and not breathing normally.",
+  },
+  {
+    q: "What is the difference between a box jellyfish and an Irukandji?",
+    a: "A box jellyfish is large (a bell up to about 38 cm) and causes immediate severe pain. An Irukandji is tiny (about 1 to 2 cm), usually not seen, and the sting can feel mild at first, with severe symptoms following 20 to 40 minutes later. Both are dangerous, and the first aid for both starts with calling 000 and using vinegar.",
   },
   {
     q: "Can children swim during stinger season?",
@@ -134,7 +144,7 @@ const StingerSafety = () => (
               mainEntityOfPage: `${SITE}${PATH}`,
               author: { "@type": "Person", name: "Duncan Ross" },
               publisher: { "@type": "Organization", name: "Townsville Guide" },
-              dateModified: "2026-09-29",
+              dateModified: "2026-10-20",
             },
             {
               "@type": "BreadcrumbList",
@@ -184,9 +194,9 @@ const StingerSafety = () => (
           as the final word on the day you swim.
         </p>
         <p>
-          None of this makes Townsville an unsafe place to visit. People swim here year round. It
-          simply means swimming in the tropics comes with a short list of habits worth learning
-          before your first beach day — see our{" "}
+          This page is general guidance. It can't tell you whether a particular beach is suitable on a
+          particular day, and nothing here replaces the signs, the lifeguards or an official warning.
+          See our{" "}
           <Link to="/beaches" className="text-primary hover:underline">
             Townsville beaches guide
           </Link>{" "}
@@ -194,7 +204,7 @@ const StingerSafety = () => (
           <Link to="/first-time-in-townsville" className="text-primary hover:underline">
             first-time visitor guide
           </Link>{" "}
-          for the wider picture, or browse our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
+          for the wider picture, or browse <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link> that don't involve getting in the water.
         </p>
       </div>
 
@@ -230,9 +240,22 @@ const StingerSafety = () => (
         <h2 className="text-2xl font-bold mb-4">What is stinger season?</h2>
         <div className="space-y-3 text-muted-foreground leading-relaxed">
           <p>
-            Townsville's typical stinger season runs from November through May. Risk is generally
-            higher in warmer tropical waters, which is why the season tracks the build-up, wet
-            season and early autumn rather than the cooler dry-season months.
+            Townsville's typical stinger season runs from <strong className="text-foreground">November
+            through May</strong>. The{" "}
+            <a href={QLD_STINGERS} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Queensland Government</a>{" "}
+            and{" "}
+            <a href={SLS_STINGERS} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Surf Life Saving</a>{" "}
+            both give the same window, and both say stingers are present in tropical waters all year.
+            Risk is generally higher in the warmer months, which is why the season tracks the
+            build-up, wet season and early autumn.
+          </p>
+          <p>
+            Townsville City Council installs seasonal stinger nets at selected beaches. In 2025 it
+            began installing them on 3 November, and its release for the 2026 season end reported the
+            nets coming out in late May. Installation dates move with the weather, so look for this
+            year's announcement on the{" "}
+            <a href={COUNCIL_BEACHES} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Council beaches page</a>{" "}
+            rather than assuming a date.
           </p>
           <p>
             Treat that window as a practical seasonal guide, not a guarantee. Dangerous marine
@@ -253,9 +276,10 @@ const StingerSafety = () => (
                 Box jellyfish
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Box jellyfish can cause very painful and potentially life-threatening stings. They
-                are a serious tropical marine hazard, and a suspected serious sting needs immediate
-                action rather than a wait-and-see approach.
+                A large, almost transparent jellyfish with a box-shaped bell up to about 38 cm
+                across (Surf Life Saving). The sting causes immediate, severe burning pain and
+                whip-like marks, and can be life-threatening. A suspected serious sting needs
+                immediate action rather than a wait-and-see approach.
               </p>
             </CardContent>
           </Card>
@@ -266,9 +290,10 @@ const StingerSafety = () => (
                 Irukandji
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Irukandji jellyfish are very small, and the initial sting may seem relatively minor.
-                Significant symptoms can develop afterwards, so urgent medical assessment matters if
-                Irukandji syndrome is suspected.
+                A small, transparent box jellyfish, around 1 to 2 cm across, usually not seen in the
+                water. The sting may seem minor at first. Severe symptoms can follow 20 to 40
+                minutes later (Queensland Government), so a person who feels fine straight after
+                being stung can still become seriously ill.
               </p>
             </CardContent>
           </Card>
@@ -336,6 +361,20 @@ const StingerSafety = () => (
           <li>Follow lifeguard advice, including any instruction to leave the water.</li>
           <li>Protective clothing adds another useful layer of protection inside the net.</li>
         </ul>
+        <h3 className="text-lg font-semibold mt-6 mb-2">Where the nets have been</h3>
+        <p className="text-muted-foreground leading-relaxed mb-3">
+          In its{" "}
+          <a href={COUNCIL_NETS_2025} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            2025 installation announcement
+          </a>
+          , Townsville City Council listed enclosures at The Strand, Pallarenda, Balgal Beach and
+          Magnetic Island. In earlier years the island sites have included Picnic Bay and Horseshoe
+          Bay. That is last year's list, not a guarantee for this season, and it does not mean any of
+          those beaches is safe to swim on a given day. Confirm what is in the water, and whether a
+          lifeguard is on duty, on the Council's{" "}
+          <a href={COUNCIL_LIFEGUARDS} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">lifeguard hours and stinger net locations page</a>{" "}
+          or at the beach.
+        </p>
       </section>
 
       <section className="mb-12">
@@ -351,8 +390,10 @@ const StingerSafety = () => (
           </p>
           <p>
             A suit is a sensible layer, not a guarantee — it does not remove all risk, and you still
-            need sunscreen on hands, feet, face and any other exposed skin. Hire and purchase
-            options exist locally; no particular brand is needed.
+            need sunscreen on hands, feet, face and any other exposed skin. The Queensland
+            Government's advice is to consider a full-body lycra suit. Hire and purchase options
+            exist locally; no particular brand is needed. If you book a reef or island tour, ask the
+            operator whether stinger suits are supplied.
           </p>
         </div>
       </section>
@@ -388,21 +429,37 @@ const StingerSafety = () => (
         </h2>
         <div className="rounded-xl border-2 border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950/30 p-6 mb-4">
           <p className="font-semibold text-red-800 dark:text-red-300 mb-3">
-            Suspected serious tropical jellyfish sting:
+            Suspected box jellyfish or Irukandji sting, in this order:
           </p>
           <ol className="space-y-2 text-red-800/90 dark:text-red-200 leading-relaxed list-decimal pl-5">
-            <li>Call Triple Zero (000).</li>
-            <li>Follow the instructions given by emergency services.</li>
             <li>
-              Use vinegar for suspected dangerous tropical jellyfish stings where current Queensland
-              guidance recommends it.
+              <strong>Call Triple Zero (000)</strong> and ask for an ambulance, or get a lifeguard if
+              one is nearby. Do this first. Follow what the operator tells you.
             </li>
-            <li>Begin CPR if the person is unresponsive and not breathing normally.</li>
+            <li>Get the person out of the water if it is safe for you to do so.</li>
+            <li>
+              <strong>Start CPR straight away</strong> if they are unresponsive and not breathing
+              normally.
+            </li>
+            <li>
+              <strong>Pour vinegar over the sting</strong> for at least 30 seconds, then pick off any
+              tentacles (Surf Life Saving). Don't rub the area.
+            </li>
+            <li>
+              No vinegar? Pick off the tentacles, rinse with seawater (not fresh water) and use a cold
+              pack or ice in a bag for pain.
+            </li>
+            <li>
+              Keep the person calm, out of the water and watched. Irukandji symptoms can start 20 to
+              40 minutes after the sting, and Surf Life Saving advises monitoring for 45 minutes
+              after a tropical sting. If in doubt, get medical help.
+            </li>
           </ol>
         </div>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Never delay emergency assistance to look up advice. For non-emergency questions about a
-          sting, the{" "}
+          Never delay calling 000 to look up advice. Vinegar does not relieve pain from venom that
+          has already been injected, so it is not a substitute for medical care (Queensland Health).
+          For non-emergency questions about a sting, the{" "}
           <a href={POISONS} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
             Queensland Poisons Information Centre on 13 11 26
           </a>{" "}
@@ -454,15 +511,17 @@ const StingerSafety = () => (
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">Irukandji symptoms</h2>
         <p className="text-muted-foreground leading-relaxed mb-3">
-          Reported symptoms of Irukandji syndrome can include:
+          The sting itself can feel minor. Surf Life Saving describes severe muscle pain starting
+          around 5 to 40 minutes later, and the Queensland Government says symptoms may take 20 to
+          40 minutes to develop. Reported symptoms include:
         </p>
         <ul className="grid gap-2 sm:grid-cols-2 text-muted-foreground list-disc pl-5 mb-4">
-          <li>Severe pain</li>
+          <li>Severe muscle pain</li>
+          <li>Headache</li>
           <li>Restlessness</li>
           <li>Sweating</li>
           <li>Nausea</li>
           <li>Vomiting</li>
-          <li>Worsening systemic symptoms</li>
         </ul>
         <p className="text-muted-foreground leading-relaxed">
           Symptoms alone are not a diagnosis. Seek urgent medical assessment if an Irukandji sting is
@@ -570,8 +629,13 @@ const StingerSafety = () => (
         <div className="rounded-xl border bg-muted/40 p-6">
           <ul className="space-y-3 text-muted-foreground">
             <li>
+              <a href={COUNCIL_LIFEGUARDS} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                Townsville City Council — lifeguard hours and stinger net locations
+              </a>
+            </li>
+            <li>
               <a href={COUNCIL_BEACHES} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
-                Townsville City Council — beaches, lifeguards and stinger enclosures
+                Townsville City Council — beaches and coastal management
               </a>
             </li>
             <li>
@@ -587,6 +651,16 @@ const StingerSafety = () => (
             <li>
               <a href={BEACHSAFE} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
                 Surf Life Saving — Beachsafe beach and patrol information
+              </a>
+            </li>
+            <li>
+              <a href={SLS_NQ_REPORT} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                Surf Life Saving — North Queensland beach report
+              </a>
+            </li>
+            <li>
+              <a href={SLS_STINGERS} target="_blank" rel="noopener noreferrer" className="text-primary font-medium hover:underline">
+                Surf Life Saving — marine stinger first aid
               </a>
             </li>
             <li>

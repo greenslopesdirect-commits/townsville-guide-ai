@@ -46,7 +46,6 @@ const PATHWAYS = [
   { label: "Swimming safety", to: "/guides/stinger-safety", name: "Stinger Safety" },
   { label: "Magnetic Island", to: "/guides/magnetic-island-day-trip", name: "Magnetic Island Day Trip" },
   { label: "Paluma", to: "/guides/paluma-day-trip", name: "Paluma Day Trip" },
-  { label: "Local insight", to: "/local-tips", name: "Local Tips" },
 ];
 
 const RELATED = [
@@ -210,6 +209,22 @@ const ThingsToDo = () => (
         length, travel style, weather and transport, then follow the link through to the detailed
         guide for whatever you choose.
       </p>
+
+      <div className="mb-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 rounded-xl border-2 border-primary/30 bg-primary/5 p-5">
+        <p className="text-muted-foreground leading-relaxed">
+          <strong className="text-foreground">Budgeting a weekend?</strong> Use the{" "}
+          <Link to="/weekend-cost-calculator" className="text-primary font-semibold hover:underline">
+            Weekend Cost Calculator
+          </Link>{" "}
+          for a rough estimate of transport, food and activity costs.
+        </p>
+        <Link
+          to="/weekend-cost-calculator"
+          className="shrink-0 inline-flex items-center justify-center rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90"
+        >
+          Estimate my weekend
+        </Link>
+      </div>
 
       <section className="mb-10 rounded-xl border bg-muted/40 p-5 md:p-6" aria-labelledby="things-quick-answer">
         <h2 id="things-quick-answer" className="text-xl font-bold mb-3">
