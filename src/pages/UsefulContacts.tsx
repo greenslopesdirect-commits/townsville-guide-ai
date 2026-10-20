@@ -27,7 +27,7 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/useful-contacts";
 
-const TITLE = "Useful Townsville Contacts | Emergency, Health & Visitor Help";
+const TITLE = "Useful Townsville Contacts: Emergency, Health, Council";
 const DESCRIPTION =
   "Find useful Townsville visitor contacts for emergencies, health advice, police, SES, Council, road closures, weather, transport and local assistance.";
 

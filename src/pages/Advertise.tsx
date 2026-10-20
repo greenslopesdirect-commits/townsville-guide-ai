@@ -118,8 +118,8 @@ const Advertise = () => {
   return (
     <>
       <SEOHead
-        title="Partner With Us | Townsville Guide"
-        description="Partner with Townsville Guide — the fastest-growing local guide for Townsville events, beaches, safety info and Cowboys game day. Free community listings, $49/mo Founding Partner spots, and Game Day placements."
+        title="Partner With Townsville Guide | Advertise"
+        description="Partner with Townsville Guide: free community listings, $49/mo Founding Partner spots and $99 Game Day placements for local businesses."
         canonical="https://www.townsvilleguide.com.au/advertise"
       />
       <Helmet>

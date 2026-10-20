@@ -132,6 +132,7 @@ export const AREAS = [
   "Magnetic Island",
   "Northern Beaches",
   "Suburban Townsville",
+  "Ayr & Alva Beach",
 ] as const;
 
 export type Area = (typeof AREAS)[number];
@@ -333,9 +334,9 @@ export const LISTINGS: Listing[] = [
   {
     name: "Yongala Dive",
     category: "tours",
-    area: "Suburban Townsville",
-    locality: "Alva Beach departures",
-    description: "A dive operator specialising in the SS Yongala wreck. Suits certified divers rather than first-timers.",
+    area: "Ayr & Alva Beach",
+    locality: "Alva Beach, near Ayr (south of Townsville)",
+    description: "A dive operator specialising in the SS Yongala wreck, with trips leaving from Alva Beach, near Ayr, south of Townsville. Suits certified divers rather than first-timers.",
     website: "https://www.yongaladive.com.au/",
   },
   {

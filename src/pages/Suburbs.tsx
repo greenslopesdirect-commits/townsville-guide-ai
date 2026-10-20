@@ -28,9 +28,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/suburbs";
 
-const TITLE = "Townsville Suburbs & Areas | Visitor Guide to Where Everything Is";
+const TITLE = "Townsville Suburbs & Areas: Where Everything Is";
 const DESCRIPTION =
-  "Understand Townsville's main suburbs and visitor areas, from The Strand and CBD to South Townsville, Aitkenvale, Kirwan, Pallarenda and the Northern Beaches.";
+  "Townsville's main suburbs and visitor areas, from The Strand and CBD to South Townsville, Aitkenvale, Kirwan, Pallarenda and the Northern Beaches.";
 
 const COMPARISON = [
   {

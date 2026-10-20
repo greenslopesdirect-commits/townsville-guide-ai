@@ -27,9 +27,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/accommodation";
 
-const TITLE = "Where to Stay in Townsville | Best Areas & Accommodation Guide";
+const TITLE = "Where to Stay in Townsville: Areas Compared";
 const DESCRIPTION =
-  "Find the best area to stay in Townsville, from The Strand and North Ward to Palmer Street, the CBD, Magnetic Island and family-friendly accommodation.";
+  "Where to stay in Townsville: The Strand and North Ward, Palmer Street, the CBD and Magnetic Island, plus family-friendly options.";
 
 const COMPARISON = [
   {

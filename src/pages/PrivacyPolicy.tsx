@@ -82,7 +82,7 @@ const PrivacyPolicy = () => {
             <ul>
               <li>Anonymous analytics data (page visits, device type, session duration)</li>
               <li>AI chat queries that help improve local recommendations</li>
-              <li>Your email only if you contact us directly</li>
+              <li>Your email address if you contact us directly, or if you use the Weekend Cost Calculator (see below)</li>
             </ul>
 
             <h2 className="text-2xl font-semibold text-foreground">How We Use Your Information</h2>
@@ -95,6 +95,23 @@ const PrivacyPolicy = () => {
               such as Booking.com, Expedia, Agoda and GetYourGuide) may set cookies and receive usage
               data, such as your device, browser and the links you click, when you visit our pages or
               click through to their sites. Their use of that data is governed by their own privacy policies.
+            </p>
+
+            <h2 className="text-2xl font-semibold text-foreground">Weekend Cost Calculator</h2>
+            <p>
+              The Weekend Cost Calculator is a separate tool hosted on GitHub Pages and shown on our
+              Weekend Cost Calculator page. It asks for your email address before it shows the full
+              breakdown. When you submit it, the calculator sends your email address and the time of
+              submission to the operator of Townsville Guide, as a notification that the calculator was
+              used. The message is sent through EmailJS, a third-party email-sending service, which
+              processes it under its own privacy policy. The figures you enter (adults, kids, transport,
+              meals and activities) are not included in that message.
+            </p>
+            <p>
+              The calculator's own page says it will "only use this to show your result". In practice
+              your email address is also sent to us in the way described above. If you'd rather not
+              share your email address, please don't use the calculator. To ask us to delete your email
+              address, contact us using the details below.
             </p>
 
             <h2 className="text-2xl font-semibold text-foreground">Cookies & Analytics</h2>

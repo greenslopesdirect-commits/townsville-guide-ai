@@ -29,9 +29,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/nature";
 
-const TITLE = "Best Nature Experiences in Townsville | Parks, Wildlife & Walks";
+const TITLE = "Townsville Nature: Parks, Wildlife, Walks & Lookouts";
 const DESCRIPTION =
-  "Discover Townsville's best nature experiences, from Magnetic Island and Paluma rainforest to beaches, wildlife, coastal walks, lookouts and local parks.";
+  "Townsville nature guide: Magnetic Island, Paluma rainforest, wildlife, coastal walks, lookouts and local parks.";
 
 const PATHWAYS = [
   { label: "Island nature", to: "/guides/magnetic-island-day-trip", name: "Magnetic Island Day Trip" },

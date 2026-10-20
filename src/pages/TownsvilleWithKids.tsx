@@ -24,7 +24,7 @@ const PATH = "/townsville-with-kids";
 
 const TITLE = "Best Things to Do in Townsville With Kids | Family Guide";
 const DESCRIPTION =
-  "Plan a family trip to Townsville with the best things to do with kids, including free activities, wildlife, swimming, day trips, heat tips and easy itineraries.";
+  "Townsville with kids: free activities, wildlife, swimming, day trips, heat tips and easy itineraries for a family trip.";
 
 const FAMILY_STRENGTHS = [
   "Beaches and water play",

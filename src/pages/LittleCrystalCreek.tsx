@@ -50,7 +50,7 @@ const LittleCrystalCreek = () => {
   return (
     <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <SEOHead
-        title="Little Crystal Creek Townsville – Closure, Access & Visitor Guide"
+        title="Little Crystal Creek Townsville: Closure and Access"
         description="Little Crystal Creek is temporarily closed. Check current access, reopening information and how to plan a future visit from Townsville."
         canonical="https://www.townsvilleguide.com.au/little-crystal-creek-townsville"
       />

@@ -64,7 +64,7 @@ const WeekendCostCalculator = () => (
         <li>Inputs: 1 to 4 adults, 0 to 4 kids, transport (walking or cycling, driving, or the Magnetic Island ferry), eating out and paid activities.</li>
         <li>It is an estimate only. Actual prices vary, so check current prices with each operator before you book.</li>
         <li>It doesn't include accommodation.</li>
-        <li>The calculator is a separate tool hosted outside this site. To show the full breakdown it asks for an email address, which it says it uses only to show your result.</li>
+        <li>The calculator is a separate tool hosted outside this site. To show the full breakdown it asks for an email address. That address and the time are sent to us through EmailJS as a notification. See our <Link to="/privacy-policy" className="text-primary hover:underline">privacy policy</Link>.</li>
       </ul>
 
       <p className="mb-4">

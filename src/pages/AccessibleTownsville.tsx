@@ -38,9 +38,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/accessible-townsville";
 
-const TITLE = "Accessible Townsville | Wheelchair & Mobility Visitor Guide";
+const TITLE = "Accessible Townsville: Wheelchair & Mobility Guide";
 const DESCRIPTION =
-  "Plan an accessible visit to Townsville with practical guidance on easier attractions, mobility, transport, accommodation, The Strand, Riverway and current accessibility information.";
+  "Plan an accessible Townsville visit: easier attractions, mobility, transport, accommodation, The Strand and Riverway, with current info links.";
 
 const COMPARISON = [
   {
