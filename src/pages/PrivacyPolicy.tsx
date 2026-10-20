@@ -108,10 +108,15 @@ const PrivacyPolicy = () => {
               meals and activities) are not included in that message.
             </p>
             <p>
-              The calculator's own page says it will "only use this to show your result". In practice
-              your email address is also sent to us in the way described above. If you'd rather not
-              share your email address, please don't use the calculator. To ask us to delete your email
-              address, contact us using the details below.
+              The calculator also has an optional checkbox, unticked by default, to receive a weekly
+              what's-on email. The calculator works the same whether or not you tick it, and your choice
+              is included in the message sent to us. If you tick it, we will email you a weekly
+              what's-on update, and you can unsubscribe at any time. If you don't tick it, we won't
+              email you.
+            </p>
+            <p>
+              If you'd rather not share your email address, please don't use the calculator. To ask us to
+              delete your email address or to unsubscribe, contact us using the details below.
             </p>
 
             <h2 className="text-2xl font-semibold text-foreground">Cookies & Analytics</h2>
