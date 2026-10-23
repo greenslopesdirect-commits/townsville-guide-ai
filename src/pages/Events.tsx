@@ -34,6 +34,95 @@ const PATH = "/events";
 /** Official council events calendar — the authoritative source for current listings. */
 const WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
+/** Weekend of Fri 23–Sun 25 October 2026, in date order. */
+const WEEKEND_EVENTS = [
+  {
+    day: "Friday 23 October",
+    items: [
+      {
+        name: "Candlelight: Tribute to Queen and The Beatles",
+        time: "Fri 23 Oct, 8:00pm",
+        venue: "Sacred Heart Cathedral, Townsville City",
+        description: "Hits from Queen and The Beatles reworked for strings in a candlelit concert.",
+        link: "https://feverup.com/m/621942",
+      },
+    ],
+  },
+  {
+    day: "Saturday 24 October",
+    items: [
+      {
+        name: "Introduction to Bird Photography & Camera Setup",
+        time: "Sat 24 Oct, 7:30am–10:00am",
+        venue: "Townsville Town Common Conservation Park, Cape Pallarenda Road",
+        description: "A hands-on morning workshop with Geopixel Photography Tours covering camera settings and field tips for photographing birds; bring your own camera.",
+        link: "https://www.eventbrite.com.au/e/introduction-to-bird-photography-camera-setup-tickets-2002976520692",
+      },
+      {
+        name: "Bingo Loco (18+)",
+        time: "Sat 24 Oct, show starts 6:00pm (doors 5:00pm)",
+        venue: "FLNDRS Bar & Nightclub, 159–165 Flinders Street, Townsville City",
+        description: "A three-hour bingo party with DJs, dance-offs, lip-sync battles, throwback hits and prizes.",
+        link: "https://www.eventbrite.com.au/e/bingo-loco-townsville-flndrs-bar-nightclub-saturday24th-october-2026-tickets-1998208846450",
+      },
+      {
+        name: "Candlelight: The Best of Hans Zimmer",
+        time: "Sat 24 Oct, 6:00pm",
+        venue: "Sacred Heart Cathedral, Townsville City",
+        description: "Hans Zimmer's best-known film scores played live by candlelight.",
+        link: "https://feverup.com/m/621941",
+      },
+      {
+        name: "Brit Fest (18+)",
+        time: "Sat 24 Oct, 7:00pm",
+        venue: "Dalrymple Hotel, Townsville",
+        description: "A night of tribute acts covering Coldplay, Robbie Williams, The Jam, Oasis, The Beatles and Ed Sheeran.",
+        link: "https://tickets.oztix.com.au/outlet/event/9065544a-52c8-4968-bc7c-335c3d9527a2",
+      },
+    ],
+  },
+  {
+    day: "Sunday 25 October",
+    items: [
+      {
+        name: "Willows Rotary Markets",
+        time: "Sun 25 Oct, 7:30am–11:30am",
+        venue: "Willows Shopping Centre carpark, cnr Thuringowa Dr and Hervey Range Rd, Kirwan",
+        description: "A weekly Sunday morning market in Kirwan, good for an early browse.",
+        link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
+      },
+      {
+        name: "Cotters Market",
+        time: "Sun 25 Oct, 8:30am–1:00pm",
+        venue: "Flinders Street, Townsville City",
+        description: "Townsville's weekly Sunday market, with local produce, food, crafts and live music on Flinders Street. Flinders Street is closed to traffic between Denham and Stanley Streets.",
+        link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
+      },
+      {
+        name: "Magnetic Island Markets",
+        time: "Sun 25 Oct, 9:00am–2:00pm",
+        venue: "Horseshoe Bay, Magnetic Island",
+        description: "A relaxed weekly market at Horseshoe Bay, easy to pair with a day trip to Maggie.",
+        link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
+      },
+      {
+        name: "Mini Pick-Your-Own Sessions",
+        time: "Sun 25 Oct, sessions between 9:00am and 6:00pm",
+        venue: "Frost Family Flower Farm, 61 Hammond Way, Kelso",
+        description: "Book a 30-minute session to pick your own flowers and enjoy a taste of farm life.",
+        link: "https://www.eventbrite.com.au/e/mini-pick-your-own-sessions-tickets-2003746984169",
+      },
+      {
+        name: "Townsville Fire v Sydney Flames (WNBL)",
+        time: "Sun 25 Oct, 2:00pm",
+        venue: "Townsville Entertainment and Convention Centre",
+        description: "The Fire's first home game of the 2026/27 WNBL season, against the Sydney Flames.",
+        link: "https://tecc.net.au/event/townsville-fire-26-27-season/",
+      },
+    ],
+  },
+];
+
 const TITLE = "What's On in Townsville This Weekend | Events Guide";
 const DESCRIPTION =
   "What's on in Townsville this weekend? Where to find current listings, plus events and markets on The Strand and at Riverway, festivals and Cowboys games.";
@@ -301,6 +390,40 @@ const Events = () => (
           Event dates, venues and schedules change regularly. For the latest confirmed listings,
           check the official What's On Townsville calendar.
         </p>
+        <p className="text-sm font-medium text-foreground mb-5">
+          Updated 23 October 2026 for the weekend of Fri 23–Sun 25 October 2026.
+        </p>
+        <div className="space-y-6 mb-6">
+          {WEEKEND_EVENTS.map(({ day, items }) => (
+            <div key={day}>
+              <h3 className="text-lg font-semibold mb-3">{day}</h3>
+              <div className="space-y-4">
+                {items.map(({ name, time, venue, description, link }) => (
+                  <article key={name} className="rounded-xl border bg-card p-5">
+                    <h4 className="font-semibold text-foreground mb-1.5">{name}</h4>
+                    <p className="text-sm font-medium text-foreground">{time}</p>
+                    <p className="text-sm text-muted-foreground flex items-start gap-1.5 mb-2">
+                      <MapPin className="w-4 h-4 mt-0.5 shrink-0" aria-hidden="true" />
+                      {venue}
+                    </p>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                      {description}
+                    </p>
+                    <a
+                      href={link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm text-primary font-medium hover:underline"
+                    >
+                      More info
+                      <ExternalLink className="w-4 h-4" aria-hidden="true" />
+                    </a>
+                  </article>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
         <Button asChild size="lg">
           <a href={WHATS_ON_URL} target="_blank" rel="noopener noreferrer">
             See What's On in Townsville Now
