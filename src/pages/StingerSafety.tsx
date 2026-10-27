@@ -27,9 +27,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/guides/stinger-safety";
 
-const TITLE = "Townsville Stinger Season 2026–27: Safety Guide";
+const TITLE = "Townsville Stinger Season: November to May (2026–27)";
 const DESCRIPTION =
-  "Townsville stinger season runs November to May. Box jellyfish vs Irukandji, nets and suits, where to swim, and first aid steps including vinegar and 000.";
+  "Townsville stinger season runs November to May, with some risk all year. Magnetic Island too: nets, suits, box jellyfish vs Irukandji and first aid.";
 
 const COUNCIL_BEACHES =
   "https://www.townsville.qld.gov.au/facilities-and-recreation/parks-beaches-and-community-venues/beaches-and-coastal-management";
@@ -139,7 +139,7 @@ const StingerSafety = () => (
           "@graph": [
             {
               "@type": "Article",
-              headline: "Marine Stinger Safety in Townsville: What Visitors Need to Know",
+              headline: "Townsville Stinger Season: Months, Nets and Safety for Visitors",
               description: DESCRIPTION,
               mainEntityOfPage: `${SITE}${PATH}`,
               author: { "@type": "Person", name: "Duncan Ross" },
@@ -174,7 +174,7 @@ const StingerSafety = () => (
 
     <div className="container mx-auto px-4 py-8 max-w-4xl animate-fade-in">
       <h1 className="text-3xl md:text-4xl font-bold mb-4">
-        Marine Stinger Safety in Townsville: What Visitors Need to Know
+        Townsville Stinger Season: Months, Nets &amp; Safety for Visitors
       </h1>
 
       <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">

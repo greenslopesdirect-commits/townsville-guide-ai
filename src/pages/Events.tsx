@@ -123,9 +123,9 @@ const WEEKEND_EVENTS = [
   },
 ];
 
-const TITLE = "What's On in Townsville This Weekend | Events Guide";
+const TITLE = "What's On in Townsville This Weekend | Events & Markets";
 const DESCRIPTION =
-  "What's on in Townsville this weekend? Where to find current listings, plus events and markets on The Strand and at Riverway, festivals and Cowboys games.";
+  "What's on in Townsville this weekend? Updated weekly: live music, markets, festivals, Cowboys and Fire games, family events and official listings.";
 
 const EVENT_TYPES = [
   {
@@ -363,7 +363,7 @@ const Events = () => (
       </div>
 
       <h1 className="text-3xl md:text-4xl font-bold mb-4">
-        What's On in Townsville: Events, Markets &amp; Festivals
+        What's On in Townsville This Weekend: Events, Markets &amp; Festivals
       </h1>
 
       <p className="text-lg text-muted-foreground leading-relaxed mb-4">

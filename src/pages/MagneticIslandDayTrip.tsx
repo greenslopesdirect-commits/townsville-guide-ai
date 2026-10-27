@@ -35,9 +35,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PAGE_PATH = "/guides/magnetic-island-day-trip";
 const PAGE_URL = `${SITE}${PAGE_PATH}`;
-const PAGE_TITLE = "Magnetic Island Day Trip from Townsville: Complete Guide";
+const PAGE_TITLE = "Magnetic Island Guide: Ferry, Beaches & Day Trip Plan";
 const PAGE_DESCRIPTION =
-  "Plan a Magnetic Island day trip from Townsville, including ferries, island buses, taking a car, beaches, Forts Walk and a realistic one-day itinerary.";
+  "Visiting Magnetic Island from Townsville? Ferry options, island buses, taking a car, best beaches, Forts Walk and a realistic one-day itinerary.";
 const LAST_UPDATED = "5 August 2026";
 
 const SEALINK = "https://www.sealinkqld.com.au/magnetic-island-ferry";
