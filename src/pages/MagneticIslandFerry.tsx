@@ -29,17 +29,20 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PAGE_PATH = "/guides/magnetic-island-ferry";
 const PAGE_URL = `${SITE}${PAGE_PATH}`;
-const PAGE_TITLE = "Magnetic Island Ferry: Terminals, Timetables & Fares";
+const PAGE_TITLE = "Magnetic Island Ferry: Which Terminal, Which Boat (2026)";
 const PAGE_DESCRIPTION =
-  "Magnetic Island ferry from Townsville: SeaLink passenger ferry from Breakwater (about 20 min) or vehicle ferry from Ross Street. Timetable and fare links.";
-const LAST_UPDATED = "5 August 2026";
+  "Two ferries, two terminals: SeaLink passenger ferry from Breakwater (about 20 min) or the car ferry from Ross Street (about 40 min). Official timetable links.";
+const LAST_UPDATED = "27 October 2026";
 
 const SEALINK = "https://www.sealink.com.au/magnetic-island/ferry-information";
 const SEALINK_TIMETABLE = "https://www.sealink.com.au/magnetic-island/ferry-information/timetable";
-const SEALINK_FARES = "https://www.sealink.com.au/magnetic-island/ferry-information";
+const SEALINK_FARES = "https://www.sealink.com.au/magnetic-island/ferry-information/magnetic-island-ferry-fares/";
+const SEALINK_STATUS = "https://www.sealink.com.au/magnetic-island/ferry-status/";
+const SEALINK_CONTACT = "https://www.sealink.com.au/magnetic-island/contact-us";
+const KINETIC_BUS = "https://www.wearekinetic.com/au/townsville";
 const MI_FERRIES = "https://www.magneticislandferries.com.au/";
 const MI_FERRIES_TIMETABLE = "https://www.magneticislandferries.com.au/timetable/";
-const MI_FERRIES_FARES = "https://www.magneticislandferries.com.au/walk-on-passenger-pricing/";
+const MI_FERRIES_FARES = "https://www.magneticislandferries.com.au/prices-fares/";
 const TRANSLINK = "https://translink.com.au/";
 const BOM = "http://www.bom.gov.au/qld/";
 
@@ -357,16 +360,20 @@ const MagneticIslandFerry = () => {
               Breakwater Terminal in Townsville
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Breakwater Terminal is the SeaLink passenger-ferry terminal, and it is a separate
-              location from the Ross Street vehicle-ferry terminal in South Townsville. Do not
-              assume the two are interchangeable.
+              Breakwater Terminal (Sir Leslie Thiess Drive) is the SeaLink
+              passenger-ferry terminal, and it is a separate location from the Ross Street
+              vehicle-ferry terminal in South Townsville. Do not assume the two are
+              interchangeable.
             </p>
             <Bullets
               items={[
-                "Paid parking is available nearby",
+                "Paid parking is available at the terminal; SeaLink says the car park is lit but not fenced, so vehicles are left at their owner's risk",
+                "For secure lock-up parking, SeaLink points to the Metro Quays car park, a 20-minute walk through the city or a public bus ride away",
+                "SeaLink advises arriving 15 to 20 minutes before departure to park, buy a ticket and board",
+                "Luggage lockers can be hired inside the terminal, but only while it is open",
                 "Taxis and rideshare can be a practical alternative to parking",
                 "Allow enough time to park, walk to the terminal and board",
-                "Airport travellers should organise transport in advance",
+                "From Townsville Airport it is a short taxi ride, and Townsville City Shuttle runs a booked service; arrange it ahead",
               ]}
             />
             <p className="text-muted-foreground leading-relaxed">
@@ -394,7 +401,7 @@ const MagneticIslandFerry = () => {
               Magnetic Island Vehicle Ferry
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Magnetic Island Ferries operates the vehicle service from Ross Street in South
+              Magnetic Island Ferries operates the vehicle service from 42 Ross Street in South
               Townsville. This is the service to use when taking a car or other vehicle across, and
               the crossing is advertised as approximately 40 minutes to Nelly Bay.
             </p>
@@ -568,6 +575,11 @@ const MagneticIslandFerry = () => {
                 </a>
               </Button>
               <Button asChild variant="outline" size="sm">
+                <a href={SEALINK_STATUS} target="_blank" rel="noopener noreferrer">
+                  SeaLink live service status
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="sm">
                 <a href={MI_FERRIES_TIMETABLE} target="_blank" rel="noopener noreferrer">
                   Vehicle ferry timetable
                 </a>
@@ -671,7 +683,8 @@ const MagneticIslandFerry = () => {
               ]}
             />
             <p className="text-muted-foreground leading-relaxed">
-              <ExternalLink href={TRANSLINK}>Translink journey planner and timetables</ExternalLink>
+              <ExternalLink href={TRANSLINK}>Translink journey planner and timetables</ExternalLink>{" "}
+              · <ExternalLink href={KINETIC_BUS}>Kinetic Townsville bus information</ExternalLink>
             </p>
           </section>
 
@@ -820,6 +833,49 @@ const MagneticIslandFerry = () => {
                 Rainy Day Activities
               </Link>
             </p>
+          </section>
+
+          {/* Local tips */}
+          <section className="space-y-4" aria-labelledby="local-tips">
+            <h2
+              id="local-tips"
+              className="text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2"
+            >
+              <MapPin className="w-6 h-6 text-primary" aria-hidden="true" />
+              Local Tips for the Crossing
+            </h2>
+            <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
+              <li>
+                Breakwater Terminal is on Sir Leslie Thiess Drive; Ross Street is in South
+                Townsville, across Ross Creek. Putting the wrong one into your maps app is the
+                classic mix-up.
+              </li>
+              <li>
+                SeaLink publishes a <ExternalLink href={SEALINK_STATUS}>live service status page</ExternalLink>.
+                Check it on the morning you travel, especially in the wet season or when the wind is up.
+              </li>
+              <li>
+                The Townsville ticket office closes before the last sailings, but tickets can be
+                bought online or on board outside office hours (see SeaLink's{" "}
+                <ExternalLink href={SEALINK_CONTACT}>terminal opening hours</ExternalLink>).
+              </li>
+              <li>
+                SeaLink adds extra late sailings on some big concert nights; they are listed on its
+                timetable page when they apply.
+              </li>
+              <li>
+                Decide how you will get from Nelly Bay to your first stop before you board, as
+                buses do not match every sailing.
+              </li>
+            </ul>
+            <div className="flex flex-wrap gap-4">
+              <Link to="/things-to-do" className="text-primary font-medium hover:underline">
+                Things to do in Townsville →
+              </Link>
+              <Link to="/townsville-airport" className="text-primary font-medium hover:underline">
+                Townsville Airport →
+              </Link>
+            </div>
           </section>
 
           {/* 21. Common mistakes */}

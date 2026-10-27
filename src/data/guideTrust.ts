@@ -365,15 +365,15 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "SeaLink Queensland — Magnetic Island passenger ferry",
-        url: "https://www.sealinkqld.com.au/magnetic-island-ferry",
+        url: "https://www.sealink.com.au/magnetic-island/ferry-information",
       },
       {
         name: "SeaLink Queensland — Magnetic Island ferry timetables",
-        url: "https://www.sealinkqld.com.au/magnetic-island-ferry/timetables",
+        url: "https://www.sealink.com.au/magnetic-island/ferry-information/timetable",
       },
       {
         name: "SeaLink Queensland — fares and terminal parking",
-        url: "https://www.sealinkqld.com.au/magnetic-island-ferry/fares",
+        url: "https://www.sealink.com.au/magnetic-island/ferry-information/magnetic-island-ferry-fares/",
       },
       {
         name: "Magnetic Island Ferries — vehicle ferry",
@@ -385,7 +385,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
       },
       {
         name: "Magnetic Island Ferries — fares and bookings",
-        url: "https://www.magneticislandferries.com.au/walk-on-passenger-pricing/",
+        url: "https://www.magneticislandferries.com.au/prices-fares/",
       },
       {
         name: "Translink — Route 250 and journey planner",
@@ -404,7 +404,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     officialSources: [
       {
         name: "SeaLink Queensland — Magnetic Island passenger ferry",
-        url: "https://www.sealinkqld.com.au/magnetic-island-ferry",
+        url: "https://www.sealink.com.au/magnetic-island/ferry-information",
       },
       {
         name: "Translink — bus services and timetables",

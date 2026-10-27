@@ -132,6 +132,7 @@ const RELATED = [
   { name: "The Strand", to: "/the-strand" },
   { name: "Jezzine Barracks", to: "/jezzine-barracks" },
   { name: "Magnetic Island Day Trip", to: "/guides/magnetic-island-day-trip" },
+  { name: "Magnetic Island Ferry", to: "/guides/magnetic-island-ferry" },
   { name: "Townsville with Kids", to: "/townsville-with-kids" },
   { name: "Free Things to Do", to: "/guides/free-things" },
   { name: "Food and Dining", to: "/food" },

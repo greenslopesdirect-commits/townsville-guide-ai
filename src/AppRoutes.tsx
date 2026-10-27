@@ -105,6 +105,7 @@ const AppRoutes = () => (
         <Route path="guides/beat-the-heat" element={<BeatTheHeat />} />
         <Route path="guides/magnetic-island-day-trip" element={<MagneticIslandDayTrip />} />
         <Route path="guides/magnetic-island-ferry" element={<MagneticIslandFerry />} />
+        <Route path="magnetic-island-ferry" element={<Navigate to="/guides/magnetic-island-ferry" replace />} />
         <Route path="guides/forts-walk-magnetic-island" element={<FortsWalkMagneticIsland />} />
         <Route path="guides/free-things" element={<FreeThings />} />
         <Route path="guides/rainy-day-activities" element={<RainyDayActivities />} />

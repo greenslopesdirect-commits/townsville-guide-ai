@@ -232,7 +232,7 @@ const DogFriendly = () => {
             designated Townsville City Council off-leash areas. Not every beach is a dog beach, some
             designated off-leash beaches are unfenced, and rules differ from one stretch of sand to
             the next.
-            For days out beyond the beach, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>.
+            For days out beyond the beach, see our guide to <Link to="/things-to-do" className="text-primary hover:underline">things to do in Townsville</Link>. Council also lists <Link to="/riverway" className="text-primary hover:underline">Riverway</Link> as dog-friendly, on a short lead and outside the lagoons.
           </p>
           <StingerSeasonNote className="mt-6 text-left" />
         </div>

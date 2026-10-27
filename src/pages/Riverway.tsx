@@ -34,12 +34,12 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/riverway";
 
-const TITLE = "Riverway Townsville: Free Lagoons, Parking & What to Bring";
+const TITLE = "Riverway Townsville: Free Lagoons, Hours, Parking & Tips";
 const DESCRIPTION =
-  "Riverway, Thuringowa Central: free swimming lagoons on the Ross River, parklands, walking paths, library and gallery. Parking and family tips.";
+  "Riverway Lagoons: free, lifeguarded swimming beside the Ross River, 400+ free car spaces, dog rules and the Council's current opening hours.";
 
 const LAGOON_STATUS =
-  "Riverway Lagoons operate during supervised opening hours and the gates are locked outside those times. Check Townsville City Council for the current schedule before visiting.";
+  "Riverway Lagoons operate during lifeguarded opening hours, which are longer in summer than in winter, and the gates are locked outside those times. Check Townsville City Council for the current schedule before visiting.";
 
 const ITINERARIES = [
   {
@@ -160,7 +160,7 @@ const faqs = [
   },
   {
     q: "Is there parking at Riverway?",
-    a: "Yes. There is extensive free on-site public parking across the precinct, accessed from Riverway Drive and the surrounding precinct roads. Parking closest to the lagoons fills first on hot weekends and during events.",
+    a: "Yes. Council says there are more than 400 free public spaces on site, reached by turning into Village Boulevard at the lights where Riverway Drive meets High Range Drive. Parking closest to the lagoons fills first on hot weekends and during events.",
   },
   {
     q: "Can you get to Riverway without a car?",
@@ -172,7 +172,7 @@ const faqs = [
   },
   {
     q: "Can dogs visit Riverway?",
-    a: "Dogs may visit appropriate parkland areas of Riverway on a suitable leash and under effective control. They are not permitted in the lagoons and swimming areas, or in any area where Council rules prohibit dogs. Check current Council rules and on-site signage.",
+    a: "Yes, on a lead of no more than 2 metres. Council lists Riverway as dog-friendly, but dogs are not permitted in the lagoons, fountains, waterways, shower areas or eating areas, and dangerous breeds are not allowed. Check on-site signage and current Council rules.",
   },
   {
     q: "Is Riverway good in hot weather?",
@@ -334,7 +334,13 @@ const Riverway = () => {
                 and accessible surrounding infrastructure.
               </li>
               <li>
-                <strong className="text-foreground">Free</strong> — there is no entry fee.
+                <strong className="text-foreground">Free</strong> — there is no entry fee. Lockers
+                in the change rooms are hired for a small charge.
+              </li>
+              <li>
+                <strong className="text-foreground">Lagoons only</strong> — Council rules allow
+                swimming in the lagoons, not in the Ross River or the fountains, and children must
+                be supervised at all times.
               </li>
             </ul>
           </div>
@@ -344,7 +350,16 @@ const Riverway = () => {
             <p>
               The lagoons are not open dawn to dusk. Turning up outside supervised hours means
               locked gates, so a 30-second check saves a wasted trip — especially with children in
-              the car.
+              the car. The official hours are on the{" "}
+              <a
+                href="https://www.townsville.qld.gov.au/facilities-and-recreation/sport-and-leisure-facilities/townsville-pools/riverway-lagoons"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline underline-offset-2"
+              >
+                Council's Riverway Lagoons page
+              </a>
+              .
             </p>
           </LocalInsightCard>
         </section>
@@ -566,8 +581,8 @@ const Riverway = () => {
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   The easiest option for most visitors. There is substantial free on-site public
-                  parking, accessed from Riverway Drive and the surrounding precinct roads. The car
-                  parks nearest the lagoons fill first on hot weekends and event days.
+                  parking (Council counts more than 400 spaces). Turn into Village Boulevard at the
+                  traffic lights where Riverway Drive meets High Range Drive. The car parks nearest the lagoons fill first on hot weekends and event days.
                 </p>
               </CardContent>
             </Card>
@@ -578,8 +593,8 @@ const Riverway = () => {
                   <Bus className="w-5 h-5 text-primary" aria-hidden="true" /> Public transport
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Translink buses serve the Riverway area, with connections available from
-                  surrounding centres including Willows. Routes and schedules change, so plan the
+                  Translink buses run along Riverway Drive and Ross River Road, and Council
+                  notes a bus pick-up at Willows Shopping Centre. Routes and schedules change, so plan the
                   trip with{" "}
                   <a
                     href="https://translink.com.au/"
@@ -623,9 +638,10 @@ const Riverway = () => {
             <Dog className="w-6 h-6 text-primary" aria-hidden="true" /> Riverway and Dogs
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Dogs are welcome in appropriate parkland areas of Riverway, but they must stay on a
-            suitable leash, remain out of the lagoons and swimming areas, stay out of any area where
-            Council rules prohibit dogs, and be kept under effective control at all times. Check
+            Council calls Riverway dog-friendly, with conditions. Dogs must be on a lead of no more
+            than 2 metres at all times and kept out of the lagoons, fountains, waterways, shower
+            areas and eating areas, and dangerous breeds are not permitted. Owners must stay with
+            their dog and pick up after it. Check
             on-site signage and current Council rules — and see{" "}
             <Link to="/dog-friendly" className="text-primary underline underline-offset-2">
               Dog-Friendly Townsville

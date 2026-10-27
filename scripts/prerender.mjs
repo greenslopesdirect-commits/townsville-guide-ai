@@ -51,6 +51,7 @@ const REDIRECTS = {
   "/first-time-in-visitor-guide": "/first-time-in-townsville",
   "/suburb": "/suburbs",
   "/local-tips": "/first-time-in-townsville",
+  "/magnetic-island-ferry": "/guides/magnetic-island-ferry",
 };
 
 function escapeHtml(s) {
