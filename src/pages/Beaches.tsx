@@ -257,7 +257,7 @@ const Beaches = () => {
         description={DESCRIPTION}
         canonical={PATH}
         ogType="article"
-        ogImage="https://www.townsvilleguide.com.au/rock-pool-townsville.webp"
+        ogImage="https://www.townsvilleguide.com.au/beaches-strand-outrigger-canoes-1600.webp"
       />
       <Helmet>
         <script type="application/ld+json">
@@ -320,6 +320,24 @@ const Beaches = () => {
       </section>
 
       <div className="container mx-auto max-w-4xl px-4 py-12 space-y-14">
+        <figure>
+          <img
+            src="/beaches-strand-outrigger-canoes-1000.webp"
+            srcSet="/beaches-strand-outrigger-canoes-640.webp 640w, /beaches-strand-outrigger-canoes-1000.webp 1000w, /beaches-strand-outrigger-canoes-1600.webp 1600w"
+            sizes="(min-width: 896px) 896px, 100vw"
+            alt="Outrigger canoes resting on the sand under coconut palms at The Strand beach in Townsville, with the port and Magnetic Island on the horizon"
+            className="w-full h-[260px] md:h-[460px] object-cover rounded-xl"
+            width={1600}
+            height={1066}
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
+          />
+          <figcaption className="text-xs text-muted-foreground italic text-center mt-2 px-4">
+            Photo: Depositphotos
+          </figcaption>
+        </figure>
+
         <section
           aria-labelledby="can-you-swim"
           className="rounded-xl border-2 border-primary/30 bg-primary/5 p-6"

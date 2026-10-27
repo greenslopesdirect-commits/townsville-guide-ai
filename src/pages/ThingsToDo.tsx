@@ -125,7 +125,7 @@ const ThingsToDo = () => (
       description={DESCRIPTION}
       canonical={PATH}
       ogType="article"
-      ogImage="https://www.townsvilleguide.com.au/5-free-things-to-do.webp"
+      ogImage="https://www.townsvilleguide.com.au/things-to-do-strand-rockpool-1600.webp"
     />
     <Helmet>
       <script type="application/ld+json">
@@ -209,6 +209,24 @@ const ThingsToDo = () => (
         length, travel style, weather and transport, then follow the link through to the detailed
         guide for whatever you choose.
       </p>
+
+      <figure className="mb-8">
+        <img
+          src="/things-to-do-strand-rockpool-1000.webp"
+          srcSet="/things-to-do-strand-rockpool-640.webp 640w, /things-to-do-strand-rockpool-1000.webp 1000w, /things-to-do-strand-rockpool-1600.webp 1600w"
+          sizes="(min-width: 896px) 896px, 100vw"
+          alt="The Rockpool at the northern end of The Strand in Townsville, with palm trees, Kissing Point rising behind the pool and Magnetic Island across the water"
+          className="w-full h-[260px] md:h-[460px] object-cover rounded-xl"
+          width={1600}
+          height={900}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
+        />
+        <figcaption className="text-xs text-muted-foreground italic text-center mt-2 px-4">
+          Photo: Depositphotos
+        </figcaption>
+      </figure>
 
       <div className="mb-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 rounded-xl border-2 border-primary/30 bg-primary/5 p-5">
         <p className="text-muted-foreground leading-relaxed">
