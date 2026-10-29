@@ -1,7 +1,7 @@
 import "https://deno.land/x/xhr@0.1.0/mod.ts";
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
-// Same data file the "This weekend in Townsville" box on the site uses, so the assistant never has its own copy.
-import { COUNCIL_WHATS_ON_URL, THIS_WEEKEND } from "../../../src/data/thisWeekend.ts";
+// Same data file the "This weekend in Townsville" box on the site uses (via src/data/thisWeekend.ts), so the assistant never has its own copy.
+import { COUNCIL_WHATS_ON_URL, THIS_WEEKEND } from "../_shared/thisWeekend.ts";
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
