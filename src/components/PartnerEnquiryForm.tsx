@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -64,6 +64,7 @@ const tierOptions = [
 const PartnerEnquiryForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [copied, setCopied] = useState(false);
+  const tierTriggerRef = useRef<HTMLButtonElement>(null);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -81,6 +82,8 @@ const PartnerEnquiryForm = () => {
     const handler = (e: Event) => {
       const detail = (e as CustomEvent).detail as FormValues["tier"];
       if (detail) form.setValue("tier", detail, { shouldValidate: true });
+      // Let the smooth scroll start, then move focus to the dropdown without a second jump.
+      window.setTimeout(() => tierTriggerRef.current?.focus({ preventScroll: true }), 400);
     };
     window.addEventListener("preselect-partner-tier", handler);
     return () => window.removeEventListener("preselect-partner-tier", handler);
@@ -203,9 +206,9 @@ const PartnerEnquiryForm = () => {
           render={({ field }) => (
             <FormItem>
               <FormLabel>Which tier are you interested in?</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
+              <Select onValueChange={field.onChange} value={field.value ?? ""}>
                 <FormControl>
-                  <SelectTrigger>
+                  <SelectTrigger ref={tierTriggerRef}>
                     <SelectValue placeholder="Select a tier" />
                   </SelectTrigger>
                 </FormControl>

@@ -21,8 +21,8 @@ import {
 // -----------------------------------------------------------------------------
 const STATS: { label?: string; value: string; note: string; Icon: typeof Users }[] = [
   {
-    value: "Growing fast",
-    note: "Seen by thousands of searches every month for Townsville events, beaches, safety info and Cowboys game day.",
+    value: "Who reads the guide",
+    note: "Found by visitors and locals searching for things to do in Townsville.",
     Icon: TrendingUp,
   },
   {
@@ -149,7 +149,7 @@ const Advertise = () => {
                 Partner With Townsville's Independent Local Guide
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Townsville Guide is in its mid-2026 growth phase — a personal, local-first guide to Townsville that's picking up serious momentum through the August dry season, with Cowboys vs Wests Tigers (Saturday, August 29) coming up as the next big home game-day weekend. If you run something worth telling people about, there's a spot for you here.
+                Townsville Guide is a personal, local-first guide to Townsville. Townsville's big game days, concerts and festival weekends bring a rush of visitors, and Peak Placement puts your business in front of them. If you run something worth telling people about, there's a spot for you here.
               </p>
               <div className="flex items-center justify-center gap-2 mt-4 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4 text-primary" />
@@ -180,7 +180,7 @@ const Advertise = () => {
                 ))}
               </div>
               <p className="text-center text-sm text-muted-foreground mt-4 max-w-2xl mx-auto">
-                Townsville's fastest-growing independent local guide — built by a local, for locals and visitors alike.
+                Townsville's independent local guide — built by a local, for locals and visitors alike.
               </p>
             </section>
 
