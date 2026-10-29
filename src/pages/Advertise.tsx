@@ -11,7 +11,6 @@ import {
   MapPin,
   Check,
   Users,
-  TrendingUp,
   Star,
   Trophy,
 } from "lucide-react";
@@ -23,7 +22,7 @@ const STATS: { label?: string; value: string; note: string; Icon: typeof Users }
   {
     value: "Who reads the guide",
     note: "Found by visitors and locals searching for things to do in Townsville.",
-    Icon: TrendingUp,
+    Icon: Users,
   },
   {
     value: "Hyper-local, not generic",
@@ -32,7 +31,7 @@ const STATS: { label?: string; value: string; note: string; Icon: typeof Users }
   },
   {
     value: "Ground floor",
-    note: "We're hand-picking a small number of Founding Partners during our early growth phase — this is the best time to lock in launch pricing.",
+    note: "We're hand-picking a small number of Founding Partners — this is the best time to lock in launch pricing.",
     Icon: Star,
   },
 ];
@@ -198,7 +197,7 @@ const Advertise = () => {
                   <Link to="/directory" className="text-primary hover:underline font-medium">
                     Directory
                   </Link>{" "}
-                  already features 50 local businesses.
+                  already features more than 40 local businesses.
                 </p>
               </div>
 
@@ -312,7 +311,7 @@ const Advertise = () => {
                       Cowboys home games & V8 Supercars weekends
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      These are the two biggest traffic spikes on the site — locals and visitors specifically checking the Game Day guide and Events calendar to plan their day. If your venue benefits from that crowd — pubs, function rooms, transfers, accommodation — Peak Placement puts your business in front of them at exactly the moment they're deciding where to go.
+                      These are the weekends when the most visitors are in town — locals and visitors specifically checking the Game Day guide and Events calendar to plan their day. If your venue benefits from that crowd — pubs, function rooms, transfers, accommodation — Peak Placement puts your business in front of them at exactly the moment they're deciding where to go.
                     </p>
                   </div>
                   <div className="md:flex-shrink-0">
