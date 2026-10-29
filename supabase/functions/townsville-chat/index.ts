@@ -1,5 +1,7 @@
 import "https://deno.land/x/xhr@0.1.0/mod.ts";
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+// Same data file the "This weekend in Townsville" box on the site uses, so the assistant never has its own copy.
+import { COUNCIL_WHATS_ON_URL, THIS_WEEKEND } from "../../../src/data/thisWeekend.ts";
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -54,6 +56,40 @@ function checkRateLimit(clientIP: string): { allowed: boolean; remaining: number
   // Increment count
   record.count++;
   return { allowed: true, remaining: RATE_LIMIT_MAX_REQUESTS - record.count, resetIn: record.resetTime - now };
+}
+
+const EVENTS_PAGE_URL = 'https://www.townsvilleguide.com.au/events';
+
+// Builds the EVENTS part of the live-source map from src/data/thisWeekend.ts.
+// Mirrors the site box: the list is used until the day after `to`; after that it is treated as not updated.
+function buildEventsSection(todayISO: string): string {
+  const { from, to, items } = THIS_WEEKEND;
+  const hasCurrentList = items.length > 0 && todayISO <= to;
+
+  if (!hasCurrentList) {
+    return `EVENTS / what's on / tonight / this weekend / markets / gigs:
+- Our weekend list has not been updated yet. You have NO event data for this weekend. Never list or guess any events.
+- Say the weekend list isn't updated yet, then give these two links:
+- [What's On Townsville (official calendar)](${COUNCIL_WHATS_ON_URL})
+- [Townsville Events Guide](${EVENTS_PAGE_URL})`;
+  }
+
+  const list = items
+    .map((i) => `- ${i.name} | ${i.time} | ${i.place} | listing: ${i.link}`)
+    .join('\n');
+
+  return `EVENTS / what's on / tonight / this weekend / markets / gigs:
+This is the ONE exception to the "no live data" rule. Townsville Guide keeps a curated weekend list for ${from} to ${to}. It is the ONLY event data you have. It is below, one event per line as: name | day and time | venue | listing link.
+
+${list}
+
+How to answer "what's on this weekend / tonight / Saturday / Sunday / Friday":
+- List the matching events from the list above, each with its day and time, and its venue. Name each event as a markdown link to its listing link.
+- If the user names a day or "tonight", list only events on that day (today's date is given at the top). If none match, say none are in our list for that day.
+- Then link [Townsville Events Guide](${EVENTS_PAGE_URL}) for the full weekend list and [What's On Townsville (official calendar)](${COUNCIL_WHATS_ON_URL}) for anything else.
+- Add a short note that times and details can change, so confirm with the organiser before going.
+- NEVER invent, add, or "round out" events, dates, times, venues or prices. Use only what is in the list. If asked about an event not in the list, say you don't have it and point to the official calendar.
+- This list does not extend beyond ${to}. For any other dates, route to the official calendar and Events Guide.`;
 }
 
 serve(async (req) => {
@@ -137,6 +173,12 @@ serve(async (req) => {
       weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
     }).format(new Date());
 
+    const todayISO = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Australia/Brisbane',
+      year: 'numeric', month: '2-digit', day: '2-digit',
+    }).format(new Date());
+    const eventsSection = buildEventsSection(todayISO);
+
     const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
       method: 'POST',
       headers: {
@@ -173,10 +215,7 @@ LIVE / TIME-SENSITIVE — triggered by words or intent such as: today, tonight, 
 OFFICIAL LIVE SOURCE MAP (use these exact links)
 ====================================================
 
-EVENTS / what's on / tonight / this weekend / markets / gigs:
-- [What's On Townsville (official calendar)](https://www.townsville.qld.gov.au/facilities-and-recreation/whats-on)
-- Secondary: [Townsville Events Guide](https://www.townsvilleguide.com.au/events)
-Say something like: "For current listings, check the official What's On Townsville calendar. Our Townsville Events Guide covers major recurring events, venues and planning an event weekend."
+${eventsSection}
 
 COWBOYS / STADIUM:
 - [Official Cowboys draw & fixtures](https://www.cowboys.com.au/draw/)
@@ -605,7 +644,7 @@ SECRET BEACHES & LOCAL TIPS
 RULES:
 - Never invent businesses, events, dates, fixtures, timetables, fares or opening hours
 - For anything time-sensitive, follow the EVERGREEN vs LIVE rule and the OFFICIAL LIVE SOURCE MAP above: official live source first, Townsville Guide page as planning context second
-- Never imply this site carries live weather, live fixtures or live event listings
+- Never imply this site carries live weather or live fixtures. The only event data you have is the weekend list in the EVENTS section above (when present); never invent anything beyond it
 - Answer evergreen planning questions fully from the knowledge above — do not deflect them externally
 - ALWAYS include Google Maps links when discussing specific locations
 - Keep responses short, clear and practical
