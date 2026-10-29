@@ -34,90 +34,62 @@ const PATH = "/events";
 /** Official council events calendar — the authoritative source for current listings. */
 const WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
-/** Weekend of Fri 23–Sun 25 October 2026, in date order. */
+/** Weekend of Fri 30 October–Sun 1 November 2026, in date order. */
 const WEEKEND_EVENTS = [
   {
-    day: "Friday 23 October",
+    day: "Friday 30 October",
     items: [
       {
-        name: "Candlelight: Tribute to Queen and The Beatles",
-        time: "Fri 23 Oct, 8:00pm",
-        venue: "Sacred Heart Cathedral, Townsville City",
-        description: "Hits from Queen and The Beatles reworked for strings in a candlelit concert.",
-        link: "https://feverup.com/m/621942",
+        name: "EMOWEEN Townsville 2026 (Emo Halloween)",
+        time: "Fri 30 Oct, 8:00pm–3:00am",
+        venue: "Otherwise Bar, 87–95 Flinders Street, Townsville City",
+        description: "A late-night emo and pop-punk Halloween party in the city.",
+        link: "https://www.eventbrite.com.au/e/emoween-townsville-2026-emo-halloween-tickets-1966402481757",
       },
     ],
   },
   {
-    day: "Saturday 24 October",
+    day: "Saturday 31 October",
     items: [
       {
-        name: "Introduction to Bird Photography & Camera Setup",
-        time: "Sat 24 Oct, 7:30am–10:00am",
-        venue: "Townsville Town Common Conservation Park, Cape Pallarenda Road",
-        description: "A hands-on morning workshop with Geopixel Photography Tours covering camera settings and field tips for photographing birds; bring your own camera.",
-        link: "https://www.eventbrite.com.au/e/introduction-to-bird-photography-camera-setup-tickets-2002976520692",
+        name: "The Haunted Homemakers Swap",
+        time: "Sat 31 Oct, 3:00pm–5:00pm",
+        venue: "Frost Family Sunflower Farm, 61 Hammond Way, Kelso",
+        description: "A Halloween handmade swap among the sunflowers: bring six handmade items and go home with six others.",
+        link: "https://www.eventbrite.com/e/the-haunted-homemakers-swap-tickets-2002422274928",
       },
       {
-        name: "Bingo Loco (18+)",
-        time: "Sat 24 Oct, show starts 6:00pm (doors 5:00pm)",
-        venue: "FLNDRS Bar & Nightclub, 159–165 Flinders Street, Townsville City",
-        description: "A three-hour bingo party with DJs, dance-offs, lip-sync battles, throwback hits and prizes.",
-        link: "https://www.eventbrite.com.au/e/bingo-loco-townsville-flndrs-bar-nightclub-saturday24th-october-2026-tickets-1998208846450",
+        name: "Greased Lightning (Stage Door Theatre Restaurant)",
+        time: "Sat 31 Oct, doors 5:00pm, show finishes about 9:40pm",
+        venue: "The Stage Door Theatre Restaurant, 5–7 Hayles Avenue, Arcadia, Magnetic Island",
+        description: "A comedy cabaret dinner show set at a 30-year school reunion. Guests from Townsville need the 4:30pm ferry, booked separately.",
+        link: "https://whatson.townsville.qld.gov.au/events/greased-lightning",
       },
       {
-        name: "Candlelight: The Best of Hans Zimmer",
-        time: "Sat 24 Oct, 6:00pm",
-        venue: "Sacred Heart Cathedral, Townsville City",
-        description: "Hans Zimmer's best-known film scores played live by candlelight.",
-        link: "https://feverup.com/m/621941",
-      },
-      {
-        name: "Brit Fest (18+)",
-        time: "Sat 24 Oct, 7:00pm",
-        venue: "Dalrymple Hotel, Townsville",
-        description: "A night of tribute acts covering Coldplay, Robbie Williams, The Jam, Oasis, The Beatles and Ed Sheeran.",
-        link: "https://tickets.oztix.com.au/outlet/event/9065544a-52c8-4968-bc7c-335c3d9527a2",
+        name: "Rugby League World Cup 2026: Australia v Cook Islands",
+        time: "Sat 31 Oct, kick-off 7:05pm",
+        venue: "Queensland Country Bank Stadium, Railway Estate",
+        description: "The Kangaroos play the Cook Islands in the last men's group-stage match in Townsville.",
+        link: "https://www.townsvillenorthqueensland.com.au/events/2026-rugby-league-world-cup-round-3--aus-692e2066f11888556737223c/",
       },
     ],
   },
   {
-    day: "Sunday 25 October",
+    day: "Sunday 1 November",
     items: [
       {
         name: "Willows Rotary Markets",
-        time: "Sun 25 Oct, 7:30am–11:30am",
-        venue: "Willows Shopping Centre carpark, cnr Thuringowa Dr and Hervey Range Rd, Kirwan",
-        description: "A weekly Sunday morning market in Kirwan, good for an early browse.",
+        time: "Sun 1 Nov, 7:30am–11:30am",
+        venue: "Willows Shopping Centre carpark, corner of Thuringowa Drive and Hervey Range Road, Kirwan",
+        description: "A weekly Sunday morning market run by Rotary.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
       },
       {
         name: "Cotters Market",
-        time: "Sun 25 Oct, 8:30am–1:00pm",
+        time: "Sun 1 Nov, 8:30am–1:00pm",
         venue: "Flinders Street, Townsville City",
-        description: "Townsville's weekly Sunday market, with local produce, food, crafts and live music on Flinders Street. Flinders Street is closed to traffic between Denham and Stanley Streets.",
+        description: "A weekly market with local produce, food and crafts. Flinders Street is closed to traffic between Denham and Stanley Streets.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
-      },
-      {
-        name: "Magnetic Island Markets",
-        time: "Sun 25 Oct, 9:00am–2:00pm",
-        venue: "Horseshoe Bay, Magnetic Island",
-        description: "A relaxed weekly market at Horseshoe Bay, easy to pair with a day trip to Maggie.",
-        link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
-      },
-      {
-        name: "Mini Pick-Your-Own Sessions",
-        time: "Sun 25 Oct, sessions between 9:00am and 6:00pm",
-        venue: "Frost Family Flower Farm, 61 Hammond Way, Kelso",
-        description: "Book a 30-minute session to pick your own flowers and enjoy a taste of farm life.",
-        link: "https://www.eventbrite.com.au/e/mini-pick-your-own-sessions-tickets-2003746984169",
-      },
-      {
-        name: "Townsville Fire v Sydney Flames (WNBL)",
-        time: "Sun 25 Oct, 2:00pm",
-        venue: "Townsville Entertainment and Convention Centre",
-        description: "The Fire's first home game of the 2026/27 WNBL season, against the Sydney Flames.",
-        link: "https://tecc.net.au/event/townsville-fire-26-27-season/",
       },
     ],
   },
@@ -391,7 +363,7 @@ const Events = () => (
           check the official What's On Townsville calendar.
         </p>
         <p className="text-sm font-medium text-foreground mb-5">
-          Updated 23 October 2026 for the weekend of Fri 23–Sun 25 October 2026.
+          Updated 29 October 2026 for the weekend of Friday 30 October–Sunday 1 November 2026.
         </p>
         <div className="space-y-6 mb-6">
           {WEEKEND_EVENTS.map(({ day, items }) => (
