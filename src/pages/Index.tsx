@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
 import WorthVisiting from "@/components/WorthVisiting";
 import AudienceChoice from "@/components/AudienceChoice";
+import FeedbackInvite from "@/components/FeedbackInvite";
 import SeasonalConditions from "@/components/SeasonalConditions";
 import AllGuides from "@/components/AllGuides";
 import StartPlanning from "@/components/StartPlanning";
@@ -145,6 +146,13 @@ const Index = () => {
 
         {/* Two clear choices straight after the hero */}
         <AudienceChoice />
+
+        {/* Feedback card, directly under the Visiting / Live in Townsville choices (homepage only) */}
+        <section aria-label="Feedback" className="px-4 pb-12 bg-background">
+          <div className="container mx-auto max-w-2xl">
+            <FeedbackInvite />
+          </div>
+        </section>
 
         <WorthVisiting />
 

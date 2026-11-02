@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import FeedbackInvite from "@/components/FeedbackInvite";
 import { MapPinned, Wrench, Heart } from "lucide-react";
 
 const CommunityTrustSection = () => {
@@ -32,7 +31,7 @@ const CommunityTrustSection = () => {
         </div>
 
         {/* Trust Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {trustStats.map((item, index) => {
             const IconComponent = item.icon;
             return (
@@ -54,11 +53,6 @@ const CommunityTrustSection = () => {
               </Card>
             );
           })}
-        </div>
-
-        {/* Feedback: the same card shown at the end of every guide page */}
-        <div className="max-w-2xl mx-auto">
-          <FeedbackInvite />
         </div>
       </div>
     </section>
