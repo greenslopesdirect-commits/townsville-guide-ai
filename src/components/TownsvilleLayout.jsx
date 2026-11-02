@@ -3,6 +3,7 @@ import HeaderImproved from "@/components/HeaderImproved";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import GuideTrustPanel from "@/components/GuideTrustPanel";
+import FeedbackInvite from "@/components/FeedbackInvite";
 import { isGuidePath } from "@/data/guideTrust";
 
 // NOTE: Do NOT render <SEOHead> here. Each route owns its own title,
@@ -25,6 +26,12 @@ const TownsvilleLayout = () => {
         {showTrustPanel && (
           <div className="container mx-auto max-w-4xl px-4 pb-12">
             <GuideTrustPanel />
+          </div>
+        )}
+
+        {showTrustPanel && (
+          <div className="container mx-auto max-w-4xl px-4 pb-12">
+            <FeedbackInvite />
           </div>
         )}
       </main>

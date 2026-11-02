@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import GuideQuickFacts from "@/components/GuideQuickFacts";
 import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
 import ThisWeekendInTownsville from "@/components/ThisWeekendInTownsville";
+import SuggestEventForm from "@/components/SuggestEventForm";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -402,6 +403,7 @@ const Events = () => (
             <ExternalLink className="w-4 h-4 ml-2" aria-hidden="true" />
           </a>
         </Button>
+        <SuggestEventForm />
       </section>
 
       {/* Events worth planning around */}

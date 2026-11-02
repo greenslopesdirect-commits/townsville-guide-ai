@@ -1,8 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { toast } from "@/components/ui/sonner";
-import { MapPinned, Wrench, Heart, MessageSquare } from "lucide-react";
-
-const EMAIL = "greenslopesdirect@gmail.com";
+import FeedbackInvite from "@/components/FeedbackInvite";
+import { MapPinned, Wrench, Heart } from "lucide-react";
 
 const CommunityTrustSection = () => {
   const trustStats = [
@@ -22,15 +20,6 @@ const CommunityTrustSection = () => {
       label: "North Queensland owned and operated."
     }
   ];
-
-  const handleCopyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText(EMAIL);
-      toast("Email address copied to clipboard!");
-    } catch (error) {
-      toast(`Unable to copy email. Please copy it manually: ${EMAIL}`);
-    }
-  };
 
   return (
     <section className="py-16 px-4 bg-muted/30">
@@ -67,19 +56,9 @@ const CommunityTrustSection = () => {
           })}
         </div>
 
-        {/* Feedback CTA */}
-        <div className="text-center">
-          <p className="text-muted-foreground flex items-center justify-center gap-2 flex-wrap">
-            <MessageSquare className="w-4 h-4 text-primary" />
-            Are you a local? Help us improve —{" "}
-            <button
-              type="button"
-              onClick={handleCopyEmail}
-              className="text-primary hover:underline font-medium underline-offset-2"
-            >
-              Send us your feedback
-            </button>
-          </p>
+        {/* Feedback: the same card shown at the end of every guide page */}
+        <div className="max-w-2xl mx-auto">
+          <FeedbackInvite />
         </div>
       </div>
     </section>
