@@ -25,7 +25,7 @@ export type AIPresetKey = keyof typeof AI_PRESETS;
  * Triggers the AI Guide with a specific question
  * - Navigates to /townsville if not already there
  * - Waits for the Hero component and AI input to load
- * - Sets the input value
+ * - Sets the input value and sends the question
  * - Scrolls smoothly to the input
  * - Applies a glow animation
  * - Focuses the input
@@ -43,8 +43,10 @@ export async function triggerAiGuide(question: string): Promise<void> {
   // Wait for the input to be available
   await waitForElement("townsville-ai-input", 3000);
   
-  // Set the input value via the global function
-  if ((window as any).setAiInputValue) {
+  // Fill the box and send the question, as if it had been typed and submitted
+  if ((window as any).askAiGuide) {
+    (window as any).askAiGuide(question);
+  } else if ((window as any).setAiInputValue) {
     (window as any).setAiInputValue(question);
   }
   

@@ -4,6 +4,7 @@ import { ArrowRight, Compass, Sparkles, Send, Loader2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { checkPendingAiQuestion } from "@/utils/aiGuide";
 import heroImage from "@/assets/strand-hero.jpg";
 
 // Each pill sends its label as the question, exactly as if it had been typed into the box.
@@ -62,11 +63,19 @@ const Hero = () => {
   const [displayed, setDisplayed] = useState("");
   const inputRef = useRef<HTMLInputElement | null>(null);
 
-  // Expose setter for aiGuide.ts triggers
+  // Expose setter and sender for aiGuide.ts triggers. askRef always points at the latest ask().
+  const askRef = useRef<(question: string) => Promise<void>>(async () => {});
   useEffect(() => {
     (window as any).setAiInputValue = (val: string) => setInput(val);
+    (window as any).askAiGuide = (val: string) => {
+      setInput(val);
+      return askRef.current(val);
+    };
+    // A button on another page stored its question and sent the visitor here: send it now.
+    checkPendingAiQuestion();
     return () => {
       delete (window as any).setAiInputValue;
+      delete (window as any).askAiGuide;
     };
   }, []);
 
@@ -117,6 +126,8 @@ const Hero = () => {
       setLoading(false);
     }
   };
+
+  askRef.current = ask;
 
   return (
     <section className="relative min-h-[80vh] md:min-h-[88vh] flex items-center justify-center overflow-hidden">
