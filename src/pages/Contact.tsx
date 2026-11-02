@@ -5,7 +5,7 @@ import { Mail, Calendar, AlertCircle, Handshake, Copy, Check, Phone, ArrowRight 
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
-const EMAIL = "Greenslopesdirect@gmail.com";
+const EMAIL = "duncan@townsvilleguide.com.au";
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);

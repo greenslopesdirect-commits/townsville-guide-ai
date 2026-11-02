@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-const EMAIL = "greenslopesdirect@gmail.com";
+const EMAIL = "duncan@townsvilleguide.com.au";
 
 /**
  * The site's visitor feedback feature. Shown near the end of every guide page (see TownsvilleLayout)

@@ -3,7 +3,7 @@ import SEOHead from "@/components/SEOHead";
 import { Link } from "react-router-dom";
 import { Home } from "lucide-react";
 
-const EMAIL = "greenslopesdirect@gmail.com";
+const EMAIL = "duncan@townsvilleguide.com.au";
 
 const PrivacyPolicy = () => {
   return (
