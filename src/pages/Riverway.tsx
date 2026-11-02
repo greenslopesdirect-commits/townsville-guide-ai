@@ -236,7 +236,7 @@ const Riverway = () => {
             Thuringowa Central
           </p>
           <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-5">
-            Riverway Townsville: Lagoons, Parklands &amp; Free Swimming
+            Riverway Lagoons Townsville: Free Swimming, Hours &amp; Parking
           </h1>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
             Riverway is a free riverside recreation precinct in Thuringowa Central, on the banks of

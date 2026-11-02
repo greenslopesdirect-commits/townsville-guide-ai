@@ -208,7 +208,7 @@ const Shopping = () => (
         Shopping hub
       </div>
 
-      <h1 className="text-3xl md:text-4xl font-bold mb-4">Shopping in Townsville</h1>
+      <h1 className="text-3xl md:text-4xl font-bold mb-4">Townsville Shopping Centres &amp; Local Markets</h1>
 
       <p className="text-lg text-muted-foreground leading-relaxed mb-4">
         Townsville's shopping is spread out rather than concentrated in one precinct. Most of it sits
