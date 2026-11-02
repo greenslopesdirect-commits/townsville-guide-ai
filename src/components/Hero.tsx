@@ -13,7 +13,7 @@ const SUGGESTIONS: string[] = [
   "Is it safe to swim now?",
   "Magnetic Island ferry",
   "Best beaches near the city",
-  "Free things to do",
+  "Things to do on a rainy day",
 ];
 
 // The model occasionally invents or mistypes townsvilleguide.com.au URLs. Map known bad
