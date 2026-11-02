@@ -34,9 +34,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/riverway";
 
-const TITLE = "Riverway Townsville: Free Lagoons, Hours, Parking & Tips";
+const TITLE = "Riverway Lagoons Townsville: Free Swimming, Hours & Parking";
 const DESCRIPTION =
-  "Riverway Lagoons: free, lifeguarded swimming beside the Ross River, 400+ free car spaces, dog rules and the Council's current opening hours.";
+  "Riverway Lagoons in Townsville: free, lifeguarded swimming beside the Ross River, 400+ free car spaces, dog rules and the Council's current opening hours.";
 
 const LAGOON_STATUS =
   "Riverway Lagoons operate during lifeguarded opening hours, which are longer in summer than in winter, and the gates are locked outside those times. Check Townsville City Council for the current schedule before visiting.";

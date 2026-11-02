@@ -41,9 +41,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PATH = "/beaches";
 
-const TITLE = "Townsville Beaches: Where You Can Swim & Stinger Season";
+const TITLE = "Townsville Beaches: Where to Swim & Stinger Season";
 const DESCRIPTION =
-  "Can you swim at Townsville beaches? Yes, in netted or patrolled areas. Stinger season runs Nov–May. Compare The Strand, Pallarenda, Rowes Bay and more.";
+  "Can you swim in Townsville? Yes, in netted or patrolled areas. Stinger season runs Nov–May. Compare The Strand, Saunders Beach, Pallarenda and Rowes Bay.";
 
 const COMPARISON = [
   {

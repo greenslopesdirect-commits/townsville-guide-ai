@@ -8,8 +8,15 @@ const Nature = lazy(() => import("@/pages/Nature"));
 // Component to redirect legacy /townsville/* paths to new root-based paths
 const TownsvilleRedirect = () => {
   const { path, "*": rest } = useParams();
+  const { search, hash } = useLocation();
   const newPath = rest ? `/${path}/${rest}` : `/${path}`;
-  return <Navigate to={newPath} replace />;
+  return <Navigate to={{ pathname: newPath, search, hash }} replace />;
+};
+
+// /townsville itself goes to the homepage, keeping any query string (UTM tags) and hash.
+const TownsvilleRootRedirect = () => {
+  const { search, hash } = useLocation();
+  return <Navigate to={{ pathname: "/", search, hash }} replace />;
 };
 
 // Canonical URLs have no trailing slash, so send /townsville-with-kids/ to /townsville-with-kids.
@@ -86,7 +93,7 @@ const AppRoutes = () => (
     <TrailingSlashRedirect />
     <Routes>
       {/* Redirect legacy /townsville paths to new root-based equivalents */}
-      <Route path="/townsville" element={<Navigate to="/" replace />} />
+      <Route path="/townsville" element={<TownsvilleRootRedirect />} />
       <Route path="/townsville/:path/*" element={<TownsvilleRedirect />} />
 
       {/* MAIN ROUTES: All city-specific pages use TownsvilleLayout at root */}

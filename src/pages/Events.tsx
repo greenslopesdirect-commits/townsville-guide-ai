@@ -5,6 +5,7 @@ import GuideQuickFacts from "@/components/GuideQuickFacts";
 import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
 import ThisWeekendInTownsville from "@/components/ThisWeekendInTownsville";
 import SuggestEventForm from "@/components/SuggestEventForm";
+import { getEventsSeo } from "@/lib/eventsSeo";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -96,9 +97,8 @@ const WEEKEND_EVENTS = [
   },
 ];
 
-const TITLE = "What's On in Townsville This Weekend | Events & Markets";
-const DESCRIPTION =
-  "What's on in Townsville this weekend? Updated weekly: live music, markets, festivals, Cowboys and Fire games, family events and official listings.";
+// Names the current weekend while thisWeekend.ts is up to date; generic wording otherwise.
+const { title: TITLE, description: DESCRIPTION } = getEventsSeo();
 
 const EVENT_TYPES = [
   {

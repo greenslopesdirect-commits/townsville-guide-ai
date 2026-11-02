@@ -88,8 +88,8 @@ const TheStrand = () => {
   return (
     <>
       <SEOHead
-        title="The Strand Townsville: Rockpool, Water Park & Walks"
-        description="The Strand Townsville: 2.2 km waterfront with the free Rockpool and Water Park, playgrounds, cafés, parking, dogs and what to know before you swim."
+        title="The Strand Townsville: Free Rockpool, Water Park & Parking"
+        description="The Strand, Townsville: a 2.2 km waterfront walk with the free Rockpool and Water Park, playgrounds, cafés, parking, dogs and swimming safety."
         canonical={`${SITE}/the-strand`}
         ogType="article"
         ogImage="https://www.townsvilleguide.com.au/the-strand-townsville-2.webp"

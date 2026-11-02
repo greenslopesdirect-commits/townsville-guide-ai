@@ -29,9 +29,9 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PAGE_PATH = "/guides/magnetic-island-ferry";
 const PAGE_URL = `${SITE}${PAGE_PATH}`;
-const PAGE_TITLE = "Magnetic Island Ferry: Which Terminal, Which Boat (2026)";
+const PAGE_TITLE = "Magnetic Island Ferry from Townsville: Terminals & Times";
 const PAGE_DESCRIPTION =
-  "Two ferries, two terminals: SeaLink passenger ferry from Breakwater (about 20 min) or the car ferry from Ross Street (about 40 min). Official timetable links.";
+  "Passenger ferry from Breakwater Terminal (about 20 min) or car ferry from Ross Street (about 40 min). Links to the current timetables and fares.";
 const LAST_UPDATED = "27 October 2026";
 
 const SEALINK = "https://www.sealink.com.au/magnetic-island/ferry-information";
