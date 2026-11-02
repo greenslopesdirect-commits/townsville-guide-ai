@@ -89,6 +89,7 @@ How to answer "what's on this weekend / tonight / Saturday / Sunday / Friday":
 - If the user names a day or "tonight", list only events on that day (today's date is given at the top). If none match, say none are in our list for that day.
 - Then link [Townsville Events Guide](${EVENTS_PAGE_URL}) for the full weekend list and [What's On Townsville (official calendar)](${COUNCIL_WHATS_ON_URL}) for anything else.
 - Add a short note that times and details can change, so confirm with the organiser before going.
+- An event that runs over more than one day (for example "Sat 7 and Sun 8 Nov") must appear ONCE only, under its first day, with its full date range (e.g. "Saturday 7 and Sunday 8 November"). Never repeat it under the later day. If the user asks only about a later day it covers (e.g. Sunday), include it once there and say it runs on both days.
 - NEVER invent, add, or "round out" events, dates, times, venues or prices. Use only what is in the list. If asked about an event not in the list, say you don't have it and point to the official calendar.
 - This list does not extend beyond ${to}. For any other dates, route to the official calendar and Events Guide.`;
 }
