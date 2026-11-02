@@ -4,16 +4,15 @@ import { ArrowRight, Compass, Sparkles, Send, Loader2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { supabase, isSupabaseConfigured } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { AI_PRESETS } from "@/utils/aiGuide";
 import heroImage from "@/assets/strand-hero.jpg";
 
-const SUGGESTIONS: { label: string; question: string }[] = [
-  { label: "What's on this weekend?", question: AI_PRESETS.whatsOn },
-  { label: "Swimming in stinger season", question: AI_PRESETS.stingerSwimming },
-  { label: "Dog-friendly beaches near the city", question: AI_PRESETS.dogBeaches },
-  { label: "Things to do on a rainy day", question: AI_PRESETS.rainyDay },
-  { label: "A day on Magnetic Island", question: AI_PRESETS.magneticIsland },
-  { label: "Do I need a car?", question: AI_PRESETS.needCar },
+// Each pill sends its label as the question, exactly as if it had been typed into the box.
+const SUGGESTIONS: string[] = [
+  "What's on this weekend?",
+  "Is it safe to swim now?",
+  "Magnetic Island ferry",
+  "Best beaches near the city",
+  "Free things to do",
 ];
 
 // The model occasionally invents or mistypes townsvilleguide.com.au URLs. Map known bad
@@ -189,21 +188,21 @@ const Hero = () => {
           </Button>
         </form>
 
-        {/* Example questions: clicking one fills the box and sends it */}
+        {/* Suggested questions: tapping a pill fills the box and sends it */}
         {isSupabaseConfigured && (
-          <div className="flex flex-wrap justify-center gap-2 mt-4" aria-label="Example questions" role="group">
-            {SUGGESTIONS.map((s) => (
+          <div className="flex flex-wrap justify-center gap-2 mt-4" aria-label="Suggested questions" role="group">
+            {SUGGESTIONS.map((q) => (
               <button
-                key={s.label}
+                key={q}
                 type="button"
                 onClick={() => {
-                  setInput(s.question);
-                  ask(s.question);
+                  setInput(q);
+                  ask(q);
                 }}
                 disabled={loading}
-                className="text-xs md:text-sm px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white border border-white/25 backdrop-blur-sm transition disabled:opacity-50"
+                className="min-h-[44px] px-3 sm:px-4 py-2 rounded-full text-[13px] sm:text-sm font-medium text-white bg-white/10 border border-yellow-300/60 backdrop-blur-sm transition-colors hover:bg-yellow-300 hover:text-slate-900 hover:border-yellow-300 active:bg-yellow-400 active:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-300 focus-visible:ring-offset-2 focus-visible:ring-offset-black/60 disabled:opacity-50 disabled:pointer-events-none"
               >
-                {s.label}
+                {q}
               </button>
             ))}
           </div>
