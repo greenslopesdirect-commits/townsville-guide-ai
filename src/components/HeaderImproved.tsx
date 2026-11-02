@@ -52,6 +52,14 @@ const NAV_GROUPS: NavGroup[] = [
     ],
   },
 ];
+
+// Desktop only. Home leads the row, and Magnetic Island sits in Plan Your Trip so everything fits on one
+// line at 1024px. The mobile menu keeps PRIMARY_LINKS and NAV_GROUPS as they were.
+const MAGNETIC_ISLAND_LINK: NavLinkItem = PRIMARY_LINKS.find((l) => l.label === "Magnetic Island")!;
+const DESKTOP_PRIMARY: NavLinkItem[] = [HOME_LINK, ...PRIMARY_LINKS.filter((l) => l !== MAGNETIC_ISLAND_LINK)];
+const DESKTOP_GROUPS: NavGroup[] = NAV_GROUPS.map((g) =>
+  g.label === "Plan Your Trip" ? { ...g, items: [MAGNETIC_ISLAND_LINK, ...g.items] } : g
+);
 const END_LINKS: NavLinkItem[] = [
   { to: "/advertise", label: "Partner With Us" },
   { to: "/contact", label: "Contact" },
@@ -178,13 +186,13 @@ const HeaderImproved = () => {
 
           {/* Desktop Navigation */}
           <div ref={navRef} className="hidden lg:flex items-center gap-6">
-            {PRIMARY_LINKS.map((item) => (
+            {DESKTOP_PRIMARY.map((item) => (
               <Link key={item.to} to={item.to} className={desktopLinkClass(isActive(item.to))}>
                 {item.label}
               </Link>
             ))}
 
-            {NAV_GROUPS.map((group) => {
+            {DESKTOP_GROUPS.map((group) => {
               const isOpen = dropdownOpen === group.label;
               return (
                 <div
