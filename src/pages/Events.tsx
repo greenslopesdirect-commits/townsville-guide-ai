@@ -36,59 +36,66 @@ const PATH = "/events";
 /** Official council events calendar — the authoritative source for current listings. */
 const WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
-/** Weekend of Fri 30 October–Sun 1 November 2026, in date order. */
+/** Weekend of Fri 6–Sun 8 November 2026, in date order. */
 const WEEKEND_EVENTS = [
   {
-    day: "Friday 30 October",
+    day: "Saturday 7 and Sunday 8 November",
     items: [
       {
-        name: "EMOWEEN Townsville 2026 (Emo Halloween)",
-        time: "Fri 30 Oct, 8:00pm–3:00am",
-        venue: "Otherwise Bar, 87–95 Flinders Street, Townsville City",
-        description: "A late-night emo and pop-punk Halloween party in the city.",
-        link: "https://www.eventbrite.com.au/e/emoween-townsville-2026-emo-halloween-tickets-1966402481757",
+        name: "Garage Sale Trail 2026",
+        time: "Sat 7 and Sun 8 Nov (also 14–15 Nov)",
+        venue: "Garage sales at homes across Townsville",
+        description: "Townsville joins the national weekend of garage sales; find sales near you on the official map.",
+        link: "https://garagesaletrail.com.au/Townsville",
       },
     ],
   },
   {
-    day: "Saturday 31 October",
+    day: "Saturday 7 November",
     items: [
       {
-        name: "The Haunted Homemakers Swap",
-        time: "Sat 31 Oct, 3:00pm–5:00pm",
-        venue: "Frost Family Sunflower Farm, 61 Hammond Way, Kelso",
-        description: "A Halloween handmade swap among the sunflowers: bring six handmade items and go home with six others.",
-        link: "https://www.eventbrite.com/e/the-haunted-homemakers-swap-tickets-2002422274928",
+        name: "Morning Melodies: Townsville's Got Talent",
+        time: "Sat 7 Nov, 11:00am–12:30pm",
+        venue: "Townsville Civic Theatre, 41 Boundary Street, South Townsville",
+        description: "A late-morning concert in the Civic Theatre's Morning Melodies series.",
+        link: "https://whatson.townsville.qld.gov.au/events/morning-melodies-townsville-got-talent",
+      },
+      {
+        name: "Foo Fighters: Take Cover Tour",
+        time: "Sat 7 Nov, gates 4:00pm, show starts 5:30pm",
+        venue: "Queensland Country Bank Stadium, Railway Estate",
+        description: "Foo Fighters bring their stadium tour to Townsville, with support from Full Flower Moon Band and Downgirl.",
+        link: "https://queenslandcountrybankstadium.com.au/events/Foo-Fighters",
+      },
+      {
+        name: "Gurambilbarra NAIDOC Gala & Awards Night",
+        time: "Sat 7 Nov, from 5:30pm",
+        venue: "The Ville Resort-Casino, Sir Leslie Thiess Drive",
+        description: "A ticketed gala marking 50 years of NAIDOC and recognising local community champions, run by Community Themes Collective.",
+        link: "https://nit.com.au/10-09-2026/26404/gurambilbarra-to-celebrate-50-years-of-naidoc-with-gala-awards-night",
       },
       {
         name: "Greased Lightning (Stage Door Theatre Restaurant)",
-        time: "Sat 31 Oct, doors 5:00pm, show finishes about 9:40pm",
+        time: "Sat 7 Nov, doors 5:00pm, show finishes about 9:40pm",
         venue: "The Stage Door Theatre Restaurant, 5–7 Hayles Avenue, Arcadia, Magnetic Island",
         description: "A comedy cabaret dinner show set at a 30-year school reunion. Guests from Townsville need the 4:30pm ferry, booked separately.",
         link: "https://whatson.townsville.qld.gov.au/events/greased-lightning",
       },
-      {
-        name: "Rugby League World Cup 2026: Australia v Cook Islands",
-        time: "Sat 31 Oct, kick-off 7:05pm",
-        venue: "Queensland Country Bank Stadium, Railway Estate",
-        description: "The Kangaroos play the Cook Islands in the last men's group-stage match in Townsville.",
-        link: "https://www.townsvillenorthqueensland.com.au/events/2026-rugby-league-world-cup-round-3--aus-692e2066f11888556737223c/",
-      },
     ],
   },
   {
-    day: "Sunday 1 November",
+    day: "Sunday 8 November",
     items: [
       {
         name: "Willows Rotary Markets",
-        time: "Sun 1 Nov, 7:30am–11:30am",
+        time: "Sun 8 Nov, 7:30am–11:30am",
         venue: "Willows Shopping Centre carpark, corner of Thuringowa Drive and Hervey Range Road, Kirwan",
         description: "A weekly Sunday morning market run by Rotary.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
       },
       {
         name: "Cotters Market",
-        time: "Sun 1 Nov, 8:30am–1:00pm",
+        time: "Sun 8 Nov, 8:30am–1:00pm",
         venue: "Flinders Street, Townsville City",
         description: "A weekly market with local produce, food and crafts. Flinders Street is closed to traffic between Denham and Stanley Streets.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
@@ -364,7 +371,7 @@ const Events = () => (
           check the official What's On Townsville calendar.
         </p>
         <p className="text-sm font-medium text-foreground mb-5">
-          Updated 29 October 2026 for the weekend of Friday 30 October–Sunday 1 November 2026.
+          Updated 2 November 2026 for the weekend of Friday 6 November–Sunday 8 November 2026.
         </p>
         <div className="space-y-6 mb-6">
           {WEEKEND_EVENTS.map(({ day, items }) => (

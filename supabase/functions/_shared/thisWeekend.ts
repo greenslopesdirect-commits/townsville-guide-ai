@@ -46,43 +46,43 @@ export interface ThisWeekendData {
 export const COUNCIL_WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
 export const THIS_WEEKEND: ThisWeekendData = {
-  from: "2026-10-30",
-  to: "2026-11-01",
+  from: "2026-11-06",
+  to: "2026-11-08",
   items: [
     {
-      name: "EMOWEEN Townsville 2026 (Emo Halloween)",
-      place: "Otherwise Bar, 87–95 Flinders Street, Townsville City",
-      time: "Fri 30 Oct, 8:00pm–3:00am",
-      link: "https://www.eventbrite.com.au/e/emoween-townsville-2026-emo-halloween-tickets-1966402481757",
+      name: "Garage Sale Trail 2026",
+      place: "Garage sales at homes across Townsville",
+      time: "Sat 7 and Sun 8 Nov (also 14–15 Nov)",
+      link: "https://garagesaletrail.com.au/Townsville",
     },
     {
-      name: "The Haunted Homemakers Swap",
-      place: "Frost Family Sunflower Farm, 61 Hammond Way, Kelso",
-      time: "Sat 31 Oct, 3:00pm–5:00pm",
-      link: "https://www.eventbrite.com/e/the-haunted-homemakers-swap-tickets-2002422274928",
+      name: "Foo Fighters: Take Cover Tour",
+      place: "Queensland Country Bank Stadium, Railway Estate",
+      time: "Sat 7 Nov, gates 4:00pm, show starts 5:30pm",
+      link: "https://queenslandcountrybankstadium.com.au/events/Foo-Fighters",
+    },
+    {
+      name: "Gurambilbarra NAIDOC Gala & Awards Night",
+      place: "The Ville Resort-Casino, Sir Leslie Thiess Drive",
+      time: "Sat 7 Nov, from 5:30pm",
+      link: "https://nit.com.au/10-09-2026/26404/gurambilbarra-to-celebrate-50-years-of-naidoc-with-gala-awards-night",
     },
     {
       name: "Greased Lightning (Stage Door Theatre Restaurant)",
       place: "The Stage Door Theatre Restaurant, 5–7 Hayles Avenue, Arcadia, Magnetic Island",
-      time: "Sat 31 Oct, doors 5:00pm, show finishes about 9:40pm",
+      time: "Sat 7 Nov, doors 5:00pm, show finishes about 9:40pm",
       link: "https://whatson.townsville.qld.gov.au/events/greased-lightning",
-    },
-    {
-      name: "Rugby League World Cup 2026: Australia v Cook Islands",
-      place: "Queensland Country Bank Stadium, Railway Estate",
-      time: "Sat 31 Oct, kick-off 7:05pm",
-      link: "https://www.townsvillenorthqueensland.com.au/events/2026-rugby-league-world-cup-round-3--aus-692e2066f11888556737223c/",
     },
     {
       name: "Willows Rotary Markets",
       place: "Willows Shopping Centre carpark, corner of Thuringowa Drive and Hervey Range Road, Kirwan",
-      time: "Sun 1 Nov, 7:30am–11:30am",
+      time: "Sun 8 Nov, 7:30am–11:30am",
       link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
     },
     {
       name: "Cotters Market",
       place: "Flinders Street, Townsville City",
-      time: "Sun 1 Nov, 8:30am–1:00pm",
+      time: "Sun 8 Nov, 8:30am–1:00pm",
       link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
     },
   ],
