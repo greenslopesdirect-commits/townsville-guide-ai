@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="irHPgBpH6qit00m_bqcKkYbZMM0T0-mi7ro2aMpLPkw" />
 
+    <!-- Analytics opt-outs: runs before gtag. Never count (1) browsers marked internal, i.e. anything
+         that has opened any page with ?internal=1 (undo with ?internal=0), or (2) headless browsers
+         and self-declared bots/crawlers. Real UTM tags are untouched: gtag reads them from the URL. -->
+    <script>
+      (function () {
+        var GA_ID = 'G-7HFRKZKLHY';
+        try {
+          if (/[?&]internal=1(&|$)/.test(location.search)) localStorage.setItem('tg_internal', '1');
+          if (/[?&]internal=0(&|$)/.test(location.search)) localStorage.removeItem('tg_internal');
+          if (localStorage.getItem('tg_internal') === '1') window['ga-disable-' + GA_ID] = true;
+        } catch (e) {}
+        var ua = navigator.userAgent || '';
+        if (navigator.webdriver || /HeadlessChrome|PhantomJS|Lighthouse|Prerender|bot\b|crawl|spider|slurp|facebookexternalhit|GTmetrix|Pingdom|UptimeRobot/i.test(ua)) {
+          window['ga-disable-' + GA_ID] = true;
+        }
+      })();
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7HFRKZKLHY"></script>
     <script>
