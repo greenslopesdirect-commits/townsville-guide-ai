@@ -24,8 +24,11 @@ jobs:
       - name: Typecheck
         run: npx tsc --noEmit
 
-      - name: Build (includes sitemap generation)
-        run: npm run build
+      # `npm run build` also runs the prerender and then deletes dist-ssr/, so the standalone
+      # prerender step below would have nothing to render. Run the same build stages here
+      # without the final prerender, so each stage is its own step.
+      - name: Build (sitemap, client bundle, SSR bundle)
+        run: npm run prebuild && npx vite build && npx vite build --ssr src/entry-server.tsx --outDir dist-ssr
 
       - name: Static prerender
         run: node scripts/prerender.mjs
