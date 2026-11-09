@@ -54,11 +54,16 @@ const CouncilCalendarLink = ({ label }: { label: string }) => (
 /**
  * Weekly "This weekend in Townsville" block, driven by src/data/thisWeekend.ts.
  *
- * It renders the fallback on the server and on first paint, then checks today's date in the
- * browser. That way the pre-rendered HTML can never show a past weekend as current.
+ * It shows the items whenever today (Townsville time) is on or before the "to" date, in the
+ * prerendered HTML and in the browser, and switches to the fallback once that date has passed.
+ * The browser re-checks after mount, so a stale prerender corrects itself on the next visit.
  */
 const ThisWeekendInTownsville = ({ data = THIS_WEEKEND }: { data?: ThisWeekendData }) => {
-  const [items, setItems] = useState<WeekendItem[] | null>(null);
+  // Computed during render so the prerendered HTML already contains the items (the build runs on or
+  // before the "to" date); the effect below re-checks in the browser once today's date is known.
+  const [items, setItems] = useState<WeekendItem[] | null>(() =>
+    currentWeekendItems(data, todayInTownsville()),
+  );
 
   useEffect(() => {
     setItems(currentWeekendItems(data, todayInTownsville()));

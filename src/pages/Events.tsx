@@ -6,6 +6,7 @@ import FoundingPartnerCTA from "@/components/FoundingPartnerCTA";
 import ThisWeekendInTownsville from "@/components/ThisWeekendInTownsville";
 import SuggestEventForm from "@/components/SuggestEventForm";
 import { getEventsSeo } from "@/lib/eventsSeo";
+import { formatUpdatedOn } from "@/data/thisWeekend";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -385,7 +386,7 @@ const Events = () => (
           check the official What's On Townsville calendar.
         </p>
         <p className="text-sm font-medium text-foreground mb-5">
-          Updated 9 November 2026 for the weekend of 13–15 November 2026.
+          Updated {formatUpdatedOn()} for the weekend of 13–15 November 2026.
         </p>
         <div className="space-y-6 mb-6">
           {WEEKEND_EVENTS.map(({ day, items }) => (

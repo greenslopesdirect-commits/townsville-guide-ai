@@ -45,6 +45,22 @@ export interface ThisWeekendData {
 
 export const COUNCIL_WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
+/**
+ * Date these listings were last updated, YYYY-MM-DD. /events shows it in the "Updated ..." line and
+ * in the "About this guide" panel's "Last checked", so change it here when you change `items`.
+ */
+export const UPDATED_ON = "2026-11-09";
+
+/** "9 November 2026" from a YYYY-MM-DD string. */
+export const formatUpdatedOn = (iso: string = UPDATED_ON): string => {
+  const MONTHS = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+  ];
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${d} ${MONTHS[m - 1]} ${y}`;
+};
+
 export const THIS_WEEKEND: ThisWeekendData = {
   from: "2026-11-13",
   to: "2026-11-15",

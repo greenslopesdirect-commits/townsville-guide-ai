@@ -1,3 +1,5 @@
+import { formatUpdatedOn } from "@/data/thisWeekend";
+
 export type VisitStatus = "personally-visited" | "partially-firsthand" | "research-based";
 
 export interface OfficialSource {
@@ -663,7 +665,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
     visitStatus: "partially-firsthand",
     visitNote:
       "This guide combines local visitor-planning knowledge with current information from official Townsville event, venue and organiser sources. Event dates and programmes change regularly, so confirm details with the official organiser before travelling.",
-    lastChecked: "7 August 2026",
+    lastChecked: formatUpdatedOn(),
     officialSourcesChecked: true,
     officialSources: [
       {
