@@ -46,44 +46,44 @@ export interface ThisWeekendData {
 export const COUNCIL_WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
 export const THIS_WEEKEND: ThisWeekendData = {
-  from: "2026-11-06",
-  to: "2026-11-08",
+  from: "2026-11-13",
+  to: "2026-11-15",
   items: [
     {
+      name: "Monster Energy PBR 2026 Grand Finals",
+      place: "Townsville Entertainment & Convention Centre",
+      time: "Fri 13 – Sat 14 Nov, 7:30pm (arena opens 6:30pm)",
+      link: "https://tecc.net.au/event/monster-energy-pbr-grandfinals-2026/",
+    },
+    {
+      name: "Ashes to Ashes – The David Bowie Experience",
+      place: "The Warehouse Bandroom",
+      time: "Fri 13 Nov, 7:30pm",
+      link: "https://tickets.oztix.com.au/outlet/event/807d3693-d051-4be3-b481-6c62412451ed",
+    },
+    {
       name: "Garage Sale Trail 2026",
-      place: "Garage sales at homes across Townsville",
-      time: "Sat 7 and Sun 8 Nov (also 14–15 Nov)",
+      place: "Homes across Townsville",
+      time: "Sat 14 – Sun 15 Nov",
       link: "https://garagesaletrail.com.au/Townsville",
     },
     {
-      name: "Foo Fighters: Take Cover Tour",
-      place: "Queensland Country Bank Stadium, Railway Estate",
-      time: "Sat 7 Nov, gates 4:00pm, show starts 5:30pm",
-      link: "https://queenslandcountrybankstadium.com.au/events/Foo-Fighters",
-    },
-    {
-      name: "Gurambilbarra NAIDOC Gala & Awards Night",
-      place: "The Ville Resort-Casino, Sir Leslie Thiess Drive",
-      time: "Sat 7 Nov, from 5:30pm",
-      link: "https://nit.com.au/10-09-2026/26404/gurambilbarra-to-celebrate-50-years-of-naidoc-with-gala-awards-night",
-    },
-    {
-      name: "Greased Lightning (Stage Door Theatre Restaurant)",
-      place: "The Stage Door Theatre Restaurant, 5–7 Hayles Avenue, Arcadia, Magnetic Island",
-      time: "Sat 7 Nov, doors 5:00pm, show finishes about 9:40pm",
-      link: "https://whatson.townsville.qld.gov.au/events/greased-lightning",
-    },
-    {
-      name: "Willows Rotary Markets",
-      place: "Willows Shopping Centre carpark, corner of Thuringowa Drive and Hervey Range Road, Kirwan",
-      time: "Sun 8 Nov, 7:30am–11:30am",
-      link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
+      name: "Shannon Noll – The Road In Front Of Me Tour",
+      place: "FLNDRS Bar & Nightclub, 159–165 Flinders Street",
+      time: "Sat 14 Nov, 9:00pm",
+      link: "https://www.eventbrite.com/e/shannon-noll-the-road-in-front-of-me-tour-with-special-guests-tickets-1996429882521",
     },
     {
       name: "Cotters Market",
       place: "Flinders Street, Townsville City",
-      time: "Sun 8 Nov, 8:30am–1:00pm",
+      time: "Sun 15 Nov, 8:30am–1:00pm",
       link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
+    },
+    {
+      name: "Magnetic Island Markets",
+      place: "Horseshoe Bay foreshore, Magnetic Island",
+      time: "Sun 15 Nov, 9:00am–2:00pm",
+      link: "https://www.micda.com.au/magnetic-island-markets",
     },
   ],
 };

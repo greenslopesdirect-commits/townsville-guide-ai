@@ -36,68 +36,82 @@ const PATH = "/events";
 /** Official council events calendar — the authoritative source for current listings. */
 const WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
-/** Weekend of Fri 6–Sun 8 November 2026, in date order. */
+/** Weekend of Fri 13–Sun 15 November 2026, in date order. */
 const WEEKEND_EVENTS = [
   {
-    day: "Saturday 7 and Sunday 8 November",
+    day: "Friday 13 November",
+    items: [
+      {
+        name: "Monster Energy PBR 2026 Grand Finals",
+        time: "Fri 13 – Sat 14 Nov, 7:30pm (arena opens 6:30pm)",
+        venue: "Townsville Entertainment & Convention Centre",
+        description: "Australia's top bull riders compete for the 2026 titles over two nights; Saturday is sold out.",
+        link: "https://tecc.net.au/event/monster-energy-pbr-grandfinals-2026/",
+      },
+      {
+        name: "Ashes to Ashes – The David Bowie Experience",
+        time: "Fri 13 Nov, 7:30pm",
+        venue: "The Warehouse Bandroom",
+        description: "A live tribute show playing David Bowie's biggest songs.",
+        link: "https://tickets.oztix.com.au/outlet/event/807d3693-d051-4be3-b481-6c62412451ed",
+      },
+    ],
+  },
+  {
+    day: "Saturday 14 November",
     items: [
       {
         name: "Garage Sale Trail 2026",
-        time: "Sat 7 and Sun 8 Nov (also 14–15 Nov)",
-        venue: "Garage sales at homes across Townsville",
-        description: "Townsville joins the national weekend of garage sales; find sales near you on the official map.",
+        time: "Sat 14 – Sun 15 Nov",
+        venue: "Homes across Townsville",
+        description: "The second weekend of the national garage sale trail, with sales at homes all over the city.",
         link: "https://garagesaletrail.com.au/Townsville",
       },
-    ],
-  },
-  {
-    day: "Saturday 7 November",
-    items: [
       {
-        name: "Morning Melodies: Townsville's Got Talent",
-        time: "Sat 7 Nov, 11:00am–12:30pm",
-        venue: "Townsville Civic Theatre, 41 Boundary Street, South Townsville",
-        description: "A late-morning concert in the Civic Theatre's Morning Melodies series.",
-        link: "https://whatson.townsville.qld.gov.au/events/morning-melodies-townsville-got-talent",
+        name: "Murder on the Red Carpet",
+        time: "Sat 14 Nov, 6:00pm–11:00pm",
+        venue: "The Wine Bar, 41 Denham Street, Townsville City",
+        description: "A Hollywood murder mystery dinner with three courses and a character to play (18+, $160).",
+        link: "https://www.eventbrite.com.au/e/murder-on-the-red-carpet-tickets-2003259848132",
       },
       {
-        name: "Foo Fighters: Take Cover Tour",
-        time: "Sat 7 Nov, gates 4:00pm, show starts 5:30pm",
-        venue: "Queensland Country Bank Stadium, Railway Estate",
-        description: "Foo Fighters bring their stadium tour to Townsville, with support from Full Flower Moon Band and Downgirl.",
-        link: "https://queenslandcountrybankstadium.com.au/events/Foo-Fighters",
-      },
-      {
-        name: "Gurambilbarra NAIDOC Gala & Awards Night",
-        time: "Sat 7 Nov, from 5:30pm",
-        venue: "The Ville Resort-Casino, Sir Leslie Thiess Drive",
-        description: "A ticketed gala marking 50 years of NAIDOC and recognising local community champions, run by Community Themes Collective.",
-        link: "https://nit.com.au/10-09-2026/26404/gurambilbarra-to-celebrate-50-years-of-naidoc-with-gala-awards-night",
-      },
-      {
-        name: "Greased Lightning (Stage Door Theatre Restaurant)",
-        time: "Sat 7 Nov, doors 5:00pm, show finishes about 9:40pm",
-        venue: "The Stage Door Theatre Restaurant, 5–7 Hayles Avenue, Arcadia, Magnetic Island",
-        description: "A comedy cabaret dinner show set at a 30-year school reunion. Guests from Townsville need the 4:30pm ferry, booked separately.",
-        link: "https://whatson.townsville.qld.gov.au/events/greased-lightning",
+        name: "Shannon Noll – The Road In Front Of Me Tour",
+        time: "Sat 14 Nov, 9:00pm",
+        venue: "FLNDRS Bar & Nightclub, 159–165 Flinders Street",
+        description: "The Aussie singer brings his tour to Flinders Street with special guests.",
+        link: "https://www.eventbrite.com/e/shannon-noll-the-road-in-front-of-me-tour-with-special-guests-tickets-1996429882521",
       },
     ],
   },
   {
-    day: "Sunday 8 November",
+    day: "Sunday 15 November",
     items: [
       {
         name: "Willows Rotary Markets",
-        time: "Sun 8 Nov, 7:30am–11:30am",
-        venue: "Willows Shopping Centre carpark, corner of Thuringowa Drive and Hervey Range Road, Kirwan",
-        description: "A weekly Sunday morning market run by Rotary.",
+        time: "Sun 15 Nov, 7:30am–11:30am",
+        venue: "Willows Shopping Centre carpark, Kirwan",
+        description: "The weekly Sunday market in the Willows carpark.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
       },
       {
         name: "Cotters Market",
-        time: "Sun 8 Nov, 8:30am–1:00pm",
+        time: "Sun 15 Nov, 8:30am–1:00pm",
         venue: "Flinders Street, Townsville City",
-        description: "A weekly market with local produce, food and crafts. Flinders Street is closed to traffic between Denham and Stanley Streets.",
+        description: "Townsville's Sunday street market with local food, produce, crafts and live music.",
+        link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
+      },
+      {
+        name: "Magnetic Island Markets",
+        time: "Sun 15 Nov, 9:00am–2:00pm",
+        venue: "Horseshoe Bay foreshore, Magnetic Island",
+        description: "A relaxed Sunday market by the beach at Horseshoe Bay.",
+        link: "https://www.micda.com.au/magnetic-island-markets",
+      },
+      {
+        name: "Mundingburra Markets",
+        time: "Sun 15 Nov",
+        venue: "Sherriff Park, Mundingburra",
+        description: "The monthly third-Sunday market at Sherriff Park.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
       },
     ],
@@ -371,7 +385,7 @@ const Events = () => (
           check the official What's On Townsville calendar.
         </p>
         <p className="text-sm font-medium text-foreground mb-5">
-          Updated 2 November 2026 for the weekend of Friday 6 November–Sunday 8 November 2026.
+          Updated 9 November 2026 for the weekend of 13–15 November 2026.
         </p>
         <div className="space-y-6 mb-6">
           {WEEKEND_EVENTS.map(({ day, items }) => (
