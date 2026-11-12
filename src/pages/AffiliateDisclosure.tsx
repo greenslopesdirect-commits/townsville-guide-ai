@@ -65,9 +65,8 @@ const AffiliateDisclosure = () => {
           <div className="prose prose-lg max-w-none text-foreground/80 space-y-4">
             <p>
               Townsville Guide is operated by DKR Sales (ABN 63 824 596 227). We may receive commissions 
-              when users click on external booking links or make purchases through affiliate partners 
-              such as Booking.com, Skyscanner, or other travel platforms. This helps support the site 
-              at no extra cost to you.
+              when users click on external booking links or make purchases through our affiliate 
+              partners. This helps support the site at no extra cost to you.
             </p>
 
             <p>
@@ -77,15 +76,23 @@ const AffiliateDisclosure = () => {
             </p>
 
             <p>
-              These affiliate partnerships include services such as Booking.com, Skyscanner, 
-              Amazon, and other trusted travel or product platforms.
+              We currently take part in two affiliate arrangements:
             </p>
 
+            <ul>
+              <li>
+                <strong>Awin (GoWithGuide):</strong> our private airport transfer links on the
+                Townsville Airport page go to GoWithGuide through the Awin affiliate network.
+              </li>
+              <li>
+                <strong>Stay22:</strong> a travel technology service that shows accommodation and
+                other travel options on our pages.
+              </li>
+            </ul>
+
             <p>
-              We also use Stay22, a travel technology service that shows accommodation and other
-              travel options on our pages and routes bookings to partners such as Booking.com,
-              Expedia, Agoda and GetYourGuide. Some links on this website are added automatically
-              by Stay22 rather than placed by us, and we may earn a commission if you book through them.
+              Some links on this website are added automatically by Stay22 rather than placed by us,
+              and we may earn a commission if you book through them.
             </p>
 
             <p>

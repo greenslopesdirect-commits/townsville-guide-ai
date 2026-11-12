@@ -90,7 +90,7 @@ const TermsOfUse = () => {
             <ul>
               <li>Use of AI-generated responses</li>
               <li>Errors or outdated information</li>
-              <li>Links to third-party websites (e.g., Booking.com)</li>
+              <li>Links to third-party websites (e.g., tour operators and booking services)</li>
               <li>Reliance on local recommendations or travel suggestions</li>
             </ul>
 

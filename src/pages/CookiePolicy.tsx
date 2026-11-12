@@ -81,7 +81,7 @@ const CookiePolicy = () => {
               <li>To improve website speed and functionality</li>
               <li>To remember your preferences</li>
               <li>To analyse anonymous visitor traffic through Google Analytics</li>
-              <li>To support affiliate links (e.g., Stay22 and Booking.com tracking)</li>
+              <li>To support affiliate links (e.g., Stay22 and Awin tracking)</li>
             </ul>
 
             <h2 className="text-2xl font-semibold text-foreground">2. Types of Cookies We Use</h2>
@@ -100,10 +100,9 @@ const CookiePolicy = () => {
 
             <h3 className="text-xl font-semibold text-foreground">Affiliate Cookies</h3>
             <p>
-              Some pages include affiliate links (e.g., Booking.com or Skyscanner), and we use
-              Stay22, which shows travel options and routes bookings to partners such as Booking.com,
-              Expedia, Agoda and GetYourGuide. Stay22 and these partners may set their own cookies to
-              track referrals and purchases.
+              Some pages include affiliate links to GoWithGuide through the Awin network, and we use
+              Stay22, which shows travel options on our pages. Stay22, Awin and their booking partners
+              may set their own cookies to track referrals and purchases.
             </p>
 
             <h2 className="text-2xl font-semibold text-foreground">3. Cookie Consent</h2>

@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, MapPin, Dog, ShieldAlert, Sparkles, Quote } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import SaundersGallery from "@/components/SaundersGallery";
-import AirportTransferCard from "@/components/AirportTransferCard";
 import { Button } from "@/components/ui/button";
 import StingerSeasonNote from "@/components/StingerSeasonNote";
 import {
@@ -243,17 +242,7 @@ const SaundersBeach = () => {
         </section>
 
 
-        {/* Airport Transfer */}
-        <section className="mt-12 -mx-4 px-4 py-10 bg-slate-50 dark:bg-slate-900/40 rounded-xl">
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold mb-2 text-foreground">Planning Your Townsville Arrival?</h3>
-            <p className="text-muted-foreground mb-6">
-              Saunders Beach is about 35 minutes north of Townsville Airport. Skip the rental
-              counter queue and pre-book a private transfer straight from the tarmac.
-            </p>
-            <AirportTransferCard proTipExtra="Heading to Saunders or Bluewater? Mention the suburb in your booking notes for an accurate quote." />
-          </div>
-        </section>
+
       </main>
     </>
   );

@@ -91,8 +91,8 @@ const PrivacyPolicy = () => {
               personal information.
             </p>
             <p>
-              Our analytics and affiliate partners (Google Analytics, Stay22 and its booking partners,
-              such as Booking.com, Expedia, Agoda and GetYourGuide) may set cookies and receive usage
+              Our analytics and affiliate partners (Google Analytics, Stay22, and Awin and GoWithGuide for
+              airport transfer links) may set cookies and receive usage
               data, such as your device, browser and the links you click, when you visit our pages or
               click through to their sites. Their use of that data is governed by their own privacy policies.
             </p>
@@ -126,7 +126,7 @@ const PrivacyPolicy = () => {
             <ul>
               <li>Remembering user preferences</li>
               <li>Understanding site traffic (via Google Analytics or similar tools)</li>
-              <li>Tracking affiliate referrals (via Stay22 and its booking partners)</li>
+              <li>Tracking affiliate referrals (via Stay22 and Awin)</li>
             </ul>
             <p>
               You can disable cookies in your browser settings at any time.
