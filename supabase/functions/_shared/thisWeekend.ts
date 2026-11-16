@@ -49,7 +49,7 @@ export const COUNCIL_WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
  * Date these listings were last updated, YYYY-MM-DD. /events shows it in the "Updated ..." line and
  * in the "About this guide" panel's "Last checked", so change it here when you change `items`.
  */
-export const UPDATED_ON = "2026-11-09";
+export const UPDATED_ON = "2026-11-16";
 
 /** "9 November 2026" from a YYYY-MM-DD string. */
 export const formatUpdatedOn = (iso: string = UPDATED_ON): string => {
@@ -62,44 +62,44 @@ export const formatUpdatedOn = (iso: string = UPDATED_ON): string => {
 };
 
 export const THIS_WEEKEND: ThisWeekendData = {
-  from: "2026-11-13",
-  to: "2026-11-15",
+  from: "2026-11-20",
+  to: "2026-11-22",
   items: [
     {
-      name: "Monster Energy PBR 2026 Grand Finals",
-      place: "Townsville Entertainment & Convention Centre",
-      time: "Fri 13 – Sat 14 Nov, 7:30pm (arena opens 6:30pm)",
-      link: "https://tecc.net.au/event/monster-energy-pbr-grandfinals-2026/",
+      name: "Vote 1 Pauly!",
+      place: "Selwyn Nicholas Brewing Co., 365 Woolcock St, Garbutt",
+      time: "Fri 20 Nov, 8:30pm",
+      link: "https://tickets.oztix.com.au/outlet/event/09fd1586-1276-4238-80e7-5d4fae4e7010",
     },
     {
-      name: "Ashes to Ashes – The David Bowie Experience",
-      place: "The Warehouse Bandroom",
-      time: "Fri 13 Nov, 7:30pm",
-      link: "https://tickets.oztix.com.au/outlet/event/807d3693-d051-4be3-b481-6c62412451ed",
+      name: "In the Heart of the North [Part 3] and other exhibitions",
+      place: "Perc Tucker Regional Gallery",
+      time: "On now until 17 Jan 2027",
+      link: "https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/perc-tucker-regional-gallery/exhibitions",
     },
     {
-      name: "Garage Sale Trail 2026",
-      place: "Homes across Townsville",
-      time: "Sat 14 – Sun 15 Nov",
-      link: "https://garagesaletrail.com.au/Townsville",
-    },
-    {
-      name: "Shannon Noll – The Road In Front Of Me Tour",
-      place: "FLNDRS Bar & Nightclub, 159–165 Flinders Street",
-      time: "Sat 14 Nov, 9:00pm",
-      link: "https://www.eventbrite.com/e/shannon-noll-the-road-in-front-of-me-tour-with-special-guests-tickets-1996429882521",
+      name: "Willows Rotary Markets",
+      place: "Willows Shopping Centre carpark, Kirwan",
+      time: "Sun 22 Nov, 7:30am–11:30am",
+      link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
     },
     {
       name: "Cotters Market",
       place: "Flinders Street, Townsville City",
-      time: "Sun 15 Nov, 8:30am–1:00pm",
+      time: "Sun 22 Nov, 8:30am–1:00pm",
       link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
     },
     {
       name: "Magnetic Island Markets",
       place: "Horseshoe Bay foreshore, Magnetic Island",
-      time: "Sun 15 Nov, 9:00am–2:00pm",
-      link: "https://www.micda.com.au/magnetic-island-markets",
+      time: "Sun 22 Nov, 9:00am–2:00pm",
+      link: "https://whatson.townsville.qld.gov.au/events/magnetic-island-markets",
+    },
+    {
+      name: "Townsville Fire v Bendigo Spirit (WNBL Round 6)",
+      place: "Townsville Entertainment & Convention Centre",
+      time: "Sun 22 Nov, 2:00pm",
+      link: "https://tecc.net.au/event/townsville-fire-26-27-season/",
     },
   ],
 };

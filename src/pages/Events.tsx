@@ -37,83 +37,57 @@ const PATH = "/events";
 /** Official council events calendar — the authoritative source for current listings. */
 const WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
-/** Weekend of Fri 13–Sun 15 November 2026, in date order. */
+/** Weekend of Fri 20–Sun 22 November 2026, in date order. */
 const WEEKEND_EVENTS = [
   {
-    day: "Friday 13 November",
+    day: "Friday 20 November",
     items: [
       {
-        name: "Monster Energy PBR 2026 Grand Finals",
-        time: "Fri 13 – Sat 14 Nov, 7:30pm (arena opens 6:30pm)",
-        venue: "Townsville Entertainment & Convention Centre",
-        description: "Australia's top bull riders compete for the 2026 titles over two nights; Saturday is sold out.",
-        link: "https://tecc.net.au/event/monster-energy-pbr-grandfinals-2026/",
+        name: "Vote 1 Pauly!",
+        time: "Fri 20 Nov, 8:30pm",
+        venue: "Selwyn Nicholas Brewing Co., 365 Woolcock St, Garbutt",
+        description: "Comedian Pauly Fenech brings his satirical \"Independent candidate\" stand-up show to town.",
+        link: "https://tickets.oztix.com.au/outlet/event/09fd1586-1276-4238-80e7-5d4fae4e7010",
       },
       {
-        name: "Ashes to Ashes – The David Bowie Experience",
-        time: "Fri 13 Nov, 7:30pm",
-        venue: "The Warehouse Bandroom",
-        description: "A live tribute show playing David Bowie's biggest songs.",
-        link: "https://tickets.oztix.com.au/outlet/event/807d3693-d051-4be3-b481-6c62412451ed",
+        name: "In the Heart of the North [Part 3]: The Douglas Kagi Gift (plus Young Indigenous Printmakers, Transitions and EV2 Sportswear)",
+        time: "On now until 17 Jan 2027",
+        venue: "Perc Tucker Regional Gallery",
+        description: "Four current exhibitions to see at the city's regional gallery.",
+        link: "https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/perc-tucker-regional-gallery/exhibitions",
       },
     ],
   },
   {
-    day: "Saturday 14 November",
-    items: [
-      {
-        name: "Garage Sale Trail 2026",
-        time: "Sat 14 – Sun 15 Nov",
-        venue: "Homes across Townsville",
-        description: "The second weekend of the national garage sale trail, with sales at homes all over the city.",
-        link: "https://garagesaletrail.com.au/Townsville",
-      },
-      {
-        name: "Murder on the Red Carpet",
-        time: "Sat 14 Nov, 6:00pm–11:00pm",
-        venue: "The Wine Bar, 41 Denham Street, Townsville City",
-        description: "A Hollywood murder mystery dinner with three courses and a character to play (18+, $160).",
-        link: "https://www.eventbrite.com.au/e/murder-on-the-red-carpet-tickets-2003259848132",
-      },
-      {
-        name: "Shannon Noll – The Road In Front Of Me Tour",
-        time: "Sat 14 Nov, 9:00pm",
-        venue: "FLNDRS Bar & Nightclub, 159–165 Flinders Street",
-        description: "The Aussie singer brings his tour to Flinders Street with special guests.",
-        link: "https://www.eventbrite.com/e/shannon-noll-the-road-in-front-of-me-tour-with-special-guests-tickets-1996429882521",
-      },
-    ],
-  },
-  {
-    day: "Sunday 15 November",
+    day: "Sunday 22 November",
     items: [
       {
         name: "Willows Rotary Markets",
-        time: "Sun 15 Nov, 7:30am–11:30am",
+        time: "Sun 22 Nov, 7:30am–11:30am",
         venue: "Willows Shopping Centre carpark, Kirwan",
-        description: "The weekly Sunday market in the Willows carpark.",
+        description: "Weekly Sunday market run by Rotary.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
       },
       {
         name: "Cotters Market",
-        time: "Sun 15 Nov, 8:30am–1:00pm",
+        time: "Sun 22 Nov, 8:30am–1:00pm",
         venue: "Flinders Street, Townsville City",
-        description: "Townsville's Sunday street market with local food, produce, crafts and live music.",
+        description: "Weekly city market with local food, produce and crafts.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
       },
       {
         name: "Magnetic Island Markets",
-        time: "Sun 15 Nov, 9:00am–2:00pm",
+        time: "Sun 22 Nov, 9:00am–2:00pm",
         venue: "Horseshoe Bay foreshore, Magnetic Island",
-        description: "A relaxed Sunday market by the beach at Horseshoe Bay.",
-        link: "https://www.micda.com.au/magnetic-island-markets",
+        description: "Relaxed weekly beachside market on the island.",
+        link: "https://whatson.townsville.qld.gov.au/events/magnetic-island-markets",
       },
       {
-        name: "Mundingburra Markets",
-        time: "Sun 15 Nov",
-        venue: "Sherriff Park, Mundingburra",
-        description: "The monthly third-Sunday market at Sherriff Park.",
-        link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
+        name: "Townsville Fire v Bendigo Spirit (WNBL Round 6)",
+        time: "Sun 22 Nov, 2:00pm",
+        venue: "Townsville Entertainment & Convention Centre",
+        description: "The Fire host Bendigo in a Sunday afternoon home game.",
+        link: "https://tecc.net.au/event/townsville-fire-26-27-season/",
       },
     ],
   },
@@ -386,7 +360,7 @@ const Events = () => (
           check the official What's On Townsville calendar.
         </p>
         <p className="text-sm font-medium text-foreground mb-5">
-          Updated {formatUpdatedOn()} for the weekend of 13–15 November 2026.
+          Updated {formatUpdatedOn()} for the weekend of 20–22 November 2026.
         </p>
         <div className="space-y-6 mb-6">
           {WEEKEND_EVENTS.map(({ day, items }) => (
