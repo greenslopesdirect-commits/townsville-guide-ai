@@ -149,6 +149,12 @@ export interface Listing {
   website?: string;
   /** True when we don't yet have a confirmed website URL. */
   websitePending?: boolean;
+  /** Optional public phone number, shown as a tap-to-call link. */
+  phone?: string;
+  /** Optional: add rel="nofollow" to the website link. */
+  nofollow?: boolean;
+  /** Optional: hide the Directions link (e.g. mobile services with no fixed venue). */
+  noDirections?: boolean;
 }
 
 export const LISTINGS: Listing[] = [
@@ -383,6 +389,18 @@ export const LISTINGS: Listing[] = [
     description:
       "Fishing charters covering Magnetic Island, Cleveland Bay, Halifax Bay and Cape Cleveland, with half-day and full-day options.",
     website: "https://www.fishcity.com.au/",
+  },
+  {
+    name: "Silk & Sin Parties",
+    category: "tours",
+    area: "Suburban Townsville",
+    locality: "Mobile service across Townsville",
+    description:
+      "Hosted 18+ hens parties, ladies' nights and private celebrations at your home, hotel or Airbnb in Townsville.",
+    website: "https://silkandsinparty.com.au/locations/townsville/",
+    phone: "0409 161 573",
+    nofollow: true,
+    noDirections: true,
   },
 
   // --- Transport ---

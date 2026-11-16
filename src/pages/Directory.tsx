@@ -49,21 +49,31 @@ const ListingCard = ({ listing }: { listing: Listing }) => {
           <a
             href={listing.website}
             target="_blank"
-            rel="noopener noreferrer"
+            rel={listing.nofollow ? "nofollow noopener noreferrer" : "noopener noreferrer"}
             className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
           >
             Visit website
             <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
           </a>
         )}
-        <a
-          href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
-        >
-          Directions
-        </a>
+        {listing.phone && (
+          <a
+            href={`tel:${listing.phone.replace(/\s/g, "")}`}
+            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            {listing.phone}
+          </a>
+        )}
+        {!listing.noDirections && (
+          <a
+            href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
+            Directions
+          </a>
+        )}
       </div>
     </article>
   );
