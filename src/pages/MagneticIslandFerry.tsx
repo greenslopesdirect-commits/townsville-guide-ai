@@ -140,6 +140,29 @@ const RELATED = [
   { name: "Rainy Day Activities", to: "/guides/rainy-day-activities" },
 ];
 
+const ISLAND_TRANSPORT = [
+  {
+    name: "Isle Hire",
+    href: "https://www.islehire.com.au/",
+    note: "Car hire, including MINI Cooper convertibles. Says it is the closest car rental to the Nelly Bay ferry terminal on foot.",
+  },
+  {
+    name: "M.I. Rentals & Jeeps on Maggie",
+    href: "https://www.mirentals.net.au/",
+    note: "Car hire, including topless Jeep Wranglers, plus hatchbacks and sedans.",
+  },
+  {
+    name: "Best of Magnetic Car Hire",
+    href: "https://bestofmagnetic.com/magnetic-island-car-hire/",
+    note: "Island car hire, including hatchbacks and child and booster seats.",
+  },
+  {
+    name: "Magnetic Island Roaming",
+    href: "https://magneticislandroaming.com.au/",
+    note: "Pedal-assist e-bike hire, plus electric mopeds.",
+  },
+];
+
 const SEALINK_FARE_ROWS = [
   { ticket: "Adult", oneWay: "$23.00", ret: "$44.00" },
   { ticket: "Adult (bought on the SeaLink app)", oneWay: "—", ret: "$41.50" },
@@ -680,11 +703,10 @@ const MagneticIslandFerry = () => {
             <h3 className="text-xl font-semibold text-foreground">Taking a car on the vehicle ferry</h3>
             <p className="text-muted-foreground leading-relaxed">
               Standard car fares start from $276 return. The fare covers the vehicle and up to five people travelling in it, including the
-              driver, and your fare category is set by your vehicle's make and model plus fittings such as a tow bar or bike rack. On the live
-              schedule we checked, standard sailings showed $138 each way and cheaper Magnetic Saver sailings $103 each way. The Magnetic
-              Saver is online-only, for vehicles up to 6.0 m long and 3.5 tonnes, and cannot be combined with other offers. Peak-season
-              surcharges apply in school holidays and long weekends, including from 11 December 2026. The booking system shows the exact
-              price for your vehicle and sailing before you pay.
+              driver, and your fare category is set by your vehicle's make and model plus fittings such as a tow bar or bike rack. Prices vary by
+              sailing and vehicle size, from $103 one way. The cheaper Magnetic Saver sailings are online-only, for vehicles up to 6.0 m long
+              and 3.5 tonnes, and cannot be combined with other offers. Peak-season surcharges apply in school holidays and long weekends,
+              including from 11 December 2026. The booking system shows the exact price for your vehicle and sailing before you pay.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild variant="outline" size="sm">
@@ -840,6 +862,28 @@ const MagneticIslandFerry = () => {
               <ExternalLink href={TRANSLINK}>Translink journey planner and timetables</ExternalLink>{" "}
               · <ExternalLink href={KINETIC_BUS}>Kinetic Townsville bus information</ExternalLink>
             </p>
+          </section>
+
+          {/* Getting around: hire cars, topless cars, e-bikes */}
+          <section className="space-y-4" aria-labelledby="getting-around">
+            <h2
+              id="getting-around"
+              className="text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2"
+            >
+              <Car className="w-6 h-6 text-primary" aria-hidden="true" />
+              Getting Around: Hire Cars, Topless Cars and E-Bikes
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              If you arrive on foot you can still hire wheels on the island instead of relying on the bus. These island businesses
+              describe their own services on their websites (we link to each; check them for current prices, hours and hire conditions):
+            </p>
+            <ul className="space-y-2 text-muted-foreground leading-relaxed list-disc pl-5">
+              {ISLAND_TRANSPORT.map((b) => (
+                <li key={b.name}>
+                  <ExternalLink href={b.href}>{b.name}</ExternalLink> — {b.note}
+                </li>
+              ))}
+            </ul>
           </section>
 
           {/* 15. Luggage */}
