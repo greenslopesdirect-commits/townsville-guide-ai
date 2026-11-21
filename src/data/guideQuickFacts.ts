@@ -473,13 +473,13 @@ export const QUICK_FACTS_BY_PATH: Record<string, QuickFacts> = {
       "First-time ferry travellers",
     ],
     timeNeeded: "Allow extra time for parking, check-in, boarding and the return journey",
-    cost: "Fares vary by operator, passenger type, vehicle and booking conditions",
+    cost: "Passenger ferry adult return $44 plus a $2 fuel levy; walk-on with Magnetic Island Ferries $37 return; car from $276 return (checked November 2026)",
     journeyTime:
-      "Passenger ferry approximately 20 minutes; vehicle ferry approximately 40 minutes",
+      "Passenger ferry about 20 minutes; vehicle ferry around 35\u201340 minutes",
     carNeeded:
       "No \u2014 use the passenger ferry and island transport, or book the vehicle ferry when taking a car",
     parking:
-      "Paid parking is available near Breakwater Terminal; vehicle-ferry customers should check current Ross Street arrangements",
+      "Breakwater Terminal $10.50 per 24 hours (unfenced); Ross Street car park $9.00 per calendar day (checked November 2026)",
     accessibility:
       "Boarding and vehicle arrangements vary by operator; contact the ferry company before travelling",
     dogFriendly: "Pet rules vary by operator and service; confirm current conditions before booking",

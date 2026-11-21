@@ -35,12 +35,12 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PAGE_PATH = "/guides/magnetic-island-day-trip";
 const PAGE_URL = `${SITE}${PAGE_PATH}`;
-const PAGE_TITLE = "Magnetic Island Guide: Ferry, Beaches & Day Trip Plan";
+const PAGE_TITLE = "Is Magnetic Island Worth a Day Trip? A Local's Plan from Townsville";
 const PAGE_DESCRIPTION =
-  "Visiting Magnetic Island from Townsville? Ferry options, island buses, taking a car, best beaches, Forts Walk and a realistic one-day itinerary.";
-const LAST_UPDATED = "5 August 2026";
+  "Yes, for most visitors: one day covers two or three bays and a walk. Ferry times, bus and car options, and when to stay overnight instead.";
+const LAST_UPDATED = "21 November 2026";
 
-const SEALINK = "https://www.sealinkqld.com.au/magnetic-island-ferry";
+const SEALINK = "https://www.sealink.com.au/magnetic-island/ferry-information";
 const TRANSLINK = "https://translink.com.au/";
 const QLD_PARKS = "https://parks.desi.qld.gov.au/parks/magnetic-island";
 const BEACHSAFE = "https://beachsafe.org.au/";
@@ -174,6 +174,18 @@ const MagneticIslandDayTrip = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-foreground">
               Magnetic Island Day Trip from Townsville
             </h1>
+            <p className="text-lg leading-relaxed text-foreground">
+              <strong>Is Magnetic Island worth a day trip from Townsville? For most visitors, yes.</strong>{" "}
+              The passenger ferry takes about 20 minutes, SeaLink runs up to 17 return services a day
+              (first departure from Townsville 5:30am Monday to Saturday, with evening returns), and one
+              day is enough for two or three bays and a walk. It is less worth it if you only have a few
+              hours, want to see every bay, or would hate being tied to ferry times; in those cases stay
+              a night. Times checked November 2026; see our{" "}
+              <Link to="/guides/magnetic-island-ferry" className="text-primary hover:underline">
+                Magnetic Island ferry guide
+              </Link>{" "}
+              for fares, timetables and the car ferry.
+            </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               Magnetic Island is one of the best-known day trips from Townsville, combining
               beaches, wildlife, walking tracks and relaxed island villages. One full day is

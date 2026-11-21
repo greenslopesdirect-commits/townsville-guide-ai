@@ -362,7 +362,7 @@ export const GUIDE_TRUST_BY_PATH: Record<string, Partial<GuideTrustMeta>> = {
   },
   "/guides/magnetic-island-ferry": {
     visitStatus: "research-based",
-    lastChecked: "5 August 2026",
+    lastChecked: "21 November 2026",
     officialSourcesChecked: true,
     officialSources: [
       {

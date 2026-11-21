@@ -5,6 +5,7 @@ import GuideQuickFacts from "@/components/GuideQuickFacts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import {
   Info,
   Ship,
@@ -29,10 +30,11 @@ import {
 const SITE = "https://www.townsvilleguide.com.au";
 const PAGE_PATH = "/guides/magnetic-island-ferry";
 const PAGE_URL = `${SITE}${PAGE_PATH}`;
-const PAGE_TITLE = "Magnetic Island Ferry from Townsville: Terminals & Times";
+const PAGE_TITLE = "Magnetic Island Ferry: Times, Fares & Car Ferry Guide";
 const PAGE_DESCRIPTION =
-  "Passenger ferry from Breakwater Terminal (about 20 min) or car ferry from Ross Street (about 40 min). Links to the current timetables and fares.";
-const LAST_UPDATED = "27 October 2026";
+  "Magnetic Island ferry guide: SeaLink passenger ferry (20 min, up to 17 trips a day) and the Ross Street car ferry. Times and fares checked November 2026.";
+const LAST_UPDATED = "21 November 2026";
+const CHECKED = "Checked November 2026";
 
 const SEALINK = "https://www.sealink.com.au/magnetic-island/ferry-information";
 const SEALINK_TIMETABLE = "https://www.sealink.com.au/magnetic-island/ferry-information/timetable";
@@ -43,10 +45,25 @@ const KINETIC_BUS = "https://www.wearekinetic.com/au/townsville";
 const MI_FERRIES = "https://www.magneticislandferries.com.au/";
 const MI_FERRIES_TIMETABLE = "https://www.magneticislandferries.com.au/timetable/";
 const MI_FERRIES_FARES = "https://www.magneticislandferries.com.au/prices-fares/";
+const MI_FERRIES_FAQ = "https://magneticislandferries.com.au/frequently-asked-questions/";
+const MI_FERRIES_PARKING = "https://magneticislandferries.com.au/location-parking/";
+const SEALINK_FUEL_LEVY = "https://www.sealink.com.au/magnetic-island/fuel-levy-surcharge/";
 const TRANSLINK = "https://translink.com.au/";
 const BOM = "http://www.bom.gov.au/qld/";
 
 const FAQS = [
+  {
+    q: "How much is the ferry to Magnetic Island?",
+    a: "On the SeaLink passenger ferry the standard adult fare is $23.00 one way or $44.00 return, and a child (5–14) is $11.50 one way or $22.00 return. A temporary fuel surcharge of $1 per single trip and $2 per return has applied since 1 June 2026. Magnetic Island Ferries' walk-on adult fare is $18.50 one way or $37 return. A car on the Magnetic Island Ferries vehicle ferry starts from $276 return. Checked November 2026; confirm on the operators' fare pages.",
+  },
+  {
+    q: "Do you need to book the Magnetic Island ferry?",
+    a: "Not on the SeaLink passenger ferry. SeaLink says you do not need to pre-book, and tickets are not tied to a departure time, though it suggests arriving at least 20 minutes before departure. A vehicle on the Magnetic Island Ferries car ferry must always be pre-booked, and that operator strongly recommends booking ahead for walk-on passengers in school holidays, long weekends and Christmas.",
+  },
+  {
+    q: "How often does the Magnetic Island ferry run?",
+    a: "SeaLink runs up to 17 return services a day, with the first departure from Townsville at 5:30am (Monday to Saturday) and the last at 9:20pm most nights, plus a 10:30pm sailing Wednesday to Saturday. The Magnetic Island Ferries car ferry runs fewer sailings, and times differ by day. Checked November 2026; see each operator's timetable for your date.",
+  },
   {
     q: "Which ferry should foot passengers use?",
     a: "Foot passengers normally use the SeaLink passenger ferry from Breakwater Terminal in Townsville. It is the faster service, with an advertised crossing of approximately 20 minutes to Nelly Bay. Walk-on passengers are also accepted on the vehicle ferry, but that crossing takes longer.",
@@ -57,11 +74,11 @@ const FAQS = [
   },
   {
     q: "Where does the vehicle ferry leave from?",
-    a: "The Magnetic Island Ferries vehicle ferry departs from Ross Street in South Townsville, which is a different terminal from Breakwater, and arrives at Nelly Bay.",
+    a: "The Magnetic Island Ferries vehicle ferry departs from its terminal on Ross Street in South Townsville (off Palmer Street), which is a different terminal from Breakwater, and arrives at Harbour Drive, Nelly Bay Marina.",
   },
   {
     q: "How long does the ferry to Magnetic Island take?",
-    a: "It depends on the service. The passenger ferry is advertised at approximately 20 minutes, while the vehicle ferry is advertised at approximately 40 minutes. Conditions and operator schedules can affect actual timings.",
+    a: "It depends on the service. The SeaLink passenger ferry takes about 20 minutes, while the Magnetic Island Ferries vehicle ferry takes around 35–40 minutes each way. Conditions and operator schedules can affect actual timings.",
   },
   {
     q: "Do you need to book the vehicle ferry?",
@@ -73,7 +90,7 @@ const FAQS = [
   },
   {
     q: "Is parking available at Breakwater Terminal?",
-    a: "Paid parking is available near Breakwater Terminal. Rates and conditions can change, so check SeaLink's current parking information before travelling, and allow time to park and walk to the terminal.",
+    a: "Yes. SeaLink charges $10.50 per 24 hours for a car at Breakwater Terminal (checked November 2026). The car park is lit but not fenced, so vehicles are left at the owner's risk, and SeaLink points to the Metro Quays car park for secure lock-up parking. Rates can change, so check SeaLink's fares page.",
   },
   {
     q: "Can you take a dog or bicycle on the ferry?",
@@ -123,6 +140,56 @@ const RELATED = [
   { name: "Rainy Day Activities", to: "/guides/rainy-day-activities" },
 ];
 
+const SEALINK_FARE_ROWS = [
+  { ticket: "Adult", oneWay: "$23.00", ret: "$44.00" },
+  { ticket: "Adult (bought on the SeaLink app)", oneWay: "—", ret: "$41.50" },
+  { ticket: "Child (5–14 years)", oneWay: "$11.50", ret: "$22.00" },
+  { ticket: "Concession", oneWay: "$11.50", ret: "$22.00" },
+  { ticket: "Student", oneWay: "$15.00", ret: "$29.50" },
+  { ticket: "Family (2 adults + up to 3 children)", oneWay: "—", ret: "$95.00" },
+];
+
+const MIF_WALKON_ROWS = [
+  { ticket: "Adult", oneWay: "$18.50", ret: "$37" },
+  { ticket: "Student (uni/15–17 yrs) and Defence", oneWay: "$14.00", ret: "$28" },
+  { ticket: "Child (4–14 years)", oneWay: "$10.50", ret: "$21" },
+  { ticket: "Pensioner and Senior", oneWay: "$10.50", ret: "$21" },
+  { ticket: "Infant (0–3 years)", oneWay: "Free", ret: "Free" },
+  { ticket: "Family (2 adults + up to 3 children)", oneWay: "$45", ret: "$90" },
+];
+
+const AT_A_GLANCE = [
+  { label: "Operator", passenger: "SeaLink North Queensland", vehicle: "Magnetic Island Ferries (the only vehicle ferry to the island)" },
+  {
+    label: "Departs Townsville",
+    passenger: "Breakwater Terminal, Sir Leslie Thiess Drive, Townsville QLD 4810",
+    vehicle: "Ross Street, South Townsville (off Palmer Street) — a different terminal from Breakwater",
+  },
+  { label: "Arrives", passenger: "Nelly Bay", vehicle: "Harbour Drive, Nelly Bay Marina" },
+  { label: "Crossing time", passenger: "About 20 minutes", vehicle: "Around 35–40 minutes each way" },
+  {
+    label: "How often",
+    passenger:
+      "Up to 17 return services a day. From Townsville: first 5:30am (Mon–Sat), last 9:20pm most nights, plus 10:30pm Wed–Sat. Some early and late sailings skip public holidays.",
+    vehicle:
+      "Fewer sailings, and times differ by day. In the week of 22–27 November 2026 the live schedule showed 6 departures on the Sunday and 10–11 a day Monday to Friday.",
+  },
+  {
+    label: "Parking",
+    passenger:
+      "$10.50 per 24 hours for a car. Lit but not fenced, so vehicles are left at your own risk; SeaLink points to the Metro Quays car park for lock-up parking.",
+    vehicle:
+      "$9.00 per calendar day, first-come first-served, fenced and CCTV-monitored per the operator. Car park gate hours: Mon–Fri 4:45am–7:30pm, Sat–Sun 6:00am–7:30pm.",
+  },
+  {
+    label: "Do you need to book?",
+    passenger:
+      "No. SeaLink says you can turn up: tickets are not tied to a departure time. Arrive at least 20 minutes before departure.",
+    vehicle:
+      "Yes for any vehicle — every vehicle must be pre-booked. Walk-on passengers are welcome, but booking ahead is strongly recommended in school holidays, long weekends and Christmas.",
+  },
+];
+
 const ExternalLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
   <a href={href} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
     {children}
@@ -151,7 +218,7 @@ const MagneticIslandFerry = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: "Magnetic Island Ferry Guide: Passenger and Vehicle Ferries",
+            headline: "Magnetic Island Ferry: Times, Fares & Car Ferry Guide",
             description: PAGE_DESCRIPTION,
             author: { "@type": "Person", name: "Duncan Ross" },
             publisher: { "@type": "Organization", name: "Townsville Guide" },
@@ -221,6 +288,47 @@ const MagneticIslandFerry = () => {
               decoding="async"
             />
           </header>
+
+          {/* Quick answer: what people searching "magnetic island ferry" want */}
+          <section className="space-y-4" aria-labelledby="quick-answer">
+            <h2 id="quick-answer" className="text-2xl md:text-3xl font-bold text-foreground flex items-center gap-2">
+              <Ship className="w-6 h-6 text-primary" aria-hidden="true" />
+              Magnetic Island Ferry at a Glance
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              {CHECKED}. Details come from the operators' own websites, linked below each table.
+            </p>
+            <div className="overflow-x-auto rounded-xl border border-border bg-card">
+              <Table>
+                <TableHeader>
+                  <TableRow className="bg-muted/50">
+                    <TableHead className="font-semibold text-foreground"> </TableHead>
+                    <TableHead className="font-semibold text-foreground">Passenger ferry</TableHead>
+                    <TableHead className="font-semibold text-foreground">Car (vehicle) ferry</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {AT_A_GLANCE.map((row) => (
+                    <TableRow key={row.label}>
+                      <TableCell className="font-medium text-foreground align-top">{row.label}</TableCell>
+                      <TableCell className="text-muted-foreground align-top">{row.passenger}</TableCell>
+                      <TableCell className="text-muted-foreground align-top">{row.vehicle}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Official pages: <ExternalLink href={SEALINK_TIMETABLE}>SeaLink timetable</ExternalLink> ·{" "}
+              <ExternalLink href={SEALINK_FARES}>SeaLink fares and parking</ExternalLink> ·{" "}
+              <ExternalLink href={MI_FERRIES_TIMETABLE}>Magnetic Island Ferries timetable and booking</ExternalLink> ·{" "}
+              <ExternalLink href={MI_FERRIES_FAQ}>Magnetic Island Ferries FAQs</ExternalLink>
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Booking the car ferry? Book only through magneticislandferries.com.au or its team on (07) 4796 9300;
+              the operator has warned about a fraudulent website posing as the company.
+            </p>
+          </section>
 
           {/* 2. Current-information notice */}
           <Alert>
@@ -401,13 +509,14 @@ const MagneticIslandFerry = () => {
               Magnetic Island Vehicle Ferry
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Magnetic Island Ferries operates the vehicle service from 42 Ross Street in South
-              Townsville. This is the service to use when taking a car or other vehicle across, and
-              the crossing is advertised as approximately 40 minutes to Nelly Bay.
+              Magnetic Island Ferries operates the vehicle service from Ross Street in South
+              Townsville (off Palmer Street). This is the service to use when taking a car or other
+              vehicle across, and the crossing takes around 35–40 minutes to Harbour Drive at the
+              Nelly Bay Marina.
             </p>
             <Bullets
               items={[
-                "Vehicle bookings are essential according to the operator",
+                "Every vehicle must be pre-booked, according to the operator",
                 "Walk-on passengers are also accepted",
                 "Provide accurate vehicle information when booking",
                 "Larger vehicles, trailers and unusual vehicle types may require additional arrangements",
@@ -498,7 +607,8 @@ const MagneticIslandFerry = () => {
             <Bullets
               items={[
                 "Vehicle passengers should book in advance",
-                "Passenger-ferry travellers should still check availability and current booking advice",
+                "SeaLink passenger-ferry tickets are not tied to a departure time and you do not need to pre-book, though online tickets save queuing",
+                "Car-ferry walk-on passengers should book ahead in school holidays, long weekends and Christmas",
                 "Busy weekends, school holidays and events may increase demand",
                 "Arrive early enough for parking, ticketing and boarding",
                 "Boarding instructions differ between the two operators",
@@ -520,18 +630,62 @@ const MagneticIslandFerry = () => {
               <Ticket className="w-6 h-6 text-primary" aria-hidden="true" />
               Ferry Fares
             </h2>
-            <p className="text-muted-foreground leading-relaxed">Prices depend on factors including:</p>
-            <Bullets
-              items={[
-                "Passenger age",
-                "Concession eligibility",
-                "One-way or return travel",
-                "Online or other booking conditions",
-                "Vehicle type and size",
-                "Trailer or larger-vehicle requirements",
-                "Promotions or package offers",
-              ]}
-            />
+            <p className="text-sm text-muted-foreground">{CHECKED}. Fares changed on 1 February 2026 and can change again, so confirm on the operator's page before you travel.</p>
+            <h3 className="text-xl font-semibold text-foreground">SeaLink passenger ferry</h3>
+            <div className="overflow-x-auto rounded-xl border border-border bg-card">
+              <Table>
+                <TableHeader>
+                  <TableRow className="bg-muted/50">
+                    <TableHead className="font-semibold text-foreground">Ticket</TableHead>
+                    <TableHead className="font-semibold text-foreground">One way</TableHead>
+                    <TableHead className="font-semibold text-foreground">Return</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {SEALINK_FARE_ROWS.map((r) => (
+                    <TableRow key={r.ticket}>
+                      <TableCell className="font-medium text-foreground">{r.ticket}</TableCell>
+                      <TableCell className="text-muted-foreground">{r.oneWay}</TableCell>
+                      <TableCell className="text-muted-foreground">{r.ret}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              A temporary fuel surcharge applies from 1 June 2026: $1.00 per single trip, $2.00 per return and $4.00 per family ticket
+              (<ExternalLink href={SEALINK_FUEL_LEVY}>SeaLink fuel levy page</ExternalLink>). Standard tickets are valid for six months from first travel.
+            </p>
+            <h3 className="text-xl font-semibold text-foreground">Magnetic Island Ferries walk-on passengers</h3>
+            <div className="overflow-x-auto rounded-xl border border-border bg-card">
+              <Table>
+                <TableHeader>
+                  <TableRow className="bg-muted/50">
+                    <TableHead className="font-semibold text-foreground">Ticket</TableHead>
+                    <TableHead className="font-semibold text-foreground">One way</TableHead>
+                    <TableHead className="font-semibold text-foreground">Return</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {MIF_WALKON_ROWS.map((r) => (
+                    <TableRow key={r.ticket}>
+                      <TableCell className="font-medium text-foreground">{r.ticket}</TableCell>
+                      <TableCell className="text-muted-foreground">{r.oneWay}</TableCell>
+                      <TableCell className="text-muted-foreground">{r.ret}</TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </div>
+            <h3 className="text-xl font-semibold text-foreground">Taking a car on the vehicle ferry</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Standard car fares start from $276 return. The fare covers the vehicle and up to five people travelling in it, including the
+              driver, and your fare category is set by your vehicle's make and model plus fittings such as a tow bar or bike rack. On the live
+              schedule we checked, standard sailings showed $138 each way and cheaper Magnetic Saver sailings $103 each way. The Magnetic
+              Saver is online-only, for vehicles up to 6.0 m long and 3.5 tonnes, and cannot be combined with other offers. Peak-season
+              surcharges apply in school holidays and long weekends, including from 11 December 2026. The booking system shows the exact
+              price for your vehicle and sailing before you pay.
+            </p>
             <div className="flex flex-wrap gap-3">
               <Button asChild variant="outline" size="sm">
                 <a href={SEALINK_FARES} target="_blank" rel="noopener noreferrer">
@@ -639,13 +793,14 @@ const MagneticIslandFerry = () => {
               Arriving at Nelly Bay
             </h2>
             <p className="text-muted-foreground leading-relaxed">
-              Both services arrive in the Nelly Bay area, but the passenger-ferry and vehicle-ferry
-              arrival facilities are associated with different services, so check which one applies
-              to your booking.
+              Both services arrive at Nelly Bay. The car ferry docks at Harbour Drive, Nelly Bay
+              Marina, and Magnetic Island Ferries asks walk-on passengers leaving the island to wait
+              at the picnic table area near the top of the ramp.
             </p>
             <Bullets
               items={[
-                "Buses, taxis and other transport may be available near the terminal area",
+                "A local bus links the island's four main bays and connects with the ferries (Kinetic runs the Magnetic Island bus)",
+                "Bikes, scooters and hire cars are available on the island; book ahead in busy periods",
                 "Know your first destination before you arrive",
                 "Plan island transport and ferry times together, not separately",
               ]}
@@ -674,8 +829,7 @@ const MagneticIslandFerry = () => {
             </h2>
             <Bullets
               items={[
-                "Translink Route 250 serves Magnetic Island",
-                "Stops include the ferry-terminal area and the main island communities",
+                "Kinetic runs the local bus, which links the four main bays and connects with the ferries",
                 "Use the current Translink journey planner for live routes and times",
                 "Service frequency varies through the day",
                 "Include waiting time in your itinerary — not every ferry has a matching bus",
