@@ -37,57 +37,90 @@ const PATH = "/events";
 /** Official council events calendar — the authoritative source for current listings. */
 const WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
 
-/** Weekend of Fri 20–Sun 22 November 2026, in date order. */
+/** Weekend of Fri 27–Sun 29 November 2026, in date order. */
 const WEEKEND_EVENTS = [
   {
-    day: "Friday 20 November",
+    day: "Friday 27 November",
     items: [
       {
-        name: "Vote 1 Pauly!",
-        time: "Fri 20 Nov, 8:30pm",
-        venue: "Selwyn Nicholas Brewing Co., 365 Woolcock St, Garbutt",
-        description: "Comedian Pauly Fenech brings his satirical \"Independent candidate\" stand-up show to town.",
-        link: "https://tickets.oztix.com.au/outlet/event/09fd1586-1276-4238-80e7-5d4fae4e7010",
+        name: "Poison Oak – Album Launch: We Used to Talk",
+        time: "Fri 27 Nov, doors 7pm",
+        venue: "Otherwise Bar, 87-95 Flinders Street, Townsville City",
+        description: "Local band Poison Oak launch their new album with support from Home Improvement, Reverence and Relaxolotyl ($20 on the door, 18+).",
+        link: "https://www.eventbrite.com.au/e/poison-oak-album-launch-we-used-to-talk-tickets-2002398756584",
       },
       {
-        name: "In the Heart of the North [Part 3]: The Douglas Kagi Gift (plus Young Indigenous Printmakers, Transitions and EV2 Sportswear)",
+        name: "Lady's Drag Christmas Bingo",
+        time: "Fri 27 Nov, 7pm–9pm (doors 6pm)",
+        venue: "Bohle Barn, 10 Shaw Road, Shaw",
+        description: "Five rounds of Christmas bingo with drag entertainment, sing-alongs and a raffle, hosted by Lady Saint Diva (18+).",
+        link: "https://www.eventbrite.com.au/e/ladys-drag-christmas-bingo-tickets-2004156944371",
+      },
+      {
+        name: "In the Heart of the North [Part 3]: The Douglas Kagi Gift (plus Young Indigenous Printmakers, Transitions, EV2 Sportswear and the North Queensland Ceramic Awards)",
         time: "On now until 17 Jan 2027",
         venue: "Perc Tucker Regional Gallery",
-        description: "Four current exhibitions to see at the city's regional gallery.",
+        description: "Several current exhibitions to see at the city's regional gallery.",
         link: "https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/perc-tucker-regional-gallery/exhibitions",
       },
     ],
   },
   {
-    day: "Sunday 22 November",
+    day: "Saturday 28 November",
+    items: [
+      {
+        name: "Christmas at Coffee Presto",
+        time: "Sat 28 Nov, 7am–12pm",
+        venue: "Coffee Presto, 103 Bowen Road, Rosslea",
+        description: "Pop-up Christmas market with local stallholders, food and coffee.",
+        link: "https://allevents.in/rosslea/christmas-at-coffee-presto/200031067061035",
+      },
+      {
+        name: "Townsville Train Park running day",
+        time: "Sat 28 Nov, 4pm–7pm",
+        venue: "Townsville Train Park, Railway Estate",
+        description: "The last train park run of the year, with Santa and the Townsville brass band (closed-in shoes required).",
+        link: "https://allevents.in/railway-estate/running-day/200030968616240",
+      },
+    ],
+  },
+  {
+    day: "Sunday 29 November",
     items: [
       {
         name: "Willows Rotary Markets",
-        time: "Sun 22 Nov, 7:30am–11:30am",
+        time: "Sun 29 Nov, 7:30am–11:30am",
         venue: "Willows Shopping Centre carpark, Kirwan",
         description: "Weekly Sunday market run by Rotary.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
       },
       {
         name: "Cotters Market",
-        time: "Sun 22 Nov, 8:30am–1:00pm",
+        time: "Sun 29 Nov, 8:30am–1pm",
         venue: "Flinders Street, Townsville City",
         description: "Weekly city market with local food, produce and crafts.",
         link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
       },
       {
         name: "Magnetic Island Markets",
-        time: "Sun 22 Nov, 9:00am–2:00pm",
+        time: "Sun 29 Nov, 9am–2pm",
         venue: "Horseshoe Bay foreshore, Magnetic Island",
         description: "Relaxed weekly beachside market on the island.",
         link: "https://whatson.townsville.qld.gov.au/events/magnetic-island-markets",
       },
       {
-        name: "Townsville Fire v Bendigo Spirit (WNBL Round 6)",
-        time: "Sun 22 Nov, 2:00pm",
-        venue: "Townsville Entertainment & Convention Centre",
-        description: "The Fire host Bendigo in a Sunday afternoon home game.",
-        link: "https://tecc.net.au/event/townsville-fire-26-27-season/",
+        name: "Community Christmas Party",
+        time: "Sun 29 Nov, 4:30pm–7:30pm",
+        venue: "Northreach Baptist Church, 38 Canterbury Road, Kirwan",
+        description: "Free kids' activities including face painting, craft and a jumping castle, with a carols sing-along at 6pm.",
+        link: "https://allevents.in/thuringowa-central/community-christmas-party/200031002627817",
+      },
+      {
+        name: "Step into the Wonder of Christmas",
+        time: "Sun 29 Nov, 5:30pm",
+        venue: "St James' Cathedral, 36 Cleveland Terrace, Townsville",
+        description: "An evening of Advent and Christmas music from local choirs, with a nativity display and supper afterwards.",
+        link: "https://allevents.in/townsville/step-into-the-wonder-of-christmas/200031002627216",
       },
     ],
   },
@@ -360,7 +393,7 @@ const Events = () => (
           check the official What's On Townsville calendar.
         </p>
         <p className="text-sm font-medium text-foreground mb-5">
-          Updated {formatUpdatedOn()} for the weekend of 20–22 November 2026.
+          Updated {formatUpdatedOn()} for the weekend of 27–29 November 2026.
         </p>
         <div className="space-y-6 mb-6">
           {WEEKEND_EVENTS.map(({ day, items }) => (

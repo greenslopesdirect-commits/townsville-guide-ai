@@ -49,7 +49,7 @@ export const COUNCIL_WHATS_ON_URL = "https://whatson.townsville.qld.gov.au/";
  * Date these listings were last updated, YYYY-MM-DD. /events shows it in the "Updated ..." line and
  * in the "About this guide" panel's "Last checked", so change it here when you change `items`.
  */
-export const UPDATED_ON = "2026-11-16";
+export const UPDATED_ON = "2026-11-23";
 
 /** "9 November 2026" from a YYYY-MM-DD string. */
 export const formatUpdatedOn = (iso: string = UPDATED_ON): string => {
@@ -62,44 +62,44 @@ export const formatUpdatedOn = (iso: string = UPDATED_ON): string => {
 };
 
 export const THIS_WEEKEND: ThisWeekendData = {
-  from: "2026-11-20",
-  to: "2026-11-22",
+  from: "2026-11-27",
+  to: "2026-11-29",
   items: [
     {
-      name: "Vote 1 Pauly!",
-      place: "Selwyn Nicholas Brewing Co., 365 Woolcock St, Garbutt",
-      time: "Fri 20 Nov, 8:30pm",
-      link: "https://tickets.oztix.com.au/outlet/event/09fd1586-1276-4238-80e7-5d4fae4e7010",
+      name: "Lady's Drag Christmas Bingo",
+      place: "Bohle Barn, 10 Shaw Road, Shaw",
+      time: "Fri 27 Nov, 7pm–9pm (doors 6pm)",
+      link: "https://www.eventbrite.com.au/e/ladys-drag-christmas-bingo-tickets-2004156944371",
     },
     {
-      name: "In the Heart of the North [Part 3] and other exhibitions",
-      place: "Perc Tucker Regional Gallery",
-      time: "On now until 17 Jan 2027",
-      link: "https://www.townsville.qld.gov.au/facilities-and-recreation/theatres-and-galleries/perc-tucker-regional-gallery/exhibitions",
+      name: "Christmas at Coffee Presto",
+      place: "Coffee Presto, 103 Bowen Road, Rosslea",
+      time: "Sat 28 Nov, 7am–12pm",
+      link: "https://allevents.in/rosslea/christmas-at-coffee-presto/200031067061035",
     },
     {
-      name: "Willows Rotary Markets",
-      place: "Willows Shopping Centre carpark, Kirwan",
-      time: "Sun 22 Nov, 7:30am–11:30am",
-      link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
+      name: "Townsville Train Park running day",
+      place: "Townsville Train Park, Railway Estate",
+      time: "Sat 28 Nov, 4pm–7pm",
+      link: "https://allevents.in/railway-estate/running-day/200030968616240",
     },
     {
       name: "Cotters Market",
       place: "Flinders Street, Townsville City",
-      time: "Sun 22 Nov, 8:30am–1:00pm",
+      time: "Sun 29 Nov, 8:30am–1pm",
       link: "https://townsville.qld.gov.au/about-townsville/shopping-and-markets",
     },
     {
       name: "Magnetic Island Markets",
       place: "Horseshoe Bay foreshore, Magnetic Island",
-      time: "Sun 22 Nov, 9:00am–2:00pm",
+      time: "Sun 29 Nov, 9am–2pm",
       link: "https://whatson.townsville.qld.gov.au/events/magnetic-island-markets",
     },
     {
-      name: "Townsville Fire v Bendigo Spirit (WNBL Round 6)",
-      place: "Townsville Entertainment & Convention Centre",
-      time: "Sun 22 Nov, 2:00pm",
-      link: "https://tecc.net.au/event/townsville-fire-26-27-season/",
+      name: "Community Christmas Party",
+      place: "Northreach Baptist Church, 38 Canterbury Road, Kirwan",
+      time: "Sun 29 Nov, 4:30pm–7:30pm",
+      link: "https://allevents.in/thuringowa-central/community-christmas-party/200031002627817",
     },
   ],
 };
